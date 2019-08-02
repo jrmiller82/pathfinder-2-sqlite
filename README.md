@@ -26,3 +26,20 @@ sqlite database.
 2. Write script to generate sqlite database from sql code;
 3. Write sql code; and
 4. Drinks for all when finished!
+
+# Conventions in the Code
+
+## Ability Scores in Integer Representation
+
+| Ability Type | Value |
+|--------------|-------|
+| STR          |     1 |
+| DEX          |     2 |
+| CON          |     4 |
+| INT          |     8 |
+| WIS          |    16 |
+| CHA          |    32 |
+
+If I wanted to say STR and DEX, I would use a `3`. If I wanted STR, WIS, and
+CHA, that would be 1 + 16 + 32 = `49`. This is to not have to have more database
+tables than necessary when trying to list one or more ability scores.
