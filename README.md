@@ -23,6 +23,6 @@ sqlite database.
 ## Roadmap
 
 1. Design schema;
-2. Write script to generated sqlite database from sql code;
+2. Write script to generate sqlite database from sql code;
 3. Write sql code; and
 4. Drinks for all when finished!
