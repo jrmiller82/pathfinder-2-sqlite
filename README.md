@@ -39,6 +39,8 @@ sqlite database.
 | INT          |     8 |
 | WIS          |    16 |
 | CHA          |    32 |
+| Free 1       |    64 |
+| Free 2       |   128 |
 
 If I wanted to say STR and DEX, I would use a `3`. If I wanted STR, WIS, and
 CHA, that would be 1 + 16 + 32 = `49`. This is to not have to have more database
