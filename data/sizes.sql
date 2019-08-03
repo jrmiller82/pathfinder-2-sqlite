@@ -1,3 +1,5 @@
+-- -*- mode:sql sql-product:sqlite -*-
+
 INSERT INTO sizes (size_id, short_name) VALUES
   (1, 'Tiny'),
   (2, 'Small'),
