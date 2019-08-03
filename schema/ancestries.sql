@@ -1,3 +1,4 @@
+-- -*- mode:sql sql-product:sqlite -*-
 
 /*
 
@@ -23,6 +24,7 @@ CREATE TABLE ancestries (
   FOREIGN KEY (size_id) REFERENCES sizes(size_id)
 );
 
+/* has partial data */
 CREATE TABLE visions (
   vision_id INTEGER PRIMARY KEY,
   short_name TEXT NOT NULL UNIQUE,
@@ -32,6 +34,7 @@ CREATE TABLE visions (
 /* Need to figure out how to model heritages that also have reactions / feats
 etc.. */
 
+/* has partial data */
 CREATE TABLE heritages (
   heritage_id INTEGER PRIMARY KEY,
   short_name TEXT NOT NULL UNIQUE,
