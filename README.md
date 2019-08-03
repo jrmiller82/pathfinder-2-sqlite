@@ -33,6 +33,7 @@ sqlite database.
 
 | Ability Type | Value |
 |--------------|-------|
+| None         |     0 |
 | STR          |     1 |
 | DEX          |     2 |
 | CON          |     4 |
