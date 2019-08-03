@@ -17,6 +17,7 @@ CREATE TABLE ancestries (
   flavor_text TEXT NOT NULL,
   hp INTEGER NOT NULL,
   size_id INTEGER NOT NULL,
+  speed INTEGER NOT NULL,
   boosts INTEGER NOT NULL,
   flaws INTEGER NOT NULL,
   vision_id INTEGER NOT NULL,
