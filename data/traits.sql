@@ -1,3 +1,4 @@
+-- -*- mode:sql sql-product:sqlite -*-
 
 /* TODO Fill in all the other traits from here: https://2e.aonprd.com/Traits.aspx */
 
