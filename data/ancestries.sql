@@ -4,8 +4,6 @@
 
 /* Decide on whether to break out the flavor text to another table? */
 
-/* TODO Left out speed, add in here and in schema */
-
 /* Probably need to model Half-Elf and Half-Orc as a whole separate
 ancestry? NO. They are separate heritages, not separate ancestries. */
 
