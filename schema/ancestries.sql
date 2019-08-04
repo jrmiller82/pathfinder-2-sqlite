@@ -93,8 +93,7 @@ CREATE TABLE ancestries_langs (
   ancestry_id INTEGER NOT NULL,
   lang_id INTEGER NOT NULL,
   FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
-  FOREIGN KEY (lang_id) REFERENCES langs(lang_id),
-);
+  FOREIGN KEY (lang_id) REFERENCES langs(lang_id));
 
 
 CREATE TABLE ancestry_additionalangs (
@@ -102,7 +101,7 @@ CREATE TABLE ancestry_additionalangs (
   ancestry_id INTEGER NOT NULL,
   lang_id INTEGER NOT NULL,
   FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
-  FOREIGN KEY (lang_id) REFERENCES langs(lang_id),
+  FOREIGN KEY (lang_id) REFERENCES langs(lang_id)
 );
 
 /* Need to rethink how to model the various prerequisites */
@@ -115,7 +114,7 @@ CREATE TABLE feats (
   prereq_proficiency_ranks INTEGER,
   frequency TEXT,
   triggers TEXT,
-  reqs TEXT,
+  reqs TEXT
 );
 
 CREATE TABLE feats_traits (

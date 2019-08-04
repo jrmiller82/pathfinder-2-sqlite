@@ -15,6 +15,5 @@ VALUES
   (6, 'Human', 'TODO'),
   (7, 'Half-Elf', 'TODO'),
   (8, 'Half-Orc', 'TODO'),
-  (9, 'Humanoid', 'TODO')
-);
+  (9, 'Humanoid', 'TODO');
 

@@ -15,7 +15,7 @@ VALUES
   (3, 'Gnome', 'TODO', 8, 2, 25, 100, 1, 2),
   (4, 'Goblin', 'TODO', 6, 2, 25, 98, 16, 1),
   (5, 'Halfling', 'TODO', 6, 2, 25,  82, 1, 3),
-  (6, 'Human', 'TODO', 8, 3, 25, 128, 0, 4),
+  (6, 'Human', 'TODO', 8, 3, 25, 128, 0, 4);
 
 /* TODO flesh out the ancestry-trait pairs */
 

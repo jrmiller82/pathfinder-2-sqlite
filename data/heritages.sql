@@ -19,7 +19,7 @@ VALUES
   (3, 'Forge Dwarf', 'TODO'),
   (4, 'Rock Dwarf', 'TODO'),
   (5, 'Strong-Blooded Dwarf', 'TODO'),
-  (6, 'Half-Elf', 'Either one of your parents was an elf, or one or both were half-elves. You have pointed ears and other telltale signs of elf heritage. You gain the elf trait and low-light vision. In addition, you can select elf, half-elf, and human feats whenever you gain an ancestry feat.'),
+  (6, 'Half-Elf', 'Either one of your parents was an elf, or one or both were half-elves. You have pointed ears and other telltale signs of elf heritage. You gain the elf trait and low-light vision. In addition, you can select elf, half-elf, and human feats whenever you gain an ancestry feat.');
 
 
 INSERT INTO ancestries_heritages (ancestry_id, heritage_id)
