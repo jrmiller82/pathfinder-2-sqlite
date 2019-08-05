@@ -55,9 +55,18 @@ CREATE TABLE ancestries_heritages (
 /* has partial data done */
 CREATE TABLE traits (
   trait_id INTEGER PRIMARY KEY,
-  short_name TEXT NOT NULL UNIQUE,
-  description TEXT NOT NULL
+  -- short_name TEXT NOT NULL UNIQUE,
+  traittype INTEGER,
+  short_name TEXT NOT NULL,
+  description TEXT NOT NULL,
+  FOREIGN KEY (traittype) REFERENCES traittypes(traittypes_id)
 );
+
+CREATE TABLE traittypes (
+  traittype_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL
+);
+
 
 CREATE TABLE heritages_traits (
   id INTEGER PRIMARY KEY,
