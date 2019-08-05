@@ -19,17 +19,28 @@ VALUES
 
 /* TODO flesh out the ancestry-trait pairs */
 
+/* ancestries 7 = half elf and 8 = half orc. 
+(8,91),
+
+(8,124),
+
+(7,58),
+
+(7,91),
+
+
+ */
 INSERT INTO ancestries_traits (ancestry_id, trait_id)
 VALUES
-  (1, 1),
-  (1, 9),
-  (2, 2),
-  (2, 9),
-  (3, 3),
-  (3, 9),
-  (4, 4),
-  (4, 9),
-  (5, 5),
-  (5, 9),
-  (6, 6),
-  (6, 9);
+(4,81),
+(4,91),
+(6,90),
+(6,91),
+(2,58),
+(2,91),
+(1,54),
+(1,91),
+(5,87),
+(5,91),
+(3,80),
+(3,91);
