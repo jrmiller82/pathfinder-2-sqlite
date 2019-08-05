@@ -1,3 +1,3 @@
-James Ryland Miller
-Jacob Søgaard 
-James DeVore
+1. James Ryland Miller
+2. Jacob Søgaard 
+3. James DeVore
