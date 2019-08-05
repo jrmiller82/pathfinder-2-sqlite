@@ -8,11 +8,14 @@ INSERT INTO visions (vision_id,
                      short_name,
                      description)
 VALUES
-  (1, 'Darkvision', 'You can see in darkness and dim light just as well as you can see in bright light, though your vision in darkness is in black and white.'),
+  (1, 'Darkvision', 'You can see in darkness and dim light just as well as you can see in bright light up to 60 ft, though your vision in darkness is in black and white.'),
   (2, 'Low-Light Vision', 'You can see in dim light as though it were bright light, and you ignore the concealed condition due to dim light.'),
   (3, 'Keen Eyes', 'Your eyes are sharp, allowing you to make out small details about concealed or even invisible creatures that others might miss. You gain a +2 circumstance bonus when using the Seek action to find hidden or undetected creatures within 30 feet of you. When you target an opponent that is concealed from you or hidden from you, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.'),
   (4, 'None', 'No special vision.'),
   (5, 'Smoke Vision', 'You can see perfectly in smoky conditions'),
-  (6,'All-Around Vision','This monster can see in all directions simultaneously, and therefore can’t be flanked.');
+  (6,'All-Around Vision','This monster can see in all directions simultaneously, and therefore can’t be flanked.')
+  (7,'Snow Vision','This creature can see perfectly well in snowy conditions. this creature does not suffer any penalties to Perception checks while in snow.'),
+  (8,'Manifold Vision','TODO (can not find any definition ref:https://2e.aonprd.com/Monsters.aspx?ID=249)'),
+  (9,'Greater Darkvision','Same as Darkvision, but the range is 120 ft')
 
 
