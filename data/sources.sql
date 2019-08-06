@@ -12,6 +12,7 @@ INSERT INTO sources (sources_id,
                      first_party,
                      ogl_copyright_block)
 VALUES
+  -- Core Rulebook
   (1,
   'Pathfinder Core Rulebook (Second Edition)',
   'Core Rulebook',
@@ -20,6 +21,7 @@ VALUES
   '2019-08-01',
   1,
   'Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Pathfinder Core Rulebook (Second Edition) (c) 2019, Paizo, Inc.; Designers: Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter.'),
+  -- Bestiary 1
   (2,
   'Pathfinder Bestiary (Second Edition)',
   'Bestiary',

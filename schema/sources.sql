@@ -1,5 +1,7 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+-- MUST BE CALLED EARLY IN SCRIPT
+
 CREATE TABLE sources (
   sources_id INTEGER PRIMARY KEY,
   sources_full_name TEXT NOT NULL UNIQUE,
