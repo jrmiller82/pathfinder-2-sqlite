@@ -3,6 +3,8 @@ del pf2.db
 
 :: Loading schema
 sqlite3 pf2.db < schema/abilityscores.sql
+sqlite3 pf2.db < schema/traits.sql
+sqlite3 pf2.db < schema/senses.sql
 sqlite3 pf2.db < schema/ancestries.sql
 
 :: Loading data
