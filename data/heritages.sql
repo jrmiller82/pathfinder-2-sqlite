@@ -32,6 +32,8 @@ VALUES
   (1, 4),
   (1, 5);
 
+
+/* TODO this table is likely not needed anymore; AND TODO the trait_ids likely don't match anymore. */
 INSERT INTO heritages_traits (heritage_id, trait_id)
 VALUES
   (6, 7),
