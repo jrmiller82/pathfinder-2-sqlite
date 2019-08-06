@@ -80,15 +80,7 @@ CREATE TABLE ancestries_traits (
   FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
 
-CREATE TABLE sizes (
-  size_id INTEGER PRIMARY KEY,
-  short_name TEXT NOT NULL UNIQUE
-);
 
-CREATE TABLE langs (
-  lang_id INTEGER PRIMARY KEY,
-  short_name TEXT NOT NULL UNIQUE
-);
 
 CREATE TABLE ancestries_langs (
   id INTEGER PRIMARY KEY,

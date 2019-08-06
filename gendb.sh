@@ -2,6 +2,10 @@ rm pf2.db
 echo 'loading schema'
 echo 'schema/abilityscores.sql'
 sqlite3 pf2.db < schema/abilityscores.sql
+echo 'schema/sizes.sql'
+sqlite3 pf2.db < schema/sizes.sql
+echo 'schema/langs.sql'
+sqlite3 pf2.db < schema/langs.sql
 echo 'schema/traits.sql'
 sqlite3 pf2.db < schema/traits.sql
 echo 'schema/senses.sql'
