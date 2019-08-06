@@ -39,12 +39,6 @@ CREATE TABLE ancestries_flaws (
   FOREIGN KEY (abilityscores_id) REFERENCES abilityscores(abilityscores_id)
 );
 
-/* has partial data */
-CREATE TABLE visions (
-  vision_id INTEGER PRIMARY KEY,
-  short_name TEXT NOT NULL UNIQUE,
-  description TEXT NOT NULL
-);
 
 /* Need to figure out how to model heritages that also have reactions / feats
 etc.. */
@@ -63,22 +57,6 @@ CREATE TABLE ancestries_heritages (
   UNIQUE(ancestry_id, heritage_id),
   FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
   FOREIGN KEY (heritage_id) REFERENCES heritages(heritage_id)
-);
-
-/* TODO can the description var be UNIQUE? */
-/* has partial data done */
-CREATE TABLE traits (
-  trait_id INTEGER PRIMARY KEY,
-  -- short_name TEXT NOT NULL UNIQUE,
-  traittype INTEGER,
-  short_name TEXT NOT NULL,
-  description TEXT NOT NULL,
-  FOREIGN KEY (traittype) REFERENCES traittypes(traittypes_id)
-);
-
-CREATE TABLE traittypes (
-  traittype_id INTEGER PRIMARY KEY,
-  name TEXT NOT NULL
 );
 
 /* TODO THIS TABLE IS LIKELY NOT NEEDED. THANKS WES! */
