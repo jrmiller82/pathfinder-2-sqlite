@@ -46,7 +46,7 @@ VALUES
   (5, 5), -- halfling WIS
   (5, 7), -- halfling free 1
   (6, 7), -- human free 1
-  (6, 8), -- human free 2
+  (6, 8); -- human free 2
 
 INSERT INTO ancestries_flaws (ancestry_id, abilityscores_id)
 VALUES
@@ -54,7 +54,7 @@ VALUES
   (2, 3), -- elf CON
   (3, 1), -- gnome STR
   (4, 5), -- goblin WIS
-  (5, 1), -- halfling STR
+  (5, 1); -- halfling STR
 
 INSERT INTO ancestries_traits (ancestry_id, trait_id)
 VALUES
