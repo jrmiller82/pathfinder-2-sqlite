@@ -44,5 +44,5 @@ sqlite database.
 | Free 2       |   128 |
 
 If I wanted to say STR and DEX, I would use a `3`. If I wanted STR, WIS, and
-CHA, that would be 1 + 16 + 32 = `49`. This is to not have to have more database
-tables than necessary when trying to list one or more ability scores.
+CHA, that would be 1 + 16 + 32 = `49`. This is to give a program-focused data
+return in addition to the textual representation.
