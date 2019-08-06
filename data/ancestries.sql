@@ -61,20 +61,20 @@ VALUES
 (1,79),	--Dwarf
 (1,116), --Humanoid
 (2,80), --Elf
-(2,116), 
+(2,116),
 (3,81), --Gnome
 (3,116),
-(4,82 --Goblin
+(4,82), --Goblin
 (4,116),
 (5,85), --Halfling
 (5,116),
 (6,86), --Human
-(6,116);
+(6,116),
 (7,80), -- Half-Elf -> Elf
-(7,86), --Human I don't believe they lose the human trait
-(7,116), --Humanoid
-(7,83), -- Half-Elf -> Half-Elf
-(8,116), --Half-Orc -> Humaniod
-(8,86), --Human I don't believe they lose the human trait
-(8,182), -- Orc
-(8,84); -- Half-Orc -> Half-Orc
+(7,86),
+(7,116),
+(7,83),
+(8,116), --Half-Orc
+(8,86),
+(8,182),
+(8,84);
