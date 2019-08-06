@@ -1,15 +1,12 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
 /*
-
 TODO Need to decide on whether to do a massive feats table, or to split feats
 into separate tables for general feats, ancestry feats, background feats, etc...
 
 I think one big feat table that has a feat type in it and then an ancestry_feat
 table that matches feats to ancestries, etc..
-
 */
-
 
 CREATE TABLE ancestries (
   ancestry_id INTEGER PRIMARY KEY,
@@ -80,8 +77,6 @@ CREATE TABLE ancestries_traits (
   FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
 
-
-
 CREATE TABLE ancestries_langs (
   id INTEGER PRIMARY KEY,
   ancestry_id INTEGER NOT NULL,
@@ -89,32 +84,10 @@ CREATE TABLE ancestries_langs (
   FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
   FOREIGN KEY (lang_id) REFERENCES langs(lang_id));
 
-
 CREATE TABLE ancestry_additionalangs (
   id INTEGER PRIMARY KEY,
   ancestry_id INTEGER NOT NULL,
   lang_id INTEGER NOT NULL,
   FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
   FOREIGN KEY (lang_id) REFERENCES langs(lang_id)
-);
-
-/* Need to rethink how to model the various prerequisites */
-
-CREATE TABLE feats (
-  feat_id INTEGER PRIMARY KEY,
-  short_name TEXT NOT NULL UNIQUE,
-  prereq_feats INTEGER,
-  prereq_ability_scores INTEGER,
-  prereq_proficiency_ranks INTEGER,
-  frequency TEXT,
-  triggers TEXT,
-  reqs TEXT
-);
-
-CREATE TABLE feats_traits (
-  id INTEGER PRIMARY KEY,
-  feat_id INTEGER NOT NULL,
-  trait_id INTEGER NOT NULL,
-  FOREIGN KEY (feat_id) REFERENCES feats(feat_id),
-  FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
