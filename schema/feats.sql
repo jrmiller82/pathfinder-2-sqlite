@@ -1,5 +1,7 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+/* MUST BE CALLED AFTER TRAITS TABLE IS FORMED */
+
 /* Need to rethink how to model the various prerequisites */
 
 CREATE TABLE feats (
