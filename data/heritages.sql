@@ -2,8 +2,6 @@
 
 /* TODO figure out how to model the reaction with heritages */
 
-/* TODO fill in the rest of the heritages */
-
 /* TODO how to add in vision for Half-elf Heritage? */
 
 /* TODO maybe make vision trigger off of heritages instead of ancestries? Trying
