@@ -61,11 +61,48 @@ VALUES
 
 INSERT INTO ancestries_heritages (ancestry_id, heritage_id)
 VALUES
+  -- Dwarf
   (1, 1),
   (1, 2),
   (1, 3),
   (1, 4),
-  (1, 5);
+  (1, 5),
+  -- Elf
+  (2, 100),
+  (2, 101),
+  (2, 102),
+  (2, 103),
+  (2, 104),
+  -- Gnome
+  (3, 200),
+  (3, 201),
+  (3, 202),
+  (3, 203),
+  (3, 204),
+  -- Goblin
+  (4, 300),
+  (4, 301),
+  (4, 302),
+  (4, 303),
+  (4, 304),
+  -- Halfling
+  (5, 400),
+  (5, 401),
+  (5, 402),
+  (5, 403),
+  (5, 404),
+  -- Human
+  (6, 500),
+  (6, 501),
+  (6, 502),
+  (6, 503),
+  (6, 504),
+  -- Half-elf and half orc (yes, we know they're technically only a heritage,
+  -- but we link it up to ancestry ids too)
+  (7, 500),
+  (8, 501);
+
+
 
 
 /* TODO this table is likely not needed anymore; AND TODO the trait_ids likely don't match anymore. */
