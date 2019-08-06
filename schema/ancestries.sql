@@ -18,11 +18,25 @@ CREATE TABLE ancestries (
   hp INTEGER NOT NULL,
   size_id INTEGER NOT NULL,
   speed INTEGER NOT NULL,
-  boosts INTEGER NOT NULL,
-  flaws INTEGER NOT NULL,
   vision_id INTEGER NOT NULL,
   FOREIGN KEY (vision_id) REFERENCES visions(vision_id),
   FOREIGN KEY (size_id) REFERENCES sizes(size_id)
+);
+
+CREATE TABLE ancestries_boosts (
+  anc_boosts_id INTEGER PRIMARY KEY,
+  ancestry_id INTEGER NOT NULL,
+  abilityscores_id INTEGER NOT NULL,
+  FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
+  FOREIGN KEY (abilityscores_id) REFERENCES abilityscores(abilityscores_id)
+);
+
+CREATE TABLE ancestries_flaws (
+  anc_flaws_id INTEGER PRIMARY KEY,
+  ancestry_id INTEGER NOT NULL,
+  abilityscores_id INTEGER NOT NULL,
+  FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
+  FOREIGN KEY (abilityscores_id) REFERENCES abilityscores(abilityscores_id)
 );
 
 /* has partial data */
@@ -67,6 +81,7 @@ CREATE TABLE traittypes (
   name TEXT NOT NULL
 );
 
+/* TODO THIS TABLE IS LIKELY NOT NEEDED. THANKS WES! */
 
 CREATE TABLE heritages_traits (
   id INTEGER PRIMARY KEY,
