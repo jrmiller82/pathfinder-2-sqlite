@@ -53,7 +53,7 @@ VALUES
   (404, 'Wildwood Halfling', 'TODO'),
 
   -- Start of Human Heritages
-  (500, 'Half-Elf', 'Either one of your parents was an elf, or one or both were half-elves. You have pointed ears and other telltale signs of elf heritage. You gain the elf trait and low-light vision. In addition, you can select elf, half-elf, and human feats whenever you gain an ancestry feat.');
+  (500, 'Half-Elf', 'Either one of your parents was an elf, or one or both were half-elves. You have pointed ears and other telltale signs of elf heritage. You gain the elf trait and low-light vision. In addition, you can select elf, half-elf, and human feats whenever you gain an ancestry feat.'),
   (501, 'Half-Orc', 'TODO'),
   (502, 'Skilled Heritage', 'TODO'),
   (503, 'Versatile Heritage', 'TODO');
