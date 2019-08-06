@@ -1,12 +1,8 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
-/* Decide on format of flavor text; probably markdown? */
-
-/* Decide on whether to break out the flavor text to another table? */
-
-/* Probably need to model Half-Elf and Half-Orc as a whole separate
-ancestry? NO. They are separate heritages, not separate ancestries. */
-
+/* TODO decide on what goes in this flavor text. I'm thinking the small
+one-paragraph at the top of the section, and we put in all the extra details as
+a field with markdown formatted text. Need to think on it. */
 
 INSERT INTO ancestries (ancestry_id, short_name, flavor_text, hp, size_id, speed, vision_id)
 VALUES
@@ -15,7 +11,9 @@ VALUES
   (3, 'Gnome', 'TODO', 8, 2, 25, 2),
   (4, 'Goblin', 'TODO', 6, 2, 25, 1),
   (5, 'Halfling', 'TODO', 6, 2, 25, 3),
-  (6, 'Human', 'TODO', 8, 3, 25, 4);
+  (6, 'Human', 'TODO', 8, 3, 25, 4),
+  (7, 'Half-Elf', 'TODO', 8, 3, 25, 4),
+  (8, 'Half-Orc', 'TODO', 8, 3, 25, 4);
 
 
 /* TODO insert remaining data into ancestries_boosts and ancestries_flaws */
@@ -58,19 +56,6 @@ VALUES
   (4, 5), -- goblin WIS
   (5, 1), -- halfling STR
 
-/* TODO flesh out the ancestry-trait pairs */
-
-/* ancestries 7 = half elf and 8 = half orc. 
-(8,116), --Humaniod
-(8,86), --Human I don't believe they lose the human trait
-(8,182), -- Orc
-
-(7,80), -- Elf
-(7,86), --Human I don't believe they lose the human trait
-(7,116), --Humanoid
-
-
- */
 INSERT INTO ancestries_traits (ancestry_id, trait_id)
 VALUES
 (1,79),	--Dwarf
@@ -85,3 +70,11 @@ VALUES
 (5,116),
 (6,86), --Human
 (6,116);
+(7,80), -- Half-Elf -> Elf
+(7,86), --Human I don't believe they lose the human trait
+(7,116), --Humanoid
+(7,83), -- Half-Elf -> Half-Elf
+(8,116), --Half-Orc -> Humaniod
+(8,86), --Human I don't believe they lose the human trait
+(8,182), -- Orc
+(8,84); -- Half-Orc -> Half-Orc
