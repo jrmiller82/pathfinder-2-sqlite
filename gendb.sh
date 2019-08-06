@@ -1,8 +1,12 @@
 rm pf2.db
 echo 'loading schema'
-echo 'schema/anscestries.sql'
+echo 'schema/abilityscores.sql'
+sqlite3 pf2.db < schema/abilityscores.sql
+echo 'schema/ancestries.sql'
 sqlite3 pf2.db < schema/ancestries.sql
 echo 'loading data'
+echo 'data/abilityscores.sql'
+sqlite3 pf2.db < data/abilityscores.sql
 echo 'data/visions.sql'
 sqlite3 pf2.db < data/visions.sql
 echo 'data/sizes.sql'
