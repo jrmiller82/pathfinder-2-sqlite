@@ -35,6 +35,6 @@ VALUES
   (108, 2, 'Necril', 'Ghouls, intelligent undead'),
   (109, 2, 'Shadowtongue', 'Nidalese, Shadow Plane creatures'),
   (110, 2, 'Terran', 'Earth elemental creatures'),
-  -- Secret languages
+  -- Secret language s
   (200, 3, 'Druidic', 'Druids');
 

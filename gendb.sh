@@ -4,6 +4,8 @@ echo 'schema/abilityscores.sql'
 sqlite3 pf2.db < schema/abilityscores.sql
 echo 'schema/sizes.sql'
 sqlite3 pf2.db < schema/sizes.sql
+echo 'schema/sources.sql'
+sqlite3 pf2.db < schema/sources.sql
 echo 'schema/langs.sql'
 sqlite3 pf2.db < schema/langs.sql
 echo 'schema/traits.sql'

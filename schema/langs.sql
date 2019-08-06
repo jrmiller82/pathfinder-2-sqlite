@@ -10,6 +10,8 @@ CREATE TABLE langs (
   lang TEXT NOT NULL UNIQUE,
   speakers TEXT NOT NULL UNIQUE,
   rarity_id INTEGER NOT NULL,
+  src_book INTEGER NOT NULL,
+  src_pages TEXT NOT NULL,
   FOREIGN KEY (rarity_id) REFERENCES langsrarity(rarity_id)
 );
 
