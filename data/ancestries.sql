@@ -61,27 +61,27 @@ VALUES
 /* TODO flesh out the ancestry-trait pairs */
 
 /* ancestries 7 = half elf and 8 = half orc. 
-(8,91),
+(8,116), --Humaniod
+(8,86), --Human I don't believe they lose the human trait
+(8,182), -- Orc
 
-(8,124),
-
-(7,58),
-
-(7,91),
+(7,80), -- Elf
+(7,86), --Human I don't believe they lose the human trait
+(7,116), --Humanoid
 
 
  */
 INSERT INTO ancestries_traits (ancestry_id, trait_id)
 VALUES
-(4,81),
-(4,91),
-(6,90),
-(6,91),
-(2,58),
-(2,91),
-(1,54),
-(1,91),
-(5,87),
-(5,91),
-(3,80),
-(3,91);
+(1,79),	--Dwarf
+(1,116), --Humanoid
+(2,80), --Elf
+(2,116), 
+(3,81), --Gnome
+(3,116),
+(4,82 --Goblin
+(4,116),
+(5,85), --Halfling
+(5,116),
+(6,86), --Human
+(6,116);
