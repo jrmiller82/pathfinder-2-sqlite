@@ -115,7 +115,7 @@ INSERT INTO traits (trait_id, traittype, short_name,description)
 (86, 3, "Human", "A creature with this trait is a member of the human ancestry. Humans are a diverse array of people known for their adaptability. An ability with this trait can be used or selected only by humans."),
 
 -- "Armor" type traits
-(87, 4, "Bulwark", "The armor covers you so completely that it provides benefits against some damaging effects. On Reflex saves to avoid a damaging effect, such as a "),
+(87, 4, "Bulwark", "The armor covers you so completely that it provides benefits against some damaging effects. On Reflex saves to avoid a damaging effect, such as a *fireball*, you add a +3 modifier instead of your Dexterity modifier."),
 (88, 4, "Comfort", "The armor is so comfortable that you can rest normally while wearing it."),
 (89, 4, "Flexible", "The armor is flexible enough that it doesn’t hinder most actions. You don’t apply its check penalty to Acrobatics or Athletics checks."),
 (90, 4, "Noisy", "This armor is loud and likely to alert others to your presence when you’re using the Avoid Notice exploration activity."),
