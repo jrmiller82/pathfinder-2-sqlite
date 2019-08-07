@@ -18,6 +18,7 @@ sqlite3 pf2.db < schema/feats.sql
 sqlite3 pf2.db < schema/senses.sql
 # echo 'schema/ancestries.sql'
 sqlite3 pf2.db < schema/ancestries.sql
+sqlite3 pf2.db < schema/armor.sql
 echo 'loading data'
 # echo 'data/sources.sql'
 sqlite3 pf2.db < data/sources.sql
@@ -37,6 +38,7 @@ sqlite3 pf2.db < data/traits.sql
 sqlite3 pf2.db < data/feats.sql
 # echo 'data/ancestries.sql'
 sqlite3 pf2.db < data/ancestries.sql
+sqlite3 pf2.db < data/armor.sql
 # echo 'data/heritages.sql'
 sqlite3 pf2.db < data/heritages.sql
 
