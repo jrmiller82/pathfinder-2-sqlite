@@ -2,6 +2,8 @@ rm pf2.db
 echo 'loading schema'
 echo 'schema/sources.sql'
 sqlite3 pf2.db < schema/sources.sql
+echo 'schema/backgrounds.sql'
+sqlite3 pf2.db < schema/backgrounds.sql
 echo 'schema/abilityscores.sql'
 sqlite3 pf2.db < schema/abilityscores.sql
 echo 'schema/sizes.sql'
@@ -19,6 +21,8 @@ sqlite3 pf2.db < schema/ancestries.sql
 echo 'loading data'
 echo 'data/sources.sql'
 sqlite3 pf2.db < data/sources.sql
+echo 'data/backgrounds.sql'
+sqlite3 pf2.db < data/backgrounds.sql
 echo 'data/abilityscores.sql'
 sqlite3 pf2.db < data/abilityscores.sql
 echo 'data/visions.sql'
