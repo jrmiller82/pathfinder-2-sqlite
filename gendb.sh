@@ -33,6 +33,8 @@ echo 'data/langs.sql'
 sqlite3 pf2.db < data/langs.sql
 echo 'data/traits.sql'
 sqlite3 pf2.db < data/traits.sql
+echo 'data/feats.sql'
+sqlite3 pf2.db < data/feats.sql
 echo 'data/ancestries.sql'
 sqlite3 pf2.db < data/ancestries.sql
 echo 'data/heritages.sql'

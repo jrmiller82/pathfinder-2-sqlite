@@ -20,6 +20,7 @@ sqlite3 pf2.db < data/senses.sql
 sqlite3 pf2.db < data/sizes.sql
 sqlite3 pf2.db < data/langs.sql
 sqlite3 pf2.db < data/traits.sql
+sqlite3 pf2.db < data/feats.sql
 sqlite3 pf2.db < data/ancestries.sql
 sqlite3 pf2.db < data/heritages.sql
 
