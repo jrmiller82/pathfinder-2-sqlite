@@ -2,8 +2,8 @@
 
 /* TODO change visions to a senses table */
 
-CREATE TABLE visions (
-  vision_id INTEGER PRIMARY KEY,
+CREATE TABLE senses (
+  senses_id INTEGER PRIMARY KEY,
   short_name TEXT NOT NULL UNIQUE,
   description TEXT NOT NULL
 );

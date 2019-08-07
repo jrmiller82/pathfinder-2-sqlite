@@ -16,7 +16,7 @@ CREATE TABLE ancestries (
   size_id INTEGER NOT NULL,
   speed INTEGER NOT NULL,
   vision_id INTEGER NOT NULL,
-  FOREIGN KEY (vision_id) REFERENCES visions(vision_id),
+  FOREIGN KEY (vision_id) REFERENCES senses(senses_id),
   FOREIGN KEY (size_id) REFERENCES sizes(size_id)
 );
 

@@ -4,7 +4,7 @@
 
 /* TODO smoke vision is from young-red dragon */
 
-INSERT INTO visions (vision_id,
+INSERT INTO senses (senses_id,
                      short_name,
                      description)
 VALUES
