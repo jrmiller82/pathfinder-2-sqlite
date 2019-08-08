@@ -44,14 +44,15 @@ Text may use the following escape codes:
 3. `\t` for Tab
 4. `\\` for Backslash
 
-We are currently working on choice of unicode symbols for the following game
-symbols:
+The action symbols can be represented by the following characters:
 
-1. Single Action
-2. Two-Action Activity
-3. Three-Action Activitt
-4. Reaction
-5. Free Action
+| Meaning | Character | Unicode |
+| -------- | -- | ------- |
+| 1 action | ⑴ | U+2474 |
+| 2 actions | ⑵ | U+2475 |
+| 3 actions | ⑶ | U+2476 |
+| Reaction | 🄡 | U+1F121 |
+| Free action | 🄕 | U+1F115 |
 
 ## Ability Scores in Integer Representation
 
