@@ -27,6 +27,8 @@ CREATE TABLE spellschools (
 
 CREATE TABLE spells (
   spells_id INTEGER PRIMARY KEY,
+  sources_id INTEGER NOT NULL,
+  sources_pages TEXT,
   nethysurl TEXT,
   name TEXT NOT NULL UNIQUE,
   source TEXT,
@@ -38,8 +40,7 @@ CREATE TABLE spells (
   range_text TEXT,
   range_ft INTEGER,
   targets TEXT,
-  FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
-
+  FOREIGN KEY (sources_id) REFERENCES sources(sources_id),
   FOREIGN KEY (spelltypes_id) REFERENCES spelltypes(spelltypes_id)
 );
 

@@ -10,6 +10,8 @@ table that matches feats to ancestries, etc..
 
 CREATE TABLE ancestries (
   ancestry_id INTEGER PRIMARY KEY,
+  sources_id INTEGER NOT NULL,
+  sources_pages TEXT,
   short_name TEXT NOT NULL UNIQUE,
   flavor_text TEXT NOT NULL,
   hp INTEGER NOT NULL,
