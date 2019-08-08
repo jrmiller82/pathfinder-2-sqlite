@@ -1,9 +1,13 @@
+
 INSERT INTO spelltypes (
+  spelltypes_id,
+  name
+)
+VALUES
   (1, 'Spell'),
   (2, 'Cantrip'),
   (3, 'Focus'),
-  (3, 'Ritual')
-);
+  (4, 'Ritual');
 
 INSERT INTO spellcomponents (
   spellcomponents_id,
@@ -41,4 +45,4 @@ VALUES
   (5, 1, '298','Evocation', 'TODO'),
   (6, 1, '298','Illusion', 'TODO'),
   (7, 1, '298','Necromancy', 'TODO'),
-  (8, 1, '298','Transmutation', 'Transmutation spells make alterations to or transform the physical form of a creature or object. The morph and polymorph traits appear primarily in transmutation spells.'),
+  (8, 1, '298','Transmutation', 'Transmutation spells make alterations to or transform the physical form of a creature or object. The morph and polymorph traits appear primarily in transmutation spells.');
