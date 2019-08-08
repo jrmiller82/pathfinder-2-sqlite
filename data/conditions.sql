@@ -1,0 +1,55 @@
+-- -*- mode:sql sql-product:sqlite -*-
+
+-- TODO Fill in the remaining short descriptions from pag 454 CRB
+-- TODO Fill in the remaining long descriptions from pag 618-23 CRB
+
+INSERT INTO conditions (
+	conditions_id,
+	sources_id,
+	sources_pages,
+	name,
+	short_descr,
+	descr)
+VALUES
+	(1, 1, '454,618', 'Blinded', 'You''re unable to see.', 'TODO'),
+	(2, 1, '454,618', 'Clumsy', 'TODO', 'TODO'),
+	(3, 1, '454,618', 'Concealed', 'TODO', 'TODO'),
+	(4, 1, '454,618', 'Confused', 'TODO', 'TODO'),
+	(5, 1, '454,618', 'Controlled', 'TODO', 'TODO'),
+	(6, 1, '454,619', 'Dazzled', 'TODO', 'TODO'),
+	(7, 1, '454,619', 'Deafened', 'TODO', 'TODO'),
+	(9, 1, '454,619', 'Doomed', 'TODO', 'TODO'),
+	(10, 1, '454,619', 'Drained', 'TODO', 'TODO'),
+	(11, 1, '454,619', 'Dying', 'TODO', 'TODO'),
+	(12, 1, '454,619', 'Encumbered', 'TODO', 'TODO'),
+	(13, 1, '454,619', 'Enfeebled', 'TODO', 'TODO'),
+	(14, 1, '454,619--20', 'Fascinated', 'TODO', 'TODO'),
+	(15, 1, '454,620', 'Fatigued', 'TODO', 'TODO'),
+	(16, 1, '454,620', 'Flat-Footed', 'TODO', 'TODO'),
+	(17, 1, '454,620', 'Fleeing', 'TODO', 'TODO'),
+	(18, 1, '454,620', 'Friendly', 'TODO', 'TODO'),
+	(19, 1, '454,620', 'Frightened', 'TODO', 'TODO'),
+	(20, 1, '454,620', 'Grabbed', 'TODO', 'TODO'),
+	(21, 1, '454,620', 'Helpful', 'TODO', 'TODO'),
+	(22, 1, '454,620', 'Hidden', 'TODO', 'TODO'),
+	(23, 1, '454,620', 'Hostile', 'TODO', 'TODO'),
+	(24, 1, '454,620', 'Immobilized', 'TODO', 'TODO'),
+	(25, 1, '454,620', 'Indifferent', 'TODO', 'TODO'),
+	(26, 1, '454,620--21', 'Invisible', 'TODO', 'TODO'),
+	(27, 1, '454,621', 'Observed', 'TODO', 'TODO'),
+	(28, 1, '454,621', 'Paralyzed', 'TODO', 'TODO'),
+	(29, 1, '454,621', 'Persistent Damage', 'TODO', 'TODO'),
+	(30, 1, '454,621', 'Petrified', 'TODO', 'TODO'),
+	(31, 1, '454,621', 'Prone', 'TODO', 'TODO'),
+	(32, 1, '454,622', 'Quickened', 'TODO', 'TODO'),
+	(33, 1, '454,622', 'Restrained', 'TODO', 'TODO'),
+	(34, 1, '454,622', 'Sickened', 'TODO', 'TODO'),
+	(35, 1, '454,622', 'Slowed', 'TODO', 'TODO'),
+	(36, 1, '454,622', 'Stunned', 'TODO', 'TODO'),
+	(37, 1, '454,622', 'Stupefied', 'TODO', 'TODO'),
+	(38, 1, '454,622--23', 'Unconscious', 'TODO', 'TODO'),
+	(39, 1, '454,623', 'Undetected', 'TODO', 'TODO'),
+	(41, 1, '454,623', 'Unfriendly', 'TODO', 'TODO'),
+	(42, 1, '454,623', 'Unnoticed', 'TODO', 'TODO'),
+	(43, 1, '454,623', 'Wounded', 'TODO', 'TODO');
+
