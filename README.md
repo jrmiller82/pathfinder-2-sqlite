@@ -40,8 +40,9 @@ Also, many of the text fields will be in Github-Flavored Markdown.
 Text may use the following escape codes:
 
 1. `\n` for Newline
-2. `\t` for Tab
-3. `\\` for Backslash
+2. `\n\n` for a new paragraph
+3. `\t` for Tab
+4. `\\` for Backslash
 
 We are currently working on choice of unicode symbols for the following game
 symbols:
