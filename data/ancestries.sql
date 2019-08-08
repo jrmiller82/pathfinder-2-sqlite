@@ -4,16 +4,16 @@
 one-paragraph at the top of the section, and we put in all the extra details as
 a field with markdown formatted text. Need to think on it. */
 
-INSERT INTO ancestries (ancestry_id, short_name, flavor_text, hp, size_id, speed, vision_id)
+INSERT INTO ancestries (ancestry_id, short_name, flavor_text, hp, size_id, speed, vision_id,sources_id,sources_pages)
 VALUES
-  (1, 'Dwarf', 'TODO', 10, 3, 20, 1),
-  (2, 'Elf', 'TODO', 6, 3, 30, 2),
-  (3, 'Gnome', 'TODO', 8, 2, 25, 2),
-  (4, 'Goblin', 'TODO', 6, 2, 25, 1),
-  (5, 'Halfling', 'TODO', 6, 2, 25, 3),
-  (6, 'Human', 'TODO', 8, 3, 25, 4),
-  (7, 'Half-Elf', 'TODO', 8, 3, 25, 4),
-  (8, 'Half-Orc', 'TODO', 8, 3, 25, 4);
+  (1, 'Dwarf', 'TODO', 10, 3, 20, 1,1,"35"),
+  (2, 'Elf', 'TODO', 6, 3, 30, 2,1,"39"),
+  (3, 'Gnome', 'TODO', 8, 2, 25, 2,1,"43"),
+  (4, 'Goblin', 'TODO', 6, 2, 25, 1,1,"47"),
+  (5, 'Halfling', 'TODO', 6, 2, 25, 3,1,"51"),
+  (6, 'Human', 'TODO', 8, 3, 25, 4,1,"55"),
+  (7, 'Half-Elf', 'TODO', 8, 3, 25, 4,1,"55"),
+  (8, 'Half-Orc', 'TODO', 8, 3, 25, 4,1,"55");
 
 
 /* TODO insert remaining data into ancestries_boosts and ancestries_flaws */
