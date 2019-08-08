@@ -30,6 +30,10 @@ sqlite database.
 
 # Conventions in the Code
 
+## Text Encoding
+The goal is for all of our stored text in the database to be unicode,
+preferably `UTF-8`.
+
 ## Ability Scores in Integer Representation
 
 | Ability Type | Value |
