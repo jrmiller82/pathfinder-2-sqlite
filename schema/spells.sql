@@ -33,7 +33,6 @@ CREATE TABLE spells (
   name TEXT NOT NULL UNIQUE,
   source TEXT,
   level INTEGER NOT NULL,
-  has_trigger BOOLEAN NOT NULL,
   trigger TEXT,
   descr TEXT NOT NULL,
   spelltypes_id INTEGER NOT NULL,

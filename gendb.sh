@@ -8,6 +8,7 @@ sqlite3 pf2.db < schema/bulk.sql
 sqlite3 pf2.db < schema/sizes.sql
 sqlite3 pf2.db < schema/langs.sql
 sqlite3 pf2.db < schema/traits.sql
+sqlite3 pf2.db < schema/spells.sql
 sqlite3 pf2.db < schema/feats.sql
 sqlite3 pf2.db < schema/senses.sql
 sqlite3 pf2.db < schema/ancestries.sql
@@ -22,6 +23,7 @@ sqlite3 pf2.db < data/senses.sql
 sqlite3 pf2.db < data/sizes.sql
 sqlite3 pf2.db < data/langs.sql
 sqlite3 pf2.db < data/traits.sql
+sqlite3 pf2.db < data/spells.sql
 sqlite3 pf2.db < data/feats.sql
 sqlite3 pf2.db < data/ancestries.sql
 sqlite3 pf2.db < data/armor.sql

@@ -1,4 +1,5 @@
 import json
+import sqlite3
 
 def main():
     # load json into python
@@ -25,6 +26,9 @@ def main():
                 sorted_dicts.append(x)
 
     # NOW we can go alphabetically spell by spell
+
+    ## Get database connection
+    conn = sqlite3.connect('../../pf2.db') 
     for i in sorted_dicts:
         do_sql(i)
 
