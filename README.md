@@ -31,8 +31,26 @@ sqlite database.
 # Conventions in the Code
 
 ## Text Encoding
+
 The goal is for all of our stored text in the database to be unicode,
 preferably `UTF-8`.
+
+Also, many of the text fields will be in Github-Flavored Markdown.
+
+Text may use the following escape codes:
+
+1. `\n` for Newline
+2. `\t` for Tab
+3. `\\` for Backslash
+
+We are currently working on choice of unicode symbols for the following game
+symbols:
+
+1. Single Action
+2. Two-Action Activity
+3. Three-Action Activitt
+4. Reaction
+5. Free Action
 
 ## Ability Scores in Integer Representation
 
