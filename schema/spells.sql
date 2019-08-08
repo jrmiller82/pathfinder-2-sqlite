@@ -35,7 +35,7 @@ CREATE TABLE spells (
   level INTEGER NOT NULL,
   trigger TEXT,
   descr TEXT NOT NULL,
-  spelltypes_id INTEGER NOT NULL,
+  spelltypes_id INTEGER,
   range_text TEXT,
   range_ft INTEGER,
   targets TEXT,

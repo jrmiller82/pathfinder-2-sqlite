@@ -29,12 +29,41 @@ def main():
 
     ## Get database connection
     conn = sqlite3.connect('../../pf2.db') 
+
+    id = 0
     for i in sorted_dicts:
-        do_sql(i)
+        id += 1
+        do_sql(i, id, conn)
 
 # TODO write this function after sql schema drafted
-def do_sql():
-    pass
+def do_sql(i, id, conn):
+    print("Doing spell id #{}: {}".format(id, i['name']))
+    stmt = """INSERT INTO spells (
+    spells_id,
+    sources_id,
+    sources_pages,
+    nethysurl,
+    name,
+    source,
+    level,
+    descr,
+    range_text)
+    VALUES (?,?,?,?,?,?,?,?,?)"""
+
+    rge = None
+    if 'range' in i:
+        rge = i['range']
+
+    dscr = None
+    if 'description' in i:
+        dscr = i['description']
+
+    inp = (id, 1, None, i['nethysUrl'], i['name'], i['source'], i['level'], dscr, rge)
+    try:
+        conn.execute(stmt, inp)
+    except:
+        print("Error")
+    conn.commit()
 
 
 if __name__ == "__main__":
