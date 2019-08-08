@@ -28,6 +28,7 @@ CREATE TABLE armor (
 	sources_pages TEXT,
 	armor_category_id INTEGER NOT NULL,
 	short_name TEXT NOT NULL,
+  item_level INTEGER,
 	price_text TEXT NOT NULL,
 	price_gp FLOAT NOT NULL,
 	ac_bonus INTEGER NOT NULL,
