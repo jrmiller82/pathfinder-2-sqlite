@@ -24,21 +24,21 @@ CREATE TABLE spellschools (
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
 );
 
-
+-- TODO eventually once data is finalized, lock down variables as NOT NULL /
+-- UNIQUE as sanity requires :)
 CREATE TABLE spells (
   spells_id INTEGER PRIMARY KEY,
   sources_id INTEGER NOT NULL,
   sources_pages TEXT,
-  nethysurl TEXT,
   name TEXT NOT NULL UNIQUE,
-  source TEXT,
-  level INTEGER NOT NULL,
+  level INTEGER,
   trigger TEXT,
-  descr TEXT NOT NULL,
+  descr TEXT,
   spelltypes_id INTEGER,
   range_text TEXT,
   range_ft INTEGER,
   targets TEXT,
+  nethysurl TEXT,
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id),
   FOREIGN KEY (spelltypes_id) REFERENCES spelltypes(spelltypes_id)
 );

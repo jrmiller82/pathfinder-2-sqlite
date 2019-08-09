@@ -33,10 +33,41 @@ def main():
     id = 0
     for i in sorted_dicts:
         id += 1
-        do_sql(i, id, conn)
+        # insert basics of a spell
+        do_basic_sql(i, id, conn)
+        do_range_numbers(i,id,conn)
+        # TODO do all the traits, FK stuff etc...
 
-# TODO write this function after sql schema drafted
-def do_sql(i, id, conn):
+def do_range_numbers(i, id, conn):
+    # no need to do range 
+    if 'range' not in i:
+        return
+    rg = -1
+    # convert range_text to an integer representation
+    if i['range'] == 'touch':
+        rg = 0
+    elif i['range'] == 'planetary':
+        rg = 999999999
+    # is the only one in CRB with emanation 40' from current scraping
+    elif i['name'] == 'Repulsion':
+        rg = 40
+    else:
+        # DO SPLITS
+        splits = i['range'].split(' ')
+        # print(splits)
+        rg = splits[0]
+    inp = (rg, id)
+    stmt = "UPDATE spells SET range_ft=? WHERE spells_id=?"
+    try:
+        conn.execute(stmt, inp)
+    except:
+        print("Error updating range_ft")
+    else:
+        conn.commit()
+        # print("Successfully updated range_ft")
+
+
+def do_basic_sql(i, id, conn):
     print("Doing spell id #{}: {}".format(id, i['name']))
     stmt = """INSERT INTO spells (
     spells_id,
@@ -44,11 +75,10 @@ def do_sql(i, id, conn):
     sources_pages,
     nethysurl,
     name,
-    source,
     level,
     descr,
     range_text)
-    VALUES (?,?,?,?,?,?,?,?,?)"""
+    VALUES (?,?,?,?,?,?,?,?)"""
 
     rge = None
     if 'range' in i:
@@ -58,12 +88,14 @@ def do_sql(i, id, conn):
     if 'description' in i:
         dscr = i['description']
 
-    inp = (id, 1, None, i['nethysUrl'], i['name'], i['source'], i['level'], dscr, rge)
+    inp = (id, 1, i['source'], i['nethysUrl'], i['name'], i['level'], dscr, rge)
     try:
         conn.execute(stmt, inp)
     except:
-        print("Error")
-    conn.commit()
+        print("Error inserting row")
+    else:
+        conn.commit()
+        # print("Successfully inserted row")
 
 
 if __name__ == "__main__":
