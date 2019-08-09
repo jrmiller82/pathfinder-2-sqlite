@@ -30,6 +30,15 @@ def main():
     ## Get database connection
     conn = sqlite3.connect('../../pf2.db') 
 
+    # load in ids for traits from traits table so we only call this once
+    # instead of every spell
+    stmt = "SELECT trait_id, short_name FROM traits"
+    c = conn.cursor()
+    c.execute(stmt)
+    traits = c.fetchall()
+    # print(traits)
+
+
     id = 0
     for i in sorted_dicts:
         id += 1
@@ -37,7 +46,38 @@ def main():
         do_basic_sql(i, id, conn)
         do_range_numbers(i,id,conn)
         do_sources_pages(i,id,conn)
+        do_spell_traits(i,id,conn,traits)
         # TODO do all the traits, FK stuff etc...
+
+def do_spell_traits(i, id, conn, traits):
+
+    # get list of traits from the json and capitalize first letter
+    traits_json = []
+    for item in i['traits']:
+        traits_json.append(item.capitalize())
+
+    trait_ids =[]
+    for j in traits_json:
+        for k in traits:
+            if j == k[1]:
+                trait_ids.append(k[0])
+    # print(trait_ids)
+
+    inp = []
+    for j in trait_ids:
+        inp.append((id,j))
+    # print(inp)
+
+    # insert into sql
+    stmt = "INSERT OR REPLACE INTO spells_traits (spells_id, traits_id) VALUES (?,?)"
+    try:
+        conn.executemany(stmt, inp)
+    except:
+        print("Error updating traits")
+    else:
+        conn.commit()
+
+
 
 def do_sources_pages(i, id, conn):
     if 'source' not in i:

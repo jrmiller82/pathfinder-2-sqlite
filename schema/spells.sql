@@ -28,8 +28,8 @@ CREATE TABLE spellschools (
 -- UNIQUE as sanity requires :)
 CREATE TABLE spells (
   spells_id INTEGER PRIMARY KEY,
-  sources_id INTEGER NOT NULL, -- manually entered right now
-  sources_pages TEXT, -- TODO convert to our format in spells.py
+  sources_id INTEGER NOT NULL, -- generated in spells.py from scraped data
+  sources_pages TEXT, -- generated in spells.py from scraped data
   name TEXT NOT NULL UNIQUE, -- scraped from github repo
   level INTEGER, -- scraped from github repo
   trigger TEXT, -- TODO in spells.py
@@ -55,6 +55,7 @@ CREATE TABLE spells_traits (
 	id INTEGER PRIMARY KEY,
 	spells_id INTEGER NOT NULL,
 	traits_id INTEGER NOT NULL,
+  UNIQUE(spells_id, traits_id),
 	FOREIGN KEY (spells_id) REFERENCES spells(spells_id),
 	FOREIGN KEY (traits_id) REFERENCES traits(traits_id)
 );
