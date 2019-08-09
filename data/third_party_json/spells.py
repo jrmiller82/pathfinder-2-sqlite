@@ -42,7 +42,6 @@ def main():
 def do_sources_pages(i, id, conn):
     if 'source' not in i:
         return
-    print(i)
 
     res = ''
     source_id = 0
