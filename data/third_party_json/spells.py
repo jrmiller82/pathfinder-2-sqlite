@@ -36,7 +36,33 @@ def main():
         # insert basics of a spell
         do_basic_sql(i, id, conn)
         do_range_numbers(i,id,conn)
+        do_sources_pages(i,id,conn)
         # TODO do all the traits, FK stuff etc...
+
+def do_sources_pages(i, id, conn):
+    if 'source' not in i:
+        return
+    print(i)
+
+    res = ''
+    source_id = 0
+    # Do Core Rulebook branch
+    if "Core Rulebook" in i['source']:
+        res = i['source'].replace('Core Rulebook pg.','').strip()
+        source_id = 1
+
+    stmt = "UPDATE spells SET sources_id=?, sources_pages=? WHERE spells_id=?"
+    inp = (source_id, res, id)
+
+    try:
+        conn.execute(stmt, inp)
+    except:
+        print("Error updating sources")
+    else:
+        conn.commit()
+
+
+
 
 def do_range_numbers(i, id, conn):
     # no need to do range 

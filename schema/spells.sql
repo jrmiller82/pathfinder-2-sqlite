@@ -28,17 +28,17 @@ CREATE TABLE spellschools (
 -- UNIQUE as sanity requires :)
 CREATE TABLE spells (
   spells_id INTEGER PRIMARY KEY,
-  sources_id INTEGER NOT NULL,
-  sources_pages TEXT,
-  name TEXT NOT NULL UNIQUE,
-  level INTEGER,
-  trigger TEXT,
-  descr TEXT,
-  spelltypes_id INTEGER,
-  range_text TEXT,
-  range_ft INTEGER,
-  targets TEXT,
-  nethysurl TEXT,
+  sources_id INTEGER NOT NULL, -- manually entered right now
+  sources_pages TEXT, -- TODO convert to our format in spells.py
+  name TEXT NOT NULL UNIQUE, -- scraped from github repo
+  level INTEGER, -- scraped from github repo
+  trigger TEXT, -- TODO in spells.py
+  descr TEXT, -- scraped from github repo
+  spelltypes_id INTEGER, -- TODO in spells.py
+  range_text TEXT, -- scraped from github repo
+  range_ft INTEGER, -- generated from text in spells.py
+  targets TEXT,  -- TODO in spells.py
+  nethysurl TEXT, -- scraped from github repo
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id),
   FOREIGN KEY (spelltypes_id) REFERENCES spelltypes(spelltypes_id)
 );
