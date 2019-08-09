@@ -146,9 +146,7 @@ The following text is the property of Wizards of the Coast, Inc. and is Copyrigh
   - System Reference Document. Copyright 2000. Wizards of the Coast, Inc;
     Authors: Jonathan Tweet, Monte Cook, Skip Williams, based on material by E.
     Gary Gygax and Dave Arneson.
-<!-- 
   - The Archives of Nethys. Copyright 2010, Blake Davis.
--->
   - Age of Ashes Player's Guide
     - Age of Ashes Player’s Guide © 2019, Paizo Inc.; Authors: James Jacobs, with Amanda Hamon.
   - Bestiary
