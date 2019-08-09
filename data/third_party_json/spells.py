@@ -38,6 +38,14 @@ def main():
     traits = c.fetchall()
     # print(traits)
 
+    # load in ids for spelltypes from spelltypes table so we only call this once
+    # instead of every spell
+    stmt = "SELECT spelltypes_id, name FROM spelltypes"
+    c = conn.cursor()
+    c.execute(stmt)
+    stypes = c.fetchall()
+    # print(traits)
+
 
     id = 0
     for i in sorted_dicts:
@@ -47,7 +55,26 @@ def main():
         do_range_numbers(i,id,conn)
         do_sources_pages(i,id,conn)
         do_spell_traits(i,id,conn,traits)
+        do_spell_types(i,id,conn,stypes)
         # TODO do all the traits, FK stuff etc...
+
+def do_spell_types(i,id,conn,stypes):
+    res = 0
+    for j in stypes:
+        if i['type'] == j[1]:
+            res = j[0]
+    print(id , res)
+
+    inp = (res, id)
+
+    stmt = "UPDATE spells SET spelltypes_id=? WHERE spells_id=?"
+
+    try:
+        conn.execute(stmt, inp)
+    except:
+        print("Error updating spell types")
+    else:
+        conn.commit()
 
 def do_spell_traits(i, id, conn, traits):
 

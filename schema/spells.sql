@@ -34,7 +34,7 @@ CREATE TABLE spells (
   level INTEGER, -- scraped from github repo
   trigger TEXT, -- TODO in spells.py
   descr TEXT, -- scraped from github repo
-  spelltypes_id INTEGER, -- TODO in spells.py
+  spelltypes_id INTEGER, -- generated from spells.py
   range_text TEXT, -- scraped from github repo
   range_ft INTEGER, -- generated from text in spells.py
   targets TEXT,  -- TODO in spells.py
