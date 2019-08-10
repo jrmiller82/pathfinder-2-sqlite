@@ -15,6 +15,11 @@ CREATE TABLE spelltraditions (
   name TEXT NOT NULL UNIQUE
 );
 
+CREATE TABLE spelltargets (
+  spelltargets_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE
+);
+
 CREATE TABLE spellschools (
   spellschools_id INTEGER PRIMARY KEY,
   sources_id INTEGER NOT NULL,
@@ -41,10 +46,11 @@ CREATE TABLE spells (
   range_text TEXT, -- scraped from github repo
   range_ft INTEGER, -- generated from text in spells.py
   area_text TEXT, -- TODO need to figure out some sort of programmatic representation for this too
-  targets TEXT,  -- TODO in spells.py
+  spelltargets_id INTEGER,
   nethysurl TEXT, -- scraped from github repo
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id),
-  FOREIGN KEY (spelltypes_id) REFERENCES spelltypes(spelltypes_id)
+  FOREIGN KEY (spelltypes_id) REFERENCES spelltypes(spelltypes_id),
+  FOREIGN KEY (spelltargets_id) REFERENCES spelltargets(spelltargets_id)
 );
 
 CREATE TABLE spells_spellcomponents(

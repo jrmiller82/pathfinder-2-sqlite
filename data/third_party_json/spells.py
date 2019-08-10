@@ -68,6 +68,34 @@ def main():
     ### print(len(trigs))
     ### print(len(set(trigs)))
 
+    # List the various targets and see if there are any duplicates
+    ## YES, there are MANY duplicates, so we need a separate targets table
+    targs = []
+    for i in sorted_dicts:
+        if 'targets' in i:
+            targs.append(i['targets'])
+    dedup_targs = set(targs)
+    sorted_targs = sorted(dedup_targs)
+    inp_targs = []
+    id = 0
+    for i in sorted_targs:
+        id += 1
+        inp_targs.append((id,i))
+    stmt = "INSERT INTO spelltargets (spelltargets_id, name) VALUES (?,?)"
+    try:
+        conn.executemany(stmt,inp_targs)
+    except:
+        print("Error creating targets")
+    else:
+        conn.commit()
+
+
+
+
+    # print(sorted(targs))
+    # print(len(targs))
+    # print(len(set(targs)))
+
 
     id = 0
     for i in sorted_dicts:
