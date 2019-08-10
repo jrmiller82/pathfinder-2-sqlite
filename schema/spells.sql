@@ -32,7 +32,7 @@ CREATE TABLE spells (
   sources_pages TEXT, -- generated in spells.py from scraped data
   name TEXT NOT NULL UNIQUE, -- scraped from github repo
   level INTEGER, -- scraped from github repo
-  trigger TEXT, -- TODO in spells.py
+  trigger TEXT, -- scraped from spells.py NOTE, there are no duplicate triggers as of CRB, so not bothering with a separate spell triggers table at this time
   descr TEXT, -- scraped from github repo
   spelltypes_id INTEGER, -- generated from spells.py
   range_text TEXT, -- scraped from github repo

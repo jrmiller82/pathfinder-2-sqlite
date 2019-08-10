@@ -46,17 +46,25 @@ def main():
     stypes = c.fetchall()
     # print(traits)
 
+    # List the various triggers and see if there are any duplicates
+    # THERE ARE NOT IN THE CRB SO NOT BOTHERING WITH SEPARATE TRIGGERS TABLE YET
+    ### trigs = []
+    ### for i in sorted_dicts:
+    ###     if 'trigger' in i:
+    ###         trigs.append(i['trigger'])
+    ### print(sorted(trigs))
+    ### print(len(trigs))
+    ### print(len(set(trigs)))
+
 
     id = 0
     for i in sorted_dicts:
         id += 1
-        # insert basics of a spell
         do_basic_sql(i, id, conn)
         do_range_numbers(i,id,conn)
         do_sources_pages(i,id,conn)
         do_spell_traits(i,id,conn,traits)
         do_spell_types(i,id,conn,stypes)
-        # TODO do all the traits, FK stuff etc...
 
 def do_spell_types(i,id,conn,stypes):
     res = 0
@@ -169,8 +177,9 @@ def do_basic_sql(i, id, conn):
     name,
     level,
     descr,
-    range_text)
-    VALUES (?,?,?,?,?,?,?,?)"""
+    range_text,
+    trigger)
+    VALUES (?,?,?,?,?,?,?,?,?)"""
 
     rge = None
     if 'range' in i:
@@ -180,7 +189,11 @@ def do_basic_sql(i, id, conn):
     if 'description' in i:
         dscr = i['description']
 
-    inp = (id, 1, i['source'], i['nethysUrl'], i['name'], i['level'], dscr, rge)
+    trg = None
+    if 'trigger' in i:
+        trg = i['trigger']
+
+    inp = (id, 1, i['source'], i['nethysUrl'], i['name'], i['level'], dscr, rge, trg)
     try:
         conn.execute(stmt, inp)
     except:
