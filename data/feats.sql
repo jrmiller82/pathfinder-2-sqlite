@@ -7,7 +7,17 @@ VALUES
   (3, NULL, 'Ancestry Level 9'),
   (4, NULL, 'Ancestry Level 13'),
   (5, 3, 'Feat: Rock Runner'),
-  (6, 2, 'Feat: Dwarven Weapon Familiarity');
+  (6, 2, 'Feat: Dwarven Weapon Familiarity'),
+  (7, NULL, 'Other: At least 100 years old'),
+  (8, 14, 'Feat: Elven Weapon Familiarity'),
+  (9, 12, 'Feat: Ancestral Longevity'),
+  (10, 22, 'Feat: Expert Longevity'),
+  (11, 26, 'Feat: Burrow Elocutionist'),
+  (12, NULL, 'Feature: Focus Pool'),
+  (13, NULL, 'Other: At least one innate spell from a Gnome heritage or ancestry feat that shares a tradition with at least one of your focus spells'),
+  (14, 30, 'Feat: Gnome Weapon Familiarity'),
+  (15, NULL, 'Other: At least one primal innate spell'),
+  (16, 43, 'Feat: Goblin Weapon Familiarity');
 
 INSERT INTO feats (
   feat_id,
@@ -859,14 +869,82 @@ VALUES
   -- Prereqs: Feats
   (7,5), -- Boulder Roll
   (8,6), -- Dwarven Weapon Cunning
-  (11,6); -- Dwarven Weapon Expertise
+  (11,6), -- Dwarven Weapon Expertise
 -- Elven Feats
   --PreReqs: Level
+  (12, 1), -- Ancestral Longevity
+  (13, 1), -- Elven Lore
+  (14, 1), -- Elven Weapon Familiarity
+  (15, 1), -- Forlorn
+  (16, 1), -- Nimble Elf
+  (17, 1), -- Otherworldly Magic
+  (18, 1), -- Unwavering Mien
+  (19, 2), -- Ageless Patience
+  (20, 2), -- Elven Weapon Elegance
+  (21, 3), -- Elf Step
+  (22, 3), -- Expert Longevity
+  (23, 4), -- Universal Longevity
+  (24, 4), -- Elven Weapon Expertise
   --PreReqs: Feats
+  (20, 8), -- Elven Weapon Elegance
+  (22, 9), -- Expert Longevity
+  (23, 10), -- Universal Longevity
+  (24, 9), -- Elven Weapon Expertise
   --PreReqs: Other
+  (12, 7), -- Ancestral Longevity
+-- Gnome Feats
+  --PreReqs: Level
+  (25, 1), -- Animal Accomplice
+  (26, 1), -- Burrow Elocutionist
+  (27, 1), -- Fey Fellowship
+  (28, 1), -- First World Magic
+  (29, 1), -- Gnome Obsession
+  (30, 1), -- Gnome Weapon Familiarity
+  (31, 1), -- Illusion Sense
+  (32, 2), -- Animal Elocutionist
+  (33, 2), -- Energized Font
+  (34, 2), -- Gnome Weapon Innovator
+  (35, 3), -- First World Adept
+  (36, 3), -- Vivacious Conduit
+  (37, 4), -- Gnome Weapon Expertise
+  --PreReqs: Feats
+  (32, 11), -- Animal Elocutionist
+  (34, 14), -- Gnome Weapon Innovator
+  (37, 14), -- Gnome Weapon Expertise
+  --PreReqs: Other
+  (33, 12), -- Energized Font
+  (33, 13), -- Energized Font
+  (35, 15), -- First World Adept
+-- Goblin Feats
+  --PreReqs: Level
+  (38, 1), -- Burn It!
+  (39, 1), -- City Scavenger
+  (40, 1), -- Goblin Lore
+  (41, 1), -- Goblin Scuttle
+  (42, 1), -- Goblin Song
+  (43, 1), -- Goblin Weapon Familiarity
+  (44, 1), -- Junk Tinker
+  (45, 1), -- Rough Rider
+  (46, 1), -- Very Sneaky
+  (47, 2), -- Goblin Weapon Frenzy
+  (48, 3), -- Cave Climber
+  (49, 3), -- Skittering Scuttle
+  (50, 4), -- Goblin Weapon Expertise
+  (51, 4), -- Very, Very Sneaky
+  --PreReqs: Feats
+  (47, 16), -- Goblin Weapon Frenzy
+  (50, 16); -- Goblin Weapon Expertise
+-- Halfling Feats
+  --PreReqs: Level
+
+  --PreReqs: Feats
+
+  --PreReqs: Other
+
+
 INSERT INTO feats_traits (feat_id, trait_id)
 VALUES
-  -- Dwarf Ancestry Trait
+  -- Dwarf Ancestry Traits
   (1, 79), -- Dwarven Lore
   (2, 79), -- Dwarven Weapon Familiarity
   (3, 79), -- Rock Runner
@@ -877,5 +955,48 @@ VALUES
   (8, 79), -- Dwarven Weapon Cunning
   (9, 79), -- Mountain's Stoutness
   (10, 79), -- Stonewalker
-  (11, 79); -- Dwarven Weapon Expertise
+  (11, 79), -- Dwarven Weapon Expertise
+  -- Elven Ancestry Traits
+  (12, 80),
+  (13, 80),
+  (14, 80),
+  (15, 80),
+  (16, 80),
+  (17, 80),
+  (18, 80),
+  (19, 80),
+  (20, 80),
+  (21, 80),
+  (22, 80),
+  (23, 80),
+  (24, 80),
+  -- Gnome Ancestry Traits
+  (25, 81), -- Animal Accomplice
+  (26, 81), -- Burrow Elocutionist
+  (27, 81), -- Fey Fellowship
+  (28, 81), -- First World Magic
+  (29, 81), -- Gnome Obsession
+  (30, 81), -- Gnome Weapon Familiarity
+  (31, 81), -- Illusion Sense
+  (32, 81), -- Animal Elocutionist
+  (33, 81), -- Energized Font
+  (34, 81), -- Gnome Weapon Innovator
+  (35, 81), -- First World Adept
+  (36, 81), -- Vivacious Conduit
+  (37, 81), -- Gnome Weapon Expertise
+  -- Goblin Ancestry Traits
+  (38, 82), -- Burn It!
+  (39, 82), -- City Scavenger
+  (40, 82), -- Goblin Lore
+  (41, 82), -- Goblin Scuttle
+  (42, 82), -- Goblin Song
+  (43, 82), -- Goblin Weapon Familiarity
+  (44, 82), -- Junk Tinker
+  (45, 82), -- Rough Rider
+  (46, 82), -- Very Sneaky
+  (47, 82), -- Goblin Weapon Frenzy
+  (48, 82), -- Cave Climber
+  (49, 82), -- Skittering Scuttle
+  (50, 82), -- Goblin Weapon Expertise
+  (51, 82); -- Very, Very Sneaky
 
