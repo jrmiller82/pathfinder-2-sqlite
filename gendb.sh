@@ -8,6 +8,7 @@ sqlite3 pf2.db < schema/bulk.sql
 sqlite3 pf2.db < schema/sizes.sql
 sqlite3 pf2.db < schema/langs.sql
 sqlite3 pf2.db < schema/traits.sql
+sqlite3 pf2.db < schema/spells.sql
 sqlite3 pf2.db < schema/feats.sql
 sqlite3 pf2.db < schema/senses.sql
 sqlite3 pf2.db < schema/ancestries.sql
@@ -22,9 +23,20 @@ sqlite3 pf2.db < data/senses.sql
 sqlite3 pf2.db < data/sizes.sql
 sqlite3 pf2.db < data/langs.sql
 sqlite3 pf2.db < data/traits.sql
+sqlite3 pf2.db < data/spells.sql
 sqlite3 pf2.db < data/feats.sql
 sqlite3 pf2.db < data/ancestries.sql
 sqlite3 pf2.db < data/armor.sql
 sqlite3 pf2.db < data/heritages.sql
+# Comment out the following three lines if you don't want to generate the spell data.
+cd data/third_party_json
+python3 spells.py
+cd ../..
+
+# TODO Eventually we will stop relying on the spells.py script and I will have
+# the actual .sql files for the spell data; I am waiting to see if the
+# third-party source improves the data in the next few weeks. If not, we'll
+# "divorce" from that data, dump to .sql, and manually manipulate going
+# forward. 
 
 
