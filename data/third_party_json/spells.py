@@ -112,7 +112,6 @@ def main():
         do_spell_types(i,id,conn,stypes)
         do_spell_components(i,id,conn,ctypes)
         do_spell_targets(i,id,conn,ttypes)
-        # TODO spell targets
 
 def do_spell_components(i,id,conn,ctypes):
     res = None
