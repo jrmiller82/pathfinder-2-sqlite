@@ -44,7 +44,15 @@ def main():
     c = conn.cursor()
     c.execute(stmt)
     stypes = c.fetchall()
-    # print(traits)
+
+    # TODO FIX THIS FOR SPELL COMPONENTS
+
+    # load in ids for spelltypes from spelltypes table so we only call this once
+    # instead of every spell
+    stmt = "SELECT spelltypes_id, name FROM spelltypes"
+    c = conn.cursor()
+    c.execute(stmt)
+    stypes = c.fetchall()
 
     # List the various triggers and see if there are any duplicates
     # THERE ARE NOT IN THE CRB SO NOT BOTHERING WITH SEPARATE TRIGGERS TABLE YET
@@ -65,6 +73,8 @@ def main():
         do_sources_pages(i,id,conn)
         do_spell_traits(i,id,conn,traits)
         do_spell_types(i,id,conn,stypes)
+        # TODO spell components
+        # TODO spell targets
 
 def do_spell_types(i,id,conn,stypes):
     res = 0
@@ -178,8 +188,9 @@ def do_basic_sql(i, id, conn):
     level,
     descr,
     range_text,
-    trigger)
-    VALUES (?,?,?,?,?,?,?,?,?)"""
+    trigger,
+    area_text)
+    VALUES (?,?,?,?,?,?,?,?,?,?)"""
 
     rge = None
     if 'range' in i:
@@ -193,7 +204,11 @@ def do_basic_sql(i, id, conn):
     if 'trigger' in i:
         trg = i['trigger']
 
-    inp = (id, 1, i['source'], i['nethysUrl'], i['name'], i['level'], dscr, rge, trg)
+    area = None
+    if 'area' in i:
+        area = i['area']
+
+    inp = (id, 1, i['source'], i['nethysUrl'], i['name'], i['level'], dscr, rge, trg, area)
     try:
         conn.execute(stmt, inp)
     except:
