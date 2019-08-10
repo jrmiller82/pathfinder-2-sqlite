@@ -1,105 +1,106 @@
-Name,Level,Price,Bulk
-Holly and Mistletoe,,,
-Bedroll,,1 cp,L
-Candle,,1 cp,
-Chalk,,1 cp,
-Mug,,1 cp,
-Oil,,1 cp,
-Piton,,1 cp,
-Sack,,1 cp,L
-Sheath,,1 cp,
-Ten-Foot Pole,,1 cp,1
-Torch,,1 cp,L
-Soap,,2 cp,
-Ladder,,3 cp,3
-Belt Pouch,,4 cp,
-Flint and Steel,,5 cp,
-Vial,,5 cp,
-Waterskin,,5 cp,L
-Signal Whistle,,8 cp,
-Backpack,,1 sp,
-Bandolier,,1 sp,
-Basic Crafter's Book,,1 sp,L
-Clothing (Explorer's),,1 sp,L
-Clothing (Oridinary),,1 sp,
-Disguise Kit (Replacement Cosmetics),,1 sp,
-Grappling Hook,,1 sp,L
-Hammer,,1 sp,L
-Religious Symbol (Wooden),,1 sp,L
-Satchel,,1 sp,
-Scroll Case,,1 sp,
-Writing Set (Extra Ink and Paper),,1 sp,
-Lock (Poor),,2 sp,
-Merchant's Scale,,2 sp,L
-Saddlebags,,2 sp,
-Caltrops,,3 sp,L
-Manacles (Poor),,3 sp,
-Thieves' Tools (Replacement Picks),,3 sp,
-Clothing (Winter),,4 sp,L
-Rations,,4 sp,L
-Tool (Short),,4 sp,L
-Climbing Kit,,5 sp,1
-Crowbar,,5 sp,L
-Material Component Pouch,,5 sp,L
-Rope,,5 sp,L
-Chest,,6 sp,2
-Adventurer's Pack,,7 sp,2
-Lantern (Hooded),,7 sp,L
-Fishing Tackle,,8 sp,1
-Musical Instrument (Handheld),,8 sp,1
-Tent (Pup),,8 sp,L
-Compass,,1 gp,L
-Cookware,,1 gp,2
-Formula Book (Blank),,1 gp,1
-Lantern (Bull's-Eye),,1 gp,1
-Mirror,,1 gp,
-Religious Text,,1 gp,L
-Spellbook (Blank),,1 gp,1
-Tool (Long),,1 gp,1
-Writing Set,,1 gp,L
-Clothing (Fine),,2 gp,L
-Disguise Kit,,2 gp,L
-Musical Instrument (Heavy),,2 gp,16
-Religious Symbol (Silver),,2 gp,L
-Repair Kit,,2 gp,1
-Hourglass,,3 gp,L
-Thieves' Tools,,3 gp,L
-Artisan's Tools,,4 gp,2
-Chain,,4 gp,1
-Tack,,4 gp,1
-Alchemist's Tools,,5 gp,2
-Healer's Tools,,5 gp,1
-Snare Kit,,5 gp,2
-Tent (Four-Person),,5 gp,1
-Spyglass,,20 gp,L
-Magnifying Glass,,40 gp,
-Lock (Simple),1,2 gp,
-Manacles (Simple),1,3 gp,
-Tent (Pavilion),2,40 gp,12
-Disguise Kit (Elite Cosmetics),3,5 sp,
-Thieve's Tools (Infiltrator Picks),3,3 gp,
-Scholarly Journal,3,6 gp,L
-Survey Map,3,10 gp,L
-Lock (Average),3,15 gp,
-Compass (Lensatic),3,20 gp,L
-Crowbar (Levered),3,20 gp,L
-Fishing Tackle (Professional),3,20 gp,1
-Manacles (Average),3,20 gp,
-Repair Kit (Superb),3,25 gp,1
-Scholarly Journal (Compendium),3,30 gp,L
-Climbing Kit (Extreme),3,40 gp,1
-Disguise Kit (Elite),3,40 gp,L
-Artisan's Tools (Sterling),3,50 gp,2
-Healer's Tools (Expanded),3,50 gp,1
-Musical Instrument (Virtuoso Handheld),3,50 gp,1
-Survey Map (Atlas),3,50 gp,L
-Thieve's Tools (Infiltrator),3,50 gp,L
-Alchemist's Tools (Expanded),3,55 gp,2
-Clothing (High-Fashion Fine),3,55 gp,L
-Snare Kit (Specialist),3,55 gp,2
-Musical Instrument (Virtuoso Heavy),3,100 gp,16
-Spyglass (Fine),4,80 gp,L
-Lock (Good),9,200 gp,
-Manacles (Good),9,250 gp,
-Lock (Superior),17,"4,500 gp",
-Manacles (Superior),17,"5,000 gp",
+,Name,Level,Price,Bulk,description
+0,Holly and Mistletoe,0,,,"Plants of supernatural significance provide a primal focus for primal spellcasters, such as druids, when using certain abilities and casting some spells. A bundle of holly and mistletoe must be held in one hand to use it. Other primal foci exist for druids focused on other aspects of nature."
+1,Bedroll,0,1 cp,L,
+2,Candle,0,1 cp,,A lit candle sheds dim light in a 10-foot radius.
+3,Chalk,0,1 cp,,
+4,Mug,0,1 cp,,
+5,Oil,0,1 cp,,"You can use oil to fuel lanterns, but you can also set a pint of oil aflame and throw it. You must first spend an Interact action preparing the oil, then throw it with another action as a ranged attack. If you hit, it splatters on the creature or in a single 5-foot square you target. You must succeed at a DC 10 flat check for the oil to ignite successfully when it hits. If the oil ignites, the target takes 1d6 fire damage."
+6,Piton,0,1 cp,,"These small spikes can be used as anchors to make climbing easier. To affix a piton, you must hold it in one hand and use a hammer to drive it in with your other hand. You can attach a rope to the hammered piton so that you don’t fall all the way to the ground on a critical failure while Climbing."
+7,Sack,0,1 cp,L,"A sack can hold up to 8 Bulk worth of items. A sack containing 2 Bulk or less can be worn on the body, usually tucked into a belt. You can carry a sack with one hand, but must use two hands to transfer items in and out."
+8,Sheath,0,1 cp,,A sheath or scabbard lets you easily carry a weapon on your person.
+9,Ten-Foot Pole,0,1 cp,1,"When wielding this long pole, you can use Seek to search a square up to 10 feet away. The pole is not sturdy enough to use as a weapon."
+10,Torch,0,1 cp,L,A torch sheds bright light in a 20-foot radius (and dim light to the next 20 feet). It can be used as an improvised weapon that deals 1d4 bludgeoning damage plus 1 fire damage.
+11,Soap,0,2 cp,,
+12,Ladder,0,3 cp,3,
+13,Belt Pouch,0,4 cp,,A belt pouch holds up to four items of light�Bulk.
+14,Flint and Steel,0,5 cp,,"Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time-consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer."
+15,Vial,0,5 cp,,A simple glass vial holds up to 1 ounce of liquid.
+16,Waterskin,0,5 cp,L,"When it's full, a waterskin has 1 Bulk and contains roughly 1 day's worth of water for a Small or Medium creature."
+17,Signal Whistle,0,8 cp,,"When sounded, a signal whistle can be heard clearly up to half a mile away across open terrain."
+18,Backpack,0,1 sp,,"A backpack holds up to 4 Bulk of items. If you're carrying or stowing the pack rather than wearing it on your back, its bulk is light instead of negligible."
+19,Bandolier,0,1 sp,,"A bandolier holds up to eight items of light Bulk within easy reach and is usually used for alchemical items or potions. If you are carrying or stowing a bandolier rather than wearing it around your chest, it has light Bulk instead of negligible. A bandolier can be dedicated to a full set of tools, such as healer's tools, allowing you to draw the tools as part of the action that requires them."
+20,Basic Crafter's Book,0,1 sp,L,This book contains the formulas (page 293) for Crafting the common items in this chapter.
+21,Clothing (Explorer's),0,1 sp,L,
+22,Clothing (Oridinary),0,1 sp,,
+23,Disguise Kit (Replacement Cosmetics),0,1 sp,,
+24,Grappling Hook,0,1 sp,L,"You can throw a grappling hook with a rope tied to it to make a climb easier. To anchor a grappling hook, make an attack roll with the secret trait against a DC depending on the target, typically at least DC 20. On a success, your hook has a firm hold, but on a critical failure, the hook seems like it will hold but actually falls when you're partway up."
+25,Hammer,0,1 sp,L,
+26,Religious Symbol (Wooden),0,1 sp,L,
+27,Satchel,0,1 sp,,"A satchel can hold up to 2 Bulk worth of items. If you are carrying or stowing a satchel rather than wearing it over your shoulder, it counts as light Bulk instead of negligible."
+28,Scroll Case,0,1 sp,,"Scrolls, maps, and other rolled documents are stored in scroll cases for safe transport."
+29,Writing Set (Extra Ink and Paper),0,1 sp,,
+30,Lock (Poor),0,2 sp,,
+31,Merchant's Scale,0,2 sp,L,
+32,Saddlebags,0,2 sp,,"Saddlebags come in a pair. Each can hold up to 3 Bulk of items. The Bulk value given is for saddlebags worn by a mount. If you are carrying or stowing saddlebags, they count as 1 Bulk instead of light Bulk."
+33,Caltrops,0,3 sp,L,"These four-pronged metal spikes can cause damage to a creature's feet. You can scatter caltrops in an empty square adjacent to you with an Interact action. The first creature that moves into that square must succeed at a DC 14 Acrobatics check or take 1d4 piercing damage and 1 persistent bleed damage. A creature taking persistent bleed damage from caltrops takes a 5-foot penalty to its Speed. Spending an Interact action to pluck the caltrops free reduces the DC to stop the bleeding. Once a creature takes damage from caltrops, enough caltrops are ruined that other creatures moving into the square are safe. Deployed caltrops can be salvaged and reused if no creatures took damage from them. Otherwise, enough caltrops are ruined that they can't be salvaged."
+34,Manacles (Poor),0,3 sp,,
+35,Thieves' Tools (Replacement Picks),0,3 sp,,
+36,Clothing (Winter),0,4 sp,L,
+37,Rations,0,4 sp,L,
+38,Tool (Short),0,4 sp,L,
+39,Climbing Kit,0,5 sp,1,"This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a DC 5 flat check whenever you critically fail to prevent a fall. You gain a +1 item bonus to Athletics checks to Climb while using an extreme climbing kit. A single kit has only enough materials for one climber; each climber needs their own kit.Climbing KitItem 0Source Core Rulebook pg. 287Price 5 spHands 2; Bulk 1Climbing Kit (Extreme)Item 3Source Core Rulebook pg. 287Level 3; Price 40 gpHands 2; Bulk 1"
+40,Crowbar,0,5 sp,L,"When Forcing Open an object that doesn’t have an easy grip, a crowbar makes it easier to gain the necessary leverage. Without a crowbar, prying something open takes a –2 item penalty to the Athletics check to Force Open (similar to using a shoddy item). A levered crowbar grants you a +1 item bonus to Athletics checks to Force Open anything that can be pried open. CrowbarItem 0Source Core Rulebook pg. 290Price 5 spHands 2; Bulk LCrowbar (Levered)Item 3Source Core Rulebook pg. 290Level 3; Price 20 gpHands 2; Bulk L"
+41,Material Component Pouch,0,5 sp,L,"This pouch contains material components for those spells that require them. Though the components are used up over time, you can refill spent components during your daily preparations."
+42,Rope,0,5 sp,L,
+43,Chest,0,6 sp,2,A wooden chest can hold up to 8 Bulk of items.
+44,Adventurer's Pack,0,7 sp,2,"This item is the starter kit for an adventurer, containing the essential items for exploration and survival. The Bulk value is for the entire pack together, but see the descriptions of individual items as necessary. The pack contains the following items: backpack (containing the other goods), bedroll, two belt pouches, 10 pieces of chalk, flint and steel, 50 feet of rope, 2 weeks’ rations, soap, 5 torches, and a waterskin."
+45,Lantern (Hooded),0,7 sp,L,
+46,Fishing Tackle,0,8 sp,1,"This kit include a collapsible fishing pole, fishhooks, line, lures, and a fishing net. Professional fishing tackle grants a +1 item bonus to checks to fish.Fishing TackleItem 0Source Core Rulebook pg. 290Price 8 spHands 2; Bulk 1Fishing Tackle (Professional)Item 3Source Core Rulebook pg. 290Level 3; Price 20 gpHands 2; Bulk 1"
+47,Musical Instrument (Handheld),0,8 sp,1,
+48,Tent (Pup),0,8 sp,L,
+49,Compass,0,1 gp,L,"A compass helps you Sense Direction or navigate, provided you’re in a location with uniform magnetic fields. Without a compass, you take a –2 item penalty to these checks (similar to using a shoddy item). A lensatic compass gives you a +1 item bonus to these checks.CompassItem 0Source Core Rulebook pg. 290Price 1 gpHands 1; Bulk LCompass (Lensatic)Item 3Source Core Rulebook pg. 290Level 3; Price 20 gpHands 1; Bulk L"
+50,Cookware,0,1 gp,2,
+51,Formula Book (Blank),0,1 gp,1,"A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there’s no need for you to copy them into a specific book as long as you can keep them on hand to reference them."
+52,Lantern (Bull's-Eye),0,1 gp,1,
+53,Mirror,0,1 gp,,
+54,Religious Text,0,1 gp,L,"This manuscript contains scripture of a particular religion. Some divine spellcasters, such as clerics, can use a religious text as a divine focus to use certain abilities and cast some spells. A religious text must be held in one hand to use it."
+55,Spellbook (Blank),0,1 gp,1,"A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook."
+56,Tool (Long),0,1 gp,1,
+57,Writing Set,0,1 gp,L,"Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you’ve written a large amount, you can refill your kit with extra ink and paper.Writing SetItem 0Source Core Rulebook pg. 292Price 1 gpHands 2; Bulk LWriting Set (Extra Ink and Paper)Item 0Source Core Rulebook pg. 292Price 1 sp"
+58,Clothing (Fine),0,2 gp,L,
+59,Disguise Kit,0,2 gp,L,"This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. An elite disguise kit adds a +1 item bonus to relevant checks. If you’ve crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit.Disguise KitItem 0Source Core Rulebook pg. 290Price 2 gpHands 2; Bulk LDisguise Kit (Replacement Cosmetics)Item 0Source Core Rulebook pg. 290Price 1 spDisguise Kit (Elite)Item 3Source Core Rulebook pg. 290Level 3; Price 40 gpHands 2; Bulk LDisguise Kit (Elite Cosmetics)Item 3Source Core Rulebook pg. 290Level 3; Price 5 sp"
+60,Musical Instrument (Heavy),0,2 gp,16,
+61,Religious Symbol (Silver),0,2 gp,L,
+62,Repair Kit,0,2 gp,1,"A repair kit allows you to perform simple repairs while traveling. It contains a portable anvil, tongs, woodworking tools, a whetstone, and oils for conditioning leather and wood. You can use a repair kit to Repair items using the Crafting skill. A superb repair kit gives you a +1 item bonus to the check.Repair KitItem 0Source Core Rulebook pg. 291Price 2 gpHands 2; Bulk 1Repair Kit (Superb)Item 3Source Core Rulebook pg. 291Level 3; Price 25 gpHands 2; Bulk 1"
+63,Hourglass,0,3 gp,L,
+64,Thieves' Tools,0,3 gp,L,"You need thieves’ tools to Pick Locks or Disable Devices (of some types) using the Thievery skill. Infiltrator thieves’ tools add a +1 item bonus to checks to Pick Locks and Disable Devices. If your thieves’ tools are broken, you can repair them by replacing the lock picks with replacement picks appropriate to your tools; this doesn’t require using the Repair action.Thieves' ToolsItem 0Source Core Rulebook pg. 291Price 3 gpHands 2; Bulk LThieves' Tools (Replacement Picks)Item 0Source Core Rulebook pg. 291Price 3 spThieve's Tools (Infiltrator)Item 3Source Core Rulebook pg. 291Level 3; Price 50 gpHands 2; Bulk LThieve's Tools (Infiltrator Picks)Item 3Source Core Rulebook pg. 291Level 3; Price 3 gp"
+65,Artisan's Tools,0,4 gp,2,"You need these tools to create items from raw materials with the Craft skill. Sterling artisan’s tools give you a +1 item bonus to the check. Different sets are needed for different work, as determined by the GM; for example, blacksmith’s tools differ from woodworker’s tools.Artisan's ToolsItem 0Source Core Rulebook pg. 287Price 4 gpHands 2; Bulk 2Artisan's Tools (Sterling)Item 3Source Core Rulebook pg. 287Level 3; Price 50 gpHands 2; Bulk 2"
+66,Chain,0,4 gp,1,
+67,Tack,0,4 gp,1,"Tack includes all the gear required to outfit a riding animal, including a saddle, bit and bridle, and stirrups if necessary. Especially large or oddly shaped animals might require specialty saddles. These can be more expensive or hard to find, as determined by the GM. The Bulk value given is for tack worn by a creature. If carried, the Bulk increases to 2."
+68,Alchemist's Tools,0,5 gp,2,"These beakers and chemicals can be used to set up a mobile alchemical laboratory. Expanded alchemist’s tools give a +1 item bonus to Crafting checks to create alchemical items. When you carry the tools from place to place, you keep many of the components handy on your person, in pockets or bandoliers.Alchemist's ToolsItem 0Source Core Rulebook pg. 287Price 5 gpHands 2; Bulk 2Alchemist's Tools (Expanded)Item 3Source Core Rulebook pg. 287Level 3; Price 55 gpHands 2; Bulk 2"
+69,Healer's Tools,0,5 gp,1,"This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to Administer First Aid, Treat Disease, Treat Poison, or Treat Wounds. Expanded healer’s tools provide a +1 item bonus to such checks. When you carry the tools from place to place, you keep many of the components handy on your person, in pockets or bandoliers.Healer's ToolsItem 0Source Core Rulebook pg. 290Price 5 gpHands 2; Bulk 1Healer's Tools (Expanded)Item 3Source Core Rulebook pg. 290Level 3; Price 50 gpHands 2; Bulk 1"
+70,Snare Kit,0,5 gp,2,This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill. A specialist snare kit gives you a +1 item bonus to the check.Snare KitItem 0Source Core Rulebook pg. 291Price 5 gpHands 2; Bulk 2Snare Kit (Specialist)Item 3Source Core Rulebook pg. 291Level 3; Price 55 gpHands 2; Bulk 2
+71,Tent (Four-Person),0,5 gp,1,
+72,Spyglass,0,20 gp,L,A typical spyglass lets you see eight times farther than normal. A fine spyglass adds a +1 item bonus to Perception checks to notice details at a distance.SpyglassItem 0Source Core Rulebook pg. 291Price 20 gpHands 2; Bulk LSpyglass (Fine)Item 4Source Core Rulebook pg. 291Level 4; Price 80 gpHands 2; Bulk L
+73,Magnifying Glass,0,40 gp,,"This quality handheld lens gives you a +1 item bonus to Perception checks to notice minute details of documents, fabric, and the like."
+74,Lock (Simple),1,2 gp,,
+75,Manacles (Simple),1,3 gp,,
+76,Tent (Pavilion),2,40 gp,12,
+77,Disguise Kit (Elite Cosmetics),3,5 sp,,
+78,Thieve's Tools (Infiltrator Picks),3,3 gp,,
+79,Scholarly Journal,3,6 gp,L,"Scholarly journals are uncommon. Each scholarly journal is a folio on a very specific topic, such as vampires or the history of a single town or neighborhood of a city. If you spend 1 minute referencing an academic journal before attempting a skill check to Recall Knowledge about the subject, you gain a +1 item bonus to the check. A compendium of journals costs five times as much as a single journal and requires both hands to use; each compendium contains several journals and grants its bonus on a broader topic, such as all undead or a whole city. The GM determines what scholarly journals are available in any location.Scholarly JournalItem 3Source Core Rulebook pg. 291Level 3; Price 6 gpHands 1; Bulk LScholarly Journal (Compendium)Item 3Source Core Rulebook pg. 291Level 3; Price 30 gpHands 2; Bulk L"
+80,Survey Map,3,10 gp,L,
+81,Lock (Average),3,15 gp,,
+82,Compass (Lensatic),3,20 gp,L,
+83,Crowbar (Levered),3,20 gp,L,
+84,Fishing Tackle (Professional),3,20 gp,1,
+85,Manacles (Average),3,20 gp,,
+86,Repair Kit (Superb),3,25 gp,1,
+87,Scholarly Journal (Compendium),3,30 gp,L,
+88,Climbing Kit (Extreme),3,40 gp,1,
+89,Disguise Kit (Elite),3,40 gp,L,
+90,Artisan's Tools (Sterling),3,50 gp,2,
+91,Healer's Tools (Expanded),3,50 gp,1,
+92,Musical Instrument (Virtuoso Handheld),3,50 gp,1,
+93,Survey Map (Atlas),3,50 gp,L,
+94,Thieve's Tools (Infiltrator),3,50 gp,L,
+95,Alchemist's Tools (Expanded),3,55 gp,2,
+96,Clothing (High-Fashion Fine),3,55 gp,L,
+97,Snare Kit (Specialist),3,55 gp,2,
+98,Musical Instrument (Virtuoso Heavy),3,100 gp,16,
+99,Spyglass (Fine),4,80 gp,L,
+100,Lock (Good),9,200 gp,,
+101,Manacles (Good),9,250 gp,,
+102,Lock (Superior),17,"4,500 gp",,
+103,Manacles (Superior),17,"5,000 gp",,
+104,Climbing Kit (Extreme),0,5 sp,1,"This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a DC 5 flat check whenever you critically fail to prevent a fall. You gain a +1 item bonus to Athletics checks to Climb while using an extreme climbing kit. A single kit has only enough materials for one climber; each climber needs their own kit.Climbing KitItem 0Source Core Rulebook pg. 287Price 5 spHands 2; Bulk 1Climbing Kit (Extreme)Item 3Source Core Rulebook pg. 287Level 3; Price 40 gpHands 2; Bulk 1"
