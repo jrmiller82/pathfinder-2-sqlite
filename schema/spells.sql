@@ -48,6 +48,7 @@ CREATE TABLE spells (
 );
 
 CREATE TABLE spells_spellcomponents(
+  id INTEGER PRIMARY KEY,
 	spells_id INTEGER NOT NULL,
 	spellcomponents_id INTEGER NOT NULL,
 	FOREIGN KEY (spells_id) REFERENCES spells(spells_id),

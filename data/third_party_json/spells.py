@@ -46,13 +46,17 @@ def main():
     stypes = c.fetchall()
 
     # TODO FIX THIS FOR SPELL COMPONENTS
+    # CREATE TABLE spellcomponents (
+    #   spellcomponents_id INTEGER PRIMARY KEY,
+    #   name TEXT NOT NULL UNIQUE
+    # );
 
     # load in ids for spelltypes from spelltypes table so we only call this once
     # instead of every spell
-    stmt = "SELECT spelltypes_id, name FROM spelltypes"
+    stmt = "SELECT spellcomponents_id, name FROM spellcomponents"
     c = conn.cursor()
     c.execute(stmt)
-    stypes = c.fetchall()
+    ctypes = c.fetchall()
 
     # List the various triggers and see if there are any duplicates
     # THERE ARE NOT IN THE CRB SO NOT BOTHERING WITH SEPARATE TRIGGERS TABLE YET
@@ -73,15 +77,33 @@ def main():
         do_sources_pages(i,id,conn)
         do_spell_traits(i,id,conn,traits)
         do_spell_types(i,id,conn,stypes)
-        # TODO spell components
+        do_spell_components(i,id,conn,ctypes)
         # TODO spell targets
+
+def do_spell_components(i,id,conn,ctypes):
+    res = None
+    for j in ctypes:
+        for k in i['components']:
+            if k.capitalize() == j[1]:
+                res = j[0]
+
+                inp = (res, id)
+
+                stmt = "INSERT INTO spells_spellcomponents (spells_id, spellcomponents_id) VALUES (?,?)"
+
+                try:
+                    conn.execute(stmt, inp)
+                except:
+                    print("Error inserting spell components")
+                else:
+                    conn.commit()
 
 def do_spell_types(i,id,conn,stypes):
     res = 0
     for j in stypes:
         if i['type'] == j[1]:
             res = j[0]
-    print(id , res)
+    # print(id , res)
 
     inp = (res, id)
 
