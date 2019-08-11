@@ -1,5 +1,12 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+-- #########################################################
+-- This space is where we say the latest ID for incrementing
+--
+-- 254 is top ID right now so start with 255 for anything new
+--
+-- #########################################################
+
 INSERT INTO traittypes (traittype_id, name)
 VALUES
   (1, 'None'),
@@ -133,6 +140,9 @@ INSERT INTO traits (trait_id, traittype, short_name,description)
 (100, 5, "Rogue", "This indicates abilities from the rogue class."),
 (101, 5, "Sorcerer", "This indicates abilities from the sorcerer class."),
 (102, 5, "Wizard", "This indicates abilities from the wizard class."),
+(252, 1, "Additive 1", "Feats with the additive trait allow you to spend actions to add special substances to bombs or elixirs. You can add only one additive to a single alchemical item, and attempting to add another spoils the item. You can typically use actions with the additive trait only when you’re creating an infused alchemical item, and some can be used only with the Quick Alchemy action. The additive trait is always followed by a level, such as additive 2. An additive adds its level to the level of the alchemical item you’re modifying; the result is the new level of the mixture. The mixture’s item level must be no higher than your advanced alchemy level."),
+(253, 1, "Additive 2", "Feats with the additive trait allow you to spend actions to add special substances to bombs or elixirs. You can add only one additive to a single alchemical item, and attempting to add another spoils the item. You can typically use actions with the additive trait only when you’re creating an infused alchemical item, and some can be used only with the Quick Alchemy action. The additive trait is always followed by a level, such as additive 2. An additive adds its level to the level of the alchemical item you’re modifying; the result is the new level of the mixture. The mixture’s item level must be no higher than your advanced alchemy level."),
+(254, 1, "Additive 3", "Feats with the additive trait allow you to spend actions to add special substances to bombs or elixirs. You can add only one additive to a single alchemical item, and attempting to add another spoils the item. You can typically use actions with the additive trait only when you’re creating an infused alchemical item, and some can be used only with the Quick Alchemy action. The additive trait is always followed by a level, such as additive 2. An additive adds its level to the level of the alchemical item you’re modifying; the result is the new level of the mixture. The mixture’s item level must be no higher than your advanced alchemy level."),
 
 -- "Creature type" type traits
 (103, 6, "Aberration", "Aberrations are creatures from beyond the planes or corruptions of the natural order."),
