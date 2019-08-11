@@ -6,8 +6,131 @@ VALUES
   (2, NULL, 'Ancestry Level 5'),
   (3, NULL, 'Ancestry Level 9'),
   (4, NULL, 'Ancestry Level 13'),
-  (5, 3, 'Feat: Rock Runner'),
-  (6, 2, 'Feat: Dwarven Weapon Familiarity');
+  (5, NULL, 'Class Level 1'),
+  (6, NULL, 'Class Level 2'),'
+  (7, NULL, 'Class Level 4'),
+  (8, NULL, 'Class Level 6'),
+  (9, NULL, 'Class Level 8'),
+  (10, NULL, 'Class Level 10'),
+  (11, NULL, 'Class Level 12'),
+  (12, NULL, 'Class Level 14'),
+  (13, NULL, 'Class Level 16'),
+  (14, NULL, 'Class Level 18'),
+  (15, NULL, 'Class Level 20'),
+  -- Dwarf
+  (16, 3, 'Feat: RockRunner'),
+  (17, 2, 'Feat: Dwarven Weapon Familiarity'),
+  -- Elf
+  (18, NULL, 'at least 100 years old'),
+  (19, 14, 'Feat: Elven Weapon Familiarity'),
+  (20, 12, 'Feat: Ancestral Longevity'),
+  (21, 22, 'Feat: Expert Longevity'),
+  -- Gnome
+  (22, 26, 'Feat: Burrow Elocutionist'),
+  (23, NULL, 'FocusPool'),
+  (24, NULL, 'at least one Innate Spell from a Gnome heritage or ancestry feat that shares a tradition with at least one of your focus spells'),
+  (25, 30, 'Feat: Gnome Weapon Familiarity'),
+  (26, NULL, 'at least one primal innate spell'),
+  -- Goblin
+  (27, 43, 'Feat: Goblin Weapon Familiarity'),
+  (28, 41, 'Feat: Goblin Scuttle'),
+  -- Halfling
+  (29, 55, 'Feat: Halfling Weapon Familiarity'),
+  (30, 54, 'Feat: Halfling Luck'),
+  (31, 52, 'Feat: Distracting Shadows'),
+  (32, NULL, 'Spellcasting Class Feature'),
+  --Human
+  (33, 66, 'Feat: Adapted Cantrip'),
+  (34, NULL, 'can cast 3rd-level Spells'),
+  (35, 67, 'Feat: Cooperative Nature'),
+  (36, 74, 'Feat: Clever Improviser'),
+  (37, 72, 'Feat: Unconventional Weaponry'),
+  (38, NULL, 'trained in the weapon you chose for unconventional weaponry'),
+  (39, NULL, 'low light vision'),
+  (40, 86, 'Feat: Orc Weapon Famailiarity'),
+  (41, 85, 'Feat: Orc Superstition'),
+  (41, 83, 'Feat: Orc Ferocity'),
+  -- Alchemist
+  (42, NULL, 'trained in craft'),
+  (43, 99, 'Feat: Calculated Splash'),
+  (44, 103, 'Feat: Debilitating Bomb'),
+  (45, 106, 'Feat: Powerful Alchemy'),
+  (46, 94, 'Feat: Far Lobber'),
+  (47, 111, 'Feat: Merciful Elixir'),
+  (48, 110, 'Feat: Greater Debilitating Bomb'),
+  (49, 113, 'Feat: Extend Elixir'),
+  (50, 109, 'Feat: Expanded Splash'),
+  -- Barbarian
+  (51, NULL, 'acute vision or darkvision'),
+  (52, NULL, 'expert in Athletics '),
+  (53, NULL, 'Feature: Animal Instinct'),
+  (54, NULL, 'Feature: Dragon Instinct'),
+  (55, Null, 'Feature: Giant Instinct'),
+  (56, NULL, 'Feature: Spirit Instinct'),
+  (57, NULL, 'master in Athletics'),
+  (58, 147, 'Feat: Cleave'),
+  (59, TODO, 'Feat: Intimidating Glare'), --IS a skill feat
+  (60, 149, 'Feat: Giant\'s Stature'),
+  (61, 160, 'Feat: Knockdown'),
+  (62, 157, 'Feat: Come And Get Me'),
+  (63, 156, 'Feat: Thrash'),
+  (64, 152, 'Feat: Dragon\'s Rage Wings'),
+  (65, 154, 'Feat: Share Rage'),
+  -- Bard
+  (66, NULL, 'Feature: Enigma Muse'),
+  (67, NULL, 'Feature: Maestro Muse'),
+  (68, NULL, 'Feature: Polymath Muse'),
+  (69, NULL, 'master in Occultism'),
+  (70, 184, 'Feat: Esoteric Polymath'),
+  (71, NULL, 'legendary in Ocuultism'),
+  (72, NULL,'trained in Arcana,Nature, or Religion'),
+  (73, NULL, 'Feature: Magnus Opis'),
+  (74, 193, 'Feat: Harmonize'),
+  -- Champion
+  (75, NULL, 'Feature: Paladin Cause'),
+  (76, NULL, 'Feature: Liberator Cause'),
+  (77, NULL, 'Feature: RedeemerCause'),
+  (78, NULL, 'Feature: Tenets of Good'),
+  (79, NULL, 'Feature: Devotion Spell(LayOnHands)'),
+  (80, NULL, 'Feature: DivineAlly(Steed)'),
+  (81, NULL, 'Feature: Devotion Spells'),
+  (82, NULL, 'Feature: Divine Ally(Shield)'),
+  (83, NULL, 'Feature: Divine Ally(Blade)'),
+  (84, 214, 'Feat: Deity\'s Domain'),
+  (85, 225, 'Feat: Mercy'),
+  (86, NULL, 'Feature: DivineAlly'),
+  (87, 228, 'Feat: Loyal Warhouse'),
+  (88, 229, 'Feat: Shield Warden'),
+  (89, NULL, 'Feature: Champion\'sReaction'),
+  (90, 220, 'Feat: Fiendsbane Oath'),
+  (91, 221, 'Feat: Shining Oath'),
+  (92, NULL, 'Feature: Exalt'),
+  (93, 222, 'Feat: Vengeful Oath'),
+  (95, 219, 'Feat: Dragonslayer Oath'),
+  (96, 238, 'Feat: Imposing Destrier'),
+  (97, 240, 'Feat: Radiant Blade Spirit'),
+  --Cleric
+  (98, NULL, 'diety with a simple favored weapon '),
+  (99, NULL, 'trained with your deity\'s favored weapon '),
+  (100, NULL, 'Feature: Harmful Font'),
+  (101, NULL, 'Feature: Healing Font'),
+  (102, NULL, 'Feature: Harmful Font or Healing Font'),
+  (103, NULL, 'good alignment '),
+  (104, NULL, 'diety that allows Clerics to have both fonts '),
+  (104, , 'Feat: '),
+  (105, , 'Feat: '),
+  (106, , 'Feat: '),
+  (107, , 'Feat: '),
+  (108, , 'Feat: '),
+  (109, , 'Feat: ');
+
+
+
+
+
+
+
+
 
 INSERT INTO feats (
   feat_id,
@@ -843,27 +966,453 @@ VALUES
 
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id)
 VALUES
--- Dwarven Feats
-  -- PreRqs: Level
-  (1,1), -- Dwarven Lore
-  (2,1), -- Dwarven Weapon Familiarity
-  (3,1), -- Rock Runner
-  (4,1), -- Stonecunning
-  (5,1), -- Unburdened Iron
-  (6,1), -- Vengeful Hatred
-  (7,2), -- Boulder Roll
-  (8,2), -- Dwarven Weapon Cunning
-  (9,3), -- Mountain's Stoutness
-  (10,3), -- Stonewalker
-  (11,4), -- Dwarven Weapon Expertise
-  -- Prereqs: Feats
-  (7,5), -- Boulder Roll
-  (8,6), -- Dwarven Weapon Cunning
-  (11,6); -- Dwarven Weapon Expertise
--- Elven Feats
-  --PreReqs: Level
-  --PreReqs: Feats
-  --PreReqs: Other
+-- Dwarf
+(1, 1), -- Dwarven Lore
+(2, 1), -- Dwarven Weapon Familiarity
+(3, 1), -- Rock Runner
+(4, 1), -- Stonecunning
+(5, 1), -- Unburdened Iron
+(6, 1), -- Vengeful Hatred
+(7, 2), -- Boulder Roll
+(7, 16), -- Boulder Roll
+(8, 2), -- Dwarven Weapon Cunning
+(8, 17), -- Dwarven Weapon Cunning
+(9, 3), -- Mountain's Stoutness
+(10, 3), -- Stonewalker
+(11, 4), -- Dwarven Weapon Expertise
+-- Elf
+(12, 1), -- Ancestral Longevity
+(12, 18), -- Ancestral Longevity
+(13, 1), -- Elven Lore
+(14, 1), -- Elven Weapon Familiarity
+(15, 1), -- Forlorn
+(16, 1), -- Nimble Elf
+(17, 1), -- Otherworldly Magic
+(18, 1), -- Unwavering Mien
+(19, 2), -- Ageless Patience
+(20, 2), -- Elven Weapon Elegance
+(20, 19), -- Elven Weapon Elegance
+(21, 3), -- Elf Step
+(22, 3), -- Expert Longevity
+(22, 20), -- Expert Longevity
+(23, 4), -- Universal Longevity
+(23, 21), -- Universal Longevity
+(24, 4), -- Elven Weapon Expertise
+(24, 19), -- Elven Weapon Expertise
+-- Gnome
+(25, 1), -- Animal Accomplice
+(26, 1), -- Burrow Elocutionist
+(27, 1), -- Fey Fellowship
+(28, 1), -- First World Magic
+(29, 1), -- Gnome Obsession
+(30, 1), -- Gnome Weapon Familiarity
+(31, 1), -- Illusion Sense
+(32, 2), -- Animal Elocutionist
+(32, 22), -- Animal Elocutionist
+(33, 2), -- Energized Font
+(33, 23), -- Energized Font
+(33, 24), -- Energized Font
+(34, 2), -- Gnome Weapon Innovator
+(34,  25), -- Gnome Weapon Innovator
+(35, 3), -- First World Adept
+(35, 26), -- First World Adept
+(36, 3), -- Vivacious Conduit
+(37, 4), -- Gnome Weapon Expertise
+(37,  25), -- Gnome Weapon Expertise
+--Goblin
+(38, 1), -- Burn It!
+(39, 1), -- City Scavenger
+(40, 1), -- Goblin Lore
+(41, 1), -- Goblin Scuttle
+(42, 1), -- Goblin Song
+(43, 1), -- Goblin Weapon Familiarity
+(44, 1), -- Junk Tinker
+(45, 1), -- Rough Rider
+(46, 1), -- Very Sneaky
+(47, 2), -- Goblin Weapon Frenzy
+(47, 27), -- Goblin Weapon Frenzy
+(48, 3), -- Cave Climber
+(49, 3), -- Skittering Scuttle
+(49, 28), -- Skittering Scuttle
+(50, 4), -- Goblin Weapon Expertise
+(50, 27), -- Goblin Weapon Expertise
+(51, 4), -- Very, Very Sneaky
+(51, 29), -- Very, Very Sneaky
+-- Halfling
+(52, 1), -- Distracting Shadows
+(53, 1), -- Halfling Lore
+(54, 1), -- Halfling Luck
+(55, 1), -- Halfling Weapon Familiarity
+(56, 1), -- Sure Feet
+(57, 1), -- Titan Slinger
+(58, 1), -- Unfettered Halfling
+(59, 1), -- Watchful Halfling
+(60, 2), -- Cultural Adaptability
+(61, 2), -- Halfling Weapon Trickster
+(61, 29), -- Halfling Weapon Trickster
+(62, 3), -- Guiding Luck
+(62, 30), -- Guiding Luck
+(63, 3), -- Irrepressible
+(64, 4), -- Ceaseless Shadows
+(64, 52), -- Ceaseless Shadows
+(65, 4), -- Halfling Weapon Expertise
+(65, 29), -- Halfling Weapon Expertise
+-- Human
+(66, 1), -- Adapted Cantrip
+(66, 32), -- Adapted Cantrip
+(67, 1), -- Cooperative Nature
+(68, 1), -- General Training
+(69, 1), -- Haughty Obstinacy
+(70, 1), -- Natural Ambition
+(71, 1), -- Natural Skill
+(72, 1), -- Unconventional Weaponry
+(73, 2), -- Adaptive Adept
+(73, 33), -- Adaptive Adept
+(73, 34), -- Adaptive Adept
+(74, 2), -- Clever Improviser
+(75, 3), -- Cooperataive Soul
+(75, 35), -- Cooperataive Soul
+(76, 3), -- Incredible Improvisation
+(76, 36), -- Incredible Improvisation
+(77, 3), -- Multitalented
+(78, 4), -- Unconventional Expertise
+(78, 37), -- Unconventional Expertise
+(78, 38), -- Unconventional Expertise
+-- HalfElf
+(79, 1), -- Elf Atavism
+(80, 2), -- Inspire Imitation
+(81, 2), -- Supernatural Charm
+-- Half Orc
+(82, 1), -- Monstrous Peacemaker
+(83, 1), -- Orc Ferocity
+(84, 1), -- Orc Sight
+(84, 39), -- Orc Sight
+(85, 1), -- Orc Superstition
+(86, 1), -- Orc Weapon Famailiarity
+(87, 2), -- Orc Weapon Carnage
+(87, 40), -- Orc Weapon Carnage
+(88, 2), -- Victorious Vigor
+(89, 3), -- Pervasive Superstition
+(89, 41), -- Pervasive Superstition
+(90, 4), -- Incredible Ferocity
+(90, 42), -- Incredible Ferocity
+(91, 4), -- Orc Weapon Expertise
+(91, 40), -- Orc Weapon Expertise
+--Alchemis
+(92, 5), -- Alchemical Familiar
+(93, 5), -- Alchemical Savant
+(93, 42), -- Alchemical Savant
+(94, 5), -- Far Lobber
+(95, 5), -- Quick Bomber
+(96, 6), -- Poison Resistance
+(97, 6), -- Revivifying Mutagen
+(98, 6), -- Smoke Bomb
+(99, 7), -- Calculated Splash
+(100, 7), -- Efficient Alchemy
+(101, 7), -- Enduring Alchemy
+(102, 8), -- Combine Elixirs
+(103, 8), -- Debilitating Bomb
+(104, 8), -- Directional Bombs
+(105, 9), -- Feral Mutagen
+(106, 9), -- Powerful Alchemy
+(107, 9), -- Sticky Bomb
+(108, 10), -- Elastic Mutagen
+(109, 10), -- Expanded Splash
+(109, 43), -- Expanded Splash
+(110, 10), -- Greater Debilitating Bomb
+(110, 44), -- Greater Debilitating Bomb
+(111, 10), -- Merciful Elixir
+(112, 10), -- Potent Poisoner
+(112, 45), -- Potent Poisoner
+(113, 11), -- Extend Elixir
+(114, 11), -- Invincible Mutagen
+(115, 11), -- Uncanny Bombs
+(115, 46), -- Uncanny Bombs
+(116, 12), -- Glib Mutagen
+(117, 12), -- Greater Merciful Elixir
+(117, 47), -- Greater Merciful Elixir
+(118, 12), -- True Debilitating Bomb
+(118, 48), -- True Debilitating Bomb
+(119, 13), -- Eternal Elixir
+(119, 49), -- Eternal Elixir
+(120, 13), -- Exploitive Bomb
+(121, 13), -- Genius Mutagen
+(122, 13), -- Persistent Mutagen
+(122, 49), -- Persistent Mutagen
+(123, 14), -- Improbable Elixirs
+(124, 14), -- Mindblank Mutagen
+(125, 14), -- Miracle Worker
+(126, 14), -- Perfect Debilitation
+(127, 15), -- Craft Philosopher's Stone
+(128, 15), -- Mega Bomb
+(128, 50), -- Mega Bomb
+(129, 15), -- Perfect Mutagen
+--Barbarian
+(130, 5), -- Acute Vision
+(131, 5), -- Moment of Clarity
+(132, 5), -- Raging Intimidation
+(133, 5), -- Raging Thrower
+(134, 5), -- Sudden Charge
+(135, 6), -- Acute Scent
+(135, 51), -- Acute Scent
+(136, 6), -- Furious Finish
+(137, 6), -- No Escape
+(138, 6), -- Second Wind
+(139, 6), -- Shake it Off
+(140, 7), -- Fast Movement
+(141, 7), -- Raging Athlete
+(141, 52), -- Raging Athlete
+(142, 7), -- Swipe
+(143, 7), -- Wounded Rage
+(144, 8), -- Animal Skin
+(144, 53), -- Animal Skin
+(145, 8), -- Attack of Opportunity
+(146, 8), -- Brutal Bully
+(146, 52), -- Brutal Bully
+(147, 8), -- Cleave
+(148, 8), -- Dragon's Rage Breath
+(148, 54), -- Dragon's Rage Breath
+(149, 8), -- Giant's Stature
+(149, 55), -- Giant's Stature
+(150, 8), -- Spirits' Interference
+(150, 56), -- Spirits' Interference
+(151, 9), -- Animal Rage
+(151, 53), -- Animal Rage
+(152, 9), -- Furious Bully
+(152, 57), -- Furious Bully
+(153, 9), -- Renewed Vigor
+(154, 9), -- Share Rage
+(155, 9), -- Sudden Leap
+(156, 9), -- Thrash
+(157, 10), -- Come and Get Me
+(158, 10), -- Furious Sprint
+(159, 10), -- Great 58
+(159, 58), -- Great 58
+(160, 10), -- Knockback
+(161, 10), -- Terrifying Howl
+(161, 59), -- Terrifying Howl
+(162, 11), -- Dragon's Rage Wings
+(162, 54), -- Dragon's Rage Wings
+(163, 11), -- Furious Grab
+(164, 11), -- Predator's Pounce
+(164, 53), -- Predator's Pounce
+(165, 11), -- Spirit's Wrath
+(165, 56), -- Spirit's Wrath
+(166, 11), -- Titan's Stature
+(166, 55), -- Titan's Stature
+(166, 60), -- Titan's Stature
+(167, 12), -- Awesome Blow
+(167, 61, -- Awesome Blow
+(168, 12), -- Giant's Lunge
+(168, 55), -- Giant's Lunge
+(169, 12), -- Vengeful Strike
+(169, 62), -- Vengeful Strike
+(170, 12), -- Whirlwind Strike
+(171, 13), -- Collateral Thrash
+(171, 63, -- Collateral Thrash
+(172, 13), -- Dragon Transformation
+(172, 54), -- Dragon Transformation
+(172, 64), -- Dragon Transformation
+(173, 13), -- Reckless Abandon
+(174, 14), -- Brutal Critical
+(175, 14), -- Perfect Clarity
+(176, 14), -- Vicious Evisceration
+(177, 15), -- Contagious Rage
+(177, 65), -- Contagious Rage
+(178, 15), -- Quaking Stomp
+-- Bard
+(179, 5), -- Bardic Lore
+(179, 66), -- Bardic Lore
+(180, 5), -- Lingering Composition
+(180, 67), -- Lingering Composition
+(180, 23), -- Lingering Composition
+(181, 5), -- Reach Spell
+(182, 5), -- Versatile Performance
+(182, 68), -- Versatile Performance
+(183, 6), -- Cantrip Expansion
+(184, 6), -- Esoteric Polymath
+(184, 68), -- Esoteric Polymath
+(185, 6), -- Inspire Competence
+(185, 67), -- Inspire Competence
+(186, 6), -- Loremaster's Etude
+(186, 66), -- Loremaster's Etude
+(186, 23), -- Loremaster's Etude
+(187, 6), -- Multifarious Muse
+(188, 7), -- Inspire Defense
+(188, 67), -- Inspire Defense
+(189, 7), -- Melodious Spell
+(190, 7), -- Triple Time
+(191, 7), -- Versatile Signature
+(191, 68), -- Versatile Signature
+(192, 8), -- Dirge of Doom
+(193, 8), -- Harmonize
+(193, 67), -- Harmonize
+(194, 8), -- Steady Spellcasting
+(195, 9), -- Eclectic Skill
+(195, 68), -- Eclectic Skill
+(195, 69), -- Eclectic Skill
+(196, 9), -- Inspire Heroics
+(196, 67), -- Inspire Heroics
+(196, 23), -- Inspire Heroics
+(197, 9), -- Know-It-All
+(197, 66), -- Know-It-All
+(198, 10), -- House of Imaginary Walls
+(199, 10), -- Quickened Casting
+(200, 10), -- Unusual Composition
+(200, 68), -- Unusual Composition
+(201, 11), -- Eclectic Polymath
+(201, 70), -- Eclectic Polymath
+(202, 11), -- Inspirational Focus
+(203, 12), -- Allegro
+(204, 12), -- Soothing Ballad
+(204, 23), -- Soothing Ballad
+(205, 12), -- True Hypercognition
+(205, 66), -- True Hypercognition
+(206, 13), -- Effortless Concentration
+(207, 13), -- Studious Capacity
+(207, 66), -- Studious Capacity
+(207, 71), -- Studious Capacity
+(208, 14), -- Deep Lore
+(208, 71), -- Deep Lore
+(209, 14), -- Eternal Composition
+(209, 67), -- Eternal Composition
+(210, 14), -- Impossible Polymath
+(210, 72), -- Impossible Polymath
+(210, 70), -- Impossible Polymath
+(211, 15), -- Fatal Aria
+(211, 23), -- Fatal Aria
+(212, 15), -- Perfect Encore
+(212, 73), -- Perfect Encore
+(213, 15), -- Symphony of the Muses
+(213, 74), -- Symphony of the Muses
+-- Champion
+(214, 5), -- Deity's Domain
+(215, 5), -- Ranged Reprisal
+(215, 75), -- Ranged Reprisal
+(216, 5), -- Unimpeded Step
+(216, 76), -- Unimpeded Step
+(217, 5), -- Weight of Guilt
+(217, 77), -- Weight of Guilt
+(218, 6), -- Divine Grace
+(219, 6), -- Dragonslayer Oath
+(219, 78), -- Dragonslayer Oath
+(220, 6), -- Fiendsbane Oath
+(220, 78), -- Fiendsbane Oath
+(221, 6), -- Shining Oath
+(221, 78), -- Shining Oath
+(222, 6), -- Vengeful Oath
+(222, 75), -- Vengeful Oath
+(223, 7), -- Aura of Courage
+(223, 78), -- Aura of Courage
+(224, 7), -- Divine Health
+(224, 78), -- Divine Health
+(225, 7), -- Mercy
+(225, 79), -- Mercy
+(227, 8), -- Litany Against Wrath
+(227, 81), -- Litany Against Wrath
+(227, 78), -- Litany Against Wrath
+(228, 8), -- Loyal Warhouse
+(228, 80), -- Loyal Warhouse
+(229, 8), -- Shield Warden
+(229, 82), -- Shield Warden
+(229, 78), -- Shield Warden
+(230, 8), -- Smite Evil
+(230, 83), -- Smite Evil
+(231, 9), -- Advanced Deity's Domain
+(231, 84), -- Advanced Deity's Domain
+(232, 9), -- Greater Mercy
+(232, 85, -- Greater Mercy
+(233, 9), -- Heal Mount
+(233, 80), -- Heal Mount
+(234, 9), -- Quick Block
+(235, 9), -- Second Ally
+(235, 86), -- Second Ally
+(236, 9), -- Sense Evil
+(236, 78), -- Sense Evil
+(237, 10), -- Devoted Focus
+(237, 81), -- Devoted Focus
+(238, 10), -- Imposing Destrier
+(238, 80), -- Imposing Destrier
+(238, 87), -- Imposing Destrier
+(239, 10), -- Litany Against Sloth
+(239, 81), -- Litany Against Sloth
+(239, 78), -- Litany Against Sloth
+(240, 10), -- Radiant Blade Spirit
+(240, 83), -- Radiant Blade Spirit
+(241, 10), -- Shield of Reckoning
+(241, 89), -- Shield of Reckoning
+(241, 82,), -- Shield of Reckoning
+(241, 78,), -- Shield of Reckoning
+(241, 88), -- Shield of Reckoning
+(242, 11), -- Affliction Mercy
+(242, 85, -- Affliction Mercy
+(243, 11), -- Aura of Faith
+(243, 78), -- Aura of Faith
+(244, 11), -- Blade of Justice
+(244, 75), -- Blade of Justice
+(245, 11), -- Champion's Sacrifice
+(245, 78), -- Champion's Sacrifice
+(246, 11), -- Divine Wall
+(247, 11), -- Lasting Doubt
+(247, 77), -- Lasting Doubt
+(248, 11), -- Liberating Stride
+(248, 76), -- Liberating Stride
+(249, 12), -- Anchoring Aura
+(249, 90), -- Anchoring Aura
+(250, 12), -- Aura of Life
+(250, 91), -- Aura of Life
+(251, 12), -- Aura of Righteousness
+(251, 78), -- Aura of Righteousness
+(252, 12), -- Aura of Vengeance
+(252, 92), -- Aura of Vengeance
+(252, 93), -- Aura of Vengeance
+(253, 12), -- Divine Reflexes
+(254, 12), -- Litany of Righteousness
+(254, 78), -- Litany of Righteousness
+(255, 12), -- Wyrmbane Aura
+(255, 95), -- Wyrmbane Aura
+(256, 13), -- Auspicious Mount
+(256, 80), -- Auspicious Mount
+(256, 96), -- Auspicious Mount
+(257, 13), -- Instrument of Zeal
+(257, 83), -- Instrument of Zeal
+(257, 78), -- Instrument of Zeal
+(258, 13), -- Shield of Grace
+(258, 88), -- Shield of Grace
+(259, 14), -- Celestial Form
+(259, 78), -- Celestial Form
+(260, 14), -- Ultimate Mercy
+(260, 85, -- Ultimate Mercy
+(261, 15), -- Celestial Mount
+(261, 80,), -- Celestial Mount
+(261, 78), -- Celestial Mount
+(262, 15), -- Radiant Blade Master
+(262, 83,), -- Radiant Blade Master
+(262, 97), -- Radiant Blade Master
+(263, 15), -- Shield Paragon
+(263, 82), -- Shield Paragon
+-- Cleric
+(264, 5), -- Deadly Simplicity
+(264, 98), -- Deadly Simplicity
+(264, 99), -- Deadly Simplicity
+(265, 5), -- Domain Initiate
+(266, 5), -- Harming Hands
+(266, 100, -- Harming Hands
+(267, 5), -- Healing Hands
+(267,101, -- Healing Hands
+(268, 5), -- Holy Castigation
+(268,103, -- Holy Castigation
+(271, 6), -- Communal Healing
+(272, 6), -- Emblazon Armament
+(273, 6), -- Sap Life
+(274, 6), -- Turn Undead
+(275, 6), -- Versatile Font
+(275, 102), -- Versatile Font
+(275, 104), -- Versatile Font
+(276, 7), -- Channel Smite
+(276, 102), -- Channel Smite
+(277, 7), -- Command Undead
+(277, 100); -- Command Undead
 INSERT INTO feats_traits (feat_id, trait_id)
 VALUES
   -- Dwarf Ancestry Trait
@@ -965,7 +1514,7 @@ VALUES
 (94,91),
 (95,91),
 (96,91),
-(96,96),
+--(96,96),
 (97,91),
 (98,1),
 (98,91),
@@ -1012,7 +1561,7 @@ VALUES
 (131,59),
 (132,92),
 (133,92),
-(134,92),
+(134,92), --Note 134 "Sudden Charge" is shared by Barbarians and Fighters
 (134,97),
 (134,28),
 (134,52),
