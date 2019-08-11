@@ -46,7 +46,9 @@ etc.. */
 CREATE TABLE heritages (
   heritage_id INTEGER PRIMARY KEY,
   short_name TEXT NOT NULL UNIQUE,
-  description TEXT NOT NULL
+  description TEXT NOT NULL,
+  bonus_type TEXT, -- TODO Should this be text, or should this have its own table and FK?
+  bonus_id INTEGER -- TODO What is this referencing from data/heritages.sql ???
 );
 
 CREATE TABLE ancestries_heritages (
