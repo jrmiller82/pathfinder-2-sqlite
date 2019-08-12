@@ -66,7 +66,7 @@ VALUES
   (52, NULL, 'expert in Athletics'),
   (53, NULL, 'Feature: animal instinct'),
   (54, NULL, 'Feature: dragon instinct'),
-  (55, Null, 'Feature: giant instinct'),
+  (55, NULL, 'Feature: giant instinct'),
   (56, NULL, 'Feature: spirit instinct'),
   (57, NULL, 'master in Athletics'),
   (58, 147, 'Feat: Cleave'),
@@ -132,7 +132,7 @@ VALUES
   (116, 286, 'Feat: Align Armament'),
   (117, 295, 'Feat: Domain Focus'),
   (118, 301, 'Feat: Swift Banishment'),
-  (119, Null, 'Feature: miraculous spell'),
+  (119, NULL, 'Feature: miraculous spell'),
   --Druid
   (120, NULL, 'Feature: animal order'),
   (121, NULL, 'Feature: leaf order'),
@@ -238,9 +238,9 @@ VALUES
   (216, 577, 'Feat: Sly Striker'),
   (217, 595, 'Feat: Perfect Distraction'),
   --Sorcerer
-  (218, Null, 'bloodline that grants arcane spells'),
-  (219, Null, 'bloodline that grants divine spells'),
-  (220, Null, 'bloodline that grants occult spells'),
+  (218, NULL, 'bloodline that grants arcane spells'),
+  (219, NULL, 'bloodline that grants divine spells'),
+  (220, NULL, 'bloodline that grants occult spells'),
   (221, NULL, 'bloodline that grants primal spells'),
   (222, NULL, 'bloodline spell'),
   (223, NULL, 'dispel magic in your spell repetoire'),
@@ -251,8 +251,8 @@ VALUES
   (228, 617, 'Feat: Crossblooded Evolution'),
   (229, NULL, 'Feature: bloodline paragon'),
   --Wizard
-  (230, Null, 'Feature: arcane bond'),
-  (231, Null, 'Feature: arcane school'),
+  (230, NULL, 'Feature: arcane bond'),
+  (231, NULL, 'Feature: arcane school'),
   (232, 640, 'Feat: Conceal Spell'),
   (233, NULL, 'Feature: universalist wizard'),
   (234, 636, 'Feat: Hand of the Apprentice'),
@@ -319,7 +319,7 @@ VALUES
   (284, 735, 'Feat: Basic Sorcerer Spellcasting'),
   (285, NULL, 'master in Arcana, Nature, Occultism, Religion, depending on bloodline'),
   (286, 740, 'Feat: Expert Sorcerer Spellcasting'),
-  (287, Null, 'legendary in Arcana, Nature, Occultism, Religion, depending on bloodline'),
+  (287, NULL, 'legendary in Arcana, Nature, Occultism, Religion, depending on bloodline'),
   -- Wizard Dedication
   (288, 742, 'Feat: Wizard Dedication'),
   (289, 744, 'Feat: Basic Arcana'),
@@ -328,7 +328,7 @@ VALUES
   (292, 748, 'Feat: Expert Wizard Spellcasting'),
   (293, NULL, 'Feat: legendary in Arcana'),
   --Feats Section
-  (294, Null, 'Class Level 3 '),
+  (294, NULL, 'Class Level 3 '),
   (295, NULL, 'trained in Lore'),
   (296, NULL, 'trained in Arcana'),
   (297, NULL, 'trained in at least one skill'),
@@ -2695,7 +2695,7 @@ VALUES
 
 INSERT INTO feats_traits (feat_id, trait_id)
 VALUES
---May run a quick script to comment these
+-- TODO run a quick script to comment these
   -- Dwarf Ancestry Trait
 (1,79),
 (2,79),
