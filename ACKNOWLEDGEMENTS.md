@@ -1,6 +1,6 @@
 # Acknowledgments
 
-## Spells 
+## Spells (Tim Schneider)
 
 Our initial spell data was taken from
 https://github.com/fyjham-ts/Pathfinder-2E-Spell-DB via their spells.json file.
