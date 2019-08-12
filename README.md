@@ -54,6 +54,10 @@ The action symbols can be represented by the following characters:
 | Reaction | 🄡 | U+1F121 |
 | Free action | 🄕 | U+1F115 |
 
+## Text Formatting
+
+Text formatting will be according to github-flavored markdown. 
+
 ## Ability Scores in Integer Representation
 
 | Ability Type | Value |

@@ -7,7 +7,7 @@ VALUES
   (3, NULL, 'Ancestry Level 9'),
   (4, NULL, 'Ancestry Level 13'),
   (5, NULL, 'Class Level 1'),
-  (6, NULL, 'Class Level 2'),'
+  (6, NULL, 'Class Level 2'),
   (7, NULL, 'Class Level 4'),
   (8, NULL, 'Class Level 6'),
   (9, NULL, 'Class Level 8'),
@@ -18,7 +18,7 @@ VALUES
   (14, NULL, 'Class Level 18'),
   (15, NULL, 'Class Level 20'),
   -- Dwarf
-  (16, 3, 'Feat: RockRunner'),
+  (16, 3, 'Feat: Rock Runner'),
   (17, 2, 'Feat: Dwarven Weapon Familiarity'),
   -- Elf
   (18, NULL, 'at least 100 years old'),
@@ -27,31 +27,32 @@ VALUES
   (21, 22, 'Feat: Expert Longevity'),
   -- Gnome
   (22, 26, 'Feat: Burrow Elocutionist'),
-  (23, NULL, 'FocusPool'),
+  (23, NULL, 'focus pool'),
   (24, NULL, 'at least one Innate Spell from a Gnome heritage or ancestry feat that shares a tradition with at least one of your focus spells'),
   (25, 30, 'Feat: Gnome Weapon Familiarity'),
   (26, NULL, 'at least one primal innate spell'),
   -- Goblin
   (27, 43, 'Feat: Goblin Weapon Familiarity'),
   (28, 41, 'Feat: Goblin Scuttle'),
+  (353, 46, 'Feat: Very Sneaky'),
   -- Halfling
   (29, 55, 'Feat: Halfling Weapon Familiarity'),
   (30, 54, 'Feat: Halfling Luck'),
   (31, 52, 'Feat: Distracting Shadows'),
-  (32, NULL, 'Spellcasting Class Feature'),
   --Human
+  (32, NULL, 'Spellcasting Class Feature'),
   (33, 66, 'Feat: Adapted Cantrip'),
   (34, NULL, 'can cast 3rd-level Spells'),
   (35, 67, 'Feat: Cooperative Nature'),
   (36, 74, 'Feat: Clever Improviser'),
   (37, 72, 'Feat: Unconventional Weaponry'),
-  (38, NULL, 'trained in the weapon you chose for unconventional weaponry'),
-  (39, NULL, 'low light vision'),
+  (38, NULL, 'trained in the weapon you chose for Unconventional Weaponry'),
+  (39, NULL, 'low-light vision'),
   (40, 86, 'Feat: Orc Weapon Famailiarity'),
   (41, 85, 'Feat: Orc Superstition'),
-  (41, 83, 'Feat: Orc Ferocity'),
+  (94, 83, 'Feat: Orc Ferocity'),
   -- Alchemist
-  (42, NULL, 'trained in craft'),
+  (42, NULL, 'trained in Crafting'),
   (43, 99, 'Feat: Calculated Splash'),
   (44, 103, 'Feat: Debilitating Bomb'),
   (45, 106, 'Feat: Powerful Alchemy'),
@@ -61,75 +62,334 @@ VALUES
   (49, 113, 'Feat: Extend Elixir'),
   (50, 109, 'Feat: Expanded Splash'),
   -- Barbarian
-  (51, NULL, 'acute vision or darkvision'),
-  (52, NULL, 'expert in Athletics '),
-  (53, NULL, 'Feature: Animal Instinct'),
-  (54, NULL, 'Feature: Dragon Instinct'),
-  (55, Null, 'Feature: Giant Instinct'),
-  (56, NULL, 'Feature: Spirit Instinct'),
+  (51, NULL, 'acute vision or darkvision'), --orCondition
+  (52, NULL, 'expert in Athletics'),
+  (53, NULL, 'Feature: animal instinct'),
+  (54, NULL, 'Feature: dragon instinct'),
+  (55, Null, 'Feature: giant instinct'),
+  (56, NULL, 'Feature: spirit instinct'),
   (57, NULL, 'master in Athletics'),
   (58, 147, 'Feat: Cleave'),
-  (59, TODO, 'Feat: Intimidating Glare'), --IS a skill feat
-  (60, 149, 'Feat: Giant\'s Stature'),
+  (59, 796, 'Feat: Intimidating Glare'), --IS a skill feat
+  (60, 149, 'Feat: Giants Stature'),
   (61, 160, 'Feat: Knockdown'),
   (62, 157, 'Feat: Come And Get Me'),
   (63, 156, 'Feat: Thrash'),
-  (64, 152, 'Feat: Dragon\'s Rage Wings'),
+  (64, 152, 'Feat: Dragons Rage Wings'),
   (65, 154, 'Feat: Share Rage'),
   -- Bard
-  (66, NULL, 'Feature: Enigma Muse'),
-  (67, NULL, 'Feature: Maestro Muse'),
-  (68, NULL, 'Feature: Polymath Muse'),
+  (66, NULL, 'Feature: enigma muse'),
+  (67, NULL, 'Feature: maestro muse'),
+  (68, NULL, 'Feature: polymath muse'),
   (69, NULL, 'master in Occultism'),
   (70, 184, 'Feat: Esoteric Polymath'),
-  (71, NULL, 'legendary in Ocuultism'),
-  (72, NULL,'trained in Arcana,Nature, or Religion'),
-  (73, NULL, 'Feature: Magnus Opis'),
+  (71, NULL, 'legendary in Ocultism'),
+  (72, NULL,'trained in Arcana, Nature, or Religion'),
+  (73, NULL, 'Feature: magnus opus'),
   (74, 193, 'Feat: Harmonize'),
   -- Champion
-  (75, NULL, 'Feature: Paladin Cause'),
-  (76, NULL, 'Feature: Liberator Cause'),
-  (77, NULL, 'Feature: RedeemerCause'),
-  (78, NULL, 'Feature: Tenets of Good'),
-  (79, NULL, 'Feature: Devotion Spell(LayOnHands)'),
-  (80, NULL, 'Feature: DivineAlly(Steed)'),
-  (81, NULL, 'Feature: Devotion Spells'),
-  (82, NULL, 'Feature: Divine Ally(Shield)'),
-  (83, NULL, 'Feature: Divine Ally(Blade)'),
-  (84, 214, 'Feat: Deity\'s Domain'),
+  (75, NULL, 'Feature: paladin cause'),
+  (76, NULL, 'Feature: liberator cause'),
+  (77, NULL, 'Feature: redeemer cause'),
+  (78, NULL, 'Feature: tenets of good'),
+  (79, NULL, 'Feature: devotion spell (lay on hands)'),
+  (80, NULL, 'Feature: divine ally (steed)'),
+  (81, NULL, 'Feature: devotion spells'),
+  (82, NULL, 'Feature: divine ally (shield)'),
+  (83, NULL, 'Feature: divine ally (blade)'),
+  (84, 214, 'Feat: Deitys Domain'), --Paren
   (85, 225, 'Feat: Mercy'),
-  (86, NULL, 'Feature: DivineAlly'),
+  (86, NULL, 'Feature: divine ally'),
   (87, 228, 'Feat: Loyal Warhouse'),
   (88, 229, 'Feat: Shield Warden'),
-  (89, NULL, 'Feature: Champion\'sReaction'),
+  (89, NULL, "Feature: Champion's Reaction"), --Paren
   (90, 220, 'Feat: Fiendsbane Oath'),
   (91, 221, 'Feat: Shining Oath'),
-  (92, NULL, 'Feature: Exalt'),
+  (92, NULL, 'Feature: exalt'),
   (93, 222, 'Feat: Vengeful Oath'),
   (95, 219, 'Feat: Dragonslayer Oath'),
   (96, 238, 'Feat: Imposing Destrier'),
   (97, 240, 'Feat: Radiant Blade Spirit'),
   --Cleric
-  (98, NULL, 'diety with a simple favored weapon '),
-  (99, NULL, 'trained with your deity\'s favored weapon '),
-  (100, NULL, 'Feature: Harmful Font'),
-  (101, NULL, 'Feature: Healing Font'),
-  (102, NULL, 'Feature: Harmful Font or Healing Font'),
-  (103, NULL, 'good alignment '),
-  (104, NULL, 'diety that allows Clerics to have both fonts '),
-  (104, , 'Feat: '),
-  (105, , 'Feat: '),
-  (106, , 'Feat: '),
-  (107, , 'Feat: '),
-  (108, , 'Feat: '),
-  (109, , 'Feat: ');
-
-
-
-
-
-
-
+  (98, NULL, 'diety with a simple favored weapon'),
+  (99, NULL, "trained with your deity's favored weapon"), --Paren
+  (100, NULL, 'Feature: harmful font'),
+  (101, NULL, 'Feature: healing font'),
+  (102, NULL, 'Feature: harmful font or healing font'),
+  (103, NULL, 'good alignment'),
+  (104, NULL, 'diety that allows Clerics to have both fonts'),
+  (105, NULL, 'evil alignment'),
+  (106, 271, 'Feat: Communal Healing'),
+  (107, 265, 'Feat: Domain Initiate'),
+  (108, NULL, 'chaotic, evil, good, or lawful deity'),
+  (109, 272, 'Feat: Emblazon Armament'),
+  (110, 268, 'Feat: Holy Castigation'),
+  (111, 277, 'Feat: Command Undead'),
+  (112, NULL, "expert in dietys favored weapon"), --Paren
+  (113, NULL, 'one or more domain spells'),
+  (114, 293, 'Feat: Replenishment Of War'),
+  (115, 285, 'Feat: Advanced Domain'),
+  (116, 286, 'Feat: Align Armament'),
+  (117, 295, 'Feat: Domain Focus'),
+  (118, 301, 'Feat: Swift Banishment'),
+  (119, Null, 'Feature: miraculous spell'),
+  --Druid
+  (120, NULL, 'Feature: animal order'),
+  (121, NULL, 'Feature: leaf order'),
+  (122, NULL, 'Feature: storm order'),
+  (123, NULL, 'Feature: wild order'),
+  (124, NULL, 'a familiar'),
+  (125, NULL, 'Strength 14'),
+  (126, 316, 'Feat: Wild Shape'),
+  (127, 311, 'Feat: Animal Companion'),
+  (128, 319, 'Feat: Order Explorer'),
+  (129, NULL, 'tempest surge order spell'),
+  (130, 322, 'Feat: Mature Animal Companion'),
+  (131, NULL, 'leaf order or Wild Shape'), --orCondition
+  (132, 333, 'Feat: Soaring Shape'),
+  (133, 326, 'Feat: Green Empathy'),
+  (134, 317, 'Feat: Call Of The Wild'),
+  (135, 332, 'Feat: Incredible Companion'),
+  (136, 334, 'Feat: Wind Caller'),
+  (137, 321, 'Feat: Form Control'),
+  (138, NULL, 'Strength 18'),
+  (139, 342, 'Feat: Primal Focus'), --Note in book there is a typo that calls this Wild Focus in prerequisites for Primal WellSpring
+  (140, NULL, 'legendary in Nature'),
+  (141, 340, 'Feat: Dragon Shape'),
+  --Fighter
+  (142, NULL, 'trained in Athletics'),
+  (143, NULL, 'Aggressive Block or Brutish Shove'), --orCondition
+  (144, 359, 'Feat: Power Attack'),
+  (145, 370, 'Feat: Double Shot'),
+  (146, NULL, 'master in Perception'),
+  (147, 367, 'Feat: Dueling Parry'),
+  (148, 839, 'Feat: Shield Block'), --Note fighters get this as a class feature but it is also a feat
+  (149, 360, 'Feat: Reactive Shield'),
+  --(150, 372, 'Feat: Knockdown');different knockback already created
+  (151, 389, 'Feat: Dueling Riposte'),
+  (152, 391, 'Feat: Incredible Aim'),
+  (153, 145, 'Feat: Attack of Opportunity'), --Note fighters get this as a class feature but it is also a feat for barbarians
+  (154, 369, 'Feat: Lunge'),
+  (155, 405, 'Feat: Twin Riposte'),
+  (156, 356, 'Feat: Double Slice'),
+  (157, 383, 'Feat: Reflexive Shield'),
+  (158, 387, 'Feat: Triple Shot'),
+  (159, 377, 'Feat: Twin Parry'),
+  --Monk
+  (160, 433, 'Feat: Ki Strike'),
+  (161, NULL, 'Feature: flurry Of blows'),
+  (162, NULL, 'Feature: ki spells'),
+  (163, NULL, 'Feature: incredible movement'),
+  (164, 430, 'Feat: Crane Stance'),
+  (165, 431, 'Feat: Dragon Stance'),
+  (166, 435, 'Feat: Mountain Stance'),
+  (167, 436, 'Feat: Tiger Stance'),
+  (168, 437, 'Feat: Wolf Stance'),
+  (169, 443, 'Feat: Deflect Arrow'),
+  (170, 459, 'Feat: Ironblood Stance'),
+  (171, 453, 'Feat: Mountain Stronghold'),
+  (172, 461, 'Feat: Tangled Forest Stance'),
+  (173, 463, 'Feat: Wild Winds Initiate'),
+  (174, 472, 'Feat: Stance Savant'),
+  (175, 471, 'Feat: Meditative Focus'),
+  (176, NULL, 'at least two stances'),
+  --Ranger
+  (177, 493, 'Feat: Monster Hunter'),
+  (178, NULL, 'an animal companion'),
+  (179, NULL, 'expert in Crafting'),
+  (180, 843, 'Feat: Snare Crafting'), --In skill feats
+  (181, 506, 'Feat: Snare Specialist'),
+  (182, NULL, 'expert in Survival'),
+  (183, 780, 'Feat: Experienced Tracker'), --skill feat
+  (354, NULL, 'Feature: weapon specialization'),--354 currently, due to missing it before
+  (184, NULL, 'master in Crafting'),
+  (185, NULL, 'Feature: wild stride'),
+  (186, NULL, 'master in Survival'),
+  (187, 495, 'Feat: Favored Terrain'),
+  (188, NULL, 'master in Stealth'),
+  (189, 508, 'Feat: Mature Animal Compainion (Ranger)'),
+  (190, NULL, 'master in Nature'),
+  (191, 526, 'Feat: Double Prey'),
+  (192, 518, 'Feat: Wardens Boon'),
+  (193, 519, 'Feat: Camouflage'),
+  (194, 496, 'Feat: Hunters Aim'),
+  (195, 525, 'Feat: Distracting Shot'),
+  (196, 521, 'Feat: Master Monster Hunter'),
+  (197, 520, 'Feat: Incredible Companion(Ranger)'),
+  (198, NULL, 'Feature: hunters edge'),
+  (199, NULL, 'Feature: masterful hunter'),
+  (200, NULL, 'legendary in Perception'),
+  (201, 502, 'Feat: Far Shot'),
+  (202, NULL, 'legendary in Survival'),
+  (203, 531, 'Feat: Shared Prey'),
+  --Rogue
+  (204, NULL, 'trained in Intimidation'),
+  (205, NULL, 'Feature: ruffian racket'),
+  (206, NULL, 'Feature: scoundrel racket'),
+  (207, NULL, 'Feature: thief racket'),
+  (208, 563, 'Feat: Poison Weapon'),
+  (209, 550, 'Feat: Nimble Dodge'),
+  (210, NULL, 'Feature: sneak attack'),
+  (211, NULL, 'Feature: debilitating strike'),
+  (212, NULL, 'legendary in Acrobatics'),
+  (213, NULL, 'legendary in Deception'),
+  (214, 828, 'Feat: Quick Squeeze'), --Skill feat
+  (215, NULL, 'legendary in Stealth'),
+  (216, 577, 'Feat: Sly Striker'),
+  (217, 595, 'Feat: Perfect Distraction'),
+  --Sorcerer
+  (218, Null, 'bloodline that grants arcane spells'),
+  (219, Null, 'bloodline that grants divine spells'),
+  (220, Null, 'bloodline that grants occult spells'),
+  (221, NULL, 'bloodline that grants primal spells'),
+  (222, NULL, 'bloodline spell'),
+  (223, NULL, 'dispel magic in your spell repetoire'),
+  (224, 602, 'Feat: CounterSpell'),
+  (225, NULL, 'Feat: Arcane Evolution or Feat: Occult Evolution'),
+  (226, NULL, 'Feat: Divine Evolution or Feat: Primal Evolution'),
+  (227, 621, 'Feat: Bloodline Focus'),
+  (228, 617, 'Feat: Crossblooded Evolution'),
+  (229, NULL, 'Feature: bloodline paragon'),
+  --Wizard
+  (230, Null, 'Feature: arcane bond'),
+  (231, Null, 'Feature: arcane school'),
+  (232, 640, 'Feat: Conceal Spell'),
+  (233, NULL, 'Feature: universalist wizard'),
+  (234, 636, 'Feat: Hand of the Apprentice'),
+  (235, 633, 'Feat: Counterspell'),
+  --(236, 826, 'Feat: Quick Recognize'),typo in book should be Quick Recognition
+  (237, NULL, 'Feature: archwizards spellcraft'),
+  --Alchemist Dedication
+  (238, NULL, 'Intelligence 14'),
+  (239, 665, 'Feat: Alchemist Dedication'),
+  (240, 666, 'Feat: Basic Concoction'),
+  (241, 669, 'Feat: Expert Alchemy'),
+  --Barbarian Dedication
+  (242, NULL, 'Constitution 14'),
+  (243, 672, 'Feat: Barbarian Dedication'),
+  (244, NULL, 'class granting no more Hit Points per level than 10 + your constituion modifier'),
+  (245, 673, 'Feat: Basic Fury'),
+  (246, NULL, 'expert in Fortitude saves'),
+  --Bard Dedication
+  (247, NULL, 'Charisma 14'),
+  (248, 677, 'Feat: Bard Dedication'),
+  (249, 679, "Feat: Basic Muse's Whispers"),
+  (250, 678, 'Feat: Basic Bard Spellcasting'),
+  (251, 684, 'Feat: Expert Bard Spellcasting'),
+  (252, NULL, 'legendary in Occultism'),
+  --Champion Dedication
+  (253, 868, 'Feat: Champion Dedication'),
+  (254, NULL, 'class granting no more Hit Points per level than 8 + your Constitution modifier'),
+  (255, 687, 'Feat: Basic Devotion'),
+  (256, NULL, 'expert in unarmored defense or one or more types of armor'),
+  --Cleric Dedication
+  (257, NULL, 'Wisdom 14'),
+  (258, 694, 'Feat: Cleric Dedication'),
+  (259, 696, 'Feat: Basic Dogma'),
+  (260, 695, 'Feat: Basic Cleric Spellcasting'),
+  (261, NULL, 'master in Religion'),
+  (262, 699, 'Feat: Expert Cleric Spellcasting'),
+  (263, NULL, 'legendary in Religion'),
+  --Druid Dedication
+  (264, NULL, 'Feat: Druid Dedication'),
+  (265, 703, 'Feat: Basic Wilding'),
+  (266, 702, 'Feat: Basic Druid Spellcasting'),
+  (267, 707, 'Feat: Expert Druid Spellcasting'),
+  --Fighter Dedication
+  (268, NULL, 'Dexterity 14'),
+  (269, 709, 'Feat: Fighter Dedication'),
+  (270, 710, 'Feat: Basic Maneuver'),
+  (271, NULL, 'expert in any kind of weapon or unarmed attack'),
+  --Monk Dedication
+  (272, 715, 'Feat: Monk Dedication'),
+  (273, 716, 'Feat: Basic Kata'),
+  (274, NULL, 'expert in at least one saving throw'),
+  --Ranger Dedication
+  (275, 722, 'Feat: Ranger Dedication'),
+  (276, 723, 'Feat: Basic Hunters Trick'),
+  (277, NULL, 'expert in Perception'),
+  --Rogue Dedication
+  (278, 727, 'Feat: Rogue Dedication'),
+  (279, 728, 'Feat: Basic Trickery'),
+  (280, NULL, 'trained in at least one skill and expert in at least one skill'),
+  (281, NULL, 'expert in Reflex saves'),
+  --Sorcerer Dedication
+  (282,734 , 'Feat: Sorcerer Dedication'),
+  (283, 736, 'Feat: Basic Blood Potency'),
+  (284, 735, 'Feat: Basic Sorcerer Spellcasting'),
+  (285, NULL, 'master in Arcana, Nature, Occultism, Religion, depending on bloodline'),
+  (286, 740, 'Feat: Expert Sorcerer Spellcasting'),
+  (287, Null, 'legendary in Arcana, Nature, Occultism, Religion, depending on bloodline'),
+  -- Wizard Dedication
+  (288, 742, 'Feat: Wizard Dedication'),
+  (289, 744, 'Feat: Basic Arcana'),
+  (290, 745, 'Feat: Basic Wizard Spellcasting'),
+  (291, NULL, 'master in Arcana'),
+  (292, 748, 'Feat: Expert Wizard Spellcasting'),
+  (293, NULL, 'Feat: legendary in Arcana'),
+  --Feats Section
+  (294, Null, 'Class Level 3 '),
+  (295, NULL, 'trained in Lore'),
+  (296, NULL, 'trained in Arcana'),
+  (297, NULL, 'trained in at least one skill'),
+  (298, NULL, 'expert in a skill with the Recall Knowledge action'),
+  (299, NULL, 'Assurance in that skill'),
+  (300, NULL, 'trained in Diplomacy'),
+  (301, NULL, 'Class Level 7'),
+  (302, NULL, 'Class Level 15'),
+  (303, NULL, 'master in Intimidation'),
+  (304, NULL, 'trained in Medicine'),
+  (305, NULL, 'trained in Acrobatics'),
+  (306, NULL, 'trained in Deception'),
+  (307, NULL, 'legendary in Athletics'),
+  (308, NULL, 'expert in Nature'),
+  (309, NULL, 'expert in Deception'),
+  (310, NULL, 'expert in Society'),
+  (311, 772, 'Feat: Courtly Graces'),
+  (312, NULL, 'expert in Medicine'),
+  (313, NULL, 'trained in Society'),
+  (314, NULL, 'legendary in Crafting'),
+  (315, NULL, 'trained in a skill with the Recall Knowledge action'),
+  (316, NULL, 'trained in Stealth'),
+  (317, NULL, 'trained in Survival'),
+  (318, NULL, 'Feat: trained in Performance'),
+  (319, 844, 'Feat: Specialty Crafting'),
+  (320, NULL, 'Class Level 11'),
+  (321, NULL, 'Charisma 16'),
+  (322, NULL, 'Strength 16'),
+  (323, NULL, 'expert in Intimidation'),
+  (324, NULL, 'master in Acrobatics'),
+  (325, NULL, 'legendary in Society'),
+  (326, 814, 'Feat: Multilingual'),
+  (327, NULL, 'legendary in Medicine'),
+  (328, NULL, 'legendary in Diplomacy'),
+  (329, NULL, 'legendary in Performance'),
+  (330, 862, 'Feat: Virtuosic Performer'),
+  (331, NULL, 'legendary in Lore'),
+  (332, NULL, 'legendary in Sneak'),
+  (333, 850, 'Feat: Swift Sneak'),
+  (334, NULL, 'legendary in Thievery'),
+  (335, 818, 'Feat: Pickpocket'),
+  (336, NULL, 'trained in Nature'),
+  (337, NULL, 'expert in Acrobatics'),
+  (338, NULL, 'trained in Occultism'),
+  (339, NULL, 'trained in Thievery'),
+  (340, NULL, 'trained in Arcana, Nature, Occultism, or Religion'),
+  (341, NULL, 'master in Arcana, Nature, Occultism, or Religion'),
+  (342, 834, 'Feat: Recognize Spell'),
+  (343, NULL, 'master in Thievery'),
+  (344, NULL, 'expert in Stealth'),
+  (345, NULL, 'legendary in Intimidation'),
+  (346, NULL, 'master in Diplomacy'),
+  (347, NULL, 'Intelligence 12'),
+  (348, NULL, 'master in Deception'),
+  (349, NULL, 'trained in Religion'),
+  (350, NULL, 'legendary in Arcana'),
+  (351, NULL, 'expert in Lore'),
+  (352, NULL, 'expert in Thievery'),
+  (236, 826, 'Feat: Quick Recognition'),
+  (355, NULL, 'expert in Arcana. Nature, Occultism, or Religion'),
+  (356, NULL, 'expert in Diplomacy');
 
 
 INSERT INTO feats (
@@ -139,7 +399,7 @@ INSERT INTO feats (
   short_name,
   descr)
 VALUES
-
+-- Dwarf Ancestry Feats
 (1,1,"36","Dwarven Lore","You eagerly absorbed the old stories and traditions of your ancestors, your gods, and your people, studying in subjects and techniques passed down for generation upon generation. You gain the trained proficiency rank in Crafting and Religion. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice. You also become trained in Dwarven Lore."),
 (2,1,"36","Dwarven Weapon Familiarity","Your kin have instilled in you an affinity for hard-hitting weapons, and you prefer these to more elegant arms. You are trained with the battle axe, pick, and warhammer. You also gain access to all uncommon dwarf weapons. For the purpose of determining your proficiency, martial dwarf weapons are simple weapons and advanced dwarf weapons are martial weapons."),
 (3,1,"36","Rock Runner","Your innate connection to stone makes you adept at moving across uneven surfaces. You can ignore difficult terrain caused by rubble and uneven ground made of stone and earth. In addition, when you use the Acrobatics skill to Balance on narrow surfaces or uneven ground made of stone or earth, you aren’t flat-footed, and when you roll a success at one of these Acrobatics checks, you get a critical success instead."),
@@ -151,6 +411,7 @@ VALUES
 (9,1,"37","Mountain's Stoutness","Your hardiness lets you withstand more punishment than most before going down. Increase your maximum Hit Points by your level. You also decrease the DC of recovery checks when you have the dying condition by 1. If you also have the Toughness feat, the Hit Points gained from it and this feat are cumulative, and you decrease the DC of recovery checks by 4."),
 (10,1,"37","Stonewalker","You have a deep reverence for and connection to stone. You gain meld into stone as a 3rd-level divine innate spell that you can cast once per day. If you have the Stonecunning dwarf ancestry feat, you can attempt to find unusual stonework and stonework traps that require legendary proficiency in Perception. If you have both Stonecunning and legendary proficiency in Perception, when you’re not Seeking and the GM rolls a secret check for you to notice unusual stonework,you keep the bonus from Stonecunning and don’t take the -2 circumstance penalty."),
 (11,1,"37","Dwarven Weapon Expertise","Your dwarven affinity blends with your training, granting you great skill with dwarven weapons. Whenever you gain a class feature that grants you expert or greater proficiency in certain weapons, you also gain that proficiency for battle axes, picks, warhammers, and all dwarven weapons in which you are trained."),
+-- Elven Ancestry Feats
 (12,1,"40","Ancestral Longevity","You have accumulated a vast array of lived knowledge over the years. During your daily preparations, you can reflect upon your life experiences to gain the trained proficiency rank in one skill of your choice. This proficiency lasts until you prepare again. Since this proficiency is temporary, you can’t use it as a prerequisite for a skill increase or a permanent character option like a feat."),
 (13,1,"40","Elven Lore","You’ve studied in traditional elven arts, learning about arcane magic and the world around you. You gain the trained proficiency rank in Arcana and Nature. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice. You also become trained in Elven Lore."),
 (14,1,"40","Elven Weapon Familiarity","You favor bows and other elegant weapons. You are trained with longbows, composite longbows, longswords, rapiers, shortbows, and composite shortbows. In addition, you gain access to all uncommon elf weapons. For the purpose of determining your proficiency, martial elf weapons are simple weapons and advanced elf weapons are martial weapons."),
@@ -164,6 +425,7 @@ VALUES
 (22,1,"41","Expert Longevity","You’ve continued to refine the knowledge and skills you’ve gained through your life. When you choose a skill in which to become trained with Ancestral Longevity, you can also choose a skill in which you are already trained and become an expert in that skill. This lasts until your Ancestral Longevity expires. When the effects of Ancestral Longevity and Expert Longevity expire, you can retrain one of your skill increases. The skill increase you gain from this retraining must either make you trained in the skill you chose with Ancestral Longevity or make you an expert in the skill you chose with Expert Longevity."),
 (23,1,"41","Universal Longevity","You’ve perfected your ability to keep up with all the skills you’ve learned over your long life, so you’re almost never truly untrained at a skill. You reflect on your life experiences, changing the skills you selected with Elven Longevity and Expert Longevity."),
 (24,1,"41","Elven Weapon Expertise","Your elven affinity blends with your class training, granting you great skill with elven weapons. Whenever you gain a class feature that grants you expert or greater proficiency in certain weapons, you also gain that proficiency in longbows, composite longbows, longswords, rapiers, shortbows, composite shortbows, and all elf weapons in which you are trained."),
+-- Gnome Ancestry Feats
 (25,1,"44","Animal Accomplice","You build a rapport with an animal, which becomes magically bonded to you. You gain a <%FAMILARS%%>familiar using the rules on page 217. The type of animal is up to you, but most gnomes choose animals with a burrow Speed."),
 (26,1,"44","Burrow Elocutionist","You recognize the chittering of ground creatures as its own peculiar language. You can ask questions of, receive answers from, and use the Diplomacy skill with animals that have a burrow Speed, such as badgers, ground squirrels, moles, and prairie dogs. The GM determines which animals count for this ability."),
 (27,1,"44","Fey Fellowship","Your enhanced fey connection affords you a warmer reception from creatures of the First World as well as tools to foil their tricks. You gain a +2 circumstance bonus to both Perception checks and saving throws against fey."),
@@ -177,6 +439,7 @@ VALUES
 (35,1,"45","First World Adept","Over time your fey magic has grown stronger. You gain faerie fire and invisibility as 2nd-level primal innate spells. You can cast each of these primal innate spells once per day."),
 (36,1,"45","Vivacious Conduit","Your connection to the First World has grown, and its positive energy flows into you rapidly. If you rest for 10 minutes, you gain Hit Points equal to your Constitution modifier × half your level. This is cumulative with any healing you receive from Treat Wounds."),
 (37,1,"45","Gnome Weapon Expertise","Your gnome affinity blends with your class training, granting you great skill with gnome weapons. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the glaive, kukri, and all gnome weapons in which you are trained."),
+-- Goblin Ancestry Feats
 (38,1,"48","Burn It!","Fire fascinates you. Your spells and alchemical items that deal fire damage gain a status bonus to damage equal to half the spell’s level or one-quarter the item’s level (minimum 1). You also gain a +1 status bonus to any persistent fire damage you deal."),
 (39,1,"48","City Scavenger","You know that the greatest treasures often look like refuse, and you scoff at those who throw away perfectly good scraps. You gain a +1 circumstance bonus to checks to Subsist, and you can use Society or Survival when you Subsist in a settlement."),
 (40,1,"48","Goblin Lore","You’ve picked up skills and tales from your goblin community. You gain the trained proficiency rank in Nature and Stealth. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice. You also become trained in Goblin Lore."),
@@ -191,6 +454,7 @@ VALUES
 (49,1,"49","Skittering Scuttle","You can scuttle farther and faster when maneuvering alongside allies. When you use <%FEATS%Goblin Scuttle%%>Goblin Scuttle, you can Stride up to half your Speed instead of Stepping."),
 (50,1,"49","Goblin Weapon Expertise","Your goblin affinity blends with your class training, granting you great skill with goblin weapons. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the dogslicer, horsechopper, and all goblin weapons in which you are trained."),
 (51,1,"49","Very, Very Sneaky","You can move up to your Speed when you use the Sneak action, and you no longer need to have cover or greater cover or be concealed to Hide or Sneak."),
+-- Halfling Ancestry Feats
 (52,1,"52","Distracting Shadows","You have learned to remain hidden by using larger folk as a distraction to avoid drawing attention to yourself. You can use creatures that are at least one size larger than you (usually Medium or larger) as cover for the Hide and Sneak actions, though you still can’t use such creatures as cover for other uses, such as the Take Cover action."),
 (53,1,"52","Halfling Lore","You’ve dutifully learned how to keep your balance and how to stick to the shadows where it’s safe, important skills passed down through generations of halfling tradition. You gain the trained proficiency rank in Acrobatics and Stealth. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice. You also become trained in Halfling Lore."),
 (54,1,"52","Halfling Luck","Your happy-go-lucky nature makes it seem like misfortune avoids you, and to an extent, that might even be true. You can reroll the triggering check, but you must use the new result, even if it’s worse than your first roll."),
@@ -205,6 +469,7 @@ VALUES
 (63,1,"53","Irrepressible","You are easily able to ward off attempts to play on your fears and emotions. When you roll a success on a saving throw against an emotion effect, you get a critical success instead. If your heritage is gutsy halfling, when you roll a critical failure on a saving throw against an emotion effect, you get a failure instead."),
 (64,1,"53","Ceaseless Shadows","You excel at going unnoticed, especially among a crowd. You no longer need to have cover or be concealed to Hide or Sneak. If you would have lesser cover from creatures, you gain cover and can Take Cover, and if you would have cover from creatures, you gain greater cover."),
 (65,1,"53","Halfling Weapon Expertise","Your halfling affinity blends with your class training, granting you great skill with halfling weapons. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the sling, halfling sling staff, shortsword, and all halfling weapons in which you are trained."),
+-- Human Ancestry Feats
 (66,1,"57","Adapted Cantrip","Through study of multiple magical traditions, you’ve altered a spell to suit your spellcasting style. Choose one cantrip from a magical tradition other than your own. If you have a spell repertoire or a spellbook, replace one of the cantrips you know or have in your spellbook with the chosen spell. If you prepare spells without a spellbook (if you’re a cleric or druid, for example), one of your cantrips must always be the chosen spell, and you prepare the rest normally. You can cast this cantrip as a spell of your class’s tradition. If you swap or retrain this cantrip later, you can choose its replacement from the same alternate tradition or a different one."),
 (67,1,"57","Cooperative Nature","The short human life span lends perspective and has taught you from a young age to set aside differences and work with others to achieve greatness. You gain a +4 circumstance bonus on checks to Aid."),
 (68,1,"57","General Training","Your adaptability manifests in your mastery of a range of useful abilities. You gain a 1st-level general feat. You must meet the feat’s prerequisites, but if you select this feat during character creation, you can select the feat later in the process in order to determine which prerequisites you meet."),
@@ -218,9 +483,11 @@ VALUES
 (76,1,"57","Incredible Improvisation","A stroke of brilliance gives you a major advantage with a skill despite your inexperience. Gain a +4 circumstance bonus to the triggering skill check."),
 (77,1,"58","Multitalented","You’ve learned to split your focus between multiple classes with ease. You gain a 2nd-level multiclass dedication feat (for more about multiclass archetypes, see page 219), even if you normally couldn’t take another dedication feat until you take more feats from your current archetype. If you’re a half-elf, you don’t need to meet the feat’s ability score prerequisites."),
 (78,1,"58","Unconventional Expertise","You’ve continued to advance your powers using your unconventional weapon. Whenever you gain a class feature that grants you expert or greater proficiency in certain weapons, you also gain that proficiency in the weapon you chose for Unconventional Weaponry."),
+-- Half-Elf Ancestry Feats
 (79,1,"58","Elf Atavism","Your elven blood runs particularly strong, granting you features far more elven than those of a typical half-elf. You may also have been raised among elves, steeped in your elven ancestors’ heritage. You gain the benefits of the elf heritage of your elven parent or ancestors. You typically can’t select a heritage that depends on or improves an elven feature you don’t have. For example, you couldn’t gain the cavern elf’s darkvision ability if you didn’t have low-light vision. In these cases, at the GM’s discretion, you might gain a different benefit."),
 (80,1,"58","Inspire Imitation","Your own actions inspire your allies to great achievements. Whenever you critically succeed at a skill check, you automatically qualify to use the Aid reaction when attempting to help an ally using the same skill, even without spending an action to prepare to do so."),
 (81,1,"58","Supernatural Charm","The elven magic in your blood manifests as a force you can use to become more appealing or alluring. You can cast 1st-level charm as an arcane innate spell once per day."),
+-- Half-Orc Ancestry Feats
 (82,1,"59","Monstrous Peacemaker","Your dual human and orc nature has given you a unique perspective, allowing you to bridge the gap between humans and the many intelligent creatures in the world that humans consider monsters. You gain a +1 circumstance bonus to Diplomacy checks against non-humanoid intelligent creatures and against humanoids that are marginalized in human society (at the GM’s discretion, but typically at least including giants, goblins, kobolds, and orcs). You also gain this bonus on Perception checks to Sense the Motives of such creatures."),
 (83,1,"59","Orc Ferocity","Fierceness in battle runs through your blood, and you refuse to fall from your injuries. You avoid being knocked out and remain at 1 Hit Point, and your wounded condition increases by 1."),
 (84,1,"59","Orc Sight","Your orc blood is strong enough to grant you the keen vision of your orc forebears. You gain darkvision, allowing you to see in darkness and dim light just as well as you can in bright light. However, in darkness, you see in black and white only."),
@@ -231,6 +498,7 @@ VALUES
 (89,1,"59","Pervasive Superstition","You steep yourself in superstition and practice ancient orc mental exercises for shrugging off the effects of magic. You gain a +1 circumstance bonus to saving throws against spells and magical effects at all times."),
 (90,1,"59","Incredible Ferocity","Given time to collect yourself after a near-death scrape, you can rebuild your ferocity and withstand additional finishing blows. You can use Orc Ferocity with a frequency of once per hour, rather than once per day."),
 (91,1,"59","Orc Weapon Expertise","Your orc affinity blends with your class training, granting you great skill with orc weapons. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the falchion, the greataxe, and all orc weapons in which you are trained."),
+-- Alchemy Class Feats
 (92,1,"76","Alchemical Familiar","You have used alchemy to create life, a simple creature formed from alchemical materials, reagents, and a bit of your own blood. This alchemical familiar appears to be a small creature of flesh and blood, though it might have some unusual or distinguishing aspects depending on your creative process. Like other familiars, your alchemical familiar assists you in your laboratory and on adventures. The familiar uses your Intelligence modifier to determine its Perception, Acrobatics, and Stealth modifiers (see Familiars for more information)."),
 (93,1,"76","Alchemical Savant","You can identify alchemical items quickly. When using the Crafting skill to Identify Alchemy on an alchemical item you hold, you can do so as a single action, which has the concentrate and manipulate traits, instead of spending 10 minutes. If you have the formula for the item you are attempting to identify, you gain a +2 circumstance bonus to your check, and if you roll a critical failure, you get a failure instead."),
 (94,1,"76","Far Lobber","You’ve learned how to throw a longer distance. When you throw an alchemical bomb, it has a range increment of 30 feet instead of the usual 20 feet."),
@@ -269,6 +537,7 @@ VALUES
 (127,1,"81","Craft Philosopher's Stone","Your research has paid off, culminating in the legendary philosopher’s stone. You learn the formula for the philosopher’s stone and can add it to your formula book."),
 (128,1,"81","Mega Bomb","You add an incredibly powerful additive to a held bomb to create a mega bomb, greatly increasing its area and power. You use an Interact action to throw the mega bomb, rather than Strike, and you don’t make an attack roll. The mega bomb affects creatures in a 30-foot-radius burst, centered within 60 feet of you. The bomb deals damage as if each creature were the primary target, with a basic Reflex save. On a failed save, a creature also takes any extra effects that affect a primary target (such as flat-footed from bottled lightning). While all targets in the area take splash damage as primary targets, there is no further splash beyond that area. If your next action after creating a mega bomb isn’t an Interact action to throw it, the mega bomb denatures and loses all effects."),
 (129,1,"81","Perfect Mutagen","You have enhanced the formulas for your mutagens, aligning them perfectly to your physiology. When under the effect of a mutagen you crafted, you do not suffer its drawback."),
+-- Barbarian Class Feats
 (130,1,"88","Acute Vision","When you are raging, your visual senses improve, granting you darkvision."),
 (131,1,"88","Moment of Clarity","You push back your rage for a moment in order to think clearly. Until the end of this turn, you can use actions with the concentrate trait even if those actions don’t have the rage trait."),
 (132,1,"88","Raging Intimidation","Your fury fills your foes with fear. While you are raging, your Demoralize and Scare to Death actions (from the Intimidation skill and an Intimidation skill feat, respectively) gain the rage trait, allowing you to use them while raging. As soon as you meet the prerequisites for the skill feats Intimidating Glare and Scare to Death, you gain these feats."),
@@ -294,7 +563,7 @@ VALUES
 (152,1,"91","Furious Bully","You bully foes across the battlefield. While raging, you gain a +2 circumstance bonus to Athletics checks for attack actions."),
 (153,1,"91","Renewed Vigor","You pause to recover your raging vigor. You gain temporary Hit Points equal to half your level plus your Constitution modifier."),
 (154,1,"91","Share Rage","You stoke an ally’s fury. While you are raging, one willing creature within 30 feet gains the effects of the Rage action, except it can still use concentrate actions."),
-(155,1,"149","Sudden Leap","You make an impressive leap and swing while you soar. Make a Leap, High Jump, or Long Jump and attempt one melee Strike at any point during your jump. Immediately after the Strike, you fall to the ground if you’re in the air, even if you haven’t reached the maximum distance of your jump. If the distance you fall is no more than the height of your jump, you take no damage and land upright."),
+(155,1,"91","Sudden Leap","You make an impressive leap and swing while you soar. Make a Leap, High Jump, or Long Jump and attempt one melee Strike at any point during your jump. Immediately after the Strike, you fall to the ground if you’re in the air, even if you haven’t reached the maximum distance of your jump. If the distance you fall is no more than the height of your jump, you take no damage and land upright."),
 (156,1,"91","Thrash","You thrash the grabbed foe around. It takes bludgeoning damage equal to your Strength modifier plus your ferocious specialization damage plus your Rage damage. The foe must attempt a basic Fortitude save against your class DC."),
 (157,1,"91","Come and Get Me","You open yourself to attacks so you can respond in turn. Until your rage ends, you are flat-footed, and damage rolls against you gain a +2 circumstance bonus. If a creature hits you, that creature is flat-footed to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary Hit Points equal to your Constitution modifier, or double that on a critical hit. These temporary Hit Points last until the end of your rage."),
 (158,1,"91","Furious Sprint","You rush forward. Stride up to five times your Speed in a straight line. You can increase the number of actions this activity takes to 3 to Stride up to eight times your Speed in a straight line instead."),
@@ -318,9 +587,10 @@ VALUES
 (176,1,"93","Vicious Evisceration","You make a vicious attack that maims your enemy. Make a melee Strike. If the Strike hits and deals damage, the target is drained 1, or drained 2 on a critical success."),
 (177,1,"93","Contagious Rage","You can drive your allies into a frenzy, granting them incredible benefits. You can ignore the requirements on Share Rage, using it multiple times in a Rage. Allies affected by Share Rage who accept your anathema for the duration of the Rage gain your instinct ability and the specialization ability it gains from weapon specialization, but not greater weapon specialization."),
 (178,1,"93","Quaking Stomp","You stomp the ground with such force that it creates a minor earthquake, with the effects of the earthquake spell."),
+-- Bard Class Feats
 (179,1,"99","Bardic Lore","Your studies make you informed on every subject. You are trained in Bardic Lore, a special Lore skill that can be used only to Recall Knowledge, but on any topic. If you have legendary proficiency in Occultism, you gain expert proficiency in Bardic Lore, but you can’t increase your proficiency rank in Bardic Lore by any other means."),
 (180,1,"99","Lingering Composition","By adding a flourish, you make your compositions last longer. You learn the lingering composition focus spell. Increase the number of Focus Points in your focus pool by 1."),
-(181,1,"122","Reach Spell","You can extend the range of your spells. If the next action you use is to Cast a Spell that has a range, increase that spell’s range by 30 feet. As is standard for increasing spell ranges, if the spell normally has a range of touch, you extend its range to 30 feet."),
+(181,1,"99","Reach Spell","You can extend the range of your spells. If the next action you use is to Cast a Spell that has a range, increase that spell’s range by 30 feet. As is standard for increasing spell ranges, if the spell normally has a range of touch, you extend its range to 30 feet."),
 (182,1,"100","Versatile Performance","You can rely on the grandeur of your performances rather than ordinary social skills. You can use Performance instead of Diplomacy to Make an Impression and instead of Intimidation to Demoralize. You can also use an acting Performance instead of Deception to Impersonate. You can use your proficiency rank in Performance to meet the requirements of skill feats that require a particular rank in Deception, Diplomacy, or Intimidation."),
 (183,1,"100","Cantrip Expansion","A greater understanding of your magic broadens your range of simple spells."),
 (184,1,"100","Esoteric Polymath","You keep a book of occult spells, similar to a wizard’s spellbook, and can use its spells to supplement your spell repertoire. Add all the spells in your repertoire to this book for free. You can use the Occultism skill to Learn Spells (page 238) and add them to your spellbook by paying the appropriate cost, similar to a wizard. During your daily preparations, choose any one spell from your book of occult spells. If that spell is already in your spell repertoire, you can treat it as an additional signature spell that day. If it isn’t in your repertoire, treat it as though it were until your next daily preparations."),
@@ -333,7 +603,7 @@ VALUES
 (191,1,"101","Versatile Signature","While most bards are known for certain signature performances and spells, you’re always tweaking your available repertoire. When you make your daily preparations, you can change one of your signature spells to a different spell of that level from your repertoire."),
 (192,1,"101","Dirge of Doom","You learn the dirge of doom composition cantrip, which frightens your enemies."),
 (193,1,"101","Harmonize","You can perform multiple compositions simultaneously. If your next action is to cast a composition, it becomes a harmonized composition. Unlike a normal composition, a harmonized composition doesn’t end if you cast another composition, and you can cast another composition on the same turn as a harmonized one. Casting another harmonized composition ends any harmonized composition you have in effect."),
-(194,1,"211","Steady Spellcasting","Confident in your technique, you don’t easily lose your concentration when you Cast a Spell. If a reaction would disrupt your spellcasting action, attempt a DC 15 fiat check. If you succeed, your action isn’t disrupted."),
+(194,1,"101","Steady Spellcasting","Confident in your technique, you don’t easily lose your concentration when you Cast a Spell. If a reaction would disrupt your spellcasting action, attempt a DC 15 fiat check. If you succeed, your action isn’t disrupted."),
 (195,1,"101","Eclectic Skill","Your broad experiences translate to a range of skills. You add your level to all skill checks in which you are untrained. You can attempt any skill check that normally requires you to be trained, even if you are untrained. If you have legendary proficiency in Occultism, you can attempt any skill check that normally requires you to have expert proficiency, even if untrained or trained."),
 (196,1,"102","Inspire Heroics","Your performances inspire even greater deeds in your allies. You learn the inspire heroics metamagic focus spell. Increase the number of Focus Points in your focus pool by 1."),
 (197,1,"102","Know-It-All","When you succeed at a Knowledge check, you gain additional information or context. When you critically succeed at a Knowledge check, at the GM’s discretion you might gain even more additional information or context than normal."),
@@ -352,7 +622,8 @@ VALUES
 (210,1,"103","Impossible Polymath","Your esoteric formulas are so unusual that they allow you to dabble in magic from diverse traditions that other bards don’t understand. As long as you’re trained in Arcana, you can add arcane spells to your book from Esoteric Polymath; as long as you’re trained in Nature, you can add primal spells to your book; and as long as you are trained in Religion, you can add divine spells to your book. Like your other spells in your book, you can add one of these spells from another tradition to your repertoire as an occult spell each day using Esoteric Polymath, but you can’t retain any spells from another tradition when you prepare again, even if you have Eclectic Polymath."),
 (211,1,"103","Fatal Aria","Your songs overwhelm the target with unbearable emotion, potentially striking them dead on the spot. You learn the fatal aria composition spell. Increase the number of Focus Points in your focus pool by 1."),
 (212,1,"103","Perfect Encore","You develop another incredible creation. You gain an additional 10th-level spell slot."),
-(213,1,"103","Symphony of the Muses","You are able to weave countless performances together into a solo symphony. You are no longer limited to a single composition each turn or a single composition at a time; when you use a new composition, all previous compositions’ effects continue for their remaining duration."),
+(213,1,"103","Symphony of the Muse","You are able to weave countless performances together into a solo symphony. You are no longer limited to a single composition each turn or a single composition at a time; when you use a new composition, all previous compositions’ effects continue for their remaining duration."),
+-- Champion Class Feats
 (214,1,"109","Deity's Domain","You embody an aspect of your deity. Choose one of your deity’s domains from those listed on page 441. You gain the domain’s initial domain spell as a devotion spell."),
 (215,1,"109","Ranged Reprisal","You can use Retributive Strike with a ranged weapon. In addition, if the foe that triggered your reaction is within 5 feet of your reach but not in your reach, as part of your reaction you can Step to put the foe in your reach before making a melee Retributive Strike."),
 (216,1,"109","Unimpeded Step","With a burst of divine liberation, your ally’s movement from your Liberating Step is unaffected by difficult terrain, greater difficult terrain, narrow surfaces, and uneven ground."),
@@ -402,6 +673,7 @@ VALUES
 (261,1,"115","Celestial Mount","Your steed gains incredible celestial powers granted by your deity. It gains darkvision, its maximum Hit Points increase by 40, and it gains weakness 10 to evil damage. Additionally, it grows wings appropriate to a servitor of your deity (such as metallic wings for an archon), granting it a fly Speed equal to its Speed. It gains the celestial trait and the trait appropriate to the type of servitor it has become (archon, angel, or azata, for example)."),
 (262,1,"115","Radiant Blade Master","Your divine ally turns your chosen weapon into a paragon of its type. When you choose the weapon for your blade divine ally during your preparations, add the following property runes to the list of effects you can choose from: dancing, greater disrupting, and keen."),
 (263,1,"115","Shield Paragon","Your shield is a vessel of divine protection. When you’re wielding your chosen shield, it is always raised, even without you using the Raise a Shield action. Your chosen shield doubles its HP and BT, rather than increasing them by half. If it would be destroyed, it vanishes to your deity’s realm instead, where your divine ally repairs it. During your next daily preparations, the shield returns to you fully repaired."),
+-- Cleric Class Feats
 (264,1,"121","Deadly Simplicity","Your deity’s weapon is especially powerful in your hands. When you are wielding your deity’s favored weapon, increase the damage die size of that weapon by one step. If your deity’s favored weapon is an unarmed attack (such as a fist, if you worship Irori) and its damage die is smaller than d6, instead increase its damage die size to d6."),
 (265,1,"121","Domain Initiate","Your deity bestows a special spell related to their powers. Select one domain—a subject of particular interest to you within your religion—from your deity’s list. You gain an initial domain spell for that domain, a spell unique to the domain and not available to other clerics. Each domain’s theme and domain spells appear in Table 8–2: Domains on page 441."),
 (266,1,"121","Harming Hands","The mordant power of your negative energy grows. When you cast harm, you roll d10s instead of d8s."),
@@ -446,6 +718,7 @@ VALUES
 (308,1,"127","Avatar's Audience","Your extensive service has made you a lesser herald of your deity, which affords you certain privileges. First, any creature you encounter knows instinctively that you speak for your deity. Second, if you conduct the commune ritual to contact your deity, you don’t have to pay any cost and you automatically get a critical success. Third, once per day, you can cast plane shift as a divine innate spell, but only to travel to the realm of your deity. When you cast it this way, its casting time is 1 minute, your religious symbol is a sufficient tuning fork for this spell, and you appear exactly where you want to be. If you’re in your deity’s realm due to this spell, you can return to the point you left when you cast it by spending a single action, which has the concentrate and divine traits."),
 (309,1,"127","Maker of Miracles","You are a conduit for truly deific power. You gain an additional 10th-level spell slot."),
 (310,1,"127","Metamagic Channel","Deep understanding of divine revelations into the nature of vital essence allows you to freely manipulate the effects of your positive or negative energy. Use 1 metamagic action that you can perform that normally takes 1 action and can be applied to the harm or heal spell. If you use it in this way, its effects apply only to a harm or heal spell."),
+-- Druid Class Feats
 (311,1,"133","Animal Companion","You gain the service of a young animal companion that travels with you on your adventures and obeys any simple commands you give it to the best of its abilities. See Animal Companions on page 214 for more information."),
 (312,1,"133","Leshy Familiar","You gain a leshy familiar, a Tiny plant that embodies one of the many spirits of nature. Other than taking the form of a plant instead of an animal, this familiar uses all the same rules as other familiars, which are detailed on page 217."),
 (314,1,"134","Storm Born","You are at home out in the elements, reveling in the power of nature unleashed. You do not take circumstance penalties to ranged spell attacks or Perception checks caused by weather, and your targeted spells don’t require a flat check to succeed against a target concealed by weather (such as fog)."),
@@ -469,7 +742,7 @@ VALUES
 (334,1,"137","Wind Caller","You bid the winds to lift and carry you through the air. You gain the stormwind flight order spell. Increase the number of Focus Points in your focus pool by 1."),
 (335,1,"137","Elemental Shape","You understand the fundamental elements of nature such that you can imbue them into your body and manifest as a living embodiment of those elements. Add the forms in elemental form to your wild shape list. Whenever you’re polymorphed into another form using wild shape, you gain resistance 5 to fire."),
 (336,1,"137","Healing Transformation","You can take advantage of shapechanging magic to close wounds and patch injuries. If your next action is to cast a non-cantrip polymorph spell that targets only one creature, your polymorph spell also restores 1d6 Hit Points per spell level to that creature. This is a healing effect."),
-(337,1,"200","Overwhelming Energy","You alter your spells to overcome resistances. If the next action you use is to Cast a Spell, the spell ignores an amount of the target’s resistance to acid, cold, electricity, fire, or sonic damage equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell, such as the wall created by wall of fire. A creature’s immunities are unaffected."),
+(337,1,"137","Overwhelming Energy","You alter your spells to overcome resistances. If the next action you use is to Cast a Spell, the spell ignores an amount of the target’s resistance to acid, cold, electricity, fire, or sonic damage equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell, such as the wall created by wall of fire. A creature’s immunities are unaffected."),
 (338,1,"138","Plant Shape","You can take the form of a plant creature. Add the forms listed in plant form to your wild shape list; if you don’t have wild shape, you can instead cast plant form once per day, heightened to the highest spell level you can cast. Whenever you’re polymorphed into another form using wild shape, you gain resistance 5 to poison."),
 (339,1,"138","Side by Side (Druid)","You and your animal companion fight in tandem, distracting your foes and keeping them off balance. Whenever you and your animal companion are adjacent to the same foe, you are both flanking that foe with each other, regardless of your actual positions."),
 (340,1,"138","Dragon Shape","You can take on the form of some of the world’s most fearsome creatures. Add the forms listed in dragon form to your wild shape list. Whenever you’re polymorphed into another form using wild shape, you gain resistance 5 to your choice of acid, cold, electricity, fire, or poison."),
@@ -487,6 +760,7 @@ VALUES
 (353,1,"139","Hierophant's Power","You have entwined yourself with the natural world, and its full power flows through you. You gain an additional 10th-level spell slot."),
 (354,1,"139","Leyline Conduit","You can cast your spells effortlessly by tapping into the leylines of the world. If your next action is to Cast a Spell of 5th level or lower that has no duration, you don’t expend the prepared spell as you cast it."),
 (355,1,"139","True Shapeshifter","You transcend the limitations of form. While under the effects of wild shape, you can change into any other form on your wild shape list; if the durations of the forms would vary, use the shorter of the two durations. Once per day, you can transform into a kaiju, with the effects of nature incarnate; if you have Plant Shape, you can instead transform into a green man."),
+-- Fighter Class Feats
 (356,1,"144","Double Slice","You lash out at your foe with both weapons. Make two Strikes, one with each of your two melee weapons, each using your current multiple attack penalty. Both Strikes must have the same target. If the second Strike is made with a weapon that doesn’t have the agile trait, it takes a –2 penalty. If both attacks hit, combine their damage, and then add any other applicable effects from both weapons. You add any precision damage only once, to the attack of your choice. Combine the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating your multiple attack penalty."),
 (357,1,"144","Exacting Strike","You make a controlled attack, fully accounting for your momentum. Make a Strike. The Strike gains the following failure effect."),
 (358,1,"144","Point-Blank Shot","You take aim to pick off nearby enemies quickly. When using a ranged volley weapon while you are in this stance, you don’t take the penalty to your attack rolls from the volley trait. When using a ranged weapon that doesn’t have the volley trait, you gain a +2 circumstance bonus to damage rolls on attacks against targets within the weapon’s first range increment."),
@@ -555,6 +829,7 @@ VALUES
 (427,1,"153","Savage Critical","The wounds you inflict are grievous. When you Strike with a weapon or unarmed attack for which you have legendary proficiency, you critically succeed if you roll a 19 on the die as long as that result is a success. This has no effect on a 19 if the result would be a failure."),
 (428,1,"153","Boudless Reprisals","With a sixth sense for the flow of combat, you can quickly react to any situation as required. At the start of each enemy’s turn, you gain a reaction you can use only during that turn."),
 (429,1,"153","Weapon Supremacy","Your skill with weapons lets you attack swiftly at all times. You’re permanently quickened. You can use your extra action only to Strike."),
+-- Monk Class Feats
 (430,1,"158","Crane Stance","You enter the stance of a crane, holding your arms in an imitation of a crane’s wings and using flowing, defensive motions. You gain a +1 circumstance bonus to AC, but the only Strikes you can make are crane wing attacks. These deal 1d6 bludgeoning damage; are in the brawling group; and have the agile, finesse, nonlethal, and unarmed traits. While in Crane Stance, reduce the DC for High Jump and Long Jump by 5, and when you Leap, you can move an additional 5 feet horizontally or 2 feet vertically."),
 (431,1,"158","Dragon Stance","You enter the stance of a dragon and make powerful leg strikes like a lashing dragon’s tail. You can make dragon tail attacks that deal 1d10 bludgeoning damage. They are in the brawling group and have the backswing, nonlethal, and unarmed traits. While in Dragon Stance, you can ignore the first square of difficult terrain while Striding."),
 (432,1,"158","Ki Rush","You can use ki to move with extraordinary speed and make yourself harder to hit. You gain the ki rush ki spell and a focus pool of 1 Focus Point. The rules for ki spells are summarized in the sidebar on page 157, and the full rules for focus spells appear on page 300."),
@@ -615,6 +890,7 @@ VALUES
 (487,1,"165","Enduring Quickness","You move as fast and as high as the wind itself. You’re permanently quickened. You can use your extra action to Stride or Leap, or to provide one of the actions needed for a High Jump or Long Jump."),
 (488,1,"165","Fuse Stance","You have combined two stances into a single stance all your own. When you take this feat, choose two stances you know and combine them into a single fused stance. Give your new fused stance a unique name. When you enter your fused stance, you gain all the effects of both stances, including the requirements and restrictions. You can’t fuse stances with fundamentally incompatible requirements or restrictions (such as Ironblood Stance and Crane Stance, which both require using only one type of Strike)."),
 (489,1,"165","Impossible Technique","You execute a maneuver that defies possibility. If the triggering effect was an enemy’s attack hitting you, the enemy rerolls the attack roll and uses the lower result. If the triggering effect was you failing a saving throw, you reroll the saving throw and use the higher result."),
+-- Ranger Class Feats
 (491,1,"171","Crossbow Ace","You have a deep understanding of the crossbow. When you’re wielding a crossbow and use Hunt Prey or use Interact to reload your crossbow, you gain a +2 circumstance bonus to the damage roll on your next Strike with that crossbow. If the crossbow is a simple crossbow, also increase the damage die size for that attack by one step (page 279). You must make the attack before the end of your next turn or these benefits are lost."),
 (492,1,"171","Hunted Shot","You take two quick shots against the one you hunt. Make two Strikes against your prey with the required weapon. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your multiple attack penalty to each Strike normally."),
 (493,1,"171","Monster Hunter","You swiftly assess your prey and apply what you know. As part of the action used to Hunt your Prey, you can attempt a check to Recall Knowledge about your prey. When you critically succeed at identifying your hunted prey with Recall Knowledge, you note a weakness in the creature’s defenses. You and allies you tell gain a +1 circumstance bonus to your next attack roll against that prey. You can give bonuses from Monster Hunter only once per day against a particular creature."),
@@ -671,6 +947,7 @@ VALUES
 (547,1,"177","To the Ends of the Earth","Your ability to track your prey has surpassed explanation, allowing you to trace your prey’s movements and predict its location with ease. When you use Hunt Prey on a creature within 100 feet, you can follow that creature’s movements, allowing you to know the creature’s exact location no matter how far away it becomes, as long as it remains your prey. You must be legendary in Nature to track your prey’s location across teleportation or planar travel. This feat gains the detection, divination, and primal traits if you’re legendary in Nature."),
 (548,1,"177","Triple Threat","You can divide your attention three ways when hunting. When you use Hunt Prey, you can designate three creatures as prey, designate two creatures as prey and share the effect with one ally (as Shared Prey), or designate one creature as prey and share the effect with two allies."),
 (549,1,"177","Ultimate Skirmisher","You are so skilled at navigating the wild, your movement is completely unaffected by terrain. You ignore the effects of all difficult terrain, greater difficult terrain, and hazardous terrain, and you don’t trigger traps and hazards that are triggered by moving into an area (such as trip wires and pressure plates), unless you want to."),
+-- Rogue Class Feats
 (550,1,"183","Nimble Dodge","You deftly dodge out of the way, gaining a +2 circumstance bonus to AC against the triggering attack."),
 (551,1,"183","Trap Finder","You have an intuitive sense that alerts you to the dangers and presence of traps. You gain a +1 circumstance bonus to Perception checks to find traps, to AC against attacks made by traps, and to saves against traps. Even if you aren’t Searching, you get a check to find traps that normally require you to be Searching. You still need to meet any other requirements to find the trap. You can disable traps that require a proficiency rank of master in Thievery. If you have master proficiency in Thievery, you can disable traps that require a proficiency rank of legendary instead, and your circumstance bonuses against traps increase to +2."),
 (552,1,"183","Twin Feint","You make a dazzling series of attacks with both weapons, using the first attack to throw your foe offguard against a second attack at a different angle. Make one Strike with each of your two melee weapons, both against the same target. The target is automatically flat-footed against the second attack. Apply your multiple attack penalty to the Strikes normally."),
@@ -694,7 +971,7 @@ VALUES
 (574,1,"187","Nimble Roll","You throw yourself into a roll to escape imminent danger. You can use Nimble Dodge before attempting a Reflex save in addition to its original trigger. If you do, the circumstance bonus applies to your Reflex save against the triggering effect."),
 (575,1,"187","Opportune Backstab","When your enemy is hit by your ally, you capitalize upon the distraction. Make a Strike against the triggering creature."),
 (576,1,"187","Sidestep","You deftly step out of the way of an attack, letting the blow continue to the creature next to you. You redirect the attack to a creature of your choice that is adjacent to you and within the reach of the triggering attack. The attacker rerolls the Strike’s attack roll against the new target."),
-(577,1,"187","Slystriker","Your attacks deal more damage, even against creatures that aren’t flat-footed. When you succeed or critically succeed at a Strike against a creature that isn’t flat-footed, you also deal 1d6 precision damage. This applies only if you’re using a weapon or unarmed attack you could deal sneak attack damage with. At 14th level, if you would normally deal 3d6 or more sneak attack damage to flat-footed creatures, you deal 2d6 precision damage to creatures that aren’t flat-footed. When you use Nimble Dodge and the triggering attack fails or critically fails, or when you succeed or critically succeed at the saving throw, you can also Stride up to 10 feet as part of the reaction. If you do, the reaction gains the move trait. You can use Nimble Roll while Flying or Swimming instead of Striding if you have the corresponding movement type."),
+(577,1,"187","Sly Striker","Your attacks deal more damage, even against creatures that aren’t flat-footed. When you succeed or critically succeed at a Strike against a creature that isn’t flat-footed, you also deal 1d6 precision damage. This applies only if you’re using a weapon or unarmed attack you could deal sneak attack damage with. At 14th level, if you would normally deal 3d6 or more sneak attack damage to flat-footed creatures, you deal 2d6 precision damage to creatures that aren’t flat-footed. When you use Nimble Dodge and the triggering attack fails or critically fails, or when you succeed or critically succeed at the saving throw, you can also Stride up to 10 feet as part of the reaction. If you do, the reaction gains the move trait. You can use Nimble Roll while Flying or Swimming instead of Striding if you have the corresponding movement type."),
 (578,1,"187","Precise Debilitation","You carefully aim and gracefully deliver your debilitations. Add the following debilitations to the list you can choose from when you use Debilitating Strike. Debilitation: The target takes an additional 2d6 precision damage from your attacks. Debilitation: The target becomes flat-footed."),
 (579,1,"187","Sneak Savant","It is almost impossible to spot you without taking effort to look. When you roll a failure on a Sneak action, you get a success instead. You can still critically fail."),
 (580,1,"187","Tactical Debilitations","You learn new debilitations that grant you tactical advantages against your foes. Add the following debilitations to the list you can choose from when you use Debilitating Strike."),
@@ -718,6 +995,7 @@ VALUES
 (599,1,"189","Hidden Paragon","When you put your mind to slipping out of sight, you disappear completely. You become invisible for 1 minute, even if you use a hostile action. Not even glitterdust, see invisibility, or similar effects can reveal you, though creatures can still use the Seek action to locate you as normal."),
 (600,1,"189","Impossible Striker","Your attacks are swift and deadly beyond explanation. Nothing can prevent you from making a sneak attack, even if your opponent can see every blow coming. Instead of dealing the damage from Sly Striker, you can deal your full sneak attack damage to a target even if the target isn’t flat-footed."),
 (601,1,"189","Reactive Distraction","You reactively switch with your decoy to foil your foe. You use Perfection Distraction, even if you were observed, as long as you end the movement of your Sneak while concealed or in a location with cover or greater cover. Your decoy is targeted by the attack or effect instead of you. In the case of an area effect, if your Sneak doesn’t move you out of the area, both you and the decoy are targeted by the effect."),
+-- Sorcerer Class Feats
 (602,1,"198","Counterspell (Spontaneous)","When a foe Casts a Spell you know and you can see its manifestations, you can use your own magic to disrupt it. You expend one of your spell slots to counter the triggering creature’s casting of a spell that you have in your repertoire. You lose your spell slot as if you had cast the triggering spell. You then attempt to counteract the triggering spell (page 458). Special This feat has the trait corresponding to the tradition of spells you cast (arcane, divine, natural, or occult)."),
 (603,1,"198","Dangerous Sorcery","Your legacy grants you great destructive power. When you Cast a Spell from your spell slots, if the spell deals damage and doesn’t have a duration, you gain a status bonus to that spell’s damage equal to the spell’s level."),
 (604,1,"198","Familiar","You make a pact with creature that serves you and assists your spellcasting. You gain a familiar (page 217)."),
@@ -741,6 +1019,7 @@ VALUES
 (630,1,"201","Bloodline Conduit","Your inborn magical nature lets you redirect ambient energies to fuel your spells. If your next action is to Cast a Spell of 5th level or lower that has no duration, you don’t expend the spell’s slot when you cast it."),
 (631,1,"201","Bloodline Perfection","You command the ultimate powers of your bloodline and tradition. You gain an additional 10th-level spell slot."),
 (632,1,"201","Metamagic Mastery","Altering your spells doesn’t take any longer than casting them normally. You can use metamagic single actions as free actions."),
+-- Wizard Class Feats
 (633,1,"209","Counterspell (Prepared)","When a foe Casts a Spell and you can see its manifestations, you can use your own magic to disrupt it. You expend a prepared spell to counter the triggering creature’s casting of that same spell. You lose your spell slot as if you had cast the triggering spell. You then attempt to counteract the triggering spell (page 458)."),
 (634,1,"209","Eschew Materials","You can use clever workarounds to replicate the arcane essence of certain materials. When Casting a Spell that requires material components, you can provide these material components without a spell component pouch by drawing intricate replacement sigils in the air. Unlike when providing somatic components, you still must have a hand completely free. This doesn’t remove the need for any materials listed in the spell’s cost entry."),
 (636,1,"209","Hand of the Apprentice","You can magically hurl your weapon at your foe. You gain the hand of the apprentice universalist spell. Universalist spells are a type of focus spell, much like school spells. You start with a focus pool of 1 Focus Point. See Arcane Schools on page 207 for more information about focus spells."),
@@ -760,18 +1039,21 @@ VALUES
 (661,1,"212","Reprepare Spell","You’ve discovered how to reuse some of your spell slots over and over. You can spend 10 minutes to prepare a spell that you already cast today, regaining access to that spell slot. The spell must be of 4th level or lower and one that does not have a duration. You can reprepare a spell in this way even if you’ve already reprepared that spell previously in the same day. If you have the spell substitution arcane thesis, you can instead prepare a different spell in an expended slot, as long as the new spell doesn’t have a duration. Once you’ve reprepared a spell in that slot even once, you can use your arcane thesis to substitute only spells without durations into that spell slot."),
 (662,1,"212","Archwizard's Might","You have mastered the greatest secrets of arcane magic. You gain an additional 10th-level spell slot."),
 (664,1,"212","Spell Combination","You can merge spells, producing multiple effects with a single casting. One slot of each level of spell you can cast, except 2nd level and 1st level, becomes a spell combination slot (this doesn’t apply to cantrips). When you prepare your spells, you can fill a combination slot with a combination of two spells. Each spell in the combination must be 2 or more spell levels below the slot’s level, and both must target only one creature or object or have the option to target only one creature or object. Each spell in the combination must also have the same means of determining whether it has an effect—both spells must require a ranged spell attack roll, require the same type of saving throw, or automatically affect the target. When you cast a combined spell, it affects only one target, even if the component spells normally affect more than one. If any spell in the combination has further restrictions (such as targeting only living creatures), you must abide by all restrictions. The combined spell uses the shorter of the component spells’ ranges. Resolve a combined spell as if were a single spell, but apply the effects of both component spells. For example, if the spell’s target succeeded at the save against a combined spell, it would apply the success effect of each spell, and if it critically failed, it would apply the critical failure effect of both spells."),
+-- Alchemist Dedication Feats
 (665,1,"220","Alchemist Dedication","You put your alchemical interest into practice. You become trained in alchemical bombs and Crafting; if you were already trained in Crafting, you instead become trained in a skill of your choice. You become trained in alchemist class DC."),
 (666,1,"220","Basic Concoction","You gain a 1st- or 2nd-level alchemist feat."),
 (667,1,"220","Quick Alchemy","You gain the Quick Alchemy action."),
 (668,1,"220","Advanced Conoction","You gain one alchemist feat. For the purpose of meeting its prerequisites, your alchemist level is equal to half your character level."),
 (669,1,"220","Expert Alchemy","Your advanced alchemy level increases to 3. At 10th level, it increases to 5."),
 (670,1,"220","Mastery Alchemy","Your advanced alchemy level increases to 7. For every level you gain beyond 12th, your advanced alchemy level increases by 1."),
+-- Barbarian Dedication Feats
 (671,1,"221","Barbarian Dedication","You become trained in Athletics; if you were already trained in Athletics, you instead become trained in a skill of your choice. You become trained in barbarian class DC. You can use the Rage action."),
 (672,1,"221","Barbarian Resiliency","You gain 3 additional Hit Points for each barbarian archetype class feat you have. As you continue selecting barbarian archetype class feats, you continue to gain additional Hit Points in this way."),
 (673,1,"221","Basic Fury","You gain a 1st- or 2nd-level barbarian feat."),
 (674,1,"221","Advanced Fury","You gain one barbarian feat. For the purpose of meeting its prerequisites, your barbarian level is equal to half your character level."),
 (675,1,"221","Instinct Ability","You gain the instinct ability for the instinct you chose for Barbarian Dedication."),
 (676,1,"221","Juggernaut's Fortitude","Your proficiency rank in Fortitude saves increases to master."),
+-- Bard Dedication Feats
 (677,1,"222","Bard Dedication","You cast spells like a bard and gain the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the occult spell list, or any other cantrips you learn or discover. You’re trained in spell attack rolls and spell DCs for occult spells. Your key spellcasting ability for bard archetype spells is Charisma, and they are occult bard spells. You become trained in Occultism and Performance; for each of these skills in which you were already trained, you instead become trained in a skill of your choice."),
 (678,1,"222","Basic Bard Spellcasting","You gain the basic spellcasting benefits (page 219). Each time you gain a spell slot of a new level from the bard archetype, add a common occult spell or another spell you learned or discovered to your repertoire, of the appropriate spell level."),
 (679,1,"222","Basic Muse's Whispers","You gain a 1st- or 2nd-level bard feat."),
@@ -781,6 +1063,7 @@ VALUES
 (683,1,"222","Occult Breadth","Your repertoire expands, and you can cast more occult spells each day. Increase the number of spells in your repertoire and the number of spell slots you gain from bard archetype feats by 1 for each spell level other than your two highest spell levels."),
 (684,1,"222","Expert Bard Spellcasting","You gain the expert spellcasting benefits."),
 (685,1,"222","Master Bard Spellcasting","You gain the master spellcasting benefits."),
+-- Champion Dedication Feats
 (686,1,"223","Champion Dedication","Choose a deity and cause as you would if you were a champion. You become trained in light, medium, and heavy armor. You become trained in Religion and your deity’s associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You become trained in champion class DC."),
 (687,1,"223","Basic Devotion","You gain a 1st- or 2nd-level champion feat."),
 (688,1,"223","Champion Resiliencey","You gain 3 additional Hit Points for each champion archetype class feat you have. As you continue selecting champion archetype class feats, you continue to gain additional Hit Points in this way."),
@@ -789,6 +1072,7 @@ VALUES
 (691,1,"223","Champion's Reaction","You can use the champion’s reaction associated with your cause."),
 (692,1,"223","Divine Ally","You gain a divine ally of your choice (page 108)."),
 (693,1,"223","Diverse Armor Expert","Your proficiency ranks for light armor, medium armor, heavy armor, and unarmored defense increase to expert."),
+-- Cleric Dedication Feats
 (694,1,"224","Cleric Dedication","You cast spells like a cleric. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the divine spell list in this book or any other cantrips you learn or discover. You’re trained in spell attack rolls and spell DCs for divine spells. Your key spellcasting ability for cleric archetype spells is Wisdom, and they are divine cleric spells. Choose a deity as you would if you were a cleric. You become bound by that deity’s anathema. You become trained in Religion and your deity’s associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You don’t gain any other abilities from your choice of deity."),
 (695,1,"224","Basic Cleric Spellcasting","You gain the basic spellcasting benefits. You can prepare your deity’s spells in your spell slots of the appropriate level from the cleric archetype."),
 (696,1,"224","Basic Dogma","You gain a 1st- or 2nd-level cleric feat."),
@@ -796,6 +1080,7 @@ VALUES
 (698,1,"224","Divine Breadth","You can cast more divine spells each day. Increase the spell slots you gain from cleric archetype feats by 1 for each spell level other than your two highest spell levels."),
 (699,1,"224","Expert Cleric Spellcasting","You gain the expert spellcasting benefits."),
 (700,1,"224","Master Cleric Spellcasting","You gain the master spellcasting benefits."),
+-- Druid Dedication Feats
 (701,1,"225","Druid Dedication","You cast spells like a druid. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the primal spell list in this book or any other cantrips you learn or discover. You’re trained in spell attack rolls and spell DCs for primal spells. Your key spellcasting ability for druid archetype spells is Wisdom, and they are primal druid spells. You learn the Druidic language."),
 (702,1,"225","Basic Druid Spellcasting","You gain the basic spellcasting benefits."),
 (703,1,"225","Basic Wilding","You gain a 1st- or 2nd-level druid feat."),
@@ -804,12 +1089,14 @@ VALUES
 (706,1,"225","Primal Breadth","Increase the spell slots you gain from druid archetype feats by 1 for each spell level other than your two highest spell levels."),
 (707,1,"225","Expert Druid Spellcasting","You gain the expert spellcasting benefits."),
 (708,1,"225","Master Druid Spellcasting","You gain the master spellcasting benefits."),
+-- Fighter Dedication Feats
 (709,1,"226","Fighter Dedication","You become trained in simple weapons and martial weapons. You become trained in your choice of Acrobatics or Athletics; if you are already trained in both of these skills, you instead become trained in a skill of your choice. You become trained in fighter class DC. Special You cannot select another dedication feat until you have gained two other feats from the fighter archetype."),
 (710,1,"226","Basic Maneuver","You gain a 1st- or 2nd-level fighter feat."),
 (711,1,"226","Fighter Resiliency","You gain 3 additional Hit Points for each fighter archetype class feat you have. As you continue selecting fighter archetype class feats, you continue to gain additional Hit Points in this way."),
 (712,1,"226","Opportunist","You gain the Attack of Opportunity reaction."),
 (713,1,"226","Advanced Maneuver","You gain a fighter feat. For the purpose of meeting its prerequisites, your fighter level is equal to half your character level."),
 (714,1,"226","Diverse Weapon Expert","Your proficiency ranks for simple weapons and martial weapons increase to expert, and your proficiency rank for advanced weapons increases to trained."),
+-- Monk Dedication Feats
 (715,1,"227","Monk Dedication","You become trained in unarmed attacks and gain the powerful fist class feature (page 156). You become trained in your choice of Acrobatics or Athletics; if you are already trained in both of these skills, you become trained in a skill of your choice. You become trained in monk class DC."),
 (716,1,"227","Basic Kata","You gain a 1st- or 2nd-level monk feat."),
 (717,1,"227","Monk Resiliency","You gain 3 additional Hit Points for each monk archetype class feat you have. As you continue selecting monk archetype class feats, you continue to gain additional Hit Points in this way."),
@@ -817,11 +1104,13 @@ VALUES
 (719,1,"227","Monk Moves","You gain a +10-foot status bonus to your Speed when you’re not wearing armor."),
 (720,1,"227","Monk's Flurry","You gain the Flurry of Blows action."),
 (721,1,"227","Perfection's Path","Choose one saving throw (Fortitude, Reflex, or Will) in which you are an expert. Your proficiency rank in the chosen saving throw increases to master."),
+-- Ranger Dedication Feats
 (722,1,"228","Ranger Dedication","You become trained in Survival; if you were already trained in Survival, you instead become trained in another skill of your choice. You become trained in ranger class DC. You can use the Hunt Prey action."),
 (723,1,"228","Basic Hunter's Trick","You gain a 1st- or 2nd-level ranger feat."),
 (724,1,"228","Ranger Resiliency","You gain 3 additional Hit Points for each ranger archetype class feat you have. As you continue selecting ranger archetype class feats, you continue to gain additional Hit Points in this way."),
 (725,1,"228","Advanced Hunter's Trick","You gain one ranger feat. For the purpose of meeting its prerequisites, your ranger level is equal to half your character level."),
 (726,1,"228","Master Spotter","Your proficiency rank in Perception increases to master."),
+-- Rogue Dedication Feats
 (727,1,"229","Rogue Dedication","You gain a skill feat and the rogue’s surprise attack class feature (page 181). You become trained in light armor. In addition, you become trained in Stealth or Thievery plus one skill of your choice; if you are already trained in both Stealth and Thievery, you become trained in an additional skill of your choice. You become trained in rogue class DC."),
 (728,1,"229","Basic Trickery","You gain a 1st- or 2nd-level rogue feat."),
 (729,1,"229","Sneak Attacker","You gain the sneak attack class feature (page 181), except it deals 1d4 damage, increasing to 1d6 at 6th level. You don’t increase the number of dice as you gain levels."),
@@ -829,6 +1118,7 @@ VALUES
 (731,1,"229","Skill Mastery","Increase your proficiency rank in one of your skills from expert to master and in another of your skills from trained to expert. You gain a skill feat associated with one of the skills you chose."),
 (732,1,"229","Uncanny Dodge","You gain the deny advantage class feature (page 181)."),
 (733,1,"229","Evasiveness","Your proficiency rank for Reflex saves increases to master."),
+-- Sorcerer Dedication Feats
 (734,1,"230","Sorcerer Dedication","Choose a bloodline. You become trained in the bloodline’s two skills; for each of these skills in which you were already trained, you become trained in a skill of your choice. You cast spells like a sorcerer. You gain access to the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the spell list associated with your bloodline, or any other cantrips you learn or discover. You’re trained in spell attack rolls and spell DCs for your tradition’s spells. Your key spellcasting ability for sorcerer archetype spells is Charisma, and they are sorcerer spells of your bloodline’s tradition. You don’t gain any other abilities from your choice of bloodline."),
 (735,1,"230","Basic Sorcerer Spellcasting","You gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the sorcerer archetype, add a spell of the appropriate spell level to your repertoire: a common spell of your bloodline’s tradition, one of your bloodline’s granted spells, or another spell you have learned or discovered."),
 (736,1,"230","Basic Blood Potency","You gain a 1st- or 2nd-level sorcerer feat."),
@@ -837,6 +1127,7 @@ VALUES
 (739,1,"230","Bloodline Breadth","Your repertoire expands, and you can cast more spells of your bloodline’s tradition each day. Increase the number of spells in your repertoire and number of spell slots you gain from sorcerer archetype feats by 1 for each spell level other than your two highest spell levels."),
 (740,1,"230","Expert Sorcerer Spellcasting","You gain the expert spellcasting benefits."),
 (741,1,"230","Master Sorcerer Spellcasting","You gain the master spellcasting benefits."),
+-- Wizard Dedication Feats
 (742,1,"231","Wizard Dedication","You cast spells like a wizard, gaining a spellbook with four common arcane cantrips of your choice. You gain the Cast a Spell activity. You can prepare two cantrips each day from your spellbook. You’re trained in arcane spell attack rolls and spell DCs. Your key spellcasting ability for wizard archetype spells is Int, and they are arcane wizard spells. You become trained in Arcana; if you were already trained in Arcana, you instead become trained in a skill of your choice."),
 (743,1,"231","Arcane School Spell","Select one arcane school of magic. You gain the school’s initial school spell. If you don’t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by studying. (For more on arcane schools, see page 204.)"),
 (744,1,"231","Basic Arcana","You gain a 1st- or 2nd-level wizard feat of your choice."),
@@ -845,6 +1136,7 @@ VALUES
 (747,1,"231","Arcane Breadth","You can cast more arcane spells each day. Increase the spell slots you gain from wizard archetype feats by 1 for each spell level other than your two highest spell levels."),
 (748,1,"231","Expert Wizard Spellcasting","You gain the expert spellcasting benefits."),
 (749,1,"231","Master Wizard Spellcasting","You gain the master spellcasting benefits."),
+-- General/Skill Feats
 (750,1,"258","Additional Lore","Your knowledge has expanded to encompass a new field. Choose an additional Lore skill subcategory. You become trained in it. At 3rd, 7th, and 15th levels, you gain an additional skill increase you can apply only to the chosen Lore subcategory."),
 (751,1,"258","Adopted Ancestry","You’re fully immersed in another ancestry’s culture and traditions, whether born into them, earned through rite of passage, or bonded through a deep friendship or romance. Choose a common ancestry. You can select ancestry feats from the ancestry you chose, in addition to your character’s own ancestry, as long as the ancestry feats don’t require any physiological feature that you lack, as determined by the GM."),
 (752,1,"258","Alchemical Crafting","You can use the Craft activity to create alchemical items. When you select this feat, you immediately add the formulas for four common 1st-level alchemical items to your formula book."),
@@ -882,6 +1174,7 @@ VALUES
 (784,1,"261","Fleet","You move more quickly on foot. Your Speed increases by 5 feet."),
 (785,1,"261","Foil Senses","You are adept at foiling creatures’ special senses and cautious enough to safeguard against them at all times. Whenever you use the Avoid Notice, Hide, or Sneak actions, you are always considered to be taking precautions against special senses (see the Detecting with Other Senses sidebar on page 465)."),
 (786,1,"261","Forager","While using Survival to Subsist, if you roll any result worse than a success, you get a success. On a success, you can provide subsistence living for yourself and four additional creatures, and on a critical success, you can take care of twice as many creatures as on a success. Each time your proficiency rank in Survival increases, double the number of additional creatures you can take care of on a success (to eight if you’re an expert, 16 if you’re a master, or 32 if you’re legendary). You can choose to care for half the number of additional creatures and provide a comfortable living instead of subsistence living. Multiple smaller creatures or creatures with significantly smaller appetites than a human are counted as a single creature for this feat, and larger creatures or those with significantly greater appetites each count as multiple creatures. The GM determines how much a non-human creature needs to eat. "),
+(787,1,"261","Glad-Hand","First impressions are your strong suit. When you meet someone in a casual or social situation, you can immediately attempt a Diplomacy check to Make an Impression on that creature rather than needing to converse for 1 minute. You take a -5 penalty to the check. If you fail or critically fail, you can engage in 1 minute of conversation and attempt a new check at the end of that time rather than accepting the failure or critical failure result."),
 (788,1,"262","Group Coercion","When you Coerce, you can compare your Intimidation check result to the Will DCs of two targets instead of one. It’s possible to get a different degree of success for each target. The number of targets you can Coerce in a single action increases to four if you’re an expert, 10 if you’re a master, and 25 if you’re legendary."),
 (789,1,"262","Group Impression","When you Make an Impression, you can compare your Diplomacy check result to the Will DCs of two targets instead of one. It’s possible to get a different degree of success for each target. The number of targets increases to four if you’re an expert, 10 if you’re a master, and 25 if you’re legendary."),
 (790,1,"262","Hefty Hauler","You can carry more than your frame implies. Increase your maximum and encumbered Bulk limits by 2."),
@@ -952,6 +1245,7 @@ VALUES
 (856,1,"268","Train Animal","You spend time teaching an animal to do a certain action. You can either select a basic action the animal already knows how to do (typically those listed in the Command an Animal action on page 249) or attempt to teach the animal a new basic action. The GM determines the DC of any check required and the amount of time the training takes (usually at least a week). It’s usually impossible to teach an animal a trick that uses critical thinking. If you’re expert, master, or legendary in Nature, you might be able to train more unusual creatures, at the GM’s discretion. Success: The animal learns the action. If it was an action the animal already knew, you can Command the Animal to take that action without attempting a Nature check. If it was a new basic action, add that action to the actions the animal can take when Commanded, but you must still roll. Failure: The animal doesn’t learn the trick."),
 (857,1,"268","Trick Magic Item","You examine a magic item you normally couldn’t use in an effort to fool it and activate it temporarily. For example, this might allow a fighter to cast a spell from a wand or allow a wizard to cast a spell that’s not on the arcane list using a scroll. You must know what activating the item does, or you can’t attempt to trick it."),
 (859,1,"268","Unified Theory","You’ve started to make a meaningful connection about the common underpinnings of the four traditions of magic and magical essences, allowing you to understand them all through an arcane lens. Whenever you use an action or a skill feat that requires a Nature, Occultism, or Religion check, depending on the magic tradition, you can use Arcana instead. If you would normally take a penalty or have a higher DC for using Arcana on other magic (such as when using Identify Magic), you no longer do so."),
+(858,1,"268","Underwater Marauder","You've learned to fight underwater. You are not flat-footed while in water, and you don't take the usual penalties for using a bludgeoning or slashing melee weapon in water."),
 (860,1,"268","Unmistakable Lore","You never get information about your areas of expertise wrong. When you Recall Knowledge using any Lore subcategory in which you’re trained, if you roll a critical failure, you get a failure instead. If you’re a master in a Lore subcategory, on a critical success, you gain even more information or context than usual."),
 (861,1,"268","Untrained Improvisation","You’ve learned how to handle situations when you’re out of your depth. Your proficiency bonus to untrained skill checks is equal to half your level instead of +0. If you’re 7th level or higher, the bonus increases to your full level instead. This doesn’t allow you to use the skill’s trained actions."),
 (862,1,"268","Virtuosic Performer","You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when making a certain type of performance. If you are a master in Performance, this bonus increases to +2. Select one of the following specialties and apply the bonus when attempting Performance checks of that type. If it’s unclear whether the specialty applies, the GM decides."),
@@ -962,7 +1256,6 @@ VALUES
 (867,3,"57","Relentless Stalker","Your hunted prey cannot escape your relentless pursuit. Stride up to your Speed in tandem with the triggering creature, remaining adjacent to the foe throughout its movement until it stops moving or you run out of movement. You can ignore difficult terrain during this movement unless the difficult terrain is caused by a magical effect."),
 (868,3,"57","Wilderness Spotter","Select one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren’t tracking or otherwise using");
 
-/* TODO continue all the ancestry, class, general and skill feats */
 
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id)
 VALUES
@@ -980,6 +1273,7 @@ VALUES
 (9, 3), -- Mountain's Stoutness
 (10, 3), -- Stonewalker
 (11, 4), -- Dwarven Weapon Expertise
+(11, 17), -- Dwarven Weapon Expertise
 -- Elf
 (12, 1), -- Ancestral Longevity
 (12, 18), -- Ancestral Longevity
@@ -1037,7 +1331,7 @@ VALUES
 (50, 4), -- Goblin Weapon Expertise
 (50, 27), -- Goblin Weapon Expertise
 (51, 4), -- Very, Very Sneaky
-(51, 29), -- Very, Very Sneaky
+(51, 353), -- Very, Very Sneaky
 -- Halfling
 (52, 1), -- Distracting Shadows
 (53, 1), -- Halfling Lore
@@ -1054,7 +1348,7 @@ VALUES
 (62, 30), -- Guiding Luck
 (63, 3), -- Irrepressible
 (64, 4), -- Ceaseless Shadows
-(64, 52), -- Ceaseless Shadows
+(64, 31), -- Ceaseless Shadows
 (65, 4), -- Halfling Weapon Expertise
 (65, 29), -- Halfling Weapon Expertise
 -- Human
@@ -1078,11 +1372,11 @@ VALUES
 (78, 4), -- Unconventional Expertise
 (78, 37), -- Unconventional Expertise
 (78, 38), -- Unconventional Expertise
--- HalfElf
+-- Half-Elf
 (79, 1), -- Elf Atavism
 (80, 2), -- Inspire Imitation
 (81, 2), -- Supernatural Charm
--- Half Orc
+-- Half-Orc
 (82, 1), -- Monstrous Peacemaker
 (83, 1), -- Orc Ferocity
 (84, 1), -- Orc Sight
@@ -1095,10 +1389,10 @@ VALUES
 (89, 3), -- Pervasive Superstition
 (89, 41), -- Pervasive Superstition
 (90, 4), -- Incredible Ferocity
-(90, 42), -- Incredible Ferocity
+(90, 94), -- Incredible Ferocity
 (91, 4), -- Orc Weapon Expertise
 (91, 40), -- Orc Weapon Expertise
---Alchemis
+--Alchemist
 (92, 5), -- Alchemical Familiar
 (93, 5), -- Alchemical Savant
 (93, 42), -- Alchemical Savant
@@ -1202,14 +1496,14 @@ VALUES
 (166, 55), -- Titan's Stature
 (166, 60), -- Titan's Stature
 (167, 12), -- Awesome Blow
-(167, 61, -- Awesome Blow
+(167, 61), -- Awesome Blow
 (168, 12), -- Giant's Lunge
 (168, 55), -- Giant's Lunge
 (169, 12), -- Vengeful Strike
 (169, 62), -- Vengeful Strike
 (170, 12), -- Whirlwind Strike
 (171, 13), -- Collateral Thrash
-(171, 63, -- Collateral Thrash
+(171, 63), -- Collateral Thrash
 (172, 13), -- Dragon Transformation
 (172, 54), -- Dragon Transformation
 (172, 64), -- Dragon Transformation
@@ -1273,6 +1567,7 @@ VALUES
 (207, 66), -- Studious Capacity
 (207, 71), -- Studious Capacity
 (208, 14), -- Deep Lore
+(208, 66), -- Deep Lore
 (208, 71), -- Deep Lore
 (209, 14), -- Eternal Composition
 (209, 67), -- Eternal Composition
@@ -1321,7 +1616,7 @@ VALUES
 (231, 9), -- Advanced Deity's Domain
 (231, 84), -- Advanced Deity's Domain
 (232, 9), -- Greater Mercy
-(232, 85, -- Greater Mercy
+(232, 85), -- Greater Mercy
 (233, 9), -- Heal Mount
 (233, 80), -- Heal Mount
 (234, 9), -- Quick Block
@@ -1341,11 +1636,11 @@ VALUES
 (240, 83), -- Radiant Blade Spirit
 (241, 10), -- Shield of Reckoning
 (241, 89), -- Shield of Reckoning
-(241, 82,), -- Shield of Reckoning
-(241, 78,), -- Shield of Reckoning
+(241, 82), -- Shield of Reckoning
+(241, 78), -- Shield of Reckoning
 (241, 88), -- Shield of Reckoning
 (242, 11), -- Affliction Mercy
-(242, 85, -- Affliction Mercy
+(242, 85), -- Affliction Mercy
 (243, 11), -- Aura of Faith
 (243, 78), -- Aura of Faith
 (244, 11), -- Blade of Justice
@@ -1382,12 +1677,12 @@ VALUES
 (259, 14), -- Celestial Form
 (259, 78), -- Celestial Form
 (260, 14), -- Ultimate Mercy
-(260, 85, -- Ultimate Mercy
+(260, 85), -- Ultimate Mercy
 (261, 15), -- Celestial Mount
-(261, 80,), -- Celestial Mount
+(261, 80), -- Celestial Mount
 (261, 78), -- Celestial Mount
 (262, 15), -- Radiant Blade Master
-(262, 83,), -- Radiant Blade Master
+(262, 83), -- Radiant Blade Master
 (262, 97), -- Radiant Blade Master
 (263, 15), -- Shield Paragon
 (263, 82), -- Shield Paragon
@@ -1397,11 +1692,11 @@ VALUES
 (264, 99), -- Deadly Simplicity
 (265, 5), -- Domain Initiate
 (266, 5), -- Harming Hands
-(266, 100, -- Harming Hands
+(266, 100), -- Harming Hands
 (267, 5), -- Healing Hands
-(267,101, -- Healing Hands
+(267, 101), -- Healing Hands
 (268, 5), -- Holy Castigation
-(268,103, -- Holy Castigation
+(268, 103), -- Holy Castigation
 (271, 6), -- Communal Healing
 (272, 6), -- Emblazon Armament
 (273, 6), -- Sap Life
@@ -1412,9 +1707,995 @@ VALUES
 (276, 7), -- Channel Smite
 (276, 102), -- Channel Smite
 (277, 7), -- Command Undead
-(277, 100); -- Command Undead
+(277, 100), -- Command Undead
+(277, 105), -- Command Undead
+(278, 7), -- Directed Channel
+(279, 7), -- Improved Communal Healing
+(279, 106), -- Improved Communal Healing
+(280, 7), -- Necrotic Infusion
+(280, 100), -- Necrotic Infusion
+(280, 105), -- Necrotic Infusion
+(281, 8), -- Cast Down
+(281, 102), -- Cast Down
+(282, 8), -- Divine Weapon
+(283, 8), -- Selective Energy
+(285, 9), -- Advanced Domain
+(285, 107), -- Advanced Domain
+(286, 9), -- Align Armament
+(286, 108),-- Align Armament
+(287, 9), -- Channeled Succor
+(287, 101), -- Channeled Succor
+(288, 9), -- Cremate Undead
+(289, 9), -- Emblazon Energy
+(289, 109), -- Emblazon Energy
+(290, 10), -- Castigating Weapon
+(290, 110), -- Castigating Weapon
+(291, 10), -- Heroic Recovery
+(291,101), -- Heroic Recovery
+(291,103), -- Heroic Recovery
+(292, 10), -- Improved Command Undead
+(292, 100), -- Improved Command Undead
+(292, 111), -- Improved Command Undead
+(292, 105), -- Improved Command Undead
+(293, 10), -- Replenishment of War
+(293, 112), -- Replenishment of War
+(294, 11), -- Defensive Recovery
+(294, 102), -- Defensive Recovery
+(295, 11), -- Domain Focus
+(295, 113), -- Domain Focus
+(296, 11), -- Emblazon Antimagic
+(296, 109), -- Emblazon Antimagic
+(297, 11), -- Shared Replenishment
+(297, 114), -- Shared Replenishment
+(298, 12), -- Deity's Protection
+(298, 115), -- Deity's Protection
+(299, 12), -- Extend Armament Alignment
+(299, 116), -- Extend Armament Alignment
+(300, 12), -- Fast Channel
+(300, 102), -- Fast Channel
+(301, 12), -- Swift Banishment
+(302, 13), -- Eternal Bane
+(302, 105), -- Eternal Bane
+(303, 13), -- Eternal Blessing
+(303,103), -- Eternal Blessing
+(304, 13), -- Resurrectionist
+(305, 14), -- Domain Wellspring
+(305, 117), -- Domain Wellspring
+(306, 14), -- Echoing Channel
+(307, 14), -- Improved Swift Banishment
+(307, 118), -- Improved Swift Banishment
+(308, 15), -- Avatar's Audience
+(309, 15), -- Maker of Miracles
+(309, 119), -- Maker of Miracles
+(310, 15), -- Metamagic Channel
+--Druid
+(311, 5), -- Animal Companion
+(311, 120), -- Animal Companion
+(312, 5), -- Leshy Familiar
+(312, 121), -- Leshy Familiar
+(314, 5), -- Storm Born
+(314, 122), -- Storm Born
+(315, 5), -- Widen Spell
+(316, 5), -- Wild Shape
+(316, 123), -- Wild Shape
+(317, 6), -- Call of the Wild
+(318, 6), -- Enhanced Familiar
+(318, 124), -- Enhanced Familiar
+(319, 6), -- Order Explorer
+--320 Is shared by Alchemsit
+(321, 7), -- Form Control
+(321, 125), -- Form Control
+(321, 126), -- Form Control
+(322, 7), -- Mature Animal Companion (Druid)
+(322, 127), -- Mature Animal Companion (Druid)
+(323, 7), -- Order Magic
+(323, 128), -- Order Magic
+(324, 7), -- Thousand Faces
+(324, 126), -- Thousand Faces
+(325, 7), -- Woodland Stride
+(325, 121), -- Woodland Stride
+(326, 7), -- Green Empathy
+(326, 121), -- Green Empathy
+(327, 8), -- Insect Shape
+(327, 126), -- Insect Shape
+--328 Shared with Bard
+(329, 8), -- Storm Retribution
+(329, 122), -- Storm Retribution
+(329, 129), -- Storm Retribution
+(330, 9), -- Ferocious Shape
+(330, 126), -- Ferocious Shape
+(331, 9), -- Fey Caller
+(332, 9), -- Incredible Companion (Druid)
+(332, 130), -- Incredible Companion (Druid)
+(333, 9), -- Soaring Shape
+(333, 126), -- Soaring Shape
+(334, 9), -- Wind Caller
+(334, 122), -- Wind Caller
+(335, 10), -- Elemental Shape
+(335, 126), -- Elemental Shape
+(336, 10), -- Healing Transformation
+(337, 10), -- Overwhelming Energy
+(338, 10), -- Plant Shape
+(338, 131), -- Plant Shape
+(339, 10), -- Side by Side (Druid)
+(339, 127), -- Side by Side (Druid)
+(340, 11), -- Dragon Shape
+(340, 132), -- Dragon Shape
+(341, 11), -- Green Tongue
+(341, 133), -- Green Tongue
+(342, 11), -- Primal Focus
+(343, 11), -- Primal Summons
+(343, 134), -- Primal Summons
+(344, 12), -- Specialized Companion (Druid)
+(344, 135), -- Specialized Companion (Druid)
+(345, 12), -- Timeless Nature
+(346, 12), -- Verdant Metamorphosis
+(346, 121), -- Verdant Metamorphosis
+(348, 13), -- Impaling Briars
+(348, 121), -- Impaling Briars
+(349, 13), -- Monstrosity Shape
+(349, 126), -- Monstrosity Shape
+(350, 14), -- Invoke Disaster
+(350, 136), -- Invoke Disaster
+(351, 14), -- Perfect Form Control
+(351, 137), -- Perfect Form Control
+(351, 138), -- Perfect Form Control
+(352, 14), -- Primal Wellspring
+(352, 139), -- Primal Wellspring
+(353, 15), -- Hierophant's Power
+(353, 140), -- Hierophant's Power
+(354, 15), -- Leyline Conduit
+(355, 15), -- True Shapeshifter
+(355, 141), -- True Shapeshifter
+(355, 126), -- True Shapeshifter
+--Fighter
+(356, 5), -- Double Slice
+(357, 5), -- Exacting Strike
+(358, 5), -- Point-Blank Shot
+(359, 5), -- Power Attack
+(360, 5), -- Reactive Shield
+(361, 5), -- Snagging Strike
+(363, 6), -- Aggressive Block
+(364, 6), -- Assisting Shot
+(365, 6), -- Brutish Shove
+(366, 6), -- Combat Grab
+(367, 6), -- Dueling Parry
+(368, 6), -- Intimidating Strike
+(369, 6), -- Lunge
+(370, 7), -- Double Shot
+(371, 7), -- Dual-Handed Assault
+(372, 7), -- Knockdown
+(372, 142), -- Knockdown
+(373, 7), -- Powerful Shove
+(373, 143), -- Powerful Shove
+(374, 7), -- Quick Reversal
+(375, 7), -- Shielded Stride
+(377, 7), -- Twin Parry
+(378, 8), -- Advanced Weapon Training
+(379, 8), -- Advantageous Assault
+(380, 8), -- Disarming Stance
+(380, 142), -- Disarming Stance
+(381, 8), -- Furious Focus
+(381, 144), -- Furious Focus
+(382, 8), -- Guardian's Deflection
+(383, 8), -- Reflexive Shield
+(384, 8), -- Revealing Stab
+(385, 8), -- Shatter Defenses
+(387, 8), -- Triple Shot
+(387, 145), -- Triple Shot
+(388, 9), -- Blind-Fight
+(388, 146), -- Blind-Fight
+(389, 9), -- Dueling Riposte
+(389, 147), -- Dueling Riposte
+(390, 9), -- Felling Strike
+(391, 9), -- Incredible Aim
+(392, 9), -- Mobile Shot Stance
+(393, 9), -- Positioning Assault
+(394, 9), -- Quick Shield Block
+(394, 148), -- Quick Shield Block
+(394, 149), -- Quick Shield Block
+(396, 10), -- Agile Grace
+(397, 10), -- Certain Strike
+(398, 10), -- Combat Reflexes
+(399, 10), -- Debilitating Shot
+(400, 10), -- Disarming Twist
+(400, 142), -- Disarming Twist
+(401, 10), -- Disruptive Stance
+(402, 10), -- Fearsome Brute
+(403, 10), -- Improved Knockdown
+(403, 61), -- Improved Knockdown
+(404, 10), -- Mirror Shield
+(405, 10), -- Twin Riposte
+(406, 11), -- Brutal Finish
+(407, 11), -- Dueling Dance
+(407, 147), -- Dueling Dance
+(408, 11), -- Flinging Shove
+(408, 143), -- Flinging Shove
+(409, 11), -- Improved Dueling Riposte
+(409, 151), -- Improved Dueling Riposte
+(410, 11), -- Incredible Ricochet
+(410, 152), -- Incredible Ricochet
+(411, 11), -- Lunging Stance
+(411, 153), -- Lunging Stance
+(411, 154), -- Lunging Stance
+(412, 11), -- Paragon's Guard
+(413, 11), -- Spring Attack
+(414, 12), -- Desperate Finisher
+(415, 12), -- Determination
+(416, 12), -- Guiding Finish
+(417, 12), -- Guiding Riposte
+(417, 151), -- Guiding Riposte
+(418, 12), -- Improved Twin Riposte (Fighter)
+(418, 155), -- Improved Twin Riposte (Fighter)
+(419, 12), -- Stance Savant (Fighter)
+(420, 12), -- Two-Weapon Flurry
+(422, 13), -- Graceful Poise
+(422, 156), -- Graceful Poise
+(423, 13), -- Improved Reflexive Shield
+(423, 157), -- Improved Reflexive Shield
+(424, 13), -- Multishot Stance
+(424, 158), -- Multishot Stance
+(425, 13), -- Twinned Defense
+(425, 159), -- Twinned Defense
+(426, 14), -- Impossible Volley
+(427, 14), -- Savage Critical
+(428, 15), -- Boudless Reprisals
+(429, 15), -- Weapon Supremacy
+(430, 5), -- Crane Stance
+(431, 5), -- Dragon Stance
+(432, 5), -- Ki Rush
+(433, 5), -- Ki Strike
+(434, 5), -- Monastic Weaponry
+(435, 5), -- Mountain Stance
+(436, 5), -- Tiger Stance
+(437, 5), -- Wolf Stance
+(438, 6), -- Brawling Focus
+(439, 6), -- Crushing Grab
+(440, 6), -- Dancing Leaf
+(441, 6), -- Elemental Fist
+(441, 160), -- Elemental Fist
+(442, 6), -- Stunning Fist
+(442, 161), -- Stunning Fist
+(443, 7), -- Deflect Arrows
+(444, 7), -- Flurry of Maneuvers
+(444, 52), -- Flurry of Maneuvers
+(445, 7), -- Flying Kick
+(446, 7), -- Guarded Movement
+(447, 7), -- Stand Still
+(448, 7), -- Wholeness of Body
+(448, 162), -- Wholeness of Body
+(449, 8), -- Abundant Step
+(449, 163), -- Abundant Step
+(449, 162), -- Abundant Step
+(450, 8), -- Crane Flutter
+(450, 164), -- Crane Flutter
+(451, 8), -- Dragon Roar
+(451, 165), -- Dragon Roar
+(452, 8), -- Ki Blast
+(452, 162), -- Ki Blast
+(453, 8), -- Mountain Stronghold
+(453, 166), -- Mountain Stronghold
+(454, 8), -- Tiger Slash
+(454, 167), -- Tiger Slash
+(455, 8), -- Water Step
+(456, 8), -- Whirling Throw
+(457, 8), -- Wolf Drag
+(457, 168), -- Wolf Drag
+(458, 9), -- Arrow Snatching
+(458, 169), -- Arrow Snatching
+(459, 9), -- Ironblood Stance
+(460, 9), -- Mixed Maneuver
+(460, 57), -- Mixed Maneuver
+(461, 9), -- Tangled Forest Stance
+(462, 9), -- Wall Run
+(463, 9), -- Wild Winds Initiate
+(463, 162), -- Wild Winds Initiate
+(464, 10), -- Knockback Strike
+(465, 10), -- Sleeper Hold
+(466, 10), -- Wind Jump
+(466, 162), -- Wind Jump
+(467, 10), -- Winding Flow
+(468, 11), -- Diamond Soul
+(469, 11), -- Disrupt Ki
+(470, 11), -- Improved Knockback
+(470, 57), -- Improved Knockback
+(471, 11), -- Meditative Focus
+(471, 162), -- Meditative Focus
+(472, 11), -- Stance Savant (Monk)
+(473, 12), -- Ironblood Surge
+(473, 170), -- Ironblood Surge
+(474, 12), -- Moutain Quake
+(474, 171), -- Moutain Quake
+(475, 12), -- Tangled Forest Rake
+(475, 172), -- Tangled Forest Rake
+(476, 12), -- Timeless Body
+(477, 12), -- Tongue of the Sun and Moon
+(478, 12), -- Wild Winds Gust
+(478, 173), -- Wild Winds Gust
+(479, 13), -- Enlightened Presence
+(480, 13), -- Master of Many Styles
+(480, 174), -- Master of Many Styles
+(481, 13), -- Quivering Palm
+(481, 162), -- Quivering Palm
+(482, 13), -- Shattering Strike
+(483, 14), -- Diamond Fists
+(484, 14), -- Empty Body
+(484, 162), -- Empty Body
+(485, 14), -- Meditative Wellspring
+(485, 175), -- Meditative Wellspring
+(486, 14), -- Swift River
+(487, 15), -- Enduring Quickness
+(488, 15), -- Fuse Stance
+(488, 176), -- Fuse Stance
+(489, 15), -- Impossible Technique
+(491, 5), -- Crossbow Ace
+(492, 5), -- Hunted Shot
+(493, 5), -- Monster Hunter
+(494, 5), -- Twin Takedown
+(495, 6), -- Favored Terrain
+(496, 6), -- Hunter's Aim
+(497, 6), -- Monster Warden
+(497, 177), -- Monster Warden
+(498, 6), -- Quick Draw
+(499, 6), -- Wild Empathy
+(500, 7), -- Companion's Cry
+(500, 178), -- Companion's Cry
+(501, 7), -- Disrupt Prey
+(502, 7), -- Far Shot
+(503, 7), -- Favored Enemy
+(504, 7), -- Running Reload
+(505, 7), -- Scout's Warning
+(506, 7), -- Snare Specialist
+(506, 179), -- Snare Specialist
+(506, 180), -- Snare Specialist
+(508, 8), -- Mature Animal Companion (Ranger)
+(508, 127), -- Mature Animal Companion (Ranger)
+(509, 8), -- Quick Snares
+(509, 179), -- Quick Snares
+(509, 181), -- Quick Snares
+(510, 8), -- Skirmish Strike
+(511, 8), -- Snap Shot
+(512, 8), -- Swift Tracker
+(512, 182), -- Swift Tracker
+(512, 183), -- Swift Tracker
+(514, 9), -- Deadly Aim
+(514, 354), -- Deadly Aim
+(515, 9), -- Hazard Finder
+(516, 9), -- Powerful Snares
+(516, 184), -- Powerful Snares
+(516, 181), -- Powerful Snares
+(517, 9), -- Terrain Master
+(517, 185), -- Terrain Master
+(517, 186), -- Terrain Master
+(517, 187), -- Terrain Master
+(518, 9), -- Warden's Boon
+(519, 10), -- Camouflage
+(519, 188), -- Camouflage
+(520, 10), -- Incredible Companion (Ranger)
+(520, 189), -- Incredible Companion (Ranger)
+(521, 10), -- Master Monster Hunter
+(521, 190), -- Master Monster Hunter
+(521, 177), -- Master Monster Hunter
+(522, 10), -- Penetrating Shot
+(523, 10), -- Twin Riposte
+(524, 10), -- Warden's Step
+(524, 188), -- Warden's Step
+(525, 11), -- Distracting Shot
+(526, 11), -- Double Prey
+(527, 11), -- Lightning Snares
+(527, 184), -- Lightning Snares
+(527, 181), -- Lightning Snares
+(528, 11), -- Second Sting
+(529, 11), -- Side by Side (Ranger)
+(529, 178), -- Side by Side (Ranger)
+(530, 12), -- Sense the Unseen
+(531, 12), -- Shared Prey
+(531, 191), -- Shared Prey
+(531, 192), -- Shared Prey
+(532, 12), -- Stealthy Companion
+(532, 193), -- Stealthy Companion
+(533, 12), -- Targeting Shot
+(533, 194), -- Targeting Shot
+(534, 12), -- Warden's Guidance
+(535, 13), -- Greater Distracting Shot
+(535, 195), -- Greater Distracting Shot
+(536, 13), -- Improved Twin Riposte (Ranger)
+(537, 13), -- Legendary Monster Hunter
+(537, 140), -- Legendary Monster Hunter
+(537, 196), -- Legendary Monster Hunter
+(538, 13), -- Specialized Companion (Ranger)
+(538, 197), -- Specialized Companion (Ranger)
+(539, 13), -- Ubiquitous Snares
+(539, 181), -- Ubiquitous Snares
+(540, 14), -- Impossible Flurry
+(542, 14), -- Manifold Edge
+(542, 198), -- Manifold Edge
+(542, 199), -- Manifold Edge
+(543, 14), -- Masterful Companion
+(543, 199), -- Masterful Companion
+(543, 127), -- Masterful Companion
+(544, 14), -- Perfect Shot
+(545, 14), -- Shadow Hunter
+(545, 193), -- Shadow Hunter
+(546, 15), -- Legendary Shot
+(546, 199), -- Legendary Shot
+(546, 200), -- Legendary Shot
+(546, 201), -- Legendary Shot
+(547, 15), -- To the Ends of the Earth
+(547, 202), -- To the Ends of the Earth
+(548, 15), -- Triple Threat
+(548, 203), -- Triple Threat
+(549, 15), -- Ultimate Skirmisher
+(549, 185), -- Ultimate Skirmisher
+(550, 5), -- Nimble Dodge
+(551, 5), -- Trap Finder
+(552, 5), -- Twin Feint
+(553, 5), -- You're Next
+(553, 204), -- You're Next
+(554, 6), -- Brutal Beating
+(554, 205), -- Brutal Beating
+(555, 6), -- Distracting Feint
+(555, 206), -- Distracting Feint
+(556, 6), -- Minor Magic
+(557, 6), -- Mobility
+(559, 6), -- Unbalancing Blow
+(559, 207), -- Unbalancing Blow
+(560, 7), -- Battle Assessment
+(561, 7), -- Dread Striker
+(562, 7), -- Magical Trickster
+(563, 7), -- Poison Weapon
+(564, 7), -- Reactive Pursuit
+(565, 7), -- Sabotage
+(566, 7), -- Scout's Warning
+(567, 8), -- Gang Up
+(568, 8), -- Light Step
+(570, 8), -- Twist the Knife
+(572, 9), -- Delay Trap
+(573, 9), -- Improved Poison Weapon
+(573, 208), -- Improved Poison Weapon
+(574, 9), -- Nimble Roll
+(574, 209), -- Nimble Roll
+(575, 9), -- Opportune Backstab
+(576, 9), -- Sidestep
+(577, 9), -- Slystriker
+(577, 210), -- Slystriker
+(578, 10), -- Precise Debilitation
+(578, 207), -- Precise Debilitation
+(578, 211), -- Precise Debilitation
+(579, 10), -- Sneak Savant
+(579, 188), -- Sneak Savant
+(580, 10), -- Tactical Debilitations
+(580, 206), -- Tactical Debilitations
+(580, 211), -- Tactical Debilitations
+(581, 10), -- Vicious Debilitations
+(581, 205), -- Vicious Debilitations
+(581, 211), -- Vicious Debilitations
+(582, 11), -- Critical Debilitations
+(582, 211), -- Critical Debilitations
+(583, 11), -- Fantastic Leap
+(584, 11), -- Felling Shot
+(585, 11), -- Reactive Interference
+(586, 11), -- Spring from the Shadows
+(587, 12), -- Defensive Roll
+(588, 12), -- Instant Opening
+(589, 12), -- Leave an Opening
+(591, 12), -- Blank Slate
+(592, 13), -- Cloud Step
+(592, 212), -- Cloud Step
+(593, 13), -- Cognitive Loophole
+(594, 13), -- Dispelling Slice
+(595, 13), -- Perfect Distraction
+(595, 213), -- Perfect Distraction
+(596, 14), -- Implausible Infiltration
+(596, 212), -- Implausible Infiltration
+(596, 214), -- Implausible Infiltration
+(597, 14), -- Powerful Sneak
+(598, 14), -- Trickster's Ace
+(599, 15), -- Hidden Paragon
+(599, 215), -- Hidden Paragon
+(600, 15), -- Impossible Striker
+(600, 216), -- Impossible Striker
+(601, 15), -- Reactive Distraction
+(601, 213), -- Reactive Distraction
+(601, 217), -- Reactive Distraction
+(602, 5), -- Counterspell (Spontaneous)
+(603, 5), -- Dangerous Sorcery
+(604, 5), -- Familiar
+(609, 7), -- Arcane Evolution
+(609, 218), -- Arcane Evolution
+(610, 7), -- Bespell Weapon
+(611, 7), -- Divine Evolution
+(611, 219), -- Divine Evolution
+(612, 7), -- Occult Evolution
+(612, 220), -- Occult Evolution
+(613, 7), -- Primal Evolution
+(613, 221), -- Primal Evolution
+(614, 8), -- Advanced Bloodline
+(614, 222), -- Advanced Bloodline
+(616, 9), -- Bloodline Resistance
+(617, 9), -- Crossblooded Evolution
+(618, 10), -- Greater Bloodline
+(618, 222), -- Greater Bloodline
+(621, 11), -- Bloodline Focus
+(622, 11), -- Magic Sense
+(623, 12), -- Interweave Dispel
+(623, 223), -- Interweave Dispel
+(624, 12), -- Reflect Spell
+(624, 224), -- Reflect Spell
+(626, 13), -- Greater Mental Evolution
+(626, 225), -- Greater Mental Evolution
+(627, 13), -- Greater Vital Evolution
+(627, 226), -- Greater Vital Evolution
+(628, 14), -- Bloodline Wellspring
+(628, 227), -- Bloodline Wellspring
+(629, 14), -- Greater Crossblooded Evolution
+(629, 228), -- Greater Crossblooded Evolution
+(630, 15), -- Bloodline Conduit
+(631, 15), -- Bloodline Perfection
+(631, 229), -- Bloodline Perfection
+(632, 15), -- Metamagic Mastery
+(633, 5), -- Counterspell (Prepared)
+(634, 5), -- Eschew Materials
+(636, 5), -- Hand of the Apprentice
+(640, 6), -- Conceal Spell
+(643, 7), -- Linked Focus
+(643, 230), -- Linked Focus
+(643, 231), -- Linked Focus
+(644, 7), -- Silent Spell
+(644, 232), -- Silent Spell
+(645, 8), -- Spell Penetration
+(647, 9), -- Advanced School Spell
+(647, 231), -- Advanced School Spell
+(648, 9), -- Bond Conservation
+(648, 230), -- Bond Conservation
+(649, 9), -- Universal Versatility
+(649, 233), -- Universal Versatility
+(649, 234), -- Universal Versatility
+(652, 10), -- Scroll Savant
+(652, 179), -- Scroll Savant
+(653, 11), -- Clever Counterspell
+(653, 235), -- Clever Counterspell
+(653, 236), -- Clever Counterspell
+(655, 12), -- Bonded Focus
+(655, 230), -- Bonded Focus
+(657, 12), -- Superior Bond
+(657, 230), -- Superior Bond
+(659, 13), -- Spell Tinker
+(660, 14), -- Infinite Possibilities
+(661, 14), -- Reprepare Spell
+(662, 15), -- Archwizard's Might
+(662, 237), -- Archwizard's Might
+(664, 15), -- Spell Combination
+(665, 6), -- Alchemist Dedication
+(665, 238), -- Alchemist Dedication
+(666, 7), -- Basic Concoction
+(666, 239), -- Basic Concoction
+(667, 7), -- Quick Alchemy
+(667, 239), -- Quick Alchemy
+(668, 8), -- Advanced Conoction
+(668, 240), -- Advanced Conoction
+(669, 8), -- Expert Alchemy
+(669, 239), -- Expert Alchemy
+(669, 179), -- Expert Alchemy
+(670, 11), -- Mastery Alchemy
+(670, 241), -- Mastery Alchemy
+(670, 184), -- Mastery Alchemy
+(671, 6), -- Barbarian Dedication
+(671, 125), -- Barbarian Dedication
+(671, 242), -- Barbarian Dedication
+(672, 7), -- Barbarian Resiliency
+(672, 243), -- Barbarian Resiliency
+(672, 244), -- Barbarian Resiliency
+(673, 7), -- Basic Fury
+(673, 243), -- Basic Fury
+(674, 8), -- Advanced Fury
+(674, 245), -- Advanced Fury
+(675, 8), -- Instinct Ability
+(675, 243), -- Instinct Ability
+(676, 11), -- Juggernaut's Fortitude
+(676, 243), -- Juggernaut's Fortitude
+(676, 246), -- Juggernaut's Fortitude
+(677, 6), -- Bard Dedication
+(677, 247), -- Bard Dedication
+(678, 7), -- Basic Bard Spellcasting
+(678, 248), -- Basic Bard Spellcasting
+(679, 7), -- Basic Muse's Whispers
+(679, 248), -- Basic Muse's Whispers
+(680, 8), -- Advanced Muse's Whispers
+(680, 249), -- Advanced Muse's Whispers
+(681, 8), -- Counter Perform
+(681, 248), -- Counter Perform
+(682, 9), -- Inspirational Performance
+(682, 248), -- Inspirational Performance
+(683, 9), -- Occult Breadth
+(683, 250), -- Occult Breadth
+(684, 11), -- Expert Bard Spellcasting
+(684, 250), -- Expert Bard Spellcasting
+(684, 69), -- Expert Bard Spellcasting
+(685, 14), -- Master Bard Spellcasting
+(685, 251), -- Master Bard Spellcasting
+(685, 252), -- Master Bard Spellcasting
+(686, 6), -- Champion Dedication
+(686, 125), -- Champion Dedication
+(686, 247), -- Champion Dedication
+(687, 7), -- Basic Devotion
+(687, 253), -- Basic Devotion
+(688, 7), -- Champion Resiliencey
+(688, 253), -- Champion Resiliencey
+(688, 254), -- Champion Resiliencey
+(689, 7), -- Healing Touch
+(689, 253), -- Healing Touch
+(690, 8), -- Advanced Devotion
+(690, 255), -- Advanced Devotion
+(691, 8), -- Champion's Reaction
+(691, 253), -- Champion's Reaction
+(692, 8), -- Divine Ally
+(692, 253), -- Divine Ally
+(693, 12), -- Diverse Armor Expert
+(693, 253), -- Diverse Armor Expert
+(693, 256), -- Diverse Armor Expert
+(694, 6), -- Cleric Dedication
+(694, 257), -- Cleric Dedication
+(695, 7), -- Basic Cleric Spellcasting
+(695, 258), -- Basic Cleric Spellcasting
+(696, 7), -- Basic Dogma
+(696, 258), -- Basic Dogma
+(697, 8), -- Advanced Dogma
+(697, 259), -- Advanced Dogma
+(698, 9), -- Divine Breadth
+(698, 260), -- Divine Breadth
+(699, 11), -- Expert Cleric Spellcasting
+(699, 260), -- Expert Cleric Spellcasting
+(699, 261), -- Expert Cleric Spellcasting
+(700, 14), -- Master Cleric Spellcasting
+(700, 262), -- Master Cleric Spellcasting
+(700, 263), -- Master Cleric Spellcasting
+(701, 6), -- Druid Dedication
+(701, 257), -- Druid Dedication
+(702, 7), -- Basic Druid Spellcasting
+(702, 264), -- Basic Druid Spellcasting
+(703, 7), -- Basic Wilding
+(703, 264), -- Basic Wilding
+(704, 7), -- Order Spell
+(704, 264), -- Order Spell
+(705, 8), -- Advanced Wilding
+(705, 265), -- Advanced Wilding
+(706, 9), -- Primal Breadth
+(706, 266), -- Primal Breadth
+(707, 11), -- Expert Druid Spellcasting
+(707, 266), -- Expert Druid Spellcasting
+(707, 190), -- Expert Druid Spellcasting
+(708, 14), -- Master Druid Spellcasting
+(708, 267), -- Master Druid Spellcasting
+(708, 140), -- Master Druid Spellcasting
+(709, 6), -- Fighter Dedication
+(709, 125), -- Fighter Dedication
+(709, 268), -- Fighter Dedication
+(710, 7), -- Basic Maneuver
+(710, 269), -- Basic Maneuver
+(711, 7), -- Fighter Resiliency
+(711, 269), -- Fighter Resiliency
+(711, 254), -- Fighter Resiliency
+(712, 7), -- Opportunist
+(712, 269), -- Opportunist
+(713, 8), -- Advanced Maneuver
+(713, 270), -- Advanced Maneuver
+(714, 11), -- Diverse Weapon Expert
+(714, 269), -- Diverse Weapon Expert
+(714, 271), -- Diverse Weapon Expert
+(715, 6), -- Monk Dedication
+(715, 125), -- Monk Dedication
+(715, 268), -- Monk Dedication
+(716, 7), -- Basic Kata
+(716, 272), -- Basic Kata
+(717, 7), -- Monk Resiliency
+(717, 272), -- Monk Resiliency
+(717, 254), -- Monk Resiliency
+(718, 8), -- Advanced Kata
+(718, 273), -- Advanced Kata
+(719, 9), -- Monk Moves
+(719, 272), -- Monk Moves
+(720, 10), -- Monk's Flurry
+(720, 272), -- Monk's Flurry
+(721, 11), -- Perfection's Path
+(721, 272), -- Perfection's Path
+(721, 274), -- Perfection's Path
+(722, 6), -- Ranger Dedication
+(722, 268), -- Ranger Dedication
+(723, 7), -- Basic Hunter's Trick
+(723, 275), -- Basic Hunter's Trick
+(724, 7), -- Ranger Resiliency
+(724, 275), -- Ranger Resiliency
+(724, 254), -- Ranger Resiliency
+(725, 8), -- Advanced Hunter's Trick
+(725, 276), -- Advanced Hunter's Trick
+(726, 11), -- Master Spotter
+(726, 275), -- Master Spotter
+(726, 277), -- Master Spotter
+(727, 6), -- Rogue Dedication
+(727, 268), -- Rogue Dedication
+(728, 7), -- Basic Trickery
+(728, 278), -- Basic Trickery
+(729, 7), -- Sneak Attacker
+(729, 278), -- Sneak Attacker
+(730, 8), -- Advanced Trickery
+(730, 279), -- Advanced Trickery
+(731, 9), -- Skill Mastery
+(731, 278), -- Skill Mastery
+(731, 280), -- Skill Mastery
+(732, 10), -- Uncanny Dodge
+(732, 278), -- Uncanny Dodge
+(733, 11), -- Evasiveness
+(733, 278), -- Evasiveness
+(733, 281), -- Evasiveness
+(734, 6), -- Sorcerer Dedication
+(734, 247), -- Sorcerer Dedication
+(735, 7), -- Basic Sorcerer Spellcasting
+(735, 282), -- Basic Sorcerer Spellcasting
+(736, 7), -- Basic Blood Potency
+(736, 282), -- Basic Blood Potency
+(737, 7), -- Basic Bloodline Spell
+(737, 282), -- Basic Bloodline Spell
+(738, 8), -- Advanced Blood Potency
+(738, 283), -- Advanced Blood Potency
+(739, 9), -- Bloodline Breadth
+(739, 284), -- Bloodline Breadth
+(740, 11), -- Expert Sorcerer Spellcasting
+(740, 284), -- Expert Sorcerer Spellcasting
+(740, 285), -- Expert Sorcerer Spellcasting
+(741, 14), -- Master Sorcerer Spellcasting
+(741, 286), -- Master Sorcerer Spellcasting
+(741, 287), -- Master Sorcerer Spellcasting
+(742, 6), -- Wizard Dedication
+(742, 238), -- Wizard Dedication
+(743, 7), -- Arcane School Spell
+(743, 288), -- Arcane School Spell
+(744, 7), -- Basic Arcana
+(744, 288), -- Basic Arcana
+(745, 7), -- Basic Wizard Spellcasting
+(745, 288), -- Basic Wizard Spellcasting
+(746, 8), -- Advanced Arcana
+(746, 289), -- Advanced Arcana
+(747, 9), -- Arcane Breadth
+(747, 290), -- Arcane Breadth
+(748, 11), -- Expert Wizard Spellcasting
+(748, 290), -- Expert Wizard Spellcasting
+(748, 291), -- Expert Wizard Spellcasting
+(749, 14), -- Master Wizard Spellcasting
+(749, 292), -- Master Wizard Spellcasting
+(749, 293), -- Master Wizard Spellcasting
+(750, 5), -- Additional Lore
+(750, 295), -- Additional Lore
+(751, 5), -- Adopted Ancestry
+(752, 5), -- Alchemical Crafting
+(752, 42), -- Alchemical Crafting
+(753, 294), -- Ancestral Paragon
+(754, 5), -- Arcane Sense
+(754, 296), -- Arcane Sense
+(755, 5), -- Armor Proficiency
+(756, 5), -- Assurance
+(756, 297), -- Assurance
+(757, 6), -- Automatic Knowledge
+(757, 298), -- Automatic Knowledge
+(757, 299), -- Automatic Knowledge
+(758, 5), -- Bargain Hunter
+(758, 300), -- Bargain Hunter
+(759, 301), -- Battle Cry
+(759, 303), -- Battle Cry
+(760, 5), -- Battle Medicine
+(760, 304), -- Battle Medicine
+(761, 301), -- Bizarre Magic
+(761, 69), -- Bizarre Magic
+(762, 6), -- Bonded Animal
+(762, 308), -- Bonded Animal
+(763, 5), -- Breath Control
+(764, 5), -- Canny Acumen
+(765, 5), -- Cat Fall
+(765, 305), -- Cat Fall
+(766, 5), -- Charming Liar
+(766, 306), -- Charming Liar
+(767, 302), -- Cloud Jump
+(767, 307), -- Cloud Jump
+(768, 5), -- Combat Climber
+(768, 142), -- Combat Climber
+(769, 6), -- Confabulator
+(769, 309), -- Confabulator
+(770, 6), -- Connections
+(770, 310), -- Connections
+(770, 311), -- Connections
+(771, 6), -- Continual Recovery
+(771, 312), -- Continual Recovery
+(772, 5), -- Courtly Graces
+(772, 313), -- Courtly Graces
+(773, 302), -- Craft Anything
+(773, 314), -- Craft Anything
+(774, 5), -- Diehard
+(775, 302), -- Divine Guidance
+(775, 263), -- Divine Guidance
+(776, 5), -- Dubious Knowledge
+(776, 315), -- Dubious Knowledge
+(777, 301), -- Expeditious Search
+(777, 146), -- Expeditious Search
+(778, 5), -- Experienced Professional
+(778, 295), -- Experienced Professional
+(779, 5), -- Experienced Smuggler
+(779, 316), -- Experienced Smuggler
+(780, 5), -- Experienced Tracker
+(780, 317), -- Experienced Tracker
+(781, 5), -- Fascinating Performance
+(781, 318), -- Fascinating Performance
+(782, 5), -- Fast Recovery
+(782, 242), -- Fast Recovery
+(783, 5), -- Feather Step
+(783, 268), -- Feather Step
+(784, 5), -- Fleet
+(785, 301), -- Foil Senses
+(785, 188), -- Foil Senses
+(786, 5), -- Forager
+(786, 317), -- Forager
+(787, 6), -- Glad-Hand
+(787, 356), -- Glad-Hand
+(788, 5), -- Group Coercion
+(788, 204), -- Group Coercion
+(789, 5), -- Group Impression
+(789, 300), -- Group Impression
+(790, 5), -- Hefty Hauler
+(790, 142), -- Hefty Hauler
+(791, 5), -- Hobnobber
+(791, 300), -- Hobnobber
+(792, 301), -- Impeccable Crafter
+(792, 184), -- Impeccable Crafter
+(792, 319), -- Impeccable Crafter
+(793, 5), -- Impressive Performance
+(793, 318), -- Impressive Performance
+(794, 5), -- Incredible Initiative
+(795, 320), -- Incredible Investiture
+(795, 321), -- Incredible Investiture
+(796, 5), -- Intimidating Glare
+(796, 204), -- Intimidating Glare
+(797, 6), -- Intimidating Prowess
+(797, 322), -- Intimidating Prowess
+(797, 323), -- Intimidating Prowess
+(798, 301), -- Inventor
+(798, 184), -- Inventor
+(799, 301), -- Kip Up
+(799, 324), -- Kip Up
+(800, 6), -- Lasting Coercion
+(800, 323), -- Lasting Coercion
+(801, 302), -- Legendary Codebreaker
+(801, 325), -- Legendary Codebreaker
+(802, 302), -- Legendary Linguist
+(802, 325), -- Legendary Linguist
+(802, 326), -- Legendary Linguist
+(803, 302), -- Legendary Medic
+(803, 327), -- Legendary Medic
+(804, 302), -- Legendary Negotiation
+(804, 328), -- Legendary Negotiation
+(805, 302), -- Legendary Performer
+(805, 329), -- Legendary Performer
+(805, 330), -- Legendary Performer
+(806, 302), -- Legendary Professional
+(806, 331), -- Legendary Professional
+(807, 302), -- Legendary Sneak
+(807, 332), -- Legendary Sneak
+(807, 333), -- Legendary Sneak
+(808, 302), -- Legendary Survivalist
+(808, 202), -- Legendary Survivalist
+(809, 302), -- Legendary Thief
+(809, 334), -- Legendary Thief
+(809, 335), -- Legendary Thief
+(810, 6), -- Lengthy Diversion
+(810, 306), -- Lengthy Diversion
+(812, 5), -- Magical Crafting
+(812, 306), -- Magical Crafting
+(813, 6), -- Magical Shorthand
+(813, 355), -- Magical Shorthand
+(814, 5), -- Multilingual
+(814, 313), -- Multilingual
+(815, 5), -- Natural Medicine
+(815, 336), -- Natural Medicine
+(816, 6), -- Nimble Crawl
+(816, 337), -- Nimble Crawl
+(817, 5), -- Oddity Identification
+(817, 338), -- Oddity Identification
+(818, 5), -- Pickpocket
+(818, 339), -- Pickpocket
+(819, 301), -- Planar Survival
+(819, 186), -- Planar Survival
+(820, 6), -- Powerful Leap
+(820, 52), -- Powerful Leap
+(821, 301), -- Quick Climber
+(821, 57), -- Quick Climber
+(822, 5), -- Quick Coercion
+(822, 204), -- Quick Coercion
+(823, 6), -- Quick Disguise
+(823, 309), -- Quick Disguise
+(824, 5), -- Quick Identification
+(824, 340), -- Quick Identification
+(825, 5), -- Quick Jump
+(825, 142), -- Quick Jump
+(826, 301), -- Quick Recognition
+(826, 341), -- Quick Recognition
+(826, 842), -- Quick Recognition
+(827, 5), -- Quick Repair
+(827, 42), -- Quick Repair
+(828, 5), -- Quick Squeeze
+(828, 305), -- Quick Squeeze
+(829, 301), -- Quick Swim
+(829, 57), -- Quick Swim
+(830, 301), -- Quick Unlock
+(830, 343), -- Quick Unlock
+(831, 6), -- Quiet Allies
+(831, 344), -- Quiet Allies
+(832, 6), -- Rapid Mantel
+(832, 52), -- Rapid Mantel
+(833, 5), -- Read Lips
+(833, 313), -- Read Lips
+(834, 5), -- Recognize Spell
+(834, 340), -- Recognize Spell
+(835, 5), -- Ride
+(836, 6), -- Robust Recovery
+(836, 312), -- Robust Recovery
+(837, 302), -- Scare to Death
+(837, 345), -- Scare to Death
+(838, 301), -- Shameless Request
+(838, 346), -- Shameless Request
+(839, 5), -- Shield Block
+(840, 5), -- Sign Language
+(840, 313), -- Sign Language
+(841, 5), -- Skill Training
+(841, 347), -- Skill Training
+(842, 301), -- Slippery Secrets
+(842, 348), -- Slippery Secrets
+(843, 5), -- Snare Crafting
+(843, 42), -- Snare Crafting
+(844, 5), -- Specialty Crafting
+(844, 42), -- Specialty Crafting
+(845, 5), -- Steady Balance
+(845, 305), -- Steady Balance
+(846, 5), -- Streetwise
+(846, 313), -- Streetwise
+(847, 5), -- Student of the Canon
+(847, 349), -- Student of the Canon
+(848, 5), -- Subtle Theft
+(848, 339), -- Subtle Theft
+(849, 5), -- Survey Wildlife
+(849, 317), -- Survey Wildlife
+(850, 301), -- Swift Sneak
+(850, 188), -- Swift Sneak
+(851, 5), -- Terrain Expertise
+(851, 317), -- Terrain Expertise
+(852, 5), -- Terrain Stalker
+(852, 316), -- Terrain Stalker
+(853, 301), -- Terrified Retreat
+(853, 303), -- Terrified Retreat
+(854, 5), -- Titan Wrestler
+(854, 142), -- Titan Wrestler
+(855, 5), -- Toughness
+(856, 5), -- Train Animal
+(856, 336), -- Train Animal
+(857, 5), -- Trick Magic Item
+(857, 340), -- Trick Magic Item
+(858, 5), -- Underwater Marauder
+(858, 142),  -- Underwater Marauder
+(859, 302), -- Unified Theory
+(859, 350), -- Unified Theory
+(860, 6), -- Unmistakable Lore
+(860, 351), -- Unmistakable Lore
+(861, 294), -- Untrained Improvisation
+(862, 5), -- Virtuosic Performer
+(862, 318), -- Virtuosic Performer
+(863, 301), -- Wall Jump
+(863, 57), -- Wall Jump
+(864, 6), -- Ward Medic
+(864, 312), -- Ward Medic
+(865, 6), -- Wary Disarmament
+(865, 352), -- Wary Disarmament
+(866, 5); -- Weapon Proficiency
+
 INSERT INTO feats_traits (feat_id, trait_id)
 VALUES
+--May run a quick script to comment these
   -- Dwarf Ancestry Trait
 (1,79),
 (2,79),
@@ -2683,6 +3964,4 @@ VALUES
 (867,49),
 (867,99),
 (868,31),
-(868,65)
-
-
+(868,65);

@@ -1,5 +1,12 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+-- #########################################################
+-- This space is where we say the latest ID for incrementing
+--
+-- 269 is top ID right now so start with 270 for anything new
+--
+-- #########################################################
+
 INSERT INTO traittypes (traittype_id, name)
 VALUES
   (1, 'None'),
@@ -133,6 +140,9 @@ INSERT INTO traits (trait_id, traittype, short_name,description)
 (100, 5, "Rogue", "This indicates abilities from the rogue class."),
 (101, 5, "Sorcerer", "This indicates abilities from the sorcerer class."),
 (102, 5, "Wizard", "This indicates abilities from the wizard class."),
+(252, 1, "Additive 1", "Feats with the additive trait allow you to spend actions to add special substances to bombs or elixirs. You can add only one additive to a single alchemical item, and attempting to add another spoils the item. You can typically use actions with the additive trait only when you’re creating an infused alchemical item, and some can be used only with the Quick Alchemy action. The additive trait is always followed by a level, such as additive 2. An additive adds its level to the level of the alchemical item you’re modifying; the result is the new level of the mixture. The mixture’s item level must be no higher than your advanced alchemy level."),
+(253, 1, "Additive 2", "Feats with the additive trait allow you to spend actions to add special substances to bombs or elixirs. You can add only one additive to a single alchemical item, and attempting to add another spoils the item. You can typically use actions with the additive trait only when you’re creating an infused alchemical item, and some can be used only with the Quick Alchemy action. The additive trait is always followed by a level, such as additive 2. An additive adds its level to the level of the alchemical item you’re modifying; the result is the new level of the mixture. The mixture’s item level must be no higher than your advanced alchemy level."),
+(254, 1, "Additive 3", "Feats with the additive trait allow you to spend actions to add special substances to bombs or elixirs. You can add only one additive to a single alchemical item, and attempting to add another spoils the item. You can typically use actions with the additive trait only when you’re creating an infused alchemical item, and some can be used only with the Quick Alchemy action. The additive trait is always followed by a level, such as additive 2. An additive adds its level to the level of the alchemical item you’re modifying; the result is the new level of the mixture. The mixture’s item level must be no higher than your advanced alchemy level."),
 
 -- "Creature type" type traits
 (103, 6, "Aberration", "Aberrations are creatures from beyond the planes or corruptions of the natural order."),
@@ -301,4 +311,19 @@ INSERT INTO traits (trait_id, traittype, short_name,description)
 (248, 15, "Two-Hand", "This weapon can be wielded with two hands. Doing so changes its weapon damage die to the indicated value. This change applies to all the weapon’s damage dice, such as those from "),
 (249, 15, "Unarmed", "An unarmed attack uses your body rather than a manufactured weapon. An unarmed attack isn’t a weapon, though it’s categorized with weapons for weapon groups, and it might have weapon traits. Since it’s part of your body, an unarmed attack can’t be Disarmed. It also doesn’t take up a hand, though a fist or other grasping appendage follows the same rules as a free-hand weapon."),
 (250, 15, "Versatile", "A versatile weapon can be used to deal a different type of damage than that listed in the Damage entry. This trait indicates the alternate damage type. For instance, a piercing weapon that is versatile S can be used to deal piercing or slashing damage. You choose the damage type each time you make an attack."),
-(251, 15, "Volley", "This ranged weapon is less effective at close distances. Your attacks against targets that are at a distance within the range listed take a –2 penalty.");
+(251, 15, "Volley", "This ranged weapon is less effective at close distances. Your attacks against targets that are at a distance within the range listed take a –2 penalty."),
+(255, 15, "Thrown 10ft.", "You can throw this weapon as a ranged attack. A thrown weapon adds your Strength modifier to damage just like a melee weapon does. When this trait appears on a melee weapon, it also includes the range increment. Ranged weapons with this trait use the range increment specified in the weapon’s Range entry."),
+(256, 15, "Thrown 20ft.", "You can throw this weapon as a ranged attack. A thrown weapon adds your Strength modifier to damage just like a melee weapon does. When this trait appears on a melee weapon, it also includes the range increment. Ranged weapons with this trait use the range increment specified in the weapon’s Range entry."),
+(257, 15, "Deadly d8", "On a critical hit, the weapon adds a weapon damage die of the listed size. Roll this after doubling the weapon’s damage. This increases to two dice if the weapon has a "),
+(258, 15, "Deadly d10", "On a critical hit, the weapon adds a weapon damage die of the listed size. Roll this after doubling the weapon’s damage. This increases to two dice if the weapon has a "),
+(259, 15, "Versatile S", "A versatile weapon can be used to deal a different type of damage than that listed in the Damage entry. This trait indicates the alternate damage type. For instance, a piercing weapon that is versatile S can be used to deal piercing or slashing damage. You choose the damage type each time you make an attack."),
+(260, 15, "Versatile P", "A versatile weapon can be used to deal a different type of damage than that listed in the Damage entry. This trait indicates the alternate damage type. For instance, a piercing weapon that is versatile S can be used to deal piercing or slashing damage. You choose the damage type each time you make an attack."),
+(261, 15, "Versatile B", "A versatile weapon can be used to deal a different type of damage than that listed in the Damage entry. This trait indicates the alternate damage type. For instance, a piercing weapon that is versatile S can be used to deal piercing or slashing damage. You choose the damage type each time you make an attack."),
+(262, 15, "Two-Hand d8", "This weapon can be wielded with two hands. Doing so changes its weapon damage die to the indicated value. This change applies to all the weapon’s damage dice, such as those from "),
+(263, 15, "Two-Hand d10", "This weapon can be wielded with two hands. Doing so changes its weapon damage die to the indicated value. This change applies to all the weapon’s damage dice, such as those from "),
+(264, 15, "Two-Hand d12", "This weapon can be wielded with two hands. Doing so changes its weapon damage die to the indicated value. This change applies to all the weapon’s damage dice, such as those from "),
+(265, 15, "Fatal d8", "The fatal trait includes a die size. On a critical hit, the weapon’s damage die increases to that die size instead of the normal die size, and the weapon adds one additional damage die of the listed size."),
+(266, 15, "Fatal d10", "The fatal trait includes a die size. On a critical hit, the weapon’s damage die increases to that die size instead of the normal die size, and the weapon adds one additional damage die of the listed size."),
+(267, 15, "Fatal d12", "The fatal trait includes a die size. On a critical hit, the weapon’s damage die increases to that die size instead of the normal die size, and the weapon adds one additional damage die of the listed size."),
+(268, 15, "Jousting d6", "The weapon is suited for mounted combat with a harness or similar means. When mounted, if you moved at least 10 feet on the action before your attack, add a circumstance bonus to damage for that attack equal to the number of damage dice for the weapon. In addition, while mounted, you can wield the weapon in one hand, changing the damage die to the listed value."),
+(269, 15, "Volley 30 ft.", "This ranged weapon is less effective at close distances. Your attacks against targets that are at a distance within the range listed take a –2 penalty.");
