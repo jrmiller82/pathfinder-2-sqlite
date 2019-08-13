@@ -1,7 +1,6 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
 -- TODO Fill in the remaining short descriptions from pag 454 CRB
--- TODO Fill in the remaining long descriptions from pag 618-23 CRB
 
 INSERT INTO conditions (
 	conditions_id,
