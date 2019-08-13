@@ -1,5 +1,5 @@
 ammunition_id,name,price_gp,amount,bulk,group,source_id,source_pg,description
-14,Arrows,0.1,10,L,Bow,1,282,These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.
-15,Blowgun Darts,0.05,10,L,Dart,1,281,"These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison."
-16,Bolts,0.1,10,L,Bow,1,281,"Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows."
-17,Sling Bullets,0.01,10,L,Sling,1,282,"These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings."
+1,Arrows,0.1,10,L,Bow,1,282,These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.
+2,Blowgun Darts,0.05,10,L,Dart,1,281,"These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison."
+3,Bolts,0.1,10,L,Bow,1,281,"Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows."
+4,Sling Bullets,0.01,10,L,Sling,1,282,"These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings."
