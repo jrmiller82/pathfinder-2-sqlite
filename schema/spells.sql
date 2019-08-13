@@ -48,6 +48,8 @@ CREATE TABLE spells (
   area_text TEXT, -- TODO need to figure out some sort of programmatic representation for this too
   spelltargets_id INTEGER,
   nethysurl TEXT, -- scraped from github repo
+  actioncosts_id INTEGER,
+  FOREIGN KEY (actioncosts_id) REFERENCES actioncosts(actioncosts_id),
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id),
   FOREIGN KEY (spelltypes_id) REFERENCES spelltypes(spelltypes_id),
   FOREIGN KEY (spelltargets_id) REFERENCES spelltargets(spelltargets_id)

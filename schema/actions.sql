@@ -2,7 +2,8 @@
 
 CREATE TABLE actioncosts (
   actioncosts_id INTEGER PRIMARY KEY,
-  name TEXT NOT NULL UNIQUE
+  name TEXT NOT NULL UNIQUE,
+  abbr TEXT NOT NULL UNIQUE
 );
 
 

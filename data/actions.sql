@@ -2,14 +2,15 @@
 
 INSERT INTO actioncosts (
   actioncosts_id,
-  name
+  name,
+  abbr
 )
 VALUES
-  (1, 'Single Action'),
-  (2, 'Two Actions'),
-  (3, 'Three Actions'),
-  (4, 'Free Action'),
-  (5, 'Reaction');
+  (1, 'Single Action', '1'),
+  (2, 'Two Actions', '2'),
+  (3, 'Three Actions', '3'),
+  (4, 'Free Action', 'free'),
+  (5, 'Reaction', 'reaction');
 
 INSERT INTO actioncategories (actioncategories_id, sources_id, sources_pages, name, descr)
 VALUES

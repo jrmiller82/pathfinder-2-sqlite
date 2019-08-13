@@ -95,12 +95,15 @@ def main():
     c.execute(stmt)
     ttypes = c.fetchall()
 
-
+    # load in ids for actions so just doing this once
+    stmt = "SELECT actioncosts_id, abbr FROM actioncosts"
+    c = conn.cursor()
+    c.execute(stmt)
+    acttypes = c.fetchall()
 
     # print(sorted(targs))
     # print(len(targs))
     # print(len(set(targs)))
-
 
     id = 0
     for i in sorted_dicts:
@@ -112,6 +115,27 @@ def main():
         do_spell_types(i,id,conn,stypes)
         do_spell_components(i,id,conn,ctypes)
         do_spell_targets(i,id,conn,ttypes)
+        do_spell_actions(i,id,conn,acttypes)
+
+def do_spell_actions(i,id,conn,acttypes):
+    if 'action' not in i:
+        return
+    res = 0
+    for j in acttypes:
+        if i['action'] == j[1]:
+            res = j[0]
+    # print(id , res)
+
+    inp = (res, id)
+
+    stmt = "UPDATE spells SET actioncosts_id=? WHERE spells_id=?"
+
+    try:
+        conn.execute(stmt, inp)
+    except:
+        print("Error updating actioncosts_id")
+    else:
+        conn.commit()
 
 def do_spell_components(i,id,conn,ctypes):
     res = None
