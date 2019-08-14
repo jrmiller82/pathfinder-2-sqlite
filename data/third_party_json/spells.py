@@ -29,6 +29,15 @@ def main():
 
     ## Get database connection
     conn = sqlite3.connect('../../pf2.db') 
+    ## Set pragmas
+    pragma1 = "PRAGMA synchronous=OFF;"
+    pragma2 = "PRAGMA count_changes=OFF;"
+    pragma3 = "PRAGMA journal_mode=MEMORY;"
+    pragma4 = "PRAGMA temp_store=MEMORY;"
+    conn.execute(pragma1)
+    conn.execute(pragma2)
+    conn.execute(pragma3)
+    conn.execute(pragma4)
 
     # load in ids for traits from traits table so we only call this once
     # instead of every spell
