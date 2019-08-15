@@ -155,14 +155,15 @@ def do_spell_components(i,id,conn,ctypes):
             if k.capitalize() == j[1]:
                 res = j[0]
 
-                inp = (res, id)
+                inp = (id, res)
 
                 stmt = "INSERT INTO spells_spellcomponents (spells_id, spellcomponents_id) VALUES (?,?)"
 
                 try:
                     conn.execute(stmt, inp)
-                except:
-                    print("Error inserting spell components")
+                except sqlite3.Error as e:
+                    print("Error inserting spell components: {}".format(e))
+                    print("\tinp: {}".format(inp))
                 else:
                     conn.commit()
 
@@ -224,7 +225,7 @@ def do_spell_traits(i, id, conn, traits):
     # print(inp)
 
     # insert into sql
-    stmt = "INSERT OR REPLACE INTO spells_traits (spells_id, traits_id) VALUES (?,?)"
+    stmt = "INSERT OR REPLACE INTO spells_traits (spells_id, trait_id) VALUES (?,?)"
     try:
         conn.executemany(stmt, inp)
     except:

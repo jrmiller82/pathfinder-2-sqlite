@@ -62,9 +62,9 @@ sqlite3 pf2.db < data/gear.sql
 echo '15'
 sqlite3 pf2.db < data/heritages.sql
 # Comment out the following three lines if you don't want to generate the spell data.
-# cd data/third_party_json
-# python3 spells.py
-# cd ../..
+cd data/third_party_json
+python3 spells.py
+cd ../..
 
 # TODO Eventually we will stop relying on the spells.py script and I will have
 # the actual .sql files for the spell data; I am waiting to see if the
