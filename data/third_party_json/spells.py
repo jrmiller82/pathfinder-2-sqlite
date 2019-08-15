@@ -8,7 +8,7 @@ def main():
     with open('spells.json') as f:
         # raw_data = f.read()
         data = json.load(f)
-    print("Imported {} spells.".format(len(data)))
+    print("Importing {} spells.".format(len(data)))
     # alphabetize spells into a list
     sorted_names = []
     for i in data:
@@ -127,6 +127,8 @@ def main():
         do_spell_components(i,id,conn,ctypes)
         do_spell_targets(i,id,conn,ttypes)
         do_spell_actions(i,id,conn,acttypes)
+
+    print("Finished {} spells.".format(len(sorted_dicts)))
 
 def do_spell_actions(i,id,conn,acttypes):
     if 'action' not in i:
@@ -289,7 +291,7 @@ def do_range_numbers(i, id, conn):
 
 
 def do_basic_sql(i, id, conn):
-    print("Doing spell id #{}: {}".format(id, i['name']))
+    #print("Doing spell id #{}: {}".format(id, i['name']))
     stmt = """INSERT INTO spells (
     spells_id,
     sources_id,
