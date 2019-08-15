@@ -7,6 +7,9 @@
 --
 -- #########################################################
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 INSERT INTO traittypes (traittype_id, name)
 VALUES
   (1, 'None'),

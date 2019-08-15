@@ -1,5 +1,8 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 INSERT INTO langsrarity (rarity_id, rarity_name)
 VALUES
   (1, 'Common'),

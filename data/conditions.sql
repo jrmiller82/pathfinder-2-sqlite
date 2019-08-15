@@ -1,5 +1,8 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 -- TODO Fill in the remaining short descriptions from pag 454 CRB
 
 INSERT INTO conditions (

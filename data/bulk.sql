@@ -1,6 +1,9 @@
 
 -- TODO update sizes table with a FK to bulk to get the data from the table on
 -- pg 272 CRB
+
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
 INSERT INTO bulk (
   bulk_id,
   sources_id,

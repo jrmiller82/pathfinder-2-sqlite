@@ -1,5 +1,8 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 INSERT INTO featprereqs (featprereqs_id, feat_id, descr)
 VALUES
   (1, NULL, 'Ancestry Level 1'),
