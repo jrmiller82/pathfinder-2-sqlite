@@ -34,10 +34,12 @@ def main():
     pragma2 = "PRAGMA count_changes=OFF;"
     pragma3 = "PRAGMA journal_mode=MEMORY;"
     pragma4 = "PRAGMA temp_store=MEMORY;"
+    pragma5 = "PRAGMA foreign_keys=ON;"
     conn.execute(pragma1)
     conn.execute(pragma2)
     conn.execute(pragma3)
     conn.execute(pragma4)
+    conn.execute(pragma5)
 
     # load in ids for traits from traits table so we only call this once
     # instead of every spell
