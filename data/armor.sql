@@ -64,7 +64,7 @@ VALUES
 
 
 -- TODO INSERT into armor_traits table
-INSERT INTO armor_traits (armor_id, traits_id)
+INSERT INTO armor_traits (armor_id, trait_id)
 VALUES
   (2, 88), -- explorer's clothing and comfort
   (3, 88), -- padded and comfort

@@ -12,6 +12,6 @@ CREATE TABLE traits (
   traittype INTEGER,
   short_name TEXT NOT NULL,
   description TEXT NOT NULL,
-  FOREIGN KEY (traittype) REFERENCES traittypes(traittypes_id)
+  FOREIGN KEY (traittype) REFERENCES traittypes(traittype_id)
 );
 
