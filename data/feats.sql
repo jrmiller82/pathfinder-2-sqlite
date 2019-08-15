@@ -2698,1276 +2698,1275 @@ VALUES
 (865, 352), -- Wary Disarmament
 (866, 5); -- Weapon Proficiency
 
-INSERT INTO feats_traits (feat_id, trait_id)
-VALUES
+BEGIN TRANSACTION;
 -- TODO run a quick script to comment these
   -- Dwarf Ancestry Trait
-(1,79),
-(2,79),
-(3,79),
-(4,79),
-(5,79),
-(6,79),
-(7,79),
-(8,79),
-(9,79),
-(10,79),
-(11,79),
-(12,80),
-(13,80),
-(14,80),
-(15,80),
-(16,80),
-(17,80),
-(18,80),
-(19,80),
-(20,80),
-(21,80),
-(22,80),
-(23,80),
-(24,80),
-(25,81),
-(26,81),
-(27,81),
-(28,81),
-(29,81),
-(30,81),
-(31,81),
-(32,81),
-(33,81),
-(34,81),
-(35,81),
-(36,81),
-(37,81),
-(38,82),
-(39,82),
-(40,82),
-(41,82),
-(42,82),
-(43,82),
-(44,82),
-(45,82),
-(46,82),
-(47,82),
-(48,82),
-(49,82),
-(50,82),
-(51,82),
-(52,85),
-(53,85),
-(54,30),
-(54,85),
-(55,85),
-(56,85),
-(57,85),
-(58,85),
-(59,85),
-(60,85),
-(61,85),
-(62,85),
-(63,85),
-(64,85),
-(65,85),
-(66,86),
-(67,86),
-(68,86),
-(69,86),
-(70,86),
-(71,86),
-(72,86),
-(73,86),
-(74,86),
-(75,86),
-(76,86),
-(77,86),
-(78,86),
-(79,83),
-(80,83),
-(81,83),
-(82,84),
-(83,182),
-(84,84),
-(85,14),
-(85,182),
-(86,182),
-(87,182),
-(88,182),
-(89,182),
-(90,182),
-(91,182),
-(92,91),
-(93,91),
-(94,91),
-(95,91),
-(96,91),
---(96,96),
-(97,91),
-(98,1),
-(98,91),
-(99,91),
-(100,91),
-(101,91),
-(102,1),
-(102,91),
-(103,1),
-(103,91),
-(104,91),
-(105,91),
-(106,91),
-(107,1),
-(107,91),
-(108,91),
-(109,91),
-(110,91),
-(111,1),
-(111,91),
-(112,91),
-(113,91),
-(114,91),
-(115,91),
-(116,91),
-(117,91),
-(118,91),
-(119,91),
-(120,1),
-(120,91),
-(121,91),
-(122,91),
-(123,91),
-(124,91),
-(125,91),
-(126,91),
-(127,91),
-(128,1),
-(128,91),
-(129,91),
-(130,92),
-(131,92),
-(131,14),
-(131,59),
-(132,92),
-(133,92),
-(134,92), --Note 134 "Sudden Charge" is shared by Barbarians and Fighters
-(134,97),
-(134,28),
-(134,52),
-(135,92),
-(136,92),
-(136,59),
-(137,92),
-(137,59),
-(138,92),
-(139,92),
-(139,14),
-(139,59),
-(140,92),
-(141,92),
-(142,92),
-(142,97),
-(142,28),
-(143,92),
-(143,59),
-(144,92),
-(144,37),
-(144,48),
-(144,216),
-(144,212),
-(145,92),
-(145,94),
-(146,92),
-(147,92),
-(147,59),
-(148,213),
-(148,92),
-(148,14),
-(148,209),
-(148,37),
-(148,59),
-(149,92),
-(149,37),
-(149,54),
-(149,216),
-(149,59),
-(149,212),
-(150,92),
-(150,37),
-(150,211),
-(150,59),
-(151,92),
-(151,14),
-(151,37),
-(151,54),
-(151,216),
-(151,59),
-(151,212),
-(152,92),
-(153,92),
-(153,14),
-(153,59),
-(154,7),
-(154,92),
-(154,59),
-(154,74),
-(155,92),
-(155,97),
-(156,92),
-(156,59),
-(157,92),
-(157,14),
-(157,59),
-(158,92),
-(158,59),
-(159,92),
-(159,59),
-(160,92),
-(160,59),
-(161,7),
-(161,92),
-(161,59),
-(162,92),
-(162,37),
-(162,48),
-(162,216),
-(162,59),
-(162,212),
-(163,92),
-(163,59),
-(164,92),
-(164,28),
-(164,37),
-(164,59),
-(165,6),
-(165,92),
-(165,14),
-(165,37),
-(165,52),
-(165,59),
-(166,92),
-(166,37),
-(166,54),
-(166,212),
-(167,92),
-(167,14),
-(167,59),
-(168,92),
-(168,14),
-(168,37),
-(169,92),
-(169,59),
-(170,92),
-(170,97),
-(170,28),
-(170,52),
-(171,92),
-(171,59),
-(172,92),
-(172,14),
-(172,37),
-(172,54),
-(172,216),
-(172,59),
-(172,212),
-(173,92),
-(173,59),
-(174,92),
-(175,92),
-(175,14),
-(175,30),
-(175,59),
-(176,92),
-(176,59),
-(177,7),
-(177,92),
-(177,59),
-(177,74),
-(178,92),
-(178,42),
-(178,59),
-(179,93),
-(180,93),
-(181,93),
-(181,95),
-(181,14),
-(181,96),
-(181,45),
-(181,101),
-(181,102),
-(182,93),
-(183,93),
-(183,95),
-(183,101),
-(183,102),
-(184,93),
-(185,93),
-(186,93),
-(186,30),
-(187,93),
-(188,93),
-(189,93),
-(189,14),
-(189,42),
-(189,45),
-(190,93),
-(191,93),
-(192,93),
-(193,93),
-(193,14),
-(193,42),
-(193,45),
-(194,93),
-(194,95),
-(194,96),
-(194,101),
-(194,102),
-(195,93),
-(196,93),
-(197,93),
-(198,93),
-(199,93),
-(199,14),
-(199,45),
-(199,101),
-(199,102),
-(200,93),
-(200,14),
-(200,42),
-(200,45),
-(201,93),
-(202,93),
-(203,93),
-(204,93),
-(205,93),
-(206,93),
-(206,96),
-(206,101),
-(206,102),
-(207,93),
-(208,93),
-(209,93),
-(210,93),
-(211,93),
-(212,93),
-(213,93),
-(214,94),
-(215,94),
-(216,94),
-(217,94),
-(218,94),
-(219,94),
-(219,51),
-(220,94),
-(220,51),
-(221,94),
-(221,51),
-(222,94),
-(222,51),
-(223,94),
-(224,94),
-(225,94),
-(225,14),
-(225,45),
-(227,94),
-(228,94),
-(229,94),
-(229,97),
-(230,94),
-(231,94),
-(232,94),
-(233,94),
-(234,94),
-(235,94),
-(236,94),
-(237,94),
-(238,94),
-(239,94),
-(240,94),
-(241,94),
-(241,28),
-(242,94),
-(243,94),
-(244,94),
-(245,94),
-(246,94),
-(247,94),
-(248,94),
-(249,94),
-(250,94),
-(251,94),
-(252,94),
-(253,94),
-(254,94),
-(255,94),
-(256,94),
-(257,94),
-(258,94),
-(259,94),
-(260,94),
-(261,94),
-(262,94),
-(263,94),
-(264,95),
-(265,95),
-(266,95),
-(267,95),
-(268,95),
-(271,95),
-(271,33),
-(271,132),
-(272,95),
-(272,25),
-(273,95),
-(273,33),
-(274,95),
-(275,95),
-(276,95),
-(276,214),
-(276,211),
-(277,95),
-(277,14),
-(277,45),
-(278,95),
-(279,95),
-(280,95),
-(280,14),
-(280,45),
-(281,95),
-(281,14),
-(281,45),
-(282,95),
-(283,95),
-(285,95),
-(286,95),
-(286,214),
-(286,209),
-(287,95),
-(288,95),
-(289,95),
-(290,95),
-(291,95),
-(291,14),
-(291,45),
-(292,95),
-(293,95),
-(294,95),
-(294,14),
-(294,45),
-(295,95),
-(296,95),
-(297,95),
-(298,95),
-(299,95),
-(300,95),
-(301,95),
-(302,95),
-(303,95),
-(304,95),
-(305,95),
-(306,95),
-(306,14),
-(306,45),
-(307,95),
-(308,95),
-(309,95),
-(310,95),
-(310,14),
-(311,96),
-(311,99),
-(312,96),
-(314,96),
-(315,96),
-(315,42),
-(315,45),
-(315,101),
-(315,102),
-(316,96),
-(317,96),
-(318,96),
-(318,101),
-(318,102),
-(319,96),
-(321,96),
-(321,42),
-(321,45),
-(322,96),
-(323,96),
-(324,96),
-(325,96),
-(326,96),
-(327,96),
-(329,96),
-(330,96),
-(331,96),
-(332,96),
-(333,96),
-(334,96),
-(335,96),
-(336,96),
-(336,45),
-(337,96),
-(337,42),
-(337,45),
-(337,101),
-(337,102),
-(338,96),
-(339,96),
-(340,96),
-(341,96),
-(342,96),
-(343,96),
-(344,96),
-(345,96),
-(346,96),
-(348,96),
-(349,96),
-(350,96),
-(351,96),
-(352,96),
-(353,96),
-(354,14),
-(354,96),
-(354,42),
-(354,45),
-(355,14),
-(355,96),
-(356,97),
-(357,97),
-(357,58),
-(358,97),
-(358,52),
-(358,68),
-(359,97),
-(359,28),
-(360,97),
-(361,97),
-(363,97),
-(364,97),
-(365,97),
-(365,58),
-(366,97),
-(366,58),
-(367,97),
-(368,23),
-(368,27),
-(368,97),
-(368,44),
-(369,97),
-(370,97),
-(370,28),
-(371,97),
-(371,28),
-(372,97),
-(372,28),
-(373,97),
-(374,97),
-(374,28),
-(374,58),
-(375,97),
-(377,97),
-(377,99),
-(378,97),
-(379,97),
-(379,58),
-(380,97),
-(380,68),
-(381,97),
-(382,97),
-(383,97),
-(384,97),
-(385,97),
-(385,58),
-(387,97),
-(388,97),
-(388,99),
-(388,100),
-(389,97),
-(390,97),
-(391,14),
-(391,97),
-(392,97),
-(392,68),
-(393,97),
-(393,28),
-(394,97),
-(396,97),
-(397,97),
-(397,58),
-(398,97),
-(399,97),
-(399,28),
-(400,97),
-(400,58),
-(401,97),
-(401,68),
-(402,97),
-(403,97),
-(404,97),
-(406,97),
-(406,58),
-(407,97),
-(407,68),
-(408,97),
-(409,97),
-(410,14),
-(410,97),
-(410,58),
-(411,97),
-(411,68),
-(412,97),
-(412,68),
-(413,97),
-(413,58),
-(414,97),
-(415,14),
-(415,97),
-(416,97),
-(416,58),
-(417,97),
-(418,97),
-(419,97),
-(420,97),
-(420,28),
-(420,58),
-(422,97),
-(422,68),
-(423,97),
-(424,97),
-(424,68),
-(425,97),
-(425,68),
-(426,97),
-(426,28),
-(426,52),
-(426,99),
-(427,97),
-(428,97),
-(429,97),
-(430,98),
-(430,68),
-(431,98),
-(431,68),
-(432,98),
-(433,98),
-(434,98),
-(435,98),
-(435,68),
-(436,98),
-(436,68),
-(437,98),
-(437,68),
-(438,98),
-(439,98),
-(440,98),
-(441,98),
-(442,98),
-(443,98),
-(444,98),
-(445,98),
-(446,98),
-(447,98),
-(448,98),
-(449,98),
-(450,98),
-(451,7),
-(451,23),
-(451,27),
-(451,44),
-(451,98),
-(452,98),
-(453,98),
-(454,98),
-(455,98),
-(456,98),
-(457,98),
-(458,98),
-(459,98),
-(459,68),
-(460,98),
-(461,98),
-(461,68),
-(462,98),
-(463,98),
-(464,14),
-(464,98),
-(465,6),
-(465,34),
-(465,98),
-(466,98),
-(467,98),
-(468,98),
-(469,98),
-(469,131),
-(470,98),
-(471,98),
-(472,98),
-(473,98),
-(474,98),
-(475,98),
-(476,98),
-(477,98),
-(478,122),
-(478,14),
-(478,209),
-(478,42),
-(478,98),
-(479,23),
-(479,44),
-(479,98),
-(480,98),
-(481,98),
-(482,98),
-(483,98),
-(484,98),
-(485,98),
-(486,98),
-(487,98),
-(488,98),
-(489,30),
-(489,98),
-(491,99),
-(492,28),
-(492,99),
-(493,99),
-(494,28),
-(494,99),
-(495,99),
-(496,14),
-(496,99),
-(497,99),
-(498,99),
-(498,100),
-(499,99),
-(500,99),
-(501,99),
-(502,99),
-(503,99),
-(504,99),
-(505,99),
-(505,100),
-(506,99),
-(508,99),
-(509,99),
-(510,28),
-(510,99),
-(510,100),
-(511,99),
-(512,99),
-(514,52),
-(514,99),
-(515,99),
-(516,99),
-(517,99),
-(518,99),
-(519,99),
-(520,99),
-(521,99),
-(522,52),
-(522,99),
-(523,97),
-(523,99),
-(524,99),
-(525,99),
-(526,99),
-(527,99),
-(528,58),
-(528,99),
-(529,99),
-(530,99),
-(530,100),
-(531,99),
-(532,99),
-(533,14),
-(533,58),
-(533,99),
-(534,99),
-(535,99),
-(536,99),
-(537,99),
-(538,99),
-(539,99),
-(540,28),
-(540,52),
-(540,99),
-(542,99),
-(543,99),
-(544,28),
-(544,99),
-(545,99),
-(546,99),
-(547,99),
-(548,99),
-(549,99),
-(550,100),
-(551,100),
-(552,100),
-(553,23),
-(553,27),
-(553,44),
-(553,100),
-(554,100),
-(555,100),
-(556,100),
-(557,100),
-(559,100),
-(560,100),
-(560,63),
-(561,100),
-(562,100),
-(563,42),
-(563,100),
-(564,100),
-(565,34),
-(565,100),
-(567,100),
-(568,100),
-(570,100),
-(572,100),
-(573,100),
-(574,100),
-(575,100),
-(576,100),
-(577,100),
-(578,100),
-(579,100),
-(580,100),
-(581,100),
-(582,34),
-(582,100),
-(583,100),
-(584,100),
-(585,100),
-(586,28),
-(586,100),
-(587,100),
-(588,14),
-(588,100),
-(589,100),
-(591,100),
-(592,100),
-(593,100),
-(594,100),
-(595,100),
-(596,41),
-(596,49),
-(596,100),
-(597,100),
-(598,14),
-(598,100),
-(599,100),
-(600,100),
-(601,14),
-(601,42),
-(601,100),
-(602,205),
-(602,101),
-(603,101),
-(604,101),
-(604,102),
-(609,213),
-(609,101),
-(610,101),
-(610,102),
-(611,214),
-(611,101),
-(612,215),
-(612,101),
-(613,216),
-(613,101),
-(614,101),
-(616,101),
-(617,101),
-(618,101),
-(621,101),
-(622,20),
-(622,207),
-(622,101),
-(622,102),
-(623,45),
-(623,101),
-(624,101),
-(624,102),
-(626,213),
-(626,101),
-(627,214),
-(627,101),
-(628,101),
-(629,101),
-(630,45),
-(630,101),
-(631,101),
-(632,101),
-(632,102),
-(633,205),
-(633,213),
-(633,102),
-(634,102),
-(636,102),
-(640,14),
-(640,42),
-(640,45),
-(640,102),
-(643,102),
-(644,14),
-(644,45),
-(644,102),
-(645,102),
-(647,102),
-(648,42),
-(648,45),
-(648,102),
-(649,102),
-(652,102),
-(653,102),
-(655,102),
-(657,102),
-(659,14),
-(659,102),
-(660,102),
-(661,102),
-(662,102),
-(664,102),
-(665,4),
-(665,19),
-(665,50),
-(666,4),
-(667,4),
-(668,4),
-(669,4),
-(670,4),
-(671,4),
-(671,19),
-(671,50),
-(672,4),
-(673,4),
-(674,4),
-(675,4),
-(676,4),
-(677,4),
-(677,19),
-(677,50),
-(678,4),
-(679,4),
-(680,4),
-(681,4),
-(682,4),
-(683,4),
-(684,4),
-(685,4),
-(686,4),
-(686,19),
-(686,50),
-(687,4),
-(688,4),
-(689,4),
-(690,4),
-(691,4),
-(692,4),
-(693,4),
-(694,4),
-(694,19),
-(694,50),
-(695,4),
-(696,4),
-(697,4),
-(698,4),
-(699,4),
-(700,4),
-(701,4),
-(701,19),
-(701,50),
-(702,4),
-(703,4),
-(704,4),
-(705,4),
-(706,4),
-(707,4),
-(708,4),
-(709,4),
-(709,19),
-(709,50),
-(710,4),
-(711,4),
-(712,4),
-(713,4),
-(714,4),
-(715,4),
-(715,19),
-(715,50),
-(716,4),
-(717,4),
-(718,4),
-(719,4),
-(720,4),
-(720,28),
-(720,98),
-(721,4),
-(722,4),
-(722,19),
-(722,50),
-(722,14),
-(722,99),
-(723,4),
-(724,4),
-(725,4),
-(726,4),
-(727,4),
-(727,19),
-(727,50),
-(728,4),
-(729,4),
-(730,4),
-(731,4),
-(732,4),
-(733,4),
-(734,4),
-(734,19),
-(734,50),
-(735,4),
-(736,4),
-(737,4),
-(738,4),
-(739,4),
-(740,4),
-(741,4),
-(742,4),
-(742,19),
-(742,50),
-(743,4),
-(744,4),
-(745,4),
-(746,4),
-(747,4),
-(748,4),
-(749,4),
-(750,31),
-(750,65),
-(751,31),
-(752,31),
-(752,65),
-(753,31),
-(754,31),
-(754,65),
-(755,31),
-(756,30),
-(756,31),
-(756,65),
-(757,31),
-(757,65),
-(758,31),
-(758,65),
-(759,31),
-(759,65),
-(760,31),
-(760,33),
-(760,42),
-(760,65),
-(761,31),
-(761,65),
-(762,22),
-(762,31),
-(762,65),
-(763,31),
-(764,31),
-(765,31),
-(765,65),
-(766,31),
-(766,65),
-(767,31),
-(767,65),
-(768,31),
-(768,65),
-(769,31),
-(769,65),
-(770,31),
-(770,65),
-(771,31),
-(771,65),
-(772,31),
-(772,65),
-(773,31),
-(773,65),
-(774,31),
-(775,31),
-(775,65),
-(776,31),
-(776,65),
-(777,31),
-(778,31),
-(778,65),
-(779,31),
-(779,65),
-(780,31),
-(780,65),
-(781,31),
-(781,65),
-(782,31),
-(783,31),
-(784,31),
-(785,31),
-(785,65),
-(786,31),
-(786,65),
-(787,31),
-(787,65),
-(788,31),
-(788,65),
-(789,31),
-(789,65),
-(790,31),
-(790,65),
-(791,31),
-(791,65),
-(792,31),
-(792,65),
-(793,31),
-(793,65),
-(794,31),
-(795,31),
-(796,31),
-(796,65),
-(797,31),
-(797,65),
-(798,22),
-(798,31),
-(798,65),
-(799,31),
-(799,65),
-(800,31),
-(800,65),
-(801,31),
-(801,65),
-(802,31),
-(803,31),
-(804,31),
-(804,65),
-(805,31),
-(805,65),
-(806,31),
-(806,65),
-(807,31),
-(807,65),
-(808,31),
-(808,65),
-(809,31),
-(809,65),
-(810,31),
-(810,65),
--- TODO BUG SEE ISSUE #45 (811,31),
--- TODO BUG SEE ISSUE #45 (811,65),
-(812,31),
-(812,65),
-(813,31),
-(813,65),
-(814,31),
-(814,65),
-(815,31),
-(815,65),
-(816,31),
-(816,65),
-(817,31),
-(817,65),
-(818,31),
-(818,65),
-(819,31),
-(819,65),
-(820,31),
-(820,65),
-(821,31),
-(821,65),
-(822,31),
-(822,65),
-(823,31),
-(823,65),
-(824,31),
-(824,65),
-(825,31),
-(825,65),
-(826,31),
-(826,65),
-(827,31),
-(827,65),
-(828,31),
-(828,65),
-(829,31),
-(829,65),
-(830,31),
-(830,65),
-(831,31),
-(831,65),
-(832,31),
-(832,65),
-(833,31),
-(833,65),
-(834,31),
-(834,63),
-(834,65),
-(835,31),
-(836,31),
-(836,65),
-(837,18),
-(837,23),
-(837,27),
-(837,31),
-(837,34),
-(837,65),
-(838,31),
-(838,65),
-(839,31),
-(840,31),
-(840,65),
-(841,31),
-(841,65),
-(842,31),
-(842,65),
-(843,31),
-(843,65),
-(844,31),
-(844,65),
-(845,31),
-(845,65),
-(846,31),
-(846,65),
-(847,31),
-(847,65),
-(848,31),
-(848,65),
-(849,31),
-(849,65),
-(850,31),
-(850,65),
-(851,31),
-(851,65),
-(852,31),
-(852,65),
-(853,31),
-(853,65),
-(854,31),
-(854,65),
-(855,31),
-(856,22),
-(856,31),
-(856,42),
-(856,65),
-(857,31),
-(857,42),
-(857,65),
-(858,31),
-(858,65),
-(859,31),
-(859,65),
-(860,31),
-(861,31),
-(862,31),
-(862,65),
-(863,31),
-(863,65),
-(864,31),
-(864,65),
-(865,31),
-(865,65),
-(866,31),
-(866,65),
-(867,49),
-(867,99),
-(868,31),
-(868,65);
-
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (1,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (2,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (3,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (4,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (5,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (6,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (7,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (8,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (9,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (10,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (11,79);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (12,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (13,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (14,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (15,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (16,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (17,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (18,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (19,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (20,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (21,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (22,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (23,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (24,80);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (25,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (26,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (27,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (28,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (29,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (30,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (31,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (32,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (33,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (34,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (35,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (36,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (37,81);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (38,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (39,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (40,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (41,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (42,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (43,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (44,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (45,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (46,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (47,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (48,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (49,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (50,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (51,82);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (52,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (53,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (54,30);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (54,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (55,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (56,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (57,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (58,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (59,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (60,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (61,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (62,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (63,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (64,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (65,85);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (66,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (67,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (68,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (69,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (70,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (71,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (72,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (73,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (74,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (75,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (76,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (77,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (78,86);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (79,83);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (80,83);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (81,83);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (82,84);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (83,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (84,84);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (85,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (85,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (86,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (87,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (88,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (89,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (90,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (91,182);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (92,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (93,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (94,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (95,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (96,91);
+-- TODO ???? INSERT INTO feats_traits (feat_id, trait_id) VALUES --(96,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (97,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (98,1);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (98,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (99,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (100,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (101,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (102,1);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (102,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (103,1);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (103,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (104,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (105,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (106,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (107,1);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (107,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (108,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (109,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (110,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (111,1);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (111,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (112,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (113,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (114,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (115,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (116,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (117,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (118,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (119,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (120,1);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (120,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (121,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (122,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (123,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (124,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (125,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (126,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (127,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (128,1);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (128,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (129,91);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (130,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (132,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (133,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,92); --Note 134 "Sudden Charge" is shared by Barbarians and Fighter;
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (135,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (136,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (136,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (137,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (137,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (138,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (140,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (141,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (143,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (143,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,48);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,216);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,212);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (145,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (145,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (146,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (147,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (147,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,213);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,209);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,54);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,216);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,212);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,211);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,54);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,216);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,212);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (152,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,7);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,74);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (155,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (155,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (156,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (156,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (158,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (158,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (159,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (159,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (160,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (160,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,7);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,48);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,216);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,212);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (163,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (163,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,6);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,54);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,212);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (169,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (169,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (171,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (171,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,37);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,54);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,216);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,212);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (173,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (173,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (174,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,30);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (176,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (176,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,7);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,74);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,92);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,59);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (179,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (180,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (182,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (183,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (183,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (183,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (183,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (184,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (185,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (186,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (186,30);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (187,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (188,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (190,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (191,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (192,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (194,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (194,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (194,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (194,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (194,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (195,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (196,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (197,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (198,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (201,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (202,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (203,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (204,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (205,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (207,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (208,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (209,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (210,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (211,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (212,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (213,93);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (214,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (215,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (216,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (217,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (218,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (219,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (219,51);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (220,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (220,51);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (221,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (221,51);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (222,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (222,51);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (223,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (224,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (227,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (228,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (229,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (229,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (230,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (231,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (232,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (233,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (234,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (235,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (236,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (237,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (238,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (239,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (240,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (241,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (241,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (242,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (243,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (244,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (245,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (246,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (247,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (248,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (249,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (250,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (251,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (252,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (253,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (254,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (255,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (256,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (257,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (258,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (259,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (260,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (261,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (262,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (263,94);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (264,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (265,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (266,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (267,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (268,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,33);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,132);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (272,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (272,25);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (273,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (273,33);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (274,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (275,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,214);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,211);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (278,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (279,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (282,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (283,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (285,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,214);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,209);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (287,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (288,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (289,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (290,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (292,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (293,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (295,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (296,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (297,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (298,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (299,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (300,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (301,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (302,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (303,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (304,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (305,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (307,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (308,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (309,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (310,95);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (310,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (311,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (311,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (312,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (314,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (316,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (317,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (318,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (318,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (318,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (319,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (322,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (323,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (324,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (325,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (326,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (327,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (329,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (330,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (331,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (332,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (333,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (334,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (335,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (336,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (336,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (338,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (339,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (340,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (341,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (342,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (343,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (344,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (345,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (346,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (348,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (349,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (350,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (351,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (352,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (353,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (355,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (355,96);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (356,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (357,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (357,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (359,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (359,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (360,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (361,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (363,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (364,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (365,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (365,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (366,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (366,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (367,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,23);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,27);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,44);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (369,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (370,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (370,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (371,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (371,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (372,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (372,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (373,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (375,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (377,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (377,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (378,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (379,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (379,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (380,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (380,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (381,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (382,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (383,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (384,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (385,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (385,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (387,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (389,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (390,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (391,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (391,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (392,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (392,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (393,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (393,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (394,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (396,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (397,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (397,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (398,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (399,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (399,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (400,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (400,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (401,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (401,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (402,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (403,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (404,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (406,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (406,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (407,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (407,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (408,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (409,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (411,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (411,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (412,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (412,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (413,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (413,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (414,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (415,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (415,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (416,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (416,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (417,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (418,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (419,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (422,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (422,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (423,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (424,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (424,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (425,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (425,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (427,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (428,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (429,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (430,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (430,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (431,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (431,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (432,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (433,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (434,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (435,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (435,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (436,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (436,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (437,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (437,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (438,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (439,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (440,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (441,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (442,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (443,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (444,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (445,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (446,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (447,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (448,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (449,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (450,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,7);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,23);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,27);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,44);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (452,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (453,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (454,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (455,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (456,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (457,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (458,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (459,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (459,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (460,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (461,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (461,68);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (462,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (463,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (464,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (464,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,6);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,34);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (466,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (467,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (468,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (469,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (469,131);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (470,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (471,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (472,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (473,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (474,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (475,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (476,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (477,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,122);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,209);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,23);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,44);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (480,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (481,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (482,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (483,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (484,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (485,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (486,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (487,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (488,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (489,30);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (489,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (491,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (492,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (492,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (493,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (494,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (494,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (495,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (496,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (496,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (497,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (498,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (498,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (499,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (500,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (501,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (502,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (503,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (504,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (505,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (505,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (506,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (508,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (509,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (511,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (512,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (514,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (514,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (515,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (516,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (517,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (518,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (519,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (520,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (521,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (522,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (522,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (523,97);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (523,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (524,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (525,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (526,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (527,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (528,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (528,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (529,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (530,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (530,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (531,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (532,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,58);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (534,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (535,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (536,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (537,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (538,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (539,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,52);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (542,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (543,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (544,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (544,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (545,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (546,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (547,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (548,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (549,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (550,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (551,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (552,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,23);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,27);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,44);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (554,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (555,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (556,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (557,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (559,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (560,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (560,63);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (561,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (562,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (563,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (563,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (564,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (565,34);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (565,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (567,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (568,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (570,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (572,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (573,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (574,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (575,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (576,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (577,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (578,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (579,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (580,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (581,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (582,34);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (582,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (583,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (584,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (585,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (586,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (586,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (587,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (588,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (588,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (589,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (591,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (592,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (593,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (594,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (595,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,41);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,49);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (597,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (598,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (598,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (599,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (600,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,100);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (602,205);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (602,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (603,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (604,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (604,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (609,213);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (609,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (610,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (610,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (611,214);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (611,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (612,215);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (612,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (613,216);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (613,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (614,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (616,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (617,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (618,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (621,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,20);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,207);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (623,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (623,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (624,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (624,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (626,213);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (626,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (627,214);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (627,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (628,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (629,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (630,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (630,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (631,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (632,101);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (632,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,205);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,213);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (634,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (636,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (643,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (645,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (647,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,45);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (649,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (652,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (653,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (655,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (657,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (659,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (659,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (660,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (661,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (662,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (664,102);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (666,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (667,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (668,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (669,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (670,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (672,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (673,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (674,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (675,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (676,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (678,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (679,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (680,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (681,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (682,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (683,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (684,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (685,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (687,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (688,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (689,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (690,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (691,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (692,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (693,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (695,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (696,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (697,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (698,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (699,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (700,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (702,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (703,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (704,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (705,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (706,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (707,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (708,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (710,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (711,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (712,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (713,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (714,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (716,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (717,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (718,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (719,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,28);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,98);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (721,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,14);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (723,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (724,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (725,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (726,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (728,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (729,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (730,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (731,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (732,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (733,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (735,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (736,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (737,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (738,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (739,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (740,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (741,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,19);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,50);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (743,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (744,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (745,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (746,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (747,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (748,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (749,4);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (750,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (750,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (751,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (752,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (752,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (753,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (754,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (754,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (755,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,30);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (757,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (757,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (758,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (758,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (759,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (759,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,33);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (761,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (761,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,22);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (763,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (764,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (765,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (765,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (766,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (766,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (767,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (767,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (768,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (768,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (769,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (769,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (770,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (770,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (771,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (771,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (772,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (772,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (773,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (773,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (774,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (775,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (775,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (776,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (776,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (777,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (778,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (778,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (779,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (779,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (780,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (780,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (781,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (781,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (782,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (783,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (784,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (785,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (785,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (786,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (786,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (787,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (787,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (788,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (788,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (789,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (789,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (790,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (790,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (791,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (791,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (792,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (792,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (793,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (793,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (794,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (795,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (796,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (796,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (797,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (797,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,22);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (799,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (799,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (800,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (800,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (801,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (801,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (802,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (803,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (804,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (804,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (805,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (805,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (806,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (806,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (807,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (807,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (808,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (808,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (809,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (809,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (810,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (810,65);
+-- TODO BUG SEE ISSUE #45 INSERT INTO feats_traits (feat_id, trait_id) VALUES (811,31);
+-- TODO BUG SEE ISSUE #45 INSERT INTO feats_traits (feat_id, trait_id) VALUES (811,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (812,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (812,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (813,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (813,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (814,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (814,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (815,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (815,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (816,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (816,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (817,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (817,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (818,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (818,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (819,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (819,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (820,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (820,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (821,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (821,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (822,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (822,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (823,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (823,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (824,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (824,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (825,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (825,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (826,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (826,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (827,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (827,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (828,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (828,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (829,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (829,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (830,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (830,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (831,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (831,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (832,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (832,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (833,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (833,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,63);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (835,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (836,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (836,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,18);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,23);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,27);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,34);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (838,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (838,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (839,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (840,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (840,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (841,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (841,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (842,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (842,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (843,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (843,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (844,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (844,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (845,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (845,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (846,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (846,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (847,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (847,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (848,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (848,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (849,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (849,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (850,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (850,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (851,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (851,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (852,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (852,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (853,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (853,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (854,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (854,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (855,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,22);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,42);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (858,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (858,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (859,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (859,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (860,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (861,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (862,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (862,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (863,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (863,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (864,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (864,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (865,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (865,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (866,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (866,65);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (867,49);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (867,99);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (868,31);
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (868,65);
+COMMIT;
