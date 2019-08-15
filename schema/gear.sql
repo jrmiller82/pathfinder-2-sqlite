@@ -4,7 +4,6 @@ CREATE TABLE gear(
   "level" INTEGER,
   "price" REAL,
   "bulk" REAL,
-  "traits_to_drop" TEXT, -- TODO need to drop this column eventually
   "hands" INTEGER,
   "sources_id" INTEGER,
   "sources_pages" TEXT,
