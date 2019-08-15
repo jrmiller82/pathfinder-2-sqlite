@@ -8,7 +8,7 @@ sqlite3 pf2.db < schema/backgrounds.sql
 echo '3'
 sqlite3 pf2.db < schema/abilityscores.sql
 echo '4'
-sqlite3 pf2.db < schema/bulk.sql
+sqlite3 pf2.db < schema/bulks.sql
 echo '5'
 sqlite3 pf2.db < schema/sizes.sql
 echo '6'
@@ -38,7 +38,7 @@ sqlite3 pf2.db < data/backgrounds.sql
 echo '3'
 sqlite3 pf2.db < data/abilityscores.sql
 echo '4'
-sqlite3 pf2.db < data/bulk.sql
+sqlite3 pf2.db < data/bulks.sql
 echo '5'
 sqlite3 pf2.db < data/senses.sql
 echo '6'

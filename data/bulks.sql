@@ -4,7 +4,7 @@
 
 PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
                           -- on PER CONNECTION
-INSERT INTO bulk (
+INSERT INTO bulks (
   bulk_id,
   sources_id,
   sources_pages,

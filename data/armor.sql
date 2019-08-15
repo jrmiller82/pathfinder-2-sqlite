@@ -62,7 +62,6 @@ VALUES
   (13, 1, '275', 4, 2, 'Full plate', '30 gp', 30.0, 6, 0, -3, -10, 18, 6, 4, 'TODO');
 
 
-
 -- TODO INSERT into armor_traits table
 INSERT INTO armor_traits (armor_id, trait_id)
 VALUES

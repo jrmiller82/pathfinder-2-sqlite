@@ -1,4 +1,4 @@
-CREATE TABLE bulk (
+CREATE TABLE bulks (
 	bulk_id INTEGER PRIMARY KEY,
   sources_id INTEGER NOT NULL,
   sources_pages TEXT NOT NULL,
