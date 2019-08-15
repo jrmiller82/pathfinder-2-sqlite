@@ -1262,1441 +1262,1441 @@ VALUES
   (355, NULL, 'expert in Arcana. Nature, Occultism, or Religion'),
   (356, NULL, 'expert in Diplomacy');
 
-INSERT INTO feats_featprereqs (feat_id, featprereqs_id)
-VALUES
+BEGIN TRANSACTION;
 -- Dwarf
-(1, 1), -- Dwarven Lore
-(2, 1), -- Dwarven Weapon Familiarity
-(3, 1), -- Rock Runner
-(4, 1), -- Stonecunning
-(5, 1), -- Unburdened Iron
-(6, 1), -- Vengeful Hatred
-(7, 2), -- Boulder Roll
-(7, 16), -- Boulder Roll
-(8, 2), -- Dwarven Weapon Cunning
-(8, 17), -- Dwarven Weapon Cunning
-(9, 3), -- Mountain's Stoutness
-(10, 3), -- Stonewalker
-(11, 4), -- Dwarven Weapon Expertise
-(11, 17), -- Dwarven Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (1, 1); -- Dwarven Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (2, 1); -- Dwarven Weapon Familiarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (3, 1); -- Rock Runner
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (4, 1); -- Stonecunning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (5, 1); -- Unburdened Iron
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (6, 1); -- Vengeful Hatred
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (7, 2); -- Boulder Roll
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (7, 16); -- Boulder Roll
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (8, 2); -- Dwarven Weapon Cunning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (8, 17); -- Dwarven Weapon Cunning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (9, 3); -- Mountain's Stoutness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (10, 3); -- Stonewalker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (11, 4); -- Dwarven Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (11, 17); -- Dwarven Weapon Expertise
 -- Elf
-(12, 1), -- Ancestral Longevity
-(12, 18), -- Ancestral Longevity
-(13, 1), -- Elven Lore
-(14, 1), -- Elven Weapon Familiarity
-(15, 1), -- Forlorn
-(16, 1), -- Nimble Elf
-(17, 1), -- Otherworldly Magic
-(18, 1), -- Unwavering Mien
-(19, 2), -- Ageless Patience
-(20, 2), -- Elven Weapon Elegance
-(20, 19), -- Elven Weapon Elegance
-(21, 3), -- Elf Step
-(22, 3), -- Expert Longevity
-(22, 20), -- Expert Longevity
-(23, 4), -- Universal Longevity
-(23, 21), -- Universal Longevity
-(24, 4), -- Elven Weapon Expertise
-(24, 19), -- Elven Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (12, 1); -- Ancestral Longevity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (12, 18); -- Ancestral Longevity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (13, 1); -- Elven Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (14, 1); -- Elven Weapon Familiarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (15, 1); -- Forlorn
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (16, 1); -- Nimble Elf
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (17, 1); -- Otherworldly Magic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (18, 1); -- Unwavering Mien
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (19, 2); -- Ageless Patience
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (20, 2); -- Elven Weapon Elegance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (20, 19); -- Elven Weapon Elegance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (21, 3); -- Elf Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (22, 3); -- Expert Longevity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (22, 20); -- Expert Longevity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (23, 4); -- Universal Longevity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (23, 21); -- Universal Longevity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (24, 4); -- Elven Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (24, 19); -- Elven Weapon Expertise
 -- Gnome
-(25, 1), -- Animal Accomplice
-(26, 1), -- Burrow Elocutionist
-(27, 1), -- Fey Fellowship
-(28, 1), -- First World Magic
-(29, 1), -- Gnome Obsession
-(30, 1), -- Gnome Weapon Familiarity
-(31, 1), -- Illusion Sense
-(32, 2), -- Animal Elocutionist
-(32, 22), -- Animal Elocutionist
-(33, 2), -- Energized Font
-(33, 23), -- Energized Font
-(33, 24), -- Energized Font
-(34, 2), -- Gnome Weapon Innovator
-(34,  25), -- Gnome Weapon Innovator
-(35, 3), -- First World Adept
-(35, 26), -- First World Adept
-(36, 3), -- Vivacious Conduit
-(37, 4), -- Gnome Weapon Expertise
-(37,  25), -- Gnome Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (25, 1); -- Animal Accomplice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (26, 1); -- Burrow Elocutionist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (27, 1); -- Fey Fellowship
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (28, 1); -- First World Magic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (29, 1); -- Gnome Obsession
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (30, 1); -- Gnome Weapon Familiarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (31, 1); -- Illusion Sense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (32, 2); -- Animal Elocutionist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (32, 22); -- Animal Elocutionist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (33, 2); -- Energized Font
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (33, 23); -- Energized Font
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (33, 24); -- Energized Font
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (34, 2); -- Gnome Weapon Innovator
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (34,  25); -- Gnome Weapon Innovator
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (35, 3); -- First World Adept
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (35, 26); -- First World Adept
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (36, 3); -- Vivacious Conduit
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (37, 4); -- Gnome Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (37,  25); -- Gnome Weapon Expertise
 --Goblin
-(38, 1), -- Burn It!
-(39, 1), -- City Scavenger
-(40, 1), -- Goblin Lore
-(41, 1), -- Goblin Scuttle
-(42, 1), -- Goblin Song
-(43, 1), -- Goblin Weapon Familiarity
-(44, 1), -- Junk Tinker
-(45, 1), -- Rough Rider
-(46, 1), -- Very Sneaky
-(47, 2), -- Goblin Weapon Frenzy
-(47, 27), -- Goblin Weapon Frenzy
-(48, 3), -- Cave Climber
-(49, 3), -- Skittering Scuttle
-(49, 28), -- Skittering Scuttle
-(50, 4), -- Goblin Weapon Expertise
-(50, 27), -- Goblin Weapon Expertise
-(51, 4), -- Very, Very Sneaky
-(51, 353), -- Very, Very Sneaky
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (38, 1); -- Burn It!
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (39, 1); -- City Scavenger
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (40, 1); -- Goblin Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (41, 1); -- Goblin Scuttle
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (42, 1); -- Goblin Song
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (43, 1); -- Goblin Weapon Familiarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (44, 1); -- Junk Tinker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (45, 1); -- Rough Rider
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (46, 1); -- Very Sneaky
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (47, 2); -- Goblin Weapon Frenzy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (47, 27); -- Goblin Weapon Frenzy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (48, 3); -- Cave Climber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (49, 3); -- Skittering Scuttle
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (49, 28); -- Skittering Scuttle
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (50, 4); -- Goblin Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (50, 27); -- Goblin Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (51, 4), -- Very; Very Sneaky
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (51, 353), -- Very; Very Sneaky
 -- Halfling
-(52, 1), -- Distracting Shadows
-(53, 1), -- Halfling Lore
-(54, 1), -- Halfling Luck
-(55, 1), -- Halfling Weapon Familiarity
-(56, 1), -- Sure Feet
-(57, 1), -- Titan Slinger
-(58, 1), -- Unfettered Halfling
-(59, 1), -- Watchful Halfling
-(60, 2), -- Cultural Adaptability
-(61, 2), -- Halfling Weapon Trickster
-(61, 29), -- Halfling Weapon Trickster
-(62, 3), -- Guiding Luck
-(62, 30), -- Guiding Luck
-(63, 3), -- Irrepressible
-(64, 4), -- Ceaseless Shadows
-(64, 31), -- Ceaseless Shadows
-(65, 4), -- Halfling Weapon Expertise
-(65, 29), -- Halfling Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (52, 1); -- Distracting Shadows
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (53, 1); -- Halfling Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (54, 1); -- Halfling Luck
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (55, 1); -- Halfling Weapon Familiarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (56, 1); -- Sure Feet
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (57, 1); -- Titan Slinger
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (58, 1); -- Unfettered Halfling
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (59, 1); -- Watchful Halfling
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (60, 2); -- Cultural Adaptability
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (61, 2); -- Halfling Weapon Trickster
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (61, 29); -- Halfling Weapon Trickster
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (62, 3); -- Guiding Luck
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (62, 30); -- Guiding Luck
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (63, 3); -- Irrepressible
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (64, 4); -- Ceaseless Shadows
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (64, 31); -- Ceaseless Shadows
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (65, 4); -- Halfling Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (65, 29); -- Halfling Weapon Expertise
 -- Human
-(66, 1), -- Adapted Cantrip
-(66, 32), -- Adapted Cantrip
-(67, 1), -- Cooperative Nature
-(68, 1), -- General Training
-(69, 1), -- Haughty Obstinacy
-(70, 1), -- Natural Ambition
-(71, 1), -- Natural Skill
-(72, 1), -- Unconventional Weaponry
-(73, 2), -- Adaptive Adept
-(73, 33), -- Adaptive Adept
-(73, 34), -- Adaptive Adept
-(74, 2), -- Clever Improviser
-(75, 3), -- Cooperataive Soul
-(75, 35), -- Cooperataive Soul
-(76, 3), -- Incredible Improvisation
-(76, 36), -- Incredible Improvisation
-(77, 3), -- Multitalented
-(78, 4), -- Unconventional Expertise
-(78, 37), -- Unconventional Expertise
-(78, 38), -- Unconventional Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (66, 1); -- Adapted Cantrip
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (66, 32); -- Adapted Cantrip
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (67, 1); -- Cooperative Nature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (68, 1); -- General Training
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (69, 1); -- Haughty Obstinacy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (70, 1); -- Natural Ambition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (71, 1); -- Natural Skill
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (72, 1); -- Unconventional Weaponry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (73, 2); -- Adaptive Adept
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (73, 33); -- Adaptive Adept
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (73, 34); -- Adaptive Adept
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (74, 2); -- Clever Improviser
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (75, 3); -- Cooperataive Soul
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (75, 35); -- Cooperataive Soul
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (76, 3); -- Incredible Improvisation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (76, 36); -- Incredible Improvisation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (77, 3); -- Multitalented
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (78, 4); -- Unconventional Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (78, 37); -- Unconventional Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (78, 38); -- Unconventional Expertise
 -- Half-Elf
-(79, 1), -- Elf Atavism
-(80, 2), -- Inspire Imitation
-(81, 2), -- Supernatural Charm
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (79, 1); -- Elf Atavism
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (80, 2); -- Inspire Imitation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (81, 2); -- Supernatural Charm
 -- Half-Orc
-(82, 1), -- Monstrous Peacemaker
-(83, 1), -- Orc Ferocity
-(84, 1), -- Orc Sight
-(84, 39), -- Orc Sight
-(85, 1), -- Orc Superstition
-(86, 1), -- Orc Weapon Famailiarity
-(87, 2), -- Orc Weapon Carnage
-(87, 40), -- Orc Weapon Carnage
-(88, 2), -- Victorious Vigor
-(89, 3), -- Pervasive Superstition
-(89, 41), -- Pervasive Superstition
-(90, 4), -- Incredible Ferocity
-(90, 94), -- Incredible Ferocity
-(91, 4), -- Orc Weapon Expertise
-(91, 40), -- Orc Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (82, 1); -- Monstrous Peacemaker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (83, 1); -- Orc Ferocity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (84, 1); -- Orc Sight
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (84, 39); -- Orc Sight
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (85, 1); -- Orc Superstition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (86, 1); -- Orc Weapon Famailiarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (87, 2); -- Orc Weapon Carnage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (87, 40); -- Orc Weapon Carnage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (88, 2); -- Victorious Vigor
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (89, 3); -- Pervasive Superstition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (89, 41); -- Pervasive Superstition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (90, 4); -- Incredible Ferocity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (90, 94); -- Incredible Ferocity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (91, 4); -- Orc Weapon Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (91, 40); -- Orc Weapon Expertise
 --Alchemist
-(92, 5), -- Alchemical Familiar
-(93, 5), -- Alchemical Savant
-(93, 42), -- Alchemical Savant
-(94, 5), -- Far Lobber
-(95, 5), -- Quick Bomber
-(96, 6), -- Poison Resistance
-(97, 6), -- Revivifying Mutagen
-(98, 6), -- Smoke Bomb
-(99, 7), -- Calculated Splash
-(100, 7), -- Efficient Alchemy
-(101, 7), -- Enduring Alchemy
-(102, 8), -- Combine Elixirs
-(103, 8), -- Debilitating Bomb
-(104, 8), -- Directional Bombs
-(105, 9), -- Feral Mutagen
-(106, 9), -- Powerful Alchemy
-(107, 9), -- Sticky Bomb
-(108, 10), -- Elastic Mutagen
-(109, 10), -- Expanded Splash
-(109, 43), -- Expanded Splash
-(110, 10), -- Greater Debilitating Bomb
-(110, 44), -- Greater Debilitating Bomb
-(111, 10), -- Merciful Elixir
-(112, 10), -- Potent Poisoner
-(112, 45), -- Potent Poisoner
-(113, 11), -- Extend Elixir
-(114, 11), -- Invincible Mutagen
-(115, 11), -- Uncanny Bombs
-(115, 46), -- Uncanny Bombs
-(116, 12), -- Glib Mutagen
-(117, 12), -- Greater Merciful Elixir
-(117, 47), -- Greater Merciful Elixir
-(118, 12), -- True Debilitating Bomb
-(118, 48), -- True Debilitating Bomb
-(119, 13), -- Eternal Elixir
-(119, 49), -- Eternal Elixir
-(120, 13), -- Exploitive Bomb
-(121, 13), -- Genius Mutagen
-(122, 13), -- Persistent Mutagen
-(122, 49), -- Persistent Mutagen
-(123, 14), -- Improbable Elixirs
-(124, 14), -- Mindblank Mutagen
-(125, 14), -- Miracle Worker
-(126, 14), -- Perfect Debilitation
-(127, 15), -- Craft Philosopher's Stone
-(128, 15), -- Mega Bomb
-(128, 50), -- Mega Bomb
-(129, 15), -- Perfect Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (92, 5); -- Alchemical Familiar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (93, 5); -- Alchemical Savant
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (93, 42); -- Alchemical Savant
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (94, 5); -- Far Lobber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (95, 5); -- Quick Bomber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (96, 6); -- Poison Resistance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (97, 6); -- Revivifying Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (98, 6); -- Smoke Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (99, 7); -- Calculated Splash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (100, 7); -- Efficient Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (101, 7); -- Enduring Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (102, 8); -- Combine Elixirs
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (103, 8); -- Debilitating Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (104, 8); -- Directional Bombs
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (105, 9); -- Feral Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (106, 9); -- Powerful Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (107, 9); -- Sticky Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (108, 10); -- Elastic Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (109, 10); -- Expanded Splash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (109, 43); -- Expanded Splash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (110, 10); -- Greater Debilitating Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (110, 44); -- Greater Debilitating Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (111, 10); -- Merciful Elixir
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (112, 10); -- Potent Poisoner
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (112, 45); -- Potent Poisoner
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (113, 11); -- Extend Elixir
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (114, 11); -- Invincible Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (115, 11); -- Uncanny Bombs
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (115, 46); -- Uncanny Bombs
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (116, 12); -- Glib Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (117, 12); -- Greater Merciful Elixir
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (117, 47); -- Greater Merciful Elixir
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (118, 12); -- True Debilitating Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (118, 48); -- True Debilitating Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (119, 13); -- Eternal Elixir
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (119, 49); -- Eternal Elixir
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (120, 13); -- Exploitive Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (121, 13); -- Genius Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (122, 13); -- Persistent Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (122, 49); -- Persistent Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (123, 14); -- Improbable Elixirs
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (124, 14); -- Mindblank Mutagen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (125, 14); -- Miracle Worker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (126, 14); -- Perfect Debilitation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (127, 15); -- Craft Philosopher's Stone
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (128, 15); -- Mega Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (128, 50); -- Mega Bomb
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (129, 15); -- Perfect Mutagen
 --Barbarian
-(130, 5), -- Acute Vision
-(131, 5), -- Moment of Clarity
-(132, 5), -- Raging Intimidation
-(133, 5), -- Raging Thrower
-(134, 5), -- Sudden Charge
-(135, 6), -- Acute Scent
-(135, 51), -- Acute Scent
-(136, 6), -- Furious Finish
-(137, 6), -- No Escape
-(138, 6), -- Second Wind
-(139, 6), -- Shake it Off
-(140, 7), -- Fast Movement
-(141, 7), -- Raging Athlete
-(141, 52), -- Raging Athlete
-(142, 7), -- Swipe
-(143, 7), -- Wounded Rage
-(144, 8), -- Animal Skin
-(144, 53), -- Animal Skin
-(145, 8), -- Attack of Opportunity
-(146, 8), -- Brutal Bully
-(146, 52), -- Brutal Bully
-(147, 8), -- Cleave
-(148, 8), -- Dragon's Rage Breath
-(148, 54), -- Dragon's Rage Breath
-(149, 8), -- Giant's Stature
-(149, 55), -- Giant's Stature
-(150, 8), -- Spirits' Interference
-(150, 56), -- Spirits' Interference
-(151, 9), -- Animal Rage
-(151, 53), -- Animal Rage
-(152, 9), -- Furious Bully
-(152, 57), -- Furious Bully
-(153, 9), -- Renewed Vigor
-(154, 9), -- Share Rage
-(155, 9), -- Sudden Leap
-(156, 9), -- Thrash
-(157, 10), -- Come and Get Me
-(158, 10), -- Furious Sprint
-(159, 10), -- Great 58
-(159, 58), -- Great 58
-(160, 10), -- Knockback
-(161, 10), -- Terrifying Howl
-(161, 59), -- Terrifying Howl
-(162, 11), -- Dragon's Rage Wings
-(162, 54), -- Dragon's Rage Wings
-(163, 11), -- Furious Grab
-(164, 11), -- Predator's Pounce
-(164, 53), -- Predator's Pounce
-(165, 11), -- Spirit's Wrath
-(165, 56), -- Spirit's Wrath
-(166, 11), -- Titan's Stature
-(166, 55), -- Titan's Stature
-(166, 60), -- Titan's Stature
-(167, 12), -- Awesome Blow
-(167, 61), -- Awesome Blow
-(168, 12), -- Giant's Lunge
-(168, 55), -- Giant's Lunge
-(169, 12), -- Vengeful Strike
-(169, 62), -- Vengeful Strike
-(170, 12), -- Whirlwind Strike
-(171, 13), -- Collateral Thrash
-(171, 63), -- Collateral Thrash
-(172, 13), -- Dragon Transformation
-(172, 54), -- Dragon Transformation
-(172, 64), -- Dragon Transformation
-(173, 13), -- Reckless Abandon
-(174, 14), -- Brutal Critical
-(175, 14), -- Perfect Clarity
-(176, 14), -- Vicious Evisceration
-(177, 15), -- Contagious Rage
-(177, 65), -- Contagious Rage
-(178, 15), -- Quaking Stomp
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (130, 5); -- Acute Vision
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (131, 5); -- Moment of Clarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (132, 5); -- Raging Intimidation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (133, 5); -- Raging Thrower
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (134, 5); -- Sudden Charge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (135, 6); -- Acute Scent
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (135, 51); -- Acute Scent
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (136, 6); -- Furious Finish
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (137, 6); -- No Escape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (138, 6); -- Second Wind
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (139, 6); -- Shake it Off
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (140, 7); -- Fast Movement
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (141, 7); -- Raging Athlete
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (141, 52); -- Raging Athlete
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (142, 7); -- Swipe
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (143, 7); -- Wounded Rage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (144, 8); -- Animal Skin
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (144, 53); -- Animal Skin
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (145, 8); -- Attack of Opportunity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (146, 8); -- Brutal Bully
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (146, 52); -- Brutal Bully
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (147, 8); -- Cleave
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (148, 8); -- Dragon's Rage Breath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (148, 54); -- Dragon's Rage Breath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (149, 8); -- Giant's Stature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (149, 55); -- Giant's Stature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (150, 8); -- Spirits' Interference
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (150, 56); -- Spirits' Interference
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (151, 9); -- Animal Rage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (151, 53); -- Animal Rage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (152, 9); -- Furious Bully
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (152, 57); -- Furious Bully
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (153, 9); -- Renewed Vigor
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (154, 9); -- Share Rage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (155, 9); -- Sudden Leap
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (156, 9); -- Thrash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (157, 10); -- Come and Get Me
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (158, 10); -- Furious Sprint
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (159, 10); -- Great 58
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (159, 58); -- Great 58
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (160, 10); -- Knockback
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (161, 10); -- Terrifying Howl
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (161, 59); -- Terrifying Howl
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (162, 11); -- Dragon's Rage Wings
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (162, 54); -- Dragon's Rage Wings
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (163, 11); -- Furious Grab
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (164, 11); -- Predator's Pounce
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (164, 53); -- Predator's Pounce
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (165, 11); -- Spirit's Wrath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (165, 56); -- Spirit's Wrath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (166, 11); -- Titan's Stature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (166, 55); -- Titan's Stature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (166, 60); -- Titan's Stature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (167, 12); -- Awesome Blow
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (167, 61); -- Awesome Blow
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (168, 12); -- Giant's Lunge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (168, 55); -- Giant's Lunge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (169, 12); -- Vengeful Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (169, 62); -- Vengeful Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (170, 12); -- Whirlwind Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (171, 13); -- Collateral Thrash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (171, 63); -- Collateral Thrash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (172, 13); -- Dragon Transformation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (172, 54); -- Dragon Transformation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (172, 64); -- Dragon Transformation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (173, 13); -- Reckless Abandon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (174, 14); -- Brutal Critical
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (175, 14); -- Perfect Clarity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (176, 14); -- Vicious Evisceration
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (177, 15); -- Contagious Rage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (177, 65); -- Contagious Rage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (178, 15); -- Quaking Stomp
 -- Bard
-(179, 5), -- Bardic Lore
-(179, 66), -- Bardic Lore
-(180, 5), -- Lingering Composition
-(180, 67), -- Lingering Composition
-(180, 23), -- Lingering Composition
-(181, 5), -- Reach Spell
-(182, 5), -- Versatile Performance
-(182, 68), -- Versatile Performance
-(183, 6), -- Cantrip Expansion
-(184, 6), -- Esoteric Polymath
-(184, 68), -- Esoteric Polymath
-(185, 6), -- Inspire Competence
-(185, 67), -- Inspire Competence
-(186, 6), -- Loremaster's Etude
-(186, 66), -- Loremaster's Etude
-(186, 23), -- Loremaster's Etude
-(187, 6), -- Multifarious Muse
-(188, 7), -- Inspire Defense
-(188, 67), -- Inspire Defense
-(189, 7), -- Melodious Spell
-(190, 7), -- Triple Time
-(191, 7), -- Versatile Signature
-(191, 68), -- Versatile Signature
-(192, 8), -- Dirge of Doom
-(193, 8), -- Harmonize
-(193, 67), -- Harmonize
-(194, 8), -- Steady Spellcasting
-(195, 9), -- Eclectic Skill
-(195, 68), -- Eclectic Skill
-(195, 69), -- Eclectic Skill
-(196, 9), -- Inspire Heroics
-(196, 67), -- Inspire Heroics
-(196, 23), -- Inspire Heroics
-(197, 9), -- Know-It-All
-(197, 66), -- Know-It-All
-(198, 10), -- House of Imaginary Walls
-(199, 10), -- Quickened Casting
-(200, 10), -- Unusual Composition
-(200, 68), -- Unusual Composition
-(201, 11), -- Eclectic Polymath
-(201, 70), -- Eclectic Polymath
-(202, 11), -- Inspirational Focus
-(203, 12), -- Allegro
-(204, 12), -- Soothing Ballad
-(204, 23), -- Soothing Ballad
-(205, 12), -- True Hypercognition
-(205, 66), -- True Hypercognition
-(206, 13), -- Effortless Concentration
-(207, 13), -- Studious Capacity
-(207, 66), -- Studious Capacity
-(207, 71), -- Studious Capacity
-(208, 14), -- Deep Lore
-(208, 66), -- Deep Lore
-(208, 71), -- Deep Lore
-(209, 14), -- Eternal Composition
-(209, 67), -- Eternal Composition
-(210, 14), -- Impossible Polymath
-(210, 72), -- Impossible Polymath
-(210, 70), -- Impossible Polymath
-(211, 15), -- Fatal Aria
-(211, 23), -- Fatal Aria
-(212, 15), -- Perfect Encore
-(212, 73), -- Perfect Encore
-(213, 15), -- Symphony of the Muses
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (179, 5); -- Bardic Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (179, 66); -- Bardic Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (180, 5); -- Lingering Composition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (180, 67); -- Lingering Composition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (180, 23); -- Lingering Composition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (181, 5); -- Reach Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (182, 5); -- Versatile Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (182, 68); -- Versatile Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (183, 6); -- Cantrip Expansion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (184, 6); -- Esoteric Polymath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (184, 68); -- Esoteric Polymath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (185, 6); -- Inspire Competence
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (185, 67); -- Inspire Competence
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (186, 6); -- Loremaster's Etude
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (186, 66); -- Loremaster's Etude
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (186, 23); -- Loremaster's Etude
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (187, 6); -- Multifarious Muse
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (188, 7); -- Inspire Defense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (188, 67); -- Inspire Defense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (189, 7); -- Melodious Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (190, 7); -- Triple Time
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (191, 7); -- Versatile Signature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (191, 68); -- Versatile Signature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (192, 8); -- Dirge of Doom
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (193, 8); -- Harmonize
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (193, 67); -- Harmonize
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (194, 8); -- Steady Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (195, 9); -- Eclectic Skill
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (195, 68); -- Eclectic Skill
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (195, 69); -- Eclectic Skill
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (196, 9); -- Inspire Heroics
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (196, 67); -- Inspire Heroics
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (196, 23); -- Inspire Heroics
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (197, 9); -- Know-It-All
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (197, 66); -- Know-It-All
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (198, 10); -- House of Imaginary Walls
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (199, 10); -- Quickened Casting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (200, 10); -- Unusual Composition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (200, 68); -- Unusual Composition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (201, 11); -- Eclectic Polymath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (201, 70); -- Eclectic Polymath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (202, 11); -- Inspirational Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (203, 12); -- Allegro
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (204, 12); -- Soothing Ballad
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (204, 23); -- Soothing Ballad
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (205, 12); -- True Hypercognition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (205, 66); -- True Hypercognition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (206, 13); -- Effortless Concentration
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (207, 13); -- Studious Capacity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (207, 66); -- Studious Capacity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (207, 71); -- Studious Capacity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (208, 14); -- Deep Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (208, 66); -- Deep Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (208, 71); -- Deep Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (209, 14); -- Eternal Composition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (209, 67); -- Eternal Composition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (210, 14); -- Impossible Polymath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (210, 72); -- Impossible Polymath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (210, 70); -- Impossible Polymath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (211, 15); -- Fatal Aria
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (211, 23); -- Fatal Aria
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (212, 15); -- Perfect Encore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (212, 73); -- Perfect Encore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (213, 15); -- Symphony of the Muses
 (213, 74), -- Symphony of the Muses
 -- Champion
-(214, 5), -- Deity's Domain
-(215, 5), -- Ranged Reprisal
-(215, 75), -- Ranged Reprisal
-(216, 5), -- Unimpeded Step
-(216, 76), -- Unimpeded Step
-(217, 5), -- Weight of Guilt
-(217, 77), -- Weight of Guilt
-(218, 6), -- Divine Grace
-(219, 6), -- Dragonslayer Oath
-(219, 78), -- Dragonslayer Oath
-(220, 6), -- Fiendsbane Oath
-(220, 78), -- Fiendsbane Oath
-(221, 6), -- Shining Oath
-(221, 78), -- Shining Oath
-(222, 6), -- Vengeful Oath
-(222, 75), -- Vengeful Oath
-(223, 7), -- Aura of Courage
-(223, 78), -- Aura of Courage
-(224, 7), -- Divine Health
-(224, 78), -- Divine Health
-(225, 7), -- Mercy
-(225, 79), -- Mercy
-(227, 8), -- Litany Against Wrath
-(227, 81), -- Litany Against Wrath
-(227, 78), -- Litany Against Wrath
-(228, 8), -- Loyal Warhouse
-(228, 80), -- Loyal Warhouse
-(229, 8), -- Shield Warden
-(229, 82), -- Shield Warden
-(229, 78), -- Shield Warden
-(230, 8), -- Smite Evil
-(230, 83), -- Smite Evil
-(231, 9), -- Advanced Deity's Domain
-(231, 84), -- Advanced Deity's Domain
-(232, 9), -- Greater Mercy
-(232, 85), -- Greater Mercy
-(233, 9), -- Heal Mount
-(233, 80), -- Heal Mount
-(234, 9), -- Quick Block
-(235, 9), -- Second Ally
-(235, 86), -- Second Ally
-(236, 9), -- Sense Evil
-(236, 78), -- Sense Evil
-(237, 10), -- Devoted Focus
-(237, 81), -- Devoted Focus
-(238, 10), -- Imposing Destrier
-(238, 80), -- Imposing Destrier
-(238, 87), -- Imposing Destrier
-(239, 10), -- Litany Against Sloth
-(239, 81), -- Litany Against Sloth
-(239, 78), -- Litany Against Sloth
-(240, 10), -- Radiant Blade Spirit
-(240, 83), -- Radiant Blade Spirit
-(241, 10), -- Shield of Reckoning
-(241, 89), -- Shield of Reckoning
-(241, 82), -- Shield of Reckoning
-(241, 78), -- Shield of Reckoning
-(241, 88), -- Shield of Reckoning
-(242, 11), -- Affliction Mercy
-(242, 85), -- Affliction Mercy
-(243, 11), -- Aura of Faith
-(243, 78), -- Aura of Faith
-(244, 11), -- Blade of Justice
-(244, 75), -- Blade of Justice
-(245, 11), -- Champion's Sacrifice
-(245, 78), -- Champion's Sacrifice
-(246, 11), -- Divine Wall
-(247, 11), -- Lasting Doubt
-(247, 77), -- Lasting Doubt
-(248, 11), -- Liberating Stride
-(248, 76), -- Liberating Stride
-(249, 12), -- Anchoring Aura
-(249, 90), -- Anchoring Aura
-(250, 12), -- Aura of Life
-(250, 91), -- Aura of Life
-(251, 12), -- Aura of Righteousness
-(251, 78), -- Aura of Righteousness
-(252, 12), -- Aura of Vengeance
-(252, 92), -- Aura of Vengeance
-(252, 93), -- Aura of Vengeance
-(253, 12), -- Divine Reflexes
-(254, 12), -- Litany of Righteousness
-(254, 78), -- Litany of Righteousness
-(255, 12), -- Wyrmbane Aura
-(255, 95), -- Wyrmbane Aura
-(256, 13), -- Auspicious Mount
-(256, 80), -- Auspicious Mount
-(256, 96), -- Auspicious Mount
-(257, 13), -- Instrument of Zeal
-(257, 83), -- Instrument of Zeal
-(257, 78), -- Instrument of Zeal
-(258, 13), -- Shield of Grace
-(258, 88), -- Shield of Grace
-(259, 14), -- Celestial Form
-(259, 78), -- Celestial Form
-(260, 14), -- Ultimate Mercy
-(260, 85), -- Ultimate Mercy
-(261, 15), -- Celestial Mount
-(261, 80), -- Celestial Mount
-(261, 78), -- Celestial Mount
-(262, 15), -- Radiant Blade Master
-(262, 83), -- Radiant Blade Master
-(262, 97), -- Radiant Blade Master
-(263, 15), -- Shield Paragon
-(263, 82), -- Shield Paragon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (214, 5); -- Deity's Domain
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (215, 5); -- Ranged Reprisal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (215, 75); -- Ranged Reprisal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (216, 5); -- Unimpeded Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (216, 76); -- Unimpeded Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (217, 5); -- Weight of Guilt
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (217, 77); -- Weight of Guilt
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (218, 6); -- Divine Grace
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (219, 6); -- Dragonslayer Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (219, 78); -- Dragonslayer Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (220, 6); -- Fiendsbane Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (220, 78); -- Fiendsbane Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (221, 6); -- Shining Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (221, 78); -- Shining Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (222, 6); -- Vengeful Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (222, 75); -- Vengeful Oath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (223, 7); -- Aura of Courage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (223, 78); -- Aura of Courage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (224, 7); -- Divine Health
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (224, 78); -- Divine Health
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (225, 7); -- Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (225, 79); -- Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (227, 8); -- Litany Against Wrath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (227, 81); -- Litany Against Wrath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (227, 78); -- Litany Against Wrath
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (228, 8); -- Loyal Warhouse
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (228, 80); -- Loyal Warhouse
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (229, 8); -- Shield Warden
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (229, 82); -- Shield Warden
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (229, 78); -- Shield Warden
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (230, 8); -- Smite Evil
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (230, 83); -- Smite Evil
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (231, 9); -- Advanced Deity's Domain
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (231, 84); -- Advanced Deity's Domain
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (232, 9); -- Greater Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (232, 85); -- Greater Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (233, 9); -- Heal Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (233, 80); -- Heal Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (234, 9); -- Quick Block
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (235, 9); -- Second Ally
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (235, 86); -- Second Ally
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (236, 9); -- Sense Evil
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (236, 78); -- Sense Evil
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (237, 10); -- Devoted Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (237, 81); -- Devoted Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (238, 10); -- Imposing Destrier
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (238, 80); -- Imposing Destrier
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (238, 87); -- Imposing Destrier
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (239, 10); -- Litany Against Sloth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (239, 81); -- Litany Against Sloth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (239, 78); -- Litany Against Sloth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (240, 10); -- Radiant Blade Spirit
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (240, 83); -- Radiant Blade Spirit
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (241, 10); -- Shield of Reckoning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (241, 89); -- Shield of Reckoning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (241, 82); -- Shield of Reckoning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (241, 78); -- Shield of Reckoning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (241, 88); -- Shield of Reckoning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (242, 11); -- Affliction Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (242, 85); -- Affliction Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (243, 11); -- Aura of Faith
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (243, 78); -- Aura of Faith
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (244, 11); -- Blade of Justice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (244, 75); -- Blade of Justice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (245, 11); -- Champion's Sacrifice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (245, 78); -- Champion's Sacrifice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (246, 11); -- Divine Wall
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (247, 11); -- Lasting Doubt
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (247, 77); -- Lasting Doubt
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (248, 11); -- Liberating Stride
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (248, 76); -- Liberating Stride
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (249, 12); -- Anchoring Aura
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (249, 90); -- Anchoring Aura
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (250, 12); -- Aura of Life
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (250, 91); -- Aura of Life
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (251, 12); -- Aura of Righteousness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (251, 78); -- Aura of Righteousness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (252, 12); -- Aura of Vengeance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (252, 92); -- Aura of Vengeance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (252, 93); -- Aura of Vengeance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (253, 12); -- Divine Reflexes
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (254, 12); -- Litany of Righteousness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (254, 78); -- Litany of Righteousness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (255, 12); -- Wyrmbane Aura
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (255, 95); -- Wyrmbane Aura
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (256, 13); -- Auspicious Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (256, 80); -- Auspicious Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (256, 96); -- Auspicious Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (257, 13); -- Instrument of Zeal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (257, 83); -- Instrument of Zeal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (257, 78); -- Instrument of Zeal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (258, 13); -- Shield of Grace
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (258, 88); -- Shield of Grace
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (259, 14); -- Celestial Form
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (259, 78); -- Celestial Form
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (260, 14); -- Ultimate Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (260, 85); -- Ultimate Mercy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (261, 15); -- Celestial Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (261, 80); -- Celestial Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (261, 78); -- Celestial Mount
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (262, 15); -- Radiant Blade Master
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (262, 83); -- Radiant Blade Master
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (262, 97); -- Radiant Blade Master
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (263, 15); -- Shield Paragon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (263, 82); -- Shield Paragon
 -- Cleric
-(264, 5), -- Deadly Simplicity
-(264, 98), -- Deadly Simplicity
-(264, 99), -- Deadly Simplicity
-(265, 5), -- Domain Initiate
-(266, 5), -- Harming Hands
-(266, 100), -- Harming Hands
-(267, 5), -- Healing Hands
-(267, 101), -- Healing Hands
-(268, 5), -- Holy Castigation
-(268, 103), -- Holy Castigation
-(271, 6), -- Communal Healing
-(272, 6), -- Emblazon Armament
-(273, 6), -- Sap Life
-(274, 6), -- Turn Undead
-(275, 6), -- Versatile Font
-(275, 102), -- Versatile Font
-(275, 104), -- Versatile Font
-(276, 7), -- Channel Smite
-(276, 102), -- Channel Smite
-(277, 7), -- Command Undead
-(277, 100), -- Command Undead
-(277, 105), -- Command Undead
-(278, 7), -- Directed Channel
-(279, 7), -- Improved Communal Healing
-(279, 106), -- Improved Communal Healing
-(280, 7), -- Necrotic Infusion
-(280, 100), -- Necrotic Infusion
-(280, 105), -- Necrotic Infusion
-(281, 8), -- Cast Down
-(281, 102), -- Cast Down
-(282, 8), -- Divine Weapon
-(283, 8), -- Selective Energy
-(285, 9), -- Advanced Domain
-(285, 107), -- Advanced Domain
-(286, 9), -- Align Armament
-(286, 108),-- Align Armament
-(287, 9), -- Channeled Succor
-(287, 101), -- Channeled Succor
-(288, 9), -- Cremate Undead
-(289, 9), -- Emblazon Energy
-(289, 109), -- Emblazon Energy
-(290, 10), -- Castigating Weapon
-(290, 110), -- Castigating Weapon
-(291, 10), -- Heroic Recovery
-(291,101), -- Heroic Recovery
-(291,103), -- Heroic Recovery
-(292, 10), -- Improved Command Undead
-(292, 100), -- Improved Command Undead
-(292, 111), -- Improved Command Undead
-(292, 105), -- Improved Command Undead
-(293, 10), -- Replenishment of War
-(293, 112), -- Replenishment of War
-(294, 11), -- Defensive Recovery
-(294, 102), -- Defensive Recovery
-(295, 11), -- Domain Focus
-(295, 113), -- Domain Focus
-(296, 11), -- Emblazon Antimagic
-(296, 109), -- Emblazon Antimagic
-(297, 11), -- Shared Replenishment
-(297, 114), -- Shared Replenishment
-(298, 12), -- Deity's Protection
-(298, 115), -- Deity's Protection
-(299, 12), -- Extend Armament Alignment
-(299, 116), -- Extend Armament Alignment
-(300, 12), -- Fast Channel
-(300, 102), -- Fast Channel
-(301, 12), -- Swift Banishment
-(302, 13), -- Eternal Bane
-(302, 105), -- Eternal Bane
-(303, 13), -- Eternal Blessing
-(303,103), -- Eternal Blessing
-(304, 13), -- Resurrectionist
-(305, 14), -- Domain Wellspring
-(305, 117), -- Domain Wellspring
-(306, 14), -- Echoing Channel
-(307, 14), -- Improved Swift Banishment
-(307, 118), -- Improved Swift Banishment
-(308, 15), -- Avatar's Audience
-(309, 15), -- Maker of Miracles
-(309, 119), -- Maker of Miracles
-(310, 15), -- Metamagic Channel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (264, 5); -- Deadly Simplicity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (264, 98); -- Deadly Simplicity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (264, 99); -- Deadly Simplicity
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (265, 5); -- Domain Initiate
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (266, 5); -- Harming Hands
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (266, 100); -- Harming Hands
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (267, 5); -- Healing Hands
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (267, 101); -- Healing Hands
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (268, 5); -- Holy Castigation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (268, 103); -- Holy Castigation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (271, 6); -- Communal Healing
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (272, 6); -- Emblazon Armament
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (273, 6); -- Sap Life
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (274, 6); -- Turn Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (275, 6); -- Versatile Font
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (275, 102); -- Versatile Font
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (275, 104); -- Versatile Font
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (276, 7); -- Channel Smite
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (276, 102); -- Channel Smite
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (277, 7); -- Command Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (277, 100); -- Command Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (277, 105); -- Command Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (278, 7); -- Directed Channel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (279, 7); -- Improved Communal Healing
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (279, 106); -- Improved Communal Healing
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (280, 7); -- Necrotic Infusion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (280, 100); -- Necrotic Infusion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (280, 105); -- Necrotic Infusion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (281, 8); -- Cast Down
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (281, 102); -- Cast Down
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (282, 8); -- Divine Weapon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (283, 8); -- Selective Energy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (285, 9); -- Advanced Domain
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (285, 107); -- Advanced Domain
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (286, 9); -- Align Armament
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (286, 108);-- Align Armament
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (287, 9); -- Channeled Succor
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (287, 101); -- Channeled Succor
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (288, 9); -- Cremate Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (289, 9); -- Emblazon Energy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (289, 109); -- Emblazon Energy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (290, 10); -- Castigating Weapon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (290, 110); -- Castigating Weapon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (291, 10); -- Heroic Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (291,101); -- Heroic Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (291,103); -- Heroic Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (292, 10); -- Improved Command Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (292, 100); -- Improved Command Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (292, 111); -- Improved Command Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (292, 105); -- Improved Command Undead
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (293, 10); -- Replenishment of War
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (293, 112); -- Replenishment of War
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (294, 11); -- Defensive Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (294, 102); -- Defensive Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (295, 11); -- Domain Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (295, 113); -- Domain Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (296, 11); -- Emblazon Antimagic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (296, 109); -- Emblazon Antimagic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (297, 11); -- Shared Replenishment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (297, 114); -- Shared Replenishment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (298, 12); -- Deity's Protection
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (298, 115); -- Deity's Protection
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (299, 12); -- Extend Armament Alignment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (299, 116); -- Extend Armament Alignment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (300, 12); -- Fast Channel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (300, 102); -- Fast Channel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (301, 12); -- Swift Banishment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (302, 13); -- Eternal Bane
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (302, 105); -- Eternal Bane
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (303, 13); -- Eternal Blessing
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (303,103); -- Eternal Blessing
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (304, 13); -- Resurrectionist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (305, 14); -- Domain Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (305, 117); -- Domain Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (306, 14); -- Echoing Channel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (307, 14); -- Improved Swift Banishment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (307, 118); -- Improved Swift Banishment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (308, 15); -- Avatar's Audience
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (309, 15); -- Maker of Miracles
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (309, 119); -- Maker of Miracles
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (310, 15); -- Metamagic Channel
 --Druid
-(311, 5), -- Animal Companion
-(311, 120), -- Animal Companion
-(312, 5), -- Leshy Familiar
-(312, 121), -- Leshy Familiar
-(314, 5), -- Storm Born
-(314, 122), -- Storm Born
-(315, 5), -- Widen Spell
-(316, 5), -- Wild Shape
-(316, 123), -- Wild Shape
-(317, 6), -- Call of the Wild
-(318, 6), -- Enhanced Familiar
-(318, 124), -- Enhanced Familiar
-(319, 6), -- Order Explorer
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (311, 5); -- Animal Companion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (311, 120); -- Animal Companion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (312, 5); -- Leshy Familiar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (312, 121); -- Leshy Familiar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (314, 5); -- Storm Born
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (314, 122); -- Storm Born
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (315, 5); -- Widen Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (316, 5); -- Wild Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (316, 123); -- Wild Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (317, 6); -- Call of the Wild
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (318, 6); -- Enhanced Familiar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (318, 124); -- Enhanced Familiar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (319, 6); -- Order Explorer
 --320 Is shared by Alchemsit
-(321, 7), -- Form Control
-(321, 125), -- Form Control
-(321, 126), -- Form Control
-(322, 7), -- Mature Animal Companion (Druid)
-(322, 127), -- Mature Animal Companion (Druid)
-(323, 7), -- Order Magic
-(323, 128), -- Order Magic
-(324, 7), -- Thousand Faces
-(324, 126), -- Thousand Faces
-(325, 7), -- Woodland Stride
-(325, 121), -- Woodland Stride
-(326, 7), -- Green Empathy
-(326, 121), -- Green Empathy
-(327, 8), -- Insect Shape
-(327, 126), -- Insect Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (321, 7); -- Form Control
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (321, 125); -- Form Control
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (321, 126); -- Form Control
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (322, 7); -- Mature Animal Companion (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (322, 127); -- Mature Animal Companion (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (323, 7); -- Order Magic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (323, 128); -- Order Magic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (324, 7); -- Thousand Faces
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (324, 126); -- Thousand Faces
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (325, 7); -- Woodland Stride
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (325, 121); -- Woodland Stride
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (326, 7); -- Green Empathy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (326, 121); -- Green Empathy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (327, 8); -- Insect Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (327, 126); -- Insect Shape
 --328 Shared with Bard
-(329, 8), -- Storm Retribution
-(329, 122), -- Storm Retribution
-(329, 129), -- Storm Retribution
-(330, 9), -- Ferocious Shape
-(330, 126), -- Ferocious Shape
-(331, 9), -- Fey Caller
-(332, 9), -- Incredible Companion (Druid)
-(332, 130), -- Incredible Companion (Druid)
-(333, 9), -- Soaring Shape
-(333, 126), -- Soaring Shape
-(334, 9), -- Wind Caller
-(334, 122), -- Wind Caller
-(335, 10), -- Elemental Shape
-(335, 126), -- Elemental Shape
-(336, 10), -- Healing Transformation
-(337, 10), -- Overwhelming Energy
-(338, 10), -- Plant Shape
-(338, 131), -- Plant Shape
-(339, 10), -- Side by Side (Druid)
-(339, 127), -- Side by Side (Druid)
-(340, 11), -- Dragon Shape
-(340, 132), -- Dragon Shape
-(341, 11), -- Green Tongue
-(341, 133), -- Green Tongue
-(342, 11), -- Primal Focus
-(343, 11), -- Primal Summons
-(343, 134), -- Primal Summons
-(344, 12), -- Specialized Companion (Druid)
-(344, 135), -- Specialized Companion (Druid)
-(345, 12), -- Timeless Nature
-(346, 12), -- Verdant Metamorphosis
-(346, 121), -- Verdant Metamorphosis
-(348, 13), -- Impaling Briars
-(348, 121), -- Impaling Briars
-(349, 13), -- Monstrosity Shape
-(349, 126), -- Monstrosity Shape
-(350, 14), -- Invoke Disaster
-(350, 136), -- Invoke Disaster
-(351, 14), -- Perfect Form Control
-(351, 137), -- Perfect Form Control
-(351, 138), -- Perfect Form Control
-(352, 14), -- Primal Wellspring
-(352, 139), -- Primal Wellspring
-(353, 15), -- Hierophant's Power
-(353, 140), -- Hierophant's Power
-(354, 15), -- Leyline Conduit
-(355, 15), -- True Shapeshifter
-(355, 141), -- True Shapeshifter
-(355, 126), -- True Shapeshifter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (329, 8); -- Storm Retribution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (329, 122); -- Storm Retribution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (329, 129); -- Storm Retribution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (330, 9); -- Ferocious Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (330, 126); -- Ferocious Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (331, 9); -- Fey Caller
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (332, 9); -- Incredible Companion (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (332, 130); -- Incredible Companion (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (333, 9); -- Soaring Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (333, 126); -- Soaring Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (334, 9); -- Wind Caller
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (334, 122); -- Wind Caller
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (335, 10); -- Elemental Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (335, 126); -- Elemental Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (336, 10); -- Healing Transformation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (337, 10); -- Overwhelming Energy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (338, 10); -- Plant Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (338, 131); -- Plant Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (339, 10); -- Side by Side (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (339, 127); -- Side by Side (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (340, 11); -- Dragon Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (340, 132); -- Dragon Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (341, 11); -- Green Tongue
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (341, 133); -- Green Tongue
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (342, 11); -- Primal Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (343, 11); -- Primal Summons
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (343, 134); -- Primal Summons
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (344, 12); -- Specialized Companion (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (344, 135); -- Specialized Companion (Druid)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (345, 12); -- Timeless Nature
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (346, 12); -- Verdant Metamorphosis
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (346, 121); -- Verdant Metamorphosis
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (348, 13); -- Impaling Briars
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (348, 121); -- Impaling Briars
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (349, 13); -- Monstrosity Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (349, 126); -- Monstrosity Shape
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (350, 14); -- Invoke Disaster
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (350, 136); -- Invoke Disaster
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (351, 14); -- Perfect Form Control
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (351, 137); -- Perfect Form Control
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (351, 138); -- Perfect Form Control
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (352, 14); -- Primal Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (352, 139); -- Primal Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (353, 15); -- Hierophant's Power
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (353, 140); -- Hierophant's Power
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (354, 15); -- Leyline Conduit
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (355, 15); -- True Shapeshifter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (355, 141); -- True Shapeshifter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (355, 126); -- True Shapeshifter
 --Fighter
-(356, 5), -- Double Slice
-(357, 5), -- Exacting Strike
-(358, 5), -- Point-Blank Shot
-(359, 5), -- Power Attack
-(360, 5), -- Reactive Shield
-(361, 5), -- Snagging Strike
-(363, 6), -- Aggressive Block
-(364, 6), -- Assisting Shot
-(365, 6), -- Brutish Shove
-(366, 6), -- Combat Grab
-(367, 6), -- Dueling Parry
-(368, 6), -- Intimidating Strike
-(369, 6), -- Lunge
-(370, 7), -- Double Shot
-(371, 7), -- Dual-Handed Assault
-(372, 7), -- Knockdown
-(372, 142), -- Knockdown
-(373, 7), -- Powerful Shove
-(373, 143), -- Powerful Shove
-(374, 7), -- Quick Reversal
-(375, 7), -- Shielded Stride
-(377, 7), -- Twin Parry
-(378, 8), -- Advanced Weapon Training
-(379, 8), -- Advantageous Assault
-(380, 8), -- Disarming Stance
-(380, 142), -- Disarming Stance
-(381, 8), -- Furious Focus
-(381, 144), -- Furious Focus
-(382, 8), -- Guardian's Deflection
-(383, 8), -- Reflexive Shield
-(384, 8), -- Revealing Stab
-(385, 8), -- Shatter Defenses
-(387, 8), -- Triple Shot
-(387, 145), -- Triple Shot
-(388, 9), -- Blind-Fight
-(388, 146), -- Blind-Fight
-(389, 9), -- Dueling Riposte
-(389, 147), -- Dueling Riposte
-(390, 9), -- Felling Strike
-(391, 9), -- Incredible Aim
-(392, 9), -- Mobile Shot Stance
-(393, 9), -- Positioning Assault
-(394, 9), -- Quick Shield Block
-(394, 148), -- Quick Shield Block
-(394, 149), -- Quick Shield Block
-(396, 10), -- Agile Grace
-(397, 10), -- Certain Strike
-(398, 10), -- Combat Reflexes
-(399, 10), -- Debilitating Shot
-(400, 10), -- Disarming Twist
-(400, 142), -- Disarming Twist
-(401, 10), -- Disruptive Stance
-(402, 10), -- Fearsome Brute
-(403, 10), -- Improved Knockdown
-(403, 61), -- Improved Knockdown
-(404, 10), -- Mirror Shield
-(405, 10), -- Twin Riposte
-(406, 11), -- Brutal Finish
-(407, 11), -- Dueling Dance
-(407, 147), -- Dueling Dance
-(408, 11), -- Flinging Shove
-(408, 143), -- Flinging Shove
-(409, 11), -- Improved Dueling Riposte
-(409, 151), -- Improved Dueling Riposte
-(410, 11), -- Incredible Ricochet
-(410, 152), -- Incredible Ricochet
-(411, 11), -- Lunging Stance
-(411, 153), -- Lunging Stance
-(411, 154), -- Lunging Stance
-(412, 11), -- Paragon's Guard
-(413, 11), -- Spring Attack
-(414, 12), -- Desperate Finisher
-(415, 12), -- Determination
-(416, 12), -- Guiding Finish
-(417, 12), -- Guiding Riposte
-(417, 151), -- Guiding Riposte
-(418, 12), -- Improved Twin Riposte (Fighter)
-(418, 155), -- Improved Twin Riposte (Fighter)
-(419, 12), -- Stance Savant (Fighter)
-(420, 12), -- Two-Weapon Flurry
-(422, 13), -- Graceful Poise
-(422, 156), -- Graceful Poise
-(423, 13), -- Improved Reflexive Shield
-(423, 157), -- Improved Reflexive Shield
-(424, 13), -- Multishot Stance
-(424, 158), -- Multishot Stance
-(425, 13), -- Twinned Defense
-(425, 159), -- Twinned Defense
-(426, 14), -- Impossible Volley
-(427, 14), -- Savage Critical
-(428, 15), -- Boudless Reprisals
-(429, 15), -- Weapon Supremacy
-(430, 5), -- Crane Stance
-(431, 5), -- Dragon Stance
-(432, 5), -- Ki Rush
-(433, 5), -- Ki Strike
-(434, 5), -- Monastic Weaponry
-(435, 5), -- Mountain Stance
-(436, 5), -- Tiger Stance
-(437, 5), -- Wolf Stance
-(438, 6), -- Brawling Focus
-(439, 6), -- Crushing Grab
-(440, 6), -- Dancing Leaf
-(441, 6), -- Elemental Fist
-(441, 160), -- Elemental Fist
-(442, 6), -- Stunning Fist
-(442, 161), -- Stunning Fist
-(443, 7), -- Deflect Arrows
-(444, 7), -- Flurry of Maneuvers
-(444, 52), -- Flurry of Maneuvers
-(445, 7), -- Flying Kick
-(446, 7), -- Guarded Movement
-(447, 7), -- Stand Still
-(448, 7), -- Wholeness of Body
-(448, 162), -- Wholeness of Body
-(449, 8), -- Abundant Step
-(449, 163), -- Abundant Step
-(449, 162), -- Abundant Step
-(450, 8), -- Crane Flutter
-(450, 164), -- Crane Flutter
-(451, 8), -- Dragon Roar
-(451, 165), -- Dragon Roar
-(452, 8), -- Ki Blast
-(452, 162), -- Ki Blast
-(453, 8), -- Mountain Stronghold
-(453, 166), -- Mountain Stronghold
-(454, 8), -- Tiger Slash
-(454, 167), -- Tiger Slash
-(455, 8), -- Water Step
-(456, 8), -- Whirling Throw
-(457, 8), -- Wolf Drag
-(457, 168), -- Wolf Drag
-(458, 9), -- Arrow Snatching
-(458, 169), -- Arrow Snatching
-(459, 9), -- Ironblood Stance
-(460, 9), -- Mixed Maneuver
-(460, 57), -- Mixed Maneuver
-(461, 9), -- Tangled Forest Stance
-(462, 9), -- Wall Run
-(463, 9), -- Wild Winds Initiate
-(463, 162), -- Wild Winds Initiate
-(464, 10), -- Knockback Strike
-(465, 10), -- Sleeper Hold
-(466, 10), -- Wind Jump
-(466, 162), -- Wind Jump
-(467, 10), -- Winding Flow
-(468, 11), -- Diamond Soul
-(469, 11), -- Disrupt Ki
-(470, 11), -- Improved Knockback
-(470, 57), -- Improved Knockback
-(471, 11), -- Meditative Focus
-(471, 162), -- Meditative Focus
-(472, 11), -- Stance Savant (Monk)
-(473, 12), -- Ironblood Surge
-(473, 170), -- Ironblood Surge
-(474, 12), -- Moutain Quake
-(474, 171), -- Moutain Quake
-(475, 12), -- Tangled Forest Rake
-(475, 172), -- Tangled Forest Rake
-(476, 12), -- Timeless Body
-(477, 12), -- Tongue of the Sun and Moon
-(478, 12), -- Wild Winds Gust
-(478, 173), -- Wild Winds Gust
-(479, 13), -- Enlightened Presence
-(480, 13), -- Master of Many Styles
-(480, 174), -- Master of Many Styles
-(481, 13), -- Quivering Palm
-(481, 162), -- Quivering Palm
-(482, 13), -- Shattering Strike
-(483, 14), -- Diamond Fists
-(484, 14), -- Empty Body
-(484, 162), -- Empty Body
-(485, 14), -- Meditative Wellspring
-(485, 175), -- Meditative Wellspring
-(486, 14), -- Swift River
-(487, 15), -- Enduring Quickness
-(488, 15), -- Fuse Stance
-(488, 176), -- Fuse Stance
-(489, 15), -- Impossible Technique
-(491, 5), -- Crossbow Ace
-(492, 5), -- Hunted Shot
-(493, 5), -- Monster Hunter
-(494, 5), -- Twin Takedown
-(495, 6), -- Favored Terrain
-(496, 6), -- Hunter's Aim
-(497, 6), -- Monster Warden
-(497, 177), -- Monster Warden
-(498, 6), -- Quick Draw
-(499, 6), -- Wild Empathy
-(500, 7), -- Companion's Cry
-(500, 178), -- Companion's Cry
-(501, 7), -- Disrupt Prey
-(502, 7), -- Far Shot
-(503, 7), -- Favored Enemy
-(504, 7), -- Running Reload
-(505, 7), -- Scout's Warning
-(506, 7), -- Snare Specialist
-(506, 179), -- Snare Specialist
-(506, 180), -- Snare Specialist
-(508, 8), -- Mature Animal Companion (Ranger)
-(508, 127), -- Mature Animal Companion (Ranger)
-(509, 8), -- Quick Snares
-(509, 179), -- Quick Snares
-(509, 181), -- Quick Snares
-(510, 8), -- Skirmish Strike
-(511, 8), -- Snap Shot
-(512, 8), -- Swift Tracker
-(512, 182), -- Swift Tracker
-(512, 183), -- Swift Tracker
-(514, 9), -- Deadly Aim
-(514, 354), -- Deadly Aim
-(515, 9), -- Hazard Finder
-(516, 9), -- Powerful Snares
-(516, 184), -- Powerful Snares
-(516, 181), -- Powerful Snares
-(517, 9), -- Terrain Master
-(517, 185), -- Terrain Master
-(517, 186), -- Terrain Master
-(517, 187), -- Terrain Master
-(518, 9), -- Warden's Boon
-(519, 10), -- Camouflage
-(519, 188), -- Camouflage
-(520, 10), -- Incredible Companion (Ranger)
-(520, 189), -- Incredible Companion (Ranger)
-(521, 10), -- Master Monster Hunter
-(521, 190), -- Master Monster Hunter
-(521, 177), -- Master Monster Hunter
-(522, 10), -- Penetrating Shot
-(523, 10), -- Twin Riposte
-(524, 10), -- Warden's Step
-(524, 188), -- Warden's Step
-(525, 11), -- Distracting Shot
-(526, 11), -- Double Prey
-(527, 11), -- Lightning Snares
-(527, 184), -- Lightning Snares
-(527, 181), -- Lightning Snares
-(528, 11), -- Second Sting
-(529, 11), -- Side by Side (Ranger)
-(529, 178), -- Side by Side (Ranger)
-(530, 12), -- Sense the Unseen
-(531, 12), -- Shared Prey
-(531, 191), -- Shared Prey
-(531, 192), -- Shared Prey
-(532, 12), -- Stealthy Companion
-(532, 193), -- Stealthy Companion
-(533, 12), -- Targeting Shot
-(533, 194), -- Targeting Shot
-(534, 12), -- Warden's Guidance
-(535, 13), -- Greater Distracting Shot
-(535, 195), -- Greater Distracting Shot
-(536, 13), -- Improved Twin Riposte (Ranger)
-(537, 13), -- Legendary Monster Hunter
-(537, 140), -- Legendary Monster Hunter
-(537, 196), -- Legendary Monster Hunter
-(538, 13), -- Specialized Companion (Ranger)
-(538, 197), -- Specialized Companion (Ranger)
-(539, 13), -- Ubiquitous Snares
-(539, 181), -- Ubiquitous Snares
-(540, 14), -- Impossible Flurry
-(542, 14), -- Manifold Edge
-(542, 198), -- Manifold Edge
-(542, 199), -- Manifold Edge
-(543, 14), -- Masterful Companion
-(543, 199), -- Masterful Companion
-(543, 127), -- Masterful Companion
-(544, 14), -- Perfect Shot
-(545, 14), -- Shadow Hunter
-(545, 193), -- Shadow Hunter
-(546, 15), -- Legendary Shot
-(546, 199), -- Legendary Shot
-(546, 200), -- Legendary Shot
-(546, 201), -- Legendary Shot
-(547, 15), -- To the Ends of the Earth
-(547, 202), -- To the Ends of the Earth
-(548, 15), -- Triple Threat
-(548, 203), -- Triple Threat
-(549, 15), -- Ultimate Skirmisher
-(549, 185), -- Ultimate Skirmisher
-(550, 5), -- Nimble Dodge
-(551, 5), -- Trap Finder
-(552, 5), -- Twin Feint
-(553, 5), -- You're Next
-(553, 204), -- You're Next
-(554, 6), -- Brutal Beating
-(554, 205), -- Brutal Beating
-(555, 6), -- Distracting Feint
-(555, 206), -- Distracting Feint
-(556, 6), -- Minor Magic
-(557, 6), -- Mobility
-(559, 6), -- Unbalancing Blow
-(559, 207), -- Unbalancing Blow
-(560, 7), -- Battle Assessment
-(561, 7), -- Dread Striker
-(562, 7), -- Magical Trickster
-(563, 7), -- Poison Weapon
-(564, 7), -- Reactive Pursuit
-(565, 7), -- Sabotage
-(566, 7), -- Scout's Warning
-(567, 8), -- Gang Up
-(568, 8), -- Light Step
-(570, 8), -- Twist the Knife
-(572, 9), -- Delay Trap
-(573, 9), -- Improved Poison Weapon
-(573, 208), -- Improved Poison Weapon
-(574, 9), -- Nimble Roll
-(574, 209), -- Nimble Roll
-(575, 9), -- Opportune Backstab
-(576, 9), -- Sidestep
-(577, 9), -- Slystriker
-(577, 210), -- Slystriker
-(578, 10), -- Precise Debilitation
-(578, 207), -- Precise Debilitation
-(578, 211), -- Precise Debilitation
-(579, 10), -- Sneak Savant
-(579, 188), -- Sneak Savant
-(580, 10), -- Tactical Debilitations
-(580, 206), -- Tactical Debilitations
-(580, 211), -- Tactical Debilitations
-(581, 10), -- Vicious Debilitations
-(581, 205), -- Vicious Debilitations
-(581, 211), -- Vicious Debilitations
-(582, 11), -- Critical Debilitations
-(582, 211), -- Critical Debilitations
-(583, 11), -- Fantastic Leap
-(584, 11), -- Felling Shot
-(585, 11), -- Reactive Interference
-(586, 11), -- Spring from the Shadows
-(587, 12), -- Defensive Roll
-(588, 12), -- Instant Opening
-(589, 12), -- Leave an Opening
-(591, 12), -- Blank Slate
-(592, 13), -- Cloud Step
-(592, 212), -- Cloud Step
-(593, 13), -- Cognitive Loophole
-(594, 13), -- Dispelling Slice
-(595, 13), -- Perfect Distraction
-(595, 213), -- Perfect Distraction
-(596, 14), -- Implausible Infiltration
-(596, 212), -- Implausible Infiltration
-(596, 214), -- Implausible Infiltration
-(597, 14), -- Powerful Sneak
-(598, 14), -- Trickster's Ace
-(599, 15), -- Hidden Paragon
-(599, 215), -- Hidden Paragon
-(600, 15), -- Impossible Striker
-(600, 216), -- Impossible Striker
-(601, 15), -- Reactive Distraction
-(601, 213), -- Reactive Distraction
-(601, 217), -- Reactive Distraction
-(602, 5), -- Counterspell (Spontaneous)
-(603, 5), -- Dangerous Sorcery
-(604, 5), -- Familiar
-(609, 7), -- Arcane Evolution
-(609, 218), -- Arcane Evolution
-(610, 7), -- Bespell Weapon
-(611, 7), -- Divine Evolution
-(611, 219), -- Divine Evolution
-(612, 7), -- Occult Evolution
-(612, 220), -- Occult Evolution
-(613, 7), -- Primal Evolution
-(613, 221), -- Primal Evolution
-(614, 8), -- Advanced Bloodline
-(614, 222), -- Advanced Bloodline
-(616, 9), -- Bloodline Resistance
-(617, 9), -- Crossblooded Evolution
-(618, 10), -- Greater Bloodline
-(618, 222), -- Greater Bloodline
-(621, 11), -- Bloodline Focus
-(622, 11), -- Magic Sense
-(623, 12), -- Interweave Dispel
-(623, 223), -- Interweave Dispel
-(624, 12), -- Reflect Spell
-(624, 224), -- Reflect Spell
-(626, 13), -- Greater Mental Evolution
-(626, 225), -- Greater Mental Evolution
-(627, 13), -- Greater Vital Evolution
-(627, 226), -- Greater Vital Evolution
-(628, 14), -- Bloodline Wellspring
-(628, 227), -- Bloodline Wellspring
-(629, 14), -- Greater Crossblooded Evolution
-(629, 228), -- Greater Crossblooded Evolution
-(630, 15), -- Bloodline Conduit
-(631, 15), -- Bloodline Perfection
-(631, 229), -- Bloodline Perfection
-(632, 15), -- Metamagic Mastery
-(633, 5), -- Counterspell (Prepared)
-(634, 5), -- Eschew Materials
-(636, 5), -- Hand of the Apprentice
-(640, 6), -- Conceal Spell
-(643, 7), -- Linked Focus
-(643, 230), -- Linked Focus
-(643, 231), -- Linked Focus
-(644, 7), -- Silent Spell
-(644, 232), -- Silent Spell
-(645, 8), -- Spell Penetration
-(647, 9), -- Advanced School Spell
-(647, 231), -- Advanced School Spell
-(648, 9), -- Bond Conservation
-(648, 230), -- Bond Conservation
-(649, 9), -- Universal Versatility
-(649, 233), -- Universal Versatility
-(649, 234), -- Universal Versatility
-(652, 10), -- Scroll Savant
-(652, 179), -- Scroll Savant
-(653, 11), -- Clever Counterspell
-(653, 235), -- Clever Counterspell
-(653, 236), -- Clever Counterspell
-(655, 12), -- Bonded Focus
-(655, 230), -- Bonded Focus
-(657, 12), -- Superior Bond
-(657, 230), -- Superior Bond
-(659, 13), -- Spell Tinker
-(660, 14), -- Infinite Possibilities
-(661, 14), -- Reprepare Spell
-(662, 15), -- Archwizard's Might
-(662, 237), -- Archwizard's Might
-(664, 15), -- Spell Combination
-(665, 6), -- Alchemist Dedication
-(665, 238), -- Alchemist Dedication
-(666, 7), -- Basic Concoction
-(666, 239), -- Basic Concoction
-(667, 7), -- Quick Alchemy
-(667, 239), -- Quick Alchemy
-(668, 8), -- Advanced Conoction
-(668, 240), -- Advanced Conoction
-(669, 8), -- Expert Alchemy
-(669, 239), -- Expert Alchemy
-(669, 179), -- Expert Alchemy
-(670, 11), -- Mastery Alchemy
-(670, 241), -- Mastery Alchemy
-(670, 184), -- Mastery Alchemy
-(671, 6), -- Barbarian Dedication
-(671, 125), -- Barbarian Dedication
-(671, 242), -- Barbarian Dedication
-(672, 7), -- Barbarian Resiliency
-(672, 243), -- Barbarian Resiliency
-(672, 244), -- Barbarian Resiliency
-(673, 7), -- Basic Fury
-(673, 243), -- Basic Fury
-(674, 8), -- Advanced Fury
-(674, 245), -- Advanced Fury
-(675, 8), -- Instinct Ability
-(675, 243), -- Instinct Ability
-(676, 11), -- Juggernaut's Fortitude
-(676, 243), -- Juggernaut's Fortitude
-(676, 246), -- Juggernaut's Fortitude
-(677, 6), -- Bard Dedication
-(677, 247), -- Bard Dedication
-(678, 7), -- Basic Bard Spellcasting
-(678, 248), -- Basic Bard Spellcasting
-(679, 7), -- Basic Muse's Whispers
-(679, 248), -- Basic Muse's Whispers
-(680, 8), -- Advanced Muse's Whispers
-(680, 249), -- Advanced Muse's Whispers
-(681, 8), -- Counter Perform
-(681, 248), -- Counter Perform
-(682, 9), -- Inspirational Performance
-(682, 248), -- Inspirational Performance
-(683, 9), -- Occult Breadth
-(683, 250), -- Occult Breadth
-(684, 11), -- Expert Bard Spellcasting
-(684, 250), -- Expert Bard Spellcasting
-(684, 69), -- Expert Bard Spellcasting
-(685, 14), -- Master Bard Spellcasting
-(685, 251), -- Master Bard Spellcasting
-(685, 252), -- Master Bard Spellcasting
-(686, 6), -- Champion Dedication
-(686, 125), -- Champion Dedication
-(686, 247), -- Champion Dedication
-(687, 7), -- Basic Devotion
-(687, 253), -- Basic Devotion
-(688, 7), -- Champion Resiliencey
-(688, 253), -- Champion Resiliencey
-(688, 254), -- Champion Resiliencey
-(689, 7), -- Healing Touch
-(689, 253), -- Healing Touch
-(690, 8), -- Advanced Devotion
-(690, 255), -- Advanced Devotion
-(691, 8), -- Champion's Reaction
-(691, 253), -- Champion's Reaction
-(692, 8), -- Divine Ally
-(692, 253), -- Divine Ally
-(693, 12), -- Diverse Armor Expert
-(693, 253), -- Diverse Armor Expert
-(693, 256), -- Diverse Armor Expert
-(694, 6), -- Cleric Dedication
-(694, 257), -- Cleric Dedication
-(695, 7), -- Basic Cleric Spellcasting
-(695, 258), -- Basic Cleric Spellcasting
-(696, 7), -- Basic Dogma
-(696, 258), -- Basic Dogma
-(697, 8), -- Advanced Dogma
-(697, 259), -- Advanced Dogma
-(698, 9), -- Divine Breadth
-(698, 260), -- Divine Breadth
-(699, 11), -- Expert Cleric Spellcasting
-(699, 260), -- Expert Cleric Spellcasting
-(699, 261), -- Expert Cleric Spellcasting
-(700, 14), -- Master Cleric Spellcasting
-(700, 262), -- Master Cleric Spellcasting
-(700, 263), -- Master Cleric Spellcasting
-(701, 6), -- Druid Dedication
-(701, 257), -- Druid Dedication
-(702, 7), -- Basic Druid Spellcasting
-(702, 264), -- Basic Druid Spellcasting
-(703, 7), -- Basic Wilding
-(703, 264), -- Basic Wilding
-(704, 7), -- Order Spell
-(704, 264), -- Order Spell
-(705, 8), -- Advanced Wilding
-(705, 265), -- Advanced Wilding
-(706, 9), -- Primal Breadth
-(706, 266), -- Primal Breadth
-(707, 11), -- Expert Druid Spellcasting
-(707, 266), -- Expert Druid Spellcasting
-(707, 190), -- Expert Druid Spellcasting
-(708, 14), -- Master Druid Spellcasting
-(708, 267), -- Master Druid Spellcasting
-(708, 140), -- Master Druid Spellcasting
-(709, 6), -- Fighter Dedication
-(709, 125), -- Fighter Dedication
-(709, 268), -- Fighter Dedication
-(710, 7), -- Basic Maneuver
-(710, 269), -- Basic Maneuver
-(711, 7), -- Fighter Resiliency
-(711, 269), -- Fighter Resiliency
-(711, 254), -- Fighter Resiliency
-(712, 7), -- Opportunist
-(712, 269), -- Opportunist
-(713, 8), -- Advanced Maneuver
-(713, 270), -- Advanced Maneuver
-(714, 11), -- Diverse Weapon Expert
-(714, 269), -- Diverse Weapon Expert
-(714, 271), -- Diverse Weapon Expert
-(715, 6), -- Monk Dedication
-(715, 125), -- Monk Dedication
-(715, 268), -- Monk Dedication
-(716, 7), -- Basic Kata
-(716, 272), -- Basic Kata
-(717, 7), -- Monk Resiliency
-(717, 272), -- Monk Resiliency
-(717, 254), -- Monk Resiliency
-(718, 8), -- Advanced Kata
-(718, 273), -- Advanced Kata
-(719, 9), -- Monk Moves
-(719, 272), -- Monk Moves
-(720, 10), -- Monk's Flurry
-(720, 272), -- Monk's Flurry
-(721, 11), -- Perfection's Path
-(721, 272), -- Perfection's Path
-(721, 274), -- Perfection's Path
-(722, 6), -- Ranger Dedication
-(722, 268), -- Ranger Dedication
-(723, 7), -- Basic Hunter's Trick
-(723, 275), -- Basic Hunter's Trick
-(724, 7), -- Ranger Resiliency
-(724, 275), -- Ranger Resiliency
-(724, 254), -- Ranger Resiliency
-(725, 8), -- Advanced Hunter's Trick
-(725, 276), -- Advanced Hunter's Trick
-(726, 11), -- Master Spotter
-(726, 275), -- Master Spotter
-(726, 277), -- Master Spotter
-(727, 6), -- Rogue Dedication
-(727, 268), -- Rogue Dedication
-(728, 7), -- Basic Trickery
-(728, 278), -- Basic Trickery
-(729, 7), -- Sneak Attacker
-(729, 278), -- Sneak Attacker
-(730, 8), -- Advanced Trickery
-(730, 279), -- Advanced Trickery
-(731, 9), -- Skill Mastery
-(731, 278), -- Skill Mastery
-(731, 280), -- Skill Mastery
-(732, 10), -- Uncanny Dodge
-(732, 278), -- Uncanny Dodge
-(733, 11), -- Evasiveness
-(733, 278), -- Evasiveness
-(733, 281), -- Evasiveness
-(734, 6), -- Sorcerer Dedication
-(734, 247), -- Sorcerer Dedication
-(735, 7), -- Basic Sorcerer Spellcasting
-(735, 282), -- Basic Sorcerer Spellcasting
-(736, 7), -- Basic Blood Potency
-(736, 282), -- Basic Blood Potency
-(737, 7), -- Basic Bloodline Spell
-(737, 282), -- Basic Bloodline Spell
-(738, 8), -- Advanced Blood Potency
-(738, 283), -- Advanced Blood Potency
-(739, 9), -- Bloodline Breadth
-(739, 284), -- Bloodline Breadth
-(740, 11), -- Expert Sorcerer Spellcasting
-(740, 284), -- Expert Sorcerer Spellcasting
-(740, 285), -- Expert Sorcerer Spellcasting
-(741, 14), -- Master Sorcerer Spellcasting
-(741, 286), -- Master Sorcerer Spellcasting
-(741, 287), -- Master Sorcerer Spellcasting
-(742, 6), -- Wizard Dedication
-(742, 238), -- Wizard Dedication
-(743, 7), -- Arcane School Spell
-(743, 288), -- Arcane School Spell
-(744, 7), -- Basic Arcana
-(744, 288), -- Basic Arcana
-(745, 7), -- Basic Wizard Spellcasting
-(745, 288), -- Basic Wizard Spellcasting
-(746, 8), -- Advanced Arcana
-(746, 289), -- Advanced Arcana
-(747, 9), -- Arcane Breadth
-(747, 290), -- Arcane Breadth
-(748, 11), -- Expert Wizard Spellcasting
-(748, 290), -- Expert Wizard Spellcasting
-(748, 291), -- Expert Wizard Spellcasting
-(749, 14), -- Master Wizard Spellcasting
-(749, 292), -- Master Wizard Spellcasting
-(749, 293), -- Master Wizard Spellcasting
-(750, 5), -- Additional Lore
-(750, 295), -- Additional Lore
-(751, 5), -- Adopted Ancestry
-(752, 5), -- Alchemical Crafting
-(752, 42), -- Alchemical Crafting
-(753, 294), -- Ancestral Paragon
-(754, 5), -- Arcane Sense
-(754, 296), -- Arcane Sense
-(755, 5), -- Armor Proficiency
-(756, 5), -- Assurance
-(756, 297), -- Assurance
-(757, 6), -- Automatic Knowledge
-(757, 298), -- Automatic Knowledge
-(757, 299), -- Automatic Knowledge
-(758, 5), -- Bargain Hunter
-(758, 300), -- Bargain Hunter
-(759, 301), -- Battle Cry
-(759, 303), -- Battle Cry
-(760, 5), -- Battle Medicine
-(760, 304), -- Battle Medicine
-(761, 301), -- Bizarre Magic
-(761, 69), -- Bizarre Magic
-(762, 6), -- Bonded Animal
-(762, 308), -- Bonded Animal
-(763, 5), -- Breath Control
-(764, 5), -- Canny Acumen
-(765, 5), -- Cat Fall
-(765, 305), -- Cat Fall
-(766, 5), -- Charming Liar
-(766, 306), -- Charming Liar
-(767, 302), -- Cloud Jump
-(767, 307), -- Cloud Jump
-(768, 5), -- Combat Climber
-(768, 142), -- Combat Climber
-(769, 6), -- Confabulator
-(769, 309), -- Confabulator
-(770, 6), -- Connections
-(770, 310), -- Connections
-(770, 311), -- Connections
-(771, 6), -- Continual Recovery
-(771, 312), -- Continual Recovery
-(772, 5), -- Courtly Graces
-(772, 313), -- Courtly Graces
-(773, 302), -- Craft Anything
-(773, 314), -- Craft Anything
-(774, 5), -- Diehard
-(775, 302), -- Divine Guidance
-(775, 263), -- Divine Guidance
-(776, 5), -- Dubious Knowledge
-(776, 315), -- Dubious Knowledge
-(777, 301), -- Expeditious Search
-(777, 146), -- Expeditious Search
-(778, 5), -- Experienced Professional
-(778, 295), -- Experienced Professional
-(779, 5), -- Experienced Smuggler
-(779, 316), -- Experienced Smuggler
-(780, 5), -- Experienced Tracker
-(780, 317), -- Experienced Tracker
-(781, 5), -- Fascinating Performance
-(781, 318), -- Fascinating Performance
-(782, 5), -- Fast Recovery
-(782, 242), -- Fast Recovery
-(783, 5), -- Feather Step
-(783, 268), -- Feather Step
-(784, 5), -- Fleet
-(785, 301), -- Foil Senses
-(785, 188), -- Foil Senses
-(786, 5), -- Forager
-(786, 317), -- Forager
-(787, 6), -- Glad-Hand
-(787, 356), -- Glad-Hand
-(788, 5), -- Group Coercion
-(788, 204), -- Group Coercion
-(789, 5), -- Group Impression
-(789, 300), -- Group Impression
-(790, 5), -- Hefty Hauler
-(790, 142), -- Hefty Hauler
-(791, 5), -- Hobnobber
-(791, 300), -- Hobnobber
-(792, 301), -- Impeccable Crafter
-(792, 184), -- Impeccable Crafter
-(792, 319), -- Impeccable Crafter
-(793, 5), -- Impressive Performance
-(793, 318), -- Impressive Performance
-(794, 5), -- Incredible Initiative
-(795, 320), -- Incredible Investiture
-(795, 321), -- Incredible Investiture
-(796, 5), -- Intimidating Glare
-(796, 204), -- Intimidating Glare
-(797, 6), -- Intimidating Prowess
-(797, 322), -- Intimidating Prowess
-(797, 323), -- Intimidating Prowess
-(798, 301), -- Inventor
-(798, 184), -- Inventor
-(799, 301), -- Kip Up
-(799, 324), -- Kip Up
-(800, 6), -- Lasting Coercion
-(800, 323), -- Lasting Coercion
-(801, 302), -- Legendary Codebreaker
-(801, 325), -- Legendary Codebreaker
-(802, 302), -- Legendary Linguist
-(802, 325), -- Legendary Linguist
-(802, 326), -- Legendary Linguist
-(803, 302), -- Legendary Medic
-(803, 327), -- Legendary Medic
-(804, 302), -- Legendary Negotiation
-(804, 328), -- Legendary Negotiation
-(805, 302), -- Legendary Performer
-(805, 329), -- Legendary Performer
-(805, 330), -- Legendary Performer
-(806, 302), -- Legendary Professional
-(806, 331), -- Legendary Professional
-(807, 302), -- Legendary Sneak
-(807, 332), -- Legendary Sneak
-(807, 333), -- Legendary Sneak
-(808, 302), -- Legendary Survivalist
-(808, 202), -- Legendary Survivalist
-(809, 302), -- Legendary Thief
-(809, 334), -- Legendary Thief
-(809, 335), -- Legendary Thief
-(810, 6), -- Lengthy Diversion
-(810, 306), -- Lengthy Diversion
-(812, 5), -- Magical Crafting
-(812, 306), -- Magical Crafting
-(813, 6), -- Magical Shorthand
-(813, 355), -- Magical Shorthand
-(814, 5), -- Multilingual
-(814, 313), -- Multilingual
-(815, 5), -- Natural Medicine
-(815, 336), -- Natural Medicine
-(816, 6), -- Nimble Crawl
-(816, 337), -- Nimble Crawl
-(817, 5), -- Oddity Identification
-(817, 338), -- Oddity Identification
-(818, 5), -- Pickpocket
-(818, 339), -- Pickpocket
-(819, 301), -- Planar Survival
-(819, 186), -- Planar Survival
-(820, 6), -- Powerful Leap
-(820, 52), -- Powerful Leap
-(821, 301), -- Quick Climber
-(821, 57), -- Quick Climber
-(822, 5), -- Quick Coercion
-(822, 204), -- Quick Coercion
-(823, 6), -- Quick Disguise
-(823, 309), -- Quick Disguise
-(824, 5), -- Quick Identification
-(824, 340), -- Quick Identification
-(825, 5), -- Quick Jump
-(825, 142), -- Quick Jump
-(826, 301), -- Quick Recognition
-(826, 341), -- Quick Recognition
-(826, 842), -- Quick Recognition
-(827, 5), -- Quick Repair
-(827, 42), -- Quick Repair
-(828, 5), -- Quick Squeeze
-(828, 305), -- Quick Squeeze
-(829, 301), -- Quick Swim
-(829, 57), -- Quick Swim
-(830, 301), -- Quick Unlock
-(830, 343), -- Quick Unlock
-(831, 6), -- Quiet Allies
-(831, 344), -- Quiet Allies
-(832, 6), -- Rapid Mantel
-(832, 52), -- Rapid Mantel
-(833, 5), -- Read Lips
-(833, 313), -- Read Lips
-(834, 5), -- Recognize Spell
-(834, 340), -- Recognize Spell
-(835, 5), -- Ride
-(836, 6), -- Robust Recovery
-(836, 312), -- Robust Recovery
-(837, 302), -- Scare to Death
-(837, 345), -- Scare to Death
-(838, 301), -- Shameless Request
-(838, 346), -- Shameless Request
-(839, 5), -- Shield Block
-(840, 5), -- Sign Language
-(840, 313), -- Sign Language
-(841, 5), -- Skill Training
-(841, 347), -- Skill Training
-(842, 301), -- Slippery Secrets
-(842, 348), -- Slippery Secrets
-(843, 5), -- Snare Crafting
-(843, 42), -- Snare Crafting
-(844, 5), -- Specialty Crafting
-(844, 42), -- Specialty Crafting
-(845, 5), -- Steady Balance
-(845, 305), -- Steady Balance
-(846, 5), -- Streetwise
-(846, 313), -- Streetwise
-(847, 5), -- Student of the Canon
-(847, 349), -- Student of the Canon
-(848, 5), -- Subtle Theft
-(848, 339), -- Subtle Theft
-(849, 5), -- Survey Wildlife
-(849, 317), -- Survey Wildlife
-(850, 301), -- Swift Sneak
-(850, 188), -- Swift Sneak
-(851, 5), -- Terrain Expertise
-(851, 317), -- Terrain Expertise
-(852, 5), -- Terrain Stalker
-(852, 316), -- Terrain Stalker
-(853, 301), -- Terrified Retreat
-(853, 303), -- Terrified Retreat
-(854, 5), -- Titan Wrestler
-(854, 142), -- Titan Wrestler
-(855, 5), -- Toughness
-(856, 5), -- Train Animal
-(856, 336), -- Train Animal
-(857, 5), -- Trick Magic Item
-(857, 340), -- Trick Magic Item
-(858, 5), -- Underwater Marauder
-(858, 142),  -- Underwater Marauder
-(859, 302), -- Unified Theory
-(859, 350), -- Unified Theory
-(860, 6), -- Unmistakable Lore
-(860, 351), -- Unmistakable Lore
-(861, 294), -- Untrained Improvisation
-(862, 5), -- Virtuosic Performer
-(862, 318), -- Virtuosic Performer
-(863, 301), -- Wall Jump
-(863, 57), -- Wall Jump
-(864, 6), -- Ward Medic
-(864, 312), -- Ward Medic
-(865, 6), -- Wary Disarmament
-(865, 352), -- Wary Disarmament
-(866, 5); -- Weapon Proficiency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (356, 5); -- Double Slice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (357, 5); -- Exacting Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (358, 5); -- Point-Blank Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (359, 5); -- Power Attack
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (360, 5); -- Reactive Shield
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (361, 5); -- Snagging Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (363, 6); -- Aggressive Block
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (364, 6); -- Assisting Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (365, 6); -- Brutish Shove
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (366, 6); -- Combat Grab
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (367, 6); -- Dueling Parry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (368, 6); -- Intimidating Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (369, 6); -- Lunge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (370, 7); -- Double Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (371, 7); -- Dual-Handed Assault
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (372, 7); -- Knockdown
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (372, 142); -- Knockdown
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (373, 7); -- Powerful Shove
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (373, 143); -- Powerful Shove
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (374, 7); -- Quick Reversal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (375, 7); -- Shielded Stride
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (377, 7); -- Twin Parry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (378, 8); -- Advanced Weapon Training
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (379, 8); -- Advantageous Assault
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (380, 8); -- Disarming Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (380, 142); -- Disarming Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (381, 8); -- Furious Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (381, 144); -- Furious Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (382, 8); -- Guardian's Deflection
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (383, 8); -- Reflexive Shield
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (384, 8); -- Revealing Stab
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (385, 8); -- Shatter Defenses
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (387, 8); -- Triple Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (387, 145); -- Triple Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (388, 9); -- Blind-Fight
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (388, 146); -- Blind-Fight
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (389, 9); -- Dueling Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (389, 147); -- Dueling Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (390, 9); -- Felling Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (391, 9); -- Incredible Aim
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (392, 9); -- Mobile Shot Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (393, 9); -- Positioning Assault
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (394, 9); -- Quick Shield Block
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (394, 148); -- Quick Shield Block
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (394, 149); -- Quick Shield Block
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (396, 10); -- Agile Grace
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (397, 10); -- Certain Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (398, 10); -- Combat Reflexes
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (399, 10); -- Debilitating Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (400, 10); -- Disarming Twist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (400, 142); -- Disarming Twist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (401, 10); -- Disruptive Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (402, 10); -- Fearsome Brute
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (403, 10); -- Improved Knockdown
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (403, 61); -- Improved Knockdown
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (404, 10); -- Mirror Shield
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (405, 10); -- Twin Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (406, 11); -- Brutal Finish
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (407, 11); -- Dueling Dance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (407, 147); -- Dueling Dance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (408, 11); -- Flinging Shove
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (408, 143); -- Flinging Shove
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (409, 11); -- Improved Dueling Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (409, 151); -- Improved Dueling Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (410, 11); -- Incredible Ricochet
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (410, 152); -- Incredible Ricochet
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (411, 11); -- Lunging Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (411, 153); -- Lunging Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (411, 154); -- Lunging Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (412, 11); -- Paragon's Guard
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (413, 11); -- Spring Attack
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (414, 12); -- Desperate Finisher
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (415, 12); -- Determination
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (416, 12); -- Guiding Finish
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (417, 12); -- Guiding Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (417, 151); -- Guiding Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (418, 12); -- Improved Twin Riposte (Fighter)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (418, 155); -- Improved Twin Riposte (Fighter)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (419, 12); -- Stance Savant (Fighter)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (420, 12); -- Two-Weapon Flurry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (422, 13); -- Graceful Poise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (422, 156); -- Graceful Poise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (423, 13); -- Improved Reflexive Shield
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (423, 157); -- Improved Reflexive Shield
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (424, 13); -- Multishot Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (424, 158); -- Multishot Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (425, 13); -- Twinned Defense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (425, 159); -- Twinned Defense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (426, 14); -- Impossible Volley
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (427, 14); -- Savage Critical
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (428, 15); -- Boudless Reprisals
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (429, 15); -- Weapon Supremacy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (430, 5); -- Crane Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (431, 5); -- Dragon Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (432, 5); -- Ki Rush
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (433, 5); -- Ki Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (434, 5); -- Monastic Weaponry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (435, 5); -- Mountain Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (436, 5); -- Tiger Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (437, 5); -- Wolf Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (438, 6); -- Brawling Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (439, 6); -- Crushing Grab
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (440, 6); -- Dancing Leaf
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (441, 6); -- Elemental Fist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (441, 160); -- Elemental Fist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (442, 6); -- Stunning Fist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (442, 161); -- Stunning Fist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (443, 7); -- Deflect Arrows
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (444, 7); -- Flurry of Maneuvers
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (444, 52); -- Flurry of Maneuvers
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (445, 7); -- Flying Kick
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (446, 7); -- Guarded Movement
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (447, 7); -- Stand Still
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (448, 7); -- Wholeness of Body
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (448, 162); -- Wholeness of Body
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (449, 8); -- Abundant Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (449, 163); -- Abundant Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (449, 162); -- Abundant Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (450, 8); -- Crane Flutter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (450, 164); -- Crane Flutter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (451, 8); -- Dragon Roar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (451, 165); -- Dragon Roar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (452, 8); -- Ki Blast
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (452, 162); -- Ki Blast
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (453, 8); -- Mountain Stronghold
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (453, 166); -- Mountain Stronghold
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (454, 8); -- Tiger Slash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (454, 167); -- Tiger Slash
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (455, 8); -- Water Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (456, 8); -- Whirling Throw
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (457, 8); -- Wolf Drag
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (457, 168); -- Wolf Drag
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (458, 9); -- Arrow Snatching
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (458, 169); -- Arrow Snatching
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (459, 9); -- Ironblood Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (460, 9); -- Mixed Maneuver
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (460, 57); -- Mixed Maneuver
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (461, 9); -- Tangled Forest Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (462, 9); -- Wall Run
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (463, 9); -- Wild Winds Initiate
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (463, 162); -- Wild Winds Initiate
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (464, 10); -- Knockback Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (465, 10); -- Sleeper Hold
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (466, 10); -- Wind Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (466, 162); -- Wind Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (467, 10); -- Winding Flow
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (468, 11); -- Diamond Soul
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (469, 11); -- Disrupt Ki
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (470, 11); -- Improved Knockback
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (470, 57); -- Improved Knockback
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (471, 11); -- Meditative Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (471, 162); -- Meditative Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (472, 11); -- Stance Savant (Monk)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (473, 12); -- Ironblood Surge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (473, 170); -- Ironblood Surge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (474, 12); -- Moutain Quake
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (474, 171); -- Moutain Quake
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (475, 12); -- Tangled Forest Rake
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (475, 172); -- Tangled Forest Rake
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (476, 12); -- Timeless Body
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (477, 12); -- Tongue of the Sun and Moon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (478, 12); -- Wild Winds Gust
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (478, 173); -- Wild Winds Gust
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (479, 13); -- Enlightened Presence
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (480, 13); -- Master of Many Styles
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (480, 174); -- Master of Many Styles
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (481, 13); -- Quivering Palm
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (481, 162); -- Quivering Palm
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (482, 13); -- Shattering Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (483, 14); -- Diamond Fists
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (484, 14); -- Empty Body
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (484, 162); -- Empty Body
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (485, 14); -- Meditative Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (485, 175); -- Meditative Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (486, 14); -- Swift River
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (487, 15); -- Enduring Quickness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (488, 15); -- Fuse Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (488, 176); -- Fuse Stance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (489, 15); -- Impossible Technique
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (491, 5); -- Crossbow Ace
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (492, 5); -- Hunted Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (493, 5); -- Monster Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (494, 5); -- Twin Takedown
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (495, 6); -- Favored Terrain
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (496, 6); -- Hunter's Aim
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (497, 6); -- Monster Warden
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (497, 177); -- Monster Warden
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (498, 6); -- Quick Draw
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (499, 6); -- Wild Empathy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (500, 7); -- Companion's Cry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (500, 178); -- Companion's Cry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (501, 7); -- Disrupt Prey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (502, 7); -- Far Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (503, 7); -- Favored Enemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (504, 7); -- Running Reload
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (505, 7); -- Scout's Warning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (506, 7); -- Snare Specialist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (506, 179); -- Snare Specialist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (506, 180); -- Snare Specialist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (508, 8); -- Mature Animal Companion (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (508, 127); -- Mature Animal Companion (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (509, 8); -- Quick Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (509, 179); -- Quick Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (509, 181); -- Quick Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (510, 8); -- Skirmish Strike
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (511, 8); -- Snap Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (512, 8); -- Swift Tracker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (512, 182); -- Swift Tracker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (512, 183); -- Swift Tracker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (514, 9); -- Deadly Aim
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (514, 354); -- Deadly Aim
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (515, 9); -- Hazard Finder
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (516, 9); -- Powerful Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (516, 184); -- Powerful Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (516, 181); -- Powerful Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (517, 9); -- Terrain Master
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (517, 185); -- Terrain Master
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (517, 186); -- Terrain Master
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (517, 187); -- Terrain Master
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (518, 9); -- Warden's Boon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (519, 10); -- Camouflage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (519, 188); -- Camouflage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (520, 10); -- Incredible Companion (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (520, 189); -- Incredible Companion (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (521, 10); -- Master Monster Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (521, 190); -- Master Monster Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (521, 177); -- Master Monster Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (522, 10); -- Penetrating Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (523, 10); -- Twin Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (524, 10); -- Warden's Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (524, 188); -- Warden's Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (525, 11); -- Distracting Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (526, 11); -- Double Prey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (527, 11); -- Lightning Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (527, 184); -- Lightning Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (527, 181); -- Lightning Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (528, 11); -- Second Sting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (529, 11); -- Side by Side (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (529, 178); -- Side by Side (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (530, 12); -- Sense the Unseen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (531, 12); -- Shared Prey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (531, 191); -- Shared Prey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (531, 192); -- Shared Prey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (532, 12); -- Stealthy Companion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (532, 193); -- Stealthy Companion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (533, 12); -- Targeting Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (533, 194); -- Targeting Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (534, 12); -- Warden's Guidance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (535, 13); -- Greater Distracting Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (535, 195); -- Greater Distracting Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (536, 13); -- Improved Twin Riposte (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (537, 13); -- Legendary Monster Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (537, 140); -- Legendary Monster Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (537, 196); -- Legendary Monster Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (538, 13); -- Specialized Companion (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (538, 197); -- Specialized Companion (Ranger)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (539, 13); -- Ubiquitous Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (539, 181); -- Ubiquitous Snares
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (540, 14); -- Impossible Flurry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (542, 14); -- Manifold Edge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (542, 198); -- Manifold Edge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (542, 199); -- Manifold Edge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (543, 14); -- Masterful Companion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (543, 199); -- Masterful Companion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (543, 127); -- Masterful Companion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (544, 14); -- Perfect Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (545, 14); -- Shadow Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (545, 193); -- Shadow Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (546, 15); -- Legendary Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (546, 199); -- Legendary Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (546, 200); -- Legendary Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (546, 201); -- Legendary Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (547, 15); -- To the Ends of the Earth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (547, 202); -- To the Ends of the Earth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (548, 15); -- Triple Threat
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (548, 203); -- Triple Threat
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (549, 15); -- Ultimate Skirmisher
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (549, 185); -- Ultimate Skirmisher
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (550, 5); -- Nimble Dodge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (551, 5); -- Trap Finder
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (552, 5); -- Twin Feint
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (553, 5); -- You're Next
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (553, 204); -- You're Next
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (554, 6); -- Brutal Beating
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (554, 205); -- Brutal Beating
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (555, 6); -- Distracting Feint
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (555, 206); -- Distracting Feint
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (556, 6); -- Minor Magic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (557, 6); -- Mobility
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (559, 6); -- Unbalancing Blow
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (559, 207); -- Unbalancing Blow
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (560, 7); -- Battle Assessment
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (561, 7); -- Dread Striker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (562, 7); -- Magical Trickster
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (563, 7); -- Poison Weapon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (564, 7); -- Reactive Pursuit
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (565, 7); -- Sabotage
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (566, 7); -- Scout's Warning
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (567, 8); -- Gang Up
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (568, 8); -- Light Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (570, 8); -- Twist the Knife
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (572, 9); -- Delay Trap
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (573, 9); -- Improved Poison Weapon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (573, 208); -- Improved Poison Weapon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (574, 9); -- Nimble Roll
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (574, 209); -- Nimble Roll
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (575, 9); -- Opportune Backstab
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (576, 9); -- Sidestep
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (577, 9); -- Slystriker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (577, 210); -- Slystriker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (578, 10); -- Precise Debilitation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (578, 207); -- Precise Debilitation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (578, 211); -- Precise Debilitation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (579, 10); -- Sneak Savant
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (579, 188); -- Sneak Savant
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (580, 10); -- Tactical Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (580, 206); -- Tactical Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (580, 211); -- Tactical Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (581, 10); -- Vicious Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (581, 205); -- Vicious Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (581, 211); -- Vicious Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (582, 11); -- Critical Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (582, 211); -- Critical Debilitations
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (583, 11); -- Fantastic Leap
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (584, 11); -- Felling Shot
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (585, 11); -- Reactive Interference
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (586, 11); -- Spring from the Shadows
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (587, 12); -- Defensive Roll
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (588, 12); -- Instant Opening
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (589, 12); -- Leave an Opening
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (591, 12); -- Blank Slate
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (592, 13); -- Cloud Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (592, 212); -- Cloud Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (593, 13); -- Cognitive Loophole
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (594, 13); -- Dispelling Slice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (595, 13); -- Perfect Distraction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (595, 213); -- Perfect Distraction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (596, 14); -- Implausible Infiltration
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (596, 212); -- Implausible Infiltration
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (596, 214); -- Implausible Infiltration
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (597, 14); -- Powerful Sneak
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (598, 14); -- Trickster's Ace
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (599, 15); -- Hidden Paragon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (599, 215); -- Hidden Paragon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (600, 15); -- Impossible Striker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (600, 216); -- Impossible Striker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (601, 15); -- Reactive Distraction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (601, 213); -- Reactive Distraction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (601, 217); -- Reactive Distraction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (602, 5); -- Counterspell (Spontaneous)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (603, 5); -- Dangerous Sorcery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (604, 5); -- Familiar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (609, 7); -- Arcane Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (609, 218); -- Arcane Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (610, 7); -- Bespell Weapon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (611, 7); -- Divine Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (611, 219); -- Divine Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (612, 7); -- Occult Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (612, 220); -- Occult Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (613, 7); -- Primal Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (613, 221); -- Primal Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (614, 8); -- Advanced Bloodline
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (614, 222); -- Advanced Bloodline
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (616, 9); -- Bloodline Resistance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (617, 9); -- Crossblooded Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (618, 10); -- Greater Bloodline
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (618, 222); -- Greater Bloodline
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (621, 11); -- Bloodline Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (622, 11); -- Magic Sense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (623, 12); -- Interweave Dispel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (623, 223); -- Interweave Dispel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (624, 12); -- Reflect Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (624, 224); -- Reflect Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (626, 13); -- Greater Mental Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (626, 225); -- Greater Mental Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (627, 13); -- Greater Vital Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (627, 226); -- Greater Vital Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (628, 14); -- Bloodline Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (628, 227); -- Bloodline Wellspring
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (629, 14); -- Greater Crossblooded Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (629, 228); -- Greater Crossblooded Evolution
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (630, 15); -- Bloodline Conduit
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (631, 15); -- Bloodline Perfection
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (631, 229); -- Bloodline Perfection
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (632, 15); -- Metamagic Mastery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (633, 5); -- Counterspell (Prepared)
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (634, 5); -- Eschew Materials
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (636, 5); -- Hand of the Apprentice
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (640, 6); -- Conceal Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (643, 7); -- Linked Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (643, 230); -- Linked Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (643, 231); -- Linked Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (644, 7); -- Silent Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (644, 232); -- Silent Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (645, 8); -- Spell Penetration
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (647, 9); -- Advanced School Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (647, 231); -- Advanced School Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (648, 9); -- Bond Conservation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (648, 230); -- Bond Conservation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (649, 9); -- Universal Versatility
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (649, 233); -- Universal Versatility
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (649, 234); -- Universal Versatility
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (652, 10); -- Scroll Savant
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (652, 179); -- Scroll Savant
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (653, 11); -- Clever Counterspell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (653, 235); -- Clever Counterspell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (653, 236); -- Clever Counterspell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (655, 12); -- Bonded Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (655, 230); -- Bonded Focus
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (657, 12); -- Superior Bond
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (657, 230); -- Superior Bond
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (659, 13); -- Spell Tinker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (660, 14); -- Infinite Possibilities
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (661, 14); -- Reprepare Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (662, 15); -- Archwizard's Might
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (662, 237); -- Archwizard's Might
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (664, 15); -- Spell Combination
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (665, 6); -- Alchemist Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (665, 238); -- Alchemist Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (666, 7); -- Basic Concoction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (666, 239); -- Basic Concoction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (667, 7); -- Quick Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (667, 239); -- Quick Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (668, 8); -- Advanced Conoction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (668, 240); -- Advanced Conoction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (669, 8); -- Expert Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (669, 239); -- Expert Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (669, 179); -- Expert Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (670, 11); -- Mastery Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (670, 241); -- Mastery Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (670, 184); -- Mastery Alchemy
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (671, 6); -- Barbarian Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (671, 125); -- Barbarian Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (671, 242); -- Barbarian Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (672, 7); -- Barbarian Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (672, 243); -- Barbarian Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (672, 244); -- Barbarian Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (673, 7); -- Basic Fury
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (673, 243); -- Basic Fury
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (674, 8); -- Advanced Fury
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (674, 245); -- Advanced Fury
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (675, 8); -- Instinct Ability
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (675, 243); -- Instinct Ability
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (676, 11); -- Juggernaut's Fortitude
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (676, 243); -- Juggernaut's Fortitude
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (676, 246); -- Juggernaut's Fortitude
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (677, 6); -- Bard Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (677, 247); -- Bard Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (678, 7); -- Basic Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (678, 248); -- Basic Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (679, 7); -- Basic Muse's Whispers
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (679, 248); -- Basic Muse's Whispers
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (680, 8); -- Advanced Muse's Whispers
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (680, 249); -- Advanced Muse's Whispers
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (681, 8); -- Counter Perform
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (681, 248); -- Counter Perform
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (682, 9); -- Inspirational Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (682, 248); -- Inspirational Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (683, 9); -- Occult Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (683, 250); -- Occult Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (684, 11); -- Expert Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (684, 250); -- Expert Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (684, 69); -- Expert Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (685, 14); -- Master Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (685, 251); -- Master Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (685, 252); -- Master Bard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (686, 6); -- Champion Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (686, 125); -- Champion Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (686, 247); -- Champion Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (687, 7); -- Basic Devotion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (687, 253); -- Basic Devotion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (688, 7); -- Champion Resiliencey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (688, 253); -- Champion Resiliencey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (688, 254); -- Champion Resiliencey
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (689, 7); -- Healing Touch
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (689, 253); -- Healing Touch
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (690, 8); -- Advanced Devotion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (690, 255); -- Advanced Devotion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (691, 8); -- Champion's Reaction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (691, 253); -- Champion's Reaction
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (692, 8); -- Divine Ally
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (692, 253); -- Divine Ally
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (693, 12); -- Diverse Armor Expert
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (693, 253); -- Diverse Armor Expert
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (693, 256); -- Diverse Armor Expert
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (694, 6); -- Cleric Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (694, 257); -- Cleric Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (695, 7); -- Basic Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (695, 258); -- Basic Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (696, 7); -- Basic Dogma
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (696, 258); -- Basic Dogma
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (697, 8); -- Advanced Dogma
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (697, 259); -- Advanced Dogma
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (698, 9); -- Divine Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (698, 260); -- Divine Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (699, 11); -- Expert Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (699, 260); -- Expert Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (699, 261); -- Expert Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (700, 14); -- Master Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (700, 262); -- Master Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (700, 263); -- Master Cleric Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (701, 6); -- Druid Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (701, 257); -- Druid Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (702, 7); -- Basic Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (702, 264); -- Basic Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (703, 7); -- Basic Wilding
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (703, 264); -- Basic Wilding
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (704, 7); -- Order Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (704, 264); -- Order Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (705, 8); -- Advanced Wilding
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (705, 265); -- Advanced Wilding
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (706, 9); -- Primal Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (706, 266); -- Primal Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (707, 11); -- Expert Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (707, 266); -- Expert Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (707, 190); -- Expert Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (708, 14); -- Master Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (708, 267); -- Master Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (708, 140); -- Master Druid Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (709, 6); -- Fighter Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (709, 125); -- Fighter Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (709, 268); -- Fighter Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (710, 7); -- Basic Maneuver
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (710, 269); -- Basic Maneuver
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (711, 7); -- Fighter Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (711, 269); -- Fighter Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (711, 254); -- Fighter Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (712, 7); -- Opportunist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (712, 269); -- Opportunist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (713, 8); -- Advanced Maneuver
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (713, 270); -- Advanced Maneuver
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (714, 11); -- Diverse Weapon Expert
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (714, 269); -- Diverse Weapon Expert
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (714, 271); -- Diverse Weapon Expert
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (715, 6); -- Monk Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (715, 125); -- Monk Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (715, 268); -- Monk Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (716, 7); -- Basic Kata
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (716, 272); -- Basic Kata
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (717, 7); -- Monk Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (717, 272); -- Monk Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (717, 254); -- Monk Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (718, 8); -- Advanced Kata
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (718, 273); -- Advanced Kata
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (719, 9); -- Monk Moves
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (719, 272); -- Monk Moves
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (720, 10); -- Monk's Flurry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (720, 272); -- Monk's Flurry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (721, 11); -- Perfection's Path
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (721, 272); -- Perfection's Path
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (721, 274); -- Perfection's Path
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (722, 6); -- Ranger Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (722, 268); -- Ranger Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (723, 7); -- Basic Hunter's Trick
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (723, 275); -- Basic Hunter's Trick
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (724, 7); -- Ranger Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (724, 275); -- Ranger Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (724, 254); -- Ranger Resiliency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (725, 8); -- Advanced Hunter's Trick
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (725, 276); -- Advanced Hunter's Trick
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (726, 11); -- Master Spotter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (726, 275); -- Master Spotter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (726, 277); -- Master Spotter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (727, 6); -- Rogue Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (727, 268); -- Rogue Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (728, 7); -- Basic Trickery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (728, 278); -- Basic Trickery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (729, 7); -- Sneak Attacker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (729, 278); -- Sneak Attacker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (730, 8); -- Advanced Trickery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (730, 279); -- Advanced Trickery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (731, 9); -- Skill Mastery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (731, 278); -- Skill Mastery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (731, 280); -- Skill Mastery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (732, 10); -- Uncanny Dodge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (732, 278); -- Uncanny Dodge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (733, 11); -- Evasiveness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (733, 278); -- Evasiveness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (733, 281); -- Evasiveness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (734, 6); -- Sorcerer Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (734, 247); -- Sorcerer Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (735, 7); -- Basic Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (735, 282); -- Basic Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (736, 7); -- Basic Blood Potency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (736, 282); -- Basic Blood Potency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (737, 7); -- Basic Bloodline Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (737, 282); -- Basic Bloodline Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (738, 8); -- Advanced Blood Potency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (738, 283); -- Advanced Blood Potency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (739, 9); -- Bloodline Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (739, 284); -- Bloodline Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (740, 11); -- Expert Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (740, 284); -- Expert Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (740, 285); -- Expert Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (741, 14); -- Master Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (741, 286); -- Master Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (741, 287); -- Master Sorcerer Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (742, 6); -- Wizard Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (742, 238); -- Wizard Dedication
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (743, 7); -- Arcane School Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (743, 288); -- Arcane School Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (744, 7); -- Basic Arcana
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (744, 288); -- Basic Arcana
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (745, 7); -- Basic Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (745, 288); -- Basic Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (746, 8); -- Advanced Arcana
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (746, 289); -- Advanced Arcana
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (747, 9); -- Arcane Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (747, 290); -- Arcane Breadth
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (748, 11); -- Expert Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (748, 290); -- Expert Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (748, 291); -- Expert Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (749, 14); -- Master Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (749, 292); -- Master Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (749, 293); -- Master Wizard Spellcasting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (750, 5); -- Additional Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (750, 295); -- Additional Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (751, 5); -- Adopted Ancestry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (752, 5); -- Alchemical Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (752, 42); -- Alchemical Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (753, 294); -- Ancestral Paragon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (754, 5); -- Arcane Sense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (754, 296); -- Arcane Sense
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (755, 5); -- Armor Proficiency
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (756, 5); -- Assurance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (756, 297); -- Assurance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (757, 6); -- Automatic Knowledge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (757, 298); -- Automatic Knowledge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (757, 299); -- Automatic Knowledge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (758, 5); -- Bargain Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (758, 300); -- Bargain Hunter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (759, 301); -- Battle Cry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (759, 303); -- Battle Cry
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (760, 5); -- Battle Medicine
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (760, 304); -- Battle Medicine
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (761, 301); -- Bizarre Magic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (761, 69); -- Bizarre Magic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (762, 6); -- Bonded Animal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (762, 308); -- Bonded Animal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (763, 5); -- Breath Control
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (764, 5); -- Canny Acumen
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (765, 5); -- Cat Fall
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (765, 305); -- Cat Fall
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (766, 5); -- Charming Liar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (766, 306); -- Charming Liar
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (767, 302); -- Cloud Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (767, 307); -- Cloud Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (768, 5); -- Combat Climber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (768, 142); -- Combat Climber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (769, 6); -- Confabulator
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (769, 309); -- Confabulator
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (770, 6); -- Connections
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (770, 310); -- Connections
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (770, 311); -- Connections
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (771, 6); -- Continual Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (771, 312); -- Continual Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (772, 5); -- Courtly Graces
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (772, 313); -- Courtly Graces
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (773, 302); -- Craft Anything
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (773, 314); -- Craft Anything
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (774, 5); -- Diehard
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (775, 302); -- Divine Guidance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (775, 263); -- Divine Guidance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (776, 5); -- Dubious Knowledge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (776, 315); -- Dubious Knowledge
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (777, 301); -- Expeditious Search
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (777, 146); -- Expeditious Search
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (778, 5); -- Experienced Professional
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (778, 295); -- Experienced Professional
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (779, 5); -- Experienced Smuggler
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (779, 316); -- Experienced Smuggler
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (780, 5); -- Experienced Tracker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (780, 317); -- Experienced Tracker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (781, 5); -- Fascinating Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (781, 318); -- Fascinating Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (782, 5); -- Fast Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (782, 242); -- Fast Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (783, 5); -- Feather Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (783, 268); -- Feather Step
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (784, 5); -- Fleet
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (785, 301); -- Foil Senses
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (785, 188); -- Foil Senses
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (786, 5); -- Forager
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (786, 317); -- Forager
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (787, 6); -- Glad-Hand
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (787, 356); -- Glad-Hand
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (788, 5); -- Group Coercion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (788, 204); -- Group Coercion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (789, 5); -- Group Impression
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (789, 300); -- Group Impression
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (790, 5); -- Hefty Hauler
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (790, 142); -- Hefty Hauler
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (791, 5); -- Hobnobber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (791, 300); -- Hobnobber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (792, 301); -- Impeccable Crafter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (792, 184); -- Impeccable Crafter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (792, 319); -- Impeccable Crafter
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (793, 5); -- Impressive Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (793, 318); -- Impressive Performance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (794, 5); -- Incredible Initiative
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (795, 320); -- Incredible Investiture
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (795, 321); -- Incredible Investiture
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (796, 5); -- Intimidating Glare
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (796, 204); -- Intimidating Glare
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (797, 6); -- Intimidating Prowess
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (797, 322); -- Intimidating Prowess
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (797, 323); -- Intimidating Prowess
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (798, 301); -- Inventor
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (798, 184); -- Inventor
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (799, 301); -- Kip Up
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (799, 324); -- Kip Up
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (800, 6); -- Lasting Coercion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (800, 323); -- Lasting Coercion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (801, 302); -- Legendary Codebreaker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (801, 325); -- Legendary Codebreaker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (802, 302); -- Legendary Linguist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (802, 325); -- Legendary Linguist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (802, 326); -- Legendary Linguist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (803, 302); -- Legendary Medic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (803, 327); -- Legendary Medic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (804, 302); -- Legendary Negotiation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (804, 328); -- Legendary Negotiation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (805, 302); -- Legendary Performer
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (805, 329); -- Legendary Performer
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (805, 330); -- Legendary Performer
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (806, 302); -- Legendary Professional
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (806, 331); -- Legendary Professional
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (807, 302); -- Legendary Sneak
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (807, 332); -- Legendary Sneak
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (807, 333); -- Legendary Sneak
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (808, 302); -- Legendary Survivalist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (808, 202); -- Legendary Survivalist
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (809, 302); -- Legendary Thief
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (809, 334); -- Legendary Thief
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (809, 335); -- Legendary Thief
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (810, 6); -- Lengthy Diversion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (810, 306); -- Lengthy Diversion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (812, 5); -- Magical Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (812, 306); -- Magical Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (813, 6); -- Magical Shorthand
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (813, 355); -- Magical Shorthand
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (814, 5); -- Multilingual
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (814, 313); -- Multilingual
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (815, 5); -- Natural Medicine
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (815, 336); -- Natural Medicine
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (816, 6); -- Nimble Crawl
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (816, 337); -- Nimble Crawl
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (817, 5); -- Oddity Identification
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (817, 338); -- Oddity Identification
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (818, 5); -- Pickpocket
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (818, 339); -- Pickpocket
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (819, 301); -- Planar Survival
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (819, 186); -- Planar Survival
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (820, 6); -- Powerful Leap
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (820, 52); -- Powerful Leap
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (821, 301); -- Quick Climber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (821, 57); -- Quick Climber
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (822, 5); -- Quick Coercion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (822, 204); -- Quick Coercion
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (823, 6); -- Quick Disguise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (823, 309); -- Quick Disguise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (824, 5); -- Quick Identification
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (824, 340); -- Quick Identification
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (825, 5); -- Quick Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (825, 142); -- Quick Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (826, 301); -- Quick Recognition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (826, 341); -- Quick Recognition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (826, 842); -- Quick Recognition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (827, 5); -- Quick Repair
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (827, 42); -- Quick Repair
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (828, 5); -- Quick Squeeze
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (828, 305); -- Quick Squeeze
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (829, 301); -- Quick Swim
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (829, 57); -- Quick Swim
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (830, 301); -- Quick Unlock
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (830, 343); -- Quick Unlock
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (831, 6); -- Quiet Allies
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (831, 344); -- Quiet Allies
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (832, 6); -- Rapid Mantel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (832, 52); -- Rapid Mantel
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (833, 5); -- Read Lips
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (833, 313); -- Read Lips
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (834, 5); -- Recognize Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (834, 340); -- Recognize Spell
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (835, 5); -- Ride
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (836, 6); -- Robust Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (836, 312); -- Robust Recovery
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (837, 302); -- Scare to Death
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (837, 345); -- Scare to Death
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (838, 301); -- Shameless Request
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (838, 346); -- Shameless Request
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (839, 5); -- Shield Block
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (840, 5); -- Sign Language
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (840, 313); -- Sign Language
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (841, 5); -- Skill Training
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (841, 347); -- Skill Training
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (842, 301); -- Slippery Secrets
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (842, 348); -- Slippery Secrets
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (843, 5); -- Snare Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (843, 42); -- Snare Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (844, 5); -- Specialty Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (844, 42); -- Specialty Crafting
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (845, 5); -- Steady Balance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (845, 305); -- Steady Balance
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (846, 5); -- Streetwise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (846, 313); -- Streetwise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (847, 5); -- Student of the Canon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (847, 349); -- Student of the Canon
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (848, 5); -- Subtle Theft
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (848, 339); -- Subtle Theft
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (849, 5); -- Survey Wildlife
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (849, 317); -- Survey Wildlife
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (850, 301); -- Swift Sneak
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (850, 188); -- Swift Sneak
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (851, 5); -- Terrain Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (851, 317); -- Terrain Expertise
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (852, 5); -- Terrain Stalker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (852, 316); -- Terrain Stalker
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (853, 301); -- Terrified Retreat
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (853, 303); -- Terrified Retreat
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (854, 5); -- Titan Wrestler
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (854, 142); -- Titan Wrestler
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (855, 5); -- Toughness
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (856, 5); -- Train Animal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (856, 336); -- Train Animal
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (857, 5); -- Trick Magic Item
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (857, 340); -- Trick Magic Item
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (858, 5); -- Underwater Marauder
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (858, 142);  -- Underwater Marauder
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (859, 302); -- Unified Theory
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (859, 350); -- Unified Theory
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (860, 6); -- Unmistakable Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (860, 351); -- Unmistakable Lore
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (861, 294); -- Untrained Improvisation
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (862, 5); -- Virtuosic Performer
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (862, 318); -- Virtuosic Performer
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (863, 301); -- Wall Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (863, 57); -- Wall Jump
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (864, 6); -- Ward Medic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (864, 312); -- Ward Medic
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (865, 6); -- Wary Disarmament
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (865, 352); -- Wary Disarmament
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (866, 5); -- Weapon Proficiency
+COMMIT;
 
 BEGIN TRANSACTION;
 -- TODO run a quick script to comment these
