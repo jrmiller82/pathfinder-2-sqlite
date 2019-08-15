@@ -7,6 +7,9 @@
 --
 -- #########################################################
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 INSERT INTO traittypes (traittype_id, name)
 VALUES
   (1, 'None'),
@@ -25,7 +28,7 @@ VALUES
   (14, 'Tradition'), 
   (15, 'Weapon'); 
 
-INSERT INTO traits (trait_id, traittype, short_name,description) 
+INSERT INTO traits (trait_id, traittype, short_name, description) 
 
  VALUES
  -- CRB and Monster Manual

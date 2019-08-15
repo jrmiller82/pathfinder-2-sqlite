@@ -1,5 +1,8 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 /* TODO Decide on how to format the copyright block text... perhaps with Markdown? */
 
 

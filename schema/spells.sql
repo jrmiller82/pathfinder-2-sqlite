@@ -67,9 +67,9 @@ CREATE TABLE spells_spellcomponents(
 CREATE TABLE spells_traits (
 	id INTEGER PRIMARY KEY,
 	spells_id INTEGER NOT NULL,
-	traits_id INTEGER NOT NULL,
-  UNIQUE(spells_id, traits_id),
+	trait_id INTEGER NOT NULL,
+  UNIQUE(spells_id, trait_id),
 	FOREIGN KEY (spells_id) REFERENCES spells(spells_id),
-	FOREIGN KEY (traits_id) REFERENCES traits(traits_id)
+	FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
 

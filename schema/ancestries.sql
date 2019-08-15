@@ -60,16 +60,6 @@ CREATE TABLE ancestries_heritages (
   FOREIGN KEY (heritage_id) REFERENCES heritages(heritage_id)
 );
 
-/* TODO THIS TABLE IS LIKELY NOT NEEDED. THANKS WES! */
-
-CREATE TABLE heritages_traits (
-  id INTEGER PRIMARY KEY,
-  heritage_id INTEGER NOT NULL,
-  trait_id INTEGER NOT NULL,
-  UNIQUE(heritage_id, trait_id),
-  FOREIGN KEY (heritage_id) REFERENCES heritages(heritage_id),
-  FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
-);
 
 /* has partial data */
 CREATE TABLE ancestries_traits (

@@ -8,7 +8,7 @@ def main():
     with open('spells.json') as f:
         # raw_data = f.read()
         data = json.load(f)
-    print("Imported {} spells.".format(len(data)))
+    print("Importing {} spells.".format(len(data)))
     # alphabetize spells into a list
     sorted_names = []
     for i in data:
@@ -34,10 +34,12 @@ def main():
     pragma2 = "PRAGMA count_changes=OFF;"
     pragma3 = "PRAGMA journal_mode=MEMORY;"
     pragma4 = "PRAGMA temp_store=MEMORY;"
+    pragma5 = "PRAGMA foreign_keys=ON;"
     conn.execute(pragma1)
     conn.execute(pragma2)
     conn.execute(pragma3)
     conn.execute(pragma4)
+    conn.execute(pragma5)
 
     # load in ids for traits from traits table so we only call this once
     # instead of every spell
@@ -126,6 +128,8 @@ def main():
         do_spell_targets(i,id,conn,ttypes)
         do_spell_actions(i,id,conn,acttypes)
 
+    print("Finished {} spells.".format(len(sorted_dicts)))
+
 def do_spell_actions(i,id,conn,acttypes):
     if 'action' not in i:
         return
@@ -153,14 +157,15 @@ def do_spell_components(i,id,conn,ctypes):
             if k.capitalize() == j[1]:
                 res = j[0]
 
-                inp = (res, id)
+                inp = (id, res)
 
                 stmt = "INSERT INTO spells_spellcomponents (spells_id, spellcomponents_id) VALUES (?,?)"
 
                 try:
                     conn.execute(stmt, inp)
-                except:
-                    print("Error inserting spell components")
+                except sqlite3.Error as e:
+                    print("Error inserting spell components: {}".format(e))
+                    print("\tinp: {}".format(inp))
                 else:
                     conn.commit()
 
@@ -222,7 +227,7 @@ def do_spell_traits(i, id, conn, traits):
     # print(inp)
 
     # insert into sql
-    stmt = "INSERT OR REPLACE INTO spells_traits (spells_id, traits_id) VALUES (?,?)"
+    stmt = "INSERT OR REPLACE INTO spells_traits (spells_id, trait_id) VALUES (?,?)"
     try:
         conn.executemany(stmt, inp)
     except:
@@ -286,7 +291,7 @@ def do_range_numbers(i, id, conn):
 
 
 def do_basic_sql(i, id, conn):
-    print("Doing spell id #{}: {}".format(id, i['name']))
+    #print("Doing spell id #{}: {}".format(id, i['name']))
     stmt = """INSERT INTO spells (
     spells_id,
     sources_id,

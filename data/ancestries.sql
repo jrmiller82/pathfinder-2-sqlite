@@ -4,6 +4,9 @@
 one-paragraph at the top of the section, and we put in all the extra details as
 a field with markdown formatted text. Need to think on it. */
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 INSERT INTO ancestries (ancestry_id, short_name, flavor_text, hp, size_id, speed, vision_id,sources_id,sources_pages)
 VALUES
   (1, 'Dwarf', 'TODO', 10, 3, 20, 1,1,"35"),

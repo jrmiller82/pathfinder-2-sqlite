@@ -1,5 +1,8 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 /* TODO add in any different vision types from Bestiary / Monsters */
 
 /* TODO smoke vision is from young-red dragon */

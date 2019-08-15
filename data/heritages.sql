@@ -1,5 +1,8 @@
 -- -*- mode:sql sql-product:sqlite -*-
 
+PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
+                          -- on PER CONNECTION
+
 /* TODO figure out how to model the reaction with heritages */
 
 /* TODO how to add in vision for Half-elf Heritage? */
@@ -78,8 +81,9 @@ VALUES
   (3, 200),
   (3, 201),
   (3, 202),
-  (3, 203),
+  -- (3, 203), TODO there was no #203 in Gnomes; need to see what's going on
   (3, 204),
+  (3, 205),
   -- Goblin
   (4, 300),
   (4, 301),
@@ -97,18 +101,7 @@ VALUES
   (6, 501),
   (6, 502),
   (6, 503),
-  (6, 504),
   -- Half-elf and half orc (yes, we know they're technically only a heritage,
   -- but we link it up to ancestry ids too)
   (7, 500),
   (8, 501);
-
-
-
-/* TODO this table is likely not needed anymore; AND TODO the trait_ids likely don't match anymore. */
-INSERT INTO heritages_traits
-  (heritage_id, trait_id)
-VALUES
-  (6, 7),
-  (6, 2),
-  (6, 6);

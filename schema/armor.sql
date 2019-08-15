@@ -38,9 +38,9 @@ CREATE TABLE armor (
 CREATE TABLE armor_traits (
 	id INTEGER PRIMARY KEY,
 	armor_id INTEGER NOT NULL,
-	traits_id INTEGER NOT NULL,
+	trait_id INTEGER NOT NULL,
 	FOREIGN KEY (armor_id) REFERENCES armor(armor_id),
-	FOREIGN KEY (traits_id) REFERENCES traits(traits_id)
+	FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
 
 
