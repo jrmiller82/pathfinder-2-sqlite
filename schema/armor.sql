@@ -30,7 +30,7 @@ CREATE TABLE armor (
 	bulk_id INTEGER NOT NULL,
 	grp_id INTEGER,
 	descr TEXT NOT NULL,
-	FOREIGN KEY (bulk_id) REFERENCES bulk(bulk_id),
+	FOREIGN KEY (bulk_id) REFERENCES bulks(bulk_id),
 	FOREIGN KEY (grp_id) REFERENCES armorgroup(grp_id),
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
 );
