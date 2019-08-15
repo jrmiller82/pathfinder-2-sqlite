@@ -56,7 +56,11 @@ The action symbols can be represented by the following characters:
 
 ## Text Formatting
 
-Text formatting will be according to github-flavored markdown. 
+Text formatting will be according to github-flavored markdown.
+
+## Identicle names
+
+In the case of identicle names ex. Sudden Charge for Fighter vs Barbarian we will use an identifier in brackets ex. Sudden Charge (Fighter) vs Sudden Charge (Barbarian) or Lock (Simple) vs Lock (Average).
 
 ## Ability Scores in Integer Representation
 
