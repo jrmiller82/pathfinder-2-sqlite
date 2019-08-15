@@ -101,7 +101,6 @@ VALUES
   (6, 501),
   (6, 502),
   (6, 503),
-  (6, 504),
   -- Half-elf and half orc (yes, we know they're technically only a heritage,
   -- but we link it up to ancestry ids too)
   (7, 500),
