@@ -869,6 +869,8 @@ VALUES
 (867,3,"57","Relentless Stalker","Your hunted prey cannot escape your relentless pursuit. Stride up to your Speed in tandem with the triggering creature, remaining adjacent to the foe throughout its movement until it stops moving or you run out of movement. You can ignore difficult terrain during this movement unless the difficult terrain is caused by a magical effect."),
 (868,3,"57","Wilderness Spotter","Select one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren’t tracking or otherwise using");
 
+                                                                                                      -- TODO This is failing foreign key constraint, meaning one of the second columns does NOT exist in feats most likely
+
 INSERT INTO featprereqs (featprereqs_id, feat_id, descr)
 VALUES
   (1, NULL, 'Ancestry Level 1'),
@@ -971,7 +973,7 @@ VALUES
   (86, NULL, 'Feature: divine ally'),
   (87, 228, 'Feat: Loyal Warhouse'),
   (88, 229, 'Feat: Shield Warden'),
-  (89, NULL, "Feature: Champion's Reaction"), --Paren
+  (89, NULL, 'Feature: Champion''s Reaction'), --Paren
   (90, 220, 'Feat: Fiendsbane Oath'),
   (91, 221, 'Feat: Shining Oath'),
   (92, NULL, 'Feature: exalt'),
@@ -981,7 +983,7 @@ VALUES
   (97, 240, 'Feat: Radiant Blade Spirit'),
   --Cleric
   (98, NULL, 'diety with a simple favored weapon'),
-  (99, NULL, "trained with your deity's favored weapon"), --Paren
+  (99, NULL, 'trained with your deity''s favored weapon'), --Paren
   (100, NULL, 'Feature: harmful font'),
   (101, NULL, 'Feature: healing font'),
   (102, NULL, 'Feature: harmful font or healing font'),
@@ -1126,7 +1128,7 @@ VALUES
   (233, NULL, 'Feature: universalist wizard'),
   (234, 636, 'Feat: Hand of the Apprentice'),
   (235, 633, 'Feat: Counterspell'),
-  --(236, 826, 'Feat: Quick Recognize'),typo in book should be Quick Recognition
+  -- TODO (236, 826, 'Feat: Quick Recognize'),typo in book should be Quick Recognition
   (237, NULL, 'Feature: archwizards spellcraft'),
   --Alchemist Dedication
   (238, NULL, 'Intelligence 14'),
