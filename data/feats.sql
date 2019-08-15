@@ -870,7 +870,6 @@ VALUES
 (868,3,"57","Wilderness Spotter","Select one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren’t tracking or otherwise using");
 
                                                                                                       -- TODO This is failing foreign key constraint, meaning one of the second columns does NOT exist in feats most likely
-
 INSERT INTO featprereqs (featprereqs_id, feat_id, descr)
 VALUES
   (1, NULL, 'Ancestry Level 1'),
@@ -1036,12 +1035,11 @@ VALUES
   (147, 367, 'Feat: Dueling Parry'),
   (148, 839, 'Feat: Shield Block'), --Note fighters get this as a class feature but it is also a feat
   (149, 360, 'Feat: Reactive Shield'),
-  --(150, 372, 'Feat: Knockdown');different knockback already created
   (151, 389, 'Feat: Dueling Riposte'),
   (152, 391, 'Feat: Incredible Aim'),
   (153, 145, 'Feat: Attack of Opportunity'), --Note fighters get this as a class feature but it is also a feat for barbarians
   (154, 369, 'Feat: Lunge'),
-  (155, 405, 'Feat: Twin Riposte'),
+  (155, 523, 'Feat: Twin Riposte'),
   (156, 356, 'Feat: Double Slice'),
   (157, 383, 'Feat: Reflexive Shield'),
   (158, 387, 'Feat: Triple Shot'),
@@ -1334,8 +1332,8 @@ INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (49, 3); -- Skitt
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (49, 28); -- Skittering Scuttle
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (50, 4); -- Goblin Weapon Expertise
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (50, 27); -- Goblin Weapon Expertise
-INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (51, 4), -- Very; Very Sneaky
-INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (51, 353), -- Very; Very Sneaky
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (51, 4); -- Very, Very Sneaky
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (51, 353); -- Very, Very Sneaky
 -- Halfling
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (52, 1); -- Distracting Shadows
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (53, 1); -- Halfling Lore
@@ -1583,7 +1581,7 @@ INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (211, 23); -- Fat
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (212, 15); -- Perfect Encore
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (212, 73); -- Perfect Encore
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (213, 15); -- Symphony of the Muses
-(213, 74), -- Symphony of the Muses
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (213, 74); -- Symphony of the Muses
 -- Champion
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (214, 5); -- Deity's Domain
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (215, 5); -- Ranged Reprisal
@@ -1909,7 +1907,7 @@ INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (402, 10); -- Fea
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (403, 10); -- Improved Knockdown
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (403, 61); -- Improved Knockdown
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (404, 10); -- Mirror Shield
-INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (405, 10); -- Twin Riposte
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (523, 10); -- Twin Riposte
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (406, 11); -- Brutal Finish
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (407, 11); -- Dueling Dance
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (407, 147); -- Dueling Dance
@@ -2150,7 +2148,7 @@ INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (562, 7); -- Magi
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (563, 7); -- Poison Weapon
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (564, 7); -- Reactive Pursuit
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (565, 7); -- Sabotage
-INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (566, 7); -- Scout's Warning
+--INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (566, 7); -- Scout's Warning Note another Scout's warning is in the table before 566 (505)
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (567, 8); -- Gang Up
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (568, 8); -- Light Step
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (570, 8); -- Twist the Knife
@@ -2620,7 +2618,7 @@ INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (825, 5); -- Quic
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (825, 142); -- Quick Jump
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (826, 301); -- Quick Recognition
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (826, 341); -- Quick Recognition
-INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (826, 842); -- Quick Recognition
+INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (826, 342); -- Quick Recognition
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (827, 5); -- Quick Repair
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (827, 42); -- Quick Repair
 INSERT INTO feats_featprereqs (feat_id, featprereqs_id) VALUES (828, 5); -- Quick Squeeze
