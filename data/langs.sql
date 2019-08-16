@@ -10,7 +10,7 @@ VALUES
   (3, 'Secret');
 
 
--- TODO These values are from Tables 2-1, 2-2, and 2-3 on page 65 CRB
+-- These values are from Tables 2-1, 2-2, and 2-3 on page 65 CRB
 
 INSERT INTO langs (lang_id, rarity_id, sources_id, sources_pages, lang, speakers)
 VALUES

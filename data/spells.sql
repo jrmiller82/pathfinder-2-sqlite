@@ -31,8 +31,6 @@ VALUES
   (3, 'Occult'),
   (4, 'Primal');
 
-/* TODO fill in spellschool descriptions */
-
 INSERT INTO spellschools (
   spellschools_id,
   sources_id,
