@@ -12,6 +12,13 @@ def main():
         for row in reader:
             rows.append(row)
 
+    ranged_rows = []
+    with open('ranged.csv') as f:
+        reader = csv.DictReader(f)
+        print(reader)
+        for row in reader:
+            ranged_rows.append(row)
+
 
     ## Get database connection
     conn = sqlite3.connect('../../pf2.db') 
@@ -37,9 +44,44 @@ def main():
     # print(traits)
 
     for row in rows:
-        insert_melee_weapon(row, conn, traits)
+        insert_melee_weapon_basics(row, conn)
 
-def insert_melee_weapon(row, conn, traits):
+    for row in ranged_rows:
+        insert_ranged_weapon_basics(row, conn)
+
+def insert_ranged_weapon_basics(row, conn):
+    print("Inserting: {}".format(row['name']))
+    # insert everything that's not a lookup
+    stmt =  """
+    INSERT INTO weapons (
+        weapons_id,
+        sources_id,
+        sources_pages,
+        price_gp,
+        dice_size,
+        bulk,
+        hands,
+        name,
+        descr,
+        range,
+        reload
+    )
+    VALUES (?,?,?,?,?,?,?,?,?,?,?);
+    """
+    r = row
+    inp = (r['weapon_r_id'],r['sources_id'],r['sources_pg'],r['price_gp'],
+           r['dice_size'],r['bulk'],r['hands'],r['name'],r['description'],
+           r['range'],r['reload'])
+
+    try:
+        conn.execute(stmt, inp)
+    except sqlite.Error as e:
+        print("Error inserting basic ranged row information: {}".format(e))
+    else:
+        conn.commit()
+        # print("Successfully inserted row")
+
+def insert_melee_weapon_basics(row, conn):
     print("Inserting: {}".format(row['name']))
     # insert everything that's not a lookup
     stmt =  """
@@ -61,8 +103,8 @@ def insert_melee_weapon(row, conn, traits):
 
     try:
         conn.execute(stmt, inp)
-    except:
-        print("Error inserting basic row information")
+    except sqlite3.Error as e:
+        print("Error inserting basic melee row information: {}".format(e))
     else:
         conn.commit()
         # print("Successfully inserted row")
