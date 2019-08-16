@@ -1,4 +1,4 @@
-weapon_r_id,name,category,price_gp,dice_size,damage_type,range,reload,bulk,hands,group,traits,sources_id,sources_pg,description
+weapon_id,name,category,price_gp,dice_size,damage_type,range,reload,bulk,hands,group,traits,sources_id,sources_pg,description
 67,Blowgun,Simple,0.1,1,P,20,1,0.1,1,Dart,"Agile, Nonlethal",1,281,"This long, narrow tube is used for shooting blowgun darts, using only the power of a forcefully exhaled breath."
 68,Crossbow,Simple,3,8,P,120,1,1,2,Bow,,1,281,"This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt."
 69,Dart,Simple,0.01,4,P,20,,0.1,1,Dart,"Agile, Thrown",1,281,This thrown weapon is larger than an arrow but shorter than a javelin. It typically has a short shaft of wood ending in a metal tip and is sometimes stabilized by feathers or fur.

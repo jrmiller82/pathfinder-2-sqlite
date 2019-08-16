@@ -1,4 +1,4 @@
-weapon_m_id,name,category,price_gp,dice_size,damage_type,bulk,hands,group,traits,sources_id,sources_pg,description
+weapon_id,name,category,price_gp,dice_size,damage_type,bulk,hands,group,traits,sources_id,sources_pg,description
 0,Fist,Unarmed,0,4,B,0,1,Brawling,"Agile, Finesse, Nonlethal, Unarmed",1,280,Nethys Note: no description was provided for this item
 1,Clan Dagger,Simple,2,4,P,0.1,1,Knife,"Agile, Dwarf, Parry, Uncommon, Versatile B",1,280,"This broad dagger is carried by dwarves as a weapon, tool, and designation of clan. Losing or having to surrender a clan dagger is considered a mark of embarrassment to most dwarves."
 2,Club,Simple,0,6,B,1,1,Club,"Thrown 10 ft., Thrown",1,280,This is a piece of stout wood shaped or repurposed to bludgeon an enemy. Clubs can be intricately carved pieces of martial art or as simple as a tree branch or piece of wood.

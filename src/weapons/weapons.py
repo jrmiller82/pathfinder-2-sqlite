@@ -45,9 +45,62 @@ def main():
 
     for row in rows:
         insert_melee_weapon_basics(row, conn)
+        insert_traits(row, conn, traits)
 
     for row in ranged_rows:
         insert_ranged_weapon_basics(row, conn)
+        insert_traits(row, conn, traits)
+
+def insert_traits (row, conn, traits):
+
+    # get list of traits from row
+    tmp = row['traits']
+    # exit this if no traits
+    if tmp == '':
+        return
+    splits = tmp.split(", ")
+    # print(tmp)
+    # print(tmp.split(", "))
+
+    trait_ids = []
+    # get trait IDs
+    for i in traits:
+        for j in splits:
+            if i[1] == j:
+                print("Trait_id:{}\tname:{}".format(i[0],i[1]))
+                trait_ids.append(i[0])
+    print(trait_ids)
+    # all this mess removes non weapon traits that have duplicate names like
+    # Monk Ancestry versus Monk Weapon trait
+    if len(splits) != len(trait_ids):
+        remove_me = []
+        for i in trait_ids:
+            if i >= 217 and i <= 251:
+                continue
+            elif i >= 255 and i <= 269:
+                continue
+            # 203 = uncommon trait
+            elif i == 203:
+                continue
+            else:
+                remove_me.append(i)
+        for i in remove_me:
+            trait_ids.remove(i)
+    # print(trait_ids)
+
+    stmt = "INSERT INTO weapons_traits (weapons_id, trait_id) VALUES (?,?);"
+
+    for i in trait_ids:
+        inp = (row['weapon_id'], i)
+        try:
+            conn.execute(stmt, inp)
+        except sqlite.Error as e:
+            print("Error inserting trait information: {}".format(e))
+        else:
+            conn.commit()
+            # print("Successfully inserted row")
+
+
 
 def insert_ranged_weapon_basics(row, conn):
     print("Inserting: {}".format(row['name']))
@@ -69,7 +122,7 @@ def insert_ranged_weapon_basics(row, conn):
     VALUES (?,?,?,?,?,?,?,?,?,?,?);
     """
     r = row
-    inp = (r['weapon_r_id'],r['sources_id'],r['sources_pg'],r['price_gp'],
+    inp = (r['weapon_id'],r['sources_id'],r['sources_pg'],r['price_gp'],
            r['dice_size'],r['bulk'],r['hands'],r['name'],r['description'],
            r['range'],r['reload'])
 
@@ -98,7 +151,7 @@ def insert_melee_weapon_basics(row, conn):
     VALUES (?,?,?,?,?,?,?,?,?);
     """
     r = row
-    inp = (r['weapon_m_id'],r['sources_id'],r['sources_pg'],r['price_gp'],
+    inp = (r['weapon_id'],r['sources_id'],r['sources_pg'],r['price_gp'],
            r['dice_size'],r['bulk'],r['hands'],r['name'],r['description'])
 
     try:
