@@ -1,6 +1,7 @@
 rm pf2.db
 echo 'loading schema'
 sqlite3 pf2.db < schema/sources.sql
+sqlite3 pf2.db < schema/damagetypes.sql
 sqlite3 pf2.db < schema/conditions.sql
 sqlite3 pf2.db < schema/backgrounds.sql
 sqlite3 pf2.db < schema/abilityscores.sql
@@ -17,6 +18,7 @@ sqlite3 pf2.db < schema/armor.sql
 sqlite3 pf2.db < schema/gear.sql
 echo 'loading data'
 sqlite3 pf2.db < data/sources.sql
+sqlite3 pf2.db < data/damagetypes.sql
 sqlite3 pf2.db < data/conditions.sql
 sqlite3 pf2.db < data/backgrounds.sql
 sqlite3 pf2.db < data/abilityscores.sql
