@@ -3,19 +3,19 @@ import sqlite3
 
 def main():
     # load json into python
-    print("loading melee.csv")
+    print("loading melee.csv and ranged.csv")
     ## read file into memory
     rows = []
     with open('melee.csv') as f:
         reader = csv.DictReader(f)
-        print(reader)
+        # print(reader)
         for row in reader:
             rows.append(row)
 
     ranged_rows = []
     with open('ranged.csv') as f:
         reader = csv.DictReader(f)
-        print(reader)
+        # print(reader)
         for row in reader:
             ranged_rows.append(row)
 
@@ -52,6 +52,8 @@ def main():
         insert_ranged_weapon_basics(row, conn)
         insert_traits(row, conn, traits)
         insert_fks(row, conn)
+
+    print("finished weapons")
 
 def insert_fks(row, conn):
     # get category id
@@ -111,8 +113,10 @@ def insert_fks(row, conn):
         dmg_id = 2
     elif dmg == 'S':
         dmg_id = 3
+    elif row['name'] == "Alchemical Bomb":
+        dmg_id = None
     else:
-        print("Something went wrong here in weapon damage type land.")
+        print("Something went wrong here in weapon damage type land.{}".format(row))
 
     inp = (res_id, grp_id, dmg_id, row['weapon_id'])
     stmt = "UPDATE weapons SET weaponcategories_id=?, weapongroups_id=?, damagetypes_id=? WHERE weapons_id=?;"
@@ -140,9 +144,9 @@ def insert_traits (row, conn, traits):
     for i in traits:
         for j in splits:
             if i[1] == j:
-                print("Trait_id:{}\tname:{}".format(i[0],i[1]))
+                # print("Trait_id:{}\tname:{}".format(i[0],i[1]))
                 trait_ids.append(i[0])
-    print(trait_ids)
+    # print(trait_ids)
     # all this mess removes non weapon traits that have duplicate names like
     # Monk Ancestry versus Monk Weapon trait
     if len(splits) != len(trait_ids):
@@ -176,7 +180,7 @@ def insert_traits (row, conn, traits):
 
 
 def insert_ranged_weapon_basics(row, conn):
-    print("Inserting: {}".format(row['name']))
+    # print("Inserting: {}".format(row['name']))
     # insert everything that's not a lookup
     stmt =  """
     INSERT INTO weapons (
@@ -208,7 +212,7 @@ def insert_ranged_weapon_basics(row, conn):
         # print("Successfully inserted row")
 
 def insert_melee_weapon_basics(row, conn):
-    print("Inserting: {}".format(row['name']))
+    # print("Inserting: {}".format(row['name']))
     # insert everything that's not a lookup
     stmt =  """
     INSERT INTO weapons (
