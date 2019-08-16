@@ -43,11 +43,6 @@ def main():
     # print("Printing traits")
     # print(traits)
 
-    # TODO Categories
-    # TODO damage type
-
-
-
     for row in rows:
         insert_melee_weapon_basics(row, conn)
         insert_traits(row, conn, traits)
