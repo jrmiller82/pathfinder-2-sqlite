@@ -43,13 +43,91 @@ def main():
     # print("Printing traits")
     # print(traits)
 
+    # TODO Categories
+    # TODO damage type
+
+
+
     for row in rows:
         insert_melee_weapon_basics(row, conn)
         insert_traits(row, conn, traits)
+        insert_fks(row, conn)
 
     for row in ranged_rows:
         insert_ranged_weapon_basics(row, conn)
         insert_traits(row, conn, traits)
+        insert_fks(row, conn)
+
+def insert_fks(row, conn):
+    # get category id
+    rcat = row['category']
+    res_id = None
+    if rcat == "Unarmed":
+        res_id = 1
+    elif rcat == "Simple":
+        res_id = 2
+    elif rcat == "Martial":
+        res_id = 3
+    elif rcat == "Advanced":
+        res_id = 4
+    else:
+        print("Something went wrong here in weapon category land.")
+
+    grp = row['group']
+    grp_id = None
+    if grp == 'Axe':
+        grp_id = 1
+    elif grp == 'Bomb':
+        grp_id = 2
+    elif grp == 'Bow':
+        grp_id = 3
+    elif grp == 'Brawling':
+        grp_id = 4
+    elif grp == 'Club':
+        grp_id = 5
+    elif grp == 'Dart':
+        grp_id = 6
+    elif grp == 'Flail':
+        grp_id = 7
+    elif grp == 'Hammer':
+        grp_id = 8
+    elif grp == 'Knife':
+        grp_id = 9
+    elif grp == 'Pick':
+        grp_id = 10
+    elif grp == 'Polearm':
+        grp_id = 11
+    elif grp == 'Shield':
+        grp_id = 12
+    elif grp == 'Sling':
+        grp_id = 13
+    elif grp == 'Spear':
+        grp_id = 14
+    elif grp == 'Sword':
+        grp_id = 15
+    else:
+        print("Something went wrong here in weapon group land.")
+
+    dmg = row['damage_type']
+    dmg_id = None
+    if dmg == 'B':
+        dmg_id = 1
+    elif dmg == 'P':
+        dmg_id = 2
+    elif dmg == 'S':
+        dmg_id = 3
+    else:
+        print("Something went wrong here in weapon damage type land.")
+
+    inp = (res_id, grp_id, dmg_id, row['weapon_id'])
+    stmt = "UPDATE weapons SET weaponcategories_id=?, weapongroups_id=?, damagetypes_id=? WHERE weapons_id=?;"
+    try:
+        conn.execute(stmt, inp)
+    except sqlite.Error as e:
+        print("Error inserting weapon category information: {}".format(e))
+    else:
+        conn.commit()
+        # print("Successfully inserted row")
 
 def insert_traits (row, conn, traits):
 
