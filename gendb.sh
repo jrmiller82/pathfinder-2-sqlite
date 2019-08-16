@@ -42,10 +42,6 @@ sqlite3 pf2.db < data/ammunition.sql
 cd data/third_party_json
 python3 spells.py
 cd ../..
-# Comment out the following when we don't want to generate weapons
-cd src/weapons
-python3 weapons.py
-cd ../..
 
 # TODO Eventually we will stop relying on the spells.py script and I will have
 # the actual .sql files for the spell data; I am waiting to see if the

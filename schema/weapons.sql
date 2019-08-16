@@ -23,10 +23,10 @@ CREATE TABLE weapons (
   sources_pages TEXT,
   weaponcategories_id INTEGER,
   weapongroups_id INTEGER,
-  price_gp REAL,
+  price_gp TEXT, --Text to fix the floating point error
   dice_size INTEGER,
   damagetypes_id INTEGER,
-  "bulk" REAL,
+  "bulk" TEXT, --Text to fix the floating point error
   hands TEXT, -- '1+' is different than '1' per the rules
   range INTEGER,
   reload TEXT, -- '-' is significant in the rules
