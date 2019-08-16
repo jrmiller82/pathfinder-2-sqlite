@@ -1,11 +1,12 @@
 import json
 import sqlite3
+import io
 
 def main():
     # load json into python
     print("loading json")
     ## read file into memory
-    with open('spells.json') as f:
+    with io.open('spellsNEW.json', 'r', encoding='utf-8-sig') as f:
         # raw_data = f.read()
         data = json.load(f)
     print("Importing {} spells.".format(len(data)))
@@ -145,12 +146,29 @@ def do_spell_actions(i,id,conn,acttypes):
 
     try:
         conn.execute(stmt, inp)
-    except:
-        print("Error updating actioncosts_id")
+    except sqlite3.Error as e:
+        print("Error updating actioncosts_id: {}".format(e))
+        print("\tSpell:{}\tinp:{}".format(i['name'],inp))
     else:
         conn.commit()
 
 def do_spell_components(i,id,conn,ctypes):
+    # this block handles heal or harm which have all 3
+    if i['name']=='Heal' or i['name']=='Harm':
+        # print("Need to handle heal and harm")
+        inp = [(id, 1), (id, 2), (id, 3)]
+        stmt = "INSERT INTO spells_spellcomponents (spells_id, spellcomponents_id) VALUES (?,?)"
+        try:
+            conn.executemany(stmt, inp)
+        except sqlite3.Error as e:
+            print("Error inserting spell components: {}".format(e))
+            print("\tinp: {}".format(inp))
+        else:
+            print("handled {} succesfully".format(i['name']))
+            conn.commit()
+            return
+
+    # this handles the rest
     res = None
     for j in ctypes:
         for k in i['components']:

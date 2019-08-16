@@ -9,6 +9,7 @@ INSERT INTO actioncosts (
   abbr
 )
 VALUES
+  (0, 'Varies', 'Varies'),
   (1, 'Single Action', '1'),
   (2, 'Two Actions', '2'),
   (3, 'Three Actions', '3'),
