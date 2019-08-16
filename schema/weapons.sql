@@ -45,4 +45,3 @@ CREATE TABLE weapons_traits (
   FOREIGN KEY (weapons_id) REFERENCES weapons(weapons_id),
   FOREIGN KEY (trait_id) REFERENCes traits(trait_id)
 );
-
