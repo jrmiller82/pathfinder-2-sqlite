@@ -41,5 +41,14 @@ VALUES
   'TODO',
   '2019-08-01',
   1,
-  'Pathfinder Adventure: The Fall of Plaguestone © 2019, Paizo Inc.; Author: Jason Bulmahn.');
+  'Pathfinder Adventure: The Fall of Plaguestone © 2019, Paizo Inc.; Author: Jason Bulmahn.'),
+-- Core Rulebook
+(4,
+'Age of Ashes Player''s Guide',
+'Age of Ashes Player''s Guide',
+'AoAPG',
+'Player''s Guide for the Age of Ashes Adventure Path',
+'2019',
+1,
+'Age of Ashes Player''s Guide © 2019, Paizo Inc.; Authors: James Jacobs with Amanda Hamon.');
 
