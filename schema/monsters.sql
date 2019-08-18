@@ -82,6 +82,14 @@ CREATE TABLE monsters_skills (
   FOREIGN KEY (skills_id) REFERENCES skills(skills_id)
 );
 
+CREATE TABLE monsters_traits (
+  id INTEGER PRIMARY KEY,
+  monsters_id INTEGER NOT NULL,
+  traits_id INTEGER NOT NULL,
+  FOREIGN KEY (monsters_id) REFERENCES monsters(monsters_id),
+  FOREIGN KEY (traits_id) REFERENCES traits(traits_id)
+);
+
 -- TODO does this need to be separate table for monsters only or share the main
 -- actions table
 CREATE TABLE monsteractions (
