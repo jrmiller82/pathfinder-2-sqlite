@@ -33,7 +33,6 @@ CREATE TABLE monsters (
   FOREIGN KEY (alignments_id) REFERENCES alignments(alignments_id),
   FOREIGN KEY (sizes_id) REFERENCES sizes(sizes_id),
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
-
 );
 
 CREATE TABLE monsterflavortexttypes (
@@ -76,8 +75,9 @@ CREATE TABLE monsters_immunities (
 CREATE TABLE monsters_skills (
   id INTEGER PRIMARY KEY,
   monsters_id INTEGER NOT NULL,
-  skills_id INTEGER NOT NULL,
-  skill_mod INTEGER NOT NULL,
+  skills_id INTEGER NOT NULL, -- will ID the specific skill
+  skill_mod INTEGER NOT NULL, -- will hold the modifier value
+  UNIQUE(monsters_id, skills_id), -- so we don't get duplicate rows for a specific monster
   FOREIGN KEY (monsters_id) REFERENCES monsters(monsters_id),
   FOREIGN KEY (skills_id) REFERENCES skills(skills_id)
 );
@@ -85,9 +85,9 @@ CREATE TABLE monsters_skills (
 CREATE TABLE monsters_traits (
   id INTEGER PRIMARY KEY,
   monsters_id INTEGER NOT NULL,
-  traits_id INTEGER NOT NULL,
+  trait_id INTEGER NOT NULL,
   FOREIGN KEY (monsters_id) REFERENCES monsters(monsters_id),
-  FOREIGN KEY (traits_id) REFERENCES traits(traits_id)
+  FOREIGN KEY (traits_id) REFERENCES traits(trait_id)
 );
 
 -- TODO does this need to be separate table for monsters only or share the main
