@@ -24,7 +24,6 @@ CREATE TABLE damagetypes (
   damagecategories_id INTEGER NOT NULL,
   "abbr" TEXT,
   "name" TEXT NOT NULL UNIQUE,
-  descr TEXT,
   FOREIGN KEY (damagecategories_id) REFERENCES damagecategories(damagecategories_id),
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
 );
