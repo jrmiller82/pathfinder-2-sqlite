@@ -4,6 +4,8 @@
 
 CREATE TABLE sources (
   sources_id INTEGER PRIMARY KEY,
+  isbn TEXT,
+  pzocode TEXT,
   sources_full_name TEXT NOT NULL UNIQUE,
   sources_short_name TEXT NOT NULL UNIQUE,
   sources_abbrev TEXT NOT NULL UNIQUE,
