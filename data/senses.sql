@@ -39,6 +39,6 @@ VALUES
   (26,'Entropysense','A voidworm can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. A creature under the effects of nondetection or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.'),
   (27,'Websense','TODO'),
   (28,'Heatsight','Heatsight is a precise sense that sees heat signatures.'),
-  (29,'Sinscent',"This creature has scent against creatures whose nature reflects it's sin. For example, wrathful sinspawn can scent creatures using rage effects. The GM should adjudicate what creatures a particular sinspawn can scent.");
+  (29,'Sinscent','This creature has scent against creatures whose nature reflects it''s sin. For example, wrathful sinspawn can scent creatures using rage effects. The GM should adjudicate what creatures a particular sinspawn can scent.');
 
 
