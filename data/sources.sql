@@ -51,4 +51,3 @@ VALUES
 '2019',
 1,
 'Age of Ashes Player''s Guide © 2019, Paizo Inc.; Authors: James Jacobs with Amanda Hamon.');
-
