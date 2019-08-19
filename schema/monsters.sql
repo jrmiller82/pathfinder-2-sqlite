@@ -4,22 +4,26 @@ PRAGMA foreign_keys = ON;
 
 -- TODO needs data
 
-CREATE TABLE monstercategories(
-  monstercategories_id INTEGER PRIMARY KEY,
-  is_comty_use BOOLEAN NOT NULL, -- false = no community use policy req
-  "name" TEXT NOT NULL UNIQUE
-);
+-- CREATE TABLE monstercategories(
+--   monstercategories_id INTEGER PRIMARY KEY,
+--   is_comty_use BOOLEAN NOT NULL, -- false = no community use policy req
+--   "name" TEXT NOT NULL UNIQUE
+-- );
 
 -- Rarity will be by trait
 -- Monster 'type' will be by trait
--- Monster 'category/family' will be by FK to table
+-- Monster category is also by trait
+
+-- So the bestiary breaks down trait versus category or family, but then sticks
+-- them all in the trait position on the stat block, so I think we just do it
+-- all with traits. Thoughts?
 
 CREATE TABLE monsters (
   monsters_id INTEGER PRIMARY KEY,
   is_comty_use BOOLEAN NOT NULL, -- false = no community use policy req
   sources_id INTEGER,
   sources_pages TEXT,
-  monstercategories_id INTEGER, -- Humanoid etc..
+  -- monstercategories_id INTEGER, -- Humanoid etc..
   "name" TEXT NOT NULL UNIQUE,
   "level" INTEGER,
   alignment_id INTEGER, -- i.e. NG, LE etc..
@@ -44,7 +48,7 @@ CREATE TABLE monsters (
               -- this is more for getting markdown formatting of the stat block
               -- in one nice column.
   FOREIGN KEY (alignments_id) REFERENCES alignments(alignments_id),
-  FOREIGN KEY (monstercategories_id) REFERENCES monstercategories(monstercategories_id),
+  -- FOREIGN KEY (monstercategories_id) REFERENCES monstercategories(monstercategories_id),
   FOREIGN KEY (sizes_id) REFERENCES sizes(sizes_id),
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
 );
