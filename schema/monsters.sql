@@ -2,11 +2,19 @@
 
 PRAGMA foreign_keys = ON;
 
+-- TODO needs data
+
+CREATE TABLE monstertypes(
+  monstertypes_id INTEGER PRIMARY KEY,
+  "name" TEXT NOT NULL UNIQUE
+);
+
 CREATE TABLE monsters (
   monsters_id INTEGER PRIMARY KEY,
   is_comty_use BOOLEAN NOT NULL, -- false = no community use policy req
   sources_id INTEGER,
   sources_pages TEXT,
+  monstertypes_id INTEGER, -- Humanoid etc..
   "name" TEXT NOT NULL UNIQUE,
   "level" INTEGER,
   alignment_id INTEGER, -- i.e. NG, LE etc..
@@ -17,7 +25,7 @@ CREATE TABLE monsters (
   reflex INTEGER,
   will INTEGER,
   hp INTEGER,
-  speed INTEGER,
+  land_speed INTEGER, -- will have separate many-to-many table for other movements
   str_mod INTEGER,
   dex_mod INTEGER,
   con_mod INTEGER,
