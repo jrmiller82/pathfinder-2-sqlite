@@ -4,12 +4,6 @@ PRAGMA foreign_keys = ON;
 
 -- TODO needs data
 
--- CREATE TABLE monstercategories(
---   monstercategories_id INTEGER PRIMARY KEY,
---   is_comty_use BOOLEAN NOT NULL, -- false = no community use policy req
---   "name" TEXT NOT NULL UNIQUE
--- );
-
 -- Rarity will be by trait
 -- Monster 'type' will be by trait
 -- Monster category is also by trait
@@ -35,7 +29,12 @@ CREATE TABLE monsters (
   reflex INTEGER,
   will INTEGER,
   hp INTEGER,
-  land_speed INTEGER, -- will have separate many-to-many table for other movements
+  land_speed INTEGER, -- we decided to make the speeds flattened as they don't
+                      -- save much extra space
+  burrow_speed INTEGER,
+  climb_speed INTEGER,
+  fly_speed INTEGER,
+  swim_speed INTEGER,
   str_mod INTEGER,
   dex_mod INTEGER,
   con_mod INTEGER,
@@ -49,7 +48,6 @@ CREATE TABLE monsters (
               -- this is more for getting markdown formatting of the stat block
               -- in one nice column.
   FOREIGN KEY (alignments_id) REFERENCES alignments(alignments_id),
-  -- FOREIGN KEY (monstercategories_id) REFERENCES monstercategories(monstercategories_id),
   FOREIGN KEY (sizes_id) REFERENCES sizes(sizes_id),
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id),
   FOREIGN KEY (sourceentries_id) REFERENCES sourceentries(sourceentries_id)
@@ -110,15 +108,6 @@ CREATE TABLE monsters_traits (
   FOREIGN KEY (traits_id) REFERENCES traits(trait_id)
 );
 
-CREATE TABLE monster_movements (
-  id INTEGER PRIMARY KEY,
-  monsters_id INTEGER NOT NULL,
-  movements_id INTEGER NOT NULL,
-  movement_speed INTEGER NOT NULL, -- this is the actual monster speed
-  UNIQUE (monsters_id, movements_id), -- prevent duplicates
-  FOREIGN KEY (monsters_id) REFERENCES monsters(monsters_id),
-  FOREIGN KEY (movements_id) REFERENCES movements(movements_id)
-);
 
 -- TODO does this need to be separate table for monsters only or share the main
 -- actions table
