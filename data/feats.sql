@@ -2742,1281 +2742,1300 @@ COMMIT;
 
 BEGIN TRANSACTION;
 -- TODO run a quick script to comment these
-  -- Dwarf Ancestry Trait
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (1,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (2,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (3,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (4,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (5,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (6,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (7,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (8,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (9,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (10,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (11,79);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (12,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (13,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (14,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (15,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (16,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (17,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (18,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (19,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (20,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (21,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (22,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (23,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (24,80);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (25,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (26,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (27,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (28,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (29,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (30,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (31,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (32,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (33,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (34,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (35,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (36,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (37,81);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (38,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (39,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (40,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (41,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (42,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (43,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (44,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (45,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (46,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (47,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (48,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (49,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (50,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (51,82);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (52,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (53,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (54,30);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (54,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (55,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (56,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (57,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (58,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (59,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (60,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (61,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (62,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (63,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (64,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (65,85);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (66,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (67,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (68,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (69,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (70,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (71,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (72,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (73,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (74,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (75,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (76,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (77,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (78,86);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (79,83);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (80,83);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (81,83);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (82,84);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (83,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (84,84);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (85,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (85,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (86,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (87,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (88,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (89,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (90,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (91,182);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (92,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (93,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (94,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (95,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (96,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (97,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (98,1);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (98,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (99,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (100,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (101,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (102,1);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (102,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (103,1);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (103,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (104,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (105,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (106,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (107,1);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (107,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (108,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (109,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (110,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (111,1);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (111,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (112,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (113,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (114,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (115,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (116,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (117,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (118,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (119,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (120,1);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (120,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (121,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (122,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (123,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (124,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (125,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (126,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (127,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (128,1);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (128,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (129,91);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (130,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (132,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (133,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,92); --Note 134 "Sudden Charge" is shared by Barbarians and Fighter;
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (135,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (136,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (136,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (137,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (137,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (138,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (140,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (141,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (143,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (143,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,48);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,216);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,212);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (145,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (146,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (147,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (147,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,213);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,209);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,54);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,216);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,212);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,211);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,54);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,216);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,212);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (152,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,7);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,74);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (155,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (155,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (156,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (156,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (158,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (158,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (159,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (159,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (160,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (160,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,7);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,48);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,216);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,212);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (163,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (163,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,6);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,54);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,212);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (169,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (169,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (171,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (171,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,37);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,54);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,216);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,212);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (173,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (173,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (174,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,30);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (176,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (176,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,7);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,74);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,92);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,59);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (179,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (180,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (182,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (183,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (184,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (185,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (186,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (186,30);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (187,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (188,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (190,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (191,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (192,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (194,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (195,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (196,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (197,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (198,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (201,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (202,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (203,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (204,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (205,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (207,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (208,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (209,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (210,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (211,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (212,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (213,93);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (214,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (215,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (216,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (217,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (218,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (219,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (219,51);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (220,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (220,51);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (221,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (221,51);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (222,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (222,51);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (223,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (224,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (226,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (227,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (228,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (229,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (230,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (231,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (232,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (233,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (234,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (235,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (236,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (237,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (238,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (239,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (240,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (241,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (241,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (242,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (243,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (244,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (245,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (246,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (247,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (248,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (249,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (250,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (251,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (252,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (253,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (254,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (255,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (256,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (257,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (258,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (259,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (260,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (261,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (262,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (263,94);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (264,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (265,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (266,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (267,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (268,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (270,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,33);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,132);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (272,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (272,25);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (273,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (273,33);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (274,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (275,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,214);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,211);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (278,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (279,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (282,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (283,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (284,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (284,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (284,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (285,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,214);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,209);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (287,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (288,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (289,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (290,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (292,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (293,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (295,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (296,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (297,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (298,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (299,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (300,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (301,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (302,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (303,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (304,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (305,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (307,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (308,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (309,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (310,95);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (310,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (311,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (312,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (314,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (316,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (317,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (318,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (319,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (320,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (322,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (323,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (324,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (325,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (326,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (327,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (329,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (330,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (331,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (332,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (333,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (334,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (335,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (336,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (336,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (338,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (339,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (340,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (341,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (342,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (343,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (344,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (345,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (346,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (348,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (349,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (350,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (351,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (352,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (353,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (355,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (355,96);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (356,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (357,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (357,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (359,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (359,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (360,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (361,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (363,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (364,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (365,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (365,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (366,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (366,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (367,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,23);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,27);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,44);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (369,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (370,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (370,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (371,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (371,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (372,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (372,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (373,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (375,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (377,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (378,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (379,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (379,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (380,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (380,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (381,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (382,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (383,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (384,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (385,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (385,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (386,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (387,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (389,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (390,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (391,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (391,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (392,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (392,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (393,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (393,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (394,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (396,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (397,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (397,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (398,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (399,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (399,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (400,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (400,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (401,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (401,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (402,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (403,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (404,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (406,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (406,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (407,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (407,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (408,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (409,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (411,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (411,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (412,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (412,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (413,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (413,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (414,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (415,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (415,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (416,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (416,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (417,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (418,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (419,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (422,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (422,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (423,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (424,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (424,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (425,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (425,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (427,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (428,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (429,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (430,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (430,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (431,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (431,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (432,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (433,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (434,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (435,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (435,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (436,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (436,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (437,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (437,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (438,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (439,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (440,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (441,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (442,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (443,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (444,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (445,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (446,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (447,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (448,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (449,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (450,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,7);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,23);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,27);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,44);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (452,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (453,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (454,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (455,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (456,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (457,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (458,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (459,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (459,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (460,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (461,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (461,68);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (462,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (463,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (464,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (464,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,6);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,34);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (466,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (467,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (468,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (469,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (469,131);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (470,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (471,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (472,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (473,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (474,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (475,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (476,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (477,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,122);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,209);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,23);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,44);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (480,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (481,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (482,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (483,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (484,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (485,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (486,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (487,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (488,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (489,30);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (489,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (490,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (491,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (492,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (492,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (493,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (494,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (494,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (495,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (496,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (496,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (497,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (498,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (498,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (499,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (500,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (501,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (502,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (503,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (504,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (505,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (505,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (506,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (507,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (508,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (509,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (511,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (512,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (514,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (514,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (515,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (516,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (517,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (518,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (519,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (520,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (521,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (522,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (522,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (523,97);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (523,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (524,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (525,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (526,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (527,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (528,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (528,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (529,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (530,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (531,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (532,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,58);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (534,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (535,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (536,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (537,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (538,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (539,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,52);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (542,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (543,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (544,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (544,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (545,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (546,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (547,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (548,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (549,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (550,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (551,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (552,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,23);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,27);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,44);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (554,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (555,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (556,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (557,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (559,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (560,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (560,63);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (561,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (562,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (563,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (563,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (564,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (565,34);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (565,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (567,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (568,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (570,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (572,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (573,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (574,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (575,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (576,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (577,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (578,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (579,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (580,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (581,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (582,34);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (582,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (583,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (584,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (585,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (586,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (586,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (587,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (588,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (588,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (589,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (590,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (591,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (592,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (593,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (594,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (595,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,41);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,49);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (597,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (598,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (598,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (599,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (600,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,100);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (602,205);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (602,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (603,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (604,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (607,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (608,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (609,213);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (609,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (610,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (610,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (611,214);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (611,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (612,215);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (612,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (613,216);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (613,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (614,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (615,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (616,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (617,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (618,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (619,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (619,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (619,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (620,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (620,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (620,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (621,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,20);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,207);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (623,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (623,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (624,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (624,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (626,213);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (626,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (627,214);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (627,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (628,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (629,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (630,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (630,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (631,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (632,101);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (632,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,205);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,213);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (634,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (635,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (636,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (639,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (641,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (643,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (645,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (647,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (649,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (650,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (650,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (650,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (651,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (651,45);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (651,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (652,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (653,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (655,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (657,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (659,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (659,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (660,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (661,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (662,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (664,102);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (666,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (667,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (668,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (669,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (670,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (672,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (673,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (674,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (675,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (676,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (678,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (679,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (680,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (681,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (682,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (683,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (684,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (685,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (687,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (688,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (689,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (690,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (691,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (692,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (693,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (695,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (696,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (697,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (698,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (699,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (700,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (702,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (703,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (704,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (705,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (706,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (707,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (708,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (710,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (711,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (712,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (713,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (714,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (716,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (717,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (718,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (719,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,28);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,98);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (721,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,14);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (723,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (724,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (725,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (726,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (728,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (729,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (730,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (731,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (732,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (733,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (735,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (736,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (737,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (738,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (739,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (740,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (741,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,19);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,50);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (743,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (744,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (745,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (746,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (747,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (748,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (749,4);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (750,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (750,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (751,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (752,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (752,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (753,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (754,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (754,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (755,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,30);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (757,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (757,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (758,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (758,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (759,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (759,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,33);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (761,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (761,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,22);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (763,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (764,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (765,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (765,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (766,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (766,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (767,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (767,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (768,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (768,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (769,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (769,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (770,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (770,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (771,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (771,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (772,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (772,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (773,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (773,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (774,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (775,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (775,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (776,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (776,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (777,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (778,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (778,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (779,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (779,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (780,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (780,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (781,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (781,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (782,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (783,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (784,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (785,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (785,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (786,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (786,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (787,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (787,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (788,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (788,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (789,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (789,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (790,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (790,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (791,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (791,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (792,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (792,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (793,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (793,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (794,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (795,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (796,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (796,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (797,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (797,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,22);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (799,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (799,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (800,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (800,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (801,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (801,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (802,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (803,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (804,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (804,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (805,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (805,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (806,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (806,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (807,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (807,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (808,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (808,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (809,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (809,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (810,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (810,65);
--- TODO BUG SEE ISSUE #45 INSERT INTO feats_traits (feat_id, trait_id) VALUES (811,31);
--- TODO BUG SEE ISSUE #45 INSERT INTO feats_traits (feat_id, trait_id) VALUES (811,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (812,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (812,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (813,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (813,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (814,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (814,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (815,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (815,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (816,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (816,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (817,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (817,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (818,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (818,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (819,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (819,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (820,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (820,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (821,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (821,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (822,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (822,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (823,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (823,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (824,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (824,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (825,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (825,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (826,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (826,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (827,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (827,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (828,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (828,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (829,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (829,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (830,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (830,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (831,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (831,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (832,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (832,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (833,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (833,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,63);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (835,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (836,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (836,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,18);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,23);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,27);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,34);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (838,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (838,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (839,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (840,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (840,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (841,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (841,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (842,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (842,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (843,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (843,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (844,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (844,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (845,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (845,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (846,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (846,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (847,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (847,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (848,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (848,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (849,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (849,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (850,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (850,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (851,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (851,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (852,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (852,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (853,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (853,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (854,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (854,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (855,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,22);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,42);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (858,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (858,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (859,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (859,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (860,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (861,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (862,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (862,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (863,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (863,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (864,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (864,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (865,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (865,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (866,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (866,65);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (867,49);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (867,99);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (868,31);
-INSERT INTO feats_traits (feat_id, trait_id) VALUES (868,65);
+-- Dwarf Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (1,79); -- Dwarven Lore, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (2,79); -- Dwarven Weapon Familiarity, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (3,79); -- Rock Runner, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (4,79); -- Stonecunning, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (5,79); -- Unburdened Iron, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (6,79); -- Vengeful Hatred, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (7,79); -- Boulder Roll, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (8,79); -- Dwarven Weapon Cunning, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (9,79); -- Mountain’s Stoutness, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (10,79); -- Stonewalker, Dwarf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (11,79); -- Dwarven Weapon Expertise, Dwarf
+-- Elven Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (12,80); -- Ancestral Longevity, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (13,80); -- Elven Lore, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (14,80); -- Elven Weapon Familiarity, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (15,80); -- Forlorn, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (16,80); -- Nimble Elf, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (17,80); -- Otherworldly Magic, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (18,80); -- Unwavering Mien, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (19,80); -- Ageless Patience, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (20,80); -- Elven Weapon Elegance, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (21,80); -- Elf Step, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (22,80); -- Expert Longevity, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (23,80); -- Universal Longevity, Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (24,80); -- Elven Weapon Expertise, Elf
+-- Gnome Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (25,81); -- Animal Accomplice, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (26,81); -- Burrow Elocutionist, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (27,81); -- Fey Fellowship, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (28,81); -- First World Magic, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (29,81); -- Gnome Obsession, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (30,81); -- Gnome Weapon Familiarity, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (31,81); -- Illusion Sense, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (32,81); -- Animal Elocutionist, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (33,81); -- Energized Font, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (34,81); -- Gnome Weapon Innovator, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (35,81); -- First World Adept, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (36,81); -- Vivacious Conduit, Gnome
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (37,81); -- Gnome Weapon Expertise, Gnome
+-- Goblin Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (38,82); -- Burn It!, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (39,82); -- City Scavenger, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (40,82); -- Goblin Lore, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (41,82); -- Goblin Scuttle, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (42,82); -- Goblin Song, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (43,82); -- Goblin Weapon Familiarity, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (44,82); -- Junk Tinker, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (45,82); -- Rough Rider, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (46,82); -- Very Sneaky, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (47,82); -- Goblin Weapon Frenzy, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (48,82); -- Cave Climber, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (49,82); -- Skittering Scuttle, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (50,82); -- Goblin Weapon Expertise, Goblin
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (51,82); -- Very, Very Sneaky, Goblin
+-- Halfling Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (52,85); -- Distracting Shadows, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (53,85); -- Halfling Lore, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (54,30); -- Halfling Luck, Fortune
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (54,85); -- Halfling Luck, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (55,85); -- Halfling Weapon Familiarity, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (56,85); -- Sure Feet, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (57,85); -- Titan Slinger, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (58,85); -- Unfettered Halfling, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (59,85); -- Watchful Halfling, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (60,85); -- Cultural Adaptability, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (61,85); -- Halfling Weapon Trickster, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (62,85); -- Guiding Luck, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (63,85); -- Irrepressible, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (64,85); -- Ceaseless Shadows, Halfling
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (65,85); -- Halfling Weapon Expertise, Halfling
+-- Human Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (66,86); -- Adapted Cantrip, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (67,86); -- Cooperative Nature, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (68,86); -- General Training, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (69,86); -- Haughty Obstinacy, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (70,86); -- Natural Ambition, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (71,86); -- Natural Skill, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (72,86); -- Unconventional Weaponry, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (73,86); -- Adaptive Adept, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (74,86); -- Clever Improviser, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (75,86); -- Cooperataive Soul, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (76,86); -- Incredible Improvisation, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (77,86); -- Multitalented, Human
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (78,86); -- Unconventional Expertise, Human
+-- Half-Elf Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (79,83); -- Elf Atavism, Half-Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (80,83); -- Inspire Imitation, Half-Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (81,83); -- Supernatural Charm, Half-Elf
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (82,84); -- Monstrous Peacemaker, Half-Orc
+-- Half-Orc Ancestry Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (83,182); -- Orc Ferocity, Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (84,84); -- Orc Sight, Half-Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (85,14); -- Orc Superstition, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (85,182); -- Orc Superstition, Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (86,182); -- Orc Weapon Famailiarity, Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (87,182); -- Orc Weapon Carnage, Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (88,182); -- Victorious Vigor, Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (89,182); -- Pervasive Superstition, Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (90,182); -- Incredible Ferocity, Orc
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (91,182); -- Orc Weapon Expertise, Orc
+-- Alchemist Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (92,91); -- Alchemical Familiar, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (93,91); -- Alchemical Savant, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (94,91); -- Far Lobber, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (95,91); -- Quick Bomber, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (96,91); -- Poison Resistance (Alchemist), Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (97,91); -- Revivifying Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (98,1); -- Smoke Bomb, Additive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (98,91); -- Smoke Bomb, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (99,91); -- Calculated Splash, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (100,91); -- Efficient Alchemy, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (101,91); -- Enduring Alchemy, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (102,1); -- Combine Elixirs, Additive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (102,91); -- Combine Elixirs, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (103,1); -- Debilitating Bomb, Additive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (103,91); -- Debilitating Bomb, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (104,91); -- Directional Bombs, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (105,91); -- Feral Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (106,91); -- Powerful Alchemy, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (107,1); -- Sticky Bomb, Additive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (107,91); -- Sticky Bomb, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (108,91); -- Elastic Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (109,91); -- Expanded Splash, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (110,91); -- Greater Debilitating Bomb, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (111,1); -- Merciful Elixir, Additive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (111,91); -- Merciful Elixir, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (112,91); -- Potent Poisoner, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (113,91); -- Extend Elixir, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (114,91); -- Invincible Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (115,91); -- Uncanny Bombs, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (116,91); -- Glib Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (117,91); -- Greater Merciful Elixir, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (118,91); -- True Debilitating Bomb, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (119,91); -- Eternal Elixir, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (120,1); -- Exploitive Bomb, Additive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (120,91); -- Exploitive Bomb, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (121,91); -- Genius Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (122,91); -- Persistent Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (123,91); -- Improbable Elixirs, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (124,91); -- Mindblank Mutagen, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (125,91); -- Miracle Worker, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (126,91); -- Perfect Debilitation, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (127,91); -- Craft Philosopher’s Stone, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (128,1); -- Mega Bomb, Additive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (128,91); -- Mega Bomb, Alchemist
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (129,91); -- Perfect Mutagen, Alchemist
+-- Barbarian Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (130,92); -- Acute Vision, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,92); -- Moment of Clarity, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,14); -- Moment of Clarity, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (131,59); -- Moment of Clarity, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (132,92); -- Raging Intimidation, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (133,92); -- Raging Thrower, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,92); -- Sudden Charge, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,97); -- Sudden Charge, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,28); -- Sudden Charge, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (134,52); -- Sudden Charge, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (135,92); -- Acute Scent, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (136,92); -- Furious Finish, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (136,59); -- Furious Finish, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (137,92); -- No Escape, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (137,59); -- No Escape, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (138,92); -- Second Wind, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,92); -- Shake it Off, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,14); -- Shake it Off, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (139,59); -- Shake it Off, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (140,92); -- Fast Movement, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (141,92); -- Raging Athlete, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,92); -- Swipe, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,97); -- Swipe, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (142,28); -- Swipe, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (143,92); -- Wounded Rage, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (143,59); -- Wounded Rage, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,92); -- Animal Skin, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,37); -- Animal Skin, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,48); -- Animal Skin, Morph
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,216); -- Animal Skin, Primal
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (144,212); -- Animal Skin, Transmutation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (145,92); -- Attack of Opportunity (Barbarian), Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (146,92); -- Brutal Bully, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (147,92); -- Cleave, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (147,59); -- Cleave, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,213); -- Dragon’s Rage Breath, Arcane
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,92); -- Dragon’s Rage Breath, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,14); -- Dragon’s Rage Breath, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,209); -- Dragon’s Rage Breath, Evocation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,37); -- Dragon’s Rage Breath, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (148,59); -- Dragon’s Rage Breath, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,92); -- Giant’s Stature, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,37); -- Giant’s Stature, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,54); -- Giant’s Stature, Polymorph
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,216); -- Giant’s Stature, Primal
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,59); -- Giant’s Stature, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (149,212); -- Giant’s Stature, Transmutation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,92); -- Spirits’ Interference, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,37); -- Spirits’ Interference, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,211); -- Spirits’ Interference, Necromancy
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (150,59); -- Spirits’ Interference, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,92); -- Animal Rage, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,14); -- Animal Rage, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,37); -- Animal Rage, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,54); -- Animal Rage, Polymorph
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,216); -- Animal Rage, Primal
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,59); -- Animal Rage, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (151,212); -- Animal Rage, Transmutation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (152,92); -- Furious Bully, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,92); -- Renewed Vigor, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,14); -- Renewed Vigor, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (153,59); -- Renewed Vigor, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,7); -- Share Rage, Auditory
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,92); -- Share Rage, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,59); -- Share Rage, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (154,74); -- Share Rage, Visual
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (155,92); -- Sudden Leap (Barbarian), Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (155,97); -- Sudden Leap (Barbarian), Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (156,92); -- Thrash, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (156,59); -- Thrash, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,92); -- Come and Get Me, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,14); -- Come and Get Me, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (157,59); -- Come and Get Me, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (158,92); -- Furious Sprint, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (158,59); -- Furious Sprint, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (159,92); -- Great Cleave, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (159,59); -- Great Cleave, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (160,92); -- Knockback, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (160,59); -- Knockback, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,7); -- Terrifying Howl, Auditory
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,92); -- Terrifying Howl, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (161,59); -- Terrifying Howl, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,92); -- Dragon’s Rage Wings, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,37); -- Dragon’s Rage Wings, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,48); -- Dragon’s Rage Wings, Morph
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,216); -- Dragon’s Rage Wings, Primal
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,59); -- Dragon’s Rage Wings, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (162,212); -- Dragon’s Rage Wings, Transmutation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (163,92); -- Furious Grab, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (163,59); -- Furious Grab, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,92); -- Predator’s Pounce, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,28); -- Predator’s Pounce, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,37); -- Predator’s Pounce, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (164,59); -- Predator’s Pounce, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,6); -- Spirit’s Wrath, Attack
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,92); -- Spirit’s Wrath, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,14); -- Spirit’s Wrath, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,37); -- Spirit’s Wrath, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,52); -- Spirit’s Wrath, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (165,59); -- Spirit’s Wrath, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,92); -- Titan’s Stature, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,37); -- Titan’s Stature, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,54); -- Titan’s Stature, Polymorph
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (166,212); -- Titan’s Stature, Transmutation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,92); -- Awesome Blow, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,14); -- Awesome Blow, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (167,59); -- Awesome Blow, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,92); -- Giant’s Lunge, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,14); -- Giant’s Lunge, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (168,37); -- Giant’s Lunge, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (169,92); -- Vengeful Strike, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (169,59); -- Vengeful Strike, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,92); -- Whirlwind Strike, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,97); -- Whirlwind Strike, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,28); -- Whirlwind Strike, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (170,52); -- Whirlwind Strike, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (171,92); -- Collateral Thrash, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (171,59); -- Collateral Thrash, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,92); -- Dragon Transformation, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,14); -- Dragon Transformation, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,37); -- Dragon Transformation, Instinct
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,54); -- Dragon Transformation, Polymorph
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,216); -- Dragon Transformation, Primal
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,59); -- Dragon Transformation, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (172,212); -- Dragon Transformation, Transmutation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (173,92); -- Reckless Abandon, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (173,59); -- Reckless Abandon, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (174,92); -- Brutal Critical, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,92); -- Perfect Clarity, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,14); -- Perfect Clarity, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,30); -- Perfect Clarity, Fortune
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (175,59); -- Perfect Clarity, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (176,92); -- Vicious Evisceration, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (176,59); -- Vicious Evisceration, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,7); -- Contagious Rage, Auditory
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,92); -- Contagious Rage, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,59); -- Contagious Rage, Rage
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (177,74); -- Contagious Rage, Visual
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,92); -- Quaking Stomp, Barbarian
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,42); -- Quaking Stomp, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (178,59); -- Quaking Stomp, Rage
+-- Bard Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (179,93); -- Bardic Lore, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (180,93); -- Lingering Composition, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,93); -- Reach Spell, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,95); -- Reach Spell, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,14); -- Reach Spell, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,96); -- Reach Spell, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,45); -- Reach Spell, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,101); -- Reach Spell, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (181,102); -- Reach Spell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (182,93); -- Versatile Performance, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (183,93); -- Cantrip Expansion (Bard), Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (184,93); -- Esoteric Polymath, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (185,93); -- Inspire Competence, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (186,93); -- Loremaster’s Etude, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (186,30); -- Loremaster’s Etude, Fortune
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (187,93); -- Multifarious Muse, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (188,93); -- Inspire Defense, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,93); -- Melodious Spell, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,14); -- Melodious Spell, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,42); -- Melodious Spell, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (189,45); -- Melodious Spell, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (190,93); -- Triple Time, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (191,93); -- Versatile Signature, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (192,93); -- Dirge of Doom, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,93); -- Harmonize, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,14); -- Harmonize, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,42); -- Harmonize, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (193,45); -- Harmonize, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (194,93); -- Steady Spellcasting (Bard), Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (195,93); -- Eclectic Skill, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (196,93); -- Inspire Heroics, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (197,93); -- Know-It-All, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (198,93); -- House of Imaginary Walls, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,93); -- Quickened Casting (Bard), Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,14); -- Quickened Casting (Bard), Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (199,45); -- Quickened Casting (Bard), Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,93); -- Unusual Composition, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,14); -- Unusual Composition, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,42); -- Unusual Composition, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (200,45); -- Unusual Composition, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (201,93); -- Eclectic Polymath, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (202,93); -- Inspirational Focus, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (203,93); -- Allegro, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (204,93); -- Soothing Ballad, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (205,93); -- True Hypercognition, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,93); -- Effortless Concentration, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,96); -- Effortless Concentration, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,101); -- Effortless Concentration, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (206,102); -- Effortless Concentration, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (207,93); -- Studious Capacity, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (208,93); -- Deep Lore, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (209,93); -- Eternal Composition, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (210,93); -- Impossible Polymath, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (211,93); -- Fatal Aria, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (212,93); -- Perfect Encore, Bard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (213,93); -- Symphony of the Muse, Bard
+-- Champion Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (214,94); -- Deity’s Domain, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (215,94); -- Ranged Reprisal, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (216,94); -- Unimpeded Step, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (217,94); -- Weight of Guilt, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (218,94); -- Divine Grace, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (219,94); -- Dragonslayer Oath, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (219,51); -- Dragonslayer Oath, Oath
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (220,94); -- Fiendsbane Oath, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (220,51); -- Fiendsbane Oath, Oath
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (221,94); -- Shining Oath, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (221,51); -- Shining Oath, Oath
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (222,94); -- Vengeful Oath, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (222,51); -- Vengeful Oath, Oath
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (223,94); -- Aura of Courage, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (224,94); -- Divine Health, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,94); -- Mercy, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,14); -- Mercy, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (225,45); -- Mercy, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (226,94); -- Attack of Opportunity, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (227,94); -- Litany Against Wrath, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (228,94); -- Loyal Warhouse, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (229,94); -- Shield Warden (Champion), Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (230,94); -- Smite Evil, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (231,94); -- Advanced Deity’s Domain, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (232,94); -- Greater Mercy, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (233,94); -- Heal Mount, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (234,94); -- Quick Block, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (235,94); -- Second Ally, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (236,94); -- Sense Evil, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (237,94); -- Devoted Focus, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (238,94); -- Imposing Destrier, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (239,94); -- Litany Against Sloth, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (240,94); -- Radiant Blade Spirit, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (241,94); -- Shield of Reckoning, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (241,28); -- Shield of Reckoning, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (242,94); -- Affliction Mercy, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (243,94); -- Aura of Faith, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (244,94); -- Blade of Justice, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (245,94); -- Champion’s Sacrifice, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (246,94); -- Divine Wall, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (247,94); -- Lasting Doubt, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (248,94); -- Liberating Stride, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (249,94); -- Anchoring Aura, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (250,94); -- Aura of Life, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (251,94); -- Aura of Righteousness, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (252,94); -- Aura of Vengeance, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (253,94); -- Divine Reflexes, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (254,94); -- Litany of Righteousness, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (255,94); -- Wyrmbane Aura, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (256,94); -- Auspicious Mount, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (257,94); -- Instrument of Zeal, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (258,94); -- Shield of Grace, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (259,94); -- Celestial Form, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (260,94); -- Ultimate Mercy, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (261,94); -- Celestial Mount, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (262,94); -- Radiant Blade Master, Champion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (263,94); -- Shield Paragon, Champion
+-- Cleric Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (264,95); -- Deadly Simplicity, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (265,95); -- Domain Initiate, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (266,95); -- Harming Hands, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (267,95); -- Healing Hands, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (268,95); -- Holy Castigation, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (270,95); -- Cantrip Expansion (Cleric), Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,95); -- Communal Healing, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,33); -- Communal Healing, Healing
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (271,132); -- Communal Healing, Positive
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (272,95); -- Emblazon Armament, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (272,25); -- Emblazon Armament, Exploration
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (273,95); -- Sap Life, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (273,33); -- Sap Life, Healing
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (274,95); -- Turn Undead, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (275,95); -- Versatile Font, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,95); -- Channel Smite, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,214); -- Channel Smite, Divine
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (276,211); -- Channel Smite, Necromancy
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,95); -- Command Undead, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,14); -- Command Undead, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (277,45); -- Command Undead, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (278,95); -- Directed Channel, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (279,95); -- Improved Communal Healing, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,95); -- Necrotic Infusion, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,14); -- Necrotic Infusion, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (280,45); -- Necrotic Infusion, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,95); -- Cast Down, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,14); -- Cast Down, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (281,45); -- Cast Down, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (282,95); -- Divine Weapon, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (283,95); -- Selective Energy, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (284,95); -- Steady Spellcasting, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (284,96); -- Steady Spellcasting, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (284,102); -- Steady Spellcasting, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (285,95); -- Advanced Domain, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,95); -- Align Armament, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,214); -- Align Armament, Divine
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (286,209); -- Align Armament, Evocation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (287,95); -- Channeled Succor, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (288,95); -- Cremate Undead, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (289,95); -- Emblazon Energy, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (290,95); -- Castigating Weapon, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,95); -- Heroic Recovery, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,14); -- Heroic Recovery, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (291,45); -- Heroic Recovery, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (292,95); -- Improved Command Undead, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (293,95); -- Replenishment of War, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,95); -- Defensive Recovery, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,14); -- Defensive Recovery, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (294,45); -- Defensive Recovery, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (295,95); -- Domain Focus, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (296,95); -- Emblazon Antimagic, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (297,95); -- Shared Replenishment, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (298,95); -- Deity’s Protection, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (299,95); -- Extend Armament Alignment, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (300,95); -- Fast Channel, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (301,95); -- Swift Banishment, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (302,95); -- Eternal Bane, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (303,95); -- Eternal Blessing, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (304,95); -- Resurrectionist, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (305,95); -- Domain Wellspring, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,95); -- Echoing Channel, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,14); -- Echoing Channel, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (306,45); -- Echoing Channel, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (307,95); -- Improved Swift Banishment, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (308,95); -- Avatar’s Audience, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (309,95); -- Maker of Miracles, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (310,95); -- Metamagic Channel, Cleric
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (310,14); -- Metamagic Channel, Concentrate
+-- Druid Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (311,96); -- Animal Companion (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (312,96); -- Leshy Familiar, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (314,96); -- Storm Born, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,96); -- Widen Spell, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,42); -- Widen Spell, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,45); -- Widen Spell, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,101); -- Widen Spell, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (315,102); -- Widen Spell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (316,96); -- Wild Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (317,96); -- Call of the Wild, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (318,96); -- Enhanced Familiar (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (319,96); -- Order Explorer, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (320,96); -- Poison Resistance (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,96); -- Form Control, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,42); -- Form Control, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (321,45); -- Form Control, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (322,96); -- Mature Animal Companion (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (323,96); -- Order Magic, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (324,96); -- Thousand Faces, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (325,96); -- Woodland Stride, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (326,96); -- Green Empathy, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (327,96); -- Insect Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (329,96); -- Storm Retribution, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (330,96); -- Ferocious Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (331,96); -- Fey Caller, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (332,96); -- Incredible Companion (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (333,96); -- Soaring Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (334,96); -- Wind Caller, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (335,96); -- Elemental Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (336,96); -- Healing Transformation, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (336,45); -- Healing Transformation, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,96); -- Overwhelming Energy (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,42); -- Overwhelming Energy (Druid), Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (337,45); -- Overwhelming Energy (Druid), Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (338,96); -- Plant Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (339,96); -- Side by Side (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (340,96); -- Dragon Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (341,96); -- Green Tongue, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (342,96); -- Primal Focus, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (343,96); -- Primal Summons, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (344,96); -- Specialized Companion (Druid), Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (345,96); -- Timeless Nature, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (346,96); -- Verdant Metamorphosis, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (348,96); -- Impaling Briars, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (349,96); -- Monstrosity Shape, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (350,96); -- Invoke Disaster, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (351,96); -- Perfect Form Control, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (352,96); -- Primal Wellspring, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (353,96); -- Hierophant’s Power, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,14); -- Leyline Conduit, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,96); -- Leyline Conduit, Druid
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,42); -- Leyline Conduit, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (354,45); -- Leyline Conduit, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (355,14); -- True Shapeshifter, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (355,96); -- True Shapeshifter, Druid
+-- Fighter Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (356,97); -- Double Slice, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (357,97); -- Exacting Strike, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (357,58); -- Exacting Strike, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,97); -- Point-Blank Shot, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,52); -- Point-Blank Shot, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (358,68); -- Point-Blank Shot, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (359,97); -- Power Attack, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (359,28); -- Power Attack, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (360,97); -- Reactive Shield, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (361,97); -- Snagging Strike, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (363,97); -- Aggressive Block, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (364,97); -- Assisting Shot, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (365,97); -- Brutish Shove, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (365,58); -- Brutish Shove, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (366,97); -- Combat Grab, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (366,58); -- Combat Grab, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (367,97); -- Dueling Parry, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,23); -- Intimidating Strike, Emotion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,27); -- Intimidating Strike, Fear
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,97); -- Intimidating Strike, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (368,44); -- Intimidating Strike, Mental
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (369,97); -- Lunge, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (370,97); -- Double Shot, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (370,28); -- Double Shot, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (371,97); -- Dual-Handed Assault, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (371,28); -- Dual-Handed Assault, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (372,97); -- Knockdown, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (372,28); -- Knockdown, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (373,97); -- Powerful Shove, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,97); -- Quick Reversal, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,28); -- Quick Reversal, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (374,58); -- Quick Reversal, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (375,97); -- Shielded Stride, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (377,97); -- Twin Parry, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (378,97); -- Advanced Weapon Training, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (379,97); -- Advantageous Assault, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (379,58); -- Advantageous Assault, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (380,97); -- Disarming Stance, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (380,68); -- Disarming Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (381,97); -- Furious Focus, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (382,97); -- Guardian’s Deflection, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (383,97); -- Reflexive Shield, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (384,97); -- Revealing Stab, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (385,97); -- Shatter Defenses, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (385,58); -- Shatter Defenses, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (386,97); -- Shield Warden (Fighter), Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (387,97); -- Triple Shot, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,97); -- Blind-Fight, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,99); -- Blind-Fight, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (388,100); -- Blind-Fight, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (389,97); -- Dueling Riposte, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (390,97); -- Felling Strike, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (391,14); -- Incredible Aim, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (391,97); -- Incredible Aim, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (392,97); -- Mobile Shot Stance, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (392,68); -- Mobile Shot Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (393,97); -- Positioning Assault, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (393,28); -- Positioning Assault, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (394,97); -- Quick Shield Block, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (396,97); -- Agile Grace, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (397,97); -- Certain Strike, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (397,58); -- Certain Strike, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (398,97); -- Combat Reflexes, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (399,97); -- Debilitating Shot, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (399,28); -- Debilitating Shot, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (400,97); -- Disarming Twist, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (400,58); -- Disarming Twist, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (401,97); -- Disruptive Stance, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (401,68); -- Disruptive Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (402,97); -- Fearsome Brute, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (403,97); -- Improved Knockdown, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (404,97); -- Mirror Shield, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (406,97); -- Brutal Finish, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (406,58); -- Brutal Finish, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (407,97); -- Dueling Dance, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (407,68); -- Dueling Dance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (408,97); -- Flinging Shove, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (409,97); -- Improved Dueling Riposte, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,14); -- Incredible Ricochet, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,97); -- Incredible Ricochet, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (410,58); -- Incredible Ricochet, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (411,97); -- Lunging Stance, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (411,68); -- Lunging Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (412,97); -- Paragon’s Guard, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (412,68); -- Paragon’s Guard, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (413,97); -- Spring Attack, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (413,58); -- Spring Attack, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (414,97); -- Desperate Finisher, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (415,14); -- Determination, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (415,97); -- Determination, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (416,97); -- Guiding Finish, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (416,58); -- Guiding Finish, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (417,97); -- Guiding Riposte, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (418,97); -- Improved Twin Riposte (Fighter), Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (419,97); -- Stance Savant (Fighter), Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,97); -- Two-Weapon Flurry, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,28); -- Two-Weapon Flurry, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (420,58); -- Two-Weapon Flurry, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (422,97); -- Graceful Poise, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (422,68); -- Graceful Poise, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (423,97); -- Improved Reflexive Shield, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (424,97); -- Multishot Stance, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (424,68); -- Multishot Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (425,97); -- Twinned Defense, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (425,68); -- Twinned Defense, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,97); -- Impossible Volley, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,28); -- Impossible Volley, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,52); -- Impossible Volley, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (426,99); -- Impossible Volley, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (427,97); -- Savage Critical, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (428,97); -- Boudless Reprisals, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (429,97); -- Weapon Supremacy, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (430,98); -- Crane Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (430,68); -- Crane Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (431,98); -- Dragon Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (431,68); -- Dragon Stance, Stance
+-- Monk Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (432,98); -- Ki Rush, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (433,98); -- Ki Strike, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (434,98); -- Monastic Weaponry, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (435,98); -- Mountain Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (435,68); -- Mountain Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (436,98); -- Tiger Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (436,68); -- Tiger Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (437,98); -- Wolf Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (437,68); -- Wolf Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (438,98); -- Brawling Focus, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (439,98); -- Crushing Grab, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (440,98); -- Dancing Leaf, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (441,98); -- Elemental Fist, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (442,98); -- Stunning Fist, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (443,98); -- Deflect Arrows, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (444,98); -- Flurry of Maneuvers, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (445,98); -- Flying Kick, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (446,98); -- Guarded Movement, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (447,98); -- Stand Still, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (448,98); -- Wholeness of Body, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (449,98); -- Abundant Step, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (450,98); -- Crane Flutter, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,7); -- Dragon Roar, Auditory
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,23); -- Dragon Roar, Emotion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,27); -- Dragon Roar, Fear
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,44); -- Dragon Roar, Mental
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (451,98); -- Dragon Roar, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (452,98); -- Ki Blast, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (453,98); -- Mountain Stronghold, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (454,98); -- Tiger Slash, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (455,98); -- Water Step, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (456,98); -- Whirling Throw, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (457,98); -- Wolf Drag, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (458,98); -- Arrow Snatching , Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (459,98); -- Ironblood Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (459,68); -- Ironblood Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (460,98); -- Mixed Maneuver, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (461,98); -- Tangled Forest Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (461,68); -- Tangled Forest Stance, Stance
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (462,98); -- Wall Run, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (463,98); -- Wild Winds Initiate, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (464,14); -- Knockback Strike, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (464,98); -- Knockback Strike, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,6); -- Sleeper Hold, Attack
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,34); -- Sleeper Hold, Incapacitation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (465,98); -- Sleeper Hold, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (466,98); -- Wind Jump, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (467,98); -- Winding Flow, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (468,98); -- Diamond Soul, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (469,98); -- Disrupt Ki, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (469,131); -- Disrupt Ki, Negative
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (470,98); -- Improved Knockback, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (471,98); -- Meditative Focus, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (472,98); -- Stance Savant (Monk), Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (473,98); -- Ironblood Surge, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (474,98); -- Moutain Quake, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (475,98); -- Tangled Forest Rake, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (476,98); -- Timeless Body, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (477,98); -- Tongue of the Sun and Moon, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,122); -- Wild Winds Gust, Air
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,14); -- Wild Winds Gust, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,209); -- Wild Winds Gust, Evocation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,42); -- Wild Winds Gust, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (478,98); -- Wild Winds Gust, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,23); -- Enlightened Presence, Emotion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,44); -- Enlightened Presence, Mental
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (479,98); -- Enlightened Presence, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (480,98); -- Master of Many Styles, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (481,98); -- Quivering Palm, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (482,98); -- Shattering Strike, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (483,98); -- Diamond Fists, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (484,98); -- Empty Body, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (485,98); -- Meditative Wellspring, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (486,98); -- Swift River, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (487,98); -- Enduring Quickness, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (488,98); -- Fuse Stance, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (489,30); -- Impossible Technique, Fortune
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (489,98); -- Impossible Technique, Monk
+-- Ranger Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (490,99); -- Animal Companion (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (491,99); -- Crossbow Ace, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (492,28); -- Hunted Shot, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (492,99); -- Hunted Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (493,99); -- Monster Hunter, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (494,28); -- Twin Takedown, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (494,99); -- Twin Takedown, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (495,99); -- Favored Terrain, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (496,14); -- Hunter’s Aim, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (496,99); -- Hunter’s Aim, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (497,99); -- Monster Warden, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (498,99); -- Quick Draw, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (498,100); -- Quick Draw, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (499,99); -- Wild Empathy, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (500,99); -- Companion’s Cry, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (501,99); -- Disrupt Prey, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (502,99); -- Far Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (503,99); -- Favored Enemy, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (504,99); -- Running Reload, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (505,99); -- Scout’s Warning, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (505,100); -- Scout’s Warning, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (506,99); -- Snare Specialist, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (507,99); -- Twin Parry (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (508,99); -- Mature Animal Companion (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (509,99); -- Quick Snares, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,28); -- Skirmish Strike, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,99); -- Skirmish Strike, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (510,100); -- Skirmish Strike, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (511,99); -- Snap Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (512,99); -- Swift Tracker, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (514,52); -- Deadly Aim, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (514,99); -- Deadly Aim, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (515,99); -- Hazard Finder, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (516,99); -- Powerful Snares, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (517,99); -- Terrain Master, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (518,99); -- Warden’s Boon, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (519,99); -- Camouflage, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (520,99); -- Incredible Companion (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (521,99); -- Master Monster Hunter, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (522,52); -- Penetrating Shot, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (522,99); -- Penetrating Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (523,97); -- Twin Riposte, Fighter
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (523,99); -- Twin Riposte, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (524,99); -- Warden’s Step, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (525,99); -- Distracting Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (526,99); -- Double Prey, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (527,99); -- Lightning Snares, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (528,58); -- Second Sting, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (528,99); -- Second Sting, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (529,99); -- Side by Side (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (530,99); -- Sense the Unseen (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (531,99); -- Shared Prey, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (532,99); -- Stealthy Companion, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,14); -- Targeting Shot, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,58); -- Targeting Shot, Press
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (533,99); -- Targeting Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (534,99); -- Warden’s Guidance, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (535,99); -- Greater Distracting Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (536,99); -- Improved Twin Riposte (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (537,99); -- Legendary Monster Hunter, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (538,99); -- Specialized Companion (Ranger), Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (539,99); -- Ubiquitous Snares, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,28); -- Impossible Flurry, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,52); -- Impossible Flurry, Open
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (540,99); -- Impossible Flurry, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (542,99); -- Manifold Edge, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (543,99); -- Masterful Companion, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (544,28); -- Perfect Shot, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (544,99); -- Perfect Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (545,99); -- Shadow Hunter, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (546,99); -- Legendary Shot, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (547,99); -- To the Ends of the Earth, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (548,99); -- Triple Threat, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (549,99); -- Ultimate Skirmisher, Ranger
+-- Rogue Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (550,100); -- Nimble Dodge, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (551,100); -- Trap Finder, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (552,100); -- Twin Feint, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,23); -- You’re Next, Emotion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,27); -- You’re Next, Fear
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,44); -- You’re Next, Mental
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (553,100); -- You’re Next, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (554,100); -- Brutal Beating, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (555,100); -- Distracting Feint, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (556,100); -- Minor Magic, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (557,100); -- Mobility, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (559,100); -- Unbalancing Blow, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (560,100); -- Battle Assessment, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (560,63); -- Battle Assessment, Secret
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (561,100); -- Dread Striker, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (562,100); -- Magical Trickster, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (563,42); -- Poison Weapon, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (563,100); -- Poison Weapon, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (564,100); -- Reactive Pursuit, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (565,34); -- Sabotage, Incapacitation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (565,100); -- Sabotage, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (567,100); -- Gang Up, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (568,100); -- Light Step, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (570,100); -- Twist the Knife, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (572,100); -- Delay Trap, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (573,100); -- Improved Poison Weapon, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (574,100); -- Nimble Roll, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (575,100); -- Opportune Backstab, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (576,100); -- Sidestep, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (577,100); -- Sly Striker, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (578,100); -- Precise Debilitation, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (579,100); -- Sneak Savant, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (580,100); -- Tactical Debilitations, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (581,100); -- Vicious Debilitations, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (582,34); -- Critical Debilitations, Incapacitation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (582,100); -- Critical Debilitations, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (583,100); -- Fantastic Leap, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (584,100); -- Felling Shot, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (585,100); -- Reactive Interference, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (586,28); -- Spring from the Shadows, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (586,100); -- Spring from the Shadows, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (587,100); -- Defensive Roll, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (588,14); -- Instant Opening, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (588,100); -- Instant Opening, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (589,100); -- Leave an Opening, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (590,100); -- Sense the Unseen (Rogue), Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (591,100); -- Blank Slate, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (592,100); -- Cloud Step, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (593,100); -- Cognitive Loophole, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (594,100); -- Dispelling Slice, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (595,100); -- Perfect Distraction, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,41); -- Implausible Infiltration, Magical
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,49); -- Implausible Infiltration, Move
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (596,100); -- Implausible Infiltration, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (597,100); -- Powerful Sneak, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (598,14); -- Trickster’s Ace, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (598,100); -- Trickster’s Ace, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (599,100); -- Hidden Paragon, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (600,100); -- Impossible Striker, Rogue
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,14); -- Reactive Distraction, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,42); -- Reactive Distraction, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (601,100); -- Reactive Distraction, Rogue
+-- Sorcerer Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (602,205); -- Counterspell (Spontaneous), Abjuration
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (602,101); -- Counterspell (Spontaneous), Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (603,101); -- Dangerous Sorcery, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (604,101); -- Familiar (Sorcerer), Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (607,101); -- Cantrip Expansion (Sorcerer), Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (608,101); -- Enhanced Familiar (Sorcerer), Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (609,213); -- Arcane Evolution, Arcane
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (609,101); -- Arcane Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (610,101); -- Bespell Weapon, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (610,102); -- Bespell Weapon, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (611,214); -- Divine Evolution, Divine
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (611,101); -- Divine Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (612,215); -- Occult Evolution, Occult
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (612,101); -- Occult Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (613,216); -- Primal Evolution, Primal
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (613,101); -- Primal Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (614,101); -- Advanced Bloodline, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (615,101); -- Steady Spellcasting (Sorcerer), Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (616,101); -- Bloodline Resistance, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (617,101); -- Crossblooded Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (618,101); -- Greater Bloodline, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (619,42); -- Overwhelming Energy (Sorcerer), Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (619,45); -- Overwhelming Energy (Sorcerer), Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (619,101); -- Overwhelming Energy (Sorcerer), Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (620,14); -- Quickened Casting (Sorcerer), Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (620,45); -- Quickened Casting (Sorcerer), Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (620,101); -- Quickened Casting (Sorcerer), Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (621,101); -- Bloodline Focus, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,20); -- Magic Sense, Detection
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,207); -- Magic Sense, Divination
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,101); -- Magic Sense, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (622,102); -- Magic Sense, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (623,45); -- Interweave Dispel, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (623,101); -- Interweave Dispel, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (624,101); -- Reflect Spell, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (624,102); -- Reflect Spell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (626,213); -- Greater Mental Evolution, Arcane
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (626,101); -- Greater Mental Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (627,214); -- Greater Vital Evolution, Divine
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (627,101); -- Greater Vital Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (628,101); -- Bloodline Wellspring, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (629,101); -- Greater Crossblooded Evolution, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (630,45); -- Bloodline Conduit, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (630,101); -- Bloodline Conduit, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (631,101); -- Bloodline Perfection, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (632,101); -- Metamagic Mastery, Sorcerer
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (632,102); -- Metamagic Mastery, Wizard
+-- Wizard Class Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,205); -- Counterspell (Prepared), Abjuration
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,213); -- Counterspell (Prepared), Arcane
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (633,102); -- Counterspell (Prepared), Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (634,102); -- Eschew Materials, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (635,102); -- Familiar (Wizard), Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (636,102); -- Hand of the Apprentice, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (639,102); -- Cantrip Expansion (Wizard), Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,14); -- Conceal Spell, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,42); -- Conceal Spell, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,45); -- Conceal Spell, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (640,102); -- Conceal Spell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (641,102); -- Enhanced Familiar (Wizard), Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (643,102); -- Linked Focus, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,14); -- Silent Spell, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,45); -- Silent Spell, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (644,102); -- Silent Spell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (645,102); -- Spell Penetration, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (647,102); -- Advanced School Spell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,42); -- Bond Conservation, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,45); -- Bond Conservation, Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (648,102); -- Bond Conservation, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (649,102); -- Universal Versatility, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (650,42); -- Overwhelming Energy (Wizard), Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (650,45); -- Overwhelming Energy (Wizard), Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (650,102); -- Overwhelming Energy (Wizard), Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (651,14); -- Quickened Casting (Wizard), Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (651,45); -- Quickened Casting (Wizard), Metamagic
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (651,102); -- Quickened Casting (Wizard), Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (652,102); -- Scroll Savant, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (653,102); -- Clever Counterspell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (655,102); -- Bonded Focus, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (657,102); -- Superior Bond, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (659,14); -- Spell Tinker, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (659,102); -- Spell Tinker, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (660,102); -- Infinite Possibilities, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (661,102); -- Reprepare Spell, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (662,102); -- Archwizard’s Might, Wizard
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (664,102); -- Spell Combination, Wizard
+-- Dedication Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,4); -- Alchemist Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,19); -- Alchemist Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (665,50); -- Alchemist Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (666,4); -- Basic Concoction, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (667,4); -- Quick Alchemy, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (668,4); -- Advanced Conoction, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (669,4); -- Expert Alchemy, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (670,4); -- Mastery Alchemy, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,4); -- Barbarian Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,19); -- Barbarian Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (671,50); -- Barbarian Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (672,4); -- Barbarian Resiliency, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (673,4); -- Basic Fury, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (674,4); -- Advanced Fury, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (675,4); -- Instinct Ability, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (676,4); -- Juggernaut’s Fortitude, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,4); -- Bard Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,19); -- Bard Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (677,50); -- Bard Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (678,4); -- Basic Bard Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (679,4); -- Basic Muse’s Whispers, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (680,4); -- Advanced Muse’s Whispers, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (681,4); -- Counter Perform, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (682,4); -- Inspirational Performance, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (683,4); -- Occult Breadth, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (684,4); -- Expert Bard Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (685,4); -- Master Bard Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,4); -- Champion Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,19); -- Champion Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (686,50); -- Champion Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (687,4); -- Basic Devotion, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (688,4); -- Champion Resiliencey, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (689,4); -- Healing Touch, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (690,4); -- Advanced Devotion, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (691,4); -- Champion’s Reaction, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (692,4); -- Divine Ally, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (693,4); -- Diverse Armor Expert, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,4); -- Cleric Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,19); -- Cleric Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (694,50); -- Cleric Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (695,4); -- Basic Cleric Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (696,4); -- Basic Dogma, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (697,4); -- Advanced Dogma, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (698,4); -- Divine Breadth, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (699,4); -- Expert Cleric Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (700,4); -- Master Cleric Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,4); -- Druid Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,19); -- Druid Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (701,50); -- Druid Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (702,4); -- Basic Druid Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (703,4); -- Basic Wilding, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (704,4); -- Order Spell, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (705,4); -- Advanced Wilding, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (706,4); -- Primal Breadth, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (707,4); -- Expert Druid Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (708,4); -- Master Druid Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,4); -- Fighter Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,19); -- Fighter Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (709,50); -- Fighter Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (710,4); -- Basic Maneuver, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (711,4); -- Fighter Resiliency, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (712,4); -- Opportunist, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (713,4); -- Advanced Maneuver, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (714,4); -- Diverse Weapon Expert, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,4); -- Monk Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,19); -- Monk Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (715,50); -- Monk Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (716,4); -- Basic Kata, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (717,4); -- Monk Resiliency, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (718,4); -- Advanced Kata, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (719,4); -- Monk Moves, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,4); -- Monk’s Flurry, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,28); -- Monk’s Flurry, Flourish
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (720,98); -- Monk’s Flurry, Monk
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (721,4); -- Perfection’s Path, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,4); -- Ranger Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,19); -- Ranger Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,50); -- Ranger Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,14); -- Ranger Dedication, Concentrate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (722,99); -- Ranger Dedication, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (723,4); -- Basic Hunter’s Trick, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (724,4); -- Ranger Resiliency, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (725,4); -- Advanced Hunter’s Trick, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (726,4); -- Master Spotter, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,4); -- Rogue Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,19); -- Rogue Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (727,50); -- Rogue Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (728,4); -- Basic Trickery, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (729,4); -- Sneak Attacker, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (730,4); -- Advanced Trickery, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (731,4); -- Skill Mastery, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (732,4); -- Uncanny Dodge, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (733,4); -- Evasiveness, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,4); -- Sorcerer Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,19); -- Sorcerer Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (734,50); -- Sorcerer Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (735,4); -- Basic Sorcerer Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (736,4); -- Basic Blood Potency, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (737,4); -- Basic Bloodline Spell, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (738,4); -- Advanced Blood Potency, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (739,4); -- Bloodline Breadth, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (740,4); -- Expert Sorcerer Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (741,4); -- Master Sorcerer Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,4); -- Wizard Dedication, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,19); -- Wizard Dedication, Dedication
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (742,50); -- Wizard Dedication, Multiclass
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (743,4); -- Arcane School Spell, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (744,4); -- Basic Arcana, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (745,4); -- Basic Wizard Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (746,4); -- Advanced Arcana, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (747,4); -- Arcane Breadth, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (748,4); -- Expert Wizard Spellcasting, Archetype
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (749,4); -- Master Wizard Spellcasting, Archetype
+-- General Feat Trait
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (750,31); -- Additional Lore, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (750,65); -- Additional Lore, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (751,31); -- Adopted Ancestry, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (752,31); -- Alchemical Crafting, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (752,65); -- Alchemical Crafting, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (753,31); -- Ancestral Paragon, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (754,31); -- Arcane Sense, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (754,65); -- Arcane Sense, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (755,31); -- Armor Proficiency, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,30); -- Assurance, Fortune
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,31); -- Assurance, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (756,65); -- Assurance, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (757,31); -- Automatic Knowledge, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (757,65); -- Automatic Knowledge, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (758,31); -- Bargain Hunter, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (758,65); -- Bargain Hunter, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (759,31); -- Battle Cry, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (759,65); -- Battle Cry, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,31); -- Battle Medicine, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,33); -- Battle Medicine, Healing
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,42); -- Battle Medicine, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (760,65); -- Battle Medicine, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (761,31); -- Bizarre Magic, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (761,65); -- Bizarre Magic, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,22); -- Bonded Animal, Downtime
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,31); -- Bonded Animal, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (762,65); -- Bonded Animal, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (763,31); -- Breath Control, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (764,31); -- Canny Acumen, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (765,31); -- Cat Fall, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (765,65); -- Cat Fall, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (766,31); -- Charming Liar, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (766,65); -- Charming Liar, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (767,31); -- Cloud Jump, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (767,65); -- Cloud Jump, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (768,31); -- Combat Climber, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (768,65); -- Combat Climber, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (769,31); -- Confabulator, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (769,65); -- Confabulator, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (770,31); -- Connections, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (770,65); -- Connections, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (771,31); -- Continual Recovery, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (771,65); -- Continual Recovery, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (772,31); -- Courtly Graces, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (772,65); -- Courtly Graces, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (773,31); -- Craft Anything, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (773,65); -- Craft Anything, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (774,31); -- Diehard, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (775,31); -- Divine Guidance, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (775,65); -- Divine Guidance, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (776,31); -- Dubious Knowledge, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (776,65); -- Dubious Knowledge, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (777,31); -- Expeditious Search, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (778,31); -- Experienced Professional, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (778,65); -- Experienced Professional, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (779,31); -- Experienced Smuggler, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (779,65); -- Experienced Smuggler, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (780,31); -- Experienced Tracker, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (780,65); -- Experienced Tracker, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (781,31); -- Fascinating Performance, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (781,65); -- Fascinating Performance, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (782,31); -- Fast Recovery, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (783,31); -- Feather Step, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (784,31); -- Fleet, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (785,31); -- Foil Senses, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (785,65); -- Foil Senses, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (786,31); -- Forager, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (786,65); -- Forager, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (787,31); -- Glad-Hand, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (787,65); -- Glad-Hand, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (788,31); -- Group Coercion, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (788,65); -- Group Coercion, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (789,31); -- Group Impression, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (789,65); -- Group Impression, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (790,31); -- Hefty Hauler, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (790,65); -- Hefty Hauler, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (791,31); -- Hobnobber, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (791,65); -- Hobnobber, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (792,31); -- Impeccable Crafter, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (792,65); -- Impeccable Crafter, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (793,31); -- Impressive Performance, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (793,65); -- Impressive Performance, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (794,31); -- Incredible Initiative, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (795,31); -- Incredible Investiture, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (796,31); -- Intimidating Glare, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (796,65); -- Intimidating Glare, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (797,31); -- Intimidating Prowess, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (797,65); -- Intimidating Prowess, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,22); -- Inventor, Downtime
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,31); -- Inventor, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (798,65); -- Inventor, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (799,31); -- Kip Up, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (799,65); -- Kip Up, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (800,31); -- Lasting Coercion, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (800,65); -- Lasting Coercion, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (801,31); -- Legendary Codebreaker, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (801,65); -- Legendary Codebreaker, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (802,31); -- Legendary Linguist, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (803,31); -- Legendary Medic, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (804,31); -- Legendary Negotiation, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (804,65); -- Legendary Negotiation, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (805,31); -- Legendary Performer, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (805,65); -- Legendary Performer, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (806,31); -- Legendary Professional, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (806,65); -- Legendary Professional, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (807,31); -- Legendary Sneak, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (807,65); -- Legendary Sneak, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (808,31); -- Legendary Survivalist, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (808,65); -- Legendary Survivalist, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (809,31); -- Legendary Thief, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (809,65); -- Legendary Thief, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (810,31); -- Lengthy Diversion, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (810,65); -- Lengthy Diversion, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (812,31); -- Magical Crafting, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (812,65); -- Magical Crafting, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (813,31); -- Magical Shorthand, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (813,65); -- Magical Shorthand, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (814,31); -- Multilingual, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (814,65); -- Multilingual, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (815,31); -- Natural Medicine, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (815,65); -- Natural Medicine, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (816,31); -- Nimble Crawl, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (816,65); -- Nimble Crawl, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (817,31); -- Oddity Identification, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (817,65); -- Oddity Identification, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (818,31); -- Pickpocket, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (818,65); -- Pickpocket, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (819,31); -- Planar Survival, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (819,65); -- Planar Survival, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (820,31); -- Powerful Leap, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (820,65); -- Powerful Leap, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (821,31); -- Quick Climber, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (821,65); -- Quick Climber, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (822,31); -- Quick Coercion, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (822,65); -- Quick Coercion, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (823,31); -- Quick Disguise, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (823,65); -- Quick Disguise, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (824,31); -- Quick Identification, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (824,65); -- Quick Identification, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (825,31); -- Quick Jump, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (825,65); -- Quick Jump, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (826,31); -- Quick Recognition, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (826,65); -- Quick Recognition, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (827,31); -- Quick Repair, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (827,65); -- Quick Repair, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (828,31); -- Quick Squeeze, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (828,65); -- Quick Squeeze, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (829,31); -- Quick Swim, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (829,65); -- Quick Swim, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (830,31); -- Quick Unlock, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (830,65); -- Quick Unlock, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (831,31); -- Quiet Allies, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (831,65); -- Quiet Allies, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (832,31); -- Rapid Mantel, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (832,65); -- Rapid Mantel, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (833,31); -- Read Lips, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (833,65); -- Read Lips, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,31); -- Recognize Spell, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,63); -- Recognize Spell, Secret
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (834,65); -- Recognize Spell, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (835,31); -- Ride, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (836,31); -- Robust Recovery, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (836,65); -- Robust Recovery, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,18); -- Scare to Death, Death
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,23); -- Scare to Death, Emotion
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,27); -- Scare to Death, Fear
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,31); -- Scare to Death, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,34); -- Scare to Death, Incapacitation
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (837,65); -- Scare to Death, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (838,31); -- Shameless Request, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (838,65); -- Shameless Request, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (839,31); -- Shield Block, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (840,31); -- Sign Language, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (840,65); -- Sign Language, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (841,31); -- Skill Training, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (841,65); -- Skill Training, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (842,31); -- Slippery Secrets, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (842,65); -- Slippery Secrets, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (843,31); -- Snare Crafting, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (843,65); -- Snare Crafting, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (844,31); -- Specialty Crafting, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (844,65); -- Specialty Crafting, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (845,31); -- Steady Balance, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (845,65); -- Steady Balance, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (846,31); -- Streetwise, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (846,65); -- Streetwise, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (847,31); -- Student of the Canon, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (847,65); -- Student of the Canon, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (848,31); -- Subtle Theft, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (848,65); -- Subtle Theft, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (849,31); -- Survey Wildlife, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (849,65); -- Survey Wildlife, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (850,31); -- Swift Sneak, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (850,65); -- Swift Sneak, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (851,31); -- Terrain Expertise, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (851,65); -- Terrain Expertise, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (852,31); -- Terrain Stalker, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (852,65); -- Terrain Stalker, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (853,31); -- Terrified Retreat, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (853,65); -- Terrified Retreat, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (854,31); -- Titan Wrestler, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (854,65); -- Titan Wrestler, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (855,31); -- Toughness, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,22); -- Train Animal, Downtime
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,31); -- Train Animal, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,42); -- Train Animal, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (856,65); -- Train Animal, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,31); -- Trick Magic Item, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,42); -- Trick Magic Item, Manipulate
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (857,65); -- Trick Magic Item, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (858,31); -- Underwater Marauder, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (858,65); -- Underwater Marauder, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (859,31); -- Unified Theory, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (859,65); -- Unified Theory, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (860,31); -- Unmistakable Lore, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (861,31); -- Untrained Improvisation, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (862,31); -- Virtuosic Performer, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (862,65); -- Virtuosic Performer, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (863,31); -- Wall Jump, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (863,65); -- Wall Jump, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (864,31); -- Ward Medic, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (864,65); -- Ward Medic, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (865,31); -- Wary Disarmament, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (865,65); -- Wary Disarmament, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (866,31); -- Weapon Proficiency, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (866,65); -- Weapon Proficiency, Skill
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (867,49); -- Relentless Stalker, Move
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (867,99); -- Relentless Stalker, Ranger
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (868,31); -- Wilderness Spotter, General
+INSERT INTO feats_traits (feat_id, trait_id) VALUES (868,65); -- Wilderness Spotter, Skill
 COMMIT;
