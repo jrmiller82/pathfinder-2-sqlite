@@ -3,6 +3,10 @@
 PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
                           -- on PER CONNECTION
 
+-- TODO Change bg_name and bg_descr to name and descr
+
+-- TODO fill in bg_descr
+
 INSERT INTO backgrounds (
   bg_id,
   is_comty_use,
