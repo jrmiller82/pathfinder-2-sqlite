@@ -1,4 +1,4 @@
-#!/bin/sh -v
+# UNCOMMENT FOR DEBUGGING #!/bin/sh -v
 rm pf2.db
 echo 'loading schema'
 sqlite3 pf2.db < schema/sources.sql
