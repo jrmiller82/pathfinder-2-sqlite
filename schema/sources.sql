@@ -29,7 +29,7 @@ CREATE TABLE monsters_sourceentries (
   monsters_id INTEGER NOT NULL,
   sourceentries_id INTEGER NOT NULL,
   FOREIGN KEY (monsters_id) REFERENCES monsters(monsters_id),
-  FOREIGN KEY (sourceentries_id_id) REFERENCES sourceentries_id(sourceentries_id_id)
+  FOREIGN KEY (sourceentries_id) REFERENCES sourceentries(sourceentries_id)
 );
 
 -- TODO add in new many-to-many tables for the various things we want to have sources be listed this way

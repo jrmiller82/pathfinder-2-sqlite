@@ -8,6 +8,8 @@ PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
 /* TODO smoke vision is from young-red dragon */
 
 INSERT INTO senses (senses_id,
+                    sources_id,
+                    sources_pages,
                      short_name,
                      description)
 VALUES
