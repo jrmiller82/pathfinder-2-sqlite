@@ -11,10 +11,15 @@ CREATE TABLE feats (
   sources_pages TEXT NOT NULL,
   short_name TEXT NOT NULL UNIQUE,
   descr TEXT NOT NULL,
-  frequency TEXT,
-  triggers TEXT,
-  reqs TEXT,
-  FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
+  action_id INTEGER,
+  frequency_id INTEGER,
+  triggers_id INTEGER,
+  requirements_id INTEGER,
+  FOREIGN KEY (sources_id) REFERENCES sources(sources_id),
+  FOREIGN KEY (action_id) REFERENCES actioncosts(actioncosts_id),
+  FOREIGN KEY (frequency_id) REFERENCES frequency(freq_id),
+  FOREIGN KEY (triggers_id) REFERENCES triggers(triggers_id),
+  FOREIGN KEY (requirements_id) REFERENCES requirements(requirements_id)
 );
 
 CREATE TABLE featprereqs (
