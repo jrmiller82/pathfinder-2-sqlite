@@ -98,6 +98,16 @@ CREATE TABLE monsters_traits (
   FOREIGN KEY (traits_id) REFERENCES traits(trait_id)
 );
 
+CREATE TABLE monster_movements (
+  id INTEGER PRIMARY KEY,
+  monsters_id INTEGER NOT NULL,
+  movements_id INTEGER NOT NULL,
+  movement_speed INTEGER NOT NULL, -- this is the actual monster speed
+  UNIQUE (monsters_id, movements_id), -- prevent duplicates
+  FOREIGN KEY (monsters_id) REFERENCES monsters(monsters_id),
+  FOREIGN KEY (movements_id) REFERENCES movements(movements_id)
+);
+
 -- TODO does this need to be separate table for monsters only or share the main
 -- actions table
 CREATE TABLE monsteractions (
