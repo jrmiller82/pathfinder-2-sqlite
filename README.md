@@ -47,7 +47,7 @@ Text may use the following escape codes:
 The action symbols can be represented by the following characters:
 
 | Meaning | Character | Unicode |
-| -------- | -- | ------- |
+|----------|----|---------|
 | 1 action | ⑴ | U+2474 |
 | 2 actions | ⑵ | U+2475 |
 | 3 actions | ⑶ | U+2476 |
