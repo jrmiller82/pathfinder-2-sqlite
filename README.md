@@ -60,7 +60,7 @@ Text formatting will be according to github-flavored markdown.
 
 ## Identical names
 
-In the case of identical names ex. Sudden Charge for Fighter vs Barbarian we will use an identifier in brackets ex. Sudden Charge (Fighter) vs Sudden Charge (Barbarian) or Lock (Simple) vs Lock (Average).
+In the case of identical names ex. Sudden Charge for Fighter vs Barbarian we will use an identifier in parentheses ex. Sudden Charge (Fighter) vs Sudden Charge (Barbarian) or Lock (Simple) vs Lock (Average).
 
 ## Ability Scores in Integer Representation
 
