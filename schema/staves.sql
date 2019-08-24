@@ -23,7 +23,6 @@ CREATE TABLE staff (
 );
 
 CREATE TABLE staff_spell (
-  staff_spell_id INTEGER PRIMARY KEY NOT NULL,
   staff_id INTEGER NOT NULL,
   spell_id INTEGER NOT NULL,
   "level" INTEGER NOT NULL, -- This represents the level of the spell in the staff where 0 = cantrip --
