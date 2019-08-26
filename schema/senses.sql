@@ -7,6 +7,6 @@ CREATE TABLE senses (
   sources_id INTEGER,
   sources_pages TEXT,
   short_name TEXT NOT NULL UNIQUE,
-  description TEXT NOT NULL,
+  description TEXT,
   FOREIGN KEY (sources_id) REFERENCES sources(sources_id)
 );

@@ -16,7 +16,7 @@ CREATE TABLE sources (
 );
 
 CREATE TABLE sourceentries (
-  sourceentries_id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER PRIMARY KEY,
   sources_id INTEGER NOT NULL,
   page_start INTEGER,
   page_stop INTEGER,
@@ -26,10 +26,10 @@ CREATE TABLE sourceentries (
 
 CREATE TABLE monsters_sourceentries (
   id INTEGER PRIMARY KEY,
-  monsters_id INTEGER NOT NULL,
-  sourceentries_id INTEGER NOT NULL,
-  FOREIGN KEY (monsters_id) REFERENCES monsters(monsters_id),
-  FOREIGN KEY (sourceentries_id) REFERENCES sourceentries(sourceentries_id)
+  monster_id INTEGER NOT NULL,
+  sourceentry_id INTEGER NOT NULL,
+  FOREIGN KEY (monster_id) REFERENCES monsters(monster_id),
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentries(sourceentry_id)
 );
 
 -- TODO add in new many-to-many tables for the various things we want to have sources be listed this way

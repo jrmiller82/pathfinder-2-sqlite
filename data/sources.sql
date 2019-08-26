@@ -61,3 +61,8 @@ NULL,
 '2019',
 1,
 'Age of Ashes Player''s Guide © 2019, Paizo Inc.; Authors: James Jacobs with Amanda Hamon.');
+
+
+BEGIN TRANSACTION;
+INSERT INTO sourceentries VALUES(1, 1, 8, 9);
+COMMIT;

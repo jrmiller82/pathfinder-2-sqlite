@@ -39,5 +39,8 @@ VALUES
   (109, 2, 1, '65', 'Shadowtongue', 'Nidalese, Shadow Plane creatures'),
   (110, 2, 1, '65', 'Terran', 'Earth elemental creatures'),
   -- Secret languages
-  (200, 3, 1, '65', 'Druidic', 'Druids');
+  (200, 3, 1, '65', 'Druidic', 'Druids'),
+
+  -- Bestiary Languages not in CRB
+  (300, 1, 2, '8', 'Utopian', 'Aeons');
 

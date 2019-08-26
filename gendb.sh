@@ -25,6 +25,7 @@ sqlite3 pf2.db < schema/armor.sql
 sqlite3 pf2.db < schema/gear.sql
 sqlite3 pf2.db < schema/weapons.sql
 sqlite3 pf2.db < schema/ammunition.sql
+sqlite3 pf2.db < schema/monsters.sql
 echo 'loading data'
 sqlite3 pf2.db < data/sources.sql
 sqlite3 pf2.db < data/alignments.sql
@@ -51,6 +52,7 @@ sqlite3 pf2.db < data/gear.sql
 sqlite3 pf2.db < data/heritages.sql
 sqlite3 pf2.db < data/weapons.sql
 sqlite3 pf2.db < data/ammunition.sql
+sqlite3 pf2.db < data/monsters.sql
 # Comment out the following three lines if you don't want to generate the spell data.
 cd data/third_party_json
 python3 spells.py
