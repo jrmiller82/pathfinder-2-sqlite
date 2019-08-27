@@ -72,118 +72,118 @@ VALUES
 -- Anmial Staff --
 (
 	1,
-	-- know direction --,
+	253,
 	0
 ),
 (
 	1,
-	-- magic fang --,
+	273,
 	1
 ),
 (
 	1,
-	-- summon animal --,
+	442,
 	1
 ),
 -- Animal Staff (Greater)
 (
 	2,
-	-- know direction --,
+	253,
 	0
 ),
 (
 	2,
-	-- magic fang --,
+	273,
 	1
 ),
 (
 	2,
-	-- summon animal --,
+	442,
 	1
 ),
 (
 	2,
-	-- animal messenger --,
+	19,
 	2
 ),
 (
 	2,
-	-- speak with animals --,
+	415,
 	2
 ),
 (
 	2,
-	-- summon animal --,
+	442,
 	2
 ),
 (
 	2,
-	-- animal form --,
+	18,
 	3
 ),
 (
 	2,
-	-- summon animal --,
+	442,
 	3
 ),
 -- Animal Staff (Major)
 (
 	3,
-	-- know direction --,
+	253,
 	0
 ),
 (
 	3,
-	-- magic fang --,
+	273,
 	1
 ),
 (
 	3,
-	-- summon animal --,
+	442,
 	1
 ),
 (
 	3,
-	-- animal messenger --,
+	19,
 	2
 ),
 (
 	3,
-	-- speak with animals --,
+	415,
 	2
 ),
 (
 	3,
-	-- summon animal --,
+	442,
 	2
 ),
 (
 	3,
-	-- animal form --,
+	18,
 	3
 ),
 (
 	3,
-	-- summon animal --,
+	442,
 	3
 ),
 (
 	3,
-	-- summon animal --,
+	442,
 	4
 ),
 (
 	3,
-	-- animal form --,
+	18,
 	5
 ),
 (
 	3,
-	-- moon frenzy --,
+	299,
 	5
 )
 (
 	3,
-	-- summon animal --,
+	442,
 	5
 )
