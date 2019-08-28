@@ -24,9 +24,9 @@ CREATE TABLE staff (
 
 CREATE TABLE staff_spell (
   staff_id INTEGER NOT NULL,
-  spell_id INTEGER NOT NULL,
   "level" INTEGER NOT NULL, -- This represents the level of the spell in the staff where 0 = cantrip --
-                            -- Consider renaming this column --
+                          -- Consider renaming this column --
+  spell_id INTEGER NOT NULL,
   FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
   FOREIGN KEY spell_id REFERENCES spells(spells_id)
 );
