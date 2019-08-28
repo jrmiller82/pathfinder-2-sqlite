@@ -3,38 +3,39 @@ PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
 
 INSERT INTO staff (
   staff_id,
-  "name",
-  "level",
-  price,
-  bulk,
-  usage,
-  activate,
-  activate_effect,
-  craft_requirements,
-  source_id,
-  source_pages,
-  "description"
+  ,"name"
+  ,"level"
+  ,price
+  ,bulk
+  ,usage
+  ,activate
+  ,activate_effect
+  ,craft_requirements
+  ,source_id
+  ,source_pages
+  ,"description"
 )
 VALUES
 -- Animal Staff --
-(1, 'Animal Staff',	4, 90, 1, 'held in one hand', 'Cast a spell', NULL, NULL, "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- https://2e.aonprd.com/Equipment.aspx?ID=349 -- See if they fix <%ACTIONS#197> unsure what it is --
+(1, 'Animal Staff',	4, 90, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- Assuming the bug is a missing activate and effect line since it is not present --
 )
-,(2, 'Animal Staff (Greater)', 8, 460, 1, 'held in one hand', 'Cast a spell', NULL, NULL, "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- https://2e.aonprd.com/Equipment.aspx?ID=349 -- See if they fix <%ACTIONS#197> unsure what it is --
+,(2, 'Animal Staff (Greater)', 8, 460, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- Assuming the bug is a missing activate and effect line since it is not present --
 )
-,(3, 'Animal Staff (Major)', 12, 900, 1, 'held in one hand', 'Cast a spell', NULL, NULL, "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- https://2e.aonprd.com/Equipment.aspx?ID=349 -- See if they fix <%ACTIONS#197> unsure what it is --
+,(3, 'Animal Staff (Major)', 12, 900, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- Assuming the bug is a missing activate and effect line since it is not present --
 )
 -- Mentalist's Staff --
-,(4, "Mentalist's Staff", 4, 230, 1, 'held in one hand', 'Cast a spell', NULL, NULL, "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
+,(4, "Mentalist's Staff", 4, 230, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
 )
-,(5, "Mentalist's Staff (Greater)", 8, 900, 1, 'held in one hand', 'Cast a spell', NULL, NULL, "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
+,(5, "Mentalist's Staff (Greater)", 8, 900, 1, 'held in one hand', 'Cast a spell', "You expend a number of charges from the staff to cast a spell from its list.", "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
 )
-(6, "Mentalist's Staff (Major)", 12, 4000, 1, 'held in one hand', 'Cast a spell', NULL, NULL, "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
+(6, "Mentalist's Staff (Major)", 12, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
 )
+-- Staff of Abjuration --
+
 INSERT INTO staff_spell (
-  staff_spell_id,
-  staff_id,
-  spell_id,
-  "level"
+  staff_id
+  ,"level"
+	,spell_id
 )
 VALUES
 -- Anmial Staff --
@@ -86,4 +87,4 @@ VALUES
 ,(6, 5, 322)
 ,(6, 5, 455)
 ,(6, 5, 456)
-
+-- Staff of Abjuration --
