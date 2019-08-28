@@ -37,6 +37,7 @@ VALUES
 )
 ,(9, "Staff of Abjuration (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic."
 )
+-- Staff of Conjuration --
 INSERT INTO staff_spell (
   staff_id
   ,"level"
@@ -47,7 +48,7 @@ VALUES
  (1, 0, 253)
 ,(1, 1, 273)
 ,(1, 1, 442)
--- Animal Staff (Greater)
+-- Animal Staff (Greater) --
 ,(2, 0, 253)
 ,(2, 1, 273)
 ,(2, 1, 442)
@@ -56,7 +57,7 @@ VALUES
 ,(2, 2, 442)
 ,(2, 3, 18)
 ,(2, 3, 442)
--- Animal Staff (Major)
+-- Animal Staff (Major) --
 ,(3, 0, 253)
 ,(3, 1, 273)
 ,(3, 1, 442)
@@ -99,7 +100,7 @@ VALUES
 ,(7, 2, 112)
 ,(7, 2, 148)
 ,(7, 2, 370)
--- Staff of Abjuration (Greater)
+-- Staff of Abjuration (Greater) --
 ,(8, 0, 399)
 ,(8, 1, 11)
 ,(8, 1, 167)
@@ -111,7 +112,7 @@ VALUES
 ,(8, 4, 102)
 ,(8, 4, 112)
 ,(8, 4, 370)
--- Staff of Abjuration (Major)
+-- Staff of Abjuration (Major) --
 ,(9, 0, 399)
 ,(9, 1, 11)
 ,(9, 1, 167)
@@ -127,3 +128,4 @@ VALUES
 ,(9, 5, 148)
 ,(9, 6, 112)
 ,(9, 6, 368)
+-- Staff of Conjuration --
