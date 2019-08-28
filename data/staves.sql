@@ -52,13 +52,19 @@ VALUES
 ,(15, "Staff of Divination (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic."
 )
 -- Staff of Enchantment --
-,(13, "Staff of Enchantment", 6, 230, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
+,(16, "Staff of Enchantment", 6, 230, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
 )
-,(14, "Staff of Enchantment (Greater)", 10, 900, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
+,(17, "Staff of Enchantment (Greater)", 10, 900, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
 )
-,(15, "Staff of Enchantment (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
+,(18, "Staff of Enchantment (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
 )
-
+-- Staff of Evocation --
+,(19, "Staff of Evocation", 6, 230, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic."
+)
+,(20, "Staff of Evocation (Greater)", 10, 900, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic."
+)
+,(21, "Staff of Evocation (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic."
+)
 INSERT INTO staff_spell (
   staff_id
   ,"level"
@@ -255,3 +261,33 @@ VALUES
 ,(18, 5, 82)
 ,(18, 6, 123)
 ,(18, 6, 168)
+-- Staff of Evocation --
+,(19, 0, 357)
+,(19, 1, 274)
+,(19, 1, 403)
+,(19, 2, 5)
+,(19, 2, 199)
+-- Staff of Evocation (Greater) --
+,(20, 0, 357)
+,(20, 1, 274)
+,(20, 1, 403)
+,(20, 2, 5)
+,(20, 2, 199)
+,(20, 3, 259)
+,(20, 3, 274)
+,(20, 4, 178)
+,(20, 4, 520)
+-- Staff of Evocation (Major) --
+,(21, 0, 357)
+,(21, 1, 274)
+,(21, 1, 403)
+,(21, 2, 5)
+,(21, 2, 199)
+,(21, 3, 259)
+,(21, 3, 274)
+,(21, 4, 178)
+,(21, 4, 520)
+,(21, 5, 71)
+,(21, 5, 274)
+,(21, 5, 51)
+,(21, 5, 510)
