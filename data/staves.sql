@@ -52,6 +52,12 @@ VALUES
 ,(15, "Staff of Divination (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic."
 )
 -- Staff of Enchantment --
+,(13, "Staff of Enchantment", 6, 230, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
+)
+,(14, "Staff of Enchantment (Greater)", 10, 900, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
+)
+,(15, "Staff of Enchantment (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
+)
 
 INSERT INTO staff_spell (
   staff_id
@@ -220,3 +226,32 @@ VALUES
 ,(15, 5, 466)
 ,(15, 5, 484)
 -- Staff of Enchantment --
+,(16, 0, 88)
+,(16, 1, 53)
+,(16, 1, 67)
+,(16, 2, 221)
+,(16, 2, 474)
+-- Staff of Enchantment (Greater) --
+,(17, 0, 88)
+,(17, 1, 53)
+,(17, 1, 67)
+,(17, 2, 221)
+,(17, 2, 474)
+,(17, 3, 313)
+,(17, 4, 53)
+,(17, 4, 72)
+,(17, 4, 441)
+-- Staff of Enchantment (Major) --
+,(18, 0, 88)
+,(18, 1, 53)
+,(18, 1, 67)
+,(18, 2, 221)
+,(18, 2, 474)
+,(18, 3, 313)
+,(18, 4, 53)
+,(18, 4, 72)
+,(18, 4, 441)
+,(18, 5, 67)
+,(18, 5, 82)
+,(18, 6, 123)
+,(18, 6, 168)
