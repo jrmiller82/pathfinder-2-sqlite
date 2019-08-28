@@ -28,10 +28,15 @@ VALUES
 )
 ,(5, "Mentalist's Staff (Greater)", 8, 900, 1, 'held in one hand', 'Cast a spell', "You expend a number of charges from the staff to cast a spell from its list.", "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
 )
-(6, "Mentalist's Staff (Major)", 12, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
+,(6, "Mentalist's Staff (Major)", 12, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
 )
 -- Staff of Abjuration --
-
+,(7, "Staff of Abjuration", 6, 230, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic."
+)
+,(8, "Staff of Abjuration (Greater)", 10, 900, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic."
+)
+,(9, "Staff of Abjuration (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic."
+)
 INSERT INTO staff_spell (
   staff_id
   ,"level"
@@ -88,3 +93,37 @@ VALUES
 ,(6, 5, 455)
 ,(6, 5, 456)
 -- Staff of Abjuration --
+,(7, 0, 399)
+,(7, 1, 11)
+,(7, 1, 167)
+,(7, 2, 112)
+,(7, 2, 148)
+,(7, 2, 370)
+-- Staff of Abjuration (Greater)
+,(8, 0, 399)
+,(8, 1, 11)
+,(8, 1, 167)
+,(8, 2, 112)
+,(8, 2, 148)
+,(8, 2, 370)
+,(8, 3, 11)
+,(8, 3, 202)
+,(8, 4, 102)
+,(8, 4, 112)
+,(8, 4, 370)
+-- Staff of Abjuration (Major)
+,(9, 0, 399)
+,(9, 1, 11)
+,(9, 1, 167)
+,(9, 2, 112)
+,(9, 2, 148)
+,(9, 2, 370)
+,(9, 3, 11)
+,(9, 3, 202)
+,(9, 4, 102)
+,(9, 4, 112)
+,(9, 4, 370)
+,(9, 5, 32)
+,(9, 5, 148)
+,(9, 6, 112)
+,(9, 6, 368)
