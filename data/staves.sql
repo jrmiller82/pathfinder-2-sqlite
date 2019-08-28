@@ -65,6 +65,14 @@ VALUES
 )
 ,(21, "Staff of Evocation (Major)", 14, 4000, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic."
 )
+-- Staff of Fire --
+,(22, "Staff of Fire", 3, 60, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame."
+)
+,(23, "Staff of Fire (Greater)", 8, 450, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame."
+)
+,(24, "Staff of Fire (Major)", 12, 1800, 1, 'held in one hand', 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame."
+)
+
 INSERT INTO staff_spell (
   staff_id
   ,"level"
@@ -291,3 +299,25 @@ VALUES
 ,(21, 5, 274)
 ,(21, 5, 51)
 ,(21, 5, 510)
+-- Staff of Fire --
+,(22, 0, 342)
+,(22, 1, 45)
+-- Staff of Fire (Greater) --
+,(22, 0, 342)
+,(22, 1, 45)
+,(22, 2, 45)
+,(22, 2, 181)
+,(22, 3, 181)
+,(22, 3, 178)
+-- Staff of Fire (Major) --
+,(22, 0, 342)
+,(22, 1, 45)
+,(22, 2, 45)
+,(22, 2, 181)
+,(22, 3, 181)
+,(22, 3, 178)
+,(22, 4, 177)
+,(22, 4, 178)
+,(22, 4, 509)
+,(22, 5, 178)
+,(22, 5, 509)
