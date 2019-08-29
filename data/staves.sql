@@ -65,6 +65,8 @@ VALUES
 ,(33, "Staff of Necromancy", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
 ,(34, "Staff of Necromancy (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
 ,(35, "Staff of Illusion (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
+-- Staff of Power --
+,(36, "Staff of Power", 16, 10000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff of magically hardened wood is topped with a silver sculpture depicting magical runic symbols. When used as a weapon, a staff of power is a +2 greater striking staff.\n\nVoluntarily destroying a staff of power unleashes an incredible blast of energy. When wielding the staff, you can Interact to break it. This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
 
 ------------------------------
 -- staff activations insert --
@@ -123,6 +125,9 @@ VALUES
 ,(33, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(34, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(35, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Power --
+,(36, "Interact", "This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
+,(36, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 
 ------------------------
 -- staff_spell insert --
@@ -482,3 +487,14 @@ VALUES
 ,(35, 5, 193)
 ,(35, 6, 207)
 ,(35, 6, 496)
+-- Staff of Power --
+,(36, 1, 356)
+,(36, 2, 74)
+,(36, 3, 256)
+,(36, 4, 200)
+,(36, 4, 313)
+,(36, 5, 274)
+,(36, 6, 510)
+,(36, 7, 71)
+,(36, 7, 178)
+,(36, 7, 259)
