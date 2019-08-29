@@ -9,6 +9,7 @@ CREATE TABLE staff (
   bulk INTEGER, -- could add NOT NULL and store 0s --
   usage TEXT, -- always "held in 1 hand" --
               -- Consider storing in another table --
+  item_bonus INTEGER, -- If the staff gives an item bonus --
   activate TEXT, -- always "Cast a spell;" --
                  -- Should we store the ";"? --
                  -- Consider storing in another table --
