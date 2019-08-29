@@ -56,6 +56,11 @@ VALUES
 ,(27, "Staff of Healing (Major)", 12, 1800, 1, 'held in one hand', 3, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff.")
 ,(28, "Staff of Healing (True)", 16, 9200, 1, 'held in one hand', 4, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff.")
 -- Staff of Illumination --
+,(29, "Staff of Illumination", 18, 425, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This simple iron staff is capped with a faceted, clear gem.")
+-- Staff of Illusion --
+,(30, "Staff of Illusion", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This ornately designed metal staff shines with precious inlays of gold. When you Cast a Spell from the staff, the illusory image of something you desire flashes across its surface. While wielding the staff, you gain a +2 circumstance bonus to checks to identify illusion magic.")
+,(31, "Staff of Illusion (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This ornately designed metal staff shines with precious inlays of gold. When you Cast a Spell from the staff, the illusory image of something you desire flashes across its surface. While wielding the staff, you gain a +2 circumstance bonus to checks to identify illusion magic.")
+,(32, "Staff of Illusion (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This ornately designed metal staff shines with precious inlays of gold. When you Cast a Spell from the staff, the illusory image of something you desire flashes across its surface. While wielding the staff, you gain a +2 circumstance bonus to checks to identify illusion magic.")
 
 ------------------------------
 -- staff activations insert --
@@ -66,34 +71,50 @@ INSERT INTO staff_activations (
   effect
 )
 VALUES
+-- Animal Staff --
  (1, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(2, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(3, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Mentalist's Staff --
 ,(4, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(5, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(6, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Abjuration --
 ,(7, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(8, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(9, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Conjuration --
 ,(10, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(11, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(12, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Divination -
 ,(13, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(14, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(15, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Enchantment --
 ,(16, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(17, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(18, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Evocation --
 ,(19, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(20, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(21, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Fire --
 ,(22, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(23, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(24, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Healing --
 ,(25, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(26, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(27, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(28, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Illumination --
+,(29, "Interact", "The gem at the top of the staff glows as a torch, shedding bright light in a 20-foot radius (and dim light to the next 20 feet) for 10 minutes.")
+,(29, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Illusion --
+,(30, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(31, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(32, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 
 ------------------------
 -- staff_spell insert --
@@ -389,3 +410,38 @@ VALUES
 ,(28, 7, 215)
 ,(28, 7, 362)
 ,(28, 7, 365)
+-- Staff of Illumination --
+,(29, 0, 258)
+,(29, 2, 74)
+,(29, 3, 74)
+,(29, 3, 387)
+-- Staff of Illusion --
+,(30, 0, 194)
+,(30, 1, 233)
+,(30, 1, 234)
+,(30, 2, 232)
+,(30, 2, 246)
+-- Staff of Illusion (Greater) --
+,(31, 0, 194)
+,(31, 1, 233)
+,(31, 1, 234)
+,(31, 2, 232)
+,(31, 2, 246)
+,(31, 3, 233)
+,(31, 3, 146)
+,(31, 4, 232)
+,(31, 4, 498)
+-- Staff of Illusion (Major) --
+,(32, 0, 194)
+,(32, 1, 233)
+,(32, 1, 234)
+,(32, 2, 232)
+,(32, 2, 246)
+,(32, 3, 233)
+,(32, 3, 146)
+,(32, 4, 232)
+,(32, 4, 498)
+,(32, 5, 235)
+,(32, 5, 498)
+,(32, 6, 210)
+,(32, 6, 295)
