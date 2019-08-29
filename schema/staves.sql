@@ -30,11 +30,20 @@ CREATE TABLE staff_spell (
   FOREIGN KEY spell_id REFERENCES spells(spells_id)
 );
 
--- Child table -- one-to-many
+-- Child table -- one-to-many --
 CREATE TABLE staff_activations (
   staff_id INTEGER NOT NULL,
   "activation" TEXT NOT NULL,
   effect TEXT NOT NULL,
   PRIMARY KEY (staff_id, "activation", effect),
   FOREIGN KEY staff_id REFERENCES staff(staff_id)
+);
+
+-- Child table -- many-to-many -- staff-to-traits --
+CREATE TABLE staff_trait (
+  staff_id INTEGER NOT NULL,
+  trait_id INTEGER NOT NULL,
+  PRIMARY KEY (staff_id, trait_id),
+  FOREIGN KEY staff_id REFERENCES staff(staff_id),
+  FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
