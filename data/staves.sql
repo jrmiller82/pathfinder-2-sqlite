@@ -1,6 +1,9 @@
 PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
                           -- on PER CONNECTION
 
+------------------
+-- Staff insert --
+------------------
 INSERT INTO staff (
   staff_id,
   ,"name"
@@ -9,8 +12,6 @@ INSERT INTO staff (
   ,bulk
   ,usage
   ,item_bonus
-  ,activate
-  ,activate_effect
   ,craft_requirements
   ,source_id
   ,source_pages
@@ -18,71 +19,85 @@ INSERT INTO staff (
 )
 VALUES
 -- Animal Staff --
-(1, 'Animal Staff',	4, 90, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- Assuming the bug is a missing activate and effect line since it is not present --
-)
-,(2, 'Animal Staff (Greater)', 8, 460, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- Assuming the bug is a missing activate and effect line since it is not present --
-)
-,(3, 'Animal Staff (Major)', 12, 900, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals." -- Assuming the bug is a missing activate and effect line since it is not present --
-)
+(1, 'Animal Staff',	4, 90, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals.")
+,(2, 'Animal Staff (Greater)', 8, 460, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals.")
+,(3, 'Animal Staff (Major)', 12, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 592, "This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals.")
 -- Mentalist's Staff --
-,(4, "Mentalist's Staff", 4, 230, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
-)
-,(5, "Mentalist's Staff (Greater)", 8, 900, 1, 'held in one hand', 2, 'Cast a spell', "You expend a number of charges from the staff to cast a spell from its list.", "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
-)
-,(6, "Mentalist's Staff (Major)", 12, 4000, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic."
-)
+,(4, "Mentalist's Staff", 4, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic.")
+,(5, "Mentalist's Staff (Greater)", 8, 900, 1, 'held in one hand', 2, 'Cast a spell', "You expend a number of charges from the staff to cast a spell from its list.", "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic.")
+,(6, "Mentalist's Staff (Major)", 12, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 593, "This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic.")
 -- Staff of Abjuration --
-,(7, "Staff of Abjuration", 6, 230, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic."
-)
-,(8, "Staff of Abjuration (Greater)", 10, 900, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic."
-)
-,(9, "Staff of Abjuration (Major)", 14, 4000, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic."
-)
+,(7, "Staff of Abjuration", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic.")
+,(8, "Staff of Abjuration (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic.")
+,(9, "Staff of Abjuration (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic.")
 -- Staff of Conjuration --
-,(10, "Staff of Conjuration", 6, 230, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic."
-)
-,(11, "Staff of Conjuration (Greater)", 10, 900, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic."
-)
-,(12, "Staff of Conjuration (Major)", 14, 4000, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic."
-)
+,(10, "Staff of Conjuration", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic.")
+,(11, "Staff of Conjuration (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic.")
+,(12, "Staff of Conjuration (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic.")
 -- Staff of Divination --
-,(13, "Staff of Divination", 6, 230, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic."
-)
-,(14, "Staff of Divination (Greater)", 10, 900, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic."
-)
-,(15, "Staff of Divination (Major)", 14, 4000, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic."
-)
+,(13, "Staff of Divination", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic.")
+,(14, "Staff of Divination (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic.")
+,(15, "Staff of Divination (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic.")
 -- Staff of Enchantment --
-,(16, "Staff of Enchantment", 6, 230, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
-)
-,(17, "Staff of Enchantment (Greater)", 10, 900, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
-)
-,(18, "Staff of Enchantment (Major)", 14, 4000, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic."
-)
+,(16, "Staff of Enchantment", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic.")
+,(17, "Staff of Enchantment (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic.")
+,(18, "Staff of Enchantment (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "A mesmerizing gemstone caps the head of this handsomely crafted wooden staff. While wielding the staff, you gain a +2 circumstance bonus to checks to identify enchantment magic.")
 -- Staff of Evocation --
-,(19, "Staff of Evocation", 6, 230, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic."
-)
-,(20, "Staff of Evocation (Greater)", 10, 900, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic."
-)
-,(21, "Staff of Evocation (Major)", 14, 4000, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic."
-)
+,(19, "Staff of Evocation", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic.")
+,(20, "Staff of Evocation (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic.")
+,(21, "Staff of Evocation (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 594, "This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic.")
 -- Staff of Fire --
-,(22, "Staff of Fire", 3, 60, 1, 'held in one hand', NULL, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame."
-)
-,(23, "Staff of Fire (Greater)", 8, 450, 1, 'held in one hand', NULL, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame."
-)
-,(24, "Staff of Fire (Major)", 12, 1800, 1, 'held in one hand', NULL, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame."
-)
+,(22, "Staff of Fire", 3, 60, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.")
+,(23, "Staff of Fire (Greater)", 8, 450, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.")
+,(24, "Staff of Fire (Major)", 12, 1800, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.")
 -- Staff of Healing --
-,(25, "Staff of Healing", 4, 90, 1, 'held in one hand', 1, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
-)
-,(26, "Staff of Healing (Greater)", 8, 470, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
-)
-,(27, "Staff of Healing (Major)", 12, 1800, 1, 'held in one hand', 3, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
-)
-,(28, "Staff of Healing (True)", 16, 9200, 1, 'held in one hand', 4, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
-);
+,(25, "Staff of Healing", 4, 90, 1, 'held in one hand', 1, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff.")
+,(26, "Staff of Healing (Greater)", 8, 470, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff.")
+,(27, "Staff of Healing (Major)", 12, 1800, 1, 'held in one hand', 3, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff.")
+,(28, "Staff of Healing (True)", 16, 9200, 1, 'held in one hand', 4, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff.")
+-- Staff of Illumination --
 
+------------------------------
+-- staff activations insert --
+------------------------------
+INSERT INTO staff_activations (
+  staff_id,
+  "activation",
+  effect
+)
+VALUES
+ (1, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(2, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(3, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(4, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(5, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(6, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(7, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(8, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(9, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(10, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(11, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(12, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(13, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(14, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(15, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(16, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(17, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(18, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(19, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(20, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(21, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(22, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(23, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(24, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(25, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(26, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(27, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(28, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+
+------------------------
+-- staff_spell insert --
+------------------------
 INSERT INTO staff_spell (
   staff_id
   ,"level"
