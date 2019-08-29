@@ -66,7 +66,9 @@ VALUES
 ,(34, "Staff of Necromancy (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
 ,(35, "Staff of Illusion (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
 -- Staff of Power --
-,(36, "Staff of Power", 16, 10000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff of magically hardened wood is topped with a silver sculpture depicting magical runic symbols. When used as a weapon, a staff of power is a +2 greater striking staff.\n\nVoluntarily destroying a staff of power unleashes an incredible blast of energy. When wielding the staff, you can Interact to break it. This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
+,(36, "Staff of Power", 16, 10000, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff of magically hardened wood is topped with a silver sculpture depicting magical runic symbols. When used as a weapon, a staff of power is a +2 greater striking staff.\n\nVoluntarily destroying a staff of power unleashes an incredible blast of energy. When wielding the staff, you can Interact to break it. This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
+-- Staff of the Magi --
+,(37, "Staff of Power", 20, 90000, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Sigils and runes of ancient and powerful magic cover the iron cladding on this long wooden staff. A staff of the magi is a +3 major striking staff, and when wielding it you gain a +1 circumstance bonus to saving throws against spells.\n\nVoluntarily destroying a staff of the magi unleashes a truly devastating wave of arcane energy that surges out, dissipating with distance. When wielding the staff, you can break it using an Interact action. This releases a 30-foot‑burst magical explosion centered on the staff. This deals 2d10 force damage per charge remaining in the staff (DC 40 basic Reflex save), You automatically critically fail your save. The explosion continues to echo beyond the initial blast zone, dealing half as much damage to creatures beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
 
 ------------------------------
 -- staff activations insert --
@@ -128,6 +130,9 @@ VALUES
 -- Staff of Power --
 ,(36, "Interact", "This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
 ,(36, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of the Magi --
+,(37, "Interact", "This releases a 30-foot‑burst magical explosion centered on the staff. This deals 2d10 force damage per charge remaining in the staff (DC 40 basic Reflex save), You automatically critically fail your save. The explosion continues to echo beyond the initial blast zone, dealing half as much damage to creatures beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
+,(37, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 
 ------------------------
 -- staff_trait insert --
@@ -259,6 +264,11 @@ VALUES
 ,(36, 41)
 ,(36, 142)
 ,(36, 202)
+-- Staff of the Magi --
+,(37, 209)
+,(37, 41)
+,(37, 142)
+,(37, 202)
 
 ------------------------
 -- staff_spell insert --
@@ -629,3 +639,39 @@ VALUES
 ,(36, 7, 71)
 ,(36, 7, 178)
 ,(36, 7, 259)
+-- Staff of the Magi --
+,(37, 0, 97)
+,(37, 0, 258)
+,(37, 0, 271)
+,(37, 0, 463)
+,(37, 1, 266)
+,(37, 2, 153)
+,(37, 2, 199)
+,(37, 2, 243)
+,(37, 2, 252)
+,(37, 2, 462)
+,(37, 2, 523)
+,(37, 3, 112)
+,(37, 3, 178)
+,(37, 3, 259)
+,(37, 4, 243)
+,(37, 4, 153)
+,(37, 4, 178)
+,(37, 4, 509)
+,(37, 4, 523)
+,(37, 5, 71)
+,(37, 5, 316)
+,(37, 5, 461)
+,(37, 6, 110)
+,(37, 6, 112)
+,(37, 6, 178)
+,(37, 6, 259)
+,(37, 7, 71)
+,(37, 7, 316)
+,(37, 7, 325)
+,(37, 7, 509)
+,(37, 8, 178)
+,(37, 8, 270)
+,(37, 9, 112)
+,(37, 9, 287)
+,(37, 9, 445)
