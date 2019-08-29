@@ -61,6 +61,10 @@ VALUES
 ,(30, "Staff of Illusion", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This ornately designed metal staff shines with precious inlays of gold. When you Cast a Spell from the staff, the illusory image of something you desire flashes across its surface. While wielding the staff, you gain a +2 circumstance bonus to checks to identify illusion magic.")
 ,(31, "Staff of Illusion (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This ornately designed metal staff shines with precious inlays of gold. When you Cast a Spell from the staff, the illusory image of something you desire flashes across its surface. While wielding the staff, you gain a +2 circumstance bonus to checks to identify illusion magic.")
 ,(32, "Staff of Illusion (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This ornately designed metal staff shines with precious inlays of gold. When you Cast a Spell from the staff, the illusory image of something you desire flashes across its surface. While wielding the staff, you gain a +2 circumstance bonus to checks to identify illusion magic.")
+-- Staff of Necromancy --
+,(33, "Staff of Necromancy", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
+,(34, "Staff of Necromancy (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
+,(35, "Staff of Illusion (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.")
 
 ------------------------------
 -- staff activations insert --
@@ -115,6 +119,10 @@ VALUES
 ,(30, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(31, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(32, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Necromancy --
+,(33, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(34, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(35, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 
 ------------------------
 -- staff_spell insert --
@@ -445,3 +453,32 @@ VALUES
 ,(32, 5, 498)
 ,(32, 6, 210)
 ,(32, 6, 295)
+-- Staff of Necromancy --
+,(33, 0, 56)
+,(33, 1, 207)
+,(33, 1, 356)
+,(33, 2, 90)
+,(33, 2, 193)
+-- Staff of Necromancy (Greater) --
+,(34, 0, 56)
+,(34, 1, 207)
+,(34, 1, 356)
+,(34, 2, 90)
+,(34, 2, 193)
+,(34, 3, 41)
+,(34, 3, 497)
+,(34, 4, 207)
+-- Placeholder for 4th level Enervation which is missing --
+-- Staff of Necromancy (Major) --
+,(35, 0, 56)
+,(35, 1, 207)
+,(35, 1, 356)
+,(35, 2, 90)
+,(35, 2, 193)
+,(35, 3, 41)
+,(35, 3, 497)
+,(35, 4, 207)
+,(35, 5, 64)
+,(35, 5, 193)
+,(35, 6, 207)
+,(35, 6, 496)
