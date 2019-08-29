@@ -69,6 +69,10 @@ VALUES
 ,(36, "Staff of Power", 16, 10000, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff of magically hardened wood is topped with a silver sculpture depicting magical runic symbols. When used as a weapon, a staff of power is a +2 greater striking staff.\n\nVoluntarily destroying a staff of power unleashes an incredible blast of energy. When wielding the staff, you can Interact to break it. This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
 -- Staff of the Magi --
 ,(37, "Staff of the Magi", 20, 90000, 1, 'held in one hand', NULL, "Supply one casting of all listed levels of all listed spells.", 1, 595, "Sigils and runes of ancient and powerful magic cover the iron cladding on this long wooden staff. A staff of the magi is a +3 major striking staff, and when wielding it you gain a +1 circumstance bonus to saving throws against spells.\n\nVoluntarily destroying a staff of the magi unleashes a truly devastating wave of arcane energy that surges out, dissipating with distance. When wielding the staff, you can break it using an Interact action. This releases a 30-foot‑burst magical explosion centered on the staff. This deals 2d10 force damage per charge remaining in the staff (DC 40 basic Reflex save), You automatically critically fail your save. The explosion continues to echo beyond the initial blast zone, dealing half as much damage to creatures beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
+-- Staff of Transmutation --
+,(38, "Staff of Transmutation", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "A glass orb atop this metal staff contains fine, undulating sand. While wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation magic.")
+,(39, "Staff of Transmutation (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "A glass orb atop this metal staff contains fine, undulating sand. While wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation magic.")
+,(40, "Staff of Transmutation (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "A glass orb atop this metal staff contains fine, undulating sand. While wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation magic.")
 
 ------------------------------
 -- staff activations insert --
@@ -133,6 +137,10 @@ VALUES
 -- Staff of the Magi --
 ,(37, "Interact", "This releases a 30-foot‑burst magical explosion centered on the staff. This deals 2d10 force damage per charge remaining in the staff (DC 40 basic Reflex save), You automatically critically fail your save. The explosion continues to echo beyond the initial blast zone, dealing half as much damage to creatures beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.")
 ,(37, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Staff of Transmutation --
+,(38, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(39, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(40, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 
 ------------------------
 -- staff_trait insert --
@@ -269,6 +277,16 @@ VALUES
 ,(37, 41)
 ,(37, 142)
 ,(37, 202)
+-- Staff of Transmutation
+,(38, 212)
+,(38, 41)
+,(38, 142)
+,(39, 212)
+,(39, 41)
+,(39, 142)
+,(40, 212)
+,(40, 41)
+,(40, 142)
 
 ------------------------
 -- staff_spell insert --
@@ -675,3 +693,33 @@ VALUES
 ,(37, 9, 112)
 ,(37, 9, 287)
 ,(37, 9, 445)
+-- Staff of Transmutation --
+,(38, 0, 406)
+,(38, 1, 182)
+,(38, 1, 248)
+,(38, 2, 153)
+,(38, 2, 226)
+-- Staff of Transmutation (Greater) --
+,(39, 0, 406)
+,(39, 1, 182)
+,(39, 1, 248)
+,(39, 2, 153)
+,(39, 2, 226)
+,(39, 3, 169)
+,(39, 3, 248)
+,(39, 4, 191)
+,(39, 4, 394)
+-- Staff of Transmutation (Major) --
+,(40, 0, 406)
+,(40, 1, 182)
+,(40, 1, 248)
+,(40, 2, 153)
+,(40, 2, 226)
+,(40, 3, 169)
+,(40, 3, 248)
+,(40, 4, 191)
+,(40, 4, 394)
+,(40, 5, 226)
+,(40, 6, 30)
+,(40, 6, 127)
+,(40, 6, 183)
