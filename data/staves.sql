@@ -73,6 +73,15 @@ VALUES
 )
 ,(24, "Staff of Fire (Major)", 12, 1800, 1, 'held in one hand', NULL, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame."
 )
+-- Staff of Healing --
+,(25, "Staff of Healing", 4, 90, 1, 'held in one hand', 1, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
+)
+,(26, "Staff of Healing (Greater)", 8, 470, 1, 'held in one hand', 2, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
+)
+,(27, "Staff of Healing (Major)", 12, 1800, 1, 'held in one hand', 3, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
+)
+,(28, "Staff of Healing (True)", 16, 9200, 1, 'held in one hand', 4, 'Cast a spell', 'You expend a number of charges from the staff to cast a spell from its list.', "Supply one casting of all listed levels of all listed spells.", 1, 595, "Made of smooth, white wood, this staff is capped at each end with a golden cross adorned with a multitude of ruby cabochons. A staff of healing grants an item bonus to the Hit Points you restore anytime you cast the heal spell using your own spell slots or using charges from the staff."
+);
 
 INSERT INTO staff_spell (
   staff_id
@@ -323,3 +332,45 @@ VALUES
 ,(24, 5, 178)
 ,(24, 5, 509)
 -- Staff of Healing --
+,(25, 0, 430)
+,(25, 1, 215)
+-- Staff of Healing (Greater) --
+,(26, 0, 430)
+,(26, 1, 215)
+,(26, 2, 215)
+,(26, 2, 372)
+,(26, 2, 373)
+,(26, 3, 215)
+,(26, 3, 365)
+-- Staff of Healing (Major) --
+,(27, 0, 430)
+,(27, 1, 215)
+,(27, 2, 215)
+,(27, 2, 372)
+,(27, 2, 373)
+,(27, 3, 215)
+,(27, 3, 365)
+,(27, 4, 215)
+,(27, 4, 372)
+,(27, 5, 44)
+,(27, 5, 215)
+,(27, 5, 365)
+-- Staff of Healing (True) --
+,(28, 0, 430)
+,(28, 1, 215)
+,(28, 2, 215)
+,(28, 2, 372)
+,(28, 2, 373)
+,(28, 3, 215)
+,(28, 3, 365)
+,(28, 4, 215)
+,(28, 4, 372)
+,(28, 5, 44)
+,(28, 5, 215)
+,(28, 5, 365)
+,(28, 6, 215)
+,(28, 6, 372)
+,(28, 6, 373)
+,(28, 7, 215)
+,(28, 7, 362)
+,(28, 7, 365)
