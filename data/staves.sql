@@ -73,6 +73,10 @@ VALUES
 ,(38, "Staff of Transmutation", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "A glass orb atop this metal staff contains fine, undulating sand. While wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation magic.")
 ,(39, "Staff of Transmutation (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "A glass orb atop this metal staff contains fine, undulating sand. While wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation magic.")
 ,(40, "Staff of Transmutation (Major)", 14, 4000, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "A glass orb atop this metal staff contains fine, undulating sand. While wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation magic.")
+-- Verdant Staff --
+,(41, "Verdant Staff", 6, 230, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This oak branch grows leaves in spring that change color in autumn and shed in winter. While wielding it, you gain a +2 circumstance bonus to Nature checks to identify plants.")
+,(42, "Verdant Staff (Greater)", 10, 900, 1, 'held in one hand', 2, "Supply one casting of all listed levels of all listed spells.", 1, 595, "This oak branch grows leaves in spring that change color in autumn and shed in winter. While wielding it, you gain a +2 circumstance bonus to Nature checks to identify plants.")
+;
 
 ------------------------------
 -- staff activations insert --
@@ -141,6 +145,10 @@ VALUES
 ,(38, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(39, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
 ,(40, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+-- Verdant Staff --
+,(41, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+,(42, "Cast a Spell", "You expend a number of charges from the staff to cast a spell from its list.")
+;
 
 ------------------------
 -- staff_trait insert --
@@ -287,6 +295,14 @@ VALUES
 ,(40, 212)
 ,(40, 41)
 ,(40, 142)
+-- Verdant Staff --
+,(41, 207)
+,(41, 41)
+,(41, 142)
+,(42, 207)
+,(42, 41)
+,(42, 142)
+;
 
 ------------------------
 -- staff_spell insert --
@@ -723,3 +739,23 @@ VALUES
 ,(40, 6, 30)
 ,(40, 6, 127)
 ,(40, 6, 183)
+-- Verdant Staff --
+,(41, 0, 459)
+,(41, 1, 402)
+,(41, 2, 33)
+,(41, 2, 154)
+,(41, 2, 395)
+,(41, 2, 480)
+-- Verdant Staff (Greater) --
+,(42, 0, 459)
+,(42, 1, 402)
+,(42, 2, 33)
+,(42, 2, 154)
+,(42, 2, 395)
+,(42, 2, 480)
+,(42, 3, 513)
+,(42, 4, 33)
+,(42, 4, 416)
+,(42, 5, 326)
+,(42, 5, 513)
+;
