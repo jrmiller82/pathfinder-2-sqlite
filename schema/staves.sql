@@ -2,7 +2,7 @@
 
 -- Parent table -- Table for Staves --
 CREATE TABLE staff (
-  staff_id INTEGER PRIMARY KEY NOT NULL,
+  staff_id INTEGER PRIMARY KEY,
   "name" TEXT NOT NULL UNIQUE, -- every staff should have a name --
   "level" INTEGER NOT NULL, -- every staff should have a level --
   price INTEGER, /* stored in GP
@@ -19,31 +19,37 @@ CREATE TABLE staff (
   FOREIGN KEY (source_id) REFERENCES sources(sources_id)
 );
 
--- Child table -- many-to-many -- staff-to-spells --
-CREATE TABLE staff_spell (
-  staff_id INTEGER NOT NULL,
-  "level" INTEGER NOT NULL, -- This represents the level of the spell in the staff where 0 = cantrip --
-                          -- Consider renaming this column --
-  spell_id INTEGER NOT NULL,
-  PRIMARY KEY (staff_id, "level", spell_id),
-  FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
-  FOREIGN KEY (spell_id) REFERENCES spells(spells_id)
-);
-
--- Child table -- one-to-many --
-CREATE TABLE staff_activations (
-  staff_id INTEGER NOT NULL,
+-- Child table -- many-to-many --
+CREATE TABLE staffactivations (
+  staffactivations_id INTEGER PRIMARY KEY,
   "activation" TEXT NOT NULL,
-  effect TEXT NOT NULL,
-  PRIMARY KEY (staff_id, "activation", effect),
-  FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
+  effect TEXT NOT NULL
 );
 
--- Child table -- many-to-many -- staff-to-traits --
+-- Joining table -- 
+CREATE TABLE staff_staffactivations (
+  staff_id INTEGER,
+  staffactivations_id INTEGER,
+  PRIMARY KEY (staff_id, staffactivations_id),
+  FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
+  FOREIGN KEY (staffactivations_id) REFERENCES staffactivations(staffactivations_id)
+);
+
+-- Joining table --
 CREATE TABLE staff_trait (
-  staff_id INTEGER NOT NULL,
-  trait_id INTEGER NOT NULL,
+  staff_id INTEGER,
+  trait_id INTEGER,
   PRIMARY KEY (staff_id, trait_id),
   FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
   FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
+);
+
+-- Joining table --
+CREATE TABLE staff_spell (
+  staff_id INTEGER,
+  "level" INTEGER NOT NULL, -- This represents the level of the spell in the staff where 0 = cantrip --
+  spell_id INTEGER,
+  PRIMARY KEY (staff_id, "level", spell_id),
+  FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
+  FOREIGN KEY (spell_id) REFERENCES spells(spells_id)
 );

@@ -81,73 +81,88 @@ VALUES
 ------------------------------
 -- staff activations insert --
 ------------------------------
-INSERT INTO staff_activations (
-  staff_id,
+INSERT INTO staffactivations (
+  staffactivations_id,
   "activation",
   effect
 )
 VALUES
--- Animal Staff --
+-- Most staves --
  (1, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(2, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(3, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Mentalist's Staff --
-,(4, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(5, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(6, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Abjuration --
-,(7, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(8, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(9, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Conjuration --
-,(10, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(11, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(12, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Divination -
-,(13, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(14, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(15, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Enchantment --
-,(16, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(17, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(18, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Evocation --
-,(19, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(20, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(21, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Fire --
-,(22, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(23, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(24, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Healing --
-,(25, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(26, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(27, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(28, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Illumination --
-,(29, 'Interact', 'The gem at the top of the staff glows as a torch, shedding bright light in a 20-foot radius (and dim light to the next 20 feet) for 10 minutes.')
-,(29, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Illusion --
-,(30, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(31, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(32, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
--- Staff of Necromancy --
-,(33, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(34, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(35, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
+ -- Staff of Illumination --
+,(2, 'Interact', 'The gem at the top of the staff glows as a torch, shedding bright light in a 20-foot radius (and dim light to the next 20 feet) for 10 minutes.')
 -- Staff of Power --
-,(36, 'Interact', 'This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.')
-,(36, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
+,(3, 'Interact', 'This releases a 30-foot-burst magical explosion centered on the staff. This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex save). You automatically critically fail your save. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.')
 -- Staff of the Magi --
-,(37, 'Interact', 'This releases a 30-foot‑burst magical explosion centered on the staff. This deals 2d10 force damage per charge remaining in the staff (DC 40 basic Reflex save), You automatically critically fail your save. The explosion continues to echo beyond the initial blast zone, dealing half as much damage to creatures beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.')
-,(37, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
+,(4, 'Interact', 'This releases a 30-foot‑burst magical explosion centered on the staff. This deals 2d10 force damage per charge remaining in the staff (DC 40 basic Reflex save), You automatically critically fail your save. The explosion continues to echo beyond the initial blast zone, dealing half as much damage to creatures beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points by this damage dies instantly; this is a death effect.')
+;
+
+INSERT INTO staff_staffactivations (
+  staff_id,
+  staffactivations_id
+)
+VALUES
+-- Animal Staff --
+ (1, 1)
+,(2, 1)
+,(3, 1)
+-- Mentalist's Staff --
+,(4, 1)
+,(5, 1)
+,(6, 1)
+-- Staff of Abjuration --
+,(7, 1)
+,(8, 1)
+,(9, 1)
+-- Staff of Conjuration --
+,(10, 1)
+,(11, 1)
+,(12, 1)
+-- Staff of Divination -
+,(13, 1)
+,(14, 1)
+,(15, 1)
+-- Staff of Enchantment --
+,(16, 1)
+,(17, 1)
+,(18, 1)
+-- Staff of Evocation --
+,(19, 1)
+,(20, 1)
+,(21, 1)
+-- Staff of Fire --
+,(22, 1)
+,(23, 1)
+,(24, 1)
+-- Staff of Healing --
+,(25, 1)
+,(26, 1)
+,(27, 1)
+,(28, 1)
+-- Staff of Illumination --
+,(29, 2)
+,(29, 1)
+-- Staff of Illusion --
+,(30, 1)
+,(31, 1)
+,(32, 1)
+-- Staff of Necromancy --
+,(33, 1)
+,(34, 1)
+,(35, 1)
+-- Staff of Power --
+,(36, 3)
+,(36, 1)
+-- Staff of the Magi --
+,(37, 4)
+,(37, 1)
 -- Staff of Transmutation --
-,(38, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(39, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(40, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
+,(38, 1)
+,(39, 1)
+,(40, 1)
 -- Verdant Staff --
-,(41, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
-,(42, 'Cast a Spell', 'You expend a number of charges from the staff to cast a spell from its list.')
+,(41, 1)
+,(42, 1)
 ;
 
 ------------------------
