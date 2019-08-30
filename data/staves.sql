@@ -5,7 +5,7 @@ PRAGMA foreign_keys = ON; -- database requires foreign key checking to be turned
 -- Staff insert --
 ------------------
 INSERT INTO staff (
-  staff_id,
+   staff_id
   ,"name"
   ,"level"
   ,price
