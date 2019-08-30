@@ -56,7 +56,7 @@ sqlite3 pf2.db < data/ammunition.sql
 sqlite3 pf2.db < data/monsters.sql
 # Comment out the following three lines if you don't want to generate the spell data.
 cd data/third_party_json
-python spells.py
+python3 spells.py
 cd ../..
 # Staves need to be added after spells due to Foreign Key constraint
 sqlite3 pf2.db < data/staves.sql
