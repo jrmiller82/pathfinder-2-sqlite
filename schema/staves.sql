@@ -5,11 +5,11 @@ CREATE TABLE staff (
   staff_id INTEGER PRIMARY KEY NOT NULL,
   "name" TEXT NOT NULL UNIQUE, -- every staff should have a name --
   "level" INTEGER NOT NULL, -- every staff should have a level --
-  price INTEGER, -- stored in GP --
-                 -- could add NOT NULL and store 0s --
+  price INTEGER, /* stored in GP
+                 could add NOT NULL and store 0s */
   bulk INTEGER, -- could add NOT NULL and store 0s --
-  usage TEXT, -- always "held in 1 hand" --
-              -- Consider storing in another table --
+  usage TEXT, /* always "held in 1 hand"
+              Consider storing in another table */
   item_bonus INTEGER, -- If the staff gives an item bonus --
   craft_requirements TEXT, -- "Supply one casting of all listed levels of all listed spells." -- 
                            -- Consider storing in another table --
@@ -27,7 +27,7 @@ CREATE TABLE staff_spell (
   spell_id INTEGER NOT NULL,
   PRIMARY KEY (staff_id, "level", spell_id),
   FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
-  FOREIGN KEY spell_id REFERENCES spells(spells_id)
+  FOREIGN KEY (spell_id) REFERENCES spells(spells_id)
 );
 
 -- Child table -- one-to-many --
@@ -36,7 +36,7 @@ CREATE TABLE staff_activations (
   "activation" TEXT NOT NULL,
   effect TEXT NOT NULL,
   PRIMARY KEY (staff_id, "activation", effect),
-  FOREIGN KEY staff_id REFERENCES staff(staff_id)
+  FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
 );
 
 -- Child table -- many-to-many -- staff-to-traits --
@@ -44,6 +44,6 @@ CREATE TABLE staff_trait (
   staff_id INTEGER NOT NULL,
   trait_id INTEGER NOT NULL,
   PRIMARY KEY (staff_id, trait_id),
-  FOREIGN KEY staff_id REFERENCES staff(staff_id),
+  FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
   FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
