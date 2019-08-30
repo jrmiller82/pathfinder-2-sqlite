@@ -26,6 +26,7 @@ sqlite3 pf2.db < schema/gear.sql
 sqlite3 pf2.db < schema/weapons.sql
 sqlite3 pf2.db < schema/ammunition.sql
 sqlite3 pf2.db < schema/monsters.sql
+sqlite3 pf2.db < schema/staves.sql
 echo 'loading data'
 sqlite3 pf2.db < data/sources.sql
 sqlite3 pf2.db < data/alignments.sql
@@ -55,8 +56,10 @@ sqlite3 pf2.db < data/ammunition.sql
 sqlite3 pf2.db < data/monsters.sql
 # Comment out the following three lines if you don't want to generate the spell data.
 cd data/third_party_json
-python3 spells.py
+python spells.py
 cd ../..
+# Staves need to be added after spells due to Foreign Key constraint
+sqlite3 pf2.db < data/staves.sql
 
 # TODO Eventually we will stop relying on the spells.py script and I will have
 # the actual .sql files for the spell data; I am waiting to see if the
