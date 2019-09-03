@@ -28,25 +28,24 @@ CREATE TABLE staffactivations (
 
 -- Joining table -- 
 CREATE TABLE staff_staffactivations (
-  id INTEGER PRIMARY KEY,
   staff_id INTEGER,
   staffactivations_id INTEGER,
+  PRIMARY KEY (staff_id, staffactivations_id),
   FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
   FOREIGN KEY (staffactivations_id) REFERENCES staffactivations(staffactivations_id)
 );
 
 -- Joining table --
 CREATE TABLE staff_trait (
-  id INTEGER PRIMARY KEY,
   staff_id INTEGER,
   trait_id INTEGER,
+  PRIMARY KEY (staff_id, trait_id),
   FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
   FOREIGN KEY (trait_id) REFERENCES traits(trait_id)
 );
 
 -- Joining table --
 CREATE TABLE staff_spell (
-  id INTEGER PRIMARY KEY,
   staff_id INTEGER,
   "level" INTEGER NOT NULL, -- This represents the level of the spell in the staff where 0 = cantrip --
   spell_id INTEGER,
@@ -54,5 +53,3 @@ CREATE TABLE staff_spell (
   FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
   FOREIGN KEY (spell_id) REFERENCES spells(spells_id)
 );
-
--- TODO CREATE TABLE staff_sourceentries -- joining table --
