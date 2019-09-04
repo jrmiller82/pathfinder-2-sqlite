@@ -29,13 +29,12 @@ CREATE TABLE staffactivations (
 
 -- Joining table -- 
 CREATE TABLE staff_staffactivations (
-  id INTEGER PRIMARY KEY
+  id INTEGER PRIMARY KEY,
   staff_id INTEGER NOT NULL,
   staffactivations_id INTEGER NOT NULL,
   UNIQUE (id, staff_id, staffactivations_id),
   FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
   FOREIGN KEY (staffactivations_id) REFERENCES staffactivations(staffactivations_id)
-
 );
 
 -- Joining table --
