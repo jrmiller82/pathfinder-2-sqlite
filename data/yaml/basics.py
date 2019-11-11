@@ -19,7 +19,33 @@ def main():
    do_abilityscore(data['abilityscore'], conn)
    do_actioncost(data['actioncost'], conn)
    do_alignment(data['alignment'], conn)
+   do_frequency(data['frequency'], conn)
    do_langrarity(data['lang_rarity'], conn)
+
+def do_frequency(data, conn):
+   table = """
+CREATE TABLE frequency (
+  freq_id INTEGER PRIMARY KEY,
+  freq_descr TEXT NOT NULL UNIQUE
+);
+   """
+
+   c = conn.cursor()
+   c.execute(table)
+
+   inp_data = []
+   for i in data:
+      inp_data.append((i,)) # trailing comma necessary for one-item tuple
+
+   stmt = "INSERT INTO frequency(freq_descr) VALUES (?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except:
+      e = sys.exc_info()[0]
+      print("Error creating frequency: {}".format(e))
+      print(vars(e))
+   else:
+      conn.commit()
 
 def do_alignment(data, conn):
    print(data)
