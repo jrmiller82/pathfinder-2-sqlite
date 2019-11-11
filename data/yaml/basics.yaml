@@ -24,7 +24,6 @@ abilityscore:
   - flag_rep: 128
     short_name: Free2
     long_name: Free 2
----
 actioncost:
   - name: Varies
     abbr: varies
@@ -38,7 +37,6 @@ actioncost:
     abbr: free
   - name: Reaction
     abbr: reaction
----
 alignment:
   - name: Lawful Good
     abbr: LG
@@ -58,7 +56,6 @@ alignment:
     abbr: NE
   - name: Chaotic Evil
     abbr: CE
----
 frequency:
   - once per round
   - once per turn
@@ -66,19 +63,16 @@ frequency:
   - once every 10 minutes
   - once per hour
   - once per day
----
 lang_rarity:
   - Common
   - Uncommon
   - Secret
----
 movement:
   - Land
   - Burrow
   - Climb
   - Fly
   - Swim
----
 size:
   - name: Tiny
     space_in_ft: 4
@@ -104,10 +98,9 @@ size:
     space_in_ft: 20
     reach_tall_ft: 20
     reach_long_Ft: 15
----
 weapon_category:
   - Unarmed
   - Simple
   - Martial
   - Advanced
----
+...
