@@ -1,0 +1,106 @@
+---
+abilityscore:
+  - flag_rep: 1
+    short_name: STR
+    long_name: Strength
+  - flag_rep: 2
+    short_name: DEX
+    long_name: Dexterity
+  - flag_rep: 4
+    short_name: CON
+    long_name: Constitution
+  - flag_rep: 8
+    short_name: INT
+    long_name: Intelligence
+  - flag_rep: 16
+    short_name: Wis
+    long_name: Wisdom
+  - flag_rep: 32
+    short_name: CHA
+    long_name: Charisma
+  - flag_rep: 64
+    short_name: Free1
+    long_name: Free 1
+  - flag_rep: 128
+    short_name: Free2
+    long_name: Free 2
+actioncost:
+  - name: Varies
+    abbr: varies
+  - name: Single Action
+    abbr: 1
+  - name: Two Actions
+    abbr: 2
+  - name: Three Actions
+    abbr: 3
+  - name: Free Action
+    abbr: free
+  - name: Reaction
+    abbr: reaction
+alignment:
+  - name: Lawful Good
+    abbr: LG
+  - name: Neutral Good
+    abbr: NG
+  - name: Chaotic Good
+    abbr: CG
+  - name: Lawful Neutral
+    abbr: LN
+  - name: True Neutral
+    abbr: N
+  - name: Chaotic Neutral
+    abbr: CN
+  - name: Lawful Evil
+    abbr: LE
+  - name: Neutral Evil
+    abbr: NE
+  - name: Chaotic Evil
+    abbr: CE
+frequency:
+  - once per round
+  - once per turn
+  - once per minute
+  - once every 10 minutes
+  - once per hour
+  - once per day
+lang_rarity:
+  - Common
+  - Uncommon
+  - Secret
+movement:
+  - Land
+  - Burrow
+  - Climb
+  - Fly
+  - Swim
+size:
+  - name: Tiny
+    space_in_ft: 4
+    reach_tall_ft: 0
+    reach_long_ft: 0
+  - name: Small
+    space_in_ft: 5
+    reach_tall_ft: 5
+    reach_long_ft: 5
+  - name: Medium
+    space_in_ft: 5
+    reach_tall_ft: 5
+    reach_long_ft: 5
+  - name: Large
+    space_in_ft: 10
+    reach_tall_ft: 10
+    reach_long_ft: 5
+  - name: Huge
+    space_in_ft: 15
+    reach_tall_ft: 15
+    reach_long_ft: 10
+  - name: Gargantuan
+    space_in_ft: 20
+    reach_tall_ft: 20
+    reach_long_ft: 15
+weaponcategory:
+  - Unarmed
+  - Simple
+  - Martial
+  - Advanced
+...
