@@ -21,6 +21,32 @@ def main():
    do_alignment(data['alignment'], conn)
    do_frequency(data['frequency'], conn)
    do_langrarity(data['lang_rarity'], conn)
+   do_movement(data['movement'], conn)
+
+def do_movement(data, conn):
+   table = """
+CREATE TABLE movement (
+  movement_id INTEGER PRIMARY KEY,
+  "name" TEXT UNIQUE NOT NULL
+);
+   """
+
+   c = conn.cursor()
+   c.execute(table)
+
+   inp_data = []
+   for i in data:
+      inp_data.append((i,)) # trailing comma necessary for one-item tuple
+
+   stmt = "INSERT INTO movement(name) VALUES (?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except:
+      e = sys.exc_info()[0]
+      print("Error creating movement: {}".format(e))
+      print(vars(e))
+   else:
+      conn.commit()
 
 def do_frequency(data, conn):
    table = """
