@@ -2,6 +2,7 @@ import yaml
 import sqlite3
 import os
 import pprint
+import sys
 
 DBFILE = 'tmp.db'
 
@@ -17,10 +18,34 @@ def main():
    # call the functions to input to SQL
    do_abilityscore(data['abilityscore'], conn)
    do_actioncost(data['actioncost'], conn)
+   do_langrarity(data['lang_rarity'], conn)
+
+def do_langrarity(data, conn):
+   table = """
+CREATE TABLE langrarity (
+  rarity_id INTEGER PRIMARY KEY,
+  rarity_name TEXT NOT NULL UNIQUE
+);
+   """
+
+   c = conn.cursor()
+   c.execute(table)
+
+   inp_data = []
+   for i in data:
+      inp_data.append((i,)) # trailing comma necessary for one-item tuple
+
+   stmt = "INSERT INTO langrarity(rarity_name) VALUES (?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except:
+      e = sys.exc_info()[0]
+      print("Error creating langrarity: {}".format(e))
+      print(vars(e))
+   else:
+      conn.commit()
 
 def do_actioncost(data, conn):
-   print(data)
-
    table = """
 CREATE TABLE actioncost (
   actioncost_id INTEGER PRIMARY KEY,
@@ -45,8 +70,6 @@ CREATE TABLE actioncost (
       conn.commit()
 
 def do_abilityscore(data, conn):
-   print(data)
-
    table = """
 CREATE TABLE abilityscore (
    abilityscore_id INTEGER PRIMARY KEY,
