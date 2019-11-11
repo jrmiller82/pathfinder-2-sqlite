@@ -22,6 +22,32 @@ def main():
    do_frequency(data['frequency'], conn)
    do_langrarity(data['lang_rarity'], conn)
    do_movement(data['movement'], conn)
+   do_weaponcategory(data['weaponcategory'], conn)
+
+def do_weaponcategory(data, conn):
+   table = """
+CREATE TABLE weaponcategory (
+  weaponcategory_id INTEGER PRIMARY KEY,
+  "name" TEXT NOT NULL UNIQUE
+);
+   """
+
+   c = conn.cursor()
+   c.execute(table)
+
+   inp_data = []
+   for i in data:
+      inp_data.append((i,)) # trailing comma necessary for one-item tuple
+
+   stmt = "INSERT INTO weaponcategory(name) VALUES (?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except:
+      e = sys.exc_info()[0]
+      print("Error creating weaponcategory: {}".format(e))
+      print(vars(e))
+   else:
+      conn.commit()
 
 def do_movement(data, conn):
    table = """

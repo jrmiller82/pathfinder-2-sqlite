@@ -98,7 +98,7 @@ size:
     space_in_ft: 20
     reach_tall_ft: 20
     reach_long_Ft: 15
-weapon_category:
+weaponcategory:
   - Unarmed
   - Simple
   - Martial
