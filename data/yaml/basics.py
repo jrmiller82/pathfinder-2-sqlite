@@ -18,7 +18,33 @@ def main():
    # call the functions to input to SQL
    do_abilityscore(data['abilityscore'], conn)
    do_actioncost(data['actioncost'], conn)
+   do_alignment(data['alignment'], conn)
    do_langrarity(data['lang_rarity'], conn)
+
+def do_alignment(data, conn):
+   print(data)
+   table = """
+CREATE TABLE alignment (
+  alignment_id INTEGER PRIMARY KEY,
+  "name" TEXT UNIQUE NOT NULL, -- 'Lawful Good'
+  abbr TEXT UNIQUE NOT NULL -- 'LG'
+);
+   """
+
+   c = conn.cursor()
+   c.execute(table)
+
+   inp_data = []
+   for i in data:
+      inp_data.append((i['name'], i['abbr']))
+
+   stmt = "INSERT INTO alignment(name, abbr) VALUES (?,?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except:
+      print("Error creating alignment")
+   else:
+      conn.commit()
 
 def do_langrarity(data, conn):
    table = """
