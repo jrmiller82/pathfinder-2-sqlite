@@ -77,27 +77,27 @@ size:
   - name: Tiny
     space_in_ft: 4
     reach_tall_ft: 0
-    reach_long_Ft: 0
+    reach_long_ft: 0
   - name: Small
     space_in_ft: 5
     reach_tall_ft: 5
-    reach_long_Ft: 5
+    reach_long_ft: 5
   - name: Medium
     space_in_ft: 5
     reach_tall_ft: 5
-    reach_long_Ft: 5
+    reach_long_ft: 5
   - name: Large
     space_in_ft: 10
     reach_tall_ft: 10
-    reach_long_Ft: 5
+    reach_long_ft: 5
   - name: Huge
     space_in_ft: 15
     reach_tall_ft: 15
-    reach_long_Ft: 10
+    reach_long_ft: 10
   - name: Gargantuan
     space_in_ft: 20
     reach_tall_ft: 20
-    reach_long_Ft: 15
+    reach_long_ft: 15
 weaponcategory:
   - Unarmed
   - Simple

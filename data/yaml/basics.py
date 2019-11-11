@@ -22,7 +22,34 @@ def main():
    do_frequency(data['frequency'], conn)
    do_langrarity(data['lang_rarity'], conn)
    do_movement(data['movement'], conn)
+   do_size(data['size'], conn)
    do_weaponcategory(data['weaponcategory'], conn)
+
+def do_size(data, conn):
+   table = """
+CREATE TABLE size (
+  size_id INTEGER PRIMARY KEY,
+  short_name TEXT NOT NULL UNIQUE,
+  space_in_ft INTEGER NOT NULL,
+  reach_tall_ft INTEGER NOT NULL,
+  reach_long_ft INTEGER NOT NULL
+);
+   """
+
+   c = conn.cursor()
+   c.execute(table)
+
+   inp_data = []
+   for i in data:
+      inp_data.append((i['name'], i['space_in_ft'], i['reach_tall_ft'], i['reach_long_ft']))
+
+   stmt = "INSERT INTO size (short_name, space_in_ft, reach_tall_ft, reach_long_ft) VALUES (?,?,?,?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except:
+      print("Error creating size")
+   else:
+      conn.commit()
 
 def do_weaponcategory(data, conn):
    table = """
