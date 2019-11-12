@@ -12,7 +12,6 @@ def main():
    # Load in the yaml data
    with open('basics.yaml') as yl:
       data = yaml.full_load(yl)
-      # pprint.pprint(data)
    # Get a DB conn
    conn = get_db_conn()
    # call the functions to input to SQL
@@ -28,8 +27,53 @@ def main():
    # move on to traits
    with open('traits.yaml') as yl:
       data = yaml.full_load(yl)
-      # pprint.pprint(data)
    do_traits(data, conn) # does both trait types and traits
+
+   # move on to sources
+   with open('sources.yaml') as yl:
+      data = yaml.full_load(yl)
+   do_sources(data, conn)
+
+def do_sources(data, conn):
+   table = """
+CREATE TABLE sources (
+  sources_id INTEGER PRIMARY KEY,
+  isbn TEXT,
+  pzocode TEXT,
+  full_name TEXT NOT NULL UNIQUE,
+  short_name TEXT NOT NULL UNIQUE,
+  abbr TEXT NOT NULL UNIQUE,
+  descr TEXT NOT NULL,
+  release_date TEXT NOT NULL, -- in YYYY-MM-DD format
+  is_first_party BOOLEAN NOT NULL,
+  ogl_copyright_block TEXT NOT NULL
+);
+   """
+
+   c = conn.cursor()
+   c.execute(table)
+
+   inp_data = []
+   for i in data['source']:
+      inp_data.append((i['isbn'],
+                       i['pzocode'],
+                       i['full_name'],
+                       i['short_name'],
+                       i['abbr'],
+                       i['descr'],
+                       i['release_date'],
+                       i['is_first_party'],
+                       i['ogl_copyright_block']))
+
+   stmt = "INSERT INTO sources (isbn, pzocode, full_name, short_name, abbr, descr, release_date, is_first_party, ogl_copyright_block) VALUES (?,?,?,?,?,?,?,?,?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except sqlite3.Error as e:
+      print("Error creating sources: {}".format(e))
+   except:
+      print("Error creating sources something other than sqlite3 error")
+   else:
+      conn.commit()
 
 def do_traits(data, conn):
    # create the two tables

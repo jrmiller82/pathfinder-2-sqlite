@@ -1,0 +1,39 @@
+source:
+  - full_name: Pathfinder Core Rulebook (Second Edition)
+    isbn: 978-1-64078-168-9
+    pzocode: PZO2101
+    short_name: Core Rulebook
+    abbr: CRB
+    descr: Volume containing the rules core rules for players and Game Masters
+    release_date: 2019-08-01
+    is_first_party: true
+    ogl_copyright_block: "Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Pathfinder Core Rulebook (Second Edition) (c) 2019, Paizo, Inc.; Designers: Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter."
+  - full_name: Pathfinder Bestiary (Second Edition)
+    isbn: 978-1-64078-170-2
+    pzocode: PZO2102
+    short_name: Bestiary
+    abbr: BST1
+    descr: Volume containing monster stat blocks and rules primarily for Game Masters
+    release_date: 2019-08-01
+    is_first_party: true
+    ogl_copyright_block: "Daemon, Guardian from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Ian McDowall. Dark Creeper from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Rik Shepard. Dark Stalker from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Simon Muth. Dragon, Faerie from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Brian Jaeger and Gary Gygax. Genie, Marid from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax. Mite from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Ian Livingstone and Mark Barnes. Pathfinder Bestiary (Second Edition) © 2019, Paizo Inc.; Authors: Alexander Augunas, Logan Bonner, Jason Bulmahn, John Compton, Paris Crenshaw, Adam Daigle, Eleanor Ferron, Leo Glass, Thurston Hillman, James Jacobs, Jason Keeley, Lyz Liddell, Ron Lundeen, Robert G. McCreary, Tim Nightengale, Stephen Radney-MacFarland, Alex Riggs, David N. Ross, Michael Sayre, Mark Seifter, Chris S. Sims, Jeffrey Swank, Jason Tondro, Tonya Woldridge, and Linda Zayas-Palmer."
+  - full_name: "Pathfinder Adventure: The Fall of Plaguestone"
+    isbn: 978-1-64078-174-0
+    pzocode: PZO9555
+    short_name: The Fall of Plaguestone
+    abbr: TFoP
+    # TODO Fix description
+    descr: TODO
+    release_date: 2019-08-01
+    is_first_party: true
+    ogl_copyright_block: "Pathfinder Adventure: The Fall of Plaguestone © 2019, Paizo Inc.; Author: Jason Bulmahn."
+  - full_name: "Age of Ashes Player's Guide"
+    isbn: null
+    pzocode: PZO9000-25E
+    short_name: "Age of Ashes Player's Guide"
+    abbr: AoAPG
+    # TODO Fix description
+    descr: "Player's Guide for the Age of Ashes Adventure Path"
+    release_date: 2019
+    is_first_party: true
+    ogl_copyright_block: "Age of Ashes Player''s Guide © 2019, Paizo Inc.; Authors: James Jacobs with Amanda Hamon."
