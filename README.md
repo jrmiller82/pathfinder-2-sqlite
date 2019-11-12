@@ -14,19 +14,15 @@ Also, most use cases of this data will likely be read only, so the sqlite
 limitations on concurrent writes won't be an issue either. Finally, it's
 permissively licensed.
 
-## Why not JSON? 
-
-Because I'd rather leverage sql's power, than writing internal code to a future
-Pathfinder 2 app. Also, because sqlite is pretty much language agnostic at this
-point; Pythonistas, Gophers, Rustaceans, and anything in between can access a
-sqlite database.
-
 ## Roadmap
 
-1. Design schema;
-2. Write script to generate sqlite database from sql code;
-3. Write sql code; and
-4. Drinks for all when finished!
+1. Get data in YAML format (spells are in JSON for the time being; but will
+   get converted over to YAML in the future).
+2. Design schema;
+3. Write script to generate sqlite database from YAML data (see
+   `data/yaml/gendb.py` for work in progress);
+4. Metric boatloads of proofreading
+5. Drinks for all when finished!
 
 # Conventions in the Code
 
