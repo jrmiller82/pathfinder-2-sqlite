@@ -12,7 +12,7 @@ def main():
    # Load in the yaml data
    with open('basics.yaml') as yl:
       data = yaml.full_load(yl)
-      pprint.pprint(data)
+      # pprint.pprint(data)
    # Get a DB conn
    conn = get_db_conn()
    # call the functions to input to SQL
@@ -24,6 +24,61 @@ def main():
    do_movement(data['movement'], conn)
    do_size(data['size'], conn)
    do_weaponcategory(data['weaponcategory'], conn)
+
+   # move on to traits
+   with open('traits.yaml') as yl:
+      data = yaml.full_load(yl)
+      # pprint.pprint(data)
+   do_traits(data, conn) # does both trait types and traits
+
+def do_traits(data, conn):
+   # create the two tables
+   table = """
+CREATE TABLE traittype (
+  traittype_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL
+);
+   """
+   table_two = """
+CREATE TABLE trait (
+  trait_id INTEGER PRIMARY KEY,
+  traittype_id INTEGER,
+  short_name TEXT NOT NULL,
+  descr TEXT NOT NULL,
+  FOREIGN KEY (traittype_id) REFERENCES traittype(traittype_id)
+);
+"""
+   c = conn.cursor()
+   c.execute(table)
+   c.execute(table_two)
+   # insert data into traittype
+   inp_data = []
+   for i in data['traittype']:
+      inp_data.append((i,)) # trailing comma necessary for one-item tuple
+   stmt = "INSERT INTO traittype (name) VALUES (?)"
+   try:
+      conn.executemany(stmt,inp_data)
+   except:
+      e = sys.exc_info()[0]
+      print("Error creating traittype: {}".format(e))
+      print(vars(e))
+   else:
+      conn.commit()
+   # insert data into trait
+   inp_data = []
+   for i in data['trait']:
+      inp_data.append((i['descr'], i['name'], i['type'])) # trailing comma necessary for one-item tuple
+   stmt = "INSERT INTO trait (descr, short_name, traittype_id) SELECT ?,?, traittype_id FROM traittype WHERE traittype.name=?"
+   try:
+      conn.executemany(stmt,inp_data)
+   except sqlite3.Error as e:
+      print("Error creating trait input: {}".format(e))
+   except:
+      e = sys.exc_info()[0]
+      print("Error creating trait: {}".format(e))
+      print(vars(e))
+   else:
+      conn.commit()
 
 def do_size(data, conn):
    table = """
