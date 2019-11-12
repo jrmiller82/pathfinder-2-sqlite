@@ -182,7 +182,7 @@ CREATE TABLE frequency (
       conn.commit()
 
 def do_alignment(data, conn):
-   print(data)
+   # print(data)
    table = """
 CREATE TABLE alignment (
   alignment_id INTEGER PRIMARY KEY,
