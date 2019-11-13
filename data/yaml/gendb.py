@@ -51,6 +51,84 @@ def main():
         data = yaml.full_load(yl)
     do_conditions(data, conn)
 
+    # move on to backgrounds
+    with open('backgrounds.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_backgrounds(data, conn)
+
+
+def do_backgrounds(data, conn):
+    # MAKE THE 2 TABLES
+    table = """
+CREATE TABLE background (
+  background_id INTEGER PRIMARY KEY,
+  "name" TEXT NOT NULL UNIQUE,
+  descr TEXT NOT NULL,
+  is_comty_use BOOLEAN NOT NULL, -- false = no community use policy required
+  is_specific_to_adv BOOLEAN NOT NULL -- means the background is specific to its adventure
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+    table = """
+CREATE TABLE sourceentry_background (
+  id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER NOT NULL,
+  background_id INTEGER NOT NULL,
+  UNIQUE (sourceentry_id, background_id), -- prevent duplicates
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+  FOREIGN KEY (background_id) REFERENCES background(background_id)
+);
+   """
+    c.execute(table)
+
+    print(data)
+    for i in data['background']:
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        stmt = "INSERT INTO background(name, descr, is_comty_use, is_specific_to_adv) VALUES (?,?,?,?)"
+        try:
+            conn.execute(stmt, (i['name'], i['descr'], i['is_comty_use'], i['is_specific_to_adv']))
+        except:
+            print("Error creating background")
+        else:
+            conn.commit()
+        # print("backgrounds, about to call util insert se: {}".format(srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+        # now link the source entries to this table
+        # TODO
+        link_sourceentry_backgrounds(i['name'], srcentrydata, conn)
+
+def link_sourceentry_backgrounds(name, srcentrydata, conn):
+    stmt = """
+INSERT INTO sourceentry_background (sourceentry_id, background_id)
+    SELECT sourceentry_id, background_id
+    FROM sourceentry, background
+    WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+    AND sourceentry.page_start=?
+    AND sourceentry.page_stop=?
+    AND background.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        # print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        # print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to backgrounds: {}".format(e))
+        else:
+            conn.commit()
+
 def do_conditions(data, conn):
     # MAKE THE 2 TABLES
     table = """
@@ -93,10 +171,11 @@ CREATE TABLE sourceentry_condition (
             print("Error creating condition")
         else:
             conn.commit()
-        print("conditions, about to call util insert se: {}".format(srcentrydata))
+        # print("conditions, about to call util insert se: {}".format(srcentrydata))
         util_insert_into_sourceentry(srcentrydata, conn)
-        # now link the source entries to this table 
+        # now link the source entries to this table
         link_sourceentry_conditions(i['name'], srcentrydata, conn)
+
 
 def link_sourceentry_conditions(name, srcentrydata, conn):
     stmt = """
@@ -110,15 +189,16 @@ INSERT INTO sourceentry_condition (sourceentry_id, condition_id)
     """
     # print(srcentrydata)
     for i in srcentrydata:
-        print("i is:{}".format(i))
+        # print("i is:{}".format(i))
         d = (i[0], i[1], i[2], name)
-        print(d)
+        # print(d)
         try:
             conn.execute(stmt, d)
         except Exception as e:
             print("Error linking sourceentry to conditions: {}".format(e))
         else:
             conn.commit()
+
 
 def do_damage(data, conn):
     # make the four tables
