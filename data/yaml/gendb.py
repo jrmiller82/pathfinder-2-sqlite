@@ -41,6 +41,7 @@ def main():
         data = yaml.full_load(yl)
     do_skills(data, conn)
 
+
 def do_skills(data, conn):
     # make skill table
     table = """
@@ -70,8 +71,7 @@ CREATE TABLE sourceentry_skill (
     # insert basics into skill table
     inp_data = []
     for i in data['skill']:
-        inp_data.append(
-            (i['name'], i['descr']))
+        inp_data.append((i['name'], i['descr']))
 
     stmt = "INSERT INTO skill (name, descr) VALUES (?,?)"
     try:
@@ -109,8 +109,8 @@ def do_sourceentry_to_skill(srcs, conn):
     istmt = "INSERT INTO sourceentry (source_id, page_start, page_stop) VALUES (?,?,?)"
     for i in srcs:
         print("i in srcs: {}".format(i))
-        inp_data=(i[1],i[0])
-        print("inp data: {}".format(inp_data)) 
+        inp_data = (i[1], i[0])
+        print("inp data: {}".format(inp_data))
         for row in c.execute(stmt, inp_data):
             print("source_id:{} skill_id:{}".format(row[0], row[1]))
             iinp_data = (row[0], i[2], i[3])
@@ -166,6 +166,7 @@ CREATE TABLE sourceentry (
    """
     c = conn.cursor()
     c.execute(table)
+
 
 def do_sources(data, conn):
     table = """
