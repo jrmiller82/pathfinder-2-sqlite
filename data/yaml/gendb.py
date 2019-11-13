@@ -41,6 +41,183 @@ def main():
         data = yaml.full_load(yl)
     do_skills(data, conn)
 
+    # move on to damagecategory and damagetype
+    with open('damage.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_damage(data, conn)
+
+def do_damage(data, conn):
+    # make the four tables
+    do_damage_sub_tables(data, conn)
+
+    # NOW DO THE DAMAGECATEGORY stuff
+
+    for i in data['damagecategory']:
+        for j in i['source']:
+            srcentrydata = []
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        stmt = "INSERT INTO damagecategory(name, descr) VALUES (?,?)"
+        try:
+            conn.execute(stmt, (i['name'], i['descr']))
+        except:
+            print("Error creating damagecategory")
+        else:
+            conn.commit()
+        # now insert the specific damage category's source entries
+        util_insert_into_sourceentry(srcentrydata, conn)
+        # now link the source entries to the damage categories
+        link_sourceentry_damagecategory(i['name'], srcentrydata, conn)
+
+    # NOW DO THE DAMAGETYPE stuff
+
+    for i in data['damagetype']:
+        for j in i['source']:
+            srcentrydata = []
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        stmt = """
+INSERT INTO damagetype(name, abbr, damagecategory_id)
+        VALUES (?,?,(
+        SELECT damagecategory_id FROM damagecategory WHERE name=?
+        ))"""
+        d = (i['name'], i['abbr'], i['damagecategory'])
+        print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error creating damagetype: {}".format(e))
+        else:
+            conn.commit()
+        # now insert the specific damage category's source entries
+        util_insert_into_sourceentry(srcentrydata, conn)
+        # now link the source entries to the damage types
+        link_sourceentry_damagetype(i['name'], srcentrydata, conn)
+
+def link_sourceentry_damagecategory(name, srcentrydata, conn):
+    stmt = """
+INSERT INTO sourceentry_damagecategory (sourceentry_id, damagecategory_id)
+    SELECT sourceentry_id, damagecategory_id
+    FROM sourceentry, damagecategory
+    WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+    AND sourceentry.page_start=?
+    AND sourceentry.page_stop=?
+    AND damagecategory.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        # print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to damagecategory: {}".format(e))
+        else:
+            conn.commit()
+    pass
+
+def link_sourceentry_damagetype(name, srcentrydata, conn):
+    stmt = """
+INSERT INTO sourceentry_damagetype (sourceentry_id, damagetype_id)
+    SELECT sourceentry_id, damagetype_id
+    FROM sourceentry, damagetype
+    WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+    AND sourceentry.page_start=?
+    AND sourceentry.page_stop=?
+    AND damagetype.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        # print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to damagetype: {}".format(e))
+        else:
+            conn.commit()
+    pass
+
+def util_insert_into_sourceentry(data, conn):
+    # print("srcentrydata: {}".format(data))
+    stmt = "INSERT INTO sourceentry (source_id, page_start, page_stop) VALUES ((SELECT source_id FROM source WHERE abbr=?),?,?)"
+    for i in data:
+        try:
+            conn.execute(stmt, i)
+        except sqlite3.IntegrityError as e:
+            if "UNIQUE" in str(e):
+                # we fully expect UNIQUE constraint to fail on some of these so it's fine
+                conn.commit()
+                # print("committed linkstmt")
+            else:
+                print("sqlite3 error: {}".format(e))
+        except sqlite3.Error as e:
+            print("sqlite3 error: {}".format(e))
+        except Error as e:
+            print("Error inserting sourceentry: {}".format(e))
+        else:
+            conn.commit()
+
+def do_damage_sub_tables(data, conn):
+    table = """
+CREATE TABLE damagecategory (
+  damagecategory_id INTEGER PRIMARY KEY,
+  "name" TEXT NOT NULL UNIQUE,
+  descr TEXT
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    table = """
+CREATE TABLE damagetype (
+  damagetype_id INTEGER PRIMARY KEY,
+  damagecategory_id INTEGER NOT NULL,
+  "abbr" TEXT,
+  "name" TEXT NOT NULL UNIQUE,
+  FOREIGN KEY (damagecategory_id) REFERENCES damagecategory(damagecategory_id)
+);
+   """
+    c.execute(table)
+
+    table = """
+CREATE TABLE sourceentry_damagetype (
+  id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER NOT NULL,
+  damagetype_id INTEGER NOT NULL,
+  UNIQUE (sourceentry_id, damagetype_id), -- prevent duplicates
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+  FOREIGN KEY (damagetype_id) REFERENCES damagetype(damagetype_id)
+);
+   """
+    c.execute(table)
+
+    table = """
+CREATE TABLE sourceentry_damagecategory (
+  id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER NOT NULL,
+  damagecategory_id INTEGER NOT NULL,
+  UNIQUE (sourceentry_id, damagecategory_id), -- prevent duplicates
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+  FOREIGN KEY (damagecategory_id) REFERENCES damagecategory(damagecategory_id)
+);
+   """
+    c.execute(table)
+
 
 def do_skills(data, conn):
     # make skill table
@@ -86,7 +263,7 @@ CREATE TABLE sourceentry_skill (
     # go through and do source entry linking
 
     for i in data['skill']:
-        print("\n\nDoing the skill: {}".format(i['name']))
+        # print("\n\nDoing the skill: {}".format(i['name']))
         srcs = []
         # TODO refactor this inner loop for sources out
         for j in i['source']:
@@ -97,7 +274,7 @@ CREATE TABLE sourceentry_skill (
             else:
                 page_stop = page_start
             srcs.append([i['name'], abbr, page_start, page_stop])
-        print("srcs: {}".format(srcs))
+        # print("srcs: {}".format(srcs))
         do_sourceentry_to_skill(srcs, conn)
 
 
@@ -108,13 +285,13 @@ def do_sourceentry_to_skill(srcs, conn):
     stmt = "SELECT source.source_id, skill.skill_id FROM source, skill WHERE source.abbr=? AND skill.name=?"
     istmt = "INSERT INTO sourceentry (source_id, page_start, page_stop) VALUES (?,?,?)"
     for i in srcs:
-        print("i in srcs: {}".format(i))
+        # print("i in srcs: {}".format(i))
         inp_data = (i[1], i[0])
-        print("inp data: {}".format(inp_data))
+        # print("inp data: {}".format(inp_data))
         for row in c.execute(stmt, inp_data):
-            print("source_id:{} skill_id:{}".format(row[0], row[1]))
+            # print("source_id:{} skill_id:{}".format(row[0], row[1]))
             iinp_data = (row[0], i[2], i[3])
-            print("iinp data: {}".format(iinp_data))
+            # print("iinp data: {}".format(iinp_data))
 
             try:
                 c.execute(istmt, iinp_data)
@@ -122,7 +299,7 @@ def do_sourceentry_to_skill(srcs, conn):
                 if "UNIQUE" in str(e):
                     # we fully expect UNIQUE constraint to fail on some of these so it's fine
                     conn.commit()
-                    print("committed istmt")
+                    # print("committed istmt")
                 else:
                     # but we still want to know what's going on if there's some other error
                     print("Something went wrong with istmt: {}".format(e))
@@ -130,18 +307,18 @@ def do_sourceentry_to_skill(srcs, conn):
                 print("Error inserting a sourceentry for skill: {}".format(e))
             else:
                 conn.commit()
-                print("committed istmt")
+                # print("committed istmt")
 
             linkstmt = "INSERT INTO sourceentry_skill (sourceentry_id, skill_id) VALUES ((SELECT sourceentry_id from sourceentry WHERE source_id=? AND page_start=? AND page_stop=?), ?)"
             linkinp_data = (row[0], i[2], i[3], row[1])
-            print(linkinp_data)
+            # print(linkinp_data)
             try:
                 c.execute(linkstmt, linkinp_data)
             except sqlite3.IntegrityError as e:
                 if "UNIQUE" in str(e):
                     # we fully expect UNIQUE constraint to fail on some of these so it's fine
                     conn.commit()
-                    print("committed linkstmt")
+                    # print("committed linkstmt")
                     pass
                 else:
                     # but we still want to know what's going on if there's some other error
@@ -149,8 +326,8 @@ def do_sourceentry_to_skill(srcs, conn):
             except sqlite3.Error as e:
                 print("Error inserting a sourceentry for skill: {}".format(e))
             else:
+                # print("committed linkstmt")
                 conn.commit()
-                print("committed linkstmt")
 
 
 def do_source_entry_table(conn):

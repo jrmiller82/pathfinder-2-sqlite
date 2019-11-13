@@ -39,7 +39,11 @@ damagecategory:
       - abbr: CRB
         page_start: 452
     descr: "While not their own damage category, precious materials can modify damage to penetrate a creature’s resistances or take advantage of its weaknesses. For instance, silver weapons are particularly effective against lycanthropes and bypass the resistances to physical damage that most devils have."
-damagetypes:
+
+# TODO Figure out some more abbreviations for the various damages. I.e. Acd for
+# Acid or Pos for Positive
+
+damagetype:
   - damagecategory: Physical
     abbr: B
     name: Bludgeoning
