@@ -46,6 +46,7 @@ def main():
         data = yaml.full_load(yl)
     do_damage(data, conn)
 
+
 def do_damage(data, conn):
     # make the four tables
     do_damage_sub_tables(data, conn)
@@ -106,6 +107,7 @@ INSERT INTO damagetype(name, abbr, damagecategory_id)
         # now link the source entries to the damage types
         link_sourceentry_damagetype(i['name'], srcentrydata, conn)
 
+
 def link_sourceentry_damagecategory(name, srcentrydata, conn):
     stmt = """
 INSERT INTO sourceentry_damagecategory (sourceentry_id, damagecategory_id)
@@ -128,6 +130,7 @@ INSERT INTO sourceentry_damagecategory (sourceentry_id, damagecategory_id)
         else:
             conn.commit()
     pass
+
 
 def link_sourceentry_damagetype(name, srcentrydata, conn):
     stmt = """
@@ -152,6 +155,7 @@ INSERT INTO sourceentry_damagetype (sourceentry_id, damagetype_id)
             conn.commit()
     pass
 
+
 def util_insert_into_sourceentry(data, conn):
     # print("srcentrydata: {}".format(data))
     stmt = "INSERT INTO sourceentry (source_id, page_start, page_stop) VALUES ((SELECT source_id FROM source WHERE abbr=?),?,?)"
@@ -171,6 +175,7 @@ def util_insert_into_sourceentry(data, conn):
             print("Error inserting sourceentry: {}".format(e))
         else:
             conn.commit()
+
 
 def do_damage_sub_tables(data, conn):
     table = """
