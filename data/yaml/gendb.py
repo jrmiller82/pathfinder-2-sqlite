@@ -96,7 +96,8 @@ CREATE TABLE sourceentry_background (
             srcentrydata.append((abbr, page_start, page_stop))
         stmt = "INSERT INTO background(name, descr, is_comty_use, is_specific_to_adv) VALUES (?,?,?,?)"
         try:
-            conn.execute(stmt, (i['name'], i['descr'], i['is_comty_use'], i['is_specific_to_adv']))
+            conn.execute(stmt, (i['name'], i['descr'], i['is_comty_use'],
+                                i['is_specific_to_adv']))
         except:
             print("Error creating background")
         else:
@@ -106,6 +107,7 @@ CREATE TABLE sourceentry_background (
         # now link the source entries to this table
         # TODO
         link_sourceentry_backgrounds(i['name'], srcentrydata, conn)
+
 
 def link_sourceentry_backgrounds(name, srcentrydata, conn):
     stmt = """
@@ -128,6 +130,7 @@ INSERT INTO sourceentry_background (sourceentry_id, background_id)
             print("Error linking sourceentry to backgrounds: {}".format(e))
         else:
             conn.commit()
+
 
 def do_conditions(data, conn):
     # MAKE THE 2 TABLES
