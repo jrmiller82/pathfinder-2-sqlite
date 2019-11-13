@@ -46,6 +46,79 @@ def main():
         data = yaml.full_load(yl)
     do_damage(data, conn)
 
+    # move on to conditions
+    with open('conditions.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_conditions(data, conn)
+
+def do_conditions(data, conn):
+    # MAKE THE 2 TABLES
+    table = """
+CREATE TABLE condition (
+	condition_id INTEGER PRIMARY KEY,
+	name TEXT UNIQUE NOT NULL,
+	short_descr TEXT NOT NULL,
+	descr TEXT NOT NULL
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+    table = """
+CREATE TABLE sourceentry_condition (
+  id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER NOT NULL,
+  condition_id INTEGER NOT NULL,
+  UNIQUE (sourceentry_id, condition_id), -- prevent duplicates
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+  FOREIGN KEY (condition_id) REFERENCES condition(condition_id)
+);
+   """
+    c.execute(table)
+
+    for i in data['condition']:
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        stmt = "INSERT INTO condition(name, short_descr, descr) VALUES (?,?,?)"
+        try:
+            conn.execute(stmt, (i['name'], i['short_descr'], i['descr']))
+        except:
+            print("Error creating condition")
+        else:
+            conn.commit()
+        print("conditions, about to call util insert se: {}".format(srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+        # now link the source entries to this table 
+        link_sourceentry_conditions(i['name'], srcentrydata, conn)
+
+def link_sourceentry_conditions(name, srcentrydata, conn):
+    stmt = """
+INSERT INTO sourceentry_condition (sourceentry_id, condition_id)
+    SELECT sourceentry_id, condition_id
+    FROM sourceentry, condition
+    WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+    AND sourceentry.page_start=?
+    AND sourceentry.page_stop=?
+    AND condition.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to conditions: {}".format(e))
+        else:
+            conn.commit()
 
 def do_damage(data, conn):
     # make the four tables
@@ -54,8 +127,8 @@ def do_damage(data, conn):
     # NOW DO THE DAMAGECATEGORY stuff
 
     for i in data['damagecategory']:
+        srcentrydata = []
         for j in i['source']:
-            srcentrydata = []
             abbr = j['abbr']
             page_start = j['page_start']
             # Not all YAML entries have page_stop data
@@ -95,7 +168,7 @@ INSERT INTO damagetype(name, abbr, damagecategory_id)
         SELECT damagecategory_id FROM damagecategory WHERE name=?
         ))"""
         d = (i['name'], i['abbr'], i['damagecategory'])
-        print(d)
+        # print(d)
         try:
             conn.execute(stmt, d)
         except Exception as e:
@@ -120,7 +193,7 @@ INSERT INTO sourceentry_damagecategory (sourceentry_id, damagecategory_id)
     """
     # print(srcentrydata)
     for i in srcentrydata:
-        print("i is:{}".format(i))
+        # print("i is:{}".format(i))
         d = (i[0], i[1], i[2], name)
         # print(d)
         try:
@@ -129,7 +202,6 @@ INSERT INTO sourceentry_damagecategory (sourceentry_id, damagecategory_id)
             print("Error linking sourceentry to damagecategory: {}".format(e))
         else:
             conn.commit()
-    pass
 
 
 def link_sourceentry_damagetype(name, srcentrydata, conn):
@@ -144,7 +216,7 @@ INSERT INTO sourceentry_damagetype (sourceentry_id, damagetype_id)
     """
     # print(srcentrydata)
     for i in srcentrydata:
-        print("i is:{}".format(i))
+        # print("i is:{}".format(i))
         d = (i[0], i[1], i[2], name)
         # print(d)
         try:
