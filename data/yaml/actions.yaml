@@ -1,4 +1,5 @@
 # NOTE: actioncategory assumes a single source entry
+# TODO Requirements and triggers can be normalized in gendb.py and schema
 actioncategory:
   - name: Basic
     descr: Basic actions represent common tasks like moving around, attacking, and helping others. As such, every creature can use basic actions except in some extreme circumstances, and many of those actions are used very frequently. Most notably, you’ll use Interact, Step, Stride, and Strike a great deal. Many feats and other actions call upon you to use one of these basic actions or modify them to produce different effects. For example, a more complex action might let you Stride up to double your Speed instead of just up to your Speed, and a large number of activities include a Strike.
