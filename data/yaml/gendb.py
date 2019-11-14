@@ -56,6 +56,63 @@ def main():
         data = yaml.full_load(yl)
     do_backgrounds(data, conn)
 
+    # move on to bulks
+    with open('bulks.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_bulks(data, conn)
+
+def do_bulks(data, conn):
+    table = """
+CREATE TABLE bulk (
+	bulk_id INTEGER PRIMARY KEY,
+    sourceentry_id INTEGER,
+	short_name TEXT NOT NULL,
+	long_name TEXT NOT NULL,
+	numerical FLOAT NOT NULL,
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['bulk']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one on bulks
+        if len(srcentrydata) != 1:
+            raise AssertionError('length of srcentrydata should only be 1, no more no less, on bulks')
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO bulk(short_name, long_name, numerical, sourceentry_id)
+VALUES (?,?,?,
+        (SELECT sourceentry_id FROM sourceentry
+        WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND page_start=?
+        AND page_stop=?
+        )
+       );
+        """
+        try:
+            conn.execute(stmt, (i['abbr'], i['name'], i['numerical'],
+                                srcentrydata[0][0],srcentrydata[0][1],srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating bulk: {}".format(e))
+        else:
+            conn.commit()
+
 
 def do_backgrounds(data, conn):
     # MAKE THE 2 TABLES
@@ -82,7 +139,7 @@ CREATE TABLE sourceentry_background (
    """
     c.execute(table)
 
-    print(data)
+    # print(data)
     for i in data['background']:
         srcentrydata = []
         for j in i['source']:

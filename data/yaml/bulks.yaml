@@ -1,3 +1,4 @@
+# NOTE: python script assumes that each bulk item only has a single source entry
 bulk:
   - abbr: '-'
     name: Negligible
