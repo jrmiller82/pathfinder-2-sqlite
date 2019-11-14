@@ -80,12 +80,12 @@ def do_actions(data, conn):
 
 def do_action_traits(data, conn):
     table = """
-CREATE TABLE action_trait (
+CREATE TABLE trait_action (
   id INTEGER PRIMARY KEY,
-  action_id INTEGER NOT NULL,
   trait_id INTEGER NOT NULL,
-  FOREIGN KEY (action_id) REFERENCES action(action_id),
-  FOREIGN KEY (trait_id) REFERENCES trait(trait_id)
+  action_id INTEGER NOT NULL,
+  FOREIGN KEY (trait_id) REFERENCES trait(trait_id),
+  FOREIGN KEY (action_id) REFERENCES action(action_id)
 );
    """
     c = conn.cursor()
@@ -97,17 +97,17 @@ CREATE TABLE action_trait (
             for j in i['trait']:
 
                 stmt = """
-    INSERT INTO action_trait(action_id, trait_id)
+    INSERT INTO trait_action(action_id, trait_id)
             VALUES (
             (SELECT action_id FROM action WHERE name=?),
             (SELECT trait_id FROM trait WHERE short_name=?)
             );
                 """
-                print('executing on action_trait:{}'.format(i['name']))
+                # print('executing on trait_action:{}'.format(i['name']))
                 try:
                     conn.execute(stmt, (i['name'], j))
                 except Exception as e:
-                    print("Error creating action: {}".format(e))
+                    print("Error creating trait_action: {}".format(e))
                 else:
                     conn.commit()
 
@@ -165,7 +165,7 @@ VALUES (?,?,?,?,
             )
        );
         """
-        print('executing on name:{}'.format(i['name']))
+        # print('executing on name:{}'.format(i['name']))
         try:
             conn.execute(
                 stmt,
@@ -223,7 +223,7 @@ VALUES (?,?,
         )
        );
         """
-        print('executing on name:{}'.format(i['name']))
+        # print('executing on name:{}'.format(i['name']))
         try:
             conn.execute(stmt, (i['name'], i['descr'], srcentrydata[0][0],
                                 srcentrydata[0][1], srcentrydata[0][2]))
