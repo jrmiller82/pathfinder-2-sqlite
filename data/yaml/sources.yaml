@@ -1,3 +1,4 @@
+# TODO Add publisher data to each of these and modify schema and gendb.py
 source:
   - full_name: Pathfinder Core Rulebook (Second Edition)
     isbn: 978-1-64078-168-9
@@ -16,7 +17,7 @@ source:
     descr: Volume containing monster stat blocks and rules primarily for Game Masters
     release_date: 2019-08-01
     is_first_party: true
-    ogl_copyright_block: "Daemon, Guardian from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Ian McDowall. Dark Creeper from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Rik Shepard. Dark Stalker from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Simon Muth. Dragon, Faerie from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Brian Jaeger and Gary Gygax. Genie, Marid from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax. Mite from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Ian Livingstone and Mark Barnes. Pathfinder Bestiary (Second Edition) © 2019, Paizo Inc.; Authors: Alexander Augunas, Logan Bonner, Jason Bulmahn, John Compton, Paris Crenshaw, Adam Daigle, Eleanor Ferron, Leo Glass, Thurston Hillman, James Jacobs, Jason Keeley, Lyz Liddell, Ron Lundeen, Robert G. McCreary, Tim Nightengale, Stephen Radney-MacFarland, Alex Riggs, David N. Ross, Michael Sayre, Mark Seifter, Chris S. Sims, Jeffrey Swank, Jason Tondro, Tonya Woldridge, and Linda Zayas-Palmer."
+    ogl_copyright_block: "Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Daemon, Guardian from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Ian McDowall. Dark Creeper from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Rik Shepard. Dark Stalker from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Simon Muth. Dragon, Faerie from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Brian Jaeger and Gary Gygax. Genie, Marid from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax. Mite from the Tome of Horrors Complete © 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Ian Livingstone and Mark Barnes. Pathfinder Bestiary (Second Edition) © 2019, Paizo Inc.; Authors: Alexander Augunas, Logan Bonner, Jason Bulmahn, John Compton, Paris Crenshaw, Adam Daigle, Eleanor Ferron, Leo Glass, Thurston Hillman, James Jacobs, Jason Keeley, Lyz Liddell, Ron Lundeen, Robert G. McCreary, Tim Nightengale, Stephen Radney-MacFarland, Alex Riggs, David N. Ross, Michael Sayre, Mark Seifter, Chris S. Sims, Jeffrey Swank, Jason Tondro, Tonya Woldridge, and Linda Zayas-Palmer."
   - full_name: "Pathfinder Adventure: The Fall of Plaguestone"
     isbn: 978-1-64078-174-0
     pzocode: PZO9555
@@ -26,7 +27,7 @@ source:
     descr: TODO
     release_date: 2019-08-01
     is_first_party: true
-    ogl_copyright_block: "Pathfinder Adventure: The Fall of Plaguestone © 2019, Paizo Inc.; Author: Jason Bulmahn."
+    ogl_copyright_block: "Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Pathfinder Adventure: The Fall of Plaguestone © 2019, Paizo Inc.; Author: Jason Bulmahn."
   - full_name: "Age of Ashes Player's Guide"
     isbn: null
     pzocode: PZO9000-25E
@@ -36,4 +37,22 @@ source:
     descr: "Player's Guide for the Age of Ashes Adventure Path"
     release_date: 2019
     is_first_party: true
-    ogl_copyright_block: "Age of Ashes Player''s Guide © 2019, Paizo Inc.; Authors: James Jacobs with Amanda Hamon."
+    ogl_copyright_block: "Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Age of Ashes Player''s Guide © 2019, Paizo Inc.; Authors: James Jacobs with Amanda Hamon."
+  - full_name: "Pathfinder Adventure Path #145: Hellknight Hill"
+    isbn: 978-1-64078-173-3
+    pzocode: PZO90145
+    short_name: "Hellknight Hill"
+    abbr: APHH
+    descr: "Book 1 in the Age of Ashes Adventure Path."
+    release_date: 2019
+    is_first_party: true
+    ogl_copyright_block: "Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Pathfind Advetnrue Path #145: Hellknight Hill (c) 2019, Paizo, Inc.; Authors: Amanda Hamon, with Logan Bonner, James Jacobs, and Jason Tondro."
+  - full_name: "Pathfinder Lost Omens World Guide (Second Edition)"
+    isbn: 978-1-64078-172-6
+    pzocode: PZO9301
+    short_name: "Lost Omens World Guide"
+    abbr: LOWG
+    descr: "A gazeteer of Golarion detailing 10 diverse regions."
+    release_date: 2019-08-28
+    is_first_party: true
+    ogl_copyright_block: "Open Game License v 1.0a © Wizards of the Coast, Inc.; System Reference Document © 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Genie, Marid from the Tome of Horrors Complete © 2011 Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax. Pathfinder Lost Omens World Guide (Second Edition) © 2019, Paizo, Inc.; Authors: Tanya DePass, James Jacobs, Lyz Liddell, Ron Lundeen, Liane Merciel, Erik Mona, Mark Seifter, James L Sutter."
