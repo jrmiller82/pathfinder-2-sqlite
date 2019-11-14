@@ -1,3 +1,5 @@
+# NOTE: This assumes only a single source entry in gendb.py; if adding in more
+# than once source, we'll need to modify the SQL scheme and gendb.py
 language:
   # COMMON LANGUAGES
   - name: Common
