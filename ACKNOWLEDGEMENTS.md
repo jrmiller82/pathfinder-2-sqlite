@@ -3,8 +3,9 @@
 ## Spells (Tim Schneider)
 
 Our initial spell data was taken from
-https://github.com/fyjham-ts/Pathfinder-2E-Spell-DB via their spells.json file.
-The MIT license information for the software is as follows: 
+https://github.com/fyjham-ts/Pathfinder-2E-Spell-DB via their spells.json file
+as of their commit: `73be926a415901e28e00d418fc4120ac41897e6c`.` The MIT license
+information for the software is as follows:
 
 MIT License
 
