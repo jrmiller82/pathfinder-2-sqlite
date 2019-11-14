@@ -11,7 +11,7 @@ language:
         page_stop: 65
   - name: Draconic
     speakers: Dragons, reptilian humanoids
-    rarity: Commmon
+    rarity: Common
     source:
       - abbr: CRB
         page_start: 65
