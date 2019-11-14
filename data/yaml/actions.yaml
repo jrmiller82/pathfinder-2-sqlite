@@ -12,6 +12,7 @@ actioncategory:
       - abbr: CRB
         page_start: 472
         page_stop: 472
+# NOTE: action assumes a single source entry
 action:
 - actioncategory: Basic
   actioncost_name: Free Action
@@ -51,6 +52,7 @@ action:
     - Move
   trigger: null
 - actioncategory: Basic
+  actioncost_name: Free Action
   descr: You wait for the right moment to act. The rest of your turn doesn’t happen
     yet. Instead, you’re removed from the initiative order. You can return to the
     initiative order as a free action triggered by the end of any other creature’s
@@ -125,6 +127,7 @@ action:
     - Manipulate
   trigger: null
 - actioncategory: Basic
+  actioncost_name: Varies
   descr: 'You invest your energy in an item with the invested trait as you don it.
     This process requires 1 or more Interact actions, usually taking the same amount
     of time it takes to don the item. Once you’ve Invested the Item, you benefit from
@@ -184,6 +187,7 @@ action:
     - Concentrate
   trigger: null
 - actioncategory: Basic
+  actioncost_name: Free Action
   descr: You release something you’re holding in your hand or hands. This might mean
     dropping an item, removing one hand from your weapon while continuing to hold
     it in another hand, releasing a rope suspending a chandelier, or performing a
@@ -333,6 +337,7 @@ action:
   trait: null
   trigger: null
 - actioncategory: Specialty Basic
+  actioncost_name: Varies
   descr: You call forth the effect of an item by properly activating it. This is a
     special activity that takes a variable number of actions, as listed in the item’s
     stat block.\n\nSome items can be activated as a reaction or free action. In this
@@ -423,6 +428,7 @@ action:
     - Move
   trigger: null
 - actioncategory: Specialty Basic
+  actioncost_name: Varies
   descr: "You cast a spell you have prepared or in your repertoire. Casting a Spell
     is a special activity that takes a variable number of actions depending on the
     spell, as listed in each spell’s stat block. As soon as the spellcasting actions

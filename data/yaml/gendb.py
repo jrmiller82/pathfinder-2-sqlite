@@ -74,7 +74,72 @@ def main():
 
 def do_actions(data, conn):
     do_action_categories(data, conn)
-    pass
+    do_action_main(data, conn)
+
+def do_action_main(data, conn):
+    table = """
+CREATE TABLE action (
+  action_id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER,
+  actioncategory_id INTEGER NOT NULL,
+  actioncost_id INTEGER,
+  name TEXT NOT NULL UNIQUE,
+  req TEXT,
+  trigger TEXT,
+  descr TEXT NOT NULL,
+  FOREIGN KEY (actioncategory_id) REFERENCES actioncategory(actioncategory_id),
+  FOREIGN KEY (actioncost_id) REFERENCES actioncost(actioncost_id),
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['action']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one
+        if len(srcentrydata) != 1:
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on action'
+            )
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO action(name, descr, req, trigger, actioncategory_id, actioncost_id, sourceentry_id)
+VALUES (?,?,?,?,
+        (SELECT actioncategory_id FROM actioncategory WHERE name=?),
+        (SELECT actioncost_id from actioncost WHERE name=?),
+        (SELECT sourceentry_id FROM sourceentry
+            WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+            AND page_start=?
+            AND page_stop=?
+            )
+       );
+        """
+        print('executing on name:{}'.format(i['name']))
+        try:
+            conn.execute(
+                stmt,
+                (i['name'], i['descr'],i['req'],i['trigger'],i['actioncategory'],i['actioncost_name'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating action: {}".format(e))
+        else:
+            conn.commit()
+
 
 def do_action_categories(data, conn):
     table = """
