@@ -66,6 +66,72 @@ def main():
         data = yaml.full_load(yl)
     do_langs(data, conn)
 
+    # move on to actions
+    with open('actions.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_actions(data, conn)
+
+
+def do_actions(data, conn):
+    do_action_categories(data, conn)
+    pass
+
+def do_action_categories(data, conn):
+    table = """
+CREATE TABLE actioncategory (
+  actioncategory_id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER,
+  name TEXT NOT NULL UNIQUE,
+  descr TEXT NOT NULL UNIQUE,
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['actioncategory']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one
+        if len(srcentrydata) != 1:
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on actioncategory'
+            )
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO actioncategory(name, descr, sourceentry_id)
+VALUES (?,?,
+        (SELECT sourceentry_id FROM sourceentry
+        WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND page_start=?
+        AND page_stop=?
+        )
+       );
+        """
+        print('executing on name:{}'.format(i['name']))
+        try:
+            conn.execute(
+                stmt,
+                (i['name'], i['descr'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating actioncategory: {}".format(e))
+        else:
+            conn.commit()
+
 def do_langs(data, conn):
     table = """
 CREATE TABLE lang (
@@ -97,7 +163,9 @@ CREATE TABLE lang (
         # need to insert sourceentry data first but check and make sure the
         # length is only one
         if len(srcentrydata) != 1:
-            raise AssertionError('length of srcentrydata should only be 1, no more no less, on langs')
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on langs'
+            )
         # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
         util_insert_into_sourceentry(srcentrydata, conn)
 
@@ -112,14 +180,17 @@ VALUES (?,?,
         )
        );
         """
-        print('executing on name:{}'.format(i['name']))
+        # print('executing on name:{}'.format(i['name']))
         try:
-            conn.execute(stmt, (i['name'], i['speakers'], i['rarity'],
-                                srcentrydata[0][0],srcentrydata[0][1],srcentrydata[0][2]))
+            conn.execute(
+                stmt,
+                (i['name'], i['speakers'], i['rarity'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
         except Exception as e:
             print("Error creating lang: {}".format(e))
         else:
             conn.commit()
+
 
 def do_bulks(data, conn):
     table = """
@@ -151,7 +222,9 @@ CREATE TABLE bulk (
         # need to insert sourceentry data first but check and make sure the
         # length is only one on bulks
         if len(srcentrydata) != 1:
-            raise AssertionError('length of srcentrydata should only be 1, no more no less, on bulks')
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on bulks'
+            )
         # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
         util_insert_into_sourceentry(srcentrydata, conn)
 
@@ -166,8 +239,10 @@ VALUES (?,?,?,
        );
         """
         try:
-            conn.execute(stmt, (i['abbr'], i['name'], i['numerical'],
-                                srcentrydata[0][0],srcentrydata[0][1],srcentrydata[0][2]))
+            conn.execute(
+                stmt,
+                (i['abbr'], i['name'], i['numerical'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
         except Exception as e:
             print("Error creating bulk: {}".format(e))
         else:
