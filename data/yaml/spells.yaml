@@ -13,6 +13,8 @@ spelltradition:
   - Divine
   - Occult
   - Primal
+# NOTE: spellschool assumes a single sourceentry; gendb.py will have to be
+# updated if we want to link more than one source
 spellschool:
   - name: Abjuration
     descr: Abjurations protect and ward. They create barriers that keep out attacks, effects, or even certain types of creatures. They also create effects that harm trespassers or banish interlopers.
