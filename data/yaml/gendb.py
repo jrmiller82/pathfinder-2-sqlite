@@ -56,6 +56,299 @@ def main():
         data = yaml.full_load(yl)
     do_backgrounds(data, conn)
 
+    # move on to bulks
+    with open('bulks.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_bulks(data, conn)
+
+    # move on to langs
+    with open('langs.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_langs(data, conn)
+
+    # move on to actions
+    with open('actions.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_actions(data, conn)
+
+
+def do_actions(data, conn):
+    do_action_categories(data, conn)
+    do_action_main(data, conn)
+    do_action_traits(data, conn)
+
+
+def do_action_traits(data, conn):
+    table = """
+CREATE TABLE trait_action (
+  id INTEGER PRIMARY KEY,
+  trait_id INTEGER NOT NULL,
+  action_id INTEGER NOT NULL,
+  FOREIGN KEY (trait_id) REFERENCES trait(trait_id),
+  FOREIGN KEY (action_id) REFERENCES action(action_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['action']:
+        if i['trait'] != None:
+            for j in i['trait']:
+
+                stmt = """
+    INSERT INTO trait_action(action_id, trait_id)
+            VALUES (
+            (SELECT action_id FROM action WHERE name=?),
+            (SELECT trait_id FROM trait WHERE short_name=?)
+            );
+                """
+                # print('executing on trait_action:{}'.format(i['name']))
+                try:
+                    conn.execute(stmt, (i['name'], j))
+                except Exception as e:
+                    print("Error creating trait_action: {}".format(e))
+                else:
+                    conn.commit()
+
+
+def do_action_main(data, conn):
+    table = """
+CREATE TABLE action (
+  action_id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER,
+  actioncategory_id INTEGER NOT NULL,
+  actioncost_id INTEGER,
+  name TEXT NOT NULL UNIQUE,
+  req TEXT,
+  trigger TEXT,
+  descr TEXT NOT NULL,
+  FOREIGN KEY (actioncategory_id) REFERENCES actioncategory(actioncategory_id),
+  FOREIGN KEY (actioncost_id) REFERENCES actioncost(actioncost_id),
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['action']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one
+        if len(srcentrydata) != 1:
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on action'
+            )
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO action(name, descr, req, trigger, actioncategory_id, actioncost_id, sourceentry_id)
+VALUES (?,?,?,?,
+        (SELECT actioncategory_id FROM actioncategory WHERE name=?),
+        (SELECT actioncost_id from actioncost WHERE name=?),
+        (SELECT sourceentry_id FROM sourceentry
+            WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+            AND page_start=?
+            AND page_stop=?
+            )
+       );
+        """
+        # print('executing on name:{}'.format(i['name']))
+        try:
+            conn.execute(
+                stmt,
+                (i['name'], i['descr'], i['req'], i['trigger'],
+                 i['actioncategory'], i['actioncost_name'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating action: {}".format(e))
+        else:
+            conn.commit()
+
+
+def do_action_categories(data, conn):
+    table = """
+CREATE TABLE actioncategory (
+  actioncategory_id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER,
+  name TEXT NOT NULL UNIQUE,
+  descr TEXT NOT NULL UNIQUE,
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['actioncategory']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one
+        if len(srcentrydata) != 1:
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on actioncategory'
+            )
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO actioncategory(name, descr, sourceentry_id)
+VALUES (?,?,
+        (SELECT sourceentry_id FROM sourceentry
+        WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND page_start=?
+        AND page_stop=?
+        )
+       );
+        """
+        # print('executing on name:{}'.format(i['name']))
+        try:
+            conn.execute(stmt, (i['name'], i['descr'], srcentrydata[0][0],
+                                srcentrydata[0][1], srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating actioncategory: {}".format(e))
+        else:
+            conn.commit()
+
+
+def do_langs(data, conn):
+    table = """
+CREATE TABLE lang (
+  lang_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,
+  speakers TEXT NOT NULL,
+  rarity_id INTEGER NOT NULL,
+  sourceentry_id INTEGER,
+  FOREIGN KEY (rarity_id) REFERENCES langrarity(rarity_id),
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['language']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one
+        if len(srcentrydata) != 1:
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on langs'
+            )
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO lang(name, speakers, rarity_id, sourceentry_id)
+VALUES (?,?,
+        (SELECT rarity_id FROM langrarity WHERE rarity_name=?),
+        (SELECT sourceentry_id FROM sourceentry
+        WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND page_start=?
+        AND page_stop=?
+        )
+       );
+        """
+        # print('executing on name:{}'.format(i['name']))
+        try:
+            conn.execute(
+                stmt,
+                (i['name'], i['speakers'], i['rarity'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating lang: {}".format(e))
+        else:
+            conn.commit()
+
+
+def do_bulks(data, conn):
+    table = """
+CREATE TABLE bulk (
+	bulk_id INTEGER PRIMARY KEY,
+    sourceentry_id INTEGER,
+	short_name TEXT NOT NULL,
+	long_name TEXT NOT NULL,
+	numerical FLOAT NOT NULL,
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['bulk']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one on bulks
+        if len(srcentrydata) != 1:
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on bulks'
+            )
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO bulk(short_name, long_name, numerical, sourceentry_id)
+VALUES (?,?,?,
+        (SELECT sourceentry_id FROM sourceentry
+        WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND page_start=?
+        AND page_stop=?
+        )
+       );
+        """
+        try:
+            conn.execute(
+                stmt,
+                (i['abbr'], i['name'], i['numerical'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating bulk: {}".format(e))
+        else:
+            conn.commit()
+
 
 def do_backgrounds(data, conn):
     # MAKE THE 2 TABLES
@@ -82,7 +375,7 @@ CREATE TABLE sourceentry_background (
    """
     c.execute(table)
 
-    print(data)
+    # print(data)
     for i in data['background']:
         srcentrydata = []
         for j in i['source']:

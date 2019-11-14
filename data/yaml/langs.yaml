@@ -1,0 +1,175 @@
+# NOTE: This assumes only a single source entry in gendb.py; if adding in more
+# than once source, we'll need to modify the SQL scheme and gendb.py
+language:
+  # COMMON LANGUAGES
+  - name: Common
+    speakers: Humans, dwarves, elves, halflings, and other common ancestries
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Draconic
+    speakers: Dragons, reptilian humanoids
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Dwarven
+    speakers: Dwarves
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Elven
+    speakers: Elves, half-elves
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Gnomish
+    speakers: Gnomes
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Goblin
+    speakers: Goblins, hobgoblins, bugbears
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Halfling
+    speakers: Halflings
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Jotun
+    speakers: Giants, ogres, trolls, ettins, cyclopes
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Orcish
+    speakers: Orcs, half-orcs
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Sylvan
+    speakers: Fey, centaurs, plant creatures
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Undercommon
+    speakers: Drow, duergars, xulgaths
+    rarity: Common
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Utopian
+    speakers: Aeons
+    rarity: Common
+    source:
+      - abbr: BST1
+        page_start: 8
+        page_stop: 8
+  # UNCOMMON LANGUAGES
+  - name: Abyssal
+    speakers: Demons
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Aklo
+    speakers: Deros, evil fey, otherworldly monsters
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Aquan
+    speakers: Aquatic creatures, water elemental creatures
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Auran
+    speakers: Air elemental creatures, flying creatures
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Celestial
+    speakers: Angels
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Gnoll
+    speakers: Gnolls
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Ignan
+    speakers: Fire elemental creatures
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Infernal
+    speakers: Devils
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Necril
+    speakers: Ghouls, intelligent undead
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Shadowtongue
+    speakers: Nidalese, Shadow Plane creatures
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  - name: Terran
+    speakers: Earth elemental creatures
+    rarity: Uncommon
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+  # SECRET LANGUAGES
+  - name: Druidic
+    speakers: Druids
+    rarity: Secret
+    source:
+      - abbr: CRB
+        page_start: 65
+        page_stop: 65
+
