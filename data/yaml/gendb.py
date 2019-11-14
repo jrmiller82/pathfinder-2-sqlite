@@ -75,6 +75,42 @@ def main():
 def do_actions(data, conn):
     do_action_categories(data, conn)
     do_action_main(data, conn)
+    do_action_traits(data, conn)
+
+
+def do_action_traits(data, conn):
+    table = """
+CREATE TABLE action_trait (
+  id INTEGER PRIMARY KEY,
+  action_id INTEGER NOT NULL,
+  trait_id INTEGER NOT NULL,
+  FOREIGN KEY (action_id) REFERENCES action(action_id),
+  FOREIGN KEY (trait_id) REFERENCES trait(trait_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['action']:
+        if i['trait'] != None:
+            for j in i['trait']:
+
+                stmt = """
+    INSERT INTO action_trait(action_id, trait_id)
+            VALUES (
+            (SELECT action_id FROM action WHERE name=?),
+            (SELECT trait_id FROM trait WHERE short_name=?)
+            );
+                """
+                print('executing on action_trait:{}'.format(i['name']))
+                try:
+                    conn.execute(stmt, (i['name'], j))
+                except Exception as e:
+                    print("Error creating action: {}".format(e))
+                else:
+                    conn.commit()
+
 
 def do_action_main(data, conn):
     table = """
@@ -133,7 +169,8 @@ VALUES (?,?,?,?,
         try:
             conn.execute(
                 stmt,
-                (i['name'], i['descr'],i['req'],i['trigger'],i['actioncategory'],i['actioncost_name'], srcentrydata[0][0],
+                (i['name'], i['descr'], i['req'], i['trigger'],
+                 i['actioncategory'], i['actioncost_name'], srcentrydata[0][0],
                  srcentrydata[0][1], srcentrydata[0][2]))
         except Exception as e:
             print("Error creating action: {}".format(e))
@@ -188,14 +225,13 @@ VALUES (?,?,
         """
         print('executing on name:{}'.format(i['name']))
         try:
-            conn.execute(
-                stmt,
-                (i['name'], i['descr'], srcentrydata[0][0],
-                 srcentrydata[0][1], srcentrydata[0][2]))
+            conn.execute(stmt, (i['name'], i['descr'], srcentrydata[0][0],
+                                srcentrydata[0][1], srcentrydata[0][2]))
         except Exception as e:
             print("Error creating actioncategory: {}".format(e))
         else:
             conn.commit()
+
 
 def do_langs(data, conn):
     table = """
