@@ -16,6 +16,16 @@ source:
     is_first_party: true
     ogl_copyright_block: "Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Pathfinder Core Rulebook (Second Edition) (c) 2019, Paizo, Inc.; Designers: Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter."
     publisher_name: Paizo, Inc.
+  - full_name: Pathfinder Core Rulebook (Second Edition), First Printing, Update 1.0
+    isbn: null
+    pzocode: PZO2101+Errata+1.0
+    short_name: "Core Rulebook Errata 1.0"
+    abbr: ERR-CRB-1.0
+    descr: "Errata to the Core Rulebook"
+    release_date: 2019-10-30
+    is_first_party: true
+    ogl_copyright_block: "Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.; System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave Arneson. Pathfinder Core Rulebook (Second Edition) (c) 2019, Paizo, Inc.; Designers: Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter. Pathfinder Core Rulebook (Second Edition), First Printing, Update 1.0 (c) 2019, Paizo, Inc.; Authors: Logan Bonner, Lyz Liddell, and Mark Seifter."
+    publisher_name: Paizo, Inc.
   - full_name: Pathfinder Bestiary (Second Edition)
     isbn: 978-1-64078-170-2
     pzocode: PZO2102
