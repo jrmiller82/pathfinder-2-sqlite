@@ -32,18 +32,17 @@ actioncost:
   - name: Three Actions
     abbr: 3
   - name: Free Action
-    abbr: free
+    abbr: F
   - name: Reaction
-    abbr: reaction
+    abbr: R
   - name: Varies
-    abbr: varies
+    abbr: V
   - name: 1 minute
     abbr: 1m
   - name: 10 minutes
     abbr: 10m
   - name: 1 hour
     abbr: 1h
-  - name: 
 alignment:
   - name: Lawful Good
     abbr: LG

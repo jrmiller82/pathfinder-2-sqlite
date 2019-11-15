@@ -67,17 +67,21 @@ spellschool:
         page_start: 298
         page_stop: 298
 spell:
-- action_abbr: reaction
+- action_abbr: R
   area: 60-foot emanation
-  cast: somatic or verbal
+  # TODO Using the unicode symbols is not working correctly; so we need some
+  # sort of hint to the user so they can replace with symbols as they please.
+  # I'm thinking |1| |2| |3| |F| |R| |V| |1m| |10m| |1h| etc for now.
+  cast: "|R| somatic or verbal"
   components:
   - Somatic
   - Verbal
   descr: 'Your performance protects you and your allies. Roll a Performance check for a type you know: an auditory performance if the trigger was auditory, or a visual one for a visual trigger. You and allies in the area can use the better result between your Performance check and the saving throw.'
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 1
   name: Counter Performance
+  range: null
   req: null
   source:
   - abbr: CRB
@@ -95,12 +99,12 @@ spell:
   trigger: You or an ally within 60 feet rolls a saving throw against an auditory or visual effect.
   type: Focus
 - action_abbr: '1'
-  cast: verbal
+  cast: '|1| verbal'
   components:
   - Verbal
-  descr: Your encouragement inspires your ally to succeed at a task. This counts as having taken sufficient preparatory actions to Aid your ally on a skill check of your choice, regardless of the circumstances. When you later use the Aid reaction, you can roll Performance instead of the normal skill check, and if you roll a failure, you get a success instead. If you are legendary in Performance, you automatically critically succeed. The GM might rule that you can't use this ability if the act of encouraging your ally would interfere with the skill check (such as a check to Sneak quietly or maintain a disguise).
+  descr: Your encouragement inspires your ally to succeed at a task. This counts as having taken sufficient preparatory actions to Aid your ally on a skill check of your choice, regardless of the circumstances. When you later use the Aid reaction, you can roll Performance instead of the normal skill check, and if you roll a failure, you get a success instead. If you are legendary in Performance, you automatically critically succeed.\n\nThe GM might rule that you can't use this ability if the act of encouraging your ally would interfere with the skill check (such as a check to Sneak quietly or maintain a disguise).
   duration: 1 round
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 1
   name: Inspire Competence
   range: 60 feet
@@ -112,6 +116,7 @@ spell:
   targets: 1 ally
   traditions: null
   traits:
+  - Uncommon
   - Bard
   - Cantrip
   - Composition
@@ -122,12 +127,12 @@ spell:
   type: Cantrip
 - action_abbr: '1'
   area: 60-foot emanation
-  cast: verbal
+  cast: '|1| verbal'
   components:
   - Verbal
   descr: You inspire your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.
   duration: 1 round
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 1
   name: Inspire Courage
   req: null
@@ -138,6 +143,7 @@ spell:
   targets: null
   traditions: null
   traits:
+  - Uncommon
   - Bard
   - Cantrip
   - Composition
@@ -146,15 +152,16 @@ spell:
   - Mental
   trigger: null
   type: Cantrip
-- action_abbr: free
-  cast: verbal
+- action_abbr: F
+  cast: '|F| verbal'
   components:
   - Verbal
-  descr: "You add a flourish to your composition to extend its benefits. If your next action is to cast a cantrip composition with a duration of 1 round, attempt a Performance check. The DC is usually a standard-difficulty DC of a level equal to the highest-level target of your composition, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.  \n\n**Critical Success**  The composition lasts 4 rounds.  \n\n**Success**  The composition lasts 3 rounds.  \n\n**Failure**  The composition lasts 1 round, but you don't spend the Focus Point for casting this spell."
+  descr: "You add a flourish to your composition to extend its benefits. If your next action is to cast a cantrip composition with a duration of 1 round, attempt a Performance check. The DC is usually a standard-difficulty DC of a level equal to the highest-level target of your composition, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.  \n\n**Critical Success**  The composition lasts 4 rounds.\n\n**Success**  The composition lasts 3 rounds.\n\n**Failure**  The composition lasts 1 round, but you don't spend the Focus Point for casting this spell."
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 1
   name: Lingering Composition
+  range: null
   req: null
   source:
   - abbr: CRB
@@ -168,13 +175,13 @@ spell:
   - Enchantment
   trigger: null
   type: Focus
-- action_abbr: free
-  cast: somatic
+- action_abbr: F
+  cast: '|F| somatic'
   components:
   - Somatic
   descr: You call upon your muse's deep mysteries, granting the target a greater ability to think and recall information. Roll the triggering Recall Knowledge skill check twice and use the better result.
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 1
   name: Loremaster's Etude
   range: 30 feet
@@ -194,22 +201,23 @@ spell:
   type: Focus
 - action_abbr: '1'
   area: 60-foot emanation
-  cast: verbal
+  cast: '|1| verbal'
   components:
   - Verbal
   descr: You inspire your allies to protect themselves more effectively. You and all allies in the area gain a +1 status bonus to AC and saving throws, as well as resistance equal to half the spell's level to physical damage.
   duration: 1 round
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 2
   name: Inspire Defense
   req: null
   source:
   - abbr: CRB
     page_start: 386
-    page_stop: 386
+    page_stop: 387
   targets: null
   traditions: null
   traits:
+  - Uncommon
   - Bard
   - Cantrip
   - Composition
@@ -272,7 +280,7 @@ spell:
   - Mental
   trigger: null
   type: Cantrip
-- action_abbr: free
+- action_abbr: F
   cast: verbal
   components:
   - Verbal
@@ -478,7 +486,7 @@ spell:
   - Litany
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -526,7 +534,7 @@ spell:
   - Litany
   trigger: null
   type: Focus
-- action_abbr: free
+- action_abbr: F
   cast: verbal
   components:
   - Verbal
@@ -777,7 +785,7 @@ spell:
   - Visual
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -1017,7 +1025,7 @@ spell:
   - Cleric
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -1119,7 +1127,7 @@ spell:
   - Nonlethal
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -1194,7 +1202,7 @@ spell:
   - Visual
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -1643,7 +1651,7 @@ spell:
   - Evocation
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -1720,7 +1728,7 @@ spell:
   - Mental
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -1768,7 +1776,7 @@ spell:
   - Positive
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -1815,7 +1823,7 @@ spell:
   - Revelation
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -1864,7 +1872,7 @@ spell:
   - Transmutation
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -1959,7 +1967,7 @@ spell:
   - Positive
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -2106,7 +2114,7 @@ spell:
   - Positive
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -2209,7 +2217,7 @@ spell:
   - Necromancy
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -2306,7 +2314,7 @@ spell:
   - Visual
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -2353,7 +2361,7 @@ spell:
   - Mental
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -2532,7 +2540,7 @@ spell:
   - Transmutation
   trigger: null
   type: Focus
-- action_abbr: free
+- action_abbr: F
   cast: verbal
   components:
   - Verbal
@@ -3338,7 +3346,7 @@ spell:
   - Sorcerer
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -3864,7 +3872,7 @@ spell:
   - Wizard
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -3908,7 +3916,7 @@ spell:
   - Wizard
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -4465,7 +4473,7 @@ spell:
   - Evocation
   trigger: null
   type: Cantrip
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -4710,7 +4718,7 @@ spell:
   - Mental
   trigger: null
   type: Spell
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -8047,7 +8055,7 @@ spell:
   - Mental
   trigger: null
   type: Spell
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic
   components:
   - Somatic
@@ -8314,7 +8322,7 @@ spell:
   - Mental
   trigger: null
   type: Spell
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -11418,7 +11426,7 @@ spell:
   - Transmutation
   trigger: null
   type: Spell
-- action_abbr: reaction
+- action_abbr: R
   cast: somatic, verbal
   components:
   - Somatic
@@ -11629,7 +11637,7 @@ spell:
   - Necromancy
   trigger: null
   type: Spell
-- action_abbr: reaction
+- action_abbr: R
   cast: verbal
   components:
   - Verbal
@@ -13760,7 +13768,7 @@ spell:
   - Transmutation
   trigger: null
   type: Focus
-- action_abbr: reaction
+- action_abbr: R
   cast: null
   components:
   - Verbal
