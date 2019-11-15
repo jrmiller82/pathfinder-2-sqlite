@@ -42,13 +42,13 @@ Text may use the following escape codes:
 
 The action symbols can be represented by the following characters:
 
-| Meaning | Character | Unicode |
-|----------|----|---------|
-| 1 action | ⑴ | U+2474 |
-| 2 actions | ⑵ | U+2475 |
-| 3 actions | ⑶ | U+2476 |
-| Reaction | 🄡 | U+1F121 |
-| Free action | 🄕 | U+1F115 |
+| Meaning | Character |
+|----------|----|
+| 1 action | \|1\| |
+| 2 actions | ⑵ |
+| 3 actions | ⑶ |
+| Reaction | 🄡 |
+| Free action | 🄕 
 
 ## Text Formatting
 
