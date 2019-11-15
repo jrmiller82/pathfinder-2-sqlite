@@ -157,6 +157,9 @@ feat:
   - abbr: CRB
     page_start: 37
     page_stop: 37
+  - abbr: ERR-CRB-1.0
+    page_start: 1
+    page_stop: 1
   traits:
   - Dwarf
   trigger: null
