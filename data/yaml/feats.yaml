@@ -145,14 +145,14 @@ feat:
   - Dwarf
   trigger: null
 - action: null
-  descr: Your hardiness lets you withstand more punishment than most before going down. Increase your maximum Hit Points by your level. You also decrease the DC of recovery checks when you have the dying condition by 1.\n\nIf you also have the Toughness feat, the Hit Points gained from it and this feat are cumulative, and you decrease the DC of recovery checks by 4.
+  descr: Your hardiness lets you withstand more punishment than most before going down. Increase your maximum Hit Points by your level. When you have the dying condition, the DC of your recovery checks is equal to 9 + your dying value (instead of 10 + your dying value).\n\nIf you also have the Toughness feat, the Hit Points gained from it and this feat are cumulative, and the DC of your recovery checks is equal to 6 + your dying value.
   frequency: null
   has_been_manually_proofread: false
   prereqs:
   - descr: Ancestry Level 9
     feat: null
   requirement: null
-  name: Mountain’s Stoutness
+  name: "Mountain's Stoutness"
   source:
   - abbr: CRB
     page_start: 37
