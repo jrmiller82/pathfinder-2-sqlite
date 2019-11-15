@@ -150,7 +150,7 @@ SELECT short_name from feats WHERE feat_id=?;
         # if len(fpr_data) > 1:
         #     # print("fuck")
         #     pprint.pprint(fpr_data)
-        print(fpr_data)
+        # print(fpr_data)
         for f in fpr_data:
             stmtnext = "SELECT descr, feat_id FROM featprereqs WHERE featprereqs_id=?"
             c = conn.cursor()
@@ -171,14 +171,28 @@ SELECT short_name from feats WHERE feat_id=?;
                     c.execute(stmtfinal, (ff['feat_id'],))
                     # data = c.fetchall()
                     fn_data_final = [dict(row) for row in c.fetchall()]
-                    print("STUFF")
-                    print(fn_data_final)
+                    # print("STUFF")
+                    # print(fn_data_final)
 
                     prlist.append({'descr': ff['descr'], 'feat': fn_data_final[0]['short_name']})
         i['prereqs'] = prlist
 
-
-
+        # Add in traits
+        tt = "SELECT feats_traits.trait_id AS trait_id, traits.short_name AS name FROM feats_traits LEFT JOIN traits ON feats_traits.trait_id = traits.trait_id WHERE feats_traits.feat_id=?"
+        c = conn.cursor()
+        # print(i['feat_id'])
+        c.execute(tt, (i['feat_id'],))
+        # data = c.fetchall()
+        trait_data = [dict(row) for row in c.fetchall()]
+        # print("short_name: {}\ttraits: {}".format(i['short_name'], trait_data))
+        trait_list = []
+        for item in trait_data:
+            trait_list.append(item['name'])
+        # print(trait_list)
+        if len(trait_list) < 1:
+            i['traits'] = None
+        else:
+            i['traits'] = trait_list
 
         # THIS NEEDS TO BE LAST AS PREREQS REFERENCES IT
         del i['feat_id']
