@@ -82,6 +82,34 @@ def main():
         data = yaml.full_load(yl)
     do_requirements(data, conn)
 
+    # move on to triggers
+    with open('triggers.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_triggers(data, conn)
+
+def do_triggers(data, conn):
+    table = """
+CREATE TABLE trigger (
+  trigger_id INTEGER PRIMARY KEY,
+  descr TEXT NOT NULL UNIQUE
+);
+   """
+
+    c = conn.cursor()
+    c.execute(table)
+
+    inp_data = []
+    for i in data['trigger']:
+        inp_data.append((i, ))
+
+    stmt = "INSERT INTO trigger (descr) VALUES (?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except Exception as e:
+        print("Error creating trigger: {}".format(e))
+    else:
+        conn.commit()
+
 def do_requirements(data, conn):
     table = """
 CREATE TABLE requirement (
