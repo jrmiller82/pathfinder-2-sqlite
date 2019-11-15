@@ -1,4 +1,21 @@
+# TODO Needs levels added to every feat
 feat:
+- action: Reaction
+  descr: Your ancestors' innate resistance to magic surges, before slowly ebbing down. You gain a +1 circumstance bonus to the triggering saving throw and until the end of this turn.
+  frequency: null
+  has_been_manually_proofread: false
+  prereqs:
+  - descr: Dwarf
+    feat: null
+  requirement: null
+  short_name: Call on Ancient Blood
+  source:
+  - abbr: CRB
+    page_start: 35
+    page_stop: 35
+  traits: null
+  trigger:
+    - You attempt a saving throw against a magical effect, but you haven't rolled yet.
 - action: null
   descr: You eagerly absorbed the old stories and traditions of your ancestors, your gods, and your people, studying in subjects and techniques passed down for generation upon generation. You gain the trained proficiency rank in Crafting and Religion. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice. You also become trained in Dwarven Lore.
   frequency: null
@@ -12,12 +29,11 @@ feat:
   - abbr: CRB
     page_start: 36
     page_stop: 36
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
 - action: null
-  descr: Your kin have instilled in you an affinity for hard-hitting weapons, and you prefer these to more elegant arms. You are trained with the battle axe, pick, and warhammer. You also gain access to all uncommon dwarf weapons. For the purpose of determining your proficiency, martial dwarf weapons are simple weapons and advanced dwarf weapons are martial weapons.
+  descr: Your kin have instilled in you an affinity for hard-hitting weapons, and you prefer these to more elegant arms. You are trained with the battle axe, pick, and warhammer.\n\nYou also gain access to all uncommon dwarf weapons. For the purpose of determining your proficiency, martial dwarf weapons are simple weapons and advanced dwarf weapons are martial weapons.
   frequency: null
   has_been_manually_proofread: false
   prereqs:
@@ -29,7 +45,6 @@ feat:
   - abbr: CRB
     page_start: 36
     page_stop: 36
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -46,7 +61,6 @@ feat:
   - abbr: CRB
     page_start: 36
     page_stop: 36
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -63,7 +77,6 @@ feat:
   - abbr: CRB
     page_start: 36
     page_stop: 36
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -80,7 +93,6 @@ feat:
   - abbr: CRB
     page_start: 36
     page_stop: 36
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -97,7 +109,6 @@ feat:
   - abbr: CRB
     page_start: 36
     page_stop: 36
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -114,7 +125,6 @@ feat:
   - abbr: CRB
     page_start: 36
     page_stop: 36
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -131,7 +141,6 @@ feat:
   - abbr: CRB
     page_start: 37
     page_stop: 37
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -148,7 +157,6 @@ feat:
   - abbr: CRB
     page_start: 37
     page_stop: 37
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -165,7 +173,6 @@ feat:
   - abbr: CRB
     page_start: 37
     page_stop: 37
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -182,7 +189,6 @@ feat:
   - abbr: CRB
     page_start: 37
     page_stop: 37
-  sources_id: 1
   traits:
   - Dwarf
   trigger: null
@@ -199,7 +205,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -216,7 +221,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -233,7 +237,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -250,7 +253,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -267,7 +269,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -284,7 +285,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -301,7 +301,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -318,7 +317,6 @@ feat:
   - abbr: CRB
     page_start: 40
     page_stop: 40
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -335,7 +333,6 @@ feat:
   - abbr: CRB
     page_start: 41
     page_stop: 41
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -352,7 +349,6 @@ feat:
   - abbr: CRB
     page_start: 41
     page_stop: 41
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -369,7 +365,6 @@ feat:
   - abbr: CRB
     page_start: 41
     page_stop: 41
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -386,7 +381,6 @@ feat:
   - abbr: CRB
     page_start: 41
     page_stop: 41
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -403,7 +397,6 @@ feat:
   - abbr: CRB
     page_start: 41
     page_stop: 41
-  sources_id: 1
   traits:
   - Elf
   trigger: null
@@ -420,7 +413,6 @@ feat:
   - abbr: CRB
     page_start: 44
     page_stop: 44
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -437,7 +429,6 @@ feat:
   - abbr: CRB
     page_start: 44
     page_stop: 44
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -454,7 +445,6 @@ feat:
   - abbr: CRB
     page_start: 44
     page_stop: 44
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -471,7 +461,6 @@ feat:
   - abbr: CRB
     page_start: 44
     page_stop: 44
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -488,7 +477,6 @@ feat:
   - abbr: CRB
     page_start: 44
     page_stop: 44
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -505,7 +493,6 @@ feat:
   - abbr: CRB
     page_start: 44
     page_stop: 44
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -522,7 +509,6 @@ feat:
   - abbr: CRB
     page_start: 44
     page_stop: 44
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -539,7 +525,6 @@ feat:
   - abbr: CRB
     page_start: 45
     page_stop: 45
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -556,7 +541,6 @@ feat:
   - abbr: CRB
     page_start: 45
     page_stop: 45
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -573,7 +557,6 @@ feat:
   - abbr: CRB
     page_start: 45
     page_stop: 45
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -590,7 +573,6 @@ feat:
   - abbr: CRB
     page_start: 45
     page_stop: 45
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -607,7 +589,6 @@ feat:
   - abbr: CRB
     page_start: 45
     page_stop: 45
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -624,7 +605,6 @@ feat:
   - abbr: CRB
     page_start: 45
     page_stop: 45
-  sources_id: 1
   traits:
   - Gnome
   trigger: null
@@ -641,7 +621,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -658,7 +637,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -675,7 +653,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -692,7 +669,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: An ally ends a move action adjacent to you.
@@ -709,7 +685,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -726,7 +701,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -743,7 +717,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -760,7 +733,6 @@ feat:
   - abbr: CRB
     page_start: 48
     page_stop: 48
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -777,7 +749,6 @@ feat:
   - abbr: CRB
     page_start: 49
     page_stop: 49
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -794,7 +765,6 @@ feat:
   - abbr: CRB
     page_start: 49
     page_stop: 49
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -811,7 +781,6 @@ feat:
   - abbr: CRB
     page_start: 49
     page_stop: 49
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -828,7 +797,6 @@ feat:
   - abbr: CRB
     page_start: 49
     page_stop: 49
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -845,7 +813,6 @@ feat:
   - abbr: CRB
     page_start: 49
     page_stop: 49
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -862,7 +829,6 @@ feat:
   - abbr: CRB
     page_start: 49
     page_stop: 49
-  sources_id: 1
   traits:
   - Goblin
   trigger: null
@@ -879,7 +845,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -896,7 +861,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -913,7 +877,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Fortune
   - Halfling
@@ -931,7 +894,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -948,7 +910,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -965,7 +926,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -982,7 +942,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -999,7 +958,6 @@ feat:
   - abbr: CRB
     page_start: 52
     page_stop: 52
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -1016,7 +974,6 @@ feat:
   - abbr: CRB
     page_start: 53
     page_stop: 53
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -1033,7 +990,6 @@ feat:
   - abbr: CRB
     page_start: 53
     page_stop: 53
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -1050,7 +1006,6 @@ feat:
   - abbr: CRB
     page_start: 53
     page_stop: 53
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -1067,7 +1022,6 @@ feat:
   - abbr: CRB
     page_start: 53
     page_stop: 53
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -1084,7 +1038,6 @@ feat:
   - abbr: CRB
     page_start: 53
     page_stop: 53
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -1101,7 +1054,6 @@ feat:
   - abbr: CRB
     page_start: 53
     page_stop: 53
-  sources_id: 1
   traits:
   - Halfling
   trigger: null
@@ -1118,7 +1070,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1135,7 +1086,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1152,7 +1102,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1169,7 +1118,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1186,7 +1134,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1203,7 +1150,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1220,7 +1166,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1237,7 +1182,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1254,7 +1198,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1271,7 +1214,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1288,7 +1230,6 @@ feat:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 1
   traits:
   - Human
   trigger: You attempt a check using a skill you’re untrained in.
@@ -1305,7 +1246,6 @@ feat:
   - abbr: CRB
     page_start: 58
     page_stop: 58
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1322,7 +1262,6 @@ feat:
   - abbr: CRB
     page_start: 58
     page_stop: 58
-  sources_id: 1
   traits:
   - Human
   trigger: null
@@ -1339,7 +1278,6 @@ feat:
   - abbr: CRB
     page_start: 58
     page_stop: 58
-  sources_id: 1
   traits:
   - Half-Elf
   trigger: null
@@ -1356,7 +1294,6 @@ feat:
   - abbr: CRB
     page_start: 58
     page_stop: 58
-  sources_id: 1
   traits:
   - Half-Elf
   trigger: null
@@ -1373,7 +1310,6 @@ feat:
   - abbr: CRB
     page_start: 58
     page_stop: 58
-  sources_id: 1
   traits:
   - Half-Elf
   trigger: null
@@ -1390,7 +1326,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Half-Orc
   trigger: null
@@ -1407,7 +1342,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Orc
   trigger: You would be reduced to 0 Hit Points but not immediately killed.
@@ -1424,7 +1358,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Half-Orc
   trigger: null
@@ -1441,7 +1374,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Concentrate
   - Orc
@@ -1459,7 +1391,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Orc
   trigger: null
@@ -1476,7 +1407,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Orc
   trigger: null
@@ -1493,7 +1423,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Orc
   trigger: You bring a foe to 0 Hit Points.
@@ -1510,7 +1439,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Orc
   trigger: null
@@ -1527,7 +1455,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Orc
   trigger: null
@@ -1544,7 +1471,6 @@ feat:
   - abbr: CRB
     page_start: 59
     page_stop: 59
-  sources_id: 1
   traits:
   - Orc
   trigger: null
@@ -1561,7 +1487,6 @@ feat:
   - abbr: CRB
     page_start: 76
     page_stop: 76
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1578,7 +1503,6 @@ feat:
   - abbr: CRB
     page_start: 76
     page_stop: 76
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1595,7 +1519,6 @@ feat:
   - abbr: CRB
     page_start: 76
     page_stop: 76
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1612,7 +1535,6 @@ feat:
   - abbr: CRB
     page_start: 76
     page_stop: 76
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1629,7 +1551,6 @@ feat:
   - abbr: CRB
     page_start: 77
     page_stop: 77
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1646,7 +1567,6 @@ feat:
   - abbr: CRB
     page_start: 77
     page_stop: 77
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1663,7 +1583,6 @@ feat:
   - abbr: CRB
     page_start: 77
     page_stop: 77
-  sources_id: 1
   traits:
   - Additive
   - Alchemist
@@ -1681,7 +1600,6 @@ feat:
   - abbr: CRB
     page_start: 77
     page_stop: 77
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1698,7 +1616,6 @@ feat:
   - abbr: CRB
     page_start: 77
     page_stop: 77
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1715,7 +1632,6 @@ feat:
   - abbr: CRB
     page_start: 78
     page_stop: 78
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1732,7 +1648,6 @@ feat:
   - abbr: CRB
     page_start: 78
     page_stop: 78
-  sources_id: 1
   traits:
   - Additive
   - Alchemist
@@ -1750,7 +1665,6 @@ feat:
   - abbr: CRB
     page_start: 78
     page_stop: 78
-  sources_id: 1
   traits:
   - Additive
   - Alchemist
@@ -1768,7 +1682,6 @@ feat:
   - abbr: CRB
     page_start: 78
     page_stop: 78
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1785,7 +1698,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1802,7 +1714,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1819,7 +1730,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Additive
   - Alchemist
@@ -1837,7 +1747,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1854,7 +1763,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1871,7 +1779,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1888,7 +1795,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Additive
   - Alchemist
@@ -1906,7 +1812,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1923,7 +1828,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1940,7 +1844,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1957,7 +1860,6 @@ feat:
   - abbr: CRB
     page_start: 79
     page_stop: 79
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1974,7 +1876,6 @@ feat:
   - abbr: CRB
     page_start: 80
     page_stop: 80
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -1991,7 +1892,6 @@ feat:
   - abbr: CRB
     page_start: 80
     page_stop: 80
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2008,7 +1908,6 @@ feat:
   - abbr: CRB
     page_start: 80
     page_stop: 80
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2025,7 +1924,6 @@ feat:
   - abbr: CRB
     page_start: 80
     page_stop: 80
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2042,7 +1940,6 @@ feat:
   - abbr: CRB
     page_start: 80
     page_stop: 80
-  sources_id: 1
   traits:
   - Additive
   - Alchemist
@@ -2060,7 +1957,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2077,7 +1973,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2094,7 +1989,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2111,7 +2005,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2128,7 +2021,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2145,7 +2037,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2162,7 +2053,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2179,7 +2069,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Additive
   - Alchemist
@@ -2197,7 +2086,6 @@ feat:
   - abbr: CRB
     page_start: 81
     page_stop: 81
-  sources_id: 1
   traits:
   - Alchemist
   trigger: null
@@ -2214,7 +2102,6 @@ feat:
   - abbr: CRB
     page_start: 88
     page_stop: 88
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2231,7 +2118,6 @@ feat:
   - abbr: CRB
     page_start: 88
     page_stop: 88
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -2250,7 +2136,6 @@ feat:
   - abbr: CRB
     page_start: 88
     page_stop: 88
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2267,7 +2152,6 @@ feat:
   - abbr: CRB
     page_start: 88
     page_stop: 88
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2287,7 +2171,6 @@ feat:
   - abbr: CRB
     page_start: 145
     page_stop: 145
-  sources_id: 1
   traits:
   - Barbarian
   - Fighter
@@ -2307,7 +2190,6 @@ feat:
   - abbr: CRB
     page_start: 88
     page_stop: 88
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2324,7 +2206,6 @@ feat:
   - abbr: CRB
     page_start: 89
     page_stop: 89
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2342,7 +2223,6 @@ feat:
   - abbr: CRB
     page_start: 89
     page_stop: 89
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2360,7 +2240,6 @@ feat:
   - abbr: CRB
     page_start: 89
     page_stop: 89
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2377,7 +2256,6 @@ feat:
   - abbr: CRB
     page_start: 89
     page_stop: 89
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -2396,7 +2274,6 @@ feat:
   - abbr: CRB
     page_start: 89
     page_stop: 89
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2413,7 +2290,6 @@ feat:
   - abbr: CRB
     page_start: 89
     page_stop: 89
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2430,7 +2306,6 @@ feat:
   - abbr: CRB
     page_start: 89
     page_stop: 89
-  sources_id: 1
   traits:
   - Barbarian
   - Fighter
@@ -2449,7 +2324,6 @@ feat:
   - abbr: CRB
     page_start: 90
     page_stop: 90
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2467,7 +2341,6 @@ feat:
   - abbr: CRB
     page_start: 90
     page_stop: 90
-  sources_id: 1
   traits:
   - Barbarian
   - Instinct
@@ -2488,7 +2361,6 @@ feat:
   - abbr: CRB
     page_start: 90
     page_stop: 90
-  sources_id: 1
   traits:
   - Barbarian
   trigger: A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it’s using.
@@ -2505,7 +2377,6 @@ feat:
   - abbr: CRB
     page_start: 90
     page_stop: 90
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2522,7 +2393,6 @@ feat:
   - abbr: CRB
     page_start: 90
     page_stop: 90
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2540,7 +2410,6 @@ feat:
   - abbr: CRB
     page_start: 90
     page_stop: 90
-  sources_id: 1
   traits:
   - Arcane
   - Barbarian
@@ -2562,7 +2431,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Instinct
@@ -2584,7 +2452,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Instinct
@@ -2604,7 +2471,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -2627,7 +2493,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -2644,7 +2509,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -2663,7 +2527,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Auditory
   - Barbarian
@@ -2683,7 +2546,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Fighter
@@ -2701,7 +2563,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2719,7 +2580,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -2738,7 +2598,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2756,7 +2615,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2774,7 +2632,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2792,7 +2649,6 @@ feat:
   - abbr: CRB
     page_start: 91
     page_stop: 91
-  sources_id: 1
   traits:
   - Auditory
   - Barbarian
@@ -2811,7 +2667,6 @@ feat:
   - abbr: CRB
     page_start: 92
     page_stop: 92
-  sources_id: 1
   traits:
   - Barbarian
   - Instinct
@@ -2833,7 +2688,6 @@ feat:
   - abbr: CRB
     page_start: 92
     page_stop: 92
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2851,7 +2705,6 @@ feat:
   - abbr: CRB
     page_start: 92
     page_stop: 92
-  sources_id: 1
   traits:
   - Barbarian
   - Flourish
@@ -2871,7 +2724,6 @@ feat:
   - abbr: CRB
     page_start: 92
     page_stop: 92
-  sources_id: 1
   traits:
   - Attack
   - Barbarian
@@ -2893,7 +2745,6 @@ feat:
   - abbr: CRB
     page_start: 92
     page_stop: 92
-  sources_id: 1
   traits:
   - Barbarian
   - Instinct
@@ -2913,7 +2764,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -2932,7 +2782,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -2951,7 +2800,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -2969,7 +2817,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Fighter
@@ -2989,7 +2836,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -3007,7 +2853,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -3030,7 +2875,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -3048,7 +2892,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   trigger: null
@@ -3065,7 +2908,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Concentrate
@@ -3085,7 +2927,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Rage
@@ -3103,7 +2944,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Auditory
   - Barbarian
@@ -3123,7 +2963,6 @@ feat:
   - abbr: CRB
     page_start: 93
     page_stop: 93
-  sources_id: 1
   traits:
   - Barbarian
   - Manipulate
@@ -3142,7 +2981,6 @@ feat:
   - abbr: CRB
     page_start: 99
     page_stop: 99
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3159,7 +2997,6 @@ feat:
   - abbr: CRB
     page_start: 99
     page_stop: 99
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3188,7 +3025,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Bard
   - Cleric
@@ -3211,7 +3047,6 @@ feat:
   - abbr: CRB
     page_start: 100
     page_stop: 100
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3228,7 +3063,6 @@ feat:
   - abbr: CRB
     page_start: 100
     page_stop: 100
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3245,7 +3079,6 @@ feat:
   - abbr: CRB
     page_start: 100
     page_stop: 100
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3262,7 +3095,6 @@ feat:
   - abbr: CRB
     page_start: 100
     page_stop: 100
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3279,7 +3111,6 @@ feat:
   - abbr: CRB
     page_start: 100
     page_stop: 100
-  sources_id: 1
   traits:
   - Bard
   - Fortune
@@ -3297,7 +3128,6 @@ feat:
   - abbr: CRB
     page_start: 100
     page_stop: 100
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3314,7 +3144,6 @@ feat:
   - abbr: CRB
     page_start: 100
     page_stop: 100
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3331,7 +3160,6 @@ feat:
   - abbr: CRB
     page_start: 101
     page_stop: 101
-  sources_id: 1
   traits:
   - Bard
   - Concentrate
@@ -3351,7 +3179,6 @@ feat:
   - abbr: CRB
     page_start: 101
     page_stop: 101
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3368,7 +3195,6 @@ feat:
   - abbr: CRB
     page_start: 101
     page_stop: 101
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3385,7 +3211,6 @@ feat:
   - abbr: CRB
     page_start: 101
     page_stop: 101
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3402,7 +3227,6 @@ feat:
   - abbr: CRB
     page_start: 101
     page_stop: 101
-  sources_id: 1
   traits:
   - Bard
   - Concentrate
@@ -3422,7 +3246,6 @@ feat:
   - abbr: CRB
     page_start: 101
     page_stop: 101
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3439,7 +3262,6 @@ feat:
   - abbr: CRB
     page_start: 101
     page_stop: 101
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3456,7 +3278,6 @@ feat:
   - abbr: CRB
     page_start: 102
     page_stop: 102
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3473,7 +3294,6 @@ feat:
   - abbr: CRB
     page_start: 102
     page_stop: 102
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3490,7 +3310,6 @@ feat:
   - abbr: CRB
     page_start: 102
     page_stop: 102
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3507,7 +3326,6 @@ feat:
   - abbr: CRB
     page_start: 102
     page_stop: 102
-  sources_id: 1
   traits:
   - Bard
   - Concentrate
@@ -3526,7 +3344,6 @@ feat:
   - abbr: CRB
     page_start: 102
     page_stop: 102
-  sources_id: 1
   traits:
   - Bard
   - Concentrate
@@ -3546,7 +3363,6 @@ feat:
   - abbr: CRB
     page_start: 102
     page_stop: 102
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3563,7 +3379,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3580,7 +3395,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3597,7 +3411,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3614,7 +3427,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3640,7 +3452,6 @@ feat:
   - abbr: CRB
     page_start: 213
     page_stop: 213
-  sources_id: 1
   traits:
   - Bard
   - Druid
@@ -3660,7 +3471,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3677,7 +3487,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3694,7 +3503,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3711,7 +3519,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3728,7 +3535,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3745,7 +3551,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3762,7 +3567,6 @@ feat:
   - abbr: CRB
     page_start: 103
     page_stop: 103
-  sources_id: 1
   traits:
   - Bard
   trigger: null
@@ -3779,7 +3583,6 @@ feat:
   - abbr: CRB
     page_start: 109
     page_stop: 109
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -3796,7 +3599,6 @@ feat:
   - abbr: CRB
     page_start: 109
     page_stop: 109
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -3813,7 +3615,6 @@ feat:
   - abbr: CRB
     page_start: 109
     page_stop: 109
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -3830,7 +3631,6 @@ feat:
   - abbr: CRB
     page_start: 110
     page_stop: 110
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -3847,7 +3647,6 @@ feat:
   - abbr: CRB
     page_start: 110
     page_stop: 110
-  sources_id: 1
   traits:
   - Champion
   trigger: You attempt a save against a spell, before you roll.
@@ -3864,7 +3663,6 @@ feat:
   - abbr: CRB
     page_start: 110
     page_stop: 110
-  sources_id: 1
   traits:
   - Champion
   - Oath
@@ -3882,7 +3680,6 @@ feat:
   - abbr: CRB
     page_start: 110
     page_stop: 110
-  sources_id: 1
   traits:
   - Champion
   - Oath
@@ -3900,7 +3697,6 @@ feat:
   - abbr: CRB
     page_start: 110
     page_stop: 110
-  sources_id: 1
   traits:
   - Champion
   - Oath
@@ -3918,7 +3714,6 @@ feat:
   - abbr: CRB
     page_start: 111
     page_stop: 111
-  sources_id: 1
   traits:
   - Champion
   - Oath
@@ -3936,7 +3731,6 @@ feat:
   - abbr: CRB
     page_start: 111
     page_stop: 111
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -3953,7 +3747,6 @@ feat:
   - abbr: CRB
     page_start: 111
     page_stop: 111
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -3970,7 +3763,6 @@ feat:
   - abbr: CRB
     page_start: 111
     page_stop: 111
-  sources_id: 1
   traits:
   - Champion
   - Concentrate
@@ -3992,7 +3784,6 @@ feat:
   - abbr: CRB
     page_start: 142
     page_stop: 142
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4009,7 +3800,6 @@ feat:
   - abbr: CRB
     page_start: 112
     page_stop: 112
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4026,7 +3816,6 @@ feat:
   - abbr: CRB
     page_start: 112
     page_stop: 112
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4043,7 +3832,6 @@ feat:
   - abbr: CRB
     page_start: 112
     page_stop: 112
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4060,7 +3848,6 @@ feat:
   - abbr: CRB
     page_start: 112
     page_stop: 112
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4077,7 +3864,6 @@ feat:
   - abbr: CRB
     page_start: 112
     page_stop: 112
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4094,7 +3880,6 @@ feat:
   - abbr: CRB
     page_start: 112
     page_stop: 112
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4111,7 +3896,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4128,7 +3912,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4145,7 +3928,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4162,7 +3944,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4179,7 +3960,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4196,7 +3976,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4213,7 +3992,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4230,7 +4008,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4247,7 +4024,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   - Flourish
@@ -4265,7 +4041,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4282,7 +4057,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4299,7 +4073,6 @@ feat:
   - abbr: CRB
     page_start: 113
     page_stop: 113
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4316,7 +4089,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4333,7 +4105,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4350,7 +4121,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4367,7 +4137,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4384,7 +4153,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4401,7 +4169,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4418,7 +4185,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4435,7 +4201,6 @@ feat:
   - abbr: CRB
     page_start: 114
     page_stop: 114
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4452,7 +4217,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4469,7 +4233,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4486,7 +4249,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4503,7 +4265,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4520,7 +4281,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4537,7 +4297,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4554,7 +4313,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4571,7 +4329,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4588,7 +4345,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4605,7 +4361,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4622,7 +4377,6 @@ feat:
   - abbr: CRB
     page_start: 115
     page_stop: 115
-  sources_id: 1
   traits:
   - Champion
   trigger: null
@@ -4639,7 +4393,6 @@ feat:
   - abbr: CRB
     page_start: 121
     page_stop: 121
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4656,7 +4409,6 @@ feat:
   - abbr: CRB
     page_start: 121
     page_stop: 121
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4673,7 +4425,6 @@ feat:
   - abbr: CRB
     page_start: 121
     page_stop: 121
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4690,7 +4441,6 @@ feat:
   - abbr: CRB
     page_start: 121
     page_stop: 121
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4707,7 +4457,6 @@ feat:
   - abbr: CRB
     page_start: 121
     page_stop: 121
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4724,7 +4473,6 @@ feat:
   - abbr: CRB
     page_start: 122
     page_stop: 122
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4741,7 +4489,6 @@ feat:
   - abbr: CRB
     page_start: 122
     page_stop: 122
-  sources_id: 1
   traits:
   - Cleric
   - Healing
@@ -4760,7 +4507,6 @@ feat:
   - abbr: CRB
     page_start: 122
     page_stop: 122
-  sources_id: 1
   traits:
   - Cleric
   - Exploration
@@ -4778,7 +4524,6 @@ feat:
   - abbr: CRB
     page_start: 122
     page_stop: 122
-  sources_id: 1
   traits:
   - Cleric
   - Healing
@@ -4796,7 +4541,6 @@ feat:
   - abbr: CRB
     page_start: 122
     page_stop: 122
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4813,7 +4557,6 @@ feat:
   - abbr: CRB
     page_start: 122
     page_stop: 122
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4830,7 +4573,6 @@ feat:
   - abbr: CRB
     page_start: 122
     page_stop: 122
-  sources_id: 1
   traits:
   - Cleric
   - Divine
@@ -4849,7 +4591,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   - Concentrate
@@ -4868,7 +4609,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4885,7 +4625,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4902,7 +4641,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   - Concentrate
@@ -4921,7 +4659,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   - Concentrate
@@ -4940,7 +4677,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   trigger: You finish Casting a Spell using one of your divine spell slots on your turn.
@@ -4957,7 +4693,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -4980,7 +4715,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Cleric
   - Druid
@@ -4999,7 +4733,6 @@ feat:
   - abbr: CRB
     page_start: 123
     page_stop: 123
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5016,7 +4749,6 @@ feat:
   - abbr: CRB
     page_start: 124
     page_stop: 124
-  sources_id: 1
   traits:
   - Cleric
   - Divine
@@ -5035,7 +4767,6 @@ feat:
   - abbr: CRB
     page_start: 124
     page_stop: 124
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5052,7 +4783,6 @@ feat:
   - abbr: CRB
     page_start: 124
     page_stop: 124
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5069,7 +4799,6 @@ feat:
   - abbr: CRB
     page_start: 124
     page_stop: 124
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5086,7 +4815,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5103,7 +4831,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   - Concentrate
@@ -5122,7 +4849,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5139,7 +4865,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5156,7 +4881,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   - Concentrate
@@ -5175,7 +4899,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5192,7 +4915,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5209,7 +4931,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5226,7 +4947,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5243,7 +4963,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5260,7 +4979,6 @@ feat:
   - abbr: CRB
     page_start: 125
     page_stop: 125
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5277,7 +4995,6 @@ feat:
   - abbr: CRB
     page_start: 126
     page_stop: 126
-  sources_id: 1
   traits:
   - Cleric
   trigger: You critically hit a creature that is not on its home plane.
@@ -5294,7 +5011,6 @@ feat:
   - abbr: CRB
     page_start: 126
     page_stop: 126
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5311,7 +5027,6 @@ feat:
   - abbr: CRB
     page_start: 126
     page_stop: 126
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5328,7 +5043,6 @@ feat:
   - abbr: CRB
     page_start: 126
     page_stop: 126
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5345,7 +5059,6 @@ feat:
   - abbr: CRB
     page_start: 126
     page_stop: 126
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5362,7 +5075,6 @@ feat:
   - abbr: CRB
     page_start: 127
     page_stop: 127
-  sources_id: 1
   traits:
   - Cleric
   - Concentrate
@@ -5381,7 +5093,6 @@ feat:
   - abbr: CRB
     page_start: 127
     page_stop: 127
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5398,7 +5109,6 @@ feat:
   - abbr: CRB
     page_start: 127
     page_stop: 127
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5415,7 +5125,6 @@ feat:
   - abbr: CRB
     page_start: 127
     page_stop: 127
-  sources_id: 1
   traits:
   - Cleric
   trigger: null
@@ -5432,7 +5141,6 @@ feat:
   - abbr: CRB
     page_start: 127
     page_stop: 127
-  sources_id: 1
   traits:
   - Cleric
   - Concentrate
@@ -5450,7 +5158,6 @@ feat:
   - abbr: CRB
     page_start: 133
     page_stop: 133
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5467,7 +5174,6 @@ feat:
   - abbr: CRB
     page_start: 133
     page_stop: 133
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5484,7 +5190,6 @@ feat:
   - abbr: CRB
     page_start: 134
     page_stop: 134
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5507,7 +5212,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Druid
   - Manipulate
@@ -5528,7 +5232,6 @@ feat:
   - abbr: CRB
     page_start: 134
     page_stop: 134
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5545,7 +5248,6 @@ feat:
   - abbr: CRB
     page_start: 134
     page_stop: 134
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5562,7 +5264,6 @@ feat:
   - abbr: CRB
     page_start: 134
     page_stop: 134
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5579,7 +5280,6 @@ feat:
   - abbr: CRB
     page_start: 134
     page_stop: 134
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5596,7 +5296,6 @@ feat:
   - abbr: CRB
     page_start: 135
     page_stop: 135
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5613,7 +5312,6 @@ feat:
   - abbr: CRB
     page_start: 135
     page_stop: 135
-  sources_id: 1
   traits:
   - Druid
   - Manipulate
@@ -5632,7 +5330,6 @@ feat:
   - abbr: CRB
     page_start: 135
     page_stop: 135
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5649,7 +5346,6 @@ feat:
   - abbr: CRB
     page_start: 135
     page_stop: 135
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5666,7 +5362,6 @@ feat:
   - abbr: CRB
     page_start: 135
     page_stop: 135
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5683,7 +5378,6 @@ feat:
   - abbr: CRB
     page_start: 135
     page_stop: 135
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5700,7 +5394,6 @@ feat:
   - abbr: CRB
     page_start: 136
     page_stop: 136
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5717,7 +5410,6 @@ feat:
   - abbr: CRB
     page_start: 136
     page_stop: 136
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5734,7 +5426,6 @@ feat:
   - abbr: CRB
     page_start: 136
     page_stop: 136
-  sources_id: 1
   traits:
   - Druid
   trigger: An opponent adjacent to you critically hits you with a melee weapon or melee unarmed attack.
@@ -5751,7 +5442,6 @@ feat:
   - abbr: CRB
     page_start: 136
     page_stop: 136
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5768,7 +5458,6 @@ feat:
   - abbr: CRB
     page_start: 136
     page_stop: 136
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5785,7 +5474,6 @@ feat:
   - abbr: CRB
     page_start: 137
     page_stop: 137
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5802,7 +5490,6 @@ feat:
   - abbr: CRB
     page_start: 137
     page_stop: 137
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5819,7 +5506,6 @@ feat:
   - abbr: CRB
     page_start: 137
     page_stop: 137
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5836,7 +5522,6 @@ feat:
   - abbr: CRB
     page_start: 137
     page_stop: 137
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5853,7 +5538,6 @@ feat:
   - abbr: CRB
     page_start: 137
     page_stop: 137
-  sources_id: 1
   traits:
   - Druid
   - Metamagic
@@ -5871,7 +5555,6 @@ feat:
   - abbr: CRB
     page_start: 137
     page_stop: 137
-  sources_id: 1
   traits:
   - Druid
   - Manipulate
@@ -5890,7 +5573,6 @@ feat:
   - abbr: CRB
     page_start: 138
     page_stop: 138
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5907,7 +5589,6 @@ feat:
   - abbr: CRB
     page_start: 138
     page_stop: 138
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5924,7 +5605,6 @@ feat:
   - abbr: CRB
     page_start: 138
     page_stop: 138
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5941,7 +5621,6 @@ feat:
   - abbr: CRB
     page_start: 138
     page_stop: 138
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5958,7 +5637,6 @@ feat:
   - abbr: CRB
     page_start: 138
     page_stop: 138
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5975,7 +5653,6 @@ feat:
   - abbr: CRB
     page_start: 138
     page_stop: 138
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -5992,7 +5669,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6009,7 +5685,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6026,7 +5701,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6043,7 +5717,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6060,7 +5733,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6077,7 +5749,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6094,7 +5765,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6111,7 +5781,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6128,7 +5797,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Druid
   trigger: null
@@ -6145,7 +5813,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Concentrate
   - Druid
@@ -6165,7 +5832,6 @@ feat:
   - abbr: CRB
     page_start: 139
     page_stop: 139
-  sources_id: 1
   traits:
   - Concentrate
   - Druid
@@ -6183,7 +5849,6 @@ feat:
   - abbr: CRB
     page_start: 144
     page_stop: 144
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6200,7 +5865,6 @@ feat:
   - abbr: CRB
     page_start: 144
     page_stop: 144
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -6218,7 +5882,6 @@ feat:
   - abbr: CRB
     page_start: 144
     page_stop: 144
-  sources_id: 1
   traits:
   - Fighter
   - Open
@@ -6237,7 +5900,6 @@ feat:
   - abbr: CRB
     page_start: 144
     page_stop: 144
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -6255,7 +5917,6 @@ feat:
   - abbr: CRB
     page_start: 145
     page_stop: 145
-  sources_id: 1
   traits:
   - Fighter
   trigger: An enemy hits you with a melee Strike.
@@ -6272,7 +5933,6 @@ feat:
   - abbr: CRB
     page_start: 145
     page_stop: 145
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6289,7 +5949,6 @@ feat:
   - abbr: CRB
     page_start: 145
     page_stop: 145
-  sources_id: 1
   traits:
   - Fighter
   trigger: You use the Shield Block reaction, and the opponent that triggered Shield Block is adjacent to you and is your size or smaller.
@@ -6306,7 +5965,6 @@ feat:
   - abbr: CRB
     page_start: 145
     page_stop: 145
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6323,7 +5981,6 @@ feat:
   - abbr: CRB
     page_start: 145
     page_stop: 145
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -6341,7 +5998,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -6359,7 +6015,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6376,7 +6031,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Emotion
   - Fear
@@ -6396,7 +6050,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6413,7 +6066,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -6431,7 +6083,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -6449,7 +6100,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -6467,7 +6117,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6484,7 +6133,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -6503,7 +6151,6 @@ feat:
   - abbr: CRB
     page_start: 146
     page_stop: 146
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6520,7 +6167,6 @@ feat:
   - abbr: CRB
     page_start: 147
     page_stop: 147
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6537,7 +6183,6 @@ feat:
   - abbr: CRB
     page_start: 147
     page_stop: 147
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6554,7 +6199,6 @@ feat:
   - abbr: CRB
     page_start: 147
     page_stop: 147
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -6572,7 +6216,6 @@ feat:
   - abbr: CRB
     page_start: 147
     page_stop: 147
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -6590,7 +6233,6 @@ feat:
   - abbr: CRB
     page_start: 148
     page_stop: 148
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6607,7 +6249,6 @@ feat:
   - abbr: CRB
     page_start: 148
     page_stop: 148
-  sources_id: 1
   traits:
   - Fighter
   trigger: An ally within your melee reach is hit by an attack, you can see the attacker, and the ally gaining a +2 circumstance bonus to AC would turn the critical hit into a hit or the hit into a miss.
@@ -6624,7 +6265,6 @@ feat:
   - abbr: CRB
     page_start: 148
     page_stop: 148
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6641,7 +6281,6 @@ feat:
   - abbr: CRB
     page_start: 148
     page_stop: 148
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6658,7 +6297,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -6676,7 +6314,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6693,7 +6330,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6710,7 +6346,6 @@ feat:
   - abbr: CRB
     page_start: 173
     page_stop: 173
-  sources_id: 1
   traits:
   - Fighter
   - Ranger
@@ -6729,7 +6364,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   trigger: A creature within your reach critically fails a Strike against you.
@@ -6746,7 +6380,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6763,7 +6396,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Concentrate
   - Fighter
@@ -6781,7 +6413,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -6799,7 +6430,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -6817,7 +6447,6 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6834,8 +6463,8 @@ feat:
   - abbr: CRB
     page_start: 149
     page_stop: 149
-  sources_id: 1
-  traits: null
+  traits:
+    - Fighter
   trigger: null
 - action: null
   descr: Your graceful moves with agile weapons are beyond compare. Your multiple attack penalty with agile weapons and agile unarmed attacks becomes –3 for your second attack and –6 for subsequent attacks (rather than –4 and –8).
@@ -6850,7 +6479,6 @@ feat:
   - abbr: CRB
     page_start: 150
     page_stop: 150
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6867,7 +6495,6 @@ feat:
   - abbr: CRB
     page_start: 150
     page_stop: 150
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -6885,7 +6512,6 @@ feat:
   - abbr: CRB
     page_start: 150
     page_stop: 150
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6902,7 +6528,6 @@ feat:
   - abbr: CRB
     page_start: 150
     page_stop: 150
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -6920,7 +6545,6 @@ feat:
   - abbr: CRB
     page_start: 150
     page_stop: 150
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -6938,7 +6562,6 @@ feat:
   - abbr: CRB
     page_start: 150
     page_stop: 150
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -6956,7 +6579,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6973,7 +6595,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -6990,7 +6611,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   trigger: An opponent casting a spell that targets you critically fails a speel attack roll against your AC.
@@ -7007,7 +6627,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -7025,7 +6644,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -7043,7 +6661,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7060,7 +6677,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7077,7 +6693,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Concentrate
   - Fighter
@@ -7096,7 +6711,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -7114,7 +6728,6 @@ feat:
   - abbr: CRB
     page_start: 151
     page_stop: 151
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -7132,7 +6745,6 @@ feat:
   - abbr: CRB
     page_start: 152
     page_stop: 152
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -7150,7 +6762,6 @@ feat:
   - abbr: CRB
     page_start: 152
     page_stop: 152
-  sources_id: 1
   traits:
   - Fighter
   trigger: You complete the last action on your turn, and your turn has not ended yet.
@@ -7167,7 +6778,6 @@ feat:
   - abbr: CRB
     page_start: 152
     page_stop: 152
-  sources_id: 1
   traits:
   - Concentrate
   - Fighter
@@ -7185,7 +6795,6 @@ feat:
   - abbr: CRB
     page_start: 152
     page_stop: 152
-  sources_id: 1
   traits:
   - Fighter
   - Press
@@ -7203,7 +6812,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7220,7 +6828,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7237,7 +6844,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   trigger: You roll initiative.
@@ -7254,7 +6860,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -7273,7 +6878,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -7291,7 +6895,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7308,7 +6911,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -7326,7 +6928,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   - Stance
@@ -7344,7 +6945,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   - Flourish
@@ -7364,7 +6964,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7381,7 +6980,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7398,7 +6996,6 @@ feat:
   - abbr: CRB
     page_start: 153
     page_stop: 153
-  sources_id: 1
   traits:
   - Fighter
   trigger: null
@@ -7415,7 +7012,6 @@ feat:
   - abbr: CRB
     page_start: 158
     page_stop: 158
-  sources_id: 1
   traits:
   - Monk
   - Stance
@@ -7433,7 +7029,6 @@ feat:
   - abbr: CRB
     page_start: 158
     page_stop: 158
-  sources_id: 1
   traits:
   - Monk
   - Stance
@@ -7451,7 +7046,6 @@ feat:
   - abbr: CRB
     page_start: 158
     page_stop: 158
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7468,7 +7062,6 @@ feat:
   - abbr: CRB
     page_start: 158
     page_stop: 158
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7485,7 +7078,6 @@ feat:
   - abbr: CRB
     page_start: 158
     page_stop: 158
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7502,7 +7094,6 @@ feat:
   - abbr: CRB
     page_start: 159
     page_stop: 159
-  sources_id: 1
   traits:
   - Monk
   - Stance
@@ -7520,7 +7111,6 @@ feat:
   - abbr: CRB
     page_start: 159
     page_stop: 159
-  sources_id: 1
   traits:
   - Monk
   - Stance
@@ -7538,7 +7128,6 @@ feat:
   - abbr: CRB
     page_start: 159
     page_stop: 159
-  sources_id: 1
   traits:
   - Monk
   - Stance
@@ -7556,7 +7145,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7573,7 +7161,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7590,7 +7177,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7607,7 +7193,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7624,7 +7209,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7641,7 +7225,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: You are the target of a physical ranged attack.
@@ -7658,7 +7241,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7675,7 +7257,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7692,7 +7273,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7709,7 +7289,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: A creature within your reach uses a move action or leaves a square during a move action it’s using.
@@ -7726,7 +7305,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7743,7 +7321,6 @@ feat:
   - abbr: CRB
     page_start: 160
     page_stop: 160
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7760,7 +7337,6 @@ feat:
   - abbr: CRB
     page_start: 161
     page_stop: 161
-  sources_id: 1
   traits:
   - Monk
   trigger: You are targeted with a melee attack by an attacker you can see.
@@ -7777,7 +7353,6 @@ feat:
   - abbr: CRB
     page_start: 161
     page_stop: 161
-  sources_id: 1
   traits:
   - Auditory
   - Emotion
@@ -7798,7 +7373,6 @@ feat:
   - abbr: CRB
     page_start: 161
     page_stop: 161
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7815,7 +7389,6 @@ feat:
   - abbr: CRB
     page_start: 161
     page_stop: 161
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7832,7 +7405,6 @@ feat:
   - abbr: CRB
     page_start: 161
     page_stop: 161
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7849,7 +7421,6 @@ feat:
   - abbr: CRB
     page_start: 162
     page_stop: 162
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7866,7 +7437,6 @@ feat:
   - abbr: CRB
     page_start: 162
     page_stop: 162
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7883,7 +7453,6 @@ feat:
   - abbr: CRB
     page_start: 162
     page_stop: 162
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7900,7 +7469,6 @@ feat:
   - abbr: CRB
     page_start: 162
     page_stop: 162
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7917,7 +7485,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   - Stance
@@ -7935,7 +7502,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7952,7 +7518,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   - Stance
@@ -7970,7 +7535,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -7987,7 +7551,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8004,7 +7567,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Concentrate
   - Monk
@@ -8022,7 +7584,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Attack
   - Incapacitation
@@ -8041,7 +7602,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8058,7 +7618,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8075,7 +7634,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8092,7 +7650,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   - Negative
@@ -8110,7 +7667,6 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8127,7 +7683,6 @@ feat:
   - abbr: CRB
     page_start: 164
     page_stop: 164
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8144,7 +7699,6 @@ feat:
   - abbr: CRB
     page_start: 164
     page_stop: 164
-  sources_id: 1
   traits:
   - Monk
   trigger: You roll initiative.
@@ -8161,7 +7715,6 @@ feat:
   - abbr: CRB
     page_start: 164
     page_stop: 164
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8178,7 +7731,6 @@ feat:
   - abbr: CRB
     page_start: 164
     page_stop: 164
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8195,7 +7747,6 @@ feat:
   - abbr: CRB
     page_start: 164
     page_stop: 164
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8212,7 +7763,6 @@ feat:
   - abbr: CRB
     page_start: 164
     page_stop: 164
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8229,7 +7779,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8246,7 +7795,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Air
   - Concentrate
@@ -8267,7 +7815,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Emotion
   - Mental
@@ -8286,7 +7833,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8303,7 +7849,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8320,7 +7865,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8337,7 +7881,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8354,7 +7897,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8371,7 +7913,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8388,7 +7929,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: Your turn ends and you have a status penalty to your Speed or are immobilized or slowed.
@@ -8405,7 +7945,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8422,7 +7961,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Monk
   trigger: null
@@ -8439,7 +7977,6 @@ feat:
   - abbr: CRB
     page_start: 165
     page_stop: 165
-  sources_id: 1
   traits:
   - Fortune
   - Monk
@@ -8457,7 +7994,6 @@ feat:
   - abbr: CRB
     page_start: 171
     page_stop: 171
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8474,7 +8010,6 @@ feat:
   - abbr: CRB
     page_start: 171
     page_stop: 171
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8491,7 +8026,6 @@ feat:
   - abbr: CRB
     page_start: 171
     page_stop: 171
-  sources_id: 1
   traits:
   - Flourish
   - Ranger
@@ -8509,7 +8043,6 @@ feat:
   - abbr: CRB
     page_start: 171
     page_stop: 171
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8526,7 +8059,6 @@ feat:
   - abbr: CRB
     page_start: 171
     page_stop: 171
-  sources_id: 1
   traits:
   - Flourish
   - Ranger
@@ -8544,7 +8076,6 @@ feat:
   - abbr: CRB
     page_start: 171
     page_stop: 171
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8561,7 +8092,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Concentrate
   - Ranger
@@ -8579,7 +8109,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8596,7 +8125,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   - Rogue
@@ -8614,7 +8142,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8631,7 +8158,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8648,7 +8174,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: Your hunted prey is within your reach, and it uses a manipulate action, uses a move action, or leaves a square during a move action it’s using.
@@ -8665,7 +8190,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8682,7 +8206,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8699,7 +8222,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8716,7 +8238,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   - Rogue
@@ -8734,7 +8255,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8751,7 +8271,6 @@ feat:
   - abbr: CRB
     page_start: 172
     page_stop: 172
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8768,7 +8287,6 @@ feat:
   - abbr: CRB
     page_start: 173
     page_stop: 173
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8785,7 +8303,6 @@ feat:
   - abbr: CRB
     page_start: 173
     page_stop: 173
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8802,7 +8319,6 @@ feat:
   - abbr: CRB
     page_start: 173
     page_stop: 173
-  sources_id: 1
   traits:
   - Flourish
   - Ranger
@@ -8821,7 +8337,6 @@ feat:
   - abbr: CRB
     page_start: 173
     page_stop: 173
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8838,7 +8353,6 @@ feat:
   - abbr: CRB
     page_start: 173
     page_stop: 173
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8855,7 +8369,6 @@ feat:
   - abbr: CRB
     page_start: 174
     page_stop: 174
-  sources_id: 1
   traits:
   - Open
   - Ranger
@@ -8873,7 +8386,6 @@ feat:
   - abbr: CRB
     page_start: 174
     page_stop: 174
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8890,7 +8402,6 @@ feat:
   - abbr: CRB
     page_start: 174
     page_stop: 174
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8907,7 +8418,6 @@ feat:
   - abbr: CRB
     page_start: 174
     page_stop: 174
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8924,7 +8434,6 @@ feat:
   - abbr: CRB
     page_start: 174
     page_stop: 174
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8941,7 +8450,6 @@ feat:
   - abbr: CRB
     page_start: 174
     page_stop: 174
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8958,7 +8466,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8975,7 +8482,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -8992,7 +8498,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Open
   - Ranger
@@ -9010,7 +8515,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Fighter
   - Ranger
@@ -9028,7 +8532,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9045,7 +8548,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9062,7 +8564,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9079,7 +8580,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9096,7 +8596,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Press
   - Ranger
@@ -9114,7 +8613,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9131,7 +8629,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: You fail a check to Seek.
@@ -9148,7 +8645,6 @@ feat:
   - abbr: CRB
     page_start: 175
     page_stop: 175
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9165,7 +8661,6 @@ feat:
   - abbr: CRB
     page_start: 176
     page_stop: 176
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9182,7 +8677,6 @@ feat:
   - abbr: CRB
     page_start: 176
     page_stop: 176
-  sources_id: 1
   traits:
   - Concentrate
   - Press
@@ -9201,7 +8695,6 @@ feat:
   - abbr: CRB
     page_start: 176
     page_stop: 176
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9218,7 +8711,6 @@ feat:
   - abbr: CRB
     page_start: 176
     page_stop: 176
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9235,7 +8727,6 @@ feat:
   - abbr: CRB
     page_start: 176
     page_stop: 176
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9252,7 +8743,6 @@ feat:
   - abbr: CRB
     page_start: 176
     page_stop: 176
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9269,7 +8759,6 @@ feat:
   - abbr: CRB
     page_start: 176
     page_stop: 176
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9286,7 +8775,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9303,7 +8791,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Flourish
   - Open
@@ -9322,7 +8809,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9339,7 +8825,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9356,7 +8841,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Flourish
   - Ranger
@@ -9374,7 +8858,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9391,7 +8874,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9408,7 +8890,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9425,7 +8906,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9442,7 +8922,6 @@ feat:
   - abbr: CRB
     page_start: 177
     page_stop: 177
-  sources_id: 1
   traits:
   - Ranger
   trigger: null
@@ -9459,7 +8938,6 @@ feat:
   - abbr: CRB
     page_start: 183
     page_stop: 183
-  sources_id: 1
   traits:
   - Rogue
   trigger: A creature targets you with an attack and you can see the attacker.
@@ -9476,7 +8954,6 @@ feat:
   - abbr: CRB
     page_start: 183
     page_stop: 183
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9493,7 +8970,6 @@ feat:
   - abbr: CRB
     page_start: 183
     page_stop: 183
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9510,7 +8986,6 @@ feat:
   - abbr: CRB
     page_start: 183
     page_stop: 183
-  sources_id: 1
   traits:
   - Emotion
   - Fear
@@ -9530,7 +9005,6 @@ feat:
   - abbr: CRB
     page_start: 183
     page_stop: 183
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9547,7 +9021,6 @@ feat:
   - abbr: CRB
     page_start: 183
     page_stop: 183
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9564,7 +9037,6 @@ feat:
   - abbr: CRB
     page_start: 184
     page_stop: 184
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9581,7 +9053,6 @@ feat:
   - abbr: CRB
     page_start: 184
     page_stop: 184
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9598,7 +9069,6 @@ feat:
   - abbr: CRB
     page_start: 184
     page_stop: 184
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9615,7 +9085,6 @@ feat:
   - abbr: CRB
     page_start: 184
     page_stop: 184
-  sources_id: 1
   traits:
   - Rogue
   - Secret
@@ -9633,7 +9102,6 @@ feat:
   - abbr: CRB
     page_start: 184
     page_stop: 184
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9650,7 +9118,6 @@ feat:
   - abbr: CRB
     page_start: 185
     page_stop: 185
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9667,7 +9134,6 @@ feat:
   - abbr: CRB
     page_start: 185
     page_stop: 185
-  sources_id: 1
   traits:
   - Manipulate
   - Rogue
@@ -9685,7 +9151,6 @@ feat:
   - abbr: CRB
     page_start: 185
     page_stop: 185
-  sources_id: 1
   traits:
   - Rogue
   trigger: An adjacent foe moves away from you, and you can reach at least one space adjacent to the foe with a Stride action.
@@ -9702,7 +9167,6 @@ feat:
   - abbr: CRB
     page_start: 185
     page_stop: 185
-  sources_id: 1
   traits:
   - Incapacitation
   - Rogue
@@ -9720,7 +9184,6 @@ feat:
   - abbr: CRB
     page_start: 186
     page_stop: 186
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9737,7 +9200,6 @@ feat:
   - abbr: CRB
     page_start: 186
     page_stop: 186
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9754,7 +9216,6 @@ feat:
   - abbr: CRB
     page_start: 186
     page_stop: 186
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9771,7 +9232,6 @@ feat:
   - abbr: CRB
     page_start: 186
     page_stop: 186
-  sources_id: 1
   traits:
   - Rogue
   trigger: A trap within your reach is triggered.
@@ -9788,7 +9248,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9805,7 +9264,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9822,7 +9280,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: A creature within your melee reach is hit by a melee attack from one of your allies.
@@ -9839,7 +9296,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: The attack roll for a Strike targeting you fails or critically fails.
@@ -9856,7 +9312,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9873,7 +9328,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9890,7 +9344,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9907,7 +9360,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9924,7 +9376,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9941,7 +9392,6 @@ feat:
   - abbr: CRB
     page_start: 187
     page_stop: 187
-  sources_id: 1
   traits:
   - Incapacitation
   - Rogue
@@ -9959,7 +9409,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9976,7 +9425,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -9993,7 +9441,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: An adjacent enemy begins to use a reaction.
@@ -10010,7 +9457,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Flourish
   - Rogue
@@ -10028,7 +9474,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: A physical attack would reduce you to 0 Hit Points.
@@ -10045,7 +9490,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Concentrate
   - Rogue
@@ -10063,7 +9507,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -10080,7 +9523,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: You fail a check to Seek.
@@ -10097,7 +9539,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -10114,7 +9555,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -10131,7 +9571,6 @@ feat:
   - abbr: CRB
     page_start: 188
     page_stop: 188
-  sources_id: 1
   traits:
   - Rogue
   trigger: Your turn ends.
@@ -10148,7 +9587,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -10165,7 +9603,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -10182,7 +9619,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Magical
   - Move
@@ -10201,7 +9637,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -10218,7 +9653,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Concentrate
   - Rogue
@@ -10236,7 +9670,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Rogue
   trigger: You successfully use Stealth to Hide and become hidden from all of your current foes, or use Stealth to Sneak and become undetected to all your current foes.
@@ -10253,7 +9686,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Rogue
   trigger: null
@@ -10270,7 +9702,6 @@ feat:
   - abbr: CRB
     page_start: 189
     page_stop: 189
-  sources_id: 1
   traits:
   - Concentrate
   - Manipulate
@@ -10289,7 +9720,6 @@ feat:
   - abbr: CRB
     page_start: 198
     page_stop: 198
-  sources_id: 1
   traits:
   - Abjuration
   - Sorcerer
@@ -10307,7 +9737,6 @@ feat:
   - abbr: CRB
     page_start: 198
     page_stop: 198
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10324,7 +9753,6 @@ feat:
   - abbr: CRB
     page_start: 198
     page_stop: 198
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10341,7 +9769,6 @@ feat:
   - abbr: CRB
     page_start: 198
     page_stop: 198
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10358,7 +9785,6 @@ feat:
   - abbr: CRB
     page_start: 198
     page_stop: 198
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10375,7 +9801,6 @@ feat:
   - abbr: CRB
     page_start: 199
     page_stop: 199
-  sources_id: 1
   traits:
   - Arcane
   - Sorcerer
@@ -10396,7 +9821,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Sorcerer
   - Wizard
@@ -10414,7 +9838,6 @@ feat:
   - abbr: CRB
     page_start: 199
     page_stop: 199
-  sources_id: 1
   traits:
   - Divine
   - Sorcerer
@@ -10432,7 +9855,6 @@ feat:
   - abbr: CRB
     page_start: 199
     page_stop: 199
-  sources_id: 1
   traits:
   - Occult
   - Sorcerer
@@ -10450,7 +9872,6 @@ feat:
   - abbr: CRB
     page_start: 199
     page_stop: 199
-  sources_id: 1
   traits:
   - Primal
   - Sorcerer
@@ -10468,7 +9889,6 @@ feat:
   - abbr: CRB
     page_start: 200
     page_stop: 200
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10485,7 +9905,6 @@ feat:
   - abbr: CRB
     page_start: 200
     page_stop: 200
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10502,7 +9921,6 @@ feat:
   - abbr: CRB
     page_start: 200
     page_stop: 200
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10519,7 +9937,6 @@ feat:
   - abbr: CRB
     page_start: 200
     page_stop: 200
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10536,7 +9953,6 @@ feat:
   - abbr: CRB
     page_start: 200
     page_stop: 200
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10553,7 +9969,6 @@ feat:
   - abbr: CRB
     page_start: 200
     page_stop: 200
-  sources_id: 1
   traits:
   - Manipulate
   - Metamagic
@@ -10572,7 +9987,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Concentrate
   - Metamagic
@@ -10591,7 +10005,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10608,7 +10021,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Detection
   - Divination
@@ -10628,7 +10040,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Metamagic
   - Sorcerer
@@ -10646,7 +10057,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Sorcerer
   - Wizard
@@ -10664,7 +10074,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Arcane
   - Sorcerer
@@ -10682,7 +10091,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Divine
   - Sorcerer
@@ -10700,7 +10108,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10717,7 +10124,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10734,7 +10140,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Metamagic
   - Sorcerer
@@ -10752,7 +10157,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Sorcerer
   trigger: null
@@ -10769,7 +10173,6 @@ feat:
   - abbr: CRB
     page_start: 201
     page_stop: 201
-  sources_id: 1
   traits:
   - Sorcerer
   - Wizard
@@ -10787,7 +10190,6 @@ feat:
   - abbr: CRB
     page_start: 209
     page_stop: 209
-  sources_id: 1
   traits:
   - Abjuration
   - Arcane
@@ -10806,7 +10208,6 @@ feat:
   - abbr: CRB
     page_start: 209
     page_stop: 209
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10823,7 +10224,6 @@ feat:
   - abbr: CRB
     page_start: 209
     page_stop: 209
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10840,7 +10240,6 @@ feat:
   - abbr: CRB
     page_start: 209
     page_stop: 209
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10857,7 +10256,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10874,7 +10272,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Concentrate
   - Manipulate
@@ -10894,7 +10291,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10911,7 +10307,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10928,7 +10323,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Concentrate
   - Metamagic
@@ -10947,7 +10341,6 @@ feat:
   - abbr: CRB
     page_start: 210
     page_stop: 210
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10964,7 +10357,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -10981,7 +10373,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Manipulate
   - Metamagic
@@ -11000,7 +10391,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11017,7 +10407,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Manipulate
   - Metamagic
@@ -11036,7 +10425,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Concentrate
   - Metamagic
@@ -11055,7 +10443,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11072,7 +10459,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11089,7 +10475,6 @@ feat:
   - abbr: CRB
     page_start: 211
     page_stop: 211
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11106,7 +10491,6 @@ feat:
   - abbr: CRB
     page_start: 212
     page_stop: 212
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11123,7 +10507,6 @@ feat:
   - abbr: CRB
     page_start: 212
     page_stop: 212
-  sources_id: 1
   traits:
   - Concentrate
   - Wizard
@@ -11141,7 +10524,6 @@ feat:
   - abbr: CRB
     page_start: 212
     page_stop: 212
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11158,7 +10540,6 @@ feat:
   - abbr: CRB
     page_start: 212
     page_stop: 212
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11175,7 +10556,6 @@ feat:
   - abbr: CRB
     page_start: 212
     page_stop: 212
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11192,7 +10572,6 @@ feat:
   - abbr: CRB
     page_start: 212
     page_stop: 212
-  sources_id: 1
   traits:
   - Wizard
   trigger: null
@@ -11209,7 +10588,6 @@ feat:
   - abbr: CRB
     page_start: 220
     page_stop: 220
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -11228,7 +10606,6 @@ feat:
   - abbr: CRB
     page_start: 220
     page_stop: 220
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11245,7 +10622,6 @@ feat:
   - abbr: CRB
     page_start: 220
     page_stop: 220
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11262,7 +10638,6 @@ feat:
   - abbr: CRB
     page_start: 220
     page_stop: 220
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11279,7 +10654,6 @@ feat:
   - abbr: CRB
     page_start: 220
     page_stop: 220
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11296,7 +10670,6 @@ feat:
   - abbr: CRB
     page_start: 220
     page_stop: 220
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11313,7 +10686,6 @@ feat:
   - abbr: CRB
     page_start: 221
     page_stop: 221
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -11332,7 +10704,6 @@ feat:
   - abbr: CRB
     page_start: 221
     page_stop: 221
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11349,7 +10720,6 @@ feat:
   - abbr: CRB
     page_start: 221
     page_stop: 221
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11366,7 +10736,6 @@ feat:
   - abbr: CRB
     page_start: 221
     page_stop: 221
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11383,7 +10752,6 @@ feat:
   - abbr: CRB
     page_start: 221
     page_stop: 221
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11400,7 +10768,6 @@ feat:
   - abbr: CRB
     page_start: 221
     page_stop: 221
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11417,7 +10784,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -11436,7 +10802,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11453,7 +10818,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11470,7 +10834,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11487,7 +10850,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11504,7 +10866,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11521,7 +10882,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11538,7 +10898,6 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11555,16 +10914,17 @@ feat:
   - abbr: CRB
     page_start: 222
     page_stop: 222
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
 - action: null
-  descr: Choose a deity and cause as you would if you were a champion. You become trained in light, medium, and heavy armor. You become trained in Religion and your deity’s associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You become trained in champion class DC.
+  descr: Choose a deity and cause as you would if you were a champion. You become trained in light, medium, and heavy armor. You become trained in Religion and your deity’s associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You become trained in champion class DC.\n\nYou are bound by your deity's anathema and must follow the champion's code and alignment requirements for your cause. You don't gain any other abilities from choice of deity or cause.\n\n**Special**  You cannot select another dedication feat until you have gained two other feats from the champion archetype.
   frequency: null
   has_been_manually_proofread: false
   prereqs:
   - descr: Charisma 14
+    feat: null
+  - descr: Strength 14
     feat: null
   requirement: null
   short_name: Champion Dedication
@@ -11572,7 +10932,6 @@ feat:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -11584,14 +10943,13 @@ feat:
   has_been_manually_proofread: false
   prereqs:
   - descr: 'Feat: Champion Dedication'
-    feat: Wilderness Spotter
+    feat: Champion Dedication
   requirement: null
   short_name: Basic Devotion
   source:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11608,7 +10966,6 @@ feat:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11618,14 +10975,13 @@ feat:
   has_been_manually_proofread: false
   prereqs:
   - descr: 'Feat: Champion Dedication'
-    feat: Wilderness Spotter
+    feat: Champion Dedication
   requirement: null
   short_name: Healing Touch
   source:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11642,7 +10998,6 @@ feat:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11652,14 +11007,13 @@ feat:
   has_been_manually_proofread: false
   prereqs:
   - descr: 'Feat: Champion Dedication'
-    feat: Wilderness Spotter
+    feat: Champion Dedication
   requirement: null
   short_name: Champion’s Reaction
   source:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11669,14 +11023,13 @@ feat:
   has_been_manually_proofread: false
   prereqs:
   - descr: 'Feat: Champion Dedication'
-    feat: Wilderness Spotter
+    feat: Champion Dedication
   requirement: null
   short_name: Divine Ally
   source:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11693,7 +11046,6 @@ feat:
   - abbr: CRB
     page_start: 223
     page_stop: 223
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11710,7 +11062,6 @@ feat:
   - abbr: CRB
     page_start: 224
     page_stop: 224
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -11729,7 +11080,6 @@ feat:
   - abbr: CRB
     page_start: 224
     page_stop: 224
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11746,7 +11096,6 @@ feat:
   - abbr: CRB
     page_start: 224
     page_stop: 224
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11763,7 +11112,6 @@ feat:
   - abbr: CRB
     page_start: 224
     page_stop: 224
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11780,7 +11128,6 @@ feat:
   - abbr: CRB
     page_start: 224
     page_stop: 224
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11797,7 +11144,6 @@ feat:
   - abbr: CRB
     page_start: 224
     page_stop: 224
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11814,7 +11160,6 @@ feat:
   - abbr: CRB
     page_start: 224
     page_stop: 224
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11831,7 +11176,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -11850,7 +11194,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11867,7 +11210,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11884,7 +11226,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11901,7 +11242,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11918,7 +11258,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11935,7 +11274,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11952,7 +11290,6 @@ feat:
   - abbr: CRB
     page_start: 225
     page_stop: 225
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -11969,7 +11306,6 @@ feat:
   - abbr: CRB
     page_start: 226
     page_stop: 226
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -11988,7 +11324,6 @@ feat:
   - abbr: CRB
     page_start: 226
     page_stop: 226
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12005,7 +11340,6 @@ feat:
   - abbr: CRB
     page_start: 226
     page_stop: 226
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12022,7 +11356,6 @@ feat:
   - abbr: CRB
     page_start: 226
     page_stop: 226
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12039,7 +11372,6 @@ feat:
   - abbr: CRB
     page_start: 226
     page_stop: 226
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12056,7 +11388,6 @@ feat:
   - abbr: CRB
     page_start: 226
     page_stop: 226
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12073,7 +11404,6 @@ feat:
   - abbr: CRB
     page_start: 227
     page_stop: 227
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -12092,7 +11422,6 @@ feat:
   - abbr: CRB
     page_start: 227
     page_stop: 227
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12109,7 +11438,6 @@ feat:
   - abbr: CRB
     page_start: 227
     page_stop: 227
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12126,7 +11454,6 @@ feat:
   - abbr: CRB
     page_start: 227
     page_stop: 227
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12143,7 +11470,6 @@ feat:
   - abbr: CRB
     page_start: 227
     page_stop: 227
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12160,7 +11486,6 @@ feat:
   - abbr: CRB
     page_start: 227
     page_stop: 227
-  sources_id: 1
   traits:
   - Archetype
   - Flourish
@@ -12179,7 +11504,6 @@ feat:
   - abbr: CRB
     page_start: 227
     page_stop: 227
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12196,7 +11520,6 @@ feat:
   - abbr: CRB
     page_start: 228
     page_stop: 228
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -12217,7 +11540,6 @@ feat:
   - abbr: CRB
     page_start: 228
     page_stop: 228
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12234,7 +11556,6 @@ feat:
   - abbr: CRB
     page_start: 228
     page_stop: 228
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12251,7 +11572,6 @@ feat:
   - abbr: CRB
     page_start: 228
     page_stop: 228
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12268,7 +11588,6 @@ feat:
   - abbr: CRB
     page_start: 228
     page_stop: 228
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12285,7 +11604,6 @@ feat:
   - abbr: CRB
     page_start: 229
     page_stop: 229
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -12304,7 +11622,6 @@ feat:
   - abbr: CRB
     page_start: 229
     page_stop: 229
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12321,7 +11638,6 @@ feat:
   - abbr: CRB
     page_start: 229
     page_stop: 229
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12338,7 +11654,6 @@ feat:
   - abbr: CRB
     page_start: 229
     page_stop: 229
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12355,7 +11670,6 @@ feat:
   - abbr: CRB
     page_start: 229
     page_stop: 229
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12372,7 +11686,6 @@ feat:
   - abbr: CRB
     page_start: 229
     page_stop: 229
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12389,7 +11702,6 @@ feat:
   - abbr: CRB
     page_start: 229
     page_stop: 229
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12406,7 +11718,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -12425,7 +11736,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12442,7 +11752,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12459,7 +11768,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12476,7 +11784,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12493,7 +11800,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12510,7 +11816,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12527,7 +11832,6 @@ feat:
   - abbr: CRB
     page_start: 230
     page_stop: 230
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12544,7 +11848,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   - Dedication
@@ -12563,7 +11866,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12580,7 +11882,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12597,7 +11898,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12614,7 +11914,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12631,7 +11930,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12648,7 +11946,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12665,7 +11962,6 @@ feat:
   - abbr: CRB
     page_start: 231
     page_stop: 231
-  sources_id: 1
   traits:
   - Archetype
   trigger: null
@@ -12682,7 +11978,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12700,7 +11995,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -12717,7 +12011,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12735,7 +12028,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -12752,7 +12044,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12770,7 +12061,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -12787,7 +12077,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - Fortune
   - General
@@ -12806,7 +12095,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12824,7 +12112,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12842,7 +12129,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12860,7 +12146,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Healing
@@ -12880,7 +12165,6 @@ feat:
   - abbr: CRB
     page_start: 258
     page_stop: 258
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12898,7 +12182,6 @@ feat:
   - abbr: CRB
     page_start: 259
     page_stop: 259
-  sources_id: 1
   traits:
   - Downtime
   - General
@@ -12917,7 +12200,6 @@ feat:
   - abbr: CRB
     page_start: 259
     page_stop: 259
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -12934,7 +12216,6 @@ feat:
   - abbr: CRB
     page_start: 259
     page_stop: 259
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -12951,7 +12232,6 @@ feat:
   - abbr: CRB
     page_start: 259
     page_stop: 259
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12969,7 +12249,6 @@ feat:
   - abbr: CRB
     page_start: 259
     page_stop: 259
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -12987,7 +12266,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13005,7 +12283,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13023,7 +12300,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13041,7 +12317,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13059,7 +12334,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13077,7 +12351,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13095,7 +12368,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13113,7 +12385,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13130,7 +12401,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13148,7 +12418,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13166,7 +12435,6 @@ feat:
   - abbr: CRB
     page_start: 260
     page_stop: 260
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13183,7 +12451,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13201,7 +12468,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13219,7 +12485,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13237,7 +12502,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13255,7 +12519,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13272,7 +12535,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13289,7 +12551,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13306,7 +12567,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13324,7 +12584,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13342,7 +12601,6 @@ feat:
   - abbr: CRB
     page_start: 261
     page_stop: 261
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13360,7 +12618,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13378,7 +12635,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13396,7 +12652,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13414,7 +12669,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13432,7 +12686,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13450,7 +12703,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13468,7 +12720,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13485,7 +12736,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13502,7 +12752,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13520,7 +12769,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13538,7 +12786,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - Downtime
   - General
@@ -13557,7 +12804,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13575,7 +12821,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13593,7 +12838,6 @@ feat:
   - abbr: CRB
     page_start: 262
     page_stop: 262
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13611,7 +12855,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13628,7 +12871,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -13645,7 +12887,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13663,7 +12904,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13681,7 +12921,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13699,7 +12938,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13717,7 +12955,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13735,7 +12972,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13753,7 +12989,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13769,8 +13004,9 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
-  traits: null
+  traits:
+    - General
+    - Skill
   trigger: null
 - action: null
   descr: You can Craft magic items, though some have other requirements, as listed in Chapter 11. When you select this feat, you gain formulas for four common magic items of 2nd level or lower.
@@ -13785,7 +13021,6 @@ feat:
   - abbr: CRB
     page_start: 263
     page_stop: 263
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13803,7 +13038,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13821,7 +13055,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13839,7 +13072,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13857,7 +13089,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13875,7 +13106,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13893,7 +13123,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13911,7 +13140,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13929,7 +13157,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13947,7 +13174,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13965,7 +13191,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -13983,7 +13208,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14001,7 +13225,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14019,7 +13242,6 @@ feat:
   - abbr: CRB
     page_start: 264
     page_stop: 264
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14037,7 +13259,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14055,7 +13276,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14073,7 +13293,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14091,7 +13310,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14109,7 +13327,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14127,7 +13344,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14145,7 +13361,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14163,7 +13378,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14181,7 +13395,6 @@ feat:
   - abbr: CRB
     page_start: 265
     page_stop: 265
-  sources_id: 1
   traits:
   - General
   - Secret
@@ -14200,7 +13413,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -14217,7 +13429,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14235,7 +13446,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - Death
   - Emotion
@@ -14257,7 +13467,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14275,7 +13484,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   trigger: While you have your shield raised, you would take damage from a physical attack.
@@ -14292,7 +13500,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14310,7 +13517,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14328,7 +13534,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14346,7 +13551,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14364,7 +13568,6 @@ feat:
   - abbr: CRB
     page_start: 266
     page_stop: 266
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14382,7 +13585,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14400,7 +13602,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14418,7 +13619,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14436,7 +13636,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14454,7 +13653,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14472,7 +13670,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14490,7 +13687,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14508,7 +13704,6 @@ feat:
   - abbr: CRB
     page_start: 267
     page_stop: 267
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14526,7 +13721,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14544,7 +13738,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14562,7 +13755,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -14579,7 +13771,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - Downtime
   - General
@@ -14599,7 +13790,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   - Manipulate
@@ -14618,7 +13808,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14636,7 +13825,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14654,7 +13842,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -14671,7 +13858,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   trigger: null
@@ -14688,7 +13874,6 @@ feat:
   - abbr: CRB
     page_start: 268
     page_stop: 268
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14706,7 +13891,6 @@ feat:
   - abbr: CRB
     page_start: 269
     page_stop: 269
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14724,7 +13908,6 @@ feat:
   - abbr: CRB
     page_start: 269
     page_stop: 269
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14742,7 +13925,6 @@ feat:
   - abbr: CRB
     page_start: 269
     page_stop: 269
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14760,7 +13942,6 @@ feat:
   - abbr: CRB
     page_start: 269
     page_stop: 269
-  sources_id: 1
   traits:
   - General
   - Skill
@@ -14769,31 +13950,32 @@ feat:
   descr: Your hunted prey cannot escape your relentless pursuit. Stride up to your Speed in tandem with the triggering creature, remaining adjacent to the foe throughout its movement until it stops moving or you run out of movement. You can ignore difficult terrain during this movement unless the difficult terrain is caused by a magical effect.
   frequency: null
   has_been_manually_proofread: false
-  prereqs: *id002
+  prereqs: null
   requirement: null
   short_name: Relentless Stalker
   source:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 3
   traits:
+  - Uncommon
   - Move
   - Ranger
-  trigger: null
+  trigger: An adjacent creature you are hunting attempts to move away from you using an action that has the move trait.
 - action: null
   descr: 'Select one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren’t tracking or otherwise using'
   frequency: null
   has_been_manually_proofread: false
-  prereqs: *id002
+  prereqs:
+  - expert in Survival
   requirement: null
   short_name: Wilderness Spotter
   source:
   - abbr: CRB
     page_start: 57
     page_stop: 57
-  sources_id: 3
   traits:
+  - Uncommon
   - General
   - Skill
   trigger: null

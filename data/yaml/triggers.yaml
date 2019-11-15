@@ -53,3 +53,5 @@ trigger:
   - A creature Casts a Spell that you have prepared.
   - A creature within line of sight casts a spell that you don’t have prepared or in your spell repertoire, or a trap or similar object casts such a spell. You must be aware of the casting.
   - While you have your shield raised, you would take damage from a physical attack.
+  - An adjacent creature you are hunting attempts to move away from you using an action that has the move trait.
+  - You attempt a saving throw against a magical effect, but you haven't rolled yet.
