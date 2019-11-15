@@ -44,14 +44,14 @@ The action symbols can be represented by the following characters:
 
 | Meaning | Character |
 |----------|----|
-| 1 action | `|1|` |
-| 2 actions | `|2|` |
-| 3 actions | `|3|` |
-| Reaction | `|R|` |
-| Free action |  `|F|` |
-| One Minute |  `|1m|` |
-| Ten Minutes |  `|10m|` |
-| One Hour |  `|1h|` |
+| 1 action | `\|1\|` |
+| 2 actions | `\|2\|` |
+| 3 actions | `\|3\|` |
+| Reaction | `\|R\|` |
+| Free action |  `\|F\|` |
+| One Minute |  `\|1m\|` |
+| Ten Minutes |  `\|10m\|` |
+| One Hour |  `\|1h\|` |
 
 ## Text Formatting
 
