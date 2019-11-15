@@ -71,6 +71,146 @@ def main():
         data = yaml.full_load(yl)
     do_actions(data, conn)
 
+    # move on to spells
+    with open('spells.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_spells(data, conn)
+
+
+def do_spells(data, conn):
+    # load the helper info
+    do_spelltype(data, conn)
+    do_spellcomponent(data, conn)
+    do_spelltradition(data, conn)
+    do_spellschool(data, conn)
+
+
+def do_spelltype(data, conn):
+    table = """
+CREATE TABLE spelltype (
+  spelltype_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE
+);
+   """
+
+    c = conn.cursor()
+    c.execute(table)
+
+    inp_data = []
+    for i in data['spelltype']:
+        inp_data.append((i, ))
+
+    stmt = "INSERT INTO spelltype (name) VALUES (?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except Exception as e:
+        print("Error creating spelltype: {}".format(e))
+    else:
+        conn.commit()
+
+
+def do_spellcomponent(data, conn):
+    table = """
+CREATE TABLE spellcomponent (
+  spellcomponent_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    inp_data = []
+    for i in data['spellcomponent']:
+        inp_data.append((i, ))
+
+    stmt = "INSERT INTO spellcomponent (name) VALUES (?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except Exception as e:
+        print("Error creating spellcomponent: {}".format(e))
+    else:
+        conn.commit()
+
+
+def do_spelltradition(data, conn):
+    table = """
+CREATE TABLE spelltradition (
+  spelltradition_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    inp_data = []
+    for i in data['spelltradition']:
+        inp_data.append((i, ))
+
+    stmt = "INSERT INTO spelltradition (name) VALUES (?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except Exception as e:
+        print("Error creating spelltradition: {}".format(e))
+    else:
+        conn.commit()
+
+
+def do_spellschool(data, conn):
+    table = """
+CREATE TABLE spellschool (
+  spellschool_id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,
+  descr TEXT NOT NULL UNIQUE,
+  sourceentry_id INTEGER,
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # print(data)
+    for i in data['spellschool']:
+        # print(i)
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        # need to insert sourceentry data first but check and make sure the
+        # length is only one
+        if len(srcentrydata) != 1:
+            raise AssertionError(
+                'length of srcentrydata should only be 1, no more no less, on spellschool'
+            )
+        # print("length of srcentrydata:{}\tsrcentrydata:{}".format(len(srcentrydata),srcentrydata))
+        util_insert_into_sourceentry(srcentrydata, conn)
+
+        stmt = """
+INSERT INTO spellschool(name, descr, sourceentry_id)
+VALUES (?,?,
+        (SELECT sourceentry_id FROM sourceentry
+        WHERE source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND page_start=?
+        AND page_stop=?
+        )
+       );
+        """
+        # print('executing on name:{}'.format(i['name']))
+        try:
+            conn.execute(
+                stmt,
+                (i['name'], i['descr'], srcentrydata[0][0],
+                 srcentrydata[0][1], srcentrydata[0][2]))
+        except Exception as e:
+            print("Error creating spellschool: {}".format(e))
+        else:
+            conn.commit()
+
 
 def do_actions(data, conn):
     do_action_categories(data, conn)
