@@ -72,10 +72,38 @@ def main():
     do_actions(data, conn)
 
     # move on to spells
+    # TODO do spells once data is proofread
     with open('spells.yaml') as yl:
         data = yaml.full_load(yl)
     do_spells(data, conn)
 
+    # move on to requirements
+    with open('requirements.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_requirements(data, conn)
+
+def do_requirements(data, conn):
+    table = """
+CREATE TABLE requirement (
+  requirement_id INTEGER PRIMARY KEY,
+  descr TEXT NOT NULL UNIQUE
+);
+   """
+
+    c = conn.cursor()
+    c.execute(table)
+
+    inp_data = []
+    for i in data['requirement']:
+        inp_data.append((i, ))
+
+    stmt = "INSERT INTO requirement (descr) VALUES (?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except Exception as e:
+        print("Error creating requirement: {}".format(e))
+    else:
+        conn.commit()
 
 def do_spells(data, conn):
     # load the helper info
@@ -83,6 +111,7 @@ def do_spells(data, conn):
     do_spellcomponent(data, conn)
     do_spelltradition(data, conn)
     do_spellschool(data, conn)
+    # TODO once spells data complete, write a do_spellsthemselves(data, conn) function
 
 
 def do_spelltype(data, conn):
@@ -202,10 +231,8 @@ VALUES (?,?,
         """
         # print('executing on name:{}'.format(i['name']))
         try:
-            conn.execute(
-                stmt,
-                (i['name'], i['descr'], srcentrydata[0][0],
-                 srcentrydata[0][1], srcentrydata[0][2]))
+            conn.execute(stmt, (i['name'], i['descr'], srcentrydata[0][0],
+                                srcentrydata[0][1], srcentrydata[0][2]))
         except Exception as e:
             print("Error creating spellschool: {}".format(e))
         else:
