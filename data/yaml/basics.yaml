@@ -37,6 +37,13 @@ actioncost:
     abbr: reaction
   - name: Varies
     abbr: varies
+  - name: 1 minute
+    abbr: 1m
+  - name: 10 minutes
+    abbr: 10m
+  - name: 1 hour
+    abbr: 1h
+  - name: 
 alignment:
   - name: Lawful Good
     abbr: LG
