@@ -1,0 +1,213 @@
+monster:
+  - name: Ancient Red Dragon
+    type: Creature
+    level: 19
+    traits:
+      - Uncommon
+      - CE
+      - Huge
+      - Dragon
+      - Fire
+    perception: 35
+    senses:
+      - darkvision
+      - scent (imprecise) 60 feet
+      - smoke vision
+    interactive_abilities:
+      - name: Smoke Vision
+        descr: "Smoke vision doesn't impair a red dragon's vision; it ignores the concealed condition from smoke."
+    languages:
+      - Abyssal
+      - Common
+      - Draconic
+      - Dwarven
+      - Jotun
+      - Orcish
+    skills:
+      - Acrobatics: 30
+      - Arcana: 35
+      - Athletics: 37
+      - Deception: 35
+      - Diplomacy: 35
+      - Intimidation: 37
+      - Stealth: 33
+    ability_mods:
+      - str_mod: 9
+      - dex_mod: 5
+      - con_mod: 8
+      - int_mod: 5
+      - wis_mod: 6
+      - cha_mod: 7
+    items: null
+    ac: 45
+    saves:
+      - fort: 35
+      - fort_bonus: null
+      - ref: 32
+      - ref_bonus: null
+      - will: 35
+      - will_bonus: null
+      - misc: +1 status to all saves vs. magic
+    hp: 425
+    immunities:
+      - fire
+      - paralyzed
+      - sleep
+    weaknesses:
+      - type: cold
+        value: 20
+    resistances: null
+    automatic_abilities:
+      - name: Dragon Heat
+        traits:
+          - Arcane
+          - Aura
+          - Evocation
+          - Fire
+        range: 10 feet
+        descr: 4d6 fire damage (DC 39 basic Reflex)
+        action_cost: null
+      - name: Frightful Presence
+        traits:
+          - Aura
+          - Emotion
+          - Fear
+          - Mental
+        range: 90 feet
+        descr: DC 40
+        action_cost: null
+    reactive_abilities:
+      - name: Attack of Opportunity
+        traits: null
+        range: 20 feet
+        descr: Jaws only.
+        action_cost: Reaction
+      - name: Redirect Fire
+        traits:
+          - Abjuration
+          - Arcane
+        triggers:
+          - A creature within 100 feet casts a fire spell.
+          - A fire spell otherwise comes into effect from a source within 100 feet.
+        range: 100 feet
+        descr: The dragon makes all the choices to determine the targets, destination, or other effects of the spell as though it were the caster.
+        action_cost: Reaction
+    speed:
+      - land: 60
+      - fly: 180
+      - burrow: null
+      - swim: null
+      - climb: null
+      - movement_abilities: null
+    melee:
+      - action_cost: One Action
+        name: Jaws
+        to_hit: 37
+        traits:
+          - Fire
+          - Magical
+          - Reach 20 feet
+        damage:
+          - formula: 4d10+17
+            type: piercing
+          - formula: 3d6
+            type: fire
+      - action_cost: One Action
+        name: Claw
+        to_hit: 37
+        traits:
+          - Agile
+          - Magical
+          - Reach 15 feet
+        damage:
+          - formula: 4d8+17
+            type: slashing
+      - action_cost: One Action
+        name: Tail
+        to_hit: 35
+        traits:
+          - Magical
+          - Reach 25 feet
+        damage:
+          - formula: 4d10+15
+            type: slashing
+      - action_cost: One Action
+        name: Wing
+        to_hit: 35
+        traits:
+          - Agile
+          - Magical
+          - Reach 20 feet
+        damage:
+          - formula: 3d8+15
+            type: slashing
+    spell_dc: 42
+    spell_attack_to_hit: 36
+    innate_spells:  
+      - name: Wall of Fire
+        level: 8
+        frequency: at will
+      - name: Suggestion
+        level: 4
+        frequency: at will
+      - name: Detect Magic
+        level: 9
+        frequency: null
+      - name: Read Aura
+        level: 9
+        frequency: null
+    focus_spells: null
+    rituals: null
+    proactive_abilities:
+      - name: Breath Weapon
+        action_cost: Two Actions
+        traits:
+          - Arcane
+          - Evocation
+          - Fire
+        descr: The dragon breathes a blast of flame that deals 20d6 fire damage in a 60-foot cone (DC 42 basic Reflex save). It can’t use Breath Weapon again for 1d4 rounds.
+        damage:
+          - formula: 20d6
+            type: fire
+        range: 60-foot cone
+        save:
+          - type: basic Reflex
+            value: 42
+        cooldown: 1d4 rounds
+      - name: Draconic Frenzy
+        action_cost: Two Actions
+        traits: null
+        descr: The dragon makes two claw Strikes and one wing Strike in any order.
+        damage: null
+        range: null
+        save: null
+        cooldown: null
+      - name: Draconic Momentum
+        action_cost: null
+        traits: null
+        descr: The dragon recharges its Breath Weapon whenever it scores a critical hit with a Strike.
+        damage: null
+        range: null
+        save: null
+        cooldown: null
+      - name: Manipulate Flame
+        action_cost: One Action
+        traits:
+          - Arcane
+          - Concentrate
+          - Transmutation
+        descr: The red dragon attempts to take control of a magical fire or a fire spell within 100 feet. If it succeeds at a counteract check (counteract level 10, counteract modifier +32), the original caster loses control of the spell or magic fire, control is transferred to the dragon, and the dragon counts as having Sustained the Spell with this action (if applicable). The dragon can choose to end the spell instead of taking control, if it chooses.
+        damage: null
+        range: null
+        save: null
+        cooldown: null
+      - optional_rules:
+          - "Some dragons can take humanoid form, allowing them to infiltrate settlements or influence others without revealing their true nature. They gain the following ability: Change Shape Single Action (arcane, concentrate, polymorph, transmutation) The dragon takes on the appearance of any Small or Medium humanoid. This doesn’t change its Speed or attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal (typically to bludgeoning)."
+          - "Each type of chromatic dragon features a sidebar on spellcasting dragons of that type. To make a chromatic dragon spellcaster, remove the dragon’s Draconic Frenzy and Draconic Momentum abilities, and give it the spells outlined in its sidebar. You can swap out any number of these with other arcane spells, provided you keep the same number of spells for each level. You might also want to increase the dragon’s Intelligence or Charisma modifier by 1 or 2 to reflect its mastery of magic."
+          - "Red dragon spellcasters tend to cast the following spells.\n\nYoung Red Dragon: Arcane Prepared Spells DC 29, attack +23; 4th crushing despair, invisibility, stoneskin; 3rd grease, haste, mind reading; 2nd comprehend language, resist energy, see invisibility; 1st charm, ray of enfeeblement, true strike; Cantrips (4th) chill touch, daze, mage hand, message, sigil\n\nAdult Red Dragon: Arcane Prepared Spells DC 35, attack +29; As young red dragon, plus 6th dispel magic, teleport, wall of force; 5th cloak of colors, command, tongues; Cantrips (6th) chill touch, daze, mage hand, message, sigil\n\nAncient Red Dragon: Arcane Prepared Spells DC 42, attack +36; As adult red dragon, plus 9th fiery body, prismatic sphere; 8rd discern location, mind blank, prismatic wall; 7th prismatic spray, resist energy, reverse gravity; Cantrips (9th) chill touch, daze, mage hand, message, sigil"
+
+
+
+
+
+
