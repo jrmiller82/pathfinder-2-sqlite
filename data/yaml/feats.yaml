@@ -1,5 +1,22 @@
 # TODO Needs levels added to every feat
 feat:
+- action: 10 minutes
+  descr: You spend 10 minutes performing deeds to restore your magical connection. This restores 1 Focus Point to your focus pool. The deeds you need to perform are specified in the class or ability that gives you your focus spells. These deeds can usually overlap with other tasks that relate to the source of your focus spells. For instance, a cleric with focus spells from a good deity can usually Refocus while tending the wounds of their allies, and a wizard of the illusionist school might be able to Refocus while attempting to Identify Magic of the illusion school.
+  frequency: null
+  has_been_manually_proofread: true
+  level: null
+  prereqs: null
+  requirement: You have a focus pool, and you have spent at least 1 Focus Point since you last regained any Focus Points.
+  # TODO this might actually be an "activity"... unclear, sure looks like a feat. Might need to add in a "type" to all these various feats.
+  name: Refocus
+  source:
+  - abbr: CRB
+    page_start: 300
+    page_stop: 300
+  traits:
+    - Concentrate
+    - Exploration
+  trigger: null
 - action: Reaction
   descr: Your ancestors' innate resistance to magic surges, before slowly ebbing down. You gain a +1 circumstance bonus to the triggering saving throw and until the end of this turn.
   frequency: null
