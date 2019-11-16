@@ -147,8 +147,10 @@ The following text is the property of Wizards of the Coast, Inc. and is Copyrigh
     Authors: Jonathan Tweet, Monte Cook, Skip Williams, based on material by E.
     Gary Gygax and Dave Arneson.
   - The Archives of Nethys. Copyright 2010, Blake Davis.
-  - Age of Ashes Player's Guide
+  - Age of Ashes
     - Age of Ashes Player’s Guide © 2019, Paizo Inc.; Authors: James Jacobs, with Amanda Hamon.
+    - Pathfinder Adventure Path #145: Hellknight Hill © 2019, Paizo, Inc.;
+      Authors: Amanda Hamon, with Logan Bonner, James Jacobs, and Jason Tondro.
   - Bestiary
     - Daemon, Guardian from the Tome of Horrors Complete © 2011, Necromancer
       Games, Inc., published and distributed by Frog God Games; Author: Scott
@@ -178,6 +180,15 @@ The following text is the property of Wizards of the Coast, Inc. and is Copyrigh
   - Core Rulebook 
     - Pathfinder Core Rulebook (Second Edition) © 2019, Paizo Inc.; Designers:
       Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter.
+    - Pathfinder Core Rulebook (Second Edition), First Printing, Update 1.0 ©
+      2019, Paizo, Inc.; Authors: Logan Bonner, Lyz Liddell, and Mark Seifter.
+  - Lost Omens Word Guide
+    - Genie, Marid from the Tome of Horrors Complete © 2011 Necromancer Games,
+      Inc., published and distributed by Frog God Games; Author: Scott Greene,
+      based on original material by Gary Gygax.
+    - Pathfinder Lost Omens World Guide (Second Edition) © 2019, Paizo, Inc.;
+      Authors: Tanya DePass, James Jacobs, Lyz Liddell, Ron Lundeen, Liane
+      Merciel, Erik Mona, Mark Seifter, James L Sutter.
   - The Fall of Plaguestone 
     - Pathfinder Adventure: The Fall of Plaguestone © 2019, Paizo Inc.; Author:
       Jason Bulmahn.
