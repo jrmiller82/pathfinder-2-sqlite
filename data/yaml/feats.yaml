@@ -7532,6 +7532,9 @@ feat:
   - abbr: CRB
     page_start: 163
     page_stop: 163
+  - abbr: ERR-CRB-1.0
+    page_start: 2
+    page_stop: 2
   traits:
   - Monk
   - Stance
