@@ -16,8 +16,8 @@ permissively licensed.
 
 ## Roadmap
 
-1. Get data in YAML format (spells are in JSON for the time being; but will
-   get converted over to YAML in the future).
+1. Get data in YAML format (~~spells are in JSON for the time being; but will
+   get converted over to YAML in the future~~ They are in yaml format and need proofreading! Please see issue #61).
 2. Design schema;
 3. Write script to generate sqlite database from YAML data (see
    `data/yaml/gendb.py` for work in progress);
