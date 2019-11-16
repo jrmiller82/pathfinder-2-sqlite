@@ -14,9 +14,9 @@ Also, most use cases of this data will likely be read only, so the sqlite
 limitations on concurrent writes won't be an issue either. Finally, it's
 permissively licensed.
 
-# Where we need the most help right now
+## Where we need the most help right now
 
-## Proofreading Spells.yaml
+### Proofreading Spells.yaml
 It's time for everyone to put physical eyes on the `data/yaml/spells.yaml` file
 and compare to **the actual print book or PDF** (taking into account any Errata
 of course). The scrape could only do so much and there are many small errors
@@ -25,7 +25,7 @@ here and there. Please see issue #61.
 Once we have the data proofread, I'll write a glue script to get the spell data
 into normalized sql form.
 
-## Monsters.yaml basic data entry
+### Monsters.yaml basic data entry
 Come over to issue #40. We need help getting monsters into our (tentative) yaml
 schema that you can see in the Ancient Red Dragon in `data/yaml/monsters.yaml`.
 Once we have the data put together I'll write a glue script to get the monster
