@@ -79,13 +79,6 @@ language:
       - abbr: CRB
         page_start: 65
         page_stop: 65
-  - name: Utopian
-    speakers: Aeons
-    rarity: Common
-    source:
-      - abbr: BST1
-        page_start: 8
-        page_stop: 8
   # UNCOMMON LANGUAGES
   - name: Abyssal
     speakers: Demons
@@ -164,6 +157,90 @@ language:
       - abbr: CRB
         page_start: 65
         page_stop: 65
+  - name: Alghollthu
+    speakers: Alghollthus and their thralls
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Amurrun
+    speakers: Catfolk
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Arboreal
+    speakers: Arboreals and other plant creatures
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Boggard
+    speakers: Boggards
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Caligni
+    speakers: Calignis
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Cyclops
+    speakers: Cyclops
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Daemonic
+    speakers: Daemons
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Iruxi
+    speakers: Lizardfolk
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Protean
+    speakers: Proteans
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Requian
+    speakers: Psychopomps
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Sphinx
+    speakers: Sphinxes
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
+  - name: Utopian
+    speakers: Axiomites and inevitables
+    rarity: Uncommon
+    source:
+      - abbr: BST1
+        page_start: 348
+        page_stop: 348
   # SECRET LANGUAGES
   - name: Druidic
     speakers: Druids

@@ -765,9 +765,9 @@ trait:
   - descr: Boggards are frog-like humanoids. They typically have darkvision.
     name: Boggard
     type: Monster
-  - descr: undefined
+  - descr: A ranged attack with this trait uses its Strength modifier instead of Dexterity on the attack roll.
     name: Brutal
-    type: Monster
+    type: Weapon
   - descr: These subterranean people have darkvision, and some have powers to create
       darkness.
     name: Caligni
@@ -1068,9 +1068,7 @@ trait:
       adds one additional damage die of the listed size.
     name: Fatal
     type: Weapon
-  - descr: You can use your Dexterity modifier instead of your Strength modifier on
-      attack rolls using this melee weapon. You still use your Strength modifier when
-      calculating damage.
+  - descr: "**Player**: You can use your Dexterity modifier instead of your Strength modifier on attack rolls using this melee weapon. You still use your Strength modifier when calculating damage. **Creature**: This melee attack is Dexterity-based. Even if a weapon normally has the finesse trait, this trait is omittedi n the Strike entry if the monster is applying its Strength."
     name: Finesse
     type: Weapon
   - descr: This weapon becomes more dangerous as you build momentum. When you attack
