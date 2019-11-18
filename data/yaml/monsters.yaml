@@ -1,3 +1,12 @@
+monster_flavor_text:
+  - type: Monster Category
+    name: Aeon
+    descr: "Aeons have always been the caretakers of reality and defenders of the natural order of balance. Each type of aeon takes on some form of duality in its manifestation and works either to shape the multiverse within the aspects of this duality in some way, or to correct imbalances to the perfect order of existence. Aeons can bring weal or woe when they appear in a region, and their machinations can raise a nation, raze it, or restore it from ruin. Their reasons are their own, and they rarely share their motivations with others— they simply create the results they insist through their strange envisioning communication are necessary to maintain the balance of the multiverse.\n\nOnce regarded as an independent faction, the living machines known as inevitables are now revealed as having been agents of the aeons all along, and while inevitables have their own shared themes and features, they are very much living but constructed manifestations of the aeons’ war against imbalance—particularly with regard to how this war is waged against the forces of chaos."
+    source:
+    - abbr: BST1
+      page_start: 8
+      page_stop: 8
+    comment: A lot of Product Identity was removed.
 monster:
   - name: Ancient Red Dragon
     type: Creature
