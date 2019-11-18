@@ -28,16 +28,6 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Community Use Policy
-
-This repository uses trademarks and/or copyrights owned by Paizo Publishing, LLC,
-which are used under Paizo's Community Use Policy. We are expressly prohibited
-from charging you to use or access this content. This website is not published,
-endorsed, or specifically approved by Paizo Publishing. For more information
-about Paizo's Community Use Policy, please visit paizo.com/communityuse. For
-more information about Paizo Publishing and Paizo products, please visit
-paizo.com.
-
 ## Open Gaming License Version 1.0a
 
 The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
