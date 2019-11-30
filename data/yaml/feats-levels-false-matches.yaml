@@ -1,0 +1,420 @@
+- level: '4'
+  match: 'False'
+  name: Refocus
+  name_aon: Arcane School Spell
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=743
+  url_search: https://2e.aonprd.com/Search.aspx?query=Refocus
+- level: '2'
+  match: 'False'
+  name: Call on Ancient Blood
+  name_aon: Call of the Wild
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=317
+  url_search: https://2e.aonprd.com/Search.aspx?query=Call on Ancient Blood
+- level: '-1'
+  match: 'False'
+  name: Burn It!
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Burn+It!
+  url_search: https://2e.aonprd.com/Search.aspx?query=Burn It!
+- level: '-1'
+  match: 'False'
+  name: Very, Very Sneaky
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Very%2c+Very+Sneaky
+  url_search: https://2e.aonprd.com/Search.aspx?query=Very, Very Sneaky
+- level: '9'
+  match: 'False'
+  name: Cooperataive Soul
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=21
+  url_search: https://2e.aonprd.com/Search.aspx?query=Cooperataive Soul
+- level: '-1'
+  match: 'False'
+  name: Craft Philosopher's Stone
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Craft+Philosopher%u2019s+Stone
+  url_search: https://2e.aonprd.com/Search.aspx?query=Craft Philosopher’s Stone
+- level: '-1'
+  match: 'False'
+  name: Dragon’s Rage Breath
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Dragon%u2019s+Rage+Breath
+  url_search: https://2e.aonprd.com/Search.aspx?query=Dragon’s Rage Breath
+- level: '-1'
+  match: 'False'
+  name: Giant’s Stature
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Giant%u2019s+Stature
+  url_search: https://2e.aonprd.com/Search.aspx?query=Giant’s Stature
+- level: '-1'
+  match: 'False'
+  name: Spirits’ Interference
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Spirits%u2019+Interference
+  url_search: https://2e.aonprd.com/Search.aspx?query=Spirits’ Interference
+- level: '-1'
+  match: 'False'
+  name: Come and Get Me
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Come+and+Get+Me
+  url_search: https://2e.aonprd.com/Search.aspx?query=Come and Get Me
+- level: '-1'
+  match: 'False'
+  name: Dragon’s Rage Wings
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Dragon%u2019s+Rage+Wings
+  url_search: https://2e.aonprd.com/Search.aspx?query=Dragon’s Rage Wings
+- level: '-1'
+  match: 'False'
+  name: Predator’s Pounce
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Predator%u2019s+Pounce
+  url_search: https://2e.aonprd.com/Search.aspx?query=Predator’s Pounce
+- level: '-1'
+  match: 'False'
+  name: Spirit’s Wrath
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Spirit%u2019s+Wrath
+  url_search: https://2e.aonprd.com/Search.aspx?query=Spirit’s Wrath
+- level: '-1'
+  match: 'False'
+  name: Titan’s Stature
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Titan%u2019s+Stature
+  url_search: https://2e.aonprd.com/Search.aspx?query=Titan’s Stature
+- level: '-1'
+  match: 'False'
+  name: Giant’s Lunge
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Giant%u2019s+Lunge
+  url_search: https://2e.aonprd.com/Search.aspx?query=Giant’s Lunge
+- level: '1'
+  match: 'False'
+  name: Lingering Composition
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=389
+  url_search: https://2e.aonprd.com/Search.aspx?query=Lingering Composition
+- level: '-1'
+  match: 'False'
+  name: Loremaster’s Etude
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Loremaster%u2019s+Etude
+  url_search: https://2e.aonprd.com/Search.aspx?query=Loremaster’s Etude
+- level: '2'
+  match: 'False'
+  name: Inspire Defense
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=387
+  url_search: https://2e.aonprd.com/Search.aspx?query=Inspire Defense
+- level: '4'
+  match: 'False'
+  name: Inspire Heroics
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=388
+  url_search: https://2e.aonprd.com/Search.aspx?query=Inspire Heroics
+- level: '20'
+  match: 'False'
+  name: Symphony of the Muse
+  name_aon: Symphony of the Muses
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=213
+  url_search: https://2e.aonprd.com/Search.aspx?query=Symphony of the Muse
+- level: '-1'
+  match: 'False'
+  name: Deity’s Domain
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Deity%u2019s+Domain
+  url_search: https://2e.aonprd.com/Search.aspx?query=Deity’s Domain
+- level: '3'
+  match: 'False'
+  name: Litany Against Wrath
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=397
+  url_search: https://2e.aonprd.com/Search.aspx?query=Litany Against Wrath
+- level: '6'
+  match: 'False'
+  name: Loyal Warhouse
+  name_aon: Loyal Warhorse
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=228
+  url_search: https://2e.aonprd.com/Search.aspx?query=Loyal Warhouse
+- level: '-1'
+  match: 'False'
+  name: Advanced Deity’s Domain
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Advanced+Deity%u2019s+Domain
+  url_search: https://2e.aonprd.com/Search.aspx?query=Advanced Deity’s Domain
+- level: '-1'
+  match: 'False'
+  name: Champion’s Sacrifice
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Champion%u2019s+Sacrifice
+  url_search: https://2e.aonprd.com/Search.aspx?query=Champion’s Sacrifice
+- level: '-1'
+  match: 'False'
+  name: Deity’s Protection
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Deity%u2019s+Protection
+  url_search: https://2e.aonprd.com/Search.aspx?query=Deity’s Protection
+- level: '-1'
+  match: 'False'
+  name: Avatar’s Audience
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Avatar%u2019s+Audience
+  url_search: https://2e.aonprd.com/Search.aspx?query=Avatar’s Audience
+- level: '4'
+  match: 'False'
+  name: Mature Animal Companion (Druid)
+  name_aon: Mature Animal Companion (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=322
+  url_search: https://2e.aonprd.com/Search.aspx?query=Mature Animal Companion
+- level: '8'
+  match: 'False'
+  name: Incredible Companion (Druid)
+  name_aon: Incredible Companion (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=332
+  url_search: https://2e.aonprd.com/Search.aspx?query=Incredible Companion
+- level: '10'
+  match: 'False'
+  name: Side by Side (Druid)
+  name_aon: Side by Side (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=339
+  url_search: https://2e.aonprd.com/Search.aspx?query=Side by Side
+- level: '14'
+  match: 'False'
+  name: Specialized Companion (Druid)
+  name_aon: Specialized Companion (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=344
+  url_search: https://2e.aonprd.com/Search.aspx?query=Specialized Companion
+- level: '8'
+  match: 'False'
+  name: Impaling Briars
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=475
+  url_search: https://2e.aonprd.com/Search.aspx?query=Impaling Briars
+- level: '-1'
+  match: 'False'
+  name: Hierophant’s Power
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Hierophant%u2019s+Power
+  url_search: https://2e.aonprd.com/Search.aspx?query=Hierophant’s Power
+- level: '-1'
+  match: 'False'
+  name: Guardian’s Deflection
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Guardian%u2019s+Deflection
+  url_search: https://2e.aonprd.com/Search.aspx?query=Guardian’s Deflection
+- level: '-1'
+  match: 'False'
+  name: Paragon’s Guard
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Paragon%u2019s+Guard
+  url_search: https://2e.aonprd.com/Search.aspx?query=Paragon’s Guard
+- level: '14'
+  match: 'False'
+  name: Improved Twin Riposte (Fighter)
+  name_aon: Improved Twin Riposte (Fighter)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=418
+  url_search: https://2e.aonprd.com/Search.aspx?query=Improved Twin Riposte
+- level: '14'
+  match: 'False'
+  name: Stance Savant (Fighter)
+  name_aon: Stance Savant (Fighter)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=419
+  url_search: https://2e.aonprd.com/Search.aspx?query=Stance Savant
+- level: '20'
+  match: 'False'
+  name: Boudless Reprisals
+  name_aon: Boundless Reprisals
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=428
+  url_search: https://2e.aonprd.com/Search.aspx?query=Boudless Reprisals
+- level: '1'
+  match: 'False'
+  name: Ki Strike
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=486
+  url_search: https://2e.aonprd.com/Search.aspx?query=Ki Strike
+- level: '3'
+  match: 'False'
+  name: Ki Blast
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=484
+  url_search: https://2e.aonprd.com/Search.aspx?query=Ki Blast
+- level: '14'
+  match: 'False'
+  name: Stance Savant (Monk)
+  name_aon: Stance Savant (Fighter)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=419
+  url_search: https://2e.aonprd.com/Search.aspx?query=Stance Savant
+- level: '8'
+  match: 'False'
+  name: Quivering Palm
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Spells.aspx?ID=487
+  url_search: https://2e.aonprd.com/Search.aspx?query=Quivering Palm
+- level: '-1'
+  match: 'False'
+  name: Hunter’s Aim
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Hunter%u2019s+Aim
+  url_search: https://2e.aonprd.com/Search.aspx?query=Hunter’s Aim
+- level: '-1'
+  match: 'False'
+  name: Companion’s Cry
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Companion%u2019s+Cry
+  url_search: https://2e.aonprd.com/Search.aspx?query=Companion’s Cry
+- level: '-1'
+  match: 'False'
+  name: Scout’s Warning
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Scout%u2019s+Warning
+  url_search: https://2e.aonprd.com/Search.aspx?query=Scout’s Warning
+- level: '4'
+  match: 'False'
+  name: Mature Animal Companion (Ranger)
+  name_aon: Mature Animal Companion (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=322
+  url_search: https://2e.aonprd.com/Search.aspx?query=Mature Animal Companion
+- level: '-1'
+  match: 'False'
+  name: Warden’s Boon
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Warden%u2019s+Boon
+  url_search: https://2e.aonprd.com/Search.aspx?query=Warden’s Boon
+- level: '8'
+  match: 'False'
+  name: Incredible Companion (Ranger)
+  name_aon: Incredible Companion (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=332
+  url_search: https://2e.aonprd.com/Search.aspx?query=Incredible Companion
+- level: '-1'
+  match: 'False'
+  name: Warden’s Step
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Warden%u2019s+Step
+  url_search: https://2e.aonprd.com/Search.aspx?query=Warden’s Step
+- level: '10'
+  match: 'False'
+  name: Side by Side (Ranger)
+  name_aon: Side by Side (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=339
+  url_search: https://2e.aonprd.com/Search.aspx?query=Side by Side
+- level: '-1'
+  match: 'False'
+  name: Warden’s Guidance
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Warden%u2019s+Guidance
+  url_search: https://2e.aonprd.com/Search.aspx?query=Warden’s Guidance
+- level: '14'
+  match: 'False'
+  name: Improved Twin Riposte (Ranger)
+  name_aon: Improved Twin Riposte (Fighter)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=418
+  url_search: https://2e.aonprd.com/Search.aspx?query=Improved Twin Riposte
+- level: '14'
+  match: 'False'
+  name: Specialized Companion (Ranger)
+  name_aon: Specialized Companion (Druid)
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=344
+  url_search: https://2e.aonprd.com/Search.aspx?query=Specialized Companion
+- level: '-1'
+  match: 'False'
+  name: You’re Next
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=You%u2019re+Next
+  url_search: https://2e.aonprd.com/Search.aspx?query=You’re Next
+- level: '-1'
+  match: 'False'
+  name: Gang Up
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Gang+Up
+  url_search: https://2e.aonprd.com/Search.aspx?query=Gang Up
+- level: '20'
+  match: 'False'
+  name: Sly Striker
+  name_aon: Impossible Striker
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=600
+  url_search: https://2e.aonprd.com/Search.aspx?query=Sly Striker
+- level: '-1'
+  match: 'False'
+  name: Trickster’s Ace
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Trickster%u2019s+Ace
+  url_search: https://2e.aonprd.com/Search.aspx?query=Trickster’s Ace
+- level: '12'
+  match: 'False'
+  name: Counterspell (Spontaneous)
+  name_aon: Clever Counterspell
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=653
+  url_search: https://2e.aonprd.com/Search.aspx?query=Counterspell
+- level: '12'
+  match: 'False'
+  name: Counterspell (Prepared)
+  name_aon: Clever Counterspell
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=653
+  url_search: https://2e.aonprd.com/Search.aspx?query=Counterspell
+- level: '-1'
+  match: 'False'
+  name: Archwizard’s Might
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Archwizard%u2019s+Might
+  url_search: https://2e.aonprd.com/Search.aspx?query=Archwizard’s Might
+- level: '6'
+  match: 'False'
+  name: Advanced Conoction
+  name_aon: Advanced Weapon Training
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=378
+  url_search: https://2e.aonprd.com/Search.aspx?query=Advanced Conoction
+- level: '-1'
+  match: 'False'
+  name: Juggernaut’s Fortitude
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Juggernaut%u2019s+Fortitude
+  url_search: https://2e.aonprd.com/Search.aspx?query=Juggernaut’s Fortitude
+- level: '-1'
+  match: 'False'
+  name: Basic Muse’s Whispers
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Basic+Muse%u2019s+Whispers
+  url_search: https://2e.aonprd.com/Search.aspx?query=Basic Muse’s Whispers
+- level: '-1'
+  match: 'False'
+  name: Advanced Muse’s Whispers
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Advanced+Muse%u2019s+Whispers
+  url_search: https://2e.aonprd.com/Search.aspx?query=Advanced Muse’s Whispers
+- level: '-1'
+  match: 'False'
+  name: Champion’s Reaction
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Champion%u2019s+Reaction
+  url_search: https://2e.aonprd.com/Search.aspx?query=Champion’s Reaction
+- level: '-1'
+  match: 'False'
+  name: Monk’s Flurry
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Monk%u2019s+Flurry
+  url_search: https://2e.aonprd.com/Search.aspx?query=Monk’s Flurry
+- level: '-1'
+  match: 'False'
+  name: Perfection’s Path
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Perfection%u2019s+Path
+  url_search: https://2e.aonprd.com/Search.aspx?query=Perfection’s Path
+- level: '-1'
+  match: 'False'
+  name: Basic Hunter’s Trick
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Basic+Hunter%u2019s+Trick
+  url_search: https://2e.aonprd.com/Search.aspx?query=Basic Hunter’s Trick
+- level: '-1'
+  match: 'False'
+  name: Advanced Hunter’s Trick
+  name_aon: ''
+  url_aon: https://2e.aonprd.com/Search.aspx?query=Advanced+Hunter%u2019s+Trick
+  url_search: https://2e.aonprd.com/Search.aspx?query=Advanced Hunter’s Trick
+- level: '1'
+  match: 'False'
+  name: Lie To Me
+  name_aon: Lie to Me
+  url_aon: https://2e.aonprd.com/Feats.aspx?ID=811
+  url_search: https://2e.aonprd.com/Search.aspx?query=Lie To Me
