@@ -22,18 +22,37 @@ def main():
         reader = csv.DictReader(csvfile)
         for row in reader:
             if row['match'] == "True":
-                tmp = {'name': row['name'], 'level': row['level']}
+                r = dict(row)
+                tmp = {'name': r['name'], 'level': r['level']}
                 truelist.append(tmp)
     trueres = yaml.safe_dump(truelist, allow_unicode=True, width=100000)
     with open('feats-levels-true-matches.yaml', 'w') as f:
         f.write(trueres)
 
+    # open up feats.yaml
+    with open('feats.yaml') as yamlfile:
+        y = yaml.safe_load(yamlfile)
 
-    # read the lines with true
-    #
-    # load feats.yaml
-    #
-    # match lines with true to feats object and add a level=? to each feat with a true match
+    z = yaml.safe_load(trueres)
+
+    # y is original yaml to be modified
+    # z is new true list
+    for i in z:
+        #print("Looking for a match for: {}".format(i['name']))
+        match = False
+        for j in y['feat']:
+            if i['name'] == j['name']:
+                match = True
+                j['level'] = int(i['level'])
+                #print('We got a match for: {}'.format(i['name']))
+        if match == False:
+            print("We never got a match for: {}'.format(i['name'])")
+    final = yaml.safe_dump(y, allow_unicode=True, width=100000)
+    with open('feats.yaml', 'w') as f:
+        f.write(final)
+
+
+
 
 
 if __name__ == "__main__":
