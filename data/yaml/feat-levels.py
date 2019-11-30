@@ -5,7 +5,6 @@ import csv
 import yaml
 
 def main():
-    print("Running main")
     # Load the CSV file and print out the false ones that need to be updated
     csvlist = []
     with open('../../scripts/feat_level.csv') as csvfile:
@@ -13,11 +12,22 @@ def main():
         for row in reader:
             if row['match'] == "False":
                 csvlist.append(dict(row))
-    #print(csvlist)
     res = yaml.safe_dump(csvlist, allow_unicode=True, width=100000)
     with open('feats-levels-false-matches.yaml', 'w') as f:
         f.write(res)
-    #print(res)
+
+    # Load the CSV file and make YAML file for the matched ones
+    truelist = []
+    with open('../../scripts/feat_level.csv') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            if row['match'] == "True":
+                tmp = {'name': row['name'], 'level': row['level']}
+                truelist.append(tmp)
+    trueres = yaml.safe_dump(truelist, allow_unicode=True, width=100000)
+    with open('feats-levels-true-matches.yaml', 'w') as f:
+        f.write(trueres)
+
 
     # read the lines with true
     #

@@ -1,0 +1,1550 @@
+- level: '1'
+  name: Dwarven Lore
+- level: '1'
+  name: Dwarven Weapon Familiarity
+- level: '1'
+  name: Rock Runner
+- level: '1'
+  name: Stonecunning
+- level: '1'
+  name: Unburdened Iron
+- level: '1'
+  name: Vengeful Hatred
+- level: '5'
+  name: Boulder Roll
+- level: '5'
+  name: Dwarven Weapon Cunning
+- level: '9'
+  name: Mountain's Stoutness
+- level: '9'
+  name: Stonewalker
+- level: '13'
+  name: Dwarven Weapon Expertise
+- level: '1'
+  name: Ancestral Longevity
+- level: '1'
+  name: Elven Lore
+- level: '1'
+  name: Elven Weapon Familiarity
+- level: '1'
+  name: Forlorn
+- level: '1'
+  name: Nimble Elf
+- level: '1'
+  name: Otherworldly Magic
+- level: '1'
+  name: Unwavering Mien
+- level: '5'
+  name: Ageless Patience
+- level: '5'
+  name: Elven Weapon Elegance
+- level: '9'
+  name: Elf Step
+- level: '9'
+  name: Expert Longevity
+- level: '13'
+  name: Universal Longevity
+- level: '13'
+  name: Elven Weapon Expertise
+- level: '1'
+  name: Animal Accomplice
+- level: '1'
+  name: Burrow Elocutionist
+- level: '1'
+  name: Fey Fellowship
+- level: '1'
+  name: First World Magic
+- level: '1'
+  name: Gnome Obsession
+- level: '1'
+  name: Gnome Weapon Familiarity
+- level: '1'
+  name: Illusion Sense
+- level: '5'
+  name: Animal Elocutionist
+- level: '5'
+  name: Energized Font
+- level: '5'
+  name: Gnome Weapon Innovator
+- level: '9'
+  name: First World Adept
+- level: '9'
+  name: Vivacious Conduit
+- level: '13'
+  name: Gnome Weapon Expertise
+- level: '1'
+  name: City Scavenger
+- level: '1'
+  name: Goblin Lore
+- level: '1'
+  name: Goblin Scuttle
+- level: '1'
+  name: Goblin Song
+- level: '1'
+  name: Goblin Weapon Familiarity
+- level: '1'
+  name: Junk Tinker
+- level: '1'
+  name: Rough Rider
+- level: '1'
+  name: Very Sneaky
+- level: '5'
+  name: Goblin Weapon Frenzy
+- level: '9'
+  name: Cave Climber
+- level: '9'
+  name: Skittering Scuttle
+- level: '13'
+  name: Goblin Weapon Expertise
+- level: '1'
+  name: Distracting Shadows
+- level: '1'
+  name: Halfling Lore
+- level: '1'
+  name: Halfling Luck
+- level: '1'
+  name: Halfling Weapon Familiarity
+- level: '1'
+  name: Sure Feet
+- level: '1'
+  name: Titan Slinger
+- level: '1'
+  name: Unfettered Halfling
+- level: '1'
+  name: Watchful Halfling
+- level: '5'
+  name: Cultural Adaptability
+- level: '5'
+  name: Halfling Weapon Trickster
+- level: '9'
+  name: Guiding Luck
+- level: '9'
+  name: Irrepressible
+- level: '13'
+  name: Ceaseless Shadows
+- level: '13'
+  name: Halfling Weapon Expertise
+- level: '1'
+  name: Adapted Cantrip
+- level: '1'
+  name: Cooperative Nature
+- level: '1'
+  name: General Training
+- level: '1'
+  name: Haughty Obstinacy
+- level: '1'
+  name: Natural Ambition
+- level: '1'
+  name: Natural Skill
+- level: '1'
+  name: Unconventional Weaponry
+- level: '5'
+  name: Adaptive Adept
+- level: '5'
+  name: Clever Improviser
+- level: '9'
+  name: Incredible Improvisation
+- level: '9'
+  name: Multitalented
+- level: '13'
+  name: Unconventional Expertise
+- level: '1'
+  name: Elf Atavism
+- level: '5'
+  name: Inspire Imitation
+- level: '5'
+  name: Supernatural Charm
+- level: '1'
+  name: Monstrous Peacemaker
+- level: '1'
+  name: Orc Ferocity
+- level: '1'
+  name: Orc Sight
+- level: '1'
+  name: Orc Superstition
+- level: '1'
+  name: Orc Weapon Famailiarity
+- level: '5'
+  name: Orc Weapon Carnage
+- level: '5'
+  name: Victorious Vigor
+- level: '9'
+  name: Pervasive Superstition
+- level: '13'
+  name: Incredible Ferocity
+- level: '13'
+  name: Orc Weapon Expertise
+- level: '1'
+  name: Alchemical Familiar
+- level: '1'
+  name: Alchemical Savant
+- level: '1'
+  name: Far Lobber
+- level: '1'
+  name: Quick Bomber
+- level: '2'
+  name: Poison Resistance (Alchemist)
+- level: '2'
+  name: Revivifying Mutagen
+- level: '2'
+  name: Smoke Bomb
+- level: '4'
+  name: Calculated Splash
+- level: '4'
+  name: Efficient Alchemy
+- level: '4'
+  name: Enduring Alchemy
+- level: '6'
+  name: Combine Elixirs
+- level: '6'
+  name: Debilitating Bomb
+- level: '6'
+  name: Directional Bombs
+- level: '8'
+  name: Feral Mutagen
+- level: '8'
+  name: Powerful Alchemy
+- level: '8'
+  name: Sticky Bomb
+- level: '10'
+  name: Elastic Mutagen
+- level: '10'
+  name: Expanded Splash
+- level: '10'
+  name: Greater Debilitating Bomb
+- level: '10'
+  name: Merciful Elixir
+- level: '10'
+  name: Potent Poisoner
+- level: '12'
+  name: Extend Elixir
+- level: '12'
+  name: Invincible Mutagen
+- level: '12'
+  name: Uncanny Bombs
+- level: '14'
+  name: Glib Mutagen
+- level: '14'
+  name: Greater Merciful Elixir
+- level: '14'
+  name: True Debilitating Bomb
+- level: '16'
+  name: Eternal Elixir
+- level: '16'
+  name: Exploitive Bomb
+- level: '16'
+  name: Genius Mutagen
+- level: '16'
+  name: Persistent Mutagen
+- level: '18'
+  name: Improbable Elixirs
+- level: '18'
+  name: Mindblank Mutagen
+- level: '18'
+  name: Miracle Worker
+- level: '18'
+  name: Perfect Debilitation
+- level: '20'
+  name: Mega Bomb
+- level: '20'
+  name: Perfect Mutagen
+- level: '1'
+  name: Acute Vision
+- level: '1'
+  name: Moment of Clarity
+- level: '1'
+  name: Raging Intimidation
+- level: '1'
+  name: Raging Thrower
+- level: '1'
+  name: Sudden Charge
+- level: '2'
+  name: Acute Scent
+- level: '2'
+  name: Furious Finish
+- level: '2'
+  name: No Escape
+- level: '2'
+  name: Second Wind
+- level: '2'
+  name: Shake it Off
+- level: '4'
+  name: Fast Movement
+- level: '4'
+  name: Raging Athlete
+- level: '4'
+  name: Swipe
+- level: '4'
+  name: Wounded Rage
+- level: '6'
+  name: Animal Skin
+- level: '6'
+  name: Attack of Opportunity (Barbarian)
+- level: '6'
+  name: Brutal Bully
+- level: '6'
+  name: Cleave
+- level: '8'
+  name: Animal Rage
+- level: '8'
+  name: Furious Bully
+- level: '8'
+  name: Renewed Vigor
+- level: '8'
+  name: Share Rage
+- level: '8'
+  name: Sudden Leap (Barbarian)
+- level: '8'
+  name: Thrash
+- level: '10'
+  name: Furious Sprint
+- level: '10'
+  name: Great Cleave
+- level: '10'
+  name: Knockback
+- level: '10'
+  name: Terrifying Howl
+- level: '12'
+  name: Furious Grab
+- level: '14'
+  name: Awesome Blow
+- level: '14'
+  name: Vengeful Strike
+- level: '14'
+  name: Whirlwind Strike
+- level: '16'
+  name: Collateral Thrash
+- level: '16'
+  name: Dragon Transformation
+- level: '16'
+  name: Reckless Abandon
+- level: '18'
+  name: Brutal Critical
+- level: '18'
+  name: Perfect Clarity
+- level: '18'
+  name: Vicious Evisceration
+- level: '20'
+  name: Contagious Rage
+- level: '20'
+  name: Quaking Stomp
+- level: '1'
+  name: Bardic Lore
+- level: '1'
+  name: Reach Spell
+- level: '1'
+  name: Versatile Performance
+- level: '2'
+  name: Cantrip Expansion (Bard)
+- level: '2'
+  name: Esoteric Polymath
+- level: '2'
+  name: Inspire Competence
+- level: '2'
+  name: Multifarious Muse
+- level: '4'
+  name: Melodious Spell
+- level: '4'
+  name: Triple Time
+- level: '4'
+  name: Versatile Signature
+- level: '6'
+  name: Dirge of Doom
+- level: '6'
+  name: Harmonize
+- level: '6'
+  name: Steady Spellcasting (Bard)
+- level: '8'
+  name: Eclectic Skill
+- level: '8'
+  name: Know-It-All
+- level: '10'
+  name: House of Imaginary Walls
+- level: '10'
+  name: Quickened Casting (Bard)
+- level: '10'
+  name: Unusual Composition
+- level: '12'
+  name: Eclectic Polymath
+- level: '12'
+  name: Inspirational Focus
+- level: '14'
+  name: Allegro
+- level: '14'
+  name: Soothing Ballad
+- level: '14'
+  name: True Hypercognition
+- level: '16'
+  name: Effortless Concentration
+- level: '16'
+  name: Studious Capacity
+- level: '18'
+  name: Deep Lore
+- level: '18'
+  name: Eternal Composition
+- level: '18'
+  name: Impossible Polymath
+- level: '20'
+  name: Fatal Aria
+- level: '20'
+  name: Perfect Encore
+- level: '1'
+  name: Ranged Reprisal
+- level: '1'
+  name: Unimpeded Step
+- level: '1'
+  name: Weight of Guilt
+- level: '2'
+  name: Divine Grace
+- level: '2'
+  name: Dragonslayer Oath
+- level: '2'
+  name: Fiendsbane Oath
+- level: '2'
+  name: Shining Oath
+- level: '2'
+  name: Vengeful Oath
+- level: '4'
+  name: Aura of Courage
+- level: '4'
+  name: Divine Health
+- level: '4'
+  name: Mercy
+- level: '6'
+  name: Attack of Opportunity
+- level: '6'
+  name: Shield Warden (Champion)
+- level: '6'
+  name: Smite Evil
+- level: '8'
+  name: Greater Mercy
+- level: '8'
+  name: Heal Mount
+- level: '8'
+  name: Quick Block
+- level: '8'
+  name: Second Ally
+- level: '8'
+  name: Sense Evil
+- level: '10'
+  name: Devoted Focus
+- level: '10'
+  name: Imposing Destrier
+- level: '10'
+  name: Litany Against Sloth
+- level: '10'
+  name: Radiant Blade Spirit
+- level: '10'
+  name: Shield of Reckoning
+- level: '12'
+  name: Affliction Mercy
+- level: '12'
+  name: Aura of Faith
+- level: '12'
+  name: Blade of Justice
+- level: '12'
+  name: Divine Wall
+- level: '12'
+  name: Lasting Doubt
+- level: '12'
+  name: Liberating Stride
+- level: '14'
+  name: Anchoring Aura
+- level: '14'
+  name: Aura of Life
+- level: '14'
+  name: Aura of Righteousness
+- level: '14'
+  name: Aura of Vengeance
+- level: '14'
+  name: Divine Reflexes
+- level: '14'
+  name: Litany of Righteousness
+- level: '14'
+  name: Wyrmbane Aura
+- level: '16'
+  name: Auspicious Mount
+- level: '16'
+  name: Instrument of Zeal
+- level: '16'
+  name: Shield of Grace
+- level: '18'
+  name: Celestial Form
+- level: '18'
+  name: Ultimate Mercy
+- level: '20'
+  name: Celestial Mount
+- level: '20'
+  name: Radiant Blade Master
+- level: '20'
+  name: Shield Paragon
+- level: '1'
+  name: Deadly Simplicity
+- level: '1'
+  name: Domain Initiate
+- level: '1'
+  name: Harming Hands
+- level: '1'
+  name: Healing Hands
+- level: '1'
+  name: Holy Castigation
+- level: '2'
+  name: Cantrip Expansion (Cleric)
+- level: '2'
+  name: Communal Healing
+- level: '2'
+  name: Emblazon Armament
+- level: '2'
+  name: Sap Life
+- level: '2'
+  name: Turn Undead
+- level: '2'
+  name: Versatile Font
+- level: '4'
+  name: Channel Smite
+- level: '4'
+  name: Command Undead
+- level: '4'
+  name: Directed Channel
+- level: '4'
+  name: Improved Communal Healing
+- level: '4'
+  name: Necrotic Infusion
+- level: '6'
+  name: Cast Down
+- level: '6'
+  name: Divine Weapon
+- level: '6'
+  name: Selective Energy
+- level: '6'
+  name: Steady Spellcasting
+- level: '8'
+  name: Advanced Domain
+- level: '8'
+  name: Align Armament
+- level: '8'
+  name: Channeled Succor
+- level: '8'
+  name: Cremate Undead
+- level: '8'
+  name: Emblazon Energy
+- level: '10'
+  name: Castigating Weapon
+- level: '10'
+  name: Heroic Recovery
+- level: '10'
+  name: Improved Command Undead
+- level: '10'
+  name: Replenishment of War
+- level: '12'
+  name: Defensive Recovery
+- level: '12'
+  name: Domain Focus
+- level: '12'
+  name: Emblazon Antimagic
+- level: '12'
+  name: Shared Replenishment
+- level: '14'
+  name: Extend Armament Alignment
+- level: '14'
+  name: Fast Channel
+- level: '14'
+  name: Swift Banishment
+- level: '16'
+  name: Eternal Bane
+- level: '16'
+  name: Eternal Blessing
+- level: '16'
+  name: Resurrectionist
+- level: '18'
+  name: Domain Wellspring
+- level: '18'
+  name: Echoing Channel
+- level: '18'
+  name: Improved Swift Banishment
+- level: '20'
+  name: Maker of Miracles
+- level: '20'
+  name: Metamagic Channel
+- level: '1'
+  name: Animal Companion (Druid)
+- level: '1'
+  name: Leshy Familiar
+- level: '1'
+  name: Storm Born
+- level: '1'
+  name: Widen Spell
+- level: '1'
+  name: Wild Shape
+- level: '2'
+  name: Call of the Wild
+- level: '2'
+  name: Enhanced Familiar (Druid)
+- level: '2'
+  name: Order Explorer
+- level: '2'
+  name: Poison Resistance (Druid)
+- level: '4'
+  name: Form Control
+- level: '4'
+  name: Order Magic
+- level: '4'
+  name: Thousand Faces
+- level: '4'
+  name: Woodland Stride
+- level: '6'
+  name: Green Empathy
+- level: '6'
+  name: Insect Shape
+- level: '6'
+  name: Storm Retribution
+- level: '8'
+  name: Ferocious Shape
+- level: '8'
+  name: Fey Caller
+- level: '8'
+  name: Soaring Shape
+- level: '8'
+  name: Wind Caller
+- level: '10'
+  name: Elemental Shape
+- level: '10'
+  name: Healing Transformation
+- level: '10'
+  name: Overwhelming Energy (Druid)
+- level: '10'
+  name: Plant Shape
+- level: '12'
+  name: Dragon Shape
+- level: '12'
+  name: Green Tongue
+- level: '12'
+  name: Primal Focus
+- level: '12'
+  name: Primal Summons
+- level: '14'
+  name: Timeless Nature
+- level: '14'
+  name: Verdant Metamorphosis
+- level: '16'
+  name: Monstrosity Shape
+- level: '18'
+  name: Invoke Disaster
+- level: '18'
+  name: Perfect Form Control
+- level: '18'
+  name: Primal Wellspring
+- level: '20'
+  name: Leyline Conduit
+- level: '20'
+  name: True Shapeshifter
+- level: '1'
+  name: Double Slice
+- level: '1'
+  name: Exacting Strike
+- level: '1'
+  name: Point-Blank Shot
+- level: '1'
+  name: Power Attack
+- level: '1'
+  name: Reactive Shield
+- level: '1'
+  name: Snagging Strike
+- level: '2'
+  name: Aggressive Block
+- level: '2'
+  name: Assisting Shot
+- level: '2'
+  name: Brutish Shove
+- level: '2'
+  name: Combat Grab
+- level: '2'
+  name: Dueling Parry
+- level: '2'
+  name: Intimidating Strike
+- level: '2'
+  name: Lunge
+- level: '4'
+  name: Double Shot
+- level: '4'
+  name: Dual-Handed Assault
+- level: '4'
+  name: Knockdown
+- level: '4'
+  name: Powerful Shove
+- level: '4'
+  name: Quick Reversal
+- level: '4'
+  name: Shielded Stride
+- level: '4'
+  name: Twin Parry
+- level: '6'
+  name: Advanced Weapon Training
+- level: '6'
+  name: Advantageous Assault
+- level: '6'
+  name: Disarming Stance
+- level: '6'
+  name: Furious Focus
+- level: '6'
+  name: Reflexive Shield
+- level: '6'
+  name: Revealing Stab
+- level: '6'
+  name: Shatter Defenses
+- level: '6'
+  name: Shield Warden (Fighter)
+- level: '6'
+  name: Triple Shot
+- level: '8'
+  name: Blind-Fight
+- level: '8'
+  name: Dueling Riposte
+- level: '8'
+  name: Felling Strike
+- level: '8'
+  name: Incredible Aim
+- level: '8'
+  name: Mobile Shot Stance
+- level: '8'
+  name: Positioning Assault
+- level: '8'
+  name: Quick Shield Block
+- level: '8'
+  name: Sudden Leap (Fighter)
+- level: '10'
+  name: Agile Grace
+- level: '10'
+  name: Certain Strike
+- level: '10'
+  name: Combat Reflexes
+- level: '10'
+  name: Debilitating Shot
+- level: '10'
+  name: Disarming Twist
+- level: '10'
+  name: Disruptive Stance
+- level: '10'
+  name: Fearsome Brute
+- level: '10'
+  name: Improved Knockdown
+- level: '10'
+  name: Mirror Shield
+- level: '12'
+  name: Brutal Finish
+- level: '12'
+  name: Dueling Dance
+- level: '12'
+  name: Flinging Shove
+- level: '12'
+  name: Improved Dueling Riposte
+- level: '12'
+  name: Incredible Ricochet
+- level: '12'
+  name: Lunging Stance
+- level: '12'
+  name: Spring Attack
+- level: '14'
+  name: Desperate Finisher
+- level: '14'
+  name: Determination
+- level: '14'
+  name: Guiding Finish
+- level: '14'
+  name: Guiding Riposte
+- level: '14'
+  name: Two-Weapon Flurry
+- level: '16'
+  name: Graceful Poise
+- level: '16'
+  name: Improved Reflexive Shield
+- level: '16'
+  name: Multishot Stance
+- level: '16'
+  name: Twinned Defense
+- level: '18'
+  name: Impossible Volley
+- level: '18'
+  name: Savage Critical
+- level: '20'
+  name: Weapon Supremacy
+- level: '1'
+  name: Crane Stance
+- level: '1'
+  name: Dragon Stance
+- level: '1'
+  name: Ki Rush
+- level: '1'
+  name: Monastic Weaponry
+- level: '1'
+  name: Mountain Stance
+- level: '1'
+  name: Tiger Stance
+- level: '1'
+  name: Wolf Stance
+- level: '2'
+  name: Brawling Focus
+- level: '2'
+  name: Crushing Grab
+- level: '2'
+  name: Dancing Leaf
+- level: '2'
+  name: Elemental Fist
+- level: '2'
+  name: Stunning Fist
+- level: '4'
+  name: Deflect Arrows
+- level: '4'
+  name: Flurry of Maneuvers
+- level: '4'
+  name: Flying Kick
+- level: '4'
+  name: Guarded Movement
+- level: '4'
+  name: Stand Still
+- level: '4'
+  name: Wholeness of Body
+- level: '6'
+  name: Abundant Step
+- level: '6'
+  name: Crane Flutter
+- level: '6'
+  name: Dragon Roar
+- level: '6'
+  name: Mountain Stronghold
+- level: '6'
+  name: Tiger Slash
+- level: '6'
+  name: Water Step
+- level: '6'
+  name: Whirling Throw
+- level: '6'
+  name: Wolf Drag
+- level: '8'
+  name: 'Arrow Snatching '
+- level: '8'
+  name: Ironblood Stance
+- level: '8'
+  name: Mixed Maneuver
+- level: '8'
+  name: Tangled Forest Stance
+- level: '8'
+  name: Wall Run
+- level: '8'
+  name: Wild Winds Initiate
+- level: '10'
+  name: Knockback Strike
+- level: '10'
+  name: Sleeper Hold
+- level: '10'
+  name: Wind Jump
+- level: '10'
+  name: Winding Flow
+- level: '12'
+  name: Diamond Soul
+- level: '12'
+  name: Disrupt Ki
+- level: '12'
+  name: Improved Knockback
+- level: '12'
+  name: Meditative Focus
+- level: '14'
+  name: Ironblood Surge
+- level: '14'
+  name: Moutain Quake
+- level: '14'
+  name: Tangled Forest Rake
+- level: '14'
+  name: Timeless Body
+- level: '14'
+  name: Tongue of the Sun and Moon
+- level: '16'
+  name: Wild Winds Gust
+- level: '16'
+  name: Enlightened Presence
+- level: '16'
+  name: Master of Many Styles
+- level: '16'
+  name: Shattering Strike
+- level: '18'
+  name: Diamond Fists
+- level: '18'
+  name: Empty Body
+- level: '18'
+  name: Meditative Wellspring
+- level: '18'
+  name: Swift River
+- level: '20'
+  name: Enduring Quickness
+- level: '20'
+  name: Fuse Stance
+- level: '20'
+  name: Impossible Technique
+- level: '1'
+  name: Animal Companion (Ranger)
+- level: '1'
+  name: Crossbow Ace
+- level: '1'
+  name: Hunted Shot
+- level: '1'
+  name: Monster Hunter
+- level: '1'
+  name: Twin Takedown
+- level: '2'
+  name: Favored Terrain
+- level: '2'
+  name: Monster Warden
+- level: '2'
+  name: Quick Draw
+- level: '2'
+  name: Wild Empathy
+- level: '4'
+  name: Disrupt Prey
+- level: '4'
+  name: Far Shot
+- level: '4'
+  name: Favored Enemy
+- level: '4'
+  name: Running Reload
+- level: '4'
+  name: Snare Specialist
+- level: '4'
+  name: Twin Parry (Ranger)
+- level: '6'
+  name: Quick Snares
+- level: '6'
+  name: Skirmish Strike
+- level: '6'
+  name: Snap Shot
+- level: '6'
+  name: Swift Tracker
+- level: '8'
+  name: Deadly Aim
+- level: '8'
+  name: Hazard Finder
+- level: '8'
+  name: Powerful Snares
+- level: '8'
+  name: Terrain Master
+- level: '10'
+  name: Camouflage
+- level: '10'
+  name: Master Monster Hunter
+- level: '10'
+  name: Penetrating Shot
+- level: '10'
+  name: Twin Riposte
+- level: '12'
+  name: Distracting Shot
+- level: '12'
+  name: Double Prey
+- level: '12'
+  name: Lightning Snares
+- level: '12'
+  name: Second Sting
+- level: '14'
+  name: Sense the Unseen (Ranger)
+- level: '14'
+  name: Shared Prey
+- level: '14'
+  name: Stealthy Companion
+- level: '14'
+  name: Targeting Shot
+- level: '16'
+  name: Greater Distracting Shot
+- level: '16'
+  name: Legendary Monster Hunter
+- level: '16'
+  name: Ubiquitous Snares
+- level: '18'
+  name: Impossible Flurry
+- level: '18'
+  name: Manifold Edge
+- level: '18'
+  name: Masterful Companion
+- level: '18'
+  name: Perfect Shot
+- level: '18'
+  name: Shadow Hunter
+- level: '20'
+  name: Legendary Shot
+- level: '20'
+  name: To the Ends of the Earth
+- level: '20'
+  name: Triple Threat
+- level: '20'
+  name: Ultimate Skirmisher
+- level: '1'
+  name: Nimble Dodge
+- level: '1'
+  name: Trap Finder
+- level: '1'
+  name: Twin Feint
+- level: '2'
+  name: Brutal Beating
+- level: '2'
+  name: Distracting Feint
+- level: '2'
+  name: Minor Magic
+- level: '2'
+  name: Mobility
+- level: '2'
+  name: Unbalancing Blow
+- level: '4'
+  name: Battle Assessment
+- level: '4'
+  name: Dread Striker
+- level: '4'
+  name: Magical Trickster
+- level: '4'
+  name: Poison Weapon
+- level: '4'
+  name: Reactive Pursuit
+- level: '4'
+  name: Sabotage
+- level: '6'
+  name: Light Step
+- level: '6'
+  name: Twist the Knife
+- level: '8'
+  name: Delay Trap
+- level: '8'
+  name: Improved Poison Weapon
+- level: '8'
+  name: Nimble Roll
+- level: '8'
+  name: Opportune Backstab
+- level: '8'
+  name: Sidestep
+- level: '10'
+  name: Precise Debilitation
+- level: '10'
+  name: Sneak Savant
+- level: '10'
+  name: Tactical Debilitations
+- level: '10'
+  name: Vicious Debilitations
+- level: '12'
+  name: Critical Debilitations
+- level: '12'
+  name: Fantastic Leap
+- level: '12'
+  name: Felling Shot
+- level: '12'
+  name: Reactive Interference
+- level: '12'
+  name: Spring from the Shadows
+- level: '14'
+  name: Defensive Roll
+- level: '14'
+  name: Instant Opening
+- level: '14'
+  name: Leave an Opening
+- level: '14'
+  name: Sense the Unseen (Rogue)
+- level: '16'
+  name: Blank Slate
+- level: '16'
+  name: Cloud Step
+- level: '16'
+  name: Cognitive Loophole
+- level: '16'
+  name: Dispelling Slice
+- level: '16'
+  name: Perfect Distraction
+- level: '18'
+  name: Implausible Infiltration
+- level: '18'
+  name: Powerful Sneak
+- level: '20'
+  name: Hidden Paragon
+- level: '20'
+  name: Impossible Striker
+- level: '20'
+  name: Reactive Distraction
+- level: '1'
+  name: Dangerous Sorcery
+- level: '1'
+  name: Familiar (Sorcerer)
+- level: '2'
+  name: Cantrip Expansion (Sorcerer)
+- level: '2'
+  name: Enhanced Familiar (Sorcerer)
+- level: '4'
+  name: Arcane Evolution
+- level: '4'
+  name: Bespell Weapon
+- level: '4'
+  name: Divine Evolution
+- level: '4'
+  name: Occult Evolution
+- level: '4'
+  name: Primal Evolution
+- level: '6'
+  name: Advanced Bloodline
+- level: '6'
+  name: Steady Spellcasting (Sorcerer)
+- level: '8'
+  name: Bloodline Resistance
+- level: '8'
+  name: Crossblooded Evolution
+- level: '10'
+  name: Greater Bloodline
+- level: '10'
+  name: Overwhelming Energy (Sorcerer)
+- level: '10'
+  name: Quickened Casting (Sorcerer)
+- level: '12'
+  name: Bloodline Focus
+- level: '12'
+  name: Magic Sense
+- level: '14'
+  name: Interweave Dispel
+- level: '14'
+  name: Reflect Spell
+- level: '16'
+  name: Greater Mental Evolution
+- level: '16'
+  name: Greater Vital Evolution
+- level: '18'
+  name: Bloodline Wellspring
+- level: '18'
+  name: Greater Crossblooded Evolution
+- level: '20'
+  name: Bloodline Conduit
+- level: '20'
+  name: Bloodline Perfection
+- level: '20'
+  name: Metamagic Mastery
+- level: '1'
+  name: Eschew Materials
+- level: '1'
+  name: Familiar (Wizard)
+- level: '1'
+  name: Hand of the Apprentice
+- level: '2'
+  name: Cantrip Expansion (Wizard)
+- level: '2'
+  name: Conceal Spell
+- level: '2'
+  name: Enhanced Familiar (Wizard)
+- level: '4'
+  name: Linked Focus
+- level: '4'
+  name: Silent Spell
+- level: '6'
+  name: Spell Penetration
+- level: '8'
+  name: Advanced School Spell
+- level: '8'
+  name: Bond Conservation
+- level: '8'
+  name: Universal Versatility
+- level: '10'
+  name: Overwhelming Energy (Wizard)
+- level: '10'
+  name: Quickened Casting (Wizard)
+- level: '10'
+  name: Scroll Savant
+- level: '12'
+  name: Clever Counterspell
+- level: '14'
+  name: Bonded Focus
+- level: '14'
+  name: Superior Bond
+- level: '16'
+  name: Spell Tinker
+- level: '18'
+  name: Infinite Possibilities
+- level: '18'
+  name: Reprepare Spell
+- level: '20'
+  name: Spell Combination
+- level: '2'
+  name: Alchemist Dedication
+- level: '4'
+  name: Basic Concoction
+- level: '4'
+  name: Quick Alchemy
+- level: '6'
+  name: Expert Alchemy
+- level: '12'
+  name: Mastery Alchemy
+- level: '2'
+  name: Barbarian Dedication
+- level: '4'
+  name: Barbarian Resiliency
+- level: '4'
+  name: Basic Fury
+- level: '6'
+  name: Advanced Fury
+- level: '6'
+  name: Instinct Ability
+- level: '2'
+  name: Bard Dedication
+- level: '4'
+  name: Basic Bard Spellcasting
+- level: '6'
+  name: Counter Perform
+- level: '8'
+  name: Inspirational Performance
+- level: '8'
+  name: Occult Breadth
+- level: '12'
+  name: Expert Bard Spellcasting
+- level: '18'
+  name: Master Bard Spellcasting
+- level: '2'
+  name: Champion Dedication
+- level: '4'
+  name: Basic Devotion
+- level: '4'
+  name: Champion Resiliencey
+- level: '4'
+  name: Healing Touch
+- level: '6'
+  name: Advanced Devotion
+- level: '6'
+  name: Divine Ally
+- level: '14'
+  name: Diverse Armor Expert
+- level: '2'
+  name: Cleric Dedication
+- level: '4'
+  name: Basic Cleric Spellcasting
+- level: '4'
+  name: Basic Dogma
+- level: '6'
+  name: Advanced Dogma
+- level: '8'
+  name: Divine Breadth
+- level: '12'
+  name: Expert Cleric Spellcasting
+- level: '18'
+  name: Master Cleric Spellcasting
+- level: '2'
+  name: Druid Dedication
+- level: '4'
+  name: Basic Druid Spellcasting
+- level: '4'
+  name: Basic Wilding
+- level: '4'
+  name: Order Spell
+- level: '6'
+  name: Advanced Wilding
+- level: '8'
+  name: Primal Breadth
+- level: '12'
+  name: Expert Druid Spellcasting
+- level: '18'
+  name: Master Druid Spellcasting
+- level: '2'
+  name: Fighter Dedication
+- level: '4'
+  name: Basic Maneuver
+- level: '4'
+  name: Fighter Resiliency
+- level: '4'
+  name: Opportunist
+- level: '6'
+  name: Advanced Maneuver
+- level: '12'
+  name: Diverse Weapon Expert
+- level: '2'
+  name: Monk Dedication
+- level: '4'
+  name: Basic Kata
+- level: '4'
+  name: Monk Resiliency
+- level: '6'
+  name: Advanced Kata
+- level: '8'
+  name: Monk Moves
+- level: '2'
+  name: Ranger Dedication
+- level: '4'
+  name: Ranger Resiliency
+- level: '12'
+  name: Master Spotter
+- level: '2'
+  name: Rogue Dedication
+- level: '4'
+  name: Basic Trickery
+- level: '4'
+  name: Sneak Attacker
+- level: '6'
+  name: Advanced Trickery
+- level: '8'
+  name: Skill Mastery
+- level: '10'
+  name: Uncanny Dodge
+- level: '12'
+  name: Evasiveness
+- level: '2'
+  name: Sorcerer Dedication
+- level: '4'
+  name: Basic Sorcerer Spellcasting
+- level: '4'
+  name: Basic Blood Potency
+- level: '4'
+  name: Basic Bloodline Spell
+- level: '6'
+  name: Advanced Blood Potency
+- level: '8'
+  name: Bloodline Breadth
+- level: '12'
+  name: Expert Sorcerer Spellcasting
+- level: '18'
+  name: Master Sorcerer Spellcasting
+- level: '2'
+  name: Wizard Dedication
+- level: '4'
+  name: Arcane School Spell
+- level: '4'
+  name: Basic Arcana
+- level: '4'
+  name: Basic Wizard Spellcasting
+- level: '6'
+  name: Advanced Arcana
+- level: '8'
+  name: Arcane Breadth
+- level: '12'
+  name: Expert Wizard Spellcasting
+- level: '18'
+  name: Master Wizard Spellcasting
+- level: '1'
+  name: Additional Lore
+- level: '1'
+  name: Adopted Ancestry
+- level: '1'
+  name: Alchemical Crafting
+- level: '3'
+  name: Ancestral Paragon
+- level: '1'
+  name: Arcane Sense
+- level: '1'
+  name: Armor Proficiency
+- level: '1'
+  name: Assurance
+- level: '2'
+  name: Automatic Knowledge
+- level: '1'
+  name: Bargain Hunter
+- level: '7'
+  name: Battle Cry
+- level: '1'
+  name: Battle Medicine
+- level: '7'
+  name: Bizarre Magic
+- level: '2'
+  name: Bonded Animal
+- level: '1'
+  name: Breath Control
+- level: '1'
+  name: Canny Acumen
+- level: '1'
+  name: Cat Fall
+- level: '1'
+  name: Charming Liar
+- level: '15'
+  name: Cloud Jump
+- level: '1'
+  name: Combat Climber
+- level: '2'
+  name: Confabulator
+- level: '2'
+  name: Connections
+- level: '2'
+  name: Continual Recovery
+- level: '1'
+  name: Courtly Graces
+- level: '15'
+  name: Craft Anything
+- level: '1'
+  name: Diehard
+- level: '15'
+  name: Divine Guidance
+- level: '1'
+  name: Dubious Knowledge
+- level: '7'
+  name: Expeditious Search
+- level: '1'
+  name: Experienced Professional
+- level: '1'
+  name: Experienced Smuggler
+- level: '1'
+  name: Experienced Tracker
+- level: '1'
+  name: Fascinating Performance
+- level: '1'
+  name: Fast Recovery
+- level: '1'
+  name: Feather Step
+- level: '1'
+  name: Fleet
+- level: '7'
+  name: Foil Senses
+- level: '1'
+  name: Forager
+- level: '2'
+  name: Glad-Hand
+- level: '1'
+  name: Group Coercion
+- level: '1'
+  name: Group Impression
+- level: '1'
+  name: Hefty Hauler
+- level: '1'
+  name: Hobnobber
+- level: '7'
+  name: Impeccable Crafter
+- level: '1'
+  name: Impressive Performance
+- level: '1'
+  name: Incredible Initiative
+- level: '11'
+  name: Incredible Investiture
+- level: '1'
+  name: Intimidating Glare
+- level: '2'
+  name: Intimidating Prowess
+- level: '7'
+  name: Inventor
+- level: '7'
+  name: Kip Up
+- level: '2'
+  name: Lasting Coercion
+- level: '15'
+  name: Legendary Codebreaker
+- level: '15'
+  name: Legendary Linguist
+- level: '15'
+  name: Legendary Medic
+- level: '15'
+  name: Legendary Negotiation
+- level: '15'
+  name: Legendary Performer
+- level: '15'
+  name: Legendary Professional
+- level: '15'
+  name: Legendary Sneak
+- level: '15'
+  name: Legendary Survivalist
+- level: '15'
+  name: Legendary Thief
+- level: '1'
+  name: Lengthy Diversion
+- level: '2'
+  name: Magical Crafting
+- level: '2'
+  name: Magical Shorthand
+- level: '1'
+  name: Multilingual
+- level: '1'
+  name: Natural Medicine
+- level: '2'
+  name: Nimble Crawl
+- level: '1'
+  name: Oddity Identification
+- level: '1'
+  name: Pickpocket
+- level: '7'
+  name: Planar Survival
+- level: '2'
+  name: Powerful Leap
+- level: '7'
+  name: Quick Climber
+- level: '1'
+  name: Quick Coercion
+- level: '2'
+  name: Quick Disguise
+- level: '1'
+  name: Quick Identification
+- level: '1'
+  name: Quick Jump
+- level: '7'
+  name: Quick Recognition
+- level: '1'
+  name: Quick Repair
+- level: '1'
+  name: Quick Squeeze
+- level: '7'
+  name: Quick Swim
+- level: '7'
+  name: Quick Unlock
+- level: '2'
+  name: Quiet Allies
+- level: '2'
+  name: Rapid Mantel
+- level: '1'
+  name: Read Lips
+- level: '1'
+  name: Recognize Spell
+- level: '1'
+  name: Ride
+- level: '2'
+  name: Robust Recovery
+- level: '15'
+  name: Scare to Death
+- level: '7'
+  name: Shameless Request
+- level: '1'
+  name: Shield Block
+- level: '1'
+  name: Sign Language
+- level: '1'
+  name: Skill Training
+- level: '7'
+  name: Slippery Secrets
+- level: '1'
+  name: Snare Crafting
+- level: '1'
+  name: Specialty Crafting
+- level: '1'
+  name: Steady Balance
+- level: '1'
+  name: Streetwise
+- level: '1'
+  name: Student of the Canon
+- level: '1'
+  name: Subtle Theft
+- level: '1'
+  name: Survey Wildlife
+- level: '7'
+  name: Swift Sneak
+- level: '1'
+  name: Terrain Expertise
+- level: '1'
+  name: Terrain Stalker
+- level: '7'
+  name: Terrified Retreat
+- level: '1'
+  name: Titan Wrestler
+- level: '1'
+  name: Toughness
+- level: '1'
+  name: Train Animal
+- level: '1'
+  name: Trick Magic Item
+- level: '1'
+  name: Underwater Marauder
+- level: '15'
+  name: Unified Theory
+- level: '2'
+  name: Unmistakable Lore
+- level: '3'
+  name: Untrained Improvisation
+- level: '1'
+  name: Virtuosic Performer
+- level: '7'
+  name: Wall Jump
+- level: '2'
+  name: Ward Medic
+- level: '2'
+  name: Wary Disarmament
+- level: '1'
+  name: Weapon Proficiency
+- level: '2'
+  name: Relentless Stalker
+- level: '2'
+  name: Wilderness Spotter
