@@ -40,7 +40,7 @@
       - 
         name: "Invisible"
         traits: []
-        description: "  An unseen servant is invisible, though it normally doesn’t Sneak, so it is usually only hidden."
+        description: "An unseen servant is invisible, though it normally doesn’t Sneak, so it is usually only hidden."
     melee: []
     ranged: []
     spell_dc: "None"
@@ -103,7 +103,7 @@
           - "aura"
           - "disease"
         range: "5 feet"
-        description: " While underwater, an aboleth exudes a cloud of transparent slime. An air-breathing creature adjacent to an aboleth must succeed at a DC 25 Fortitude save each round or lose the ability to breathe air but gain the ability to breathe water for 3 hours."
+        description: "While underwater, an aboleth exudes a cloud of transparent slime. An air-breathing creature adjacent to an aboleth must succeed at a DC 25 Fortitude save each round or lose the ability to breathe air but gain the ability to breathe water for 3 hours."
     melee: 
       - 
         name: "tentacle"
@@ -37503,7 +37503,7 @@
     name: "Sabosan"
     type: "Creature"
     level: "5"
-    description: "Sabosans are evil, intelligent, bat-like humanoids who live in warm forests and drink the blood of other creatures, particularly people. They have thin, emaciated torsos and broad, leathery wings that can reach a span of almost 20 feet. Sabosans’ heads, necks, shoulders, and upper chests are covered with red or dark-brown fur that barely obscures their stretched.thin flesh. Their ears are large and pointed like a batfs, and indeed they can echolocate to locate prey much like bats can, though their eyes are also capable of seeing in low light."
+    description: "Sabosans are evil, intelligent, bat-like humanoids who live in warm forests and drink the blood of other creatures, particularly people. They have thin, emaciated torsos and broad, leathery wings that can reach a span of almost 20 feet. Sabosans’ heads, necks, shoulders, and upper chests are covered with red or dark-brown fur that barely obscures their stretched.thin flesh. Their ears are large and pointed like a bat's, and indeed they can echolocate to locate prey much like bats can, though their eyes are also capable of seeing in low light."
     speed: 
       land: "25 feet"
       fly: "25 feet"
