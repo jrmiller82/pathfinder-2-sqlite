@@ -956,7 +956,8 @@
       Diplomacy: "+6"
       Religion: "+6"
       Stealth: "+6"
-      Lore: "t"
+      # TODO Ask jokodin how this ended up here
+      # Lore: "t"
     languages: 
       - "Celestial"
       - "Common"
@@ -997,9 +998,8 @@
         description: "The cassisian releases beams of heat or cold from its eyes, dealing 2d6 cold or fire damage (DC 17 basic Reflex save) to all creatures in a 15-foot line. It can’t use Eye Beams again for 1d4 rounds."
       - 
         name: "Repository of Lore"
-        traits: 
-          - "at the GM’s discretion"
-        description: "the cassisian has encountered the topic in question before. The cassisian’s limited intellect often prevents it from acting upon its knowledge, making it a better resource than agent in matters of information use."
+        traits: null
+        description: "While the cassisian isn't particularly intelligent, it has perfect memory and can remember everything it sears or hears. This allows it to attempt Lore checks on any topic, provided (at the GM's discretion) the cassisian has encountered the topic in question before. The cassisian’s limited intellect often prevents it from acting upon its knowledge, making it a better resource than agent in matters of information use."
     automatic_abilities: []
     melee: 
       - 
@@ -1376,7 +1376,8 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # TODO Ask jokodin how this got there
+      # # Crafting: "r"
       Athletics: "+5"
     languages: ""
     ability_mods: 
@@ -1430,7 +1431,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # # Crafting: "r"
       Athletics: "+9"
     languages: ""
     ability_mods: 
@@ -1493,7 +1494,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # # Crafting: "r"
       Athletics: "+11"
     languages: ""
     ability_mods: 
@@ -1542,7 +1543,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # # Crafting: "r"
       Athletics: "+17"
     languages: ""
     ability_mods: 
@@ -2966,7 +2967,7 @@
       - " hears heartbeats (imprecise) 60 feet"
       - " darkvision"
     skills: 
-      Religion: "r"
+      # # Religion: "r"
       Acrobatics: "+31"
       Intimidation: "+32"
       Occultism: "+25"
@@ -3327,7 +3328,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+13"
       Stealth: "+8"
     languages: ""
@@ -5188,7 +5189,7 @@
     senses: 
       - " thoughtsense (imprecise) 60 feet"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+24"
       Stealth: "+25"
     languages: 
@@ -5470,7 +5471,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 100 feet"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+38"
     languages: ""
     ability_mods: 
@@ -5828,7 +5829,7 @@
       - " darkvision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+14"
       Athletics: "+18"
       Stealth: "+18"
@@ -6075,7 +6076,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+11"
     languages: ""
     ability_mods: 
@@ -7188,7 +7189,6 @@
       Religion: "+13"
       Society: "+15"
       Stealth: "+14"
-      Athletics: "e"
     languages: 
       - "Abyssal"
       - "Celestial"
@@ -9059,8 +9059,9 @@
     skills: 
       Acrobatics: "+21"
       Athletics: "+19"
-      Stealth: "+24"
-      Deception: " "
+      Stealth: "+21"
+    skills_special:
+      - Stealth is +24 when in forests or swamps
     languages: ""
     ability_mods: 
       str_mod: "+5"
@@ -14762,7 +14763,7 @@
     senses: 
       - " low-light vision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+11"
       Athletics: "+8"
     languages: 
@@ -15022,7 +15023,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+13"
       Stealth: "+11"
     languages: ""
@@ -15077,7 +15078,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+16"
       Stealth: "+14"
     languages: 
@@ -15133,7 +15134,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+16"
       Stealth: "+18"
       Survival: "+15"
@@ -15193,7 +15194,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+20"
       Stealth: "+18"
     languages: 
@@ -15257,7 +15258,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+24"
       Stealth: "+22"
     languages: 
@@ -15329,7 +15330,7 @@
       - " crystal sense (imprecise) 60 feet"
       - " darkvision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+11"
       Survival: "+9 "
     languages: ""
@@ -15388,7 +15389,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 60 feet"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+14"
       Stealth: "+8"
     languages: 
@@ -15448,7 +15449,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 60 feet"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+17"
       Stealth: "+11"
       Survival: "+15"
@@ -15520,7 +15521,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 80 feet"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+21"
       Stealth: "+12"
     languages: 
@@ -15590,7 +15591,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 90 feet"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Athletics: "+24"
       Stealth: "+14"
     languages: 
@@ -15660,7 +15661,7 @@
       - " darkvision"
       - " smoke vision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+10"
       Stealth: "+10"
       Survival: "+9"
@@ -15715,7 +15716,7 @@
       - " darkvision"
       - " smoke vision"
     skills: 
-      Nature: " "
+      # # Nature: " "
       Acrobatics: "+13"
     languages: 
       - "Ignan"
@@ -15779,7 +15780,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+12"
       Athletics: "+17"
       Crafting: "+15"
@@ -15857,7 +15858,7 @@
       - " darkvision"
       - " smoke vision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+20"
     languages: 
       - "Ignan"
@@ -15928,7 +15929,7 @@
       - " darkvision"
       - " smoke vision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+21"
     languages: 
       - "Ignan"
@@ -16001,7 +16002,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+7"
       Stealth: "+7"
     languages: 
@@ -16066,7 +16067,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+6"
       Stealth: "+2"
     languages: 
@@ -16128,7 +16129,7 @@
       - " darkvision"
       - " smoke vision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+7"
       Deception: "+7"
     languages: 
@@ -16193,7 +16194,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+6"
       Stealth: "+6"
     languages: 
@@ -16262,7 +16263,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+10"
       Stealth: "+11"
       Survival: "+8"
@@ -16318,7 +16319,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+13"
       Stealth: "+12"
     languages: 
@@ -16382,7 +16383,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+15"
       Diplomacy: "+12"
       Occultism: "+17"
@@ -16445,7 +16446,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+20"
       Stealth: "+19"
     languages: 
@@ -16509,7 +16510,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+23"
       Stealth: "+23"
     languages: 
@@ -16725,8 +16726,8 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
-      Occultism: "e"
+      # Nature: " "
+      ## Occultism: "e"
       Athletics: "+12"
       Stealth: "+15"
     languages: 
@@ -17241,11 +17242,11 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+10"
       Athletics: "+9"
       Stealth: "+12"
-      Deception: " "
+      ## Deception: " "
     languages: 
       - "Common"
       - "Terran"
@@ -17309,7 +17310,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+8"
       Arcana: "+10"
       Crafting: "+8"
@@ -17416,7 +17417,7 @@
       - " darkvision"
       - " <a style=\"text-decoration:underline\" href=\"Spells.aspx?ID=66\"><i>detect magic</i></a>"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+14"
       Arcana: "+11"
       Athletics: "+11"
@@ -17651,7 +17652,7 @@
       - " darkvision"
       - " <a style=\"text-decoration:underline\" href=\"Spells.aspx?ID=66\"><i>detect magic</i></a>"
     skills: 
-      Nature: " "
+      # Nature: " "
       Arcana: "+14"
       Athletics: "+22"
       Crafting: "+14"
@@ -17916,7 +17917,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Religion: "r"
+      # Religion: "r"
       Stealth: "+12"
     languages: 
       - "Common"
@@ -17984,7 +17985,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Religion: "r"
+      # Religion: "r"
       Arcana: "+22"
       Intimidation: "+22"
       Stealth: "+21"
@@ -18439,7 +18440,7 @@
       Crafting: "+18"
       Intimidation: "+18"
       Stealth: "+17"
-      Acrobatics: " "
+      #Acrobatics: " "
     languages: 
       - "Common"
       - "Jotun"
@@ -19785,7 +19786,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # Crafting: "r"
       Athletics: "+19"
     languages: ""
     ability_mods: 
@@ -19842,7 +19843,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # Crafting: "r"
       Athletics: "+22"
     languages: ""
     ability_mods: 
@@ -19912,7 +19913,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # Crafting: "r"
       Athletics: "+24"
     languages: ""
     ability_mods: 
@@ -19975,7 +19976,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # Crafting: "r"
       Athletics: "+26"
     languages: ""
     ability_mods: 
@@ -20044,7 +20045,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # Crafting: "r"
       Athletics: "+30"
     languages: ""
     ability_mods: 
@@ -20113,7 +20114,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # Crafting: "r"
       Athletics: "+38"
     languages: ""
     ability_mods: 
@@ -20962,7 +20963,7 @@
       - " darkvision"
       - " <a style=\"text-decoration:underline\" href=\"Spells.aspx?ID=344\"><i>true seeing</i></a>"
     skills: 
-      Crafting: "r"
+      # Crafting: "r"
       Acrobatics: "+25"
       Athletics: "+40"
     languages: ""
@@ -21326,7 +21327,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Society: "h"
+      ## Society: "h"
       Arcana: "+18"
       Deception: "+18"
       Diplomacy: "+18"
@@ -21561,8 +21562,8 @@
       - " darkvision"
       - " scent (imprecise) 60 feet"
     skills: 
-      Nature: " "
-      Religion: "r"
+      # Nature: " "
+      # Religion: "r"
       Acrobatics: "+8"
       Athletics: "+9"
       Stealth: "+8"
@@ -21624,8 +21625,8 @@
       - " darkvision"
       - " scent (imprecise) 120 feet"
     skills: 
-      Nature: " "
-      Religion: "r"
+      # Nature: " "
+      # Religion: "r"
       Acrobatics: "+18"
       Athletics: "+19"
       Stealth: "+18"
@@ -21896,7 +21897,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # # Crafting: "r"
       Acrobatics: "+5"
       Stealth: "+5"
     languages: 
@@ -22169,7 +22170,7 @@
       - " low-light vision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+17"
       Stealth: "+12"
     languages: ""
@@ -22764,7 +22765,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Deception: "+15"
       Diplomacy: "+11"
       Intimidation: "+13"
@@ -22875,7 +22876,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Arcana: "+18"
       Deception: "+20"
       Diplomacy: "+20"
@@ -24327,7 +24328,7 @@
       - " darkvision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+10"
       Athletics: "+15"
       Intimidation: "+11"
@@ -25005,7 +25006,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 60 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+32"
     languages: ""
     ability_mods: 
@@ -25393,8 +25394,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
-      Religion: "r"
+      # # Religion: "r"
       Acrobatics: "+13"
       Athletics: "+16"
       Intimidation: "+14"
@@ -25475,8 +25475,6 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
-      Religion: "r"
       Acrobatics: "+23"
       Athletics: "+24"
       Intimidation: "+22"
@@ -27123,7 +27121,7 @@
       - " darkvision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+11"
       Athletics: "+10"
     languages: 
@@ -27581,7 +27579,6 @@
     senses: 
       - " darkvision"
     skills: 
-      Religion: "r"
       Acrobatics: "+14"
       Intimidation: "+15"
       Stealth: "+14"
@@ -27665,7 +27662,7 @@
       - " tremorsense (imprecise) 10 feet"
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+13"
       Athletics: "+9"
       Deception: "+11"
@@ -29158,7 +29155,7 @@
       - " darkvision"
       - " tremorsense (imprecise) 60 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+18"
       Stealth: "+13"
     languages: 
@@ -30626,7 +30623,7 @@
       - " scent 30 feet"
       - " tremorsense (imprecise) 60 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+25"
       Survival: "+22"
     languages: ""
@@ -30700,7 +30697,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+27"
       Arcana: "+28"
       Athletics: "+32"
@@ -30819,7 +30816,7 @@
       - " darkvision"
       - " sin scent (imprecise) 30 feet"
     skills: 
-      Occultism: "e"
+      # Occultism: "e"
       Acrobatics: "+9"
       Athletics: "+8"
       Stealth: "+9"
@@ -31670,7 +31667,6 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
       Acrobatics: "+8"
       Occultism: "+4"
       Stealth: "+8"
@@ -31768,7 +31764,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Arcana: "+17"
       Athletics: "+18"
       Deception: "+16"
@@ -32889,7 +32885,7 @@
       - " darkvision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+10"
       Diplomacy: "+11"
       Stealth: "+8"
@@ -32982,7 +32978,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+29"
       Athletics: "+27"
       Intimidation: "+23"
@@ -33354,7 +33350,7 @@
       - " darkvision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+7"
       Athletics: "+8"
       Deception: "+6"
@@ -33419,7 +33415,7 @@
       - " darkvision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+13"
       Athletics: "+13"
       Deception: "+11"
@@ -33979,7 +33975,7 @@
       - " low-light vision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Society: "+4"
       Acrobatics: "+8"
       Athletics: "+6 "
@@ -34099,8 +34095,8 @@
       - " low-light vision"
       - " scent (imprecise) 30 feet"
     skills: 
-      Nature: " "
-      Society: "h"
+      # Nature: " "
+      # Society: "h"
       Acrobatics: "+7"
       Athletics: "+9"
       Survival: "+10"
@@ -34217,7 +34213,7 @@
       - " scent (imprecise) 30 feet"
     skills: 
       Nature: "+11"
-      Society: "h"
+      # Society: "h"
       Athletics: "+12"
       Medicine: "+9"
       Stealth: "+11"
@@ -34991,11 +34987,14 @@
       - " darkvision"
       - " tremorsense 60 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+31"
       Religion: "+26"
       Stealth: "+27"
-      Deception: " "
+      ## Deception: " "
+    skills_special:
+      - +35 Athletics to disarm stone or metal objects
+      - +30 Stealth in sandy terrain
     languages: 
       - "Abyssal"
       - "Terran"
@@ -35855,10 +35854,9 @@
     senses: 
       - " low-light vision"
     skills: 
-      Crafting: "r"
       Athletics: "+13"
       Intimidation: "+11"
-      Deception: " "
+      # Deception: " "
     languages: 
       - "Common"
     ability_mods: 
@@ -36086,7 +36084,7 @@
       - " darkvision"
       - " wavesense (imprecise) 30 feet"
     skills: 
-      Nature: " "
+      # Nature: " "
       Athletics: "+6"
       Stealth: "+4"
     languages: 
@@ -37374,10 +37372,10 @@
       - " motion sense 60 feet"
       - " no vision"
     skills: 
-      Occultism: "e"
+      # Occultism: "e"
       Athletics: "+17"
       Stealth: "+10"
-      Crafting: "c"
+      #Crafting: "c"
     languages: ""
     ability_mods: 
       str_mod: "+5"
@@ -38593,8 +38591,8 @@
       - " no vision"
     skills: 
       Athletics: "+24"
-      Deception: " "
-      Stealth: " "
+      # Deception: " "
+      ##Stealth: " "
     languages: ""
     ability_mods: 
       str_mod: "+7"
@@ -38757,7 +38755,7 @@
       - " infrared vision 60 feet"
       - " no vision"
     skills: 
-      Nature: " "
+      # Nature: " "
       Acrobatics: "+24"
       Athletics: "+24"
       Stealth: "+26"
@@ -39560,8 +39558,6 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
-      Religion: "r"
       Athletics: "+30"
       Deception: "+26"
     languages: 
@@ -39624,7 +39620,7 @@
     senses: 
       - " darkvision"
     skills: 
-      Crafting: "r"
+      # # Crafting: "r"
       Athletics: "+23"
     languages: ""
     ability_mods: 
@@ -39696,8 +39692,8 @@
     senses: 
       - " darkvision"
     skills: 
-      Arcana: " "
-      Crafting: "r"
+      # Arcana: " "
+      # # Crafting: "r"
       Athletics: "+33"
     languages: ""
     ability_mods: 

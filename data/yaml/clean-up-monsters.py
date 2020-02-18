@@ -5,12 +5,18 @@ def main():
     with open("monsters.yaml", 'r') as content_file:
         data = yaml.full_load(content_file)
 
-    print(data[0]['ability_mods'])
+    # print(data[0]['ability_mods'])
 
+    counter = 0
     for i in data:
+        # counter += 1
+        # print("{}\t{}".format(counter, i['name']))
         i['saves_special'] = {}
         for k, v in i['ability_mods'].items():
             i['ability_mods'][k] = int(v)
+            # print(k, i['ability_mods'][k])
+        for k, v in i['skills'].items():
+            i['skills'][k] = int(v)
             # print(k, i['ability_mods'][k])
         for k, v in i['saves'].items():
             # print(k, v)
