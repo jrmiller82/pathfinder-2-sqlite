@@ -3898,7 +3898,8 @@
     description: "Often tasked with patrolling the borders of their lands, boggard scouts learn to speak another language (typically Common) to make it easier to issue threats and insults toward trespassers."
     speed: 
       land: "20 feet"
-      swim: "25 feet; swamp stride"
+      swim: "25 feet"
+      special: "swamp stride"
     traits: 
       - "CE"
       - "Medium"
@@ -3985,7 +3986,8 @@
     description: "Boggard warriors exalt in single combat, and prefer to fight alone so that none can contest their kills. They have been known to pursue enemies who flee combat with a single-mindedness that seems almost supernatural."
     speed: 
       land: "20 feet"
-      swim: "25 feet; swamp stride"
+      swim: "25 feet"
+      special: "swamp stride"
     traits: 
       - "CE"
       - "Medium"
@@ -4077,7 +4079,8 @@
     description: "The boggard swampseer has been gifted with magic through its worship of the demon lord Gogunta, and uses its power to rule a boggard village, keeping the rest of the village in line and planning raids on nearby communities."
     speed: 
       land: "20 feet"
-      swim: "25 feet; swamp stride"
+      swim: "25 feet"
+      special: "swamp stride"
     traits: 
       - "CE"
       - "Medium"
@@ -4414,7 +4417,8 @@
     description: "Bulettes are fearsome predators that roam just beneath the surface of desolate wilderness areas. When they burrow through the ground, only the fin of their thickly armored backs protrudes above—at least until they are ready to leap out and strike their prey. Their appearance, appetite, and iconic dorsal fin have earned the nickname “landshark.”"
     speed: 
       land: "40 feet"
-      burrow: "30 feet; powerful jumper"
+      burrow: "30 feet"
+      special: "powerful jumper"
     traits: 
       - "N"
       - "Huge"
@@ -7556,7 +7560,7 @@
     speed: 
       land: "35 feet"
       climb: "20 feet"
-      fly: "35 feet (from"
+      fly: "35 feet (from fly)"
     traits: 
       - "CE"
       - "Gargantuan"
@@ -7703,7 +7707,7 @@
     description: "Mariliths are the generals of the Abyss, formed from the souls of proud evil mortals, often warlords and despots. They appear as tall and powerfully built humans from the waist up with snake tails and six arms. Because of Lamashtu’s prominence over other demonic deities, most pride demons encountered by mortals take female form, but they can be of any gender."
     speed: 
       land: "40 feet"
-      fly: "40 feet (from"
+      fly: "40 feet (from fly)"
     traits: 
       - "CE"
       - "Large"
@@ -8752,7 +8756,7 @@
     description: "Insectile ice devils are strategists and masterminds in Hell’s armies, using their superior intellect to strike against their enemies and spread Hell’s influence throughout the planes. An ice devil rarely breaks their solitary contemplation of strategy save to pursue a plan they have devised. They can be enticed otherwise only by an exchange of services to be determined at a later time, adding to the pieces they can play on the board. Occasionally, a mortal strategist of outstanding skill might amuse an ice devil enough for the gelugon to agree to a contest of strategy, typically a strategic board game like chess, to decide a dispute. In the unlikely event the devil loses such a contest, they inevitably go to great lengths to later obtain that mortal’s services for their own infernal ends."
     speed: 
       land: "35 feet"
-      fly: "35 feet (from"
+      fly: "35 feet (from fly)"
     traits: 
       - "LE"
       - "Large"
@@ -9048,7 +9052,8 @@
     level: "10"
     description: "Dezullons are dangerous carnivorous pitcher plants that dwell in forested regions with thick canopies. They hunt for meat along the forest’s understory when not sunning themselves in the boughs above. Dezullons are smart enough to notice that some creatures are attracted by shiny things, and sometimes use such objects to set up ambushes. To assume that the dezullon’s ambulations are slow simply because the creature has a root structure is a foolish mistake; many an adventurer has been crushed to death by this surprisingly agile plant. In addition, these dangerous plants are expert climbers, making their pursuit even more difficult to escape from."
     speed: 
-      land: "25 feet; climb 30 feet"
+      land: 25 feet
+      climb: 30 feet
     traits: 
       - "N"
       - "Medium"
@@ -10621,7 +10626,8 @@
     speed: 
       land: "30 feet"
       fly: "120 feet"
-      swim: "30 feet; woodland stride"
+      swim: "30 feet"
+      special: "woodland stride"
     traits: 
       - "LE"
       - "Large"
@@ -10733,9 +10739,12 @@
     level: "12"
     description: "Green dragons are the most contemplative of the chromatic dragons as well as the most approachable. The key to understanding green dragons is to understand their obsession with knowledge and self-discipline. Any careful approach that takes advantage of a green dragon’s fixations may end in a diplomatic outcome, but any misstep or slight can provoke a savage attack. Like most chromatic dragons, green dragons do not suffer fools—and the threshold for what they consider foolish is very low."
     speed: 
-      land: " woodland stride"
+      land: "40 feet"
       fly: "160 feet"
-      swim: "40 feet; trackless step"
+      swim: "40 feet"
+      special: 
+      - woodand stride
+      - trackless step
     traits: 
       - "LE"
       - "Huge"
@@ -10862,9 +10871,12 @@
     level: "17"
     description: "Green dragons are the most contemplative of the chromatic dragons as well as the most approachable. The key to understanding green dragons is to understand their obsession with knowledge and self-discipline. Any careful approach that takes advantage of a green dragon’s fixations may end in a diplomatic outcome, but any misstep or slight can provoke a savage attack. Like most chromatic dragons, green dragons do not suffer fools—and the threshold for what they consider foolish is very low."
     speed: 
-      land: " woodland stride"
+      land: "50 feet"
       fly: "200 feet"
-      swim: "50 feet; trackless step"
+      swim: "50 feet"
+      special:
+      - trackless step
+      - woodland stride
     traits: 
       - "Uncommon"
       - "LE"
@@ -11365,8 +11377,9 @@
     level: "6"
     description: "The most feral and least intelligent of all the chromatic dragons, white dragons are brutish, predatory, and chiefly motivated by self-preservation. Nearly all other dragons look down on white dragons as hopelessly hotheaded and dull, though this does not make them any less dangerous—in fact, it may mean the opposite. It’s nearly impossible to treat with white dragons, not because they lack the capacity to do so, but because they just don’t care to. They are as difficult to deal with as they are quick to anger, and they become incensed at almost anything. When a white dragon does speak, it spews threats, inane jokes, and incoherent babbling as a prelude to attacking—and when the attack comes, it’s bloody and relentless."
     speed: 
-      land: "30 feet"
-      fly: "80 feet; ice climb 30 feet"
+      land: 30 feet
+      fly: 80 feet
+      iceclimb: 30 feet
     traits: 
       - "CE"
       - "Large"
@@ -11477,8 +11490,9 @@
     level: "10"
     description: "The most feral and least intelligent of all the chromatic dragons, white dragons are brutish, predatory, and chiefly motivated by self-preservation. Nearly all other dragons look down on white dragons as hopelessly hotheaded and dull, though this does not make them any less dangerous—in fact, it may mean the opposite. It’s nearly impossible to treat with white dragons, not because they lack the capacity to do so, but because they just don’t care to. They are as difficult to deal with as they are quick to anger, and they become incensed at almost anything. When a white dragon does speak, it spews threats, inane jokes, and incoherent babbling as a prelude to attacking—and when the attack comes, it’s bloody and relentless."
     speed: 
-      land: "30 feet"
-      fly: "120 feet; ice climb 30 feet"
+      land: 30 feet
+      fly: 120 feet
+      iceclimb: 30 feet
     traits: 
       - "CE"
       - "Large"
@@ -11598,8 +11612,9 @@
     level: "15"
     description: "The most feral and least intelligent of all the chromatic dragons, white dragons are brutish, predatory, and chiefly motivated by self-preservation. Nearly all other dragons look down on white dragons as hopelessly hotheaded and dull, though this does not make them any less dangerous—in fact, it may mean the opposite. It’s nearly impossible to treat with white dragons, not because they lack the capacity to do so, but because they just don’t care to. They are as difficult to deal with as they are quick to anger, and they become incensed at almost anything. When a white dragon does speak, it spews threats, inane jokes, and incoherent babbling as a prelude to attacking—and when the attack comes, it’s bloody and relentless."
     speed: 
-      land: "40 feet"
-      fly: "160 feet; ice climb 40 feet"
+      land: 40 feet
+      fly: 160 feet
+      iceclimb: 40 feet
     traits: 
       - "Uncommon"
       - "CE"

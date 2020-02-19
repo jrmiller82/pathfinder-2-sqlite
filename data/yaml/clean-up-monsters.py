@@ -80,6 +80,42 @@ def main():
                         #print(y.strip())
                     x['traits'] = traitslist
 
+        # clean up traits underneath automatic_abilities with trailing or leading whitespace
+        for x in i['automatic_abilities']:
+            traitslist = []
+            if x['traits'] != None:
+                if len(x['traits']) == 0:
+                    x['traits'] = None
+                else:
+                    for y in x['traits']:
+                        traitslist.append(y.strip())
+                        #print(y.strip())
+                    x['traits'] = traitslist
+
+        # clean up traits underneath melee with trailing or leading whitespace
+        for x in i['melee']:
+            traitslist = []
+            if x['traits'] != None:
+                if len(x['traits']) == 0:
+                    x['traits'] = None
+                else:
+                    for y in x['traits']:
+                        traitslist.append(y.strip())
+                        #print(y.strip())
+                    x['traits'] = traitslist
+
+        # clean up traits underneath ranged with trailing or leading whitespace
+        for x in i['ranged']:
+            traitslist = []
+            if x['traits'] != None:
+                if len(x['traits']) == 0:
+                    x['traits'] = None
+                else:
+                    for y in x['traits']:
+                        traitslist.append(y.strip())
+                        #print(y.strip())
+                    x['traits'] = traitslist
+
         # clean up senses
 
         senseslist = []
@@ -117,6 +153,36 @@ def main():
         res = re.match('(\d+)', i['hp'].strip())
         i['hp'] = int(res.group(1))
 
+        # clean up melee to hit
+        if 'melee' not in i:
+            i['melee'] = None
+        elif i['melee'] == "None":
+            i['melee'] = None
+        else:
+            for x in i['melee']:
+                if 'to_hit' not in x:
+                    x['to_hit'] = None
+                else:
+                    res = re.search('(\d+)', x['to_hit'])
+                    #print("{}\t{}".format(counter, i['name']))
+                    if res:
+                        x['to_hit'] = int(res.group(1))
+
+        # clean up ranged to hit
+        if 'ranged' not in i:
+            i['ranged'] = None
+        elif i['ranged'] == "None":
+            i['ranged'] = None
+        else:
+            for x in i['ranged']:
+                if 'to_hit' not in x:
+                    x['to_hit'] = None
+                else:
+                    res = re.search('(\d+)', x['to_hit'])
+                    #print("{}\t{}".format(counter, i['name']))
+                    if res:
+                        x['to_hit'] = int(res.group(1))
+
         # clean up spell attack to hit
         if 'spell_attack_to_hit' not in i:
             i['spell_attack_to_hit'] = None
@@ -124,10 +190,9 @@ def main():
             i['spell_attack_to_hit'] = None
         else:
             res = re.search('(\d+)', i['spell_attack_to_hit'])
-            print("{}\t{}".format(counter, i['name']))
+            #print("{}\t{}".format(counter, i['name']))
             if res:
                 i['spell_attack_to_hit'] = int(res.group(1))
-
 
         ###if i['perception'] == None or i['perception'] == "":
         ###    print("{}\t{}".format(counter, i['name']))
@@ -164,6 +229,11 @@ def main():
             res = processResistances(i['resistances'])
             i['resistances'] = res
             #print(res)
+
+        # clean up speeds
+        print("{}\t{}".format(counter, i['name']))
+        print("\t\t\t\t{}".format(i['speed']))
+
 
     final = yaml.safe_dump(data, allow_unicode=True)
 
