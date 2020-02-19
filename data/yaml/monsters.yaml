@@ -2988,7 +2988,7 @@
       fort: "+25,"
     hp: "250 (negative healing);"
     immunities: "disease, paralyzed, poison, precision, unconscious"
-    resistances: "all damage 12 (except force,"
+    resistances: "all damage 12 (except force, ghost touch, or positive; double resistance vs. non-magical)"
     proactive_abilities: 
       - 
         name: "Spectral Ripple"
@@ -17935,7 +17935,7 @@
       fort: "+8,"
     hp: "30 (negative healing, rejuvenation);"
     immunities: "death effects, disease, paralyzed, poison, precision, unconscious"
-    resistances: "all damage 5 (except force,"
+    resistances: "all damage 5 (except force, ghost touch, or positive; double resistance vs. non-magical)"
     proactive_abilities: 
       - 
         name: "Frightful Moan"
@@ -18006,7 +18006,7 @@
       fort: "+16,"
     hp: "135 (negative healing, rejuvenation);"
     immunities: "death effects, disease, paralyzed, poison, precision, unconscious"
-    resistances: "all damage 10 (except force,"
+    resistances: "all damage 10 (except force, ghost touch, or positive; double resistance vs. non-magical)"
     proactive_abilities: 
       - 
         name: "Frightful Moan"
@@ -20131,7 +20131,7 @@
       fort: "+33,"
     hp: "255 (repair mode);"
     immunities: "bleed, death effects, disease, doomed, drained, fatigued, fire, healing, magic (see below), mental, necromancy, nonlethal attacks, paralyzed, poison, sickened, unconscious"
-    resistances: "physical 20 (except"
+    resistances: "physical 20 (except vorpal adamantine)"
     proactive_abilities: 
       - 
         name: "Destructive Strike"
@@ -27598,7 +27598,7 @@
       fort: "+9,"
     hp: "55 (rejuvenation);"
     immunities: "death effects, disease, paralyzed, poison, precision, unconscious"
-    resistances: "all damage 5 (except force,"
+    resistances: "all damage 5 (except force, ghost touch, or positive; double resistance against non-magical)"
     proactive_abilities: 
       - 
         name: "Frighten"
@@ -30125,7 +30125,7 @@
       fort: "+8,"
     hp: "40;"
     immunities: "death effects, disease, paralyzed, poison, precision, unconscious"
-    resistances: "all 5 (except force,"
+    resistances: "all 5 (except force, ghost touch, or positive; double resistance against non-magical)"
     proactive_abilities: 
       - 
         name: "Shadow Spawn"
@@ -30189,7 +30189,7 @@
       fort: "+11,"
     hp: "75;"
     immunities: "death effects, disease, paralyzed, poison, precision, unconscious"
-    resistances: "all 10 (except force,"
+    resistances: "all 10 (except force, ghost touch, or positive; double resistance against non-magical)"
     proactive_abilities: 
       - 
         name: "Shadow Spawn"
@@ -34611,7 +34611,7 @@
       fort: "+8,"
     hp: "80 (negative healing);"
     immunities: "death effects, disease, paralyzed, poison, precision, unconscious"
-    resistances: "all 5 (except force,"
+    resistances: "all 5 (except force, ghost touch, or positive; double resistance against non-magical)"
     proactive_abilities: 
       - 
         name: "Drain Life"
@@ -38017,7 +38017,7 @@
       fort: "+14,"
     hp: "135;"
     immunities: "death effects, disease, paralyzed, poison, precision, unconscious"
-    resistances: "all damage 8 (except force,"
+    resistances: "all 8 (except force, ghost touch, or positive; double resistance against non-magical), haunted form"
     proactive_abilities: 
       - 
         name: "Create Haunt"
