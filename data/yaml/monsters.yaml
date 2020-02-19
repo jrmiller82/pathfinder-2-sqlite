@@ -24066,7 +24066,7 @@
       - "Medium"
       - "Humanoid"
       - "Lizardfolk"
-    perception: ""
+    perception: 7
     senses: null
     skills: 
       Acrobatics: "+5"
@@ -24154,7 +24154,7 @@
       - "Medium"
       - "Humanoid"
       - "Lizardfolk"
-    perception: ""
+    perception: 8 
     senses: null
     skills: 
       Acrobatics: "+6"
@@ -24249,7 +24249,7 @@
       - "Medium"
       - "Humanoid"
       - "Lizardfolk"
-    perception: ""
+    perception: 8
     senses: null
     skills: 
       Diplomacy: "+4"
@@ -35524,7 +35524,7 @@
       - "Medium"
       - "Anadi"
       - "Humanoid"
-    perception: ""
+    perception: 7
     senses: null
     skills: 
       Acrobatics: "+8"
@@ -35622,7 +35622,7 @@
       - "Medium"
       - "Anadi"
       - "Humanoid"
-    perception: ""
+    perception: 12
     senses: null
     skills: 
       Athletics: "+6 "
@@ -35725,7 +35725,7 @@
       - "Medium"
       - "Anadi"
       - "Humanoid"
-    perception: ""
+    perception: 15
     senses: null
     skills: 
       Athletics: "+12"
@@ -35931,7 +35931,7 @@
       - "N"
       - "Medium"
       - "Animal"
-    perception: ""
+    perception: 8
     senses: null
     skills: 
       Acrobatics: "+9"

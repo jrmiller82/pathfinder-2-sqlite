@@ -9,7 +9,7 @@ def main():
     counter = 0
     for i in data:
         counter += 1
-        print("{}\t{}".format(counter, i['name']))
+        #print("{}\t{}".format(counter, i['name']))
 
         # Set some data points before iteration
         i['saves_special'] = {}
@@ -60,15 +60,15 @@ def main():
 
         # clean up traits with trailing or leading whitespace
         traitslist = []
-        print(i['traits'])
+        #print(i['traits'])
         for x in i['traits']:
             traitslist.append(x.strip())
-            print(x.strip())
-        print(traitslist)
+            #print(x.strip())
+        #print(traitslist)
         i['traits'] = traitslist
 
         # clean up traits underneath proactive actions with trailing or leading whitespace
-        print(i['proactive_abilities'])
+        #print(i['proactive_abilities'])
         for x in i['proactive_abilities']:
             traitslist = []
             if x['traits'] != None:
@@ -77,7 +77,7 @@ def main():
                 else:
                     for y in x['traits']:
                         traitslist.append(y.strip())
-                        print(y.strip())
+                        #print(y.strip())
                     x['traits'] = traitslist
 
         # clean up senses
@@ -106,6 +106,46 @@ def main():
             for x in i['innate_spells']:
                 x['level'] = int(x['level'])
 
+        # clean up level
+        i['level'] = int(i['level'])
+
+        # clean up AC and HP and Perception
+        ###print("AC:\t{}".format(i['ac']))
+        ###print("HP:\t{}".format(i['hp']))
+        res = re.match('(\d+)', i['ac'].strip())
+        i['ac'] = int(res.group(1))
+        res = re.match('(\d+)', i['hp'].strip())
+        i['hp'] = int(res.group(1))
+
+        # clean up spell attack to hit
+        if 'spell_attack_to_hit' not in i:
+            i['spell_attack_to_hit'] = None
+        elif i['spell_attack_to_hit'] == "None":
+            i['spell_attack_to_hit'] = None
+        else:
+            res = re.search('(\d+)', i['spell_attack_to_hit'])
+            print("{}\t{}".format(counter, i['name']))
+            if res:
+                i['spell_attack_to_hit'] = int(res.group(1))
+
+
+        ###if i['perception'] == None or i['perception'] == "":
+        ###    print("{}\t{}".format(counter, i['name']))
+        ###    print("\t\t\t\t{}".format(i['perception']))
+        if type(i['perception']) is str:
+            #print("{}\t{}".format(counter, i['name']))
+            res = re.match('(\d+)', i['perception'])
+            #print(res.group(1))
+            i['perception'] = int(res.group(1))
+
+        # clean up nulls for empty lists
+
+        if i['automatic_abilities'] == []:
+            i['automatic_abilities'] = None
+        if i['ranged'] == []:
+            i['ranged'] = None
+        if i['melee'] == []:
+            i['melee'] = None
 
         # clean up resistances
 
