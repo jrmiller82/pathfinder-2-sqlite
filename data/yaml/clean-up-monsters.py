@@ -82,6 +82,8 @@ def main():
 
         # clean up traits underneath automatic_abilities with trailing or leading whitespace
         for x in i['automatic_abilities']:
+            # this one line fixes leading and trailing whitespace
+            x['description'] = x['description'].strip()
             traitslist = []
             if x['traits'] != None:
                 if len(x['traits']) == 0:
