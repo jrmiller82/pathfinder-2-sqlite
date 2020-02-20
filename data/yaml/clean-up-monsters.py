@@ -226,13 +226,16 @@ def main():
         if i['resistances'] != None:
             #print("{}\t{}".format(counter, i['name']))
             #print("\t{}".format(i['resistances']))
+            print("{}\t{}".format(counter, i['name']))
             res = processResistances(i['resistances'])
             i['resistances'] = res
             #print(res)
 
+        if type(i['resistances']) == str:
+            print("{}\t{}".format(counter, i['name']))
+            print("\t\t\t\t{}".format(i['resistances']))
+
         # clean up speeds
-        print("{}\t{}".format(counter, i['name']))
-        print("\t\t\t\t{}".format(i['speed']))
         newspeed = []
         if 'land' in i['speed']:
             # get number
@@ -342,7 +345,20 @@ def processResistances(r):
     if '(' in r:
         # TODO This is what needs to be done
         #print("\t\tTODO: Need to process with parentheses")
-        return r
+
+        # this tree does the simple ones without multiple items
+        if ',' not in r:
+            print(r)
+            rr = re.split('(\d+)', r)
+            #for i, s in enumerate(rr):
+            #    rr[i] = s.strip()
+            print(rr)
+            return [{"type": rr[0].strip() + ' ' + rr[2].strip(), "amount": int(rr[1])},]
+        elif ',' in r:
+            # TODO This is the next needed step
+            return None
+        else:
+            return None
     else:
         #print("\t\tNo parentheses")
         # split on commas
