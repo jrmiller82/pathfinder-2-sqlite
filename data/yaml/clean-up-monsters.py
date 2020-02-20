@@ -3,7 +3,9 @@ import re
 
 def main():
 
-    with open("monsters.yaml", 'r') as content_file:
+    cleanuphtmlstuff()
+
+    with open("tmp-monsters-html-cleanup.yaml", 'r') as content_file:
         data = yaml.full_load(content_file)
 
     counter = 0
@@ -342,6 +344,82 @@ def main():
 
     with open("tmp-monsters.yaml", 'w') as f:
         f.write(final)
+
+def cleanuphtmlstuff():
+    with open("monsters.yaml", 'r') as f:
+        lines = f.readlines()
+    for num, _ in enumerate(lines):
+        lines[num] = cleanupalinks(lines[num])
+        lines[num] = cleanupilinks(lines[num])
+        lines[num] = cleanupblinks(lines[num])
+        lines[num] = cleanupbrlinks(lines[num])
+        lines[num] = cleanupulinks(lines[num])
+        lines[num] = cleanupspellslinks(lines[num])
+        lines[num] = cleanupimglinks(lines[num])
+        lines[num] = cleanuptlinks(lines[num])
+    
+    with open("tmp-monsters-html-cleanup.yaml", 'w') as f:
+        f.writelines(lines)
+
+def cleanupalinks(x):
+    tmp = re.sub('<a.+?>', '', x)
+    tmp2 = re.sub('</a>', '', tmp)
+    return tmp2
+
+def cleanuptlinks(x):
+    tmp = re.sub('<t>', '', x)
+    return tmp
+
+def cleanupimglinks(x):
+    res = re.search('(<img.+?>)', x)
+    if res != None:
+        print(res)
+    if res:
+        if 'Single Action' in res.group(0):
+            print("SingleAction")
+            tmp = re.sub('<img.+?>', '|1|', x)
+            tmp = re.sub('\|1\|\|1\|', '|1|', tmp)
+        elif 'Two Actions' in res.group(0):
+            print("TwoActions")
+            tmp = re.sub('<img.+?>', '|2|', x)
+            tmp = re.sub('\|2\|\|2\|', '|2|', tmp)
+        elif 'Three Actions' in res.group(0):
+            print("ThreeActions")
+            tmp = re.sub('<img.+?>', '|3|', x)
+            tmp = re.sub('\|3\|\|3\|', '|3|', tmp)
+        elif 'Free Action' in res.group(0):
+            print("FreeAction")
+            tmp = re.sub('<img.+?>', '|F|', x)
+            tmp = re.sub('\|F\|\|F\|', '|F|', tmp)
+
+        print(tmp)
+        return tmp
+    else:
+        return x
+
+def cleanupspellslinks(x):
+    tmp = re.sub('<spells.+?>', '', x)
+    tmp2 = re.sub('</spells.+?>', '', tmp)
+    return tmp2
+    
+def cleanupilinks(x):
+    tmp = re.sub('<i>', '*', x)
+    tmp2 = re.sub('</i>', '*', tmp)
+    return tmp2
+
+def cleanupulinks(x):
+    tmp = re.sub('<u>', '', x)
+    tmp2 = re.sub('</u>', '', tmp)
+    return tmp2
+
+def cleanupblinks(x):
+    tmp = re.sub('<b>', '**', x)
+    tmp2 = re.sub('</b>', '**', tmp)
+    return tmp2
+
+def cleanupbrlinks(x):
+    return  re.sub('<br>', '\n', x)
+
 
 def processResistances(r):
     if '(' in r:
