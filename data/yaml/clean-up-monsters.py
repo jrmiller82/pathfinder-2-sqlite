@@ -228,14 +228,14 @@ def main():
         if i['resistances'] != None:
             #print("{}\t{}".format(counter, i['name']))
             #print("\t{}".format(i['resistances']))
-            print("{}\t{}".format(counter, i['name']))
+            # print("{}\t{}".format(counter, i['name']))
             res = processResistances(i['resistances'])
             i['resistances'] = res
             #print(res)
 
-        if type(i['resistances']) == str:
-            print("{}\t{}".format(counter, i['name']))
-            print("\t\t\t\t{}".format(i['resistances']))
+        #if type(i['resistances']) == str:
+        #    print("{}\t{}".format(counter, i['name']))
+        #    print("\t\t\t\t{}".format(i['resistances']))
 
         # clean up speeds
         newspeed = []
@@ -350,16 +350,38 @@ def processResistances(r):
 
         # this tree does the simple ones without multiple items
         if ',' not in r:
-            print(r)
             rr = re.split('(\d+)', r)
-            #for i, s in enumerate(rr):
-            #    rr[i] = s.strip()
-            print(rr)
             return [{"type": rr[0].strip() + ' ' + rr[2].strip(), "amount": int(rr[1])},]
         elif ',' in r:
-            # TODO This is the next needed step
-            return None
+            # FIGURE OUT BRANCH FOR THE COMMA IS NOT INSIDE THE PARENTHETICAL
+            test = re.search('(\(.+\))', r)
+            tstr = test.group(0)
+            if ',' in tstr:
+                # TODO here's the case for comma IS inside the parenthetical
+                print("\n")
+                print(r)
+                if 'haunted form' not in r:
+                    # DO the majority of them
+                    rr = re.split('(\d+)', r)
+                    print(rr)
+                    return [{"type": rr[0].strip() + ' ' + rr[2].strip(), "amount": int(rr[1])},]
+                elif 'haunted form' in r:
+                    # DO the single haunted form one
+                    ##### NOTE I'm hard coding this in as it will be faster than writing regex
+                    result = [{"type": "all (except force, ghost touch, or positive; double resistance against non-magical)", "amount": 8},
+                               {"type": "haunted form", "amount": 12}]
+                    print(result)
+                    return result
+            else:
+                # TODO Here's the case for comma is NOT inside the parenthetical
+                splits = re.split(',', r)
+                mysplitlist = []
+                for x in splits:
+                    rr = re.split('(\d+)', x)
+                    mysplitlist.append({"type": rr[0].strip() + ' ' + rr[2].strip(), "amount": int(rr[1])})
+                return mysplitlist
         else:
+            print("else has been run")
             return None
     else:
         #print("\t\tNo parentheses")
