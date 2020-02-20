@@ -74,11 +74,37 @@ lang_rarity:
   - Uncommon
   - Secret
 movement:
+  - Air Walk (constant)
   - Land
   - Burrow
+  - Burrow (sand only)
+  - Burrow (snow only)
+  - Can't Move
   - Climb
+  - Climb Stone
+  - Ice Climb
+  - Ice Stride
+  - Trickster's Step
+  - Earth Glide
+  - Sand Glide
+  - Glide
+  - Compression
+  - Suction
+  - Freedom of Movement (constant)
+  - Spider Climb (constant)
+  - Unstoppable Burrow
   - Fly
+  - Fly (from fly)
+  - Magma Swim
   - Swim
+  - Swamp Stride
+  - Swiftness
+  - Woodland Stride
+  - Trackless Step
+  - Cloud Walk
+  - Powerful Jumper
+  - Swiftness
+  - Walk in Shadow
 size:
   - name: Tiny
     space_in_ft: 4
