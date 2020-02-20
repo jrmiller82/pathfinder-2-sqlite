@@ -942,7 +942,7 @@
     level: "1"
     description: "The weakest of angels, cassisians usually serve as lackey messengers for more powerful angels or as spiritual guides for mortals. Despite their limited intellect, cassisians have a knack for precise recollection, particularly with scripture. Most cassisians are formed from the souls of trustworthy mortals, but some arise from fragments of greater angels destroyed in service to the celestial realms."
     speed: 
-      fly: "Fly 40 feet"
+      fly: 40 feet
     traits: 
       - "NG"
       - "Tiny"
@@ -12423,7 +12423,8 @@
     description: "Capricious and always eager to share a good laugh, copper dragons are among the wiliest of the metallic dragons, but this by no means interferes with their mission to spread freedom in oppressive lands. Copper dragons are hedonists who are quick to indulge in simple pleasures, but they’re also sympathetic to other creatures, slow to pass judgment, and careful to always examine a situation from as many perspectives as possible. This philosophy has its drawbacks, however, as copper dragons are susceptible to negative influences and prone to forgiving the less serious evil acts performed by their chromatic cousins and other cruel creatures. Copper dragons also have a difficult time keeping their temper in check once they are roused to anger."
     speed: 
       land: "30 feet"
-      fly: "120 feet; climb stone 30 feet"
+      fly: "120 feet"
+      climbstone: 30 feet
     traits: 
       - "CG"
       - "Large"
@@ -12522,7 +12523,8 @@
     description: "Capricious and always eager to share a good laugh, copper dragons are among the wiliest of the metallic dragons, but this by no means interferes with their mission to spread freedom in oppressive lands. Copper dragons are hedonists who are quick to indulge in simple pleasures, but they’re also sympathetic to other creatures, slow to pass judgment, and careful to always examine a situation from as many perspectives as possible. This philosophy has its drawbacks, however, as copper dragons are susceptible to negative influences and prone to forgiving the less serious evil acts performed by their chromatic cousins and other cruel creatures. Copper dragons also have a difficult time keeping their temper in check once they are roused to anger."
     speed: 
       land: "40 feet"
-      fly: "140 feet; climb stone 40 feet"
+      fly: "140 feet"
+      climbstone: "40 feet"
     traits: 
       - "CG"
       - "Large"
@@ -12633,7 +12635,8 @@
     description: "Capricious and always eager to share a good laugh, copper dragons are among the wiliest of the metallic dragons, but this by no means interferes with their mission to spread freedom in oppressive lands. Copper dragons are hedonists who are quick to indulge in simple pleasures, but they’re also sympathetic to other creatures, slow to pass judgment, and careful to always examine a situation from as many perspectives as possible. This philosophy has its drawbacks, however, as copper dragons are susceptible to negative influences and prone to forgiving the less serious evil acts performed by their chromatic cousins and other cruel creatures. Copper dragons also have a difficult time keeping their temper in check once they are roused to anger."
     speed: 
       land: "50 feet"
-      fly: "200 feet; climb stone 50 feet"
+      fly: "200 feet"
+      climbstone: "50 feet"
     traits: 
       - "Uncommon"
       - "CG"
@@ -13114,7 +13117,9 @@
     description: "Silver dragons are among the most chivalrous of all dragonkind; they wield frost and cold as weapons, can walk on clouds, and dwell high upon snowy mountain peaks or deep in steep, misty valleys. Although they typically make their lairs among the highlands, the pursuit of justice leads silver dragons to travel far and wide—often into the very heart of realms overrun by evil. These exemplars of righteousness are ceaseless in their determination to help the weak, spread honor, and stamp out evil."
     speed: 
       land: "40 feet"
-      fly: "100 feet; cloud walk"
+      fly: "100 feet"
+      special:
+      - cloud walk
     traits: 
       - "LG"
       - "Large"
@@ -13217,8 +13222,10 @@
     level: "14"
     description: "Silver dragons are among the most chivalrous of all dragonkind; they wield frost and cold as weapons, can walk on clouds, and dwell high upon snowy mountain peaks or deep in steep, misty valleys. Although they typically make their lairs among the highlands, the pursuit of justice leads silver dragons to travel far and wide—often into the very heart of realms overrun by evil. These exemplars of righteousness are ceaseless in their determination to help the weak, spread honor, and stamp out evil."
     speed: 
-      land: "40 feet"
-      fly: "100 feet; cloud walk"
+      land: "50 feet"
+      fly: "140 feet" 
+      special:
+      - cloud walk
     traits: 
       - "LG"
       - "Huge"
@@ -13327,7 +13334,9 @@
     description: "Silver dragons are among the most chivalrous of all dragonkind; they wield frost and cold as weapons, can walk on clouds, and dwell high upon snowy mountain peaks or deep in steep, misty valleys. Although they typically make their lairs among the highlands, the pursuit of justice leads silver dragons to travel far and wide—often into the very heart of realms overrun by evil. These exemplars of righteousness are ceaseless in their determination to help the weak, spread honor, and stamp out evil."
     speed: 
       land: "60 feet"
-      fly: "180 feet; cloud walk"
+      fly: "180 feet" 
+      special:
+      - cloud walk
     traits: 
       - "Uncommon"
       - "LG"
@@ -13932,8 +13941,10 @@
     level: "7"
     description: "Frost drakes pose an immense danger in the frozen reaches they call home, where they roam far and wide to hunt for prey such as caribou, wolves, small bears, and tundra-dwelling people. Related as they are to white dragons, these drakes share many habits and facets of their disposition with their draconic cousins. Indeed, just as white dragons are among the most bestial and craven of dragonkind, frost drakes are among the most depraved and openly malicious of the drakes. They are also especially insolent, and are less likely to back down from a flight compared to other drakes. Many frost drakes have met their ends trying to enact cruelties beyond their means, such as singly taking on an entire castle or well-fortified township. Although a frost drake can wreak much destruction on its own, tales of village-dwelling northerners banding together to defend their homes from these rogue menaces are fairly common."
     speed: 
-      land: " ice climb 20 feet"
-      burrow: "20 feet (snow only)"
+      land: 20 feet
+      special: 
+      - ice climb
+      burrowsnowonly: "20 feet"
       fly: "50 feet"
     traits: 
       - "CE"
@@ -14022,7 +14033,8 @@
     level: "8"
     description: "Distant cousins of blue dragons that lack their relatives’ magical talents and intelligence, these desert-dwelling drakes are nonetheless dangerous ambush predators, preying upon isolated desert travelers and outposts for food and supplies. They retain their true-blooded forebears’ resistance to electricity and affinity for sandy environs. Desert drakes’ scales range in coloration from rust-brown to light tan and ocher shades, mimicking the colors of the dunes they call home."
     speed: 
-      land: "20 feet; burrow 20 feet (sand only)"
+      land: "20 feet"
+      burrowsandonly: 20 feet
       fly: "50 feet"
     traits: 
       - "NE"
@@ -15083,7 +15095,9 @@
     level: "5"
     description: "A living whirlwind resembles a roughly humanoid-shaped dust devil."
     speed: 
-      fly: "50 feet; swiftness"
+      fly: "50 feet"
+      special:
+      - swiftness
     traits: 
       - "N"
       - "Medium"
@@ -15199,7 +15213,9 @@
     level: "9"
     description: "Storm lords wage battles to claim important territory within the Plane of Air."
     speed: 
-      fly: "75 feet; swiftness"
+      fly: "75 feet"
+      special: 
+      - swiftness
     traits: 
       - "N"
       - "Large"
@@ -15263,7 +15279,9 @@
     level: "11"
     description: "Elemental hurricanes embody the ferocity of violent windstorms."
     speed: 
-      fly: "100 feet; swiftness"
+      fly: "100 feet"
+      special: 
+      - swiftness
     traits: 
       - "N"
       - "Huge"
@@ -15334,7 +15352,9 @@
     description: "Sod hounds are mossy extraplanar canines formed of packed dirt and pebbles."
     speed: 
       land: "30 feet"
-      burrow: "20 feet; earth glide"
+      burrow: "20 feet"
+      special: 
+      - earth glide
     traits: 
       - "N"
       - "Small"
@@ -15393,7 +15413,9 @@
     description: "Living landslides resemble humanoids made of earth and gravel."
     speed: 
       land: "25 feet"
-      burrow: "25 feet; earth glide"
+      burrow: "25 feet"
+      special: 
+      - earth glide
     traits: 
       - "N"
       - "Medium"
@@ -15453,7 +15475,9 @@
     description: "These squat, rotund elementals have three legs, three arms, three eyes, and one massive maw, which they fill with the gems and metals they find so delicious."
     speed: 
       land: "20 feet"
-      burrow: "20 feet; earth glide"
+      burrow: "20 feet"
+      special:
+      - earth glide
     traits: 
       - "N"
       - "Medium"
@@ -15525,7 +15549,9 @@
     description: "These towering heaps of earth can inflict tremendous damage up close and from afar."
     speed: 
       land: "35 feet"
-      burrow: "35 feet; earth glide"
+      burrow: "35 feet"
+      special: 
+      - earth glide
     traits: 
       - "N"
       - "Large"
@@ -15595,7 +15621,9 @@
     description: "Stubborn and ponderous, elemental avalanches are massive beings of living rock and dirt."
     speed: 
       land: "25 feet"
-      burrow: "25 feet; earth glide"
+      burrow: "25 feet"
+      special: 
+      - earth glide
     traits: 
       - "N"
       - "Huge"
@@ -17545,7 +17573,9 @@
     speed: 
       land: "20 feet"
       burrow: "45 feet"
-      climb: "20 feet; earth glide"
+      climb: "20 feet"
+      special: 
+      - earth glide
     traits: 
       - "Uncommon"
       - "LN"
@@ -18440,7 +18470,9 @@
     level: "9"
     description: "Frost giants are remorseless marauders who pillage and plunder from those who dare to live near them in desolate, frigid lands. Their clans range from extremely territorial hunters who claim an expanse of tundra and defend it at all costs to nomadic hordes that roam icy slopes in search of settlements to conquer. Frost giant clans are ruled by those who exhibit the greatest ferocity and prowess in battle—massive brutes who proclaim themselves jarl and demand absolute obedience from their followers. If at any time a frost giant wishes to be a jarl, all they must do is issue a challenge to the current jarl and face off in mortal combat, after which the reigning champion continues leading the clan or the victorious challenger assumes control."
     speed: 
-      land: "30 feet; ice stride"
+      land: "30 feet"
+      special: 
+      - ice stride
     traits: 
       - "CE"
       - "Large"
@@ -19065,7 +19097,9 @@
     level: "12"
     description: "Gimmerlings are small, shapeshifting fey who stage ambushes to sate their endless hunger and childish greed. These cruelly curious fey obsess over finding and making unusual traps and sadistic weapons, and their favorite amusement is se eing these traps sprung or the weapons wielded. When on the Material Plane, they are frequently found in urban areas, particularly slums or other parts of town where they can either go unnoticed or be easily forgotten—and have plenty of victims to choose from."
     speed: 
-      land: "30 feet; trickster’s step"
+      land: "30 feet"
+      special: 
+      - trickster's step
     traits: 
       - "Uncommon"
       - "LE"
@@ -19716,7 +19750,8 @@
     level: "12"
     description: "A gogiteth is a slavering nightmare of teeth, eyes, and hairy spiderlike legs, and its appearance is invariably seared into the minds of any who witness it. Hives of these skittering monsters haunt the lowest reaches of the Darklands, competing with cave worms and other subterranean horrors for food and resources. A gogiteth is rarely seen alone, as these oversized vermin learned long ago that the best means of survival is sticking close to others of their own kind. Even the haughty drow know to seek cover when a gogiteth is spotted, for where there is one, a swarm is sure to follow."
     speed: 
-      land: "40 feet; climb 30 feet"
+      land: 40 feet
+      climb: 30 feet
     traits: 
       - "CE"
       - "Huge"
@@ -20288,7 +20323,8 @@
     level: "-1"
     description: "Mitflits, also known as mites, are self-loathing and pitiful cowards, easily bullied into servitude by other creatures or even slightly more powerful mitflit leaders. They tame insects, spiders, and other such creatures to serve as faithful allies. Mitflits have lost most of their ancestral gremlin magic, leaving these incomplete beings full of doubt and insecurity. Mitflits find companionship in the other base creatures of the world, and forge bonds of friendship with vermin, the only other beings that seem willing to accept them. A social structure, even one in which they are bullied, partially fills the hole within mitflits’ personalities, and they rarely rebel or rail out unless their rage hits a breaking point."
     speed: 
-      land: "20 feet; climb 20 feet"
+      land: "20 feet"
+      climb: 20 feet
     traits: 
       - "LE"
       - "Small"
@@ -20519,7 +20555,8 @@
     level: "4"
     description: "Griffons are regal beasts revered as symbols of freedom and strength in many cultures. They are physically striking, with the hindquarters of a lion and the head, wings, and forelimbs of a great bird of prey—typically an eagle, but some instead bear the features of a hawk, falcon, or even osprey or vulture. In rare cases, the griffon’s hindquarters may resemble those of a different great cat, such as a leopard or tiger. The variations seem to conform to the environment in which the griffon lives—for instance, the especially rare griffons of northern Avistan have the hindquarters of a Grungir lynx and the upper body of a snowy owl—though this is not always the case. Some griffons lack wings altogether. These wingless griffons, known as alces, result from a rare mutation. Among a clutch of other griffons, the alce is typically considered the runt, so few of these offshoots survive their fledgling stage. Those alces that do make it to adulthood tend to be tougher, more violent, and more aloof than most griffons."
     speed: 
-      land: "25 feet; fly 60 feet"
+      land: "25 feet" 
+      fly: 60 feet
     traits: 
       - "N"
       - "Large"
@@ -20596,7 +20633,8 @@
     level: "14"
     description: "Grikkitogs, also known as “hungry earth,” are strange parasites from the Plane of Earth that infest and possess earth, rock, and stone in order to feed their endless hunger. A young grikkitog is a formless apparition until it corrupts an earth elemental host, forming the grikkitog’s core. A grikkitog can then infest the earth and stone nearby with its voracious essence, forming maws and eyes all around it. These creatures are particularly dangerous to small creatures that lair within gaps and holes among rocks, as well as mountain climbers searching for the perfect handhold."
     speed: 
-      land: "20 feet; burrow 20 feet"
+      land: "20 feet"
+      burrow: 20 feet
     traits: 
       - "NE"
       - "Huge"
@@ -22985,7 +23023,9 @@
     level: "0"
     description: "Leaf leshys are diminutive protectors of forests clad in pine cone armor and hats of fruit, flowers, or leaves. They enjoy mock battles but act cautiously in real ones."
     speed: 
-      land: "25 feet; glide"
+      land: 25 feet
+      special: 
+      - glide
     traits: 
       - "N"
       - "Small"
@@ -26126,7 +26166,9 @@
     description: "Giant octopuses are found in the heart of deep, dark oceans."
     speed: 
       land: "15 feet"
-      swim: "40 feet; compression"
+      swim: "40 feet"
+      special: 
+      - compression
     traits: 
       - "N"
       - "Huge"
@@ -26677,7 +26719,9 @@
     description: "Most often found below ground, these oozes scour caves for objects to dissolve with their corrosive secretions. This caustic acid is particularly dangerous to creatures that attack a pudding, as it can quickly damage and destroy gear."
     speed: 
       land: "20 feet"
-      climb: "20 feet; suction"
+      climb: "20 feet"
+      special: 
+      - suction
     traits: 
       - "N"
       - "Huge"
@@ -26742,7 +26786,7 @@
     level: "0"
     description: "If orc armies are rarely well organized, this shortcoming can likely be traced to the furious and undisciplined rank-and-file brutes who make up the bulk of an orc warband."
     speed: 
-      land: "Speed 25 feet"
+      land: "25 feet"
     traits: 
       - "CE"
       - "Medium"
@@ -27863,7 +27907,9 @@
     speed: 
       land: "25 feet"
       fly: "30 feet"
-      swim: "25 feet;"
+      swim: "25 feet"
+      special: 
+      - freedom of movement (constant)
     traits: 
       - "CN"
       - "Large"
@@ -28009,7 +28055,9 @@
     speed: 
       land: "40 feet"
       fly: "50 feet"
-      swim: "40 feet;"
+      swim: "40 feet"
+      special: 
+      - freedom of movement (constant)
     traits: 
       - "CN"
       - "Large"
@@ -28293,7 +28341,9 @@
     description: "Bounty hunters and investigators, morrignas seek out creatures that thwart death or interfere with the natural flow of souls. Morrignas dress in flowing spider silk and wear masks reminiscent of webs, as they consider patient and watchful spiders to be their spiritual kin."
     speed: 
       land: "30 feet"
-      climb: "30 feet ("
+      climb: "30 feet"
+      special:
+      - spider climb (constant)
     traits: 
       - "N"
       - "Medium"
@@ -30627,7 +30677,9 @@
     description: "Scourges of the upper Darklands, these enormous, mole-like monstrosities slice and burrow through solid stone with massive forearms and adamantine-strong claws. Shulns grow to about 20 feet long and have four tiny, nearly imperceptible eyes; a long, pale snout; four thick-muscled legs that end in long, serrated claws; and a stubby pink tail. As a young shuln matures, its unique metabolism produces adamantine that becomes infused throughout its skeletal system. In addition to making their claws and fangs nearly unbreakable, this unique physiological trait makes shulns unparalleled burrowers and highly sought by monster hunters who hope to harvest the precious material from their corpses."
     speed: 
       land: "40 feet"
-      burrow: "20 feet; unstoppable burrow"
+      burrow: "20 feet"
+      special:
+      - unstoppable burrow
     traits: 
       - "Rare"
       - "N"
@@ -30671,7 +30723,7 @@
       - 
         name: "Unstoppable Burrow"
         traits: []
-        description: "like it is soil or loose rubble, leaving a tunnel 10 feet in diameter."
+        description: "Shulns can burrow into solid rock and any metal with a hardness less that that of adamantine like it is soil or loose rubble, leaving a tunnel 10 feet in diameter."
     automatic_abilities: []
     melee: 
       - 
@@ -32504,7 +32556,8 @@
     level: "19"
     description: "The legendary terotricus is a massive slime-mold that hails from the Abyss. Its collective consciousness encapsulates entire regions, spreading as far as its ever-growing cloud of spores will take it. Once it has seeped onto the Material Plane from the Abyssal realm, a terotricus’s agenda is to feed on all living creatures, infecting them with its spores, and its presence can spell doom for any in its way."
     speed: 
-      land: "35 feet; burrow 25 feet"
+      land: "35 feet"
+      burrow: 25 feet
       climb: "25 feet"
       swim: "35 feet"
     traits: 
@@ -32596,7 +32649,9 @@
     speed: 
       land: "60 feet"
       fly: "60 feet"
-      swim: "40 feet;"
+      swim: "40 feet"
+      special: 
+      - freedom of movement (constant)
     traits: 
       - "Unique"
       - "CE"
@@ -32983,7 +33038,9 @@
     level: "14"
     description: "An uthul most often appears to be a dark, swirling cloud filled with flying debris and streaked with sudden flashes of lightning. Although they are clearly elemental in nature, uthuls are nearly always found on the Material Plane, where they hide among natural cloud formations, especially thunderstorms."
     speed: 
-      fly: "100 feet; swiftness"
+      fly: "100 feet"
+      special: 
+      - swiftness
     traits: 
       - "CE"
       - "Huge"
@@ -34991,7 +35048,9 @@
     description: "Zaramuuns are beings of elemental sand that hide in deserts and wastelands. They disguise themselves as massive dunes before rising up to attack living creatures. The most infamous zaramuuns kill any living creatures they find, but others simply rob their victims of all metal and stone possessions before fleeing. Although zaramuuns insist they are only reclaiming what was taken from their ancestral earth, this is simple self-delusion; most zaramuuns use their stolen goods as payment and material components to conjure fiends, for Zaramuuns were exiled from the Plane of Earth after worshipping fiends who promised to give them power over other elementals. This worship gradually transformed into servitude, and now many zaramuuns believe that if they send enough souls to their masters, they will be set free."
     speed: 
       land: "35 feet"
-      burrow: "35 feet; sand glide"
+      burrow: "35 feet"
+      special:
+      - sand glide
     traits: 
       - "CE"
       - "Large"
@@ -38455,7 +38514,7 @@
     description: "Velstrac storytellers and historians are known as precentors. Trailed by horrific choirs, precentors perform in the courts of the velstrac demagogues."
     speed: 
       land: "30 feet"
-      fly: "30 feet (from"
+      fly: "30 feet (from fly)"
     traits: 
       - "Uncommon"
       - "LE"
@@ -38760,7 +38819,9 @@
     speed: 
       land: "30 feet"
       climb: "30 feet"
-      fly: "50 feet; walk in shadow"
+      fly: "50 feet"
+      special: 
+      - walk in shadow
     traits: 
       - "NE"
       - "Large"
@@ -38945,7 +39006,9 @@
     speed: 
       land: "30 feet"
       fly: "100 feet"
-      swim: "30 feet; magma swim"
+      swim: "30 feet"
+      special: 
+      - magma swim
     traits: 
       - "Rare"
       - "CN"
@@ -39059,7 +39122,10 @@
     description: "<i>This entry did not have a separate description for the creature.</i>"
     speed: 
       land: "40 feet"
-      fly: "140 feet; magma swim 40 feet"
+      fly: "140 feet"
+      swim: 40 feet
+      special:
+      - magma swim
     traits: 
       - "Rare"
       - "CN"
@@ -39188,7 +39254,10 @@
     description: "<i>This entry did not have a separate description for the creature.</i>"
     speed: 
       land: "50 feet"
-      fly: "200 feet; magma swim 50 feet"
+      fly: "200 feet"
+      swim: 50 feet
+      special:
+      - magma swim
     traits: 
       - "Rare"
       - "CN"
@@ -39563,7 +39632,8 @@
     level: "15"
     description: "Those who tread in ruined places sometimes speak of a sense that a supernatural presence is there alongside them, as if the spirits of the dead were watching intently. Such presences can be very real, often taking the form of ghosts or other shades of undead that cannot let go of their attachment to the Material Plane. But sometimes, instead of manifesting as distinct spirits, the souls of the dead infuse the very stone and mortar around them. When enough souls attach themselves to a single place—be it a home, crypt, or castle—it can take on a life of its own, becoming a soulbound ruin."
     speed: 
-      land: "can't move"
+      special: 
+      - Can't Move
     traits: 
       - "NE"
       - "Gargantuan"
@@ -39882,7 +39952,9 @@
     level: "15"
     description: "Of all the ways to die, crucidaemons represent perhaps one of the least desirable: death by torture. The fiend’s shapely body, which appears to be sculpted from iron or mithril, belies a sinister wrath and love of inflicting pain. Crucidaemons particularly enjoy inflicting pain with their curved, serrated daggers, which are attached to their bodies via a chain that pierces each wrist."
     speed: 
-      land: ""
+      land: 50 feet
+      special:
+      - Air Walk (constant)
     traits: 
       - "NE"
       - "Medium"

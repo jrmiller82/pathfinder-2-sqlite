@@ -233,6 +233,103 @@ def main():
         # clean up speeds
         print("{}\t{}".format(counter, i['name']))
         print("\t\t\t\t{}".format(i['speed']))
+        newspeed = []
+        if 'land' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['land'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Land", "amount": amt })
+        if 'fly' in i['speed']:
+            if 'from fly' in i['speed']['fly']:
+                # do the from fly version
+                res = re.match('(\d+)', i['speed']['fly'])
+                amt = int(res.group(1))
+                newspeed.append({"type": "Fly (from Fly)", "amount": amt })
+            else:
+                # get number
+                res = re.match('(\d+)', i['speed']['fly'])
+                amt = int(res.group(1))
+                newspeed.append({"type": "Fly", "amount": amt })
+        if 'swim' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['swim'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Swim", "amount": amt })
+        if 'burrow' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['burrow'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Burrow", "amount": amt })
+        if 'climb' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['climb'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Climb", "amount": amt })
+        if 'iceclimb' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['iceclimb'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Ice Climb", "amount": amt })
+        if 'climbstone' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['climbstone'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Climb Stone", "amount": amt })
+        if 'burrowsnowonly' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['burrowsnowonly'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Burrow (snow only)", "amount": amt })
+        if 'burrowsandonly' in i['speed']:
+            # get number
+            res = re.match('(\d+)', i['speed']['burrowsandonly'])
+            amt = int(res.group(1))
+            newspeed.append({"type": "Burrow (sand only)", "amount": amt })
+        if 'special' in i['speed']:
+            for x in i['speed']['special']:
+                if x == "ice stride":
+                    newspeed.append({"type": "Ice Stride", "amount": None })
+                if x == "trickster's step":
+                    newspeed.append({"type": "Trickster's Step", "amount": None })
+                if x == "earth glide":
+                    newspeed.append({"type": "Earth Glide", "amount": None })
+                if x == "sand glide":
+                    newspeed.append({"type": "Sand Glide", "amount": None })
+                if x == "glide":
+                    newspeed.append({"type": "Glide", "amount": None })
+                if x == "compression":
+                    newspeed.append({"type": "Compression", "amount": None })
+                if x == "suction":
+                    newspeed.append({"type": "Suction", "amount": None })
+                if x == "swamp stride":
+                    newspeed.append({"type": "Swamp Stride", "amount": None })
+                if x == "powerful jumper":
+                    newspeed.append({"type": "Powerful Jumper", "amount": None })
+                if x == "woodland stride":
+                    newspeed.append({"type": "Woodland Stride", "amount": None })
+                if x == "trackless step":
+                    newspeed.append({"type": "Trackless Step", "amount": None })
+                if x == "cloud walk":
+                    newspeed.append({"type": "Cloud Walk", "amount": None })
+                if x == "swiftness":
+                    newspeed.append({"type": "Swiftness", "amount": None })
+                if x == "freedom of movement (constant)":
+                    newspeed.append({"type": "Freedom of Movement (constant)", "amount": None })
+                if x == "spider climb (constant)":
+                    newspeed.append({"type": "Spider Climb (constant)", "amount": None })
+                if x == "unstoppable burrow":
+                    newspeed.append({"type": "Unstoppable Burrow", "amount": None })
+                if x == "walk in shadow":
+                    newspeed.append({"type": "Walk in Shadow", "amount": None })
+                if x == "magma swim":
+                    newspeed.append({"type": "Magma Swim", "amount": None })
+                if x == "Can't Move":
+                    newspeed.append({"type": "Can't Move", "amount": None })
+                if x == "Air Walk (constant)":
+                    newspeed.append({"type": "Air Walk (constant)", "amount": None })
+
+        
+        i['speed'] = newspeed
 
 
     final = yaml.safe_dump(data, allow_unicode=True)
