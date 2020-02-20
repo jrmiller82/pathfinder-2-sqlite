@@ -1,19 +1,3 @@
-# NOTE: actioncategory assumes a single source entry
-# TODO Requirements and triggers can be normalized in gendb.py and schema
-actioncategory:
-  - name: Basic
-    descr: Basic actions represent common tasks like moving around, attacking, and helping others. As such, every creature can use basic actions except in some extreme circumstances, and many of those actions are used very frequently. Most notably, you’ll use Interact, Step, Stride, and Strike a great deal. Many feats and other actions call upon you to use one of these basic actions or modify them to produce different effects. For example, a more complex action might let you Stride up to double your Speed instead of just up to your Speed, and a large number of activities include a Strike.
-    source:
-      - abbr: CRB
-        page_start: 469
-        page_stop: 469
-  - name: Specialty Basic
-    descr: These actions are useful under specific circumstances. Some require you to have a special movement type.
-    source:
-      - abbr: CRB
-        page_start: 472
-        page_stop: 472
-# NOTE: action assumes a single source entry
 action:
 - actioncategory: Basic
   actioncost_name: Free Action
@@ -50,7 +34,7 @@ action:
     page_start: 470
     page_stop: 470
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Basic
   actioncost_name: Free Action
@@ -86,7 +70,7 @@ action:
     page_start: 470
     page_stop: 470
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -110,7 +94,7 @@ action:
     page_start: 470
     page_stop: 470
   trait:
-    - Attack
+  - Attack
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -125,7 +109,7 @@ action:
     page_start: 470
     page_stop: 470
   trait:
-    - Manipulate
+  - Manipulate
   trigger: null
 - actioncategory: Basic
   actioncost_name: Varies
@@ -165,7 +149,7 @@ action:
     page_start: 470
     page_stop: 470
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Basic
   actioncost_name: Two Actions
@@ -185,7 +169,7 @@ action:
     page_start: 470
     page_stop: 470
   trait:
-    - Concentrate
+  - Concentrate
   trigger: null
 - actioncategory: Basic
   actioncost_name: Free Action
@@ -203,7 +187,7 @@ action:
     page_start: 470
     page_stop: 470
   trait:
-    - Manipulate
+  - Manipulate
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -234,8 +218,8 @@ action:
     page_start: 471
     page_stop: 471
   trait:
-    - Concentrate
-    - Secret
+  - Concentrate
+  - Secret
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -259,8 +243,8 @@ action:
     page_start: 471
     page_stop: 471
   trait:
-    - Concentrate
-    - Secret
+  - Concentrate
+  - Secret
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -272,7 +256,7 @@ action:
     page_start: 471
     page_stop: 471
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -288,7 +272,7 @@ action:
     page_start: 471
     page_stop: 471
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -300,7 +284,7 @@ action:
     page_start: 471
     page_stop: 471
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -317,7 +301,7 @@ action:
     page_start: 471
     page_stop: 471
   trait:
-    - Attack
+  - Attack
   trigger: null
 - actioncategory: Basic
   actioncost_name: Single Action
@@ -426,35 +410,52 @@ action:
     page_start: 472
     page_stop: 472
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Specialty Basic
   actioncost_name: Varies
-  descr: "You cast a spell you have prepared or in your repertoire. Casting a Spell
+  descr: 'You cast a spell you have prepared or in your repertoire. Casting a Spell
     is a special activity that takes a variable number of actions depending on the
     spell, as listed in each spell’s stat block. As soon as the spellcasting actions
-    are complete, the spell effect occurs.\n\nSome spells are cast as a reaction or
-    free action. In those cases, you Cast the Spell as a reaction or free action (as
-    appropriate) instead of as an activity. Such cases will be noted in the spell’s
-    stat blockfor example, \"[reaction] verbal.\"\n\n**Long Casting Times** Some spells
-    take minutes or hours to cast. The Cast a Spell activity for these spells includes
-    a mix of the listed spell components, but it’s not necessary to break down which
-    one you’re providing at a given time. You can’t use other actions or reactions
-    while casting such a spell, though at the GM’s discretion, you might be able to
-    speak a few sentences. As with other activities that take a long time, these spells
-    have the exploration trait, and you can’t cast them in an encounter. If combat
-    breaks out while you’re casting one, your spell is disrupted (see Disrupted and
-    Lost Spells on page 303 CRB).\n\n**Spell Components** Each spell lists the spell
-    components required to cast it after the action icons or text, such as \"[three-actions]
-    material, somatic, verbal.\" The spell components, described in detail below, add
-    traits and requirements to the Cast a Spell activity. If you can’t provide the
-    components, you fail to Cast the Spell.\n\n- Material (manipulate)\n- Somatic
-    (manipulate)\n- Verbal (concentrate)\n- Focus (manipulate)\n\n**Disrupted and
-    Lost Spells** Some abilities and spells can disrupt a spell, causing it to have
-    no effect and be lost. When you lose a spell, you’ve already expended the spell
-    slot, spent the spell’s costs and actions, and used the Cast a Spell activity.
-    If a spell is disrupted during a Sustain a Spell action, the spell immediately
-    ends. The full rules for disrupting actions appear on page 462 CRB."
+    are complete, the spell effect occurs.
+
+
+    Some spells are cast as a reaction or free action. In those cases, you Cast the
+    Spell as a reaction or free action (as appropriate) instead of as an activity.
+    Such cases will be noted in the spell’s stat blockfor example, "[reaction] verbal."
+
+
+    **Long Casting Times** Some spells take minutes or hours to cast. The Cast a Spell
+    activity for these spells includes a mix of the listed spell components, but it’s
+    not necessary to break down which one you’re providing at a given time. You can’t
+    use other actions or reactions while casting such a spell, though at the GM’s
+    discretion, you might be able to speak a few sentences. As with other activities
+    that take a long time, these spells have the exploration trait, and you can’t
+    cast them in an encounter. If combat breaks out while you’re casting one, your
+    spell is disrupted (see Disrupted and Lost Spells on page 303 CRB).
+
+
+    **Spell Components** Each spell lists the spell components required to cast it
+    after the action icons or text, such as "[three-actions] material, somatic, verbal."
+    The spell components, described in detail below, add traits and requirements to
+    the Cast a Spell activity. If you can’t provide the components, you fail to Cast
+    the Spell.
+
+
+    - Material (manipulate)
+
+    - Somatic (manipulate)
+
+    - Verbal (concentrate)
+
+    - Focus (manipulate)
+
+
+    **Disrupted and Lost Spells** Some abilities and spells can disrupt a spell, causing
+    it to have no effect and be lost. When you lose a spell, you’ve already expended
+    the spell slot, spent the spell’s costs and actions, and used the Cast a Spell
+    activity. If a spell is disrupted during a Sustain a Spell action, the spell immediately
+    ends. The full rules for disrupting actions appear on page 462 CRB.'
   name: Cast a Spell
   req: null
   source:
@@ -476,7 +477,7 @@ action:
     page_start: 305
     page_stop: 305
   trait:
-    - Concentrate
+  - Concentrate
   trigger: null
 - actioncategory: Specialty Basic
   actioncost_name: Single Action
@@ -493,7 +494,7 @@ action:
     page_start: 472
     page_stop: 472
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Specialty Basic
   actioncost_name: Free Action
@@ -517,7 +518,7 @@ action:
     page_start: 472
     page_stop: 472
   trait:
-    - Manipulate
+  - Manipulate
   trigger: You fall from or past an edge or handhold.
 - actioncategory: Specialty Basic
   actioncost_name: Single Action
@@ -532,7 +533,7 @@ action:
     page_start: 472
     page_stop: 472
   trait:
-    - Move
+  - Move
   trigger: null
 - actioncategory: Specialty Basic
   actioncost_name: Single Action
@@ -551,9 +552,9 @@ action:
     page_start: 472
     page_stop: 472
   trait:
-    - Auditory
-    - Manipulate
-    - Visual
+  - Auditory
+  - Manipulate
+  - Visual
   trigger: null
 - actioncategory: Specialty Basic
   actioncost_name: Single Action
@@ -585,7 +586,7 @@ action:
     page_start: 304
     page_stop: 304
   trait:
-    - Concentrate
+  - Concentrate
   trigger: null
 - actioncategory: Specialty Basic
   actioncost_name: Single Action
@@ -604,7 +605,25 @@ action:
     page_start: 534
     page_stop: 534
   trait:
-    - Concentrate
+  - Concentrate
   trigger: null
-     
-
+actioncategory:
+- descr: Basic actions represent common tasks like moving around, attacking, and helping
+    others. As such, every creature can use basic actions except in some extreme circumstances,
+    and many of those actions are used very frequently. Most notably, you’ll use Interact,
+    Step, Stride, and Strike a great deal. Many feats and other actions call upon
+    you to use one of these basic actions or modify them to produce different effects.
+    For example, a more complex action might let you Stride up to double your Speed
+    instead of just up to your Speed, and a large number of activities include a Strike.
+  name: Basic
+  source:
+  - abbr: CRB
+    page_start: 469
+    page_stop: 469
+- descr: These actions are useful under specific circumstances. Some require you to
+    have a special movement type.
+  name: Specialty Basic
+  source:
+  - abbr: CRB
+    page_start: 472
+    page_stop: 472

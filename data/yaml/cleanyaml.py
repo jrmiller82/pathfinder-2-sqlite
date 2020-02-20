@@ -8,7 +8,7 @@ yfiles = ["actions.yaml",
           "basics.yaml",
           "bulks.yaml",
           "conditions.yaml",
-          "damages.yaml",
+          "damage.yaml",
           "feats-levels-false-matches.yaml",
           "feats.yaml",
           "langs.yaml",
@@ -23,11 +23,13 @@ yfiles = ["actions.yaml",
 
 def main():
     for x in yfiles:
+        print("Doing: {}".formate(X))
         with open(x, 'r') as r:
             data = yaml.full_load(r)
         final = yaml.safe_dump(data, allow_unicode=True)
         with open(x, 'w') as f:
             f.write(final)
+        print("\tDone.")
 
 
 if __name__ == "__main__":
