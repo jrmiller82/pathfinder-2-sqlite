@@ -31,6 +31,8 @@ armor:
     page_stop: 275
   speed_penalty: null
   strength: null
+  traits:
+  - Comfort
 - ac_bonus: 1
   bulk: L
   category: Light Armor
@@ -47,6 +49,8 @@ armor:
     page_stop: 275
   speed_penalty: null
   strength: 10
+  traits:
+  - Comfort
 - ac_bonus: 1
   bulk: '1'
   category: Light Armor
@@ -95,6 +99,9 @@ armor:
     page_stop: 275
   speed_penalty: null
   strength: 12
+  traits:
+  - Flexible
+  - Noisy
 - ac_bonus: 3
   bulk: '2'
   category: Medium Armor
@@ -143,6 +150,9 @@ armor:
     page_stop: 275
   speed_penalty: -5
   strength: 16
+  traits:
+  - Flexible
+  - Noisy
 - ac_bonus: 4
   bulk: '2'
   category: Medium Armor
@@ -207,6 +217,8 @@ armor:
     page_stop: 275
   speed_penalty: -10
   strength: 18
+  traits:
+  - Bulwark
 armorcategory:
 - Unarmored
 - Light Armor
