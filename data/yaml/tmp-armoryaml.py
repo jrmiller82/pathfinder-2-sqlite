@@ -29,15 +29,62 @@ def main():
         }
         datalist.append(d)
 
-    
     # DO MAIN ARMOR TABLE
 
     qq = """
-    SELECT 
-        armorgrou
-
-    
+   SELECT 
+       armor.short_name,
+       item_level,
+       price_text,
+       price_gp,
+       ac_bonus,
+       dex_cap,
+       check_penalty,
+       speed_penalty,
+       strength,
+       bulks.short_name AS bulkname,
+       armorgroup.short_name AS grpname,
+       armorcategory.short_name AS catname
+  FROM armor
+       LEFT JOIN
+       bulks ON bulks.bulk_id = armor.bulk_id
+       LEFT JOIN
+       armorgroup ON armorgroup.grp_id = armor.grp_id
+       LEFT JOIN
+       armorcategory ON armorcategory.armor_category_id = armor.armor_category_id;
     """
+
+    c.execute(qq)
+    data2 = c.fetchall()
+
+    armorlist = []
+    for i in data2:
+        print('\n')
+        print(i)
+
+        t = {
+            'name': i[0],
+            'level': i[1],
+            'price_text': i[2],
+            'price_gp': i[3],
+            'ac_bonus': i[4],
+            'dex_cap': i[5],
+            'check_penalty': i[6],
+            'speed_penalty': i[7],
+            'strength': i[8],
+            'bulk': i[9],
+            'group': i[10],
+            'category': i[11],
+            'source': [
+                {
+                    'abbr': 'CRB',
+                    'page_start': 275,
+                    'page_stop': 275
+                },
+            ]
+        }
+
+        armorlist.append(t)
 
     # datalist = []
     # for i in data:
@@ -67,8 +114,8 @@ def main():
     #             }
     #         }
     #         datalist.append(d)
-
-    tmpd = {'armorcategory': acats, 'armorgroup': datalist}
+    print(armorlist)
+    tmpd = {'armorcategory': acats, 'armorgroup': datalist, 'armor': armorlist}
     final = yaml.safe_dump(tmpd, allow_unicode=True)
 
     with open('tmp-armor.yaml', 'w') as f:
