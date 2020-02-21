@@ -92,6 +92,64 @@ def main():
         data = yaml.full_load(yl)
     do_triggers(data, conn)
 
+    # move on to armor
+    with open('armor.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_armor(data, conn)
+
+def do_armor(data, conn):
+    # Create the 3 tables
+    table = """ 
+    CREATE TABLE armorcategory (
+        armor_category_id INTEGER PRIMARY KEY,
+        short_name TEXT NOT NULL UNIQUE);
+    """
+    c = conn.cursor()
+    c.execute(table)
+
+    table = """
+    CREATE TABLE armorgroup (
+        grp_id INTEGER PRIMARY KEY,
+        short_name TEXT NOT NULL UNIQUE,
+        descr TEXT NOT NULL
+    );
+    """
+    c.execute(table)
+
+    table = """
+    CREATE TABLE armor (
+        armor_id INTEGER PRIMARY KEY,
+        armor_category_id INTEGER NOT NULL,
+        short_name TEXT NOT NULL,
+        item_level INTEGER,
+        price_text TEXT NOT NULL,
+        price_gp FLOAT NOT NULL,
+        ac_bonus INTEGER NOT NULL,
+        dex_cap INTEGER,
+        check_penalty INTEGER,
+        speed_penalty INTEGER,
+        strength INTEGER,
+        bulk_id INTEGER NOT NULL,
+        grp_id INTEGER,
+        descr TEXT NOT NULL,
+	FOREIGN KEY (bulk_id) REFERENCES bulks(bulk_id),
+	FOREIGN KEY (grp_id) REFERENCES armorgroup(grp_id)
+    );
+    """
+    c.execute(table)
+    table = """
+    CREATE TABLE trait_armor (
+        id INTEGER PRIMARY KEY,
+        trait_id INTEGER NOT NULL,
+        armor_id INTEGER NOT NULL,
+    FOREIGN KEY (trait_id) REFERENCES traits(trait_id),
+    FOREIGN KEY (armor_id) REFERENCES armor(armor_id)
+    );
+    """
+    c.execute(table)
+
+    pass
+
 def do_triggers(data, conn):
     table = """
 CREATE TABLE trigger (
