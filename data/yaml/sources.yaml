@@ -92,7 +92,7 @@ source:
   pzocode: PZO9000-25E
   release_date: 2019
   short_name: Age of Ashes Player's Guide
-- abbr: APHH
+- abbr: AoA1
   descr: Book 1 in the Age of Ashes Adventure Path.
   full_name: 'Pathfinder Adventure Path #145: Hellknight Hill'
   is_first_party: true
@@ -106,6 +106,36 @@ source:
   pzocode: PZO90145
   release_date: 2019
   short_name: Hellknight Hill
+- abbr: AoA2
+  descr: Book 2 in the Age of Ashes Adventure Path.
+  full_name: 'Pathfinder Adventure Path #146: Cult of Cinders'
+  is_first_party: true
+  isbn: 978-1-64078-188-7
+  ogl_copyright_block: 'Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.;
+    System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan
+    Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave
+    Arneson. Grippli from the Tome of Horrors Complete © 2011 Necromancer Games, Inc.,
+    published and distributed by Frog God Games; Author: Scott Greene, based on original
+    material by Gary Gygax. Pathfinder Adventure Path #146: Cult of Cinders (c) 2019, Paizo, Inc.;
+    Authors: Eleanor Ferron, with Leo Glass, James Jacobs, Jason Keeley, and Owen KC Stephens.'
+  publisher_name: Paizo, Inc.
+  pzocode: PZO90146
+  release_date: 2019
+  short_name: Cult of Cinders
+- abbr: AoA3
+  descr: Book 3 in the Age of Ashes Adventure Path.
+  full_name: 'Pathfinder Adventure Path #147: Tomorrow Must Burn'
+  is_first_party: true
+  isbn: 978-1-64078-191-7
+  ogl_copyright_block: 'Open Game License v.1.0a (c) 2000, Wizards of the Coast, Inc.;
+    System Reference Document (c) 2000, Wizards of the Coast, Inc.; Authors: Jonathan
+    Tweet, Monte Cook, and Skip Williams, based on material by E. Gary Gygax and Dave
+    Arneson. Pathfinder Adventure Path #147: Tomorrow Must Burn (c) 2019, Paizo, Inc.;
+    Authors: Ron Lundeen and Stephanie Lundeen, with Lyz Liddell and James Sutter.'
+  publisher_name: Paizo, Inc.
+  pzocode: PZO90147
+  release_date: 2019
+  short_name: Cult of Cinders
 - abbr: LOWG
   descr: A gazeteer of Golarion detailing 10 diverse regions.
   full_name: Pathfinder Lost Omens World Guide (Second Edition)
