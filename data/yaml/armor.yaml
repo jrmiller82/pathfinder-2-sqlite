@@ -1,0 +1,239 @@
+armor:
+- ac_bonus: 0
+  bulk: '-'
+  category: Unarmored
+  check_penalty: null
+  dex_cap: null
+  group: null
+  level: 0
+  name: No armor
+  price_gp: 0.0
+  price_text: '-'
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: null
+  strength: null
+- ac_bonus: 0
+  bulk: L
+  category: Unarmored
+  check_penalty: null
+  dex_cap: 5
+  group: null
+  level: 0
+  name: Explorer's clothing
+  price_gp: 0.1
+  price_text: 1 sp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: null
+  strength: null
+- ac_bonus: 1
+  bulk: L
+  category: Light Armor
+  check_penalty: null
+  dex_cap: 3
+  group: null
+  level: 0
+  name: Padded armor
+  price_gp: 0.2
+  price_text: 2 sp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: null
+  strength: 10
+- ac_bonus: 1
+  bulk: '1'
+  category: Light Armor
+  check_penalty: -1
+  dex_cap: 4
+  group: null
+  level: 0
+  name: Leather
+  price_gp: 2.0
+  price_text: 2 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: null
+  strength: 10
+- ac_bonus: 2
+  bulk: '1'
+  category: Light Armor
+  check_penalty: -1
+  dex_cap: 3
+  group: null
+  level: 0
+  name: Studded leather
+  price_gp: 3.0
+  price_text: 3 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: null
+  strength: 12
+- ac_bonus: 2
+  bulk: '1'
+  category: Light Armor
+  check_penalty: -1
+  dex_cap: 3
+  group: null
+  level: 0
+  name: Chain shirt
+  price_gp: 5.0
+  price_text: 5 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: null
+  strength: 12
+- ac_bonus: 3
+  bulk: '2'
+  category: Medium Armor
+  check_penalty: -2
+  dex_cap: 2
+  group: Leather
+  level: 0
+  name: Hide
+  price_gp: 2.0
+  price_text: 2 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: -5
+  strength: 14
+- ac_bonus: 3
+  bulk: '2'
+  category: Medium Armor
+  check_penalty: -2
+  dex_cap: 2
+  group: Composite
+  level: 0
+  name: Scale mail
+  price_gp: 4.0
+  price_text: 4 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: -5
+  strength: 14
+- ac_bonus: 4
+  bulk: '2'
+  category: Medium Armor
+  check_penalty: -2
+  dex_cap: 1
+  group: Chain
+  level: 0
+  name: Chain mail
+  price_gp: 6.0
+  price_text: 6 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: -5
+  strength: 16
+- ac_bonus: 4
+  bulk: '2'
+  category: Medium Armor
+  check_penalty: -2
+  dex_cap: 1
+  group: Plate
+  level: 0
+  name: Breastplate
+  price_gp: 8.0
+  price_text: 8 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: -5
+  strength: 16
+- ac_bonus: 5
+  bulk: '3'
+  category: Heavy Armor
+  check_penalty: -3
+  dex_cap: 1
+  group: Composite
+  level: 1
+  name: Splint mail
+  price_gp: 13.0
+  price_text: 13 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: -10
+  strength: 16
+- ac_bonus: 5
+  bulk: '3'
+  category: Heavy Armor
+  check_penalty: -3
+  dex_cap: 1
+  group: Plate
+  level: 1
+  name: Half plate
+  price_gp: 18.0
+  price_text: 18 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: -10
+  strength: 16
+- ac_bonus: 6
+  bulk: '4'
+  category: Heavy Armor
+  check_penalty: -3
+  dex_cap: 0
+  group: Plate
+  level: 2
+  name: Full plate
+  price_gp: 30.0
+  price_text: 30 gp
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+  speed_penalty: -10
+  strength: 18
+armorcategory:
+- Unarmored
+- Light Armor
+- Medium Armor
+- Heavy Armor
+armorgroup:
+- descr: TODO
+  name: Chain
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+- descr: TODO
+  name: Composite
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+- descr: TODO
+  name: Leather
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
+- descr: TODO
+  name: Plate
+  source:
+  - abbr: CRB
+    page_start: 275
+    page_stop: 275
