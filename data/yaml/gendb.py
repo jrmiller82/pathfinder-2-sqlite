@@ -228,9 +228,9 @@ def do_armor(data, conn):
         conn.commit()
 
 
-    # sources in everything
-    # linking it up
-    #
+    # TODO sources in armorgroup
+
+    # TODO sources in armor
 
 
 def do_triggers(data, conn):
