@@ -14,6 +14,7 @@ yfiles = ["actions.yaml",
           "langs.yaml",
           "monsters.yaml",
           "requirements.yaml",
+          "senses.yaml",
           "skills.yaml",
           "sources.yaml",
           "spells.yaml",
@@ -23,7 +24,7 @@ yfiles = ["actions.yaml",
 
 def main():
     for x in yfiles:
-        print("Doing: {}".formate(X))
+        print("Doing: {}".format(x))
         with open(x, 'r') as r:
             data = yaml.full_load(r)
         final = yaml.safe_dump(data, allow_unicode=True)
