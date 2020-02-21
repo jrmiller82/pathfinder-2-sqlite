@@ -193,19 +193,11 @@ def do_armor(data, conn):
             (i['ac_bonus'], i['bulk'], i['category'], i['check_penalty'],
              i['dex_cap'], i['group'], i['level'], i['name'], i['price_gp'],
              i['price_text'], i['speed_penalty'], i['strength'], i['descr']))
-
     stmt = """
     INSERT INTO armor 
     (ac_bonus, bulk_id, armor_category_id, check_penalty, dex_cap, grp_id, item_level, name, price_gp, price_text, speed_penalty, strength, descr) 
     VALUES (?,(SELECT bulk_id FROM bulk WHERE short_name=?),(SELECT armor_category_id FROM armorcategory WHERE armorcategory.name=?),?,?,(SELECT grp_id from armorgroup where armorgroup.name=?),?,?,?,?,?,?,?);
     """
-
-    # traits in armor
-    # sources in everything
-    # linking it up
-    #
-
-    # stmt = "INSERT INTO senses(name, descr) VALUES (?,?)"
     try:
         conn.executemany(stmt, inp_data)
     except sqlite3.Error as e:
@@ -214,6 +206,12 @@ def do_armor(data, conn):
         print("Error creating armorbasics something other than sqlite3 error")
     else:
         conn.commit()
+
+    # traits in armor
+
+    # sources in everything
+    # linking it up
+    #
 
 
 def do_triggers(data, conn):
