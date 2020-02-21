@@ -15,6 +15,9 @@ def main():
         data = yaml.full_load(yl)
     # Get a DB conn
     conn = get_db_conn()
+    pragma = "PRAGMA foreign_keys = ON;"
+    c = conn.cursor()
+    c.execute(pragma)
     # call the functions to input to SQL
     do_abilityscore(data['abilityscore'], conn)
     do_actioncost(data['actioncost'], conn)
@@ -97,12 +100,13 @@ def main():
         data = yaml.full_load(yl)
     do_armor(data, conn)
 
+
 def do_armor(data, conn):
     # Create the 3 tables
     table = """ 
     CREATE TABLE armorcategory (
         armor_category_id INTEGER PRIMARY KEY,
-        short_name TEXT NOT NULL UNIQUE);
+        name TEXT NOT NULL UNIQUE);
     """
     c = conn.cursor()
     c.execute(table)
@@ -110,7 +114,7 @@ def do_armor(data, conn):
     table = """
     CREATE TABLE armorgroup (
         grp_id INTEGER PRIMARY KEY,
-        short_name TEXT NOT NULL UNIQUE,
+        name TEXT NOT NULL UNIQUE,
         descr TEXT NOT NULL
     );
     """
@@ -120,7 +124,7 @@ def do_armor(data, conn):
     CREATE TABLE armor (
         armor_id INTEGER PRIMARY KEY,
         armor_category_id INTEGER NOT NULL,
-        short_name TEXT NOT NULL,
+        name TEXT NOT NULL,
         item_level INTEGER,
         price_text TEXT NOT NULL,
         price_gp FLOAT NOT NULL,
@@ -132,7 +136,7 @@ def do_armor(data, conn):
         bulk_id INTEGER NOT NULL,
         grp_id INTEGER,
         descr TEXT NOT NULL,
-	FOREIGN KEY (bulk_id) REFERENCES bulks(bulk_id),
+	FOREIGN KEY (bulk_id) REFERENCES bulk(bulk_id),
 	FOREIGN KEY (grp_id) REFERENCES armorgroup(grp_id)
     );
     """
@@ -148,7 +152,69 @@ def do_armor(data, conn):
     """
     c.execute(table)
 
-    pass
+    # insert basics into armorcategory table
+    inp_data = []
+    for i in data['armorcategory']:
+        print(i)
+        inp_data.append((i, ))
+
+    stmt = "INSERT INTO armorcategory(name) VALUES (?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating armorcategory: {}".format(e))
+    except:
+        print(
+            "Error creating armorcategory something other than sqlite3 error")
+    else:
+        conn.commit()
+
+    # insert basics into armorgroup table
+    inp_data = []
+    for i in data['armorgroup']:
+        # print(i)
+        inp_data.append((i['name'], i['descr']))
+
+    stmt = "INSERT INTO armorgroup(name, descr) VALUES (?,?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating armorgroup: {}".format(e))
+    except:
+        print("Error creating armorgroup something other than sqlite3 error")
+    else:
+        conn.commit()
+
+    # insert basics into armor table
+    inp_data = []
+    for i in data['armor']:
+        # print(i)
+        inp_data.append(
+            (i['ac_bonus'], i['bulk'], i['category'], i['check_penalty'],
+             i['dex_cap'], i['group'], i['level'], i['name'], i['price_gp'],
+             i['price_text'], i['speed_penalty'], i['strength'], i['descr']))
+
+    stmt = """
+    INSERT INTO armor 
+    (ac_bonus, bulk_id, armor_category_id, check_penalty, dex_cap, grp_id, item_level, name, price_gp, price_text, speed_penalty, strength, descr) 
+    VALUES (?,(SELECT bulk_id FROM bulk WHERE short_name=?),(SELECT armor_category_id FROM armorcategory WHERE armorcategory.name=?),?,?,(SELECT grp_id from armorgroup where armorgroup.name=?),?,?,?,?,?,?,?);
+    """
+
+    # traits in armor
+    # sources in everything
+    # linking it up
+    #
+
+    # stmt = "INSERT INTO senses(name, descr) VALUES (?,?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating armorbasiscs: {}".format(e))
+    except:
+        print("Error creating armorbasics something other than sqlite3 error")
+    else:
+        conn.commit()
+
 
 def do_triggers(data, conn):
     table = """
@@ -173,6 +239,7 @@ CREATE TABLE trigger (
     else:
         conn.commit()
 
+
 def do_requirements(data, conn):
     table = """
 CREATE TABLE requirement (
@@ -195,6 +262,7 @@ CREATE TABLE requirement (
         print("Error creating requirement: {}".format(e))
     else:
         conn.commit()
+
 
 def do_spells(data, conn):
     # load the helper info
@@ -929,6 +997,7 @@ CREATE TABLE sourceentry_damagecategory (
    """
     c.execute(table)
 
+
 def do_senses(data, conn):
 
     table = """
@@ -958,7 +1027,7 @@ CREATE TABLE sourceentry_senses (
     # insert basics into senses table
     inp_data = []
     for i in data['senses']:
-        print(i)
+        # print(i)
         inp_data.append((i['name'], i['descr']))
 
     stmt = "INSERT INTO senses(name, descr) VALUES (?,?)"
@@ -987,6 +1056,7 @@ CREATE TABLE sourceentry_senses (
             srcs.append([i['name'], abbr, page_start, page_stop])
         # print("srcs: {}".format(srcs))
         do_sourceentry_to_senses(srcs, conn)
+
 
 # TODO ugggh;;; this is soooo ugly and needs refactoring but it's working
 def do_sourceentry_to_senses(srcs, conn):
@@ -1038,6 +1108,7 @@ def do_sourceentry_to_senses(srcs, conn):
             else:
                 # print("committed linkstmt")
                 conn.commit()
+
 
 def do_skills(data, conn):
     # make skill table
