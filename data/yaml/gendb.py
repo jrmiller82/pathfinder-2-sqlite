@@ -36,6 +36,11 @@ def main():
     do_sources(data, conn)
     do_source_entry_table(conn)
 
+    # move on to senses
+    with open('senses.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_senses(data, conn)
+
     # move on to skills
     with open('skills.yaml') as yl:
         data = yaml.full_load(yl)
@@ -866,6 +871,115 @@ CREATE TABLE sourceentry_damagecategory (
    """
     c.execute(table)
 
+def do_senses(data, conn):
+
+    table = """
+    CREATE TABLE senses (
+        senses_id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL UNIQUE,
+        descr TEXT
+    );
+    """
+    c = conn.cursor()
+    c.execute(table)
+
+    # make sourceentry many-to-many table
+    table = """
+CREATE TABLE sourceentry_senses (
+  id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER NOT NULL,
+  senses_id INTEGER NOT NULL,
+  UNIQUE (sourceentry_id, senses_id), -- prevent duplicates
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+  FOREIGN KEY (senses_id) REFERENCES senses(senses_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    # insert basics into senses table
+    inp_data = []
+    for i in data['senses']:
+        print(i)
+        inp_data.append((i['name'], i['descr']))
+
+    stmt = "INSERT INTO senses(name, descr) VALUES (?,?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating senses: {}".format(e))
+    except:
+        print("Error creating senses something other than sqlite3 error")
+    else:
+        conn.commit()
+
+    # go through and do source entry linking
+
+    for i in data['senses']:
+        # print("\n\nDoing the skill: {}".format(i['name']))
+        srcs = []
+        # TODO refactor this inner loop for sources out
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcs.append([i['name'], abbr, page_start, page_stop])
+        # print("srcs: {}".format(srcs))
+        do_sourceentry_to_senses(srcs, conn)
+
+# TODO ugggh;;; this is soooo ugly and needs refactoring but it's working
+def do_sourceentry_to_senses(srcs, conn):
+    c = conn.cursor()
+
+    stmt = "SELECT source.source_id, senses.senses_id FROM source, senses WHERE source.abbr=? AND senses.name=?"
+    istmt = "INSERT INTO sourceentry (source_id, page_start, page_stop) VALUES (?,?,?)"
+    for i in srcs:
+        # print("i in srcs: {}".format(i))
+        inp_data = (i[1], i[0])
+        # print("inp data: {}".format(inp_data))
+        for row in c.execute(stmt, inp_data):
+            # print("source_id:{} skill_id:{}".format(row[0], row[1]))
+            iinp_data = (row[0], i[2], i[3])
+            # print("iinp data: {}".format(iinp_data))
+
+            try:
+                c.execute(istmt, iinp_data)
+            except sqlite3.IntegrityError as e:
+                if "UNIQUE" in str(e):
+                    # we fully expect UNIQUE constraint to fail on some of these so it's fine
+                    conn.commit()
+                    # print("committed istmt")
+                else:
+                    # but we still want to know what's going on if there's some other error
+                    print("Something went wrong with istmt: {}".format(e))
+            except sqlite3.Error as e:
+                print("Error inserting a sourceentry for senses: {}".format(e))
+            else:
+                conn.commit()
+                # print("committed istmt")
+
+            linkstmt = "INSERT INTO sourceentry_senses (sourceentry_id, senses_id) VALUES ((SELECT sourceentry_id from sourceentry WHERE source_id=? AND page_start=? AND page_stop=?), ?)"
+            linkinp_data = (row[0], i[2], i[3], row[1])
+            # print(linkinp_data)
+            try:
+                c.execute(linkstmt, linkinp_data)
+            except sqlite3.IntegrityError as e:
+                if "UNIQUE" in str(e):
+                    # we fully expect UNIQUE constraint to fail on some of these so it's fine
+                    conn.commit()
+                    # print("committed linkstmt")
+                    pass
+                else:
+                    # but we still want to know what's going on if there's some other error
+                    print(e)
+            except sqlite3.Error as e:
+                print("Error inserting a sourceentry for senses: {}".format(e))
+            else:
+                # print("committed linkstmt")
+                conn.commit()
 
 def do_skills(data, conn):
     # make skill table
