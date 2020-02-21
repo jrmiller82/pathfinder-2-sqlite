@@ -146,7 +146,7 @@ def do_armor(data, conn):
         id INTEGER PRIMARY KEY,
         trait_id INTEGER NOT NULL,
         armor_id INTEGER NOT NULL,
-    FOREIGN KEY (trait_id) REFERENCES traits(trait_id),
+    FOREIGN KEY (trait_id) REFERENCES trait(trait_id),
     FOREIGN KEY (armor_id) REFERENCES armor(armor_id)
     );
     """
@@ -207,7 +207,26 @@ def do_armor(data, conn):
     else:
         conn.commit()
 
-    # traits in armor
+    # traits for armor into table trait_armor
+    # TODO refactor short_name to name in trait
+    stmt = """
+    INSERT INTO trait_armor (trait_id, armor_id) 
+    VALUES ((SELECT trait_id FROM trait WHERE short_name=?),(SELECT armor_id FROM armor WHERE name=?));
+    """
+    inp_data = []
+    for i in data['armor']:
+        if i['traits'] != None:
+            for j in i['traits']:
+                inp_data.append((j, i['name']))
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating trait_armor entries: {}".format(e))
+    except:
+        print("Error creating trait_armor entries something other than sqlite3 error")
+    else:
+        conn.commit()
+
 
     # sources in everything
     # linking it up
