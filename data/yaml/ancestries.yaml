@@ -1,0 +1,147 @@
+ancestries:
+- boosts:
+  - CON
+  - WIS
+  - Free1
+  flavor_text: TODO
+  flaws:
+  - CHA
+  hp: 10
+  name: Dwarf
+  senses: Darkvision
+  size: Medium
+  source:
+  - abbr: CRB
+    page_start: 35
+    page_stop: 35
+  speed: 20
+  traits:
+  - Dwarf
+  - Humanoid
+- boosts:
+  - DEX
+  - INT
+  - Free1
+  flavor_text: TODO
+  flaws:
+  - CON
+  hp: 6
+  name: Elf
+  senses: Low-Light Vision
+  size: Medium
+  source:
+  - abbr: CRB
+    page_start: 39
+    page_stop: 39
+  speed: 30
+  traits:
+  - Elf
+  - Humanoid
+- boosts:
+  - CON
+  - CHA
+  - Free1
+  flavor_text: TODO
+  flaws:
+  - STR
+  hp: 8
+  name: Gnome
+  senses: Low-Light Vision
+  size: Small
+  source:
+  - abbr: CRB
+    page_start: 43
+    page_stop: 43
+  speed: 25
+  traits:
+  - Gnome
+  - Humanoid
+- boosts:
+  - DEX
+  - CHA
+  - Free1
+  flavor_text: TODO
+  flaws:
+  - WIS
+  hp: 6
+  name: Goblin
+  senses: Darkvision
+  size: Small
+  source:
+  - abbr: CRB
+    page_start: 47
+    page_stop: 47
+  speed: 25
+  traits:
+  - Goblin
+  - Humanoid
+- boosts:
+  - DEX
+  - WIS
+  - Free1
+  flavor_text: TODO
+  flaws:
+  - STR
+  hp: 6
+  name: Halfling
+  senses: Keen Eyes
+  size: Small
+  source:
+  - abbr: CRB
+    page_start: 51
+    page_stop: 51
+  speed: 25
+  traits:
+  - Halfling
+  - Humanoid
+- boosts:
+  - Free1
+  - Free2
+  flavor_text: TODO
+  flaws: null
+  hp: 8
+  name: Human
+  senses: None
+  size: Medium
+  source:
+  - abbr: CRB
+    page_start: 55
+    page_stop: 55
+  speed: 25
+  traits:
+  - Human
+  - Humanoid
+- boosts: null
+  flavor_text: TODO
+  flaws: null
+  hp: 8
+  name: Half-Elf
+  senses: None
+  size: Medium
+  source:
+  - abbr: CRB
+    page_start: 55
+    page_stop: 55
+  speed: 25
+  traits:
+  - Elf
+  - Human
+  - Humanoid
+  - Half-Elf
+- boosts: null
+  flavor_text: TODO
+  flaws: null
+  hp: 8
+  name: Half-Orc
+  senses: None
+  size: Medium
+  source:
+  - abbr: CRB
+    page_start: 55
+    page_stop: 55
+  speed: 25
+  traits:
+  - Humanoid
+  - Human
+  - Orc
+  - Half-Orc
