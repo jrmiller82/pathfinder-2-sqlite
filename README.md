@@ -26,8 +26,7 @@ It's an open, permissively licensed, and portable single-file database that does
 not require setting up a client/server model. It's also likely that the database
 will fit into memory easily so performance issues aren't likely to be a problem.
 Also, most use cases of this data will likely be read only, so the sqlite
-limitations on concurrent writes won't be an issue either. Finally, it's
-permissively licensed.
+limitations on concurrent writes won't be an issue either. 
 
 ## Where we need the most help right now
 
