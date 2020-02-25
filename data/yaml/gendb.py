@@ -105,6 +105,127 @@ def main():
         data = yaml.full_load(yl)
     do_ammo(data, conn)
 
+    # move on to ammo
+    with open('gear.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_gear(data, conn)
+
+def do_gear(data, conn):
+    table = """
+    CREATE TABLE gear(
+        "gear_id" INTEGER PRIMARY KEY,
+        "name" TEXT NOT NULL UNIQUE,
+        "level" INTEGER,
+        "price_gp" REAL,
+        "bulk" REAL,
+        "hands" INTEGER,
+        "descr" TEXT
+    );
+    """
+    c = conn.cursor()
+    c.execute(table)
+    table = """
+    CREATE TABLE gear_traits(
+        id INTEGER PRIMARY KEY,
+        gear_id INTEGER NOT NULL,
+        trait_id INTEGER NOT NULL,
+    FOREIGN KEY (gear_id) REFERENCES gear(gear_id),
+    FOREIGN KEY (trait_id) REFERENCES trait(trait_id)
+    );
+    """
+    c.execute(table)
+    table = """
+    CREATE TABLE sourceentry_gear (
+        id INTEGER PRIMARY KEY,
+        sourceentry_id INTEGER NOT NULL,
+        gear_id INTEGER NOT NULL,
+    UNIQUE (sourceentry_id, gear_id), -- prevent duplicates
+    FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+    FOREIGN KEY (gear_id) REFERENCES gear(gear_id)
+    );
+   """
+    c.execute(table)
+
+    # insert basics into gear table
+    inp_data = []
+    for i in data['gear']:
+        # print(i)
+        inp_data.append((i['bulk'], i['descr'], i['hands'], i['level'], i['name'], i['price_gp']))
+
+    stmt = "INSERT INTO gear(bulk, descr, hands, level, name, price_gp) VALUES (?,?,?,?,?,?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating gear: {}".format(e))
+    except:
+        print("Error creating gear something other than sqlite3 error")
+    else:
+        conn.commit()
+
+    # link the traits to the gear_traits table
+    traitslist = []
+    for i in data['gear']:
+        if i['traits'] == None:
+            continue
+        else:
+            for j in i['traits']:
+                traitslist.append((i['name'], j))
+    # print(traitslist)
+    stmt = """
+    INSERT INTO gear_traits(gear_id, trait_id)
+    VALUES (
+    (SELECT gear_id FROM gear WHERE name=?),
+    (SELECT trait_id FROM trait WHERE short_name=?)
+    );
+    """
+    try:
+        conn.executemany(stmt, traitslist)
+    except sqlite3.Error as e:
+        print("Error creating gear_traits data: {}".format(e))
+    except:
+        print("Error creating gear_traits data something other than sqlite3 error")
+    else:
+        conn.commit()
+
+
+
+    # do the sourceentry linking
+    for i in data['gear']:
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        util_insert_into_sourceentry(srcentrydata, conn)
+        link_sourceentry_gear(i['name'], srcentrydata, conn)
+
+def link_sourceentry_gear(name, srcentrydata, conn):
+    stmt = """
+    INSERT INTO sourceentry_gear (sourceentry_id, gear_id)
+    SELECT sourceentry_id, gear_id
+        FROM sourceentry, gear
+        WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND sourceentry.page_start=?
+        AND sourceentry.page_stop=?
+        AND gear.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        # print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        # print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to gear: {}".format(e))
+        else:
+            conn.commit()
+
 def do_ammo(data, conn):
     table = """ 
     CREATE TABLE ammunition (
