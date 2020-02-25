@@ -5,6 +5,21 @@ containing the open gaming content for the Pathfinder 2 table-top
 role-playing-game system that is available under the Open Gaming License. Pull
 requests welcomed!
 
+## Data initially in YAML and then scripts to convert to SQL
+
+Currently, the main data source is found in the `data/yaml` directory, and
+running `python3 gendb.py` will generate a `tmp.db` sqlite3 database. I'm still
+in progress on converting some prior pure SQL work into the YAML-SQL pipeline,
+but that should be done in the next month or so.
+
+Why YAML? Two big reasons: 
+
+1. It's easier to human edit than sql statements and provides a convenient
+   "flat" data source for anyone wanting to avoid or has no need for SQL
+   queries. It's also easily convertible into json for a document-based NoSQL
+   solution.
+2. I really dislike JSON for human editing.
+
 ## Why sqlite? 
 
 It's an open, permissively licensed, and portable single-file database that does
@@ -25,11 +40,14 @@ here and there. Please see issue #61.
 Once we have the data proofread, I'll write a glue script to get the spell data
 into normalized sql form.
 
-### Monsters.yaml basic data entry
-Come over to issue #40. We need help getting monsters into our (tentative) yaml
-schema that you can see in the Ancient Red Dragon in `data/yaml/monsters.yaml`.
-Once we have the data put together I'll write a glue script to get the monster
-data into normalized sql form.
+### Proofreading Monsters.yaml
+It's time for everyone to put physical eyes on the `data/yaml/monsters.yaml` file
+and compare to **the actual print book or PDF** (taking into account any Errata
+of course). The scrape could only do so much and there are many small errors
+here and there.
+
+Once we have the data proofread, I'll write a glue script to get the monster data
+into normalized sql form.
 
 ## Roadmap
 
