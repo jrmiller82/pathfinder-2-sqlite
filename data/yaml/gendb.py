@@ -247,7 +247,9 @@ def do_armor(data, conn):
     except sqlite3.Error as e:
         print("Error creating trait_armor entries: {}".format(e))
     except:
-        print("Error creating trait_armor entries something other than sqlite3 error")
+        print(
+            "Error creating trait_armor entries something other than sqlite3 error"
+        )
     else:
         conn.commit()
 
@@ -306,6 +308,7 @@ INSERT INTO sourceentry_armorgroup (sourceentry_id, grp_id)
         else:
             conn.commit()
 
+
 def link_sourceentry_armor(name, srcentrydata, conn):
     stmt = """
 INSERT INTO sourceentry_armor (sourceentry_id, armor_id)
@@ -327,6 +330,7 @@ INSERT INTO sourceentry_armor (sourceentry_id, armor_id)
             print("Error linking sourceentry to armorgroup: {}".format(e))
         else:
             conn.commit()
+
 
 def do_triggers(data, conn):
     table = """
