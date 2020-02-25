@@ -152,6 +152,30 @@ def do_armor(data, conn):
     """
     c.execute(table)
 
+    table = """
+    CREATE TABLE sourceentry_armorgroup (
+        id INTEGER PRIMARY KEY,
+        sourceentry_id INTEGER NOT NULL,
+        grp_id INTEGER NOT NULL,
+    UNIQUE (sourceentry_id, grp_id), -- prevent duplicates
+    FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+    FOREIGN KEY (grp_id) REFERENCES armorgroup(grp_id)
+    );
+   """
+    c.execute(table)
+
+    table = """
+    CREATE TABLE sourceentry_armor (
+        id INTEGER PRIMARY KEY,
+        sourceentry_id INTEGER NOT NULL,
+        armor_id INTEGER NOT NULL,
+    UNIQUE (sourceentry_id, armor_id), -- prevent duplicates
+    FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+    FOREIGN KEY (armor_id) REFERENCES armor(armor_id)
+    );
+   """
+    c.execute(table)
+
     # insert basics into armorcategory table
     inp_data = []
     for i in data['armorcategory']:
@@ -227,11 +251,82 @@ def do_armor(data, conn):
     else:
         conn.commit()
 
+    for i in data['armorgroup']:
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        util_insert_into_sourceentry(srcentrydata, conn)
+        # now link the source entries to this table
+        # TODO
+        link_sourceentry_armorgroup(i['name'], srcentrydata, conn)
 
-    # TODO sources in armorgroup
+    for i in data['armor']:
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        util_insert_into_sourceentry(srcentrydata, conn)
+        # now link the source entries to this table
+        # TODO
+        link_sourceentry_armor(i['name'], srcentrydata, conn)
 
-    # TODO sources in armor
 
+def link_sourceentry_armorgroup(name, srcentrydata, conn):
+    stmt = """
+INSERT INTO sourceentry_armorgroup (sourceentry_id, grp_id)
+    SELECT sourceentry_id, grp_id
+    FROM sourceentry, armorgroup
+    WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+    AND sourceentry.page_start=?
+    AND sourceentry.page_stop=?
+    AND armorgroup.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        # print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        # print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to armorgroup: {}".format(e))
+        else:
+            conn.commit()
+
+def link_sourceentry_armor(name, srcentrydata, conn):
+    stmt = """
+INSERT INTO sourceentry_armor (sourceentry_id, armor_id)
+    SELECT sourceentry_id, armor_id
+    FROM sourceentry, armor
+    WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+    AND sourceentry.page_start=?
+    AND sourceentry.page_stop=?
+    AND armor.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        # print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        # print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to armorgroup: {}".format(e))
+        else:
+            conn.commit()
 
 def do_triggers(data, conn):
     table = """
