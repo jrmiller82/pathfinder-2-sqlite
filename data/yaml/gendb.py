@@ -100,6 +100,88 @@ def main():
         data = yaml.full_load(yl)
     do_armor(data, conn)
 
+    # move on to ammo
+    with open('ammunition.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_ammo(data, conn)
+
+def do_ammo(data, conn):
+    table = """ 
+    CREATE TABLE ammunition (
+        ammunition_id INTEGER PRIMARY KEY,
+        "name" TEXT NOT NULL UNIQUE,
+        price_gp REAL,
+        amount INTEGER,
+        bulk REAL,
+        descr TEXT
+    );
+    """
+    c = conn.cursor()
+    c.execute(table)
+
+    table = """
+    CREATE TABLE sourceentry_ammunition (
+        id INTEGER PRIMARY KEY,
+        sourceentry_id INTEGER NOT NULL,
+        ammunition_id INTEGER NOT NULL,
+    UNIQUE (sourceentry_id, ammunition_id), -- prevent duplicates
+    FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+    FOREIGN KEY (ammunition_id) REFERENCES ammunition(ammunition_id)
+    );
+   """
+    c.execute(table)
+
+    # insert basics into ammunition table
+    inp_data = []
+    for i in data['ammunition']:
+        # print(i)
+        inp_data.append((i['amount'], i['bulk'], i['descr'], i['name'], i['price_gp']))
+
+    stmt = "INSERT INTO ammunition(amount, bulk, descr, name, price_gp) VALUES (?,?,?,?,?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating ammunition: {}".format(e))
+    except:
+        print("Error creating ammunition something other than sqlite3 error")
+    else:
+        conn.commit()
+
+    for i in data['ammunition']:
+        srcentrydata = []
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            # Not all YAML entries have page_stop data
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcentrydata.append((abbr, page_start, page_stop))
+        util_insert_into_sourceentry(srcentrydata, conn)
+        link_sourceentry_ammunition(i['name'], srcentrydata, conn)
+
+def link_sourceentry_ammunition(name, srcentrydata, conn):
+    stmt = """
+    INSERT INTO sourceentry_ammunition (sourceentry_id, ammunition_id)
+    SELECT sourceentry_id, ammunition_id
+        FROM sourceentry, ammunition
+        WHERE sourceentry.source_id=(SELECT source_id FROM source WHERE abbr=?)
+        AND sourceentry.page_start=?
+        AND sourceentry.page_stop=?
+        AND ammunition.name=?;
+    """
+    # print(srcentrydata)
+    for i in srcentrydata:
+        # print("i is:{}".format(i))
+        d = (i[0], i[1], i[2], name)
+        # print(d)
+        try:
+            conn.execute(stmt, d)
+        except Exception as e:
+            print("Error linking sourceentry to ammunition: {}".format(e))
+        else:
+            conn.commit()
 
 def do_armor(data, conn):
     # Create the 3 tables
