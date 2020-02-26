@@ -13,7 +13,7 @@ abilityscore:
   short_name: INT
 - flag_rep: 16
   long_name: Wisdom
-  short_name: Wis
+  short_name: WIS
 - flag_rep: 32
   long_name: Charisma
   short_name: CHA

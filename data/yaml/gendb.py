@@ -110,6 +110,172 @@ def main():
         data = yaml.full_load(yl)
     do_gear(data, conn)
 
+    # move on to ammo
+    with open('ancestries.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_ancestries(data, conn)
+
+def do_ancestries(data, conn):
+    # create tables
+    table = """
+    CREATE TABLE ancestries (
+        ancestry_id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL UNIQUE,
+        flavor_text TEXT NOT NULL,
+        hp INTEGER NOT NULL,
+        size_id INTEGER NOT NULL,
+        speed INTEGER NOT NULL,
+        vision_id INTEGER,
+    FOREIGN KEY (vision_id) REFERENCES senses(senses_id),
+    FOREIGN KEY (size_id) REFERENCES size(size_id)
+    );
+    """
+    c = conn.cursor()
+    c.execute(table)
+
+    table = """
+    CREATE TABLE ancestries_boosts (
+        id INTEGER PRIMARY KEY,
+        ancestry_id INTEGER NOT NULL,
+        abilityscore_id INTEGER NOT NULL,
+    FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
+    FOREIGN KEY (abilityscore_id) REFERENCES abilityscore(abilityscore_id)
+    );
+    """
+    c.execute(table)
+
+    table = """
+    CREATE TABLE ancestries_flaws (
+        id INTEGER PRIMARY KEY,
+        ancestry_id INTEGER NOT NULL,
+        abilityscore_id INTEGER NOT NULL,
+    FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
+    FOREIGN KEY (abilityscore_id) REFERENCES abilityscore(abilityscore_id)
+    );
+    """
+    c.execute(table)
+
+    table = """
+    CREATE TABLE ancestries_traits (
+        id INTEGER PRIMARY KEY,
+        ancestry_id INTEGER NOT NULL,
+        trait_id INTEGER NOT NULL,
+    UNIQUE(ancestry_id, trait_id),
+    FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id),
+    FOREIGN KEY (trait_id) REFERENCES trait(trait_id)
+    );
+    """
+    c.execute(table)
+
+    # insert basics into ancestries table
+    inp_data = []
+    for i in data['ancestries']:
+        # Get the size_id 
+        sstmt = """
+        SELECT size_id FROM size WHERE short_name=?;
+        """
+        sinp_data = (i['size'],)
+        sres = c.execute(sstmt, sinp_data).fetchall()
+        sid = sres[0][0]
+        print(sid)
+
+        # Get the vision_id
+        vstmt = """
+        SELECT senses_id FROM senses WHERE name=?;
+        """
+        vinp_data = (i['senses'],)
+        vres = c.execute(vstmt, vinp_data).fetchall()
+        print(vres)
+        if len(vres) > 0:
+            vid = vres[0][0]
+        else:
+            vid = None
+        print(vid)
+
+
+        #print(i)
+        inp_data.append((i['name'], i['flavor_text'], i['hp'], sid, i['speed'], vid))
+
+    stmt = "INSERT INTO ancestries(name, flavor_text, hp, size_id, speed, vision_id) VALUES (?,?,?,?,?,?)"
+    try:
+        conn.executemany(stmt, inp_data)
+    except sqlite3.Error as e:
+        print("Error creating ancestries: {}".format(e))
+    except:
+        print("Error creating ancestries something other than sqlite3 error")
+    else:
+        conn.commit()
+
+
+    # do boosts
+    for i in data['ancestries']:
+        boostlist = []
+        if i['boosts'] != None:
+            for j in i['boosts']:
+                boostlist.append((i['name'], j))
+            print("boostlist is:\t{}".format(boostlist))
+
+            stmt = """
+            INSERT INTO ancestries_boosts (ancestry_id, abilityscore_id) VALUES (
+                (SELECT ancestry_id FROM ancestries WHERE name=?),
+                (SELECT abilityscore_id FROM abilityscore WHERE short_name=?)
+                );
+            """
+            try:
+                conn.executemany(stmt, boostlist)
+            except sqlite3.Error as e:
+                print("Error creating ancestries_boosts: {}".format(e))
+            except:
+                print("Error creating ancestries_boosts something other than sqlite3 error")
+            else:
+                conn.commit()
+
+    # do flaws
+    for i in data['ancestries']:
+        flawlist = []
+        if i['flaws'] != None:
+            for j in i['flaws']:
+                flawlist.append((i['name'], j))
+            print("flawlist is:\t{}".format(flawlist))
+
+            stmt = """
+            INSERT INTO ancestries_flaws (ancestry_id, abilityscore_id) VALUES (
+                (SELECT ancestry_id FROM ancestries WHERE name=?), 
+                (SELECT abilityscore_id FROM abilityscore WHERE short_name=?)
+                );
+            """
+            try:
+                conn.executemany(stmt, flawlist)
+            except sqlite3.Error as e:
+                print("Error creating ancestries_flaws: {}".format(e))
+            except:
+                print("Error creating ancestries_flaws something other than sqlite3 error")
+            else:
+                conn.commit()
+
+    # do traits
+    for i in data['ancestries']:
+        traitlist = []
+        if i['traits'] != None:
+            for j in i['traits']:
+                traitlist.append((i['name'], j))
+            print("traitlist is:\t{}".format(traitlist))
+
+            stmt = """
+            INSERT INTO ancestries_traits (ancestry_id, trait_id) VALUES (
+                (SELECT ancestry_id FROM ancestries WHERE name=?), 
+                (SELECT trait_id FROM trait WHERE short_name=?) 
+                );
+            """
+            try:
+                conn.executemany(stmt, traitlist)
+            except sqlite3.Error as e:
+                print("Error creating ancestries_traits: {}".format(e))
+            except:
+                print("Error creating ancestries_traits something other than sqlite3 error")
+            else:
+                conn.commit()
+
 def do_gear(data, conn):
     table = """
     CREATE TABLE gear(
