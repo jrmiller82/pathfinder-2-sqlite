@@ -4,8 +4,8 @@
 import yaml
 
 yfiles = [
-    "actions.yaml", "armor.yaml", "backgrounds.yaml", "basics.yaml",
-    "bulks.yaml", "conditions.yaml", "damage.yaml",
+    "actions.yaml", "ancestries.yaml", "armor.yaml", "backgrounds.yaml",
+    "basics.yaml", "bulks.yaml", "conditions.yaml", "damage.yaml",
     "feats-levels-false-matches.yaml", "feats.yaml", "langs.yaml",
     "monsters.yaml", "requirements.yaml", "senses.yaml", "skills.yaml",
     "sources.yaml", "spells.yaml", "traits.yaml", "triggers.yaml"
