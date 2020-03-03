@@ -4,9 +4,10 @@ import os
 import pprint
 import sys
 from lib.basics import *
+import lib.utils as utils
 
 DBFILE = 'tmp.db'
-DATA_PATH = "../data/yaml" # This is path relative to gendb.py
+DATA_PATH = "../data/yaml"  # This is path relative to gendb.py
 
 
 def main():
@@ -18,7 +19,7 @@ def main():
         print("{}".format(e))
 
     # Get a DB conn
-    conn = get_db_conn()
+    conn = utils.get_db_conn(DBFILE)
     pragma = "PRAGMA foreign_keys = ON;"
     c = conn.cursor()
     c.execute(pragma)
@@ -129,6 +130,7 @@ def main():
         data = yaml.full_load(yl)
     do_ancestries(data, conn)
 
+
 def do_ancestries(data, conn):
     # create tables
     table = """
@@ -184,11 +186,11 @@ def do_ancestries(data, conn):
     # insert basics into ancestries table
     inp_data = []
     for i in data['ancestries']:
-        # Get the size_id 
+        # Get the size_id
         sstmt = """
         SELECT size_id FROM size WHERE short_name=?;
         """
-        sinp_data = (i['size'],)
+        sinp_data = (i['size'], )
         sres = c.execute(sstmt, sinp_data).fetchall()
         sid = sres[0][0]
         print(sid)
@@ -197,7 +199,7 @@ def do_ancestries(data, conn):
         vstmt = """
         SELECT senses_id FROM senses WHERE name=?;
         """
-        vinp_data = (i['senses'],)
+        vinp_data = (i['senses'], )
         vres = c.execute(vstmt, vinp_data).fetchall()
         print(vres)
         if len(vres) > 0:
@@ -206,9 +208,9 @@ def do_ancestries(data, conn):
             vid = None
         print(vid)
 
-
         #print(i)
-        inp_data.append((i['name'], i['flavor_text'], i['hp'], sid, i['speed'], vid))
+        inp_data.append(
+            (i['name'], i['flavor_text'], i['hp'], sid, i['speed'], vid))
 
     stmt = "INSERT INTO ancestries(name, flavor_text, hp, size_id, speed, vision_id) VALUES (?,?,?,?,?,?)"
     try:
@@ -219,7 +221,6 @@ def do_ancestries(data, conn):
         print("Error creating ancestries something other than sqlite3 error")
     else:
         conn.commit()
-
 
     # do boosts
     for i in data['ancestries']:
@@ -240,7 +241,9 @@ def do_ancestries(data, conn):
             except sqlite3.Error as e:
                 print("Error creating ancestries_boosts: {}".format(e))
             except:
-                print("Error creating ancestries_boosts something other than sqlite3 error")
+                print(
+                    "Error creating ancestries_boosts something other than sqlite3 error"
+                )
             else:
                 conn.commit()
 
@@ -263,7 +266,9 @@ def do_ancestries(data, conn):
             except sqlite3.Error as e:
                 print("Error creating ancestries_flaws: {}".format(e))
             except:
-                print("Error creating ancestries_flaws something other than sqlite3 error")
+                print(
+                    "Error creating ancestries_flaws something other than sqlite3 error"
+                )
             else:
                 conn.commit()
 
@@ -286,9 +291,12 @@ def do_ancestries(data, conn):
             except sqlite3.Error as e:
                 print("Error creating ancestries_traits: {}".format(e))
             except:
-                print("Error creating ancestries_traits something other than sqlite3 error")
+                print(
+                    "Error creating ancestries_traits something other than sqlite3 error"
+                )
             else:
                 conn.commit()
+
 
 def do_gear(data, conn):
     table = """
@@ -330,7 +338,8 @@ def do_gear(data, conn):
     inp_data = []
     for i in data['gear']:
         # print(i)
-        inp_data.append((i['bulk'], i['descr'], i['hands'], i['level'], i['name'], i['price_gp']))
+        inp_data.append((i['bulk'], i['descr'], i['hands'], i['level'],
+                         i['name'], i['price_gp']))
 
     stmt = "INSERT INTO gear(bulk, descr, hands, level, name, price_gp) VALUES (?,?,?,?,?,?)"
     try:
@@ -363,17 +372,18 @@ def do_gear(data, conn):
     except sqlite3.Error as e:
         print("Error creating gear_traits data: {}".format(e))
     except:
-        print("Error creating gear_traits data something other than sqlite3 error")
+        print(
+            "Error creating gear_traits data something other than sqlite3 error"
+        )
     else:
         conn.commit()
-
-
 
     # do the sourceentry linking
     for i in data['gear']:
         srcentrydata = util_srcentrydata(i)
         util_insert_into_sourceentry(srcentrydata, conn)
         link_sourceentry_gear(i['name'], srcentrydata, conn)
+
 
 def link_sourceentry_gear(name, srcentrydata, conn):
     stmt = """
@@ -396,6 +406,7 @@ def link_sourceentry_gear(name, srcentrydata, conn):
             print("Error linking sourceentry to gear: {}".format(e))
         else:
             conn.commit()
+
 
 def do_ammo(data, conn):
     table = """ 
@@ -427,7 +438,8 @@ def do_ammo(data, conn):
     inp_data = []
     for i in data['ammunition']:
         # print(i)
-        inp_data.append((i['amount'], i['bulk'], i['descr'], i['name'], i['price_gp']))
+        inp_data.append(
+            (i['amount'], i['bulk'], i['descr'], i['name'], i['price_gp']))
 
     stmt = "INSERT INTO ammunition(amount, bulk, descr, name, price_gp) VALUES (?,?,?,?,?)"
     try:
@@ -443,6 +455,7 @@ def do_ammo(data, conn):
         srcentrydata = util_srcentrydata(i)
         util_insert_into_sourceentry(srcentrydata, conn)
         link_sourceentry_ammunition(i['name'], srcentrydata, conn)
+
 
 def util_srcentrydata(i):
     srcentrydata = []
@@ -479,6 +492,7 @@ def link_sourceentry_ammunition(name, srcentrydata, conn):
             print("Error linking sourceentry to ammunition: {}".format(e))
         else:
             conn.commit()
+
 
 def do_armor(data, conn):
     # Create the 3 tables
@@ -1720,102 +1734,6 @@ CREATE TABLE trait (
         print(vars(e))
     else:
         conn.commit()
-
-
-def do_size(data, conn):
-    table = """
-CREATE TABLE size (
-  size_id INTEGER PRIMARY KEY,
-  short_name TEXT NOT NULL UNIQUE,
-  space_in_ft INTEGER NOT NULL,
-  reach_tall_ft INTEGER NOT NULL,
-  reach_long_ft INTEGER NOT NULL
-);
-   """
-
-    c = conn.cursor()
-    c.execute(table)
-
-    inp_data = []
-    for i in data:
-        inp_data.append((i['name'], i['space_in_ft'], i['reach_tall_ft'],
-                         i['reach_long_ft']))
-
-    stmt = "INSERT INTO size (short_name, space_in_ft, reach_tall_ft, reach_long_ft) VALUES (?,?,?,?)"
-    try:
-        conn.executemany(stmt, inp_data)
-    except:
-        print("Error creating size")
-    else:
-        conn.commit()
-
-
-def do_weaponcategory(data, conn):
-    table = """
-CREATE TABLE weaponcategory (
-  weaponcategory_id INTEGER PRIMARY KEY,
-  "name" TEXT NOT NULL UNIQUE
-);
-   """
-
-    c = conn.cursor()
-    c.execute(table)
-
-    inp_data = []
-    for i in data:
-        inp_data.append((i, ))  # trailing comma necessary for one-item tuple
-
-    stmt = "INSERT INTO weaponcategory(name) VALUES (?)"
-    try:
-        conn.executemany(stmt, inp_data)
-    except:
-        e = sys.exc_info()[0]
-        print("Error creating weaponcategory: {}".format(e))
-        print(vars(e))
-    else:
-        conn.commit()
-
-
-def do_movement(data, conn):
-    table = """
-CREATE TABLE movement (
-  movement_id INTEGER PRIMARY KEY,
-  "name" TEXT UNIQUE NOT NULL
-);
-   """
-
-    c = conn.cursor()
-    c.execute(table)
-
-    inp_data = []
-    for i in data:
-        inp_data.append((i, ))  # trailing comma necessary for one-item tuple
-
-    stmt = "INSERT INTO movement(name) VALUES (?)"
-    try:
-        conn.executemany(stmt, inp_data)
-    except:
-        e = sys.exc_info()[0]
-        print("Error creating movement: {}".format(e))
-        print(vars(e))
-    else:
-        conn.commit()
-
-def get_db_conn():
-    ## Get database connection
-    conn = sqlite3.connect(DBFILE)  # eventually hook this up to be the main db
-    ## Set pragmas
-    pragma1 = "PRAGMA synchronous=OFF;"
-    pragma2 = "PRAGMA count_changes=OFF;"
-    pragma3 = "PRAGMA journal_mode=MEMORY;"
-    pragma4 = "PRAGMA temp_store=MEMORY;"
-    pragma5 = "PRAGMA foreign_keys=ON;"
-    conn.execute(pragma1)
-    conn.execute(pragma2)
-    conn.execute(pragma3)
-    conn.execute(pragma4)
-    conn.execute(pragma5)
-    return conn
 
 
 if __name__ == "__main__":
