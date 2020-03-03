@@ -357,16 +357,7 @@ def do_gear(data, conn):
 
     # do the sourceentry linking
     for i in data['gear']:
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         util_insert_into_sourceentry(srcentrydata, conn)
         link_sourceentry_gear(i['name'], srcentrydata, conn)
 
@@ -435,18 +426,23 @@ def do_ammo(data, conn):
         conn.commit()
 
     for i in data['ammunition']:
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         util_insert_into_sourceentry(srcentrydata, conn)
         link_sourceentry_ammunition(i['name'], srcentrydata, conn)
+
+def util_srcentrydata(i):
+    srcentrydata = []
+    for j in i['source']:
+        abbr = j['abbr']
+        page_start = j['page_start']
+        # Not all YAML entries have page_stop data
+        if 'page_stop' in j:
+            page_stop = j['page_stop']
+        else:
+            page_stop = page_start
+        srcentrydata.append((abbr, page_start, page_stop))
+    return srcentrydata
+
 
 def link_sourceentry_ammunition(name, srcentrydata, conn):
     stmt = """
@@ -623,32 +619,14 @@ def do_armor(data, conn):
         conn.commit()
 
     for i in data['armorgroup']:
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         util_insert_into_sourceentry(srcentrydata, conn)
         # now link the source entries to this table
         # TODO
         link_sourceentry_armorgroup(i['name'], srcentrydata, conn)
 
     for i in data['armor']:
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         util_insert_into_sourceentry(srcentrydata, conn)
         # now link the source entries to this table
         # TODO
@@ -844,16 +822,7 @@ CREATE TABLE spellschool (
     # print(data)
     for i in data['spellschool']:
         # print(i)
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         # need to insert sourceentry data first but check and make sure the
         # length is only one
         if len(srcentrydata) != 1:
@@ -945,16 +914,7 @@ CREATE TABLE action (
     # print(data)
     for i in data['action']:
         # print(i)
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         # need to insert sourceentry data first but check and make sure the
         # length is only one
         if len(srcentrydata) != 1:
@@ -1005,16 +965,7 @@ CREATE TABLE actioncategory (
     # print(data)
     for i in data['actioncategory']:
         # print(i)
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         # need to insert sourceentry data first but check and make sure the
         # length is only one
         if len(srcentrydata) != 1:
@@ -1062,16 +1013,7 @@ CREATE TABLE lang (
     # print(data)
     for i in data['language']:
         # print(i)
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         # need to insert sourceentry data first but check and make sure the
         # length is only one
         if len(srcentrydata) != 1:
@@ -1121,16 +1063,7 @@ CREATE TABLE bulk (
     # print(data)
     for i in data['bulk']:
         # print(i)
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         # need to insert sourceentry data first but check and make sure the
         # length is only one on bulks
         if len(srcentrydata) != 1:
@@ -1188,16 +1121,7 @@ CREATE TABLE sourceentry_background (
 
     # print(data)
     for i in data['background']:
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         stmt = "INSERT INTO background(name, descr, is_comty_use, is_specific_to_adv) VALUES (?,?,?,?)"
         try:
             conn.execute(stmt, (i['name'], i['descr'], i['is_comty_use'],
@@ -1261,16 +1185,7 @@ CREATE TABLE sourceentry_condition (
     c.execute(table)
 
     for i in data['condition']:
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         stmt = "INSERT INTO condition(name, short_descr, descr) VALUES (?,?,?)"
         try:
             conn.execute(stmt, (i['name'], i['short_descr'], i['descr']))
@@ -1314,16 +1229,7 @@ def do_damage(data, conn):
     # NOW DO THE DAMAGECATEGORY stuff
 
     for i in data['damagecategory']:
-        srcentrydata = []
-        for j in i['source']:
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+        srcentrydata = util_srcentrydata(i)
         stmt = "INSERT INTO damagecategory(name, descr) VALUES (?,?)"
         try:
             conn.execute(stmt, (i['name'], i['descr']))
@@ -1340,15 +1246,7 @@ def do_damage(data, conn):
 
     for i in data['damagetype']:
         for j in i['source']:
-            srcentrydata = []
-            abbr = j['abbr']
-            page_start = j['page_start']
-            # Not all YAML entries have page_stop data
-            if 'page_stop' in j:
-                page_stop = j['page_stop']
-            else:
-                page_stop = page_start
-            srcentrydata.append((abbr, page_start, page_stop))
+            srcentrydata = util_srcentrydata(i)
         stmt = """
 INSERT INTO damagetype(name, abbr, damagecategory_id)
         VALUES (?,?,(
