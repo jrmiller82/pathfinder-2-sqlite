@@ -1,3 +1,5 @@
+import sys
+
 def do_abilityscore(data, conn):
     table = """
 CREATE TABLE abilityscore (
