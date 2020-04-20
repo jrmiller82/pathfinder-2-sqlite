@@ -597,8 +597,6 @@
     str_mod: 1
     wis_mod: 2
   ac: 16
-  items:
-    - shortsword
   automatic_abilities:
   - description: An arbiter can always sense the direction of the nearest non-arbiter
       inevitable on the plane, but it cannot sense the range of the inevitable.
@@ -618,6 +616,8 @@
   innate_spells:
   - level: 4
     name: read omens
+  items:
+  - shortsword
   languages:
   - Celestial
   - Common
@@ -812,8 +812,6 @@
     str_mod: 7
     wis_mod: 4
   ac: 34
-  items:
-    - +1 striking bastard sword
   automatic_abilities:
   - description: A kolyarut can speak with and understand any creature that has a
       language.
@@ -850,6 +848,8 @@
   - frequency: self only
     level: 2
     name: silence
+  items:
+  - +1 striking bastard sword
   languages:
   - Celestial
   - Infernal
@@ -2794,8 +2794,6 @@
     str_mod: 5
     wis_mod: 3
   ac: 31
-  items:
-    - +1 full plate
   automatic_abilities:
   - description: '|1| (divine, transmutation) A shield archon’s hands can change into
       a *+1 holy striking* spear and a *lesser sturdy shield* or back into hands.
@@ -2826,6 +2824,8 @@
   - frequency: constant
     level: 5
     name: tongues
+  items:
+  - +1 full plate
   languages:
   - Celestial
   - Draconic
@@ -7692,7 +7692,6 @@
     str_mod: 6
     wis_mod: 5
   ac: 28
-  items: +1 striking composite longbow (50 arrows)
   automatic_abilities:
   - description: A leukodaemon senses any creature with a disease, and it knows the
       type and current stage of all diseases carried by any creature within range.
@@ -7717,6 +7716,7 @@
   - frequency: at will
     level: 4
     name: dispel magic
+  items: +1 striking composite longbow (50 arrows)
   languages:
   - Common
   - Daemonic
@@ -16159,11 +16159,6 @@
     str_mod: 2
     wis_mod: 1
   ac: 18
-  items:
-    - hand crossbow (10 bolts)
-    - leather armor
-    - lethargy poison (2 doses)
-    - rapier
   automatic_abilities:
   - description: ''
     name: Light Blindness
@@ -16180,6 +16175,11 @@
   - frequency: at will
     level: 2
     name: faerie fire
+  items:
+  - hand crossbow (10 bolts)
+  - leather armor
+  - lethargy poison (2 doses)
+  - rapier
   languages:
   - Elven
   - Undercommon
@@ -16264,11 +16264,6 @@
     str_mod: 2
     wis_mod: 0
   ac: 19
-  items: 
-    - hand crossbow (10 bolts)
-    - lethargy poison (2 doses)
-    - shortsword
-    - studded leather armor
   automatic_abilities:
   - description: ' '
     name: Light Blindness
@@ -16286,6 +16281,11 @@
   - frequency: at will
     level: 2
     name: faerie fire
+  items:
+  - hand crossbow (10 bolts)
+  - lethargy poison (2 doses)
+  - shortsword
+  - studded leather armor
   languages:
   - Elven
   - Undercommon
@@ -16358,13 +16358,6 @@
     str_mod: 1
     wis_mod: 4
   ac: 20
-  items:
-    - chain mail
-    - hand crossbow (10 bolts)
-    - lethargy poison (4 doses)
-    - rapier
-    - religious symbol
-    - steel shield (Hardness 5, HP 20, BT 10)
   automatic_abilities:
   - description: ''
     name: Light Blindness
@@ -16391,6 +16384,13 @@
   - frequency: at will
     level: 1
     name: command
+  items:
+  - chain mail
+  - hand crossbow (10 bolts)
+  - lethargy poison (4 doses)
+  - rapier
+  - religious symbol
+  - steel shield (Hardness 5, HP 20, BT 10)
   languages:
   - Abyssal
   - Elven
@@ -16533,16 +16533,9 @@
     str_mod: 1
     wis_mod: 1
   ac: 18
-  items:
-    - alchemist's tools
-    - infused lesser acid flask (2)
-    - infused lesser alchemist's fire (2)
-    - studded leather armor
-    - warhammer
-    - infused reagents (2)
   automatic_abilities:
   - description: A duergar bombardier’s items listed as infused last for 24 hours,
-      or until the next time they make their daily preparations.       
+      or until the next time they make their daily preparations.
     name: Infused Items
     traits: null
   description: Alchemy intrigues many duergars, and their cruel traditions often motivate
@@ -16555,6 +16548,13 @@
   hp: 20
   immunities: null
   innate_spells: []
+  items:
+  - alchemist's tools
+  - infused lesser acid flask (2)
+  - infused lesser alchemist's fire (2)
+  - studded leather armor
+  - warhammer
+  - infused reagents (2)
   languages:
   - Common
   - Dwarven
@@ -19295,8 +19295,6 @@
     str_mod: 6
     wis_mod: 2
   ac: 21
-  items:
-    - flail (2)
   automatic_abilities:
   - description: Each of an ettin’s heads rolls its own initiative and has its own
       turn. Neither head can Delay. At the start of a head’s turn, that head gets
@@ -19313,6 +19311,8 @@
   hp: 110
   immunities: null
   innate_spells: null
+  items:
+  - flail (2)
   languages:
   - Goblin
   - Jotun
@@ -21835,8 +21835,6 @@
     str_mod: 4
     wis_mod: 3
   ac: 34
-  items:
-    - +1 striking hand crossbow (20 bolts)
   automatic_abilities:
   - description: Hungersense allows the gimmerling to sense creatures that require
       food to live.
@@ -21852,6 +21850,8 @@
   hp: 235
   immunities: null
   innate_spells: null
+  items:
+  - +1 striking hand crossbow (20 bolts)
   languages:
   - Aklo
   - Common
@@ -23414,9 +23414,6 @@
     str_mod: -1
     wis_mod: 1
   ac: 15
-  items:
-    - dart (10)
-    - shortsword
   automatic_abilities:
   - description: mitflit’s self-loathing makes it easy to influence. It takes a –4
       penalty to its Will DC against checks to Coerce, Demoralize, Make an Impression,
@@ -23450,6 +23447,9 @@
     name: speak with animals
   - level: 1
     name: bane
+  items:
+  - dart (10)
+  - shortsword
   languages:
   - Undercommon
   level: -1
@@ -23880,8 +23880,6 @@
     str_mod: 8
     wis_mod: 7
   ac: 47
-  items:
-    - scythe
   automatic_abilities:
   - description: ''
     name: Death’s Grace
@@ -23933,6 +23931,8 @@
   - frequency: constant
     level: 2
     name: see invisibility
+  items:
+  - scythe
   languages:
   - Common
   - Necril
@@ -24021,8 +24021,6 @@
     str_mod: 6
     wis_mod: 6
   ac: 39
-  items:
-    - scythe
   automatic_abilities:
   - description: ''
     name: Death’s Grace
@@ -24065,6 +24063,8 @@
   - frequency: constant
     level: 2
     name: see invisibility
+  items:
+  - scythe
   languages:
   - Common
   - Necril
@@ -24671,8 +24671,6 @@
     str_mod: 5
     wis_mod: 5
   ac: 28
-  items:
-    - heartstone
   automatic_abilities:
   - description: A night hag adds *dominate*, *nightmare*, *scrying*, and *spellwrack*
       to her coven’s spells. **Nightmare Rider** When a night hag rides a nightmare,
@@ -24735,6 +24733,8 @@
   - frequency: constant
     level: 2
     name: detect alignment
+  items:
+  - heartstone
   languages:
   - Abyssal
   - Aklo
@@ -26922,8 +26922,6 @@
     str_mod: -3
     wis_mod: -2
   ac: 38
-  items:
-    - demilich eye gem (2)
   automatic_abilities:
   - description: Typically, a demilich is inert when encountered and doesn’t take
       actions until its *contingency* reaction has been triggered (see below).
@@ -26963,6 +26961,8 @@
   - frequency: constant
     level: 6
     name: true seeing
+  items:
+  - demilich eye gem (2)
   languages:
   - Abyssal
   - Aklo
@@ -28689,8 +28689,6 @@
     str_mod: 6
     wis_mod: 2
   ac: 20
-  items:
-    - greataxe
   automatic_abilities:
   - description: A minotaur automatically critically succeeds at Survival checks to
       avoid becoming lost or to find its way, including those from the *maze* spell.
@@ -28705,6 +28703,8 @@
   hp: 70
   immunities: null
   innate_spells: null
+  items:
+  - greataxe
   languages:
   - Jotun
   level: 4
@@ -32632,8 +32632,6 @@
     str_mod: 8
     wis_mod: 6
   ac: 38
-  items:
-    - +2 striking bo staff
   automatic_abilities:
   - description: psychopomp senses the vital essence of living and undead creatures
       within the listed range.
@@ -32667,6 +32665,8 @@
   - frequency: constant
     level: 2
     name: spider climb
+  items:
+  - +2 striking bo staff
   languages:
   - Abyssal
   - Celestial
@@ -33378,10 +33378,6 @@
     str_mod: 0
     wis_mod: 2
   ac: 21
-  items:
-    - alchemist's tools
-    - hand crossbow (20 bolts)
-    - studded leather armor
   automatic_abilities:
   - description: A ratfolk grenadier carries 2 infused moderate acid flasks, 2 infused
       moderate alchemist’s fires, and 2 infused moderate frost vials. These items
@@ -33392,6 +33388,10 @@
   hp: 60
   immunities: null
   innate_spells: null
+  items:
+  - alchemist's tools
+  - hand crossbow (20 bolts)
+  - studded leather armor
   languages:
   - Common
   level: 4
@@ -33482,10 +33482,6 @@
     str_mod: 4
     wis_mod: 1
   ac: 21
-  items:
-    - scythe
-    - iron boots
-    - red cap
   automatic_abilities:
   - description: redcap’s woolen hat is dyed with the blood of its victims. If the
       redcap loses its cap, it no longer benefits from fast healing and takes a –4
@@ -33510,6 +33506,10 @@
   hp: 60
   immunities: null
   innate_spells: null
+  items:
+  - scythe
+  - iron boots
+  - red cap
   languages:
   - Common
   - Sylvan
@@ -34035,11 +34035,6 @@
     str_mod: 3
     wis_mod: 2
   ac: 19
-  items: 
-    - dagger
-    - panpipes
-    - shortbow (20 arrows)
-    - wineskin
   automatic_abilities:
   - description: satyr’s wineskin magically enchants any alcohol inside. With an Interact
       action, a living creature can imbibe the alcohol and gain a +1 item bonus to
@@ -34070,6 +34065,11 @@
     name: sleep
   - level: 4
     name: suggestion
+  items:
+  - dagger
+  - panpipes
+  - shortbow (20 arrows)
+  - wineskin
   languages:
   - Common
   - Sylvan
@@ -34309,12 +34309,9 @@
     str_mod: 3
     wis_mod: 3
   ac: 18
-  items:
-    - longspear
-    - spear
   automatic_abilities:
   - description: he sea devil can communicate telepathically with sharks within range.
-      It can communicate only simple concepts like “come,” “guard,” or “attack.”      
+      It can communicate only simple concepts like “come,” “guard,” or “attack.”
     name: Shark Commune
     traits:
     - mental
@@ -34326,6 +34323,9 @@
   hp: 30
   immunities: null
   innate_spells: null
+  items:
+  - longspear
+  - spear
   languages:
   - Aquan
   level: 2
@@ -34419,11 +34419,9 @@
     str_mod: 4
     wis_mod: 1
   ac: 21
-  items:
-    - trident
   automatic_abilities:
   - description: he sea devil can communicate telepathically with sharks within range.
-      It can communicate only simple concepts like “come,” “guard,” or “attack.” 
+      It can communicate only simple concepts like “come,” “guard,” or “attack.”
     name: Shark Commune
     traits:
     - mental
@@ -34434,6 +34432,8 @@
   hp: 60
   immunities: null
   innate_spells: null
+  items:
+  - trident
   languages:
   - Aquan
   level: 4
@@ -34529,9 +34529,6 @@
     str_mod: 5
     wis_mod: 3
   ac: 24
-  items:
-    - longspear
-    - spear (2)
   automatic_abilities:
   - description: he sea devil can communicate telepathically with sharks within range.
       It can communicate only simple concepts like “come,” “guard,” or “attack.”
@@ -34545,6 +34542,9 @@
   hp: 95
   immunities: null
   innate_spells: null
+  items:
+  - longspear
+  - spear (2)
   languages:
   - Aquan
   level: 6
@@ -35601,8 +35601,6 @@
     str_mod: 4
     wis_mod: 2
   ac: 18
-  items:
-    - one weapon determined by its sin
   automatic_abilities:
   - description: A sinspawn can smell creatures that reflect its sin, as the scent
       ability. The GM determines which creatures are appropriately sinful.
@@ -35669,6 +35667,8 @@
   immunities:
   - controlled
   innate_spells: null
+  items:
+  - one weapon determined by its sin
   languages:
   - Aklo
   level: 2
@@ -37255,8 +37255,6 @@
     str_mod: -3
     wis_mod: 0
   ac: 15
-  items:
-    - rapier
   automatic_abilities:
   - description: sprite naturally sheds light like a torch. The sprite can extinguish,
       rekindle, or change the color of this light using a single action, which has
@@ -37279,6 +37277,8 @@
   innate_spells:
   - level: 1
     name: color spray
+  items:
+  - rapier
   languages:
   - Common
   - Sylvan
@@ -38385,11 +38385,8 @@
     str_mod: 5
     wis_mod: 4
   ac: 24
-  items:
-    - +1 rapier
-    - leather armor
   automatic_abilities:
-  - description: '' 
+  - description: ''
     name: Children of the Night
     traits:
     - divine
@@ -38404,6 +38401,9 @@
   - poison
   - sleep
   innate_spells: null
+  items:
+  - +1 rapier
+  - leather armor
   languages:
   - Common
   - Necril
@@ -38514,8 +38514,6 @@
     str_mod: 3
     wis_mod: 4
   ac: 27
-  items:
-    - signet ring
   automatic_abilities:
   - description: ''
     name: Children of the Night
@@ -38533,6 +38531,8 @@
   - poison
   - sleep
   innate_spells: null
+  items:
+  - signet ring
   languages:
   - Common
   - Necril
@@ -39392,10 +39392,6 @@
     str_mod: 2
     wis_mod: 2
   ac: 19
-  items:
-    - hand crossbow (20 bolts)
-    - leather armor
-    - shortsword
   automatic_abilities:
   - description: he wererat can communicate with rodents.
     name: Rat Empathy
@@ -39416,6 +39412,10 @@
   hp: 45
   immunities: null
   innate_spells: null
+  items:
+  - hand crossbow (20 bolts)
+  - leather armor
+  - shortsword
   languages:
   - Common
   level: 2
@@ -39530,10 +39530,6 @@
     str_mod: 4
     wis_mod: 2
   ac: 19
-  items:
-    - battle axe
-    - composite shortbow (20 arrows)
-    - studded leather armor
   automatic_abilities:
   - description: he werewolf can communicate with lupines.
     name: Wolf Empathy
@@ -39550,6 +39546,10 @@
   hp: 63
   immunities: null
   innate_spells: null
+  items:
+  - battle axe
+  - composite shortbow (20 arrows)
+  - studded leather armor
   languages:
   - Common
   level: 3
@@ -39660,10 +39660,6 @@
     str_mod: 5
     wis_mod: 3
   ac: 23
-  items:
-    - chain shirt
-    - greataxe
-    - hatchet (8)
   automatic_abilities:
   - description: he werebear can communicate with ursines.
     name: Bear Empathy
@@ -39685,6 +39681,10 @@
   hp: 75
   immunities: null
   innate_spells: null
+  items:
+  - chain shirt
+  - greataxe
+  - hatchet (8)
   languages:
   - Common
   level: 4
@@ -43079,9 +43079,6 @@
     str_mod: 2
     wis_mod: 4
   ac: 21
-  items:
-    - dart (4)
-    - staff
   automatic_abilities:
   - description: The greenspeaker can use Diplomacy to Make an Impression on and make
       very simple Requests of plants and fungi.
@@ -43091,6 +43088,9 @@
   hp: 71
   immunities: null
   innate_spells: null
+  items:
+  - dart (4)
+  - staff
   languages:
   - Common
   - Grippli
@@ -45509,8 +45509,6 @@
     str_mod: 6
     wis_mod: 1
   ac: 33
-  items:
-    - broken greatsword
   automatic_abilities:
   - description: he dragonscarred dead is immediately aware of any intruder that enters
       the lair of its creator dragon. It does not know the exact location of the intruder
@@ -45536,6 +45534,8 @@
   - poison
   - unconscious
   innate_spells: null
+  items:
+  - broken greatsword
   languages:
   - Common
   - Draconic
@@ -46114,8 +46114,6 @@
     str_mod: 7
     wis_mod: 2
   ac: 35
-  items:
-    - +1 striking longsword (2)
   automatic_abilities:
   - description: y spending 5 minutes concentrating, the calikang can enter a state
       of suspended animation, freezing in place and becoming motionless but remaining
@@ -46143,6 +46141,8 @@
   - frequency: constant
     level: 6
     name: true seeing
+  items:
+  - +1 striking longsword (2)
   languages:
   - Common
   - Jotun
