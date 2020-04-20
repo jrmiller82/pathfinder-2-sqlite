@@ -1,6 +1,6 @@
 # License
 
-This repository is licensed under three regimes as follows: 
+This repository is licensed under two regimes as follows: 
 
 ## Code
 
