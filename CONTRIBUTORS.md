@@ -5,3 +5,4 @@
 5. Brian Haley
 6. Mirko Rainer
 7. Joey Burney
+8. Brad Laney
