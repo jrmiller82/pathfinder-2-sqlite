@@ -5275,7 +5275,7 @@ feat:
   prereqs:
   - descr: Fiendsbane Oath
     feat: Fiendsbane Oath
-  requirement: Fiendsbane Oath
+  requirement: null
   source:
   - abbr: CRB
     page_start: 114
