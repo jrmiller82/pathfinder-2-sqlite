@@ -158,6 +158,11 @@ def do_heritages(data, conn):
             c.execute(stmt, (j['name'], j['descr'], rowid[0]))
             conn.commit()
 
+            if j['feat'] != None:
+                print("We have a feat that is not equal to none: {}".format(j['feat']))
+                print("TODO THIS NEEDS TO GET DONE AFTER FEATS ARE IN SQL")
+                # i.e. TODO select feat_id where name = j['feat] then insert into a heritages_feats table
+
 
 def do_ancestries(data, conn):
     # create tables
