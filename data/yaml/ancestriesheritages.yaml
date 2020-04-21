@@ -236,7 +236,10 @@ ancestries:
       to add your level to the Hit Points you regain from their treatment.
     feat: null
     name: Hillock Halfling
-  - descr: Your ancestors have traveled from place to place for generations, never content to settle down. You gain two additional languages of your choice, chosen from among the common and uncommon languages available to you, and every time you take the Multilingual feat, you gain another new language.
+  - descr: Your ancestors have traveled from place to place for generations, never
+      content to settle down. You gain two additional languages of your choice, chosen
+      from among the common and uncommon languages available to you, and every time
+      you take the Multilingual feat, you gain another new language.
     feat: null
     name: Nomadic Halfling
   - descr: Your ancestors performed many secret acts under the concealing cover of
@@ -268,16 +271,16 @@ ancestries:
   flavor_text: TODO
   flaws: null
   heritages:
-  - descr: Either one of your parents was an elf, or one or both were half-elves. You
-      have pointed ears and other telltale signs of elf heritage. You gain the elf trait
-      and low-light vision. In addition, you can select elf, half-elf, and human feats
-      whenever you gain an ancestry feat.
+  - descr: Either one of your parents was an elf, or one or both were half-elves.
+      You have pointed ears and other telltale signs of elf heritage. You gain the
+      elf trait and low-light vision. In addition, you can select elf, half-elf, and
+      human feats whenever you gain an ancestry feat.
     feat: null
     name: Half-Elf
-  - descr: One of your parents was an orc, or one or both were half-orcs. You have a
-      green tinge to your skin and other indicators of orc heritage. You gain the orc
-      trait and low-light vision. In addition, you can select orc, half-orc, and human
-      feats whenever you gain an ancestry feat.
+  - descr: One of your parents was an orc, or one or both were half-orcs. You have
+      a green tinge to your skin and other indicators of orc heritage. You gain the
+      orc trait and low-light vision. In addition, you can select orc, half-orc, and
+      human feats whenever you gain an ancestry feat.
     feat: null
     name: Half-Orc
   - descr: Your ingenuity allows you to train in a wide variety of skills. You become
@@ -286,9 +289,9 @@ ancestries:
     feat: null
     name: Skilled Heritage
   - descr: Humanity’s versatility and ambition have fueled its ascendance to be the
-      most common ancestry in most nations throughout the world. Select a general feat
-      of your choice for which you meet the prerequisites (as with your ancestry feat,
-      you can select this general feat at any point during character creation).
+      most common ancestry in most nations throughout the world. Select a general
+      feat of your choice for which you meet the prerequisites (as with your ancestry
+      feat, you can select this general feat at any point during character creation).
     feat: null
     name: Versatile Heritage
   hp: 8

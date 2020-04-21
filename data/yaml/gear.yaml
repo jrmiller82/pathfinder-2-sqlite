@@ -1073,7 +1073,7 @@ gear:
     page_start: 291
     page_stop: 291
   traits:
-    - Uncommon
+  - Uncommon
 - bulk: 0.1
   descr: Maps are uncommon. Most maps you can find are simple and functional. A survey
     map details a single location in excellent detail. One of these maps gives you
@@ -1088,7 +1088,7 @@ gear:
     page_start: 291
     page_stop: 291
   traits:
-    - Uncommon
+  - Uncommon
 - bulk: 0.0
   descr: Picking an average lock requires four successes at DC 25.
   hands: 2
@@ -1192,8 +1192,8 @@ gear:
   - abbr: CRB
     page_start: 291
     page_stop: 291
-  traits: 
-    - Uncommon
+  traits:
+  - Uncommon
 - bulk: 0.1
   descr: This small wooden box contains cosmetics, false facial hair, spirit gum,
     and a few simple wigs. You usually need a disguise kit to set up a disguise in
@@ -1271,7 +1271,7 @@ gear:
     page_start: 291
     page_stop: 291
   traits:
-    - Uncommon
+  - Uncommon
 - bulk: 0.1
   descr: You need thieves' tools to Pick Locks or Disable Devices (of some types)
     using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks
