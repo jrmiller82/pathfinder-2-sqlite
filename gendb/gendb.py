@@ -124,6 +124,10 @@ def main():
         data = yaml.full_load(yl)
     do_gear(data, conn)
 
+    with open('feats.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_feats(data, conn)
+
     with open('ancestriesheritages.yaml') as yl:
         data = yaml.full_load(yl)
     do_ancestries(data, conn)
@@ -131,6 +135,101 @@ def main():
     with open('ancestriesheritages.yaml') as yl:
         data = yaml.full_load(yl)
     do_heritages(data, conn)
+
+def do_feats(data, conn):
+
+    table = """
+    CREATE TABLE feat (
+      feat_id INTEGER PRIMARY KEY,
+      actioncost_id INTEGER,
+      descr TEXT NOT NULL,
+      freq_id INTEGER,
+      level INTEGER NOT NULL,
+      name TEXT NOT NULL UNIQUE,
+      requirement_id INTEGER,
+      trigger_id INTEGER,
+      FOREIGN KEY (actioncost_id) REFERENCES actioncost(actioncost_id),
+      FOREIGN KEY (freq_id) REFERENCES frequency(freq_id),
+      FOREIGN KEY (requirement_id) REFERENCES requirement(requirement_id),
+      FOREIGN KEY (trigger_id) REFERENCES trigger(trigger_id)
+    );
+    """
+    c = conn.cursor()
+    c.execute(table)
+
+
+    feat_result_list = []
+    for i in data['feat']:
+        if i['actioncost'] == None:
+            ac_id = None
+        else:
+            ac_id = get_actioncost_id_by_name(i['actioncost'], conn)
+            # print("ac_id for {} is {}".format(i['actioncost'], ac_id))
+        if i['frequency'] == None:
+            f_id = None
+        else:
+            f_id = get_freq_id_by_descr(i['frequency'], conn)
+            # print("f_id for {} is {}".format(i['frequency'], f_id))
+        if i['requirement'] == None:
+            r_id = None
+        else:
+            r_id = get_requirement_id_by_descr(i['requirement'], conn)
+            # print("f_id for {} is {}".format(i['frequency'], f_id))
+
+        # res = (ac_id, i['descr'], f_id, i['level'], i['name'], r_id, t_id)
+
+
+
+    insert_stmt = "INSERT INTO feat (actioncost_id, descr, freq_id, level, name, requirement_id, trigger_id) VALUES (?,?,?,?,?,?,?);"
+
+def get_requirement_id_by_descr(r, conn):
+    qstmt = "SELECT requirement_id FROM requirement WHERE descr=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (r,))
+    except sqlite3.Error as e:
+        print("Error getting an requirement_id by name: {} Error: {}".format(r, e))
+    except:
+        print("Error getting an requirement_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no requirement_id for given requirement name: {}\nYou should check to see if this requirement is in requirements.yaml and sometimes it is a straight apostrophe versus uni-code curly apostrophe.'.format(r))
+        else:
+            return x[0]
+
+def get_freq_id_by_descr(f, conn):
+    qstmt = "SELECT freq_id FROM frequency WHERE freq_descr=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (f,))
+    except sqlite3.Error as e:
+        print("Error getting an freq_id_id by name: {} Error: {}".format(f, e))
+    except:
+        print("Error getting an freq_id_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no freq_id_id for given freq_id name: {}'.format(f))
+        else:
+            return x[0]
+
+def get_actioncost_id_by_name(ac, conn):
+    qstmt = "SELECT actioncost_id FROM actioncost WHERE name=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (ac,))
+    except sqlite3.Error as e:
+        print("Error getting an actioncost_id by name: {} Error: {}".format(ac, e))
+    except:
+        print("Error getting an actioncost_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no actioncost_id for given actioncost name: {}'.format(ac))
+        else:
+            return x[0]
+
 
 def do_heritages(data, conn):
     table = """
@@ -153,7 +252,7 @@ def do_heritages(data, conn):
         rowid = c.fetchone()
         #FOR EACH HERITAGE, INSERT INTO TABLE USING ANCESTRY ID
         for j in i['heritages']:
-            print("doing this heritage: {}".format(j['name']))
+            # print("doing this heritage: {}".format(j['name']))
             stmt = "INSERT INTO heritages (name, descr, ancestry_id) VALUES (?,?,?);"
             c.execute(stmt, (j['name'], j['descr'], rowid[0]))
             conn.commit()
@@ -226,7 +325,7 @@ def do_ancestries(data, conn):
         sinp_data = (i['size'], )
         sres = c.execute(sstmt, sinp_data).fetchall()
         sid = sres[0][0]
-        print(sid)
+        # print(sid)
 
         # Get the vision_id
         vstmt = """
@@ -234,12 +333,12 @@ def do_ancestries(data, conn):
         """
         vinp_data = (i['senses'], )
         vres = c.execute(vstmt, vinp_data).fetchall()
-        print(vres)
+        # print(vres)
         if len(vres) > 0:
             vid = vres[0][0]
         else:
             vid = None
-        print(vid)
+        # print(vid)
 
         #print(i)
         inp_data.append(
@@ -261,7 +360,7 @@ def do_ancestries(data, conn):
         if i['boosts'] != None:
             for j in i['boosts']:
                 boostlist.append((i['name'], j))
-            print("boostlist is:\t{}".format(boostlist))
+            # print("boostlist is:\t{}".format(boostlist))
 
             stmt = """
             INSERT INTO ancestries_boosts (ancestry_id, abilityscore_id) VALUES (
@@ -286,7 +385,7 @@ def do_ancestries(data, conn):
         if i['flaws'] != None:
             for j in i['flaws']:
                 flawlist.append((i['name'], j))
-            print("flawlist is:\t{}".format(flawlist))
+            # print("flawlist is:\t{}".format(flawlist))
 
             stmt = """
             INSERT INTO ancestries_flaws (ancestry_id, abilityscore_id) VALUES (
@@ -311,7 +410,7 @@ def do_ancestries(data, conn):
         if i['traits'] != None:
             for j in i['traits']:
                 traitlist.append((i['name'], j))
-            print("traitlist is:\t{}".format(traitlist))
+            # print("traitlist is:\t{}".format(traitlist))
 
             stmt = """
             INSERT INTO ancestries_traits (ancestry_id, trait_id) VALUES (
@@ -605,7 +704,7 @@ def do_armor(data, conn):
     # insert basics into armorcategory table
     inp_data = []
     for i in data['armorcategory']:
-        print(i)
+        # print(i)
         inp_data.append((i, ))
 
     stmt = "INSERT INTO armorcategory(name) VALUES (?)"

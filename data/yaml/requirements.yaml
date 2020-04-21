@@ -75,3 +75,4 @@ requirement:
 - You have an unexpended spell slot you could use to cast the triggered spell.
 - Your most recent action was to cast a non-cantrip spell.
 - The last action you used was Drain Bonded Item.
+- You have a focus pool, and you have spent at least 1 Focus Point since you last regained any Focus Points.

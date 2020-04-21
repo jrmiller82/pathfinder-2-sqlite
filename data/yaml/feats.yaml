@@ -1906,7 +1906,7 @@ feat:
   descr: Given time to collect yourself after a near-death scrape, you can rebuild
     your ferocity and withstand additional finishing blows. You can use Orc Ferocity
     with a frequency of once per hour, rather than once per day.
-  frequency: null
+  frequency: once per hour
   has_been_manually_proofread: false
   level: 13
   name: Incredible Ferocity
@@ -3138,7 +3138,7 @@ feat:
   prereqs:
   - descr: 'Feature: dragon instinct'
     feat: null
-  requirement: You haven’t used this ability since you last Raged.
+  requirement: You haven't used this ability since you last Raged.
   source:
   - abbr: CRB
     page_start: 90
@@ -3605,7 +3605,7 @@ feat:
   prereqs:
   - descr: 'Come And Get Me'
     feat: Come and Get Me
-  requirement: You’re under the effect of Come and Get Me.
+  requirement: You're under the effect of Come and Get Me.
   source:
   - abbr: CRB
     page_start: 93
