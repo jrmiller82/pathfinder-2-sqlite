@@ -90,13 +90,6 @@ ancestries:
       Climb). This doesn’t affect you if you’re using a climb Speed.
     feat: null
     name: Woodland Elf
-  - &id001
-    descr: Either one of your parents was an elf, or one or both were half-elves.
-      You have pointed ears and other telltale signs of elf heritage. You gain the
-      elf trait and low-light vision. In addition, you can select elf, half-elf, and
-      human feats whenever you gain an ancestry feat.
-    feat: null
-    name: Half-Elf
   hp: 6
   name: Elf
   senses: Low-Light Vision
@@ -274,7 +267,30 @@ ancestries:
   - Free2
   flavor_text: TODO
   flaws: null
-  heritages: []
+  heritages:
+  - descr: Either one of your parents was an elf, or one or both were half-elves. You
+      have pointed ears and other telltale signs of elf heritage. You gain the elf trait
+      and low-light vision. In addition, you can select elf, half-elf, and human feats
+      whenever you gain an ancestry feat.
+    feat: null
+    name: Half-Elf
+  - descr: One of your parents was an orc, or one or both were half-orcs. You have a
+      green tinge to your skin and other indicators of orc heritage. You gain the orc
+      trait and low-light vision. In addition, you can select orc, half-orc, and human
+      feats whenever you gain an ancestry feat.
+    feat: null
+    name: Half-Orc
+  - descr: Your ingenuity allows you to train in a wide variety of skills. You become
+      trained in one skill of your choice. At 5th level, you become an expert in the
+      chosen skill.
+    feat: null
+    name: Skilled Heritage
+  - descr: Humanity’s versatility and ambition have fueled its ascendance to be the
+      most common ancestry in most nations throughout the world. Select a general feat
+      of your choice for which you meet the prerequisites (as with your ancestry feat,
+      you can select this general feat at any point during character creation).
+    feat: null
+    name: Versatile Heritage
   hp: 8
   name: Human
   senses: None
@@ -290,8 +306,7 @@ ancestries:
 - boosts: null
   flavor_text: TODO
   flaws: null
-  heritages:
-  - *id001
+  heritages: []
   hp: 8
   name: Half-Elf
   senses: None
@@ -309,13 +324,7 @@ ancestries:
 - boosts: null
   flavor_text: TODO
   flaws: null
-  heritages:
-  - descr: One of your parents was an orc, or one or both were half-orcs. You have
-      a green tinge to your skin and other indicators of orc heritage. You gain the
-      orc trait and low-light vision. In addition, you can select orc, half-orc, and
-      human feats whenever you gain an ancestry feat.
-    feat: null
-    name: Half-Orc
+  heritages: []
   hp: 8
   name: Half-Orc
   senses: None

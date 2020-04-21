@@ -120,15 +120,43 @@ def main():
         data = yaml.full_load(yl)
     do_ammo(data, conn)
 
-    # move on to ammo
     with open('gear.yaml') as yl:
         data = yaml.full_load(yl)
     do_gear(data, conn)
 
-    # move on to ammo
-    with open('ancestries.yaml') as yl:
+    with open('ancestriesheritages.yaml') as yl:
         data = yaml.full_load(yl)
     do_ancestries(data, conn)
+
+    with open('ancestriesheritages.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_heritages(data, conn)
+
+def do_heritages(data, conn):
+    table = """
+    CREATE TABLE heritages (
+        heritage_id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL UNIQUE,
+        descr TEXT NOT NULL,
+        ancestry_id INTEGER NOT NULL, -- many to one relationship
+    FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id)
+    );
+    """
+
+    c = conn.cursor()
+    c.execute(table)
+
+    for i in data['ancestries']:
+        #GET ID OF ANCESTRY
+        stmt = "SELECT ancestry_id FROM ancestries WHERE name=?;"
+        c.execute(stmt, (i['name'],))
+        rowid = c.fetchone()
+        #FOR EACH HERITAGE, INSERT INTO TABLE USING ANCESTRY ID
+        for j in i['heritages']:
+            print("doing this heritage: {}".format(j['name']))
+            stmt = "INSERT INTO heritages (name, descr, ancestry_id) VALUES (?,?,?);"
+            c.execute(stmt, (j['name'], j['descr'], rowid[0]))
+            conn.commit()
 
 
 def do_ancestries(data, conn):
