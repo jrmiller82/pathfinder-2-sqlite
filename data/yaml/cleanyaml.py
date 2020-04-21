@@ -17,6 +17,12 @@ def main():
         print("Doing: {}".format(x))
         with open(x, 'r') as r:
             data = yaml.full_load(r)
+            if x == "feats.yaml":
+                for i in data['feat']:
+                    if i['requirement'] != None:
+                        print("Before: {}".format(i['requirement']))
+                        i['requirement'] = i['requirement'].replace('’', "'")
+                        print("After: {}".format(i['requirement']))
         final = yaml.safe_dump(data, allow_unicode=True)
         with open(x, 'w') as f:
             f.write(final)
