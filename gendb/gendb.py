@@ -174,13 +174,30 @@ def do_feats(data, conn):
             r_id = None
         else:
             r_id = get_requirement_id_by_descr(i['requirement'], conn)
-            # print("f_id for {} is {}".format(i['frequency'], f_id))
+        if i['trigger'] == None:
+            t_id = None
+        else:
+            t_id = get_trigger_id_by_descr(i['trigger'], conn)
 
         # res = (ac_id, i['descr'], f_id, i['level'], i['name'], r_id, t_id)
 
-
-
     insert_stmt = "INSERT INTO feat (actioncost_id, descr, freq_id, level, name, requirement_id, trigger_id) VALUES (?,?,?,?,?,?,?);"
+
+def get_trigger_id_by_descr(t, conn):
+    qstmt = "SELECT trigger_id FROM trigger WHERE descr=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (t,))
+    except sqlite3.Error as e:
+        print("Error getting an trigger_id by name: {} Error: {}".format(t, e))
+    except:
+        print("Error getting an trigger_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no trigger_id for given trigger name: {}\nYou should check to see if this trigger is in triggers.yaml and sometimes it is a straight apostrophe versus uni-code curly apostrophe.'.format(t))
+        else:
+            return x[0]
 
 def get_requirement_id_by_descr(r, conn):
     qstmt = "SELECT requirement_id FROM requirement WHERE descr=?;"

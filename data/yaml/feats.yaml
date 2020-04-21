@@ -40,8 +40,8 @@ feat:
     page_start: 35
     page_stop: 35
   traits: null
-  trigger:
-  - You attempt a saving throw against a magical effect, but you haven't rolled yet.
+  trigger: You attempt a saving throw against a magical effect, but you haven't rolled
+    yet.
 - actioncost: null
   descr: You eagerly absorbed the old stories and traditions of your ancestors, your
     gods, and your people, studying in subjects and techniques passed down for generation
@@ -1639,7 +1639,7 @@ feat:
     page_stop: 57
   traits:
   - Human
-  trigger: You attempt a check using a skill you’re untrained in.
+  trigger: You attempt a check using a skill you're untrained in.
 - actioncost: null
   descr: You’ve learned to split your focus between multiple classes with ease. You
     gain a 2nd-level multiclass dedication feat (for more about multiclass archetypes,
@@ -2558,7 +2558,7 @@ feat:
   traits:
   - Additive
   - Alchemist
-  trigger: You craft an alchemical bomb using Quick Alchemy that’s at least 2 levels
+  trigger: You craft an alchemical bomb using Quick Alchemy that's at least 2 levels
     lower than your advanced alchemy level.
 - actioncost: null
   descr: Specialized tweaks to your formula that supplements your genius considerably
@@ -3086,7 +3086,7 @@ feat:
   traits:
   - Barbarian
   trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it’s using.
+    makes a ranged attack, or leaves a square during a move action it's using.
 - actioncost: null
   descr: You push your foes around and leave bruises. While raging, when you successfully
     Disarm, Grapple, Shove, or Trip a foe, you deal that foe bludgeoning damage equal
@@ -5125,8 +5125,8 @@ feat:
   traits:
   - Champion
   - Flourish
-  trigger: A foe’s attack against an ally matches the trigger for both your Shield
-    Block reaction and your champion’s reaction.
+  trigger: A foe's attack against an ally matches the trigger for both your Shield
+    Block reaction and your champion's reaction.
 - actioncost: null
   descr: The divine grace that flows through you grants reprieve from an affliction.
     When you use Mercy, you can instead attempt to counteract a curse, disease, or
@@ -9244,7 +9244,7 @@ feat:
   traits:
   - Monk
   trigger: A creature within your reach uses a move action or leaves a square during
-    a move action it’s using.
+    a move action it's using.
 - actioncost: null
   descr: You can restore your health by tapping into your ki. You gain the wholeness
     of body ki spell. Increase the number of Focus Points in your focus pool by 1.
@@ -10089,7 +10089,7 @@ feat:
   traits:
   - Fortune
   - Monk
-  trigger: An enemy’s attack hits you or you fail a saving throw against an enemy’s
+  trigger: An enemy's attack hits you or you fail a saving throw against an enemy's
     ability.
 - actioncost: null
   descr: You gain the service of a young animal companion that travels with you and
@@ -10333,7 +10333,7 @@ feat:
   traits:
   - Ranger
   trigger: Your hunted prey is within your reach, and it uses a manipulate action,
-    uses a move action, or leaves a square during a move action it’s using.
+    uses a move action, or leaves a square during a move action it's using.
 - actioncost: null
   descr: Your experience in the field has taught you how to focus your aim at a distance,
     increasing your accuracy. Double your weapons’ range increments.
@@ -12282,7 +12282,7 @@ feat:
   - Manipulate
   - Rogue
   trigger: You would be hit by an attack or targeted by an effect, or you are within
-    an effect’s area.
+    an effect's area.
 - actioncost: Reaction
   descr: When a foe Casts a Spell you know and you can see its manifestations, you
     can use your own magic to disrupt it. You expend one of your spell slots to counter
@@ -16836,7 +16836,7 @@ feat:
   - General
   - Secret
   - Skill
-  trigger: A creature within line of sight casts a spell that you don’t have prepared
+  trigger: A creature within line of sight casts a spell that you don't have prepared
     or in your spell repertoire, or a trap or similar object casts such a spell. You
     must be aware of the casting.
 - actioncost: null

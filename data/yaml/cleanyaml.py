@@ -29,6 +29,10 @@ def main():
                         # print("Before: {}".format(i['requirement']))
                         i['requirement'] = i['requirement'].replace('’', "'")
                         # print("After: {}".format(i['requirement']))
+                    if i['trigger'] != None:
+                        # print("Before: {}".format(i['trigger']))
+                        i['trigger'] = i['trigger'].replace('’', "'")
+                        # print("After: {}".format(i['trigger']))
         final = yaml.safe_dump(data, allow_unicode=True)
         with open(x, 'w') as f:
             f.write(final)
