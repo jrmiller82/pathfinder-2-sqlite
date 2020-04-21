@@ -15,7 +15,7 @@ def main():
         yfiles.append(file)
 
     yfiles.sort()
-    print(yfiles)
+    print("Going to clean up the following files: {}".format(yfiles))
 
     for x in yfiles:
         print("Doing: {}".format(x))
