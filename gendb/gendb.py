@@ -124,6 +124,10 @@ def main():
         data = yaml.full_load(yl)
     do_gear(data, conn)
 
+    with open('feats.yaml') as yl:
+        data = yaml.full_load(yl)
+    do_feats(data, conn)
+
     with open('ancestriesheritages.yaml') as yl:
         data = yaml.full_load(yl)
     do_ancestries(data, conn)
@@ -131,6 +135,309 @@ def main():
     with open('ancestriesheritages.yaml') as yl:
         data = yaml.full_load(yl)
     do_heritages(data, conn)
+
+def do_feats(data, conn):
+
+    table = """
+    CREATE TABLE feat (
+      feat_id INTEGER PRIMARY KEY,
+      actioncost_id INTEGER,
+      descr TEXT NOT NULL,
+      freq_id INTEGER,
+      level INTEGER, -- TODO Make not null once issue 88 is resolved
+      name TEXT NOT NULL UNIQUE,
+      requirement_id INTEGER,
+      trigger_id INTEGER,
+      FOREIGN KEY (actioncost_id) REFERENCES actioncost(actioncost_id),
+      FOREIGN KEY (freq_id) REFERENCES frequency(freq_id),
+      FOREIGN KEY (requirement_id) REFERENCES requirement(requirement_id),
+      FOREIGN KEY (trigger_id) REFERENCES trigger(trigger_id)
+    );
+    """
+    c = conn.cursor()
+    c.execute(table)
+
+    table = """
+CREATE TABLE sourceentry_feat (
+  id INTEGER PRIMARY KEY,
+  sourceentry_id INTEGER NOT NULL,
+  feat_id INTEGER NOT NULL,
+  UNIQUE (sourceentry_id, feat_id), -- prevent duplicates
+  FOREIGN KEY (sourceentry_id) REFERENCES sourceentry(sourceentry_id),
+  FOREIGN KEY (feat_id) REFERENCES feat(feat_id)
+);
+   """
+    c = conn.cursor()
+    c.execute(table)
+
+    table = """
+    CREATE TABLE trait_feat (
+        id INTEGER PRIMARY KEY,
+        trait_id INTEGER NOT NULL,
+        feat_id INTEGER NOT NULL,
+    UNIQUE(trait_id, feat_id),
+    FOREIGN KEY (feat_id) REFERENCES feat(feat_id),
+    FOREIGN KEY (trait_id) REFERENCES trait(trait_id)
+    );
+    """
+    c.execute(table)
+
+    table = """
+    CREATE TABLE featprereq (
+        featprereq_id INTEGER PRIMARY KEY,
+        descr TEXT NOT NULL,
+        parent_feat_id INTEGER NOT NULL,        -- THE FEAT THAT REQUIRES THE PREREQ
+        is_prereq_feat_bool BOOL NOT NULL,      -- THIS TELLS YOU THAT THE PREREQ ITSELF IS A FEAT
+        prereq_feat_id INTEGER,                 -- THIS IS THE PREREQ FEAT, NOT THE FEAT THAT REQUIRES THE PREREQ, if is_prereq_feat_bool == FALSE then this will also be null
+        FOREIGN KEY (prereq_feat_id) REFERENCES feat(feat_id),
+        FOREIGN KEY (parent_feat_id) REFERENCES feat(feat_id)
+    );
+    """
+    c.execute(table)
+
+    feat_result_list = []
+    feats_no_levels = []
+    for i in data['feat']:
+        if i['actioncost'] == None:
+            ac_id = None
+        else:
+            ac_id = get_actioncost_id_by_name(i['actioncost'], conn)
+            # print("ac_id for {} is {}".format(i['actioncost'], ac_id))
+        if i['frequency'] == None:
+            f_id = None
+        else:
+            f_id = get_freq_id_by_descr(i['frequency'], conn)
+            # print("f_id for {} is {}".format(i['frequency'], f_id))
+        if i['requirement'] == None:
+            r_id = None
+        else:
+            r_id = get_requirement_id_by_descr(i['requirement'], conn)
+        if i['trigger'] == None:
+            t_id = None
+        else:
+            t_id = get_trigger_id_by_descr(i['trigger'], conn)
+        if 'level' not in i:
+            resl = {'name': i['name'], 'source': i['source']}
+            feats_no_levels.append(resl)
+            i['level'] = None
+
+
+
+        res = (ac_id, i['descr'], f_id, i['level'], i['name'], r_id, t_id)
+        feat_result_list.append(res)
+
+    insert_stmt = "INSERT INTO feat (actioncost_id, descr, freq_id, level, name, requirement_id, trigger_id) VALUES (?,?,?,?,?,?,?);"
+    try:
+        conn.executemany(insert_stmt, feat_result_list)
+    except sqlite3.Error as e:
+        print("Error creating feats: {}".format(e))
+    except:
+        print("Error creating feats something other than sqlite3 error")
+    else:
+        conn.commit()
+    
+    print("\n\nWARNING!\n\nThe following feats do not have level information and need to be manually checked!:\n")
+    for i in feats_no_levels:
+        print(i)
+
+    # go through and do source entry linking
+
+    for i in data['feat']:
+        # print("\n\nDoing the skill: {}".format(i['name']))
+        srcs = []
+        # TODO refactor this inner loop for sources out
+        for j in i['source']:
+            abbr = j['abbr']
+            page_start = j['page_start']
+            if 'page_stop' in j:
+                page_stop = j['page_stop']
+            else:
+                page_stop = page_start
+            srcs.append([i['name'], abbr, page_start, page_stop])
+        # print("srcs: {}".format(srcs))
+        do_sourceentry_to_feats(srcs, conn)
+
+    # do traits
+    for i in data['feat']:
+        traitlist = []
+        if i['traits'] != None:
+            for j in i['traits']:
+                traitlist.append((i['name'], j))
+            # print("traitlist is:\t{}".format(traitlist))
+
+            stmt = """
+            INSERT INTO trait_feat (feat_id, trait_id) VALUES (
+                (SELECT feat_id FROM feat WHERE name=?), 
+                (SELECT trait_id FROM trait WHERE short_name=?) 
+                );
+            """
+            try:
+                conn.executemany(stmt, traitlist)
+            except sqlite3.Error as e:
+                print("Error creating feat_trait: {}".format(e))
+            except:
+                print(
+                    "Error creating feat_trait something other than sqlite3 error"
+                )
+            else:
+                conn.commit()
+
+    # do prereqs
+    for i in data['feat']:
+        # print("\nDoing prereq:\t{}".format(i['name']))
+        if i['prereqs'] == None:
+            # do nothing and start on next 'i'
+            # print("Continuing prereqs, skipping:\t{}".format(i['name']))
+            continue
+        preqlist = []
+        for j in i['prereqs']:
+            descr = j['descr']
+            pfeat = j['feat']
+            if pfeat == None:
+                is_feat_bool = False
+            else:
+                is_feat_bool = True
+            res = (descr, i['name'], is_feat_bool, pfeat)
+            preqlist.append(res)
+        # print(preqlist)
+
+        # now to do the insert
+        istmt = """
+        INSERT INTO featprereq (descr, parent_feat_id, is_prereq_feat_bool, prereq_feat_id)
+        VALUES (
+        ?,
+        (SELECT feat_id FROM feat WHERE name=?),
+        ?,
+        (SELECT feat_id FROM feat WHERE name=?)
+        )
+        """
+        try:
+            conn.executemany(istmt, preqlist)
+        except sqlite3.Error as e:
+            print("Error creating featprereq {}".format(e))
+        except:
+            print(
+                "Error creating featprereq something other than sqlite3 error"
+            )
+        else:
+            conn.commit()
+
+# TODO ugggh;;; this is soooo ugly and needs refactoring but it's working
+def do_sourceentry_to_feats(srcs, conn):
+    c = conn.cursor()
+
+    stmt = "SELECT source.source_id, feat.feat_id FROM source, feat WHERE source.abbr=? AND feat.name=?"
+    istmt = "INSERT INTO sourceentry (source_id, page_start, page_stop) VALUES (?,?,?)"
+    for i in srcs:
+        # print("i in srcs: {}".format(i))
+        inp_data = (i[1], i[0])
+        # print("inp data: {}".format(inp_data))
+        for row in c.execute(stmt, inp_data):
+            # print("source_id:{} skill_id:{}".format(row[0], row[1]))
+            iinp_data = (row[0], i[2], i[3])
+            # print("iinp data: {}".format(iinp_data))
+
+            try:
+                c.execute(istmt, iinp_data)
+            except sqlite3.IntegrityError as e:
+                if "UNIQUE" in str(e):
+                    # we fully expect UNIQUE constraint to fail on some of these so it's fine
+                    conn.commit()
+                    # print("committed istmt")
+                else:
+                    # but we still want to know what's going on if there's some other error
+                    print("Something went wrong with istmt: {}".format(e))
+            except sqlite3.Error as e:
+                print("Error inserting a sourceentry for skill: {}".format(e))
+            else:
+                conn.commit()
+                # print("committed istmt")
+
+            linkstmt = "INSERT INTO sourceentry_feat (sourceentry_id, feat_id) VALUES ((SELECT sourceentry_id from sourceentry WHERE source_id=? AND page_start=? AND page_stop=?), ?)"
+            linkinp_data = (row[0], i[2], i[3], row[1])
+            # print(linkinp_data)
+            try:
+                c.execute(linkstmt, linkinp_data)
+            except sqlite3.IntegrityError as e:
+                if "UNIQUE" in str(e):
+                    # we fully expect UNIQUE constraint to fail on some of these so it's fine
+                    conn.commit()
+                    # print("committed linkstmt")
+                    pass
+                else:
+                    # but we still want to know what's going on if there's some other error
+                    print(e)
+            except sqlite3.Error as e:
+                print("Error inserting a sourceentry for feat: {}".format(e))
+            else:
+                # print("committed linkstmt")
+                conn.commit()
+
+
+def get_trigger_id_by_descr(t, conn):
+    qstmt = "SELECT trigger_id FROM trigger WHERE descr=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (t,))
+    except sqlite3.Error as e:
+        print("Error getting an trigger_id by name: {} Error: {}".format(t, e))
+    except:
+        print("Error getting an trigger_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no trigger_id for given trigger name: {}\nYou should check to see if this trigger is in triggers.yaml and sometimes it is a straight apostrophe versus uni-code curly apostrophe.'.format(t))
+        else:
+            return x[0]
+
+def get_requirement_id_by_descr(r, conn):
+    qstmt = "SELECT requirement_id FROM requirement WHERE descr=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (r,))
+    except sqlite3.Error as e:
+        print("Error getting an requirement_id by name: {} Error: {}".format(r, e))
+    except:
+        print("Error getting an requirement_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no requirement_id for given requirement name: {}\nYou should check to see if this requirement is in requirements.yaml and sometimes it is a straight apostrophe versus uni-code curly apostrophe.'.format(r))
+        else:
+            return x[0]
+
+def get_freq_id_by_descr(f, conn):
+    qstmt = "SELECT freq_id FROM frequency WHERE freq_descr=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (f,))
+    except sqlite3.Error as e:
+        print("Error getting an freq_id_id by name: {} Error: {}".format(f, e))
+    except:
+        print("Error getting an freq_id_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no freq_id_id for given freq_id name: {}'.format(f))
+        else:
+            return x[0]
+
+def get_actioncost_id_by_name(ac, conn):
+    qstmt = "SELECT actioncost_id FROM actioncost WHERE name=?;"
+    try:
+        c = conn.cursor()
+        c.execute(qstmt, (ac,))
+    except sqlite3.Error as e:
+        print("Error getting an actioncost_id by name: {} Error: {}".format(ac, e))
+    except:
+        print("Error getting an actioncost_id_by_name something other than sqlite3 error")
+    else:
+        x = c.fetchone()
+        if x == None:
+            raise AssertionError('there was no actioncost_id for given actioncost name: {}'.format(ac))
+        else:
+            return x[0]
+
 
 def do_heritages(data, conn):
     table = """
@@ -153,7 +460,7 @@ def do_heritages(data, conn):
         rowid = c.fetchone()
         #FOR EACH HERITAGE, INSERT INTO TABLE USING ANCESTRY ID
         for j in i['heritages']:
-            print("doing this heritage: {}".format(j['name']))
+            # print("doing this heritage: {}".format(j['name']))
             stmt = "INSERT INTO heritages (name, descr, ancestry_id) VALUES (?,?,?);"
             c.execute(stmt, (j['name'], j['descr'], rowid[0]))
             conn.commit()
@@ -205,7 +512,7 @@ def do_ancestries(data, conn):
     c.execute(table)
 
     table = """
-    CREATE TABLE ancestries_traits (
+    CREATE TABLE trait_ancestries (
         id INTEGER PRIMARY KEY,
         ancestry_id INTEGER NOT NULL,
         trait_id INTEGER NOT NULL,
@@ -215,6 +522,7 @@ def do_ancestries(data, conn):
     );
     """
     c.execute(table)
+
 
     # insert basics into ancestries table
     inp_data = []
@@ -226,7 +534,7 @@ def do_ancestries(data, conn):
         sinp_data = (i['size'], )
         sres = c.execute(sstmt, sinp_data).fetchall()
         sid = sres[0][0]
-        print(sid)
+        # print(sid)
 
         # Get the vision_id
         vstmt = """
@@ -234,12 +542,12 @@ def do_ancestries(data, conn):
         """
         vinp_data = (i['senses'], )
         vres = c.execute(vstmt, vinp_data).fetchall()
-        print(vres)
+        # print(vres)
         if len(vres) > 0:
             vid = vres[0][0]
         else:
             vid = None
-        print(vid)
+        # print(vid)
 
         #print(i)
         inp_data.append(
@@ -261,7 +569,7 @@ def do_ancestries(data, conn):
         if i['boosts'] != None:
             for j in i['boosts']:
                 boostlist.append((i['name'], j))
-            print("boostlist is:\t{}".format(boostlist))
+            # print("boostlist is:\t{}".format(boostlist))
 
             stmt = """
             INSERT INTO ancestries_boosts (ancestry_id, abilityscore_id) VALUES (
@@ -286,7 +594,7 @@ def do_ancestries(data, conn):
         if i['flaws'] != None:
             for j in i['flaws']:
                 flawlist.append((i['name'], j))
-            print("flawlist is:\t{}".format(flawlist))
+            # print("flawlist is:\t{}".format(flawlist))
 
             stmt = """
             INSERT INTO ancestries_flaws (ancestry_id, abilityscore_id) VALUES (
@@ -311,10 +619,10 @@ def do_ancestries(data, conn):
         if i['traits'] != None:
             for j in i['traits']:
                 traitlist.append((i['name'], j))
-            print("traitlist is:\t{}".format(traitlist))
+            # print("traitlist is:\t{}".format(traitlist))
 
             stmt = """
-            INSERT INTO ancestries_traits (ancestry_id, trait_id) VALUES (
+            INSERT INTO trait_ancestries (ancestry_id, trait_id) VALUES (
                 (SELECT ancestry_id FROM ancestries WHERE name=?), 
                 (SELECT trait_id FROM trait WHERE short_name=?) 
                 );
@@ -322,13 +630,14 @@ def do_ancestries(data, conn):
             try:
                 conn.executemany(stmt, traitlist)
             except sqlite3.Error as e:
-                print("Error creating ancestries_traits: {}".format(e))
+                print("Error creating trait_ancestries {}".format(e))
             except:
                 print(
-                    "Error creating ancestries_traits something other than sqlite3 error"
+                    "Error creating trait_ancestries something other than sqlite3 error"
                 )
             else:
                 conn.commit()
+
 
 
 def do_gear(data, conn):
@@ -605,7 +914,7 @@ def do_armor(data, conn):
     # insert basics into armorcategory table
     inp_data = []
     for i in data['armorcategory']:
-        print(i)
+        # print(i)
         inp_data.append((i, ))
 
     stmt = "INSERT INTO armorcategory(name) VALUES (?)"

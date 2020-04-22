@@ -68,10 +68,12 @@ requirement:
 - When you make your daily preparations, you must specify a trigger for this reaction
   using the same restrictions as the triggers for the Ready action. You also choose
   a single spell from the arcane, divine, occult, or primal list of 4th level or lower.
-  The spell can’t have a cost, nor can its casting time be more than 10 minutes. The
+  The spell can't have a cost, nor can its casting time be more than 10 minutes. The
   spell must be able to target a single creature, and you must be a valid target for
   it.
 - You have Perfect Distraction ready to use.
 - You have an unexpended spell slot you could use to cast the triggered spell.
 - Your most recent action was to cast a non-cantrip spell.
 - The last action you used was Drain Bonded Item.
+- You have a focus pool, and you have spent at least 1 Focus Point since you last
+  regained any Focus Points.

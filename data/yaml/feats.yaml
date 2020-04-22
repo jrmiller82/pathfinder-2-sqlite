@@ -40,8 +40,8 @@ feat:
     page_start: 35
     page_stop: 35
   traits: null
-  trigger:
-  - "You attempt a saving throw against a magical effect, but you haven't rolled yet."
+  trigger: You attempt a saving throw against a magical effect, but you haven't rolled
+    yet.
 - actioncost: null
   descr: You eagerly absorbed the old stories and traditions of your ancestors, your
     gods, and your people, studying in subjects and techniques passed down for generation
@@ -205,7 +205,7 @@ feat:
   level: 5
   name: Boulder Roll
   prereqs:
-  - descr: 'Rock Runner'
+  - descr: Rock Runner
     feat: Rock Runner
   requirement: null
   source:
@@ -224,7 +224,7 @@ feat:
   level: 5
   name: Dwarven Weapon Cunning
   prereqs:
-  - descr: 'Dwarven Weapon Familiarity'
+  - descr: Dwarven Weapon Familiarity
     feat: Dwarven Weapon Familiarity
   requirement: null
   source:
@@ -292,7 +292,7 @@ feat:
   level: 13
   name: Dwarven Weapon Expertise
   prereqs:
-  - descr: 'Dwarven Weapon Familiarity'
+  - descr: Dwarven Weapon Familiarity
     feat: Dwarven Weapon Familiarity
   requirement: null
   source:
@@ -480,7 +480,7 @@ feat:
   level: 5
   name: Elven Weapon Elegance
   prereqs:
-  - descr: 'Elven Weapon Familiarity'
+  - descr: Elven Weapon Familiarity
     feat: Elven Weapon Familiarity
   requirement: null
   source:
@@ -522,7 +522,7 @@ feat:
   level: 9
   name: Expert Longevity
   prereqs:
-  - descr: 'Ancestral Longevity'
+  - descr: Ancestral Longevity
     feat: Ancestral Longevity
   requirement: null
   source:
@@ -542,7 +542,7 @@ feat:
   level: 13
   name: Universal Longevity
   prereqs:
-  - descr: 'Expert Longevity'
+  - descr: Expert Longevity
     feat: Expert Longevity
   requirement: null
   source:
@@ -563,7 +563,7 @@ feat:
   level: 13
   name: Elven Weapon Expertise
   prereqs:
-  - descr: 'Elven Weapon Familiarity'
+  - descr: Elven Weapon Familiarity
     feat: Elven Weapon Familiarity
   requirement: null
   source:
@@ -726,7 +726,7 @@ feat:
   level: 5
   name: Animal Elocutionist
   prereqs:
-  - descr: 'Burrow Elocutionist'
+  - descr: Burrow Elocutionist
     feat: Burrow Elocutionist
   requirement: null
   source:
@@ -764,7 +764,7 @@ feat:
   level: 5
   name: Gnome Weapon Innovator
   prereqs:
-  - descr: 'Gnome Weapon Familiarity'
+  - descr: Gnome Weapon Familiarity
     feat: Gnome Weapon Familiarity
   requirement: null
   source:
@@ -823,7 +823,7 @@ feat:
   level: 13
   name: Gnome Weapon Expertise
   prereqs:
-  - descr: 'Gnome Weapon Familiarity'
+  - descr: Gnome Weapon Familiarity
     feat: Gnome Weapon Familiarity
   requirement: null
   source:
@@ -840,6 +840,7 @@ feat:
     damage you deal.
   frequency: null
   has_been_manually_proofread: false
+  level: 1
   name: Burn It!
   prereqs:
   - descr: Ancestry Level 1
@@ -1031,7 +1032,7 @@ feat:
   level: 5
   name: Goblin Weapon Frenzy
   prereqs:
-  - descr: 'Goblin Weapon Familiarity'
+  - descr: Goblin Weapon Familiarity
     feat: Goblin Weapon Familiarity
   requirement: null
   source:
@@ -1068,7 +1069,7 @@ feat:
   level: 9
   name: Skittering Scuttle
   prereqs:
-  - descr: 'Goblin Scuttle'
+  - descr: Goblin Scuttle
     feat: Goblin Scuttle
   requirement: null
   source:
@@ -1088,7 +1089,7 @@ feat:
   level: 13
   name: Goblin Weapon Expertise
   prereqs:
-  - descr: 'Goblin Weapon Familiarity'
+  - descr: Goblin Weapon Familiarity
     feat: Goblin Weapon Familiarity
   requirement: null
   source:
@@ -1103,9 +1104,10 @@ feat:
     need to have cover or greater cover or be concealed to Hide or Sneak.
   frequency: null
   has_been_manually_proofread: false
+  level: 1
   name: Very, Very Sneaky
   prereqs:
-  - descr: 'Very Sneaky'
+  - descr: Very Sneaky
     feat: Very Sneaky
   requirement: null
   source:
@@ -1319,7 +1321,7 @@ feat:
   level: 5
   name: Halfling Weapon Trickster
   prereqs:
-  - descr: 'Halfling Weapon Familiarity'
+  - descr: Halfling Weapon Familiarity
     feat: Halfling Weapon Familiarity
   requirement: null
   source:
@@ -1339,7 +1341,7 @@ feat:
   level: 9
   name: Guiding Luck
   prereqs:
-  - descr: 'Halfling Luck'
+  - descr: Halfling Luck
     feat: Halfling Luck
   requirement: null
   source:
@@ -1380,7 +1382,7 @@ feat:
   level: 13
   name: Ceaseless Shadows
   prereqs:
-  - descr: 'Distracting Shadows'
+  - descr: Distracting Shadows
     feat: Distracting Shadows
   requirement: null
   source:
@@ -1401,7 +1403,7 @@ feat:
   level: 13
   name: Halfling Weapon Expertise
   prereqs:
-  - descr: 'Halfling Weapon Familiarity'
+  - descr: Halfling Weapon Familiarity
     feat: Halfling Weapon Familiarity
   requirement: null
   source:
@@ -1610,9 +1612,10 @@ feat:
     a critical success.
   frequency: null
   has_been_manually_proofread: false
-  name: Cooperataive Soul
+  level: 9
+  name: Cooperative Soul
   prereqs:
-  - descr: 'Cooperative Nature'
+  - descr: Cooperative Nature
     feat: Cooperative Nature
   requirement: null
   source:
@@ -1630,7 +1633,7 @@ feat:
   level: 9
   name: Incredible Improvisation
   prereqs:
-  - descr: 'Clever Improviser'
+  - descr: Clever Improviser
     feat: Clever Improviser
   requirement: null
   source:
@@ -1639,7 +1642,7 @@ feat:
     page_stop: 57
   traits:
   - Human
-  trigger: You attempt a check using a skill you’re untrained in.
+  trigger: You attempt a check using a skill you're untrained in.
 - actioncost: null
   descr: You’ve learned to split your focus between multiple classes with ease. You
     gain a 2nd-level multiclass dedication feat (for more about multiclass archetypes,
@@ -1854,7 +1857,7 @@ feat:
   level: 5
   name: Orc Weapon Carnage
   prereqs:
-  - descr: 'Orc Weapon Famailiarity'
+  - descr: Orc Weapon Famailiarity
     feat: Orc Weapon Famailiarity
   requirement: null
   source:
@@ -1892,7 +1895,7 @@ feat:
   level: 9
   name: Pervasive Superstition
   prereqs:
-  - descr: 'Orc Superstition'
+  - descr: Orc Superstition
     feat: Orc Superstition
   requirement: null
   source:
@@ -1906,12 +1909,12 @@ feat:
   descr: Given time to collect yourself after a near-death scrape, you can rebuild
     your ferocity and withstand additional finishing blows. You can use Orc Ferocity
     with a frequency of once per hour, rather than once per day.
-  frequency: null
+  frequency: once per hour
   has_been_manually_proofread: false
   level: 13
   name: Incredible Ferocity
   prereqs:
-  - descr: 'Orc Ferocity'
+  - descr: Orc Ferocity
     feat: Orc Ferocity
   requirement: null
   source:
@@ -1931,7 +1934,7 @@ feat:
   level: 13
   name: Orc Weapon Expertise
   prereqs:
-  - descr: 'Orc Weapon Famailiarity'
+  - descr: Orc Weapon Famailiarity
     feat: Orc Weapon Famailiarity
   requirement: null
   source:
@@ -2323,7 +2326,7 @@ feat:
   level: 10
   name: Expanded Splash
   prereqs:
-  - descr: 'Calculated Splash'
+  - descr: Calculated Splash
     feat: Calculated Splash
   requirement: null
   source:
@@ -2343,7 +2346,7 @@ feat:
   level: 10
   name: Greater Debilitating Bomb
   prereqs:
-  - descr: 'Debilitating Bomb'
+  - descr: Debilitating Bomb
     feat: Debilitating Bomb
   requirement: null
   source:
@@ -2383,7 +2386,7 @@ feat:
   level: 10
   name: Potent Poisoner
   prereqs:
-  - descr: 'Powerful Alchemy'
+  - descr: Powerful Alchemy
     feat: Powerful Alchemy
   requirement: null
   source:
@@ -2443,7 +2446,7 @@ feat:
   level: 12
   name: Uncanny Bombs
   prereqs:
-  - descr: 'Far Lobber'
+  - descr: Far Lobber
     feat: Far Lobber
   requirement: null
   source:
@@ -2485,7 +2488,7 @@ feat:
   level: 14
   name: Greater Merciful Elixir
   prereqs:
-  - descr: 'Merciful Elixir'
+  - descr: Merciful Elixir
     feat: Merciful Elixir
   requirement: null
   source:
@@ -2507,7 +2510,7 @@ feat:
   level: 14
   name: True Debilitating Bomb
   prereqs:
-  - descr: 'Greater Debilitating Bomb'
+  - descr: Greater Debilitating Bomb
     feat: Greater Debilitating Bomb
   requirement: null
   source:
@@ -2529,7 +2532,7 @@ feat:
   level: 16
   name: Eternal Elixir
   prereqs:
-  - descr: 'Extend Elixir'
+  - descr: Extend Elixir
     feat: Extend Elixir
   requirement: null
   source:
@@ -2558,7 +2561,7 @@ feat:
   traits:
   - Additive
   - Alchemist
-  trigger: You craft an alchemical bomb using Quick Alchemy that’s at least 2 levels
+  trigger: You craft an alchemical bomb using Quick Alchemy that's at least 2 levels
     lower than your advanced alchemy level.
 - actioncost: null
   descr: Specialized tweaks to your formula that supplements your genius considerably
@@ -2593,7 +2596,7 @@ feat:
   level: 16
   name: Persistent Mutagen
   prereqs:
-  - descr: 'Extend Elixir'
+  - descr: Extend Elixir
     feat: Extend Elixir
   requirement: null
   source:
@@ -2721,7 +2724,7 @@ feat:
   level: 20
   name: Mega Bomb
   prereqs:
-  - descr: 'Expanded Splash'
+  - descr: Expanded Splash
     feat: Expanded Splash
   requirement: You are holding an infused alchemical bomb you crafted, with a level
     at least 3 lower than your advanced alchemy level.
@@ -3086,7 +3089,7 @@ feat:
   traits:
   - Barbarian
   trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it’s using.
+    makes a ranged attack, or leaves a square during a move action it's using.
 - actioncost: null
   descr: You push your foes around and leave bruises. While raging, when you successfully
     Disarm, Grapple, Shove, or Trip a foe, you deal that foe bludgeoning damage equal
@@ -3138,7 +3141,7 @@ feat:
   prereqs:
   - descr: 'Feature: dragon instinct'
     feat: null
-  requirement: You haven’t used this ability since you last Raged.
+  requirement: You haven't used this ability since you last Raged.
   source:
   - abbr: CRB
     page_start: 90
@@ -3380,7 +3383,7 @@ feat:
   level: 10
   name: Great Cleave
   prereqs:
-  - descr: 'Cleave'
+  - descr: Cleave
     feat: Cleave
   requirement: null
   source:
@@ -3420,7 +3423,7 @@ feat:
   level: 10
   name: Terrifying Howl
   prereqs:
-  - descr: 'Intimidating Glare'
+  - descr: Intimidating Glare
     feat: Intimidating Glare
   requirement: null
   source:
@@ -3538,7 +3541,7 @@ feat:
   has_been_manually_proofread: false
   name: Titan’s Stature
   prereqs:
-  - descr: 'Giants Stature'
+  - descr: Giants Stature
     feat: Giant’s Stature
   requirement: null
   source:
@@ -3560,7 +3563,7 @@ feat:
   level: 14
   name: Awesome Blow
   prereqs:
-  - descr: 'Knockdown'
+  - descr: Knockdown
     feat: Knockback
   requirement: null
   source:
@@ -3603,9 +3606,9 @@ feat:
   level: 14
   name: Vengeful Strike
   prereqs:
-  - descr: 'Come And Get Me'
+  - descr: Come And Get Me
     feat: Come and Get Me
-  requirement: You’re under the effect of Come and Get Me.
+  requirement: You're under the effect of Come and Get Me.
   source:
   - abbr: CRB
     page_start: 93
@@ -3646,7 +3649,7 @@ feat:
   level: 16
   name: Collateral Thrash
   prereqs:
-  - descr: 'Thrash'
+  - descr: Thrash
     feat: Thrash
   requirement: null
   source:
@@ -3669,7 +3672,7 @@ feat:
   level: 16
   name: Dragon Transformation
   prereqs:
-  - descr: 'Dragons Rage Wings'
+  - descr: Dragons Rage Wings
     feat: Furious Bully
   requirement: null
   source:
@@ -3780,7 +3783,7 @@ feat:
   level: 20
   name: Contagious Rage
   prereqs:
-  - descr: 'Share Rage'
+  - descr: Share Rage
     feat: Share Rage
   requirement: null
   source:
@@ -4285,7 +4288,7 @@ feat:
   level: 12
   name: Eclectic Polymath
   prereqs:
-  - descr: 'Esoteric Polymath'
+  - descr: Esoteric Polymath
     feat: Esoteric Polymath
   requirement: null
   source:
@@ -4382,7 +4385,7 @@ feat:
   prereqs:
   - descr: Class Level 16
     feat: null
-  requirement: You haven’t acted yet on your turn.
+  requirement: You haven't acted yet on your turn.
   source:
   - abbr: CRB
     page_start: 103
@@ -4477,7 +4480,7 @@ feat:
   level: 18
   name: Impossible Polymath
   prereqs:
-  - descr: 'Esoteric Polymath'
+  - descr: Esoteric Polymath
     feat: Esoteric Polymath
   requirement: null
   source:
@@ -4533,7 +4536,7 @@ feat:
   has_been_manually_proofread: false
   name: Symphony of the Muse
   prereqs:
-  - descr: 'Harmonize'
+  - descr: Harmonize
     feat: Harmonize
   requirement: null
   source:
@@ -4917,7 +4920,7 @@ feat:
   has_been_manually_proofread: false
   name: Advanced Deity’s Domain
   prereqs:
-  - descr: 'Deitys Domain'
+  - descr: Deitys Domain
     feat: Deity’s Domain
   requirement: null
   source:
@@ -4936,7 +4939,7 @@ feat:
   level: 8
   name: Greater Mercy
   prereqs:
-  - descr: 'Mercy'
+  - descr: Mercy
     feat: Mercy
   requirement: null
   source:
@@ -5055,7 +5058,7 @@ feat:
   level: 10
   name: Imposing Destrier
   prereqs:
-  - descr: 'Loyal Warhouse'
+  - descr: Loyal Warhouse
     feat: Loyal Warhouse
   requirement: null
   source:
@@ -5115,7 +5118,7 @@ feat:
   level: 10
   name: Shield of Reckoning
   prereqs:
-  - descr: 'Shield Warden'
+  - descr: Shield Warden
     feat: Shield Warden (Champion)
   requirement: null
   source:
@@ -5125,8 +5128,8 @@ feat:
   traits:
   - Champion
   - Flourish
-  trigger: A foe’s attack against an ally matches the trigger for both your Shield
-    Block reaction and your champion’s reaction.
+  trigger: A foe's attack against an ally matches the trigger for both your Shield
+    Block reaction and your champion's reaction.
 - actioncost: null
   descr: The divine grace that flows through you grants reprieve from an affliction.
     When you use Mercy, you can instead attempt to counteract a curse, disease, or
@@ -5136,7 +5139,7 @@ feat:
   level: 12
   name: Affliction Mercy
   prereqs:
-  - descr: 'Mercy'
+  - descr: Mercy
     feat: Mercy
   requirement: null
   source:
@@ -5273,9 +5276,9 @@ feat:
   level: 14
   name: Anchoring Aura
   prereqs:
-  - descr: 'Fiendsbane Oath'
+  - descr: Fiendsbane Oath
     feat: Fiendsbane Oath
-  requirement: Fiendsbane Oath
+  requirement: null
   source:
   - abbr: CRB
     page_start: 114
@@ -5292,7 +5295,7 @@ feat:
   level: 14
   name: Aura of Life
   prereqs:
-  - descr: 'Shining Oath'
+  - descr: Shining Oath
     feat: Shining Oath
   requirement: Shining Oath
   source:
@@ -5329,7 +5332,7 @@ feat:
   level: 14
   name: Aura of Vengeance
   prereqs:
-  - descr: 'Vengeful Oath'
+  - descr: Vengeful Oath
     feat: Vengeful Oath
   requirement: exalt and Vengeful Oath
   source:
@@ -5386,7 +5389,7 @@ feat:
   level: 14
   name: Wyrmbane Aura
   prereqs:
-  - descr: 'Dragonslayer Oath'
+  - descr: Dragonslayer Oath
     feat: Dragonslayer Oath
   requirement: Dragonslayer Oath
   source:
@@ -5411,7 +5414,7 @@ feat:
   level: 16
   name: Auspicious Mount
   prereqs:
-  - descr: 'Imposing Destrier'
+  - descr: Imposing Destrier
     feat: Imposing Destrier
   requirement: null
   source:
@@ -5449,7 +5452,7 @@ feat:
   level: 16
   name: Shield of Grace
   prereqs:
-  - descr: 'Shield Warden'
+  - descr: Shield Warden
     feat: Shield Warden (Champion)
   requirement: null
   source:
@@ -5491,7 +5494,7 @@ feat:
   level: 18
   name: Ultimate Mercy
   prereqs:
-  - descr: 'Mercy'
+  - descr: Mercy
     feat: Mercy
   requirement: null
   source:
@@ -5533,7 +5536,7 @@ feat:
   level: 20
   name: Radiant Blade Master
   prereqs:
-  - descr: 'Radiant Blade Spirit'
+  - descr: Radiant Blade Spirit
     feat: Radiant Blade Spirit
   requirement: null
   source:
@@ -5865,7 +5868,7 @@ feat:
   level: 4
   name: Improved Communal Healing
   prereqs:
-  - descr: 'Communal Healing'
+  - descr: Communal Healing
     feat: Communal Healing
   requirement: null
   source:
@@ -6001,7 +6004,7 @@ feat:
   level: 8
   name: Advanced Domain
   prereqs:
-  - descr: 'Domain Initiate'
+  - descr: Domain Initiate
     feat: Domain Initiate
   requirement: null
   source:
@@ -6082,7 +6085,7 @@ feat:
   level: 8
   name: Emblazon Energy
   prereqs:
-  - descr: 'Emblazon Armament'
+  - descr: Emblazon Armament
     feat: Emblazon Armament
   requirement: null
   source:
@@ -6103,7 +6106,7 @@ feat:
   level: 10
   name: Castigating Weapon
   prereqs:
-  - descr: 'Holy Castigation'
+  - descr: Holy Castigation
     feat: Holy Castigation
   requirement: null
   source:
@@ -6227,7 +6230,7 @@ feat:
   level: 12
   name: Emblazon Antimagic
   prereqs:
-  - descr: 'Emblazon Armament'
+  - descr: Emblazon Armament
     feat: Emblazon Armament
   requirement: null
   source:
@@ -6248,7 +6251,7 @@ feat:
   level: 12
   name: Shared Replenishment
   prereqs:
-  - descr: 'Replenishment Of War'
+  - descr: Replenishment Of War
     feat: Replenishment of War
   requirement: null
   source:
@@ -6267,7 +6270,7 @@ feat:
   has_been_manually_proofread: false
   name: Deity’s Protection
   prereqs:
-  - descr: 'Advanced Domain'
+  - descr: Advanced Domain
     feat: Advanced Domain
   requirement: null
   source:
@@ -6285,7 +6288,7 @@ feat:
   level: 14
   name: Extend Armament Alignment
   prereqs:
-  - descr: 'Align Armament'
+  - descr: Align Armament
     feat: Align Armament
   requirement: null
   source:
@@ -6406,7 +6409,7 @@ feat:
   level: 18
   name: Domain Wellspring
   prereqs:
-  - descr: 'Domain Focus'
+  - descr: Domain Focus
     feat: Domain Focus
   requirement: null
   source:
@@ -6453,7 +6456,7 @@ feat:
   level: 18
   name: Improved Swift Banishment
   prereqs:
-  - descr: 'Swift Banishment'
+  - descr: Swift Banishment
     feat: Swift Banishment
   requirement: null
   source:
@@ -6729,7 +6732,7 @@ feat:
   level: 4
   name: Form Control
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -6751,7 +6754,7 @@ feat:
   has_been_manually_proofread: false
   name: Mature Animal Companion (Druid)
   prereqs:
-  - descr: 'Animal Companion'
+  - descr: Animal Companion
     feat: Animal Companion (Druid)
   requirement: null
   source:
@@ -6770,7 +6773,7 @@ feat:
   level: 4
   name: Order Magic
   prereqs:
-  - descr: 'Order Explorer'
+  - descr: Order Explorer
     feat: Order Explorer
   requirement: null
   source:
@@ -6788,7 +6791,7 @@ feat:
   level: 4
   name: Thousand Faces
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -6849,7 +6852,7 @@ feat:
   level: 6
   name: Insect Shape
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -6890,7 +6893,7 @@ feat:
   level: 8
   name: Ferocious Shape
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -6927,7 +6930,7 @@ feat:
   has_been_manually_proofread: false
   name: Incredible Companion (Druid)
   prereqs:
-  - descr: 'Mature Animal Companion'
+  - descr: Mature Animal Companion
     feat: Mature Animal Companion (Druid)
   requirement: null
   source:
@@ -6949,7 +6952,7 @@ feat:
   level: 8
   name: Soaring Shape
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -6988,7 +6991,7 @@ feat:
   level: 10
   name: Elemental Shape
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -7073,7 +7076,7 @@ feat:
   has_been_manually_proofread: false
   name: Side by Side (Druid)
   prereqs:
-  - descr: 'Animal Companion'
+  - descr: Animal Companion
     feat: Animal Companion (Druid)
   requirement: null
   source:
@@ -7093,7 +7096,7 @@ feat:
   level: 12
   name: Dragon Shape
   prereqs:
-  - descr: 'Soaring Shape'
+  - descr: Soaring Shape
     feat: Soaring Shape
   requirement: null
   source:
@@ -7113,7 +7116,7 @@ feat:
   level: 12
   name: Green Tongue
   prereqs:
-  - descr: 'Green Empathy'
+  - descr: Green Empathy
     feat: Green Empathy
   requirement: null
   source:
@@ -7151,7 +7154,7 @@ feat:
   level: 12
   name: Primal Summons
   prereqs:
-  - descr: 'Call Of The Wild'
+  - descr: Call Of The Wild
     feat: Call of the Wild
   requirement: null
   source:
@@ -7169,7 +7172,7 @@ feat:
   has_been_manually_proofread: false
   name: Specialized Companion (Druid)
   prereqs:
-  - descr: 'Incredible Companion'
+  - descr: Incredible Companion
     feat: Incredible Companion (Druid)
   requirement: null
   source:
@@ -7251,7 +7254,7 @@ feat:
   level: 16
   name: Monstrosity Shape
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -7269,7 +7272,7 @@ feat:
   level: 18
   name: Invoke Disaster
   prereqs:
-  - descr: 'Wind Caller'
+  - descr: Wind Caller
     feat: Wind Caller
   requirement: null
   source:
@@ -7307,7 +7310,7 @@ feat:
   level: 18
   name: Primal Wellspring
   prereqs:
-  - descr: 'Primal Focus'
+  - descr: Primal Focus
     feat: Primal Focus
   requirement: null
   source:
@@ -7367,7 +7370,7 @@ feat:
   level: 20
   name: True Shapeshifter
   prereqs:
-  - descr: 'Wild Shape'
+  - descr: Wild Shape
     feat: Wild Shape
   requirement: null
   source:
@@ -7888,7 +7891,7 @@ feat:
   level: 6
   name: Furious Focus
   prereqs:
-  - descr: 'Power Attack'
+  - descr: Power Attack
     feat: Power Attack
   requirement: null
   source:
@@ -8000,7 +8003,7 @@ feat:
   level: 6
   name: Shield Warden (Fighter)
   prereqs:
-  - descr: 'Shield Block'
+  - descr: Shield Block
     feat: Shield Block
   requirement: null
   source:
@@ -8021,7 +8024,7 @@ feat:
   level: 6
   name: Triple Shot
   prereqs:
-  - descr: 'Double Shot'
+  - descr: Double Shot
     feat: Double Shot
   requirement: null
   source:
@@ -8063,7 +8066,7 @@ feat:
   level: 8
   name: Dueling Riposte
   prereqs:
-  - descr: 'Dueling Parry'
+  - descr: Dueling Parry
     feat: Dueling Parry
   requirement: You are benefiting from Dueling Parry.
   source:
@@ -8166,7 +8169,7 @@ feat:
   level: 8
   name: Quick Shield Block
   prereqs:
-  - descr: 'Reactive Shield'
+  - descr: Reactive Shield
     feat: Reactive Shield
   requirement: null
   source:
@@ -8357,7 +8360,7 @@ feat:
   level: 10
   name: Improved Knockdown
   prereqs:
-  - descr: 'Knockdown'
+  - descr: Knockdown
     feat: Knockback
   requirement: null
   source:
@@ -8420,7 +8423,7 @@ feat:
   level: 12
   name: Dueling Dance
   prereqs:
-  - descr: 'Dueling Parry'
+  - descr: Dueling Parry
     feat: Dueling Parry
   requirement: You are wielding only a single one-handed melee weapon and have your
     other hand or hands free.
@@ -8462,7 +8465,7 @@ feat:
   level: 12
   name: Improved Dueling Riposte
   prereqs:
-  - descr: 'Dueling Riposte'
+  - descr: Dueling Riposte
     feat: Dueling Riposte
   requirement: null
   source:
@@ -8481,7 +8484,7 @@ feat:
   level: 12
   name: Incredible Ricochet
   prereqs:
-  - descr: 'Incredible Aim'
+  - descr: Incredible Aim
     feat: Incredible Aim
   requirement: null
   source:
@@ -8503,7 +8506,7 @@ feat:
   level: 12
   name: Lunging Stance
   prereqs:
-  - descr: 'Lunge'
+  - descr: Lunge
     feat: Lunge
   requirement: You are wielding a melee weapon.
   source:
@@ -8637,7 +8640,7 @@ feat:
   level: 14
   name: Guiding Riposte
   prereqs:
-  - descr: 'Dueling Riposte'
+  - descr: Dueling Riposte
     feat: Dueling Riposte
   requirement: null
   source:
@@ -8656,7 +8659,7 @@ feat:
   has_been_manually_proofread: false
   name: Improved Twin Riposte (Fighter)
   prereqs:
-  - descr: 'Twin Riposte'
+  - descr: Twin Riposte
     feat: Twin Riposte
   requirement: null
   source:
@@ -8713,7 +8716,7 @@ feat:
   level: 16
   name: Graceful Poise
   prereqs:
-  - descr: 'Double Slice'
+  - descr: Double Slice
     feat: Double Slice
   requirement: null
   source:
@@ -8733,7 +8736,7 @@ feat:
   level: 16
   name: Improved Reflexive Shield
   prereqs:
-  - descr: 'Reflexive Shield'
+  - descr: Reflexive Shield
     feat: Reflexive Shield
   requirement: null
   source:
@@ -8753,7 +8756,7 @@ feat:
   level: 16
   name: Multishot Stance
   prereqs:
-  - descr: 'Triple Shot'
+  - descr: Triple Shot
     feat: Triple Shot
   requirement: You are wielding a ranged weapon with reload 0.
   source:
@@ -8773,7 +8776,7 @@ feat:
   level: 16
   name: Twinned Defense
   prereqs:
-  - descr: 'Twin Parry'
+  - descr: Twin Parry
     feat: Twin Parry
   requirement: You are wielding two melee weapons, one in each hand.
   source:
@@ -9117,7 +9120,7 @@ feat:
   level: 2
   name: Elemental Fist
   prereqs:
-  - descr: 'Ki Strike'
+  - descr: Ki Strike
     feat: Ki Strike
   requirement: null
   source:
@@ -9159,7 +9162,7 @@ feat:
   prereqs:
   - descr: Class Level 4
     feat: null
-  requirement: You’re aware of the attack, are not flat-footed against it, and have
+  requirement: You're aware of the attack, are not flat-footed against it, and have
     a hand free.
   source:
   - abbr: CRB
@@ -9244,7 +9247,7 @@ feat:
   traits:
   - Monk
   trigger: A creature within your reach uses a move action or leaves a square during
-    a move action it’s using.
+    a move action it's using.
 - actioncost: null
   descr: You can restore your health by tapping into your ki. You gain the wholeness
     of body ki spell. Increase the number of Focus Points in your focus pool by 1.
@@ -9291,7 +9294,7 @@ feat:
   level: 6
   name: Crane Flutter
   prereqs:
-  - descr: 'Crane Stance'
+  - descr: Crane Stance
     feat: Crane Stance
   requirement: You are in Crrane Stance.
   source:
@@ -9316,7 +9319,7 @@ feat:
   level: 6
   name: Dragon Roar
   prereqs:
-  - descr: 'Dragon Stance'
+  - descr: Dragon Stance
     feat: Dragon Stance
   requirement: You are in Dragon Stance.
   source:
@@ -9357,7 +9360,7 @@ feat:
   level: 6
   name: Mountain Stronghold
   prereqs:
-  - descr: 'Mountain Stance'
+  - descr: Mountain Stance
     feat: Mountain Stance
   requirement: You are in Mountain Stance.
   source:
@@ -9378,7 +9381,7 @@ feat:
   level: 6
   name: Tiger Slash
   prereqs:
-  - descr: 'Tiger Stance'
+  - descr: Tiger Stance
     feat: Tiger Stance
   requirement: You are in Tiger Stance.
   source:
@@ -9436,7 +9439,7 @@ feat:
   level: 6
   name: Wolf Drag
   prereqs:
-  - descr: 'Wolf Stance'
+  - descr: Wolf Stance
     feat: Wolf Stance
   requirement: You are in Wolf Stance.
   source:
@@ -9457,7 +9460,7 @@ feat:
   level: 8
   name: 'Arrow Snatching '
   prereqs:
-  - descr: 'Deflect Arrow'
+  - descr: Deflect Arrow
     feat: Deflect Arrows
   requirement: null
   source:
@@ -9768,7 +9771,7 @@ feat:
   level: 14
   name: Ironblood Surge
   prereqs:
-  - descr: 'Ironblood Stance'
+  - descr: Ironblood Stance
     feat: Ironblood Stance
   requirement: You are in Ironblood Stance.
   source:
@@ -9788,7 +9791,7 @@ feat:
   level: 14
   name: Moutain Quake
   prereqs:
-  - descr: 'Mountain Stronghold'
+  - descr: Mountain Stronghold
     feat: Mountain Stronghold
   requirement: You are in Mountain Stance.
   source:
@@ -9807,7 +9810,7 @@ feat:
   level: 14
   name: Tangled Forest Rake
   prereqs:
-  - descr: 'Tangled Forest Stance'
+  - descr: Tangled Forest Stance
     feat: Tangled Forest Stance
   requirement: You are in Tangled Forest Stance.
   source:
@@ -9864,7 +9867,7 @@ feat:
   level: 16
   name: Wild Winds Gust
   prereqs:
-  - descr: 'Wild Winds Initiate'
+  - descr: Wild Winds Initiate
     feat: Wild Winds Initiate
   requirement: You are in Wild Winds Stance.
   source:
@@ -9906,7 +9909,7 @@ feat:
   level: 16
   name: Master of Many Styles
   prereqs:
-  - descr: 'Stance Savant'
+  - descr: Stance Savant
     feat: Stance Savant (Monk)
   requirement: This is the first action of your turn.
   source:
@@ -9998,7 +10001,7 @@ feat:
   level: 18
   name: Meditative Wellspring
   prereqs:
-  - descr: 'Meditative Focus'
+  - descr: Meditative Focus
     feat: Meditative Focus
   requirement: null
   source:
@@ -10089,7 +10092,7 @@ feat:
   traits:
   - Fortune
   - Monk
-  trigger: An enemy’s attack hits you or you fail a saving throw against an enemy’s
+  trigger: An enemy's attack hits you or you fail a saving throw against an enemy's
     ability.
 - actioncost: null
   descr: You gain the service of a young animal companion that travels with you and
@@ -10248,7 +10251,7 @@ feat:
   level: 2
   name: Monster Warden
   prereqs:
-  - descr: 'Monster Hunter'
+  - descr: Monster Hunter
     feat: Monster Hunter
   requirement: null
   source:
@@ -10333,7 +10336,7 @@ feat:
   traits:
   - Ranger
   trigger: Your hunted prey is within your reach, and it uses a manipulate action,
-    uses a move action, or leaves a square during a move action it’s using.
+    uses a move action, or leaves a square during a move action it's using.
 - actioncost: null
   descr: Your experience in the field has taught you how to focus your aim at a distance,
     increasing your accuracy. Double your weapons’ range increments.
@@ -10428,7 +10431,7 @@ feat:
   level: 4
   name: Snare Specialist
   prereqs:
-  - descr: 'Snare Crafting'
+  - descr: Snare Crafting
     feat: Snare Crafting
   requirement: null
   source:
@@ -10468,7 +10471,7 @@ feat:
   has_been_manually_proofread: false
   name: Mature Animal Companion (Ranger)
   prereqs:
-  - descr: 'Animal Companion'
+  - descr: Animal Companion
     feat: Animal Companion (Druid)
   requirement: null
   source:
@@ -10486,7 +10489,7 @@ feat:
   level: 6
   name: Quick Snares
   prereqs:
-  - descr: 'Snare Specialist'
+  - descr: Snare Specialist
     feat: Snare Specialist
   requirement: null
   source:
@@ -10552,7 +10555,7 @@ feat:
   level: 6
   name: Swift Tracker
   prereqs:
-  - descr: 'Experienced Tracker'
+  - descr: Experienced Tracker
     feat: Experienced Tracker
   requirement: null
   source:
@@ -10612,7 +10615,7 @@ feat:
   level: 8
   name: Powerful Snares
   prereqs:
-  - descr: 'Snare Specialist'
+  - descr: Snare Specialist
     feat: Snare Specialist
   requirement: null
   source:
@@ -10633,7 +10636,7 @@ feat:
   level: 8
   name: Terrain Master
   prereqs:
-  - descr: 'Favored Terrain'
+  - descr: Favored Terrain
     feat: Favored Terrain
   requirement: null
   source:
@@ -10688,7 +10691,7 @@ feat:
   has_been_manually_proofread: false
   name: Incredible Companion (Ranger)
   prereqs:
-  - descr: 'Mature Animal Compainion (Ranger)'
+  - descr: Mature Animal Compainion (Ranger)
     feat: Mature Animal Companion (Ranger)
   requirement: null
   source:
@@ -10708,7 +10711,7 @@ feat:
   level: 10
   name: Master Monster Hunter
   prereqs:
-  - descr: 'Monster Hunter'
+  - descr: Monster Hunter
     feat: Monster Hunter
   requirement: null
   source:
@@ -10826,7 +10829,7 @@ feat:
   level: 12
   name: Lightning Snares
   prereqs:
-  - descr: 'Snare Specialist'
+  - descr: Snare Specialist
     feat: Snare Specialist
   requirement: null
   source:
@@ -10908,7 +10911,7 @@ feat:
   level: 14
   name: Shared Prey
   prereqs:
-  - descr: 'Wardens Boon'
+  - descr: Wardens Boon
     feat: Warden’s Boon
   requirement: null
   source:
@@ -10928,7 +10931,7 @@ feat:
   level: 14
   name: Stealthy Companion
   prereqs:
-  - descr: 'Camouflage'
+  - descr: Camouflage
     feat: Camouflage
   requirement: null
   source:
@@ -10947,7 +10950,7 @@ feat:
   level: 14
   name: Targeting Shot
   prereqs:
-  - descr: 'Hunters Aim'
+  - descr: Hunters Aim
     feat: Hunter’s Aim
   requirement: null
   source:
@@ -10990,7 +10993,7 @@ feat:
   level: 16
   name: Greater Distracting Shot
   prereqs:
-  - descr: 'Distracting Shot'
+  - descr: Distracting Shot
     feat: Distracting Shot
   requirement: null
   source:
@@ -11027,7 +11030,7 @@ feat:
   level: 16
   name: Legendary Monster Hunter
   prereqs:
-  - descr: 'Master Monster Hunter'
+  - descr: Master Monster Hunter
     feat: Master Monster Hunter
   requirement: null
   source:
@@ -11045,7 +11048,7 @@ feat:
   has_been_manually_proofread: false
   name: Specialized Companion (Ranger)
   prereqs:
-  - descr: 'Incredible Companion(Ranger)'
+  - descr: Incredible Companion(Ranger)
     feat: Incredible Companion (Ranger)
   requirement: null
   source:
@@ -11064,7 +11067,7 @@ feat:
   level: 16
   name: Ubiquitous Snares
   prereqs:
-  - descr: 'Snare Specialist'
+  - descr: Snare Specialist
     feat: Snare Specialist
   requirement: null
   source:
@@ -11125,7 +11128,7 @@ feat:
   level: 18
   name: Masterful Companion
   prereqs:
-  - descr: 'Animal Companion'
+  - descr: Animal Companion
     feat: Animal Companion (Druid)
   requirement: null
   source:
@@ -11166,7 +11169,7 @@ feat:
   level: 18
   name: Shadow Hunter
   prereqs:
-  - descr: 'Camouflage'
+  - descr: Camouflage
     feat: Camouflage
   requirement: null
   source:
@@ -11186,7 +11189,7 @@ feat:
   level: 20
   name: Legendary Shot
   prereqs:
-  - descr: 'Far Shot'
+  - descr: Far Shot
     feat: Far Shot
   requirement: null
   source:
@@ -11229,7 +11232,7 @@ feat:
   level: 20
   name: Triple Threat
   prereqs:
-  - descr: 'Shared Prey'
+  - descr: Shared Prey
     feat: Shared Prey
   requirement: null
   source:
@@ -11667,7 +11670,7 @@ feat:
   level: 8
   name: Improved Poison Weapon
   prereqs:
-  - descr: 'Poison Weapon'
+  - descr: Poison Weapon
     feat: Poison Weapon
   requirement: null
   source:
@@ -11687,7 +11690,7 @@ feat:
   level: 8
   name: Nimble Roll
   prereqs:
-  - descr: 'Nimble Dodge'
+  - descr: Nimble Dodge
     feat: Nimble Dodge
   requirement: null
   source:
@@ -12156,7 +12159,7 @@ feat:
   level: 18
   name: Implausible Infiltration
   prereqs:
-  - descr: 'Quick Squeeze'
+  - descr: Quick Squeeze
     feat: Quick Squeeze
   requirement: You are adjacent to a floor or vertical wall.
   source:
@@ -12205,7 +12208,7 @@ feat:
   requirement: When you make your daily preparations, you must specify a trigger for
     this reaction using the same restrictions as the triggers for the Ready action.
     You also choose a single spell from the arcane, divine, occult, or primal list
-    of 4th level or lower. The spell can’t have a cost, nor can its casting time be
+    of 4th level or lower. The spell can't have a cost, nor can its casting time be
     more than 10 minutes. The spell must be able to target a single creature, and
     you must be a valid target for it.
   source:
@@ -12248,7 +12251,7 @@ feat:
   level: 20
   name: Impossible Striker
   prereqs:
-  - descr: 'Sly Striker'
+  - descr: Sly Striker
     feat: Sly Striker
   requirement: null
   source:
@@ -12270,7 +12273,7 @@ feat:
   level: 20
   name: Reactive Distraction
   prereqs:
-  - descr: 'Perfect Distraction'
+  - descr: Perfect Distraction
     feat: Perfect Distraction
   requirement: You have Perfect Distraction ready to use.
   source:
@@ -12282,7 +12285,7 @@ feat:
   - Manipulate
   - Rogue
   trigger: You would be hit by an attack or targeted by an effect, or you are within
-    an effect’s area.
+    an effect's area.
 - actioncost: Reaction
   descr: When a foe Casts a Spell you know and you can see its manifestations, you
     can use your own magic to disrupt it. You expend one of your spell slots to counter
@@ -12719,7 +12722,7 @@ feat:
   level: 14
   name: Reflect Spell
   prereqs:
-  - descr: 'CounterSpell'
+  - descr: CounterSpell
     feat: Counterspell (Spontaneous)
   requirement: null
   source:
@@ -12739,7 +12742,7 @@ feat:
   level: 16
   name: Greater Mental Evolution
   prereqs:
-  - descr: 'Arcane Evolution or Occult Evolution'
+  - descr: Arcane Evolution or Occult Evolution
     feat: null
   requirement: null
   source:
@@ -12759,7 +12762,7 @@ feat:
   level: 16
   name: Greater Vital Evolution
   prereqs:
-  - descr: 'Divine Evolution or Primal Evolution'
+  - descr: Divine Evolution or Primal Evolution
     feat: null
   requirement: null
   source:
@@ -12779,7 +12782,7 @@ feat:
   level: 18
   name: Bloodline Wellspring
   prereqs:
-  - descr: 'Bloodline Focus'
+  - descr: Bloodline Focus
     feat: Bloodline Focus
   requirement: null
   source:
@@ -12799,7 +12802,7 @@ feat:
   level: 18
   name: Greater Crossblooded Evolution
   prereqs:
-  - descr: 'Crossblooded Evolution'
+  - descr: Crossblooded Evolution
     feat: Crossblooded Evolution
   requirement: null
   source:
@@ -13050,7 +13053,7 @@ feat:
   level: 4
   name: Silent Spell
   prereqs:
-  - descr: 'Conceal Spell'
+  - descr: Conceal Spell
     feat: Conceal Spell
   requirement: null
   source:
@@ -13142,7 +13145,7 @@ feat:
   level: 8
   name: Universal Versatility
   prereqs:
-  - descr: 'Hand of the Apprentice'
+  - descr: Hand of the Apprentice
     feat: Hand of the Apprentice
   requirement: null
   source:
@@ -13240,7 +13243,7 @@ feat:
   level: 12
   name: Clever Counterspell
   prereqs:
-  - descr: 'Quick Recognition'
+  - descr: Quick Recognition
     feat: Quick Recognition
   requirement: null
   source:
@@ -13445,7 +13448,7 @@ feat:
   level: 4
   name: Basic Concoction
   prereqs:
-  - descr: 'Alchemist Dedication'
+  - descr: Alchemist Dedication
     feat: Alchemist Dedication
   requirement: null
   source:
@@ -13462,7 +13465,7 @@ feat:
   level: 4
   name: Quick Alchemy
   prereqs:
-  - descr: 'Alchemist Dedication'
+  - descr: Alchemist Dedication
     feat: Alchemist Dedication
   requirement: null
   source:
@@ -13479,7 +13482,7 @@ feat:
   has_been_manually_proofread: false
   name: Advanced Conoction
   prereqs:
-  - descr: 'Basic Concoction'
+  - descr: Basic Concoction
     feat: Basic Concoction
   requirement: null
   source:
@@ -13573,7 +13576,7 @@ feat:
   level: 4
   name: Basic Fury
   prereqs:
-  - descr: 'Barbarian Dedication'
+  - descr: Barbarian Dedication
     feat: Barbarian Resiliency
   requirement: null
   source:
@@ -13591,7 +13594,7 @@ feat:
   level: 6
   name: Advanced Fury
   prereqs:
-  - descr: 'Basic Fury'
+  - descr: Basic Fury
     feat: Basic Fury
   requirement: null
   source:
@@ -13608,7 +13611,7 @@ feat:
   level: 6
   name: Instinct Ability
   prereqs:
-  - descr: 'Barbarian Dedication'
+  - descr: Barbarian Dedication
     feat: Barbarian Resiliency
   requirement: null
   source:
@@ -13669,7 +13672,7 @@ feat:
   level: 4
   name: Basic Bard Spellcasting
   prereqs:
-  - descr: 'Bard Dedication'
+  - descr: Bard Dedication
     feat: Bard Dedication
   requirement: null
   source:
@@ -13685,7 +13688,7 @@ feat:
   has_been_manually_proofread: false
   name: Basic Muse’s Whispers
   prereqs:
-  - descr: 'Bard Dedication'
+  - descr: Bard Dedication
     feat: Bard Dedication
   requirement: null
   source:
@@ -13702,7 +13705,7 @@ feat:
   has_been_manually_proofread: false
   name: Advanced Muse’s Whispers
   prereqs:
-  - descr: 'Basic Muse''s Whispers'
+  - descr: Basic Muse's Whispers
     feat: Basic Muse’s Whispers
   requirement: null
   source:
@@ -13721,7 +13724,7 @@ feat:
   level: 6
   name: Counter Perform
   prereqs:
-  - descr: 'Bard Dedication'
+  - descr: Bard Dedication
     feat: Bard Dedication
   requirement: null
   source:
@@ -13738,7 +13741,7 @@ feat:
   level: 8
   name: Inspirational Performance
   prereqs:
-  - descr: 'Bard Dedication'
+  - descr: Bard Dedication
     feat: Bard Dedication
   requirement: null
   source:
@@ -13758,7 +13761,7 @@ feat:
   level: 8
   name: Occult Breadth
   prereqs:
-  - descr: 'Basic Bard Spellcasting'
+  - descr: Basic Bard Spellcasting
     feat: Basic Bard Spellcasting
   requirement: null
   source:
@@ -13838,7 +13841,7 @@ feat:
   level: 4
   name: Basic Devotion
   prereqs:
-  - descr: 'Champion Dedication'
+  - descr: Champion Dedication
     feat: Champion Dedication
   requirement: null
   source:
@@ -13878,7 +13881,7 @@ feat:
   level: 4
   name: Healing Touch
   prereqs:
-  - descr: 'Champion Dedication'
+  - descr: Champion Dedication
     feat: Champion Dedication
   requirement: null
   source:
@@ -13896,7 +13899,7 @@ feat:
   level: 6
   name: Advanced Devotion
   prereqs:
-  - descr: 'Basic Devotion'
+  - descr: Basic Devotion
     feat: Basic Devotion
   requirement: null
   source:
@@ -13912,7 +13915,7 @@ feat:
   has_been_manually_proofread: false
   name: Champion’s Reaction
   prereqs:
-  - descr: 'Champion Dedication'
+  - descr: Champion Dedication
     feat: Champion Dedication
   requirement: null
   source:
@@ -13929,7 +13932,7 @@ feat:
   level: 6
   name: Divine Ally
   prereqs:
-  - descr: 'Champion Dedication'
+  - descr: Champion Dedication
     feat: Champion Dedication
   requirement: null
   source:
@@ -13993,7 +13996,7 @@ feat:
   level: 4
   name: Basic Cleric Spellcasting
   prereqs:
-  - descr: 'Cleric Dedication'
+  - descr: Cleric Dedication
     feat: Cleric Dedication
   requirement: null
   source:
@@ -14010,7 +14013,7 @@ feat:
   level: 4
   name: Basic Dogma
   prereqs:
-  - descr: 'Cleric Dedication'
+  - descr: Cleric Dedication
     feat: Cleric Dedication
   requirement: null
   source:
@@ -14028,7 +14031,7 @@ feat:
   level: 6
   name: Advanced Dogma
   prereqs:
-  - descr: 'Basic Dogma'
+  - descr: Basic Dogma
     feat: Basic Dogma
   requirement: null
   source:
@@ -14047,7 +14050,7 @@ feat:
   level: 8
   name: Divine Breadth
   prereqs:
-  - descr: 'Basic Cleric Spellcasting'
+  - descr: Basic Cleric Spellcasting
     feat: Basic Cleric Spellcasting
   requirement: null
   source:
@@ -14122,7 +14125,7 @@ feat:
   level: 4
   name: Basic Druid Spellcasting
   prereqs:
-  - descr: 'Druid Dedication'
+  - descr: Druid Dedication
     feat: null
   requirement: null
   source:
@@ -14139,7 +14142,7 @@ feat:
   level: 4
   name: Basic Wilding
   prereqs:
-  - descr: 'Druid Dedication'
+  - descr: Druid Dedication
     feat: null
   requirement: null
   source:
@@ -14158,7 +14161,7 @@ feat:
   level: 4
   name: Order Spell
   prereqs:
-  - descr: 'Druid Dedication'
+  - descr: Druid Dedication
     feat: null
   requirement: null
   source:
@@ -14176,7 +14179,7 @@ feat:
   level: 6
   name: Advanced Wilding
   prereqs:
-  - descr: 'Basic Wilding'
+  - descr: Basic Wilding
     feat: Basic Wilding
   requirement: null
   source:
@@ -14194,7 +14197,7 @@ feat:
   level: 8
   name: Primal Breadth
   prereqs:
-  - descr: 'Basic Druid Spellcasting'
+  - descr: Basic Druid Spellcasting
     feat: Basic Druid Spellcasting
   requirement: null
   source:
@@ -14268,7 +14271,7 @@ feat:
   level: 4
   name: Basic Maneuver
   prereqs:
-  - descr: 'Fighter Dedication'
+  - descr: Fighter Dedication
     feat: Fighter Dedication
   requirement: null
   source:
@@ -14305,7 +14308,7 @@ feat:
   level: 4
   name: Opportunist
   prereqs:
-  - descr: 'Fighter Dedication'
+  - descr: Fighter Dedication
     feat: Fighter Dedication
   requirement: null
   source:
@@ -14323,7 +14326,7 @@ feat:
   level: 6
   name: Advanced Maneuver
   prereqs:
-  - descr: 'Basic Maneuver'
+  - descr: Basic Maneuver
     feat: Basic Maneuver
   requirement: null
   source:
@@ -14380,7 +14383,7 @@ feat:
   level: 4
   name: Basic Kata
   prereqs:
-  - descr: 'Monk Dedication'
+  - descr: Monk Dedication
     feat: Monk Dedication
   requirement: null
   source:
@@ -14418,7 +14421,7 @@ feat:
   level: 6
   name: Advanced Kata
   prereqs:
-  - descr: 'Basic Kata'
+  - descr: Basic Kata
     feat: Basic Kata
   requirement: null
   source:
@@ -14435,7 +14438,7 @@ feat:
   level: 8
   name: Monk Moves
   prereqs:
-  - descr: 'Monk Dedication'
+  - descr: Monk Dedication
     feat: Monk Dedication
   requirement: null
   source:
@@ -14451,7 +14454,7 @@ feat:
   has_been_manually_proofread: false
   name: Monk’s Flurry
   prereqs:
-  - descr: 'Monk Dedication'
+  - descr: Monk Dedication
     feat: Monk Dedication
   requirement: null
   source:
@@ -14509,7 +14512,7 @@ feat:
   has_been_manually_proofread: false
   name: Basic Hunter’s Trick
   prereqs:
-  - descr: 'Ranger Dedication'
+  - descr: Ranger Dedication
     feat: Ranger Dedication
   requirement: null
   source:
@@ -14546,7 +14549,7 @@ feat:
   has_been_manually_proofread: false
   name: Advanced Hunter’s Trick
   prereqs:
-  - descr: 'Basic Hunters Trick'
+  - descr: Basic Hunters Trick
     feat: Basic Hunter’s Trick
   requirement: null
   source:
@@ -14603,7 +14606,7 @@ feat:
   level: 4
   name: Basic Trickery
   prereqs:
-  - descr: 'Rogue Dedication'
+  - descr: Rogue Dedication
     feat: Rogue Dedication
   requirement: null
   source:
@@ -14622,7 +14625,7 @@ feat:
   level: 4
   name: Sneak Attacker
   prereqs:
-  - descr: 'Rogue Dedication'
+  - descr: Rogue Dedication
     feat: Rogue Dedication
   requirement: null
   source:
@@ -14640,7 +14643,7 @@ feat:
   level: 6
   name: Advanced Trickery
   prereqs:
-  - descr: 'Basic Trickery'
+  - descr: Basic Trickery
     feat: Basic Trickery
   requirement: null
   source:
@@ -14676,7 +14679,7 @@ feat:
   level: 10
   name: Uncanny Dodge
   prereqs:
-  - descr: 'Rogue Dedication'
+  - descr: Rogue Dedication
     feat: Rogue Dedication
   requirement: null
   source:
@@ -14740,7 +14743,7 @@ feat:
   level: 4
   name: Basic Sorcerer Spellcasting
   prereqs:
-  - descr: 'Sorcerer Dedication'
+  - descr: Sorcerer Dedication
     feat: Sorcerer Dedication
   requirement: null
   source:
@@ -14757,7 +14760,7 @@ feat:
   level: 4
   name: Basic Blood Potency
   prereqs:
-  - descr: 'Sorcerer Dedication'
+  - descr: Sorcerer Dedication
     feat: Sorcerer Dedication
   requirement: null
   source:
@@ -14776,7 +14779,7 @@ feat:
   level: 4
   name: Basic Bloodline Spell
   prereqs:
-  - descr: 'Sorcerer Dedication'
+  - descr: Sorcerer Dedication
     feat: Sorcerer Dedication
   requirement: null
   source:
@@ -14794,7 +14797,7 @@ feat:
   level: 6
   name: Advanced Blood Potency
   prereqs:
-  - descr: 'Basic Blood Potency'
+  - descr: Basic Blood Potency
     feat: Basic Blood Potency
   requirement: null
   source:
@@ -14814,7 +14817,7 @@ feat:
   level: 8
   name: Bloodline Breadth
   prereqs:
-  - descr: 'Basic Sorcerer Spellcasting'
+  - descr: Basic Sorcerer Spellcasting
     feat: Basic Sorcerer Spellcasting
   requirement: null
   source:
@@ -14891,7 +14894,7 @@ feat:
   level: 4
   name: Arcane School Spell
   prereqs:
-  - descr: 'Wizard Dedication'
+  - descr: Wizard Dedication
     feat: Wizard Dedication
   requirement: null
   source:
@@ -14908,7 +14911,7 @@ feat:
   level: 4
   name: Basic Arcana
   prereqs:
-  - descr: 'Wizard Dedication'
+  - descr: Wizard Dedication
     feat: Wizard Dedication
   requirement: null
   source:
@@ -14927,7 +14930,7 @@ feat:
   level: 4
   name: Basic Wizard Spellcasting
   prereqs:
-  - descr: 'Wizard Dedication'
+  - descr: Wizard Dedication
     feat: Wizard Dedication
   requirement: null
   source:
@@ -14945,7 +14948,7 @@ feat:
   level: 6
   name: Advanced Arcana
   prereqs:
-  - descr: 'Basic Arcana'
+  - descr: Basic Arcana
     feat: Basic Arcana
   requirement: null
   source:
@@ -14964,7 +14967,7 @@ feat:
   level: 8
   name: Arcane Breadth
   prereqs:
-  - descr: 'Basic Wizard Spellcasting'
+  - descr: Basic Wizard Spellcasting
     feat: Basic Wizard Spellcasting
   requirement: null
   source:
@@ -14998,7 +15001,7 @@ feat:
   level: 18
   name: Master Wizard Spellcasting
   prereqs:
-  - descr: 'legendary in Arcana'
+  - descr: legendary in Arcana
     feat: null
   requirement: null
   source:
@@ -15450,7 +15453,7 @@ feat:
   level: 2
   name: Connections
   prereqs:
-  - descr: 'Courtly Graces'
+  - descr: Courtly Graces
     feat: Courtly Graces
   requirement: null
   source:
@@ -15702,7 +15705,7 @@ feat:
   level: 1
   name: Fascinating Performance
   prereqs:
-  - descr: 'trained in Performance'
+  - descr: trained in Performance
     feat: null
   requirement: null
   source:
@@ -15937,7 +15940,7 @@ feat:
   level: 7
   name: Impeccable Crafter
   prereqs:
-  - descr: 'Specialty Crafting'
+  - descr: Specialty Crafting
     feat: Specialty Crafting
   requirement: null
   source:
@@ -15956,7 +15959,7 @@ feat:
   level: 1
   name: Impressive Performance
   prereqs:
-  - descr: 'trained in Performance'
+  - descr: trained in Performance
     feat: null
   requirement: null
   source:
@@ -16142,7 +16145,7 @@ feat:
   level: 15
   name: Legendary Linguist
   prereqs:
-  - descr: 'Multilingual'
+  - descr: Multilingual
     feat: Multilingual
   requirement: null
   source:
@@ -16213,7 +16216,7 @@ feat:
   level: 15
   name: Legendary Performer
   prereqs:
-  - descr: 'Virtuosic Performer'
+  - descr: Virtuosic Performer
     feat: Virtuosic Performer
   requirement: null
   source:
@@ -16255,7 +16258,7 @@ feat:
   level: 15
   name: Legendary Sneak
   prereqs:
-  - descr: 'Swift Sneak'
+  - descr: Swift Sneak
     feat: Swift Sneak
   requirement: null
   source:
@@ -16300,7 +16303,7 @@ feat:
   level: 15
   name: Legendary Thief
   prereqs:
-  - descr: 'Pickpocket'
+  - descr: Pickpocket
     feat: Pickpocket
   requirement: null
   source:
@@ -16653,7 +16656,7 @@ feat:
   level: 7
   name: Quick Recognition
   prereqs:
-  - descr: 'Recognize Spell'
+  - descr: Recognize Spell
     feat: Recognize Spell
   requirement: null
   source:
@@ -16836,7 +16839,7 @@ feat:
   - General
   - Secret
   - Skill
-  trigger: A creature within line of sight casts a spell that you don’t have prepared
+  trigger: A creature within line of sight casts a spell that you don't have prepared
     or in your spell repertoire, or a trap or similar object casts such a spell. You
     must be aware of the casting.
 - actioncost: null
@@ -17445,7 +17448,7 @@ feat:
   level: 1
   name: Virtuosic Performer
   prereqs:
-  - descr: 'trained in Performance'
+  - descr: trained in Performance
     feat: null
   requirement: null
   source:
@@ -17576,7 +17579,8 @@ feat:
   level: 2
   name: Wilderness Spotter
   prereqs:
-  - expert in Survival
+  - descr: expert in Survival
+    feat: null
   requirement: null
   source:
   - abbr: CRB
