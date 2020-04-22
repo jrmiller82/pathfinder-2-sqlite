@@ -1,7 +1,7 @@
 trigger:
 - An ally ends a move action adjacent to you.
 - You fail a skill check or saving throw.
-- You attempt a check using a skill you’re untrained in.
+- You attempt a check using a skill you're untrained in.
 - You would be reduced to 0 Hit Points but not immediately killed.
 - You attempt a saving throw against a spell or magical effect, before rolling.
 - You bring a foe to 0 Hit Points.
@@ -13,12 +13,12 @@ trigger:
   than your advanced alchemy level.
 - You craft an elixer of life using Quick Alchemy, and that elixir is at least 2 levels
   lower than your advanced alchemy level.
-- You craft an alchemical bomb using Quick Alchemy that’s at least 2 levels lower
+- You craft an alchemical bomb using Quick Alchemy that's at least 2 levels lower
   than your advanced alchemy level.
 - A foe within reach attempts to move away from you.
 - You take damage and are capable of entering a rage.
 - A creature within your reach uses a manipulate action or a move action, makes a
-  ranged attack, or leaves a square during a move action it’s using.
+  ranged attack, or leaves a square during a move action it's using.
 - Your melee Strike kills a creature or knocks it unconscious, and another foe is
   adjacent to that creature.
 - A creature within your reach succeeds or critically succeeds at an attack against
@@ -49,7 +49,7 @@ trigger:
 - You are targeted with a melee attack by an attacker you can see.
 - Your turn ends and you have a status penalty to your Speed or are immobilized or
   slowed.
-- An enemy's attack hits you or you fail a saving throw against an enemy’s ability.
+- An enemy's attack hits you or you fail a saving throw against an enemy's ability.
 - Your hunted prey is within your reach, and it uses a manipulate action, uses a move
   action, or leaves a square during a move action it's using.
 - You are about to roll a Perception or Survival check for initiative.
@@ -71,10 +71,12 @@ trigger:
   area.
 - A creature casts a spell that you have in your repertoire.
 - A creature Casts a Spell that you have prepared.
-- A creature within line of sight casts a spell that you don’t have prepared or in
+- A creature within line of sight casts a spell that you don't have prepared or in
   your spell repertoire, or a trap or similar object casts such a spell. You must
   be aware of the casting.
 - While you have your shield raised, you would take damage from a physical attack.
 - An adjacent creature you are hunting attempts to move away from you using an action
   that has the move trait.
 - You attempt a saving throw against a magical effect, but you haven't rolled yet.
+- You are unarmored and touching the ground.
+- You are unarmored.

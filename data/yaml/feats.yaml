@@ -840,6 +840,7 @@ feat:
     damage you deal.
   frequency: null
   has_been_manually_proofread: false
+  level: 1
   name: Burn It!
   prereqs:
   - descr: Ancestry Level 1
@@ -1103,6 +1104,7 @@ feat:
     need to have cover or greater cover or be concealed to Hide or Sneak.
   frequency: null
   has_been_manually_proofread: false
+  level: 1
   name: Very, Very Sneaky
   prereqs:
   - descr: Very Sneaky
@@ -1610,7 +1612,8 @@ feat:
     a critical success.
   frequency: null
   has_been_manually_proofread: false
-  name: Cooperataive Soul
+  level: 9
+  name: Cooperative Soul
   prereqs:
   - descr: Cooperative Nature
     feat: Cooperative Nature
@@ -17576,7 +17579,8 @@ feat:
   level: 2
   name: Wilderness Spotter
   prereqs:
-  - expert in Survival
+  - descr: expert in Survival
+    feat: null
   requirement: null
   source:
   - abbr: CRB

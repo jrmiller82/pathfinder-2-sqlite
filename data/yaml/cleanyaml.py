@@ -33,6 +33,13 @@ def main():
                         # print("Before: {}".format(i['trigger']))
                         i['trigger'] = i['trigger'].replace('’', "'")
                         # print("After: {}".format(i['trigger']))
+            if x == "triggers.yaml":
+                for i in data['trigger']:
+                    print(i)
+                    i = i.replace('’', "'")
+
+
+
         final = yaml.safe_dump(data, allow_unicode=True)
         with open(x, 'w') as f:
             f.write(final)
