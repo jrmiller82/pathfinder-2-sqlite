@@ -31749,6 +31749,8 @@
     str_mod: 4
     wis_mod: 2
   ac: 23
+  ac_special:
+    - descr: 25 with shield raised
   automatic_abilities: null
   description: Mortals whose ancestry has been influenced by celestials are known
     as aasimars, and angelkin, who have blood of angels coursing through their veins,
@@ -31770,7 +31772,7 @@
     to_hit: 15
     traits:
     - versatile P
-  name: Aasimar
+  name: Aasimar Redeemer
   perception: 11
   proactive_abilities:
   - description: '*lay on hands*'
