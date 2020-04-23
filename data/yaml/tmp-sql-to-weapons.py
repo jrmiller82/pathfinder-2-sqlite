@@ -56,9 +56,35 @@ def main():
         ]
         del i['sources_id']
         del i['sources_pages']
+        # Get traits
+        qq = """
+        SELECT traits.short_name
+            FROM traits
+            INNER JOIN
+                weapons_traits ON traits.trait_id = weapons_traits.trait_id
+            INNER JOIN
+                weapons ON weapons.weapons_id = weapons_traits.weapons_id
+                WHERE weapons.weapons_id = (
+                                            SELECT weapons.weapons_id
+                                            WHERE weapons.name = ?
+                                        );
+        """
+        cc = conn.cursor()
+        cc.execute(qq, (i['name'],))
+        res = cc.fetchall()
+        print("\n\nWeapon: {}".format(i['name']))
+        tlist = []
+        for j in res:
+            x = tuple(j)[0]
+            tlist.append(x)
+        if len(tlist) > 0:
+            i['traits'] = tlist
+        else:
+            i['traits'] = None
 
 
-    pp.pprint(data)
+
+    # pp.pprint(data)
 
     fdata = {'weapons': data}
     final = yaml.safe_dump(fdata, allow_unicode=True)
