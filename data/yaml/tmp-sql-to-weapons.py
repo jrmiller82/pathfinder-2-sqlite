@@ -25,7 +25,7 @@ def main():
     c.execute(q)
     data = [dict(row) for row in c.fetchall()]
     for i in data:
-        # handle empty bulk entries
+        # handle empty bulk entries to match the abbr field in bulks.yaml
         if i['bulk'] == '':
             i['bulk'] = '-'
         # convert gp prices to cp prices to avoid float issues
