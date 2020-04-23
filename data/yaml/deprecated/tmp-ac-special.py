@@ -8,10 +8,10 @@ def main():
     monsterlist = []
     for i in data:
         if 'ac_special' in i:
-            continue
+            monsterlist.append(i)
         else:
             i['ac_special'] = None
-        monsterlist.append(i)
+            monsterlist.append(i)
 
     finaldata = {'monsters': monsterlist}
 

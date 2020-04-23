@@ -32063,6 +32063,84 @@ monsters:
   - Humanoid
   type: Creature
 - ability_mods:
+    cha_mod: 3
+    con_mod: 3
+    dex_mod: 1
+    int_mod: 0
+    str_mod: 4
+    wis_mod: 2
+  ac: 23
+  ac_special:
+  - descr: 25 with shield raised
+  automatic_abilities: null
+  description: Mortals whose ancestry has been influenced by celestials are known
+    as aasimars, and angelkin, who have blood of angels coursing through their veins,
+    are among the most common type of them. Many angelkin seek adventure as a means
+    of doing good in the world.
+  hp: 73
+  immunities: null
+  innate_spells: []
+  languages:
+  - Celestial
+  - Common
+  level: 5
+  melee:
+  - action_cost: One Action
+    damage:
+      formula: 1d8+7
+      type: slashing
+    name: longsword
+    to_hit: 15
+    traits:
+    - versatile P
+  name: Aasimar Redeemer
+  perception: 11
+  proactive_abilities:
+  - description: '*lay on hands*'
+    name: Champion Devotion Spells
+    traits:
+    - 1 Focus Point
+  ranged:
+  - action_cost: One Action
+    damage:
+      formula: 1d8+3 plus Knockdown
+      type: piercing
+    name: crossbow
+    to_hit: 12
+    traits:
+    - range increment 120 feet
+    - reload 1
+  resistances: null
+  saves:
+    fort: 12
+    ref: 8
+    will: 11
+  saves_special:
+    fort: null
+    ref: null
+    will: +1 status to all saves vs. disease (against diseases, critical failures
+      become failures)
+  senses:
+  - darkvision
+  skills:
+    Athletics: 11
+    Diplomacy: 12
+    Medicine: 9
+    Religion: 11
+    Society: 7
+  speed:
+  - amount: 20
+    type: Land
+  spell_attack_to_hit: null
+  spell_dc: null
+  traits:
+  - NG
+  - Medium
+  - Aasimar
+  - Human
+  - Humanoid
+  type: Creature
+- ability_mods:
     cha_mod: 4
     con_mod: 0
     dex_mod: 5
