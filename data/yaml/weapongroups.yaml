@@ -1,0 +1,91 @@
+weapongroups:
+- descr: TODO descr from pg 283-84
+  name: Axe
+  source:
+  - abbr: CRB
+    page_start: 283
+    page_stop: 283
+- descr: TODO descr from pg 283-84
+  name: Bomb
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Bow
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Brawling
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Club
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Dart
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Flail
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Hammer
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Knife
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Pick
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Polearm
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Shield
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Sling
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Spear
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
+- descr: TODO descr from pg 283-84
+  name: Sword
+  source:
+  - abbr: CRB
+    page_start: 284
+    page_stop: 284
