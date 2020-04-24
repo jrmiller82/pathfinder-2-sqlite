@@ -11535,7 +11535,20 @@ monsters:
     wis_mod: 3
   ac: 31
   ac_special: null
-  automatic_abilities: null
+  automatic_abilities:
+  - name: Frightful Presence
+    description: 90 feet, DC 28
+    traits:
+    - aura
+    - emotion
+    - fear
+    - mental
+  - name: Tail Lash
+    action_cost: Reaction
+    trigger: A creature within reach of the dragon's tail takes an action to Strike or 
+      attempt a skill check
+    effect: The dragon Strikes with its tail at the triggering creature at a –2 penalty. 
+      If it hits, the creature takes a –2 circumstance penalty to the triggering roll.
   description: Murderous tyrants of marshes, swamps, bogs, and fens, black dragons
     terrorize their domains with intense fervor. Gleefully sadistic, they rule their
     fetid principalities from a deep cave or otherwise isolated part of the swamp
@@ -11543,12 +11556,63 @@ monsters:
     is as acidic as their breath weapons, and they rarely tolerate even other dragons
     of their kind—except perhaps to mate or temporarily collaborate to take down a
     mutual enemy.
+
+    Black dragons are amphibious—although they breathe air, their gills also allow them 
+    to breathe water. Their frills and fins make them accomplished swimmers, well suited 
+    to their wetland environments and submerged lairs. They're immune to the fetid water 
+    that comes as a result of their magical ability to corrupt water.
+
+    Black dragon lairs are as foul as their souls. The floors are littered with rotting 
+    meat, and plundered treasures line the muck and slime of their dank caves amid 
+    twisted roots and creepers. Such places are often crawling with pests, snakes, and 
+    slimes. Though they claim natural caverns when they can, they make do with areas of 
+    dense, twisted vegetation within a swamp. Black dragon treasure hoards primarily 
+    consist of gems and expensive glass work, as valuables of softer substance can't 
+    survive the dragon's acidic presence.
   hp: 215
   immunities:
   - acid
   - paralyzed
   - sleep
-  innate_spells: []
+  innate_spells:
+  - level: 5
+    name: black tentacles
+  - level: 5
+    name: mariner's curse
+  - level: 4
+    name: clairvoyance
+  - level: 4
+    name: dimension door
+  - level: 4
+    name: suggestion
+  - level: 3
+    name: paralyze
+  - level: 3
+    name: slow
+  - level: 3
+    name: stinking cloud
+  - level: 2
+    name: blur
+  - level: 2
+    name: glitterdust
+  - level: 2
+    name: invisibility
+  - level: 1
+    name: alarm
+  - level: 1
+    name: ray of enfeeblement
+  - level: 1
+    name: true strike
+  - level: 0
+    name: dancing lights
+  - level: 0
+    name: detect magic
+  - level: 0
+    name: prestidigitation
+  - level: 0
+    name: read aura
+  - level: 0
+    name: tanglefoot
   languages:
   - Common
   - Draconic
@@ -11599,18 +11663,19 @@ monsters:
     description: The dragon breathes a spray of acid that deals 12d6 acid damage in
       an 80-foot line (DC 30 basic Reflex save). It can't use Breath Weapon again
       for 1d4 rounds.
-    name: 'Breath Weapon '
+    name: Breath Weapon
     traits:
     - acid
     - arcane
     - evocation
   - action_cost: One Action
-    description: '**Frequency** Once per day; **Effect** The dragon permanently befouls
-      10 cubic feet of liquid within 90 feet. The liquid becomes undrinkable and unable
-      to support water-breathing life. This destroys liquid magic or alchemical items
-      if they''re of a lower level than the dragon (a creature can attempt a DC 28
-      Will save to protect liquids in its possession). This doesn''t affect liquids
-      in a creature''s body.'
+    description: null
+    frequency: Once per day
+    effect: The dragon permanently befouls 10 cubic feet of liquid within 90 feet. 
+      The liquid becomes undrinkable and unable to support water-breathing life. 
+      This destroys liquid magic or alchemical items if they're of a lower level than 
+      the dragon (a creature can attempt a DC 28 Will save to protect liquids in its 
+      possession). This doesn't affect liquids in a creature's body.
     name: Corrupt Water
     traits:
     - arcane
@@ -11634,7 +11699,8 @@ monsters:
   saves_special:
     fort: null
     ref: null
-    will: +1 status to all saves vs. magic
+    will: null
+    misc: +1 status to all saves vs. magic
   senses:
   - darkvision
   - scent (imprecise) 60 feet
@@ -11646,14 +11712,14 @@ monsters:
     Intimidation: 20
     Stealth: 20
   speed:
-  - amount: 40
+  - amount: 50
     type: Land
-  - amount: 100
+  - amount: 120
     type: Fly
-  - amount: 40
+  - amount: 50
     type: Swim
-  spell_attack_to_hit: null
-  spell_dc: null
+  spell_attack_to_hit: 24
+  spell_dc: 30
   traits:
   - CE
   - Large
