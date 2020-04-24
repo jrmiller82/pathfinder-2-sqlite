@@ -24,7 +24,7 @@ monsters:
   - precision
   - unconscious
   innate_spells: null
-  languages: 
+  languages:
   - ' - (understands its creator)'
   level: -1
   melee: null
@@ -999,7 +999,7 @@ monsters:
   - frequency: constant
     level: 4
     name: freedom of movement
-  languages: 
+  languages:
   - ' envisioning'
   level: 20
   melee:
@@ -1391,9 +1391,9 @@ monsters:
       creature within its confessor''s aura as irredeemable. It can only do so after
       a failed attempt to convince the creature to repent. The touched creature takes
       a –1 status penalty to AC and saves, reduces its resistances by 2, and gains
-      weakness 2 to good damage. The duration depends on the target''s DC 26 Will save.
-      **Critical Success** The creature is unaffected. **Success** The duration is
-      1 round. **Failure** The duration is 1 day. **Critical Failure** The duration
+      weakness 2 to good damage. The duration depends on the target''s DC 26 Will
+      save. **Critical Success** The creature is unaffected. **Success** The duration
+      is 1 round. **Failure** The duration is 1 day. **Critical Failure** The duration
       is permanent.'
     name: Brand of the Impenitent
     traits:
@@ -1899,11 +1899,11 @@ monsters:
   ac: 20
   ac_special: null
   automatic_abilities: null
-  description: 'These horse-sized, burrowing monsters generally avoid heavily settled
-    areas like cities, but ankhravs'' predilection for livestock and humanoid flesh 
-    ensures that the creatures do not remain in the deep wilderness for long. Desperate 
-    farmers whose fields become infested by ankhravs often have little recourse but to 
-    seek the aid of adventurers.'
+  description: These horse-sized, burrowing monsters generally avoid heavily settled
+    areas like cities, but ankhravs' predilection for livestock and humanoid flesh
+    ensures that the creatures do not remain in the deep wilderness for long. Desperate
+    farmers whose fields become infested by ankhravs often have little recourse but
+    to seek the aid of adventurers.
   hp: 40
   immunities: null
   innate_spells: null
@@ -2821,8 +2821,8 @@ monsters:
   ac: 31
   ac_special: null
   automatic_abilities:
-  - description: '|1| (divine, transmutation) A shield archon''s hands can change into
-      a *+1 holy striking* spear and a *lesser sturdy shield* or back into hands.
+  - description: '|1| (divine, transmutation) A shield archon''s hands can change
+      into a *+1 holy striking* spear and a *lesser sturdy shield* or back into hands.
       Transforming does not restore any HP to the items, and if either the weapon
       or shield is fully destroyed, the archon loses that hand until it receives a
       <%SPELLS% %%>*regenerate* spell or similar magic. If a shield archon is slain,
@@ -4671,10 +4671,10 @@ monsters:
     - emotion
     - fear
     - mental
-  - description: ', but it can''t move beyond the reach of the boggard''s tongue. A
-      creature can sever the tongue by hitting AC 13 and dealing at least 2 slashing
-      damage. Though this doesn''t deal any damage to the boggard, it prevents it from
-      using its tongue Strike until it regrows its tongue, which takes a week.'
+  - description: ', but it can''t move beyond the reach of the boggard''s tongue.
+      A creature can sever the tongue by hitting AC 13 and dealing at least 2 slashing
+      damage. Though this doesn''t deal any damage to the boggard, it prevents it
+      from using its tongue Strike until it regrows its tongue, which takes a week.'
     name: Tongue Grab
     traits: null
   ranged:
@@ -4766,10 +4766,10 @@ monsters:
     - emotion
     - fear
     - mental
-  - description: ', but it can''t move beyond the reach of the boggard''s tongue. A
-      creature can sever the tongue by hitting AC 15 and dealing at least 3 slashing
-      damage. Though this doesn''t deal any damage to the boggard, it prevents it from
-      using its tongue Strike until it regrows its tongue, which takes a week.'
+  - description: ', but it can''t move beyond the reach of the boggard''s tongue.
+      A creature can sever the tongue by hitting AC 15 and dealing at least 3 slashing
+      damage. Though this doesn''t deal any damage to the boggard, it prevents it
+      from using its tongue Strike until it regrows its tongue, which takes a week.'
     name: Tongue Grab
     traits: null
   ranged:
@@ -4889,10 +4889,10 @@ monsters:
     - emotion
     - fear
     - mental
-  - description: ', but it can''t move beyond the reach of the boggard''s tongue. A
-      creature can sever the tongue by hitting AC 15 and dealing at least 4 slashing
-      damage. Though this doesn''t deal any damage to the boggard, it prevents it from
-      using its tongue Strike until it regrows its tongue, which takes a week.'
+  - description: ', but it can''t move beyond the reach of the boggard''s tongue.
+      A creature can sever the tongue by hitting AC 15 and dealing at least 4 slashing
+      damage. Though this doesn''t deal any damage to the boggard, it prevents it
+      from using its tongue Strike until it regrows its tongue, which takes a week.'
     name: Tongue Grab
     traits: null
   ranged: null
@@ -7795,7 +7795,7 @@ monsters:
   - frequency: at will
     level: 4
     name: dispel magic
-  items: 
+  items:
   - +1 striking composite longbow (50 arrows)
   languages:
   - Common
@@ -8464,12 +8464,12 @@ monsters:
       see through the creature''s senses, and target the creature with *suggestion*
       through the telepathic link. In addition, the creature uses an outcome one degree
       of success worse than it rolls on saving throws against the lust demon''s *suggestions*.
-      A humanoid can''t have more than one profane gift at a time, and a succubus can''t
-      grant more than one profane gift at a time. Removing the gift requires an *atone*
-      ritual. The succubus can remove the gift as a free action to give the recipient
-      a permanent stupefied 3 condition. A 4th-level *restoration* spell is required
-      to reduce this stupefied condition by 1. A summoned succubus can''t grant a profane
-      gift.'
+      A humanoid can''t have more than one profane gift at a time, and a succubus
+      can''t grant more than one profane gift at a time. Removing the gift requires
+      an *atone* ritual. The succubus can remove the gift as a free action to give
+      the recipient a permanent stupefied 3 condition. A 4th-level *restoration* spell
+      is required to reduce this stupefied condition by 1. A summoned succubus can''t
+      grant a profane gift.'
     name: Profane Gift
     traits:
     - divine
@@ -11536,20 +11536,20 @@ monsters:
   ac: 31
   ac_special: null
   automatic_abilities:
-  - name: Frightful Presence
-    description: 90 feet, DC 28
+  - description: 90 feet, DC 28
+    name: Frightful Presence
     traits:
     - aura
     - emotion
     - fear
     - mental
-  - name: Tail Lash
-    action_cost: Reaction
-    trigger: A creature within reach of the dragon's tail takes an action to Strike or 
-      attempt a skill check
-    effect: The dragon Strikes with its tail at the triggering creature at a –2 penalty. 
+  - action_cost: Reaction
+    effect: The dragon Strikes with its tail at the triggering creature at a –2 penalty.
       If it hits, the creature takes a –2 circumstance penalty to the triggering roll.
-  description: Murderous tyrants of marshes, swamps, bogs, and fens, black dragons
+    name: Tail Lash
+    trigger: A creature within reach of the dragon's tail takes an action to Strike
+      or attempt a skill check
+  description: 'Murderous tyrants of marshes, swamps, bogs, and fens, black dragons
     terrorize their domains with intense fervor. Gleefully sadistic, they rule their
     fetid principalities from a deep cave or otherwise isolated part of the swamp
     with a mix of lightning-quick raids and subterfuge. Their hatred for other creatures
@@ -11557,18 +11557,19 @@ monsters:
     of their kind—except perhaps to mate or temporarily collaborate to take down a
     mutual enemy.
 
-    Black dragons are amphibious—although they breathe air, their gills also allow them 
-    to breathe water. Their frills and fins make them accomplished swimmers, well suited 
-    to their wetland environments and submerged lairs. They're immune to the fetid water 
-    that comes as a result of their magical ability to corrupt water.
+    Black dragons are amphibious—although they breathe air, their gills also allow
+    them to breathe water. Their frills and fins make them accomplished swimmers,
+    well suited to their wetland environments and submerged lairs. They''re immune
+    to the fetid water that comes as a result of their magical ability to corrupt
+    water.
 
-    Black dragon lairs are as foul as their souls. The floors are littered with rotting 
-    meat, and plundered treasures line the muck and slime of their dank caves amid 
-    twisted roots and creepers. Such places are often crawling with pests, snakes, and 
-    slimes. Though they claim natural caverns when they can, they make do with areas of 
-    dense, twisted vegetation within a swamp. Black dragon treasure hoards primarily 
-    consist of gems and expensive glass work, as valuables of softer substance can't 
-    survive the dragon's acidic presence.
+    Black dragon lairs are as foul as their souls. The floors are littered with rotting
+    meat, and plundered treasures line the muck and slime of their dank caves amid
+    twisted roots and creepers. Such places are often crawling with pests, snakes,
+    and slimes. Though they claim natural caverns when they can, they make do with
+    areas of dense, twisted vegetation within a swamp. Black dragon treasure hoards
+    primarily consist of gems and expensive glass work, as valuables of softer substance
+    can''t survive the dragon''s acidic presence.'
   hp: 215
   immunities:
   - acid
@@ -11670,12 +11671,12 @@ monsters:
     - evocation
   - action_cost: One Action
     description: null
+    effect: The dragon permanently befouls 10 cubic feet of liquid within 90 feet.
+      The liquid becomes undrinkable and unable to support water-breathing life. This
+      destroys liquid magic or alchemical items if they're of a lower level than the
+      dragon (a creature can attempt a DC 28 Will save to protect liquids in its possession).
+      This doesn't affect liquids in a creature's body.
     frequency: Once per day
-    effect: The dragon permanently befouls 10 cubic feet of liquid within 90 feet. 
-      The liquid becomes undrinkable and unable to support water-breathing life. 
-      This destroys liquid magic or alchemical items if they're of a lower level than 
-      the dragon (a creature can attempt a DC 28 Will save to protect liquids in its 
-      possession). This doesn't affect liquids in a creature's body.
     name: Corrupt Water
     traits:
     - arcane
@@ -11698,9 +11699,9 @@ monsters:
     will: 21
   saves_special:
     fort: null
+    misc: +1 status to all saves vs. magic
     ref: null
     will: null
-    misc: +1 status to all saves vs. magic
   senses:
   - darkvision
   - scent (imprecise) 60 feet
@@ -16158,8 +16159,8 @@ monsters:
   ac: 25
   ac_special: null
   automatic_abilities:
-  - description: 'Snow doesn''t impair a frost drake''s vision; it ignores concealment
-      from snowfall.'
+  - description: Snow doesn't impair a frost drake's vision; it ignores concealment
+      from snowfall.
     name: Snow Vision
     traits: null
   description: Frost drakes pose an immense danger in the frozen reaches they call
@@ -23082,12 +23083,12 @@ monsters:
       to create a bomb and then makes a bomb Strike. Determine the type of bomb created
       by rolling 1d6 on the alchemical chambers list above. On a roll of 1–4, it creates
       the corresponding greater alchemical bomb: an acid flask from chamber 1, a frost
-      vial from chamber 2, bottled lightning from chamber 3, or alchemist''s fire from
-      chamber 4. On a roll of 5, it creates a poisonous bomb that deals 3d10 poison
-      damage and 3 poison splash damage with no other effects. On a roll of 6, it
-      creates a sickness bomb, which exposes the target and all creatures in the splash
-      radius to the sickness effect; creatures hit by only the splash receive a +2
-      circumstance bonus to their Fortitude saves.'
+      vial from chamber 2, bottled lightning from chamber 3, or alchemist''s fire
+      from chamber 4. On a roll of 5, it creates a poisonous bomb that deals 3d10
+      poison damage and 3 poison splash damage with no other effects. On a roll of
+      6, it creates a sickness bomb, which exposes the target and all creatures in
+      the splash radius to the sickness effect; creatures hit by only the splash receive
+      a +2 circumstance bonus to their Fortitude saves.'
     name: Generate Bomb
     traits:
     - manipulate
@@ -23438,27 +23439,26 @@ monsters:
   ac: 42
   ac_special: null
   automatic_abilities:
-  - name: Golem Antimagic
+  - description: harmed by acid (9d10, 2d10 from areas or persistent damage); healed
+      by fire (area 2d10 HP); slowed by electricity
+    name: Golem Antimagic
     traits: null
-    description: harmed by acid (9d10, 2d10 from areas or persistent damage); 
-      healed by fire (area 2d10 HP); slowed by electricity
-  - name: Repair Mode
+  - description: When the adamantine golem is at 0 HP, it isn't destroyed. Instead,
+      it enters repair mode, during which it is slowed 1, can't take reactions, and
+      can take only the Self-Repair action. Once it has more than 30 HP, it can use
+      any type of action and can use reactions, though it remains slowed 1 and can't
+      take any reactions until the start of its next turn. If a critical hit with
+      an adamantine vorpal weapon reduces the golem to 0 HP, or if such a weapon hits
+      it while it's already at 0 HP, then the golem is destroyed.
+    name: Repair Mode
     traits: null
-    description: When the adamantine golem is at 0 HP, it isn't destroyed. 
-      Instead, it enters repair mode, during which it is slowed 1, can't take
-      reactions, and can take only the Self-Repair action. Once it has more than 
-      30 HP, it can use any type of action and can use reactions, though it remains 
-      slowed 1 and can't take any reactions until the start of its next turn. 
-      If a critical hit with an adamantine vorpal weapon reduces the golem to 0 HP, 
-      or if such a weapon hits it while it's already at 0 HP, then the golem is 
-      destroyed.
-  - name: Vulnerable to Dispelling
+  - description: The golem can be targeted by disjunction and dispel magic. If targeted
+      by such a spell of 9th level or higher, the golem has its resistance to physical
+      damage lowered to 15 and is slowed 1 (or slowed 2 if in repair mode) for 1d4
+      rounds. During this time, if the golem is reduced to 0 HP while already in repair
+      mode, it is destroyed.
+    name: Vulnerable to Dispelling
     traits: null
-    description: The golem can be targeted by disjunction and dispel magic. If 
-      targeted by such a spell of 9th level or higher, the golem has its resistance 
-      to physical damage lowered to 15 and is slowed 1 (or slowed 2 if in repair mode) 
-      for 1d4 rounds. During this time, if the golem is reduced to 0 HP while already 
-      in repair mode, it is destroyed.
   description: Crafted from a nigh-indestructible metal of great rarity, adamantine
     golems can't be destroyed except by the most powerful foes. Crafting an adamantine
     golem requires a quantity of adamantine so massive that collecting it usually
@@ -23505,16 +23505,16 @@ monsters:
     name: Destructive Strike
     traits: null
   - action_cost: One Action
-    description: The adamantine golem Strides up to its Speed, pushing back each 
-      creature whose space it moves into and damaging them if they try to stop its 
-      movement. A creature can try to bar the way by attempting a DC 45 Fortitude save.
-    name: Inexorable March
-    traits: null
-    critical_success: The creature takes no damage and its armor takes no damage.
-    success: The golem halts its movement and cannot enter the creature's square.
-    failure: The resisting creature is damaged and its armor takes damage as if hit 
-      by the adamantine golem's fist.
     critical_failure: null
+    critical_success: The creature takes no damage and its armor takes no damage.
+    description: The adamantine golem Strides up to its Speed, pushing back each creature
+      whose space it moves into and damaging them if they try to stop its movement.
+      A creature can try to bar the way by attempting a DC 45 Fortitude save.
+    failure: The resisting creature is damaged and its armor takes damage as if hit
+      by the adamantine golem's fist.
+    name: Inexorable March
+    success: The golem halts its movement and cannot enter the creature's square.
+    traits: null
   - action_cost: One Action
     description: The golem repairs itself, regaining 30 Hit Points.
     name: Self-Repair
@@ -23595,45 +23595,46 @@ monsters:
     weapons (see below); Devastating Blast gains the associated energy trait. **Phantom
     Mount** |2| (arcane, conjuration, summon) The graveknight summons a supernatural
     mount as per phantom steed, heightened to a level equal to half the graveknight''s
-    level. Unlike phantom steed, the steed''s AC and saving throw bonuses are all 4
-    lower than the graveknight''s, and the steed has one-third the graveknight''s Hit
-    Points (rounded down). If the steed is destroyed, the graveknight must wait 1
-    hour before using this ability again. **Ruinous Weapons** At the time of its creation,
-    a graveknight chooses one of the following energy types that was relevant to its
-    life or death: acid, cold, electricity, or fire. Any weapon the graveknight wields
-    gains the effects of the caustic, frost, shock, or flaming weapon rune, respectively,
-    in addition to a +1 striking weapon rune. If the graveknight is 14th level or
-    higher, its weapons instead gain the effects of the greater versions of both of
-    these runes. **Weapon Master** The graveknight has access to the critical specialization
-    effects of any weapons it wields. <h3 class="title">Alternate Graveknight Abilities</h3>
-    Although the abilities listed above are standard for a graveknight, you can create
-    a more unusual graveknight by substituting one of the aforementioned abilities
-    (except for its rejuvenation ability) with one of the following. **Betrayed Revivification**
-    The graveknight died after being deeply betrayed. Instead of being immune to a
-    type of energy damage, it is immune to mental damage, its weapons deal 1d6 additional
-    mental damage, and its Devastating Blast deals mental damage with a Will saving
-    throw instead of Reflex. **Create Grave Squire** The graveknight can gift a piece
-    of its armor to a willing ally, which becomes its grave squire. The graveknight
-    can communicate telepathically with its squire at any distance, see through the
-    squire''s senses, and cast suggestion as a divine innate spell through the telepathic
-    link at will; the squire treats its degree of success as one step worse. If the
-    graveknight''s main armor is destroyed, the squire''s piece expands to cover the
-    squire''s body over 1d10 days, after which point it becomes the graveknight''s new
-    body. The graveknight can have only one squire at a time, and must recover the
-    gifted piece of armor if it wishes to create a new squire. **Dark Deliverance**
-    The graveknight has positive resistance equal to its level. <h2 class="title">Graveknight
-    Armor</h2> Wearing graveknight armor is very risky, for the graveknight''s essence
-    rapidly parasitizes the new wearer, accelerating the graveknight''s rejuvenation.
-    This agonizing transformation inevitably kills the host, transforming their flesh
-    into the graveknight''s new body. Removing the curse allows a character to remove
-    the armor, but if it ever wears the armor again, the curse returns. If the wearer
-    dies from another cause while wearing the armor, or if the graveknight''s rejuvenation
-    completes before the wearer dies from the curse, the wearer immediately progresses
-    to stage 3. **Graveknight''s Curse** (arcane, curse, necromancy) This curse affects
-    anyone who wears a graveknight''s armor for at least 1 hour. **Saving Throw** Will
-    save; **Onset** 1 hour; **Stage 1** doomed 1 and cannot remove the armor (1 day);
-    **Stage 2** doomed 2, hampered 10, and cannot remove the armor (1 day); **Stage
-    3** dies and transforms into the armor''s graveknight.'
+    level. Unlike phantom steed, the steed''s AC and saving throw bonuses are all
+    4 lower than the graveknight''s, and the steed has one-third the graveknight''s
+    Hit Points (rounded down). If the steed is destroyed, the graveknight must wait
+    1 hour before using this ability again. **Ruinous Weapons** At the time of its
+    creation, a graveknight chooses one of the following energy types that was relevant
+    to its life or death: acid, cold, electricity, or fire. Any weapon the graveknight
+    wields gains the effects of the caustic, frost, shock, or flaming weapon rune,
+    respectively, in addition to a +1 striking weapon rune. If the graveknight is
+    14th level or higher, its weapons instead gain the effects of the greater versions
+    of both of these runes. **Weapon Master** The graveknight has access to the critical
+    specialization effects of any weapons it wields. <h3 class="title">Alternate Graveknight
+    Abilities</h3> Although the abilities listed above are standard for a graveknight,
+    you can create a more unusual graveknight by substituting one of the aforementioned
+    abilities (except for its rejuvenation ability) with one of the following. **Betrayed
+    Revivification** The graveknight died after being deeply betrayed. Instead of
+    being immune to a type of energy damage, it is immune to mental damage, its weapons
+    deal 1d6 additional mental damage, and its Devastating Blast deals mental damage
+    with a Will saving throw instead of Reflex. **Create Grave Squire** The graveknight
+    can gift a piece of its armor to a willing ally, which becomes its grave squire.
+    The graveknight can communicate telepathically with its squire at any distance,
+    see through the squire''s senses, and cast suggestion as a divine innate spell
+    through the telepathic link at will; the squire treats its degree of success as
+    one step worse. If the graveknight''s main armor is destroyed, the squire''s piece
+    expands to cover the squire''s body over 1d10 days, after which point it becomes
+    the graveknight''s new body. The graveknight can have only one squire at a time,
+    and must recover the gifted piece of armor if it wishes to create a new squire.
+    **Dark Deliverance** The graveknight has positive resistance equal to its level.
+    <h2 class="title">Graveknight Armor</h2> Wearing graveknight armor is very risky,
+    for the graveknight''s essence rapidly parasitizes the new wearer, accelerating
+    the graveknight''s rejuvenation. This agonizing transformation inevitably kills
+    the host, transforming their flesh into the graveknight''s new body. Removing
+    the curse allows a character to remove the armor, but if it ever wears the armor
+    again, the curse returns. If the wearer dies from another cause while wearing
+    the armor, or if the graveknight''s rejuvenation completes before the wearer dies
+    from the curse, the wearer immediately progresses to stage 3. **Graveknight''s
+    Curse** (arcane, curse, necromancy) This curse affects anyone who wears a graveknight''s
+    armor for at least 1 hour. **Saving Throw** Will save; **Onset** 1 hour; **Stage
+    1** doomed 1 and cannot remove the armor (1 day); **Stage 2** doomed 2, hampered
+    10, and cannot remove the armor (1 day); **Stage 3** dies and transforms into
+    the armor''s graveknight.'
   hp: 175
   immunities:
   - death effects
@@ -25676,8 +25677,8 @@ monsters:
     the creation process is simple and inexpensive due to a magical shortcut: the
     use of the creator''s own blood. This forges a link between the homunculus and
     its master, causing the homunculus to gain a spark of the creator''s intellect,
-    as well as the same moral values and some of the creator''s basic personality traits.
-    Homunculi left to their own devices never stray far from their masters.'
+    as well as the same moral values and some of the creator''s basic personality
+    traits. Homunculi left to their own devices never stray far from their masters.'
   hp: 17
   immunities:
   - bleed
@@ -30677,9 +30678,9 @@ monsters:
     ofalths are living heaps of matter from an altogether more unpleasant source:
     these monsters look like 9-foot-tall amalgamations of wet detritus, sewage, and
     rubbish with long tentacular arms and stout legs. It can be difficult to tell
-    where an ofalth''s body ends and the foul contents of the cesspit they wallow within
-    begins. They move through refuse heaps in search of organic material in their
-    endless quest to sate their hunger.'
+    where an ofalth''s body ends and the foul contents of the cesspit they wallow
+    within begins. They move through refuse heaps in search of organic material in
+    their endless quest to sate their hunger.'
   hp: 170
   immunities:
   - disease
@@ -32161,28 +32162,28 @@ monsters:
   ac: 23
   ac_special:
   - descr: 25 with shield raised
-  items:
-  - crossbow (10 bolts)
-  - half plate
-  - steel shield (Hardness 5, 20 HP, BT 10)
-  - longsword
   automatic_abilities: null
   description: Mortals whose ancestry has been influenced by celestials are known
     as aasimars, and angelkin, who have blood of angels coursing through their veins,
     are among the most common type of them. Many angelkin seek adventure as a means
     of doing good in the world.
-  hp: 73
-  immunities: null
-  divine_spells: 
-  - name: light
+  divine_spells:
+  - action_cost: null
     frequency: null
     level: 0
-    action_cost: null
+    name: light
+  hp: 73
+  immunities: null
   innate_spells:
-  - name: lay on hands
+  - action_cost: 1 Focus Point
     frequency: null
     level: 3
-    action_cost: 1 Focus Point
+    name: lay on hands
+  items:
+  - crossbow (10 bolts)
+  - half plate
+  - steel shield (Hardness 5, 20 HP, BT 10)
+  - longsword
   languages:
   - Celestial
   - Common
@@ -32199,24 +32200,27 @@ monsters:
   name: Aasimar Redeemer
   perception: 11
   proactive_abilities:
-  - name: Divine Grace
-    action_cost: Reaction
-    trigger: The angelkin is targeted by a spell that allows a saving throw.
+  - action_cost: Reaction
     effect: The scion gains a +2 circumstance bonus to the saving throw.
+    name: Divine Grace
     traits: null
-  - name: Glimpse of Redemption
-    action_cost: Reaction
-    trigger: An enemy damages one of the angelkin's allies. Both the enemy and ally must be within 15 feet of the angelkin.
-    effect: 'The angelkin causes its foe to hesitate under the weight of its sins as visions of possible redemption play out in its mind''s eye. 
-      The foe chooses one of two options:
-      [bullet]The ally is completely unharmed by the triggering damage.
-      [bullet]The ally gains resistance 7 to all damage against the triggering damage. After the damaging effect resolves, the enemy becomes enfeebled 2 until the end of its next turn.'
+    trigger: The angelkin is targeted by a spell that allows a saving throw.
+  - action_cost: Reaction
+    effect: 'The angelkin causes its foe to hesitate under the weight of its sins
+      as visions of possible redemption play out in its mind''s eye. The foe chooses
+      one of two options: [bullet]The ally is completely unharmed by the triggering
+      damage. [bullet]The ally gains resistance 7 to all damage against the triggering
+      damage. After the damaging effect resolves, the enemy becomes enfeebled 2 until
+      the end of its next turn.'
+    name: Glimpse of Redemption
     traits: null
-  - name: Shield Block
-    action_cost: Reaction
-    trigger: null
+    trigger: An enemy damages one of the angelkin's allies. Both the enemy and ally
+      must be within 15 feet of the angelkin.
+  - action_cost: Reaction
     effect: null
+    name: Shield Block
     traits: null
+    trigger: null
   ranged:
   - action_cost: One Action
     damage:
@@ -32234,10 +32238,10 @@ monsters:
     will: 11
   saves_special:
     fort: null
-    ref: null
-    will: null
     misc: +1 status to all saves vs. disease (against diseases, critical failures
       become failures)
+    ref: null
+    will: null
   senses:
   - darkvision
   skills:
@@ -34561,8 +34565,8 @@ monsters:
       of providing the spell''s component actions. The spell gains the auditory trait
       and targets all creatures in a 60-foot emanation instead of its usual targets.
       A creature that succeeds at its Will save against any spell is then temporarily
-      immune from spells played from that satyr''s pipes for 1 minute. Satyrs are immune
-      to this music.'
+      immune from spells played from that satyr''s pipes for 1 minute. Satyrs are
+      immune to this music.'
     name: Play the Pipes
     traits:
     - auditory
@@ -35277,11 +35281,11 @@ monsters:
     name: Slink in Shadows
     traits: null
   - description: '**Requirement** The shadow hit a living creature with a shadow hand
-      Strike on its previous action. **Effect** The shadow pulls at the target''s shadow,
-      making the creature enfeebled 1. This is cumulative with other enfeebled conditions
-      from shadows, to a maximum of enfeebled 4. If this increases a creature''s enfeebled
-      value to 3 or more, the target''s shadow is separated from its body (see shadow
-      spawn). Enfeebled from Steal Shadow decreases by 1 every hour.'
+      Strike on its previous action. **Effect** The shadow pulls at the target''s
+      shadow, making the creature enfeebled 1. This is cumulative with other enfeebled
+      conditions from shadows, to a maximum of enfeebled 4. If this increases a creature''s
+      enfeebled value to 3 or more, the target''s shadow is separated from its body
+      (see shadow spawn). Enfeebled from Steal Shadow decreases by 1 every hour.'
     name: Steal Shadow
     traits:
     - divine
@@ -35366,8 +35370,8 @@ monsters:
   - action_cost: One Action
     description: '**Requirement** The greater shadow hit a living creature with a
       shadow hand Strike on its previous action. **Effect** The greater shadow pulls
-      at the target''s shadow, making the creature enfeebled 2 (or enfeebled 3 on a
-      critical hit). This is cumulative with other enfeebled conditions from shadows,
+      at the target''s shadow, making the creature enfeebled 2 (or enfeebled 3 on
+      a critical hit). This is cumulative with other enfeebled conditions from shadows,
       to a maximum of enfeebled 4. If this increases a creature''s enfeebled value
       to 3 or more, the target''s shadow is separated from its body (see shadow spawn).
       Enfeebled from Steal Shadow decreases by 1 every hour.'
@@ -37261,7 +37265,7 @@ monsters:
   - frequency: if alignment is Lawful Evil
     level: 3
     name: zone of truth
-  languages: 
+  languages:
   - ' one spoken by its creator (typically Common)'
   level: 2
   melee:
@@ -39824,11 +39828,11 @@ monsters:
       a forlorn howl that can be heard up to 1 mile away. Any creature that hears
       the howl must succeed at a DC 38 Will save or be frightened 1. Any creature
       that critically fails and is within 120 feet of the wendigo is instead frightened
-      3, and is also fleeing for 1d4 rounds (or until it''s no longer frightened, whichever
-      comes first). A creature frightened by a wendigo''s howl still naturally recovers
-      from its fright but can''t reduce it below frightened 1 in this way until 1 hour
-      has passed or magic is used. Whether it succeeds or fails its save, a creature
-      is then temporarily immune to that wendigo''s Howl for 24 hours.'
+      3, and is also fleeing for 1d4 rounds (or until it''s no longer frightened,
+      whichever comes first). A creature frightened by a wendigo''s howl still naturally
+      recovers from its fright but can''t reduce it below frightened 1 in this way
+      until 1 hour has passed or magic is used. Whether it succeeds or fails its save,
+      a creature is then temporarily immune to that wendigo''s Howl for 24 hours.'
     name: Howl
     traits:
     - auditory
