@@ -24,7 +24,8 @@ monsters:
   - precision
   - unconscious
   innate_spells: null
-  languages: ' - (understands its creator)'
+  languages: 
+  - ' - (understands its creator)'
   level: -1
   melee: null
   name: Unseen Servant
@@ -998,7 +999,8 @@ monsters:
   - frequency: constant
     level: 4
     name: freedom of movement
-  languages: ' envisioning'
+  languages: 
+  - ' envisioning'
   level: 20
   melee:
   - action_cost: One Action
@@ -1586,7 +1588,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -1663,7 +1665,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -1748,7 +1750,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -1821,7 +1823,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 7
   melee:
   - action_cost: One Action
@@ -1905,7 +1907,7 @@ monsters:
   hp: 40
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -1985,7 +1987,7 @@ monsters:
   hp: 120
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -2075,7 +2077,7 @@ monsters:
   hp: 45
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -2156,7 +2158,7 @@ monsters:
   hp: 150
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -3911,7 +3913,7 @@ monsters:
   hp: 75
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 5
   melee:
   - action_cost: One Action
@@ -3992,7 +3994,7 @@ monsters:
   - precision
   - swarm mind
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee: null
   name: Vampire Bat Swarm
@@ -4064,7 +4066,7 @@ monsters:
   hp: 30
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -4134,7 +4136,7 @@ monsters:
   hp: 45
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -4214,7 +4216,7 @@ monsters:
   hp: 95
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -4290,7 +4292,7 @@ monsters:
   hp: 6
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -4360,7 +4362,7 @@ monsters:
   hp: 55
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee:
   - action_cost: One Action
@@ -4438,7 +4440,7 @@ monsters:
   hp: 6
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -4508,7 +4510,7 @@ monsters:
   hp: 30
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -4574,7 +4576,7 @@ monsters:
   hp: 60
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee:
   - action_cost: One Action
@@ -5213,7 +5215,7 @@ monsters:
   hp: 120
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -5300,7 +5302,7 @@ monsters:
   hp: 45
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -5651,7 +5653,7 @@ monsters:
   hp: 30
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -5734,7 +5736,7 @@ monsters:
   hp: 45
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -5811,7 +5813,7 @@ monsters:
   hp: 60
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee:
   - action_cost: One Action
@@ -5889,7 +5891,7 @@ monsters:
   hp: 110
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -6153,7 +6155,7 @@ monsters:
   hp: 270
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 13
   melee:
   - action_cost: One Action
@@ -6274,7 +6276,7 @@ monsters:
   hp: 320
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 15
   melee:
   - action_cost: One Action
@@ -6392,7 +6394,7 @@ monsters:
   immunities:
   - fire
   innate_spells: null
-  languages: ''
+  languages: null
   level: 18
   melee:
   - action_cost: One Action
@@ -6610,7 +6612,7 @@ monsters:
   hp: 8
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -6681,7 +6683,7 @@ monsters:
   - precision
   - swarm mind
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee: null
   name: Centipede Swarm
@@ -7122,7 +7124,7 @@ monsters:
   immunities:
   - calcification
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -7198,7 +7200,7 @@ monsters:
   hp: 30
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -7278,7 +7280,7 @@ monsters:
   hp: 175
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 9
   melee:
   - action_cost: One Action
@@ -9508,7 +9510,7 @@ monsters:
   - fire
   - mental
   innate_spells: null
-  languages: ''
+  languages: null
   level: 0
   melee:
   - action_cost: One Action
@@ -10483,7 +10485,7 @@ monsters:
   hp: 130
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 10
   melee:
   - action_cost: One Action
@@ -10672,7 +10674,7 @@ monsters:
   hp: 20
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -10826,7 +10828,7 @@ monsters:
   hp: 90
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -10902,7 +10904,7 @@ monsters:
   hp: 125
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 7
   melee:
   - action_cost: One Action
@@ -10977,7 +10979,7 @@ monsters:
   hp: 140
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -11056,7 +11058,7 @@ monsters:
   hp: 220
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 10
   melee:
   - action_cost: One Action
@@ -11135,7 +11137,7 @@ monsters:
   hp: 180
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 10
   melee:
   - action_cost: One Action
@@ -11229,7 +11231,7 @@ monsters:
   hp: 8
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -11292,7 +11294,7 @@ monsters:
   hp: 20
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -15607,7 +15609,7 @@ monsters:
   hp: 190
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 9
   melee:
   - action_cost: One Action
@@ -16980,7 +16982,7 @@ monsters:
   hp: 6
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -17128,7 +17130,7 @@ monsters:
   hp: 18
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -17203,7 +17205,7 @@ monsters:
   hp: 65
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 5
   melee:
   - action_cost: One Action
@@ -17363,7 +17365,7 @@ monsters:
   - poison
   - sleep
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -17730,7 +17732,7 @@ monsters:
   - poison
   - sleep
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -18133,7 +18135,7 @@ monsters:
   - poison
   - sleep
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -18851,7 +18853,7 @@ monsters:
   - poison
   - sleep
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -19234,7 +19236,7 @@ monsters:
   hp: 130
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 7
   melee:
   - action_cost: One Action
@@ -19310,7 +19312,7 @@ monsters:
   hp: 190
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 10
   melee:
   - action_cost: One Action
@@ -19657,7 +19659,7 @@ monsters:
   - acid
   - mental
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -19844,7 +19846,7 @@ monsters:
   immunities:
   - mental
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -19925,7 +19927,7 @@ monsters:
   immunities:
   - mental
   innate_spells: null
-  languages: ''
+  languages: null
   level: 10
   melee:
   - action_cost: One Action
@@ -22724,7 +22726,7 @@ monsters:
   hp: 17
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -22905,7 +22907,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -22988,7 +22990,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 9
   melee:
   - action_cost: One Action
@@ -23093,7 +23095,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 10
   melee:
   - action_cost: One Action
@@ -23186,7 +23188,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 11
   melee:
   - action_cost: One Action
@@ -23290,7 +23292,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 13
   melee:
   - action_cost: One Action
@@ -23393,7 +23395,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 18
   melee:
   - action_cost: One Action
@@ -23936,7 +23938,7 @@ monsters:
   hp: 60
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee:
   - action_cost: One Action
@@ -24486,7 +24488,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 19
   melee:
   - action_cost: One Action
@@ -25662,7 +25664,7 @@ monsters:
   hp: 16
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 0
   melee:
   - action_cost: One Action
@@ -25720,7 +25722,7 @@ monsters:
   hp: 22
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -25778,7 +25780,7 @@ monsters:
   hp: 20
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -25836,7 +25838,7 @@ monsters:
   hp: 36
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -25896,7 +25898,7 @@ monsters:
   immunities:
   - area damage
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -25976,7 +25978,7 @@ monsters:
   hp: 20
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -26043,7 +26045,7 @@ monsters:
   hp: 45
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -26495,7 +26497,7 @@ monsters:
   hp: 150
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -27891,7 +27893,7 @@ monsters:
   hp: 20
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -27956,7 +27958,7 @@ monsters:
   hp: 30
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -28030,7 +28032,7 @@ monsters:
   hp: 75
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 5
   melee:
   - action_cost: One Action
@@ -28476,7 +28478,7 @@ monsters:
   hp: 40
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -28555,7 +28557,7 @@ monsters:
   hp: 220
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 11
   melee:
   - action_cost: One Action
@@ -29181,7 +29183,7 @@ monsters:
   hp: 300
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 15
   melee:
   - action_cost: One Action
@@ -30467,7 +30469,7 @@ monsters:
   hp: 135
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -30909,7 +30911,7 @@ monsters:
   - unconscious
   - visual
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -30992,7 +30994,7 @@ monsters:
   - unconscious
   - visual
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -31078,7 +31080,7 @@ monsters:
   - unconscious
   - visual
   innate_spells: null
-  languages: ''
+  languages: null
   level: 5
   melee:
   - action_cost: One Action
@@ -31156,7 +31158,7 @@ monsters:
   - unconscious
   - visual
   innate_spells: null
-  languages: ''
+  languages: null
   level: 7
   melee:
   - action_cost: One Action
@@ -31564,7 +31566,7 @@ monsters:
   hp: 70
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee:
   - action_cost: One Action
@@ -33102,7 +33104,7 @@ monsters:
   hp: 35
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -33167,7 +33169,7 @@ monsters:
   hp: 110
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 7
   melee:
   - action_cost: One Action
@@ -33576,7 +33578,7 @@ monsters:
   hp: 8
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -33648,7 +33650,7 @@ monsters:
   - precision
   - swarm mind
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee: null
   name: Rat Swarm
@@ -34103,7 +34105,7 @@ monsters:
   hp: 180
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 9
   melee:
   - action_cost: One Action
@@ -34294,7 +34296,7 @@ monsters:
   hp: 40
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -34513,7 +34515,7 @@ monsters:
   hp: 45
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -34591,7 +34593,7 @@ monsters:
   - precision
   - swarm mind
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee: null
   name: Scorpion Swarm
@@ -35008,7 +35010,7 @@ monsters:
   hp: 210
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 12
   melee:
   - action_cost: One Action
@@ -35377,7 +35379,7 @@ monsters:
   hp: 60
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee:
   - action_cost: One Action
@@ -35451,7 +35453,7 @@ monsters:
   hp: 180
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 9
   melee:
   - action_cost: One Action
@@ -35743,7 +35745,7 @@ monsters:
   hp: 195
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 12
   melee:
   - action_cost: One Action
@@ -36111,7 +36113,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -36292,7 +36294,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -36370,7 +36372,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -36462,7 +36464,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 7
   melee:
   - action_cost: One Action
@@ -36767,7 +36769,7 @@ monsters:
   hp: 8
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -36836,7 +36838,7 @@ monsters:
   hp: 20
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -36907,7 +36909,7 @@ monsters:
   hp: 26
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -36982,7 +36984,7 @@ monsters:
   hp: 175
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 8
   melee:
   - action_cost: One Action
@@ -37136,7 +37138,8 @@ monsters:
   - frequency: if alignment is Lawful Evil
     level: 3
     name: zone of truth
-  languages: ' one spoken by its creator (typically Common)'
+  languages: 
+  - ' one spoken by its creator (typically Common)'
   level: 2
   melee:
   - action_cost: One Action
@@ -37315,7 +37318,7 @@ monsters:
   - precision
   - swarm mind
   innate_spells: null
-  languages: ''
+  languages: null
   level: 0
   melee: null
   name: Spider Swarm
@@ -37388,7 +37391,7 @@ monsters:
   hp: 16
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -37469,7 +37472,7 @@ monsters:
   hp: 135
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -37549,7 +37552,7 @@ monsters:
   hp: 220
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 11
   melee:
   - action_cost: One Action
@@ -39312,7 +39315,7 @@ monsters:
   hp: 45
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -39392,7 +39395,7 @@ monsters:
   - precision
   - swarm mind
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee: null
   name: Wasp Swarm
@@ -40397,7 +40400,7 @@ monsters:
   hp: 24
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -40459,7 +40462,7 @@ monsters:
   hp: 50
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 3
   melee:
   - action_cost: One Action
@@ -41119,7 +41122,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: -1
   melee:
   - action_cost: One Action
@@ -41189,7 +41192,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -41269,7 +41272,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -41332,7 +41335,7 @@ monsters:
   - poison
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -41416,7 +41419,7 @@ monsters:
   hp: 35
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -41492,7 +41495,7 @@ monsters:
   hp: 15
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 0
   melee:
   - action_cost: One Action
@@ -41566,7 +41569,7 @@ monsters:
   - unconscious
   - visual
   innate_spells: null
-  languages: ''
+  languages: null
   level: 4
   melee:
   - action_cost: One Action
@@ -42079,7 +42082,7 @@ monsters:
   hp: 27
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 2
   melee:
   - action_cost: One Action
@@ -43713,7 +43716,7 @@ monsters:
   - unconscious
   - visual
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -43780,7 +43783,7 @@ monsters:
   hp: 172
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 9
   melee:
   - action_cost: One Action
@@ -43993,7 +43996,7 @@ monsters:
   hp: 98
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 6
   melee:
   - action_cost: One Action
@@ -45125,7 +45128,7 @@ monsters:
   - unconscious
   - visual
   innate_spells: null
-  languages: ''
+  languages: null
   level: 11
   melee:
   - action_cost: One Action
@@ -46381,7 +46384,7 @@ monsters:
   - sickened
   - unconscious
   innate_spells: null
-  languages: ''
+  languages: null
   level: 10
   melee:
   - action_cost: One Action
@@ -46480,7 +46483,7 @@ monsters:
   - frequency: x3
     level: 9
     name: bind soul
-  languages: ''
+  languages: null
   level: 16
   melee:
   - action_cost: One Action
@@ -47192,7 +47195,7 @@ monsters:
   hp: 20
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 1
   melee:
   - action_cost: One Action
@@ -47265,7 +47268,7 @@ monsters:
   hp: 340
   immunities: null
   innate_spells: null
-  languages: ''
+  languages: null
   level: 18
   melee:
   - action_cost: One Action
