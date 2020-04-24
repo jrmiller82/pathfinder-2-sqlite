@@ -89,11 +89,43 @@ def main():
         else:
             i['traits'] = None
 
+        # Get staff spells
+        qq = """
+        SELECT spells.name, staff_spell.level
+        FROM spells
+          INNER JOIN
+          staff_spell ON staff_spell.spell_id = spells.spells_id
+          INNER JOIN
+          staff ON staff_spell.staff_id = staff.staff_id
+          WHERE staff.staff_id = ?;
+        """
+
+        cc = conn.cursor()
+        cc.execute(qq, (i['staff_id'],))
+        res = cc.fetchall()
+        # print("\n\nStaff: {}".format(i['name']))
+        slist = []
+        for j in res:
+            x = tuple(j)[0]
+            y = tuple(j)[1]
+            xy = {'name': x, 'level': y}
+            slist.append(xy)
+        if len(slist) > 0:
+            i['staffspells'] = slist
+        else:
+            i['staffspells'] = None
+
         # DO THIS LAST
         del i['staff_id']
 
-    pp.pprint(data)
+    # pp.pprint(data)
+    fdata = {'staves': data}
+    final = yaml.safe_dump(fdata, allow_unicode=True)
+    with open('tmp--items-staves.yaml', 'w') as f:
+        f.write(final)
 
+    for i in data:
+        print("Staff Name: {}\tPrice (copper): {}".format(i['name'], i['price_cp']))
 
 if __name__ == '__main__':
    main()
