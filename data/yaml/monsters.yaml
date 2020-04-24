@@ -7795,7 +7795,8 @@ monsters:
   - frequency: at will
     level: 4
     name: dispel magic
-  items: +1 striking composite longbow (50 arrows)
+  items: 
+  - +1 striking composite longbow (50 arrows)
   languages:
   - Common
   - Daemonic
