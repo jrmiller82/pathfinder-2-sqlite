@@ -32161,6 +32161,11 @@ monsters:
   ac: 23
   ac_special:
   - descr: 25 with shield raised
+  items:
+  - crossbow (10 bolts)
+  - half plate
+  - steel shield (Hardness 5, 20 HP, BT 10)
+  - longsword
   automatic_abilities: null
   description: Mortals whose ancestry has been influenced by celestials are known
     as aasimars, and angelkin, who have blood of angels coursing through their veins,
@@ -32168,7 +32173,16 @@ monsters:
     of doing good in the world.
   hp: 73
   immunities: null
-  innate_spells: []
+  divine_spells: 
+  - name: light
+    frequency: null
+    level: 0
+    action_cost: null
+  innate_spells:
+  - name: lay on hands
+    frequency: null
+    level: 3
+    action_cost: 1 Focus Point
   languages:
   - Celestial
   - Common
@@ -32185,10 +32199,24 @@ monsters:
   name: Aasimar Redeemer
   perception: 11
   proactive_abilities:
-  - description: '*lay on hands*'
-    name: Champion Devotion Spells
-    traits:
-    - 1 Focus Point
+  - name: Divine Grace
+    action_cost: Reaction
+    trigger: The angelkin is targeted by a spell that allows a saving throw.
+    effect: The scion gains a +2 circumstance bonus to the saving throw.
+    traits: null
+  - name: Glimpse of Redemption
+    action_cost: Reaction
+    trigger: An enemy damages one of the angelkin's allies. Both the enemy and ally must be within 15 feet of the angelkin.
+    effect: 'The angelkin causes its foe to hesitate under the weight of its sins as visions of possible redemption play out in its mind''s eye. 
+      The foe chooses one of two options:
+      [bullet]The ally is completely unharmed by the triggering damage.
+      [bullet]The ally gains resistance 7 to all damage against the triggering damage. After the damaging effect resolves, the enemy becomes enfeebled 2 until the end of its next turn.'
+    traits: null
+  - name: Shield Block
+    action_cost: Reaction
+    trigger: null
+    effect: null
+    traits: null
   ranged:
   - action_cost: One Action
     damage:
@@ -32207,7 +32235,8 @@ monsters:
   saves_special:
     fort: null
     ref: null
-    will: +1 status to all saves vs. disease (against diseases, critical failures
+    will: null
+    misc: +1 status to all saves vs. disease (against diseases, critical failures
       become failures)
   senses:
   - darkvision
