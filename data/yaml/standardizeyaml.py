@@ -16,7 +16,7 @@ def standardize_monsters():
         for k, v in i.items():
             # print("Key:{}\tValue:{}".format(k,v))
             if v == None:
-                print("Deleting key: {} from {}".format(k, i['name']))
+                # print("Deleting key: {} from {}".format(k, i['name']))
                 deletekeys.append(k)
             else:
                 goodset.add(k)
@@ -29,7 +29,7 @@ def standardize_monsters():
     for i in data['monsters']:
         for k in goodset:
             if k not in i:
-                print("Adding field {} to {}".format(k, i['name']))
+                # print("Adding field {} to {}".format(k, i['name']))
                 i[k] = None
 
     final = yaml.safe_dump(data, allow_unicode=True)
