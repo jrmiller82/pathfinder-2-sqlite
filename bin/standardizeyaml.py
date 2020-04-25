@@ -1,5 +1,6 @@
 import yaml
 import pprint
+import os
 
 
 def main():
@@ -8,6 +9,7 @@ def main():
 
 
 def standardize_monsters():
+    os.chdir('../data/')
     with open('monsters.yaml', 'r') as f:
         data = yaml.full_load(f)
     goodset = set()

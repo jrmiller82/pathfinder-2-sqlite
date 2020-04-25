@@ -28,6 +28,25 @@ will fit into memory easily so performance issues aren't likely to be a problem.
 Also, most use cases of this data will likely be read only, so the sqlite
 limitations on concurrent writes won't be an issue either. 
 
+## Stop yacking and tell me how to generate the database from the YAMl!
+
+Ok!
+
+You'll need a working python3 installation and the module `pyyaml` installed. 
+
+### To install pyyaml
+
+Run the correct pip install command: `pip install pyyaml`. Depending on your
+operating system, this might be `pip3` or `python3-pip` instead of `pip`.
+
+### Generate the database
+
+From the repository root, navigate to the `bin` directory with a `cd ./bin` and
+then run `python3 gendb.py`. The code is not optimized for speed, so depending
+on your system and disk I/O, it might take a minute or so. The output file is
+currently a `tmp.db` in the repository root. You can then explore the db file
+with `sqlite3 tmp.db` called from the repository root directory.
+
 ## Where we need the most help right now
 
 ### Proofreading Spells.yaml

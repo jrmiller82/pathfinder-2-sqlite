@@ -1,30 +1,48 @@
+import sys
+# the append makes python look in the repo dir for other python modules
+sys.path.append('..')
 import yaml
 import sqlite3
 import os
 import pprint
-import sys
-from lib.basics import *
-import lib.utils as utils
+from lib.gendb.basics import *
+from lib.gendb import utils
+import pathlib
+
 
 DBFILE = 'tmp.db'
-DATA_PATH = "../data/yaml"  # This is path relative to gendb.py
+DBOUTPUT_PATH = pathlib.Path().absolute().parent
+DATA_PATH = pathlib.Path().absolute().parent / 'data'
 
 
 def main():
+
+    print("DB output is in path: {}".format(DBOUTPUT_PATH))
+    print("Data is in path: {}".format(DATA_PATH))
+
+    # CHANGE TO DIR WHERE DB FILE IS OUTPUT
+    try:
+        os.chdir(DBOUTPUT_PATH)
+    except OSError as e:
+        print("{}".format(e))
 
     # delete DBfile and run fresh
     try:
         os.remove(DBFILE)
     except OSError as e:
-        print("{}".format(e))
+        print("No prior database file found to remove. Will create a new one. Error message: {}".format(e))
 
     # Get a DB conn
+    try:
+        os.chdir(DBOUTPUT_PATH)
+    except OSError as e:
+        print("{}".format(e))
     conn = utils.get_db_conn(DBFILE)
     pragma = "PRAGMA foreign_keys = ON;"
     c = conn.cursor()
     c.execute(pragma)
 
-    # change directory to where the data currently is relative to script
+    # CHANGE DIRECTORY TO WHERE THE DATA CURRENTLY IS RELATIVE TO SCRIPT
     try:
         os.chdir(DATA_PATH)
     except OSError as e:

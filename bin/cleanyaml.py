@@ -9,6 +9,9 @@ import os
 
 def main():
 
+    # change directory to the data directory
+    os.chdir('../data/')
+
     # gets all files with a yaml extension in the directory
     yfiles = []
     for file in glob.glob("*.yaml"):
