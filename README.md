@@ -32,7 +32,20 @@ limitations on concurrent writes won't be an issue either.
 
 Ok!
 
-You'll need a working python3 installation and the module `pyyaml` installed. 
+You'll need a working python3 installation and the module `pyyaml** installed. 
+
+You'll also need a working sqlite3 install to browse the database once
+generated. You can visit its website at http://sqlite.org. If you are on an
+*nix-style operating sytstem, you can install through your operating system's
+package manager.
+
+- ****Debian/Ubuntu**: run as root: `apt install sqlite3`
+
+- **Fedora**: run as root: `dnf install sqlite`
+
+- **Windows**: visit the download page at https://www.sqlite.org/download.html
+
+- **MacOs**: visit the download page at https://www.sqlite.org/download.html
 
 ### To install pyyaml
 
