@@ -3,6 +3,8 @@ import glob
 import os
 import json
 
+# TODO eventually write in some command flags to only output one of the three formats
+
 def main():
     # change directory to the data directory
     os.chdir('../data/')
@@ -50,6 +52,8 @@ def main():
     finalflat = json.dumps(master_data, sort_keys=True, default=str)
     with open('tmp-combined.json', 'w') as f:
         f.write(final)
+    print("\tDone.")
+    print("Writing tmp-combined-flat.json")
     with open('tmp-combined-flat.json', 'w') as f:
         f.write(finalflat)
     print("\tDone.")
