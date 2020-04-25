@@ -24,7 +24,7 @@ def standardize_monsters():
         # index mid iteration
         for z in deletekeys:
             del (i[z])
-    print(goodset)
+    # print(goodset)
 
     for i in data['monsters']:
         for k in goodset:
