@@ -39,7 +39,7 @@ generated. You can visit its website at http://sqlite.org. If you are on an
 *nix-style operating sytstem, you can install through your operating system's
 package manager.
 
-- ****Debian/Ubuntu**: run as root: `apt install sqlite3`
+- **Debian/Ubuntu**: run as root: `apt install sqlite3`
 
 - **Fedora**: run as root: `dnf install sqlite`
 
