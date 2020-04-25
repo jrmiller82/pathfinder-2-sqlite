@@ -4,6 +4,9 @@ tmp.db
 spells_temp.txt
 *.py.swp
 .vscode
+tmp-combined.json
+tmp-combined.yaml
+tmp-combined-flat.json
 
 ##############################
 # Standard python git ignore #
