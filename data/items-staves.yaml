@@ -1,5 +1,8 @@
-staves:
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff is topped with carved animal and monster heads. While wielding
     the staff, you gain a +2 circumstance bonus to Nature checks to identify animals.
@@ -12,10 +15,6 @@ staves:
   - abbr: CRB
     page_start: 592
     page_stop: 592
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Know Direction
@@ -28,7 +27,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff is topped with carved animal and monster heads. While wielding
     the staff, you gain a +2 circumstance bonus to Nature checks to identify animals.
@@ -41,10 +44,6 @@ staves:
   - abbr: CRB
     page_start: 592
     page_stop: 592
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Know Direction
@@ -67,7 +66,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff is topped with carved animal and monster heads. While wielding
     the staff, you gain a +2 circumstance bonus to Nature checks to identify animals.
@@ -80,10 +83,6 @@ staves:
   - abbr: CRB
     page_start: 592
     page_stop: 592
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Know Direction
@@ -114,7 +113,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This polished wooden staff bears a swirling motif reminiscent of the
     folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to
@@ -128,10 +131,6 @@ staves:
   - abbr: CRB
     page_start: 592
     page_stop: 593
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Daze
@@ -144,7 +143,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This polished wooden staff bears a swirling motif reminiscent of the
     folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to
@@ -158,10 +161,6 @@ staves:
   - abbr: CRB
     page_start: 592
     page_stop: 593
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Daze
@@ -180,7 +179,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This polished wooden staff bears a swirling motif reminiscent of the
     folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to
@@ -194,10 +197,6 @@ staves:
   - abbr: CRB
     page_start: 592
     page_stop: 593
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Daze
@@ -226,7 +225,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This intricately carved wooden staff is warm to the touch and thrums
     with inner energy. While wielding the staff, you gain a +2 circumstance bonus
@@ -240,10 +243,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Shield
@@ -262,7 +261,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This intricately carved wooden staff is warm to the touch and thrums
     with inner energy. While wielding the staff, you gain a +2 circumstance bonus
@@ -276,10 +279,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Shield
@@ -308,7 +307,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This intricately carved wooden staff is warm to the touch and thrums
     with inner energy. While wielding the staff, you gain a +2 circumstance bonus
@@ -322,10 +325,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Shield
@@ -362,7 +361,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This ash staff is decorated with animals; wielding it, you gain a +2
     circumstance bonus to checks to identify conjuration magic.
@@ -375,10 +378,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Tanglefoot
@@ -399,7 +398,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This ash staff is decorated with animals; wielding it, you gain a +2
     circumstance bonus to checks to identify conjuration magic.
@@ -412,10 +415,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Tanglefoot
@@ -450,7 +449,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This ash staff is decorated with animals; wielding it, you gain a +2
     circumstance bonus to checks to identify conjuration magic.
@@ -463,10 +466,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Tanglefoot
@@ -513,7 +512,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Semiprecious gemstones emerge, seemingly at random, from the surface
     of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus
@@ -527,10 +530,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Detect Magic
@@ -547,7 +546,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Semiprecious gemstones emerge, seemingly at random, from the surface
     of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus
@@ -561,10 +564,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Detect Magic
@@ -591,7 +590,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Semiprecious gemstones emerge, seemingly at random, from the surface
     of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus
@@ -605,10 +608,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Detect Magic
@@ -643,7 +642,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: A mesmerizing gemstone caps the head of this handsomely crafted wooden
     staff. While wielding the staff, you gain a +2 circumstance bonus to checks to
@@ -657,10 +660,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Daze
@@ -677,7 +676,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: A mesmerizing gemstone caps the head of this handsomely crafted wooden
     staff. While wielding the staff, you gain a +2 circumstance bonus to checks to
@@ -691,10 +694,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Daze
@@ -719,7 +718,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: A mesmerizing gemstone caps the head of this handsomely crafted wooden
     staff. While wielding the staff, you gain a +2 circumstance bonus to checks to
@@ -733,10 +736,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Daze
@@ -769,7 +768,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff is tapered at the base and carved into a gem-studded twist
     at the top. While wielding the staff, you gain a +2 circumstance bonus to checks
@@ -783,10 +786,6 @@ staves:
   - abbr: CRB
     page_start: 593
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Ray of Frost
@@ -803,7 +802,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff is tapered at the base and carved into a gem-studded twist
     at the top. While wielding the staff, you gain a +2 circumstance bonus to checks
@@ -817,10 +820,6 @@ staves:
   - abbr: CRB
     page_start: 593
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Ray of Frost
@@ -845,7 +844,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff is tapered at the base and carved into a gem-studded twist
     at the top. While wielding the staff, you gain a +2 circumstance bonus to checks
@@ -859,10 +862,6 @@ staves:
   - abbr: CRB
     page_start: 593
     page_stop: 594
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Ray of Frost
@@ -895,7 +894,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff resembles a blackened and burned length of ashen wood. It
     smells faintly of soot and glows as if lit by embers. You can use an Interact
@@ -910,10 +913,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Produce Flame
@@ -924,7 +923,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff resembles a blackened and burned length of ashen wood. It
     smells faintly of soot and glows as if lit by embers. You can use an Interact
@@ -939,10 +942,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Produce Flame
@@ -961,7 +960,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff resembles a blackened and burned length of ashen wood. It
     smells faintly of soot and glows as if lit by embers. You can use an Interact
@@ -976,10 +979,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Produce Flame
@@ -1008,7 +1007,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Made of smooth, white wood, this staff is capped at each end with a
     golden cross adorned with a multitude of ruby cabochons. A staff of healing grants
@@ -1023,10 +1026,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Stabilize
@@ -1037,7 +1036,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Made of smooth, white wood, this staff is capped at each end with a
     golden cross adorned with a multitude of ruby cabochons. A staff of healing grants
@@ -1052,10 +1055,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Stabilize
@@ -1076,7 +1075,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Made of smooth, white wood, this staff is capped at each end with a
     golden cross adorned with a multitude of ruby cabochons. A staff of healing grants
@@ -1091,10 +1094,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Stabilize
@@ -1125,7 +1124,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Made of smooth, white wood, this staff is capped at each end with a
     golden cross adorned with a multitude of ruby cabochons. A staff of healing grants
@@ -1140,10 +1143,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Stabilize
@@ -1186,7 +1185,14 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: The gem at the top of the staff glows as a torch, shedding bright light
+      in a 20-foot radius (and dim light to the next 20 feet) for 10 minutes.
+    name: Interact
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This simple iron staff is capped with a faceted, clear gem.
   item_bonus: null
@@ -1198,13 +1204,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 594
-  staffactivations:
-  - activation: Interact
-    effect: The gem at the top of the staff glows as a torch, shedding bright light
-      in a 20-foot radius (and dim light to the next 20 feet) for 10 minutes.
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Light
@@ -1219,7 +1218,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This ornately designed metal staff shines with precious inlays of gold.
     When you Cast a Spell from the staff, the illusory image of something you desire
@@ -1234,10 +1237,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Ghost Sound
@@ -1254,7 +1253,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This ornately designed metal staff shines with precious inlays of gold.
     When you Cast a Spell from the staff, the illusory image of something you desire
@@ -1269,10 +1272,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Ghost Sound
@@ -1297,7 +1296,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This ornately designed metal staff shines with precious inlays of gold.
     When you Cast a Spell from the staff, the illusory image of something you desire
@@ -1312,10 +1315,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Ghost Sound
@@ -1348,7 +1347,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This twisted and grim-looking staff is adorned with hideous skull and
     bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks
@@ -1362,10 +1365,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Chill Touch
@@ -1382,7 +1381,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This twisted and grim-looking staff is adorned with hideous skull and
     bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks
@@ -1396,10 +1399,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Chill Touch
@@ -1422,7 +1421,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This twisted and grim-looking staff is adorned with hideous skull and
     bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks
@@ -1436,10 +1439,6 @@ staves:
   - abbr: CRB
     page_start: 594
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Chill Touch
@@ -1470,7 +1469,16 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: This releases a 30-foot-burst magical explosion centered on the staff.
+      This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex
+      save). You automatically critically fail your save. A creature reduced to 0
+      Hit Points by this damage dies instantly; this is a death effect.
+    name: Interact
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This staff of magically hardened wood is topped with a silver sculpture
     depicting magical runic symbols. When used as a weapon, a staff of power is a
@@ -1489,15 +1497,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Interact
-    effect: This releases a 30-foot-burst magical explosion centered on the staff.
-      This deals 2d8 force damage per charge remaining in the staff (DC 40 basic Reflex
-      save). You automatically critically fail your save. A creature reduced to 0
-      Hit Points by this damage dies instantly; this is a death effect.
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 1
     name: Ray of Enfeeblement
@@ -1525,7 +1524,18 @@ staves:
   - Staff
   - Rare
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: This releases a 30-foot‑burst magical explosion centered on the staff.
+      This deals 2d10 force damage per charge remaining in the staff (DC 40 basic
+      Reflex save), You automatically critically fail your save. The explosion continues
+      to echo beyond the initial blast zone, dealing half as much damage to creatures
+      beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points
+      by this damage dies instantly; this is a death effect.
+    name: Interact
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: Sigils and runes of ancient and powerful magic cover the iron cladding
     on this long wooden staff. A staff of the magi is a +3 major striking staff, and
@@ -1547,17 +1557,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Interact
-    effect: This releases a 30-foot‑burst magical explosion centered on the staff.
-      This deals 2d10 force damage per charge remaining in the staff (DC 40 basic
-      Reflex save), You automatically critically fail your save. The explosion continues
-      to echo beyond the initial blast zone, dealing half as much damage to creatures
-      beyond 30 feet but within a 60-foot burst. A creature reduced to 0 Hit Points
-      by this damage dies instantly; this is a death effect.
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Detect Magic
@@ -1635,7 +1634,11 @@ staves:
   - Staff
   - Rare
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: A glass orb atop this metal staff contains fine, undulating sand. While
     wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation
@@ -1649,10 +1652,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Sigil
@@ -1669,7 +1668,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: A glass orb atop this metal staff contains fine, undulating sand. While
     wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation
@@ -1683,10 +1686,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Sigil
@@ -1711,7 +1710,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: A glass orb atop this metal staff contains fine, undulating sand. While
     wielding the staff, you gain a +2 circumstance bonus to checks to identify transmutation
@@ -1725,10 +1728,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Sigil
@@ -1761,7 +1760,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This oak branch grows leaves in spring that change color in autumn
     and shed in winter. While wielding it, you gain a +2 circumstance bonus to Nature
@@ -1775,10 +1778,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Tanglefoot
@@ -1797,7 +1796,11 @@ staves:
   - Magical
   - Staff
   usage: held in one hand
-- bulk: '1'
+- activation:
+  - effect: You expend a number of charges from the staff to cast a spell from its
+      list.
+    name: Cast a Spell
+  bulk: '1'
   craft_requirements: Supply one casting of all listed levels of all listed spells.
   description: This oak branch grows leaves in spring that change color in autumn
     and shed in winter. While wielding it, you gain a +2 circumstance bonus to Nature
@@ -1811,10 +1814,6 @@ staves:
   - abbr: CRB
     page_start: 595
     page_stop: 595
-  staffactivations:
-  - activation: Cast a Spell
-    effect: You expend a number of charges from the staff to cast a spell from its
-      list.
   staffspells:
   - level: 0
     name: Tanglefoot
