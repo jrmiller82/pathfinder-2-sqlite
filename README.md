@@ -30,7 +30,7 @@ limitations on concurrent writes won't be an issue either.
 
 Ok!
 
-You'll need a working python3 installation and the module `pyyaml** installed. 
+You'll need a working python3 installation and the module `pyyaml` installed. 
 
 You'll also need a working sqlite3 install to browse the database once
 generated. You can visit its website at http://sqlite.org. If you are on an
