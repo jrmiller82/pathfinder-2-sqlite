@@ -8,9 +8,7 @@ requests welcomed!
 ## Data initially in YAML and then scripts to convert to SQL
 
 Currently, the main data source is found in the `data/yaml` directory, and
-running `python3 gendb.py` will generate a `tmp.db` sqlite3 database. I'm still
-in progress on converting some prior pure SQL work into the YAML-SQL pipeline,
-but that should be done in the next month or so.
+running `python3 gendb.py` will generate a `tmp.db` sqlite3 database. 
 
 Why YAML? Two big reasons: 
 
