@@ -187,7 +187,7 @@ spell:
   descr: You dance at a lively tempo, speeding your allies' movement. You and all
     allies in the area gain a +10-foot status bonus to all Speeds for 1 round.
   duration: 1 round
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 2
   name: Triple Time
   req: null
@@ -214,7 +214,7 @@ spell:
   descr: Foes within the area are frightened 1. They can't reduce their frightened
     value below 1 while they remain in the area.
   duration: 1 round
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 3
   name: Dirge of Doom
   req: null
@@ -251,7 +251,7 @@ spell:
     \ \n\n**Failure**  Your inspire courage or inspire defense provides only its normal\
     \ bonus of +1, but you don't spend the Focus Point for casting this spell."
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 4
   name: Inspire Heroics
   req: null
@@ -280,7 +280,7 @@ spell:
     see your visual performance, nor does it block objects. The wall has AC 10, Hardness
     equal to double the spell's level, and HP equal to quadruple the spell's level.
   duration: 1 round
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 5
   name: House of Imaginary Walls
   range: touch
@@ -292,6 +292,7 @@ spell:
   targets: null
   traditions: null
   traits:
+  - Uncommon
   - Bard
   - Cantrip
   - Composition
@@ -306,7 +307,7 @@ spell:
   descr: You perform rapidly, speeding up your ally. The ally becomes quickened and
     can use the additional action to Strike, Stride, or Step.
   duration: 1 round
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 7
   name: Allegro
   range: 30 feet
@@ -333,12 +334,12 @@ spell:
   - Somatic
   - Verbal
   descr: "You draw upon your muse to soothe your allies. Choose one of the following\
-    \ three effects: The spell attempts to counteract fear effects on the targets.\
-    \ The spell attempts to counteract effects imposing paralysis on the targets.\
-    \ The spell restores 7d8 Hit Points to the targets.  \n\n**Heightened (+1)** \
+    \ three effects:\n The spell attempts to counteract fear effects on the targets.\
+    \ \n The spell attempts to counteract effects imposing paralysis on the targets.\
+    \ \n The spell restores 7d8 Hit Points to the targets.  \n\n**Heightened (+1)** \
     \ When used to heal, soothing ballad restores 1d8 more Hit Points."
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 7
   name: Soothing Ballade
   range: 30 feet
@@ -371,7 +372,7 @@ spell:
     \ and becomes dying 1.   \n\n**18th or Higher**  The target takes 50 damage. If\
     \ this brings it to 0 Hit Points, it dies instantly."
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 10
   name: Fatal Aria
   range: 30 feet
@@ -405,7 +406,7 @@ spell:
     \  The amount of healing increases by 6, and the damage to an undead target increases\
     \ by 1d6."
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
   level: 1
   name: Lay on Hands
   range: touch
@@ -413,7 +414,7 @@ spell:
   source:
   - abbr: CRB
     page_start: 387
-    page_stop: 387
+    page_stop: 388
   targets: 1 willing living creature or 1 undead creature
   traditions: null
   traits:
