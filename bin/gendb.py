@@ -150,6 +150,7 @@ def main():
         data = yaml.full_load(yl)
     do_ancestries(data, conn)
 
+    # Must be called after feats are loaded
     with open('ancestriesheritages.yaml') as yl:
         data = yaml.full_load(yl)
     do_heritages(data, conn)
@@ -459,12 +460,25 @@ def get_actioncost_id_by_name(ac, conn):
 
 def do_heritages(data, conn):
     table = """
-    CREATE TABLE heritages (
+    CREATE TABLE heritage (
         heritage_id INTEGER PRIMARY KEY,
         name TEXT NOT NULL UNIQUE,
         descr TEXT NOT NULL,
         ancestry_id INTEGER NOT NULL, -- many to one relationship
     FOREIGN KEY (ancestry_id) REFERENCES ancestries(ancestry_id)
+    );
+    """
+
+    c = conn.cursor()
+    c.execute(table)
+
+    table = """
+    CREATE TABLE heritage_feat (
+      id INTEGER PRIMARY KEY,
+      heritage_id INTEGER NOT NULL,
+      feat_id INTEGER NOT NULL,
+      FOREIGN KEY (heritage_id) REFERENCES heritage(heritage_id),
+      FOREIGN KEY (feat_id) REFERENCES feat(feat_id)
     );
     """
 
@@ -479,14 +493,32 @@ def do_heritages(data, conn):
         #FOR EACH HERITAGE, INSERT INTO TABLE USING ANCESTRY ID
         for j in i['heritages']:
             # print("doing this heritage: {}".format(j['name']))
-            stmt = "INSERT INTO heritages (name, descr, ancestry_id) VALUES (?,?,?);"
-            c.execute(stmt, (j['name'], j['descr'], rowid[0]))
-            conn.commit()
+            stmt = "INSERT INTO heritage (name, descr, ancestry_id) VALUES (?,?,?);"
+            try:
+                c.execute(stmt, (j['name'], j['descr'], rowid[0]))
+            except sqlite3.Error as e:
+                    print("Error inserting a heritage: {}".format(e))
+            except:
+                    print("Error inserting a heritage other than sqlite3 error")
+            else:
+                conn.commit()
 
             if j['feat'] != None:
-                print("We have a feat that is not equal to none: {}".format(j['feat']))
-                print("TODO THIS NEEDS TO GET DONE AFTER FEATS ARE IN SQL")
-                # i.e. TODO select feat_id where name = j['feat] then insert into a heritages_feats table
+                # print("We have a feat that is not equal to none: {}".format(j['feat']))
+                stmt = """INSERT INTO heritage_feat
+                (heritage_id, feat_id)
+                VALUES (
+                  (SELECT heritage_id FROM heritage WHERE name=?),
+                  (SELECT feat_id FROM feat WHERE name=?)
+                );"""
+                try:
+                    c.execute(stmt, (j['name'],j['feat']))
+                except sqlite3.Error as e:
+                    print("Error linking a heritage to its feat: {}".format(e))
+                except:
+                    print("Error linking a heritage something other than sqlite3 error")
+                else:
+                    conn.commit()
 
 
 def do_ancestries(data, conn):
