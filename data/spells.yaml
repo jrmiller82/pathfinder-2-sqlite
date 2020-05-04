@@ -8016,18 +8016,30 @@ spell:
   type: Spell
 - action_abbr: '2'
   area: 20-foot burst
-  cast: somatic, verbal
+  cast: '|2| somatic, verbal'
   components:
   - Somatic
   - Verbal
-  descr: "A roaring blast of fire appears at a spot you designate, dealing 6d6 fire\
-    \ damage.  \n\n**Heightened (+1)**  The damage increases by 2d6."
+  description: A roaring blast of fire appears at a spot you designate, dealing 6d6
+    fire damage.
   duration: null
-  has_been_manually_proofread: false
+  has_been_manually_proofread: true
+  heightened:
+  - damagetype_name: Fire
+    description: '**Heightened (+1)** The damage increases by 2d6'
+    formula: 2d6
+    type: 1
   level: 3
   name: Fireball
   range: 500 feet
   req: null
+  rolls:
+  - action_abbr: '2'
+    components:
+    - Somatic
+    - Verbal
+    damagetype_name: Fire
+    dice: 6d6
   saving throw: basic Reflex
   source:
   - abbr: CRB
@@ -13360,11 +13372,12 @@ spell:
   type: Spell
 - action_abbr:
   - '1'
+  - '2'
   - '3'
-  cast: to
+  cast: '|1| to |3|'
   components: null
-  descr: "You channel positive energy to heal the living or damage the undead. If\
-    \ the target is a willing living creature, you restore 1d8 Hit Points. If the\
+  description: "You channel positive energy to heal the living or damage the undead.\
+    \ If the target is a willing living creature, you restore 1d8 Hit Points. If the\
     \ target is undead, you deal that amount of positive damage to it, and it gets\
     \ a basic Fortitude save. The number of actions you spend when Casting this Spell\
     \ determines its targets, range, area, and other parameters.  \n\n  \n\n |1| (somatic)\
@@ -13376,15 +13389,47 @@ spell:
     \ 1d8, and the extra healing for the 2-action version increases by 8."
   duration: null
   has_been_manually_proofread: false
+  heightened:
+  - damagetype_name: Positive
+    description: '**Heightened (+1)** The amount of healing or damage increases by
+      1d8, and the extra healing for the 2-action version increases by 8.'
+    formula: 1d8
+    type: 1
   level: 1
   name: Heal
   range: varies
   req: null
+  rolls:
+  - action_abbr: '1'
+    components:
+    - Somatic
+    damagetype_name: Positive
+    dice: 1d8
+    range: Touch
+  - action_abbr: '2'
+    components:
+    - Somatic
+    - Verbal
+    damagetype_name: Positive
+    description: If you're healing a living creature, increase the Hit Points restored
+      by 8.
+    dice: 1d8
+    range: 30 feet
+  - action_abbr: '3'
+    components:
+    - Material
+    - Somatic
+    - Verbal
+    damagetype_name: Positive
+    description: You disperse positive energy in a 30-foot emanation. This targets
+      all living and undead creatures in the burst.
+    dice: 1d8
+    range: 30-foot emanation
   source:
   - abbr: CRB
     page_start: 342
     page_stop: 342
-  targets: 1 willing living creature or 1 undead
+  targets: 1 willing living creature or 1 undead creature
   traditions:
   - Divine
   - Primal
