@@ -22,7 +22,7 @@ def main():
 
     for x in yfiles:
         print("Doing: {}".format(x))
-        with open(x, 'r') as r:
+        with open(x, 'r', encoding="utf8") as r:
             data = yaml.full_load(r)
             if x == "feats.yaml":
                 for i in data['feat']:
@@ -44,7 +44,7 @@ def main():
 
 
         final = yaml.safe_dump(data, allow_unicode=True)
-        with open(x, 'w') as f:
+        with open(x, 'w', encoding="utf8") as f:
             f.write(final)
         print("\tDone.")
 
