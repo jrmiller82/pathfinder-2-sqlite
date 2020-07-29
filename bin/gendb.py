@@ -49,7 +49,7 @@ def main():
         print("{}".format(e))
 
     # Load in the yaml data
-    with open('basics.yaml') as yl:
+    with open('basics.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     # call the functions to input to SQL
     do_abilityscore(data['abilityscore'], conn)
@@ -62,96 +62,96 @@ def main():
     do_weaponcategory(data['weaponcategory'], conn)
 
     # move on to traits
-    with open('traits.yaml') as yl:
+    with open('traits.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_traits(data, conn)  # does both trait types and traits
 
     # move on to sources
-    with open('sources.yaml') as yl:
+    with open('sources.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_sources(data, conn)
     do_source_entry_table(conn)
 
     # move on to senses
-    with open('senses.yaml') as yl:
+    with open('senses.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_senses(data, conn)
 
     # move on to skills
-    with open('skills.yaml') as yl:
+    with open('skills.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_skills(data, conn)
 
     # move on to damagecategory and damagetype
-    with open('damage.yaml') as yl:
+    with open('damage.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_damage(data, conn)
 
     # move on to conditions
-    with open('conditions.yaml') as yl:
+    with open('conditions.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_conditions(data, conn)
 
     # move on to backgrounds
-    with open('backgrounds.yaml') as yl:
+    with open('backgrounds.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_backgrounds(data, conn)
 
     # move on to bulks
-    with open('bulks.yaml') as yl:
+    with open('bulks.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_bulks(data, conn)
 
     # move on to langs
-    with open('langs.yaml') as yl:
+    with open('langs.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_langs(data, conn)
 
     # move on to actions
-    with open('actions.yaml') as yl:
+    with open('actions.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_actions(data, conn)
 
     # move on to spells
     # TODO do spells once data is proofread
-    with open('spells.yaml') as yl:
+    with open('spells.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_spells(data, conn)
 
     # move on to requirements
-    with open('requirements.yaml') as yl:
+    with open('requirements.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_requirements(data, conn)
 
     # move on to triggers
-    with open('triggers.yaml') as yl:
+    with open('triggers.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_triggers(data, conn)
 
     # move on to armor
-    with open('armor.yaml') as yl:
+    with open('armor.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_armor(data, conn)
 
     # move on to ammo
-    with open('ammunition.yaml') as yl:
+    with open('ammunition.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_ammo(data, conn)
 
-    with open('gear.yaml') as yl:
+    with open('gear.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_gear(data, conn)
 
-    with open('feats.yaml') as yl:
+    with open('feats.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_feats(data, conn)
 
-    with open('ancestriesheritages.yaml') as yl:
+    with open('ancestriesheritages.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_ancestries(data, conn)
 
     # Must be called after feats are loaded
-    with open('ancestriesheritages.yaml') as yl:
+    with open('ancestriesheritages.yaml', encoding='utf-8') as yl:
         data = yaml.full_load(yl)
     do_heritages(data, conn)
 
