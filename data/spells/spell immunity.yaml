@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You ward a creature against the effects of a single spell. Choose a spell and
+  name it aloud as part of the verbal component. Spell immunity attempts to counteract
+  that spell whenever spell immunity's target is the target of the named spell or
+  in that spell's area. Successfully counteracting a spell that targets an area or
+  multiple targets with spell immunity negates the effects only for the target affected
+  by spell immunity.
+duration: 24 hours
+has_been_manually_proofread: false
+level: 4
+name: Spell Immunity
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 371
+  page_stop: 371
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Abjuration
+trigger: null
+type: Spell

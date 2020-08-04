@@ -1,0 +1,30 @@
+action_abbr: null
+area: 100-foot burst
+cast: 10 minutes (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: From outside, the area looks like a bank of impenetrable black fog. Sensory
+  stimuli (such as sounds, smells, and light) don't pass from inside the area to outside
+  the area. Scrying spells can't perceive any stimuli from the area, and mind-reading
+  effects don't work in the area.
+duration: 24 hours
+has_been_manually_proofread: false
+level: 4
+name: Private Sanctum
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 360
+  page_stop: 360
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Uncommon
+- Abjuration
+trigger: null
+type: Spell

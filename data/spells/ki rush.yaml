@@ -1,0 +1,25 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: 'Accelerated by your ki, you move with such speed you become a blur. Move two
+  times: two Strides, two Steps, or one Stride and one Step (in either order). You
+  gain the concealed condition during this movement and until the start of your next
+  turn.'
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Ki Rush
+req: null
+source:
+- abbr: CRB
+  page_start: 401
+  page_stop: 401
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Monk
+- Transmutation
+trigger: null
+type: Focus

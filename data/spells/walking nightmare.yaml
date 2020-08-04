@@ -1,0 +1,34 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You fill the creature's mind with a terrifying vision out of its nightmares.\
+  \ The target must attempt a Will save. If the target is unconscious when you Cast\
+  \ this Spell on it, it immediately wakes up before attempting its save, and if it\
+  \ fails its save, it gains the fleeing condition for 1 round in addition to the\
+  \ effects noted above.  \n\n**Critical Success**  The target is unaffected.  \n\n\
+  **Success**  The target is frightened 1.  \n\n**Failure**  The target is frightened\
+  \ 2.  \n\n**Critical Failure**  The target is frightened 3."
+duration: varies
+has_been_manually_proofread: false
+level: 1
+name: Walking Nightmare
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 399
+  page_stop: 399
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Emotion
+- Enchantment
+- Fear
+- Mental
+trigger: null
+type: Focus

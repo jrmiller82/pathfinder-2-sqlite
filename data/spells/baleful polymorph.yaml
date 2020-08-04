@@ -1,0 +1,36 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You transform the target creature into a harmless animal appropriate to the\
+  \ area, with effects based on its Fortitude save.  \n\n**Critical Success**  The\
+  \ target is unaffected.  \n\n**Success**  The target's body gains minor features\
+  \ of the harmless animal. Its insides churn as they partially transform, causing\
+  \ it to be sickened 1. When it recovers from the sickened condition, its features\
+  \ revert to normal.  \n\n**Failure**  The target transforms for 1 minute but keeps\
+  \ its mind. If it spends all its actions on its turn concentrating on its original\
+  \ form, it can attempt a Will save to end the effect immediately.  \n\n**Critical\
+  \ Failure**  The target is transformed into the chosen harmless animal, body and\
+  \ mind, for an unlimited duration."
+duration: varies
+has_been_manually_proofread: false
+level: 6
+name: Baleful Polymorph
+range: 30 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 320
+  page_stop: 320
+targets: 1 creature
+traditions:
+- Arcane
+- Primal
+traits:
+- Incapacitation
+- Polymorph
+- Transmutation
+trigger: null
+type: Spell

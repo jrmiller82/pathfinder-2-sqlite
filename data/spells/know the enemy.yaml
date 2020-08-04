@@ -1,0 +1,26 @@
+action_abbr: R
+cast: somatic
+components:
+- Somatic
+descr: Use a Recall Knowledge action, rolling the appropriate skill check to identify
+  the triggering creature's abilities. You can roll your check twice and use the better
+  result.
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Know the Enemy
+req: null
+source:
+- abbr: CRB
+  page_start: 393
+  page_stop: 393
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Divination
+- Fortune
+trigger: You roll initiative and can see a creature, you succeed at an attack roll
+  against a creature, or a creature fails a saving throw against one of your spells.
+type: Focus

@@ -1,0 +1,26 @@
+action_abbr: F
+cast: '|F| somatic'
+components:
+- Somatic
+descr: You call upon your muse's deep mysteries, granting the target a greater ability
+  to think and recall information. Roll the triggering Recall Knowledge skill check
+  twice and use the better result.
+duration: null
+has_been_manually_proofread: true
+level: 1
+name: Loremaster's Etude
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 387
+  page_stop: 387
+targets: you or the triggering ally
+traditions: null
+traits:
+- Uncommon
+- Bard
+- Divination
+- Fortune
+trigger: You or an ally within range attempts a skill check to Recall Knowledge
+type: Focus

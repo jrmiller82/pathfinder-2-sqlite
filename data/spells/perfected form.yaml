@@ -1,0 +1,23 @@
+action_abbr: R
+cast: somatic
+components:
+- Somatic
+descr: Reroll the saving throw and use the better result.
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Perfected Form
+req: null
+source:
+- abbr: CRB
+  page_start: 394
+  page_stop: 394
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Cleric
+- Fortune
+trigger: You fail a saving throw against a morph, petrification, or polymorph effect.
+type: Focus

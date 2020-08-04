@@ -1,0 +1,31 @@
+action_abbr: '2'
+area: 30-foot emanation
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or\
+  \ lawful. You detect auras of that alignment. You receive no information beyond\
+  \ presence or absence. You can choose not to detect creatures or effects you're\
+  \ aware have that alignment. Only creatures of 6th level or higher-unless divine\
+  \ spellcasters, undead, or beings from the Outer Sphere-have alignment auras.  \n\
+  \n**Heightened (2nd)**  You learn each aura's location and strength."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Detect Alignment
+req: null
+source:
+- abbr: CRB
+  page_start: 328
+  page_stop: 328
+targets: null
+traditions:
+- Divine
+- Occult
+traits:
+- Uncommon
+- Detection
+- Divination
+trigger: null
+type: Spell

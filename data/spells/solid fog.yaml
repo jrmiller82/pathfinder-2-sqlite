@@ -1,0 +1,30 @@
+action_abbr: '3'
+area: 20-foot burst
+cast: material, somatic, verbal
+components:
+- Material
+- Somatic
+- Verbal
+descr: You conjure a bank of fog so thick it impedes movement as well as sight. This
+  functions as obscuring mist, except that the area is also difficult terrain. You
+  can Dismiss the spell.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 4
+name: Solid Fog
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 370
+  page_stop: 370
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Conjuration
+- Transmutation
+- Water
+trigger: null
+type: Spell

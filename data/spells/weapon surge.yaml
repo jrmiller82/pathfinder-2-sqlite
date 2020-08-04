@@ -1,0 +1,28 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: Holding your weapon aloft, you fill it with divine energy. On your next Strike
+  with that weapon before the start of your next turn, you gain a +1 status bonus
+  to the attack roll and the weapon deals an additional die of damage. If the weapon
+  has a striking rune, this instead increases the number of dice from the striking
+  rune by 1 (to a maximum of 3 extra weapon dice).If the target weapon leaves your
+  possession, weapon surge immediately ends.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Weapon Surge
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 399
+  page_stop: 399
+targets: 1 weapon you're wielding
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Evocation
+trigger: null
+type: Focus

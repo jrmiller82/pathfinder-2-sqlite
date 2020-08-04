@@ -1,0 +1,29 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You create a semicorporeal hand out of your essence that delivers touch spells
+  for you. Whenever you Cast a Spell with a range of touch, you can have the hand
+  crawl to a target within range along the ground, touch it, and then crawl back to
+  you. When making a melee spell attack with the hand, you use your normal bonuses.
+  The hand can move as far as it needs to within range. The hand has your AC and saves,
+  but any damage to the hand destroys it and causes you to take 1d6 damage.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 2
+name: Spectral Hand
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 370
+  page_stop: 370
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Necromancy
+trigger: null
+type: Spell

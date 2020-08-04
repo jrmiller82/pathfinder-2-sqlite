@@ -1,0 +1,24 @@
+action_abbr: R
+cast: somatic
+components:
+- Somatic
+descr: You swiftly move from a dangerous spot and veil yourself. You Step and become
+  concealed.
+duration: until the end of your next turn
+has_been_manually_proofread: false
+level: 1
+name: Sudden Shift
+req: null
+source:
+- abbr: CRB
+  page_start: 397
+  page_stop: 397
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Cleric
+- Illusion
+trigger: An enemy misses you with a melee attack.
+type: Focus

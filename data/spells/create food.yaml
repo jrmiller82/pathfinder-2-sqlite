@@ -1,0 +1,32 @@
+action_abbr: null
+cast: 1 hour (somatic, verbal)
+components:
+- Somatic
+- Verbal
+descr: "You create enough food to feed six Medium creatures for a day. This food is\
+  \ bland and unappealing, but it is nourishing. After 1 day, if no one has eaten\
+  \ the food, it decays and becomes inedible. Most Small creatures eat one-quarter\
+  \ as much as a Medium creature (one-sixteenth as much for most Tiny creatures),\
+  \ and most Large creatures eat 10 times as much (100 times as much for Huge creatures\
+  \ and so on).  \n\n**Heightened (4th)**  You can feed 12 Medium creatures.  \n\n\
+  **Heightened (6th)**  You can feed 50 Medium creatures.  \n\n**Heightened (8th)**\
+  \  You can feed 200 Medium creatures."
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Create Food
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 326
+  page_stop: 326
+targets: null
+traditions:
+- Arcane
+- Divine
+- Primal
+traits:
+- Conjuration
+trigger: null
+type: Spell

@@ -1,0 +1,31 @@
+action_abbr: null
+cast: 1 minute (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: "You transform the target into delicious fare, changing water into wine or\
+  \ another fine beverage or enhancing the food's taste and ingredients to make it\
+  \ a gourmet treat. Prior to the transformation, the spell attempts to counteract\
+  \ any poisons in the food or water. The food turns back to normal if not consumed\
+  \ before the duration expires, though any poisons that were counteracted are still\
+  \ gone.  \n\n**Heightened (+1)**  The number of gallons of water you can target\
+  \ increases by 1, or the number of pounds of food you can target increases by 5."
+duration: 1 hour
+has_been_manually_proofread: false
+level: 2
+name: Enhance Victuals
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 335
+  page_stop: 335
+targets: up to 1 gallon of non-magical water or up to 5 pounds of food
+traditions:
+- Divine
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

@@ -1,0 +1,31 @@
+action_abbr: '2'
+area: 30-foot emanation
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You teleport the targets to new positions within the area. The creatures must\
+  \ each be able to fit in their new space, and their positions must be unoccupied,\
+  \ entirely within the area, and in your line of sight. Unwilling creatures can attempt\
+  \ a Will save.  \n\n**Critical Success**  The target can teleport if it wants, but\
+  \ it chooses the destination within range.  \n\n**Success**  The target is unaffected.\
+  \  \n\n**Failure**  You teleport the target and choose its destination.  \n\n**Heightened\
+  \ (+1)**  The number of targets increases by 1."
+duration: null
+has_been_manually_proofread: false
+level: 6
+name: Collective Transposition
+req: null
+source:
+- abbr: CRB
+  page_start: 324
+  page_stop: 324
+targets: up to 2 creatures
+traditions:
+- Arcane
+- Occult
+traits:
+- Conjuration
+- Teleportation
+trigger: null
+type: Spell

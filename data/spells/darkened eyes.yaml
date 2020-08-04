@@ -1,0 +1,33 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You infuse a creature's vision with darkness. After attempting its save, the\
+  \ target becomes temporarily immune for 24 hours.  \n\n**Critical Success**  The\
+  \ target is unaffected.  \n\n**Success**  The target's darkvision or low-light vision\
+  \ is suppressed for 1 round.  \n\n**Failure**  As success, but the duration is 1\
+  \ minute.  \n\n**Critical Failure**  As success, but the duration is 1 minute, and\
+  \ the target is also blinded for the duration. It can attempt a new save at the\
+  \ end of each of its turns. If it succeeds, it's no longer blinded, but its darkvision\
+  \ or low-light vision remains suppressed."
+duration: varies
+has_been_manually_proofread: false
+level: 4
+name: Darkened Eyes
+range: 60 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 390
+  page_stop: 390
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Darkness
+- Transmutation
+trigger: null
+type: Focus

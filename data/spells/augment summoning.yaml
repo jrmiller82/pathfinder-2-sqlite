@@ -1,0 +1,25 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: You augment the abilities of a summoned creature. The target gains a +1 status
+  bonus to all checks (this also applies to the creature's DCs, including its AC)
+  for the duration of its summoning, up to 1 minute.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Augment Summoning
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 406
+  page_stop: 406
+targets: 1 creature you summoned
+traditions: null
+traits:
+- Uncommon
+- Conjuration
+- Wizard
+trigger: null
+type: Focus

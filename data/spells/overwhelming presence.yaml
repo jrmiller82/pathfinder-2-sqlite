@@ -1,0 +1,41 @@
+action_abbr: '2'
+area: 40-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You surround yourself with supernatural splendor, appearing to be a god or\
+  \ similarly majestic being. You choose the aspects of your new majestic appearance.\
+  \ This causes the targets to pay tribute to you by bowing or using some other action\
+  \ in keeping with your appearance. The number of times a target must do this depends\
+  \ on the result of their Will save. Paying tribute is a manipulate action or move\
+  \ action, as chosen by the creature paying tribute. A creature under this effect\
+  \ must pay tribute to you at least once on each of its turns if possible. While\
+  \ affected by this spell, a creature is fascinated by you and can't use hostile\
+  \ actions against you. The target is then temporarily immune for 1 minute.  \n\n\
+  **Critical Success**  The target is unaffected.  \n\n**Success**  The target must\
+  \ pay tribute twice.  \n\n**Failure**  The target must pay tribute six times.  \n\
+  \n**Critical Failure**  As failure, and the target must spend all its actions paying\
+  \ tribute if possible."
+duration: until full tribute is paid
+has_been_manually_proofread: false
+level: 9
+name: Overwhelming Presence
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 356
+  page_stop: 356
+targets: any number of creatures
+traditions:
+- Divine
+- Occult
+traits:
+- Auditory
+- Enchantment
+- Incapacitation
+- Mental
+- Visual
+trigger: null
+type: Spell

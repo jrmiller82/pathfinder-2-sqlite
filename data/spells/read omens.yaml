@@ -1,0 +1,28 @@
+action_abbr: null
+cast: 10 minutes (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: You peek into the future. Choose a particular goal, event, or activity that
+  will occur within 1 week. You learn a cryptic clue or piece of advice that could
+  help with the chosen event, often in the form of a rhyme or omen.
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Read Omens
+req: null
+source:
+- abbr: CRB
+  page_start: 363
+  page_stop: 363
+targets: null
+traditions:
+- Divine
+- Occult
+traits:
+- Uncommon
+- Divination
+- Prediction
+trigger: null
+type: Spell

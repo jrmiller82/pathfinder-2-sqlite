@@ -1,0 +1,40 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You create a phantasmal image of the most fearsome creature imaginable to\
+  \ the target. Only the spell's target can see the killer, though you can see the\
+  \ vague shape of the illusion as it races forth to attack. The effect of the killer\
+  \ is based on the outcome of the target's Will save.  \n\n**Critical Success** \
+  \ The target is unaffected.  \n\n**Success**  The target takes 4d6 mental damage\
+  \ and is frightened 1.  \n\n**Failure**  The target takes 8d6 mental damage and\
+  \ is frightened 2.  \n\n**Critical Failure**  The target is so afraid it might die.\
+  \ It must attempt a Fortitude save; if the target fails, it dies. On a successful\
+  \ Fortitude save, the target takes 12d6 mental damage, is fleeing until the end\
+  \ of its next turn, and is frightened 4. This effect has the incapacitation trait.\
+  \  \n\n**Heightened (+1)**  The damage increases by 2d6 on a failure and by 3d6\
+  \ on a critical failure."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Phantasmal Killer
+range: 120 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 357
+  page_stop: 357
+targets: 1 living creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Death
+- Emotion
+- Fear
+- Illusion
+- Mental
+trigger: null
+type: Spell

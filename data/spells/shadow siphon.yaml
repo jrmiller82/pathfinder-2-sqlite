@@ -1,0 +1,28 @@
+action_abbr: R
+cast: verbal
+components:
+- Verbal
+descr: Exchanging material energy with that of the Shadow Plane, you transform the
+  triggering spell into a partially illusory version of itself. Attempt to counteract
+  the target spell. If the attempt is successful, any creatures that would be damaged
+  by the spell instead take only half as much damage, but the spell otherwise works
+  as normal. Treat shadow siphon's counteract level as 2 higher for this attempt.
+duration: null
+has_been_manually_proofread: false
+level: 5
+name: Shadow Siphon
+range: 60 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 368
+  page_stop: 368
+targets: the triggering spell
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+- Shadow
+trigger: A spell or magical effect deals damage
+type: Spell

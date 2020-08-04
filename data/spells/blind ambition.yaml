@@ -1,0 +1,36 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You strengthen a target's ambition, increase its resentment of allies, and\
+  \ make its allegiances more susceptible to change. The target must attempt a Will\
+  \ save.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**  The\
+  \ target takes a -1 status penalty to its saving throws and other defenses against\
+  \ attempts to Coerce it, Request something of it, or use mental effects to convince\
+  \ it to do something (such as a suggestion spell). This penalty applies only if\
+  \ the target is being encouraged to advance its own ambitions.  \n\n**Failure**\
+  \  As success, but the penalty is -2.  \n\n**Critical Failure**  The target is overcome\
+  \ with ambition, taking whatever actions would advance its own agenda over those\
+  \ of anyone else, even without attempts to convince it."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 1
+name: Blind Ambition
+range: 60 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 389
+  page_stop: 389
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Emotion
+- Enchantment
+- Mental
+trigger: null
+type: Focus

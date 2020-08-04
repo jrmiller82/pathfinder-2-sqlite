@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: Positive energy shuts death's door. The target loses the dying condition, though
+  it remains unconscious at 0 Hit Points.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Stabilize
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 373
+  page_stop: 373
+targets: 1 dying creature
+traditions:
+- Divine
+- Primal
+traits:
+- Cantrip
+- Healing
+- Necromancy
+- Positive
+trigger: null
+type: Cantrip

@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You fire a blue-white ray of freezing air and swirling sleet from your finger\
+  \ that can chill your target to the bones. You must succeed at a spell attack roll\
+  \ to affect the target, which then takes 10d8 cold damage and is drained 2.  \n\n\
+  **Heightened (+1)**  The damage increases by 2d8."
+duration: null
+has_been_manually_proofread: false
+level: 8
+name: Polar Ray
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 358
+  page_stop: 358
+targets: 1 creature or object
+traditions:
+- Arcane
+- Primal
+traits:
+- Cold
+- Evocation
+trigger: null
+type: Spell

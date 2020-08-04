@@ -1,0 +1,26 @@
+action_abbr: '1'
+area: 15-foot emanation
+cast: verbal
+components:
+- Verbal
+descr: "You gain an angelic halo with an aura that increases allies' healing from\
+  \ the heal spell. Heal spells gain a +2 status bonus to Hit Points healed to your\
+  \ allies in the area.  \n\n**Heightened (+1)**  The status bonus increases by 2."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Angelic Halo
+req: null
+source:
+- abbr: CRB
+  page_start: 402
+  page_stop: 402
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Good
+- Sorcerer
+trigger: null
+type: Focus

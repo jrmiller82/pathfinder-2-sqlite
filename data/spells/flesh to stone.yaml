@@ -1,0 +1,34 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You try to turn the target's flesh into stone. The target must attempt a Fortitude\
+  \ save.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**  The\
+  \ target is slowed 1 for 1 round.  \n\n**Failure**  The target is slowed 1 and must\
+  \ attempt a Fortitude save at the end of each of its turns; this ongoing save has\
+  \ the incapacitation trait. On a failed save, the slowed condition increases by\
+  \ 1 (or 2 on a critical failure). A successful save reduces the slowed condition\
+  \ by 1. When a creature is unable to act due to the slowed condition from flesh\
+  \ to stone, the creature is petrified permanently. The spell ends if the creature\
+  \ is petrified or the slowed condition is removed.  \n\n**Critical Failure**  As\
+  \ failure, but the target is initially slowed 2."
+duration: varies
+has_been_manually_proofread: false
+level: 6
+name: Flesh to Stone
+range: 120 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 338
+  page_stop: 338
+targets: 1 creature made of flesh
+traditions:
+- Arcane
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

@@ -1,0 +1,29 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "An arc of lightning leaps from one target to another. You deal electricity\
+  \ damage equal to 1d4 plus your spellcasting ability modifier.  \n\n**Heightened\
+  \ (+1)**  The damage increases by 1d4."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Electric Arc
+range: 30 feet
+req: null
+saving throw: Reflex
+source:
+- abbr: CRB
+  page_start: 335
+  page_stop: 335
+targets: 1 or 2 creatures
+traditions:
+- Arcane
+- Primal
+traits:
+- Cantrip
+- Electricity
+- Evocation
+trigger: null
+type: Cantrip

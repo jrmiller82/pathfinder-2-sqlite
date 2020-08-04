@@ -1,0 +1,38 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You fill the targets' minds with terrifying images of fearsome creatures,\
+  \ each drawn from the targets' worst fears. Only the targets can see their assailants.\
+  \ Each target takes 16d6 mental damage and must attempt a Will save.  \n\n**Critical\
+  \ Success**  The target is unaffected.  \n\n**Success**  The target takes half damage\
+  \ and is frightened 1.  \n\n**Failure**  The target takes full damage and is frightened\
+  \ 2.  \n\n**Critical Failure**  The target is so afraid, it might instantly die.\
+  \ It must attempt a Fortitude saving throw. If the target succeeds, it takes double\
+  \ damage and is frightened 2, and it's also fleeing until the end of its next turn\
+  \ unless it critically succeeded. If it fails, it is reduced to 0 Hit Points and\
+  \ dies."
+duration: null
+has_been_manually_proofread: false
+level: 9
+name: Weird
+range: 120 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 385
+  page_stop: 385
+targets: any number of creatures
+traditions:
+- Arcane
+- Occult
+traits:
+- Death
+- Emotion
+- Fear
+- Illusion
+- Mental
+trigger: null
+type: Spell

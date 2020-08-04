@@ -1,0 +1,29 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "Your body sprouts a coat of brambly thorns that harm those that strike you\
+  \ and thrive on life magic. Adjacent creatures that hit you with a melee attack,\
+  \ as well as creatures that hit you with unarmed attacks, take 1 piercing damage\
+  \ each time they do. Anytime you cast a positive spell, the damage from your thorns\
+  \ increases to 1d6 until the start of your next turn.  \n\n**Heightened (+1)** \
+  \ The damage increases by 1, or 1d6 after you cast a positive spell."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Vibrant Thorns
+req: null
+source:
+- abbr: CRB
+  page_start: 399
+  page_stop: 399
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Morph
+- Plant
+- Transmutation
+trigger: null
+type: Focus

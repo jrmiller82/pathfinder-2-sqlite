@@ -1,0 +1,27 @@
+action_abbr: '2'
+area: 120-foot line
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A bolt of lightning strikes outward from your hand, dealing 4d12 electricity\
+  \ damage.  \n\n**Heightened (+1)**  The damage increases by 1d12."
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Lightning Bolt
+req: null
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 348
+  page_stop: 348
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Electricity
+- Evocation
+trigger: null
+type: Spell

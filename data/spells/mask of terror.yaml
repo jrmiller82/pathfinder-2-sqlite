@@ -1,0 +1,39 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "The target appears to be a gruesome and terrifying creature. The effect is\
+  \ unique to each observer, so a human viewing the target might see a demon with\
+  \ bloody fangs, but a demon observing the target might see a glowing angelic visage.\
+  \ When any creature attempts a hostile action against the target, the creature must\
+  \ attempt a Will save. It is then temporarily immune until the end of its next turn.\
+  \  \n\n**Success**  The creature is unaffected.  \n\n**Failure**  The creature becomes\
+  \ frightened 2 before using its action.  \n\n**Critical Failure**  The creature\
+  \ becomes frightened 2, and its action fails and is wasted.  \n\n**Heightened (8th)**\
+  \  You can target up to 5 creatures. If a creature uses a hostile action or reaction\
+  \ that affects multiple targets simultaneously, it needs to attempt only one save\
+  \ against mask of terror."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 7
+name: Mask of Terror
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 350
+  page_stop: 350
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+- Primal
+traits:
+- Emotion
+- Fear
+- Illusion
+- Mental
+- Visual
+trigger: null
+type: Spell

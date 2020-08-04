@@ -1,0 +1,29 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: You take on the stance of the flowing winds, sending out waves of energy at
+  a distance. You can make wind crash unarmed Strikes as ranged Strikes against targets
+  within 30 feet. These deal 1d6 bludgeoning damage, use the brawling group, and have
+  the agile, nonlethal, propulsive, and unarmed traits. Wind crash Strikes ignore
+  concealment and all cover. While in wild winds stance, you gain a +2 circumstance
+  bonus to AC against ranged attacks.
+duration: until you leave the stance
+has_been_manually_proofread: false
+level: 4
+name: Wild Winds Stance
+req: null
+source:
+- abbr: CRB
+  page_start: 402
+  page_stop: 402
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Air
+- Evocation
+- Monk
+- Stance
+trigger: null
+type: Focus

@@ -1,0 +1,38 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You accept otherworldly energies into your body; while you are still recognizably\
+  \ yourself, you gain the features of one of your deity's servitors. Choose an alignment\
+  \ your deity has (chaotic, evil, good, or lawful). You can't cast this spell if\
+  \ you don't have a deity or your deity is true neutral. This spell gains the trait\
+  \ of the alignment you chose.  \n\nIf you were Medium or smaller, you become Large,\
+  \ as the effects of enlarge. You must have space to expand into, or the spell is\
+  \ lost. You also gain the following benefits.  \n\n * 40 temporary Hit Points.\n\
+  \n * A fly Speed equal to your Speed.\n\n * Weakness 10 to the alignment opposite\
+  \ the one you chose.\n\n * A +1 status bonus to saves against spells.\n\n * Darkvision.\n\
+  \n * Your unarmed attacks and weapons deal 1 additional damage of the chosen alignment\
+  \ type.\n\n * One or more unarmed melee attacks. If you chose good or lawful, your\
+  \ fist attacks deal 2d8 damage. If you chose chaotic, you gain a bite unarmed attack\
+  \ that deals 2d10 piercing damage. If you chose evil, you gain a claws unarmed attack\
+  \ that deals 2d8 slashing damage and has the agile and finesse traits.\n\n  \n\n\
+  **Heightened (9th)**  The temporary Hit Points increase to 60, the weakness increases\
+  \ to 15, and the duration increases to 10 minutes."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 7
+name: Divine Vessel
+req: null
+source:
+- abbr: CRB
+  page_start: 331
+  page_stop: 331
+targets: null
+traditions:
+- Divine
+traits:
+- Morph
+- Necromancy
+trigger: null
+type: Spell

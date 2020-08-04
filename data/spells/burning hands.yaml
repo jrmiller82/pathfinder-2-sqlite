@@ -1,0 +1,27 @@
+action_abbr: '2'
+area: 15-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Gouts of flame rush from your hands. You deal 2d6 fire damage to creatures\
+  \ in the area.  \n\n**Heightened (+1)**  The damage increases by 2d6."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Burning Hands
+req: null
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 322
+  page_stop: 322
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Conjuration
+- Fire
+trigger: null
+type: Spell

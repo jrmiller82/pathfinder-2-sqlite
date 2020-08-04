@@ -1,0 +1,29 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You point your finger toward the target and speak a word of slaying. You deal\
+  \ 70 negative damage to the target. If the damage from finger of death reduces the\
+  \ target to 0 Hit Points, the target dies instantly.  \n\n**Heightened (+1)**  The\
+  \ damage increases by 10."
+duration: null
+has_been_manually_proofread: false
+level: 7
+name: Finger of Death
+range: 30 feet
+req: null
+saving throw: basic Fortitude
+source:
+- abbr: CRB
+  page_start: 338
+  page_stop: 338
+targets: 1 living creature
+traditions:
+- Divine
+- Primal
+traits:
+- Death
+- Necromancy
+trigger: null
+type: Spell

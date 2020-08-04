@@ -1,0 +1,26 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You remove toxins and contaminations from food and drink, making them safe
+  to consume. This spell doesn't prevent future contamination, natural decay, or spoilage.
+  One cubic foot of liquid is roughly 8 gallons.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Purify Food and Drink
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 362
+  page_stop: 362
+targets: 1 cubic foot of contaminated food or water
+traditions:
+- Divine
+- Primal
+traits:
+- Necromancy
+trigger: null
+type: Spell

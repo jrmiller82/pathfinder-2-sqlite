@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You can see invisible creatures and objects. They appear to you as translucent\
+  \ shapes, and they are concealed to you.  \n\n**Heightened (5th)**  The spell has\
+  \ a duration of 8 hours."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 2
+name: See Invisibility
+req: null
+source:
+- abbr: CRB
+  page_start: 367
+  page_stop: 367
+targets: null
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Divination
+- Revelation
+trigger: null
+type: Spell

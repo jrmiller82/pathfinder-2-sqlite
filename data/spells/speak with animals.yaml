@@ -1,0 +1,25 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You can ask questions of, receive answers from, and use the Diplomacy skill
+  with animals. The spell doesn't make them more friendly than normal. Cunning animals
+  are likely to be terse and evasive, while less intelligent ones often make inane
+  comments.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 2
+name: Speak with Animals
+req: null
+source:
+- abbr: CRB
+  page_start: 370
+  page_stop: 370
+targets: null
+traditions:
+- Primal
+traits:
+- Divination
+trigger: null
+type: Spell

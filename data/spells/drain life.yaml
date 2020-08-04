@@ -1,0 +1,31 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "You close your hand and pull life energy from another creature into yourself.\
+  \ This deals 3d4 negative damage; the target must attempt a basic Fortitude save.\
+  \ You gain temporary Hit Points equal to the damage the target takes, after resolving\
+  \ its save and applying your blood magic if applicable. If the target's Hit Points\
+  \ were lower than the damage you dealt, you gain temporary Hit Points equal to their\
+  \ remaining Hit Points instead. The temporary Hit Points last for 1 minute.  \n\n\
+  **Heightened (+1)**  The damage increases by 1d4."
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Drain Life
+range: 30 feet
+req: null
+saving throw: basic Fortitude
+source:
+- abbr: CRB
+  page_start: 403
+  page_stop: 403
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Necromancy
+- Negative
+- Sorcerer
+trigger: null
+type: Focus

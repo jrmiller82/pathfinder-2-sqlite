@@ -1,0 +1,31 @@
+action_abbr: '2'
+area: 5-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: A deluge of colorful illusory paint, tools, or other symbols of art and artisanship
+  drift down in the area. Roll 1d4 to determine the color of the illusion. Each creature
+  in the area must attempt a Will save. A creature is unaffected on a success. On
+  a failure or critical failure, the creature takes the results listed on the table
+  relevant to the color.
+duration: varies
+has_been_manually_proofread: false
+level: 1
+name: Splash of Art
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 397
+  page_stop: 397
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Illusion
+- Visual
+trigger: null
+type: Focus

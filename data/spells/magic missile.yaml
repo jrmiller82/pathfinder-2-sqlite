@@ -1,0 +1,34 @@
+action_abbr:
+- '1'
+- '3'
+cast: to  somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You send a dart of force streaking toward a creature that you can see. It\
+  \ automatically hits and deals 1d4+1 force damage. For each additional action you\
+  \ use when Casting the Spell, increase the number of missiles you shoot by one,\
+  \ to a maximum of three missiles for 3 actions. You choose the target for each missile\
+  \ individually. If you shoot more than one missile at the same target, combine the\
+  \ damage before applying bonuses or penalties to damage, resistances, weaknesses,\
+  \ and so forth.  \n\n**Heightened (+2)**  You shoot one additional missile with\
+  \ each action you spend."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Magic Missile
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 349
+  page_stop: 349
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Evocation
+- Force
+trigger: null
+type: Spell

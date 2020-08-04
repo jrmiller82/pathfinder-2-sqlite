@@ -1,0 +1,31 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You unleash a beam of divine energy. Choose an alignment your deity has (chaotic,\
+  \ evil, good, or lawful). You can't cast this spell if you don't have a deity or\
+  \ if your deity is true neutral. Make a ranged spell attack roll against the target's\
+  \ AC. On a hit, the target takes damage of the chosen alignment type equal to 1d4\
+  \ + your spellcasting ability modifier (double damage on a critical hit). The spell\
+  \ gains the trait of the alignment you chose.  \n\n**Heightened (+1)**  The damage\
+  \ increases by 1d4."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Divine Lance
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 331
+  page_stop: 331
+targets: 1 creature
+traditions:
+- Divine
+traits:
+- Attack
+- Cantrip
+- Evocation
+trigger: null
+type: Cantrip

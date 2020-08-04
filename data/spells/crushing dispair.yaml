@@ -1,0 +1,35 @@
+action_abbr: '2'
+area: 30-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You inflict despair on creatures in the area. The effects for each creature\
+  \ are determined by its Will save.  \n\n**Critical Success**  The creature is unaffected.\
+  \  \n\n**Success**  For 1 round, the creature can't use reactions and must attempt\
+  \ another save at the start of its turn; on a failure, it is slowed 1 for that turn\
+  \ as it sobs uncontrollably.  \n\n**Failure**  For 1 round, the creature can't use\
+  \ reactions and must attempt another save at the start of its turn; on a failure,\
+  \ it is slowed 1 for that turn as it sobs uncontrollably.  \n\n**Critical Failure**\
+  \  As failure, and the creature is automatically slowed 1 for 1 minute.  \n\n**Heightened\
+  \ (7th)**  The area increases to a 60-foot cone."
+duration: 1 or more rounds
+has_been_manually_proofread: false
+level: 5
+name: Crushing Dispair
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 327
+  page_stop: 327
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Emotion
+- Enchantment
+- Mental
+trigger: null
+type: Spell

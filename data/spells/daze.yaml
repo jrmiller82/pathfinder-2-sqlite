@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You cloud the target's mind and daze it with a mental jolt. The jolt deals\
+  \ mental damage equal to your spellcasting ability modifier; the target must attempt\
+  \ a basic Will save. If the target critically fails the save, it is also stunned\
+  \ 1.  \n\n**Heightened (+2)**  The damage increases by 1d6."
+duration: 1 round
+has_been_manually_proofread: false
+level: 1
+name: Daze
+range: 60 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 327
+  page_stop: 327
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Cantrip
+- Enchantment
+- Mental
+- Nonlethal
+trigger: null
+type: Cantrip

@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: The target's form appears blurry. It becomes concealed. As the nature of this
+  effect still leaves the target's location obvious, the target can't use this concealment
+  to Hide or Sneak.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 2
+name: Blur
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 321
+  page_stop: 321
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+- Visual
+trigger: null
+type: Spell

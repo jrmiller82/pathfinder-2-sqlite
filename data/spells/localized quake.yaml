@@ -1,0 +1,33 @@
+action_abbr: '2'
+area: 15-foot emanation or 15-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You shake the earth, toppling nearby creatures. Choose whether the spell's\
+  \ area is a 15-foot emanation or a 15-foot cone when you cast it. Each creature\
+  \ in the area standing on solid ground may take 4d6 bludgeoning damage and must\
+  \ attempt a Reflex saving throw.  \n\n**Critical Success**  The creature is unaffected.\
+  \  \n\n**Success**  The creature takes half damage.  \n\n**Failure**  The creature\
+  \ takes full damage and falls prone.  \n\n**Critical Failure**  The creature takes\
+  \ full damage and falls prone.  \n\n**Heightened (+1)**  Increase the damage by\
+  \ 2d6."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Localized Quake
+req: null
+saving throw: Reflex
+source:
+- abbr: CRB
+  page_start: 393
+  page_stop: 393
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Earth
+- Transmutation
+trigger: null
+type: Focus

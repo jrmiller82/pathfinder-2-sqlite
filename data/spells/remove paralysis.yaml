@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A surge of energy frees a paralyzed creature. You can attempt to counteract\
+  \ a single effect imposing the paralyzed condition on the target. This does not\
+  \ cure someone who is paralyzed from some natural state or effect, such as paralysis\
+  \ caused by non-magical wounds or toxins.  \n\n**Heightened (6th)**  The spell's\
+  \ range increases to 30 feet, and you can target up to 10 creatures."
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Remove Paralysis
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 363
+  page_stop: 363
+targets: 1 creature
+traditions:
+- Divine
+- Occult
+- Primal
+traits:
+- Healing
+- Necromancy
+trigger: null
+type: Spell

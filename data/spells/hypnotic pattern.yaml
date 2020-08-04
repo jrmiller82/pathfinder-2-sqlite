@@ -1,0 +1,35 @@
+action_abbr: '2'
+area: 10-foot burst
+cast: material, somatic
+components:
+- Material
+- Somatic
+descr: "You create a pattern of shifting colors that hovers in the air in a geometric\
+  \ cloud. Creatures are dazzled while inside the pattern. In addition, a creature\
+  \ must attempt a Will saving throw if it is inside the pattern when you cast it,\
+  \ when it enters the pattern, when it ends its turn within the pattern, or if it\
+  \ uses a Seek or Interact action on the pattern. A creature currently fascinated\
+  \ by the pattern doesn't attempt new saves.  \n\n**Success**  The target is unaffected.\
+  \  \n\n**Failure**  The target is fascinated by the pattern.  \n\n**Critical Failure**\
+  \  The target is fascinated by the pattern. While it remains fascinated, it can't\
+  \ use reactions."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 3
+name: Hypnotic Pattern
+range: 120 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 344
+  page_stop: 344
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+- Visual
+trigger: null
+type: Spell

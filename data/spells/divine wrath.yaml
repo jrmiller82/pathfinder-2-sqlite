@@ -1,0 +1,36 @@
+action_abbr: '2'
+area: 20-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You can channel the fury of your deity against foes of opposed alignment.\
+  \ Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't\
+  \ cast this spell if you don't have a deity or your deity is true neutral. This\
+  \ spell gains the trait of the alignment you chose. You deal 4d10 damage of the\
+  \ alignment you chose; each creature in the area must attempt a Fortitude save.\
+  \ Creatures that match the alignment you chose are unaffected. Those that neither\
+  \ match nor oppose it treat the result of their saving throw as one degree better.\
+  \  \n\n**Critical Success**  The creature is unaffected.  \n\n**Success**  The creature\
+  \ takes half damage.  \n\n**Failure**  The creature takes full damage and is sickened\
+  \ 1.  \n\n**Critical Failure**  The creature takes full damage and is sickened 2;\
+  \ while it is sickened, it is also slowed 1.  \n\n**Heightened (+1)**  The damage\
+  \ increases by 1d10."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Divine Wrath
+range: 120 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 332
+  page_stop: 332
+targets: null
+traditions:
+- Divine
+traits:
+- Evocation
+trigger: null
+type: Spell

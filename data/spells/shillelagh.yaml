@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: The target grows vines and leaves, brimming with primal energy. The target
+  becomes a +1 striking weapon while in your hands, gaining a +1 item bonus to attack
+  rolls and increasing the number of weapon damage dice to two. Additionally, as long
+  as you are on your home plane, attacks you make with the target against aberrations,
+  extraplanar creatures, and undead increase the number of weapon damage dice to three.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Shillelagh
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 369
+  page_stop: 369
+targets: 1 non-magical club or staff you hold
+traditions:
+- Primal
+traits:
+- Plant
+- Transmutation
+trigger: null
+type: Spell

@@ -1,0 +1,36 @@
+action_abbr: '2'
+area: 20-foot burst
+cast: material, somatic
+components:
+- Material
+- Somatic
+descr: "A field of cascading, ever-changing colors manifests in the air. Creatures\
+  \ are dazzled while inside the pattern, as are those within 20 feet of the pattern's\
+  \ area. A creature must attempt a Will save if it is inside the pattern when you\
+  \ cast it, enters the pattern, ends its turn within the pattern, or uses a Seek\
+  \ or Interact action on the pattern. A creature currently affected by the pattern\
+  \ doesn't need to attempt new saves.  \n\n**Success**  The creature is unaffected.\
+  \  \n\n**Failure**  The creature is confused for 1d4 rounds.  \n\n**Critical Failure**\
+  \  The creature is stunned for 1d4 rounds. After the stunned condition ends, the\
+  \ creature is confused for the remaining duration of the spell."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 8
+name: Scintillating Pattern
+range: 120 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 367
+  page_stop: 367
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+- Incapacitation
+- Visual
+trigger: null
+type: Spell

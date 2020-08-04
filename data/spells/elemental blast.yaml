@@ -1,0 +1,29 @@
+action_abbr: '2'
+area: 10-foot-radius burst, 30-foot cone, or 60-foot line
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You gather elemental energy and blast your foes in one of the various listed\
+  \ shapes of your choosing, dealing 8d6 bludgeoning damage (or fire damage if your\
+  \ element is fire). This spell has your element's trait.  \n\n**Heightened (+1)**\
+  \  The damage increases by 2d6."
+duration: null
+has_been_manually_proofread: false
+level: 5
+name: Elemental Blast
+range: 30 feet (burst only)
+req: null
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 404
+  page_stop: 404
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Evocation
+- Sorcerer
+trigger: null
+type: Focus

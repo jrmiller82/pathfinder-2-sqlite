@@ -1,0 +1,28 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "Your litany denounces an evildoer, rendering it susceptible to the powers\
+  \ of good. The target gains weakness 7 to good. The target then becomes temporarily\
+  \ immune to all of your litanies for 1 minute.  \n\n**Heightened (+1)**  The weakness\
+  \ increases by 1."
+duration: 1 round
+has_been_manually_proofread: false
+level: 7
+name: Litany of Righteousness
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 388
+  page_stop: 388
+targets: 1 evil creature
+traditions: null
+traits:
+- Uncommon
+- Champion
+- Evocation
+- Good
+- Litany
+trigger: null
+type: Focus

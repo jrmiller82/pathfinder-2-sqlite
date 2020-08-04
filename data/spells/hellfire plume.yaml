@@ -1,0 +1,30 @@
+action_abbr: '2'
+area: 10-foot radius, 60-foot-tall cylinder
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You call forth a plume of hellfire that erupts from below, dealing 4d6 fire\
+  \ damage and 4d6 evil damage.  \n\n**Heightened (+1)**  The fire damage increases\
+  \ by 1d6, and the evil damage increases by 1d6."
+duration: null
+has_been_manually_proofread: false
+level: 5
+name: Hellfire Plume
+range: 60 feet
+req: null
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 405
+  page_stop: 405
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Evil
+- Evocation
+- Fire
+- Sorcerer
+trigger: null
+type: Focus

@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: material, somatic
+components:
+- Material
+- Somatic
+descr: "The target makes no sound, preventing creatures from noticing it using hearing\
+  \ or other senses alone. The target can't use sonic attacks, nor can it use actions\
+  \ with the auditory trait. This prevents it from casting spells that include verbal\
+  \ components.  \n\n**Heightened (4th)**  The spell effect emanates from the touched\
+  \ creature, silencing all sound in or passing through a 10- foot radius and preventing\
+  \ any auditory and sonic effects in the affected area. While within the radius,\
+  \ creatures are subject to the same effects as the target. Depending upon the position\
+  \ of the effect, a creature might notice the lack of sound reaching it (blocking\
+  \ off the noise coming from a party, for example)."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 2
+name: Silence
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 369
+  page_stop: 369
+targets: 1 willing creature
+traditions:
+- Divine
+- Occult
+traits:
+- Illusion
+trigger: null
+type: Spell

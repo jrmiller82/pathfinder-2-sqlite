@@ -1,0 +1,25 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: Your body fills with physical power and skill. You gain a +10- foot status
+  bonus to Speed and a +2 status bonus to Athletics checks. As a part of Casting this
+  Spell, you can use a Stride, Leap, Climb, or Swim action. The spell's bonuses apply
+  during that action.
+duration: 1 round
+has_been_manually_proofread: false
+level: 1
+name: Athletic Rush
+req: null
+source:
+- abbr: CRB
+  page_start: 389
+  page_stop: 389
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Transmutation
+trigger: null
+type: Focus

@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: Falsehoods ring in your ears like discordant notes. You gain a +4 status bonus
+  to Perception checks when someone Lies.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 4
+name: Discern Lies
+req: null
+source:
+- abbr: CRB
+  page_start: 330
+  page_stop: 330
+targets: null
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Uncommon
+- Divination
+- Mental
+- Revelation
+trigger: null
+type: Spell

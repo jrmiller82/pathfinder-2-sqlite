@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You blind the target. The effect is determined by the target's Fortitude save.\
+  \ The target then becomes temporarily immune for 1 minute.  \n\n**Critical Success**\
+  \  The target is unaffected.  \n\n**Success**  The target is blinded until its next\
+  \ turn begins.  \n\n**Failure**  The target is blinded for 1 minute.  \n\n**Critical\
+  \ Failure**  The target is blinded permanently."
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Blindness
+range: 30 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 321
+  page_stop: 321
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+- Primal
+traits:
+- Incapacitation
+- Necromancy
+trigger: null
+type: Spell

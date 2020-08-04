@@ -1,0 +1,29 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: You hurl a held melee weapon with which you are trained at the target, making
+  a spell attack roll. On a success, you deal the weapon's damage as if you had hit
+  with a melee Strike, but adding your spellcasting ability modifier to damage, rather
+  than your Strength modifier. On a critical success, you deal double damage, and
+  you add the weapon's critical specialization effect. Regardless of the outcome,
+  the weapon flies back to you and returns to your hand.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Hand of the Apprentice
+range: 500 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 407
+  page_stop: 407
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Attack
+- Evocation
+- Wizard
+trigger: null
+type: Focus

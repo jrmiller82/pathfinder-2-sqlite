@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: With a rush of telekinetic power, you move a foe or something they carry. You
+  can attempt to Disarm, Shove, or Trip the target using a spell attack roll instead
+  of an Athletics check.
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Telekinetic Manuever
+range: 60 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 377
+  page_stop: 377
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Attack
+- Evocation
+- Force
+trigger: null
+type: Spell

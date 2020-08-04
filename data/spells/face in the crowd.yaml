@@ -1,0 +1,27 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "While in a crowd of roughly similar creatures, your appearance becomes bland\
+  \ and nondescript. You gain a +2 status bonus to Deception and Stealth checks to\
+  \ go unnoticed among the crowd, and you ignore difficult terrain caused by the crowd.\
+  \  \n\n**Heightened (3rd)**  The spell gains a range of 10 feet and can target up\
+  \ to 10 creatures."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Face in the Crowd
+req: null
+source:
+- abbr: CRB
+  page_start: 392
+  page_stop: 392
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Illusion
+- Visual
+trigger: null
+type: Focus

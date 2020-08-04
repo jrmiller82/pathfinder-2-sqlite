@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You free those who travel alongside you from environmental hindrances. Targets\
+  \ don't take circumstance penalties to Speed from vegetation, rubble, winds, or\
+  \ other properties of the environment, whether or not the environment is magical,\
+  \ and they ignore difficult terrain from such environmental properties.  \n\n**Heightened\
+  \ (9th)**  The targets also ignore greater difficult terrain from environmental\
+  \ properties."
+duration: 1 hour
+has_been_manually_proofread: false
+level: 7
+name: Unfettered Pack
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 379
+  page_stop: 379
+targets: up to 10 creatures
+traditions:
+- Primal
+traits:
+- Abjuration
+trigger: null
+type: Spell

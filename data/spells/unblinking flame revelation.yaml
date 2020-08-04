@@ -1,0 +1,23 @@
+action_abbr: '1'
+cast: null
+components:
+- Verbal
+descr: You light your foe with revealing flame. the GM attempts a secret counteract
+  check against each illusion affecting the creature; on a success, you suppress the
+  illusion for the duration, rather than end the effect.
+duration: 2 rounds
+has_been_manually_proofread: false
+level: 3
+name: Unblinking Flame Revelation
+req: Your previous action was a successful unarmed Strike
+source:
+- abbr: LOWG
+  page_start: 83
+  page_stop: 83
+targets: the creature you hit
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+trigger: null
+type: Focus

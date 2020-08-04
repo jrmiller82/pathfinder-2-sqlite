@@ -1,0 +1,26 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: You call upon your blood's knowledge of the ancients to extend your magic.
+  If your next action is to Cast a Spell with a duration of 1 minute on a single target,
+  and the spell isn't of the highest spell level you can cast, the spell instead lasts
+  10 minutes. You can have only one active spell at a time extended in this way.
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Extend Spell
+req: null
+source:
+- abbr: CRB
+  page_start: 404
+  page_stop: 404
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Divination
+- Metamagic
+- Sorcerer
+trigger: null
+type: Focus

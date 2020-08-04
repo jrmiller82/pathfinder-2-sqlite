@@ -1,0 +1,25 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "You become invisible and ignore natural difficult terrain (such as underbrush).\
+  \ Any hostile action you use ends this invisibility, but you still ignore natural\
+  \ difficult terrain.  \n\n**Heightened (5th)**  If you use a hostile action, the\
+  \ invisibility doesn't end."
+duration: until the end of your next turn
+has_been_manually_proofread: false
+level: 3
+name: Fey Disappearance
+req: null
+source:
+- abbr: CRB
+  page_start: 404
+  page_stop: 404
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Enchantment
+- Sorcerer
+trigger: null
+type: Focus

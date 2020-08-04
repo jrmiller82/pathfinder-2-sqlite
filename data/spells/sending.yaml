@@ -1,0 +1,28 @@
+action_abbr: '3'
+cast: material, somatic, verbal
+components:
+- Material
+- Somatic
+- Verbal
+descr: You send the creature a mental message of 25 words or fewer, and it can respond
+  immediately with its own message of 25 words or fewer.
+duration: null
+has_been_manually_proofread: false
+level: 5
+name: Sending
+range: planetary
+req: null
+source:
+- abbr: CRB
+  page_start: 367
+  page_stop: 367
+targets: 1 creature with whom you are familiar
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Divination
+- Mental
+trigger: null
+type: Spell

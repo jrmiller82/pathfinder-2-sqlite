@@ -1,0 +1,34 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You infuse yourself with primal essence and transform yourself into another\
+  \ form. You can polymorph into any form listed in pest form, which lasts 10 minutes.\
+  \ All other wild shape forms last 1 minute. You can add more forms to your wild\
+  \ shape list with druid feats; your feat might grant you some or all of the forms\
+  \ from a given polymorph spell. When you transform into a form granted by a spell,\
+  \ you gain all the effects of the form you chose from a version of the spell heightened\
+  \ to wild shape's level. Wild shape allows you to use your own shapeshifting training\
+  \ more easily than most polymorph spells. When you choose to use your own attack\
+  \ modifier while polymorphed instead of the form's default attack modifier, you\
+  \ gain a +2 status bonus to your attack rolls.  \n\n**Heightened (2nd)**  You can\
+  \ also wild shape into the forms listed in animal form."
+duration: 1 minute (or longer)
+has_been_manually_proofread: false
+level: 1
+name: Wild Shape
+req: null
+source:
+- abbr: CRB
+  page_start: 401
+  page_stop: 401
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Druid
+- Polymorph
+- Transmutation
+trigger: null
+type: Focus

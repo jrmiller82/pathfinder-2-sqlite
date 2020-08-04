@@ -1,0 +1,29 @@
+action_abbr: '2'
+area: all squares in a 20-foot-radius burst that contain plants
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: Plants in the area entangle creatures. The area counts as difficult terrain.
+  Each round that a creature starts its turn in the area, it must attempt a Reflex
+  save. On a failure, it takes a -10-foot circumstance penalty to its Speeds until
+  it leaves the area, and on a critical failure, it is also immobilized for 1 round.
+  Creatures can attempt to Escape at entangle's DC to remove these effects.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 2
+name: Entangle
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 336
+  page_stop: 336
+targets: null
+traditions:
+- Primal
+traits:
+- Plant
+- Transmutation
+trigger: null
+type: Spell

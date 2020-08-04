@@ -1,0 +1,31 @@
+action_abbr: '2'
+area: 15-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Swirling colors affect viewers based on their Will saves.  \n\n**Critical\
+  \ Success**  The creature is unaffected.  \n\n**Success**  The creature is dazzled\
+  \ for 1 round.  \n\n**Failure**  The creature is stunned 1, blinded for 1 round,\
+  \ and dazzled for 1 minute.  \n\n**Critical Failure**  The creature is stunned for\
+  \ 1 round and blinded for 1 minute."
+duration: 1 or more rounds (see below)
+has_been_manually_proofread: false
+level: 1
+name: Color Spray
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 324
+  page_stop: 324
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+- Incapacitation
+- Visual
+trigger: null
+type: Spell

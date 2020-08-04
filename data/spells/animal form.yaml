@@ -1,0 +1,58 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You call upon primal energy to transform yourself into a Medium animal battle\
+  \ form. When you first cast this spell, choose ape, bear, bull, canine, cat, deer,\
+  \ frog, shark, or snake. You can decide the specific type of animal (such as lion\
+  \ or snow leopard for cat), but this has no effect on the form's Size or statistics.\
+  \ While in this form, you gain the animal trait. You can Dismiss the spell.  \n\n\
+  \n\nYou gain the following statistics and abilities regardless of which battle form\
+  \ you choose:  \n\n * AC = 16 + your level. Ignore your armor's check penalty and\
+  \ Speed reduction.\n\n * 5 temporary Hit Points.\n\n * Low-light vision and imprecise\
+  \ scent 30 feet.\n\n * One or more unarmed melee attacks specific to the battle\
+  \ form you choose, which are the only attacks you can use. You're trained with them.\
+  \ Your attack modifier is +9, and your damage bonus is +1. These attacks are Strength\
+  \ based (for the purpose of the enfeebled condition, for example). If your unarmed\
+  \ attack bonus is higher, you can use it instead.\n\n * Athletics modifier of +9,\
+  \ unless your own modifier is higher.\n\n  \n\nYou also gain specific abilities\
+  \ based on the type of animal you choose:  \n\n * **Ape** Speed 25 feet, climb Speed\
+  \ 20 feet; **Melee** |1| fist, **Damage** 2d6 bludgeoning.\n\n * **Bear** Speed\
+  \ 30 feet; **Melee** |1| jaws, **Damage** 2d8 piercing; **Melee** |1| claw (agile),\
+  \ **Damage** 1d8 slashing.\n\n * **Bull** Speed 30 feet; **Melee** |1| horn , **Damage**\
+  \ 2d8 piercing.\n\n * **Canine** Speed 40 feet; **Melee** |1| jaws, **Damage** 2d8\
+  \ piercing.\n\n * **Cat** Speed 40 feet; **Melee** |1| jaws, **Damage** 2d6 piercing;\
+  \ **Melee** |1| claw (agile), **Damage** 1d10 slashing.\n\n * **Deer** Speed 50\
+  \ feet; **Melee** |1| antler , **Damage** 2d6 piercing.\n\n * **Frog** Speed 25\
+  \ feet, swim Speed 25 feet; **Melee** |1| jaws, **Damage** 2d6 bludgeoning; **Melee**\
+  \ |1| tongue (reach 15 feet), **Damage** 2d4 bludgeoning.\n\n * **Shark** swim Speed\
+  \ 35 feet; **Melee** |1| jaws, **Damage** 2d8 piercing; breathe underwater but not\
+  \ in air.\n\n * **Snake** Speed 20 feet, climb Speed 20 feet, swim Speed 20 feet;\
+  \ **Melee** |1| fangs , **Damage** 2d4 piercing plus 1d6 poison.\n\n  \n\n**Heightened\
+  \ (3rd)**  You instead gain 10 temporary HP, AC = 17 + your level, attack modifier\
+  \ +14, Damage bonus +5, and Athletics +14.  \n\n**Heightened (4th)**  Your battle\
+  \ form is Large and your attacks have 10-foot reach. You must have enough space\
+  \ to expand into or the spell is lost. You instead gain 15 temporary HP, AC = 18\
+  \ + your level, attack modifier +16, Damage bonus +9, and Athletics +16.  \n\n**Heightened\
+  \ (5th)**  Your battle form is Huge and your attacks have 15-foot reach. You must\
+  \ have enough space to expand into or the spell is lost. You instead gain 20 temporary\
+  \ HP, AC = 18 + your level, attack modifier +18, Damage bonus +7 and double the\
+  \ number of Damage dice, and Athletics +20."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 2
+name: Animal Form
+req: null
+source:
+- abbr: CRB
+  page_start: 317
+  page_stop: 317
+targets: null
+traditions:
+- Primal
+traits:
+- Polymorph
+- Transmutation
+trigger: null
+type: Spell

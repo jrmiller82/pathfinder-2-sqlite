@@ -1,0 +1,32 @@
+action_abbr: '2'
+area: 20-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You create a cloud of putrid mist in the area. The cloud functions as obscuring\
+  \ mist except it sickens creatures that end their turns within the cloud. (The concealed\
+  \ condition is not a poison effect.)  \n\n**Critical Success**  The creature is\
+  \ unaffected.  \n\n**Success**  The creature is sickened 1.  \n\n**Failure**  The\
+  \ creature is sickened 1 and slowed 1 while in the cloud.  \n\n**Critical Failure**\
+  \  The creature is sickened 2 and slowed 1 until it leaves the cloud."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 3
+name: Stinking Cloud
+range: 120 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 373
+  page_stop: 373
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Conjuration
+- Poison
+trigger: null
+type: Spell

@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You interfere with the target's ability to teleport and travel between dimensions.\
+  \ Dimensional anchor attempts to counteract any teleportation effect, or any effect\
+  \ that would move the target to a different plane. The duration is determined by\
+  \ the target's Will save.  \n\n**Critical Success**  The target is unaffected. \
+  \ \n\n**Success**  The effect's duration is 1 minute.  \n\n**Failure**  The effect's\
+  \ duration is 10 minutes.  \n\n**Critical Failure**  The effect's duration is 1\
+  \ hour."
+duration: varies
+has_been_manually_proofread: false
+level: 4
+name: Dimensional Anchor
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 329
+  page_stop: 329
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Abjuration
+trigger: null
+type: Spell

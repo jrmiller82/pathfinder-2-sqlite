@@ -1,0 +1,28 @@
+action_abbr: null
+cast: 1 minute (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: The targets can communicate telepathically with any or all of the other targets
+  from any point on the same planet.
+duration: 8 hours
+has_been_manually_proofread: false
+level: 5
+name: Telepathic Bond
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 377
+  page_stop: 377
+targets: you and up to 4 willing creatures touched
+traditions:
+- Arcane
+- Occult
+traits:
+- Uncommon
+- Divination
+- Mental
+trigger: null
+type: Spell

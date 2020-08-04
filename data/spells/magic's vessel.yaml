@@ -1,0 +1,27 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: A creature becomes a receptacle for pure magical energy sent by your deity.
+  The target gains a +1 status bonus to saving throws. Each time you Cast a Spell
+  from your spell slots, you automatically Sustain this Spell and grant its target
+  resistance to damage from spells until the start of your next turn. This resistance
+  is equal to the level of the spell you cast.
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Magic's Vessel
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 393
+  page_stop: 393
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Enchantment
+trigger: null
+type: Focus

@@ -1,0 +1,41 @@
+action_abbr: '2'
+area: 5-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Each creature in the area becomes drowsy and might fall asleep. A creature\
+  \ that falls unconscious from this spell doesn't fall prone or release what it's\
+  \ holding. This spell doesn't prevent creatures from waking up due to a successful\
+  \ Perception check, limiting its utility in combat.  \n\n**Critical Success**  The\
+  \ creature is unaffected.  \n\n**Success**  The creature takes a -1 status penalty\
+  \ to Perception checks for 1 round.  \n\n**Failure**  The creature falls unconscious.\
+  \ If it's still unconscious after 1 minute, it wakes up automatically.  \n\n**Critical\
+  \ Failure**  The creature falls unconscious. If it's still unconscious after 1 hour,\
+  \ it wakes up automatically.  \n\n**Heightened (4th)**  The creatures fall unconscious\
+  \ for 1 round on a failure or 1 minute on a critical failure. They fall prone and\
+  \ release what they're holding, and they can't attempt Perception checks to wake\
+  \ up. When the duration ends, the creature is sleeping normally instead of automatically\
+  \ waking up."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Sleep
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 370
+  page_stop: 370
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Enchantment
+- Incapacitation
+- Mental
+- Sleep
+trigger: null
+type: Spell

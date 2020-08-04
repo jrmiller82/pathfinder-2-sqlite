@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: Manipulating the fundamental particles of matter, you convert stone into flesh
+  and blood. You restore a petrified creature to its normal state or transform a stone
+  object into a mass of inert flesh (without stone's Hardness) in roughly the same
+  shape.
+duration: null
+has_been_manually_proofread: false
+level: 6
+name: Stone to Flesh
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 374
+  page_stop: 374
+targets: petrified creature or human-size stone object
+traditions:
+- Divine
+- Primal
+traits:
+- Earth
+- Transmutation
+trigger: null
+type: Spell

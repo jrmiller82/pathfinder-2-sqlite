@@ -1,0 +1,32 @@
+action_abbr:
+- '1'
+- '2'
+cast: or  somatic
+components:
+- Somatic
+descr: "You heal an animal's wounds, restoring 1d8 Hit Points to the target. The number\
+  \ of actions spent Casting this Spell determines its effect.  \n\n * |1| **somatic**\
+  \ The spell has a range of touch.\n\n * |2| **somatic, verbal** The spell has a\
+  \ range of 30 feet and restores an additional 8 Hit Points to the target.\n\n  \n\
+  \n**Heightened (+1)**  The amount of healing increases by 1d8, and the additional\
+  \ healing for the 2-action version increases by 8."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Heal Animal
+range: touch or 30 feet (see text)
+req: null
+source:
+- abbr: CRB
+  page_start: 399
+  page_stop: 399
+targets: 1 willing living animal creature
+traditions: null
+traits:
+- Uncommon
+- Druid
+- Healing
+- Necromancy
+- Positive
+trigger: null
+type: Focus

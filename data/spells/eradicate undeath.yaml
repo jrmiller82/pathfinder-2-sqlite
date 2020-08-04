@@ -1,0 +1,28 @@
+action_abbr: '2'
+area: 30-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A massive deluge of life energy causes the undead to fall apart. Each undead\
+  \ creature in the area takes 4d12 positive damage.  \n\n**Heightened (+1)**  The\
+  \ damage increases by 1d12."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Eradicate Undeath
+req: null
+saving throw: basic Fortitude
+source:
+- abbr: CRB
+  page_start: 392
+  page_stop: 392
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Necromancy
+- Positive
+trigger: null
+type: Focus

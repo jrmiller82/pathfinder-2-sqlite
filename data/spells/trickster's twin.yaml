@@ -1,0 +1,38 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You rarely settle for being in just one place. Choose a location within 100\
+  \ feet of the target that the target can see. You create an illusion of yourself\
+  \ there that only it can see and that mimics all your actions. The target must attempt\
+  \ a Will save.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**\
+  \  The target believes you're in the designated location and can't see you in your\
+  \ actual location. The target automatically disbelieves the illusion when you use\
+  \ an action that doesn't make sense in the illusion's position, or if the target\
+  \ attacks, touches, Seeks, or otherwise engages with the illusion. If you use a\
+  \ hostile action against the target, the spell ends.  \n\n**Failure**  As success,\
+  \ but the target must succeed at a Will save to disbelieve the illusion when one\
+  \ of the listed events occurs.  \n\n**Critical Failure**  As success, but the target\
+  \ must critically succeed at a Will save to disbelieve when one of the listed events\
+  \ occurs."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 4
+name: Trickster's Twin
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 398
+  page_stop: 398
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Illusion
+- Visual
+trigger: null
+type: Focus

@@ -1,0 +1,35 @@
+action_abbr: '2'
+area: 5-foot burst
+cast: material, verbal
+components:
+- Material
+- Verbal
+descr: "You create a brief vision of immense wealth filling the spell's area. Each\
+  \ creature within 20 feet of the area that could be enticed by material wealth must\
+  \ attempt a Will saving throw. A creature that enters the area automatically disbelieves\
+  \ the illusion, and disbelieving the illusion ends any fascinated condition imposed\
+  \ by the spell. As long as you Sustain the Spell, other creatures react to the treasure\
+  \ like they would any other illusion, but they are not at risk of becoming fascinated.\
+  \  \n\n**Critical Success**  The creature disbelieves the illusion and is unaffected\
+  \ by it.  \n\n**Success**  The creature is fascinated by the wealth until it has\
+  \ completed its first action on its next turn.  \n\n**Failure**  The creature is\
+  \ fascinated by the illusion."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Appearance of Wealth
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 389
+  page_stop: 389
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Illusion
+trigger: null
+type: Focus

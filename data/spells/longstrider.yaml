@@ -1,0 +1,25 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You lengthen your stride beyond what should be possible. You gain a +10-foot\
+  \ status bonus to your Speed.  \n\n**Heightened (2nd)**  The duration increases\
+  \ to 8 hours."
+duration: 1 hour
+has_been_manually_proofread: false
+level: 1
+name: Longstrider
+req: null
+source:
+- abbr: CRB
+  page_start: 348
+  page_stop: 348
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

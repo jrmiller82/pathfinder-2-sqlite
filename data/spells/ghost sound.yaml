@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You create an auditory illusion of simple sounds that has a maximum volume\
+  \ equal to four normal humans shouting. The sounds emanate from a square you designate\
+  \ within range. You can't create intelligible words or other intricate sounds (such\
+  \ as music).  \n\n**Heightened (3rd)**  The range increases to 60 feet.  \n\n**Heightened\
+  \ (5th)**  The range increases to 120 feet."
+duration: sustained
+has_been_manually_proofread: false
+level: 1
+name: Ghost Sound
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 340
+  page_stop: 340
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Auditory
+- Cantrip
+- Illusion
+trigger: null
+type: Cantrip

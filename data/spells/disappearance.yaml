@@ -1,0 +1,29 @@
+action_abbr: '2'
+cast: material, somatic
+components:
+- Material
+- Somatic
+descr: You shroud a creature from others' senses. The target becomes undetected, not
+  just to sight but to all senses, allowing the target to count as invisible no matter
+  what precise and imprecise senses an observer might have. It's still possible for
+  a creature to find the target by Seeking, looking for disturbed dust, hearing gaps
+  in the sound spectrum, or finding some other way to discover the presence of an
+  otherwise-undetectable creature.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 8
+name: Disappearance
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 330
+  page_stop: 330
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+trigger: null
+type: Spell

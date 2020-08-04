@@ -1,0 +1,34 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You block the target's motor impulses before they can leave its mind, threatening\
+  \ to freeze the target in place. The target must attempt a Will save.  \n\n**Critical\
+  \ Success**  The target is unaffected.  \n\n**Success**  The target is stunned 1.\
+  \  \n\n**Failure**  The target is paralyzed for 1 round.  \n\n**Critical Failure**\
+  \  The target is paralyzed for 4 rounds. At the end of each of its turns, it can\
+  \ attempt a new Will save to reduce the remaining duration by 1 round, or end it\
+  \ entirely on a critical success.  \n\n**Heightened (7th)**  You can target up to\
+  \ 10 creatures."
+duration: varies
+has_been_manually_proofread: false
+level: 3
+name: Paralyze
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 356
+  page_stop: 356
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Enchantment
+- Incapacitation
+- Mental
+trigger: null
+type: Spell

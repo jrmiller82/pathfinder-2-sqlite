@@ -1,0 +1,24 @@
+action_abbr: R
+cast: somatic
+components:
+- Somatic
+descr: "Your own might mingles with divine power to protect you. You gain resistance\
+  \ equal to 8 plus your Strength modifier against all damage from the triggering\
+  \ attack or effect.  \n\n**Heightened (+1)**  The resistance increases by 2."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Enduring Might
+req: null
+source:
+- abbr: CRB
+  page_start: 392
+  page_stop: 392
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Cleric
+trigger: An attack or effect would deal damage to you.
+type: Focus

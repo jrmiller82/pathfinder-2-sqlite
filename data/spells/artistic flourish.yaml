@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: material, verbal
+components:
+- Material
+- Verbal
+descr: "You transform the target to make it match your artisanal and artistic vision.\
+  \ If you have expert proficiency in Crafting, the item grants a +1 item bonus to\
+  \ attack rolls if it's a weapon or skill checks if it's a skill tool. The target\
+  \ is a beautiful and impressive piece for its new quality, but the effect is obviously\
+  \ temporary, so its monetary value doesn't change. When you cast this spell, any\
+  \ previous artistic flourish you had cast ends.  \n\n**Heightened (7th)**  If you\
+  \ have master proficiency in Crafting, the item grants a +2 item bonus instead.\
+  \  \n\n**Heightened (10th)**  If you have legendary proficiency in Crafting, the\
+  \ item grants a +3 item bonus instead."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 4
+name: Artistic Flourish
+range: 15 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 389
+  page_stop: 389
+targets: 1 item or work of art that fits entirely within the range
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Transmutation
+trigger: null
+type: Focus

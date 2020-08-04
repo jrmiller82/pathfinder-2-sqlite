@@ -1,0 +1,31 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You snuff the life out of a creature on the brink of death. The target must\
+  \ attempt a Will save. If this kills it, you gain 10 temporary HP and a +1 status\
+  \ bonus to attack and damage rolls for 10 minutes.  \n\n**Critical Success**  The\
+  \ target is unaffected.  \n\n**Success**  The target's dying value increases by\
+  \ 1.  \n\n**Failure**  The target dies."
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Death Knell
+range: touch
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 328
+  page_stop: 328
+targets: 1 living creature that has 0 HP
+traditions:
+- Divine
+- Occult
+traits:
+- Attack
+- Death
+- Necromancy
+trigger: null
+type: Spell

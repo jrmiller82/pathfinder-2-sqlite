@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: The target weapon becomes translucent and ghostly, and it can affect material
+  and incorporeal creatures and objects. It can be wielded by a corporeal or incorporeal
+  creature and gains the effects of the ghost touch property rune.
+duration: 5 minutes
+has_been_manually_proofread: false
+level: 3
+name: Ghostly Weapon
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 340
+  page_stop: 340
+targets: 1 non-magical weapon that is either unattended or wielded by you or a willing
+  ally
+traditions:
+- Arcane
+- Occult
+traits:
+- Transmutation
+trigger: null
+type: Spell

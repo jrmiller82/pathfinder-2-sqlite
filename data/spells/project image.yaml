@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You project an illusory image of yourself. You must stay within range of the\
+  \ image, and if at any point you can't see the image, the spell ends. Whenever you\
+  \ Cast a Spell other than one whose area is an emanation, you can cause the spell\
+  \ effect to originate from either yourself or the image. Because the image is an\
+  \ illusion, it can't benefit from spells, though visual manifestations of the spell\
+  \ appear. The image has the same AC and saves as you. If it is hit by an attack\
+  \ or fails a save, the spell ends.  \n\n**Heightened (+2)**  The maximum duration\
+  \ you can Sustain the Spell increases to 10 minutes."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 7
+name: Project Image
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 360
+  page_stop: 360
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+- Mental
+trigger: null
+type: Spell

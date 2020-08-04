@@ -1,0 +1,33 @@
+action_abbr: '2'
+cast: material, somatic
+components:
+- Material
+- Somatic
+descr: "You quiet the target's voice, preventing it from giving away valuable secrets.\
+  \ This doesn't prevent the target from talking or providing verbal spell components,\
+  \ but no creature more than 10 feet away can hear its whispers without succeeding\
+  \ at a Perception check against your spell DC, which might interfere with auditory\
+  \ or linguistic effects as well as communication. The spell's duration depends on\
+  \ the target's Fortitude save. After attempting its save, the target becomes temporarily\
+  \ immune for 24 hours.  \n\n**Critical Success**  The target is unaffected.  \n\n\
+  **Success**  The duration is 1 round.  \n\n**Failure**  The duration is 1 minute.\
+  \  \n\n**Critical Failure**  The duration is 10 minutes."
+duration: varies
+has_been_manually_proofread: false
+level: 1
+name: Forced Quiet
+range: 30 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 393
+  page_stop: 393
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Cleric
+trigger: null
+type: Focus

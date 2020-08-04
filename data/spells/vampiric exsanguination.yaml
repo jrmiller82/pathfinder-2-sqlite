@@ -1,0 +1,33 @@
+action_abbr: '2'
+area: 30-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You draw in the blood and life force of other creatures through your outstretched\
+  \ arms. You deal 12d6 negative damage to living creatures in the area. You gain\
+  \ temporary Hit Points equal to half the damage a single creature takes from this\
+  \ spell; calculate these temporary Hit Points using the creature that took the most\
+  \ damage. You lose any remaining temporary Hit Points after 1 minute.  \n\n**Heightened\
+  \ (+1)**  The damage increases by 2d6."
+duration: null
+has_been_manually_proofread: false
+level: 6
+name: Vampiric Exsanguination
+req: null
+saving throw: basic Fortitude
+source:
+- abbr: CRB
+  page_start: 380
+  page_stop: 380
+targets: null
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Death
+- Necromancy
+- Negative
+trigger: null
+type: Spell

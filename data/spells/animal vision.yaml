@@ -1,0 +1,31 @@
+action_abbr: null
+cast: 1 minute (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: You tap into the target's senses, allowing you to see, hear, and otherwise
+  sense whatever it senses for the spell's duration. If the target wishes to prevent
+  you from doing so, it can attempt a Will save, negating the spell on a success,
+  but most animals don't bother to do so. While tapping into the target's senses,
+  you can't use your own body's senses, but you can change back and forth from your
+  body's senses to the target's senses using a single action, which has the concentrate
+  trait.
+duration: 1 hour
+has_been_manually_proofread: false
+level: 3
+name: Animal Vision
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 318
+  page_stop: 318
+targets: 1 animal
+traditions:
+- Primal
+traits:
+- Divination
+- Mental
+trigger: null
+type: Spell

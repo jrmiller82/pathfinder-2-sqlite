@@ -1,0 +1,29 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "You attempt to calm the target by uttering soothing words in a calm and even\
+  \ tone. The target gains a +1 status bonus to Will saving throws. This bonus increases\
+  \ to +2 against emotion effects. In addition, when you Cast this Spell, you can\
+  \ attempt to counteract one emotion effect on the target.  \n\n**Heightened (5th)**\
+  \  The bonus to saves increases to +2, or +3 against emotion effects."
+duration: 1 round
+has_been_manually_proofread: false
+level: 1
+name: Soothing Words
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 396
+  page_stop: 396
+targets: 1 ally
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Emotion
+- Enchantment
+- Mental
+trigger: null
+type: Focus

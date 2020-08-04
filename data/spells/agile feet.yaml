@@ -1,0 +1,25 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: The blessings of your god make your feet faster and your movements more fluid.
+  You gain a +5-foot status bonus to your Speed and ignore difficult terrain. As part
+  of casting agile feet, you can Stride or Step; you can instead Burrow, Climb, Fly,
+  or Swim if you have the appropriate Speed.
+duration: until the end of the current turn
+has_been_manually_proofread: false
+level: 1
+name: Agile Feet
+req: null
+source:
+- abbr: CRB
+  page_start: 389
+  page_stop: 389
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Transmutation
+trigger: null
+type: Focus

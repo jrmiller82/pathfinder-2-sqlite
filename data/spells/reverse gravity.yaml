@@ -1,0 +1,37 @@
+action_abbr: '3'
+area: 20-foot radius, 40-foot-tall cylinder
+cast: material, somatic, verbal
+components:
+- Material
+- Somatic
+- Verbal
+descr: You reverse gravity in the area. Creatures and objects that aren't secured
+  to the ground immediately fall upward to the top of the area. A creature might be
+  able to Grab an Edge to arrest its fall if it falls past an appropriate surface.
+  If a creature falls against a solid object (such as a ceiling), it takes the appropriate
+  amount of falling damage and lands on the surface. Once an object or creature reaches
+  the top of the area, it floats, caught between the normal and reversed gravity.
+  The creature can move along the plane where the two forms of gravity meet. Creatures
+  that can levitate or fly can use those abilities to mitigate the effects of reverse
+  gravity.When reverse gravity ends, all creatures and objects caught in the area
+  fall back down. Likewise, anything that moves beyond the spell's area is subjected
+  to normal gravity again.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 7
+name: Reverse Gravity
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 365
+  page_stop: 365
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Uncommon
+- Evocation
+trigger: null
+type: Spell
