@@ -14,7 +14,7 @@ def main():
 
     # gets all files with a yaml extension in the directory
     yfiles = []
-    for file in glob.glob("*.yaml"):
+    for file in glob.glob("**/*.yaml", recursive=True):
         yfiles.append(file)
 
     yfiles.sort()
@@ -38,7 +38,7 @@ def main():
                         # print("After: {}".format(i['trigger']))
             if x == "triggers.yaml":
                 for i in data['trigger']:
-                    print(i)
+                    #print(i)
                     i = i.replace('’', "'")
 
 
