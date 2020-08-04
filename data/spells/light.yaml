@@ -1,0 +1,31 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "The object glows, casting bright light in a 20-foot radius (and dim light\
+  \ for the next 20 feet) like a torch. If you cast this spell again on a second object,\
+  \ the light spell on the first object ends.  \n\n**Heightened (4th)**  The object\
+  \ sheds bright light in a 60-foot radius (and dim light for the next 60 feet)."
+duration: until the next time you make your daily preparations
+has_been_manually_proofread: false
+level: 1
+name: Light
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 348
+  page_stop: 348
+targets: 1 unattended, non-magical object of 1 Bulk or less
+traditions:
+- Arcane
+- Divine
+- Occult
+- Primal
+traits:
+- Cantrip
+- Evocation
+- Light
+trigger: null
+type: Cantrip

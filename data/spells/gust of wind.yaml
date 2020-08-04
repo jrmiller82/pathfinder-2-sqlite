@@ -1,0 +1,34 @@
+action_abbr: '2'
+area: 60-foot line
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A violent wind issues forth from your palm, blowing from the point where you\
+  \ are when you cast the spell to the line's opposite end. The wind extinguishes\
+  \ small non-magical fires, disperses fog and mist, blows objects of light Bulk or\
+  \ less around, and pushes larger objects. Large or smaller creatures in the area\
+  \ must attempt a Fortitude save. Large or smaller creatures that later move into\
+  \ the gust must attempt the save on entering.  \n\n**Critical Success**  The creature\
+  \ is unaffected.  \n\n**Success**  The creature can't move against the wind.  \n\
+  \n**Failure**  The creature is knocked prone. If it was flying, it suffers the effects\
+  \ of critical failure instead.  \n\n**Critical Failure**  The creature is pushed\
+  \ 30 feet in the wind's direction, knocked prone, and takes 2d6 bludgeoning damage."
+duration: until the start of your next turn
+has_been_manually_proofread: false
+level: 1
+name: Gust of Wind
+req: null
+source:
+- abbr: CRB
+  page_start: 342
+  page_stop: 342
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Air
+- Evocation
+trigger: null
+type: Spell

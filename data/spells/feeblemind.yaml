@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You drastically reduce the target's mental faculties. The target must attempt\
+  \ a Will save.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**\
+  \  The target is stupefied 2 for 1 round.  \n\n**Failure**  The target is stupefied\
+  \ 4 with an unlimited duration.  \n\n**Critical Failure**  The target is stupefied\
+  \ 4 with an unlimited duration."
+duration: varies
+has_been_manually_proofread: false
+level: 6
+name: Feeblemind
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 337
+  page_stop: 337
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Curse
+- Emotion
+- Enchantment
+- Mental
+trigger: null
+type: Spell

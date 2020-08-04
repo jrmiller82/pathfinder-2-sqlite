@@ -1,0 +1,35 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Merging minds with the target, you swap disorienting visions from one another's\
+  \ nightmares. One of you will become confused, but which it'll be depends on the\
+  \ target's Will save.  \n\n**Critical Success**  You are confused for 1 round. \
+  \ \n\n**Success**  At the start of your next turn, you spend your first action with\
+  \ the confused condition, then act normally.  \n\n**Failure**  As success, but the\
+  \ target is affected instead of you, spending its first action each turn confused.\
+  \ The duration is 1 minute.  \n\n**Critical Failure**  The target is confused for\
+  \ 1 minute."
+duration: varies
+has_been_manually_proofread: false
+level: 4
+name: Shared Nightmare
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 396
+  page_stop: 396
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Emotion
+- Humanoid
+- Incapacitation
+- Mental
+trigger: null
+type: Focus

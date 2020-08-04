@@ -1,0 +1,89 @@
+action_abbr: '1'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You transform into an avatar of your deity, assuming a Huge battle form. You\
+  \ must have space to expand or the spell is lost. You have hands in this battle\
+  \ form and can take manipulate actions. You can Dismiss this spell.  \n\nYou gain\
+  \ the following statistics and abilities regardless of which deity's battle form\
+  \ you assume:  \n\n * AC = 25 + your level.\n\n * Ignore your armor's check penalty\
+  \ and Speed reduction.\n\n * 30 temporary Hit Points.\n\n * Darkvision.\n\n * One\
+  \ or more attacks specific to your deity's battle form, which are the only attacks\
+  \ you can use. You're trained with them. Your attack modifier is +33, and you use\
+  \ the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled\
+  \ condition, for example) unless they have the finesse trait, and all ranged attacks\
+  \ are Dexterity based. Attacks that deal positive or negative damage don't heal\
+  \ creatures.\n\n * Athletics modifier of +35, unless your own is higher.\n\n  \n\
+  \nYou also gain the specific abilities listed for your deity below:  \n\n * **Abadar**\
+  \ Speed 50 feet, burrow Speed 30 feet, immune to immobilized; **Ranged** |1| crossbow\
+  \ (range increment 120 feet, reload 1), **Damage** 6d10+3 piercing.\n\n * **Asmodeus**\
+  \ Speed 70 feet, air walk; **Melee** |1| mace (reach 15 feet), **Damage** 6d10+6\
+  \ bludgeoning; **Ranged** |1| hell fire (range 120 feet), **Damage** 6d6+3 fire.\n\
+  \n * **Calistria** Speed 30 feet, fly Speed 70 feet; **Melee** |1| whip (disarm,\
+  \ finesse, nonlethal, reach 20 feet), **Damage** 6d4+6 slashing; **Ranged** |1|\
+  \ savored sting (range 60 feet), **Damage** 6d6+3 poison.\n\n * **Cayden Cailean**\
+  \ Speed 70 feet, air walk, ignore difficult terrain and greater difficult terrain;\
+  \ **Melee** |1| rapier (deadly, reach 15 feet), **Damage** 6d6+6 piercing; **Ranged**\
+  \ |1| ale splash (range 120 feet), **Damage** 6d6+3 poison.\n\n * **Desna** Speed\
+  \ 30 feet, fly Speed 70 feet; **Melee** |1| starknife (agile, deadly, finesse, reach\
+  \ 15 feet, silver, thrown 60 feet), **Damage** 6d4+6 piercing; **Ranged** |1| moonbeam\
+  \ (range 120 feet, silver), **Damage** 6d6+3 fire.\n\n * **Erastil** Speed 70 feet,\
+  \ air walk, ignore difficult terrain and greater difficult terrain; **Ranged** |1|\
+  \ longbow (deadly d8, range increment 150 feet), **Damage** 6d8+3 piercing.\n\n\
+  \ * **Gorum** Speed 70 feet, immune to immobilized; **Melee** |1| greatsword (versatile\
+  \ P, reach 15 feet), **Damage** 6d12+6 slashing.\n\n * **Gozreh** no land Speed,\
+  \ fly Speed 70 feet, swim Speed 70 feet; ignore difficult terrain and greater difficult\
+  \ terrain; **Melee** |1| waves (bull rush, reach 15 feet, thrown 20 feet), **Damage**\
+  \ 6d8+6 bludgeoning; **Ranged** |1| wind (versatile electricity, range 120 feet),\
+  \ **Damage** 6d6+3 bludgeoning.\n\n * **Iomedae** Speed 70 feet, air walk; shield\
+  \ (15 Hardness, can't be **Damage**d); **Melee** |1| longsword (versatile P, reach\
+  \ 15 feet), **Damage** 6d8+6 slashing.\n\n * **Irori** Speed 80 feet, air walk;\
+  \ **Melee** |1| unfettered strike (agile, versatile P or S, finesse, reach 15 feet),\
+  \ **Damage** 6d8+6 bludgeoning; **Ranged** |1| wind strike (range 60 feet), **Damage**\
+  \ 6d4+6 bludgeoning.\n\n * **Lamashtu** Speed 30 feet, fly Speed 70 feet; **Melee**\
+  \ |1| falchion (forceful, reach 15 feet), **Damage** 6d10+6 slashing; **Ranged**\
+  \ |1| waters of Lamashtu (range 120 feet), **Damage** 6d6+3 poison.\n\n * **Nethys**\
+  \ Speed 70 feet, air walk; **Ranged** |1| raw magic (range 120 feet; versatile cold,\
+  \ electricity, or fire), **Damage** 6d6 force.\n\n * **Norgorber** Speed 70 feet,\
+  \ air walk, ignore difficult terrain and greater difficult terrain; **Melee** |1|\
+  \ shortsword (agile, finesse, versatile S, reach 15 feet), **Damage** 6d6+6 piercing;\
+  \ **Ranged** |1| blackfinger toss (range 120 feet), **Damage** 6d6+3 poison.\n\n\
+  \ * **Pharasma** Speed 70 feet, air walk; **Melee** |1| dagger (agile, finesse,\
+  \ reach 15 feet, thrown 40 feet), **Damage** 6d6+6 slashing; **Ranged** |1| spiral\
+  \ blast (range 120 feet, **Damage**s only undead), **Damage** 6d8+3 positive.\n\n\
+  \ * **Rovagug** Speed 50 feet, burrow Speed 30 feet, immune to immobilized; **Melee**\
+  \ |1| jaws(reach 15 feet), **Damage** 6d12+6 piercing; **Melee** |1| le g (agile,\
+  \ versatile P, reach 15 feet), **Damage** 6d8+6 bludgeoning.\n\n * **Sarenrae**\
+  \ Speed 30 feet, fly Speed 70 feet; **Melee** |1| scimitar (forceful, nonlethal,\
+  \ reach 15 feet), **Damage** 6d6+6 slashing; **Ranged** |1| everflame (nonlethal,\
+  \ range 120 feet), **Damage** 6d6+3 fire.\n\n * **Shelyn** Speed 70 feet, air walk,\
+  \ ignore difficult terrain and greater difficult terrain; **Melee** |1| glaive (deadly\
+  \ d8, nonlethal, reach 20 feet), **Damage** 6d8+6 slashing; **Ranged** |1| melody\
+  \ of inner beauty, (nonlethal, range 120 feet), **Damage** 6d6+3 sonic.\n\n * **Torag**\
+  \ Speed 50 feet, burrow Speed 30 feet, immune to immobilized; shield (15 Hardness,\
+  \ can't be **Damage**d); **Melee** |1| warhammer (bull rush, reach 15 feet), **Damage**\
+  \ 6d8+6 bludgeoning.\n\n * **Urgathoa** Speed 70 feet, air walk; **Melee** |1| scythe\
+  \ (deadly d10, trip, reach 15 feet), **Damage** 6d10+6 slashing; **Ranged** |1|\
+  \ pallid plague (range 120 feet), **Damage** 6d6+3 negative.\n\n * **Zon-Kuthon**\
+  \ Speed 70 feet, air walk, ignore difficult terrain and greater difficult terrain;\
+  \ **Melee** |1| spiked chain (disarm, trip, reach 15 feet), **Damage** 6d8+6 slashing;\
+  \ **Ranged** |1| midnight pain (mental, nonlethal, range 120 feet), **Damage** 6d6+3\
+  \ mental."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 10
+name: Avatar
+req: null
+source:
+- abbr: CRB
+  page_start: 318
+  page_stop: 318
+targets: null
+traditions:
+- Divine
+traits:
+- Polymorph
+- Transmutation
+trigger: null
+type: Spell

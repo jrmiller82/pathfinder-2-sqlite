@@ -1,0 +1,27 @@
+action_abbr: null
+cast: 1 minute (somatic, verbal)
+components:
+- Somatic
+- Verbal
+descr: "The targets can breathe underwater.  \n\n**Heightened (3rd)**  The duration\
+  \ increases to 8 hours.  \n\n**Heightened (4th)**  The duration increases to until\
+  \ your next daily preparations."
+duration: 1 hour
+has_been_manually_proofread: false
+level: 2
+name: Water Breathing
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 384
+  page_stop: 384
+targets: up to 5 creatures
+traditions:
+- Arcane
+- Divine
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

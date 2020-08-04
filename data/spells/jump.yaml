@@ -1,0 +1,28 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "Your legs surge with strength, ready to leap high and far. You jump 30 feet\
+  \ in any direction without touching the ground. You must land on a space of solid\
+  \ ground within 30 feet of you, or else you fall after using your next action. \
+  \ \n\n**Heightened (3rd)**  The range becomes touch, the target changes to one touched\
+  \ creature, and the duration becomes 1 minute, allowing the target to jump as described\
+  \ whenever it takes the Leap action."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Jump
+req: null
+source:
+- abbr: CRB
+  page_start: 347
+  page_stop: 347
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Move
+- Transmutation
+trigger: null
+type: Spell

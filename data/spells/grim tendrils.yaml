@@ -1,0 +1,34 @@
+action_abbr: '2'
+area: 30-foot line
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Tendrils of darkness curl out from your fingertips and race through the air.\
+  \ You deal 2d4 negative damage and 1 persistent bleed damage to living creatures\
+  \ in the line. Each living creature in the line must attempt a Fortitude save. \
+  \ \n\n**Critical Success**  The creature is unaffected.  \n\n**Success**  The creature\
+  \ takes half the negative damage and no persistent bleed damage.  \n\n**Failure**\
+  \  The creature takes full damage.  \n\n**Critical Failure**  The creature takes\
+  \ double negative damage and double persistent bleed damage.  \n\n**Heightened (+1)**\
+  \  The negative damage increases by 2d4, and the persistent bleed damage increases\
+  \ by 1."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Grim Tendrils
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 342
+  page_stop: 342
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Necromancy
+- Negative
+trigger: null
+type: Spell

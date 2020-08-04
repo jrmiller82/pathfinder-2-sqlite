@@ -1,0 +1,38 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You afflict the target with a curse that makes its presence abrasive and off\
+  \ -putting. The target must attempt a Will save.  \n\n**Critical Success**  The\
+  \ target is unaffected.  \n\n**Success**  For 10 minutes, the target must roll twice\
+  \ and use the worse result whenever attempting a Deception, Diplomacy, Intimidation,\
+  \ or Performance check, and creatures they encounter have an initial attitude toward\
+  \ them of one step worse (for instance, unfriendly instead of indifferent).  \n\n\
+  **Failure**  As success, but the effect is permanent.  \n\n**Critical Failure**\
+  \  As failure, and creatures that the target encounters have an initial attitude\
+  \ toward them of two steps worse."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Outcast's Curse
+range: touch
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 355
+  page_stop: 355
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Attack
+- Curse
+- Enchantment
+- Mental
+- Misfortune
+trigger: null
+type: Spell

@@ -1,0 +1,27 @@
+action_abbr: R
+cast: verbal
+components:
+- Verbal
+descr: A bubble of pure air appears around the target's head, allowing it to breathe
+  normally. The effect ends as soon as the target returns to an environment where
+  it can breathe normally.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Air Bubble
+range: 60 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 316
+  page_stop: 316
+targets: the triggering creature
+traditions:
+- Arcane
+- Divine
+- Primal
+traits:
+- Air
+- Conjuration
+trigger: A creature within range enters an environment where it can't breathe.
+type: Spell

@@ -1,0 +1,27 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: You issue a diabolic edict, demanding the target perform a particular task
+  and offering rewards for its fulfillment. It gains a +1 status bonus to attack rolls
+  and skill checks related to performing the task. If it refuses to perform the task
+  you proclaimed, it instead takes a -1 status penalty to all its attack rolls and
+  skill checks.
+duration: 1 round
+has_been_manually_proofread: false
+level: 1
+name: Diabolic Edict
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 403
+  page_stop: 403
+targets: 1 willing living creature
+traditions: null
+traits:
+- Uncommon
+- Enchantment
+- Sorcerer
+trigger: null
+type: Focus

@@ -1,0 +1,31 @@
+action_abbr: '2'
+area: 60-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You create a shimmering barrier that attempts to counteract teleportation effects
+  and planar travel into or out of the area, including items that allow access to
+  extradimensional spaces (such as a bag of holding). Dimensional lock tries to counteract
+  any attempt to summon a creature into the area but doesn't stop the creature from
+  departing when the summoning ends.
+duration: null
+has_been_manually_proofread: false
+level: 7
+name: Dimensional Lock
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 329
+  page_stop: 329
+targets: null
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Uncommon
+- Abjuration
+trigger: null
+type: Spell

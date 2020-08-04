@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You create up to four floating lights, no two of which are more than 10 feet
+  apart. Each sheds light like a torch. When you Sustain the Spell, you can move any
+  number of lights up to 60 feet. Each light must remain within 120 feet of you and
+  within 10 feet of all others, or it winks out.
+duration: sustained
+has_been_manually_proofread: false
+level: 1
+name: Dancing Lights
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 327
+  page_stop: 327
+targets: null
+traditions:
+- Arcane
+- Occult
+- Primal
+traits:
+- Cantrip
+- Evocation
+- Light
+trigger: null
+type: Cantrip

@@ -1,0 +1,36 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You take command of the target, forcing it to obey your orders. If you issue\
+  \ an obviously self-destructive order, the target doesn't act until you issue a\
+  \ new order. The effect depends on its Will save.  \n\n**Critical Success**  The\
+  \ target is unaffected.  \n\n**Success**  The target is stunned 1 as it fights off\
+  \ your commands.  \n\n**Failure**  The target follows your orders but can attempt\
+  \ a Will save at the end of each of its turns. On a success, the spell ends.  \n\
+  \n**Critical Failure**  As a failure, but the target receives a new save only if\
+  \ you give it a new order that is against its nature, such as killing its allies.\
+  \  \n\n**Heightened (10th)**  The duration is unlimited."
+duration: until the next time you make your daily preparations
+has_been_manually_proofread: false
+level: 6
+name: Dominate
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 332
+  page_stop: 332
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Uncommon
+- Enchantment
+- Incapacitation
+- Mental
+trigger: null
+type: Spell

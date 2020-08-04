@@ -1,0 +1,33 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "Vicious claws grow from your fingers. They are finesse unarmed attacks that\
+  \ deal 1d4 slashing damage and 1d6 extra damage of a type determined by the dragon\
+  \ in your bloodline.  \n\n\n\n| Dragon Type | Area and Damage Type | Saving Throw\
+  \ |\n\n| :---: | :---: | :---: |\n\n| Black and copper | 60-foot line of acid |\
+  \ Reflex |\n\n| Blue and bronze | 60-foot line of electricity | Reflex |\n\n| Brass\
+  \ | 60-foot line of fire | Reflex |\n\n| Green | 30-foot cone of poison | Fortitude\
+  \ |\n\n| Gold or red | 30-foot cone of fire | Reflex |\n\n| Silver or white | 30-foot\
+  \ cone of cold | Reflex |\n\n\n\nYour scales from blood magic glow with faint energy,\
+  \ giving you resistance 5 to the same damage type.  \n\n**Heightened (5th)**  The\
+  \ extra damage increases to 2d6, and the resistance increases to 10.  \n\n**Heightened\
+  \ (9th)**  The extra damage increases to 3d6, and the resistance increases to 15."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Dragon Claws
+req: null
+source:
+- abbr: CRB
+  page_start: 403
+  page_stop: 403
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Morph
+- Sorcerer
+- Transmutation
+trigger: null
+type: Focus

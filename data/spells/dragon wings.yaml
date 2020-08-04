@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Leathery wings sprout from your back, giving you a fly Speed of 60 feet or\
+  \ your Speed, whichever is faster. When this spell's duration would end, if you're\
+  \ still flying, you float to the ground, as feather fall. You can increase the Focus\
+  \ Point cost by 1 to gain the effects of dragon claws as long as the wings last.\
+  \  \n\n**Heightened (8th)**  The duration increases to 10 minutes."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 5
+name: Dragon Wings
+req: null
+source:
+- abbr: CRB
+  page_start: 403
+  page_stop: 403
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Morph
+- Sorcerer
+- Transmutation
+trigger: null
+type: Focus

@@ -1,0 +1,33 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A ray with the power to sap a foe's strength flashes from your hand. Attempt\
+  \ a ranged spell attack against the target. If you succeed, that creature attempts\
+  \ a Fortitude save in order to determine the spell's effect. If you critically succeed\
+  \ on your attack roll, use the outcome for one degree of success worse than the\
+  \ result of its save.  \n\n**Critical Success**  The target is unaffected.  \n\n\
+  **Success**  The target becomes enfeebled 1.  \n\n**Failure**  The target becomes\
+  \ enfeebled 2.  \n\n**Critical Failure**  The target becomes enfeebled 3."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Ray of Enfeeblement
+range: 30 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 362
+  page_stop: 362
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Attack
+- Necromancy
+trigger: null
+type: Spell

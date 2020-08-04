@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You warp space to make a creature smaller. The target shrinks to become Tiny\
+  \ in size. Its equipment shrinks with it but returns to its original size if removed.\
+  \ The creature's reach changes to 0 feet. This spell has no effect on a Tiny creature.\
+  \  \n\n**Heightened (6th)**  The spell can target up to 10 creatures."
+duration: 5 minutes
+has_been_manually_proofread: false
+level: 2
+name: Shrink
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 369
+  page_stop: 369
+targets: 1 willing creature
+traditions:
+- Arcane
+- Primal
+traits:
+- Polymorph
+- Transmutation
+trigger: null
+type: Spell

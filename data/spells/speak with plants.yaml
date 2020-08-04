@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You can ask questions of and receive answers from plants, but the spell doesn't
+  make them more friendly or intelligent than normal. Most normal plants have a distinctive
+  view of the world around them, so they don't recognize details about creatures or
+  know anything about the world beyond their immediate vicinity. Cunning plant monsters
+  are likely to be terse and evasive, while less intelligent ones often make inane
+  comments.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 4
+name: Speak with Plants
+req: null
+source:
+- abbr: CRB
+  page_start: 370
+  page_stop: 370
+targets: null
+traditions:
+- Primal
+traits:
+- Divination
+- Plant
+trigger: null
+type: Spell

@@ -1,0 +1,33 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "You whisper enchanting words to deflect your foe's ire. The target must attempt\
+  \ a Will save.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**\
+  \  The target takes a -1 circumstance penalty to attack rolls and damage rolls against\
+  \ you.  \n\n**Failure**  The target can't use hostile actions against you.  \n\n\
+  **Critical Failure**  The target is stunned 1 and can't use hostile actions against\
+  \ you."
+duration: until the start of your next turn
+has_been_manually_proofread: false
+level: 1
+name: Charming Words
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 406
+  page_stop: 406
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Auditory
+- Emotion
+- Enchantment
+- Incapacitation
+- Linguistic
+- Wizard
+trigger: null
+type: Focus

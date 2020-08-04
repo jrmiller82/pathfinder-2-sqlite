@@ -1,0 +1,29 @@
+action_abbr: null
+cast: 10 minutes (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: Your touch grants a reprieve to a cursed creature. You attempt to counteract
+  one curse afflicting the target. If the curse comes from a cursed item or other
+  external source, a success indicates that the target creature can rid itself of
+  the cursed item, but it doesn't remove the curse from the item.
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Remove Curse
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 363
+  page_stop: 363
+targets: 1 creature
+traditions:
+- Divine
+- Occult
+traits:
+- Healing
+- Necromancy
+trigger: null
+type: Spell

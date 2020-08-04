@@ -1,0 +1,30 @@
+action_abbr: null
+cast: 10 minutes (somatic, verbal)
+components:
+- Somatic
+- Verbal
+descr: When you Cast this Spell, any targets-including you-can choose to immediately
+  fall asleep. The spell ends for any creatures that don't choose to fall asleep.
+  Sleepers join a shared dream, where they can communicate with one another as though
+  they were in the same room. Individual targets leave this shared dream upon awakening,
+  and if all the targets awaken, the spell ends.
+duration: 1 hour
+has_been_manually_proofread: false
+level: 8
+name: Dream Council
+range: planetary
+req: null
+source:
+- abbr: CRB
+  page_start: 333
+  page_stop: 333
+targets: up to 12 creatures you know by name and have met in person
+traditions:
+- Arcane
+- Occult
+traits:
+- Illusion
+- Mental
+- Sleep
+trigger: null
+type: Spell

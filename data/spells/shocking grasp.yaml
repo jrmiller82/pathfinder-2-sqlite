@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You shroud your hands in a crackling field of lightning. Make a melee spell\
+  \ attack roll. On a hit, the target takes 2d12 electricity damage. If the target\
+  \ is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to\
+  \ your attack roll with shocking grasp, and the target also takes 1d4 persistent\
+  \ electricity damage on a hit. On a critical hit, double the initial damage, but\
+  \ not the persistent damage.  \n\n**Heightened (+1)**  The damage increases by 1d12,\
+  \ and the persistent electricity damage increases by 1."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Shocking Grasp
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 369
+  page_stop: 369
+targets: 1 creature
+traditions:
+- Arcane
+- Primal
+traits:
+- Attack
+- Electricity
+- Evocation
+trigger: null
+type: Spell

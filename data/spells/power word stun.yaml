@@ -1,0 +1,29 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "You stun the target with an arcane word of power. Once targeted, the target\
+  \ is then temporarily immune for 10 minutes. The effect of the spell depends on\
+  \ the target's level. 13th or Lower The target is stunned for 1d6 rounds. 14th-15th\
+  \ The target is stunned for 1 round. 16th or Higher The target is stunned 1.  \n\
+  \n**Heightened (+1)**  The levels at which each outcome applies increase by 2."
+duration: varies
+has_been_manually_proofread: false
+level: 8
+name: Power Word Stun
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 359
+  page_stop: 359
+targets: 1 creature
+traditions:
+- Arcane
+traits:
+- Uncommon
+- Auditory
+- Enchantment
+- Mental
+trigger: null
+type: Spell

@@ -1,0 +1,31 @@
+action_abbr: null
+cast: 1 minute (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: "You conjure a temporary object from eldritch energy. It must be of vegetable\
+  \ matter (such as wood or paper) and 5 cubic feet or smaller. It can't rely on intricate\
+  \ artistry or complex moving parts, never fulfills a cost or the like, and can't\
+  \ be made of precious materials or materials with a rarity of uncommon or higher.\
+  \ It is obviously temporarily conjured, and thus can't be sold or passed off as\
+  \ a genuine item.  \n\n**Heightened (5th)**  The item is metal and can include common\
+  \ minerals, like feldspar or quartz."
+duration: 1 hour
+has_been_manually_proofread: false
+level: 4
+name: Creation
+range: 0 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 326
+  page_stop: 326
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Conjuration
+trigger: null
+type: Spell

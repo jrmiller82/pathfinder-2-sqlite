@@ -1,0 +1,25 @@
+action_abbr: R
+cast: verbal
+components:
+- Verbal
+descr: You use some of the spell's magic to heal yourself, regaining 1d8 Hit Points
+  per level of the spell.
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Life Siphon
+req: null
+source:
+- abbr: CRB
+  page_start: 407
+  page_stop: 407
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Healing
+- Necromancy
+- Wizard
+trigger: You expend one of your wizard spell slots to cast a wizard spell of the necromancy
+  school.
+type: Focus

@@ -1,0 +1,27 @@
+action_abbr: '1'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Your mouth transforms into a shadowy maw bristling with pointed teeth. These\
+  \ jaws are an unarmed attack with the forceful trait dealing 1d8 piercing damage.\
+  \ If you hit with your jaws and deal damage, you gain 1d6 temporary Hit Points.\
+  \  \n\n**Heightened (+2)**  The temporary Hit Points increase by 1d6."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Glutton's Jaw
+req: null
+source:
+- abbr: CRB
+  page_start: 404
+  page_stop: 404
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Morph
+- Necromancy
+- Sorcerer
+trigger: null
+type: Focus

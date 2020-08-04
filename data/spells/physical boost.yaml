@@ -1,0 +1,25 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: You temporarily improve the target's physique. The target gains a +2 status
+  bonus to the next Acrobatics check, Athletics check, Fortitude save, or Reflex save
+  it attempts.
+duration: until the end of the target's next turn
+has_been_manually_proofread: false
+level: 1
+name: Physical Boost
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 407
+  page_stop: 407
+targets: 1 living creature
+traditions: null
+traits:
+- Uncommon
+- Transmutation
+- Wizard
+trigger: null
+type: Focus

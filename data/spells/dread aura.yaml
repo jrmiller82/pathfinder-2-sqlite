@@ -1,0 +1,28 @@
+action_abbr: '2'
+area: 30-foot-radius emanation centered on you
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You emit an aura of terror. Foes in the area are frightened 1 and unable to
+  reduce the condition.
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 4
+name: Dread Aura
+req: null
+source:
+- abbr: CRB
+  page_start: 406
+  page_stop: 406
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Emotion
+- Enchantment
+- Fear
+- Mental
+- Wizard
+trigger: null
+type: Focus

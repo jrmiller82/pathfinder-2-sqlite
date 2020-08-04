@@ -1,0 +1,32 @@
+action_abbr: '3'
+cast: material, somatic, verbal
+components:
+- Material
+- Somatic
+- Verbal
+cost: 6 gp of ruby dust
+descr: "A magical flame springs up from the object, as bright as a torch. It doesn't\
+  \ need oxygen, react to water, or generate heat.  \n\n**Heightened (+1)**  The cost\
+  \ increases as follows: 16 gp for 3rd level; 30 gp for 4th, 60 gp for 5th, 120 gp\
+  \ for 6th,; 270 gp for 7th, 540 gp for 8th, 1,350 gp for 9th, and 3,350 gp for 10th."
+duration: unlimited
+has_been_manually_proofread: false
+level: 2
+name: Continual Flame
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 326
+  page_stop: 326
+targets: 1 object
+traditions:
+- Arcane
+- Divine
+- Occult
+- Primal
+traits:
+- Evocation
+- Light
+trigger: null
+type: Spell

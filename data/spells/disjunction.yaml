@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: Crackling energy disjoins the target. You attempt to counteract it (page 458).
+  If you succeed, it's deactivated for 1 week. On a critical success, it's destroyed.
+  If it's an artifact or similar item, you automatically fail.
+duration: null
+has_been_manually_proofread: false
+level: 9
+name: Disjunction
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 330
+  page_stop: 330
+targets: 1 magic item
+traditions:
+- Arcane
+- Primal
+traits:
+- Uncommon
+- Abjuration
+trigger: null
+type: Spell

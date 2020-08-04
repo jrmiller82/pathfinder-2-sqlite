@@ -1,0 +1,40 @@
+action_abbr: '2'
+area: 20-foot burst
+cast: '|2| somatic, verbal'
+components:
+- Somatic
+- Verbal
+description: A roaring blast of fire appears at a spot you designate, dealing 6d6
+  fire damage.
+duration: null
+has_been_manually_proofread: true
+heightened:
+- damagetype_name: Fire
+  description: '**Heightened (+1)** The damage increases by 2d6'
+  formula: 2d6
+  type: 1
+level: 3
+name: Fireball
+range: 500 feet
+req: null
+rolls:
+- action_abbr: '2'
+  components:
+  - Somatic
+  - Verbal
+  damagetype_name: Fire
+  dice: 6d6
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 338
+  page_stop: 338
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Evocation
+- Fire
+trigger: null
+type: Spell

@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A blazing band of fire arcs through the air. Make a spell attack roll. The\
+  \ ray deals 2d6 fire damage.  \n\n**Critical Success**  The ray deals double damage\
+  \ and 1d4 persistent fire damage.  \n\n**Success**  The ray deals full damage. \
+  \ \n\n**Heightened (+1)**  The ray's initial damage increases by 2d6, and the persistent\
+  \ fire damage on a critical success increases by 1d4."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Fire Ray
+range: 60 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 392
+  page_stop: 392
+targets: 1 creature or object
+traditions: null
+traits:
+- Uncommon
+- Attack
+- Cleric
+- Evocation
+- Fire
+trigger: null
+type: Focus

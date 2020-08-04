@@ -1,0 +1,26 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You link your mind to the target's mind and mentally impart to that target
+  an amount of information in an instant that could otherwise be communicated in 10
+  minutes.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Mindlink
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 352
+  page_stop: 352
+targets: 1 willing creature
+traditions:
+- Occult
+traits:
+- Divination
+- Mental
+trigger: null
+type: Spell

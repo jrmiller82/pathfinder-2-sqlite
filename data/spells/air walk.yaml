@@ -1,0 +1,26 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: The target can walk on air as if it were solid ground. It can ascend and descend
+  in this way at a maximum of a 45-degree angle.
+duration: 5 minutes
+has_been_manually_proofread: false
+level: 4
+name: Air Walk
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 317
+  page_stop: 317
+targets: 1 creature
+traditions:
+- Divine
+- Primal
+traits:
+- Air
+- Transmutation
+trigger: null
+type: Spell

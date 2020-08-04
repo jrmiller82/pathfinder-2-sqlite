@@ -1,0 +1,31 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You can ask questions of and receive answers from natural or worked stone.
+  While stone is not intelligent, you speak with the natural spirits of the stone,
+  which have a personality colored by the type of stone, as well as by the type of
+  structure the stone is part of, for worked stone. A stone's perspective, perception,
+  and knowledge give it a worldview different enough from a human's that it doesn't
+  consider the same details important. Stones can mostly answer questions about creatures
+  that touched them in the past and what is concealed beneath or behind them.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 6
+name: Stone Tell
+req: null
+source:
+- abbr: CRB
+  page_start: 374
+  page_stop: 374
+targets: null
+traditions:
+- Divine
+- Primal
+traits:
+- Uncommon
+- Earth
+- Evocation
+trigger: null
+type: Spell

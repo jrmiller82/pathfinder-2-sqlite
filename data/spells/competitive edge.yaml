@@ -1,0 +1,29 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "Your competitiveness drives you to prove yourself against the opposition.\
+  \ You gain a +1 status bonus to attack rolls and skill checks. If an enemy within\
+  \ 20 feet critically succeeds at an attack roll or skill check, your status bonus\
+  \ increases to +3 attack rolls or that specific skill check (whichever the foe critically\
+  \ succeeded at) for 1 round.  \n\n**Heightened (7th)**  Increase the base bonus\
+  \ to +2 and the increased bonus after an enemy critically succeeds to +4."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 4
+name: Competitive Edge
+req: null
+source:
+- abbr: CRB
+  page_start: 390
+  page_stop: 390
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Emotion
+- Enchantment
+- Mental
+trigger: null
+type: Focus

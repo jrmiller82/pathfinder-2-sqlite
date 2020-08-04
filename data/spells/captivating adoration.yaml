@@ -1,0 +1,37 @@
+action_abbr: '2'
+area: 15-foot emanation
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You become intensely entrancing, and creatures are distracted by you as long\
+  \ as they remain within the area. You can exclude any creatures you choose from\
+  \ the effects. When a creature enters the area for the first time, it must attempt\
+  \ a Will saving throw. If a creature leaves and reenters, it uses the results of\
+  \ its original save.  \n\n**Critical Success**  The creature is unaffected and temporarily\
+  \ immune for 1 hour.  \n\n**Success**  The creature is fascinated with you for its\
+  \ next action, then is temporarily immune for 1 hour.  \n\n**Failure**  The creature\
+  \ is fascinated with you.  \n\n**Critical Failure**  The creature is fascinated\
+  \ with you, and its attitude toward you improves by one step.  \n\n**Heightened\
+  \ (+1)**  Increase the size of the emanation by 15 feet."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 4
+name: Captivating Adoration
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 389
+  page_stop: 389
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Emotion
+- Enchantment
+- Mental
+- Visual
+trigger: null
+type: Focus

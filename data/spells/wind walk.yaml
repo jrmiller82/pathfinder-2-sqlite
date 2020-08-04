@@ -1,0 +1,31 @@
+action_abbr: null
+cast: 10 minutes (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: When you cast this spell, each target transforms into a vaguely cloud-like
+  form and is picked up by a wind moving in the direction of your choice. You can
+  change the wind's direction by using a single action, which has the concentrate
+  trait. The wind carries the targets at a Speed of 20 miles per hour, but if any
+  of the targets make an attack, Cast a Spell, come under attack, or otherwise enter
+  encounter mode, the spell ends for all targets just after they roll initiative,
+  and they drift gently to the ground.
+duration: 8 hours
+has_been_manually_proofread: false
+level: 8
+name: Wind Walk
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 385
+  page_stop: 385
+targets: you and up to five creatures touched
+traditions:
+- Primal
+traits:
+- Air
+- Transmutation
+trigger: null
+type: Spell

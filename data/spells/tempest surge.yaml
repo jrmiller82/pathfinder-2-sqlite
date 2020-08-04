@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You surround a foe in a swirling storm of violent winds, roiling clouds, and\
+  \ crackling lightning. The storm deals 1d12 electricity damage. The target must\
+  \ attempt a basic Reflex save. On a failure, the target also is clumsy 2 for 1 round\
+  \ and takes 1 persistent electricity damage.  \n\n**Heightened (+1)**  The initial\
+  \ damage increases by 1d12, and the persistent electricity damage on a failure increases\
+  \ by 1."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Tempest Surge
+range: 30 feet
+req: null
+saving throw: Reflex
+source:
+- abbr: CRB
+  page_start: 400
+  page_stop: 400
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Air
+- Druid
+- Electricity
+- Evocation
+trigger: null
+type: Focus

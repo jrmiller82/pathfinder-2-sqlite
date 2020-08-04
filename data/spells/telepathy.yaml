@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You can communicate telepathically with creatures within 30 feet. Once you\
+  \ establish a connection by communicating with a creature, the communication is\
+  \ two-way. You can communicate only with creatures that share a language with you.\
+  \  \n\n**Heightened (6th)**  Telepathy loses the linguistic trait. You can communicate\
+  \ telepathically with creatures using shared mental imagery even if you don't share\
+  \ a language."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 4
+name: Telepathy
+req: null
+source:
+- abbr: CRB
+  page_start: 377
+  page_stop: 377
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Divination
+- Linguistic
+- Mental
+trigger: null
+type: Spell

@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You grant yourself supernatural sight in areas of darkness. You gain darkvision.\
+  \  \n\n**Heightened (3rd)**  The spell's range is touch and it targets 1 willing\
+  \ creature.  \n\n**Heightened (5th)**  The spell's range is touch and it targets\
+  \ 1 willing creature. The duration is until the next time you make your daily preparations."
+duration: 1 hour
+has_been_manually_proofread: false
+level: 2
+name: Darkvision
+req: null
+source:
+- abbr: CRB
+  page_start: 327
+  page_stop: 327
+targets: null
+traditions:
+- Arcane
+- Divine
+- Occult
+- Primal
+traits:
+- Divination
+trigger: null
+type: Spell

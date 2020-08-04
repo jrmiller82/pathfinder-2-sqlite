@@ -1,0 +1,31 @@
+action_abbr: '2'
+area: 20-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A field of positive energy fills the area, exuding warmth and rejuvenating\
+  \ those within. Each living creature that starts its turn in the area regains 1d8\
+  \ Hit Points, and any undead creature that starts its turn in the area takes 1d8\
+  \ positive damage.  \n\n**Heightened (8th)**  The healing and damage increase to\
+  \ 1d10.  \n\n**Heightened (9th)**  The healing and damage increase to 1d12."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 6
+name: Field of Life
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 337
+  page_stop: 337
+targets: null
+traditions:
+- Divine
+- Primal
+traits:
+- Healing
+- Necromancy
+- Positive
+trigger: null
+type: Spell

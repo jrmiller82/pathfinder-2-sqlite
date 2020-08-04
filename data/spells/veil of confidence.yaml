@@ -1,0 +1,27 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: You surround yourself in a veil of confidence. You reduce your current frightened
+  condition by 1, and whenever you would become frightened during the duration, reduce
+  the amount by 1. If you critically fail a save against fear, veil of confidence
+  ends immediately, and you increase any frightened condition you gain from the critical
+  failure by 1 instead of decreasing it.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Veil of Confidence
+req: null
+source:
+- abbr: CRB
+  page_start: 398
+  page_stop: 398
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Enchantment
+- Mental
+trigger: null
+type: Focus

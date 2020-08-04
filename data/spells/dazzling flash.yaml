@@ -1,0 +1,34 @@
+action_abbr: '2'
+area: 15-foot cone
+cast: material, verbal
+components:
+- Material
+- Verbal
+descr: "You raise your religious symbol and create a blinding flash of light. Each\
+  \ creature in the area must attempt a Fortitude save.  \n\n**Critical Success**\
+  \  The creature is unaffected.  \n\n**Success**  The creature is dazzled for 1 round.\
+  \  \n\n**Failure**  The creature is blinded for 1 round and dazzled for 1 minute.\
+  \ The creature can spend an Interact action rubbing its eyes to end the blinded\
+  \ condition.  \n\n**Critical Failure**  The creature is blinded for 1 round and\
+  \ dazzled for 1 hour.  \n\n**Heightened (3rd)**  The area increases to a 30-foot\
+  \ cone."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Dazzling Flash
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 391
+  page_stop: 391
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Evocation
+- Light
+- Visual
+trigger: null
+type: Focus

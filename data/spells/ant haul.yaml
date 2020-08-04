@@ -1,0 +1,26 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You reinforce the target's musculoskeletal system to bear more weight. The
+  target can carry 3 more Bulk than normal before becoming encumbered and up to a
+  maximum of 6 more Bulk.
+duration: 8 hours
+has_been_manually_proofread: false
+level: 1
+name: Ant Haul
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 318
+  page_stop: 318
+targets: 1 creature
+traditions:
+- Arcane
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

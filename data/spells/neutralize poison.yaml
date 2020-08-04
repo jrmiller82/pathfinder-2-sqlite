@@ -1,0 +1,26 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You pour healing magic through the target in an attempt to cure one poison
+  afflicting it. Attempt a counteract check against the poison.
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Neutralize Poison
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 354
+  page_stop: 354
+targets: 1 creature
+traditions:
+- Divine
+- Primal
+traits:
+- Healing
+- Necromancy
+trigger: null
+type: Spell

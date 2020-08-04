@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "The target can soar through the air, gaining a fly Speed equal to its Speed\
+  \ or 20 feet, whichever is greater.  \n\n**Heightened (7th)**  The duration increases\
+  \ to 1 hour."
+duration: 5 minutes
+has_been_manually_proofread: false
+level: 4
+name: Fly
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 338
+  page_stop: 338
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

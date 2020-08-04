@@ -1,0 +1,32 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "Your hands become infused with positive energy, healing a living creature\
+  \ or damaging an undead creature with a touch. If you use lay on hands on a willing\
+  \ living target, you restore 6 Hit Points; if the target is one of your allies,\
+  \ they also gain a +2 status bonus to AC for 1 round. Against an undead target,\
+  \ you deal 1d6 damage and it must attempt a basic Fortitude save; if it fails, it\
+  \ also takes a -2 status penalty to AC for 1 round.  \n\n**Heightened (+1)**  The\
+  \ amount of healing increases by 6, and the damage to an undead target increases\
+  \ by 1d6."
+duration: null
+has_been_manually_proofread: true
+level: 1
+name: Lay on Hands
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 387
+  page_stop: 388
+targets: 1 willing living creature or 1 undead creature
+traditions: null
+traits:
+- Uncommon
+- Champion
+- Healing
+- Necromancy
+- Positive
+trigger: null
+type: Focus

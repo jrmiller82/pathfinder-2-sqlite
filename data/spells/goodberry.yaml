@@ -1,0 +1,30 @@
+action_abbr: null
+cast: 1 hour (somatic, verbal)
+components:
+- Somatic
+- Verbal
+descr: "You imbue the target berry with the bounty of nature, allowing it to heal\
+  \ and sustain far beyond its normal capacity. A living creature that eats the berry\
+  \ with an Interact action gains as much nourishment as from a square meal for a\
+  \ typical human and regains 1d8+5 Hit Points. If it's not consumed during the duration,\
+  \ or if you cast goodberry again, the berry withers away.  \n\n**Heightened (+1)**\
+  \  You can target an additional berry."
+duration: 1 day
+has_been_manually_proofread: false
+level: 1
+name: Goodberry
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 399
+  page_stop: 399
+targets: 1 freshly picked berry
+traditions: null
+traits:
+- Uncommon
+- Druid
+- Healing
+- Necromancy
+trigger: null
+type: Focus

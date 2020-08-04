@@ -1,0 +1,33 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You create a single magical hand, either invisible or ghostlike, that grasps\
+  \ the target object and moves it slowly up to 20 feet. Because you're levitating\
+  \ the object, you can move it in any direction. When you Sustain the Spell, you\
+  \ can move the object an additional 20 feet. If the object is in the air when the\
+  \ spell ends, the object falls.  \n\n**Heightened (3rd)**  You can target an unattended\
+  \ object with a Bulk of 1 or less.  \n\n**Heightened (5th)**  The range increases\
+  \ to 60 feet, and you can target an unattended object with a Bulk of 1 or less.\
+  \  \n\n**Heightened (7th)**  The range increases to 60 feet, and you can target\
+  \ an unattended object with a Bulk of 2 or less."
+duration: sustained
+has_been_manually_proofread: false
+level: 1
+name: Mage Hand
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 349
+  page_stop: 349
+targets: 1 unattended object of light Bulk or less
+traditions:
+- Arcane
+- Occult
+traits:
+- Cantrip
+- Evocation
+trigger: null
+type: Cantrip

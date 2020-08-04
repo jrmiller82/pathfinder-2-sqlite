@@ -1,0 +1,26 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: Choose one of the target's unarmed attacks that deal one damage die. You cause
+  that unarmed attack to shine with primal energy. The unarmed attack becomes a +1
+  striking unarmed attack, gaining a +1 item bonus to attack rolls and increasing
+  the number of damage dice to two.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Magic Fang
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 349
+  page_stop: 349
+targets: 1 willing ally
+traditions:
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

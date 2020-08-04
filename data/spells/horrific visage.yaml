@@ -1,0 +1,35 @@
+action_abbr: '2'
+area: 30-foot-radius emanation centered on you
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You briefly transform your features into the horrific visage of a hag, striking\
+  \ fear into your enemies. Foes in the area must attempt a Will save.  \n\n**Success**\
+  \  The foe is unaffected.  \n\n**Failure**  The foe is frightened 1.  \n\n**Critical\
+  \ Failure**  The foe is frightened 2.  \n\n**Heightened (5th)**  Foes in the area\
+  \ are frightened 1 on a success, frightened 2 on a failure, and frightened 3 and\
+  \ fleeing for 1 round on a critical failure. They are still unaffected on a critical\
+  \ success."
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Horrific Visage
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 405
+  page_stop: 405
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Emotion
+- Fear
+- Illusion
+- Mental
+- Sorcerer
+- Visual
+trigger: null
+type: Focus

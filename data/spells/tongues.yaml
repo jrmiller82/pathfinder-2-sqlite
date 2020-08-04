@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "The target can understand all words regardless of language and also speak\
+  \ the languages of other creatures. When in a mixed group of creatures, each time\
+  \ the target speaks, it can choose a creature and speak in a language that creature\
+  \ understands, even if the target doesn't know what language that is.  \n\n**Heightened\
+  \ (7th)**  The duration is 8 hours."
+duration: 1 hour
+has_been_manually_proofread: false
+level: 5
+name: Tongues
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 378
+  page_stop: 378
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Uncommon
+- Divination
+trigger: null
+type: Spell

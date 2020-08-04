@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You specify a trigger (described on page 305) and a message up to 25 words
+  long. When the specified trigger occurs within 30 feet of the target, an illusory
+  mouth appears on the target and speaks the message, and the magic mouth spell ends.
+duration: unlimited
+has_been_manually_proofread: false
+level: 2
+name: Magic Mouth
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 349
+  page_stop: 349
+targets: 1 creature or object
+traditions:
+- Arcane
+- Occult
+traits:
+- Auditory
+- Illusion
+- Visual
+trigger: null
+type: Spell

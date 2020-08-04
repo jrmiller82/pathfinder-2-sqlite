@@ -1,0 +1,38 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You splash a glob of acid that splatters creatures and objects alike. Make\
+  \ a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage.\
+  \ On a critical success, the target also takes 1 persistent acid damage.  \n\n**Heightened\
+  \ (3rd)**  The initial damage increases to 1d6 + your spellcasting ability modifier,\
+  \ and the persistent damage increases to 2.  \n\n**Heightened (5th)**  The initial\
+  \ damage increases to 2d6 + your spellcasting ability modifier, the persistent damage\
+  \ increases to 3, and the splash damage increases to 2.  \n\n**Heightened (7th)**\
+  \  The initial damage increases to 3d6 + your spellcasting ability modifier, the\
+  \ persistent damage increases to 4, and the splash damage increases to 3.  \n\n\
+  **Heightened (9th)**  The initial damage increases to 4d6 + your spellcasting ability\
+  \ modifier, the persistent damage increases to 5, and the splash damage increases\
+  \ to 4."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Acid Splash
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 316
+  page_stop: 316
+targets: 1 creature or object
+traditions:
+- Arcane
+- Primal
+traits:
+- Acid
+- Attack
+- Cantrip
+- Evocation
+trigger: null
+type: Cantrip

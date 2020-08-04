@@ -1,0 +1,29 @@
+action_abbr: null
+cast: 10 minutes (somatic, verbal)
+components:
+- Somatic
+- Verbal
+descr: "You shield the target against dangerous temperatures. Choose severe cold or\
+  \ heat. The target is protected from the temperature you chose (but not extreme\
+  \ cold or heat).  \n\n**Heightened (3rd)**  The target is protected from severe\
+  \ cold and heat.  \n\n**Heightened (5th)**  The target is protected from severe\
+  \ cold, severe heat, extreme cold, and extreme heat."
+duration: until the next time you make your daily preparations
+has_been_manually_proofread: false
+level: 2
+name: Endure Elements
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 335
+  page_stop: 335
+targets: 1 willing creature
+traditions:
+- Arcane
+- Divine
+- Primal
+traits:
+- Abjuration
+trigger: null
+type: Spell

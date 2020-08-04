@@ -1,0 +1,29 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "The target can walk on the surface of water and other liquids without falling\
+  \ through. It can go underwater if it wishes, but in that case it must Swim normally.\
+  \ This spell doesn't grant the ability to breathe underwater.  \n\n**Heightened\
+  \ (4th)**  The spell's range increases to 30 feet, the duration increases to 1 hour,\
+  \ and you can target up to 10 creatures."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 2
+name: Water Walk
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 384
+  page_stop: 384
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Primal
+traits:
+- Transmutation
+trigger: null
+type: Spell

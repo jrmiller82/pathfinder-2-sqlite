@@ -1,0 +1,28 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "A palm-sized raw fruit or vegetable appears in your open hand. You choose\
+  \ the specific type of food. A creature can consume the food with an Interact action\
+  \ to regain 3d10+12 Hit Points and be nourished as if it had eaten a meal. If uneaten,\
+  \ the food rots and crumbles to dust after 1 minute.  \n\n**Heightened (+1)**  The\
+  \ Hit Points restored increase by 6."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Nature's Bounty
+req: You have a free hand.
+source:
+- abbr: CRB
+  page_start: 394
+  page_stop: 394
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Conjuration
+- Plant
+- Positive
+trigger: null
+type: Focus

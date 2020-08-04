@@ -1,0 +1,34 @@
+action_abbr: '2'
+area: 1 5-foot square
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You create a sphere of flame in a square within range. The sphere must be\
+  \ supported by a solid surface, such as a stone floor. The sphere deals 3d6 fire\
+  \ damage to each creature in the square where it first appears; each creature must\
+  \ attempt a basic Reflex save. On subsequent rounds, you can Sustain this Spell,\
+  \ leaving the sphere in its square or rolling it to another square within range\
+  \ and dealing 3d6 fire damage; each creature in its square must attempt a basic\
+  \ Reflex save.Creatures that succeed at their save take no damage (instead of half).\
+  \  \n\n**Heightened (+1)**  The damage increases by 1d6."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 2
+name: Flaming Sphere
+range: 30 feet
+req: null
+saving throw: Reflex
+source:
+- abbr: CRB
+  page_start: 338
+  page_stop: 338
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Evocation
+- Fire
+trigger: null
+type: Spell

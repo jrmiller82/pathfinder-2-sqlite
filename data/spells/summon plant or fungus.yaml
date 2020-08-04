@@ -1,0 +1,29 @@
+action_abbr: '3'
+cast: material, somatic, verbal
+components:
+- Material
+- Somatic
+- Verbal
+descr: "You conjure a plant or fungus to fight for you. This works like summon animal,\
+  \ except you summon a common creature that has the plant or fungus trait and whose\
+  \ level is -1.  \n\n**Heightened (2nd)**  Level 1  \n\n**Heightened (3rd)**  Level\
+  \ 2  \n\n**Heightened (4th)**  Level 3  \n\n**Heightened (5th)**  Level 5  \n\n\
+  **Heightened (6th)**  Level 7  \n\n**Heightened (7th)**  Level 9  \n\n**Heightened\
+  \ (8th)**  Level 11  \n\n**Heightened (9th)**  Level 13  \n\n**Heightened (10th)**\
+  \  Level 15"
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Summon Plant or Fungus
+req: null
+source:
+- abbr: CRB
+  page_start: 376
+  page_stop: 376
+targets: null
+traditions:
+- Primal
+traits:
+- Conjuration
+trigger: null
+type: Spell

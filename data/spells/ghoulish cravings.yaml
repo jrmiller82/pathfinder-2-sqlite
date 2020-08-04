@@ -1,0 +1,39 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You touch the target to afflict it with ghoul fever, infesting it with hunger\
+  \ and a steadily decreasing connection to positive energy; the target must attempt\
+  \ a Fortitude save.  \n\n**Ghoul Fever**  (disease) **Level** 3  \n\n * **Stage\
+  \ 1** carrier with no ill effects (1 day)\n\n * **Stage 2** 3d8 negative energy\
+  \ damage and the creature regains half as many Hit Points from all healing (1 day)\n\
+  \n * **Stage 3** As stage 2 (1 day)\n\n * **Stage 4** 3d8 negative damage and the\
+  \ creature gains no benefit from healing (1 day)\n\n * **Stage 5** As stage 4 (1\
+  \ day)\n\n * **Stage 6** The creature dies and rises as a ghoul at the next midnight.\n\
+  \n  \n\n**Critical Success** The target is unaffected.  \n\n**Success** The target\
+  \ is afflicted with ghoul fever at stage 1.  \n\n**Failure** The target is afflicted\
+  \ with ghoul fever at stage 2.  \n\n**Critical Failure** The target is afflicted\
+  \ with ghoul fever at stage 3."
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Ghoulish Cravings
+range: touch
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 341
+  page_stop: 341
+targets: 1 creature
+traditions:
+- Divine
+- Occult
+traits:
+- Attack
+- Disease
+- Evil
+- Necromancy
+trigger: null
+type: Spell

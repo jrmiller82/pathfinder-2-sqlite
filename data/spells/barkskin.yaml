@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "The target's skin becomes covered in bark. The target gains resistance 2 to\
+  \ bludgeoning and piercing damage and weakness 3 to fire. After the target takes\
+  \ fire damage, it can Dismiss the spell as a free action triggered by taking the\
+  \ damage; doing so doesn't reduce the fire damage the target was dealt.  \n\n**Heightened\
+  \ (+2)**  The resistances increase by 2, and the weakness increases by 3."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 2
+name: Barkskin
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 320
+  page_stop: 320
+targets: 1 willing creature
+traditions:
+- Primal
+traits:
+- Abjuration
+- Plant
+trigger: null
+type: Spell

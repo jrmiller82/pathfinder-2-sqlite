@@ -1,0 +1,25 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You turn ethereal, with the effects of ethereal jaunt, but you don't need to
+  concentrate.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 9
+name: Empty Body
+req: null
+source:
+- abbr: CRB
+  page_start: 401
+  page_stop: 401
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Conjuration
+- Monk
+- Teleportation
+trigger: null
+type: Focus

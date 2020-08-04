@@ -1,0 +1,32 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You draw upon your muse to soothe your allies. Choose one of the following\
+  \ three effects:\n The spell attempts to counteract fear effects on the targets.\
+  \ \n The spell attempts to counteract effects imposing paralysis on the targets.\
+  \ \n The spell restores 7d8 Hit Points to the targets.  \n\n**Heightened (+1)**\
+  \  When used to heal, soothing ballad restores 1d8 more Hit Points."
+duration: null
+has_been_manually_proofread: true
+level: 7
+name: Soothing Ballade
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 387
+  page_stop: 387
+targets: you and up to 9 allies
+traditions: null
+traits:
+- Uncommon
+- Bard
+- Composition
+- Emotion
+- Enchantment
+- Healing
+- Mental
+trigger: null
+type: Focus

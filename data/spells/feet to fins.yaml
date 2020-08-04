@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "The target's feet transform into fins, improving mobility in the water but\
+  \ reducing it on land. The target gains a swim Speed equal to its normal land Speed,\
+  \ but its land Speed becomes 5 feet.  \n\n**Heightened (6th)**  The spell lasts\
+  \ until the next time you make your daily preparations."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 3
+name: Feet to Fins
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 337
+  page_stop: 337
+targets: 1 willing creature
+traditions:
+- Arcane
+- Primal
+traits:
+- Morph
+- Transmutation
+trigger: null
+type: Spell

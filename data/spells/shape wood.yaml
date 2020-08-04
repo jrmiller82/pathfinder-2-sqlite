@@ -1,0 +1,26 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You shape the wood into a rough shape of your choice. The shaping power is
+  too crude to produce with intricate parts, fine details, moving pieces, or the like.
+  You cannot use this spell to enhance the value of the wooden object you are shaping.
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Shape Wood
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 368
+  page_stop: 368
+targets: an unworked piece of wood up to 20 cubic feet in volume
+traditions:
+- Primal
+traits:
+- Plant
+- Transmutation
+trigger: null
+type: Spell

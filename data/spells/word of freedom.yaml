@@ -1,0 +1,30 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: 'You utter a liberating word of power that frees a creature. You suppress one
+  of the following conditions of your choice: confused, frightened, grabbed, or paralyzed.
+  The target isn''t affected by the chosen condition, and if you suppress the grabbed
+  condition, the target automatically breaks free from any grab affecting it when
+  you Cast the Spell. If you don''t remove the effect that provided the condition,
+  the condition returns after the spell ends. For example, if a spell was making the
+  target confused for 1 minute, word of freedom would let the target act normally
+  for a round, but the confused condition would return afterward.'
+duration: 1 round
+has_been_manually_proofread: false
+level: 4
+name: Word of Freedom
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 399
+  page_stop: 399
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Mental
+trigger: null
+type: Focus

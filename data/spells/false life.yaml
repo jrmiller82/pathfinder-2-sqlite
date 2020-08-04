@@ -1,0 +1,25 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You create a reservoir of vitality from necromantic energy, gaining a number\
+  \ of temporary Hit Points equal to 6 plus your spellcasting ability modifier.  \n\
+  \n**Heightened (+1)**  The temporary Hit Points increase by 3."
+duration: 8 hours
+has_been_manually_proofread: false
+level: 2
+name: False Life
+req: null
+source:
+- abbr: CRB
+  page_start: 337
+  page_stop: 337
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Necromancy
+trigger: null
+type: Spell

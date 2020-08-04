@@ -1,0 +1,33 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Bolstered by magical power, the target grows to size Large. Its equipment\
+  \ grows with it but returns to natural size if removed. The creature is clumsy 1.\
+  \ Its reach increases by 5 feet (or by 10 feet if it started out Tiny), and it gains\
+  \ a +2 status bonus to melee damage. This spell has no effect on a Large or larger\
+  \ creature.  \n\n**Heightened (4th)**  The creature instead grows to size Huge.\
+  \ The status bonus to melee damage is +4 and the creature's reach increases by 10\
+  \ feet (or 15 feet if the creature started out Tiny). The spell has no effect on\
+  \ a Huge or larger creature.  \n\n**Heightened (6th)**  As level 4, but you can\
+  \ target up to 10 creatures."
+duration: 5 minutes
+has_been_manually_proofread: false
+level: 2
+name: Enlarge
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 336
+  page_stop: 336
+targets: 1 willing creature
+traditions:
+- Arcane
+- Primal
+traits:
+- Polymorph
+- Transmutation
+trigger: null
+type: Spell

@@ -1,0 +1,27 @@
+action_abbr: null
+cast: 1 minute (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: You shroud a creature in wards that hide its alignment. The target appears
+  to be neutral to all effects that would detect its alignment.
+duration: until the next time you make your daily preparations
+has_been_manually_proofread: false
+level: 2
+name: Undetectable Alignment
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 379
+  page_stop: 379
+targets: 1 creature or object
+traditions:
+- Divine
+- Occult
+traits:
+- Uncommon
+- Abjuration
+trigger: null
+type: Spell

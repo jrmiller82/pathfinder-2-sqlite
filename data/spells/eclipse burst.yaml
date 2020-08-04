@@ -1,0 +1,40 @@
+action_abbr: '2'
+area: 60-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A globe of freezing darkness explodes in the area, dealing 8d10 cold damage\
+  \ to creatures and objects in the area, plus 8d4 additional negative damage to living\
+  \ creatures. Creatures and objects in the area must attempt a Reflex save. If the\
+  \ globe overlaps with an area of magical light or affects a creature affected by\
+  \ magical light, eclipse burst attempts to counteract the light effect.  \n\n**Critical\
+  \ Success**  The creature or object is unaffected.  \n\n**Success**  The creature\
+  \ or object takes half damage.  \n\n**Failure**  The creature or object takes full\
+  \ damage.  \n\n**Critical Failure**  The creature or object takes double damage.\
+  \ If it's a creature, it becomes blinded by the darkness for an unlimited duration.\
+  \  \n\n**Heightened (+1)**  The cold damage increases by 1d10 and the negative damage\
+  \ against the living increases by 1d4."
+duration: null
+has_been_manually_proofread: false
+level: 7
+name: Eclipse Burst
+range: 500 feet
+req: null
+saving throw: Reflex
+source:
+- abbr: CRB
+  page_start: 334
+  page_stop: 334
+targets: null
+traditions:
+- Arcane
+- Divine
+- Primal
+traits:
+- Cold
+- Darkness
+- Necromancy
+- Negative
+trigger: null
+type: Spell

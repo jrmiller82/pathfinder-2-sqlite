@@ -1,0 +1,31 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A shield of elemental energy protects a creature against one type of energy\
+  \ damage. Choose acid, cold, electricity, fire, or sonic damage. The target and\
+  \ its gear gain resistance 5 against the damage type you chose.  \n\n**Heightened\
+  \ (4th)**  The resistance increases to 10, and you can target up to two creatures.\
+  \  \n\n**Heightened (7th)**  The resistance increases to 15, and you can target\
+  \ up to five creatures."
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 2
+name: Resist Energy
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 364
+  page_stop: 364
+targets: 1 creature
+traditions:
+- Arcane
+- Divine
+- Occult
+- Primal
+traits:
+- Abjuration
+trigger: null
+type: Spell

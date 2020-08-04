@@ -1,0 +1,33 @@
+action_abbr: '3'
+cast: material, somatic, verbal
+components:
+- Material
+- Somatic
+- Verbal
+descr: "Blades of force form a churning wall. The wall is a straight line 20 feet\
+  \ high, 120 feet long, and 2 inches thick, and it provides cover. The wall deals\
+  \ 7d8 force damage to each creature that's in the wall's space when it is created,\
+  \ that attempts to pass through the wall, or that ends its turn inside the wall.\
+  \ A basic Reflex save reduces the damage. A  creature that succeeds at this save\
+  \ when the wall is created is pushed to the nearest space on the side of its choice.\
+  \ Creatures trying to move through the wall fail to do so if they critically fail\
+  \ the save, ending their movement adjacent to the wall.  \n\n**Heightened (+1)**\
+  \  The damage increases by 1d8."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 6
+name: Blade Barrier
+range: 120 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 321
+  page_stop: 321
+targets: null
+traditions:
+- Divine
+traits:
+- Evocation
+- Force
+trigger: null
+type: Spell

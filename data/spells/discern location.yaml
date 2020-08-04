@@ -1,0 +1,34 @@
+action_abbr: null
+cast: 10 minutes (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: You learn the name of the target's exact location (including the building,
+  community, and country) and plane of existence. You can target a creature only if
+  you've seen it in person, have one of its significant belongings, or have a piece
+  of its body. To target an object, you must have touched it or have a fragment of
+  it. Discern location automatically overcomes protections against detection and divination
+  of lower level than this spell, even if they would normally have a chance to block
+  it.
+duration: null
+has_been_manually_proofread: false
+level: 8
+name: Discern Location
+range: unlimited
+req: null
+source:
+- abbr: CRB
+  page_start: 330
+  page_stop: 330
+targets: 1 creature or object
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Uncommon
+- Detection
+- Divination
+trigger: null
+type: Spell

@@ -1,0 +1,28 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "With a touch, you ease a creature's fears. You can attempt to counteract a\
+  \ single fear effect that the target suffers from. This frees only the target, not\
+  \ any other creatures under the fear effect.  \n\n**Heightened (6th)**  The spell's\
+  \ range increases to 30 feet, and you can target up to 10 creatures."
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Remove Fear
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 363
+  page_stop: 363
+targets: 1 creature
+traditions:
+- Divine
+- Occult
+- Primal
+traits:
+- Enchantment
+trigger: null
+type: Spell

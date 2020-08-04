@@ -1,0 +1,26 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "You teleport to a location up to 20 feet away within your line of sight. \
+  \ \n\n**Heightened (+1)**  You teleport to a location up to 20 feet away within\
+  \ your line of sight."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Dimensional Steps
+range: 20 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 406
+  page_stop: 406
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Conjuration
+- Teleportation
+- Wizard
+trigger: null
+type: Focus

@@ -1,0 +1,27 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "You heal yourself in one of the following ways, chosen by you when you cast\
+  \ the spell. You regain 8 Hit Points. You attempt to cure one poison or disease\
+  \ afflicting you; attempt to counteract the affliction.  \n\n**Heightened (+1)**\
+  \  If you choose to regain Hit Points, the Hit Points regained increase by 8."
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Wholeness of Body
+req: null
+source:
+- abbr: CRB
+  page_start: 402
+  page_stop: 402
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Healing
+- Monk
+- Necromancy
+- Positive
+trigger: null
+type: Focus

@@ -1,0 +1,23 @@
+action_abbr: R
+cast: null
+components:
+- Verbal
+descr: You call upon insight from your training to recover accuracy. Reroll the missed
+  attack roll and keep the new result.
+duration: null
+has_been_manually_proofread: false
+level: 2
+name: Perfect Strike
+req: null
+source:
+- abbr: LOWG
+  page_start: 83
+  page_stop: 83
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Divination
+- Fortune
+trigger: You miss a Strike with an unarmed attack.
+type: Focus

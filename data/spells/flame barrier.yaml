@@ -1,0 +1,24 @@
+action_abbr: R
+cast: verbal
+components:
+- Verbal
+descr: "You swiftly deflect incoming flames. The target gains fire resistance 15 against\
+  \ the triggering effect.  \n\n**Heightened (+2)**  The resistance increases by 5."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Flame Barrier
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 392
+  page_stop: 392
+targets: the creature that would take fire damage
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Cleric
+trigger: An effect would deal fire damage to either you or an ally within range.
+type: Focus

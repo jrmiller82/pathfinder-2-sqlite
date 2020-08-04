@@ -1,0 +1,35 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You afflict the target with the curse of the roiling, unforgiving sea. The\
+  \ target must attempt a Will save.  \n\n**Critical Success**  The target is unaffected.\
+  \  \n\n**Success**  The target becomes sickened 1. Reducing its sickened condition\
+  \ to 0 ends the curse.  \n\n**Failure**  The target becomes sickened 1 and can't\
+  \ reduce its sickened condition below 1 while the curse remains. The curse can be\
+  \ lifted by remove curse or similar magic. Whenever the target is sickened and on\
+  \ the water at least a mile from shore, it is also slowed 1.  \n\n**Critical Failure**\
+  \  As failure, but the target becomes sickened 2."
+duration: null
+has_been_manually_proofread: false
+level: 5
+name: Mariner's Curse
+range: touch
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 350
+  page_stop: 350
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+- Primal
+traits:
+- Attack
+- Curse
+- Necromancy
+trigger: null
+type: Spell

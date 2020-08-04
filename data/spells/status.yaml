@@ -1,0 +1,29 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "As long as you and the target are on the same plane of existence and both\
+  \ alive, you remain aware of its present state. You know the target's direction\
+  \ from you, distance from you, and any conditions affecting it.  \n\n**Heightened\
+  \ (4th)**  The spell's range increases to 30 feet, and you can target up to 10 creatures."
+duration: 1 day
+has_been_manually_proofread: false
+level: 2
+name: Status
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 373
+  page_stop: 373
+targets: 1 willing living creature
+traditions:
+- Divine
+- Occult
+- Primal
+traits:
+- Detection
+- Divination
+trigger: null
+type: Spell

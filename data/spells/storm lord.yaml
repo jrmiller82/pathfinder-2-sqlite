@@ -1,0 +1,37 @@
+action_abbr: '2'
+area: 100-foot emanation
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: The sky above you darkens in a matter of moments, swirling with ominous clouds
+  punctuated by flashes of lighting. Each round when you Sustain the Spell, you can
+  select one of the following effects to occur in the area.  No additional effect.
+  effects of obscuring mist. Fog Heavy fog rolls in, concealing the area with the
+  Rain Torrential rain falls from the sky, dousing ordinary flames. Creatures in the
+  area take a -2 circumstance penalty to Acrobatics and Perception checks. Wind Powerful
+  winds buffet the area in all directions. Ranged attacks take a -4 circumstance penalty,
+  and all flying is against the wind and counts as moving through difficult terrain.
+  In addition, once per round you can use a single action, which has the concentrate
+  and manipulate traits, to call down a bolt of lightning, striking any target in
+  range that you can see. You deal 10d6 electricity damage to the target; it must
+  attempt a basic Reflex save. On a failure, it is also deafened for 1 round.
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 9
+name: Storm Lord
+req: You are outdoors and aboveground.
+source:
+- abbr: CRB
+  page_start: 400
+  page_stop: 400
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Air
+- Druid
+- Electricity
+- Evocation
+trigger: null
+type: Focus

@@ -1,0 +1,31 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You crush the target by causing it to collapse in on itself, dealing 75 damage.\
+  \ Each time you Sustain the Spell, you must choose a new target to be subject to\
+  \ the same effect; the same creature can never be targeted more than once with a\
+  \ single casting of this spell. You also can't affect more than one creature per\
+  \ turn with implosion. You can't target a creature that's incorporeal, gaseous,\
+  \ or liquid, or one that otherwise lacks a solid form.  \n\n**Heightened (+1)**\
+  \  The damage increases by 10."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 9
+name: Implosion
+range: 30 feet
+req: null
+saving throw: basic Fortitude
+source:
+- abbr: CRB
+  page_start: 346
+  page_stop: 346
+targets: 1 corporeal creature
+traditions:
+- Arcane
+- Primal
+traits:
+- Evocation
+trigger: null
+type: Spell

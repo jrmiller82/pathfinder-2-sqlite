@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You ward yourself with shimmering magical energy, gaining a +1 item bonus\
+  \ to AC and a maximum Dexterity modifier of +5. While wearing mage armor, you use\
+  \ your unarmored proficiency to calculate your AC.  \n\n**Heightened (4th)**  You\
+  \ gain a +1 item bonus to saving throws.  \n\n**Heightened (6th)**  The item bonus\
+  \ to AC increases to +2, and you gain a +1 item bonus to saving throws.  \n\n**Heightened\
+  \ (8th)**  The item bonus to AC increases to +2, and you gain a +2 item bonus to\
+  \ saving throws.  \n\n**Heightened (10th)**  The item bonus to AC increases to +3,\
+  \ and you gain a +3 item bonus to saving throws."
+duration: until the next time you make your daily preparations
+has_been_manually_proofread: false
+level: 1
+name: Mage Armor
+req: null
+source:
+- abbr: CRB
+  page_start: 348
+  page_stop: 348
+targets: null
+traditions:
+- Arcane
+- Occult
+traits:
+- Abjuration
+trigger: null
+type: Spell

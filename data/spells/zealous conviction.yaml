@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You bypass your targets' rational minds, instilling them with unshakable conviction
+  and zeal. The targets each gain 12 temporary Hit Points and a +2 status bonus to
+  Will saves against mental effects, as their faith overrides the signals from their
+  own bodies and minds. If you tell a target to do something, it must comply with
+  your request, though if it would normally find the task repugnant, it can attempt
+  a Will save at the end of its turn each round due to the cognitive dissonance. On
+  a success, it ends the spell's effects on itself entirely.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 6
+name: Zealous Conviction
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 385
+  page_stop: 385
+targets: up to 10 willing creatures
+traditions:
+- Divine
+- Occult
+traits:
+- Enchantment
+trigger: null
+type: Spell

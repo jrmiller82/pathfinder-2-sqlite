@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Giving the air a push, you buffet the target with a powerful gust of wind;\
+  \ it must attempt a Fortitude save.  \n\n**Critical Success**  The target is unaffected.\
+  \  \n\n**Success**  The target is pushed 5 feet away from you.  \n\n**Failure**\
+  \  The target is pushed 10 feet away from you.  \n\n**Critical Failure**  The target\
+  \ is pushed 10 feet away from you and knocked prone."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Pushing Gust
+range: 500 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 395
+  page_stop: 395
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Air
+- Cleric
+- Conjuration
+trigger: null
+type: Focus

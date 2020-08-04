@@ -1,0 +1,28 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "You evoke a magical stone and throw it, with your god's presence guiding your\
+  \ aim. Make a spell attack roll against the target. The stone deals bludgeoning\
+  \ damage equal to 1d6 plus your Strength modifier.  \n\n**Critical Success**  The\
+  \ stone deals double damage.  \n\n**Success**  The stone deals full damage.  \n\n\
+  **Heightened (+1)**  The stone's damage increases by 1d6."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Hurtling Stone
+range: 60 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 393
+  page_stop: 393
+targets: 1 creature
+traditions: null
+traits:
+- Attack
+- Cleric
+- Earth
+- Evocation
+trigger: null
+type: Focus

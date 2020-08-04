@@ -1,0 +1,33 @@
+action_abbr: '2'
+area: 60-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You evoke the energy of an Abyssal realm. The damage types of the spell (one\
+  \ energy and one physical) are based on the result of rolling on the table below.\
+  \  \n\n\n\n| 1d4 | Realm | Manifestation | Damage Type |\n\n| :---: | :---: | :---:\
+  \ | :---: |\n\n | 1 | Skies | Bolts and lightning and flying debris | Bludgeoning\
+  \ and electricity |\n\n| 2 | Depths | Acid and demonic shells | Acid and slashing\
+  \ |\n\n| 3 | Frozen | Frigid air and ice | Bludgeoning and cold |\n\n| 4 | Volcanic\
+  \ | Jagged volcanic rocks and magma | Fire and piercing |\n\n\n\nYou deal 4d6 damage\
+  \ of each of the corresponding damage types to each creature in the cone (8d6 total\
+  \ damage).  \n\n**Heightened (+1)**  The damage for each type increases by 1d6."
+duration: null
+has_been_manually_proofread: false
+level: 5
+name: Abyssal Wrath
+req: null
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 402
+  page_stop: 402
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Evocation
+- Sorcerer
+trigger: null
+type: Focus

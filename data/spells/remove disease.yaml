@@ -1,0 +1,27 @@
+action_abbr: null
+cast: 10 minutes (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: Healing magic purges disease from a creature's body. You attempt to counteract
+  one disease afflicting the target.
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Remove Disease
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 363
+  page_stop: 363
+targets: 1 creature
+traditions:
+- Divine
+- Primal
+traits:
+- Healing
+- Necromancy
+trigger: null
+type: Spell

@@ -1,0 +1,32 @@
+action_abbr: '2'
+area: 40-foot emanation
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Your scream chills the souls of enemies that hear it. Each living enemy in\
+  \ the area takes 8d10 negative damage and must attempt a Fortitude save.  \n\n**Critical\
+  \ Success**  The target is unaffected.  \n\n**Success**  The target takes full damage.\
+  \  \n\n**Failure**  The target takes full damage and is drained 1d4.  \n\n**Critical\
+  \ Failure**  The target takes double damage and is drained 4."
+duration: null
+has_been_manually_proofread: false
+level: 9
+name: Wail of the Banshee
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 382
+  page_stop: 382
+targets: any number of creatures
+traditions:
+- Divine
+- Occult
+traits:
+- Auditory
+- Death
+- Necromancy
+- Negative
+trigger: null
+type: Spell

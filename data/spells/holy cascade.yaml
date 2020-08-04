@@ -1,0 +1,34 @@
+action_abbr: '2'
+area: 20-foot burst
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+cost: one vial of holy water
+descr: "You call upon sacred energy to amplify a vial of holy water, tossing it an\
+  \ incredible distance. It explodes in an enormous burst that deals 3d6 bludgeoning\
+  \ damage to creatures in the area from the cascade of water. The water deals an\
+  \ additional 6d6 positive damage to undead and 6d6 good damage to fiends.  \n\n\
+  **Heightened (+1)**  The bludgeoning damage increases by 1d6, and the additional\
+  \ positive and good damage each increase by 2d6."
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Holy Cascade
+range: 500 feet
+req: null
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 344
+  page_stop: 344
+targets: null
+traditions:
+- Divine
+traits:
+- Evocation
+- Good
+- Positive
+- Water
+trigger: null
+type: Spell

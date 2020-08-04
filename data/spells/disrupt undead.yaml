@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You lance the target with energy. You deal 1d6 positive damage plus your spellcasting\
+  \ ability modifier. The target must attempt a basic Fortitude save. If the creature\
+  \ critically fails the save, it is also enfeebled 1 for 1 round.  \n\n**Heightened\
+  \ (+1)**  The damage increases by 1d6."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Disrupt Undead
+range: 30 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 331
+  page_stop: 331
+targets: 1 undead creature
+traditions:
+- Divine
+- Primal
+traits:
+- Cantrip
+- Necromancy
+- Positive
+trigger: null
+type: Cantrip

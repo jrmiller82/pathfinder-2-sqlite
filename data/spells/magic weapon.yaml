@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: The weapon glimmers with magic and energy. The target becomes a +1 striking
+  weapon, gaining a +1 item bonus to attack rolls and increasing the number of weapon
+  damage dice to two.
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Magic Weapon
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 349
+  page_stop: 349
+targets: 1 non-magical weapon that is unattended or wielded by you or a willing ally
+traditions:
+- Arcane
+- Divine
+- Occult
+traits:
+- Transmutation
+trigger: null
+type: Spell

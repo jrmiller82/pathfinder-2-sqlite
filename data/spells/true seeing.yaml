@@ -1,0 +1,30 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You see things within 60 feet as they actually are. The GM rolls a secret counteract
+  check against any illusion or transmutation in the area, but only for the purpose
+  of determining whether you see through it (for instance, if the check succeeds against
+  a polymorph spell, you can see the creature's true form, but you don't end the polymorph
+  spell).
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 6
+name: True Seeing
+req: null
+source:
+- abbr: CRB
+  page_start: 378
+  page_stop: 378
+targets: null
+traditions:
+- Arcane
+- Divine
+- Occult
+- Primal
+traits:
+- Divination
+- Revelation
+trigger: null
+type: Spell

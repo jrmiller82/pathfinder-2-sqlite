@@ -1,0 +1,31 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You concentrate ethereal energy and attack a creature's spirit, dealing 16d6\
+  \ force damage. Because spirit blast affects the creature's spirit, it can damage\
+  \ a target projecting its consciousness (such as via project image) or possessing\
+  \ another creature even if the target's body is elsewhere. The possessed creature\
+  \ isn't harmed by the blast. The blast doesn't harm creatures that have no spirit,\
+  \ such as constructs.  \n\n**Heightened (+1)**  The damage increases by 2d6."
+duration: null
+has_been_manually_proofread: false
+level: 6
+name: Spirit Blast
+range: 30 feet
+req: null
+saving throw: basic Fortitude
+source:
+- abbr: CRB
+  page_start: 371
+  page_stop: 371
+targets: 1 creature
+traditions:
+- Divine
+- Occult
+traits:
+- Force
+- Necromancy
+trigger: null
+type: Spell

@@ -1,0 +1,28 @@
+action_abbr: '2'
+area: 15-foot emanation
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Swirling sands of divine devastation surround you, weakening the defenses\
+  \ of all they touch. Reduce the resistances of creatures in the area (including\
+  \ yourself) by 2.  \n\n**Heightened (+2)**  Swirling sands of divine devastation\
+  \ surround you, weakening the defenses of all they touch. Reduce the resistances\
+  \ of creatures in the area (including yourself) by 2."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 4
+name: Destructive Aura
+req: null
+source:
+- abbr: CRB
+  page_start: 391
+  page_stop: 391
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Evocation
+trigger: null
+type: Focus

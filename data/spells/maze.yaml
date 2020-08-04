@@ -1,0 +1,37 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "You transport the target into an extradimensional maze of eldritch origin\
+  \ and trap it there. Once each turn, the target can spend 1 action to attempt a\
+  \ Survival check or Perception check against your spell DC to escape the maze. The\
+  \ possible outcomes are as follows.Teleportation magic doesn't help the creature\
+  \ escape unless the magic can transport across planes, such as plane shift. When\
+  \ the spell ends, either because the target escaped or the duration ran out, the\
+  \ target returns to the space it occupied when it was banished, or to the nearest\
+  \ space if the original is now filled.  \n\n**Critical Success**  The target escapes\
+  \ and the spell ends.  \n\n**Success**  The target escapes and the spell ends. \
+  \ \n\n**Failure**  The target makes no progress toward escape.  \n\n**Critical Failure**\
+  \  The target makes no progress toward escape, and if it was on the right path,\
+  \ it no longer is."
+duration: sustained
+has_been_manually_proofread: false
+level: 8
+name: Maze
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 350
+  page_stop: 350
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Conjuration
+- Extradimensional
+- Teleportation
+trigger: null
+type: Spell

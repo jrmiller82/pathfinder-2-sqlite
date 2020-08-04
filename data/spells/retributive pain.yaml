@@ -1,0 +1,27 @@
+action_abbr: R
+cast: somatic
+components:
+- Somatic
+descr: You vengefully reflect your pain upon your tormentor. The target takes mental
+  damage equal to half the amount it dealt to you when it triggered the spell.
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Retributive Pain
+range: 30 feet
+req: null
+saving throw: basic Fortitude
+source:
+- abbr: CRB
+  page_start: 396
+  page_stop: 396
+targets: the triggering creature
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Cleric
+- Mental
+- Nonlethal
+trigger: A creature in range damages you.
+type: Focus

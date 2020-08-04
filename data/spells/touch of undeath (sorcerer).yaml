@@ -1,0 +1,33 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "You instill within a creature the touch of the grave. For the duration, harm\
+  \ spells treat the creature as undead and heal spells treat the creature as living.\
+  \ In addition, harm spells gain a +2 status bonus to the Hit Points restored to\
+  \ the target. If the target wishes to avoid the spell, it can attempt a Will save\
+  \ to reduce the effects.  \n\n**Critical Success**  The target is unaffected.  \n\
+  \n**Success**  The target heals half as much from heal and takes half as much damage\
+  \ from harm for 1 round.  \n\n**Failure**  Effects as described in the text.  \n\
+  \n**Heightened (+1)**  The status bonus to the Hit Points restored increases by\
+  \ 2."
+duration: 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Touch of Undeath (Sorcerer)
+range: touch
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 405
+  page_stop: 405
+targets: 1 living creature touched
+traditions: null
+traits:
+- Uncommon
+- Necromancy
+- Negative
+- Sorcerer
+trigger: null
+type: Focus

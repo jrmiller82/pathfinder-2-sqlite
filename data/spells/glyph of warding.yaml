@@ -1,0 +1,41 @@
+action_abbr: null
+cast: 10 minutes (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: You craft a trap by binding a hostile spell into a symbol. While Casting this
+  Spell, you also Cast a Spell of a lower spell level to store in the glyph. The stored
+  spell must take 3 actions or fewer to cast, have a hostile effect, and target one
+  creature or have an area. You can set a password, a trigger, or both for the glyph.
+  Any creature that moves, opens, or touches the target container or enters the target
+  area that doesn't speak the password or that matches the trigger activates the glyph,
+  releasing the harmful spell within. Once a spell is stored in the glyph, the glyph
+  gains all the traits of that spell. If the stored spell targets one or more creatures,
+  it targets the creature that set off the glyph. If it has an area, that area is
+  centered on the creature that set off the glyph. Glyph of warding's duration ends
+  when the glyph is triggered. The glyph counts as a magical trap, using your spell
+  DC for both the Perception check to notice it and the Thievery check to disable
+  it; both checks require the creature attempting them to be trained in order to succeed.
+  You can Dismiss glyph of warding. The maximum number of glyphs of warding you can
+  have active at a time is equal to your spellcasting ability modifier.
+duration: unlimited
+has_been_manually_proofread: false
+level: 3
+name: Glyph of Warding
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 341
+  page_stop: 341
+targets: 1 container or a 10-foot-by-10-foot area
+traditions:
+- Arcane
+- Divine
+- Occult
+- Primal
+traits:
+- Abjuration
+trigger: null
+type: Spell

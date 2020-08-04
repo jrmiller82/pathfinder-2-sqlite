@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You shield a creature from the ravages of negative energy. It receives a +4
+  status bonus to saves against death and negative effects, gains negative resistance
+  10, and suppresses the effects of the doomed condition.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 5
+name: Death Ward
+range: touch
+req: null
+source:
+- abbr: CRB
+  page_start: 328
+  page_stop: 328
+targets: 1 living creature touched
+traditions:
+- Divine
+- Occult
+- Primal
+traits:
+- Abjuration
+trigger: null
+type: Spell

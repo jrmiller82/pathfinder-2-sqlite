@@ -1,0 +1,27 @@
+action_abbr: '2'
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: As you cup your hands, water begins to flow forth from them. You create 2 gallons
+  of water. If no one drinks it, it evaporates after 1 day.
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Create Water
+range: 0 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 326
+  page_stop: 326
+targets: null
+traditions:
+- Arcane
+- Divine
+- Primal
+traits:
+- Conjuration
+- Water
+trigger: null
+type: Spell

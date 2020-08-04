@@ -1,0 +1,27 @@
+action_abbr: '2'
+area: 60-foot cone
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures\
+  \ in the area.  \n\n**Heightened (+1)**  The damage increases by 2d6."
+duration: null
+has_been_manually_proofread: false
+level: 5
+name: Cone of Cold
+req: null
+saving throw: basic Reflex
+source:
+- abbr: CRB
+  page_start: 325
+  page_stop: 325
+targets: null
+traditions:
+- Arcane
+- Primal
+traits:
+- Cold
+- Evocation
+trigger: null
+type: Spell

@@ -1,0 +1,28 @@
+action_abbr: '2'
+area: 30-foot burst or
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: You call upon fey glamours to cloak an area or the targets in illusion. This
+  has the effect of either illusory scene on the area or veil on the creatures, as
+  if heightened to a level 1 level lower than fey glamour, using fey glamour's range
+  and duration.
+duration: 10 minutes
+has_been_manually_proofread: false
+level: 5
+name: Fey Glamour
+range: 30 feet
+req: null
+source:
+- abbr: CRB
+  page_start: 404
+  page_stop: 404
+targets: up to 10 creatures
+traditions: null
+traits:
+- Uncommon
+- Illusion
+- Sorcerer
+trigger: null
+type: Focus

@@ -1,0 +1,25 @@
+action_abbr: '1'
+area: 5-foot-radius emanation centered on you
+cast: somatic
+components:
+- Somatic
+descr: You emanate a shimmering aura of protective magic. You and any allies in the
+  area gain a +1 status bonus to AC. Each time you Sustain the Spell, the emanation's
+  radius increases by 5 feet, to a maximum of 30 feet.
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 1
+name: Protective Ward
+req: null
+source:
+- abbr: CRB
+  page_start: 407
+  page_stop: 407
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Wizard
+trigger: null
+type: Focus

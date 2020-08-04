@@ -1,0 +1,29 @@
+action_abbr: null
+area: 30-foot burst centered on you
+cast: 1 minute (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+cost: 1 vial of holy water
+descr: You sanctify the area, sprinkling it with holy water and warding it against
+  your foes. Choose aberrations, celestials, dragons, fiends, monitors, or undead.
+  All creatures in the area gain a +1 status bonus to AC, attack rolls, damage rolls,
+  and saving throws against the chosen creatures.
+duration: null
+has_been_manually_proofread: false
+level: 3
+name: Sanctified Ground
+req: null
+source:
+- abbr: CRB
+  page_start: 366
+  page_stop: 366
+targets: null
+traditions:
+- Divine
+traits:
+- Abjuration
+- Consecration
+trigger: null
+type: Spell

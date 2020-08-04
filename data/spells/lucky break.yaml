@@ -1,0 +1,24 @@
+action_abbr: R
+cast: verbal
+components:
+- Verbal
+descr: Reroll the saving throw and use the better result. You then become temporarily
+  immune for 10 minutes.
+duration: null
+has_been_manually_proofread: false
+level: 4
+name: Lucky Break
+req: null
+source:
+- abbr: CRB
+  page_start: 393
+  page_stop: 393
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Divination
+- Fortune
+trigger: You fail (but don't critically fail) a saving throw.
+type: Focus

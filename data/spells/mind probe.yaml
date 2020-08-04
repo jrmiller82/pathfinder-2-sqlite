@@ -1,0 +1,39 @@
+action_abbr: null
+cast: 1 minute (material, somatic, verbal)
+components:
+- Material
+- Somatic
+- Verbal
+descr: "You cast your thoughts through a creature's mind, sifting for information.\
+  \ You access the target's memories and knowledge unless it fends you off with a\
+  \ Will save.  \n\n**Success**  The target is unaffected.  \n\n**Failure**  Each\
+  \ round of the spell's duration, you can Sustain the Spell to ask a different question\
+  \ and attempt to uncover the answer. For each question, the target can attempt a\
+  \ Deception check against your spell DC; if the target succeeds, you don't learn\
+  \ the answer, and on a critical success, the target gives you a false answer that\
+  \ you believe is truthful Once you've asked the target a given question, asking\
+  \ it again, even with a separate casting of mind probe, produces the same result.\
+  \  \n\n**Critical Failure**  As failure, and the target takes a -4 circumstance\
+  \ penalty to Deception checks against your questions."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 5
+name: Mind Probe
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 351
+  page_stop: 351
+targets: 1 creature
+traditions:
+- Arcane
+- Occult
+traits:
+- Uncommon
+- Divination
+- Linguistic
+- Mental
+trigger: null
+type: Spell

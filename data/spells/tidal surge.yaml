@@ -1,0 +1,30 @@
+action_abbr: '1'
+cast: somatic
+components:
+- Somatic
+descr: "You call forth a tremendous wave to move the target either in a body of water\
+  \ or on the ground. The target must attempt a Fortitude save.  \n\n**Failure** \
+  \ You move the target 5 feet in any direction along the ground or 10 feet in any\
+  \ direction through a body of water.  \n\n**Critical Failure**  You move the target\
+  \ up to 10 feet in any direction along the ground or 20 feet in any direction through\
+  \ a body of water."
+duration: null
+has_been_manually_proofread: false
+level: 1
+name: Tidal Surge
+range: 60 feet
+req: null
+saving throw: Fortitude
+source:
+- abbr: CRB
+  page_start: 397
+  page_stop: 397
+targets: 1 creature
+traditions: null
+traits:
+- Uncommon
+- Cleric
+- Evocation
+- Water
+trigger: null
+type: Focus

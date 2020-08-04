@@ -1,0 +1,27 @@
+action_abbr: '2'
+area: 15-foot emanation
+cast: somatic, verbal
+components:
+- Somatic
+- Verbal
+descr: "A protective aura emanates out from you, safeguarding you and your allies.\
+  \ You gain resistance 3 to all damage. Your allies also gain this resistance while\
+  \ they are within the area.  \n\n**Heightened (+1)**  The resistance increases by\
+  \ 1."
+duration: sustained up to 1 minute
+has_been_manually_proofread: false
+level: 4
+name: Protector's Sphere
+req: null
+source:
+- abbr: CRB
+  page_start: 395
+  page_stop: 395
+targets: null
+traditions: null
+traits:
+- Uncommon
+- Abjuration
+- Cleric
+trigger: null
+type: Focus

@@ -1,0 +1,33 @@
+action_abbr: '1'
+cast: verbal
+components:
+- Verbal
+descr: "Your litany rails against the sin of sloth, interfering with the target's\
+  \ ability to react. The target must attempt a Will save. A particularly slothful\
+  \ creature, such as a sloth demon, uses the outcome one degree of success worse\
+  \ than the result of its saving throw. The target becomes temporarily immune to\
+  \ all of your litanies for 1 minute.  \n\n **Critical Success** The target is unaffected.\
+  \  \n\n **Success** The target can't use reactions.  \n\n **Failure** The target\
+  \ can't use reactions and is slowed 1.  \n\n **Critical Failure** The target can't\
+  \ use reactions and is slowed 2."
+duration: 1 round
+has_been_manually_proofread: false
+level: 5
+name: Litany against Sloth
+range: 30 feet
+req: null
+saving throw: Will
+source:
+- abbr: CRB
+  page_start: 388
+  page_stop: 388
+targets: 1 evil creature
+traditions: null
+traits:
+- Uncommon
+- Champion
+- Evocation
+- Good
+- Litany
+trigger: null
+type: Focus
