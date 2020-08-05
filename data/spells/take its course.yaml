@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,20 +8,21 @@ descr: "When someone has overindulged, you can hasten them past the worst of the
   \ affliction, a poison affliction, or persistent poison damage affecting the target.\
   \ If the target is affected by more than one of these, you can choose from among\
   \ those you are aware of; otherwise the GM chooses randomly. An unwilling target\
-  \ can attempt a Will save to negate take its course. The effect of this spell depends\
-  \ on whether you're attempting to end an affliction or persistent poison damage,\
-  \ and whether you are attempting to help or hinder the target's recovery. Affliction\
-  \ The target immediately attempts its next saving throw against the affliction.\
-  \ You can grant the creature your choice of a +2 status bonus or a -2 status penalty\
-  \ to its saving throw against the affliction. Persistent Poison You can cause the\
-  \ target take the persistent poison damage immediately when you Cast this Spell\
-  \ (in addition to taking it at the end of its next turn). Whether or not you do\
-  \ so, the target attempts an additional flat check against the persistent poison\
-  \ damage. You can set the DC of that flat check to 5 or 20 instead of the normal\
-  \ DC.  \n\n**Heightened (7th)**  You can attempt to progress any number of the target's\
-  \ eligible afflictions and persistent poison damage."
+  \ can attempt a Will save to negate *take its course*. \n\nThe effect of this spell\
+  \ depends on whether you're attempting to end an affliction or persistent poison\
+  \ damage, and whether you are attempting to help or hinder the target's recovery.\
+  \ \n\n* **Affliction** The target immediately attempts its next saving throw against\
+  \ the affliction. You can grant the creature your choice of a +2 status bonus or\
+  \ a -2 status penalty to its saving throw against the affliction. \n\n* **Persistent\
+  \ Poison** You can cause the target take the persistent poison damage immediately\
+  \ when you Cast this Spell (in addition to taking it at the end of its next turn).\
+  \ Whether or not you do so, the target attempts an additional flat check against\
+  \ the persistent poison damage. You can set the DC of that flat check to 5 or 20\
+  \ instead of the normal DC.  \n\n---\n**Heightened (7th)**  You can attempt to progress\
+  \ any number of the target's eligible afflictions and persistent poison damage."
+domain: Indulgence
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Take its Course
 range: touch

@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 30-foot emanation
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,10 +9,10 @@ descr: "You teleport the targets to new positions within the area. The creatures
   \ entirely within the area, and in your line of sight. Unwilling creatures can attempt\
   \ a Will save.  \n\n**Critical Success**  The target can teleport if it wants, but\
   \ it chooses the destination within range.  \n\n**Success**  The target is unaffected.\
-  \  \n\n**Failure**  You teleport the target and choose its destination.  \n\n**Heightened\
-  \ (+1)**  The number of targets increases by 1."
+  \  \n\n**Failure**  You teleport the target and choose its destination.  \n\n---\n\
+  **Heightened (+1)**  The number of targets increases by 1."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Collective Transposition
 req: null

@@ -1,11 +1,13 @@
 action_abbr: R
-cast: verbal
+cast: '|R| verbal'
 components:
 - Verbal
 descr: "You swiftly deflect incoming flames. The target gains fire resistance 15 against\
-  \ the triggering effect.  \n\n**Heightened (+2)**  The resistance increases by 5."
+  \ the triggering effect.  \n\n---\n**Heightened (+2)**  The resistance increases\
+  \ by 5."
+domain: Fire
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Flame Barrier
 range: 30 feet

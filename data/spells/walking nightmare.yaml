@@ -1,17 +1,18 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You fill the creature's mind with a terrifying vision out of its nightmares.\
-  \ The target must attempt a Will save. If the target is unconscious when you Cast\
-  \ this Spell on it, it immediately wakes up before attempting its save, and if it\
-  \ fails its save, it gains the fleeing condition for 1 round in addition to the\
-  \ effects noted above.  \n\n**Critical Success**  The target is unaffected.  \n\n\
-  **Success**  The target is frightened 1.  \n\n**Failure**  The target is frightened\
-  \ 2.  \n\n**Critical Failure**  The target is frightened 3."
+  \ The target must attempt a Will save. \n\n**Critical Success**  The target is unaffected.\
+  \  \n\n**Success**  The target is frightened 1.  \n\n**Failure**  The target is\
+  \ frightened 2.  \n\n**Critical Failure**  The target is frightened 3.\n\nIf the\
+  \ target is unconscious when you Cast this Spell on it, it immediately wakes up\
+  \ before attempting its save, and if it fails its save, it gains the fleeing condition\
+  \ for 1 round in addition to the effects noted above.  "
+domain: Nightmares
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Walking Nightmare
 range: 30 feet

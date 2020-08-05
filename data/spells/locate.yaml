@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (material, somatic, verbal)
 components:
 - Material
@@ -11,11 +11,11 @@ descr: "You learn the direction to the target (if you picked a specific object, 
   \ have an accurate mental image of the type of object. If there's lead or running\
   \ water between you and the target, this spell can't locate the object. This means\
   \ you might find a type of object farther away if the nearest one is behind lead\
-  \ or running water.  \n\n**Heightened (5th)**  You can target a specific creature\
+  \ or running water.  \n\n---\n**Heightened (5th)**  You can target a specific creature\
   \ or ancestry instead of an object, but you must have met or seen up close the creature\
   \ or ancestry you want to target."
 duration: sustained
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Locate
 range: 500 feet

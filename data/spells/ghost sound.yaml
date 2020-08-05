@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You create an auditory illusion of simple sounds that has a maximum volume\
   \ equal to four normal humans shouting. The sounds emanate from a square you designate\
   \ within range. You can't create intelligible words or other intricate sounds (such\
-  \ as music).  \n\n**Heightened (3rd)**  The range increases to 60 feet.  \n\n**Heightened\
-  \ (5th)**  The range increases to 120 feet."
+  \ as music).  \n\n---\n**Heightened (3rd)**  The range increases to 60 feet.  \n\
+  \n**Heightened (5th)**  The range increases to 120 feet."
 duration: sustained
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Ghost Sound
 range: 30 feet

@@ -1,6 +1,6 @@
 action_abbr: '3'
 area: 40-foot burst
-cast: material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
@@ -15,7 +15,7 @@ descr: Dense, twitching creepers sprout from every surface and fill any bodies o
   immobilized for 1 round or until the creature Escapes (against your spell DC), whichever
   comes first.
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Tangling Creepers
 range: 500 feet

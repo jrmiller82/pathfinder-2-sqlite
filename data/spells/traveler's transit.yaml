@@ -1,14 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You add power to your muscles, allowing you to swim or climb walls with ease.\
   \ When you cast this spell, you gain either a climb Speed or a swim Speed. The Speed\
-  \ is equal to your land Speed.  \n\n**Heightened (5th)**  You can choose to gain\
-  \ a fly Speed."
+  \ is equal to your land Speed.  \n\n---\n**Heightened (5th)**  You can choose to\
+  \ gain a fly Speed."
+domain: Travel
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Traveler's Transit
 req: null

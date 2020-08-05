@@ -1,12 +1,12 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: Positive energy shuts death's door. The target loses the dying condition, though
   it remains unconscious at 0 Hit Points.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Stabilize
 range: 30 feet

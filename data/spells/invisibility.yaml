@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: material, somatic
+cast: '|2| material, somatic'
 components:
 - Material
 - Somatic
 descr: "Cloaked in illusion, the target becomes invisible. This makes it undetected\
   \ to all creatures, though the creatures can attempt to find the target, making\
   \ it hidden to them instead (page 466). If the target uses a hostile action, the\
-  \ spell ends after that hostile action is completed.  \n\n**Heightened (4th)** \
-  \ The spell lasts 1 minute, but it doesn't end if the target uses a hostile action."
+  \ spell ends after that hostile action is completed.  \n\n---\n**Heightened (4th)**\
+  \  The spell lasts 1 minute, but it doesn't end if the target uses a hostile action."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Invisibility
 range: touch

@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,19 +8,19 @@ descr: "You disguise the targets as other creatures of the same body shape and r
   \ hide the targets' identities or let them appear to be of another ancestry, but\
   \ it's not precise enough to impersonate specific individuals. The spell doesn't\
   \ change voice, scent, or mannerisms. You choose the disguise for each target; for\
-  \ example, you could make one target appear to be a dwarf and another an elf. Casting\
-  \ veil counts as setting up a disguise for the purpose of the Impersonate action.\
-  \ It allows the target to ignore any circumstance penalties they might take for\
-  \ being disguised as dissimilar creatures, and it gives the targets a +4 status\
+  \ example, you could make one target appear to be a dwarf and another an elf. \n\
+  \nCasting *veil* counts as setting up a disguise for the purpose of the Impersonate\
+  \ action. It allows the target to ignore any circumstance penalties they might take\
+  \ for being disguised as dissimilar creatures, and it gives the targets a +4 status\
   \ bonus to Deception checks to prevent others from seeing through their disguises,\
   \ and add their level even if untrained. You can Dismiss any or all of these disguises.\
-  \  \n\n**Heightened (5th)**  The spell also disguises the targets' voices and scents;\
-  \ it gains the auditory trait.  \n\n**Heightened (7th)**  The targets can appear\
-  \ as any creature of the same size, even specific individuals. You must have seen\
-  \ an individual to reproduce their appearance. The spell also disguises the targets'\
-  \ voices and scents; it gains the auditory trait."
+  \  \n\n---\n**Heightened (5th)**  The spell also disguises the targets' voices and\
+  \ scents; it gains the auditory trait.  \n\n**Heightened (7th)**  The targets can\
+  \ appear as any creature of the same size, even specific individuals. You must have\
+  \ seen an individual to reproduce their appearance. The spell also disguises the\
+  \ targets' voices and scents; it gains the auditory trait."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Veil
 range: 30 feet

@@ -1,13 +1,13 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "The target can soar through the air, gaining a fly Speed equal to its Speed\
-  \ or 20 feet, whichever is greater.  \n\n**Heightened (7th)**  The duration increases\
-  \ to 1 hour."
+  \ or 20 feet, whichever is greater.  \n\n---\n**Heightened (7th)**  The duration\
+  \ increases to 1 hour."
 duration: 5 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Fly
 range: touch

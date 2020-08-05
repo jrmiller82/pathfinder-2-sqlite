@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 30-foot line
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -10,11 +10,11 @@ descr: "Tendrils of darkness curl out from your fingertips and race through the 
   \ \n\n**Critical Success**  The creature is unaffected.  \n\n**Success**  The creature\
   \ takes half the negative damage and no persistent bleed damage.  \n\n**Failure**\
   \  The creature takes full damage.  \n\n**Critical Failure**  The creature takes\
-  \ double negative damage and double persistent bleed damage.  \n\n**Heightened (+1)**\
-  \  The negative damage increases by 2d4, and the persistent bleed damage increases\
-  \ by 1."
+  \ double negative damage and double persistent bleed damage.  \n\n---\n**Heightened\
+  \ (+1)**  The negative damage increases by 2d4, and the persistent bleed damage\
+  \ increases by 1."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Grim Tendrils
 req: null

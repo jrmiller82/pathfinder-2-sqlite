@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,7 +9,7 @@ descr: Falsehoods pass your lips as smoothly as silk. You gain a +4 status bonus
   of your lies prompts a circumstance penalty or a DC increase, reduce that penalty
   or increase by half.
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Glibness
 req: null

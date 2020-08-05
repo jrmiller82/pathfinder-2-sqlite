@@ -1,12 +1,12 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
-descr: You turn ethereal, with the effects of ethereal jaunt, but you don't need to
-  concentrate.
+descr: You turn ethereal, with the effects of *ethereal jaunt*, but you don't need
+  to concentrate.
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 9
 name: Empty Body
 req: null

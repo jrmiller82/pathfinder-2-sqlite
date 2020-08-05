@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -13,7 +13,7 @@ descr: "The target is overcome with an all-consuming urge to dance. For the dura
   \  \n\n**Critical Failure**  The spell's duration is 1 minute, and the target must\
   \ spend all its actions each turn dancing."
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Uncontrollable Dance
 range: touch

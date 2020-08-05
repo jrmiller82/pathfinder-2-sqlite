@@ -1,11 +1,11 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: You move so fast you blur across planar boundaries. You teleport up to a distance
   equal to your Speed within your line of sight.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Abundant Step
 range: 15 feet or more

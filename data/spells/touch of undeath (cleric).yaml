@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "You attack the target's life force with undeath, dealing 1d6 negative damage.\
@@ -7,10 +7,11 @@ descr: "You attack the target's life force with undeath, dealing 1d6 negative da
   \ is unaffected.  \n\n**Success**  The target takes half damage.  \n\n**Failure**\
   \  The target takes full damage, and positive effects heal it only half as much\
   \ as normal for 1 round.  \n\n**Critical Failure**  The target takes double damage,\
-  \ and positive effects heal it only half as much as normal for 1 minute.  \n\n**Heightened\
-  \ (+1)**  The damage increases by 1d6."
+  \ and positive effects heal it only half as much as normal for 1 minute.  \n\n---\n\
+  **Heightened (+1)**  The damage increases by 1d6."
+domain: Undeath
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Touch of Undeath (Cleric)
 range: touch
@@ -24,7 +25,6 @@ targets: 1 living creature
 traditions: null
 traits:
 - Uncommon
-- Attack
 - Cleric
 - Necromancy
 - Negative

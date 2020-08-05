@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 20-foot burst
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -18,7 +18,7 @@ descr: "You designate an area in which creatures are compelled to speak only tru
   \ any deliberate and intentional lies and takes a -4 status penalty to Deception\
   \ checks."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Zone of Truth
 range: 30 feet

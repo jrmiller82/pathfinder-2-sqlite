@@ -1,14 +1,14 @@
 action_abbr: '2'
 area: 50 feet long by 50 feet wide
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: By imposing your will upon the water, you can raise or lower the level of water
   in the chosen area by 10 feet. Water creatures in the area are subjected to the
-  effects of slow.
+  effects of *slow*.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Control Water
 range: 500 feet

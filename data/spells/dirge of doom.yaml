@@ -1,6 +1,6 @@
 action_abbr: '1'
 area: 30-foot emanation
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: Foes within the area are frightened 1. They can't reduce their frightened value

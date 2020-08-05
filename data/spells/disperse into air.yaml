@@ -1,5 +1,5 @@
 action_abbr: R
-cast: somatic
+cast: '|R| somatic'
 components:
 - Somatic
 descr: After taking the triggering damage, you transform into air. Until the end of
@@ -8,8 +8,9 @@ descr: After taking the triggering damage, you transform into air. Until the end
   turn, you re-form in any space you can occupy within 15 feet of where you were when
   you dispersed. Any auras or emanations you had are restored as long as their duration
   didn't run out while you were dispersed.
+domain: Air
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Disperse into Air
 req: null

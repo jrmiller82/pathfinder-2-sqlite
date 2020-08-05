@@ -1,18 +1,18 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Your touch afflicts the target with Abyssal plague, which siphons fragments\
   \ of their soul away to empower the Abyss. The effect is based on the target's Fortitude\
-  \ save.\n\n**Abyssal Plague** (disease) **Level** 9. The target can't recover from\
-  \ the drained condition from Abyssal plague until the disease is cured.\n\n * **Stage\
-  \ 1** drained 1 (1 day)\n\n * **Stage 2** drained increases by 2 (1 day).\n\n  \n\
-  \n**Critical Success** The target is unaffected.\n\n**Success** The target takes\
-  \ 2 evil damage per spell level, and takes a -2 status penalty to saves against\
+  \ save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target\
+  \ takes 2 evil damage per spell level, and takes a -2 status penalty to saves against\
   \ Abyssal plague for 1 day or until the target contracts it, whichever comes first.\n\
   \n**Failure** The target is afflicted with Abyssal plague at stage 1.\n\n**Critical\
-  \ Failure**  The target is afflicted with Abyssal plague at stage 2."
+  \ Failure**  The target is afflicted with Abyssal plague at stage 2.\n\n**Abyssal\
+  \ Plague** (disease) **Level** 9. The target can't recover from the drained condition\
+  \ from Abyssal plague until the disease is cured.\n\n * **Stage 1** drained 1 (1\
+  \ day)\n\n * **Stage 2** drained increases by 2 (1 day)."
 duration: null
 has_been_manually_proofread: true
 level: 5
@@ -29,7 +29,6 @@ traditions:
 - Divine
 - Occult
 traits:
-- Attack
 - Chaotic
 - Disease
 - Evil

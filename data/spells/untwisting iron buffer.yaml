@@ -1,13 +1,13 @@
 action_abbr: '1'
-cast: null
+cast: '|1| verbal'
 components:
 - Verbal
 descr: "You send currents of protective ki to the surface of your body that protect\
   \ you from harm, at least until your enemies dissipate them. You gain 15 temporary\
-  \ Hit Points, which last for up to 3 rounds.  \n\n **Heightened (+1)** The temporary\
-  \ Hit Points increase by 5."
+  \ Hit Points, which last for up to 3 rounds.  \n\n---\n **Heightened (+1)** The\
+  \ temporary Hit Points increase by 5."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Untwisting Iron Buffer
 req: null

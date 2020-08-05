@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -13,10 +13,10 @@ descr: "You create a phantasmal image of the most fearsome creature imaginable t
   \ It must attempt a Fortitude save; if the target fails, it dies. On a successful\
   \ Fortitude save, the target takes 12d6 mental damage, is fleeing until the end\
   \ of its next turn, and is frightened 4. This effect has the incapacitation trait.\
-  \  \n\n**Heightened (+1)**  The damage increases by 2d6 on a failure and by 3d6\
-  \ on a critical failure."
+  \  \n\n---\n**Heightened (+1)**  The damage increases by 2d6 on a failure and by\
+  \ 3d6 on a critical failure."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Phantasmal Killer
 range: 120 feet

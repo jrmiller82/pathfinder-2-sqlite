@@ -1,15 +1,15 @@
 action_abbr: '2'
 area: 5-foot emanation
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: Blessings from beyond help your companions strike true. You and your allies
   in the area gain a +1 status bonus to attack rolls. Once per turn, starting the
-  turn after you cast bless, you can use a single action, which has the concentrate
-  trait, to increase the emanation's radius by 5 feet. Bless can counteract bane.
+  turn after you cast *bless*, you can use a single action, which has the concentrate
+  trait, to increase the emanation's radius by 5 feet. *Bless* can counteract *bane*.
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Bless
 req: null

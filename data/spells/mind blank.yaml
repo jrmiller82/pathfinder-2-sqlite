@@ -1,16 +1,16 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: Powerful wards hide a creature from divination magic. The target gains a +4
-  status bonus to saves against mental effects. Mind blank attempts to counteract
+  status bonus to saves against mental effects. *Mind blank* attempts to counteract
   any detection, revelation, and scrying effects as if its spell level were 1 higher
   than its actual level. On a success, the divination effect functions normally except
-  that it detects nothing about the target and its possessions. For instance, detect
-  magic would still detect other magic in the area, but not any magic on the target.
+  that it detects nothing about the target and its possessions. For instance, *detect
+  magic* would still detect other magic in the area, but not any magic on the target.
 duration: until the next time you make your daily preparations
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Mind Blank
 range: 30 feet

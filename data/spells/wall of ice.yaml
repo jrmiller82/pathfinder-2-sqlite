@@ -1,5 +1,5 @@
 action_abbr: '3'
-cast: material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
@@ -11,16 +11,17 @@ descr: "You sculpt a barrier of ice that blocks sight and, once shattered, freez
   \ hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the\
   \ wall can be of a smaller length, height, or radius. You must create the wall in\
   \ an unbroken open space so its edges don't pass through any creatures or objects,\
-  \ or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness\
-  \ 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision\
-  \ damage. A section also has weakness to fire 15; a section of the wall destroyed\
-  \ by fire melts, evaporating into water and steam. A section destroyed by means\
-  \ other than fire leaves behind a chilling mass of ice that is difficult terrain\
-  \ and deals 2d6 cold damage to any creature passing through it.  \n\n**Heightened\
-  \ (+2)**  The Hit Points of each section of the wall increase by 10, and the cold\
-  \ damage dealt to creatures crossing a destroyed section increases by 1d6."
+  \ or the spell is lost. \n\nEach 10-foot-by-10-foot section of the wall has AC 10,\
+  \ Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage,\
+  \ and precision damage. A section also has weakness to fire 15; a section of the\
+  \ wall destroyed by fire melts, evaporating into water and steam. A section destroyed\
+  \ by means other than fire leaves behind a chilling mass of ice that is difficult\
+  \ terrain and deals 2d6 cold damage to any creature passing through it.  \n\n---\n\
+  **Heightened (+2)**  The Hit Points of each section of the wall increase by 10,\
+  \ and the cold damage dealt to creatures crossing a destroyed section increases\
+  \ by 1d6."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Wall of Ice
 range: 120 feet

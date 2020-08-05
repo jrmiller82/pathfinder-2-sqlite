@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -16,11 +16,11 @@ descr: "The primal power of the world flows through you. You transform into an i
   \ you use the listed damage. These attacks are Strength based (for the purpose of\
   \ the enfeebled condition, for example). If your unarmed attack modifier is higher,\
   \ you can use it instead.\n\n * Athletics modifier of +36, unless your own modifier\
-  \ is higher.\n\n  \n\nYou also gain specific abilities based on the type of incarnation\
+  \ is higher.\n\n\nYou also gain specific abilities based on the type of incarnation\
   \ you choose:  \n\n * **Green Man** Speed 40 feet, climb Speed 40 feet; **Melee**\
   \ |1| vines (reach 30 feet, versatile P), **Damage** 6d8+12 bludgeoning; **Ranged**\
-  \ |1| thorns (range 100 feet), **Damage** 6d6+6 piercing; Green Caress (aura, primal,\
-  \ transmutation) 60 feet. Enemies other than plants must succeed at a Fortitude\
+  \ |1| thorns (range 100 feet), **Damage** 6d6+6 piercing; **Green Caress** (aura,\
+  \ primal, transmutation) 60 feet. Enemies other than plants must succeed at a Fortitude\
   \ save against your spell DC or become clumsy 1 for 1 round (clumsy 2 on a critical\
   \ failure).\n\n * **Kaiju** Speed 50 feet; resistance 5 to physical damage; **Melee**\
   \ |1| jaws (reach 30 feet), **Damage** 6d10+10 piercing; **Melee** |1| claws (agile,\
@@ -31,7 +31,7 @@ descr: "The primal power of the world flows through you. You transform into an i
   \ creatures, trampling each creature whose space you enter. A trampled creature\
   \ takes foot damage with a basic Reflex save against your spell DC."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 10
 name: Nature Incarnate
 req: null

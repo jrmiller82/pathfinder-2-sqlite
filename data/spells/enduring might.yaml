@@ -1,12 +1,13 @@
 action_abbr: R
-cast: somatic
+cast: '|R| somatic'
 components:
 - Somatic
 descr: "Your own might mingles with divine power to protect you. You gain resistance\
   \ equal to 8 plus your Strength modifier against all damage from the triggering\
-  \ attack or effect.  \n\n**Heightened (+1)**  The resistance increases by 2."
+  \ attack or effect.  \n\n---\n**Heightened (+1)**  The resistance increases by 2."
+domain: Might
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Enduring Might
 req: null

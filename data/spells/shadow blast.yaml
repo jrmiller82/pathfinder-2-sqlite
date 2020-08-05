@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: varies
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,9 +8,9 @@ descr: "You shape the quasi-real substance of the Shadow Plane into a blast. Cho
   \ acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic\
   \ damage, and choose a 30-foot cone, a 15-foot burst within 120 feet, or a 50-foot\
   \ line. The blast deals 5d8 damage of the type you chose to each creature in the\
-  \ area.  \n\n**Heightened (+1)**  The damage increases by 1d8."
+  \ area.  \n\n---\n**Heightened (+1)**  The damage increases by 1d8."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Shadow Blast
 range: varies

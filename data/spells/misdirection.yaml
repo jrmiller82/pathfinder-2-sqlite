@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (somatic, verbal)
 components:
 - Somatic
@@ -9,7 +9,7 @@ descr: You reshape the magic aura of one creature or object to resemble that of 
   of auras from the secondary target. A creature reading the aura can attempt to disbelieve
   the illusion. You can Dismiss the spell from up to a mile away.
 duration: until the next time you make your daily preparations
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Misdirection
 range: 30 feet

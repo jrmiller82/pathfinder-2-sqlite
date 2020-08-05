@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -11,7 +11,7 @@ descr: You forge a temporary link between the target's life essence and your own
   30 feet away from you. If either you or the target is reduced to 0 Hit Points, any
   damage from this spell is resolved and then the spell ends.
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Shield Other
 range: 30 feet

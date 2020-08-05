@@ -1,8 +1,6 @@
-action_abbr:
-- '1'
-- '3'
+action_abbr: 1+
 area: 5-foot burst or more
-cast: One Action or more (somatic, verbal)
+cast: '|1| or more (somatic, verbal)'
 components:
 - Somatic
 - Verbal
@@ -12,10 +10,10 @@ descr: "You sprinkle magical dust in the spell's area, making those within easie
   **Success**  The creature is unaffected.  \n\n**Failure**  The creature can't use\
   \ reactions and takes a -2 status penalty to Perception checks and Will saves. \
   \ \n\n**Critical Failure**  As failure, and the creature also takes a -1 status\
-  \ penalty to Perception checks and Will saves for 1 minute.  \n\n**Heightened (+3)**\
-  \  The initial radius increases by 5 feet."
+  \ penalty to Perception checks and Will saves for 1 minute.  \n\n---\n**Heightened\
+  \ (+3)**  The initial radius increases by 5 feet."
 duration: 1 round
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Faerie Dust
 range: 30 feet

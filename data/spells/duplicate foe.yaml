@@ -1,5 +1,5 @@
 action_abbr: '3'
-cast: material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
@@ -9,22 +9,22 @@ descr: "You try to create a temporary duplicate of an enemy to fight on your beh
   \ in an unoccupied space adjacent to the target and has the target's attack modifier,\
   \ AC, saving throw modifiers, Perception, and skill modifiers, but it has only 70\
   \ Hit Points and lacks the target's special abilities, including immunities, resistances,\
-  \ and weaknesses. It has no magic items except weapon potency runes. The duplicate\
+  \ and weaknesses. It has no magic items except weapon potency runes. \n\nThe duplicate\
   \ gains the minion trait, and it can only Stride and Strike. Its Strikes deal the\
   \ target's normal damage but don't apply added effects, since it doesn't have special\
   \ abilities. The spell automatically ends if the duplicate's Hit Points drop to\
-  \ 0. The duplicate attacks your enemies to the best of its abilities. You can also\
-  \ try to give it additional instructions; when you Sustain the Spell, you can also\
-  \ Command a Minion as part of your action, but the GM determines whether the duplicate\
-  \ follows your command. The duplicate is unstable, so each turn after it takes its\
-  \ actions, it loses 4d6 Hit Points. It's not a living creature, and it can never\
-  \ regain its lost Hit Points in any way.  \n\n**Critical Success**  You fail to\
-  \ create a duplicate.  \n\n**Success**  The duplicate deals half damage with its\
-  \ Strikes and the duration is reduced to a maximum of 2 rounds.  \n\n**Failure**\
-  \  The duplicate works as described.  \n\n**Heightened (+1)**  The level of creature\
-  \ you can target increases by 2. The duplicate has 10 more HP."
+  \ 0. \n\nThe duplicate attacks your enemies to the best of its abilities. You can\
+  \ also try to give it additional instructions; when you Sustain the Spell, you can\
+  \ also Command a Minion as part of your action, but the GM determines whether the\
+  \ duplicate follows your command. \n\nThe duplicate is unstable, so each turn after\
+  \ it takes its actions, it loses 4d6 Hit Points. It's not a living creature, and\
+  \ it can never regain its lost Hit Points in any way.  \n\n**Critical Success**\
+  \  You fail to create a duplicate.  \n\n**Success**  The duplicate deals half damage\
+  \ with its Strikes and the duration is reduced to a maximum of 2 rounds.  \n\n**Failure**\
+  \  The duplicate works as described.  \n\n---\n**Heightened (+1)**  The level of\
+  \ creature you can target increases by 2. The duplicate has 10 more HP."
 duration: sustained up to 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Duplicate Foe
 range: 30 feet

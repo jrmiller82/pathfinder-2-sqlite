@@ -1,8 +1,6 @@
-action_abbr:
-- '1'
-- '3'
+action_abbr: 1-3
 area: 5-foot burst or more
-cast: to  somatic, verbal
+cast: '|1| to |3| (somatic, verbal)'
 components:
 - Somatic
 - Verbal
@@ -12,10 +10,11 @@ descr: "Ground in the area turns swampy and fetid. The area is difficult terrain
   \ they swarm over creatures in the swamp and exude a noxious stench. The swamp deals\
   \ 1d6 poison damage; creatures that end their turn in the area must attempt a basic\
   \ Fortitude save. You can increase the number of actions it takes to Cast the Spell.\
-  \ For each additional action, increase the burst's radius by 5 feet.  \n\n**Heightened\
-  \ (+2)**  The damage increases by 1d6, and the initial radius increases by 5 feet."
+  \ For each additional action, increase the burst's radius by 5 feet.  \n\n---\n\
+  **Heightened (+2)**  The damage increases by 1d6, and the initial radius increases\
+  \ by 5 feet."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Swamp of Sloth
 range: 120 feet

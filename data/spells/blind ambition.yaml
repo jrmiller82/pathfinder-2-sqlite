@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -13,8 +13,9 @@ descr: "You strengthen a target's ambition, increase its resentment of allies, a
   \  As success, but the penalty is -2.  \n\n**Critical Failure**  The target is overcome\
   \ with ambition, taking whatever actions would advance its own agenda over those\
   \ of anyone else, even without attempts to convince it."
+domain: Ambition
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Blind Ambition
 range: 60 feet

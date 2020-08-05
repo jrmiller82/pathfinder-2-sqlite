@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -10,7 +10,7 @@ descr: The targets experience a day's worth of recovery in an instant. Any detri
   daily preparations again or gain any benefits of rest other than healing. The targets
   are then temporarily immune for 1 day.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Moment of Renewal
 range: touch

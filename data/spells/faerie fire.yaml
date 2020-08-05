@@ -1,15 +1,15 @@
 action_abbr: '2'
 area: 10-foot burst
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: All creatures in the area when you cast the spell are limned in colorful, heatless
   fire of a color of your choice for the duration. Visible creatures can't be concealed
-  while affected by faerie fire. If the creatures are invisible, they are concealed
-  while affected by faerie fire, rather than being undetected.
+  while affected by *faerie fire*. If the creatures are invisible, they are concealed
+  while affected by *faerie fire*, rather than being undetected.
 duration: 5 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Faerie Fire
 range: 120 feet

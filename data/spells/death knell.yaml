@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,7 +9,7 @@ descr: "You snuff the life out of a creature on the brink of death. The target m
   \ target is unaffected.  \n\n**Success**  The target's dying value increases by\
   \ 1.  \n\n**Failure**  The target dies."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Death Knell
 range: touch
@@ -24,7 +24,6 @@ traditions:
 - Divine
 - Occult
 traits:
-- Attack
 - Death
 - Necromancy
 trigger: null

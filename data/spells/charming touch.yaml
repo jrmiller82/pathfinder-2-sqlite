@@ -1,25 +1,26 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "You infuse your target with attraction, causing it to act friendlier toward\
   \ you. The target attempts a Will save. It gains a +4 circumstance bonus to this\
-  \ save if you or your allies recently threatened or were hostile to it. You can\
-  \ Dismiss the spell. If you use hostile actions against the target, the spell ends.\
-  \ After the spell ends, the target doesn't necessarily realize it was charmed unless\
-  \ its friendship with you or the actions you convinced it to take clash with its\
-  \ expectations, which could potentially allow you to convince the target to continue\
-  \ being your friend via mundane means.  \n\n**Critical Success**  The target is\
-  \ unaffected and aware you tried to charm it.  \n\n**Success**  The target is unaffected\
-  \ but thinks your spell was something harmless instead of charming touch, unless\
-  \ it identifies the spell (usually with Identify Magic).  \n\n**Failure**  The target's\
-  \ attitude becomes friendly toward you. If it was friendly, it becomes helpful.\
-  \ It can't use hostile actions against you.  \n\n**Critical Failure**  The target\
-  \ is helpful and can't use hostile actions against you.  \n\n**Heightened (4th)**\
-  \  You can target any type of creature, not just humanoids, as long as it could\
-  \ find you attractive."
+  \ save if you or your allies recently threatened or were hostile to it. \n\n**Critical\
+  \ Success**  The target is unaffected and aware you tried to charm it.  \n\n**Success**\
+  \  The target is unaffected but thinks your spell was something harmless instead\
+  \ of *charming touch*, unless it identifies the spell (See Identifying Magic). \
+  \ \n\n**Failure**  The target's attitude becomes friendly toward you. If it was\
+  \ friendly, it becomes helpful. It can't use hostile actions against you.  \n\n\
+  **Critical Failure**  The target is helpful and can't use hostile actions against\
+  \ you.  \n\nYou can Dismiss the spell. If you use hostile actions against the target,\
+  \ the spell ends. After the spell ends, the target doesn't necessarily realize it\
+  \ was charmed unless its friendship with you or the actions you convinced it to\
+  \ take clash with its expectations, which could potentially allow you to convince\
+  \ the target to continue being your friend via mundane means.  \n\n---\n**Heightened\
+  \ (4th)**  You can target any type of creature, not just humanoids, as long as it\
+  \ could find you attractive."
+domain: Passion
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Charming Touch
 range: touch

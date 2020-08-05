@@ -1,15 +1,15 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: You glimpse into the target's future. Roll a d20; when the target attempts
   a non-secret saving throw or skill check, it can use the number you rolled instead
   of rolling, and the spell ends. Alternatively, you can instead reveal the result
   of the die roll for one of the target's secret checks during the duration, and the
-  spell ends. Casting it again ends any active diviner's sight you have cast, as well
-  as any active diviner's sight on the target.
+  spell ends. Casting it again ends any *active diviner*'s sight you have cast, as
+  well as any *active diviner*'s sight on the target.
 duration: until the end of your next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Diviner's Sight
 range: 30 feet

@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -14,7 +14,7 @@ descr: "You transform the target creature into a harmless animal appropriate to 
   \ Failure**  The target is transformed into the chosen harmless animal, body and\
   \ mind, for an unlimited duration."
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Baleful Polymorph
 range: 30 feet

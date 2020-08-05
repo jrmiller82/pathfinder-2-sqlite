@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 60-foot line
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,9 +8,9 @@ descr: "A swirling torrent of water manifests along a straight line, battering t
   \ that are its path and possibly pushing them away from you. The torrent deals 8d6\
   \ bludgeoning damage. Each creature in the area must attempt a basic Fortitude save.\
   \ Creatures that fail the save are also knocked back 5 feet (10 feet on a critical\
-  \ failure).  \n\n**Heightened (+1)**  The damage increases by 2d6."
+  \ failure).  \n\n---\n**Heightened (+1)**  The damage increases by 2d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Hydraulic Torrent
 req: null

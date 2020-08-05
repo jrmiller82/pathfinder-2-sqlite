@@ -1,22 +1,20 @@
-action_abbr:
-- '1'
-- '3'
+action_abbr: 1-3
 area: 15-foot cone or more
-cast: to  somatic, verbal
+cast: '|1| to |3| (somatic, verbal)'
 components:
 - Somatic
 - Verbal
 descr: "You unleash your ki as a powerful blast of force that deals 2d6 force damage.\
-  \ If you use 2 actions to cast ki blast, increase the size of the cone to 30 feet\
-  \ and the damage to 3d6. If you use 3 actions to cast ki blast, increase the size\
+  \ If you use 2 actions to cast *ki blast*, increase the size of the cone to 30 feet\
+  \ and the damage to 3d6. If you use 3 actions to cast *ki blast*, increase the size\
   \ of the cone to 60 feet and the damage to 4d6. Each creature in the area must attempt\
   \ a Fortitude saving throw.  \n\n**Critical Success**  The creature is unaffected.\
   \  \n\n**Success**  The creature takes half damage.  \n\n**Failure**  The creature\
   \ takes full damage and is pushed 5 feet.  \n\n**Critical Failure**  The creature\
-  \ takes double damage and is pushed 10 feet.  \n\n**Heightened (+1)**  The damage\
-  \ increases by 1d6, or by 2d6 if you use 2 or 3 actions."
+  \ takes double damage and is pushed 10 feet.  \n\n---\n**Heightened (+1)**  The\
+  \ damage increases by 1d6, or by 2d6 if you use 2 or 3 actions."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Ki Blast
 req: null

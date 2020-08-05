@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 30-foot emanation
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,9 +9,16 @@ descr: "Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, o
   \ presence or absence. You can choose not to detect creatures or effects you're\
   \ aware have that alignment. Only creatures of 6th level or higher-unless divine\
   \ spellcasters, undead, or beings from the Outer Sphere-have alignment auras.  \n\
-  \n**Heightened (2nd)**  You learn each aura's location and strength."
+  \n---\n**Heightened (2nd)**  You learn each aura's location and strength.\n\n\n\
+  ## Alignment Aura\nThe strength of an alignment aura depends on the level of the\
+  \ creature, item, or spell. The auras of undead, clerics and other divine spellcasters\
+  \ with a patron deity, and creatures from the Outer Sphere are one step stronger\
+  \ than normal (faint instead of none, for example).\n\n| Creature or Item Level\
+  \ | Spell or Effect Level | Aura Strength |\n| :----------------------: | :--------------------:\
+  \ | :-------------: |\n| 0-5 | - | None |\n| 6-10 | 0-3 | Faint |\n| 11-15 | 4-7\
+  \ | Moderate |\n| 16-20 | 8-9 | Powerful | \n| 21+ | 10 | Overwhelming |"
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Detect Alignment
 req: null

@@ -1,15 +1,15 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: "You utter an arcane word of power that can make the target blinded upon hearing\
   \ it. Once targeted, the target is then temporarily immune for 10 minutes. The effect\
   \ of the spell depends on the target's level.   \n\n**11th or Lower**  The target\
   \ is blinded permanently.   \n\n**12th-13th**  The target is blinded for 1d4 minutes.\
-  \   \n\n**14th or Higher**  The target is dazzled for 1 minute.  \n\n**Heightened\
+  \   \n\n**14th or Higher**  The target is dazzled for 1 minute.  \n\n---\n**Heightened\
   \ (+1)**  The levels at which each outcome applies increase by 2."
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Power Word Blind
 range: 30 feet
@@ -26,5 +26,5 @@ traits:
 - Auditory
 - Enchantment
 - Mental
-trigger: NULl
+trigger: null
 type: Spell

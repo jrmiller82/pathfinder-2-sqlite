@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,10 +8,10 @@ descr: "The target loses its odor, preventing creatures from passively noticing 
   \ A creature attempting a Perception check to Seek with scent and other senses might\
   \ notice the lack of natural scent. If the target has any abilities that result\
   \ from its smell, such as an overpowering scent, those abilities are also negated.\
-  \  \n\n**Heightened (5th)**  The range increases to 30 feet, and you can target\
+  \  \n\n---\n**Heightened (5th)**  The range increases to 30 feet, and you can target\
   \ up to 10 creatures."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Negate Aroma
 range: touch

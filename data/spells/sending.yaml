@@ -1,5 +1,5 @@
 action_abbr: '3'
-cast: material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
@@ -7,7 +7,7 @@ components:
 descr: You send the creature a mental message of 25 words or fewer, and it can respond
   immediately with its own message of 25 words or fewer.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Sending
 range: planetary

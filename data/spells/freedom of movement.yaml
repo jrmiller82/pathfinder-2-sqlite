@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -7,9 +7,9 @@ descr: You repel effects that would hinder a creature or slow its movement. Whil
   under this spell's effect, the target ignores effects that would give them a circumstance
   penalty to Speed. When they attempt to Escape an effect that has them immobilized,
   grabbed, or restrained, they automatically succeed unless the effect is magical
-  and of a higher level than the freedom of movement spell.
+  and of a higher level than the *freedom of movement* spell.
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Freedom of Movement
 range: touch

@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 10-foot emanation
-cast: material, somatic
+cast: '|2| material, somatic'
 components:
 - Material
 - Somatic
@@ -8,13 +8,13 @@ descr: "You and all targets are invisible except to each other as long as you re
   \ within the spell's area. If a creature made invisible by this spell leaves the\
   \ spell's area, it becomes visible and remains so even if it returns to the spell's\
   \ area. If any creature made invisible by this spell uses a hostile action, the\
-  \ spell ends after the hostile action is completed. While exploring, it's easy to\
-  \ move together slowly and remain invisible. This is untenable in a battle, however.\
+  \ spell ends after the hostile action is completed. \n\nWhile exploring, it's easy\
+  \ to move together slowly and remain invisible. This is untenable in a battle, however.\
   \ Once an encounter begins, creatures remain invisible until at most the end of\
-  \ the first round, at which point the spell ends.  \n\n**Heightened (5th)**  The\
-  \ duration increases to 1 hour."
+  \ the first round, at which point the spell ends.  \n\n---\n**Heightened (5th)**\
+  \  The duration increases to 1 hour."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Invisibility Sphere
 req: null

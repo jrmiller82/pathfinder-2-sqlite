@@ -1,13 +1,13 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: The target weapon becomes translucent and ghostly, and it can affect material
   and incorporeal creatures and objects. It can be wielded by a corporeal or incorporeal
-  creature and gains the effects of the ghost touch property rune.
+  creature and gains the effects of the *ghost touch* property rune.
 duration: 5 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Ghostly Weapon
 range: touch

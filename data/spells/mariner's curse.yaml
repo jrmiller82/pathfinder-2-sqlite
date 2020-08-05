@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,11 +8,11 @@ descr: "You afflict the target with the curse of the roiling, unforgiving sea. T
   \  \n\n**Success**  The target becomes sickened 1. Reducing its sickened condition\
   \ to 0 ends the curse.  \n\n**Failure**  The target becomes sickened 1 and can't\
   \ reduce its sickened condition below 1 while the curse remains. The curse can be\
-  \ lifted by remove curse or similar magic. Whenever the target is sickened and on\
-  \ the water at least a mile from shore, it is also slowed 1.  \n\n**Critical Failure**\
-  \  As failure, but the target becomes sickened 2."
+  \ lifted by *remove curse* or similar magic. Whenever the target is sickened and\
+  \ on the water at least a mile from shore, it is also slowed 1.  \n\n**Critical\
+  \ Failure**  As failure, but the target becomes sickened 2."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Mariner's Curse
 range: touch
@@ -28,7 +28,6 @@ traditions:
 - Occult
 - Primal
 traits:
-- Attack
 - Curse
 - Necromancy
 trigger: null

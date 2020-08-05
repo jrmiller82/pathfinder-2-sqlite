@@ -1,13 +1,13 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
-descr: Crackling energy disjoins the target. You attempt to counteract it (page 458).
-  If you succeed, it's deactivated for 1 week. On a critical success, it's destroyed.
-  If it's an artifact or similar item, you automatically fail.
+descr: Crackling energy disjoins the target. You attempt to counteract it. If you
+  succeed, it's deactivated for 1 week. On a critical success, it's destroyed. If
+  it's an artifact or similar item, you automatically fail.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 9
 name: Disjunction
 range: 120 feet

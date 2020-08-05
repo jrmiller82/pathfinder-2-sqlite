@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: You call upon your blood's knowledge of the ancients to extend your magic.
@@ -7,7 +7,7 @@ descr: You call upon your blood's knowledge of the ancients to extend your magic
   and the spell isn't of the highest spell level you can cast, the spell instead lasts
   10 minutes. You can have only one active spell at a time extended in this way.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Extend Spell
 req: null

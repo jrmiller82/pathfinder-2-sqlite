@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Wings of pure light spread out from your back, granting you a fly Speed equal\
   \ to your Speed. Your wings cast bright light in a 30-foot radius. When this spell's\
-  \ duration would end, if you're still flying, you float to the ground, as feather\
-  \ fall.  \n\n**Heightened (5th)**  The duration increases to 1 minute."
+  \ duration would end, if you're still flying, you float to the ground, as *feather\
+  \ fall*.  \n\n---\n**Heightened (5th)**  The duration increases to 1 minute."
 duration: 3 rounds
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Angelic Wings
 req: null

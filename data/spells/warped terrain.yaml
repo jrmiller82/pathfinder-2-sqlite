@@ -1,8 +1,6 @@
-action_abbr:
-- '1'
-- '3'
+action_abbr: 1-3
 area: 5-foot burst or more
-cast: to  somatic, verbal
+cast: '|1| to |3| (somatic, verbal)'
 components:
 - Somatic
 - Verbal
@@ -12,11 +10,11 @@ descr: "You create illusory hazards that cover all surfaces in the area (typical
   \ a Seek action or otherwise spending actions interacting with the illusion. If\
   \ it successfully disbelieves, it ignores the effect for the remaining duration.\
   \ For each additional action you use casting the spell, the burst's radius increases\
-  \ by 5 feet, to a maximum of 10 extra feet for 3 actions.  \n\n**Heightened (4th)**\
-  \  You can make the illusion appear in the air rather than on a surface, causing\
-  \ it to function as difficult terrain for flying creatures."
+  \ by 5 feet, to a maximum of 10 extra feet for 3 actions.  \n\n---\n**Heightened\
+  \ (4th)**  You can make the illusion appear in the air rather than on a surface,\
+  \ causing it to function as difficult terrain for flying creatures."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Warped Terrain
 range: 60 feet

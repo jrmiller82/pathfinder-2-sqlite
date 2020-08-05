@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -12,7 +12,7 @@ descr: "You create an immobile sphere of force to either trap or protect the tar
   \  The sphere functions normally but has only 10 Hit Points instead of 40.  \n\n\
   **Failure**  The sphere has its normal effect."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Resilient Sphere
 range: 30 feet

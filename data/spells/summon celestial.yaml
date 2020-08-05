@@ -1,19 +1,19 @@
 action_abbr: '3'
-cast: material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
 - Verbal
-descr: "You conjure a celestial to fight on your behalf. This works like summon animal,\
+descr: "You conjure a celestial to fight on your behalf. This works like *summon animal*,\
   \ except you summon a common creature that has the celestial trait and whose level\
   \ is 5 or lower. You can't summon a creature unless its alignment is one of your\
   \ deity's preferred alignments (or, if you don't have a deity, is within one step\
   \ of your alignment). At the GM's discretion, some deities might restrict specific\
-  \ types of celestials, even if their alignments match.  \n\n**Heightened (6th)**\
+  \ types of celestials, even if their alignments match.  \n\n---\n**Heightened (6th)**\
   \  Level 7  \n\n**Heightened (7th)**  Level 9  \n\n**Heightened (8th)**  Level 11\
   \  \n\n**Heightened (9th)**  Level 13  \n\n**Heightened (10th)**  Level 15"
 duration: sustained up to 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Summon Celestial
 req: null

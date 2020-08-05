@@ -1,13 +1,14 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: The next damaging or healing spell the target casts before the start of your
   next turn deals damage or restores Hit Points as if the spell were heightened 1
   level higher than its actual level. The spell otherwise functions at its actual
-  level. Once the target casts the spell, mystic beacon ends.
+  level. Once the target casts the spell, *mystic beacon* ends.
+domain: Magic
 duration: until the start of your next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Mystic Beacon
 range: 30 feet

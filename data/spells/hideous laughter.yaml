@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -10,7 +10,7 @@ descr: "The target is overtaken with uncontrollable laughter. It must attempt a 
   \ target falls prone and can't use actions or reactions for 1 round. It then suffers\
   \ the failure effects."
 duration: sustained
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Hideous Laughter
 range: 30 feet

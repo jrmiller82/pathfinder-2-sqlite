@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "A surge of energy frees a paralyzed creature. You can attempt to counteract\
   \ a single effect imposing the paralyzed condition on the target. This does not\
   \ cure someone who is paralyzed from some natural state or effect, such as paralysis\
-  \ caused by non-magical wounds or toxins.  \n\n**Heightened (6th)**  The spell's\
+  \ caused by non-magical wounds or toxins.  \n\n---\n**Heightened (6th)**  The spell's\
   \ range increases to 30 feet, and you can target up to 10 creatures."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Remove Paralysis
 range: touch

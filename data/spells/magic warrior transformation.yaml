@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: null
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -7,14 +7,14 @@ descr: You transform into the animal from your mask. You gain the effects of *an
   form*, heightened to *magic warrior transformation*'s level, and you can transform
   into only the type of animal your mask represents.
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Magic Warrior Transformation
 req: null
 source:
 - abbr: LOWG
-  page_start: 96
-  page_stop: 96
+  page_start: 95
+  page_stop: 95
 targets: null
 traditions: null
 traits:

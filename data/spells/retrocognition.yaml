@@ -1,11 +1,11 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (material, somatic, verbal)
 components:
 - Material
 - Somatic
 - Verbal
 descr: "Opening your mind to occult echoes, you gain impressions from past events\
-  \ that occurred in your current location. Retrocognition reveals psychic impressions\
+  \ that occurred in your current location. *Retrocognition* reveals psychic impressions\
   \ from events that occurred over the course of the last day throughout the first\
   \ minute of the duration, followed by impressions from the next day back the next\
   \ minute, and so on. These echoes don't play out like a vision but instead reveal\
@@ -13,16 +13,16 @@ descr: "Opening your mind to occult echoes, you gain impressions from past event
   \ the past. If you witness a traumatic or turbulent event through an impression,\
   \ the spell ends unless you succeed at a Will save with a DC of at least 30 and\
   \ possibly as much as 50, depending on the severity of the event. The GM determines\
-  \ whether an event is traumatic and chooses the DC.  \n\n**Heightened (8th)**  You\
-  \ gain impressions of events that occurred over the previous year for each minute\
-  \ you concentrate, instead of the previous day, though the details diminish, making\
-  \ it harder to distinguish impressions from all but the most major events.  \n\n\
-  **Heightened (9th)**  You gain impressions of events that occurred over the previous\
-  \ century for each minute you concentrate, instead of the previous day, though the\
-  \ details diminish, making it almost impossible to distinguish impressions from\
-  \ all but the most major events."
+  \ whether an event is traumatic and chooses the DC.  \n\n---\n**Heightened (8th)**\
+  \  You gain impressions of events that occurred over the previous year for each\
+  \ minute you concentrate, instead of the previous day, though the details diminish,\
+  \ making it harder to distinguish impressions from all but the most major events.\
+  \  \n\n**Heightened (9th)**  You gain impressions of events that occurred over the\
+  \ previous century for each minute you concentrate, instead of the previous day,\
+  \ though the details diminish, making it almost impossible to distinguish impressions\
+  \ from all but the most major events."
 duration: sustained
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Retrocognition
 req: null

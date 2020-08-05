@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 area: 50-foot burst
 cast: 10 minutes (material, somatic, verbal)
 components:
@@ -7,12 +7,12 @@ components:
 - Verbal
 descr: "You create an illusion that causes natural terrain to look, sound, feel, and\
   \ smell like a different kind of terrain. This doesn't disguise any structures or\
-  \ creatures in the area. Any creature that touches the illusion or uses the Seek\
-  \ action to examine it can attempt to disbelieve your illusion.  \n\n**Heightened\
-  \ (5th)**  Your image can also disguise structures or create illusory structures\
-  \ (but still doesn't disguise creatures)."
+  \ creatures in the area. \n\nAny creature that touches the illusion or uses the\
+  \ Seek action to examine it can attempt to disbelieve your illusion.  \n\n---\n\
+  **Heightened (5th)**  Your image can also disguise structures or create illusory\
+  \ structures (but still doesn't disguise creatures)."
 duration: until the next time you make your daily preparations
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Hallucinatory Terrain
 range: 500 feet

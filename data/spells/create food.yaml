@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 1h
 cast: 1 hour (somatic, verbal)
 components:
 - Somatic
@@ -8,11 +8,11 @@ descr: "You create enough food to feed six Medium creatures for a day. This food
   \ the food, it decays and becomes inedible. Most Small creatures eat one-quarter\
   \ as much as a Medium creature (one-sixteenth as much for most Tiny creatures),\
   \ and most Large creatures eat 10 times as much (100 times as much for Huge creatures\
-  \ and so on).  \n\n**Heightened (4th)**  You can feed 12 Medium creatures.  \n\n\
-  **Heightened (6th)**  You can feed 50 Medium creatures.  \n\n**Heightened (8th)**\
-  \  You can feed 200 Medium creatures."
+  \ and so on).  \n\n---\n**Heightened (4th)**  You can feed 12 Medium creatures.\
+  \  \n\n**Heightened (6th)**  You can feed 50 Medium creatures.  \n\n**Heightened\
+  \ (8th)**  You can feed 200 Medium creatures."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Create Food
 range: 30 feet

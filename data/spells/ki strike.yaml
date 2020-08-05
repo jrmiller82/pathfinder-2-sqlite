@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: "You focus your ki into magical attacks. Make an unarmed Strike or Flurry of\
@@ -7,9 +7,9 @@ descr: "You focus your ki into magical attacks. Make an unarmed Strike or Flurry
   \ gain a +1 status bonus to your attack rolls with the Strikes, and the Strikes\
   \ deal 1d6 extra damage. This damage can be any of the following types of your choice,\
   \ chosen each time you Strike: force, lawful (only if you're lawful), negative,\
-  \ or positive.  \n\n**Heightened (+4)**  The extra damage increases by 1d6."
+  \ or positive.  \n\n---\n**Heightened (+4)**  The extra damage increases by 1d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Ki Strike
 req: null

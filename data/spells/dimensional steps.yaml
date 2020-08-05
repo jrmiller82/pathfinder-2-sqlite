@@ -1,12 +1,12 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "You teleport to a location up to 20 feet away within your line of sight. \
-  \ \n\n**Heightened (+1)**  You teleport to a location up to 20 feet away within\
+  \ \n\n---\n**Heightened (+1)**  You teleport to a location up to 20 feet away within\
   \ your line of sight."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Dimensional Steps
 range: 20 feet

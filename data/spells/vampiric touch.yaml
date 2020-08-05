@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Your touch leeches the lifeblood out of a target to empower yourself. You\
   \ deal 6d6 negative damage to the target. You gain temporary Hit Points equal to\
   \ half the negative damage the target takes (after applying resistances and the\
-  \ like). You lose any remaining temporary Hit Points after 1 minute.  \n\n**Heightened\
-  \ (+1)**  The damage increases by 2d6."
+  \ like). You lose any remaining temporary Hit Points after 1 minute.  \n\n---\n\
+  **Heightened (+1)**  The damage increases by 2d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Vampiric Touch
 range: touch

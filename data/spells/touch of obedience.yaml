@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "Your imperious touch erodes the target's willpower, making it easier to control.\
@@ -7,8 +7,9 @@ descr: "Your imperious touch erodes the target's willpower, making it easier to 
   \  \n\n**Success**  The target is stupefied 1 until the end of your current turn.\
   \  \n\n**Failure**  The target is stupefied 1 until the end of your next turn. \
   \ \n\n**Critical Failure**  The target is stupefied 1 for 1 minute."
+domain: Tyranny
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Touch of Obedience
 range: touch

@@ -1,18 +1,18 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You fire a green ray at your target. Make a spell attack. You deal 12d10 damage,\
   \ and the target must attempt a basic Fortitude save. On a critical hit, treat the\
   \ save result as one degree worse. A creature reduced to 0 HP is reduced to fine\
-  \ powder; its gear remains. An object you hit is destroyed (no save), regardless\
+  \ powder; its gear remains. \n\nAn object you hit is destroyed (no save), regardless\
   \ of Hardness, unless it's an artifact or similarly hard to destroy. A single casting\
   \ can destroy no more than a 10-foot cube of matter. This automatically destroys\
-  \ any force construct, such as a wall of force.  \n\n**Heightened (+1)**  The damage\
-  \ increases by 2d10."
+  \ any force construct, such as a wall of force.  \n\n---\n**Heightened (+1)**  The\
+  \ damage increases by 2d10."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Disintegrate
 range: 120 feet
@@ -26,6 +26,7 @@ targets: 1 creature or unattended object
 traditions:
 - Arcane
 traits:
+- Attack
 - Evocation
 trigger: null
 type: Spell

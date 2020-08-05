@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: You ask for divine guidance, granting the target a +1 status bonus to one attack
@@ -8,7 +8,7 @@ descr: You ask for divine guidance, granting the target a +1 status bonus to one
   If the target uses the bonus, the spell ends. Either way, the target is then temporarily
   immune for 1 hour.
 duration: until the start of your next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Guidance
 range: 30 feet

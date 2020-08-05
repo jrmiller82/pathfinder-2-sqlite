@@ -1,13 +1,13 @@
 action_abbr: R
-cast: verbal
+cast: '|R| verbal'
 components:
 - Verbal
 descr: Your blessing revives a creature at the moment of its death. You prevent the
   target from dying and restore Hit Points to the target equal to 4d8 plus your spellcasting
-  ability modifier. You can't use breath of life if the triggering effect was disintegrate
+  ability modifier. You can't use *breath of life* if the triggering effect was *disintegrate*
   or a death effect.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Breath of Life
 range: 60 feet

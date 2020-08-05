@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 5-foot burst
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -12,13 +12,13 @@ descr: "Each creature in the area becomes drowsy and might fall asleep. A creatu
   \ to Perception checks for 1 round.  \n\n**Failure**  The creature falls unconscious.\
   \ If it's still unconscious after 1 minute, it wakes up automatically.  \n\n**Critical\
   \ Failure**  The creature falls unconscious. If it's still unconscious after 1 hour,\
-  \ it wakes up automatically.  \n\n**Heightened (4th)**  The creatures fall unconscious\
-  \ for 1 round on a failure or 1 minute on a critical failure. They fall prone and\
-  \ release what they're holding, and they can't attempt Perception checks to wake\
-  \ up. When the duration ends, the creature is sleeping normally instead of automatically\
-  \ waking up."
+  \ it wakes up automatically.  \n\n---\n**Heightened (4th)**  The creatures fall\
+  \ unconscious for 1 round on a failure or 1 minute on a critical failure. They fall\
+  \ prone and release what they're holding, and they can't attempt Perception checks\
+  \ to wake up. When the duration ends, the creature is sleeping normally instead\
+  \ of automatically waking up."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Sleep
 range: 30 feet

@@ -1,17 +1,18 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Huge amounts of food and drink fill the target. It receives a full meal's\
-  \ worth of nourishment and must attempt a Fortitude save. A target sickened by this\
-  \ spell takes a -10-foot status penalty to its Speed until it's no longer sickened.\
-  \  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**  The target\
-  \ is sickened 1, but if it spends an action to end the condition, it succeeds automatically.\
-  \  \n\n**Failure**  The target is sickened 1.  \n\n**Critical Failure**  The target\
-  \ is sickened 2."
+  \ worth of nourishment and must attempt a Fortitude save. \n\n**Critical Success**\
+  \  The target is unaffected.  \n\n**Success**  The target is sickened 1, but if\
+  \ it spends an action to end the condition, it succeeds automatically.  \n\n**Failure**\
+  \  The target is sickened 1.  \n\n**Critical Failure**  The target is sickened 2.\n\
+  \nA target sickened by this spell takes a -10-foot status penalty to its Speed until\
+  \ it's no longer sickened.  "
+domain: Indulgence
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Overstuff
 range: 30 feet

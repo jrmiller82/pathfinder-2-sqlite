@@ -1,13 +1,13 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You lengthen your stride beyond what should be possible. You gain a +10-foot\
-  \ status bonus to your Speed.  \n\n**Heightened (2nd)**  The duration increases\
+  \ status bonus to your Speed.  \n\n---\n**Heightened (2nd)**  The duration increases\
   \ to 8 hours."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Longstrider
 req: null

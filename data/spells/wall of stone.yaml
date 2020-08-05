@@ -1,5 +1,5 @@
-action_abbr: '2'
-cast: material, somatic, verbal
+action_abbr: '3'
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
@@ -9,13 +9,13 @@ descr: "You shape a wall of solid stone. You create a 1-inch-thick wall of stone
   \ 5 feet of the wall on the border between squares. The wall doesn't need to stand\
   \ vertically, so you can use it to form a bridge or set of stairs, for example.\
   \ You must conjure the wall in an unbroken open space so its edges don't pass through\
-  \ any creatures or objects, or the spell is lost. Each 5-foot-by-5-foot section\
+  \ any creatures or objects, or the spell is lost. \n\nEach 5-foot-by-5-foot section\
   \ of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical\
   \ hits and precision damage. A destroyed section of the wall can be moved through,\
-  \ but the rubble created from it is difficult terrain.  \n\n**Heightened (+2)**\
+  \ but the rubble created from it is difficult terrain.  \n\n---\n**Heightened (+2)**\
   \  The Hit Points of each section of the wall increase by 15."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Wall of Stone
 range: 120 feet

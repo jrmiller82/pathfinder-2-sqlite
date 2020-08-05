@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -11,8 +11,9 @@ descr: "Merging minds with the target, you swap disorienting visions from one an
   \ target is affected instead of you, spending its first action each turn confused.\
   \ The duration is 1 minute.  \n\n**Critical Failure**  The target is confused for\
   \ 1 minute."
+domain: Nightmares
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Shared Nightmare
 range: 30 feet

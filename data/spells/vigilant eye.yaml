@@ -1,13 +1,13 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
-descr: You create an invisible eye sensor, as clairvoyance. When created, this eye
-  must be in your line of sight. When the spell's duration ends, you can spend 1 Focus
-  Point as a free action to extend the duration for another hour, though as normal,
-  it ends immediately during your next daily preparations.
+descr: "You create an invisible eye sensor, as clairvoyance. When created, this eye\
+  \ must be in your line of sight. \n\nWhen the spell's duration ends, you can spend\
+  \ 1 Focus Point as a free action to extend the duration for another hour, though\
+  \ as normal, it ends immediately during your next daily preparations."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Vigilant Eye
 range: 500 feet

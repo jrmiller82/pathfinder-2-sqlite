@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (material, somatic, verbal)
 components:
 - Material
@@ -7,7 +7,7 @@ components:
 descr: Healing magic purges disease from a creature's body. You attempt to counteract
   one disease afflicting the target.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Remove Disease
 range: touch

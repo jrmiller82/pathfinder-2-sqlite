@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 30-foot cone or 10-foot emanation
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -13,9 +13,9 @@ descr: "You swing a weapon you're holding, and the weapon magically multiplies i
   \  The creature is unaffected.  \n\n**Success**  The target takes half damage. \
   \ \n\n**Failure**  The target takes full damage.  \n\n**Critical Failure**  The\
   \ target takes double damage and is subject to the weapon's critical specialization\
-  \ effect.  \n\n**Heightened (+1)**  Add another damage die."
+  \ effect.  \n\n---\n**Heightened (+1)**  Add another damage die."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Weapon Storm
 req: null

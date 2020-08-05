@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -12,10 +12,10 @@ descr: "You send the target back to its home plane. The target must attempt a Wi
   \ and you are stunned 1.  \n\n**Success**  The target resists being banished.  \n\
   \n**Failure**  The target is banished.  \n\n**Critical Failure**  The target is\
   \ banished and can't return by any means to the plane it's banished from for 1 week.\
-  \  \n\n**Heightened (9th)**  You can target up to 10 creatures. The extra material\
+  \  \n\n---\n**Heightened (9th)**  You can target up to 10 creatures. The extra material\
   \ component affects targets to which it is anathema."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Banishment
 range: 30 feet

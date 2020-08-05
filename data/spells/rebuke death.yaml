@@ -1,17 +1,16 @@
-action_abbr:
-- '1'
-- '3'
+action_abbr: 1-3
 area: 20-foot emanation
-cast: to  somatic
+cast: '|1| to |3| (somatic)'
 components:
 - Somatic
 descr: "You snatch creatures from the jaws of death. You can spend 1 to 3 actions\
   \ Casting this Spell, and you can target a number of creatures equal to the actions\
   \ spent. Each target regains 3d6 Hit Points. If the target had the dying condition,\
   \ coming back from dying due to this healing doesn't increase its wounded condition.\
-  \  \n\n**Heightened (+1)**  Increase the healing by 1d6."
+  \  \n\n---\n**Heightened (+1)**  Increase the healing by 1d6."
+domain: Healing
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Rebuke Death
 req: null

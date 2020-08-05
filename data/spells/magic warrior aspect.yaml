@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: null
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,14 +9,14 @@ descr: You call upon the aspect of the animal from your mask, gaining physical f
   your mask represents; these special Speeds can't be increased by status bonuses
   or item bonuses.
 duration: 5 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Magic Warrior Aspect
 req: null
 source:
 - abbr: LOWG
-  page_start: 96
-  page_stop: 96
+  page_start: 95
+  page_stop: 95
 targets: null
 traditions: null
 traits:

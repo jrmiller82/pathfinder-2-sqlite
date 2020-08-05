@@ -1,13 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: You specify a trigger (described on page 305) and a message up to 25 words
   long. When the specified trigger occurs within 30 feet of the target, an illusory
-  mouth appears on the target and speaks the message, and the magic mouth spell ends.
+  mouth appears on the target and speaks the message, and the *magic mouth* spell
+  ends.
 duration: unlimited
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Magic Mouth
 range: touch

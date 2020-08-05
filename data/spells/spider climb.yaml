@@ -1,13 +1,13 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Tiny clinging hairs sprout across the creature's hands and feet, offering\
   \ purchase on nearly any surface. The target gains a climb Speed equal to its Speed.\
-  \  \n\n**Heightened (5th)**  The duration increases to 1 hour."
+  \  \n\n---\n**Heightened (5th)**  The duration increases to 1 hour."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Spider Climb
 range: touch

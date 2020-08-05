@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 20-foot burst
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -14,10 +14,10 @@ descr: "You can channel the fury of your deity against foes of opposed alignment
   \  \n\n**Critical Success**  The creature is unaffected.  \n\n**Success**  The creature\
   \ takes half damage.  \n\n**Failure**  The creature takes full damage and is sickened\
   \ 1.  \n\n**Critical Failure**  The creature takes full damage and is sickened 2;\
-  \ while it is sickened, it is also slowed 1.  \n\n**Heightened (+1)**  The damage\
-  \ increases by 1d10."
+  \ while it is sickened, it is also slowed 1.  \n\n---\n**Heightened (+1)**  The\
+  \ damage increases by 1d10."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Divine Wrath
 range: 120 feet

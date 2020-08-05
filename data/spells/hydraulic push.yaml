@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You call forth a powerful blast of pressurized water that bludgeons the target\
   \ and knocks it back. Make a ranged spell attack roll.  \n\n**Critical Success**\
   \  The target takes 6d6 bludgeoning damage and is knocked back 10 feet.  \n\n**Success**\
-  \  The target takes 3d6 bludgeoning damage and is knocked back 5 feet.  \n\n**Heightened\
-  \ (+1)**  The damage increases by 2d6."
+  \  The target takes 3d6 bludgeoning damage and is knocked back 5 feet.  \n\n---\n\
+  **Heightened (+1)**  The damage increases by 2d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Hydraulic Push
 range: 60 feet

@@ -1,21 +1,22 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
-descr: The simplest magic does your bidding. You can perform simple magical effects
-  for as long as you Sustain the Spell. Each time you Sustain the Spell, you can choose
-  one of four options. Cook Cool, warm, or flavor 1 pound of nonliving material. Lift
-  Slowly lift an unattended object of light Bulk or less 1 foot off the ground. Make
-  Create a temporary object of negligible Bulk, made of congealed magical substance.
-  The object looks crude and artificial and is extremely fragile-it can't be used
-  as a tool, weapon, or spell component. Tidy Color, clean, or soil an object of light
-  Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration,
-  and a larger object a 1 minute per Bulk. Prestidigitation can't deal damage or cause
-  adverse conditions. Any actual change to an object (beyond what is noted above)
-  persists only as long as you Sustain the Spell.
+descr: "The simplest magic does your bidding. You can perform simple magical effects\
+  \ for as long as you Sustain the Spell. Each time you Sustain the Spell, you can\
+  \ choose one of four options. \n\n* **Cook** Cool, warm, or flavor 1 pound of nonliving\
+  \ material. \n\n* **Lift Slowly** lift an unattended object of light Bulk or less\
+  \ 1 foot off the ground. \n\n* **Make** Create a temporary object of negligible\
+  \ Bulk, made of congealed magical substance. The object looks crude and artificial\
+  \ and is extremely fragile-it can't be used as a tool, weapon, or spell component.\
+  \ \n\n* **Tidy** Color, clean, or soil an object of light Bulk or less. You can\
+  \ affect an object of 1 Bulk with 10 rounds of concentration, and a larger object\
+  \ a 1 minute per Bulk. \n\n*Prestidigitation* can't deal damage or cause adverse\
+  \ conditions. Any actual change to an object (beyond what is noted above) persists\
+  \ only as long as you Sustain the Spell."
 duration: sustained
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Prestidigitation
 range: 10 feet

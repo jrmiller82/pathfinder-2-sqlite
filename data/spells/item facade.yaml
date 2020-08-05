@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,11 +9,11 @@ descr: "You make the target object look and feel as though it were in much bette
   \ broken and shoddy. An intact item made to look better appears as though it's brand\
   \ new and highly polished or well maintained. A broken item appears to be intact\
   \ and functional. Destroyed items can't be affected by this spell. A creature that\
-  \ Interacts with the item can attempt to disbelieve the illusion.  \n\n**Heightened\
+  \ Interacts with the item can attempt to disbelieve the illusion.  \n\n---\n**Heightened\
   \ (2nd)**  The duration is 24 hours.  \n\n**Heightened (3rd)**  The duration is\
   \ unlimited."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Item Facade
 range: touch

@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "The target's skin hardens like stone. It gains resistance 5 to physical damage,\
   \ except adamantine. Each time the target is hit by a bludgeoning, piercing, or\
-  \ slashing attack, stoneskin's duration decreases by 1 minute.  \n\n**Heightened\
+  \ slashing attack, *stoneskin*'s duration decreases by 1 minute.  \n\n---\n**Heightened\
   \ (6th)**  The resistance increases to 10.  \n\n**Heightened (8th)**  The resistance\
   \ increases to 15.  \n\n**Heightened (10th)**  The resistance increases to 20."
 duration: 20 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Stoneskin
 range: touch

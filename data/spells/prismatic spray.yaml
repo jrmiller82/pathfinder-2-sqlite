@@ -1,23 +1,26 @@
 action_abbr: '2'
 area: 30-foot cone
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
-descr: 'A spray of rainbow light beams cascades from your open hand. Each creature
-  in the area must roll 1d8 on the table below to see which beam affects it, then
-  attempt a saving throw of the indicated type. The table notes any additional traits
-  that apply to each type of ray. If a creature is struck by multiple beams, it uses
-  the same d20 result for all its saving throws. For all rays, a successful saving
-  throw negates the effect for that creature.Prismatic Spray 1d8ColorSaveEffects (Traits)
-  1RedReflex50 fire damage (fire) 2OrangeReflex60 acid damage (acid) 3YellowReflex70
-  electricity damage (electricity) 4GreenFortitude30 poison damage and enfeebled 1
-  for 1 minute (poison) 5BlueFortitudeAffected as if by flesh to stone 6IndigoWillConfused,
-  as the warp mind spell (mental) 7VioletWillSlowed for 1 minute; if a critical failure,
-  sent to another plane, as plane shift (teleportation) 8Potent beam-Affected by two
-  beams - roll twice, rerolling any duplicates or results of 8 '
+descr: "A spray of rainbow light beams cascades from your open hand. Each creature\
+  \ in the area must roll 1d8 on the table below to see which beam affects it, then\
+  \ attempt a saving throw of the indicated type. The table notes any additional traits\
+  \ that apply to each type of ray. If a creature is struck by multiple beams, it\
+  \ uses the same d20 result for all its saving throws. For all rays, a successful\
+  \ saving throw negates the effect for that creature.\n\n| 1d8 | Color | Save | Effects\
+  \ (Traits) |\n| ---- | ----- | ---- | ---------------- | \n| 1 | Red | Reflex |\
+  \ 50 fire damage (fire) |\n| 2 | Orange | Reflex | 60 acid damage (acid) |\n| 3\
+  \ | Yellow | Reflex | 70 electricity damage (electricity) |\n| 4 | Green | Fortitude\
+  \ | 30 poison damage and enfeebled 1 for 1 minute (poison) |\n| 5 | Blue | Fortitude\
+  \ | Affected as if by *flesh to stone* |\n| 6 | Indigo | Will | Confused, as the\
+  \ *warp mind* spell (mental) |\n| 7 | Violet | Will | Slowed for 1 minute; if a\
+  \ critical failure, sent to another plane, as *plane shift* (teleportation) |\n\
+  | 8 | Potent beam | - | Affected by two beams - roll twice, rerolling any duplicates\
+  \ or results of 8 | "
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Prismatic Spray
 req: null

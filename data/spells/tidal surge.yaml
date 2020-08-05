@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "You call forth a tremendous wave to move the target either in a body of water\
@@ -8,8 +8,9 @@ descr: "You call forth a tremendous wave to move the target either in a body of 
   \ direction through a body of water.  \n\n**Critical Failure**  You move the target\
   \ up to 10 feet in any direction along the ground or 20 feet in any direction through\
   \ a body of water."
+domain: Water
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Tidal Surge
 range: 60 feet

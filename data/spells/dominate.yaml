@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -11,9 +11,9 @@ descr: "You take command of the target, forcing it to obey your orders. If you i
   \ a Will save at the end of each of its turns. On a success, the spell ends.  \n\
   \n**Critical Failure**  As a failure, but the target receives a new save only if\
   \ you give it a new order that is against its nature, such as killing its allies.\
-  \  \n\n**Heightened (10th)**  The duration is unlimited."
+  \  \n\n---\n**Heightened (10th)**  The duration is unlimited."
 duration: until the next time you make your daily preparations
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Dominate
 range: 30 feet

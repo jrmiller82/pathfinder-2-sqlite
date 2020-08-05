@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,10 +8,10 @@ descr: "You unleash a beam of divine energy. Choose an alignment your deity has 
   \ if your deity is true neutral. Make a ranged spell attack roll against the target's\
   \ AC. On a hit, the target takes damage of the chosen alignment type equal to 1d4\
   \ + your spellcasting ability modifier (double damage on a critical hit). The spell\
-  \ gains the trait of the alignment you chose.  \n\n**Heightened (+1)**  The damage\
-  \ increases by 1d4."
+  \ gains the trait of the alignment you chose.  \n\n---\n**Heightened (+1)**  The\
+  \ damage increases by 1d4."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Divine Lance
 range: 30 feet

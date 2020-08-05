@@ -1,13 +1,13 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "An arc of lightning leaps from one target to another. You deal electricity\
-  \ damage equal to 1d4 plus your spellcasting ability modifier.  \n\n**Heightened\
+  \ damage equal to 1d4 plus your spellcasting ability modifier.  \n\n---\n**Heightened\
   \ (+1)**  The damage increases by 1d4."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Electric Arc
 range: 30 feet

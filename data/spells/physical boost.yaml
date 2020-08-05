@@ -1,12 +1,12 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: You temporarily improve the target's physique. The target gains a +2 status
   bonus to the next Acrobatics check, Athletics check, Fortitude save, or Reflex save
   it attempts.
 duration: until the end of the target's next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Physical Boost
 range: touch

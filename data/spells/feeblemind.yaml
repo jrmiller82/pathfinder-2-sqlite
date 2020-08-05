@@ -1,15 +1,18 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You drastically reduce the target's mental faculties. The target must attempt\
   \ a Will save.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**\
   \  The target is stupefied 2 for 1 round.  \n\n**Failure**  The target is stupefied\
-  \ 4 with an unlimited duration.  \n\n**Critical Failure**  The target is stupefied\
-  \ 4 with an unlimited duration."
+  \ 4 with an unlimited duration.  \n\n**Critical Failure**  The target's intellect\
+  \ is permanently reduced below that of an animal, and it treats its Charisma, Intelligence,\
+  \ and Wisdom modifiers as -5. It loses all class abilities that require mental faculties,\
+  \ including all spellcasting. If the target is a PC, they become an NPC under the\
+  \ GM's control.."
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Feeblemind
 range: 30 feet
@@ -25,7 +28,7 @@ traditions:
 - Occult
 traits:
 - Curse
-- Emotion
+- Incapacitation
 - Enchantment
 - Mental
 trigger: null

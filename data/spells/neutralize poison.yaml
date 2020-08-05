@@ -1,12 +1,12 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: You pour healing magic through the target in an attempt to cure one poison
   afflicting it. Attempt a counteract check against the poison.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Neutralize Poison
 range: touch

@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 20-foot burst
-cast: material, somatic
+cast: '|2| material, somatic'
 components:
 - Material
 - Somatic
@@ -14,7 +14,7 @@ descr: "A field of cascading, ever-changing colors manifests in the air. Creatur
   \  The creature is stunned for 1d4 rounds. After the stunned condition ends, the\
   \ creature is confused for the remaining duration of the spell."
 duration: sustained up to 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Scintillating Pattern
 range: 120 feet

@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: You perform rapidly, speeding up your ally. The ally becomes quickened and
