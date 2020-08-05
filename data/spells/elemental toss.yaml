@@ -1,14 +1,14 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "With a flick of your wrist, you fling a chunk of your elemental matter at\
   \ your foe. Make a spell attack roll, dealing 1d8 bludgeoning damage (or fire damage\
   \ if your element is fire) on a success, and double damage on a critical success.\
-  \ This spell has your element's trait.  \n\n**Heightened (+1)**  The damage increases\
-  \ by 1d8."
+  \ This spell has your element's trait.  \n\n---\n**Heightened (+1)**  The damage\
+  \ increases by 1d8."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Elemental Toss
 range: 30 feet

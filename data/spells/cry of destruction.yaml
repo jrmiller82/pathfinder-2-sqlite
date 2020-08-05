@@ -1,15 +1,16 @@
 action_abbr: '2'
 area: 15-foot cone
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Your voice booms, smashing what's in front of you. Each creature and unattended\
   \ object in the area takes 1d8 sonic damage. If you already dealt damage to an enemy\
   \ this turn with a Strike or spell, increase the damage dice from this spell to\
-  \ d12s.  \n\n**Heightened (+1)**  The damage increases by 1d8."
+  \ d12s.  \n\n---\n**Heightened (+1)**  The damage increases by 1d8."
+domain: Destruction
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Cry of Destruction
 req: null

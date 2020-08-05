@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (material, somatic, verbal)
 components:
 - Material
@@ -6,9 +6,10 @@ components:
 - Verbal
 descr: "You protect the target with a powerful, long-lasting energy barrier. The target\
   \ gains resistance 5 to acid, cold, electricity, fire, force, negative, positive,\
-  \ and sonic damage.  \n\n**Heightened (9th)**  The resistances increase to 10."
+  \ and sonic damage.  \n\n---\n**Heightened (9th)**  The resistances increase to\
+  \ 10."
 duration: 24 hours
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Energy Aegis
 range: touch

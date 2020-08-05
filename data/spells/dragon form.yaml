@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -56,7 +56,7 @@ descr: "Calling upon powerful transformative magic, you gain a Large dragon batt
   \ weapon** 30-foot cone, 10d6 poison (Fortitude save instead of Reflex).\n\n * **Red**\
   \ ignore concealed from smoke; **Melee** |1| jaws, **Damage** 2d12 piercing plus\
   \ 2d6 fire; **Melee** |1| claw (agile), **Damage** 4d6 slashing; **Melee** |1| tail\
-  \ (reach 10 feet), **Damage** 3d10 bludgeoning; **Melee** |1| w i ng (reach 10 feet),\
+  \ (reach 10 feet), **Damage** 3d10 bludgeoning; **Melee** |1| wing (reach 10 feet),\
   \ **Damage** 3d8 bludgeoning; **breath weapon** 30-foot cone, 10d6 fire.\n\n * **Silver**\
   \ walk on clouds; **Melee** |1| jaws, **Damage** 2d12 piercing plus 2d6 cold; **Melee**\
   \ |1| claw (agile), **Damage** 3d10 slashing; **Melee** |1| tail (reach 10), **Damage**\
@@ -64,13 +64,13 @@ descr: "Calling upon powerful transformative magic, you gain a Large dragon batt
   \ Speed 25 feet on ice only; **Melee** |1| jaws, **Damage** 3d6 piercing plus 2d6\
   \ cold; **Melee** |1| claw (agile), **Damage** 3d10 slashing; **Melee** |1| tail\
   \ (reach 10 feet), **Damage** 3d10 bludgeoning; **breath weapon** 30-foot cone,\
-  \ 10d6 cold.\n\n  \n\n**Heightened (8th)**  Your battle form is Huge, you gain a\
-  \ +20-foot status bonus to your fly Speed, and your attacks have 10-foot reach (or\
-  \ 15-foot reach if they previously had 10-foot reach). You instead gain AC = 21\
-  \ + your level, 15 temporary HP, an attack modifier of +28, a damage bonus of +12,\
-  \ Athletics +28, and a +14 status bonus to breath weapon damage."
+  \ 10d6 cold.\n\n  \n\n---\n**Heightened (8th)**  Your battle form is Huge, you gain\
+  \ a +20-foot status bonus to your fly Speed, and your attacks have 10-foot reach\
+  \ (or 15-foot reach if they previously had 10-foot reach). You instead gain AC =\
+  \ 21 + your level, 15 temporary HP, an attack modifier of +28, a damage bonus of\
+  \ +12, Athletics +28, and a +14 status bonus to breath weapon damage."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Dragon Form
 req: null

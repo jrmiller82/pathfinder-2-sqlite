@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -10,7 +10,7 @@ descr: "You shape the stone into a rough shape of your choice. The shaping proce
   \  \n\n**Failure**  The creature falls prone atop the stone.  \n\n**Critical Failure**\
   \  The creature falls off the stone (if applicable) and lands prone."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Shape Stone
 range: touch

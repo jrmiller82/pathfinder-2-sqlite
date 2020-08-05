@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 10-foot radius,  40-foot-tall cylinder
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,10 +8,10 @@ descr: "You call a rain of divine fire that plummets down from above, dealing 8d
   \ fire damage. Because the flame is infused with divine energy, creatures in the\
   \ area apply only half their usual fire resistance. Creatures that are immune to\
   \ fire, instead of gaining the usual benefit of immunity, treat the results of their\
-  \ saving throws as one degree of success better.  \n\n**Heightened (+1)**  The damage\
-  \ increases by 2d6."
+  \ saving throws as one degree of success better.  \n\n---\n**Heightened (+1)** \
+  \ The damage increases by 2d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Flame Strike
 range: 120 feet

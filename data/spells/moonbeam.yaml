@@ -1,16 +1,17 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You shine a ray of moonlight. Make a spell attack roll. The beam of light\
-  \ deals 1d6 fire damage. Moonbeam deals silver damage for the purposes of weaknesses,\
+  \ deals 1d6 fire damage. *Moonbeam* deals silver damage for the purposes of weaknesses,\
   \ resistances, and the like.  \n\n**Critical Success**  The beam deals double damage,\
   \ and the target is dazzled for 1 minute.  \n\n**Success**  The beam deals full\
-  \ damage, and the target is dazzled for 1 round.  \n\n**Heightened (+1)**  The ray's\
-  \ damage increases by 1d6."
+  \ damage, and the target is dazzled for 1 round.  \n\n---\n**Heightened (+1)** \
+  \ The ray's damage increases by 1d6."
+domain: Moon
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Moonbeam
 range: 120 feet

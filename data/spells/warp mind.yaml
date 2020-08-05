@@ -1,19 +1,19 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You scramble a creature's mental faculties and sensory input. The target must\
   \ attempt a Will saving throw. Regardless of the result of that save, the target\
-  \ is then temporarily immune for 10 minutes. Warp mind's effects happen instantly,\
-  \ so dispel magic and other effects that counteract spells can't counteract them.\
-  \ However, alter reality, miracle, primal phenomenon, restoration, or wish can still\
-  \ counteract the effects.  \n\n**Critical Success**  The target is unaffected. \
-  \ \n\n**Success**  The target spends the first action on its next turn with the\
+  \ is then temporarily immune for 10 minutes. *Warp mind*'s effects happen instantly,\
+  \ so *dispel magic* and other effects that counteract spells can't counteract them.\
+  \ However, *alter reality*, *miracle*, *primal phenomenon*, *restoration*, or *wish*\
+  \ can still counteract the effects.  \n\n**Critical Success**  The target is unaffected.\
+  \  \n\n**Success**  The target spends the first action on its next turn with the\
   \ confused condition.  \n\n**Failure**  The target is confused for 1 minute.  \n\
   \n**Critical Failure**  The target is confused permanently."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Warp Mind
 range: 120 feet

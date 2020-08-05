@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: You hurl a held melee weapon with which you are trained at the target, making
@@ -9,7 +9,7 @@ descr: You hurl a held melee weapon with which you are trained at the target, ma
   you add the weapon's critical specialization effect. Regardless of the outcome,
   the weapon flies back to you and returns to your hand.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Hand of the Apprentice
 range: 500 feet

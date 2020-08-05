@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (somatic, verbal)
 components:
 - Somatic
@@ -6,14 +6,11 @@ components:
 descr: "You repair the target item. You restore 5 Hit Points per spell level to the\
   \ target, potentially removing the broken condition if this repairs it past the\
   \ item's Broken Threshold. You can't replace lost pieces or repair an object that's\
-  \ been completely destroyed.  \n\n**Heightened (2nd)**  You repair the target item.\
-  \ You restore 5 Hit Points per spell level to the target, potentially removing the\
-  \ broken condition if this repairs it past the item's Broken Threshold. You can't\
-  \ replace lost pieces or repair an object that's been completely destroyed.  \n\n\
-  **Heightened (2nd)**  You can target a non-magical object of 2 Bulk or less, or\
-  \ a magical object of 1 Bulk or less."
+  \ been completely destroyed.  \n\n---\n**Heightened (2nd)**  You can target a non-magical\
+  \ object of 1 Bulk or less.  \n\n**Heightened (3rd)**  You can target a non-magical\
+  \ object of 2 Bulk or less, or a magical object of 1 Bulk or less."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Mending
 range: touch

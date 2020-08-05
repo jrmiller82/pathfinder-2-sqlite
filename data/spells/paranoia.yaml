@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -14,10 +14,10 @@ descr: "You cause the target to see all other creatures as dire threats. The tar
   \ reactions and free actions against everyone, regardless of whether they were previously\
   \ its allies, as determined by the GM. It otherwise acts as rationally as it normally\
   \ does and likely prefers to attack creatures that are actively attacking or hindering\
-  \ it over those leaving it alone.  \n\n**Heightened (6th)**  You can target up to\
-  \ 5 creatures."
+  \ it over those leaving it alone.  \n\n---\n**Heightened (6th)**  You can target\
+  \ up to 5 creatures."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Paranoia
 range: 30 feet

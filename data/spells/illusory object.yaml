@@ -1,20 +1,20 @@
 action_abbr: '2'
 area: 20-foot burst
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You create an illusory visual image of a stationary object. The entire image\
   \ must fit within the spell's area. The object appears to animate naturally, but\
   \ it doesn't make sounds or generate smells. For example, water would appear to\
-  \ pour down an illusory waterfall, but it would be silent. Any creature that touches\
-  \ the image or uses the Seek action to examine it can attempt to disbelieve your\
-  \ illusion.  \n\n**Heightened (2nd)**  Your image makes appropriate sounds, generates\
-  \ normal smells, and feels right to the touch. The spell gains the auditory trait.\
-  \ The duration increases to 1 hour.  \n\n**Heightened (5th)**  As the 2nd-level\
+  \ pour down an illusory waterfall, but it would be silent. \n\nAny creature that\
+  \ touches the image or uses the Seek action to examine it can attempt to disbelieve\
+  \ your illusion.  \n\n---\n**Heightened (2nd)**  Your image makes appropriate sounds,\
+  \ generates normal smells, and feels right to the touch. The spell gains the auditory\
+  \ trait. The duration increases to 1 hour.  \n\n**Heightened (5th)**  As the 2nd-level\
   \ version, but the duration is unlimited."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Illusory Object
 range: 500 feet

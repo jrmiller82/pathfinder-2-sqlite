@@ -1,11 +1,11 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "To the target, your words are honey and your visage seems bathed in a dreamy\
   \ haze. It must attempt a Will save, with a +4 circumstance bonus if you or your\
-  \ allies recently threatened it or used hostile actions against it. You can Dismiss\
+  \ allies recently threatened it or used hostile actions against it.You can Dismiss\
   \ the spell. If you use hostile actions against the target, the spell ends. When\
   \ the spell ends, the target doesn't necessarily realize it was charmed unless its\
   \ friendship with you or the actions you convinced it to take clash with its expectations,\
@@ -13,15 +13,15 @@ descr: "To the target, your words are honey and your visage seems bathed in a dr
   \ via mundane means.  \n\n**Critical Success**  The target is unaffected and aware\
   \ you tried to charm it.  \n\n**Success**  The target is unaffected but thinks your\
   \ spell was something harmless instead of charm, unless it identifies the spell\
-  \ (usually with Identify Magic).  \n\n**Failure**  The target's attitude becomes\
-  \ friendly toward you. If it was friendly, it becomes helpful. It can't use hostile\
-  \ actions against you.  \n\n**Critical Failure**  The target's attitude becomes\
-  \ helpful toward you, and it can't use hostile actions against you.  \n\n**Heightened\
-  \ (+4)**  The duration lasts until the next time you make your daily preparations.\
-  \  \n\n**Heightened (+8)**  The duration lasts until the next time you make your\
+  \ (see Identifying Magic).  \n\n**Failure**  The target's attitude becomes friendly\
+  \ toward you. If it was friendly, it becomes helpful. It can't use hostile actions\
+  \ against you.  \n\n**Critical Failure**  The target's attitude becomes helpful\
+  \ toward you, and it can't use hostile actions against you.  \n\n---\n**Heightened\
+  \ (4th)**  The duration lasts until the next time you make your daily preparations.\
+  \  \n\n**Heightened (8th)**  The duration lasts until the next time you make your\
   \ daily preparations, and you can target up to 10 creatures."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Charm
 range: 30 feet

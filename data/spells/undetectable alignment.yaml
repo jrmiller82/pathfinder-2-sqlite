@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (material, somatic, verbal)
 components:
 - Material
@@ -7,7 +7,7 @@ components:
 descr: You shroud a creature in wards that hide its alignment. The target appears
   to be neutral to all effects that would detect its alignment.
 duration: until the next time you make your daily preparations
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Undetectable Alignment
 range: touch

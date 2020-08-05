@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -7,10 +7,10 @@ descr: "You pull the moisture from the targets' bodies, dealing 10d10 negative d
   \ Creatures made of water (such as water elementals) and plant creatures use the\
   \ outcome for one degree of success worse than the result of their saving throw.\
   \ Creatures whose bodies contain no significant moisture (such as earth elementals)\
-  \ are immune to horrid wilting.  \n\n**Heightened (+1)**  The damage increases by\
-  \ 1d10."
+  \ are immune to *horrid wilting*.  \n\n---\n**Heightened (+1)**  The damage increases\
+  \ by 1d10."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Horrid Wilting
 range: 500 feet

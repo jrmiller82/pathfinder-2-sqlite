@@ -1,17 +1,17 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Opening a door that bypasses normal space, you instantly transport yourself\
   \ and any items you're wearing and holding from your current space to a clear space\
   \ within range you can see. If this would bring another creature with you-even if\
-  \ you're carrying it in an extradimensional container-the spell is lost.  \n\n**Heightened\
-  \ (5th)**  The range increases to 1 mile. You don't need to be able to see your\
-  \ destination, as long as you have been there in the past and know its relative\
-  \ location and distance from you. You are temporarily immune for 1 hour."
+  \ you're carrying it in an extradimensional container-the spell is lost.  \n\n---\n\
+  **Heightened (5th)**  The range increases to 1 mile. You don't need to be able to\
+  \ see your destination, as long as you have been there in the past and know its\
+  \ relative location and distance from you. You are temporarily immune for 1 hour."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Dimension Door
 range: 120 feet

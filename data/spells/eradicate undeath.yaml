@@ -1,14 +1,15 @@
 action_abbr: '2'
 area: 30-foot cone
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "A massive deluge of life energy causes the undead to fall apart. Each undead\
-  \ creature in the area takes 4d12 positive damage.  \n\n**Heightened (+1)**  The\
-  \ damage increases by 1d12."
+  \ creature in the area takes 4d12 positive damage.  \n\n---\n**Heightened (+1)**\
+  \  The damage increases by 1d12."
+domain: Death
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Eradicate Undeath
 req: null

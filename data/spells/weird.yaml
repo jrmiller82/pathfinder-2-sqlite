@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -14,7 +14,7 @@ descr: "You fill the targets' minds with terrifying images of fearsome creatures
   \ unless it critically succeeded. If it fails, it is reduced to 0 Hit Points and\
   \ dies."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 9
 name: Weird
 range: 120 feet

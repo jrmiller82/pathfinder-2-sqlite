@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: "You whisper enchanting words to deflect your foe's ire. The target must attempt\
@@ -9,7 +9,7 @@ descr: "You whisper enchanting words to deflect your foe's ire. The target must 
   **Critical Failure**  The target is stunned 1 and can't use hostile actions against\
   \ you."
 duration: until the start of your next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Charming Words
 range: 30 feet
@@ -24,10 +24,10 @@ traditions: null
 traits:
 - Uncommon
 - Auditory
-- Emotion
 - Enchantment
 - Incapacitation
 - Linguistic
+- Mental
 - Wizard
 trigger: null
 type: Focus

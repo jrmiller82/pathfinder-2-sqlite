@@ -1,11 +1,11 @@
 action_abbr: R
-cast: verbal
+cast: '|R| verbal'
 components:
 - Verbal
 descr: You use some of the spell's magic to heal yourself, regaining 1d8 Hit Points
   per level of the spell.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Life Siphon
 req: null

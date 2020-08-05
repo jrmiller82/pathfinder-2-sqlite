@@ -4,8 +4,13 @@ cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
-description: A roaring blast of fire appears at a spot you designate, dealing 6d6
-  fire damage.
+descr: 'A roaring blast of fire appears at a spot you designate, dealing 6d6 fire
+  damage.
+
+
+  ---
+
+  **Heightened (+1)** The damage increases by 2d6'
 duration: null
 has_been_manually_proofread: true
 heightened:

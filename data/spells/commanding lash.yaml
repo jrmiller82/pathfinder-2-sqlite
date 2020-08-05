@@ -1,11 +1,12 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: With the threat of more pain, you compel a creature you've recently harmed.
-  You issue a command to the target, with the effects of the spell command.
+  You issue a command to the target, with the effects of the spell *command*.
+domain: Tyranny
 duration: until the end of your target's next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Commanding Lash
 range: 100 feet

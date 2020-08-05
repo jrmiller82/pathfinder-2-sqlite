@@ -1,12 +1,12 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "You fire an unerring dart of force from your fingertips. It automatically\
-  \ hits and deals 1d4+1 force damage to the target.  \n\n**Heightened (+2)**  The\
-  \ damage increases by 1d4+1."
+  \ hits and deals 1d4+1 force damage to the target.  \n\n---\n**Heightened (+2)**\
+  \  The damage increases by 1d4+1."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Force Bolt
 range: 30 feet
@@ -19,7 +19,6 @@ targets: 1 creature or object
 traditions: null
 traits:
 - Uncommon
-- Attack
 - Evocation
 - Force
 - Wizard

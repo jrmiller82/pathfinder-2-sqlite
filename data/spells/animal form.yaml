@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -29,18 +29,18 @@ descr: "You call upon primal energy to transform yourself into a Medium animal b
   \ |1| tongue (reach 15 feet), **Damage** 2d4 bludgeoning.\n\n * **Shark** swim Speed\
   \ 35 feet; **Melee** |1| jaws, **Damage** 2d8 piercing; breathe underwater but not\
   \ in air.\n\n * **Snake** Speed 20 feet, climb Speed 20 feet, swim Speed 20 feet;\
-  \ **Melee** |1| fangs , **Damage** 2d4 piercing plus 1d6 poison.\n\n  \n\n**Heightened\
-  \ (3rd)**  You instead gain 10 temporary HP, AC = 17 + your level, attack modifier\
-  \ +14, Damage bonus +5, and Athletics +14.  \n\n**Heightened (4th)**  Your battle\
-  \ form is Large and your attacks have 10-foot reach. You must have enough space\
-  \ to expand into or the spell is lost. You instead gain 15 temporary HP, AC = 18\
-  \ + your level, attack modifier +16, Damage bonus +9, and Athletics +16.  \n\n**Heightened\
-  \ (5th)**  Your battle form is Huge and your attacks have 15-foot reach. You must\
-  \ have enough space to expand into or the spell is lost. You instead gain 20 temporary\
-  \ HP, AC = 18 + your level, attack modifier +18, Damage bonus +7 and double the\
-  \ number of Damage dice, and Athletics +20."
+  \ **Melee** |1| fangs , **Damage** 2d4 piercing plus 1d6 \n\n---\n**Heightened (3rd)**\
+  \  You instead gain 10 temporary HP, AC = 17 + your level, attack modifier +14,\
+  \ Damage bonus +5, and Athletics +14.  \n\n**Heightened (4th)**  Your battle form\
+  \ is Large and your attacks have 10-foot reach. You must have enough space to expand\
+  \ into or the spell is lost. You instead gain 15 temporary HP, AC = 18 + your level,\
+  \ attack modifier +16, Damage bonus +9, and Athletics +16.  \n\n**Heightened (5th)**\
+  \  Your battle form is Huge and your attacks have 15-foot reach. You must have enough\
+  \ space to expand into or the spell is lost. You instead gain 20 temporary HP, AC\
+  \ = 18 + your level, attack modifier +18, Damage bonus +7 and double the number\
+  \ of Damage dice, and Athletics +20."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Animal Form
 req: null

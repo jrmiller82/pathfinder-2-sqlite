@@ -1,13 +1,13 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (somatic, verbal)
 components:
 - Somatic
 - Verbal
-descr: "The targets can breathe underwater.  \n\n**Heightened (3rd)**  The duration\
+descr: "The targets can breathe underwater.  \n\n---\n**Heightened (3rd)**  The duration\
   \ increases to 8 hours.  \n\n**Heightened (4th)**  The duration increases to until\
   \ your next daily preparations."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Water Breathing
 range: 30 feet

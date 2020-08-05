@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 15-foot cone
-cast: material, verbal
+cast: '|2| material, verbal'
 components:
 - Material
 - Verbal
@@ -10,10 +10,11 @@ descr: "You raise your religious symbol and create a blinding flash of light. Ea
   \  \n\n**Failure**  The creature is blinded for 1 round and dazzled for 1 minute.\
   \ The creature can spend an Interact action rubbing its eyes to end the blinded\
   \ condition.  \n\n**Critical Failure**  The creature is blinded for 1 round and\
-  \ dazzled for 1 hour.  \n\n**Heightened (3rd)**  The area increases to a 30-foot\
+  \ dazzled for 1 hour.  \n\n---\n**Heightened (3rd)**  The area increases to a 30-foot\
   \ cone."
+domain: Sun
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Dazzling Flash
 req: null

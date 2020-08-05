@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "A high-frequency sonic attack shatters a nearby object. You deal 2d10 sonic\
   \ damage to the object, ignoring the object's Hardness if it is 4 or lower.  \n\n\
-  **Heightened (+1)**  The damage increases by 1d10, and the Hardness the spell ignores\
-  \ increases by 2."
+  ---\n**Heightened (+1)**  The damage increases by 1d10, and the Hardness the spell\
+  \ ignores increases by 2."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Shatter
 range: 30 feet

@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Powerful winds carry you smoothly through the air, giving you a fly Speed\
   \ equal to your Speed. When this spell's duration would end, if you're still flying,\
-  \ you float to the ground, as feather fall.  \n\n**Heightened (6th)**  When you\
-  \ fly using stormwind flight, you don't count flying against the wind as difficult\
+  \ you float to the ground, as *feather fall*.  \n\n---\n**Heightened (6th)**  When\
+  \ you fly using *stormwind flight*, you don't count flying against the wind as difficult\
   \ terrain."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Stormwind Flight
 req: null

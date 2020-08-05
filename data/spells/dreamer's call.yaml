@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -12,8 +12,9 @@ descr: "The target becomes distracted and suggestible, inundated by vivid daydre
   \ of action as its first action after you Cast the Spell.  \n\n**Critical Failure**\
   \  As failure, but the target follows the course of action for as many actions as\
   \ possible for the spell's duration, and it does nothing else."
+domain: Dreams
 duration: until the end of the target's next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Dreamer's Call
 range: 30 feet

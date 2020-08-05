@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,7 +8,7 @@ descr: "You fire a ray of sickening energy. Make a spell attack roll.  \n\n**Cri
   \  \n\n**Success**  The target becomes sickened 1.  \n\n**Failure**  The target\
   \ is unaffected."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Call of the Grave
 range: 30 feet

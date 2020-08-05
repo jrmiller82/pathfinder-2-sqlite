@@ -1,13 +1,13 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: "You gain a fly Speed equal to your Speed. You must end your turn on solid\
-  \ ground, or you fall.  \n\n**Heightened (6th)**  At the end of your turn, you can\
-  \ attempt a DC 30 Acrobatics check to find purchase in midair. If you succeed, you\
-  \ don't fall."
+  \ ground, or you fall.  \n\n---\n**Heightened (6th)**  At the end of your turn,\
+  \ you can attempt a DC 30 Acrobatics check to find purchase in midair. If you succeed,\
+  \ you don't fall."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Wind Jump
 req: null

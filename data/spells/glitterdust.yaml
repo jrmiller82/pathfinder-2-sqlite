@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 10-foot burst
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -14,7 +14,7 @@ descr: "Creatures in the area are outlined by glittering dust. Each creature mus
   \ for 1 minute.  \n\n**Critical Failure**  The target is blinded for 1 round and\
   \ dazzled for 10 minutes. Its invisibility is negated for 10 minutes."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Glitterdust
 range: 120 feet

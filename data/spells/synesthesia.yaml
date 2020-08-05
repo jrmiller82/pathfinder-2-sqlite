@@ -1,21 +1,22 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "The target's senses are suddenly rewired in unexpected ways, causing them\
   \ to process noises as bursts of color, smells as sounds, and so on. This has three\
-  \ effects, and the target must attempt a Will save. Due to the distraction, the\
-  \ target must succeed at a DC 5 flat check each time it uses a concentrate action,\
-  \ or the action fails and is wasted. The target's difficulty processing visual input\
-  \ makes all creatures and objects concealed from it. The creature has trouble moving,\
-  \ making it clumsy 3 and giving it a -10-foot status penalty to its Speeds.  \n\n\
-  **Critical Success**  The target is unaffected.  \n\n**Success**  The target is\
-  \ affected for 1 round.  \n\n**Failure**  The target is affected for 1 minute. \
-  \ \n\n**Critical Failure**  As failure, and the target is stunned 2 as it attempts\
-  \ to process the sensory shifts."
+  \ effects, and the target must attempt a Will save. \n\n* Due to the distraction,\
+  \ the target must succeed at a DC 5 flat check each time it uses a concentrate action,\
+  \ or the action fails and is wasted. \n\n* The target's difficulty processing visual\
+  \ input makes all creatures and objects concealed from it. \n\n* The creature has\
+  \ trouble moving, making it clumsy 3 and giving it a -10-foot status penalty to\
+  \ its Speeds.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**\
+  \  The target is affected for 1 round.  \n\n**Failure**  The target is affected\
+  \ for 1 minute.  \n\n**Critical Failure**  As failure, and the target is stunned\
+  \ 2 as it attempts to process the sensory shifts.\n\n---\n**Heightened (9th)** \
+  \ You can target up to five creatures."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Synesthesia
 range: 30 feet

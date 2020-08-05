@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: material, somatic
+cast: '|2| material, somatic'
 components:
 - Material
 - Somatic
@@ -10,7 +10,7 @@ descr: You shroud a creature from others' senses. The target becomes undetected,
   in the sound spectrum, or finding some other way to discover the presence of an
   otherwise-undetectable creature.
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Disappearance
 range: touch

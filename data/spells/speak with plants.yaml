@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -10,7 +10,7 @@ descr: You can ask questions of and receive answers from plants, but the spell d
   are likely to be terse and evasive, while less intelligent ones often make inane
   comments.
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Speak with Plants
 req: null

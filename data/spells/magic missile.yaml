@@ -1,7 +1,5 @@
-action_abbr:
-- '1'
-- '3'
-cast: to  somatic, verbal
+action_abbr: 1-3
+cast: '|1| to |3| (somatic, verbal)'
 components:
 - Somatic
 - Verbal
@@ -11,10 +9,10 @@ descr: "You send a dart of force streaking toward a creature that you can see. I
   \ to a maximum of three missiles for 3 actions. You choose the target for each missile\
   \ individually. If you shoot more than one missile at the same target, combine the\
   \ damage before applying bonuses or penalties to damage, resistances, weaknesses,\
-  \ and so forth.  \n\n**Heightened (+2)**  You shoot one additional missile with\
-  \ each action you spend."
+  \ and so forth.  \n\n---\n**Heightened (+2)**  You shoot one additional missile\
+  \ with each action you spend."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Magic Missile
 range: 120 feet

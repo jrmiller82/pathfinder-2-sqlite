@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -7,7 +7,7 @@ descr: With a word of necromantic power, you seize control of the target. It gai
   the minion trait. If you or an ally uses any hostile actions against the target,
   the spell ends.
 duration: 1 day
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Bind Undead
 range: 30 feet
@@ -16,7 +16,7 @@ source:
 - abbr: CRB
   page_start: 321
   page_stop: 321
-targets: 1 mindless undead creature with a level no greater than bind undead's spell
+targets: 1 mindless undead creature with a level no greater than *bind undead*'s spell
   level
 traditions:
 - Arcane

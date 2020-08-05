@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: You create a seven-layered sphere to protect an area. This multicolored sphere
-  functions like a prismatic wall but is shaped in a 10-foot burst centered on a corner
-  of your space. You must form the sphere in an unbroken open space so its edges don't
-  pass through any creatures or objects, or the spell is lost.
+  functions like a *prismatic wall* but is shaped in a 10-foot burst centered on a
+  corner of your space. You must form the sphere in an unbroken open space so its
+  edges don't pass through any creatures or objects, or the spell is lost.
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 9
 name: Prismatic Sphere
 range: 10 feet

@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -19,7 +19,7 @@ descr: "You channel the primal forces of nature to transform into a Large animal
   \ If your unarmed attack modifier is higher, you can use it instead.\n\n * Athletics\
   \ modifier of +18, unless your own modifier is higher.\n\n  \n\nYou also gain specific\
   \ abilities based on the form you choose:  \n\n * **Ankylosaurus** Speed 25 feet;\
-  \ **Melee** |1| tail (back swing, reach 10 feet), **Damage** 2d6 bludgeoning; **Melee**\
+  \ **Melee** |1| tail (backswing, reach 10 feet), **Damage** 2d6 bludgeoning; **Melee**\
   \ |1| foot, **Damage** 2d6 bludgeoning.\n\n * **Brontosaurus** Speed 25 feet; **Melee**\
   \ |1| tail (reach 15 feet), **Damage** 2d6 bludgeoning; **Melee** |1| foot, **Damage**\
   \ 2d8 bludgeoning.\n\n * **Deinonychus** Speed 40 feet; **Melee** |1| talon (agile),\
@@ -29,16 +29,16 @@ descr: "You channel the primal forces of nature to transform into a Large animal
   \ |1| horn, **Damage** 2d8 piercing, plus 1d6 persistent bleed on a critical hit;\
   \ **Melee** |1| foot, **Damage** 2d6 bludgeoning.\n\n * **Tyrannosaurus** Speed\
   \ 30 feet; **Melee** |1| jaws (deadly, reach 10 feet), **Damage** 1d12 piercing;\
-  \ **Melee** |1| tail (reach 10 feet), **Damage** 1d10 bludgeoning.\n\n  \n\n**Heightened\
-  \ (5th)**  Your battle form is Huge and your attacks have 15-foot reach, or 20-foot\
-  \ reach if they started with 15-foot reach. You instead gain 20 temporary HP, an\
-  \ attack modifier of +18, a damage bonus of +6, double the damage dice, and Athletics\
-  \ +21.  \n\n**Heightened (7th)**  Your battle form is Gargantuan and your attacks\
-  \ have 20-foot reach, or 25-foot reach if they started with 15-foot reach. You instead\
-  \ gain AC = 21 + your level, 25 temporary HP, an attack modifier of +25, a damage\
-  \ bonus of +15, double the damage dice, and Athletics +25."
+  \ **Melee** |1| tail (reach 10 feet), **Damage** 1d10 bludgeoning.\n\n  \n\n---\n\
+  **Heightened (5th)**  Your battle form is Huge and your attacks have 15-foot reach,\
+  \ or 20-foot reach if they started with 15-foot reach. You instead gain 20 temporary\
+  \ HP, an attack modifier of +18, a damage bonus of +6, double the damage dice, and\
+  \ Athletics +21.  \n\n**Heightened (7th)**  Your battle form is Gargantuan and your\
+  \ attacks have 20-foot reach, or 25-foot reach if they started with 15-foot reach.\
+  \ You instead gain AC = 21 + your level, 25 temporary HP, an attack modifier of\
+  \ +25, a damage bonus of +15, double the damage dice, and Athletics +25."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Dinosaur Form
 req: null

@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,18 +9,18 @@ descr: "You create an illusion that causes you to appear as another creature of 
   \ your identity, but not to impersonate a specific individual. The spell doesn't\
   \ change your voice, scent, or mannerisms. You can change the appearance of your\
   \ clothing and worn items, such as making your armor look like a dress. Held items\
-  \ are unaffected, and any worn item you remove returns to its true appearance. Casting\
-  \ illusory disguise counts as setting up a disguise for the Impersonate use of Deception;\
-  \ it ignores any circumstance penalties you might take for disguising yourself as\
-  \ a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent\
-  \ others from seeing through your disguise, and you add your level even if you're\
-  \ untrained. You can Dismiss this spell.  \n\n**Heightened (2nd)**  The spell also\
-  \ disguises your voice and scent, and it gains the auditory trait.  \n\n**Heightened\
-  \ (3rd)**  You can appear as any creature of the same size, even a specific individual.\
-  \ You must have seen an individual to take on their appearance. The spell also disguises\
-  \ your voice and scent, and it gains the auditory trait."
+  \ are unaffected, and any worn item you remove returns to its true appearance. \n\
+  \nCasting *illusory disguise* counts as setting up a disguise for the Impersonate\
+  \ use of Deception; it ignores any circumstance penalties you might take for disguising\
+  \ yourself as a dissimilar creature, it gives you a +4 status bonus to Deception\
+  \ checks to prevent others from seeing through your disguise, and you add your level\
+  \ even if you're untrained. You can Dismiss this spell.  \n\n---\n**Heightened (2nd)**\
+  \  The spell also disguises your voice and scent, and it gains the auditory trait.\
+  \  \n\n**Heightened (3rd)**  You can appear as any creature of the same size, even\
+  \ a specific individual. You must have seen an individual to take on their appearance.\
+  \ The spell also disguises your voice and scent, and it gains the auditory trait."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Illusory Disguise
 req: null

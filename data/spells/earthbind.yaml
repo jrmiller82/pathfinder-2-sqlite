@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -7,12 +7,12 @@ descr: "Using the weight of earth, you hamper a target's flight, with effects ba
   \ on its Fortitude save. If the creature reaches the ground safely, it doesn't take\
   \ falling damage.  \n\n**Critical Success**  The target is unaffected.  \n\n**Success**\
   \  The target falls safely up to 120 feet.  \n\n**Failure**  The target falls safely\
-  \ up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave\
-  \ the ground for 1 round.  \n\n**Critical Failure**  The target falls safely up\
-  \ to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave\
-  \ the ground for 1 minute."
+  \ up to 120 feet. If it hits the ground, it can't Fly, *levitate*, or otherwise\
+  \ leave the ground for 1 round.  \n\n**Critical Failure**  The target falls safely\
+  \ up to 120 feet. If it hits the ground, it can't Fly, *levitate*, or otherwise\
+  \ leave the ground for 1 minute."
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Earthbind
 range: 120 feet
@@ -22,7 +22,7 @@ source:
 - abbr: CRB
   page_start: 334
   page_stop: 334
-targets: null
+targets: 1 flying creature
 traditions:
 - Arcane
 - Primal

@@ -1,19 +1,19 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: "You raise a magical shield of force. This counts as using the Raise a Shield\
   \ action, giving you a +1 circumstance bonus to AC until the start of your next\
-  \ turn, but it doesn't require a hand to use. While the spell is in effect, you\
+  \ turn, but it doesn't require a hand to use.\n\nWhile the spell is in effect, you\
   \ can use the Shield Block reaction with your magic shield. The shield has Hardness\
   \ 5. After you use Shield Block, the spell ends and you can't cast it again for\
   \ 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against\
-  \ the magic missile spell. Heightening the spell increases the shield's Hardness.\
-  \  \n\n**Heightened (3rd)**  The shield has Hardness 10.  \n\n**Heightened (5th)**\
-  \  The shield has Hardness 15.  \n\n**Heightened (7th)**  The shield has Hardness\
-  \ 20.  \n\n**Heightened (9th)**  The shield has Hardness 25."
+  \ the *magic missile* spell. \n\nHeightening the spell increases the shield's Hardness.\
+  \  \n\n---\n**Heightened (3rd)**  The shield has Hardness 10.  \n\n**Heightened\
+  \ (5th)**  The shield has Hardness 15.  \n\n**Heightened (7th)**  The shield has\
+  \ Hardness 20.  \n\n**Heightened (9th)**  The shield has Hardness 25."
 duration: until the start of your next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Shield
 req: null

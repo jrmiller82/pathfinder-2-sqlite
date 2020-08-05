@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,8 +8,9 @@ descr: "Giving the air a push, you buffet the target with a powerful gust of win
   \  \n\n**Success**  The target is pushed 5 feet away from you.  \n\n**Failure**\
   \  The target is pushed 10 feet away from you.  \n\n**Critical Failure**  The target\
   \ is pushed 10 feet away from you and knocked prone."
+domain: Air
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Pushing Gust
 range: 500 feet

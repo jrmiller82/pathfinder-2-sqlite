@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 5-foot radius, 80-foot tall cylinder
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -12,16 +12,16 @@ descr: "The ground opens up, spraying a column of lava high into the air in a ve
   \ moment they're encased, but they don't take damage from this fall. A creature\
   \ encased in rock can attempt to Escape against your spell DC to end the effect.\
   \ Otherwise, the creature remains encased until it takes a total of 50 damage, freeing\
-  \ it from the rock. Additionally, creatures in the area and those within 5 feet\
+  \ it from the rock. \n\nAdditionally, creatures in the area and those within 5 feet\
   \ of the lava column automatically take 3d6 fire damage from the intense heat, regardless\
   \ of the results of their saving throws.  \n\n**Critical Success**  The creature\
   \ is unaffected.  \n\n**Success**  The creature takes half damage.  \n\n**Failure**\
   \  The creature takes full damage and is encased.  \n\n**Critical Failure**  The\
-  \ creature takes double damage and is encased.  \n\n**Heightened (+1)**  The damage\
-  \ in the area increases by 2d6, and the damage from the intense heat increases by\
-  \ 1d6."
+  \ creature takes double damage and is encased.  \n\n---\n**Heightened (+1)**  The\
+  \ damage in the area increases by 2d6, and the damage from the intense heat increases\
+  \ by 1d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Volcanic Eruption
 range: 120 feet

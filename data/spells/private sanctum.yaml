@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 area: 100-foot burst
 cast: 10 minutes (material, somatic, verbal)
 components:
@@ -10,7 +10,7 @@ descr: From outside, the area looks like a bank of impenetrable black fog. Senso
   the area. Scrying spells can't perceive any stimuli from the area, and mind-reading
   effects don't work in the area.
 duration: 24 hours
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Private Sanctum
 range: touch

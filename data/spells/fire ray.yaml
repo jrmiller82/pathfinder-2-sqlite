@@ -1,15 +1,16 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "A blazing band of fire arcs through the air. Make a spell attack roll. The\
   \ ray deals 2d6 fire damage.  \n\n**Critical Success**  The ray deals double damage\
   \ and 1d4 persistent fire damage.  \n\n**Success**  The ray deals full damage. \
-  \ \n\n**Heightened (+1)**  The ray's initial damage increases by 2d6, and the persistent\
-  \ fire damage on a critical success increases by 1d4."
+  \ \n\n---\n**Heightened (+1)**  The ray's initial damage increases by 2d6, and the\
+  \ persistent fire damage on a critical success increases by 1d4."
+domain: Fire
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Fire Ray
 range: 60 feet

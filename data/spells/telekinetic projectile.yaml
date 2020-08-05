@@ -1,17 +1,17 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You hurl a loose, unattended object that is within range and that has 1 Bulk\
-  \ or less at the target. Make a ranged attack against the target. If you hit, you\
-  \ deal bludgeoning, piercing, or slashing damage-as appropriate for the object you\
-  \ hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits\
+  \ or less at the target. Make a spell attack roll against the target. If you hit,\
+  \ you deal bludgeoning, piercing, or slashing damage-as appropriate for the object\
+  \ you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits\
   \ or magic properties of the hurled item affect the attack or the damage.  \n\n\
   **Critical Success**  You deal double damage.  \n\n**Success**  You deal full damage.\
-  \  \n\n**Heightened (+1)**  The damage increases by 1d6."
+  \  \n\n---\n**Heightened (+1)**  The damage increases by 1d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Telekinetic Projectile
 range: 30 feet

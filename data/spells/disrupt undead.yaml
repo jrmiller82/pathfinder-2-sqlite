@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You lance the target with energy. You deal 1d6 positive damage plus your spellcasting\
   \ ability modifier. The target must attempt a basic Fortitude save. If the creature\
-  \ critically fails the save, it is also enfeebled 1 for 1 round.  \n\n**Heightened\
+  \ critically fails the save, it is also enfeebled 1 for 1 round.  \n\n---\n**Heightened\
   \ (+1)**  The damage increases by 1d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Disrupt Undead
 range: 30 feet

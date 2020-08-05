@@ -1,16 +1,16 @@
 action_abbr: '3'
 area: 20-foot burst
-cast: material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
 - Verbal
-descr: "You conjure a poisonous fog. This functions as obscuring mist, except the\
+descr: "You conjure a poisonous fog. This functions as *obscuring mist*, except the\
   \ area moves 10 feet away from you each round. You deal 6d8 poison damage to each\
   \ breathing creature that starts its turn in the spell's area. You can Dismiss the\
-  \ spell.  \n\n**Heightened (+1)**  The damage increases by 1d8."
+  \ spell.  \n\n---\n**Heightened (+1)**  The damage increases by 1d8."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Cloudkill
 range: 120 feet

@@ -1,11 +1,11 @@
 action_abbr: R
-cast: null
+cast: '|R| verbal'
 components:
 - Verbal
 descr: You call upon insight from your training to recover accuracy. Reroll the missed
   attack roll and keep the new result.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Perfect Strike
 req: null

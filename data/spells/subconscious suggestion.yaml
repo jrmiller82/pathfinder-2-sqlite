@@ -1,24 +1,24 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You implant a subconscious suggestion deep within the target's mind for them\
-  \ to follow when a trigger you specify occurs (as described on page 305). You suggest\
-  \ a course of action to the target. Your directive must be phrased in such a way\
-  \ as to seem like a logical course of action to the target, and it can't be self-destructive\
-  \ or obviously against the target's self-interest. The target must attempt a Will\
-  \ save.  \n\n**Critical Success**  The target is unaffected and knows you tried\
-  \ to control it.  \n\n**Success**  The target is unaffected and thinks you were\
-  \ talking to them normally, not casting a spell on them.  \n\n**Failure**  The suggestion\
-  \ remains in the target's subconscious until the next time you prepare. If the trigger\
-  \ occurs before then, the target immediately follows your suggestion. The effect\
-  \ has a duration of 1 minute, or until the target has completed a finite suggestion\
-  \ or the suggestion becomes self-destructive or has other obvious negative effects.\
-  \  \n\n**Critical Failure**  As failure, but the duration is 1 hour.  \n\n**Heightened\
-  \ (9th)**  You can target up to 10 creatures."
+  \ to follow when a trigger you specify occurs. You suggest a course of action to\
+  \ the target. Your directive must be phrased in such a way as to seem like a logical\
+  \ course of action to the target, and it can't be self-destructive or obviously\
+  \ against the target's self-interest. The target must attempt a Will save.  \n\n\
+  **Critical Success**  The target is unaffected and knows you tried to control it.\
+  \  \n\n**Success**  The target is unaffected and thinks you were talking to them\
+  \ normally, not casting a spell on them.  \n\n**Failure**  The suggestion remains\
+  \ in the target's subconscious until the next time you prepare. If the trigger occurs\
+  \ before then, the target immediately follows your suggestion. The effect has a\
+  \ duration of 1 minute, or until the target has completed a finite suggestion or\
+  \ the suggestion becomes self-destructive or has other obvious negative effects.\
+  \  \n\n**Critical Failure**  As failure, but the duration is 1 hour.  \n\n---\n\
+  **Heightened (9th)**  You can target up to 10 creatures."
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Subconscious Suggestion
 range: 30 feet

@@ -1,20 +1,21 @@
 action_abbr: '3'
-cast: Three Actions material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
 - Verbal
 descr: "You request a direct intercession from the natural world. Nature always refuses\
   \ unnatural requests and might grant a different request (potentially more powerful\
-  \ or better fitting its character) than the one you asked for. A primal phenomenon\
-  \ spell can do any of the following things. Duplicate any primal spell of 9th level\
-  \ or lower. Duplicate any non-primal spell of 7th level or lower. Produce any effect\
-  \ whose power level is in line with the above effects. Reverse certain effects that\
-  \ refer to the wish spell. At the GM's discretion, you can try to use primal phenomenon\
-  \ to produce greater effects than these, but doing so may be dangerous, or the spell\
-  \ may have only a partial effect.\n\n\t\t\t\t\t"
+  \ or better fitting its character) than the one you asked for. A *primal phenomenon*\
+  \ spell can do any of the following things. \n\n* Duplicate any primal spell of\
+  \ 9th level or lower. \n* Duplicate any non-primal spell of 7th level or lower.\
+  \ \n* Produce any effect whose power level is in line with the above effects. \n\
+  * Reverse certain effects that refer to the wish spell. \n\nAt the GM's discretion,\
+  \ you can try to use *primal phenomenon* to produce greater effects than these,\
+  \ but doing so may be dangerous, or the spell may have only a partial effect.\n\n\
+  \t\t\t\t\t"
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 10
 name: Primal Phenomenon
 req: null

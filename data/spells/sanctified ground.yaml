@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 1m
 area: 30-foot burst centered on you
 cast: 1 minute (material, somatic, verbal)
 components:
@@ -6,12 +6,12 @@ components:
 - Somatic
 - Verbal
 cost: 1 vial of holy water
-descr: You sanctify the area, sprinkling it with holy water and warding it against
+descr: You sanctify the area, sprinkling it with *holy water* and warding it against
   your foes. Choose aberrations, celestials, dragons, fiends, monitors, or undead.
   All creatures in the area gain a +1 status bonus to AC, attack rolls, damage rolls,
   and saving throws against the chosen creatures.
-duration: null
-has_been_manually_proofread: false
+duration: 24 hours
+has_been_manually_proofread: true
 level: 3
 name: Sanctified Ground
 req: null

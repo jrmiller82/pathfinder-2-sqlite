@@ -1,14 +1,14 @@
 action_abbr: '2'
 area: 10-foot radius, 60-foot-tall cylinder
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You call forth a plume of hellfire that erupts from below, dealing 4d6 fire\
-  \ damage and 4d6 evil damage.  \n\n**Heightened (+1)**  The fire damage increases\
+  \ damage and 4d6 evil damage.  \n\n---\n**Heightened (+1)**  The fire damage increases\
   \ by 1d6, and the evil damage increases by 1d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Hellfire Plume
 range: 60 feet

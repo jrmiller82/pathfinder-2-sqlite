@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 20-foot burst
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -10,19 +10,19 @@ descr: "This spell grants perfect sight based on scrying, allowing several willi
   \ for the spell. Up to five willing creatures of your choice in the area can see\
   \ a ghostly image of this creature or object when it's out of their sight. They\
   \ can perceive the creature or object perfectly, allowing them to ignore the concealed\
-  \ or invisible condition, though physical barriers still provide cover. The tracking\
-  \ creatures can see the tracked creature or object through all barriers other than\
-  \ lead or running water, which block their vision. Distance doesn't matter, though\
-  \ the creature or object might move so far away it becomes too small to perceive.\
+  \ or invisible condition, though physical barriers still provide cover. \n\nThe\
+  \ tracking creatures can see the tracked creature or object through all barriers\
+  \ other than lead or running water, which block their vision. Distance doesn't matter,\
+  \ though the creature or object might move so far away it becomes too small to perceive.\
   \ The tracking creatures don't see any of the environment around the target, though\
   \ they do see any gear a creature is wearing or holding, and they can tell if it\
-  \ removes objects from its person. If the target to be tracked is willing, the duration\
-  \ is 1 hour. If you try to track an unwilling creature, the target must attempt\
-  \ a Will save.  \n\n**Critical Success**  The creature or object is unaffected.\
+  \ removes objects from its person. \n\nIf the target to be tracked is willing, the\
+  \ duration is 1 hour. If you try to track an unwilling creature, the target must\
+  \ attempt a Will save.  \n\n**Critical Success**  The creature or object is unaffected.\
   \  \n\n**Success**  As described, and the duration is 1 minute.  \n\n**Failure**\
   \  As described, and the duration is 1 hour."
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Unrelenting Observation
 range: 100 feet

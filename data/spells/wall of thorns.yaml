@@ -1,5 +1,5 @@
-action_abbr: '2'
-cast: material, somatic, verbal
+action_abbr: '3'
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
@@ -12,13 +12,13 @@ descr: "Over the course of a minute, you cause a thick wall of thorny brambles t
   \ of a shorter length or height. Everything on each side of the wall has cover from\
   \ creatures on the opposite side, and the wall's spaces are difficult terrain. For\
   \ every move action a creature uses to enter at least one of the wall's spaces,\
-  \ that creature takes 3d4 piercing damage. Each 5-foot-by-5-foot section of the\
-  \ wall has AC 10, Hardness 10, and 20 Hit Points. It's immune to critical hits and\
-  \ precision damage. A destroyed section can be moved through freely.  \n\n**Heightened\
-  \ (+1)**  The Hit Points of each section of the wall increase by 5, and the piercing\
-  \ damage increases by 1d4."
+  \ that creature takes 3d4 piercing damage. \n\nEach 5-foot-by-5-foot section of\
+  \ the wall has AC 10, Hardness 10, and 20 Hit Points. It's immune to critical hits\
+  \ and precision damage. A destroyed section can be moved through freely.  \n\n---\n\
+  **Heightened (+1)**  The Hit Points of each section of the wall increase by 5, and\
+  \ the piercing damage increases by 1d4."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Wall of Thorns
 range: 60 feet

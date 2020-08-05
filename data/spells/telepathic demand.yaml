@@ -1,18 +1,18 @@
 action_abbr: '3'
-cast: material, somatic, verbal
+cast: '|3| material, somatic, verbal'
 components:
 - Material
 - Somatic
 - Verbal
 descr: You send the target a message of 25 words or fewer, and it can respond immediately
   with its own message of 25 words or fewer. Your message is insidious and has the
-  effect of suggestion, with the message substituting for the spoken suggestion. On
-  a successful save, the target is temporarily immune for 1 day, and on a critical
+  effect of *suggestion*, with the message substituting for the spoken suggestion.
+  On a successful save, the target is temporarily immune for 1 day, and on a critical
   success, the target is temporarily immune for 1 month. You can target a creature
   only if you have previously been in telepathic contact with it before, such as via
-  the telepathy spell.
+  the *telepathy* spell.
 duration: varies
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 9
 name: Telepathic Demand
 range: planetary

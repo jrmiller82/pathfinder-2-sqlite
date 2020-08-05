@@ -1,16 +1,16 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You free those who travel alongside you from environmental hindrances. Targets\
   \ don't take circumstance penalties to Speed from vegetation, rubble, winds, or\
   \ other properties of the environment, whether or not the environment is magical,\
-  \ and they ignore difficult terrain from such environmental properties.  \n\n**Heightened\
-  \ (9th)**  The targets also ignore greater difficult terrain from environmental\
+  \ and they ignore difficult terrain from such environmental properties.  \n\n---\n\
+  **Heightened (9th)**  The targets also ignore greater difficult terrain from environmental\
   \ properties."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Unfettered Pack
 range: 30 feet

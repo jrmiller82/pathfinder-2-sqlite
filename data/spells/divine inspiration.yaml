@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,7 +9,7 @@ descr: You infuse a target with spiritual energy, refreshing its magic. If it pr
   6th-level or lower spell slots. If it has a focus pool, it regains its Focus Points,
   as if it had Refocused.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Divine Inspiration
 range: touch

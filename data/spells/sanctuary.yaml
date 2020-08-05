@@ -1,18 +1,18 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You ward a creature with protective energy that deters enemy attacks. Creatures\
   \ attempting to attack the target must attempt a Will save each time. If the target\
-  \ uses a hostile action, the spell ends.  \n\n**Critical Success**  Sanctuary ends.\
-  \  \n\n**Success**  The creature can attempt its attack and any other attacks against\
-  \ the target this turn.  \n\n**Failure**  The creature can't attack the target and\
-  \ wastes the action. It can't attempt further attacks against the target this turn.\
-  \  \n\n**Critical Failure**  The creature wastes the action and can't attempt to\
-  \ attack the target for the rest of sanctuary's duration."
+  \ uses a hostile action, the spell ends.  \n\n**Critical Success**  *Sanctuary*\
+  \ ends.  \n\n**Success**  The creature can attempt its attack and any other attacks\
+  \ against the target this turn.  \n\n**Failure**  The creature can't attack the\
+  \ target and wastes the action. It can't attempt further attacks against the target\
+  \ this turn.  \n\n**Critical Failure**  The creature wastes the action and can't\
+  \ attempt to attack the target for the rest of sanctuary's duration."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Sanctuary
 range: touch

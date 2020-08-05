@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -7,14 +7,14 @@ descr: "You cause any spells cast on the target to spill out their energy in har
   \ surges. The target must attempt a Will save.  \n\n**Critical Success**  The target\
   \ is unaffected.  \n\n**Success**  Whenever the target becomes affected by a spell\
   \ with a duration, the target takes 2d12 persistent force damage. Each time it takes\
-  \ persistent force damage from spellwrack, it reduces the remaining duration of\
+  \ persistent force damage from *spellwrack*, it reduces the remaining duration of\
   \ spells affecting it by 1 round. Only a successful Arcana check against your spell\
   \ DC can help the target recover from the persistent damage; the curse and the persistent\
   \ damage end after 1 minute.  \n\n**Failure**  As success, but the curse and persistent\
   \ damage do not end on their own.  \n\n**Critical Failure**  As failure, but the\
   \ persistent force damage is 4d12."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Spellwrack
 range: 30 feet

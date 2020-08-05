@@ -1,11 +1,11 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You send your mind and soul into the target's body, attempting to take control.\
   \ The target must attempt a Will save. You can choose to use the effects of a degree\
-  \ of success more favorable to the target if you prefer. While you're possessing\
+  \ of success more favorable to the target if you prefer. \n\nWhile you're possessing\
   \ a target, your own body is unconscious and can't wake up normally. You can sense\
   \ everything the possessed target does. You can Dismiss this spell. If the possessed\
   \ body dies, the spell ends and you must succeed at a Fortitude save against your\
@@ -19,11 +19,11 @@ descr: "You send your mind and soul into the target's body, attempting to take c
   \ it fails, it's controlled by you on that turn; if it succeeds, it chooses its\
   \ own actions; and if it critically succeeds, it forces you out and the spell ends.\
   \  \n\n**Critical Failure**  You possess the target fully, and it can only watch\
-  \ as you manipulate it like a puppet. The target is controlled by you.  \n\n**Heightened\
-  \ (9th)**  The duration is 10 minutes, and you can physically enter the creature's\
-  \ body, protecting your physical body while the spell lasts."
+  \ as you manipulate it like a puppet. The target is controlled by you.  \n\n---\n\
+  **Heightened (9th)**  The duration is 10 minutes, and you can physically enter the\
+  \ creature's body, protecting your physical body while the spell lasts."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Possession
 range: 30 feet
@@ -37,6 +37,7 @@ targets: 1 living creature
 traditions:
 - Occult
 traits:
+- Uncommon
 - Incapacitation
 - Mental
 - Necromancy

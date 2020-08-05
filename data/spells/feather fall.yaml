@@ -1,5 +1,5 @@
 action_abbr: R
-cast: verbal
+cast: '|R| verbal'
 components:
 - Verbal
 descr: You cause the air itself to arrest a fall. The target's fall slows to 60 feet
@@ -8,7 +8,7 @@ descr: You cause the air itself to arrest a fall. The target's fall slows to 60 
   is in effect, it takes no damage from the fall. The spell ends as soon as the target
   lands.
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Feather Fall
 range: 60 feet

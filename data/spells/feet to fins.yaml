@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "The target's feet transform into fins, improving mobility in the water but\
   \ reducing it on land. The target gains a swim Speed equal to its normal land Speed,\
-  \ but its land Speed becomes 5 feet.  \n\n**Heightened (6th)**  The spell lasts\
+  \ but its land Speed becomes 5 feet.  \n\n---\n**Heightened (6th)**  The spell lasts\
   \ until the next time you make your daily preparations."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Feet to Fins
 range: touch

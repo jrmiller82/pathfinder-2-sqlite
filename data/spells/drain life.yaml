@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "You close your hand and pull life energy from another creature into yourself.\
@@ -8,9 +8,9 @@ descr: "You close your hand and pull life energy from another creature into your
   \ its save and applying your blood magic if applicable. If the target's Hit Points\
   \ were lower than the damage you dealt, you gain temporary Hit Points equal to their\
   \ remaining Hit Points instead. The temporary Hit Points last for 1 minute.  \n\n\
-  **Heightened (+1)**  The damage increases by 1d4."
+  ---\n**Heightened (+1)**  The damage increases by 1d4."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Drain Life
 range: 30 feet

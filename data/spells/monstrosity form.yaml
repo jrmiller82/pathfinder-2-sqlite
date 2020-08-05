@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -35,11 +35,11 @@ descr: "You transform into the shape of a legendary monster, assuming a Huge bat
   \ |1| tail (reach 25 feet), **Damage** 2d8+20 bludgeoning; **Spine Rake** |2| (move)\
   \ You extend your spines and Swim or Stride. Each creature you're adjacent to at\
   \ any point during your movement takes 4d8+10 slashing damage (basic Reflex against\
-  \ your spell DC).\n\n  \n\n**Heightened (9th)**  You instead gain AC = 22 + your\
-  \ level, 25 temporary HP, attack modifier +31, increase damage by one damage die,\
-  \ and Athletics +33."
+  \ your spell DC).\n\n  \n\n---\n**Heightened (9th)**  You instead gain AC = 22 +\
+  \ your level, 25 temporary HP, attack modifier +31, increase damage by one damage\
+  \ die, and Athletics +33."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Monstrosity Form
 req: null

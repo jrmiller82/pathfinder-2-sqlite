@@ -1,16 +1,16 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (somatic, verbal)
 components:
 - Somatic
 - Verbal
 descr: "You focus on the target object, opening your mind to perceive magical auras.\
   \ When the casting is complete, you know whether that item is magical, and if it\
-  \ is, you learn the school of magic (pages 297-298). If the object is illusory,\
-  \ you detect this only if the effect's level is lower than the level of your read\
-  \ aura spell.  \n\n**Heightened (3rd)**  You can target up to 10 objects.  \n\n\
-  **Heightened (6th)**  You can target any number of objects."
+  \ is, you learn the school of magic. \n\nIf the object is illusory, you detect this\
+  \ only if the effect's level is lower than the level of your *read aura* spell.\
+  \  \n\n---\n**Heightened (3rd)**  You can target up to 10 objects.  \n\n**Heightened\
+  \ (6th)**  You can target any number of objects."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Read Aura
 range: 30 feet

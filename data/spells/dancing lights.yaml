@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,7 +8,7 @@ descr: You create up to four floating lights, no two of which are more than 10 f
   number of lights up to 60 feet. Each light must remain within 120 feet of you and
   within 10 feet of all others, or it winks out.
 duration: sustained
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Dancing Lights
 range: 120 feet

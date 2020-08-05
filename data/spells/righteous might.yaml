@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -17,16 +17,16 @@ descr: "You focus all your divine energy and transform yourself into a Medium ba
   \ weapon is higher, you can use it instead. You deal three of your weapon's normal\
   \ damage dice, or three damage dice of one size larger if your weapon is a simple\
   \ weapon with a d4 or d6 damage die. The weapon has one of the following properties\
-  \ that matches your deity's alignment: anarchic, axiomatic, holy, unholy. If your\
-  \ deity is true neutral, you instead deal an extra 1d6 precision damage.\n\n * Athletics\
-  \ modifier of +23, unless your own modifier is higher.\n\n  \n\n**Heightened (8th)**\
-  \  Your battle form is Large, and your attacks have 10-foot reach, or 15-foot reach\
-  \ if your deity's favored weapon has reach. You must have enough space to expand\
-  \ into or the spell is lost. You instead gain AC = 21 + your level, 15 temporary\
+  \ that matches your deity's alignment: *anarchic*, *axiomatic*, *holy*, *unholy*.\
+  \ If your deity is true neutral, you instead deal an extra 1d6 precision damage.\n\
+  \n * Athletics modifier of +23, unless your own modifier is higher.\n\n---\n**Heightened\
+  \ (8th)**  Your battle form is Large, and your attacks have 10-foot reach, or 15-foot\
+  \ reach if your deity's favored weapon has reach. You must have enough space to\
+  \ expand into or the spell is lost. You instead gain AC = 21 + your level, 15 temporary\
   \ HP, resistance 4 against physical damage, attack modifier +28, damage bonus +15\
   \ (+12 for a ranged attack), and Athletics +29."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 6
 name: Righteous Might
 req: You have a deity.

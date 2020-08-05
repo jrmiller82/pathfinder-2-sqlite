@@ -1,12 +1,13 @@
 action_abbr: R
-cast: verbal
+cast: '|R| verbal'
 components:
 - Verbal
 descr: You put up a united defense. Each ally can use your saving throw modifier instead
   of its own against the triggering spell. Each ally decides individually which modifier
   to use.
+domain: Family
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Unity
 range: 30 feet

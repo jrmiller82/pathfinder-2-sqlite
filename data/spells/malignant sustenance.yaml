@@ -1,14 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You embed a seed of negative energy in an undead creature, restoring its unnatural\
   \ vigor. The target gains fast healing 7. This healing comes from negative energy,\
-  \ so it heals the undead rather than damaging it.  \n\n**Heightened (+1)**  The\
-  \ fast healing increases by 2."
+  \ so it heals the undead rather than damaging it.  \n\n---\n**Heightened (+1)**\
+  \  The fast healing increases by 2."
+domain: Undeath
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Malignant Sustenance
 range: touch

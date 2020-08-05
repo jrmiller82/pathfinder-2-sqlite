@@ -1,17 +1,17 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (material, somatic, verbal)
 components:
 - Material
 - Somatic
 - Verbal
 descr: You erect protective wards that make the target difficult to detect via magic.
-  Nondetection attempts to counteract all detection, revelation, and scrying divinations
+  *Nondetection* attempts to counteract all detection, revelation, and scrying divinations
   made against the target or the target's gear throughout the duration, counting cantrips
   as 1st-level spells for this purpose. Successfully counteracting a divination that
-  targets an area or multiple targets negates the effects only for nondetection's
+  targets an area or multiple targets negates the effects only for *nondetection*'s
   target.
 duration: 8 hours
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Nondetection
 range: touch

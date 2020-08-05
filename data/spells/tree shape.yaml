@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -12,7 +12,7 @@ descr: You transform into a Large tree. Perception checks don't reveal your true
   and circumstance penalties affect you. Any successes and critical successes you
   roll on Reflex saves are failures.
 duration: 8 hours
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Tree Shape
 req: null

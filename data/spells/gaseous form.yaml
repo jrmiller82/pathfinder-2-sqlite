@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,7 +9,7 @@ descr: The target transforms into a vaporous state. In this state, the target is
   that have the attack or manipulate trait. It gains a fly Speed of 10 feet and can
   slip through tiny cracks. The target can Dismiss the spell.
 duration: 5 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Gaseous Form
 range: touch

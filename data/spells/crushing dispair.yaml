@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 30-foot cone
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,13 +8,12 @@ descr: "You inflict despair on creatures in the area. The effects for each creat
   \ are determined by its Will save.  \n\n**Critical Success**  The creature is unaffected.\
   \  \n\n**Success**  For 1 round, the creature can't use reactions and must attempt\
   \ another save at the start of its turn; on a failure, it is slowed 1 for that turn\
-  \ as it sobs uncontrollably.  \n\n**Failure**  For 1 round, the creature can't use\
-  \ reactions and must attempt another save at the start of its turn; on a failure,\
-  \ it is slowed 1 for that turn as it sobs uncontrollably.  \n\n**Critical Failure**\
-  \  As failure, and the creature is automatically slowed 1 for 1 minute.  \n\n**Heightened\
-  \ (7th)**  The area increases to a 60-foot cone."
+  \ as it sobs uncontrollably.  \n\n**Failure**  As success, but the slowed duration\
+  \ is 1 minute.  \n\n**Critical Failure**  As failure, and the creature is automatically\
+  \ slowed 1 for 1 minute.  \n\n---\n**Heightened (7th)**  The area increases to a\
+  \ 60-foot cone."
 duration: 1 or more rounds
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Crushing Dispair
 req: null

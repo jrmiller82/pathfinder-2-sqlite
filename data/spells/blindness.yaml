@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,7 +9,7 @@ descr: "You blind the target. The effect is determined by the target's Fortitude
   \ turn begins.  \n\n**Failure**  The target is blinded for 1 minute.  \n\n**Critical\
   \ Failure**  The target is blinded permanently."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Blindness
 range: 30 feet

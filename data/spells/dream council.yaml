@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (somatic, verbal)
 components:
 - Somatic
@@ -9,7 +9,7 @@ descr: When you Cast this Spell, any targets-including you-can choose to immedia
   they were in the same room. Individual targets leave this shared dream upon awakening,
   and if all the targets awaken, the spell ends.
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 8
 name: Dream Council
 range: planetary

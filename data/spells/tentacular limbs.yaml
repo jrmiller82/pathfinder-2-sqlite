@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: "Your arms turn into long, pliable tentacles, increasing your reach when you're\
@@ -7,11 +7,11 @@ descr: "Your arms turn into long, pliable tentacles, increasing your reach when 
   \ as fist and claw Strikes) to 10 feet. This doesn't change the reach of your melee\
   \ weapon attacks. During the duration, whenever you Cast a Spell, you can add an\
   \ additional action to that spell's casting to temporarily extend your reach to\
-  \ 20 feet to deliver that spell.  \n\n**Heightened (+2)**  When you add an additional\
-  \ action to a spell to temporarily extend your reach, your reach increases by an\
-  \ additional 10 feet to deliver that spell."
+  \ 20 feet to deliver that spell.  \n\n---\n**Heightened (+2)**  When you add an\
+  \ additional action to a spell to temporarily extend your reach, your reach increases\
+  \ by an additional 10 feet to deliver that spell."
 duration: 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Tentacular Limbs
 req: null

@@ -1,5 +1,5 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: 'Accelerated by your ki, you move with such speed you become a blur. Move two
@@ -7,7 +7,7 @@ descr: 'Accelerated by your ki, you move with such speed you become a blur. Move
   gain the concealed condition during this movement and until the start of your next
   turn.'
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Ki Rush
 req: null

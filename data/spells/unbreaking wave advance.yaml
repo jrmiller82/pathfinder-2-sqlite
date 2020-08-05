@@ -1,6 +1,6 @@
 action_abbr: '1'
 area: 15-foot cone
-cast: null
+cast: '|1| verbal'
 components:
 - Verbal
 descr: "You unleash a mighty wave from your hand that buffets back your foes. Each\
@@ -8,10 +8,10 @@ descr: "You unleash a mighty wave from your hand that buffets back your foes. Ea
   \ by *unbreaking wave advance* would be pushed into a solid barrier or another creature,\
   \ it stops at that point and takes 3d6 damage.\n\n  \n\n **Success** The creature\
   \ is unaffected.  \n\n **Failure** The creature is pushed 10 feet.  \n\n **Critical\
-  \ Failure** The creature is pushed 20 feet.  \n\n**Heightened (+1)** The damage\
+  \ Failure** The creature is pushed 20 feet.  \n\n---\n**Heightened (+1)** The damage\
   \ for pushing a creature into a solid barrier increases by 1d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Unbreaking Wave Advance
 req: null

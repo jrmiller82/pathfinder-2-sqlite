@@ -1,6 +1,6 @@
 action_abbr: '1'
 area: 60-foot emanation
-cast: somatic
+cast: '|1| somatic'
 components:
 - Somatic
 descr: You dance at a lively tempo, speeding your allies' movement. You and all allies
@@ -17,6 +17,7 @@ source:
 targets: null
 traditions: null
 traits:
+- Uncommon
 - Bard
 - Cantrip
 - Composition

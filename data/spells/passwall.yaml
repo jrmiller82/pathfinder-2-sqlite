@@ -1,7 +1,7 @@
 action_abbr: '2'
 area: 5-foot-wide, 10-foot-tall, 10-foot deep section of wooden, plaster, or stone
   wall
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,14 +9,14 @@ descr: "You create a visible tunnel through the wall in the chosen area, replaci
   \ the area with empty space. If the wall is thicker than 10 feet, the tunnel ends\
   \ 10 feet in. Even a small layer of metal in the wall prevents this spell from functioning.\
   \ This spell doesn't reduce the integrity of the structure. When the spell ends,\
-  \ anyone inside the tunnel is shunted to the nearest exit.  \n\n**Heightened (7th)**\
-  \  The tunnel can be up to 20 feet deep. The areas of the wall that contain your\
-  \ tunnel's entrance appear completely normal (unless viewed with true seeing or\
-  \ a similar effect), despite the tunnel's existence. The tunnel's entrance functions\
-  \ as a solid wall, but you can specify a password or a trigger (page 305), allowing\
-  \ creatures to enter the tunnel freely."
+  \ anyone inside the tunnel is shunted to the nearest exit.  \n\n---\n**Heightened\
+  \ (7th)**  The tunnel can be up to 20 feet deep. The areas of the wall that contain\
+  \ your tunnel's entrance appear completely normal (unless viewed with *true seeing*\
+  \ or a similar effect), despite the tunnel's existence. The tunnel's entrance functions\
+  \ as a solid wall, but you can specify a password or a trigger, allowing creatures\
+  \ to enter the tunnel freely."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Passwall
 range: touch

@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -12,10 +12,10 @@ descr: "You transform into a the battle form of a Tiny animal, such as a cat, in
   \ 5 to physical damage. (If you take physical damage in this form, you take 5 additional\
   \ damage.)\n\n * Low-light vision and imprecise scent 30 feet.\n\n * Acrobatics\
   \ and Stealth modifiers of +10, unless your own modifier is higher; Athletics modifier\
-  \ -4.\n\n  \n\n**Heightened (4th)**  You can turn into a flying creature, such as\
-  \ a bird, which grants you a fly Speed of 20 feet."
+  \ -4.\n\n  \n\n---\n**Heightened (4th)**  You can turn into a flying creature, such\
+  \ as a bird, which grants you a fly Speed of 20 feet."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Pest Form
 req: null

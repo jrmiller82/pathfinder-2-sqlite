@@ -1,15 +1,15 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (somatic, verbal)
 components:
 - Somatic
 - Verbal
 descr: "You shield the target against dangerous temperatures. Choose severe cold or\
   \ heat. The target is protected from the temperature you chose (but not extreme\
-  \ cold or heat).  \n\n**Heightened (3rd)**  The target is protected from severe\
+  \ cold or heat).  \n\n---\n**Heightened (3rd)**  The target is protected from severe\
   \ cold and heat.  \n\n**Heightened (5th)**  The target is protected from severe\
   \ cold, severe heat, extreme cold, and extreme heat."
 duration: until the next time you make your daily preparations
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Endure Elements
 range: touch

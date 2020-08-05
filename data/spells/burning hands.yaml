@@ -1,13 +1,13 @@
 action_abbr: '2'
 area: 15-foot cone
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Gouts of flame rush from your hands. You deal 2d6 fire damage to creatures\
-  \ in the area.  \n\n**Heightened (+1)**  The damage increases by 2d6."
+  \ in the area.  \n\n---\n**Heightened (+1)**  The damage increases by 2d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Burning Hands
 req: null

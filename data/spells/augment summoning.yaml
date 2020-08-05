@@ -1,12 +1,12 @@
 action_abbr: '1'
-cast: verbal
+cast: '|1| verbal'
 components:
 - Verbal
 descr: You augment the abilities of a summoned creature. The target gains a +1 status
   bonus to all checks (this also applies to the creature's DCs, including its AC)
   for the duration of its summoning, up to 1 minute.
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Augment Summoning
 range: 30 feet

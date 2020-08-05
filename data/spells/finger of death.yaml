@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You point your finger toward the target and speak a word of slaying. You deal\
-  \ 70 negative damage to the target. If the damage from finger of death reduces the\
-  \ target to 0 Hit Points, the target dies instantly.  \n\n**Heightened (+1)**  The\
-  \ damage increases by 10."
+  \ 70 negative damage to the target. If the damage from *finger of death* reduces\
+  \ the target to 0 Hit Points, the target dies instantly.  \n\n---\n**Heightened\
+  \ (+1)**  The damage increases by 10."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 7
 name: Finger of Death
 range: 30 feet

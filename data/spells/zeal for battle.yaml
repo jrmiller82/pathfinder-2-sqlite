@@ -1,13 +1,14 @@
 action_abbr: R
-cast: verbal
+cast: '|R| verbal'
 components:
 - Verbal
 descr: You stoke the righteous anger within yourself and an ally. You and the target
   ally each roll a d20 and use the higher result for both your initiative rolls. You
   each still use your own Perception modifier or other statistic to determine your
   results.
+domain: Zeal
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Zeal for Battle
 range: 10 feet

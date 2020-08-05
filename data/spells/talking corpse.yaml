@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (material, somatic, verbal)
 components:
 - Material
@@ -23,7 +23,7 @@ descr: "You grant the target corpse a semblance of life, which it uses to speak 
   \ are more direct and less repetitive, though still cryptic. It takes a -2 status\
   \ penalty to Deception checks to deceive or mislead you."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Talking Corpse
 range: touch

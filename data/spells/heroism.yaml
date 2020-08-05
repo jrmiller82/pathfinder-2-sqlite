@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You tap into the target's inner heroism, granting it a +1 status bonus to\
-  \ attack rolls, Perception checks, saving throws, and skill checks.  \n\n**Heightened\
+  \ attack rolls, Perception checks, saving throws, and skill checks.  \n\n---\n**Heightened\
   \ (6th)**  The status bonus increases to +2.  \n\n**Heightened (9th)**  The status\
   \ bonus increases to +3."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Heroism
 range: touch

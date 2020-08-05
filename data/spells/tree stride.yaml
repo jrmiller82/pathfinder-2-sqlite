@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (material, somatic, verbal)
 components:
 - Material
@@ -10,11 +10,11 @@ descr: "You step into a living tree with a trunk big enough for you to fit insid
   \ know the rough locations of other sufficiently large trees of the same species\
   \ within range and can exit from the original tree, if you prefer. You can't carry\
   \ extradimensional spaces with you; if you attempt to do so, the spell fails.  \n\
-  \n**Heightened (6th)**  The tree you exit can be up to 50 miles away.  \n\n**Heightened\
-  \ (8th)**  The tree you exit can be up to 500 miles away.  \n\n**Heightened (9th)**\
-  \  The tree you exit can be anywhere on the same planet."
+  \n---\n**Heightened (6th)**  The tree you exit can be up to 50 miles away.  \n\n\
+  **Heightened (8th)**  The tree you exit can be up to 500 miles away.  \n\n**Heightened\
+  \ (9th)**  The tree you exit can be anywhere on the same planet."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Tree Stride
 req: null

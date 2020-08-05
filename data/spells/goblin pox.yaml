@@ -1,18 +1,18 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "Your touch afflicts the target with goblin pox, an irritating allergenic rash.\
-  \ The target must attempt a Fortitude save.  \n\n**Goblin Pox**  (disease) **Level**\
-  \ 1. Goblins and goblin dogs are immune.  \n\n * **Stage 1** sickened 1 (1 round)\
-  \  \n\n * **Stage 2** sickened 1 and slowed 1 (1 round)  \n\n * **Stage 3** sickened\
-  \ 1 and the creature can't reduce it's sickened value below 1 (1 day).\n\n  \n\n\
-  **Critical Success** The target is unaffected.  \n\n**Success** The target is sickened\
-  \ 1.  \n\n**Failure** The target is afflicted with goblin pox at stage 1.  \n\n\
-  **Critical Failure** The target is afflicted with goblin pox and stage 2."
+  \ The target must attempt a Fortitude save.   \n\n**Critical Success** The target\
+  \ is unaffected.  \n\n**Success** The target is sickened 1.  \n\n**Failure** The\
+  \ target is afflicted with goblin pox at stage 1.  \n\n**Critical Failure** The\
+  \ target is afflicted with goblin pox and stage 2.\n\n**Goblin Pox**  (disease)\
+  \ **Level** 1. Goblins and goblin dogs are immune.  \n\n * **Stage 1** sickened\
+  \ 1 (1 round)  \n\n * **Stage 2** sickened 1 and slowed 1 (1 round)  \n\n * **Stage\
+  \ 3** sickened 1 and the creature can't reduce it's sickened value below 1 (1 day)."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Goblin Pox
 range: touch
@@ -27,7 +27,6 @@ traditions:
 - Arcane
 - Primal
 traits:
-- Attack
 - Disease
 - Necromancy
 trigger: null

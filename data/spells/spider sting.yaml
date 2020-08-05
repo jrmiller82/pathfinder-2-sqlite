@@ -1,19 +1,19 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You magically duplicate a spider's venomous sting. You deal 1d4 piercing damage\
   \ to the touched creature and afflict it with spider venom. The target must attempt\
-  \ a Fortitude save.   \n\n**Spider Venom**  (poison);   \n\n**Level 1** ; Maximum\
-  \ Duration 4 rounds.   \n\n**Stage 1**  1d4 poison damage and enfeebled 1 (1 round);\
-  \   \n\n**Stage 2**  1d4 poison damage and enfeebled 2 (1 round).  \n\n**Critical\
-  \ Success**  The target is unaffected.  \n\n**Success**  The target takes 1d4 poison\
-  \ damage.  \n\n**Failure**  The target is afflicted with spider venom at stage 1.\
-  \  \n\n**Critical Failure**  The target is afflicted with spider venom at stage\
-  \ 2."
+  \ a Fortitude save.   \n\n**Critical Success**  The target is unaffected.  \n\n\
+  **Success**  The target takes 1d4 poison damage.  \n\n**Failure**  The target is\
+  \ afflicted with spider venom at stage 1.  \n\n**Critical Failure**  The target\
+  \ is afflicted with spider venom at stage 2.\n\n**Spider Venom**  (poison);   **Level\
+  \ 1** ; **Maximum Duration** 4 rounds.   \n\n* **Stage 1**  1d4 poison damage and\
+  \ enfeebled 1 (1 round);   \n\n* **Stage 2**  1d4 poison damage and enfeebled 2\
+  \ (1 round).  \n"
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Spider Sting
 range: touch
@@ -28,7 +28,6 @@ traditions:
 - Arcane
 - Primal
 traits:
-- Attack
 - Necromancy
 - Poison
 trigger: null

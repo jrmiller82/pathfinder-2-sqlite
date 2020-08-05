@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 1m
 cast: 1 minute (material, somatic, verbal)
 components:
 - Material
@@ -18,7 +18,7 @@ descr: You access the Shadow Plane, using its warped nature to spread your trave
   those who are traveling together and Dismiss the spell at the same point on the
   Plane of Shadow appear together).
 duration: 8 hours
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Shadow Walk
 range: touch

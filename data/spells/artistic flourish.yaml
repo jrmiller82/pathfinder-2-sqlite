@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: material, verbal
+cast: '|2| material, verbal'
 components:
 - Material
 - Verbal
@@ -7,13 +7,14 @@ descr: "You transform the target to make it match your artisanal and artistic vi
   \ If you have expert proficiency in Crafting, the item grants a +1 item bonus to\
   \ attack rolls if it's a weapon or skill checks if it's a skill tool. The target\
   \ is a beautiful and impressive piece for its new quality, but the effect is obviously\
-  \ temporary, so its monetary value doesn't change. When you cast this spell, any\
-  \ previous artistic flourish you had cast ends.  \n\n**Heightened (7th)**  If you\
-  \ have master proficiency in Crafting, the item grants a +2 item bonus instead.\
+  \ temporary, so its monetary value doesn't change. \n\nWhen you cast this spell,\
+  \ any previous *artistic flourish* you had cast ends.  \n\n---\n**Heightened (7th)**\
+  \  If you have master proficiency in Crafting, the item grants a +2 item bonus instead.\
   \  \n\n**Heightened (10th)**  If you have legendary proficiency in Crafting, the\
   \ item grants a +3 item bonus instead."
+domain: Creation
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Artistic Flourish
 range: 15 feet

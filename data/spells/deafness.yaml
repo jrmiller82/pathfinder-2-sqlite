@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -9,7 +9,7 @@ descr: "The target loses hearing; it must attempt a Fortitude save. The target i
   \  The target is deafened for 10 minutes.  \n\n**Critical Failure**  The target\
   \ is deafened permanently."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Deafness
 range: 30 feet

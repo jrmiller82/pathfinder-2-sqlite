@@ -1,17 +1,19 @@
 action_abbr: '2'
 area: 30-foot cone or 60-foot line originating from you
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You spew energy from your mouth, dealing 5d6 damage. The area, damage type,\
-  \ and save depend on the dragon type in your bloodline.Dragon Breath Dragon TypeArea\
-  \ and Damage TypeSaving Throw Black and copper60-foot line of acidReflex Blue and\
-  \ bronze60-foot line of electricityReflex Brass60-foot line of fireReflex Green30-foot\
-  \ cone of poisonFortitude Gold or red30-foot cone of fireReflex Silver or white30-foot\
-  \ cone of coldReflex  \n\n**Heightened (+1)**  The damage increases by 2d6."
+  \ and save depend on the dragon type in your bloodline.\n\n| Dragon Type | Area\
+  \ and Damage Type | Saving Throw | \n| -------------- | --------------------------\
+  \ |  -------------- |\n| Black and copper | 60-foot line of acid | Reflex | \n|\
+  \ Blue and bronze | 60-foot line of electricity | Reflex |\n| Brass | 60-foot line\
+  \ of fire | Reflex |\n| Green | 30-foot cone of poison | Fortitude |\n|Gold or red\
+  \ | 30-foot cone of fire | Reflex |\n|Silver or white  | 30-foot cone of cold |\
+  \ Reflex  |\n\n---\n**Heightened (+1)**  The damage increases by 2d6."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Dragon Breath
 req: null

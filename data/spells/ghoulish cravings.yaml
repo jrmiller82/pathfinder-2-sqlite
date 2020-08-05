@@ -1,22 +1,22 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You touch the target to afflict it with ghoul fever, infesting it with hunger\
   \ and a steadily decreasing connection to positive energy; the target must attempt\
-  \ a Fortitude save.  \n\n**Ghoul Fever**  (disease) **Level** 3  \n\n * **Stage\
-  \ 1** carrier with no ill effects (1 day)\n\n * **Stage 2** 3d8 negative energy\
-  \ damage and the creature regains half as many Hit Points from all healing (1 day)\n\
-  \n * **Stage 3** As stage 2 (1 day)\n\n * **Stage 4** 3d8 negative damage and the\
-  \ creature gains no benefit from healing (1 day)\n\n * **Stage 5** As stage 4 (1\
-  \ day)\n\n * **Stage 6** The creature dies and rises as a ghoul at the next midnight.\n\
-  \n  \n\n**Critical Success** The target is unaffected.  \n\n**Success** The target\
-  \ is afflicted with ghoul fever at stage 1.  \n\n**Failure** The target is afflicted\
-  \ with ghoul fever at stage 2.  \n\n**Critical Failure** The target is afflicted\
-  \ with ghoul fever at stage 3."
+  \ a Fortitude save.  \n\n**Critical Success** The target is unaffected.  \n\n**Success**\
+  \ The target is afflicted with ghoul fever at stage 1.  \n\n**Failure** The target\
+  \ is afflicted with ghoul fever at stage 2.  \n\n**Critical Failure** The target\
+  \ is afflicted with ghoul fever at stage 3.\n\n**Ghoul Fever**  (disease) **Level**\
+  \ 3  \n\n * **Stage 1** carrier with no ill effects (1 day)\n\n * **Stage 2** 3d8\
+  \ negative energy damage and the creature regains half as many Hit Points from all\
+  \ healing (1 day)\n\n * **Stage 3** As stage 2 (1 day)\n\n * **Stage 4** 3d8 negative\
+  \ damage and the creature gains no benefit from healing (1 day)\n\n * **Stage 5**\
+  \ As stage 4 (1 day)\n\n * **Stage 6** The creature dies and rises as a ghoul at\
+  \ the next midnight."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Ghoulish Cravings
 range: touch
@@ -31,7 +31,6 @@ traditions:
 - Divine
 - Occult
 traits:
-- Attack
 - Disease
 - Evil
 - Necromancy

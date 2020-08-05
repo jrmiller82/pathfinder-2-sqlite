@@ -1,16 +1,16 @@
 action_abbr: '2'
 area: 30-foot emanation
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "By tapping into trace divinatory auras, you detect the presence of scrying\
-  \ effects in the area. If detect scrying is higher level than a scrying effect,\
+  \ effects in the area. If *detect scrying* is higher level than a scrying effect,\
   \ you gain a glimpse of the scrying creature and learn its approximate distance\
-  \ and direction.  \n\n**Heightened (6th)**  The duration is until the next time\
-  \ you make your daily preparations."
+  \ and direction.  \n\n---\n**Heightened (6th)**  The duration is until the next\
+  \ time you make your daily preparations."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Detect Scrying
 req: null

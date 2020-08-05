@@ -1,15 +1,15 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You blast an icy ray. Make a spell attack roll. The ray deals cold damage\
   \ equal to 1d4 + your spellcasting ability modifier.  \n\n**Critical Success** \
   \ The target takes double damage and takes a -10-foot status penalty to its Speeds\
-  \ for 1 round.  \n\n**Success**  The target takes normal damage.  \n\n**Heightened\
+  \ for 1 round.  \n\n**Success**  The target takes normal damage.  \n\n---\n**Heightened\
   \ (+1)**  The damage increases by 1d4."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Ray of Frost
 range: 120 feet

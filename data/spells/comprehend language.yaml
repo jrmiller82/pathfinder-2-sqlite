@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -7,11 +7,11 @@ descr: "The target can understand the meaning of a single language it is hearing
   \ reading when you cast the spell. This doesn't let it understand codes, language\
   \ couched in metaphor, and the like (subject to GM discretion). If the target can\
   \ hear multiple languages and knows that, it can choose which language to understand;\
-  \ otherwise, choose one of the languages randomly.  \n\n**Heightened (3rd)**  The\
-  \ target can also speak the language.  \n\n**Heightened (4th)**  You can target\
+  \ otherwise, choose one of the languages randomly.  \n\n---\n**Heightened (3rd)**\
+  \  The target can also speak the language.  \n\n**Heightened (4th)**  You can target\
   \ up to 10 creatures, and targets can also speak the language."
 duration: 1 hour
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Comprehend Language
 range: 30 feet

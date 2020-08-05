@@ -1,20 +1,20 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "With a cursory mental touch, you attempt to read the target's mind. It must\
-  \ attempt a Will save. The target then becomes temporarily immune to your mind reading\
-  \ for 1 hour.  \n\n**Critical Success**  The target perceives vague surface thoughts\
-  \ from you when you Cast the Spell.  \n\n**Success**  You find out whether the target's\
-  \ Intelligence modifier is higher than, equal to, or lower than yours.  \n\n**Failure**\
-  \  You perceive vague surface thoughts from the target when you Cast the Spell,\
-  \ and you find out whether its Intelligence modifier is higher than, equal to, or\
-  \ lower than yours.  \n\n**Critical Failure**  As failure, and for the duration\
-  \ of the spell, you can Sustain the Spell to detect the target's surface thoughts\
-  \ again. The target doesn't receive any additional saves."
+  \ attempt a Will save. The target then becomes temporarily immune to your *mind\
+  \ reading* for 1 hour.  \n\n**Critical Success**  The target perceives vague surface\
+  \ thoughts from you when you Cast the Spell.  \n\n**Success**  You find out whether\
+  \ the target's Intelligence modifier is higher than, equal to, or lower than yours.\
+  \  \n\n**Failure**  You perceive vague surface thoughts from the target when you\
+  \ Cast the Spell, and you find out whether its Intelligence modifier is higher than,\
+  \ equal to, or lower than yours.  \n\n**Critical Failure**  As failure, and for\
+  \ the duration of the spell, you can Sustain the Spell to detect the target's surface\
+  \ thoughts again. The target doesn't receive any additional saves."
 duration: 1 round or sustained up to 1 minute
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Mind Reading
 range: 30 feet

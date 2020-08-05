@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,10 +8,10 @@ descr: "A small ball of flame appears in the palm of your hand, and you lash out
   \ AC. This is normally a ranged attack, but you can also make a melee attack against\
   \ a creature in your unarmed reach. On a success, you deal 1d4 fire damage plus\
   \ your spellcasting ability modifier. On a critical success, the target takes double\
-  \ damage and 1d4 persistent fire damage.  \n\n**Heightened (+1)**  Increase the\
-  \ damage by 1d4 and the persistent damage on a critical hit by 1d4."
+  \ damage and 1d4 persistent fire damage.  \n\n---\n**Heightened (+1)**  Increase\
+  \ the damage by 1d4 and the persistent damage on a critical hit by 1d4."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Produce Flame
 range: 30 feet

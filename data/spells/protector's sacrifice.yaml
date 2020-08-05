@@ -1,16 +1,17 @@
 action_abbr: R
-cast: somatic
+cast: '|R| somatic'
 components:
 - Somatic
 descr: "You protect your ally by suffering in their stead. Reduce the damage the triggering\
   \ ally would take by 3. You redirect this damage to yourself, but your immunities,\
-  \ weaknesses, resistances and so on do not apply. You aren't subject to any conditions\
-  \ or other effects of whatever damaged your ally (such as poison from a venomous\
-  \ bite). Your ally is still subject to those effects even if you redirect all of\
-  \ the triggering damage to yourself.  \n\n**Heightened (+1)**  The damage you redirect\
-  \ increases by 3."
+  \ weaknesses, resistances and so on do not apply. \n\nYou aren't subject to any\
+  \ conditions or other effects of whatever damaged your ally (such as poison from\
+  \ a venomous bite). Your ally is still subject to those effects even if you redirect\
+  \ all of the triggering damage to yourself.  \n\n---\n**Heightened (+1)**  The damage\
+  \ you redirect increases by 3."
+domain: Protection
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Protector's Sacrifice
 range: 30 feet

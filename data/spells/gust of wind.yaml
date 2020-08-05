@@ -1,6 +1,6 @@
 action_abbr: '2'
 area: 60-foot line
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -15,7 +15,7 @@ descr: "A violent wind issues forth from your palm, blowing from the point where
   \ of critical failure instead.  \n\n**Critical Failure**  The creature is pushed\
   \ 30 feet in the wind's direction, knocked prone, and takes 2d6 bludgeoning damage."
 duration: until the start of your next turn
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Gust of Wind
 req: null

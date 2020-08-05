@@ -1,19 +1,19 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You replicate the attack of a deadly purple worm. You deal 6d6 piercing damage\
   \ to the touched creature and afflict it with purple worm venom. The target must\
-  \ attempt a Fortitude save.  \n\n**Purple Worm Venom**  (poison) **Level** 11 **Maximum\
-  \ Duration** 6 rounds\n\n * **Stage 1** 3d6 poison damage and enfeebled 2 (1 round)\n\
-  \n * **Stage 2** 4d6 poison damage and enfeebled 2 (1 round)\n\n * **Stage 3** 6d6\
-  \ poison damage and enfeebled 2 (1 round).\n\n  \n\n**Critical Success** The target\
-  \ is unaffected.  \n\n**Success** The target takes 3d6 poison damage.  \n\n**Failure**\
-  \ The target is afflicted with purple worm venom at stage 1.  \n\n**Critical Failure**\
-  \ The target is afflicted with purple worm venom at stage 2."
+  \ attempt a Fortitude save.  \n\n\n**Critical Success** The target is unaffected.\
+  \  \n\n**Success** The target takes 3d6 poison damage.  \n\n**Failure** The target\
+  \ is afflicted with purple worm venom at stage 1.  \n\n**Critical Failure** The\
+  \ target is afflicted with purple worm venom at stage 2.\n\n**Purple Worm Venom**\
+  \  (poison) **Level** 11 **Maximum Duration** 6 rounds\n\n * **Stage 1** 3d6 poison\
+  \ damage and enfeebled 2 (1 round)\n\n * **Stage 2** 4d6 poison damage and enfeebled\
+  \ 2 (1 round)\n\n * **Stage 3** 6d6 poison damage and enfeebled 2 (1 round)."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: '6'
 name: Purple Worm Sting
 range: touch

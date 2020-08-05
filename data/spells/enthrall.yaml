@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,8 +8,8 @@ descr: "Your words fascinate your targets. You speak or sing without interruptio
   \ give their undivided attention; each target must attempt a Will save. The GM might\
   \ grant a circumstance bonus (to a maximum of +4) if the target is of an opposing\
   \ religion, ancestry, or political leaning, or is otherwise unlikely to agree with\
-  \ what you're saying. Each creature that comes within range has to attempt a save\
-  \ when you Sustain the Spell. If you're speaking, enthrall gains the linguistic\
+  \ what you're saying. \n\nEach creature that comes within range has to attempt a\
+  \ save when you Sustain the Spell. If you're speaking, enthrall gains the linguistic\
   \ trait.  \n\n**Critical Success**  The target is unaffected and notices that you\
   \ tried to use magic.  \n\n**Success**  The target needn't pay attention but doesn't\
   \ notice you tried to use magic (it might notice others are enthralled).  \n\n**Failure**\
@@ -20,7 +20,7 @@ descr: "Your words fascinate your targets. You speak or sing without interruptio
   \ the fascination ends immediately.  \n\n**Critical Failure**  As failure, but the\
   \ target can't attempt a save to end the fascination if it disagrees with you."
 duration: sustained
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 3
 name: Enthrall
 range: 120 feet

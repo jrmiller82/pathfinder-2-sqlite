@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -8,11 +8,12 @@ descr: "You harmlessly place your unique magical sigil, which is about 1 square 
   \ and you can change it from one state to another by using an Interact action to\
   \ touch the target. The mark can be scrubbed or scraped off with 5 minutes of work.\
   \ If it's on a creature, it fades naturally over the course of a week. The time\
-  \ before the mark fades increases depending on your heightened level.  \n\n**Heightened\
-  \ (3rd)**  The sigil instead fades after 1 month.  \n\n**Heightened (5th)**  The\
-  \ sigil instead fades after 1 year.  \n\n**Heightened (7th)**  The sigil never fades."
+  \ before the mark fades increases depending on your heightened level.  \n\n---\n\
+  **Heightened (3rd)**  The sigil instead fades after 1 month.  \n\n**Heightened (5th)**\
+  \  The sigil instead fades after 1 year.  \n\n**Heightened (7th)**  The sigil never\
+  \ fades."
 duration: unlimited (see below)
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Sigil
 range: touch

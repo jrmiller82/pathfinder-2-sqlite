@@ -1,21 +1,22 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (material, somatic, verbal)
 components:
 - Material
 - Somatic
 - Verbal
-descr: 'You gain a vague glimpse of the future. During the casting of this spell,
-  ask about the results of a particular course of action. The spell can predict results
-  up to 30 minutes into the future and reveals the GM''s best guess among the following
-  outcomes: Weal The results will be good. Woe The results will be bad. Weal and Woe
-  The results will be a mix of good and bad. Nothing There won''t be particularly
-  good or bad results. The GM rolls a secret DC 6 flat check. On a failure, the result
-  is always "nothing." This makes it impossible to tell whether a "nothing" result
-  is accurate. If anyone asks about the same topic as the first casting of augury
-  during an additional casting, the GM uses the secret roll result from the first
-  casting. If circumstances change, though, it''s possible to get a different result.'
+descr: "You gain a vague glimpse of the future. During the casting of this spell,\
+  \ ask about the results of a particular course of action. The spell can predict\
+  \ results up to 30 minutes into the future and reveals the GM's best guess among\
+  \ the following outcomes:\n\n* **Weal** The results will be good. \n\n* **Woe**\
+  \ The results will be bad. \n\n* **Weal and Woe** The results will be a mix of good\
+  \ and bad. \n\n* **Nothing** There won't be particularly good or bad results. \n\
+  \nThe GM rolls a secret DC 6 flat check. On a failure, the result is always \"nothing.\"\
+  \ This makes it impossible to tell whether a \"nothing\" result is accurate. If\
+  \ anyone asks about the same topic as the first casting of *augury* during an additional\
+  \ casting, the GM uses the secret roll result from the first casting. If circumstances\
+  \ change, though, it's possible to get a different result."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 2
 name: Augury
 req: null

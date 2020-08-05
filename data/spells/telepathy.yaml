@@ -1,16 +1,16 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "You can communicate telepathically with creatures within 30 feet. Once you\
   \ establish a connection by communicating with a creature, the communication is\
   \ two-way. You can communicate only with creatures that share a language with you.\
-  \  \n\n**Heightened (6th)**  Telepathy loses the linguistic trait. You can communicate\
-  \ telepathically with creatures using shared mental imagery even if you don't share\
-  \ a language."
+  \  \n\n---\n**Heightened (6th)**  *Telepathy* loses the linguistic trait. You can\
+  \ communicate telepathically with creatures using shared mental imagery even if\
+  \ you don't share a language."
 duration: 10 minutes
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Telepathy
 req: null

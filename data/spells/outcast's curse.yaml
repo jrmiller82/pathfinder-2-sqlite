@@ -1,5 +1,5 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
@@ -13,7 +13,7 @@ descr: "You afflict the target with a curse that makes its presence abrasive and
   \  As failure, and creatures that the target encounters have an initial attitude\
   \ toward them of two steps worse."
 duration: null
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 4
 name: Outcast's Curse
 range: touch
@@ -29,7 +29,6 @@ traditions:
 - Divine
 - Occult
 traits:
-- Attack
 - Curse
 - Enchantment
 - Mental

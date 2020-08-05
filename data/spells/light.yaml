@@ -1,14 +1,14 @@
 action_abbr: '2'
-cast: somatic, verbal
+cast: '|2| somatic, verbal'
 components:
 - Somatic
 - Verbal
 descr: "The object glows, casting bright light in a 20-foot radius (and dim light\
   \ for the next 20 feet) like a torch. If you cast this spell again on a second object,\
-  \ the light spell on the first object ends.  \n\n**Heightened (4th)**  The object\
-  \ sheds bright light in a 60-foot radius (and dim light for the next 60 feet)."
+  \ the *light* spell on the first object ends.  \n\n---\n**Heightened (4th)**  The\
+  \ object sheds bright light in a 60-foot radius (and dim light for the next 60 feet)."
 duration: until the next time you make your daily preparations
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 1
 name: Light
 range: touch
@@ -17,7 +17,8 @@ source:
 - abbr: CRB
   page_start: 348
   page_stop: 348
-targets: 1 unattended, non-magical object of 1 Bulk or less
+targets: 1 object of 1 Bulk or less, either unattended or possessed by you or a willing
+  ally
 traditions:
 - Arcane
 - Divine

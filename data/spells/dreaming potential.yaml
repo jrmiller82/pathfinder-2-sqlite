@@ -1,4 +1,4 @@
-action_abbr: null
+action_abbr: 10m
 cast: 10 minutes (material, somatic, verbal)
 components:
 - Material
@@ -11,7 +11,7 @@ descr: You draw the target into a lucid dream where it can explore the endless p
   that would require either an instructor or specialized knowledge it can't access
   within the dream.
 duration: 8 hours
-has_been_manually_proofread: false
+has_been_manually_proofread: true
 level: 5
 name: Dreaming Potential
 range: touch
