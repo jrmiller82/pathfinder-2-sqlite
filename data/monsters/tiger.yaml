@@ -7,6 +7,71 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The tiger Strides and makes a Strike at the end of that movement. If
+    the tiger began this action hidden, it remains hidden until after this ability's
+    Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pounce
+  range: null
+  raw_description: '**Pounce** [One Action]  The tiger Strides and makes a Strike
+    at the end of that movement. If the tiger began this action hidden, it remains
+    hidden until after this ability''s Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The tiger deals 1d6 extra precision damage to flat-footed creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The tiger deals 1d6 extra precision damage
+    to flat-footed creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The tiger makes a claw Strike against a creature it is grabbing. If
+    the attack hits, that creature is knocked __prone__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wrestle
+  range: null
+  raw_description: '**Wrestle** [One Action]  The tiger makes a claw Strike against
+    a creature it is grabbing. If the attack hits, that creature is knocked __prone__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Tigers are solitary and territorial hunters, using their striped hides
@@ -19,11 +84,8 @@ description: 'Tigers are solitary and territorial hunters, using their striped h
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 19'
 hp: 60
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+7
@@ -45,71 +107,7 @@ melee:
   - agile
 name: Tiger
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The tiger Strides and makes a Strike at the end of that movement. If
-    the tiger began this action hidden, it remains hidden until after this ability's
-    Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pounce
-  range: null
-  raw_description: '**Pounce**   The tiger Strides and makes a Strike at the end of
-    that movement. If the tiger began this action hidden, it remains hidden until
-    after this ability''s Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The tiger deals 1d6 extra precision damage to flat-footed creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The tiger deals 1d6 extra precision damage
-    to flat-footed creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The tiger makes a claw Strike against a creature it is grabbing. If
-    the attack hits, that creature is knocked __prone__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wrestle
-  range: null
-  raw_description: '**Wrestle**   The tiger makes a claw Strike against a creature
-    it is grabbing. If the attack hits, that creature is knocked __prone__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 13
   fort_misc: null
@@ -118,33 +116,28 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - low-light vision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 11
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 53
+  page_start: '53'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

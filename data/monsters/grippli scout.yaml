@@ -7,6 +7,55 @@ ability_mods:
   wis_mod: 3
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The grippli makes a ranged Strike (with a +9 modifier) against a Medium
+    or smaller creature within 20 feet. On a hit, the target is __flat-footed__ and
+    takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature
+    is __restrained__ instead. The DC to __Escape__ the net is 16. A creature adjacent
+    to the target can Interact with the net to remove it.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hurl Net
+  range: null
+  raw_description: '**Hurl Net** [One Action]  **Requirements** The grippli is wielding
+    a net in two hands; **Effect** The grippli makes a ranged Strike (with a +9 modifier)
+    against a Medium or smaller creature within 20 feet. On a hit, the target is __flat-footed__
+    and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the
+    creature is __restrained__ instead. The DC to __Escape__ the net is 16. A creature
+    adjacent to the target can Interact with the net to remove it.'
+  requirements: The grippli is wielding a net in two hands
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Gripplis ignore difficult terrain in forests and jungles.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Jungle Stride
+  range: null
+  raw_description: '**Jungle Stride** Gripplis ignore difficult terrain in forests
+    and jungles.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Gripplis make their homes in the treetops of tropical jungles and forests.
@@ -55,7 +104,6 @@ description: 'Gripplis make their homes in the treetops of tropical jungles and 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
 items:
 - dart (5)
 - leather armor
@@ -65,7 +113,7 @@ languages:
 - Common
 - Grippli
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+1
@@ -79,48 +127,7 @@ melee:
   - trip
 name: Grippli Scout
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The grippli is wielding a net in two hands
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hurl Net
-  range: null
-  raw_description: '**Hurl Net**   **Requirements** The grippli is wielding a net
-    in two hands; **Effect** The grippli makes a ranged Strike (with a +9 modifier)
-    against a Medium or smaller creature within 20 feet. On a hit, the target is __flat-footed__
-    and takes a -10-foot circumstance penalty to its Speeds. On a critical hit, the
-    creature is __restrained__ instead. The DC to __Escape__ the net is 16. A creature
-    adjacent to the target can Interact with the net to remove it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Gripplis ignore difficult terrain in forests and jungles.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Jungle Stride
-  range: null
-  raw_description: '**Jungle Stride** Gripplis ignore difficult terrain in forests
-    and jungles.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+1
@@ -131,11 +138,6 @@ ranged:
   traits:
   - agile
   - thrown 20 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -144,43 +146,40 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 7
   misc: +9 in forests
-  name: 'Stealth '
+  name: Stealth
 - bonus: 6
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 139
+  page_start: '86'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 - amount: null
+  misc: null
   type: jungle stride
 spell_lists: null
 traits:
-- N
-- Small
 - Grippli
 - Humanoid
-type: Creature
-weaknesses: null

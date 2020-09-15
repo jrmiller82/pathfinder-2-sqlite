@@ -7,6 +7,93 @@ ability_mods:
   wis_mod: 2
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The quasit restores 1d6 HP to itself.
+  failure: null
+  frequency: once per round
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Abyssal Healing
+  range: null
+  raw_description: '**Abyssal Healing** [One Action]  (__concentrate__, __divine__,
+    __healing__, __necromancy__) **Frequency** once per round; **Effect** The quasit
+    restores 1d6 HP to itself.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - healing
+  - necromancy
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: "* **Bat **echolocation 40 feet; Speed 15 feet, fly Speed 30 feet;\
+    \ **Melee **fangs +7, **Damage **1d4–1 piercing; **Melee **wing +7 (agile), **Damage\
+    \ **1d4–1 bludgeoning\n\n  * **Centipede **Speed 10 feet, climb 10 feet; **Melee\
+    \ **mandibles +7 (poison), **Damage **1 piercing plus 1d4 poison\n\n  * **Toad\
+    \ **scent (imprecise) 30 feet; Speed 5 feet; **Melee **jaws +7, **Damage **1 bludgeoning\n\
+    \n  * **Wolf **size Medium; scent (imprecise) 30 feet; Speed 40 feet, climb 10\
+    \ feet; **Melee **jaws +7, **Damage **1d10–1 piercing plus Knockdown"
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: "**Change Shape** [One Action]  (__concentrate__, __divine__, __polymorph__,\
+    \ __transmutation__)\n\n  * **Bat **echolocation 40 feet; Speed 15 feet, fly Speed\
+    \ 30 feet; **Melee **fangs +7, **Damage **1d4–1 piercing; **Melee **wing +7 (agile),\
+    \ **Damage **1d4–1 bludgeoning\n\n  * **Centipede **Speed 10 feet, climb 10 feet;\
+    \ **Melee **mandibles +7 (poison), **Damage **1 piercing plus 1d4 poison\n\n \
+    \ * **Toad **scent (imprecise) 30 feet; Speed 5 feet; **Melee **jaws +7, **Damage\
+    \ **1 bludgeoning\n\n  * **Wolf **size Medium; scent (imprecise) 30 feet; Speed\
+    \ 40 feet, climb 10 feet; **Melee **jaws +7, **Damage **1d10–1 piercing plus Knockdown"
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Quasit Venom
+  range: null
+  raw_description: '**Quasit Venom** (__poison__) **Saving Throw** DC 17 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison (1 round); **Stage 2** As
+    stage 1; **Stage 3** 1d6 poison and __slowed 1__ (1 round)'
+  requirements: null
+  saving_throw: DC 17 Fortitude
+  stages:
+  - effect: 1d6 poison (1 round)
+  - effect: As stage 1
+  - effect: 1d6 poison and __slowed 1__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -17,11 +104,11 @@ automatic_abilities:
     virtuous or good in the life of the quasit's creator (such as a beloved daughter's
     doll) as an Interact action to automatically deal the quasit 2d6 mental damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Virtue Aversion
   range: null
   raw_description: '**Virtue Aversion** The quasit''s link to a mortal soul gave it
@@ -30,6 +117,8 @@ automatic_abilities:
     (such as a beloved daughter''s doll) as an Interact action to automatically deal
     the quasit 2d6 mental damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -47,22 +136,22 @@ description: 'Unlike other demons, quasits are formed when a mortal spellcaster 
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 15'
 hp: 25
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - Common
 - telepathy (touch)
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6-1
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d4
-    type: evil and quasit venom
+  - formula: null
+    type: 1d4 evil
+  - formula: null
+    type: quasit venom
   to_hit: 9
   traits:
   - agile
@@ -72,162 +161,7 @@ melee:
   - poison
 name: Quasit
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The quasit restores 1d6 HP to itself.
-  effects: null
-  failure: null
-  frequency: once per round
-  full_description: null
-  generic_description: null
-  name: Abyssal Healing
-  range: null
-  raw_description: '**Abyssal Healing**   (__concentrate__, __divine__, __healing__,
-    __necromancy__) **Frequency** once per round; **Effect** The quasit restores 1d6
-    HP to itself.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - healing
-  - necromancy
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: echolocation 40 feet; Speed 15 feet, fly Speed 30 feet; **Melee **fangs
-      +7, **Damage **1d4-1 piercing; **Melee **wing +7 (agile), **Damage **1d4-1 bludgeoning
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Bat
-    range: null
-    raw_description: '**Bat **echolocation 40 feet; Speed 15 feet, fly Speed 30 feet;
-      **Melee **fangs +7, **Damage **1d4-1 piercing; **Melee **wing +7 (agile), **Damage
-      **1d4-1 bludgeoning'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: Speed 10 feet, climb 10 feet; **Melee **mandibles +7 (poison), **Damage
-      **1 piercing plus 1d4 poison
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Centipede
-    range: null
-    raw_description: '**Centipede **Speed 10 feet, climb 10 feet; **Melee **mandibles
-      +7 (poison), **Damage **1 piercing plus 1d4 poison'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: scent (imprecise) 30 feet; Speed 5 feet; **Melee **jaws +7, **Damage
-      **1 bludgeoning
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Toad
-    range: null
-    raw_description: '**Toad **scent (imprecise) 30 feet; Speed 5 feet; **Melee **jaws
-      +7, **Damage **1 bludgeoning'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: size Medium; scent (imprecise) 30 feet; Speed 40 feet, climb 10 feet;
-      **Melee **jaws +7, **Damage **1d10-1 piercing plus Knockdown
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Wolf
-    range: null
-    raw_description: '**Wolf **size Medium; scent (imprecise) 30 feet; Speed 40 feet,
-      climb 10 feet; **Melee **jaws +7, **Damage **1d10-1 piercing plus Knockdown'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: "**Change Shape**   (__concentrate__, __divine__, __polymorph__,\
-    \ __transmutation__) \n\n  * **Bat **echolocation 40 feet; Speed 15 feet, fly\
-    \ Speed 30 feet; **Melee **fangs +7, **Damage **1d4-1 piercing; **Melee **wing\
-    \ +7 (agile), **Damage **1d4-1 bludgeoning\n\n  * **Centipede **Speed 10 feet,\
-    \ climb 10 feet; **Melee **mandibles +7 (poison), **Damage **1 piercing plus 1d4\
-    \ poison\n\n  * **Toad **scent (imprecise) 30 feet; Speed 5 feet; **Melee **jaws\
-    \ +7, **Damage **1 bludgeoning\n\n  * **Wolf **size Medium; scent (imprecise)\
-    \ 30 feet; Speed 40 feet, climb 10 feet; **Melee **jaws +7, **Damage **1d10-1\
-    \ piercing plus Knockdown"
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 17 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison (1 round); **Stage 2** As stage 1; **Stage 3** 1d6 poison and __slowed
-    1__ (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quasit Venom
-  range: null
-  raw_description: '**Quasit Venom** (__poison__) **Saving Throw** DC 17 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison (1 round); **Stage 2** As
-    stage 1; **Stage 3** 1d6 poison and __slowed 1__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 4
   fort_misc: null
@@ -244,93 +178,89 @@ sense_abilities:
     critical success result on any success and gets the critical failure result on
     any failure.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Abyssal Knowledge
   range: null
   raw_description: '**Abyssal Knowledge** When a quasit offers Aid for an Arcana or
     Religion check, it gets the critical success result on any success and gets the
     critical failure result on any failure.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +7
 - darkvision
 size: Tiny
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 7
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 5
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 5
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 76
+  page_start: '76'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: fly
 spell_lists:
-- dc: 17
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
-      name: read omens
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will, good only
-      name: detect alignment
-      requirement: null
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: fear
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: read omens
+  - level: 2
+    spells:
+    - misc: at will; good only
+      name: detect alignment
+    - misc: at will, self only
+      name: invisibility
+  - level: 1
+    spells:
+    - misc: null
+      name: fear
+  spells_source: Divine Innate Spells
 traits:
-- CE
-- Tiny
 - Demon
 - Fiend
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: cold iron
 - amount: 3
+  misc: null
   type: good

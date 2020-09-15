@@ -7,6 +7,161 @@ ability_mods:
   wis_mod: 6
 ac: 42
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The aolaz tucks its head down and rolls up into an armored sphere.
+    While Rolling, an aolaz has AC 44, Fort +37, Ref +29, Will +33, and Speed 100
+    feet, but it can't use its trunk Strikes or its Ultrasonic Blast. It can make
+    foot Strikes while rolling, but only as part of a __Trample__. The aolaz can use
+    this action again to unroll and resume its standing form.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Roll
+  range: null
+  raw_description: '**Roll** [One Action]  The aolaz tucks its head down and rolls
+    up into an armored sphere. While Rolling, an aolaz has AC 44, Fort +37, Ref +29,
+    Will +33, and Speed 100 feet, but it can''t use its trunk Strikes or its Ultrasonic
+    Blast. It can make foot Strikes while rolling, but only as part of a __Trample__.
+    The aolaz can use this action again to unroll and resume its standing form.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: Huge or smaller, foot, DC 40
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**__Trample__** [Two Actions]  Huge or smaller, foot, DC 40'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The aolaz releases a tremendous blast of sonic energy from its trunk
+    in a 150-foot line, dealing 12d10 sonic damage. The frequency of this sound is
+    such that it is completely imperceptible to __humanoids__, but the damage it wreaks
+    is all too evident. Each creature in the area must attempt a DC 40 Fortitude save.
+    The aolaz can't use Ultrasonic Blast again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ultrasonic Blast
+  range: null
+  raw_description: '**Ultrasonic Blast** [One Action]  (__arcane__, __evocation__,
+    __sonic__) The aolaz releases a tremendous blast of sonic energy from its trunk
+    in a 150-foot line, dealing 12d10 sonic damage. The frequency of this sound is
+    such that it is completely imperceptible to __humanoids__, but the damage it wreaks
+    is all too evident. Each creature in the area must attempt a DC 40 Fortitude save.
+    The aolaz can''t use Ultrasonic Blast again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - evocation
+  - sonic
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature takes half damage and is __stunned 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature takes half damage and is __stunned 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature takes half damage and is __stunned 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature takes full damage and is stunned 2.
+  effect: null
+  failure: The creature takes full damage and is stunned 2.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature takes full damage and is stunned 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature takes double damage and is stunned 3.
+  critical_success: null
+  description: The creature takes double damage and is stunned 3.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature takes double damage and is stunned
+    3.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Aolazes are great beasts carved from stone and metal and magically imbued
@@ -33,23 +188,21 @@ hp: 255
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
-- fatigued
-- healing
-- necromancy
-- nonlethal attacks
-- paralyzed
-- poison
-- sickened
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=188">nonlethal</a> attacks
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
 - sonic
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 18
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 5d10+17
@@ -76,89 +229,12 @@ melee:
   - reach 10 feet
 name: Aolaz
 perception: 33
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The aolaz tucks its head down and rolls up into an armored sphere.
-    While Rolling, an aolaz has AC 44, Fort +37, Ref +29, Will +33, and Speed 100
-    feet, but it can't use its trunk Strikes or its Ultrasonic Blast. It can make
-    foot Strikes while rolling, but only as part of a __Trample__. The aolaz can use
-    this action again to unroll and resume its standing form.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Roll
-  range: null
-  raw_description: '**Roll**   The aolaz tucks its head down and rolls up into an
-    armored sphere. While Rolling, an aolaz has AC 44, Fort +37, Ref +29, Will +33,
-    and Speed 100 feet, but it can''t use its trunk Strikes or its Ultrasonic Blast.
-    It can make foot Strikes while rolling, but only as part of a __Trample__. The
-    aolaz can use this action again to unroll and resume its standing form.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: Huge or smaller, foot, DC 40
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**__Trample__** [Two Actions]  Huge or smaller, foot, DC 40'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: The creature takes double damage and is stunned 3.
-  critical_success: The creature is unaffected.
-  description: "The aolaz releases a tremendous blast of sonic energy from its trunk\
-    \ in a 150-foot line, dealing 12d10 sonic damage. The frequency of this sound\
-    \ is such that it is completely imperceptible to __humanoids__, but the damage\
-    \ it wreaks is all too evident. Each creature in the area must attempt a DC 40\
-    \ Fortitude save. The aolaz can't use Ultrasonic Blast again for 1d4 rounds. \n\
-    \n"
-  effect: null
-  effects: null
-  failure: The creature takes full damage and is stunned 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ultrasonic Blast
-  range: null
-  raw_description: "**Ultrasonic Blast**   (__arcane__, __evocation__, __sonic__)\
-    \ The aolaz releases a tremendous blast of sonic energy from its trunk in a 150-foot\
-    \ line, dealing 12d10 sonic damage. The frequency of this sound is such that it\
-    \ is completely imperceptible to __humanoids__, but the damage it wreaks is all\
-    \ too evident. Each creature in the area must attempt a DC 40 Fortitude save.\
-    \ The aolaz can't use Ultrasonic Blast again for 1d4 rounds. \n\n**Critical Success**\
-    \ The creature is unaffected. \n\n**Success** The creature takes half damage and\
-    \ is __stunned 1__. \n\n**Failure** The creature takes full damage and is stunned\
-    \ 2. \n\n**Critical Failure** The creature takes double damage and is stunned\
-    \ 3."
-  requirements: null
-  success: The creature takes half damage and is stunned 1.
-  traits:
-  - arcane
-  - evocation
-  - sonic
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 15
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except <a style="text-decoration:underline" href="Equipment.aspx?ID=271">adamantine</a>
+  type: physical
 saves:
   fort: 35
   fort_misc: null
@@ -176,11 +252,11 @@ sense_abilities:
     sound, and any sound within 1 mile as though it were only 30 feet away from the
     source of the sound. An aolaz's hearing is a __precise sense__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Flawless Hearing
   range: null
   raw_description: '**Flawless Hearing** An aolaz has an incredible sense of hearing.
@@ -189,48 +265,47 @@ sense_abilities:
     30 feet away from the source of the sound. An aolaz''s hearing is a __precise
     sense__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +33
 - low-light vision
 - flawless hearing
 size: Gargantuan
 skills:
 - bonus: 35
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 21
+  page_start: '21'
   page_stop: null
 speed:
 - amount: 50
-  type: Land
-- amount: 6
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>air walk</i></a>
-- amount: 371
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>water walk</i></a>
-spell_lists:
-- dc: 40
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: 9
-    level: -1
+  type: Land
+- amount: null
+  misc: null
+  type: air walk
+- amount: null
+  misc: null
+  type: water walk
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 9
     spells:
-    - frequency: null
+    - misc: null
       name: air walk
-      requirement: null
-    - frequency: null
+    - misc: null
       name: water walk
-      requirement: null
-  to_hit: null
+  dc: 40
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Arcane Innate Spells
 traits:
-- Rare
-- N
-- Gargantuan
 - Construct
-type: Creature
-weaknesses: null

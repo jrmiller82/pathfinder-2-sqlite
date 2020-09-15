@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 4
 ac: 19
 ac_special: null
+active_abilities: null
 alignment: CN
 automatic_abilities: null
 description: 'This changeling exile is the child of a night hag or dreamthief hag.
@@ -17,7 +18,6 @@ description: 'This changeling exile is the child of a night hag or dreamthief ha
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
 hp: 45
 hp_misc: null
-immunities: null
 items:
 - leather armor
 - staff
@@ -25,7 +25,7 @@ languages:
 - Common
 - Druidic
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+4
@@ -46,13 +46,7 @@ melee:
   - two-hand d8
 name: Changeling Exile
 perception: 11
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -61,95 +55,81 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 size: Medium
 skills:
 - bonus: 9
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 9
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 11
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 8
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 9
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 62
+  page_start: '62'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 21
-  misc: ''
-  name: Primal Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 11
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: darkness
-      requirement: null
-    - frequency: null
-      name: humanoid form
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: burning hands
-      requirement: null
-    - frequency: null
-      name: shillelagh
-      requirement: null
-    - frequency: null
-      name: ventriloquism
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: produce flame
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-    - frequency: null
+    - misc: null
       name: tanglefoot
-      requirement: null
-  to_hit: 11
-- dc: 21
+  constants: null
+  dc: 21
+  focus_points: null
   misc: null
-  name: Druid Order Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
+      name: darkness
+    - misc: null
+      name: humanoid form
+  - level: 1
+    spells:
+    - misc: null
+      name: burning hands
+    - misc: null
+      name: shillelagh
+    - misc: null
+      name: ventriloquism
+  spells_source: Primal Prepared Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 21
+  focus_points: 1
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
       name: wild morph
-      requirement: null
-    - frequency: 1 Focus Point
+    - misc: null
       name: wild shape
-      requirement: null
-  to_hit: null
+  spells_source: Druid Order Spells
 traits:
-- CN
-- Medium
 - Changeling
 - Human
 - Humanoid
-type: Creature
-weaknesses: null

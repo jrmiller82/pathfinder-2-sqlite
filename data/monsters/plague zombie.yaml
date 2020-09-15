@@ -7,6 +7,63 @@ ability_mods:
   wis_mod: 0
 ac: 13
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The plague zombie has a creature grabbed or restrained.'
+  effect: The plague zombie makes a jaws unarmed melee Strike against the grabbed
+    or restrained creature with an attack modifier of +9 that deals 1d12+4 piercing
+    damage. A creature damaged by the jaws is exposed to zombie rot.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Jaws
+  range: null
+  raw_description: '**Jaws** [One Action]  (__attack__) **Requirement** The plague
+    zombie has a creature grabbed or restrained. **Effect** The plague zombie makes
+    a jaws unarmed melee Strike against the grabbed or restrained creature with an
+    attack modifier of +9 that deals 1d12+4 piercing damage. A creature damaged by
+    the jaws is exposed to zombie rot.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An infected creature can't heal damage it takes from zombie rot until
+    it has been cured of the disease. **Saving Throw** DC 18 Fortitude; **Stage 1**
+    carrier with no ill effect (1 day); **Stage 2** 1d6 negative damage (1 day); **Stage
+    3** 1d6 negative damage (1 day); **Stage 4** 1d6 negative damage (1 day); **Stage
+    5** dead, rising as a plague zombie immediately
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Zombie Rot
+  range: null
+  raw_description: '**Zombie Rot** (__disease__, __necromancy__) An infected creature
+    can''t heal damage it takes from zombie rot until it has been cured of the disease.
+    **Saving Throw** DC 18 Fortitude; **Stage 1** carrier with no ill effect (1 day);
+    **Stage 2** 1d6 negative damage (1 day); **Stage 3** 1d6 negative damage (1 day);
+    **Stage 4** 1d6 negative damage (1 day); **Stage 5** dead, rising as a plague
+    zombie immediately'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  - necromancy
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'Plague zombies are infested with hideous contagions.
@@ -24,10 +81,8 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -35,70 +90,14 @@ melee:
   name: fist
   plus_damage:
   - formula: null
-    type: Grab and zombie rot
+    type: Grab
+  - formula: null
+    type: zombie rot
   to_hit: 9
   traits: null
 name: Plague Zombie
 perception: 3
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The plague zombie has a creature grabbed or restrained.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Jaws
-  range: null
-  raw_description: '**Jaws**   (__attack__) **Requirement** The plague zombie has
-    a creature grabbed or restrained. **Effect** The plague zombie makes a jaws unarmed
-    melee Strike against the grabbed or restrained creature with an attack modifier
-    of +9 that deals 1d12+4 piercing damage. A creature damaged by the jaws is exposed
-    to zombie rot.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An infected creature can't heal damage it takes from zombie rot until
-    it has been cured of the disease. **Saving Throw** DC 18 Fortitude; **Stage 1**
-    carrier with no ill effect (1 day); **Stage 2** 1d6 negative damage (1 day); **Stage
-    3** 1d6 negative damage (1 day); **Stage 4** 1d6 negative damage (1 day); **Stage
-    5** dead, rising as a plague zombie immediately
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Zombie Rot
-  range: null
-  raw_description: '**Zombie Rot** (__disease__, __necromancy__) An infected creature
-    can''t heal damage it takes from zombie rot until it has been cured of the disease.
-    **Saving Throw** DC 18 Fortitude; **Stage 1** carrier with no ill effect (1 day);
-    **Stage 2** 1d6 negative damage (1 day); **Stage 3** 1d6 negative damage (1 day);
-    **Stage 4** 1d6 negative damage (1 day); **Stage 5** dead, rising as a plague
-    zombie immediately'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  - necromancy
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: positive
-- amount: 10
-  type: slashing
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -113,39 +112,44 @@ sense_abilities:
   critical_success: null
   description: A zombie is permanently slowed 1 and can't use reactions.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Slow
   range: null
   raw_description: '**Slow** A zombie is permanently slowed 1 and can''t use reactions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +3
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 340
+  page_start: '340'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Medium
 - Mindless
 - Undead
 - Zombie
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: positive
+- amount: 10
+  misc: null
+  type: slashing

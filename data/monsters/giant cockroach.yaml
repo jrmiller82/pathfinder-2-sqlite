@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -16,11 +17,11 @@ automatic_abilities:
   effect: The giant cockroach gains a +2 circumstance bonus to AC against the triggering
     attack. After the attack resolves, the cockroach Strides, __Climbs__, or __Flies__
     up to 10 feet.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Scurry
   range: null
   raw_description: '**Scurry [Reaction]** **Trigger **The giant cockroach is targeted
@@ -28,9 +29,11 @@ automatic_abilities:
     to AC against the triggering attack. After the attack resolves, the cockroach
     Strides, __Climbs__, or __Flies__ up to 10 feet.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The giant cockroach is targeted by a melee attack
+  trigger: The giant cockroach is targeted by a melee attack;
 description: 'Cockroaches are communal creatures, rarely setting out on their own
   unless they are searching for food. If an adventurer encounters a single giant cockroach
   while exploring, they had best take precautions against others, as there is likely
@@ -42,11 +45,8 @@ description: 'Cockroaches are communal creatures, rarely setting out on their ow
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -59,13 +59,7 @@ melee:
   - finesse
 name: Giant Cockroach
 perception: 6
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -74,34 +68,31 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 - scent (imprecise) 60 feet
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 53
+  page_start: '53'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: climb
 - amount: 15
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
-type: Creature
-weaknesses: null

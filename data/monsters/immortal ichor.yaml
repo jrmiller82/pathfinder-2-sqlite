@@ -7,67 +7,7 @@ ability_mods:
   wis_mod: 6
 ac: 26
 ac_special: null
-alignment: NE
-automatic_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The immortal ichor doesn't age, nor does it need to eat or breathe.
-    It can die only as a result of violence.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Immortality
-  range: null
-  raw_description: '**Immortality** The immortal ichor doesn''t age, nor does it need
-    to eat or breathe. It can die only as a result of violence.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-description: 'An immortal ichor is an intelligent mass of blood from a dead evil deity.
-  The cultists who perform the ritual to create immortal ichor typically seal up the
-  sentient ooze in an underground or remote chamber that blocks its magical abilities,
-  but over time these seals break or weaken, freeing the unholy monster.
-
-
-
-
-  **__Recall Knowledge - Ooze__ (__Occultism__)**: DC 39'
-hp: 350
-hp_misc: regeneration 15 (deactivated by good
-immunities:
-- acid
-- critical hits
-- mental
-- precision
-- unconscious
-- visual
-items: null
-languages:
-- Abyssal
-- Aklo
-- Infernal
-- Undercommon
-- telepathy 100 feet
-level: 15
-melee:
-- action_cost: One Action
-  damage:
-    formula: 3d8+12
-    type: bludgeoning
-  name: pseudopod
-  plus_damage:
-  - formula: null
-    type: mental erosion
-  to_hit: 27
-  traits: null
-name: Immortal Ichor
-perception: 20
-proactive_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -80,11 +20,11 @@ proactive_abilities:
     round as a __zombie__ (of the GM's choice) under the ichor's control. If the ichor
     is killed, these zombies are destroyed.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Corrupt Ally
   range: null
   raw_description: '**Corrupt Ally** (__divine__, __enchantment__, __mental__) A creature
@@ -97,6 +37,8 @@ proactive_abilities:
     (of the GM''s choice) under the ichor''s control. If the ichor is killed, these
     zombies are destroyed.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -110,17 +52,19 @@ proactive_abilities:
     a __domain__ that belonged to the dead deity from which the ichor arose (the domain
     spells presented here are from the __destruction__ domain).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Dead Spells
   range: null
   raw_description: '**Dead Spells** An immortal ichor can cast an initial and advanced
     domain spell of a __domain__ that belonged to the dead deity from which the ichor
     arose (the domain spells presented here are from the __destruction__ domain).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -130,16 +74,18 @@ proactive_abilities:
   description: A creature hit by the ichor's pseudopod is __stupefied 2__ for 1 day
     unless it succeeds at a DC 35 Will save.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Mental Erosion
   range: null
   raw_description: '**Mental Erosion** A creature hit by the ichor''s pseudopod is
     __stupefied 2__ for 1 day unless it succeeds at a DC 35 Will save.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -152,11 +98,11 @@ proactive_abilities:
     dealt. A creature that fails its save is also __drained 1__ (or drained 2 on a
     critical failure).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Resanguinate
   range: null
   raw_description: '**Resanguinate** [Three Actions]  (__divine__, __healing__, __necromancy__)
@@ -165,18 +111,81 @@ proactive_abilities:
     save). The immortal ichor regains HP equal to the total damage dealt. A creature
     that fails its save is also __drained 1__ (or drained 2 on a critical failure).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
   - healing
   - necromancy
   trigger: null
-ranged: null
+alignment: NE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The immortal ichor doesn't age, nor does it need to eat or breathe.
+    It can die only as a result of violence.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Immortality
+  range: null
+  raw_description: '**Immortality** The immortal ichor doesn''t age, nor does it need
+    to eat or breathe. It can die only as a result of violence.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+description: 'An immortal ichor is an intelligent mass of blood from a dead evil deity.
+  The cultists who perform the ritual to create immortal ichor typically seal up the
+  sentient ooze in an underground or remote chamber that blocks its magical abilities,
+  but over time these seals break or weaken, freeing the unholy monster.
+
+
+
+
+  **__Recall Knowledge - Ooze__ (__Occultism__)**: DC 39'
+hp: 350
+hp_misc: regeneration 15 (deactivated by good)
+immunities:
+- acid
+- critical hits
+- mental
+- precision
+- unconscious
+- visual
+languages:
+- Abyssal
+- Aklo
+- Infernal
+- Undercommon
+- telepathy 100 feet
+level: 15
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d8+12
+    type: bludgeoning
+  name: pseudopod
+  plus_damage:
+  - formula: null
+    type: mental erosion
+  to_hit: 27
+  traits: null
+name: Immortal Ichor
+perception: 20
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 15
+  misc: null
   type: physical
-ritual_lists: null
 saves:
   fort: 30
   fort_misc: null
@@ -185,106 +194,87 @@ saves:
   ref_misc: null
   will: 29
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +20
 - motion sense 60 feet
 - no vision
 size: Medium
 skills:
 - bonus: 30
   misc: null
-  name: 'Ancient History Lore '
+  name: Ancient History Lore
 - bonus: 30
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 29
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: 'Pathfinder #149: Against the Scarlet Triad'
-  page_start: 88
+  page_start: '88'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: fly
 spell_lists:
-- dc: 37
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: 31
+  cantrips:
+  - level: 7
     spells:
-    - frequency: x3
-      name: charm
-      requirement: null
-    - frequency: null
-      name: feeblemind
-      requirement: null
-    - frequency: null
-      name: possession
-      requirement: null
-    - frequency: null
-      name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: null
-      name: crisis of faith
-      requirement: null
-    - frequency: at will
-      name: telekinetic haul
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: at will
-      name: mind reading
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: telekinetic maneuver
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
-      name: charm
-      requirement: null
-    - frequency: at will
-      name: command
-      requirement: null
-  - heightened_level: 7
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: telekinetic projectile
-      requirement: null
-  to_hit: 31
-- dc: 37
-  misc: ', 3 Focus Points'
-  name: Cleric Domain Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+  constants: null
+  dc: 37
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
     spells:
-    - frequency: null
+    - misc: x3
+      name: charm
+    - misc: null
+      name: feeblemind
+    - misc: null
+      name: possession
+    - misc: null
+      name: suggestion
+  - level: 6
+    spells:
+    - misc: null
+      name: crisis of faith
+    - misc: at will
+      name: telekinetic haul
+  - level: 3
+    spells:
+    - misc: at will
+      name: mind reading
+  - level: 2
+    spells:
+    - misc: at will
+      name: telekinetic maneuver
+  - level: 1
+    spells:
+    - misc: at will
+      name: charm
+    - misc: at will
+      name: command
+  spells_source: Divine Innate Spells
+- attack_bonus: 31
+  cantrips: null
+  constants: null
+  dc: 37
+  focus_points: 3
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: null
       name: cry of destruction
-      requirement: null
-    - frequency: null
+    - misc: null
       name: destructive aura
-      requirement: null
-  to_hit: 31
+  spells_source: Cleric Domain Spells
 traits:
-- Rare
-- NE
-- Medium
 - Ooze
-type: Creature
-weaknesses: null

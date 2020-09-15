@@ -7,162 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
-alignment: N
-automatic_abilities:
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Attack of Opportunity
-  range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 'A hydra ordinarily has five heads. A creature can attempt to sever
-    one of the hydra''s heads by specifically targeting it and dealing damage equal
-    to the head''s Hit Points. A head that is not completely severed returns to full
-    Hit Points at the end of any creature''s turn.
-
-
-    A hydra can regrow a severed head using Hydra Regeneration. A creature can prevent
-    this regrowth by dealing acid or fire damage to the stump, cauterizing it. Single-target
-    acid or fire effects need to be targeted at a specific stump, but effects that
-    deal splash damage or affect areas covering the hydra''s whole space cauterize
-    all stumps if they deal acid or fire damage. If the attack that severs a head
-    deals any acid or fire damage, the stump is cauterized instantly. If all five
-    heads are cauterized, the hydra dies.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Head Regrowth
-  range: null
-  raw_description: '**Head Regrowth** A hydra ordinarily has five heads. A creature
-    can attempt to sever one of the hydra''s heads by specifically targeting it and
-    dealing damage equal to the head''s Hit Points. A head that is not completely
-    severed returns to full Hit Points at the end of any creature''s turn.
-
-
-    A hydra can regrow a severed head using Hydra Regeneration. A creature can prevent
-    this regrowth by dealing acid or fire damage to the stump, cauterizing it. Single-target
-    acid or fire effects need to be targeted at a specific stump, but effects that
-    deal splash damage or affect areas covering the hydra''s whole space cauterize
-    all stumps if they deal acid or fire damage. If the attack that severs a head
-    deals any acid or fire damage, the stump is cauterized instantly. If all five
-    heads are cauterized, the hydra dies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The hydra has regeneration equal to 3 x the number of heads it has.
-    If a hydra's body is missing any heads and the remaining stumps have not been
-    cauterized, the hydra attempts a DC 25 Fortitude save after it regains Hit Points
-    from regeneration. On a success, one uncauterized stump regrows two heads; on
-    a critical success, two uncauterized stumps regrow into two heads each. The hydra
-    can never grow more than double the number of heads it ordinarily has. The hydra's
-    regeneration only fully deactivates if all its heads are severed and all stumps
-    are cauterized, at which point it dies.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hydra Regeneration
-  range: null
-  raw_description: '**Hydra Regeneration** The hydra has regeneration equal to 3 x
-    the number of heads it has. If a hydra''s body is missing any heads and the remaining
-    stumps have not been cauterized, the hydra attempts a DC 25 Fortitude save after
-    it regains Hit Points from regeneration. On a success, one uncauterized stump
-    regrows two heads; on a critical success, two uncauterized stumps regrow into
-    two heads each. The hydra can never grow more than double the number of heads
-    it ordinarily has. The hydra''s regeneration only fully deactivates if all its
-    heads are severed and all stumps are cauterized, at which point it dies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A hydra gains an extra reaction per round for each of its heads beyond
-    the first, which it can use only to make Attacks of Opportunity. It can't use
-    more than 1 reaction on the same triggering action, even if a creature leaves
-    several squares within its reach, and the hydra must use a different head for
-    each Attack of Opportunity it makes. Whenever one of the hydra's heads is severed,
-    the hydra loses 1 of its extra reactions per round.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Multiple Opportunities
-  range: null
-  raw_description: '**Multiple Opportunities** A hydra gains an extra reaction per
-    round for each of its heads beyond the first, which it can use only to make Attacks
-    of Opportunity. It can''t use more than 1 reaction on the same triggering action,
-    even if a creature leaves several squares within its reach, and the hydra must
-    use a different head for each Attack of Opportunity it makes. Whenever one of
-    the hydra''s heads is severed, the hydra loses 1 of its extra reactions per round.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-description: 'Hydras are multiheaded, foul-tempered serpentine beasts with voracious
-  appetites, widely feared for their regeneration abilities.
-
-
-
-
-  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 22'
-hp: 90
-hp_misc: (body), hydra regeneration
-immunities:
-- area damage
-items: null
-languages: null
-level: 6
-melee:
-- action_cost: One Action
-  damage:
-    formula: 2d6+7
-    type: piercing
-  name: fangs
-  plus_damage: null
-  to_hit: 16
-  traits:
-  - reach 10 feet
-name: Hydra
-perception: 17
-proactive_abilities:
+active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -175,11 +20,11 @@ proactive_abilities:
     failure. This counts toward the hydra's multiple attack penalty as a number of
     attacks equal to the number of heads the hydra has.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Focused Assault
   range: null
   raw_description: '**Focused Assault** [Two Actions]  The hydra attacks a single
@@ -192,6 +37,8 @@ proactive_abilities:
     multiple attack penalty as a number of attacks equal to the number of heads the
     hydra has.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -203,11 +50,11 @@ proactive_abilities:
     penalty, but the multiple attack penalty doesn't increase until after the hydra
     makes all its attacks.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Storm of Jaws
   range: null
   raw_description: '**Storm of Jaws** [Two Actions]  The hydra makes a number of Strikes
@@ -215,15 +62,119 @@ proactive_abilities:
     toward the hydra''s multiple attack penalty, but the multiple attack penalty doesn''t
     increase until after the hydra makes all its attacks.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: slashing
-ritual_lists: null
+alignment: N
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: 15 ((head), head regrowth); **Immunities** area damage; **Weaknesses**
+    slashing 5
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: HP
+  range: null
+  raw_description: '**HP** 15 ((head), head regrowth); **Immunities** area damage;
+    **Weaknesses** slashing 5'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: '**Head Regrowth** A hydra ordinarily has five heads. A creature can
+    attempt to sever one of the hydra''s heads by specifically targeting it and dealing
+    damage equal to the head''s Hit Points. A head that is not completely severed
+    returns to full Hit Points at the end of any creature''s turn.
+
+
+    A hydra can regrow a severed head using Hydra Regeneration. A creature can prevent
+    this regrowth by dealing acid or fire damage to the stump, cauterizing it. Single-target
+    acid or fire effects need to be targeted at a specific stump, but effects that
+    deal splash damage or affect areas covering the hydra''s whole space cauterize
+    all stumps if they deal acid or fire damage. If the attack that severs a head
+    deals any acid or fire damage, the stump is cauterized instantly. If all five
+    heads are cauterized, the hydra dies.
+
+
+    **Hydra Regeneration** The hydra has regeneration equal to 3 x the number of heads
+    it has. If a hydra''s body is missing any heads and the remaining stumps have
+    not been cauterized, the hydra attempts a DC 25 Fortitude save after it regains
+    Hit Points from regeneration. On a success, one uncauterized stump regrows two
+    heads; on a critical success, two uncauterized stumps regrow into two heads each.
+    The hydra can never grow more than double the number of heads it ordinarily has.
+    The hydra''s regeneration only fully deactivates if all its heads are severed
+    and all stumps are cauterized, at which point it dies.
+
+
+    **Multiple Opportunities** A hydra gains an extra reaction per round for each
+    of its heads beyond the first, which it can use only to make Attacks of Opportunity.
+    It can''t use more than 1 reaction on the same triggering action, even if a creature
+    leaves several squares within its reach, and the hydra must use a different head
+    for each Attack of Opportunity it makes. Whenever one of the hydra''s heads is
+    severed, the hydra loses 1 of its extra reactions per round.'
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+description: 'Hydras are multiheaded, foul-tempered serpentine beasts with voracious
+  appetites, widely feared for their regeneration abilities.
+
+
+
+
+  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 22'
+hp: 90
+hp_misc: (body), hydra regeneration
+immunities:
+- area damage
+level: 6
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d6+7
+    type: piercing
+  name: fangs
+  plus_damage: null
+  to_hit: 16
+  traits:
+  - reach 10 feet
+name: Hydra
+perception: 17
+ranged_attacks: null
 saves:
   fort: 15
   fort_misc: null
@@ -232,32 +183,32 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: +15 in water
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 210
+  page_start: '210'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Huge
 - Beast
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: slashing

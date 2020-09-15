@@ -7,55 +7,36 @@ ability_mods:
   wis_mod: 5
 ac: 33
 ac_special: null
+active_abilities: null
 alignment: CE
 automatic_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 60 feet. The shining child sheds bright light. Any creature that starts
-    its turn in the aura must succeed at a Fortitude DC 29 save. If it fails, it is
-    blinded for 1 minute, and if it critically fails, it's permanently blinded. A
-    creature that succeeds at its save is temporarily immune to this effect for 24
-    hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blinding Aura
-  range: null
-  raw_description: '**Blinding Aura** (__arcane__, __aura__, __incapacitation__, __light__)
-    60 feet. The shining child sheds bright light. Any creature that starts its turn
-    in the aura must succeed at a Fortitude DC 29 save. If it fails, it is blinded
-    for 1 minute, and if it critically fails, it''s permanently blinded. A creature
-    that succeeds at its save is temporarily immune to this effect for 24 hours.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - aura
-  - incapacitation
-  - light
-  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
   effect: The shining child attempts to counteract the magical darkness (as a 7th-level
     spell).
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Overwhelming Light
+  maximum_duration: null
+  name: Blinding Aura
   range: null
-  raw_description: '**Overwhelming Light** [Reaction] (__light__) **Trigger** The
-    shining child enters an area of magical darkness or begins its turn in an area
-    of magical darkness. **Effect** The shining child attempts to counteract the magical
-    darkness (as a 7th-level spell).'
+  raw_description: '**Blinding Aura** (__arcane__, __aura__, __incapacitation__, __light__)
+    60 feet. The shining child sheds bright light. Any creature that starts its turn
+    in the aura must succeed at a Fortitude DC 29 save. If it fails, it is blinded
+    for 1 minute, and if it critically fails, it''s permanently blinded. A creature
+    that succeeds at its save is temporarily immune to this effect for 24 hours.
+
+
+    **Overwhelming Light** [Reaction] (__light__) **Trigger** The shining child enters
+    an area of magical darkness or begins its turn in an area of magical darkness.
+    **Effect** The shining child attempts to counteract the magical darkness (as a
+    7th-level spell).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - light
@@ -87,7 +68,7 @@ description: 'Shining children are wicked, enigmatic monsters that roam remote p
   During this tumultuous process, sparks of living light sometimes shear off the newly
   formed planes, and these sparks of raw planar energy somehow transform into shining
   children. Every newly formed demiplane leaves a different mental imprint on its
-  shining "offspring," making it easy for shining children to telepathically recognize
+  shining “offspring,” making it easy for shining children to telepathically recognize
   their brothers and sisters. Forever trapped in apparently adolescent bodies, shining
   children dedicate themselves to scholarship and violence with equal measure in a
   futile effort to understand their roles in the multiverse and the burning injustice
@@ -109,20 +90,21 @@ immunities:
 - blinded
 - dazzled
 - fire
-items: null
 languages:
 - Aklo
 - telepathy 120 feet
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d4+5
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 4d6
-    type: fire and 2d4 persistent fire
+  - formula: null
+    type: 4d6 fire
+  - formula: null
+    type: 2d4 persistent fire
   to_hit: 25
   traits:
   - agile
@@ -134,8 +116,8 @@ melee:
     type: fire,
   name: fire ray
   plus_damage:
-  - formula: 2d10
-    type: positive damage if the target is undead
+  - formula: null
+    type: 2d10 positive damage if the target is undead
   to_hit: 25
   traits:
   - arcane
@@ -144,11 +126,7 @@ melee:
   - range 100 feet
 name: Shining Child
 perception: 23
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 22
   fort_misc: null
@@ -163,108 +141,93 @@ sense_abilities:
   critical_success: null
   description: The shining child is flat-footed while in areas of darkness.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Radiance Dependence
   range: null
   raw_description: '**Radiance Dependence** The shining child is flat-footed while
     in areas of darkness.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +23
 - darkvision
 size: Medium
 skills:
 - bonus: 18
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 23
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 21
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 21
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 18
   misc: null
-  name: 'Occultism '
-source:
+  name: Occultism
+sources:
 - abbr: Bestiary
-  page_start: 292
+  page_start: '292'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 33
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips:
+  - level: 6
     spells:
-    - frequency: null
-      name: spell turning
-      requirement: null
-    - frequency: null
-      name: sunburst
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: vibrant pattern
-      requirement: null
-    - frequency: null
-      name: wall of force
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: false vision
-      requirement: null
-    - frequency: null
-      name: hallucinatory terrain
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will, self only
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: illusory object
-      requirement: null
-  - heightened_level: 6
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 33
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: null
+      name: spell turning
+    - misc: null
+      name: sunburst
+  - level: 6
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: vibrant pattern
+    - misc: null
+      name: wall of force
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+    - misc: null
+      name: false vision
+    - misc: null
+      name: hallucinatory terrain
+  - level: 4
+    spells:
+    - misc: at will; self only
+      name: dimension door
+  - level: 2
+    spells:
+    - misc: at will
+      name: illusory object
+  spells_source: Occult Innate Spells
 traits:
-- CE
-- Medium
 - Astral
-type: Creature
-weaknesses: null

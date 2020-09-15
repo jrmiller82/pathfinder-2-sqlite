@@ -7,6 +7,37 @@ ability_mods:
   wis_mod: 3
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If the giant chameleon hits a creature with a tongue Strike, that creature
+    becomes __grabbed__ by the giant chameleon. The target isn't __immobilized__,
+    but it can't move beyond the reach of the giant chameleon's tongue. A creature
+    can sever the tongue with an attack that hits AC 15 and deals at least 4 slashing
+    damage. Though this doesn't deal any damage to the giant chameleon, it prevents
+    it from using its tongue Strike until it regrows its tongue, which takes a week.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tongue Grab
+  range: null
+  raw_description: '**Tongue Grab** If the giant chameleon hits a creature with a
+    tongue Strike, that creature becomes __grabbed__ by the giant chameleon. The target
+    isn''t __immobilized__, but it can''t move beyond the reach of the giant chameleon''s
+    tongue. A creature can sever the tongue with an attack that hits AC 15 and deals
+    at least 4 slashing damage. Though this doesn''t deal any damage to the giant
+    chameleon, it prevents it from using its tongue Strike until it regrows its tongue,
+    which takes a week.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Giant chameleons are legendary for their ability to change their skin
@@ -20,11 +51,8 @@ description: 'Giant chameleons are legendary for their ability to change their s
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 18'
 hp: 60
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+7
@@ -35,7 +63,9 @@ melee:
   traits:
   - reach 10 feet
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: tongue grab
   name: tongue
   plus_damage: null
   to_hit: 12
@@ -44,41 +74,7 @@ melee:
   - reach 15 feet
 name: Giant Chameleon
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the giant chameleon hits a creature with a tongue Strike, that creature
-    becomes __grabbed__ by the giant chameleon. The target isn't __immobilized__,
-    but it can't move beyond the reach of the giant chameleon's tongue. A creature
-    can sever the tongue with an attack that hits AC 15 and deals at least 4 slashing
-    damage. Though this doesn't deal any damage to the giant chameleon, it prevents
-    it from using its tongue Strike until it regrows its tongue, which takes a week.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tongue Grab
-  range: null
-  raw_description: '**Tongue Grab** If the giant chameleon hits a creature with a
-    tongue Strike, that creature becomes __grabbed__ by the giant chameleon. The target
-    isn''t __immobilized__, but it can''t move beyond the reach of the giant chameleon''s
-    tongue. A creature can sever the tongue with an attack that hits AC 15 and deals
-    at least 4 slashing damage. Though this doesn''t deal any damage to the giant
-    chameleon, it prevents it from using its tongue Strike until it regrows its tongue,
-    which takes a week.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -94,44 +90,43 @@ sense_abilities:
   description: The giant chameleon can change its coloration to match its surroundings.
     It doesn't need cover to attempt to __Hide__ with a __Stealth__ check.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Camouflage
   range: null
   raw_description: '**Camouflage** The giant chameleon can change its coloration to
     match its surroundings. It doesn''t need cover to attempt to __Hide__ with a __Stealth__
     check.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +10
 - low-light vision
 size: Large
 skills:
 - bonus: 10
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: +13 to Hide
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 168
+  page_start: '168'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

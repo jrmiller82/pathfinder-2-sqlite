@@ -7,6 +7,48 @@ ability_mods:
   wis_mod: 2
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The invisible stalker deals 2d6 extra precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The invisible stalker deals 2d6 extra precision
+    damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The invisible stalker moves at full Speed while Tracking.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swift Tracker
+  range: null
+  raw_description: '**Swift Tracker** The invisible stalker moves at full Speed while
+    Tracking.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -17,11 +59,11 @@ automatic_abilities:
     of its next turn, as the vague outline of its humanoid form is faintly visible
     for a short period of time.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Naturally Invisible
   range: null
   raw_description: '**Naturally Invisible** The invisible stalker is invisible at
@@ -29,6 +71,8 @@ automatic_abilities:
     of undetected until the start of its next turn, as the vague outline of its humanoid
     form is faintly visible for a short period of time.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -47,11 +91,10 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Auran
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+5
@@ -64,48 +107,7 @@ melee:
   - finesse
 name: Invisible Stalker
 perception: 16
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The invisible stalker deals 2d6 extra precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The invisible stalker deals 2d6 extra precision
-    damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The invisible stalker moves at full Speed while Tracking.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swift Tracker
-  range: null
-  raw_description: '**Swift Tracker** The invisible stalker moves at full Speed while
-    Tracking.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 14
   fort_misc: null
@@ -114,35 +116,31 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 size: Medium
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 15
   misc: +19 to Track
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 144
+  page_start: '144'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Medium
 - Air
 - Elemental
-type: Creature
-weaknesses: null

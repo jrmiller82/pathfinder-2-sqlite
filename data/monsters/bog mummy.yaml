@@ -7,24 +7,62 @@ ability_mods:
   wis_mod: 1
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: This affliction can't be reduced below stage 1, nor can the damage
+    from it be healed, until it's successfully treated with __remove curse__ or a
+    similar effect; the affliction can then be removed as normal for a disease. A
+    creature killed by bog rot melts into a noxious sludge and can't be resurrected
+    except by a 7th-level __resurrect__ ritual or similar magic; **Saving Throw**
+    DC 21 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
+    3d6 negative damage and __clumsy 1__ (1 day)
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bog Rot
+  range: null
+  raw_description: '**Bog Rot** (__curse__, __disease__, __divine__, __necromancy__,
+    __negative__) This affliction can''t be reduced below stage 1, nor can the damage
+    from it be healed, until it''s successfully treated with __remove curse__ or a
+    similar effect; the affliction can then be removed as normal for a disease. A
+    creature killed by bog rot melts into a noxious sludge and can''t be resurrected
+    except by a 7th-level __resurrect__ ritual or similar magic; **Saving Throw**
+    DC 21 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
+    3d6 negative damage and __clumsy 1__ (1 day)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - disease
+  - divine
+  - necromancy
+  - negative
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A creature that begins its turn within the area feels as if
-    its lungs were filling with water and must succeed at a DC 19 Fortitude save or
-    be unable to speak or breathe. The creature can still hold its breath and can
-    attempt a new saving throw at the end of its turn. A creature that succeeds is
-    temporarily immune to breath of the bog for 24 hours.
+  description: A creature that begins its turn within the area feels as if its lungs
+    were filling with water and must succeed at a DC 19 Fortitude save or be unable
+    to speak or breathe. The creature can still hold its breath and can attempt a
+    new saving throw at the end of its turn. A creature that succeeds is temporarily
+    immune to breath of the bog for 24 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Breath of the Bog
-  range: null
+  range: 30 feet
   raw_description: '**Breath of the Bog** (__aura__, __divine__, __enchantment__,
     __mental__) 30 feet. A creature that begins its turn within the area feels as
     if its lungs were filling with water and must succeed at a DC 19 Fortitude save
@@ -32,6 +70,8 @@ automatic_abilities:
     attempt a new saving throw at the end of its turn. A creature that succeeds is
     temporarily immune to breath of the bog for 24 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -43,23 +83,26 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: Initiative has not yet been rolled
-  effects: null
+  effect: The bog mummy automatically notices the creature and __Burrows__ before
+    rolling initiative.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Rise Up
   range: null
   raw_description: '**Rise Up [Reaction]** **Trigger** A creature walks on top of
     a bog mummy that lies buried in the mud or peat below; **Requirements** Initiative
     has not yet been rolled; **Effect** The bog mummy automatically notices the creature
     and __Burrows__ before rolling initiative.'
-  requirements: null
+  requirements: Initiative has not yet been rolled
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature walks on top of a bog mummy that lies buried in the mud or peat
-    below
+    below; Requirements Initiative has not yet been rolled;
 description: 'The cultural practice of mummifying the dead is not the only way a body
   can become preserved, nor is it the only route that gives rise to these disease-spreading
   undead monstrosities.
@@ -89,23 +132,22 @@ description: 'The cultural practice of mummifying the dead is not the only way a
   therein and often alerting travelers to the potential danger that lies beneath the
   surface.'
 hp: 85
-hp_misc: negative healing
+hp_misc: "negative healing\r\n"
 immunities:
-- death effects
-- disease
-- paralyzed
-- poison
-- unconscious
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 languages:
 - Common
 - Necril
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+5
-    type: null
+    type: ''
   name: fist
   plus_damage:
   - formula: null
@@ -114,48 +156,12 @@ melee:
   traits: null
 name: Bog Mummy
 perception: 12
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: "This affliction can't be reduced below stage 1, nor can the damage\
-    \ from it be healed, until it's successfully treated with __remove curse__ or\
-    \ a similar effect; the affliction can then be removed as normal for a disease.\
-    \ A creature killed by bog rot melts into a noxious sludge and can\x81ft be resurrected\
-    \ except by a 7th-level __resurrect__ ritual or similar magic; **Saving Throw**\
-    \ DC 21 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage\
-    \ 2** 3d6 negative damage and __clumsy 1__ (1 day)"
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Bog Rot
-  range: null
-  raw_description: "**Bog Rot** (__curse__, __disease__, __divine__, __necromancy__,\
-    \ __negative__) This affliction can't be reduced below stage 1, nor can the damage\
-    \ from it be healed, until it's successfully treated with __remove curse__ or\
-    \ a similar effect; the affliction can then be removed as normal for a disease.\
-    \ A creature killed by bog rot melts into a noxious sludge and can\x81ft be resurrected\
-    \ except by a 7th-level __resurrect__ ritual or similar magic; **Saving Throw**\
-    \ DC 21 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage\
-    \ 2** 3d6 negative damage and __clumsy 1__ (1 day)"
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - disease
-  - divine
-  - necromancy
-  - negative
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 5
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -164,35 +170,32 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - darkvision
 - tremorsense (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 12
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: +13 while buried in a bog
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 177
+  page_start: '177'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: burrow
 spell_lists: null
 traits:
-- Uncommon
-- LE
-- Medium
 - Mummy
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold

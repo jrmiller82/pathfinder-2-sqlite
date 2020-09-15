@@ -7,6 +7,84 @@ ability_mods:
   wis_mod: 1
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a shadow giant hits with a melee Strike, the target must succeed
+    at a DC 30 Fortitude save or become __drained 1__ and take a –1 status penalty
+    to Perception checks involving sight as long as they remain drained. On a critical
+    failure, this condition doesn't heal naturally and can be removed only with magic.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pall of Shadow
+  range: null
+  raw_description: '**Pall of Shadow** (__divine__, __necromancy__, __shadow__) When
+    a shadow giant hits with a melee Strike, the target must succeed at a DC 30 Fortitude
+    save or become __drained 1__ and take a –1 status penalty to Perception checks
+    involving sight as long as they remain drained. On a critical failure, this condition
+    doesn''t heal naturally and can be removed only with magic.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  - shadow
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The shadow giant becomes shrouded in shadows and becomes __concealed__.
+    As the nature of this effect leaves the giant's location obvious, it can't use
+    this concealment to __Hide__ or __Sneak__. This effect lasts for 1 minute or until
+    it is exposed to direct sunlight, whichever comes first.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shadowcloak
+  range: null
+  raw_description: '**Shadowcloak** [One Action]  (__divine__, __illusion__, __shadow__)
+    The shadow giant becomes shrouded in shadows and becomes __concealed__. As the
+    nature of this effect leaves the giant''s location obvious, it can''t use this
+    concealment to __Hide__ or __Sneak__. This effect lasts for 1 minute or until
+    it is exposed to direct sunlight, whichever comes first.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - illusion
+  - shadow
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +96,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +111,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -42,15 +122,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**__Catch Rock__** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -86,7 +168,6 @@ description: 'Shadow giants are fierce natives of the __Shadow Plane__, where th
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 31'
 hp: 275
 hp_misc: null
-immunities: null
 items:
 - +1 striking spiked chain
 - +1 resilient breastplate
@@ -96,7 +177,7 @@ languages:
 - Jotun
 - Shadowtongue
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+18
@@ -124,79 +205,7 @@ melee:
   - reach 10 feet
 name: Shadow Giant
 perception: 20
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a shadow giant hits with a melee Strike, the target must succeed
-    at a DC 30 Fortitude save or become __drained 1__ and take a -1 status penalty
-    to Perception checks involving sight as long as they remain drained. On a critical
-    failure, this condition doesn't heal naturally and can be removed only with magic.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pall of Shadow
-  range: null
-  raw_description: '**Pall of Shadow** (__divine__, __necromancy__, __shadow__) When
-    a shadow giant hits with a melee Strike, the target must succeed at a DC 30 Fortitude
-    save or become __drained 1__ and take a -1 status penalty to Perception checks
-    involving sight as long as they remain drained. On a critical failure, this condition
-    doesn''t heal naturally and can be removed only with magic.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  - shadow
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The shadow giant becomes shrouded in shadows and becomes __concealed__.
-    As the nature of this effect leaves the giant's location obvious, it can't use
-    this concealment to __Hide__ or __Sneak__. This effect lasts for 1 minute or until
-    it is exposed to direct sunlight, whichever comes first.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shadowcloak
-  range: null
-  raw_description: '**Shadowcloak**   (__divine__, __illusion__, __shadow__) The shadow
-    giant becomes shrouded in shadows and becomes __concealed__. As the nature of
-    this effect leaves the giant''s location obvious, it can''t use this concealment
-    to __Hide__ or __Sneak__. This effect lasts for 1 minute or until it is exposed
-    to direct sunlight, whichever comes first.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - illusion
-  - shadow
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**__Throw Rock__**   '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+18
@@ -207,11 +216,6 @@ ranged:
   traits:
   - brutal
   - range increment 120 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -220,34 +224,29 @@ saves:
   ref_misc: null
   will: 23
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +20
 - darkvision
 size: Large
 skills:
 - bonus: 27
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 21
   misc: +23 to Hide in dim light
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 127
+  page_start: '79'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Large
 - Giant
 - Humanoid
 - Shadow
-type: Creature
-weaknesses: null

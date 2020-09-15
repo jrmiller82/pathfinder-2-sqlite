@@ -7,6 +7,171 @@ ability_mods:
   wis_mod: 4
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The moonflower releases a pulse of bright light. Each non-moonflower
+    creature in the emanation must attempt a DC 23 Fortitude save. The moonflower
+    can't use Light Pulse again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Light Pulse
+  range: 50 feet
+  raw_description: '**Light Pulse** [Two Actions]  (__evocation__, __light__, __primal__,
+    __visual__) 50 feet. The moonflower releases a pulse of bright light. Each non-moonflower
+    creature in the emanation must attempt a DC 23 Fortitude save. The moonflower
+    can''t use Light Pulse again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - evocation
+  - light
+  - primal
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is unaffected.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __dazzled__ for 1d4 rounds.
+  effect: null
+  failure: The creature is __dazzled__ for 1d4 rounds.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is __dazzled__ for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __blinded__ for 1d4 rounds.
+  critical_success: null
+  description: The creature is __blinded__ for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is __blinded__ for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The swallowed creature is wrapped in a tight cocoon and extruded from the
+    moonflower's body into an adjacent square. The creature continues to be Swallowed
+    Whole. It can't use __Acrobatics__ to __Escape__ a pod, but other creatures can
+    attempt to Rupture the pod. The cocooned creature takes half damage from any damage
+    dealt to the cocoon. Once the cocoon is Ruptured, it deflates and decays.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pod Prison
+  range: null
+  raw_description: '**Pod Prison** [Reaction]  **Trigger** The moonflower has swallowed
+    a creature; **Effect** The swallowed creature is wrapped in a tight cocoon and
+    extruded from the moonflower''s body into an adjacent square. The creature continues
+    to be Swallowed Whole. It can''t use __Acrobatics__ to __Escape__ a pod, but other
+    creatures can attempt to Rupture the pod. The cocooned creature takes half damage
+    from any damage dealt to the cocoon. Once the cocoon is Ruptured, it deflates
+    and decays.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The moonflower has swallowed a creature;
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Should a Small or larger creature die within a pod prison, the pod
+    transforms into an adult moonflower with full Hit Points after 1d4 hours of growth.
+    The newly formed moonflower has its own consciousness, but some aspect of its
+    trunk or blossoms resembles the creature that died within. The dead creature's
+    equipment remains inside the new moonflower and can be retrieved if the moonflower
+    is slain.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pod Spawn
+  range: null
+  raw_description: '**Pod Spawn** Should a Small or larger creature die within a pod
+    prison, the pod transforms into an adult moonflower with full Hit Points after
+    1d4 hours of growth. The newly formed moonflower has its own consciousness, but
+    some aspect of its trunk or blossoms resembles the creature that died within.
+    The dead creature''s equipment remains inside the new moonflower and can be retrieved
+    if the moonflower is slain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Large, 2d10+10 bludgeoning and 2d6 acid, Rupture 21
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**__Swallow Whole__** [One Action]  (__attack__) Large, 2d10+10
+    bludgeoning and 2d6 acid, Rupture 21'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These enormous plants have thick, knotted trunks festooned with fanged
@@ -41,11 +206,10 @@ hp: 120
 hp_misc: fast healing 10
 immunities:
 - electricity
-items: null
 languages:
 - telepathy 1 mile (other moonflowers only)
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+10
@@ -69,114 +233,12 @@ melee:
   - reach 15 feet
 name: Moonflower
 perception: 16
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: The creature is blinded for 1d4 rounds.
-  critical_success: null
-  description: "50 feet. The moonflower releases a pulse of bright light. Each non-moonflower\
-    \ creature in the emanation must attempt a DC 23 Fortitude save. The moonflower\
-    \ can't use Light Pulse again for 1d4 rounds. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is dazzled for 1d4 rounds.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Light Pulse
-  range: null
-  raw_description: "**Light Pulse** [Two Actions]  (__evocation__, __light__, __primal__,\
-    \ __visual__) 50 feet. The moonflower releases a pulse of bright light. Each non-moonflower\
-    \ creature in the emanation must attempt a DC 23 Fortitude save. The moonflower\
-    \ can't use Light Pulse again for 1d4 rounds. \n\n**Success** The creature is\
-    \ unaffected. \n\n**Failure** The creature is __dazzled__ for 1d4 rounds. \n\n\
-    **Critical Failure** The creature is __blinded__ for 1d4 rounds."
-  requirements: null
-  success: The creature is unaffected.
-  traits:
-  - evocation
-  - light
-  - primal
-  - visual
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The swallowed creature is wrapped in a tight cocoon and extruded from the
-    moonflower's body into an adjacent square. The creature continues to be Swallowed
-    Whole. It can't use __Acrobatics__ to __Escape__ a pod, but other creatures can
-    attempt to Rupture the pod. The cocooned creature takes half damage from any damage
-    dealt to the cocoon. Once the cocoon is Ruptured, it deflates and decays.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pod Prison
-  range: null
-  raw_description: '**Pod Prison** [Reaction]  **Trigger** The moonflower has swallowed
-    a creature; **Effect** The swallowed creature is wrapped in a tight cocoon and
-    extruded from the moonflower''s body into an adjacent square. The creature continues
-    to be Swallowed Whole. It can''t use __Acrobatics__ to __Escape__ a pod, but other
-    creatures can attempt to Rupture the pod. The cocooned creature takes half damage
-    from any damage dealt to the cocoon. Once the cocoon is Ruptured, it deflates
-    and decays.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The moonflower has swallowed a creature
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: "Should a Small or larger creature die within a pod prison, the pod\
-    \ transforms into an adult moonflower with full Hit Points after 1d4 hours of\
-    \ growth. The newly formed moonflower has its own consciousness, but some aspect\
-    \ of its trunk or blossoms resembles the creature that died within. The dead creature\x81\
-    fs equipment remains inside the new moonflower and can be retrieved if the moonflower\
-    \ is slain."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pod Spawn
-  range: null
-  raw_description: "**Pod Spawn** Should a Small or larger creature die within a pod\
-    \ prison, the pod transforms into an adult moonflower with full Hit Points after\
-    \ 1d4 hours of growth. The newly formed moonflower has its own consciousness,\
-    \ but some aspect of its trunk or blossoms resembles the creature that died within.\
-    \ The dead creature\x81fs equipment remains inside the new moonflower and can\
-    \ be retrieved if the moonflower is slain."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Large, 2d10+10 bludgeoning and 2d6 acid, Rupture 21
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**__Swallow Whole__**   (__attack__) Large, 2d10+10 bludgeoning
-    and 2d6 acid, Rupture 21'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
-  type: physical (except slashing)
-ritual_lists: null
+  misc: except slashing
+  type: physical
 saves:
   fort: 18
   fort_misc: null
@@ -185,32 +247,28 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 size: Huge
 skills:
 - bonus: 19
   misc: can't Jump or Swim
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: +18 in thick vegetation
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 173
+  page_start: '173'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Huge
 - Plant
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: fire

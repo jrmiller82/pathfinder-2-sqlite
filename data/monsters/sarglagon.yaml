@@ -7,25 +7,165 @@ ability_mods:
   wis_mod: 4
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The sarglagon conjures murky water to fill the lungs of a creature
+    that can't breathe water within 30 feet. The target must attempt a DC 26 Fortitude
+    save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drown
+  range: null
+  raw_description: '**Drown** [Two Actions]  (__conjuration__, __divine__, __incapacitation__)
+    The sarglagon conjures murky water to fill the lungs of a creature that can''t
+    breathe water within 30 feet. The target must attempt a DC 26 Fortitude save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - conjuration
+  - divine
+  - incapacitation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The target is unaffected.
+  description: The target is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The target is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target coughs up water and is __sickened 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The target coughs up water and is __sickened 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The target coughs up water and is __sickened 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target is __holding its breath__. The only action it can take is
+    to attempt a Fortitude save against Drown to expel the water, which is a single
+    action.
+  effect: null
+  failure: The target is __holding its breath__. The only action it can take is to
+    attempt a Fortitude save against Drown to expel the water, which is a single action.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The target is __holding its breath__. The only action
+    it can take is to attempt a Fortitude save against Drown to expel the water, which
+    is a single action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The target falls __unconscious__ and begins suffocating. If the
+    target succeeds at its Fortitude save while suffocating, it coughs up the water
+    and can breathe again.
+  critical_success: null
+  description: The target falls __unconscious__ and begins suffocating. If the target
+    succeeds at its Fortitude save while suffocating, it coughs up the water and can
+    breathe again.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **The target falls __unconscious__ and begins
+    suffocating. If the target succeeds at its Fortitude save while suffocating, it
+    coughs up the water and can breathe again.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw **DC 26 Fortitude; **Maximum Duration **6 rounds; **Stage
+    1 **2d6 poison damage and __clumsy 1__ (1 round); **Stage 2 **3d6 poison damage
+    and clumsy 2 (1 round)'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sarglagon Venom
+  range: null
+  raw_description: '**Sarglagon Venom** (__poison__) **Saving Throw **DC 26 Fortitude;
+    **Maximum Duration **6 rounds; **Stage 1 **2d6 poison damage and __clumsy 1__
+    (1 round); **Stage 2 **3d6 poison damage and clumsy 2 (1 round)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 10 feet. A creature that enters the heavy aura must attempt a DC 23
-    Will save. It is then temporarily immune for 10 minutes.
+  description: A creature that enters the heavy aura must attempt a DC 23 Will save.
+    It is then temporarily immune for 10 minutes.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Heavy Aura
-  range: null
+  range: 10 feet
   raw_description: '**Heavy Aura** (__aura__, __divine__, __incapacitation__, __transmutation__)
     10 feet. A creature that enters the heavy aura must attempt a DC 23 Will save.
     It is then temporarily immune for 10 minutes.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -38,16 +178,18 @@ automatic_abilities:
   critical_success: null
   description: The creature is unaffected.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Success
   range: null
   raw_description: '**Success **The creature is unaffected.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The creature is unaffected.
   traits: null
   trigger: null
 - action_cost: None
@@ -57,36 +199,42 @@ automatic_abilities:
     creature is already encumbered, it is __immobilized__ while it remains within
     the aura.
   effect: null
-  effects: null
-  failure: null
+  failure: The creature is __encumbered__ while it remains in the area. If the creature
+    is already encumbered, it is __immobilized__ while it remains within the aura.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Failure
   range: null
   raw_description: '**Failure **The creature is __encumbered__ while it remains in
     the area. If the creature is already encumbered, it is __immobilized__ while it
     remains within the aura.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: As failure, but the effect persists for 3 rounds after leaving
+    the aura.
   critical_success: null
   description: As failure, but the effect persists for 3 rounds after leaving the
     aura.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Failure
   range: null
   raw_description: '**Critical Failure **As failure, but the effect persists for 3
     rounds after leaving the aura.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -97,11 +245,11 @@ automatic_abilities:
   effect: The sarglagon interposes themself, giving the creature or object standard
     cover against the attack (+2 circumstance bonus to AC), or greater cover (+4 circumstance
     bonus to AC) if the sarglagon was already granting it lesser cover.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stygian Guardian
   range: null
   raw_description: '**Stygian Guardian [Reaction]** **Trigger **A creature or object
@@ -110,9 +258,11 @@ automatic_abilities:
     attack (+2 circumstance bonus to AC), or greater cover (+4 circumstance bonus
     to AC) if the sarglagon was already granting it lesser cover.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature or object within the sarglagon's reach is targeted by an attack
+  trigger: A creature or object within the sarglagon's reach is targeted by an attack;
 description: 'Sarglagons dwell in __Hell''s__ myriad waterways, lakes, and oceans.
   They serve as guardians of the Academy of Lies—the repository of secrets in Stygia,
   the fifth layer of Hell. Sarglagons breathe water and air with equal ease, and can
@@ -135,21 +285,20 @@ hp: 120
 hp_misc: null
 immunities:
 - fire
-items: null
 languages:
 - Celestial
 - Infernal
 - telepathy 100 feet
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+9
     type: piercing
   name: fangs
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 20
   traits:
   - evil
@@ -160,8 +309,10 @@ melee:
     type: bludgeoning
   name: tentacle arm
   plus_damage:
-  - formula: 1d6
-    type: evil and sarglagon venom
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: sarglagon venom
   to_hit: 20
   traits:
   - agile
@@ -169,85 +320,14 @@ melee:
   - magical
 name: Sarglagon
 perception: 18
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: "The sarglagon conjures murky water to fill the lungs of a creature\
-    \ that can't breathe water within 30 feet. The target must attempt a DC 26 Fortitude\
-    \ save. \n\n**Critical Success **The target is unaffected. \n\n**Success **The\
-    \ target coughs up water and is __sickened 1__. \n\n**Failure **The target is\
-    \ __holding its breath__. The only action it can take is to attempt a Fortitude\
-    \ save against Drown to expel the water, which is a single action. \n\n**Critical\
-    \ Failure **The target falls __unconscious__ and begins suffocating. If the target\
-    \ succeeds at its Fortitude save while suffocating, it coughs up the water and\
-    \ can breathe again."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drown
-  range: null
-  raw_description: "**Drown** [Two Actions]  (__conjuration__, __divine__, __incapacitation__)\
-    \ The sarglagon conjures murky water to fill the lungs of a creature that can't\
-    \ breathe water within 30 feet. The target must attempt a DC 26 Fortitude save.\
-    \ \n\n**Critical Success **The target is unaffected. \n\n**Success **The target\
-    \ coughs up water and is __sickened 1__. \n\n**Failure **The target is __holding\
-    \ its breath__. The only action it can take is to attempt a Fortitude save against\
-    \ Drown to expel the water, which is a single action. \n\n**Critical Failure **The\
-    \ target falls __unconscious__ and begins suffocating. If the target succeeds\
-    \ at its Fortitude save while suffocating, it coughs up the water and can breathe\
-    \ again."
-  requirements: null
-  success: null
-  traits:
-  - conjuration
-  - divine
-  - incapacitation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw **DC 26 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1 **2d6 poison damage and __clumsy 1__ (1 round); **Stage 2 **3d6 poison damage
-    and clumsy 2 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sarglagon Venom
-  range: null
-  raw_description: '**Sarglagon Venom** (__poison__) **Saving Throw **DC 26 Fortitude;
-    **Maximum Duration **6 rounds; **Stage 1 **2d6 poison damage and __clumsy 1__
-    (1 round); **Stage 2 **3d6 poison damage and clumsy 2 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
-  type: physical (except silver)
+  misc: except <a style="text-decoration:underline" href="Equipment.aspx?ID=277">silver</a>
+  type: physical
 - amount: 10
-  type: poison
-ritual_lists:
-- dc: 23
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: infernal pact
-      requirement: null
-  to_hit: null
+  type: poison
 saves:
   fort: 18
   fort_misc: null
@@ -256,82 +336,87 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - greater darkvision
 - see invisibility
 size: Large
 skills:
 - bonus: 14
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 18
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 15
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 17
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 15
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 72
+  page_start: '72'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: fly
 - amount: 30
+  misc: null
   type: swim
 spell_lists:
-- dc: 23
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: 18
+  cantrips: null
+  constants:
+  - level: 2
     spells:
-    - frequency: null
-      name: control water
-      requirement: null
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: freedom of movement
-      requirement: null
-    - frequency: null
-      name: hydraulic torrent
-      requirement: null
-  - heightened_level: 2
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: see invisibility
-      requirement: null
-  to_hit: 18
+  dc: 23
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: control water
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+    - misc: null
+      name: freedom of movement
+    - misc: null
+      name: hydraulic torrent
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 23
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: infernal pact
+  spells_source: Rituals
 traits:
-- LE
-- Large
 - Amphibious
 - Devil
 - Fiend
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: good

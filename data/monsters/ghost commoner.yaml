@@ -7,24 +7,75 @@ ability_mods:
   wis_mod: 2
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ghost laments its fate, forcing each living creature within 30
+    feet to attempt a DC 21 Will save. On a failure, a creature becomes __frightened
+    2__ (or frightened 3 on a critical failure). On a success, a creature is temporarily
+    immune to this ghost's frightful moan for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Frightful Moan
+  range: null
+  raw_description: '**Frightful Moan** [One Action]  (__auditory__, __divine__, __emotion__,
+    __enchantment__, __fear__, __mental__) The ghost laments its fate, forcing each
+    living creature within 30 feet to attempt a DC 21 Will save. On a failure, a creature
+    becomes __frightened 2__ (or frightened 3 on a critical failure). On a success,
+    a creature is temporarily immune to this ghost''s frightful moan for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - divine
+  - emotion
+  - enchantment
+  - fear
+  - mental
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Setting right the injustice that led to the commoner's death allows
-    it to move on to the afterlife.
+  description: 'When a ghost is destroyed, it re-forms after 2d4 days within the location
+    it''s bound to, fully healed. A ghost can be permanently destroyed only if someone
+    determines the reason for its existence and sets right whatever prevents the spirit
+    from resting.
+
+
+
+
+    Setting right the injustice that led to the commoner''s death allows it to move
+    on to the afterlife.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Rejuvenation
   range: null
-  raw_description: '**Rejuvenation** (__divine__, __necromancy__) Setting right the
-    injustice that led to the commoner''s death allows it to move on to the afterlife.'
+  raw_description: '**Rejuvenation** (__divine__, __necromancy__) When a ghost is
+    destroyed, it re-forms after 2d4 days within the location it''s bound to, fully
+    healed. A ghost can be permanently destroyed only if someone determines the reason
+    for its existence and sets right whatever prevents the spirit from resting.
+
+
+
+
+    Setting right the injustice that led to the commoner''s death allows it to move
+    on to the afterlife.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -49,11 +100,10 @@ immunities:
 - poison
 - precision
 - unconscious
-items: null
 languages:
 - Common
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+2
@@ -67,43 +117,11 @@ melee:
   - magical
 name: Ghost Commoner
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: DC 21
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Frightful Moan
-  range: null
-  raw_description: '**Frightful Moan**   (__auditory__, __divine__, __emotion__, __enchantment__,
-    __fear__, __mental__) DC 21'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - divine
-  - emotion
-  - enchantment
-  - fear
-  - mental
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
-  type: all damage (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-- amount: null
-  type: double resistance vs. non-magical)
-ritual_lists: null
+  misc: null
+  type: all damage
 saves:
   fort: 8
   fort_misc: null
@@ -116,45 +134,48 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: A typical ghost can stray only a short distance from where it was killed
+    or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound
+    to a room, building, item, or creature that was special to it rather than a location.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Site Bound
   range: null
-  raw_description: '**Site Bound**'
+  raw_description: '**Site Bound** A typical ghost can stray only a short distance
+    from where it was killed or the place it haunts. A typical limit is 120 feet.
+    Some ghosts are instead bound to a room, building, item, or creature that was
+    special to it rather than a location.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 10
   misc: applies to the place the ghost is bound to
-  name: 'Dwelling Lore '
+  name: Dwelling Lore
 - bonus: 12
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 167
+  page_start: '167'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- CE
-- Medium
 - Ghost
 - Incorporeal
 - Spirit
 - Undead
-type: Creature
-weaknesses: null

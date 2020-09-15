@@ -7,6 +7,67 @@ ability_mods:
   wis_mod: 3
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that takes damage from a denizen's bite must succeed at
+    a DC 27 Fortitude save or become __clumsy 1__. Each time a target fails an additional
+    save against this ability, the condition value increases by 1 (to a maximum of
+    clumsy 4). This condition value decreases by 1 every 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Debilitating Bite
+  range: null
+  raw_description: '**Debilitating Bite** (__curse__, __occult__) A creature that
+    takes damage from a denizen''s bite must succeed at a DC 27 Fortitude save or
+    become __clumsy 1__. Each time a target fails an additional save against this
+    ability, the condition value increases by 1 (to a maximum of clumsy 4). This condition
+    value decreases by 1 every 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Many denizens of Leng carry strange rubies mined from quarries in Leng.
+    As long as a creature holds a Leng ruby that it willingly accepted as a gift or
+    payment from a denizen of Leng, any denizen of Leng can target that creature with
+    __outcast's curse__, __phantom pain__, or __mind reading__ at a range of 1 mile,
+    and the bearer uses an outcome one degree of success worse than the result of
+    its saving throw against outcast's curse.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Leng Ruby
+  range: null
+  raw_description: '**Leng Ruby** (__enchantment__, __occult__) Many denizens of Leng
+    carry strange rubies mined from quarries in Leng. As long as a creature holds
+    a Leng ruby that it willingly accepted as a gift or payment from a denizen of
+    Leng, any denizen of Leng can target that creature with __outcast''s curse__,
+    __phantom pain__, or __mind reading__ at a range of 1 mile, and the bearer uses
+    an outcome one degree of success worse than the result of its saving throw against
+    outcast''s curse.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - enchantment
+  - occult
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -14,15 +75,17 @@ automatic_abilities:
   critical_success: null
   description: Denizens of Leng don't need to breathe.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: No Breath
   range: null
   raw_description: '**No Breath** Denizens of Leng don''t need to breathe.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -36,11 +99,11 @@ automatic_abilities:
     reforms in Leng; they can be permanently killed only when their planar fast healing
     doesn't function.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Planar Fast Healing
   range: null
   raw_description: '**Planar Fast Healing** A denizen of Leng maintains a connection
@@ -50,6 +113,8 @@ automatic_abilities:
     their equipment. A slain denizen reforms in Leng; they can be permanently killed
     only when their planar fast healing doesn''t function.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -73,30 +138,27 @@ description: 'Slavers and raiders from the cold, windswept dimension of Leng, th
 
 
 
-  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 24
-
-
-  '
+  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 24'
 hp: 100
 hp_misc: planar fast healing 5
 immunities:
 - cold
 items:
 - +1 striking kukri
-- Leng ruby worth 30 gp
+- Leng ruby worth 30 gp (2)
 languages:
 - Aklo
 - tongues
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+6
     type: slashing
   name: kukri
   plus_damage:
-  - formula: 1d6
-    type: persistent bleed
+  - formula: null
+    type: 1d6 persistent bleed
   to_hit: 18
   traits:
   - agile
@@ -117,71 +179,14 @@ melee:
   - finesse
 name: Denizen of Leng
 perception: 17
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature that takes damage from a denizen's bite must succeed at
-    a DC 27 Fortitude save or become __clumsy 1__. Each time a target fails an additional
-    save against this ability, the condition value increases by 1 (to a maximum of
-    clumsy 4). This condition value decreases by 1 every 24 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Debilitating Bite
-  range: null
-  raw_description: '**Debilitating Bite** (__curse__, __occult__) A creature that
-    takes damage from a denizen''s bite must succeed at a DC 27 Fortitude save or
-    become __clumsy 1__. Each time a target fails an additional save against this
-    ability, the condition value increases by 1 (to a maximum of clumsy 4). This condition
-    value decreases by 1 every 24 hours.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Many denizens of Leng carry strange rubies mined from quarries in Leng.
-    As long as a creature holds a Leng ruby that it willingly accepted as a gift or
-    payment from a denizen of Leng, any denizen of Leng can target that creature with
-    __outcast's curse__, __phantom pain__, or __mind reading__ at a range of 1 mile,
-    and the bearer uses an outcome one degree of success worse than the result of
-    its saving throw against outcast's curse.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Leng Ruby
-  range: null
-  raw_description: '**Leng Ruby** (__enchantment__, __occult__) Many denizens of Leng
-    carry strange rubies mined from quarries in Leng. As long as a creature holds
-    a Leng ruby that it willingly accepted as a gift or payment from a denizen of
-    Leng, any denizen of Leng can target that creature with __outcast''s curse__,
-    __phantom pain__, or __mind reading__ at a range of 1 mile, and the bearer uses
-    an outcome one degree of success worse than the result of its saving throw against
-    outcast''s curse.'
-  requirements: null
-  success: null
-  traits:
-  - enchantment
-  - occult
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
+  misc: null
   type: critical hits
 - amount: 10
+  misc: null
   type: precision
-ritual_lists: null
 saves:
   fort: 16
   fort_misc: null
@@ -190,107 +195,86 @@ saves:
   ref_misc: null
   will: 17
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 18
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 20
   misc: null
-  name: 'Sailing Lore '
+  name: Sailing Lore
 - bonus: 17
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 70
+  page_start: '70'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists:
-- dc: 27
-  misc: ''
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: 19
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: outcast's curse
-      requirement: null
-    - frequency: null
-      name: phantom pain
-      requirement: null
-    - frequency: null
-      name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: hypnotic pattern
-      requirement: null
-    - frequency: null
-      name: levitate
-      requirement: null
-    - frequency: null
-      name: locate
-      requirement: null
-    - frequency: null
-      name: mind reading
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: mirror image
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: message
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-  - heightened_level: 4
-    level: -1
+  constants:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: 19
+  dc: 27
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: outcast's curse
+    - misc: null
+      name: phantom pain
+    - misc: null
+      name: suggestion
+  - level: 3
+    spells:
+    - misc: null
+      name: hypnotic pattern
+    - misc: null
+      name: levitate
+    - misc: null
+      name: locate
+    - misc: null
+      name: mind reading
+  - level: 2
+    spells:
+    - misc: null
+      name: mirror image
+  spells_source: Occult Innate Spells
 traits:
-- CE
-- Medium
 - Aberration
 - Dream
-type: Creature
-weaknesses: null

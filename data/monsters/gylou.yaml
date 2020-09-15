@@ -7,6 +7,94 @@ ability_mods:
   wis_mod: 6
 ac: 36
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The gylou adopts the appearance of any Small or Medium __humanoid__.
+    This doesn't change their Speed or the attack and damage modifiers of their Strikes,
+    but it might change the damage type their Strikes deal (typically to bludgeoning).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __divine__, __polymorph__,
+    __transmutation__) The gylou adopts the appearance of any Small or Medium __humanoid__.
+    This doesn''t change their Speed or the attack and damage modifiers of their Strikes,
+    but it might change the damage type their Strikes deal (typically to bludgeoning).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The gylou demonstrates a preternatural ability for the task at hand. They
+    use their __Deception__ modifier for the triggering check and for all skill checks
+    using the same skill thereafter until the next time the gylou uses this ability
+    or until 24 hours have passed, whichever happens first.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Indispensable Savvy
+  range: null
+  raw_description: '**Indispensable Savvy** [Reaction]  **Frequency **once per day;
+    **Trigger **The gylou attempts a skill check but hasn''t rolled yet; **Effect
+    **The gylou demonstrates a preternatural ability for the task at hand. They use
+    their __Deception__ modifier for the triggering check and for all skill checks
+    using the same skill thereafter until the next time the gylou uses this ability
+    or until 24 hours have passed, whichever happens first.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The gylou attempts a skill check but hasn't rolled yet;
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The gylou transfers the grabbed creature into their lower body's net of
+    encaging tentacles, freeing their limbs and tentacles to make Strikes. This has
+    the same effects as __Swallow Whole__ (Medium, 2d12+12 bludgeoning, Rupture 30),
+    except the encaged creature is not at risk of suffocation, and the gylou can bring
+    the encaged creature with them when they cast __dimension door__. A gylou can
+    have only one creature encaged at a time.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tentacle Encage
+  range: null
+  raw_description: '**Tentacle Encage** [One Action]  (__attack__) **Requirements
+    **The gylou has a Medium or smaller creature __grabbed__; **Effect **The gylou
+    transfers the grabbed creature into their lower body''s net of encaging tentacles,
+    freeing their limbs and tentacles to make Strikes. This has the same effects as
+    __Swallow Whole__ (Medium, 2d12+12 bludgeoning, Rupture 30), except the encaged
+    creature is not at risk of suffocation, and the gylou can bring the encaged creature
+    with them when they cast __dimension door__. A gylou can have only one creature
+    encaged at a time.'
+  requirements: The gylou has a Medium or smaller creature grabbed
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: Reaction
@@ -17,11 +105,11 @@ automatic_abilities:
     creature. If the triggering Strike was with a melee weapon, the attacking creature
     can __Release__ the weapon to cause the gylou to automatically fail the __Athletics__
     check.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Reflexive Grab
   range: null
   raw_description: '**Reflexive Grab [Reaction]** **Trigger **A creature leaves a
@@ -31,10 +119,12 @@ automatic_abilities:
     weapon, the attacking creature can __Release__ the weapon to cause the gylou to
     automatically fail the __Athletics__ check.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature leaves a square within the gylou's reach using a __move__ action
-    or attempts a melee Strike against the gylou
+  trigger: A creature leaves a square within the gylou's reach using a move action
+    or attempts a melee Strike against the gylou;
 description: 'Though gylous are deeply entrenched in the expansive and complex machinations
   of __Hell__, they are highly skilled agents capable of nuanced diplomacy, masterful
   deception, physical finesse, and nearly any other tasks they set their minds to.
@@ -43,7 +133,7 @@ description: 'Though gylous are deeply entrenched in the expansive and complex m
   plots and schemes. Their allegiance is no secret, but their skills are so great
   that powerful devils employ one or more gylous regardless. While most gylous have
   a feminine form (combined with their role, this is the source of their common moniker
-  of "handmaiden"), some have other gender presentations, and nearly all gylous take
+  of “handmaiden”), some have other gender presentations, and nearly all gylous take
   on carefully cultivated illusions to best suit the roles they fill. More often than
   not, gylous arise when lesser devils who have demonstrated exceptional utility and
   invaluable skills are uplifted into a new form, though on rare occasions they are
@@ -58,7 +148,6 @@ hp: 240
 hp_misc: null
 immunities:
 - fire
-items: null
 languages:
 - Celestial
 - Common
@@ -66,15 +155,15 @@ languages:
 - Infernal
 - telepathy 100 feet
 level: 14
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+12
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 30
   traits:
   - agile
@@ -96,100 +185,11 @@ melee:
   - reach 10 feet
 name: Gylou
 perception: 28
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The gylou adopts the appearance of any Small or Medium __humanoid__.
-    This doesn't change their Speed or the attack and damage modifiers of their Strikes,
-    but it might change the damage type their Strikes deal (typically to bludgeoning).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __divine__, __polymorph__,
-    __transmutation__) The gylou adopts the appearance of any Small or Medium __humanoid__.
-    This doesn''t change their Speed or the attack and damage modifiers of their Strikes,
-    but it might change the damage type their Strikes deal (typically to bludgeoning).'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The gylou demonstrates a preternatural ability for the task at hand. They
-    use their __Deception__ modifier for the triggering check and for all skill checks
-    using the same skill thereafter until the next time the gylou uses this ability
-    or until 24 hours have passed, whichever happens first.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Indispensable Savvy
-  range: null
-  raw_description: '**Indispensable Savvy** [Reaction]  **Frequency **once per day;
-    **Trigger **The gylou attempts a skill check but hasn''t rolled yet; **Effect
-    **The gylou demonstrates a preternatural ability for the task at hand. They use
-    their __Deception__ modifier for the triggering check and for all skill checks
-    using the same skill thereafter until the next time the gylou uses this ability
-    or until 24 hours have passed, whichever happens first.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The gylou attempts a skill check but hasn't rolled yet
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The gylou has a Medium or smaller creature __grabbed__
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tentacle Encage
-  range: null
-  raw_description: '**Tentacle Encage**   (__attack__) **Requirements **The gylou
-    has a Medium or smaller creature __grabbed__; **Effect **The gylou transfers the
-    grabbed creature into their lower body''s net of encaging tentacles, freeing their
-    limbs and tentacles to make Strikes. This has the same effects as __Swallow Whole__
-    (Medium, 2d12+12 bludgeoning, Rupture 30), except the encaged creature is not
-    at risk of suffocation, and the gylou can bring the encaged creature with them
-    when they cast __dimension door__. A gylou can have only one creature encaged
-    at a time.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
-  type: physical (except silver)
-ritual_lists:
-- dc: 36
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: infernal pact
-      requirement: null
-  to_hit: null
+  misc: except <a style="text-decoration:underline" href="Equipment.aspx?ID=277">silver</a>
+  type: physical
 saves:
   fort: 22
   fort_misc: null
@@ -198,94 +198,94 @@ saves:
   ref_misc: null
   will: 28
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +28
 - greater darkvision
 - true seeing
 size: Medium
 skills:
 - bonus: 27
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 25
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 28
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 30
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 28
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 26
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 27
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 75
+  page_start: '75'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: climb
 spell_lists:
-- dc: 36
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: 28
+  cantrips: null
+  constants:
+  - level: 7
     spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: dominate
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: black tentacles
-      requirement: null
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: at will
-      name: illusory object
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: ×3
-      name: charm
-      requirement: null
-    - frequency: at will
-      name: dimension door
-      requirement: null
-    - frequency: at will
-      name: enthrall
-      requirement: null
-  - heightened_level: 7
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: 28
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: dominate
+  - level: 5
+    spells:
+    - misc: null
+      name: black tentacles
+    - misc: null
+      name: dimension door
+    - misc: at will
+      name: illusory object
+  - level: 4
+    spells:
+    - misc: ×3
+      name: charm
+    - misc: at will
+      name: dimension door
+    - misc: at will
+      name: enthrall
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: infernal pact
+  spells_source: Rituals
 traits:
-- LE
-- Medium
 - Devil
 - Fiend
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: good

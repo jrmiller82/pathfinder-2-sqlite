@@ -7,86 +7,25 @@ ability_mods:
   wis_mod: 9
 ac: 45
 ac_special: null
-alignment: LN
-automatic_abilities:
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The critical failure becomes a normal failure.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reality Twist
-  range: null
-  raw_description: '**Reality Twist** [Reaction] **Trigger** The pleroma critically
-    fails the saving throw. **Effect** The critical failure becomes a normal failure.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The pleroma critically fails the saving throw.
-description: 'Among the most powerful of all the true aeons, pleromas are a manifestation
-  of the duality of creation and destruction. Their physical manifestation is a constant
-  state of flux between these two poles, their forms a shifting cloak of black where
-  galaxies and other celestial objects flit in and out of existence, as if depicting
-  the constant life, death, and rebirth of a miniature, self-contained universe.
-
-
-
-
-  Pleromas see the multiverse as both eternal and cyclical, doomed and malleable,
-  ending only if these cycles ever become unbalanced. They believe the current Convergence
-  is necessary to obtain this essential balance, and act to ensure that the grand
-  design of the Monad is carried out to the smallest detail.
-
-
-
-
-  **__Recall Knowledge - Monitor__ (__Religion__)**: DC 40'
-hp: 335
-hp_misc: regeneration 20 (deactivated by chaotic
-immunities:
-- negative
-- positive
-items: null
-languages:
-- envisioning
-level: 20
-melee:
-- action_cost: One Action
-  damage:
-    formula: 5d8+18
-    type: positive or negative damage
-  name: energy touch
-  plus_damage:
-  - formula: 1d6
-    type: lawful
-  to_hit: 36
-  traits:
-  - agile
-  - lawful
-  - magical
-name: Pleroma
-perception: 37
-proactive_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
   description: A pleroma's touch deals its choice of positive or negative damage,
     but neither energy can be used to heal a creature.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Energy Touch
   range: null
   raw_description: '**Energy Touch** A pleroma''s touch deals its choice of positive
     or negative damage, but neither energy can be used to heal a creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -112,11 +51,11 @@ proactive_abilities:
     after 1d4 minutes. All creatures within 30 feet of the sphere of creation when
     it vanishes must succeed at a DC 43 Fortitude save or be permanently __blinded__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sphere of Creation
   range: null
   raw_description: '**Sphere of Creation** [Two Actions]  (__incapacitation__, __magical__)
@@ -139,6 +78,8 @@ proactive_abilities:
     after 1d4 minutes. All creatures within 30 feet of the sphere of creation when
     it vanishes must succeed at a DC 43 Fortitude save or be permanently __blinded__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - incapacitation
@@ -161,11 +102,11 @@ proactive_abilities:
     into material. Such a destroyed creature can be restored only by a 10th-level
     spell.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sphere of Oblivion
   range: null
   raw_description: '**Sphere of Oblivion** [Two Actions]  (__incapacitation__, __magical__)
@@ -182,24 +123,87 @@ proactive_abilities:
     a failure and annihilates rather than incorporating the creature into material.
     Such a destroyed creature can be restored only by a 10th-level spell.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - incapacitation
   - magical
   trigger: null
-ranged:
+alignment: LN
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The critical failure becomes a normal failure.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Reality Twist
+  range: null
+  raw_description: '**Reality Twist** [Reaction] **Trigger** The pleroma critically
+    fails the saving throw. **Effect** The critical failure becomes a normal failure.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The pleroma critically fails the saving throw.
+description: 'Among the most powerful of all the true aeons, pleromas are a manifestation
+  of the duality of creation and destruction. Their physical manifestation is a constant
+  state of flux between these two poles, their forms a shifting cloak of black where
+  galaxies and other celestial objects flit in and out of existence, as if depicting
+  the constant life, death, and rebirth of a miniature, self-contained universe.
+
+
+
+
+  Pleromas see the multiverse as both eternal and cyclical, doomed and malleable,
+  ending only if these cycles ever become unbalanced. They believe the current Convergence
+  is necessary to obtain this essential balance, and act to ensure that the grand
+  design of the Monad is carried out to the smallest detail.
+
+
+
+
+  **__Recall Knowledge - Monitor__ (__Religion__)**: DC 40'
+hp: 335
+hp_misc: regeneration 20 (deactivated by chaotic)
+immunities:
+- negative
+- positive
+languages:
+- envisioning
+level: 20
+melee_attacks:
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: 5d8+18
+    type: positive or negative damage
+  name: energy touch
+  plus_damage:
+  - formula: null
+    type: 1d6 lawful
+  to_hit: 36
+  traits:
+  - agile
+  - lawful
+  - magical
+name: Pleroma
+perception: 37
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: null
+    type: see Sphere of Oblivion
   name: Sphere of Oblivion
   plus_damage: null
   to_hit: 37
   traits:
   - magical
-rarity: Common
-resistances:
-- amount: 20
-  type: chaotic
-ritual_lists: null
 saves:
   fort: 32
   fort_misc: null
@@ -219,11 +223,11 @@ sense_abilities:
     meaning to non-aeons can be vague and is often mysterious. An aeon can use this
     ability to communicate flawlessly with any other aeon on the same plane as itself.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Envisioning
   range: null
   raw_description: '**Envisioning** Pleromas care little for communication with other
@@ -234,11 +238,12 @@ sense_abilities:
     An aeon can use this ability to communicate flawlessly with any other aeon on
     the same plane as itself.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +37
 - darkvision
 - lifesense 120 feet
 - true seeing
@@ -246,132 +251,107 @@ size: Large
 skills:
 - bonus: 33
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 38
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 34
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 34
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 38
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 39
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 35
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 10
+  page_start: '10'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: fly
-- amount: 128
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>freedom of
-    movement</i></a>
+- amount: null
+  misc: null
+  type: freedom of movement
 spell_lists:
-- dc: 47
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 10
+- attack_bonus: 37
+  cantrips: null
+  constants:
+  - level: 8
     spells:
-    - frequency: null
-      name: alter reality
-      requirement: null
-  - heightened_level: null
-    level: 9
-    spells:
-    - frequency: null
-      name: banishment
-      requirement: null
-    - frequency: null
-      name: blade barrier
-      requirement: null
-    - frequency: null
-      name: disjunction
-      requirement: null
-    - frequency: null
-      name: overwhelming presence
-      requirement: null
-  - heightened_level: null
-    level: 8
-    spells:
-    - frequency: x2
-      name: disintegrate
-      requirement: null
-    - frequency: null
-      name: unrelenting observation
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: null
-      name: plane shift
-      requirement: null
-    - frequency: null
-      name: retrocognition
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: at will
-      name: creation
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: create food
-      requirement: null
-    - frequency: at will
-      name: shape stone
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: at will
-      name: hypercognition
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: detect alignment
-      requirement: null
-    - frequency: at will
-      name: shape wood
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
-      name: create water
-      requirement: null
-  - heightened_level: 8
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: 4
-    level: -1
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: freedom of movement
-      requirement: null
-  to_hit: 37
+  dc: 47
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: null
+      name: alter reality
+  - level: 9
+    spells:
+    - misc: null
+      name: banishment
+    - misc: null
+      name: blade barrier
+    - misc: null
+      name: disjunction
+    - misc: null
+      name: overwhelming presence
+  - level: 8
+    spells:
+    - misc: x2
+      name: disintegrate
+    - misc: null
+      name: unrelenting observation
+  - level: 7
+    spells:
+    - misc: null
+      name: plane shift
+    - misc: null
+      name: retrocognition
+  - level: 5
+    spells:
+    - misc: at will
+      name: creation
+  - level: 4
+    spells:
+    - misc: at will
+      name: create food
+    - misc: at will
+      name: shape stone
+  - level: 3
+    spells:
+    - misc: at will
+      name: hypercognition
+  - level: 2
+    spells:
+    - misc: at will
+      name: detect alignment
+    - misc: at will
+      name: shape wood
+  - level: 1
+    spells:
+    - misc: at will
+      name: create water
+  spells_source: Divine Innate Spells
 traits:
-- LN
-- Large
 - Aeon
 - Monitor
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 20
+  misc: null
+  type: chaotic

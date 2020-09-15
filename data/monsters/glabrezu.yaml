@@ -7,6 +7,127 @@ ability_mods:
   wis_mod: 3
 ac: 34
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The glabrezu pulls the grabbed creature up to 5 feet closer, then makes
+    two claw Strikes against it. Those Strikes count as one attack when determining
+    a treachery demon's multiple attack penalty, and the penalty doesn't increase
+    until after both Strikes.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Captive Rake
+  range: null
+  raw_description: '**Captive Rake** [One Action]  **Requirements** A creature is
+    grabbed in the glabrezu''s pincer. **Effect** The glabrezu pulls the grabbed creature
+    up to 5 feet closer, then makes two claw Strikes against it. Those Strikes count
+    as one attack when determining a treachery demon''s multiple attack penalty, and
+    the penalty doesn''t increase until after both Strikes.'
+  requirements: A creature is grabbed in the glabrezu's pincer.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a reaction would disrupt a glabrezu's spell, the demon can attempt
+    a DC 15 flat check, avoiding the disruption on a success.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Steady Spellcasting
+  range: null
+  raw_description: '**Steady Spellcasting** When a reaction would disrupt a glabrezu''s
+    spell, the demon can attempt a DC 15 flat check, avoiding the disruption on a
+    success.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A glabrezu can always use __Deception__ when rolling initiative as
+    long as they're aware of at least one opponent before initiative is rolled. When
+    using __Deception__ for initiative, the demon gains a +2 circumstance bonus to
+    __Deception__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sudden Betrayal
+  range: null
+  raw_description: '**Sudden Betrayal** A glabrezu can always use __Deception__ when
+    rolling initiative as long as they''re aware of at least one opponent before initiative
+    is rolled. When using __Deception__ for initiative, the demon gains a +2 circumstance
+    bonus to __Deception__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A glabrezu's __illusory disguise__ can allow it to appear as a creature
+    of any size.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Treacherous Veil
+  range: null
+  raw_description: '**Treacherous Veil** A glabrezu''s __illusory disguise__ can allow
+    it to appear as a creature of any size.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Once per month, a glabrezu can grant a mortal humanoid the effects
+    of a __miracle__ spell granted by an Abyssal patron, though the glabrezu always
+    perverts the __miracle__ according to their own treacherous nature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Twisted Desires
+  range: null
+  raw_description: '**Twisted Desires** (__divination__, __divine__) Once per month,
+    a glabrezu can grant a mortal humanoid the effects of a __miracle__ spell granted
+    by an Abyssal patron, though the glabrezu always perverts the __miracle__ according
+    to their own treacherous nature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divination
+  - divine
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -19,11 +140,11 @@ automatic_abilities:
     per effect, even if the effect reveals multiple illusions or prevents multiple
     lies.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Truth Vulnerability
   range: null
   raw_description: '**Truth Vulnerability** A glabrezu''s lies sustain them, and the
@@ -33,6 +154,8 @@ automatic_abilities:
     damage. They take this damage only once per effect, even if the effect reveals
     multiple illusions or prevents multiple lies.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -44,7 +167,7 @@ description: 'Glabrezus are looming behemoths who revel in the act of twisting m
   struggling weapon smith might wish for fame and skill at their craft, only to find
   that their best patron is a cruel and sadistic murderer who uses the weapons in
   bloody sprees. Or a lonely widower might have his desire granted in the form of
-  a lost love returned to "life" as a vampire. Glabrezus are nothing if not creative
+  a lost love returned to “life” as a vampire. Glabrezus are nothing if not creative
   in addressing a mortal''s needs.
 
 
@@ -61,8 +184,6 @@ description: 'Glabrezus are looming behemoths who revel in the act of twisting m
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 31'
 hp: 280
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - Celestial
@@ -70,15 +191,17 @@ languages:
 - telepathy 100 feet
 - tongues
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+13
     type: bludgeoning
   name: pincer
   plus_damage:
-  - formula: 1d6
-    type: evil and Grab
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: Grab
   to_hit: 27
   traits:
   - deadly 2d10
@@ -91,8 +214,8 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 27
   traits:
   - agile
@@ -105,8 +228,8 @@ melee:
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 27
   traits:
   - evil
@@ -114,129 +237,7 @@ melee:
   - reach 10 feet
 name: Glabrezu
 perception: 24
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A creature is grabbed in the glabrezu's pincer.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Captive Rake
-  range: null
-  raw_description: '**Captive Rake**   **Requirements** A creature is grabbed in the
-    glabrezu''s pincer. **Effect** The glabrezu pulls the grabbed creature up to 5
-    feet closer, then makes two claw Strikes against it. Those Strikes count as one
-    attack when determining a treachery demon''s multiple attack penalty, and the
-    penalty doesn''t increase until after both Strikes.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a reaction would disrupt a glabrezu's spell, the demon can attempt
-    a DC 15 flat check, avoiding the disruption on a success.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Steady Spellcasting
-  range: null
-  raw_description: '**Steady Spellcasting** When a reaction would disrupt a glabrezu''s
-    spell, the demon can attempt a DC 15 flat check, avoiding the disruption on a
-    success.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A glabrezu can always use __Deception__ when rolling initiative as
-    long as they're aware of at least one opponent before initiative is rolled. When
-    using __Deception__ for initiative, the demon gains a +2 circumstance bonus to
-    __Deception__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sudden Betrayal
-  range: null
-  raw_description: '**Sudden Betrayal** A glabrezu can always use __Deception__ when
-    rolling initiative as long as they''re aware of at least one opponent before initiative
-    is rolled. When using __Deception__ for initiative, the demon gains a +2 circumstance
-    bonus to __Deception__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A glabrezu's __illusory disguise__ can allow it to appear as a creature
-    of any size.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Treacherous Veil
-  range: null
-  raw_description: '**Treacherous Veil** A glabrezu''s __illusory disguise__ can allow
-    it to appear as a creature of any size.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Once per month, a glabrezu can grant a mortal humanoid the effects
-    of a __miracle__ spell granted by an Abyssal patron, though the glabrezu always
-    perverts the __miracle__ according to their own treacherous nature.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Twisted Desires
-  range: null
-  raw_description: '**Twisted Desires** (__divination__, __divine__) Once per month,
-    a glabrezu can grant a mortal humanoid the effects of a __miracle__ spell granted
-    by an Abyssal patron, though the glabrezu always perverts the __miracle__ according
-    to their own treacherous nature.'
-  requirements: null
-  success: null
-  traits:
-  - divination
-  - divine
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists:
-- dc: 34
-  misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: abyssal pact
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 26
   fort_misc: null
@@ -245,106 +246,101 @@ saves:
   ref_misc: null
   will: 24
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +24
 - darkvision
 - true seeing
 size: Huge
 skills:
 - bonus: 28
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 26
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 26
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 22
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 22
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 21
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 79
+  page_start: '79'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 34
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips:
+  - level: 7
     spells:
-    - frequency: at will
-      name: illusory disguise
-      requirement: null
-    - frequency: null
-      name: reverse gravity
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: at will
-      name: dispel magic
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: confusion
-      requirement: null
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: mirror image
-      requirement: null
-  - heightened_level: 7
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: telekinetic projectile
-      requirement: null
-  - heightened_level: 6
-    level: -1
+  constants:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: 5
-    level: -1
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: null
+  dc: 34
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: at will
+      name: illusory disguise
+    - misc: null
+      name: reverse gravity
+  - level: 6
+    spells:
+    - misc: at will
+      name: dispel magic
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: confusion
+    - misc: at will
+      name: dimension door
+  - level: 2
+    spells:
+    - misc: at will
+      name: mirror image
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 34
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: abyssal pact
+  spells_source: Divine Rituals
 traits:
-- CE
-- Huge
 - Demon
 - Fiend
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: cold iron
 - amount: 10
+  misc: null
   type: good

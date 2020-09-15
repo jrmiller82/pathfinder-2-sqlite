@@ -7,6 +7,193 @@ ability_mods:
   wis_mod: 5
 ac: 36
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The augnagar's writhing limbs and flesh seethe and squirm in a disorienting
+    and unsettling manner. Creatures in a 30-foot emanation must attempt a DC 34 Will
+    save, after which they are temporarily immune to further Confusing Displays for
+    1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Confusing Display
+  range: null
+  raw_description: '**Confusing Display** [Two Actions]  (__concentrate__, __emotion__,
+    __enchantment__, __fear__, __incapacitation__, __mental__, __occult__, __visual__)
+    The augnagar''s writhing limbs and flesh seethe and squirm in a disorienting and
+    unsettling manner. Creatures in a 30-foot emanation must attempt a DC 34 Will
+    save, after which they are temporarily immune to further Confusing Displays for
+    1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - emotion
+  - enchantment
+  - fear
+  - incapacitation
+  - mental
+  - occult
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __stupefied 1__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __stupefied 1__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __stupefied 1__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is stupefied 1 and __confused__ for 1 minute.
+  effect: null
+  failure: The creature is stupefied 1 and __confused__ for 1 minute.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is stupefied 1 and __confused__ for 1
+    minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but the creature can't attempt a flat check to recover
+    from confusion whenever it takes damage from an attack or spell.
+  critical_success: null
+  description: As failure, but the creature can't attempt a flat check to recover
+    from confusion whenever it takes damage from an attack or spell.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** As failure, but the creature can''t attempt
+    a flat check to recover from confusion whenever it takes damage from an attack
+    or spell.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The augnagar inhales sharply, drawing life force out of creatures in a 50-foot
+    cone. Creatures in the area take 14d6 negative damage (DC 34 basic Fortitude save,
+    and the creature is __fatigued__ on a failure). The augnagar becomes __quickened__
+    for 1 round on its next turn, and it can use the extra action only to Stride or
+    Strike.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Inhale Vitality
+  range: null
+  raw_description: '**Inhale Vitality** [Two Actions]  (__necromancy__, __occult__)
+    **Frequency** once per day; **Effect** The augnagar inhales sharply, drawing life
+    force out of creatures in a 50-foot cone. Creatures in the area take 14d6 negative
+    damage (DC 34 basic Fortitude save, and the creature is __fatigued__ on a failure).
+    The augnagar becomes __quickened__ for 1 round on its next turn, and it can use
+    the extra action only to Stride or Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - necromancy
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** DC 34 Fortitude; **Stage 1** __drained 1__ (1 day);
+    **Stage 2** drained 2 and the creature displays hideous, festering wounds exuding
+    a horrific stench. Any creature within 30 feet of the victim must succeed at a
+    DC 34 Fortitude save or become __sickened 1__ (plus __slowed 1__ on a critical
+    failure, for as long as it''s sickened). While within the aura, affected creatures
+    take a –2 circumstance penalty to saves against __disease__ and to recover from
+    the sickened condition. A creature that succeeds at its save is temporarily immune
+    for 1 minute. The victim of the disease doesn''t roll a save, but takes the failure
+    effects automatically and can''t reduce its sickened value below 1 (1 day).'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rotting Curse
+  range: null
+  raw_description: '**Rotting Curse** (__curse__, __disease__, __necromancy__, __occult__)
+    **Saving Throw** DC 34 Fortitude; **Stage 1** __drained 1__ (1 day); **Stage 2**
+    drained 2 and the creature displays hideous, festering wounds exuding a horrific
+    stench. Any creature within 30 feet of the victim must succeed at a DC 34 Fortitude
+    save or become __sickened 1__ (plus __slowed 1__ on a critical failure, for as
+    long as it''s sickened). While within the aura, affected creatures take a –2 circumstance
+    penalty to saves against __disease__ and to recover from the sickened condition.
+    A creature that succeeds at its save is temporarily immune for 1 minute. The victim
+    of the disease doesn''t roll a save, but takes the failure effects automatically
+    and can''t reduce its sickened value below 1 (1 day).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - disease
+  - necromancy
+  - occult
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'The brutish and gluttonous augnagar live to feast— preferably on rotten
@@ -22,24 +209,23 @@ description: 'The brutish and gluttonous augnagar live to feast— preferably on
 hp: 225
 hp_misc: null
 immunities:
-- controlled
-- fear
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
 languages:
 - Abyssal
 - telepathy 100 feet
 level: 14
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+14
     type: piercing
   name: bite
   plus_damage:
-  - formula: 4d6
-    type: persistent bleed
-  - formula: 1d6
-    type: chaotic
+  - formula: null
+    type: 4d6 persistent bleed
+  - formula: null
+    type: 1d6 chaotic
   - formula: null
     type: rotting curse
   to_hit: 28
@@ -53,8 +239,10 @@ melee:
     type: slashing
   name: sting
   plus_damage:
-  - formula: 4d6
-    type: persistent bleed and 1d6 chaotic
+  - formula: null
+    type: 4d6 persistent bleed
+  - formula: null
+    type: 1d6 chaotic
   to_hit: 28
   traits:
   - agile
@@ -64,119 +252,15 @@ melee:
   - reach 15 feet
 name: Augnagar
 perception: 27
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: As failure, but the creature can't attempt a flat check to recover
-    from confusion whenever it takes damage from an attack or spell.
-  critical_success: The creature is unaffected.
-  description: "The augnagar's writhing limbs and flesh seethe and squirm in a disorienting\
-    \ and unsettling manner. Creatures in a 30-foot emanation must attempt a DC 34\
-    \ Will save, after which they are temporarily immune to further Confusing Displays\
-    \ for 1 minute. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is stupefied 1 and confused for 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Confusing Display
-  range: null
-  raw_description: "**Confusing Display** [Two Actions]  (__concentrate__, __emotion__,\
-    \ __enchantment__, __fear__, __incapacitation__, __mental__, __occult__, __visual__)\
-    \ The augnagar's writhing limbs and flesh seethe and squirm in a disorienting\
-    \ and unsettling manner. Creatures in a 30-foot emanation must attempt a DC 34\
-    \ Will save, after which they are temporarily immune to further Confusing Displays\
-    \ for 1 minute. \n\n**Critical Success** The creature is unaffected. \n\n**Success**\
-    \ The creature is __stupefied 1__ for 1 round. \n\n**Failure** The creature is\
-    \ stupefied 1 and __confused__ for 1 minute. \n\n**Critical Failure** As failure,\
-    \ but the creature can't attempt a flat check to recover from confusion whenever\
-    \ it takes damage from an attack or spell."
-  requirements: null
-  success: The creature is stupefied 1 for 1 round.
-  traits:
-  - concentrate
-  - emotion
-  - enchantment
-  - fear
-  - incapacitation
-  - mental
-  - occult
-  - visual
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The augnagar inhales sharply, drawing life force out of creatures in a 50-foot
-    cone. Creatures in the area take 14d6 negative damage (DC 34 basic Fortitude save,
-    and the creature is __fatigued__ on a failure). The augnagar becomes __quickened__
-    for 1 round on its next turn, and it can use the extra action only to Stride or
-    Strike.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Inhale Vitality
-  range: null
-  raw_description: '**Inhale Vitality** [Two Actions]  (__necromancy__, __occult__)
-    **Frequency** once per day; **Effect** The augnagar inhales sharply, drawing life
-    force out of creatures in a 50-foot cone. Creatures in the area take 14d6 negative
-    damage (DC 34 basic Fortitude save, and the creature is __fatigued__ on a failure).
-    The augnagar becomes __quickened__ for 1 round on its next turn, and it can use
-    the extra action only to Stride or Strike.'
-  requirements: null
-  success: null
-  traits:
-  - necromancy
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 34 Fortitude; **Stage 1** __drained 1__ (1 day);
-    **Stage 2** drained 2 and the creature displays hideous, festering wounds exuding
-    a horrific stench. Any creature within 30 feet of the victim must succeed at a
-    DC 34 Fortitude save or become __sickened 1__ (plus __slowed 1__ on a critical
-    failure, for as long as it''s sickened). While within the aura, affected creatures
-    take a -2 circumstance penalty to saves against __disease__ and to recover from
-    the sickened condition. A creature that succeeds at its save is temporarily immune
-    for 1 minute. The victim of the disease doesn''t roll a save, but takes the failure
-    effects automatically and can''t reduce its sickened value below 1 (1 day).'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rotting Curse
-  range: null
-  raw_description: '**Rotting Curse** (__curse__, __disease__, __necromancy__, __occult__)
-    **Saving Throw** DC 34 Fortitude; **Stage 1** __drained 1__ (1 day); **Stage 2**
-    drained 2 and the creature displays hideous, festering wounds exuding a horrific
-    stench. Any creature within 30 feet of the victim must succeed at a DC 34 Fortitude
-    save or become __sickened 1__ (plus __slowed 1__ on a critical failure, for as
-    long as it''s sickened). While within the aura, affected creatures take a -2 circumstance
-    penalty to saves against __disease__ and to recover from the sickened condition.
-    A creature that succeeds at its save is temporarily immune for 1 minute. The victim
-    of the disease doesn''t roll a save, but takes the failure effects automatically
-    and can''t reduce its sickened value below 1 (1 day).'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - disease
-  - necromancy
-  - occult
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 15
+  misc: null
   type: mental
 - amount: 15
-  type: physical (except cold iron)
-ritual_lists: null
+  misc: except cold iron
+  type: physical
 saves:
   fort: 28
   fort_misc: null
@@ -185,9 +269,7 @@ saves:
   ref_misc: null
   will: 25
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +27
 - greater darkvision
 - scent (imprecise) 30 feet
 - true seeing
@@ -195,49 +277,48 @@ size: Huge
 skills:
 - bonus: 27
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 28
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 26
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary 2
-  page_start: 216
+  page_start: '216'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: climb
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 31
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 7
     spells:
-    - frequency: ×3
-      name: dimension door
-      requirement: null
-  - heightened_level: 7
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 31
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: ×3
+      name: dimension door
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- CE
-- Huge
 - Fiend
 - Qlippoth
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: lawful

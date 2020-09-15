@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: While within her bonded body of water (see water dependent above),
+    the naiad heals 1 Hit Point every 10 minutes.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Water Healing
+  range: null
+  raw_description: '**Water Healing** [Two Actions]  (__concentrate__, __healing__,
+    __necromancy__, __primal__) While within her bonded body of water (see water dependent
+    above), the naiad heals 1 Hit Point every 10 minutes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - healing
+  - necromancy
+  - primal
+  trigger: null
 alignment: CG
 automatic_abilities:
 - action_cost: None
@@ -19,11 +46,11 @@ automatic_abilities:
     from being apart from her bonded body of water. A naiad can perform a 24-hour
     ritual to bond herself to a new body of water.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Water Dependent
   range: null
   raw_description: '**Water Dependent** A naiad bonds to a spring, pool, pond, or
@@ -33,6 +60,8 @@ automatic_abilities:
     nymphs, she doesn''t suffer penalties from being apart from her bonded body of
     water. A naiad can perform a 24-hour ritual to bond herself to a new body of water.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -52,19 +81,17 @@ description: 'Naiads protect streams, ponds, springs, and other natural bodies o
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Common
 - Elven
 - Sylvan
 - speak with animals
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: bludgeoning
+    formula: null
+    type: 1d6 bludgeoning
   name: aqueous fist
   plus_damage: null
   to_hit: 8
@@ -75,37 +102,11 @@ melee:
   - water
 name: Naiad
 perception: 6
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: While within her bonded body of water (see water dependent above),
-    the naiad heals 1 Hit Point every 10 minutes.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Water Healing
-  range: null
-  raw_description: '**Water Healing** [Two Actions]  (__concentrate__, __healing__,
-    __necromancy__, __primal__) While within her bonded body of water (see water dependent
-    above), the naiad heals 1 Hit Point every 10 minutes.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - healing
-  - necromancy
-  - primal
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 3
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 3
   fort_misc: null
@@ -121,83 +122,81 @@ sense_abilities:
   description: The naiad can use Diplomacy to Make an Impression on and make very
     simple Requests of animals.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wild Empathy
   range: null
   raw_description: '**Wild Empathy** The naiad can use Diplomacy to Make an Impression
     on and make very simple Requests of animals.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +6
 - low-light vision
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 3
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 6
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 6
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 4
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 246
+  page_start: '246'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
 spell_lists:
-- dc: 17
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 2
     spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: create water
-      requirement: null
-    - frequency: null
-      name: tidal surge
-      requirement: null
-  - heightened_level: 2
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: speak with animals
-      requirement: null
-  to_hit: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: create water
+    - misc: null
+      name: tidal surge
+  spells_source: Primal Innate Spells
 traits:
-- CG
-- Medium
 - Amphibious
 - Fey
 - Nymph
 - Water
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: cold iron

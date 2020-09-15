@@ -7,6 +7,26 @@ ability_mods:
   wis_mod: 0
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**Rend** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +38,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +53,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -44,13 +66,11 @@ description: Common trolls are dim-witted, gangly giants who stalk the fringes o
   legendary regenerative abilities. Trolls stand anywhere from 12 to 16 feet tall,
   though they prefer to hunch for comfort and to lull foes into a false sense of security.
 hp: 115
-hp_misc: regeneration 20 (deactivated by acid or fire
-immunities: null
-items: null
+hp_misc: regeneration 20 (deactivated by acid or fire)
 languages:
 - Jotun
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+5
@@ -72,32 +92,7 @@ melee:
   - reach 10 feet
 name: Troll
 perception: 11
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -106,32 +101,29 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 size: Large
 skills:
 - bonus: 12
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary
-  page_start: 314
+  page_start: '314'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Large
 - Giant
 - Troll
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: fire

@@ -7,6 +7,60 @@ ability_mods:
   wis_mod: 2
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The gourd leshy transforms into a Small gourd-bearing plant. This ability
+    otherwise uses the effects of __tree shape__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) The gourd leshy transforms into a Small gourd-bearing
+    plant. This ability otherwise uses the effects of __tree shape__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the gourd leshy damages a creature with a fist or seed Strike,
+    vines lash out from the leshy (or seed) and wrap around the target's limbs. The
+    target must attempt a DC 17 Reflex save. On a failure, the target takes a –10-foot
+    status penalty to its Speed for 1 round; on a critical failure, the target is
+    __immobilized__ for 1 round and the penalty to Speed lasts for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ensnare
+  range: null
+  raw_description: '**Ensnare** When the gourd leshy damages a creature with a fist
+    or seed Strike, vines lash out from the leshy (or seed) and wrap around the target''s
+    limbs. The target must attempt a DC 17 Reflex save. On a failure, the target takes
+    a –10-foot status penalty to its Speed for 1 round; on a critical failure, the
+    target is __immobilized__ for 1 round and the penalty to Speed lasts for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -17,11 +71,11 @@ automatic_abilities:
     This area is filled with gourds, becoming difficult terrain. If the terrain is
     not a viable environment for these gourds, they wither after 24 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Verdant Burst
   range: null
   raw_description: '**Verdant Burst** (__healing__) When a gourd leshy dies, a burst
@@ -30,6 +84,8 @@ automatic_abilities:
     terrain. If the terrain is not a viable environment for these gourds, they wither
     after 24 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - healing
@@ -43,15 +99,13 @@ description: 'Gourd leshys are guardians of fields, gardens, and farms. Many vil
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Common
 - Druidic
 - Sylvan
 - speak with plants (gourds only)
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
@@ -66,57 +120,7 @@ melee:
   - finesse
 name: Gourd Leshy
 perception: 5
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The gourd leshy transforms into a Small gourd-bearing plant. This ability
-    otherwise uses the effects of __tree shape__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __polymorph__, __primal__,
-    __transmutation__) The gourd leshy transforms into a Small gourd-bearing plant.
-    This ability otherwise uses the effects of __tree shape__.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the gourd leshy damages a creature with a fist or seed Strike,
-    vines lash out from the leshy (or seed) and wrap around the target's limbs. The
-    target must attempt a DC 17 Reflex save. On a failure, the target takes a -10-foot
-    status penalty to its Speed for 1 round; on a critical failure, the target is
-    __immobilized__ for 1 round and the penalty to Speed lasts for 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ensnare
-  range: null
-  raw_description: '**Ensnare** When the gourd leshy damages a creature with a fist
-    or seed Strike, vines lash out from the leshy (or seed) and wrap around the target''s
-    limbs. The target must attempt a DC 17 Reflex save. On a failure, the target takes
-    a -10-foot status penalty to its Speed for 1 round; on a critical failure, the
-    target is __immobilized__ for 1 round and the penalty to Speed lasts for 1 minute.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -128,11 +132,6 @@ ranged:
   to_hit: 9
   traits:
   - range increment 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 5
   fort_misc: null
@@ -148,56 +147,55 @@ sense_abilities:
   description: The leshy can store an item of light Bulk or less in its head, concealing
     it as __nondetection__. If stored for 24 hours, the item benefits from __mending__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Keepsake
   range: null
   raw_description: '**Keepsake** (__abjuration__, __primal__) The leshy can store
     an item of light Bulk or less in its head, concealing it as __nondetection__.
     If stored for 24 hours, the item benefits from __mending__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
   - primal
   trigger: null
 senses:
-- Perception +5
 - low-light vision
 size: Small
 skills:
 - bonus: 5
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 218
+  page_start: '218'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 15
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 15
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: speak with plants
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- N
-- Small
 - Leshy
 - Plant
-type: Creature
-weaknesses: null

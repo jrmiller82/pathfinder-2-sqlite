@@ -7,6 +7,79 @@ ability_mods:
   wis_mod: 5
 ac: 40
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that takes damage from a qurashith's jaws or spittle must
+    succeed at a DC 39 Fortitude save or be __slowed 1__ for 1d4 rounds (slowed 2
+    on a critical failure). If a creature is already slowed when it fails its save,
+    it becomes __paralyzed__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Paralytic Spittle
+  range: null
+  raw_description: '**Paralytic Spittle** A creature that takes damage from a qurashith''s
+    jaws or spittle must succeed at a DC 39 Fortitude save or be __slowed 1__ for
+    1d4 rounds (slowed 2 on a critical failure). If a creature is already slowed when
+    it fails its save, it becomes __paralyzed__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The qurashith unleashes a debilitating psionic scream. Creatures in
+    a 60-foot cone must succeed at a DC 35 Will save or become __stupefied__ 2 (stupefied
+    4 on a critical failure) for 1 minute. A creature that critically succeeds at
+    its Will save is immune to the qurashith's Psychic Howl for 24 hours. The qurashith
+    can't use Psychic Howl again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Psychic Howl
+  range: null
+  raw_description: '**Psychic Howl** [Two Actions]  The qurashith unleashes a debilitating
+    psionic scream. Creatures in a 60-foot cone must succeed at a DC 35 Will save
+    or become __stupefied__ 2 (stupefied 4 on a critical failure) for 1 minute. A
+    creature that critically succeeds at its Will save is immune to the qurashith''s
+    Psychic Howl for 24 hours. The qurashith can''t use Psychic Howl again for 1d4
+    rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**Rend** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -27,11 +100,11 @@ automatic_abilities:
     __**Frightful Presence**__ (__aura__, __emotion__, __fear__, __mental__) 90 feet,
     DC 33'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Adhesive Body
   range: null
   raw_description: '**Adhesive Body** Any creature that Strikes the qurashith with
@@ -49,10 +122,12 @@ automatic_abilities:
     __**Frightful Presence**__ (__aura__, __emotion__, __fear__, __mental__) 90 feet,
     DC 33'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-description: 'Qurashith—or "gluttonwings" in the Common tongue—are fearsome, bat-like
+description: 'Qurashith—or “gluttonwings” in the Common tongue—are fearsome, bat-like
   predators that haunt the upper reaches of Gluttondark''s cavern-worlds. These monstrosities
   are no mere beasts. A qurashith does not simply devour its victims; once it kills
   its prey, it physically subsumes the creature into its own body, metabolizing the
@@ -72,14 +147,12 @@ description: 'Qurashith—or "gluttonwings" in the Common tongue—are fearsome,
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 41'
 hp: 340
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - telepathy 120 feet
 - tongues
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+17
@@ -109,82 +182,11 @@ melee:
   - reach 15 feet
 name: Qurashith
 perception: 33
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature that takes damage from a qurashith's jaws or spittle must
-    succeed at a DC 39 Fortitude save or be __slowed 1__ for 1d4 rounds (slowed 2
-    on a critical failure). If a creature is already slowed when it fails its save,
-    it becomes __paralyzed__ for 1 round.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Paralytic Spittle
-  range: null
-  raw_description: '**Paralytic Spittle** A creature that takes damage from a qurashith''s
-    jaws or spittle must succeed at a DC 39 Fortitude save or be __slowed 1__ for
-    1d4 rounds (slowed 2 on a critical failure). If a creature is already slowed when
-    it fails its save, it becomes __paralyzed__ for 1 round.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The qurashith unleashes a debilitating psionic scream. Creatures in
-    a 60-foot cone must succeed at a DC 35 Will save or become __stupefied__ 2 (stupefied
-    4 on a critical failure) for 1 minute. A creature that critically succeeds at
-    its Will save is immune to the qurashith's Psychic Howl for 24 hours. The qurashith
-    can't use Psychic Howl again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Psychic Howl
-  range: null
-  raw_description: '**Psychic Howl** [Two Actions]  The qurashith unleashes a debilitating
-    psionic scream. Creatures in a 60-foot cone must succeed at a DC 35 Will save
-    or become __stupefied__ 2 (stupefied 4 on a critical failure) for 1 minute. A
-    creature that critically succeeds at its Will save is immune to the qurashith''s
-    Psychic Howl for 24 hours. The qurashith can''t use Psychic Howl again for 1d4
-    rounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 6d6
-    type: acid and paralytic saliva
+    formula: null
+    type: 6d6 acid and paralytic saliva
   name: spittle
   plus_damage: null
   to_hit: 30
@@ -193,8 +195,8 @@ ranged:
 rarity: Rare
 resistances:
 - amount: 15
+  misc: null
   type: acid
-ritual_lists: null
 saves:
   fort: 29
   fort_misc: null
@@ -203,9 +205,7 @@ saves:
   ref_misc: null
   will: 28
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +33
 - greater darkvision
 - scent (imprecise) 60 feet
 - true seeing
@@ -213,55 +213,54 @@ size: Huge
 skills:
 - bonus: 30
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 32
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 29
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 32
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 28
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #154: Siege of the Dinosaurs'
-  page_start: 82
+  page_start: '82'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists:
-- dc: 35
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: at will, self only
-      name: teleport
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 35
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: at will, self only
+      name: teleport
+  spells_source: Divine Innate Spells
 traits:
-- Rare
-- CE
-- Huge
 - Aberration
 - Fiend
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: good
 - amount: 15
+  misc: null
   type: lawful

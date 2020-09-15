@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 0
 ac: 15
 ac_special: null
+active_abilities: null
 alignment: NE
 automatic_abilities: null
 description: 'Necromantic augmentations have granted this zombie increased size and
@@ -25,10 +26,8 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+5
@@ -42,15 +41,7 @@ melee:
   - reach 10 feet
 name: Zombie Brute
 perception: 4
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: positive
-- amount: 10
-  type: slashing
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -65,39 +56,44 @@ sense_abilities:
   critical_success: null
   description: A zombie is permanently slowed 1 and can't use reactions.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Slow
   range: null
   raw_description: '**Slow** A zombie is permanently slowed 1 and can''t use reactions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +4
 - darkvision
 size: Large
 skills:
 - bonus: 9
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 341
+  page_start: '341'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Large
 - Mindless
 - Undead
 - Zombie
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: positive
+- amount: 10
+  misc: null
+  type: slashing

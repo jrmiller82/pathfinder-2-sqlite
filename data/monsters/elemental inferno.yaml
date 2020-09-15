@@ -7,47 +7,89 @@ ability_mods:
   wis_mod: 3
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the elemental inferno scores a critical hit, its body surges with
+    blue flames, increasing the damage of its intense heat and Inferno Leap by 3d6
+    until the start of its next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blue Flames
+  range: null
+  raw_description: '**Blue Flames** When the elemental inferno scores a critical hit,
+    its body surges with blue flames, increasing the damage of its intense heat and
+    Inferno Leap by 3d6 until the start of its next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The elemental inferno jumps horizontally and vertically with a maximum
+    height and distance each equal to its Speed. Its intense heat is suppressed until
+    the end of the jump. At any point during the jump, flames explode from the elemental
+    in a 30-foot emanation, dealing 12d6 fire damage to each creature within the area
+    (DC 30 basic Reflex save). The elemental inferno can't Inferno Leap again for
+    1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Inferno Leap
+  range: null
+  raw_description: '**Inferno Leap** [Two Actions]  (__fire__) The elemental inferno
+    jumps horizontally and vertically with a maximum height and distance each equal
+    to its Speed. Its intense heat is suppressed until the end of the jump. At any
+    point during the jump, flames explode from the elemental in a 30-foot emanation,
+    dealing 12d6 fire damage to each creature within the area (DC 30 basic Reflex
+    save). The elemental inferno can''t Inferno Leap again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fire
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: When the elemental inferno dies, it explodes, dealing 7d6 fire damage
+  description: 'When the elemental inferno dies, it explodes, dealing 7d6 fire damage
     to each creature in a 10-foot emanation (DC 30 basic Reflex save).
+
+
+    **Intense Heat** (__aura__, __fire__) 10 feet, 7d6 fire, DC 28 basic Reflex.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Explosion
   range: null
   raw_description: '**Explosion** (__fire__) When the elemental inferno dies, it explodes,
     dealing 7d6 fire damage to each creature in a 10-foot emanation (DC 30 basic Reflex
-    save).'
+    save).
+
+
+    **Intense Heat** (__aura__, __fire__) 10 feet, 7d6 fire, DC 28 basic Reflex.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
-  - fire
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 10 feet, 7d6 fire, DC 28 basic Reflex.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Intense Heat
-  range: null
-  raw_description: '**Intense Heat** (__aura__, __fire__) 10 feet, 7d6 fire, DC 28
-    basic Reflex.'
-  requirements: null
-  success: null
-  traits:
-  - aura
   - fire
   trigger: null
 description: 'Walking conflagrations of unimaginably hot fire, elemental infernos
@@ -65,75 +107,24 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Ignan
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
     type: fire
   name: tendril
   plus_damage:
-  - formula: 3d8
-    type: persistent fire
+  - formula: null
+    type: 3d8 persistent fire
   to_hit: 24
   traits:
   - reach 15 feet
 name: Elemental Inferno
 perception: 20
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the elemental inferno scores a critical hit, its body surges with
-    blue flames, increasing the damage of its intense heat and Inferno Leap by 3d6
-    until the start of its next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blue Flames
-  range: null
-  raw_description: '**Blue Flames** When the elemental inferno scores a critical hit,
-    its body surges with blue flames, increasing the damage of its intense heat and
-    Inferno Leap by 3d6 until the start of its next turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The elemental inferno jumps horizontally and vertically with a maximum
-    height and distance each equal to its Speed. Its intense heat is suppressed until
-    the end of the jump. At any point during the jump, flames explode from the elemental
-    in a 30-foot emanation, dealing 12d6 fire damage to each creature within the area
-    (DC 30 basic Reflex save). The elemental inferno can't Inferno Leap again for
-    1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Inferno Leap
-  range: null
-  raw_description: '**Inferno Leap** [Two Actions]  (__fire__) The elemental inferno
-    jumps horizontally and vertically with a maximum height and distance each equal
-    to its Speed. Its intense heat is suppressed until the end of the jump. At any
-    point during the jump, flames explode from the elemental in a 30-foot emanation,
-    dealing 12d6 fire damage to each creature within the area (DC 30 basic Reflex
-    save). The elemental inferno can''t Inferno Leap again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - fire
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+6
@@ -143,11 +134,6 @@ ranged:
   to_hit: 24
   traits:
   - range increment 60 feet
-rarity: Common
-resistances:
-- amount: 15
-  type: cold
-ritual_lists: null
 saves:
   fort: 21
   fort_misc: null
@@ -162,40 +148,42 @@ sense_abilities:
   critical_success: null
   description: The elemental inferno ignores the concealed condition from smoke.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Smoke Vision
   range: null
   raw_description: '**Smoke Vision** The elemental inferno ignores the concealed condition
     from smoke.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +20
 - darkvision
 - smoke vision
 size: Huge
 skills:
 - bonus: 21
   misc: null
-  name: 'Acrobatics '
-source:
+  name: Acrobatics
+sources:
 - abbr: Bestiary
-  page_start: 149
+  page_start: '149'
   page_stop: null
 speed:
 - amount: 70
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Elemental
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 15
+  misc: null
+  type: cold

@@ -7,69 +7,114 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
-alignment: LE
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: A poltergeist is naturally invisible. It becomes visible only when
-    it uses Frighten.
-  effect: null
-  effects: null
+  description: '**Requirement** The poltergeist must be invisible.'
+  effect: The poltergeist becomes visible, appearing as a skeletal, ghostlike humanoid.
+    Each creature within 30 feet must attempt a DC 21 Will save, becoming __frightened
+    2__ on a failure. On a critical failure, it's also fleeing for as long as it's
+    __frightened__. On a success, the creature is temporarily immune for 1 minute.
+    At the start of its next turn, the poltergeist becomes invisible again.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Natural Invisibility
+  maximum_duration: null
+  name: Frighten
   range: null
-  raw_description: '**Natural Invisibility** A poltergeist is naturally invisible.
-    It becomes visible only when it uses Frighten.'
+  raw_description: '**Frighten** [One Action]  (__concentrate__, __emotion__, __fear__,
+    __incapacitation__, __mental__) **Requirement** The poltergeist must be invisible.
+    **Effect** The poltergeist becomes visible, appearing as a skeletal, ghostlike
+    humanoid. Each creature within 30 feet must attempt a DC 21 Will save, becoming
+    __frightened 2__ on a failure. On a critical failure, it''s also fleeing for as
+    long as it''s __frightened__. On a success, the creature is temporarily immune
+    for 1 minute. At the start of its next turn, the poltergeist becomes invisible
+    again.'
   requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a poltergeist is destroyed, it re-forms, fully healed, where it
-    was destroyed after 2d4 days. A poltergeist can be permanently destroyed only
-    if someone determines the reason for its existence and sets right whatever prevents
-    the spirit from resting.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rejuvenation
-  range: null
-  raw_description: '**Rejuvenation** (__necromancy__, __occult__) When a poltergeist
-    is destroyed, it re-forms, fully healed, where it was destroyed after 2d4 days.
-    A poltergeist can be permanently destroyed only if someone determines the reason
-    for its existence and sets right whatever prevents the spirit from resting.'
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
-  - necromancy
+  - concentrate
+  - emotion
+  - fear
+  - incapacitation
+  - mental
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: "The poltergeist telekinetically throws numerous small objects, such\
+    \ as dozens of pieces of silverware or books, either spreading them out among\
+    \ multiple foes or directing them at one target.\n\n  * When this effect is spread\
+    \ out among multiple foes, the poltergeist makes a telekinetic object Strike at\
+    \ a –2 penalty against each creature within 30 feet. These count as one attack\
+    \ for the poltergeist's multiple attack penalty, and the penalty doesn't increase\
+    \ until after all the attacks.\n\n  * When this effect has only one target, the\
+    \ poltergeist makes a telekinetic object Strike against the target, and the damage\
+    \ increases to 3d12. It deals 1d12 damage on a failure, and no damage on a critical\
+    \ failure."
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Telekinetic Storm
+  range: null
+  raw_description: "**Telekinetic Storm** [Two Actions]  (__concentrate__, __evocation__,\
+    \ __occult__) The poltergeist telekinetically throws numerous small objects, such\
+    \ as dozens of pieces of silverware or books, either spreading them out among\
+    \ multiple foes or directing them at one target.\n\n  * When this effect is spread\
+    \ out among multiple foes, the poltergeist makes a telekinetic object Strike at\
+    \ a –2 penalty against each creature within 30 feet. These count as one attack\
+    \ for the poltergeist's multiple attack penalty, and the penalty doesn't increase\
+    \ until after all the attacks.\n\n  * When this effect has only one target, the\
+    \ poltergeist makes a telekinetic object Strike against the target, and the damage\
+    \ increases to 3d12. It deals 1d12 damage on a failure, and no damage on a critical\
+    \ failure."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - evocation
   - occult
   trigger: null
+alignment: LE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
   effect: The poltergeist makes a telekinetic object Strike against the triggering
     creature.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Telekinetic Defense
+  maximum_duration: null
+  name: Natural Invisibility
   range: null
-  raw_description: '**Telekinetic Defense** [Reaction] **Trigger** A creature approaches
-    within 10 feet of the poltergeist. **Effect** The poltergeist makes a telekinetic
-    object Strike against the triggering creature.'
+  raw_description: '**Natural Invisibility** A poltergeist is naturally invisible.
+    It becomes visible only when it uses Frighten.
+
+
+    **Rejuvenation** (__necromancy__, __occult__) When a poltergeist is destroyed,
+    it re-forms, fully healed, where it was destroyed after 2d4 days. A poltergeist
+    can be permanently destroyed only if someone determines the reason for its existence
+    and sets right whatever prevents the spirit from resting.
+
+
+    **Telekinetic Defense** [Reaction] **Trigger** A creature approaches within 10
+    feet of the poltergeist. **Effect** The poltergeist makes a telekinetic object
+    Strike against the triggering creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature approaches within 10 feet of the poltergeist.
@@ -95,86 +140,17 @@ immunities:
 - poison
 - precision
 - unconscious
-items: null
 languages:
 - Common
 level: 5
-melee: null
+melee_attacks: null
 name: Poltergeist
 perception: 11
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The poltergeist must be invisible.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Frighten
-  range: null
-  raw_description: '**Frighten**   (__concentrate__, __emotion__, __fear__, __incapacitation__,
-    __mental__) **Requirement** The poltergeist must be invisible. **Effect** The
-    poltergeist becomes visible, appearing as a skeletal, ghostlike humanoid. Each
-    creature within 30 feet must attempt a DC 21 Will save, becoming __frightened
-    2__ on a failure. On a critical failure, it''s also fleeing for as long as it''s
-    __frightened__. On a success, the creature is temporarily immune for 1 minute.
-    At the start of its next turn, the poltergeist becomes invisible again.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - emotion
-  - fear
-  - incapacitation
-  - mental
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: "The poltergeist telekinetically throws numerous small objects, such\
-    \ as dozens of pieces of silverware or books, either spreading them out among\
-    \ multiple foes or directing them at one target. \n\n  * When this effect is spread\
-    \ out among multiple foes, the poltergeist makes a telekinetic object Strike at\
-    \ a -2 penalty against each creature within 30 feet. These count as one attack\
-    \ for the poltergeist's multiple attack penalty, and the penalty doesn't increase\
-    \ until after all the attacks.\n\n  * When this effect has only one target, the\
-    \ poltergeist makes a telekinetic object Strike against the target, and the damage\
-    \ increases to 3d12. It deals 1d12 damage on a failure, and no damage on a critical\
-    \ failure."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Telekinetic Storm
-  range: null
-  raw_description: "**Telekinetic Storm** [Two Actions]  (__concentrate__, __evocation__,\
-    \ __occult__) The poltergeist telekinetically throws numerous small objects, such\
-    \ as dozens of pieces of silverware or books, either spreading them out among\
-    \ multiple foes or directing them at one target. \n\n  * When this effect is spread\
-    \ out among multiple foes, the poltergeist makes a telekinetic object Strike at\
-    \ a -2 penalty against each creature within 30 feet. These count as one attack\
-    \ for the poltergeist's multiple attack penalty, and the penalty doesn't increase\
-    \ until after all the attacks.\n\n  * When this effect has only one target, the\
-    \ poltergeist makes a telekinetic object Strike against the target, and the damage\
-    \ increases to 3d12. It deals 1d12 damage on a failure, and no damage on a critical\
-    \ failure."
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - evocation
-  - occult
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12
-    type: bludgeoning, piercing, or slashing (depending on object)
+    formula: null
+    type: 2d12 bludgeoning, piercing, or slashing (depending on object)
   name: telekinetic object
   plus_damage: null
   to_hit: 13
@@ -183,17 +159,10 @@ ranged:
   - magical
   - occult
   - range increment 60 feet
-rarity: Common
 resistances:
 - amount: 5
-  type: all damage (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-- amount: null
-  type: double resistance against non-magical)
-ritual_lists: null
+  misc: null
+  type: all damage
 saves:
   fort: 9
   fort_misc: null
@@ -210,64 +179,61 @@ sense_abilities:
     feet from the place where it was created or formed. Some poltergeists are instead
     bound to a specific room, building, or similar area
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Site Bound
   range: null
   raw_description: '**Site Bound** A poltergeist is tied to a location and can''t
     travel more than 120 feet from the place where it was created or formed. Some
     poltergeists are instead bound to a specific room, building, or similar area'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +11
 - darkvision
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 14
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 264
+  page_start: '264'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: fly
 spell_lists:
-- dc: 23
-  misc: ''
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+- attack_bonus: 13
+  cantrips:
+  - level: 3
     spells:
-    - frequency: at will
-      name: telekinetic maneuver
-      requirement: null
-  - heightened_level: 3
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-  to_hit: 13
+  constants: null
+  dc: 23
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: at will
+      name: telekinetic maneuver
+  spells_source: Occult Innate Spells
 traits:
-- LE
-- Medium
 - Incorporeal
 - Spirit
 - Undead
-type: Creature
-weaknesses: null

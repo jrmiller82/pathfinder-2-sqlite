@@ -7,6 +7,130 @@ ability_mods:
   wis_mod: 6
 ac: 42
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 2d10+17 bludgeoning, DC 40. On a failed save, a creature that is holding
+    its breath loses 1d4 rounds worth of air.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  2d10+17 bludgeoning, DC 40. On
+    a failed save, a creature that is holding its breath loses 1d4 rounds worth of
+    air.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The kraken makes two Strikes with two different arms or tentacles,
+    each limb targeting a different creature. Double Attack counts as two attacks
+    toward the kraken's multiple attack penalty for further actions, but the penalty
+    doesn't increase until after both attacks are made. If the kraken subsequently
+    uses the Grab action, it Grabs any number of creatures it hit with Double Attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Double Attack
+  range: null
+  raw_description: '**Double Attack** [One Action]  The kraken makes two Strikes with
+    two different arms or tentacles, each limb targeting a different creature. Double
+    Attack counts as two attacks toward the kraken''s multiple attack penalty for
+    further actions, but the penalty doesn''t increase until after both attacks are
+    made. If the kraken subsequently uses the Grab action, it Grabs any number of
+    creatures it hit with Double Attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The kraken emits a cloud of black, venomous ink in an 80-foot emanation.
+    This cloud has no effect outside water. Creatures inside the ink cloud are exposed
+    to kraken ink poison and are undetected while inside the cloud. The kraken can't
+    use Ink Cloud again for 2d6 rounds, and the cloud dissipates after 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ink Cloud
+  range: null
+  raw_description: '**Ink Cloud** [One Action]  The kraken emits a cloud of black,
+    venomous ink in an 80-foot emanation. This cloud has no effect outside water.
+    Creatures inside the ink cloud are exposed to kraken ink poison and are undetected
+    while inside the cloud. The kraken can''t use Ink Cloud again for 2d6 rounds,
+    and the cloud dissipates after 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The kraken moves through the water up to 280 feet in a straight line
+    without triggering reactions.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Jet
+  range: null
+  raw_description: '**Jet** [One Action]  (__move__) The kraken moves through the
+    water up to 280 feet in a straight line without triggering reactions.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 10 rounds
+  name: Kraken Ink
+  range: null
+  raw_description: '**Kraken Ink** (__poison__) Krakens are immune to this poison.
+    **Saving Throw** DC 39 Fortitude; **Maximum Duration** 10 rounds; **Stage 1**
+    3d6 poison damage and __sickened 1__ (1 round); **Stage 2** 4d6 poison damage
+    and __sickened 2__ (1 round).'
+  requirements: null
+  saving_throw: DC 39 Fortitude
+  stages:
+  - effect: 3d6 poison damage and __sickened 1__ (1 round)
+  - effect: 4d6 poison damage and __sickened 2__ (1 round).
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
@@ -17,11 +141,11 @@ automatic_abilities:
     state, at the GM's discretion. If the kraken dies, the weather returns to normal
     immediately.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Altered Weather
   range: null
   raw_description: '**Altered Weather** (__aura__, __evocation__, __primal__) A kraken
@@ -29,6 +153,8 @@ automatic_abilities:
     ritual centered on the kraken and based on its emotional state, at the GM''s discretion.
     If the kraken dies, the weather returns to normal immediately.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -49,12 +175,11 @@ hp_misc: null
 immunities:
 - controlled
 - emotion
-items: null
 languages:
 - Aquan
 - Common
 level: 18
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d10+17
@@ -92,127 +217,15 @@ melee:
   - magical
 name: Kraken
 perception: 34
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 2d10+17 bludgeoning, DC 40. On a failed save, a creature that is holding
-    its breath loses 1d4 rounds worth of air.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   2d10+17 bludgeoning, DC 40. On a failed save,
-    a creature that is holding its breath loses 1d4 rounds worth of air.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The kraken makes two Strikes with two different arms or tentacles,
-    each limb targeting a different creature. Double Attack counts as two attacks
-    toward the kraken's multiple attack penalty for further actions, but the penalty
-    doesn't increase until after both attacks are made. If the kraken subsequently
-    uses the Grab action, it Grabs any number of creatures it hit with Double Attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Double Attack
-  range: null
-  raw_description: '**Double Attack**   The kraken makes two Strikes with two different
-    arms or tentacles, each limb targeting a different creature. Double Attack counts
-    as two attacks toward the kraken''s multiple attack penalty for further actions,
-    but the penalty doesn''t increase until after both attacks are made. If the kraken
-    subsequently uses the Grab action, it Grabs any number of creatures it hit with
-    Double Attack.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The kraken emits a cloud of black, venomous ink in an 80-foot emanation.
-    This cloud has no effect outside water. Creatures inside the ink cloud are exposed
-    to kraken ink poison and are undetected while inside the cloud. The kraken can't
-    use Ink Cloud again for 2d6 rounds, and the cloud dissipates after 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ink Cloud
-  range: null
-  raw_description: '**Ink Cloud**   The kraken emits a cloud of black, venomous ink
-    in an 80-foot emanation. This cloud has no effect outside water. Creatures inside
-    the ink cloud are exposed to kraken ink poison and are undetected while inside
-    the cloud. The kraken can''t use Ink Cloud again for 2d6 rounds, and the cloud
-    dissipates after 1 minute.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The kraken moves through the water up to 280 feet in a straight line
-    without triggering reactions.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Jet
-  range: null
-  raw_description: '**Jet**   (__move__) The kraken moves through the water up to
-    280 feet in a straight line without triggering reactions.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Krakens are immune to this poison. **Saving Throw** DC 39 Fortitude;
-    **Maximum Duration** 10 rounds; **Stage 1** 3d6 poison damage and __sickened 1__
-    (1 round); **Stage 2** 4d6 poison damage and __sickened 2__ (1 round).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Kraken Ink
-  range: null
-  raw_description: '**Kraken Ink** (__poison__) Krakens are immune to this poison.
-    **Saving Throw** DC 39 Fortitude; **Maximum Duration** 10 rounds; **Stage 1**
-    3d6 poison damage and __sickened 1__ (1 round); **Stage 2** 4d6 poison damage
-    and __sickened 2__ (1 round).'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
+  misc: null
   type: cold
 - amount: 20
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 35
   fort_misc: null
@@ -221,62 +234,54 @@ saves:
   ref_misc: null
   will: 32
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +34
 - darkvision
 size: Gargantuan
 skills:
 - bonus: 38
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 32
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 35
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 33
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 214
+  page_start: '214'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: swim
 spell_lists:
-- dc: 40
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 40
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 10
+  spell_lists:
+  - level: 10
     spells:
-    - frequency: animals only
+    - misc: animals only
       name: dominate
-      requirement: null
-  - heightened_level: null
-    level: 8
+  - level: 8
     spells:
-    - frequency: null
+    - misc: null
       name: punishing winds
-      requirement: null
-  - heightened_level: null
-    level: 7
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: resist energy
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- NE
-- Gargantuan
 - Aquatic
 - Beast
-type: Creature
-weaknesses: null

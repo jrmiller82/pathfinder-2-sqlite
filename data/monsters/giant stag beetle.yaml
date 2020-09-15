@@ -7,6 +7,26 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Medium or smaller, foot, DC 21
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Medium or smaller, foot, DC 21'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'The giant stag beetle is larger than a horse, and the sight of one flying
@@ -30,11 +50,8 @@ description: 'The giant stag beetle is larger than a horse, and the sight of one
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 19'
 hp: 55
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+5
@@ -53,30 +70,7 @@ melee:
   traits: null
 name: Giant Stag Beetle
 perception: 10
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Medium or smaller, foot, DC 21
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Medium or smaller, foot, DC 21'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 13
   fort_misc: null
@@ -85,31 +79,27 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Large
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 41
+  page_start: '41'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

@@ -7,6 +7,52 @@ ability_mods:
   wis_mod: 0
 ac: 13
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: "Lemures have little drive of their own, but other devils can take\
+    \ command of them. A non-lemure devil can issue a command to all lemures within\
+    \ 60 feet of it with a single action, which has the __auditory__ and __concentrate__\
+    \ traits. The devil picks one of the following orders lemures can understand,\
+    \ and the lemures follow that order. The command and its effects end once the\
+    \ commander is out of the lemure's sight, a new command is issued by the same\
+    \ or another devil, or the lemure dies.\n\n  * **Kill **The lemure attacks one\
+    \ target the commander singles out and gains a +1 circumstance bonus to attack\
+    \ rolls against the target.\n\n  * **Defend **The lemure circles the commander\
+    \ and attacks any creature that comes near. It gains a +1 circumstance bonus to\
+    \ AC and saves.\n\n  * **Fetch **The lemure gains a +10–foot circumstance bonus\
+    \ to its Speed and attempts to get an object or person the commander singles out.\
+    \ It attacks anyone and anything that gets in the way.\n\n  * **Work **The lemure\
+    \ performs drudge work dictated by the commander."
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Subservience
+  range: null
+  raw_description: "**Subservience** Lemures have little drive of their own, but other\
+    \ devils can take command of them. A non-lemure devil can issue a command to all\
+    \ lemures within 60 feet of it with a single action, which has the __auditory__\
+    \ and __concentrate__ traits. The devil picks one of the following orders lemures\
+    \ can understand, and the lemures follow that order. The command and its effects\
+    \ end once the commander is out of the lemure's sight, a new command is issued\
+    \ by the same or another devil, or the lemure dies.\n\n  * **Kill **The lemure\
+    \ attacks one target the commander singles out and gains a +1 circumstance bonus\
+    \ to attack rolls against the target.\n\n  * **Defend **The lemure circles the\
+    \ commander and attacks any creature that comes near. It gains a +1 circumstance\
+    \ bonus to AC and saves.\n\n  * **Fetch **The lemure gains a +10–foot circumstance\
+    \ bonus to its Speed and attempts to get an object or person the commander singles\
+    \ out. It attacks anyone and anything that gets in the way.\n\n  * **Work **The\
+    \ lemure performs drudge work dictated by the commander."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'These shapeless masses of quivering flesh are the least of devilkind.
@@ -24,145 +70,30 @@ hp_misc: null
 immunities:
 - fire
 - mental
-items: null
-languages: null
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1
-    type: evil
+  - formula: null
+    type: 1 evil
   to_hit: 7
   traits:
   - evil
   - magical
 name: Lemure
 perception: 0
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Lemures have little drive of their own, but other devils can take command
-    of them. A non-lemure devil can issue a command to all lemures within 60 feet
-    of it with a single action, which has the __auditory__ and __concentrate__ traits.
-    The devil picks one of the following orders lemures can understand, and the lemures
-    follow that order. The command and its effects end once the commander is out of
-    the lemure's sight, a new command is issued by the same or another devil, or the
-    lemure dies.
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The lemure attacks one target the commander singles out and gains
-      a +1 circumstance bonus to attack rolls against the target.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Kill
-    range: null
-    raw_description: '**Kill **The lemure attacks one target the commander singles
-      out and gains a +1 circumstance bonus to attack rolls against the target.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The lemure circles the commander and attacks any creature that comes
-      near. It gains a +1 circumstance bonus to AC and saves.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Defend
-    range: null
-    raw_description: '**Defend **The lemure circles the commander and attacks any
-      creature that comes near. It gains a +1 circumstance bonus to AC and saves.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The lemure gains a +10-foot circumstance bonus to its Speed and attempts
-      to get an object or person the commander singles out. It attacks anyone and
-      anything that gets in the way.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Fetch
-    range: null
-    raw_description: '**Fetch **The lemure gains a +10-foot circumstance bonus to
-      its Speed and attempts to get an object or person the commander singles out.
-      It attacks anyone and anything that gets in the way.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The lemure performs drudge work dictated by the commander.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Work
-    range: null
-    raw_description: '**Work **The lemure performs drudge work dictated by the commander.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Subservience
-  range: null
-  raw_description: "**Subservience** Lemures have little drive of their own, but other\
-    \ devils can take command of them. A non-lemure devil can issue a command to all\
-    \ lemures within 60 feet of it with a single action, which has the __auditory__\
-    \ and __concentrate__ traits. The devil picks one of the following orders lemures\
-    \ can understand, and the lemures follow that order. The command and its effects\
-    \ end once the commander is out of the lemure's sight, a new command is issued\
-    \ by the same or another devil, or the lemure dies. \n\n  * **Kill **The lemure\
-    \ attacks one target the commander singles out and gains a +1 circumstance bonus\
-    \ to attack rolls against the target.\n\n  * **Defend **The lemure circles the\
-    \ commander and attacks any creature that comes near. It gains a +1 circumstance\
-    \ bonus to AC and saves.\n\n  * **Fetch **The lemure gains a +10-foot circumstance\
-    \ bonus to its Speed and attempts to get an object or person the commander singles\
-    \ out. It attacks anyone and anything that gets in the way.\n\n  * **Work **The\
-    \ lemure performs drudge work dictated by the commander."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 3
-  type: physical (except silver)
+  misc: except silver
+  type: physical
 - amount: 5
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 10
   fort_misc: null
@@ -171,30 +102,27 @@ saves:
   ref_misc: null
   will: 3
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +0
 - greater darkvision
 size: Medium
 skills:
 - bonus: 5
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 86
+  page_start: '86'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Devil
 - Fiend
 - Mindless
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: good

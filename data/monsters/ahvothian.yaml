@@ -1,0 +1,245 @@
+ability_mods:
+  cha_mod: 2
+  con_mod: 4
+  dex_mod: 2
+  int_mod: 0
+  str_mod: 6
+  wis_mod: 4
+ac: 25
+ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When an ahvothian uses an innate spell against a reptile, the DC is
+    27 rather than 23.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Reptile Master
+  range: null
+  raw_description: '**Reptile Master** When an ahvothian uses an innate spell against
+    a reptile, the DC is 27 rather than 23.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An ahvothian chooses a creature type (such as __animal__, __celestial__,
+    or __humanoid__) from which they currently carry a trophy from a past kill. Their
+    weapon Strikes against creatures of that type deal an additional 1d10 damage and
+    they gain a +2 status bonus on __Intimidation__ checks against creatures of that
+    type. The ahvothian doesn't lose these bonuses if they lose the trophies. Once
+    per day, an ahvothian can change the creature type of their wicked trophies in
+    a ritual that takes 1 hour. Nearly all ahvothians encountered on the __Material
+    Plane__ have selected humanoids as the focus of their wicked trophies.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wicked Trophies
+  range: null
+  raw_description: '**Wicked Trophies** An ahvothian chooses a creature type (such
+    as __animal__, __celestial__, or __humanoid__) from which they currently carry
+    a trophy from a past kill. Their weapon Strikes against creatures of that type
+    deal an additional 1d10 damage and they gain a +2 status bonus on __Intimidation__
+    checks against creatures of that type. The ahvothian doesn''t lose these bonuses
+    if they lose the trophies. Once per day, an ahvothian can change the creature
+    type of their wicked trophies in a ritual that takes 1 hour. Nearly all ahvothians
+    encountered on the __Material Plane__ have selected humanoids as the focus of
+    their wicked trophies.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: CE
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+description: 'Ahvothians are feral and cunning fiends from an __Abyssal__ realm of
+  jungles, dinosaurs, and relentless brutality. They resemble humanoid __dinosaurs__
+  with narrow, fanged heads similar to raptors and solid, heavy legs like sauropods.
+  Relentless trackers and survivalists, ahvothians are skilled at navigating jungles
+  and are most commonly encountered stalking prey or operating out of fortified ruins.
+  Ahvothians have an uncanny affinity with reptiles, and they often use dinosaurs—particularly
+  carnivores such as allosauruses or __deinonychuses__—as hunting companions or guard
+  animals. Although dangerous in large groups, ahvothians have such a strong desire
+  to assert dominance over others that ahvothian armies frequently fall to infighting
+  and bloody battles for dominance within days, or even hours. The mightiest ahvothians
+  might lead dozens of their kin and herds of carnivorous dinosaurs.
+
+
+
+
+  **__Recall Knowledge - Fiend__ (__Religion__)**: DC 25'
+hp: 160
+hp_misc: null
+items:
+- and humanoid)
+- beast
+- javelins (3)
+- longspear
+- trophies
+languages:
+- Abyssal
+- Common
+- speak with animals
+level: 7
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d10+8
+    type: piercing
+  name: jaws
+  plus_damage: null
+  to_hit: 18
+  traits: null
+- action_cost: One Action
+  damage:
+    formula: 1d8+8
+    type: piercing
+  name: longspear
+  plus_damage:
+  - formula: null
+    type: wicked trophies
+  to_hit: 18
+  traits:
+  - reach 10 feet
+name: Ahvothian
+perception: 18
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 1d6+8
+    type: piercing
+  name: javelin
+  plus_damage:
+  - formula: null
+    type: Wicked Trophies
+  to_hit: 14
+  traits:
+  - thrown 30 feet
+rarity: Uncommon
+resistances:
+- amount: 10
+  misc: null
+  type: fire
+saves:
+  fort: 18
+  fort_misc: null
+  misc: null
+  ref: 12
+  ref_misc: null
+  will: 15
+  will_misc: null
+senses:
+- darkvision
+size: Medium
+skills:
+- bonus: 19
+  misc: null
+  name: Athletics
+- bonus: 11
+  misc: null
+  name: Crafting
+- bonus: 15
+  misc: +17 against humanoids
+  name: Intimidation
+- bonus: 11
+  misc: null
+  name: Religion
+- bonus: 17
+  misc: null
+  name: Survival
+sources:
+- abbr: The Slithering
+  page_start: '62'
+  page_stop: null
+speed:
+- amount: 30
+  misc: null
+  type: Land
+- amount: null
+  misc: null
+  type: freedom of movement
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 4
+    spells:
+    - misc: null
+      name: freedom of movement
+    - misc: null
+      name: speak with animals
+  dc: 23
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: creation
+  - level: 3
+    spells:
+    - misc: at will
+      name: earthbind
+    - misc: at will
+      name: fear
+  - level: 2
+    spells:
+    - misc: at will
+      name: death knell
+  - level: 1
+    spells:
+    - misc: at will
+      name: charm
+  spells_source: Divine Innate Spells
+traits:
+- Fiend
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold
+- amount: 5
+  misc: null
+  type: good

@@ -7,25 +7,187 @@ ability_mods:
   wis_mod: 3
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: A vrykolakas master can transform into a form resembling the body it
+    had in life, with the effects of __humanoid form__ but with unlimited duration.
+    It loses its fangs and claw Strikes but gains a +2 circumstance bonus to Deception
+    checks to Impersonate in this form.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __divine__, __polymorph__,
+    __transmutation__) A vrykolakas master can transform into a form resembling the
+    body it had in life, with the effects of __humanoid form__ but with unlimited
+    duration. It loses its fangs and claw Strikes but gains a +2 circumstance bonus
+    to Deception checks to Impersonate in this form.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If a creature dies after being reduced to 0 HP by Drink Blood, a vrykolakas
+    master can turn this creature into a __vrykolakas spawn__ by donating some of
+    its own blood to the creature and burying it in earth for 3 nights. Such vrykolakas
+    spawn are generally friendly to the vrykolakas that created them, but they are
+    not under its control and typically wander off on their own rampage within 1d6
+    days of their creation.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Create Spawn
+  range: null
+  raw_description: '**Create Spawn** (__divine__, __downtime__, __necromancy__) If
+    a creature dies after being reduced to 0 HP by Drink Blood, a vrykolakas master
+    can turn this creature into a __vrykolakas spawn__ by donating some of its own
+    blood to the creature and burying it in earth for 3 nights. Such vrykolakas spawn
+    are generally friendly to the vrykolakas that created them, but they are not under
+    its control and typically wander off on their own rampage within 1d6 days of their
+    creation.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - downtime
+  - necromancy
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: DC 29, The vrykolakas can cast __dominate__ at will as a divine innate
+    spell that affects only animals. A creature that succeeds is immune to that vrykolakas's
+    Dominate Animal for 24 hours. Destroying the vrykolakas ends the effect, but reducing
+    it to 0 HP does not. A dominated animal takes a –4 circumstance penalty to saving
+    throws against the vrykolakas's Feral Possession.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dominate Animal
+  range: null
+  raw_description: '**Dominate Animal** [One Action]  (__divine__, __enchantment__,
+    __incapacitation__, __mental__) DC 29, The vrykolakas can cast __dominate__ at
+    will as a divine innate spell that affects only animals. A creature that succeeds
+    is immune to that vrykolakas''s Dominate Animal for 24 hours. Destroying the vrykolakas
+    ends the effect, but reducing it to 0 HP does not. A dominated animal takes a
+    –4 circumstance penalty to saving throws against the vrykolakas''s Feral Possession.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - enchantment
+  - incapacitation
+  - mental
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: 'The vrykolakas sinks its fangs into that creature to drink its blood. This
+    requires an __Athletics__ check against the creature''s Fortitude DC. On a success,
+    the creature becomes __drained 2__, and the vrykolakas regains 19 HP, gaining
+    any excess HP as temporary Hit Points. Drinking Blood from a creature that''s
+    already drained doesn''t restore any HP to the vampire, but it increases the creature''s
+    drained condition value by 1. A vrykolakas can also consume blood that''s been
+    emptied into a vessel for sustenance, but it gains no HP from doing so.
+
+
+    The target creature''s drained condition value decreases by 1 per week. A blood
+    transfusion, which requires a successful DC 20 Medicine check and sufficient blood
+    or a blood donor, reduces the drained value by 1 after 10 minutes.'
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drink Blood
+  range: null
+  raw_description: '**Drink Blood** [One Action]  (__divine__, __necromancy__) **Requirements**
+    The vrykolakas'' last action was a successful fangs Strike; **Effect** The vrykolakas
+    sinks its fangs into that creature to drink its blood. This requires an __Athletics__
+    check against the creature''s Fortitude DC. On a success, the creature becomes
+    __drained 2__, and the vrykolakas regains 19 HP, gaining any excess HP as temporary
+    Hit Points. Drinking Blood from a creature that''s already drained doesn''t restore
+    any HP to the vampire, but it increases the creature''s drained condition value
+    by 1. A vrykolakas can also consume blood that''s been emptied into a vessel for
+    sustenance, but it gains no HP from doing so.
+
+
+    The target creature''s drained condition value decreases by 1 per week. A blood
+    transfusion, which requires a successful DC 20 Medicine check and sufficient blood
+    or a blood donor, reduces the drained value by 1 after 10 minutes.'
+  requirements: The vrykolakas' last action was a successful fangs Strike
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**__Rend__** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 5 feet, DC 29. Creatures beginning their turn in the area while the
-    vrykolakas is in its true form are exposed to __bubonic plague__.
+  description: . Creatures beginning their turn in the area while the vrykolakas is
+    in its true form are exposed to __bubonic plague__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Pestilential Aura
-  range: null
+  range: 5 feet
   raw_description: '**Pestilential Aura** (__aura__, __divine__, __necromancy__) 5
     feet, DC 29. Creatures beginning their turn in the area while the vrykolakas is
     in its true form are exposed to __bubonic plague__.'
   requirements: null
+  saving_throw: DC 29
+  stages: null
   success: null
   traits:
   - aura
@@ -35,67 +197,28 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Vrykolakas all have the following vulnerabilities.
+  description: "Vrykolakas all have the following vulnerabilities.\n\n  * **Burial\
+    \ Site Bound** A vrykolakas is bound to the place of its death or interment. It\
+    \ must return to this location once per week and bury itself in the earth for\
+    \ 24 hours, during which time it is __paralyzed__ and can be beheaded. If it is\
+    \ unable to return to this site, it is reduced to 0 Hit Points and attempts to\
+    \ use Feral Corruption; if this host animal can't return to the burial site before\
+    \ the possession effect ends, the vrykolakas is destroyed and the animal host\
+    \ returns to normal.\n\n  * **Vulnerable to Decapitation** A vrykolakas that is\
+    \ beheaded can't use its Feral Possession, and a beheaded corpse cannot rise as\
+    \ a vrykolakas."
   effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: A vrykolakas is bound to the place of its death or interment. It
-      must return to this location once per week and bury itself in the earth for
-      24 hours, during which time it is __paralyzed__ and can be beheaded. If it is
-      unable to return to this site, it is reduced to 0 Hit Points and attempts to
-      use Feral Corruption; if this host animal can't return to the burial site before
-      the possession effect ends, the vrykolakas is destroyed and the animal host
-      returns to normal.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Burial Site Bound
-    range: null
-    raw_description: '**Burial Site Bound** A vrykolakas is bound to the place of
-      its death or interment. It must return to this location once per week and bury
-      itself in the earth for 24 hours, during which time it is __paralyzed__ and
-      can be beheaded. If it is unable to return to this site, it is reduced to 0
-      Hit Points and attempts to use Feral Corruption; if this host animal can''t
-      return to the burial site before the possession effect ends, the vrykolakas
-      is destroyed and the animal host returns to normal.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: A vrykolakas that is beheaded can't use its Feral Possession, and
-      a beheaded corpse cannot rise as a vrykolakas.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Vulnerable to Decapitation
-    range: null
-    raw_description: '**Vulnerable to Decapitation** A vrykolakas that is beheaded
-      can''t use its Feral Possession, and a beheaded corpse cannot rise as a vrykolakas.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vrykolakas Vulnerabilities
   range: null
   raw_description: "**Vrykolakas Vulnerabilities** Vrykolakas all have the following\
-    \ vulnerabilities. \n\n  * **Burial Site Bound** A vrykolakas is bound to the\
-    \ place of its death or interment. It must return to this location once per week\
-    \ and bury itself in the earth for 24 hours, during which time it is __paralyzed__\
+    \ vulnerabilities.\n\n  * **Burial Site Bound** A vrykolakas is bound to the place\
+    \ of its death or interment. It must return to this location once per week and\
+    \ bury itself in the earth for 24 hours, during which time it is __paralyzed__\
     \ and can be beheaded. If it is unable to return to this site, it is reduced to\
     \ 0 Hit Points and attempts to use Feral Corruption; if this host animal can't\
     \ return to the burial site before the possession effect ends, the vrykolakas\
@@ -103,6 +226,8 @@ automatic_abilities:
     \ A vrykolakas that is beheaded can't use its Feral Possession, and a beheaded\
     \ corpse cannot rise as a vrykolakas."
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -131,21 +256,22 @@ automatic_abilities:
     to normal. After 1d4 days, if the vrykolakas hasn''t been destroyed, the animal
     dies and the vrykolakas rises in a new body that''s identical to its previous
     one, formed from the animal''s remains.'
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Feral Possession
   range: null
   raw_description: '**Feral Possession [Free Action]** (__curse__, __divine__, __incapacitation__,
-    __mental__, __necromancy__, __possession__) **Trigger** The vrykolakas is reduced
-    to 0 Hit Points, and an __animal__ is within 100 feet **Effect** Unlike most other
-    undead, a vrykolakas isn''t destroyed when it reaches 0 HP. Instead, it attempts
-    to cast its spirit into an animal within 100 feet, which must attempt a Will save
-    (DC 29). On a failure, the animal is possessed. This has the effects of the __possession__
-    spell, but it lasts a number of days equal to the vrykolakas''s level. This possession
-    can''t be counteracted with magic (though __remove curse__ works against it normally).
+    __mental__, __necromancy__, __possession **Trigger** The vrykolakas is reduced
+    to 0 Hit Points__, __and an __animal__ is within 100 feet__) **Effect** Unlike
+    most other undead, a vrykolakas isn''t destroyed when it reaches 0 HP. Instead,
+    it attempts to cast its spirit into an animal within 100 feet, which must attempt
+    a Will save (DC 29). On a failure, the animal is possessed. This has the effects
+    of the __possession__ spell, but it lasts a number of days equal to the vrykolakas''s
+    level. This possession can''t be counteracted with magic (though __remove curse__
+    works against it normally).
 
 
     If the animal succeeds at its save, the vrykolakas can attempt to possess a different
@@ -162,6 +288,8 @@ automatic_abilities:
     dies and the vrykolakas rises in a new body that''s identical to its previous
     one, formed from the animal''s remains.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - curse
@@ -169,9 +297,10 @@ automatic_abilities:
   - incapacitation
   - mental
   - necromancy
-  - possession
-  trigger: The vrykolakas is reduced to 0 Hit Points, and an __animal__ is within
-    100 feet
+  - possession Trigger The vrykolakas is reduced to 0 Hit Points
+  - and an animal is within 100 feet
+  trigger: The vrykolakas is reduced to 0 Hit Points, and an animal is within 100
+    feet)
 description: 'Vrykolakas masters are sinister shapechangers. They walk undetected
   among the living and prey upon them like a wolf among sheep, often leaving the corpses
   to rise as vrykolakas spawn.
@@ -183,16 +312,15 @@ description: 'Vrykolakas masters are sinister shapechangers. They walk undetecte
 hp: 190
 hp_misc: negative healing
 immunities:
-- death effects
-- disease
-- paralyze
-- poison
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyze</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Common
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+13
@@ -214,153 +342,7 @@ melee:
   - agile
 name: Vrykolakas Master
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: A vrykolakas master can transform into a form resembling the body it
-    had in life, with the effects of __humanoid form__ but with unlimited duration.
-    It loses its fangs and claw Strikes but gains a +2 circumstance bonus to Deception
-    checks to Impersonate in this form.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __divine__, __polymorph__,
-    __transmutation__) A vrykolakas master can transform into a form resembling the
-    body it had in life, with the effects of __humanoid form__ but with unlimited
-    duration. It loses its fangs and claw Strikes but gains a +2 circumstance bonus
-    to Deception checks to Impersonate in this form.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If a creature dies after being reduced to 0 HP by Drink Blood, a vrykolakas
-    master can turn this creature into a __vrykolakas spawn__ by donating some of
-    its own blood to the creature and burying it in earth for 3 nights. Such vrykolakas
-    spawn are generally friendly to the vrykolakas that created them, but they are
-    not under its control and typically wander off on their own rampage within 1d6
-    days of their creation.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Create Spawn
-  range: null
-  raw_description: '**Create Spawn** (__divine__, __downtime__, __necromancy__) If
-    a creature dies after being reduced to 0 HP by Drink Blood, a vrykolakas master
-    can turn this creature into a __vrykolakas spawn__ by donating some of its own
-    blood to the creature and burying it in earth for 3 nights. Such vrykolakas spawn
-    are generally friendly to the vrykolakas that created them, but they are not under
-    its control and typically wander off on their own rampage within 1d6 days of their
-    creation.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - downtime
-  - necromancy
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: DC 29, The vrykolakas can cast __dominate__ at will as a divine innate
-    spell that affects only animals. A creature that succeeds is immune to that vrykolakas's
-    Dominate Animal for 24 hours. Destroying the vrykolakas ends the effect, but reducing
-    it to 0 HP does not. A dominated animal takes a -4 circumstance penalty to saving
-    throws against the vrykolakas's Feral Possession.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dominate Animal
-  range: null
-  raw_description: '**Dominate Animal**   (__divine__, __enchantment__, __incapacitation__,
-    __mental__) DC 29, The vrykolakas can cast __dominate__ at will as a divine innate
-    spell that affects only animals. A creature that succeeds is immune to that vrykolakas''s
-    Dominate Animal for 24 hours. Destroying the vrykolakas ends the effect, but reducing
-    it to 0 HP does not. A dominated animal takes a -4 circumstance penalty to saving
-    throws against the vrykolakas''s Feral Possession.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - enchantment
-  - incapacitation
-  - mental
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The vrykolakas' last action was a successful fangs Strike
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drink Blood
-  range: null
-  raw_description: '**Drink Blood**   (__divine__, __necromancy__) **Requirements**
-    The vrykolakas'' last action was a successful fangs Strike; **Effect** The vrykolakas
-    sinks its fangs into that creature to drink its blood. This requires an __Athletics__
-    check against the creature''s Fortitude DC. On a success, the creature becomes
-    __drained 2__, and the vrykolakas regains 19 HP, gaining any excess HP as temporary
-    Hit Points. Drinking Blood from a creature that''s already drained doesn''t restore
-    any HP to the vampire, but it increases the creature''s drained condition value
-    by 1. A vrykolakas can also consume blood that''s been emptied into a vessel for
-    sustenance, but it gains no HP from doing so.
-
-
-    The target creature''s drained condition value decreases by 1 per week. A blood
-    transfusion, which requires a successful DC 20 Medicine check and sufficient blood
-    or a blood donor, reduces the drained value by 1 after 10 minutes.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 19
   fort_misc: null
@@ -378,11 +360,11 @@ sense_abilities:
     and similar creatures. The vrykolakas master can give telepathic orders to these
     creatures within 100 feet, but they can't communicate back.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Children of the Night
   range: null
   raw_description: '**Children of the Night** (__divine__, __enchantment__, __mental__)
@@ -391,6 +373,8 @@ sense_abilities:
     creatures. The vrykolakas master can give telepathic orders to these creatures
     within 100 feet, but they can''t communicate back.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -402,72 +386,70 @@ sense_abilities:
   critical_success: null
   description: The vrykolakas moves at full Speed while __Tracking__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Swift Tracker
   range: null
   raw_description: '**Swift Tracker** The vrykolakas moves at full Speed while __Tracking__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +19
 - darkvision
 size: Medium
 skills:
 - bonus: 19
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 23
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 21
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 21
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 276
+  page_start: '276'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists:
-- dc: 29
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 29
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: vampiric touch
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: fear
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- NE
-- Medium
 - Undead
 - Vampire
-type: Creature
-weaknesses: null

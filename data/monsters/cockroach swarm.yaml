@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 0
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each enemy in the swarm's space takes 1d8 piercing damage (DC 18 basic
+    Reflex save).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarming Bites
+  range: null
+  raw_description: '**Swarming Bites** [One Action]  Each enemy in the swarm''s space
+    takes 1d8 piercing damage (DC 18 basic Reflex save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'While cockroaches tend to gather in cramped spaces, a disturbed colony
@@ -26,43 +48,22 @@ hp: 20
 hp_misc: null
 immunities:
 - precision
-- swarm mind
-items: null
-languages: null
+- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
 level: 2
-melee: null
+melee_attacks: null
 name: Cockroach Swarm
 perception: 6
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Each enemy in the swarm's space takes 1d8 piercing damage (DC 18 basic
-    Reflex save).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swarming Bites
-  range: null
-  raw_description: '**Swarming Bites**   Each enemy in the swarm''s space takes 1d8
-    piercing damage (DC 18 basic Reflex save).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 2
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: piercing
 - amount: 5
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -71,39 +72,39 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 - scent (imprecise) 60 feet
 size: Small
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 53
+  page_start: '53'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 - amount: 15
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
 - Swarm
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: area damage
 - amount: 5
+  misc: null
   type: splash damage

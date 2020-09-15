@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The drow fighter draws a weapon using the __Interact__ action, then
+    Strikes with that weapon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Draw
+  range: null
+  raw_description: '**Quick Draw** [One Action]  The drow fighter draws a weapon using
+    the __Interact__ action, then Strikes with that weapon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The drow fighter Strikes with its rapier, and gains a +1 circumstance
+    bonus to the attack roll. A creature damaged by the attack takes 1d6 __persistent__
+    __bleed damage__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Skewer
+  range: null
+  raw_description: '**Skewer** [Two Actions]  The drow fighter Strikes with its rapier,
+    and gains a +1 circumstance bonus to the attack roll. A creature damaged by the
+    attack takes 1d6 __persistent__ __bleed damage__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +63,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +78,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -57,7 +104,7 @@ languages:
 - Elven
 - Undercommon
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -84,48 +131,7 @@ melee:
   - versatile S
 name: Drow Fighter
 perception: 6
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The drow fighter draws a weapon using the __Interact__ action, then
-    Strikes with that weapon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quick Draw
-  range: null
-  raw_description: '**Quick Draw**   The drow fighter draws a weapon using the __Interact__
-    action, then Strikes with that weapon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The drow fighter Strikes with its rapier, and gains a +1 circumstance
-    bonus to the attack roll. A creature damaged by the attack takes 1d6 __persistent__
-    __bleed damage__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Skewer
-  range: null
-  raw_description: '**Skewer** [Two Actions]  The drow fighter Strikes with its rapier,
-    and gains a +1 circumstance bonus to the attack roll. A creature damaged by the
-    attack takes 1d6 __persistent__ __bleed damage__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -138,9 +144,6 @@ ranged:
   traits:
   - range increment 60 feet
   - reload 1
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -153,76 +156,66 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '
-
-
-    '
+  description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Light Blindness
   range: null
-  raw_description: '**Light Blindness**
-
-
-    '
+  raw_description: '**Light Blindness**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 3
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 136
+  page_start: '136'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists:
-- dc: 14
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-    - frequency: at will
-      name: faerie fire
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 14
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: at will
+      name: darkness
+    - misc: at will
+      name: faerie fire
+  spells_source: Divine Innate Spells
 traits:
-- CE
-- Medium
 - Drow
 - Elf
 - Humanoid
-type: Creature
-weaknesses: null

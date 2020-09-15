@@ -7,6 +7,55 @@ ability_mods:
   wis_mod: 3
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The babau attacks with the intent of creating a particularly horrific
+    and gory wound. The babau makes a melee Strike. This counts as two attacks when
+    calculating the daemon's multiple attack penalty. If this Strike hits, the babau
+    deals an additional 2d6 damage of the same damage type, and the creature struck
+    is __frightened 2__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Grievous Strike
+  range: null
+  raw_description: '**Grievous Strike** [Two Actions]  The babau attacks with the
+    intent of creating a particularly horrific and gory wound. The babau makes a melee
+    Strike. This counts as two attacks when calculating the daemon''s multiple attack
+    penalty. If this Strike hits, the babau deals an additional 2d6 damage of the
+    same damage type, and the creature struck is __frightened 2__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The babau's Strikes deal an extra 2d6 precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The babau''s Strikes deal an extra 2d6 precision
+    damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -17,11 +66,11 @@ automatic_abilities:
     Grievous Strike, sneak attack, or a critical hit, the demon takes 4d6 __mental__
     damage. The babau can take this mental damage only once per round.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Mercy Vulnerability
   range: null
   raw_description: '**Mercy Vulnerability** Babaus revel in gore, and when wounds
@@ -30,6 +79,8 @@ automatic_abilities:
     the demon takes 4d6 __mental__ damage. The babau can take this mental damage only
     once per round.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -39,11 +90,11 @@ automatic_abilities:
   description: null
   effect: The babau excretes a gout of acidic, bloodlike slime against the attacker
     and its weapon. The attacker must attempt a DC 24 Reflex save.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Reactive Slime
   range: null
   raw_description: '**Reactive Slime [Reaction]** **Trigger **A creature within the
@@ -51,24 +102,28 @@ automatic_abilities:
     excretes a gout of acidic, bloodlike slime against the attacker and its weapon.
     The attacker must attempt a DC 24 Reflex save.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within the babau's reach successfully hits the babau with a
-    Strike
+    Strike;
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The attacker is unaffected.
   description: The attacker is unaffected.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Success
   range: null
   raw_description: '**Critical Success **The attacker is unaffected.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -77,16 +132,18 @@ automatic_abilities:
   critical_success: null
   description: The attacker takes 1d6 acid damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Success
   range: null
   raw_description: '**Success **The attacker takes 1d6 acid damage.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The attacker takes 1d6 acid damage.
   traits: null
   trigger: null
 - action_cost: None
@@ -94,35 +151,40 @@ automatic_abilities:
   critical_success: null
   description: The attacker takes 2d6 acid damage.
   effect: null
-  effects: null
-  failure: null
+  failure: The attacker takes 2d6 acid damage.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Failure
   range: null
   raw_description: '**Failure **The attacker takes 2d6 acid damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: As failure, except the weapon used to Strike the babau becomes
+    __broken__, unless the weapon is made of a material that is immune to acid.
   critical_success: null
   description: As failure, except the weapon used to Strike the babau becomes __broken__,
     unless the weapon is made of a material that is immune to acid.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Failure
   range: null
   raw_description: '**Critical Failure **As failure, except the weapon used to Strike
     the babau becomes __broken__, unless the weapon is made of a material that is
     immune to acid.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -137,7 +199,6 @@ description: 'The babau is an assassin, a murderer, and a sadist—certainly not
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 22'
 hp: 130
 hp_misc: null
-immunities: null
 items:
 - +1 longspear
 languages:
@@ -146,15 +207,15 @@ languages:
 - Draconic
 - telepathy 100 feet
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+7
     type: piercing
   name: longspear
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 17
   traits:
   - evil
@@ -166,8 +227,8 @@ melee:
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 16
   traits:
   - evil
@@ -178,8 +239,8 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 16
   traits:
   - agile
@@ -187,68 +248,11 @@ melee:
   - magical
 name: Babau
 perception: 13
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The babau attacks with the intent of creating a particularly horrific
-    and gory wound. The babau makes a melee Strike. This counts as two attacks when
-    calculating the daemon's multiple attack penalty. If this Strike hits, the babau
-    deals an additional 2d6 damage of the same damage type, and the creature struck
-    is __frightened 2__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Grievous Strike
-  range: null
-  raw_description: '**Grievous Strike** [Two Actions]  The babau attacks with the
-    intent of creating a particularly horrific and gory wound. The babau makes a melee
-    Strike. This counts as two attacks when calculating the daemon''s multiple attack
-    penalty. If this Strike hits, the babau deals an additional 2d6 damage of the
-    same damage type, and the creature struck is __frightened 2__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The babau's Strikes deal an extra 2d6 precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The babau''s Strikes deal an extra 2d6 precision
-    damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
-  type: acid
-ritual_lists:
-- dc: 24
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: abyssal pact
-      requirement: null
-  to_hit: null
+  type: acid
 saves:
   fort: 14
   fort_misc: null
@@ -257,76 +261,81 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 - see invisibility
 size: Medium
 skills:
 - bonus: 12
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 10
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 16
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 14
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 64
+  page_start: '64'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 24
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 5
     spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: darkness
-      requirement: null
-  - heightened_level: 5
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: see invisibility
-      requirement: null
-  to_hit: null
+  dc: 24
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+  - level: 2
+    spells:
+    - misc: null
+      name: darkness
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 24
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: abyssal pact
+  spells_source: Rituals
 traits:
-- CE
-- Medium
 - Demon
 - Fiend
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron
 - amount: 5
+  misc: null
   type: good

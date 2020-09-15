@@ -7,6 +7,172 @@ ability_mods:
   wis_mod: 3
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Medium human with fist +13 for 1d4+7 bludgeoning, or grizzly bear with
+    Speed 35 feet.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) Medium human with fist +13 for 1d4+7 bludgeoning,
+    or grizzly bear with Speed 35 feet.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: This curse affects only humanoids. **Saving Throw** DC 22 Fortitude
+    save. On each full moon, the cursed creature must succeed at another Fortitude
+    save or turn into a werebear until dawn. The creature is under the GM's control
+    and goes on a rampage for half the night before falling unconscious until dawn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Curse of the Werebear
+  range: null
+  raw_description: '**Curse of the Werebear** (__curse__, __necromancy__, __primal__)
+    This curse affects only humanoids. **Saving Throw** DC 22 Fortitude save. On each
+    full moon, the cursed creature must succeed at another Fortitude save or turn
+    into a werebear until dawn. The creature is under the GM''s control and goes on
+    a rampage for half the night before falling unconscious until dawn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - necromancy
+  - primal
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The werebear gains a +2 circumstance bonus to Perception checks when it
+    Seeks its prey and a +2 circumstance bonus to Survival checks when it Tracks its
+    prey. The werebear also ignores the penalty for making ranged attacks within its
+    second range increment against the prey it's hunting. The werebear can designate
+    only one creature as its hunted prey at a time. If it uses Hunt Prey against a
+    different creature, the prior creature loses the designation and the new prey
+    gains the designation. In any case, this designation lasts until the werebear's
+    next daily preparation.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hunt Prey
+  range: null
+  raw_description: '**Hunt Prey** [One Action]  (__concentrate__) **Requirements**
+    The werebear can see or hear the target or is Tracking it in exploration mode.
+    **Effect** The werebear gains a +2 circumstance bonus to Perception checks when
+    it Seeks its prey and a +2 circumstance bonus to Survival checks when it Tracks
+    its prey. The werebear also ignores the penalty for making ranged attacks within
+    its second range increment against the prey it''s hunting. The werebear can designate
+    only one creature as its hunted prey at a time. If it uses Hunt Prey against a
+    different creature, the prior creature loses the designation and the new prey
+    gains the designation. In any case, this designation lasts until the werebear''s
+    next daily preparation.'
+  requirements: The werebear can see or hear the target or is Tracking it in exploration
+    mode.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The werebear gains a +2 circumstance bonus to damage rolls against
+    creatures it has grabbed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mauler
+  range: null
+  raw_description: '**Mauler** The werebear gains a +2 circumstance bonus to damage
+    rolls against creatures it has grabbed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a full moon appears in the night sky, the werebear must enter
+    hybrid form, can't Change Shape thereafter, becomes one size larger, increases
+    its reach by 5 feet, and increases the damage of its jaws by 2. When the moon
+    sets or the sun rises, the werebear returns to humanoid form and is fatigued for
+    2d4 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Moon Frenzy
+  range: null
+  raw_description: '**Moon Frenzy** (__polymorph__, __primal__, __transmutation__)
+    When a full moon appears in the night sky, the werebear must enter hybrid form,
+    can''t Change Shape thereafter, becomes one size larger, increases its reach by
+    5 feet, and increases the damage of its jaws by 2. When the moon sets or the sun
+    rises, the werebear returns to humanoid form and is fatigued for 2d4 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The werebear deals 1d8 additional precision damage on its first successful
+    Strike against its hunted target on each of its turns.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Precision Edge
+  range: null
+  raw_description: '**Precision Edge** The werebear deals 1d8 additional precision
+    damage on its first successful Strike against its hunted target on each of its
+    turns.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LG
 automatic_abilities: null
 description: 'Unlike many other types of werecreature, a werebear does not become
@@ -30,7 +196,6 @@ description: 'Unlike many other types of werecreature, a werebear does not becom
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 21'
 hp: 75
 hp_misc: null
-immunities: null
 items:
 - chain shirt
 - greataxe
@@ -39,7 +204,7 @@ languages:
 - Common
 - bear empathy
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+7
@@ -85,154 +250,7 @@ melee:
   - reach 10 feet
 name: Werebear
 perception: 11
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Medium human with fist +13 for 1d4+7 bludgeoning, or grizzly bear with
-    Speed 35 feet.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __polymorph__, __primal__,
-    __transmutation__) Medium human with fist +13 for 1d4+7 bludgeoning, or grizzly
-    bear with Speed 35 feet.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: This curse affects only humanoids. **Saving Throw** DC 22 Fortitude
-    save. On each full moon, the cursed creature must succeed at another Fortitude
-    save or turn into a werebear until dawn. The creature is under the GM's control
-    and goes on a rampage for half the night before falling unconscious until dawn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Curse of the Werebear
-  range: null
-  raw_description: '**Curse of the Werebear** (__curse__, __necromancy__, __primal__)
-    This curse affects only humanoids. **Saving Throw** DC 22 Fortitude save. On each
-    full moon, the cursed creature must succeed at another Fortitude save or turn
-    into a werebear until dawn. The creature is under the GM''s control and goes on
-    a rampage for half the night before falling unconscious until dawn.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - necromancy
-  - primal
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The werebear can see or hear the target or is Tracking it in exploration
-    mode.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hunt Prey
-  range: null
-  raw_description: '**Hunt Prey**   (__concentrate__) **Requirements** The werebear
-    can see or hear the target or is Tracking it in exploration mode. **Effect** The
-    werebear gains a +2 circumstance bonus to Perception checks when it Seeks its
-    prey and a +2 circumstance bonus to Survival checks when it Tracks its prey. The
-    werebear also ignores the penalty for making ranged attacks within its second
-    range increment against the prey it''s hunting. The werebear can designate only
-    one creature as its hunted prey at a time. If it uses Hunt Prey against a different
-    creature, the prior creature loses the designation and the new prey gains the
-    designation. In any case, this designation lasts until the werebear''s next daily
-    preparation.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The werebear gains a +2 circumstance bonus to damage rolls against
-    creatures it has grabbed.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mauler
-  range: null
-  raw_description: '**Mauler** The werebear gains a +2 circumstance bonus to damage
-    rolls against creatures it has grabbed.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a full moon appears in the night sky, the werebear must enter
-    hybrid form, can't Change Shape thereafter, becomes one size larger, increases
-    its reach by 5 feet, and increases the damage of its jaws by 2. When the moon
-    sets or the sun rises, the werebear returns to humanoid form and is fatigued for
-    2d4 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Moon Frenzy
-  range: null
-  raw_description: '**Moon Frenzy** (__polymorph__, __primal__, __transmutation__)
-    When a full moon appears in the night sky, the werebear must enter hybrid form,
-    can''t Change Shape thereafter, becomes one size larger, increases its reach by
-    5 feet, and increases the damage of its jaws by 2. When the moon sets or the sun
-    rises, the werebear returns to humanoid form and is fatigued for 2d4 hours.'
-  requirements: null
-  success: null
-  traits:
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The werebear deals 1d8 additional precision damage on its first successful
-    Strike against its hunted target on each of its turns.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Precision Edge
-  range: null
-  raw_description: '**Precision Edge** The werebear deals 1d8 additional precision
-    damage on its first successful Strike against its hunted target on each of its
-    turns.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+7
@@ -245,8 +263,6 @@ ranged:
   - sweep
   - thrown 10 feet
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -259,67 +275,60 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The werebear can communicate with ursines.
-
-
-    '
+  description: The werebear can communicate with ursines.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Bear Empathy
   range: null
   raw_description: '**Bear Empathy** (__divination__, __primal__) The werebear can
-    communicate with ursines.
-
-
-    '
+    communicate with ursines.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
   - primal
   trigger: null
 senses:
-- Perception +11
 - low-light vision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 12
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 11
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 11
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 11
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 331
+  page_start: '331'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- LG
-- Large
 - Beast
 - Human
 - Humanoid
 - Werecreature
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: silver

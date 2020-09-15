@@ -7,6 +7,74 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Nine lantern archons can use this activity, all within 1 round of the
+    first, to merge together to form a composite being for 7 rounds that appears as
+    a glowing warrior of light. The gestalt has the base statistics of a legion archon
+    (AC, saving throws, attacks, skills, Speeds, and so on) but the spells and special
+    abilities of a lantern archon. Additionally, it has a ranged light ray Strike
+    (+18 attack, **Damage** 3d4 fire and 3d4 good), and the bonus from its Lantern
+    of Hope increases to +3. When the gestalt separates, its remaining Hit Points
+    are divided evenly among the lantern archons, and if the gestalt had fewer than
+    9 HP, some of the lantern archons die.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Gestalt
+  range: null
+  raw_description: '**Gestalt** [Three Actions]  (__concentrate__, __divine__, __transmutation__)
+    Nine lantern archons can use this activity, all within 1 round of the first, to
+    merge together to form a composite being for 7 rounds that appears as a glowing
+    warrior of light. The gestalt has the base statistics of a legion archon (AC,
+    saving throws, attacks, skills, Speeds, and so on) but the spells and special
+    abilities of a lantern archon. Additionally, it has a ranged light ray Strike
+    (+18 attack, **Damage** 3d4 fire and 3d4 good), and the bonus from its Lantern
+    of Hope increases to +3. When the gestalt separates, its remaining Hit Points
+    are divided evenly among the lantern archons, and if the gestalt had fewer than
+    9 HP, some of the lantern archons die.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - transmutation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The lantern archon shines as a beacon of hope. Good allies within 30
+    feet gain a +1 status bonus to damage rolls and to saving throws against __crushing
+    despair__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Lantern of Hope
+  range: null
+  raw_description: '**Lantern of Hope** [One Action]  (__concentrate__, __divine__,
+    __enchantment__, __mental__) The lantern archon shines as a beacon of hope. Good
+    allies within 30 feet gain a +1 status bonus to damage rolls and to saving throws
+    against __crushing despair__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - enchantment
+  - mental
+  trigger: null
 alignment: LG
 automatic_abilities:
 - action_cost: Reaction
@@ -15,16 +83,18 @@ automatic_abilities:
   description: A lantern archon can also make a Retributive Strike with its light
     ray.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Retributive Strike
   range: null
   raw_description: '**Retributive Strike** [Reaction] A lantern archon can also make
     a Retributive Strike with its light ray.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -42,89 +112,23 @@ description: "Friendly, curious, and eternally optimistic, lantern archons embod
   \ DC 15"
 hp: 20
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Celestial
 - Draconic
 - Infernal
 level: 1
-melee: null
+melee_attacks: null
 name: Lantern Archon
 perception: 6
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Nine lantern archons can use this activity, all within 1 round of the
-    first, to merge together to form a composite being for 7 rounds that appears as
-    a glowing warrior of light. The gestalt has the base statistics of a legion archon
-    (AC, saving throws, attacks, skills, Speeds, and so on) but the spells and special
-    abilities of a lantern archon. Additionally, it has a ranged light ray Strike
-    (+18 attack, **Damage** 3d4 fire and 3d4 good), and the bonus from its Lantern
-    of Hope increases to +3. When the gestalt separates, its remaining Hit Points
-    are divided evenly among the lantern archons, and if the gestalt had fewer than
-    9 HP, some of the lantern archons die.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Gestalt
-  range: null
-  raw_description: '**Gestalt** [Three Actions]  (__concentrate__, __divine__, __transmutation__)
-    Nine lantern archons can use this activity, all within 1 round of the first, to
-    merge together to form a composite being for 7 rounds that appears as a glowing
-    warrior of light. The gestalt has the base statistics of a legion archon (AC,
-    saving throws, attacks, skills, Speeds, and so on) but the spells and special
-    abilities of a lantern archon. Additionally, it has a ranged light ray Strike
-    (+18 attack, **Damage** 3d4 fire and 3d4 good), and the bonus from its Lantern
-    of Hope increases to +3. When the gestalt separates, its remaining Hit Points
-    are divided evenly among the lantern archons, and if the gestalt had fewer than
-    9 HP, some of the lantern archons die.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - transmutation
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The lantern archon shines as a beacon of hope. Good allies within 30
-    feet gain a +1 status bonus to damage rolls and to saving throws against __crushing
-    despair__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Lantern of Hope
-  range: null
-  raw_description: '**Lantern of Hope**   (__concentrate__, __divine__, __enchantment__,
-    __mental__) The lantern archon shines as a beacon of hope. Good allies within
-    30 feet gain a +1 status bonus to damage rolls and to saving throws against __crushing
-    despair__.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - enchantment
-  - mental
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: fire
+    formula: null
+    type: 1d4 fire
   name: light ray
   plus_damage:
-  - formula: 1d4
-    type: good
+  - formula: null
+    type: 1d4 good
   to_hit: 8
   traits:
   - agile
@@ -132,11 +136,10 @@ ranged:
   - fire
   - magical
   - range 30 feet
-rarity: Common
 resistances:
 - amount: 3
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -145,61 +148,54 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Small
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 6
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: Bestiary
-  page_start: 26
+  page_start: '26'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 17
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
-      name: read omens
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will, evil only
-      name: detect alignment
-      requirement: null
-    - frequency: null
-      name: heal
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: read omens
+  - level: 1
+    spells:
+    - misc: at will; evil only
+      name: detect alignment
+    - misc: null
+      name: heal
+  spells_source: Divine Innate Spells
 traits:
-- LG
-- Small
 - Archon
 - Celestial
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: evil

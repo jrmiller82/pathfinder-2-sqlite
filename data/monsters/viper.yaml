@@ -7,6 +7,29 @@ ability_mods:
   wis_mod: 1
 ac: 15
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 4 rounds
+  name: Viper Venom
+  range: null
+  raw_description: '**Viper Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
+    **Maximum Duration** 4 rounds; **Stage 1** 1d8 poison (1 round).'
+  requirements: null
+  saving_throw: DC 16 Fortitude
+  stages:
+  - effect: 1d8 poison (1 round).
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -16,11 +39,11 @@ automatic_abilities:
   effect: The viper Strides, Climbs, or Swims up to 10 feet (or up to the relevant
     Speed, if that Speed is less than 10 feet). It must end its movement in a location
     that isn't within 5 feet of a foe. This movement doesn't trigger reactions.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Slink
   range: null
   raw_description: '**Slink** [Reaction] **Trigger** A creature ends its movement
@@ -29,6 +52,8 @@ automatic_abilities:
     less than 10 feet). It must end its movement in a location that isn''t within
     5 feet of a foe. This movement doesn''t trigger reactions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature ends its movement adjacent to the viper or within the viper's
@@ -44,15 +69,12 @@ description: 'Each member of this family of venomous snakes has long, hinged fan
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 13'
 hp: 8
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8-3
-    type: piercing
+    formula: null
+    type: 1d8–3 piercing
   name: fangs
   plus_damage:
   - formula: null
@@ -63,33 +85,7 @@ melee:
   - finesse
 name: Viper
 perception: 5
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 16 Fortitude; **Maximum Duration** 4 rounds; **Stage
-    1** 1d8 poison (1 round).'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Viper Venom
-  range: null
-  raw_description: '**Viper Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
-    **Maximum Duration** 4 rounds; **Stage 1** 1d8 poison (1 round).'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 2
   fort_misc: null
@@ -98,40 +94,37 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - low-light vision
 - scent (imprecise) 30 feet
 size: Tiny
 skills:
 - bonus: 5
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 1
   misc: +4 to Climb
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 3
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 302
+  page_start: '302'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Tiny
 - Animal
-type: Creature
-weaknesses: null

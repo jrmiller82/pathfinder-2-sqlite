@@ -7,54 +7,103 @@ ability_mods:
   wis_mod: 2
 ac: 35
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: 'The calikang breathes a blast of energy that deals 13d6 energy damage to
+    all creatures in a 60-foot line (DC 28 basic Reflex save). The calikang can choose
+    the damage type each time: acid, cold, electricity, fire, or sonic. Increase the
+    die size to d8 if the calikang chooses electricity.'
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__acid__, __arcane__, __cold__,
+    __electricity__, __evocation__, __fire__, __sonic__) **Frequency** once per day;
+    **Effect** The calikang breathes a blast of energy that deals 13d6 energy damage
+    to all creatures in a 60-foot line (DC 28 basic Reflex save). The calikang can
+    choose the damage type each time: acid, cold, electricity, fire, or sonic. Increase
+    the die size to d8 if the calikang chooses electricity.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - acid
+  - arcane
+  - cold
+  - electricity
+  - evocation
+  - fire
+  - sonic
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The calikang makes up to six fist Strikes. Each Strike can be against
+    a different target. These attacks count toward its multiple attack penalty, which
+    doesn't increase until after all the attacks are complete.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sixfold Flurry
+  range: null
+  raw_description: '**Sixfold Flurry** [Two Actions]  The calikang makes up to six
+    fist Strikes. Each Strike can be against a different target. These attacks count
+    toward its multiple attack penalty, which doesn''t increase until after all the
+    attacks are complete.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LN
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: A calikang gains a circumstance bonus to its AC equal to the number
-    of its hands that aren't wielding weapons, to a maximum of +4 (this bonus is already
-    factored into this calikang's stats).
+  description: 'A calikang gains a circumstance bonus to its AC equal to the number
+    of its hands that aren''t wielding weapons, to a maximum of +4 (this bonus is
+    already factored into this calikang''s stats).
+
+
+    **Energy Conversion** (__abjuration__, __arcane__) Whenever the calikang is hit
+    by an electricity spell or rolls a successful save against a spell that deals
+    energy damage, it absorbs the energy. This heals the calikang for an amount of
+    HP equal to quadruple the spell''s level, and recharges its Breath Weapon. A calikang
+    can''t absorb its own spells this way.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Defensive Stance
   range: null
   raw_description: '**Defensive Stance** A calikang gains a circumstance bonus to
     its AC equal to the number of its hands that aren''t wielding weapons, to a maximum
-    of +4 (this bonus is already factored into this calikang''s stats).'
+    of +4 (this bonus is already factored into this calikang''s stats).
+
+
+    **Energy Conversion** (__abjuration__, __arcane__) Whenever the calikang is hit
+    by an electricity spell or rolls a successful save against a spell that deals
+    energy damage, it absorbs the energy. This heals the calikang for an amount of
+    HP equal to quadruple the spell''s level, and recharges its Breath Weapon. A calikang
+    can''t absorb its own spells this way.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Whenever the calikang is hit by an electricity spell or rolls a successful
-    save against a spell that deals energy damage, it absorbs the energy. This heals
-    the calikang for an amount of HP equal to quadruple the spell's level, and recharges
-    its Breath Weapon. A calikang can't absorb its own spells this way.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Energy Conversion
-  range: null
-  raw_description: '**Energy Conversion** (__abjuration__, __arcane__) Whenever the
-    calikang is hit by an electricity spell or rolls a successful save against a spell
-    that deals energy damage, it absorbs the energy. This heals the calikang for an
-    amount of HP equal to quadruple the spell''s level, and recharges its Breath Weapon.
-    A calikang can''t absorb its own spells this way.'
-  requirements: null
-  success: null
-  traits:
-  - abjuration
-  - arcane
   trigger: null
 description: 'The calikangs are giant blue-skinned, six-armed guardians of ancient
   tombs and treasuries. Their unique physiologies enable them to absorb and manipulate
@@ -75,7 +124,7 @@ languages:
 - Common
 - Jotun
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+15
@@ -100,65 +149,8 @@ melee:
   - nonlethal
 name: Calikang
 perception: 20
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: 'The calikang breathes a blast of energy that deals 13d6 energy damage to
-    all creatures in a 60-foot line (DC 28 basic Reflex save). The calikang can choose
-    the damage type each time: acid, cold, electricity, fire, or sonic. Increase the
-    die size to d8 if the calikang chooses electricity.'
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__acid__, __arcane__, __cold__,
-    __electricity__, __evocation__, __fire__, __sonic__) **Frequency** once per day;
-    **Effect** The calikang breathes a blast of energy that deals 13d6 energy damage
-    to all creatures in a 60-foot line (DC 28 basic Reflex save). The calikang can
-    choose the damage type each time: acid, cold, electricity, fire, or sonic. Increase
-    the die size to d8 if the calikang chooses electricity.'
-  requirements: null
-  success: null
-  traits:
-  - acid
-  - arcane
-  - cold
-  - electricity
-  - evocation
-  - fire
-  - sonic
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The calikang makes up to six fist Strikes. Each Strike can be against
-    a different target. These attacks count toward its multiple attack penalty, which
-    doesn't increase until after all the attacks are complete.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sixfold Flurry
-  range: null
-  raw_description: '**Sixfold Flurry** [Two Actions]  The calikang makes up to six
-    fist Strikes. Each Strike can be against a different target. These attacks count
-    toward its multiple attack penalty, which doesn''t increase until after all the
-    attacks are complete.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 23
   fort_misc: null
@@ -171,22 +163,19 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'By spending 5 minutes concentrating, the calikang can enter a state
+  description: By spending 5 minutes concentrating, the calikang can enter a state
     of suspended animation, freezing in place and becoming motionless but remaining
     aware of its surroundings. While in this state, the calikang gains a +4 status
     bonus to all Fortitude saves, does not age, and is immune to disease, inhaled
     toxins, poison, starvation, and thirst. The calikang can exit suspended animation
     as a free action. If it exits this state to attack, the calikang gains a +4 circumstance
     bonus to its initiative roll.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Suspended Animation
   range: null
   raw_description: '**Suspended Animation** (__concentrate__) By spending 5 minutes
@@ -195,62 +184,53 @@ sense_abilities:
     in this state, the calikang gains a +4 status bonus to all Fortitude saves, does
     not age, and is immune to disease, inhaled toxins, poison, starvation, and thirst.
     The calikang can exit suspended animation as a free action. If it exits this state
-    to attack, the calikang gains a +4 circumstance bonus to its initiative roll.
-
-
-    '
+    to attack, the calikang gains a +4 circumstance bonus to its initiative roll.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - concentrate
   trigger: null
 senses:
-- Perception +20
 - darkvision
 - true seeing
 size: Large
 skills:
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 24
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: 'Pathfinder #149: Against the Scarlet Triad'
-  page_start: 84
+  page_start: '84'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 28
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: null
-      name: chain lightning
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
-      name: magic weapon
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: null
+      name: chain lightning
+  - level: 1
+    spells:
+    - misc: at will
+      name: magic weapon
+  spells_source: Arcane Innate Spells
 traits:
-- Uncommon
-- LN
-- Large
 - Humanoid
-type: Creature
-weaknesses: null

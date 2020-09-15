@@ -7,6 +7,34 @@ ability_mods:
   wis_mod: 2
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The arbiter releases an electrical burst from its body that deals 3d6
+    electricity damage (DC 17 basic Reflex save). Following such a burst, the arbiter
+    becomes stunned for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Electrical Burst
+  range: null
+  raw_description: '**Electrical Burst** [Two Actions]  (__divine__, __electricity__,
+    __evocation__) The arbiter releases an electrical burst from its body that deals
+    3d6 electricity damage (DC 17 basic Reflex save). Following such a burst, the
+    arbiter becomes stunned for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - electricity
+  - evocation
+  trigger: null
 alignment: LN
 automatic_abilities: null
 description: 'These spherical inevitables are scouts and diplomats. Found throughout
@@ -34,15 +62,15 @@ languages:
 - Infernal
 - Utopian
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
     type: piercing
   name: shortsword
   plus_damage:
-  - formula: 1d4
-    type: lawful
+  - formula: null
+    type: 1d4 lawful
   to_hit: 9
   traits:
   - agile
@@ -52,38 +80,11 @@ melee:
   - versatile S
 name: Arbiter
 perception: 7
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The arbiter releases an electrical burst from its body that deals 3d6
-    electricity damage (DC 17 basic Reflex save). Following such a burst, the arbiter
-    becomes stunned for 24 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Electrical Burst
-  range: null
-  raw_description: '**Electrical Burst** [Two Actions]  (__divine__, __electricity__,
-    __evocation__) The arbiter releases an electrical burst from its body that deals
-    3d6 electricity damage (DC 17 basic Reflex save). Following such a burst, the
-    arbiter becomes stunned for 24 hours.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - electricity
-  - evocation
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 3
+  misc: null
   type: electricity
-ritual_lists: null
 saves:
   fort: 5
   fort_misc: null
@@ -96,31 +97,26 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'An arbiter can always sense the direction of the nearest non-arbiter
+  description: An arbiter can always sense the direction of the nearest non-arbiter
     inevitable on the plane, but it cannot sense the range of the inevitable.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Locate Inevitable
   range: null
   raw_description: '**Locate Inevitable** An arbiter can always sense the direction
     of the nearest non-arbiter inevitable on the plane, but it cannot sense the range
-    of the inevitable.
-
-
-    '
+    of the inevitable.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +7
 - darkvision
 - detect alignment (chaotic only)
 - locate inevitable
@@ -128,56 +124,53 @@ size: Tiny
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Axis Lore '
+  name: Axis Lore
 - bonus: 6
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 9
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 8
+  page_start: '8'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 17
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: read omens
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: command
-      requirement: null
-    - frequency: at will, chaotic only
+    - misc: at will, chaotic only
       name: detect alignment
-      requirement: null
-    - frequency: x3
+    - misc: x3
       name: mending
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- LN
-- Tiny
 - Aeon
 - Inevitable
 - Monitor
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: chaotic

@@ -7,6 +7,122 @@ ability_mods:
   wis_mod: 4
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The brownie's antics can confuse and disorient a creature. When the
+    brownie uses Baffling Bluff, it targets a single creature within 30 feet; that
+    creature must attempt a DC 17 Will save. The target is temporarily immune to Baffling
+    Bluff for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Baffling Bluff
+  range: null
+  raw_description: '**Baffling Bluff** [Two Actions]  (__emotion__, __enchantment__,
+    __mental__, __primal__) The brownie''s antics can confuse and disorient a creature.
+    When the brownie uses Baffling Bluff, it targets a single creature within 30 feet;
+    that creature must attempt a DC 17 Will save. The target is temporarily immune
+    to Baffling Bluff for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - emotion
+  - enchantment
+  - mental
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The target is unaffected.
+  description: The target is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The target is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target is fooled momentarily and is __flat-footed__ against the
+    next melee Strike the brownie makes against it before the end of the brownie's
+    next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The target is fooled momentarily and is __flat-footed__
+    against the next melee Strike the brownie makes against it before the end of the
+    brownie''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The target is fooled momentarily and is __flat-footed__ against the next
+    melee Strike the brownie makes against it before the end of the brownie's next
+    turn.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target is __confused__ for 1 round.
+  effect: null
+  failure: The target is __confused__ for 1 round.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The target is __confused__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The target is confused for 1 minute. It can attempt a new save
+    at the end of each of its turns to end the confused condition.
+  critical_success: null
+  description: The target is confused for 1 minute. It can attempt a new save at the
+    end of each of its turns to end the confused condition.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **The target is confused for 1 minute. It can
+    attempt a new save at the end of each of its turns to end the confused condition.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Brownies make their homes in the trunks of hollow trees, small earthy
@@ -29,7 +145,7 @@ description: 'Brownies make their homes in the trunks of hollow trees, small ear
   honest toil and the love of their kin, brownies maintain a pacifist nature, harassing
   creatures only to run them off or punish them for an insult. Despite this nature,
   all brownies carry a blade. They refer to their swords with a hint of disgust, and
-  jokingly call their blades their "final trick," reserving their use for the direst
+  jokingly call their blades their “final trick,” reserving their use for the direst
   of circumstances.
 
 
@@ -53,7 +169,6 @@ description: 'Brownies make their homes in the trunks of hollow trees, small ear
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 15'
 hp: 25
 hp_misc: null
-immunities: null
 items:
 - shortsword
 languages:
@@ -62,11 +177,11 @@ languages:
 - Gnomish
 - Sylvan
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: null
+    formula: null
+    type: 1d6
   name: shortsword
   plus_damage: null
   to_hit: 7
@@ -75,49 +190,7 @@ melee:
   - finesse
 name: Brownie
 perception: 7
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: "The brownie's antics can confuse and disorient a creature. When the\
-    \ brownie uses Baffling Bluff, it targets a single creature within 30 feet; that\
-    \ creature must attempt a DC 17 Will save. The target is temporarily immune to\
-    \ Baffling Bluff for 1 minute. \n\n**Critical Success **The target is unaffected.\
-    \ \n\n**Success **The target is fooled momentarily and is __flat-footed__ against\
-    \ the next melee Strike the brownie makes against it before the end of the brownie's\
-    \ next turn. \n\n**Failure **The target is __confused__ for 1 round. \n\n**Critical\
-    \ Failure **The target is confused for 1 minute. It can attempt a new save at\
-    \ the end of each of its turns to end the confused condition."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Baffling Bluff
-  range: null
-  raw_description: "**Baffling Bluff** [Two Actions]  (__emotion__, __enchantment__,\
-    \ __mental__, __primal__) The brownie's antics can confuse and disorient a creature.\
-    \ When the brownie uses Baffling Bluff, it targets a single creature within 30\
-    \ feet; that creature must attempt a DC 17 Will save. The target is temporarily\
-    \ immune to Baffling Bluff for 1 minute. \n\n**Critical Success **The target is\
-    \ unaffected. \n\n**Success **The target is fooled momentarily and is __flat-footed__\
-    \ against the next melee Strike the brownie makes against it before the end of\
-    \ the brownie's next turn. \n\n**Failure **The target is __confused__ for 1 round.\
-    \ \n\n**Critical Failure **The target is confused for 1 minute. It can attempt\
-    \ a new save at the end of each of its turns to end the confused condition."
-  requirements: null
-  success: null
-  traits:
-  - emotion
-  - enchantment
-  - mental
-  - primal
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 4
   fort_misc: null
@@ -126,69 +199,60 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 size: Tiny
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 6
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 9
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 44
+  page_start: '44'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 17
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: self only
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: mending
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: ventriloquism
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: prestidigitation
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: self only
+      name: dimension door
+  - level: 3
+    spells:
+    - misc: null
+      name: mending
+  - level: 1
+    spells:
+    - misc: null
+      name: ventriloquism
+  spells_source: Primal Innate Spells
 traits:
-- N
-- Tiny
 - Fey
-type: Creature
 weaknesses:
-- amount: 3
-  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=272">cold iron</a>
+- amount: 272
+  misc: null
+  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=

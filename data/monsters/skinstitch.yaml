@@ -1,0 +1,191 @@
+ability_mods:
+  cha_mod: 0
+  con_mod: 5
+  dex_mod: 3
+  int_mod: -5
+  str_mod: 6
+  wis_mod: 0
+ac: 22
+ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The skinstitch makes a blade Strike against an __animal__ or __humanoid__.
+    On a success, the skinstitch slices a long strip of flesh from the target; if
+    the skinstitch dealt damage, it deals an additional 1d6 __persistent bleed damage__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Flay
+  range: null
+  raw_description: '**Flay** [Two Actions]  The skinstitch makes a blade Strike against
+    an __animal__ or __humanoid__. On a success, the skinstitch slices a long strip
+    of flesh from the target; if the skinstitch dealt damage, it deals an additional
+    1d6 __persistent bleed damage__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The skinstitch sews flayed flesh to its body to seal tears and rents. The
+    skinstitch regains 8 Hit Points.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stitch Skin
+  range: null
+  raw_description: '**Stitch Skin** [One Action]  (__manipulate__) **Requirements**
+    The skinstitch hasn''t used this ability since the last time it successfully used
+    its Flay ability; **Effect** The skinstitch sews flayed flesh to its body to seal
+    tears and rents. The skinstitch regains 8 Hit Points.'
+  requirements: The skinstitch hasn't used this ability since the last time it successfully
+    used its Flay ability
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
+alignment: NE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The rotting hides and molding straw stuffing of skinstitches are ideal
+    nesting grounds for vermin and insect swarms. Any __animal__ __swarm__ sharing
+    a space with a skinstitch gains fast healing 3. Additionally, if a creature deals
+    at least 10 piercing or slashing damage to the skinstitch, the swarm can use its
+    swarming bites Strike (or similar attack) against the attacker as a reaction.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pest Haven
+  range: null
+  raw_description: '**Pest Haven** The rotting hides and molding straw stuffing of
+    skinstitches are ideal nesting grounds for vermin and insect swarms. Any __animal__
+    __swarm__ sharing a space with a skinstitch gains fast healing 3. Additionally,
+    if a creature deals at least 10 piercing or slashing damage to the skinstitch,
+    the swarm can use its swarming bites Strike (or similar attack) against the attacker
+    as a reaction.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+description: 'Skinstitches'' hulking frames are made from flayed humanoid skin stuffed
+  with straw and poisonous insects. The dark god __Norgorber__ grants the secrets
+  for creating these monstrosities in disturbing dreams to select followers, informally
+  referred to as skinstitchers.
+
+
+
+
+  While most skinstitches have vaguely humanoid shapes, they often appear monstrous
+  due to various modifications their creators have made to their bodies. Some skinstitches''
+  arms, for instance, may bear jagged metal blades or blunt iron rods. The most talented
+  skinstitchers rarely bother with the humanoid form at all and instead opt to craft
+  skinstitches that resemble other creatures sacred to Norgorber, such as scorpions,
+  centipedes, or especially spiders. There are rumors of skinstitchers who can build
+  skinstitches using exotic materials such as steel, __daemon__ flesh, or even magical
+  shadows.
+
+
+
+
+  The rotting materials used to build skinstitches tend to attract vermin, which may
+  in turn make a hive or nest within the skinstitches'' bodies. Skinstitchers consider
+  such occurrences as a sure sign of Norgorber''s approval.
+
+
+
+
+  **__Recall Knowledge - Construct__ (__Arcana__, __Crafting__)**: DC 22'
+hp: 95
+hp_misc: null
+immunities:
+- bleed
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=188">nonlethal</a> attacks
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+level: 5
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d4+8
+    type: slashing
+  name: blade
+  plus_damage: null
+  to_hit: 15
+  traits:
+  - agile
+  - sweep
+- action_cost: One Action
+  damage:
+    formula: 2d8+8
+    type: bludgeoning
+  name: cudgel
+  plus_damage: null
+  to_hit: 15
+  traits:
+  - forceful
+  - reach 10 feet
+name: Skinstitch
+perception: 12
+ranged_attacks: null
+rarity: Uncommon
+saves:
+  fort: 16
+  fort_misc: null
+  misc: null
+  ref: 14
+  ref_misc: null
+  will: 7
+  will_misc: null
+senses:
+- darkvision
+size: Large
+skills:
+- bonus: 15
+  misc: null
+  name: Athletics
+sources:
+- abbr: 'Pathfinder #158: Sixty Feet Under'
+  page_start: '84'
+  page_stop: null
+speed:
+- amount: 25
+  misc: null
+  type: Land
+spell_lists: null
+traits:
+- Construct
+- Mindless
+weaknesses:
+- amount: 5
+  misc: null
+  type: fire

@@ -7,38 +7,116 @@ ability_mods:
   wis_mod: 2
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d6+6 bludgeoning, DC 22
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d6+6 bludgeoning, DC 22'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The __sickened__ and __unconscious__ conditions from filth fever don't
+    improve on their own until the disease is cured. **Saving Throw** DC 20 Fortitude;
+    **Stage 1** carrier with no ill effect (1d4 hours); **Stage 2** __sickened 1__
+    (1 day); **Stage 3** __sickened 1__ and __slowed 1__ as long as it remains __sickened__
+    (1 day); **Stage 4** __unconscious__ (1 day); **Stage 5** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Filth Fever
+  range: null
+  raw_description: '**Filth Fever** (__disease__) The __sickened__ and __unconscious__
+    conditions from filth fever don''t improve on their own until the disease is cured.
+    **Saving Throw** DC 20 Fortitude; **Stage 1** carrier with no ill effect (1d4
+    hours); **Stage 2** __sickened 1__ (1 day); **Stage 3** __sickened 1__ and __slowed
+    1__ as long as it remains __sickened__ (1 day); **Stage 4** __unconscious__ (1
+    day); **Stage 5** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The otyugh attempts to move all creatures that it has grabbed into
+    other spaces within the reach of its tentacles, rolling a single __Athletics__
+    check and comparing the result against each creature's Fortitude DC. On a failure,
+    the creature remains in place, and on a critical failure, the creature is no longer
+    grabbed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Reposition
+  range: null
+  raw_description: '**Reposition** [One Action]  The otyugh attempts to move all creatures
+    that it has grabbed into other spaces within the reach of its tentacles, rolling
+    a single __Athletics__ check and comparing the result against each creature''s
+    Fortitude DC. On a failure, the creature remains in place, and on a critical failure,
+    the creature is no longer grabbed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 40 feet. A creature entering the aura must succeed at a DC 20 Fortitude
-    save or be sickened 1 (plus slowed 1 for the same duration on a critical failure).
+  description: A creature entering the aura must succeed at a DC 20 Fortitude save
+    or be sickened 1 (plus slowed 1 for the same duration on a critical failure).
     On a success, the creature is temporarily immune to the sickened and slowed effects
     of this stench for 1 hour. Regardless of the save, while within the aura, creatures
-    take a -2 circumstance penalty to saves against diseases. An otyugh's stench is
+    take a –2 circumstance penalty to saves against diseases. An otyugh's stench is
     due to the offal and refuse that it wallows in, so cleaning the creature thoroughly
     (with __create water__ and sufficient scrubbing, for example) deactivates the
     aura, while a sufficiently plugged nose allows an individual to avoid exposure
     to the stench.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stench
-  range: null
+  range: 40 feet
   raw_description: '**Stench** (__aura__, __olfactory__) 40 feet. A creature entering
     the aura must succeed at a DC 20 Fortitude save or be sickened 1 (plus slowed
     1 for the same duration on a critical failure). On a success, the creature is
     temporarily immune to the sickened and slowed effects of this stench for 1 hour.
-    Regardless of the save, while within the aura, creatures take a -2 circumstance
+    Regardless of the save, while within the aura, creatures take a –2 circumstance
     penalty to saves against diseases. An otyugh''s stench is due to the offal and
     refuse that it wallows in, so cleaning the creature thoroughly (with __create
     water__ and sufficient scrubbing, for example) deactivates the aura, while a sufficiently
     plugged nose allows an individual to avoid exposure to the stench.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -58,7 +136,7 @@ description: 'Lords of sewers, ditches, and landfllls, otyughs are   lthy monstr
   encroached on their natural habitats. True or not, they are now one of the larger
   predators in those dank environs. Otyughs are territorial, but they have been known
   to form loose collectives, even giving each other important-sounding titles like
-  "king of offal" and "duchess of slime" to indicate their rank and station in their
+  “king of offal” and “duchess of slime” to indicate their rank and station in their
   sludgy underworld beneath the streets.
 
 
@@ -76,11 +154,10 @@ hp: 70
 hp_misc: null
 immunities:
 - disease
-items: null
 languages:
 - Common
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+6
@@ -105,80 +182,7 @@ melee:
   - reach 10 feet
 name: Otyugh
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d6+6 bludgeoning, DC 22
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d6+6 bludgeoning, DC 22'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The __sickened__ and __unconscious__ conditions from filth fever don't
-    improve on their own until the disease is cured. **Saving Throw** DC 20 Fortitude;
-    **Stage 1** carrier with no ill effect (1d4 hours); **Stage 2** __sickened 1__
-    (1 day); **Stage 3** __sickened 1__ and __slowed 1__ as long as it remains __sickened__
-    (1 day); **Stage 4** __unconscious__ (1 day); **Stage 5** dead
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Filth Fever
-  range: null
-  raw_description: '**Filth Fever** (__disease__) The __sickened__ and __unconscious__
-    conditions from filth fever don''t improve on their own until the disease is cured.
-    **Saving Throw** DC 20 Fortitude; **Stage 1** carrier with no ill effect (1d4
-    hours); **Stage 2** __sickened 1__ (1 day); **Stage 3** __sickened 1__ and __slowed
-    1__ as long as it remains __sickened__ (1 day); **Stage 4** __unconscious__ (1
-    day); **Stage 5** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The otyugh attempts to move all creatures that it has grabbed into
-    other spaces within the reach of its tentacles, rolling a single __Athletics__
-    check and comparing the result against each creature's Fortitude DC. On a failure,
-    the creature remains in place, and on a critical failure, the creature is no longer
-    grabbed.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reposition
-  range: null
-  raw_description: '**Reposition**   The otyugh attempts to move all creatures that
-    it has grabbed into other spaces within the reach of its tentacles, rolling a
-    single __Athletics__ check and comparing the result against each creature''s Fortitude
-    DC. On a failure, the creature remains in place, and on a critical failure, the
-    creature is no longer grabbed.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 12
   fort_misc: null
@@ -187,33 +191,28 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 8
   misc: +11 in lair
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 258
+  page_start: '258'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Large
 - Aberration
-type: Creature
-weaknesses: null

@@ -7,53 +7,7 @@ ability_mods:
   wis_mod: 7
 ac: 43
 ac_special: null
-alignment: NE
-automatic_abilities: null
-description: 'Few creatures embody war''s sheer amount of bloodshed and loss of life
-  as deeply as the purrodaemons, deacons of war. These giant humanoid daemons are
-  bedecked in black, unholy armor, with weapons piercing their flesh at every opening.
-  Far from wounds, however, these weapons are the purrodaemon''s arsenal. A purrodaemon
-  can, with frightening swiftness and nauseating ease, extract a weapon from its own
-  flesh as though drawing a sword from a sheath, and their blood is so tainted with
-  evil that weapons steeped in it become powerful tools of war.
-
-
-
-
-  **__Recall Knowledge - Fiend__ (__Religion__)**: DC 38'
-hp: 335
-hp_misc: null
-immunities:
-- bleed
-- death effects
-items:
-- +2 greater striking glaive
-- soul gem
-- steeped weapon
-languages:
-- Common
-- Daemonic
-- telepathy 100 feet
-level: 18
-melee:
-- action_cost: One Action
-  damage:
-    formula: 3d8+17
-    type: slashing
-  name: glaive
-  plus_damage:
-  - formula: 2d6
-    type: evil and 4d6 persistent bleed
-  to_hit: 37
-  traits:
-  - deadly d8
-  - evil
-  - forceful
-  - magical
-  - reach 15 feet
-name: Purrodaemon
-perception: 33
-proactive_abilities:
+active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -61,18 +15,20 @@ proactive_abilities:
     Steep Weapon) to telekinetically launch from their flesh. The purrodaemon makes
     a hurled weapon Strike without using their hands.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Hurl Weapon
   range: null
-  raw_description: '**Hurl Weapon**   (__divine__, __evocation__) The purrodaemon
-    causes a weapon that has steeped in their flesh (see Steep Weapon) to telekinetically
-    launch from their flesh. The purrodaemon makes a hurled weapon Strike without
-    using their hands.'
+  raw_description: '**Hurl Weapon** [One Action]  (__divine__, __evocation__) The
+    purrodaemon causes a weapon that has steeped in their flesh (see Steep Weapon)
+    to telekinetically launch from their flesh. The purrodaemon makes a hurled weapon
+    Strike without using their hands.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -82,22 +38,27 @@ proactive_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: A steeped weapon that's no longer sheathed in the purrodaemon's body is
-    within 120 feet of the daemon
-  effects: null
+  effect: The steeped weapon swiftly flies through the air to resheath itself in the
+    purrodaemon's body. If a creature is along this flight path, the purrodaemon can
+    make a hurled weapon Strike against the target; if it hits, the weapon drops to
+    the ground in a square adjacent to the creature.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Recall Weapon
   range: null
-  raw_description: '**Recall Weapon**   (__evocation__) **Requirements **A steeped
-    weapon that''s no longer sheathed in the purrodaemon''s body is within 120 feet
-    of the daemon; **Effect **The steeped weapon swiftly flies through the air to
-    resheath itself in the purrodaemon''s body. If a creature is along this flight
-    path, the purrodaemon can make a hurled weapon Strike against the target; if it
-    hits, the weapon drops to the ground in a square adjacent to the creature.'
-  requirements: null
+  raw_description: '**Recall Weapon** [One Action]  (__evocation__) **Requirements
+    **A steeped weapon that''s no longer sheathed in the purrodaemon''s body is within
+    120 feet of the daemon; **Effect **The steeped weapon swiftly flies through the
+    air to resheath itself in the purrodaemon''s body. If a creature is along this
+    flight path, the purrodaemon can make a hurled weapon Strike against the target;
+    if it hits, the weapon drops to the ground in a square adjacent to the creature.'
+  requirements: A steeped weapon that's no longer sheathed in the purrodaemon's body
+    is within 120 feet of the daemon
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - evocation
@@ -117,17 +78,17 @@ proactive_abilities:
     and an extra d10 of damage). This magical quality fades 24 hours after it ceases
     being sheathed in the daemon''s living body. A steeped weapon can be __Disarmed__.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Steep Weapon
   range: null
-  raw_description: '**Steep Weapon**   (__manipulate__) The purrodaemon sheathes a
-    weapon in their own flesh. This deals no damage to the purrodaemon, which can
-    have up to 10 weapons sheathed in their body at a time. A steeped weapon must
-    be one that deals piercing or slashing damage.
+  raw_description: '**Steep Weapon** [One Action]  (__manipulate__) The purrodaemon
+    sheathes a weapon in their own flesh. This deals no damage to the purrodaemon,
+    which can have up to 10 weapons sheathed in their body at a time. A steeped weapon
+    must be one that deals piercing or slashing damage.
 
 
     If a purrodaemon __Interacts__ to crush a soul gem, one weapon of their choice
@@ -137,6 +98,8 @@ proactive_abilities:
     and an extra d10 of damage). This magical quality fades 24 hours after it ceases
     being sheathed in the daemon''s living body. A steeped weapon can be __Disarmed__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - manipulate
@@ -145,12 +108,15 @@ proactive_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The purrodaemon is hit with a weapon that deals piercing damage
-  effects: null
+  effect: The purrodaemon seizes the triggering weapon. The weapon's wielder must
+    attempt a DC 40 Reflex save. On a failure, the weapon is disarmed and falls to
+    an adjacent square. On a critical failure, the weapon is sheathed in the purrodaemon's
+    body as though the daemon had used Steep Weapon.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Twist the Blade
   range: null
   raw_description: '**Twist the Blade** [Reaction]  **Requirements **The purrodaemon
@@ -160,19 +126,71 @@ proactive_abilities:
     On a failure, the weapon is disarmed and falls to an adjacent square. On a critical
     failure, the weapon is sheathed in the purrodaemon''s body as though the daemon
     had used Steep Weapon.'
-  requirements: null
+  requirements: The purrodaemon has fewer than 10 weapons sheathed in their body
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The purrodaemon has fewer than 10 weapons sheathed in their body
-ranged:
+  trigger: The purrodaemon is hit with a weapon that deals piercing damage;
+alignment: NE
+automatic_abilities: null
+description: 'Few creatures embody war''s sheer amount of bloodshed and loss of life
+  as deeply as the purrodaemons, deacons of war. These giant humanoid daemons are
+  bedecked in black, unholy armor, with weapons piercing their flesh at every opening.
+  Far from wounds, however, these weapons are the purrodaemon''s arsenal. A purrodaemon
+  can, with frightening swiftness and nauseating ease, extract a weapon from its own
+  flesh as though drawing a sword from a sheath, and their blood is so tainted with
+  evil that weapons steeped in it become powerful tools of war.
+
+
+
+
+  **__Recall Knowledge - Fiend__ (__Religion__)**: DC 38'
+hp: 335
+hp_misc: null
+immunities:
+- bleed
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+items:
+- +2 greater striking glaive
+- soul gem (2)
+- steeped weapon (7-10)
+languages:
+- Common
+- Daemonic
+- telepathy 100 feet
+level: 18
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d8+17
+    type: slashing
+  name: glaive
+  plus_damage:
+  - formula: null
+    type: 2d6 evil
+  - formula: null
+    type: 4d6 persistent bleed
+  to_hit: 37
+  traits:
+  - deadly d8
+  - evil
+  - forceful
+  - magical
+  - reach 15 feet
+name: Purrodaemon
+perception: 33
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
     type: piercing
   name: hurled weapon
   plus_damage:
-  - formula: 1d6
-    type: evil and 4d6 persistent bleed
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: 4d6 persistent bleed
   to_hit: 35
   traits:
   - deadly 1d10
@@ -180,11 +198,10 @@ ranged:
   - magical
   - propulsive
   - range 120 feet
-rarity: Common
 resistances:
 - amount: 15
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 33
   fort_misc: null
@@ -193,97 +210,83 @@ saves:
   ref_misc: null
   will: 29
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +33
 - darkvision
 - true seeing
 size: Large
 skills:
 - bonus: 37
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 35
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 30
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 34
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 33
   misc: null
-  name: 'Survival '
+  name: Survival
 - bonus: 32
   misc: null
-  name: 'Warfare Lore '
-source:
+  name: Warfare Lore
+sources:
 - abbr: Bestiary 2
-  page_start: 61
+  page_start: '61'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 37
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: null
-      name: bind soul
-      requirement: null
-    - frequency: null
-      name: blade barrier
-      requirement: null
-    - frequency: null
-      name: chain lightning
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: null
-      name: flame strike
-      requirement: null
-    - frequency: null
-      name: teleport
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: good only, at will
-      name: detect alignment
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 37
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 9
+    spells:
+    - misc: null
+      name: bind soul
+    - misc: null
+      name: blade barrier
+    - misc: null
+      name: chain lightning
+  - level: 7
+    spells:
+    - misc: null
+      name: flame strike
+    - misc: null
+      name: teleport
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+  - level: 1
+    spells:
+    - misc: good only; at will
+      name: detect alignment
+  spells_source: Divine Innate Spells
 traits:
-- NE
-- Large
 - Daemon
 - Fiend
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: good

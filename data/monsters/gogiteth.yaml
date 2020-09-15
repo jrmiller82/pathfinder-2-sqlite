@@ -7,6 +7,75 @@ ability_mods:
   wis_mod: 1
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The gogiteth can move at its full Speed while it has a creature grabbed
+    in its jaws, bringing the grabbed creature along.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Carry Off Prey
+  range: null
+  raw_description: '**Carry Off Prey** The gogiteth can move at its full Speed while
+    it has a creature grabbed in its jaws, bringing the grabbed creature along.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 3d6+12 bludgeoning, DC 32
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  3d6+12 bludgeoning, DC 32'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The gogiteth Strides three times. Once per Stride, it can attempt a
+    leg Strike against a creature in its reach at any point during the Stride; it
+    must make each attack against a different creature, but it doesn't apply its multiple
+    attack penalty until after making all its Strikes. If any of the Strikes result
+    in a critical failure, Skittering Assault ends.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Skittering Assault
+  range: null
+  raw_description: '**Skittering Assault** [Two Actions]  The gogiteth Strides three
+    times. Once per Stride, it can attempt a leg Strike against a creature in its
+    reach at any point during the Stride; it must make each attack against a different
+    creature, but it doesn''t apply its multiple attack penalty until after making
+    all its Strikes. If any of the Strikes result in a critical failure, Skittering
+    Assault ends.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -14,17 +83,19 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The gogiteth moves 10 feet. This does not trigger reactions.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Skittering Reposition
   range: null
   raw_description: '**Skittering Reposition** [Reaction] (__move__) **Trigger** A
     creature that starts its move outside the gogiteth''s reach moves into its reach.
     **Effect** The gogiteth moves 10 feet. This does not trigger reactions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - move
@@ -75,13 +146,11 @@ description: 'A gogiteth is a slavering nightmare of teeth, eyes, and hairy spid
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 30'
 hp: 250
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Undercommon
 - (can't speak)
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+12
@@ -104,75 +173,11 @@ melee:
   - reach 10 feet
 name: Gogiteth
 perception: 21
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The gogiteth can move at its full Speed while it has a creature grabbed
-    in its jaws, bringing the grabbed creature along.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Carry Off Prey
-  range: null
-  raw_description: '**Carry Off Prey** The gogiteth can move at its full Speed while
-    it has a creature grabbed in its jaws, bringing the grabbed creature along.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 3d6+12 bludgeoning, DC 32
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   3d6+12 bludgeoning, DC 32'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The gogiteth Strides three times. Once per Stride, it can attempt a
-    leg Strike against a creature in its reach at any point during the Stride; it
-    must make each attack against a different creature, but it doesn't apply its multiple
-    attack penalty until after making all its Strikes. If any of the Strikes result
-    in a critical failure, Skittering Assault ends.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Skittering Assault
-  range: null
-  raw_description: '**Skittering Assault** [Two Actions]  The gogiteth Strides three
-    times. Once per Stride, it can attempt a leg Strike against a creature in its
-    reach at any point during the Stride; it must make each attack against a different
-    creature, but it doesn''t apply its multiple attack penalty until after making
-    all its Strikes. If any of the Strikes result in a critical failure, Skittering
-    Assault ends.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -181,37 +186,33 @@ saves:
   ref_misc: null
   will: 20
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +21
 - darkvision
 size: Large
 skills:
 - bonus: 19
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 24
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 21
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: +24 to Track
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 183
+  page_start: '183'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- CE
-- Large
 - Aberration
-type: Creature
-weaknesses: null

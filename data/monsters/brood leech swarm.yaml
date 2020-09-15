@@ -7,6 +7,53 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each enemy in the swarm's space takes 2d6 __bleed damage__ and is exposed
+    to brood leech swarm venom.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Draining Bites
+  range: null
+  raw_description: '**Blood Draining Bites** [One Action]  Each enemy in the swarm''s
+    space takes 2d6 __bleed damage__ and is exposed to brood leech swarm venom.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Brood Leech Swarm Venom
+  range: null
+  raw_description: '**Brood Leech Swarm Venom** (__poison__) **Saving Throw** DC 21
+    Fortitude; **Maximum Duration** 6 rounds; **Stage 1** __clumsy 1__, __sickened
+    1__, and –5-foot status penalty to Speed (1 round); **Stage 2** clumsy 1, sickened
+    1, and –10-foot status penalty to Speed (1 round)'
+  requirements: null
+  saving_throw: DC 21 Fortitude
+  stages:
+  - effect: __clumsy 1__, __sickened 1__, and –5-foot status penalty to Speed (1 round)
+  - effect: clumsy 1, sickened 1, and –10-foot status penalty to Speed (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Most smaller species of leeches do not tend to swarm, but brood leeches
@@ -23,66 +70,22 @@ hp: 40
 hp_misc: null
 immunities:
 - precision
-- swarm mind
-items: null
-languages: null
+- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
 level: 4
-melee: null
+melee_attacks: null
 name: Brood Leech Swarm
 perception: 9
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Each enemy in the swarm's space takes 2d6 __bleed damage__ and is exposed
-    to brood leech swarm venom.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Draining Bites
-  range: null
-  raw_description: '**Blood Draining Bites**   Each enemy in the swarm''s space takes
-    2d6 __bleed damage__ and is exposed to brood leech swarm venom.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 21 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** __clumsy 1__, __sickened 1__, and -5-foot status penalty to Speed (1 round);
-    **Stage 2** clumsy 1, sickened 1, and -10-foot status penalty to Speed (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Brood Leech Swarm Venom
-  range: null
-  raw_description: '**Brood Leech Swarm Venom** (__poison__) **Saving Throw** DC 21
-    Fortitude; **Maximum Duration** 6 rounds; **Stage 1** __clumsy 1__, __sickened
-    1__, and -5-foot status penalty to Speed (1 round); **Stage 2** clumsy 1, sickened
-    1, and -10-foot status penalty to Speed (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 2
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: piercing
 - amount: 5
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -91,40 +94,39 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - tremorsense 30 feet
 size: Large
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 156
+  page_start: '156'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Large
 - Amphibious
 - Animal
 - Swarm
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: area damage
 - amount: 5
+  misc: null
   type: salt
-- amount: 5
-  type: <a style="text-decoration:underline" href="Traits.aspx?ID=150">splash</a>
-    damage
+- amount: 150
+  misc: null
+  type: <a style="text-decoration:underline" href="Traits.aspx?ID=

@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 0
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ifrit pyrochemist draws an alchemical bomb with an Interact action
+    and throws it as a ranged Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Bomber
+  range: null
+  raw_description: '**Quick Bomber** [One Action]  The ifrit pyrochemist draws an
+    alchemical bomb with an Interact action and throws it as a ranged Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'Ifrits'' blood blazes with elemental fire. Most ifrits are second-class
@@ -37,7 +59,6 @@ description: 'Ifrits'' blood blazes with elemental fire. Most ifrits are second-
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 18
 hp_misc: null
-immunities: null
 items:
 - formula book
 - alchemist's tools
@@ -48,11 +69,11 @@ languages:
 - Common
 - Ignan
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: piercing
+    formula: null
+    type: 1d4 piercing
   name: dagger
   plus_damage: null
   to_hit: 8
@@ -63,43 +84,24 @@ melee:
   - versatile S
 name: Ifrit Pyrochemist
 perception: 3
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The ifrit pyrochemist draws an alchemical bomb with an Interact action
-    and throws it as a ranged Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quick Bomber
-  range: null
-  raw_description: '**Quick Bomber**   The ifrit pyrochemist draws an alchemical bomb
-    with an Interact action and throws it as a ranged Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8
-    type: fire
+    formula: null
+    type: 1d8 fire
   name: lesser alchemist's fire
   plus_damage:
-  - formula: 1
-    type: persistent fire damage and 1 fire splash damage
+  - formula: null
+    type: 1 persistent fire damage
+  - formula: null
+    type: 1 fire splash damage
   to_hit: 8
   traits:
   - range increment 30 feet
-rarity: Common
 resistances:
 - amount: 1
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 5
   fort_misc: null
@@ -114,75 +116,67 @@ sense_abilities:
   critical_success: null
   description: 'An ifrit pyrochemist carries the following infused items, which last
     for 24 hours or until the next time the pyrochemist makes their daily preparations:
-    __lesser alchemist''s fire__ (5), __lesser elixir of life__ (2), __lesser smokestick.__
-
-
-    '
+    __lesser alchemist''s fire__ (5), __lesser elixir of life__ (2), __lesser smokestick.__'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Infused Items
   range: null
   raw_description: '**Infused Items** An ifrit pyrochemist carries the following infused
     items, which last for 24 hours or until the next time the pyrochemist makes their
     daily preparations: __lesser alchemist''s fire__ (5), __lesser elixir of life__
-    (2), __lesser smokestick.__
-
-
-    '
+    (2), __lesser smokestick.__'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-senses:
-- Perception +3
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 4
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 3
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 3
   misc: null
-  name: 'Survival '
+  name: Survival
 - bonus: 6
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 200
+  page_start: '200'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 16
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: 1
-    level: 0
+- attack_bonus: 8
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: produce flame
-      requirement: null
-  to_hit: 8
+  constants: null
+  dc: 16
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Primal Innate Spells
 traits:
-- LE
-- Medium
 - Human
 - Humanoid
 - Ifrit
-type: Creature
-weaknesses: null

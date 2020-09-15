@@ -7,6 +7,54 @@ ability_mods:
   wis_mod: 0
 ac: 40
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The obsidian golem slings razor-sharp shards of itself in a 15-foot
+    cone. Creatures in the area take 4d8+9 slashing damage (DC 37 basic Reflex save).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Fling Shards
+  range: null
+  raw_description: '**Fling Shards** [One Action]  The obsidian golem slings razor-sharp
+    shards of itself in a 15-foot cone. Creatures in the area take 4d8+9 slashing
+    damage (DC 37 basic Reflex save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An obsidian golem's body is so sharp that it tears through armor like
+    a knife through butter. Whenever the golem scores a critical hit with a fist Strike
+    against a creature wearing non-__adamantine armor__, the creature's armor becomes
+    __broken__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shred Armor
+  range: null
+  raw_description: '**Shred Armor** An obsidian golem''s body is so sharp that it
+    tears through armor like a knife through butter. Whenever the golem scores a critical
+    hit with a fist Strike against a creature wearing non-__adamantine armor__, the
+    creature''s armor becomes __broken__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -16,17 +64,19 @@ automatic_abilities:
     from it, and for as long as it remains submerged, it becomes __slowed 2__ and
     gains __fast healing 15__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Assimilate Lava
   range: null
   raw_description: '**Assimilate Lava** An obsidian golem that submerges itself in
     lava or magma takes no damage from it, and for as long as it remains submerged,
     it becomes __slowed 2__ and gains __fast healing 15__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -36,16 +86,18 @@ automatic_abilities:
   description: harmed by sonic (8d10, 2d10 from area or persistent damage); healed
     by cold (area 2d10 HP); __slowed__ by fire
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Golem Antimagic
   range: null
   raw_description: '**Golem Antimagic** harmed by sonic (8d10, 2d10 from area or persistent
     damage); healed by cold (area 2d10 HP); __slowed__ by fire'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -57,11 +109,11 @@ automatic_abilities:
     squares on which the golem was standing (or the squares below it, if it was flying)
     become difficult terrain.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vulnerable to Shatter
   range: null
   raw_description: '**Vulnerable to Shatter** Casting a __shatter__ spell on an obsidian
@@ -69,6 +121,8 @@ automatic_abilities:
     flake off its body. The squares on which the golem was standing (or the squares
     below it, if it was flying) become difficult terrain.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -88,25 +142,23 @@ hp: 230
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
-- fatigued
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
 - fire (see below)
-- healing
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
 - magic (see below)
-- mental
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 16
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d10+15
@@ -134,51 +186,7 @@ melee:
   - versatile S
 name: Obsidian Golem
 perception: 28
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The obsidian golem slings razor-sharp shards of itself in a 15-foot
-    cone. Creatures in the area take 4d8+9 slashing damage (DC 37 basic Reflex save).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fling Shards
-  range: null
-  raw_description: '**Fling Shards**   The obsidian golem slings razor-sharp shards
-    of itself in a 15-foot cone. Creatures in the area take 4d8+9 slashing damage
-    (DC 37 basic Reflex save).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An obsidian golem's body is so sharp that it tears through armor like
-    a knife through butter. Whenever the golem scores a critical hit with a fist Strike
-    against a creature wearing non-__adamantine armor__, the creature's armor becomes
-    __broken__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shred Armor
-  range: null
-  raw_description: '**Shred Armor** An obsidian golem''s body is so sharp that it
-    tears through armor like a knife through butter. Whenever the golem scores a critical
-    hit with a fist Strike against a creature wearing non-__adamantine armor__, the
-    creature''s armor becomes __broken__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 4d8+15
@@ -194,8 +202,8 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 15
-  type: physical (except adamantine or bludgeoning)
-ritual_lists: null
+  misc: except adamantine or bludgeoning
+  type: physical
 saves:
   fort: 29
   fort_misc: null
@@ -204,31 +212,26 @@ saves:
   ref_misc: null
   will: 26
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +28
 - darkvision
 size: Large
 skills:
 - bonus: 33
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: 'Pathfinder #155: Lord of the Black Sands'
-  page_start: 80
+  page_start: '80'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Large
 - Construct
 - Golem
 - Mindless
-type: Creature
-weaknesses: null

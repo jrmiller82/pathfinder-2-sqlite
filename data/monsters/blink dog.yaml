@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 4
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The blink dog's Strikes deal an additional 1d4 damage to creatures
+    within the reach of at least two of the blink dog's allies.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pack Attack
+  range: null
+  raw_description: '**Pack Attack** The blink dog''s Strikes deal an additional 1d4
+    damage to creatures within the reach of at least two of the blink dog''s allies.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LG
 automatic_abilities: null
 description: 'At first glance, blink dogs seem to be little more than long-eared,
@@ -56,46 +78,24 @@ description: 'At first glance, blink dogs seem to be little more than long-eared
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 18'
 hp: 30
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Sylvan
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
-  damage: null
-  name: jaws (agile, finesse
+  damage:
+    formula: 1d6+3
+    type: piercing
+  name: jaws
   plus_damage: null
-  to_hit: 11<
-  traits: null
+  to_hit: 11
+  traits:
+  - agile
+  - finesse
 name: Blink Dog
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The blink dog's Strikes deal an additional 1d4 damage to creatures
-    within the reach of at least two of the blink dog's allies.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pack Attack
-  range: null
-  raw_description: '**Pack Attack** The blink dog''s Strikes deal an additional 1d4
-    damage to creatures within the reach of at least two of the blink dog''s allies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -104,51 +104,44 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 40
+  page_start: '40'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 18
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 4
     spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: 4
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: blink
-      requirement: null
-  to_hit: null
+  dc: 18
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: dimension door
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- LG
-- Medium
 - Beast
-type: Creature
-weaknesses: null

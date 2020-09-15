@@ -7,70 +7,115 @@ ability_mods:
   wis_mod: 2
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a blast of flame that deals 11d6 fire damage in
+    a 40-foot cone (DC 30 basic Reflex save). It can't use Breath Weapon again for
+    1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __evocation__, __fire__)
+    The dragon breathes a blast of flame that deals 11d6 fire damage in a 40-foot
+    cone (DC 30 basic Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - evocation
+  - fire
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one wing Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one wing Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges its Breath Weapon whenever it scores a critical
+    hit with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
+    it scores a critical hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 27
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 27 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
   trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: Jaws only.
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Attack of Opportunity
-  range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'The largest and most powerful of the chromatic dragons, red dragons
   are a menace to civilizations everywhere, and their strength is rivaled only by
   their arrogance. Red dragons see themselves as regents and overlords of all dragonkind.
@@ -117,20 +162,19 @@ immunities:
 - fire
 - paralyzed
 - sleep
-items: null
 languages:
 - Common
 - Draconic
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+12
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: fire
+  - formula: null
+    type: 2d6 fire
   to_hit: 23
   traits:
   - fire
@@ -165,74 +209,7 @@ melee:
   - reach 10 feet
 name: Young Red Dragon
 perception: 20
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a blast of flame that deals 11d6 fire damage in
-    a 40-foot cone (DC 30 basic Reflex save). It can't use Breath Weapon again for
-    1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __evocation__, __fire__)
-    The dragon breathes a blast of flame that deals 11d6 fire damage in a 40-foot
-    cone (DC 30 basic Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - evocation
-  - fire
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one wing Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one wing Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges its Breath Weapon whenever it scores a critical
-    hit with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
-    it scores a critical hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: cold
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 21
   fort_misc: null
@@ -248,21 +225,22 @@ sense_abilities:
   description: Smoke doesn't impair a red dragon's vision; it ignores the concealed
     condition from smoke.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Smoke Vision
   range: null
   raw_description: '**Smoke Vision** Smoke doesn''t impair a red dragon''s vision;
     it ignores the concealed condition from smoke.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +20
 - darkvision
 - scent (imprecise) 60 feet
 - smoke vision
@@ -270,53 +248,55 @@ size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 19
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 21
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 112
+  page_start: '112'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 120
+  misc: null
   type: fly
 spell_lists:
-- dc: 27
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: 4
-    level: 0
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 27
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Arcane Innate Spells
 traits:
-- CE
-- Large
 - Dragon
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold

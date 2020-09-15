@@ -7,6 +7,152 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any creature that takes negative damage from a witchfire's Strike must
+    attempt a DC 26 Will save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Witchflame
+  range: null
+  raw_description: '**Witchflame** (__curse__, __fire__, __necromancy__, __occult__)
+    Any creature that takes negative damage from a witchfire''s Strike must attempt
+    a DC 26 Will save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - fire
+  - necromancy
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and is temporarily immune to witchflame
+    for 1 hour.
+  description: The creature is unaffected and is temporarily immune to witchflame
+    for 1 hour.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected and is temporarily
+    immune to witchflame for 1 hour.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature appears to catch fire with sickly green flames. These
+    flames deal no damage on their own, but as long as the flames burn, the creature
+    can't be __concealed__ (__invisible__ creatures are concealed rather than being
+    __undetected__) and gains weakness 5 to fire for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature appears to catch fire with sickly green
+    flames. These flames deal no damage on their own, but as long as the flames burn,
+    the creature can''t be __concealed__ (__invisible__ creatures are concealed rather
+    than being __undetected__) and gains weakness 5 to fire for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature appears to catch fire with sickly green flames. These flames
+    deal no damage on their own, but as long as the flames burn, the creature can't
+    be __concealed__ (__invisible__ creatures are concealed rather than being __undetected__)
+    and gains weakness 5 to fire for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: As success, but the effect is permanent until removed.
+  effect: null
+  failure: As success, but the effect is permanent until removed.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** As success, but the effect is permanent until removed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but the creature gains weakness 10 to fire.
+  critical_success: null
+  description: As failure, but the creature gains weakness 10 to fire.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** As failure, but the creature gains weakness
+    10 to fire.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The witchfire's eyes and mouth glow brightly, and the witchflame on the
+    target creature momentarily burns much hotter, dealing 5d6 fire damage and 5d6
+    negative damage to that creature (DC 28 basic Fortitude save). The witchfire can't
+    use Witchflame Kindling for 1d4 rounds.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Witchflame Kindling
+  range: null
+  raw_description: '**Witchflame Kindling** [Two Actions]  (__fire__, __necromancy__,
+    __occult__) **Requirements** A creature within 30 feet of the witchfire burns
+    with witchflame; **Effect** The witchfire''s eyes and mouth glow brightly, and
+    the witchflame on the target creature momentarily burns much hotter, dealing 5d6
+    fire damage and 5d6 negative damage to that creature (DC 28 basic Fortitude save).
+    The witchfire can''t use Witchflame Kindling for 1d4 rounds.'
+  requirements: A creature within 30 feet of the witchfire burns with witchflame
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fire
+  - necromancy
+  - occult
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -14,20 +160,22 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The witchfire makes a witchflame caress Strike against the triggering creature.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Opportune Witchflame
   range: null
   raw_description: '**Opportune Witchflame [Reaction]** **Trigger** A creature makes
     a melee Strike against or touches the witchfire; **Effect** The witchfire makes
     a witchflame caress Strike against the triggering creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature makes a melee Strike against or touches the witchfire
+  trigger: A creature makes a melee Strike against or touches the witchfire;
 description: 'Manifesting as a sinuous form wreathed in sickly green flames, this
   incorporeal undead forms when a powerful __hag__ or __witch__ dies in agony or rage.
   The body at the center of the flames usually resembles the witch''s idealized self-image,
@@ -52,30 +200,31 @@ description: 'Manifesting as a sinuous form wreathed in sickly green flames, thi
 
   **__Recall Knowledge - Undead__ (__Religion__)**: DC 28'
 hp: 125
-hp_misc: negative healingnegative healing
+hp_misc: negative healing
 immunities:
-- death effects
-- disease
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
 - fire
-- paralyzed
-- poison
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 - precision
-- unconscious
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 languages:
 - Aklo
 - Common
 - Necril
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6
-    type: fire
+    formula: null
+    type: 3d6 fire
   name: witchflame caress
   plus_damage:
-  - formula: 3d6
-    type: negative and witchflame
+  - formula: null
+    type: 3d6 negative
+  - formula: null
+    type: witchflame
   to_hit: 21
   traits:
   - agile
@@ -84,70 +233,17 @@ melee:
   - magical
 name: Witchfire
 perception: 18
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Witchflame
-  range: null
-  raw_description: "**Witchflame** (__curse__, __fire__, __necromancy__, __occult\
-    \ Any creature that takes negative damage from a witchfire's Strike must attempt\
-    \ a DC 26 Will save. \n\n**Critical Success** The creature is unaffected and is\
-    \ temporarily immune to witchflame for 1 hour. \n\n**Success** The creature appears\
-    \ to catch fire with sickly green flames. These flames deal no damage on their\
-    \ own__) "
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - fire
-  - necromancy
-  - occult Any creature that takes negative damage from a witchfire's Strike must
-    attempt a DC 26 Will save. Critical Success The creature is unaffected and is
-    temporarily immune to witchflame for 1 hour. Success The creature appears to catch
-    fire with sickly green flames. These flames deal no damage on their own
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A creature within 30 feet of the witchfire burns with witchflame
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Witchflame Kindling
-  range: null
-  raw_description: '**Witchflame Kindling** [Two Actions]  (__fire__, __necromancy__,
-    __occult__) **Requirements** A creature within 30 feet of the witchfire burns
-    with witchflame; **Effect** The witchfire''s eyes and mouth glow brightly, and
-    the witchflame on the target creature momentarily burns much hotter, dealing 5d6
-    fire damage and 5d6 negative damage to that creature (DC 28 basic Fortitude save).
-    The witchfire can''t use Witchflame Kindling for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - fire
-  - necromancy
-  - occult
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6
-    type: fire
+    formula: null
+    type: 2d6 fire
   name: witchflame bolt
   plus_damage:
-  - formula: 2d6
-    type: negative and witchflame
+  - formula: null
+    type: 2d6 negative
+  - formula: null
+    type: witchflame
   to_hit: 21
   traits:
   - evil
@@ -156,12 +252,8 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 10
-  type: all (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-ritual_lists: null
+  misc: null
+  type: all
 saves:
   fort: 15
   fort_misc: null
@@ -179,11 +271,11 @@ sense_abilities:
     one or more witchfires, but it must also include at least one living creature
     capable of forming a coven; three witchfires cannot form a coven.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Coven
   range: null
   raw_description: '**__Coven__** The witchfire adds __nightmare__, __phantasmal killer__,
@@ -191,90 +283,76 @@ sense_abilities:
     can contain one or more witchfires, but it must also include at least one living
     creature capable of forming a coven; three witchfires cannot form a coven.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +18
 - darkvision
 size: Medium
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 19
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 21
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 18
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 19
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 293
+  page_start: '293'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 28
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: null
+  cantrips:
+  - level: 5
     spells:
-    - frequency: will-o'-wisp only
-      name: summon entity
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: crushing despair
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: invisibility
-      requirement: null
-    - frequency: null
-      name: phantasmal killer
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: phantom pain
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: illusory disguise
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: will-o'-wisp only
+      name: summon entity
+  - level: 5
+    spells:
+    - misc: null
+      name: crushing despair
+  - level: 4
+    spells:
+    - misc: null
+      name: invisibility
+    - misc: null
+      name: phantasmal killer
+  - level: 3
+    spells:
+    - misc: null
+      name: phantom pain
+  - level: 2
+    spells:
+    - misc: at will
+      name: illusory disguise
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- CE
-- Medium
 - Incorporeal
 - Spirit
 - Undead
-type: Creature
-weaknesses: null

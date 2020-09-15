@@ -7,24 +7,111 @@ ability_mods:
   wis_mod: 8
 ac: 43
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 3d10+17 piercing
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  3d10+17 piercing'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that begins its turn inside Iffdahsil takes 10d6 negative
+    damage. Iffdahsil gains temporary HP for 1 minute equal to half the damage dealt.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Eat Away
+  range: null
+  raw_description: '**Eat Away** A creature that begins its turn inside Iffdahsil
+    takes 10d6 negative damage. Iffdahsil gains temporary HP for 1 minute equal to
+    half the damage dealt.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: DC 43, 10d6 negative, Escape DC 43, Rupture 45
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Engulf
+  range: null
+  raw_description: '**__Engulf__** [Two Actions]  DC 43, 10d6 negative, Escape DC
+    43, Rupture 45'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: Iffdahsil deals 8d8 piercing damage to each creature in a 10-foot emanation
+    (DC 43 basic Reflex save) and can also attempt to __Grab__ any creatures who critically
+    fail their save as a free action. Iffdahsil is then __flat-footed__ until the
+    start of its next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tentacular Burst
+  range: null
+  raw_description: '**Tentacular Burst** [Two Actions]  Iffdahsil deals 8d8 piercing
+    damage to each creature in a 10-foot emanation (DC 43 basic Reflex save) and can
+    also attempt to __Grab__ any creatures who critically fail their save as a free
+    action. Iffdahsil is then __flat-footed__ until the start of its next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 60 feet, DC 45. A creature entering or starting its turn in the aura
-    that fails at a Fortitude save becomes __doomed 1__ and __drained 1__. If the
-    target was already doomed or drained, the values of these conditions increase
-    by 1, to a maximum of doomed 3 and drained 3. A creature that dies while doomed
-    3 and drained 3 in this way disintegrates into black sand.
+  description: . A creature entering or starting its turn in the aura that fails at
+    a Fortitude save becomes __doomed 1__ and __drained 1__. If the target was already
+    doomed or drained, the values of these conditions increase by 1, to a maximum
+    of doomed 3 and drained 3. A creature that dies while doomed 3 and drained 3 in
+    this way disintegrates into black sand.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Aura of Annihilation
-  range: null
+  range: 60 feet
   raw_description: '**Aura of Annihilation** (__aura__, __necromancy__, __occult__)
     60 feet, DC 45. A creature entering or starting its turn in the aura that fails
     at a Fortitude save becomes __doomed 1__ and __drained 1__. If the target was
@@ -32,6 +119,8 @@ automatic_abilities:
     maximum of doomed 3 and drained 3. A creature that dies while doomed 3 and drained
     3 in this way disintegrates into black sand.'
   requirements: null
+  saving_throw: DC 45
+  stages: null
   success: null
   traits:
   - aura
@@ -48,11 +137,11 @@ automatic_abilities:
     exposing it to direct sunlight (or a 10th-level __sunburst__ spell) and casting
     a __miracle__ or __wish__ spell (or similar magic) directed at destroying it.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Unkillable
   range: null
   raw_description: '**Unkillable** (__necromancy__, __occult__) Unlike most undead,
@@ -63,6 +152,8 @@ automatic_abilities:
     (or a 10th-level __sunburst__ spell) and casting a __miracle__ or __wish__ spell
     (or similar magic) directed at destroying it.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - necromancy
@@ -82,23 +173,22 @@ description: 'The slithering horror known as Iffdahsil is an undead __shoggoth__
 hp: 380
 hp_misc: fast healing 30, negative healing
 immunities:
-- blinded
-- controlled
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
 - critical hits
-- deafened
-- death effects
-- disease
-- paralyze
-- poison
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=8">deafened</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyze</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 - precision
-- sleep
-- unconscious
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 languages:
 - Aklo
 - Necril
 level: 21
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 5d10+21
@@ -113,97 +203,21 @@ melee:
   - reach 30 feet
 name: Iffdahsil
 perception: 38
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 3d10+17 piercing
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   3d10+17 piercing'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature that begins its turn inside Iffdahsil takes 10d6 negative
-    damage. Iffdahsil gains temporary HP for 1 minute equal to half the damage dealt.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Eat Away
-  range: null
-  raw_description: '**Eat Away** A creature that begins its turn inside Iffdahsil
-    takes 10d6 negative damage. Iffdahsil gains temporary HP for 1 minute equal to
-    half the damage dealt.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: DC 43, 10d6 negative, Escape DC 43, Rupture 45
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Engulf
-  range: null
-  raw_description: '**__Engulf__** [Two Actions]  DC 43, 10d6 negative, Escape DC
-    43, Rupture 45'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: Iffdahsil deals 8d8 piercing damage to each creature in a 10-foot emanation
-    (DC 43 basic Reflex save) and can also attempt to __Grab__ any creatures who critically
-    fail their save as a free action. Iffdahsil is then __flat-footed__ until the
-    start of its next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tentacular Burst
-  range: null
-  raw_description: '**Tentacular Burst** [Two Actions]  Iffdahsil deals 8d8 piercing
-    damage to each creature in a 10-foot emanation (DC 43 basic Reflex save) and can
-    also attempt to __Grab__ any creatures who critically fail their save as a free
-    action. Iffdahsil is then __flat-footed__ until the start of its next turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Rare
+ranged_attacks: null
+rarity: Unique
 resistances:
 - amount: 20
+  misc: null
   type: acid
 - amount: 20
+  misc: null
   type: cold
 - amount: 15
-  type: physical (except magical silver)
+  misc: except magical silver
+  type: physical
 - amount: 20
+  misc: null
   type: sonic
-ritual_lists: null
 saves:
   fort: 39
   fort_misc: null
@@ -212,9 +226,7 @@ saves:
   ref_misc: null
   will: 35
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +38
 - darkvision
 - lifesense (imprecise) 60 feet
 - scent (imprecise) 60 feet
@@ -223,55 +235,51 @@ size: Gargantuan
 skills:
 - bonus: 40
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 36
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: 'Pathfinder #155: Lord of the Black Sands'
-  page_start: 81
+  page_start: '81'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: burrow
 - amount: 25
+  misc: null
   type: climb
 spell_lists:
-- dc: 42
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 42
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+  spell_lists:
+  - level: 9
     spells:
-    - frequency: null
+    - misc: null
       name: overwhelming presence
-      requirement: null
-  - heightened_level: null
-    level: 8
+  - level: 8
     spells:
-    - frequency: at will, self only
+    - misc: at will; self only
       name: disappearance
-      requirement: null
-    - frequency: null
+    - misc: null
       name: hallucination
-      requirement: null
-  - heightened_level: null
-    level: 7
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: hallucinatory terrain
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Rare
-- CE
-- Gargantuan
 - Aberration
 - Undead
-type: Creature
 weaknesses:
 - amount: 20
+  misc: null
   type: good

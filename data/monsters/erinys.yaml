@@ -7,6 +7,83 @@ ability_mods:
   wis_mod: 4
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any weapon an erinys holds gains the effects of a __flaming__ rune
+    while they hold it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Flames of Fury
+  range: null
+  raw_description: '**Flames of Fury** Any weapon an erinys holds gains the effects
+    of a __flaming__ rune while they hold it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The erinys hovers in place if they are flying and fires one arrow at
+    any number of creatures in a 30-foot cone. Each attack is rolled separately. This
+    counts as one attack for the purpose of the erinys's multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Furious Fusillade
+  range: null
+  raw_description: '**Furious Fusillade** [Three Actions]  The erinys hovers in place
+    if they are flying and fires one arrow at any number of creatures in a 30-foot
+    cone. Each attack is rolled separately. This counts as one attack for the purpose
+    of the erinys''s multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An erinys carries a coil of rope woven of their hair (use the statistics
+    for rope) that animates in their hands. When a creature is hit by the erinys's
+    rope, a segment of the rope tears loose and wraps itself around the creature,
+    imposing a 10–foot circumstance penalty to Speed. The piece that tears off is
+    10 feet long for a Medium or smaller creature, and doubles in length for each
+    size larger than Medium. When a creature Escapes the effect (DC 26), the detached
+    segment of rope withers away into useless black sludge.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rope Snare
+  range: null
+  raw_description: '**Rope Snare** An erinys carries a coil of rope woven of their
+    hair (use the statistics for rope) that animates in their hands. When a creature
+    is hit by the erinys''s rope, a segment of the rope tears loose and wraps itself
+    around the creature, imposing a 10–foot circumstance penalty to Speed. The piece
+    that tears off is 10 feet long for a Medium or smaller creature, and doubles in
+    length for each size larger than Medium. When a creature Escapes the effect (DC
+    26), the detached segment of rope withers away into useless black sludge.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'Erinyes exact vengeance and bloody justice for a creature''s crimes,
@@ -39,15 +116,17 @@ languages:
 - Infernal
 - telepathy 100 feet
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+8
     type: slashing
   name: flaming longsword
   plus_damage:
-  - formula: 1d6
-    type: evil and 1d6 fire
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: 1d6 fire
   to_hit: 19
   traits:
   - evil
@@ -56,86 +135,17 @@ melee:
   - versatile P
 name: Erinys
 perception: 18
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any weapon an erinys holds gains the effects of a __flaming__ rune
-    while they hold it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Flames of Fury
-  range: null
-  raw_description: '**Flames of Fury** Any weapon an erinys holds gains the effects
-    of a __flaming__ rune while they hold it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The erinys hovers in place if they are flying and fires one arrow at
-    any number of creatures in a 30-foot cone. Each attack is rolled separately. This
-    counts as one attack for the purpose of the erinys's multiple attack penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Furious Fusillade
-  range: null
-  raw_description: '**Furious Fusillade** [Three Actions]  The erinys hovers in place
-    if they are flying and fires one arrow at any number of creatures in a 30-foot
-    cone. Each attack is rolled separately. This counts as one attack for the purpose
-    of the erinys''s multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An erinys carries a coil of rope woven of their hair (use the statistics
-    for rope) that animates in their hands. When a creature is hit by the erinys's
-    rope, a segment of the rope tears loose and wraps itself around the creature,
-    imposing a 10-foot circumstance penalty to Speed. The piece that tears off is
-    10 feet long for a Medium or smaller creature, and doubles in length for each
-    size larger than Medium. When a creature Escapes the effect (DC 26), the detached
-    segment of rope withers away into useless black sludge.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rope Snare
-  range: null
-  raw_description: '**Rope Snare** An erinys carries a coil of rope woven of their
-    hair (use the statistics for rope) that animates in their hands. When a creature
-    is hit by the erinys''s rope, a segment of the rope tears loose and wraps itself
-    around the creature, imposing a 10-foot circumstance penalty to Speed. The piece
-    that tears off is 10 feet long for a Medium or smaller creature, and doubles in
-    length for each size larger than Medium. When a creature Escapes the effect (DC
-    26), the detached segment of rope withers away into useless black sludge.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+4
     type: piercing
   name: flaming composite longbow
   plus_damage:
-  - formula: 1d6
-    type: evil and 1d6 fire
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: 1d6 fire
   to_hit: 20
   traits:
   - deadly 1d10
@@ -146,31 +156,22 @@ ranged:
   - reload 0
   - volley 30 feet
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: rope snare
   name: rope
   plus_damage: null
   to_hit: 19
   traits:
   - magical
   - range increment 30 feet
-rarity: Common
 resistances:
 - amount: 5
-  type: physical (except silver)
+  misc: except silver
+  type: physical
 - amount: 10
-  type: poison
-ritual_lists:
-- dc: 26
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: infernal pact
-      requirement: null
-  to_hit: null
+  type: poison
 saves:
   fort: 17
   fort_misc: null
@@ -179,94 +180,94 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - greater darkvision
 - true seeing
 size: Medium
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 19
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 15
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 19
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 16
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 89
+  page_start: '89'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 26
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: divine wrath
-      requirement: null
-    - frequency: null
-      name: retributive pain
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: at will
-      name: fear
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: illusory disguise
-      requirement: null
-    - frequency: null
-      name: illusory object
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+    - misc: null
+      name: divine wrath
+    - misc: null
+      name: retributive pain
+  - level: 3
+    spells:
+    - misc: at will
+      name: fear
+  - level: 2
+    spells:
+    - misc: at will
+      name: illusory disguise
+    - misc: null
+      name: illusory object
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: infernal pact
+  spells_source: Rituals
 traits:
-- LE
-- Medium
 - Devil
 - Fiend
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: good

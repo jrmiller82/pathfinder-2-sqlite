@@ -7,26 +7,54 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The elemental puts out all fires in a 10-foot emanation. It extinguishes
+    all non-magical fires automatically and attempts to counteract magical fires (+20
+    counteract modifier).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drench
+  range: null
+  raw_description: '**Drench** [One Action]  (__abjuration__, __primal__, __water__)
+    The elemental puts out all fires in a 10-foot emanation. It extinguishes all non-magical
+    fires automatically and attempts to counteract magical fires (+20 counteract modifier).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - abjuration
+  - primal
+  - water
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 40 feet. Water in the area that is in the same body of water as the
-    tidal master is difficult terrain for Swimming creatures that don't have the water
-    trait.
+  description: Water in the area that is in the same body of water as the tidal master
+    is difficult terrain for Swimming creatures that don't have the water trait.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vortex
-  range: null
+  range: 40 feet
   raw_description: '**Vortex** (__aura__, __water__) 40 feet. Water in the area that
     is in the same body of water as the tidal master is difficult terrain for Swimming
     creatures that don''t have the water trait.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -45,11 +73,10 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Aquan
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+11
@@ -63,37 +90,11 @@ melee:
   - reach 15 feet
 name: Tidal Master
 perception: 18
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The elemental puts out all fires in a 10-foot emanation. It extinguishes
-    all non-magical fires automatically and attempts to counteract magical fires (+20
-    counteract modifier).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drench
-  range: null
-  raw_description: '**Drench**   (__abjuration__, __primal__, __water__) The elemental
-    puts out all fires in a 10-foot emanation. It extinguishes all non-magical fires
-    automatically and attempts to counteract magical fires (+20 counteract modifier).'
-  requirements: null
-  success: null
-  traits:
-  - abjuration
-  - primal
-  - water
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 18
   fort_misc: null
@@ -109,45 +110,44 @@ sense_abilities:
   description: When not touching water, the tidal master is slowed 1 and can't use
     reactions.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Water-Bound
   range: null
   raw_description: '**Water-Bound** When not touching water, the tidal master is slowed
     1 and can''t use reactions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +18
 - darkvision
 size: Large
 skills:
 - bonus: 20
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 153
+  page_start: '153'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 80
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Large
 - Aquatic
 - Elemental
 - Water
-type: Creature
-weaknesses: null

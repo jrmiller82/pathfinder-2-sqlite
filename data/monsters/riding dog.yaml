@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 2
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dog's Strikes deal 1d4 extra damage to creatures within the __reach__
+    of at least two of the dog's allies.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pack Attack
+  range: null
+  raw_description: '**Pack Attack** The dog''s Strikes deal 1d4 extra damage to creatures
+    within the __reach__ of at least two of the dog''s allies.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -14,15 +36,17 @@ automatic_abilities:
   critical_success: null
   description: DC 17
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Buck
   range: null
   raw_description: '**Buck** [Reaction] DC 17'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -39,11 +63,8 @@ description: 'Riding dogs types include larger dogs, such as mastiffs, wolfhound
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -54,32 +75,7 @@ melee:
   traits: null
 name: Riding Dog
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dog's Strikes deal 1d4 extra damage to creatures within the __reach__
-    of at least two of the dog's allies.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pack Attack
-  range: null
-  raw_description: '**Pack Attack** The dog''s Strikes deal 1d4 extra damage to creatures
-    within the __reach__ of at least two of the dog''s allies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -88,33 +84,28 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 5
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 102
+  page_start: '102'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

@@ -7,6 +7,59 @@ ability_mods:
   wis_mod: 4
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Brain Collector Venom
+  range: null
+  raw_description: '**Brain Collector Venom** (__poison__) __**Saving Throw**__ DC
+    26 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage and
+    __enfeebled 1__ (1 round); **Stage 2** 1d6 poison damage, __enfeebled 1__, and
+    __slowed 1__ (1 round); **Stage 3** 2d6 poison damage, __enfeebled 2__, and __slowed
+    1__ (1 round)'
+  requirements: null
+  saving_throw: DC 26 Fortitude
+  stages:
+  - effect: 1d6 poison damage and __enfeebled 1__ (1 round)
+  - effect: 1d6 poison damage, __enfeebled 1__, and __slowed 1__ (1 round)
+  - effect: 2d6 poison damage, __enfeebled 2__, and __slowed 1__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The brain collector collects a brain of a creature that has been dead
+    for no more than 1 minute. It can then use an Interact action to secure the brain
+    in one of its empty brain blisters
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Collect Brain
+  range: null
+  raw_description: '**Collect Brain** [One Action]  (__manipulate__) The brain collector
+    collects a brain of a creature that has been dead for no more than 1 minute. It
+    can then use an Interact action to secure the brain in one of its empty brain
+    blisters'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -16,17 +69,19 @@ automatic_abilities:
     to house stolen brains. A brain collector without all seven blisters full is stupefied
     with a value equal to the number of empty blisters.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Brain Blisters
   range: null
   raw_description: '**Brain Blisters** A brain collector has seven brain blisters
     on its back that it uses to house stolen brains. A brain collector without all
     seven blisters full is stupefied with a value equal to the number of empty blisters.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -37,17 +92,19 @@ automatic_abilities:
     mental damage, it must succeed at a DC 26 save (Fortitude for critical damage
     or Will for mental damage) or one of its brain blisters is destroyed.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Brain Loss
   range: null
   raw_description: '**Brain Loss** If a brain collector takes 30 damage from a critical
     hit or takes 25 mental damage, it must succeed at a DC 26 save (Fortitude for
     critical damage or Will for mental damage) or one of its brain blisters is destroyed.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -87,7 +144,6 @@ hp: 140
 hp_misc: null
 immunities:
 - confused
-items: null
 languages:
 - Abyssal
 - Aklo
@@ -97,7 +153,7 @@ languages:
 - Undercommon
 - telepathy 100 feet
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+6
@@ -119,60 +175,8 @@ melee:
   - agile
 name: Brain Collector
 perception: 18
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: __**Saving Throw**__ DC 26 Fortitude; **Maximum Duration** 6 rounds;
-    **Stage 1** 1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2** 1d6 poison
-    damage, __enfeebled 1__, and __slowed 1__ (1 round); **Stage 3** 2d6 poison damage,
-    __enfeebled 2__, and __slowed 1__ (1 round)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Brain Collector Venom
-  range: null
-  raw_description: '**Brain Collector Venom** (__poison__) __**Saving Throw**__ DC
-    26 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage and
-    __enfeebled 1__ (1 round); **Stage 2** 1d6 poison damage, __enfeebled 1__, and
-    __slowed 1__ (1 round); **Stage 3** 2d6 poison damage, __enfeebled 2__, and __slowed
-    1__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The brain collector collects a brain of a creature that has been dead
-    for no more than 1 minute. It can then use an Interact action to secure the brain
-    in one of its empty brain blisters
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Collect Brain
-  range: null
-  raw_description: '**Collect Brain**   (__manipulate__) The brain collector collects
-    a brain of a creature that has been dead for no more than 1 minute. It can then
-    use an Interact action to secure the brain in one of its empty brain blisters'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: brain loss
-ritual_lists: null
 saves:
   fort: 15
   fort_misc: null
@@ -181,115 +185,95 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - darkvision
 size: Large
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 18
   misc: all subcategories
-  name: 'Lore '
+  name: Lore
 - bonus: 21
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 46
+  page_start: '46'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 26
-  misc: ''
-  name: Occult Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: 18
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: confusion
-      requirement: null
-    - frequency: 2 slots
-      name: phantasmal killer
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: haste
-      requirement: null
-    - frequency: 3 slots
-      name: paralyze
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: humanoid form
-      requirement: null
-    - frequency: null
-      name: invisibility
-      requirement: null
-    - frequency: null
-      name: mirror image
-      requirement: null
-    - frequency: 4 slots
-      name: paranoia
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: mindlink
-      requirement: null
-    - frequency: null
-      name: ray of enfeeblement
-      requirement: null
-    - frequency: null
-      name: true strike
-      requirement: null
-    - frequency: 4 slots
-      name: unseen servant
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: prestidigitation
-      requirement: null
-  to_hit: 18
+  constants: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: confusion
+    - misc: 2 slots
+      name: phantasmal killer
+  - level: 3
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: haste
+    - misc: 3 slots
+      name: paralyze
+  - level: 2
+    spells:
+    - misc: null
+      name: humanoid form
+    - misc: null
+      name: invisibility
+    - misc: null
+      name: mirror image
+    - misc: 4 slots
+      name: paranoia
+  - level: 1
+    spells:
+    - misc: null
+      name: mindlink
+    - misc: null
+      name: ray of enfeeblement
+    - misc: null
+      name: true strike
+    - misc: 4 slots
+      name: unseen servant
+  spells_source: Occult Spontaneous Spells
 traits:
-- Uncommon
-- CE
-- Large
 - Aberration
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: null
+  misc: null
+  type: brain loss

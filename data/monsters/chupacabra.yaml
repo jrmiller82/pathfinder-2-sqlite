@@ -7,6 +7,58 @@ ability_mods:
   wis_mod: 2
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The chupacabra sucks blood from the grabbed creature. The chupacabra gains
+    the __quickened__ condition for 1 minute and can use the extra action only for
+    Strike and Stride actions. A chupacabra can't use Chupar again while it is quickened
+    in this way. A creature that has its blood drained by a chupacabra is __drained
+    1__ until it receives healing (of any kind or amount).
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Chupar
+  range: null
+  raw_description: '**Chupar** [One Action]  **Requirements **The chupacabra has a
+    creature __grabbed__; **Effect **The chupacabra sucks blood from the grabbed creature.
+    The chupacabra gains the __quickened__ condition for 1 minute and can use the
+    extra action only for Strike and Stride actions. A chupacabra can''t use Chupar
+    again while it is quickened in this way. A creature that has its blood drained
+    by a chupacabra is __drained 1__ until it receives healing (of any kind or amount).'
+  requirements: The chupacabra has a creature grabbed
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The chupacabra Strides and makes a Strike at the end of that movement.
+    If the chupacabra began this action __hidden__, it remains hidden until after
+    this ability's Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pounce
+  range: null
+  raw_description: '**Pounce** [One Action]  The chupacabra Strides and makes a Strike
+    at the end of that movement. If the chupacabra began this action __hidden__, it
+    remains hidden until after this ability''s Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These notorious predators have an undeniable thirst for blood. Chupacabras
@@ -52,13 +104,11 @@ description: 'These notorious predators have an undeniable thirst for blood. Chu
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 18'
 hp: 45
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - can't speak any language
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+5
@@ -82,56 +132,7 @@ melee:
   - finesse
 name: Chupacabra
 perception: 9
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The chupacabra has a creature __grabbed__
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Chupar
-  range: null
-  raw_description: '**Chupar**   **Requirements **The chupacabra has a creature __grabbed__;
-    **Effect **The chupacabra sucks blood from the grabbed creature. The chupacabra
-    gains the __quickened__ condition for 1 minute and can use the extra action only
-    for Strike and Stride actions. A chupacabra can''t use Chupar again while it is
-    quickened in this way. A creature that has its blood drained by a chupacabra is
-    __drained 1__ until it receives healing (of any kind or amount).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The chupacabra Strides and makes a Strike at the end of that movement.
-    If the chupacabra began this action __hidden__, it remains hidden until after
-    this ability's Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pounce
-  range: null
-  raw_description: '**Pounce**   The chupacabra Strides and makes a Strike at the
-    end of that movement. If the chupacabra began this action __hidden__, it remains
-    hidden until after this ability''s Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -140,29 +141,24 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 size: Small
 skills:
 - bonus: 9
   misc: +11 to Leap
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 9
   misc: +11 in undergrowth or rocky areas
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 52
+  page_start: '52'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Small
 - Beast
-type: Creature
-weaknesses: null

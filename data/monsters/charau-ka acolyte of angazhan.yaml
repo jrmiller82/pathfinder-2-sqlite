@@ -7,6 +7,60 @@ ability_mods:
   wis_mod: 4
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The charau-ka is __quickened__ until the end of its turn, and can use the
+    extra action to Stride or Strike. While in the frenzy, the charau-ka can't speak
+    and automatically critically fails Stealth checks, due to its loud wailing.
+  failure: null
+  frequency: once per hour
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shrieking Frenzy
+  range: null
+  raw_description: '**Shrieking Frenzy** [Free Action]  (__primal__, __transmutation__)
+    **Trigger** The charau-ka''s turn begins. **Frequency** once per hour; **Effect**
+    The charau-ka is __quickened__ until the end of its turn, and can use the extra
+    action to Stride or Strike. While in the frenzy, the charau-ka can''t speak and
+    automatically critically fails Stealth checks, due to its loud wailing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - primal
+  - transmutation
+  trigger: The charau-ka's turn begins.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any weapon a charau-ka throws gains the __deadly d6__ weapon trait.
+    Furthermore, when a charau-ka throws an improvised weapon, it does not take the
+    –2 penalty for doing so, nor does it take a penalty for using a thrown improvised
+    weapon with the __nonlethal__ trait to make a lethal attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Thrown Weapon Mastery
+  range: null
+  raw_description: '**Thrown Weapon Mastery** Any weapon a charau-ka throws gains
+    the __deadly d6__ weapon trait. Furthermore, when a charau-ka throws an improvised
+    weapon, it does not take the –2 penalty for doing so, nor does it take a penalty
+    for using a thrown improvised weapon with the __nonlethal__ trait to make a lethal
+    attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Even with the Gorilla King''s fall, some charau-kas still worship Angazhan.
@@ -17,7 +71,6 @@ description: 'Even with the Gorilla King''s fall, some charau-kas still worship 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
 hp: 45
 hp_misc: null
-immunities: null
 items:
 - hide armor
 - spear
@@ -26,7 +79,7 @@ languages:
 - Draconic
 - Mwangi
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+5
@@ -48,57 +101,7 @@ melee:
   - nonlethal
 name: Charau-ka Acolyte of Angazhan
 perception: 9
-proactive_abilities:
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The charau-ka is __quickened__ until the end of its turn, and can use the
-    extra action to Stride or Strike. While in the frenzy, the charau-ka can't speak
-    and automatically critically fails Stealth checks, due to its loud wailing.
-  effects: null
-  failure: null
-  frequency: The charau-ka's turn begins.
-  full_description: null
-  generic_description: null
-  name: Shrieking Frenzy
-  range: null
-  raw_description: '**Shrieking Frenzy** [Free Action]  (__primal__, __transmutation__)
-    **Trigger** The charau-ka''s turn begins. **Frequency** once per hour; **Effect**
-    The charau-ka is __quickened__ until the end of its turn, and can use the extra
-    action to Stride or Strike. While in the frenzy, the charau-ka can''t speak and
-    automatically critically fails Stealth checks, due to its loud wailing.'
-  requirements: null
-  success: null
-  traits:
-  - primal
-  - transmutation
-  trigger: once per hour
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any weapon a charau-ka throws gains the __deadly d6__ weapon trait.
-    Furthermore, when a charau-ka throws an improvised weapon, it does not take the
-    -2 penalty for doing so, nor does it take a penalty for using a thrown improvised
-    weapon with the __nonlethal__ trait to make a lethal attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Thrown Weapon Mastery
-  range: null
-  raw_description: '**Thrown Weapon Mastery** Any weapon a charau-ka throws gains
-    the __deadly d6__ weapon trait. Furthermore, when a charau-ka throws an improvised
-    weapon, it does not take the -2 penalty for doing so, nor does it take a penalty
-    for using a thrown improvised weapon with the __nonlethal__ trait to make a lethal
-    attack.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+5
@@ -119,11 +122,6 @@ ranged:
   traits:
   - deadly d6
   - thrown 20 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -132,86 +130,72 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 - scent (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 9
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 11
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #146: Cult of Cinders'
-  page_start: 85
+  page_start: '85'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: climb
 spell_lists:
-- dc: 21
-  misc: ''
-  name: Divine Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 11
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: entangle
-      requirement: null
-    - frequency: null
-      name: sound burst
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: fear
-      requirement: null
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: ray of enfeeblement
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: divine lance
-      requirement: null
-    - frequency: null
+    - misc: null
       name: guidance
-      requirement: null
-    - frequency: null
+    - misc: null
       name: message
-      requirement: null
-  to_hit: 11
+  constants: null
+  dc: 21
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: entangle
+    - misc: null
+      name: sound burst
+  - level: 1
+    spells:
+    - misc: null
+      name: fear
+    - misc: null
+      name: heal
+    - misc: null
+      name: ray of enfeeblement
+  spells_source: Divine Prepared Spells
 traits:
-- CE
-- Small
 - Charau-ka
 - Humanoid
-type: Creature
-weaknesses: null

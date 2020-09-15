@@ -7,6 +7,82 @@ ability_mods:
   wis_mod: 0
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The shadow drake makes one bite Strike and two tail Strikes in any
+    order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The shadow drake makes one
+    bite Strike and two tail Strikes in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: A shadow drake spits a ball of black liquid that explodes into a cloud
+    of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius
+    burst. Creatures within the burst take 3d6 cold damage (DC 18 basic Reflex save).
+    The explosion of shadow also snuffs out mundane light sources the size of a torch,
+    lantern, or smaller, and attempts to counteract magical light with a +10 counteract
+    modifier. The shadow drake can't use Shadow Breath again for 1d6 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shadow Breath
+  range: null
+  raw_description: '**Shadow Breath** [Two Actions]  (__arcane__, __cold__, __evocation__,
+    __shadow__) A shadow drake spits a ball of black liquid that explodes into a cloud
+    of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius
+    burst. Creatures within the burst take 3d6 cold damage (DC 18 basic Reflex save).
+    The explosion of shadow also snuffs out mundane light sources the size of a torch,
+    lantern, or smaller, and attempts to counteract magical light with a +10 counteract
+    modifier. The shadow drake can''t use Shadow Breath again for 1d6 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - cold
+  - evocation
+  - shadow
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The shadow drake Strides or __Flies__ twice.
+  failure: null
+  frequency: three times per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Speed Surge
+  range: null
+  raw_description: '**Speed Surge** [One Action]  **Frequency **three times per day;
+    **Effect **The shadow drake Strides or __Flies__ twice.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Shadow drakes are typically among the smallest and least powerful of
@@ -24,13 +100,12 @@ description: 'Shadow drakes are typically among the smallest and least powerful 
 hp: 28
 hp_misc: null
 immunities:
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Draconic
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+3
@@ -52,82 +127,7 @@ melee:
   - finesse
 name: Shadow Drake
 perception: 6
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The shadow drake makes one bite Strike and two tail Strikes in any
-    order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The shadow drake makes one
-    bite Strike and two tail Strikes in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: A shadow drake spits a ball of black liquid that explodes into a cloud
-    of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius
-    burst. Creatures within the burst take 3d6 cold damage (DC 18 basic Reflex save).
-    The explosion of shadow also snuffs out mundane light sources the size of a torch,
-    lantern, or smaller, and attempts to counteract magical light with a +10 counteract
-    modifier. The shadow drake can't use Shadow Breath again for 1d6 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shadow Breath
-  range: null
-  raw_description: '**Shadow Breath** [Two Actions]  (__arcane__, __cold__, __evocation__,
-    __shadow__) A shadow drake spits a ball of black liquid that explodes into a cloud
-    of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius
-    burst. Creatures within the burst take 3d6 cold damage (DC 18 basic Reflex save).
-    The explosion of shadow also snuffs out mundane light sources the size of a torch,
-    lantern, or smaller, and attempts to counteract magical light with a +10 counteract
-    modifier. The shadow drake can''t use Shadow Breath again for 1d6 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - cold
-  - evocation
-  - shadow
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The shadow drake Strides or __Flies__ twice.
-  effects: null
-  failure: null
-  frequency: three times per day
-  full_description: null
-  generic_description: null
-  name: Speed Surge
-  range: null
-  raw_description: '**Speed Surge**   **Frequency **three times per day; **Effect
-    **The shadow drake Strides or __Flies__ twice.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: fire
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -142,15 +142,17 @@ sense_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Light Blindness
   range: null
   raw_description: '**__Light Blindness__**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -161,17 +163,19 @@ sense_abilities:
     shadows. A shadow drake gains an additional reaction each round, but it can use
     this reaction only for Shadow Evade.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shadow Blend
   range: null
   raw_description: '**Shadow Blend** The shadow drake''s form shifts and blends reflexively
     with surrounding shadows. A shadow drake gains an additional reaction each round,
     but it can use this reaction only for Shadow Evade.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -182,11 +186,11 @@ sense_abilities:
   effect: The shadow drake further obscures its position. The attacker must succeed
     at a DC 11 flat check in order to affect the shadow drake, as if the drake were
     __Hidden__ for the triggering attack.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shadow Evade
   range: null
   raw_description: '**Shadow Evade [Reaction]** **Trigger **A creature attacks the
@@ -195,38 +199,41 @@ sense_abilities:
     in order to affect the shadow drake, as if the drake were __Hidden__ for the triggering
     attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature attacks the shadow drake while it is in an area of dim light
+  trigger: A creature attacks the shadow drake while it is in an area of dim light;
 senses:
-- Perception +6
 - darkvision
 - scent (imprecise) 30 feet
 size: Tiny
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 100
+  page_start: '100'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- CE
-- Tiny
 - Dragon
 - Shadow
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: fire

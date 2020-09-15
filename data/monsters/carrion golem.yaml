@@ -7,6 +7,36 @@ ability_mods:
   wis_mod: 0
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The __sickened__ and __unconscious__ conditions from filth fever can't
+    end or be reduced until the disease is cured.; **Saving Throw** DC 19 Fortitude;
+    **Stage 1** carrier with no ill effect (1d4 hours); **Stage 2** sickened 1 (1
+    day); **Stage 3** sickened 1 and __slowed 1__ as long as it remains sickened (1
+    day); **Stage 4** unconscious (1 day); **Stage 5** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Filth Fever
+  range: null
+  raw_description: '**Filth Fever** (__disease__) The __sickened__ and __unconscious__
+    conditions from filth fever can''t end or be reduced until the disease is cured.;
+    **Saving Throw** DC 19 Fortitude; **Stage 1** carrier with no ill effect (1d4
+    hours); **Stage 2** sickened 1 (1 day); **Stage 3** sickened 1 and __slowed 1__
+    as long as it remains sickened (1 day); **Stage 4** unconscious (1 day); **Stage
+    5** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,43 +45,47 @@ automatic_abilities:
   description: harmed by fire (4d6, 1d8 from areas or __persistent damage__); healed
     by electricity (area 1d6 HP); __slowed__ by cold
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Golem Antimagic
   range: null
   raw_description: '**Golem Antimagic** harmed by fire (4d6, 1d8 from areas or __persistent
     damage__); healed by electricity (area 1d6 HP); __slowed__ by cold'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 40 feet. A creature entering the aura or starting its turn in the aura
-    must succeed at a DC 19 Fortitude save or become __sickened 1__ (plus __slowed
-    1__ for as long as it's sickened on a critical failure). While within the aura,
-    affected creatures take a -2 circumstance penalty to saves against __disease__
-    and to recover from the sickened condition. A creature that succeeds at its save
-    is temporarily immune for 1 minute.
+  description: A creature entering the aura or starting its turn in the aura must
+    succeed at a DC 19 Fortitude save or become __sickened 1__ (plus __slowed 1__
+    for as long as it's sickened on a critical failure). While within the aura, affected
+    creatures take a –2 circumstance penalty to saves against __disease__ and to recover
+    from the sickened condition. A creature that succeeds at its save is temporarily
+    immune for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stench
-  range: null
+  range: 40 feet
   raw_description: '**Stench** (__aura__, __olfactory__) 40 feet. A creature entering
     the aura or starting its turn in the aura must succeed at a DC 19 Fortitude save
     or become __sickened 1__ (plus __slowed 1__ for as long as it''s sickened on a
-    critical failure). While within the aura, affected creatures take a -2 circumstance
+    critical failure). While within the aura, affected creatures take a –2 circumstance
     penalty to saves against __disease__ and to recover from the sickened condition.
     A creature that succeeds at its save is temporarily immune for 1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -65,11 +99,11 @@ automatic_abilities:
     success, __slowed 1__ for 1d4 rounds on a success, and on a failure is __immobilized__
     and slowed for 1d4 rounds.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vulnerable to Gentle Repose
   range: null
   raw_description: '**Vulnerable to Gentle Repose** Casting a __gentle repose__ spell
@@ -77,6 +111,8 @@ automatic_abilities:
     save. It''s unaffected on a critical success, __slowed 1__ for 1d4 rounds on a
     success, and on a failure is __immobilized__ and slowed for 1d4 rounds.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -84,7 +120,7 @@ description: 'Carrion golems are foul-smelling and fly-swarmed amalgams of putre
   parts stitched together from many different creatures. Unlike most golems, carrion
   golems only rarely are given a humanoid form, instead appearing more twisted and
   bestial in frame. As a result, some students of golem crafting claim that the carrion
-  golem isn''t a "true golem," but regardless of those claims these foul constructs
+  golem isn''t a “true golem,” but regardless of those claims these foul constructs
   certainly share other golem-like traits, including their significant immunities.
   What is true is that most who craft carrion golems don''t do so out of true interest
   in the technique of golem crafting, but for the golem''s ability to spread disease.
@@ -99,25 +135,23 @@ hp: 60
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
 - electricity
-- fatigued
-- healing
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
 - magic (see Golem Antimagic below)
-- mental
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+4
@@ -143,40 +177,12 @@ melee:
   - magical
 name: Carrion Golem
 perception: 6
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 19 Fortitude; **Stage 1** carrier with no ill
-    effect (1d4 hours); **Stage 2** sickened 1 (1 day); **Stage 3** sickened 1 and
-    __slowed 1__ as long as it remains sickened (1 day); **Stage 4** unconscious (1
-    day); **Stage 5** dead'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Filth Fever
-  range: null
-  raw_description: '**Filth Fever** (__disease The __sickened__ and __unconscious__
-    conditions from filth fever can''t end or be reduced until the disease is cured__)
-    **Saving Throw** DC 19 Fortitude; **Stage 1** carrier with no ill effect (1d4
-    hours); **Stage 2** sickened 1 (1 day); **Stage 3** sickened 1 and __slowed 1__
-    as long as it remains sickened (1 day); **Stage 4** unconscious (1 day); **Stage
-    5** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease The sickened and unconscious conditions from filth fever can't end or
-    be reduced until the disease is cured
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 5
-  type: physical (except adamantine or slashing)
-ritual_lists: null
+  misc: except adamantine or slashing
+  type: physical
 saves:
   fort: 13
   fort_misc: null
@@ -185,29 +191,23 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 128
+  page_start: '128'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Medium
 - Construct
 - Golem
 - Mindless
-type: Creature
-weaknesses: null

@@ -7,6 +7,222 @@ ability_mods:
   wis_mod: 6
 ac: 35
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The jotund troll emits a cacophonous roar from all their heads with
+    a mystical power that distorts the listener's mind. Each non-troll creature within
+    100 feet must attempt a DC 34 Will save. The jotund troll can't use Cacophonous
+    Roar for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cacophonous Roar
+  range: null
+  raw_description: '**Cacophonous Roar** [Two Actions]  (__auditory__, __emotion__,
+    __enchantment__, __incapacitation__, __mental__, __primal__) The jotund troll
+    emits a cacophonous roar from all their heads with a mystical power that distorts
+    the listener''s mind. Each non-troll creature within 100 feet must attempt a DC
+    34 Will save. The jotund troll can''t use Cacophonous Roar for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - emotion
+  - enchantment
+  - incapacitation
+  - mental
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and is temporarily immune to Cacophonous
+    Roar for 24 hours.
+  description: The creature is unaffected and is temporarily immune to Cacophonous
+    Roar for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected and is temporarily
+    immune to Cacophonous Roar for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __stupefied 1__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __stupefied 1__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __stupefied 1__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __confused__ for 1 round.
+  effect: null
+  failure: The creature is __confused__ for 1 round.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is __confused__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is confused for 1d4 rounds.
+  critical_success: null
+  description: The creature is confused for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is confused for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The troll uses Swallow Whole.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Fast Swallow
+  range: null
+  raw_description: '**Fast Swallow** [Reaction]  **Trigger** The jotund troll __Grabs__
+    a creature with their jaws; **Effect** The troll uses Swallow Whole.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The jotund troll Grabs a creature with their jaws;
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The jotund troll makes a number of jaws Strikes up to their number
+    of heads, each against a different target. These attacks count toward the troll's
+    multiple attack penalty, but the penalty doesn't increase until after the jotund
+    troll makes all of these attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ravenous Jaws
+  range: null
+  raw_description: '**Ravenous Jaws** [Two Actions]  The jotund troll makes a number
+    of jaws Strikes up to their number of heads, each against a different target.
+    These attacks count toward the troll''s multiple attack penalty, but the penalty
+    doesn''t increase until after the jotund troll makes all of these attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**__Rend__** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Medium, 3d12+8 bludgeoning, Rupture 36
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**__Swallow Whole__** [One Action]  (__attack__) Medium, 3d12+8
+    bludgeoning, Rupture 36'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -19,11 +235,11 @@ automatic_abilities:
     two missing heads are fully restored. If a jotund troll loses their last remaining
     head, they die immediately.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Head Regrowth
   range: null
   raw_description: '**Head Regrowth** A jotund troll ordinarily has nine heads, and
@@ -33,6 +249,8 @@ automatic_abilities:
     on a critical success, two missing heads are fully restored. If a jotund troll
     loses their last remaining head, they die immediately.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -47,11 +265,11 @@ automatic_abilities:
     they make. Whenever one of the jotund troll's heads is severed, the troll loses
     1 of their extra reactions per round.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Multiple Opportunities
   range: null
   raw_description: '**Multiple Opportunities** A jotund troll gains an extra reaction
@@ -62,6 +280,8 @@ automatic_abilities:
     head for each Attack of Opportunity they make. Whenever one of the jotund troll''s
     heads is severed, the troll loses 1 of their extra reactions per round.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -74,11 +294,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -89,6 +309,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -98,15 +320,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**__Catch Rock__ [Reaction]**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -129,13 +353,11 @@ description: 'Jotund trolls are gigantic, nine-headed horrors who prowl frigid m
   Plane as punishment or challenge, or if it''s merely an evocative legend told by
   scholars, is unknown. In any case, the jotund trolls themselves likely care little.'
 hp: 360
-hp_misc: regeneration 40 (deactivated by acid or fire
-immunities: null
-items: null
+hp_misc: regeneration 40 (deactivated by acid or fire)
 languages:
 - Jotun
 level: 15
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+14
@@ -157,141 +379,7 @@ melee:
   - reach 15 feet
 name: Jotund Troll
 perception: 29
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: The creature is confused for 1d4 rounds.
-  critical_success: The creature is unaffected and is temporarily immune to Cacophonous
-    Roar for 24 hours.
-  description: "The jotund troll emits a cacophonous roar from all their heads with\
-    \ a mystical power that distorts the listener's mind. Each non-troll creature\
-    \ within 100 feet must attempt a DC 34 Will save. The jotund troll can't use Cacophonous\
-    \ Roar for 1d4 rounds. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is confused for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Cacophonous Roar
-  range: null
-  raw_description: "**Cacophonous Roar** [Two Actions]  (__auditory__, __emotion__,\
-    \ __enchantment__, __incapacitation__, __mental__, __primal__) The jotund troll\
-    \ emits a cacophonous roar from all their heads with a mystical power that distorts\
-    \ the listener's mind. Each non-troll creature within 100 feet must attempt a\
-    \ DC 34 Will save. The jotund troll can't use Cacophonous Roar for 1d4 rounds.\
-    \ \n\n**Critical Success** The creature is unaffected and is temporarily immune\
-    \ to Cacophonous Roar for 24 hours. \n\n**Success** The creature is __stupefied\
-    \ 1__ for 1 round. \n\n**Failure** The creature is __confused__ for 1 round. \n\
-    \n**Critical Failure** The creature is confused for 1d4 rounds."
-  requirements: null
-  success: The creature is stupefied 1 for 1 round.
-  traits:
-  - auditory
-  - emotion
-  - enchantment
-  - incapacitation
-  - mental
-  - primal
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The troll uses Swallow Whole.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fast Swallow
-  range: null
-  raw_description: '**Fast Swallow** [Reaction]  **Trigger** The jotund troll __Grabs__
-    a creature with their jaws; **Effect** The troll uses Swallow Whole.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The jotund troll __Grabs__ a creature with their jaws
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The jotund troll makes a number of jaws Strikes up to their number
-    of heads, each against a different target. These attacks count toward the troll's
-    multiple attack penalty, but the penalty doesn't increase until after the jotund
-    troll makes all of these attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ravenous Jaws
-  range: null
-  raw_description: '**Ravenous Jaws** [Two Actions]  The jotund troll makes a number
-    of jaws Strikes up to their number of heads, each against a different target.
-    These attacks count toward the troll''s multiple attack penalty, but the penalty
-    doesn''t increase until after the jotund troll makes all of these attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Medium, 3d12+8 bludgeoning, Rupture 36
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**__Swallow Whole__**   (__attack__) Medium, 3d12+8 bludgeoning,
-    Rupture 36'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**__Throw Rock__**   '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+14
@@ -303,8 +391,6 @@ ranged:
   - brutal
   - range increment 120 feet
 rarity: Rare
-resistances: null
-ritual_lists: null
 saves:
   fort: 31
   fort_misc: null
@@ -313,36 +399,33 @@ saves:
   ref_misc: null
   will: 23
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +29
 - darkvision
 size: Huge
 skills:
 - bonus: 29
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 27
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary 2
-  page_start: 267
+  page_start: '267'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- Rare
-- CE
-- Huge
 - Giant
 - Mutant
 - Troll
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: fire

@@ -7,6 +7,58 @@ ability_mods:
   wis_mod: 1
 ac: 14
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The __sickened__ and __unconscious__ conditions from filth fever don't
+    improve on their own until the disease is cured. **Saving Throw** DC 14 Fortitude;
+    **Stage 1** carrier with no ill effect (1d4 hours), **Stage 2** __sickened 1__
+    (1 day), **Stage 3** __sickened 1__ and __slowed 1__ (1 day), **Stage 4** __unconscious__
+    (1 day), **Stage 5** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Filth Fever
+  range: null
+  raw_description: '**Filth Fever** (__disease__) The __sickened__ and __unconscious__
+    conditions from filth fever don''t improve on their own until the disease is cured.
+    **Saving Throw** DC 14 Fortitude; **Stage 1** carrier with no ill effect (1d4
+    hours), **Stage 2** __sickened 1__ (1 day), **Stage 3** __sickened 1__ and __slowed
+    1__ (1 day), **Stage 4** __unconscious__ (1 day), **Stage 5** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each enemy in the swarm's space takes 1d6 piercing damage and must
+    attempt a DC 17 basic Reflex save. A creature that fails its save is exposed to
+    filth fever.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarming Bites
+  range: null
+  raw_description: '**Swarming Bites** [One Action]  Each enemy in the swarm''s space
+    takes 1d6 piercing damage and must attempt a DC 17 basic Reflex save. A creature
+    that fails its save is exposed to filth fever.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'A swarm of rats can cause total chaos within a household or business.
@@ -23,66 +75,15 @@ hp_misc: null
 immunities:
 - precision
 - swarm mind
-items: null
-languages: null
 level: 1
-melee: null
+melee_attacks: null
 name: Rat Swarm
 perception: 5
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The __sickened__ and __unconscious__ conditions from filth fever don't
-    improve on their own until the disease is cured. **Saving Throw** DC 14 Fortitude;
-    **Stage 1** carrier with no ill effect (1d4 hours), **Stage 2** __sickened 1__
-    (1 day), **Stage 3** __sickened 1__ and __slowed 1__ (1 day), **Stage 4** __unconscious__
-    (1 day), **Stage 5** dead
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Filth Fever
-  range: null
-  raw_description: '**Filth Fever** (__disease__) The __sickened__ and __unconscious__
-    conditions from filth fever don''t improve on their own until the disease is cured.
-    **Saving Throw** DC 14 Fortitude; **Stage 1** carrier with no ill effect (1d4
-    hours), **Stage 2** __sickened 1__ (1 day), **Stage 3** __sickened 1__ and __slowed
-    1__ (1 day), **Stage 4** __unconscious__ (1 day), **Stage 5** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Each enemy in the swarm's space takes 1d6 piercing damage and must
-    attempt a DC 17 basic Reflex save. A creature that fails its save is exposed to
-    filth fever.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swarming Bites
-  range: null
-  raw_description: '**Swarming Bites**   Each enemy in the swarm''s space takes 1d6
-    piercing damage and must attempt a DC 17 basic Reflex save. A creature that fails
-    its save is exposed to filth fever.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 6
-  type: physical (except bludgeoning)
-ritual_lists: null
+  misc: except bludgeoning
+  type: physical
 saves:
   fort: 2
   fort_misc: null
@@ -91,40 +92,39 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - low-light vision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: +6 to Climb or Swim
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 276
+  page_start: '276'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
 - Swarm
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: area damage
 - amount: 3
+  misc: null
   type: splash damage

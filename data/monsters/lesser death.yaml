@@ -7,50 +7,33 @@ ability_mods:
   wis_mod: 6
 ac: 39
 ac_special: null
-alignment: NE
-automatic_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. Living creatures in the aura must roll twice on all d20 rolls
-    and use the lower result.
+  description: Any scythe gains the __agile__ trait, can't be disarmed, and becomes
+    a __+2 greater striking__ __keen__ scythe while the lesser death wields it.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Aura of Misfortune
+  maximum_duration: null
+  name: Infuse Weapon
   range: null
-  raw_description: '**Aura of Misfortune** (__aura__, __divination__, __divine__,
-    __misfortune__) 20 feet. Living creatures in the aura must roll twice on all d20
-    rolls and use the lower result.'
+  raw_description: '**Infuse Weapon** (__divine__, __evocation__) Any scythe gains
+    the __agile__ trait, can''t be disarmed, and becomes a __+2 greater striking__
+    __keen__ scythe while the lesser death wields it.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
-  - aura
-  - divination
   - divine
-  - misfortune
+  - evocation
   trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The lesser death can choose whether or not it takes positive damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Negative Healing
-  range: null
-  raw_description: '**Negative Healing** The lesser death can choose whether or not
-    it takes positive damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
+alignment: NE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -58,19 +41,30 @@ automatic_abilities:
   effect: The lesser death teleports to a square adjacent to the triggering creature
     and makes a melee Strike against it. If the Strike hits, the lesser death disrupts
     the triggering action.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Lurking Death
+  maximum_duration: null
+  name: Aura of Misfortune
   range: null
-  raw_description: '**Lurking Death** [Reaction] (__teleportation__); **Trigger**
-    A creature within 60 feet makes a ranged attack or uses an action that has the
-    concentrate, manipulate, or move trait. **Effect** The lesser death teleports
-    to a square adjacent to the triggering creature and makes a melee Strike against
-    it. If the Strike hits, the lesser death disrupts the triggering action.'
+  raw_description: '**Aura of Misfortune** (__aura__, __divination__, __divine__,
+    __misfortune__) 20 feet. Living creatures in the aura must roll twice on all d20
+    rolls and use the lower result.
+
+
+    **Negative Healing** The lesser death can choose whether or not it takes positive
+    damage.
+
+
+    **Lurking Death** [Reaction] (__teleportation__); **Trigger** A creature within
+    60 feet makes a ranged attack or uses an action that has the concentrate, manipulate,
+    or move trait. **Effect** The lesser death teleports to a square adjacent to the
+    triggering creature and makes a melee Strike against it. If the Strike hits, the
+    lesser death disrupts the triggering action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - teleportation
@@ -103,15 +97,15 @@ languages:
 - Common
 - Necril
 level: 16
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+14
     type: slashing
   name: keen scythe
   plus_damage:
-  - formula: 1d12
-    type: negative
+  - formula: null
+    type: 1d12 negative
   to_hit: 32
   traits:
   - agile
@@ -121,33 +115,8 @@ melee:
   - trip
 name: Lesser Death
 perception: 32
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any scythe gains the __agile__ trait, can't be disarmed, and becomes
-    a __+2 greater striking__ __keen__ scythe while the lesser death wields it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Infuse Weapon
-  range: null
-  raw_description: '**Infuse Weapon** (__divine__, __evocation__) Any scythe gains
-    the __agile__ trait, can''t be disarmed, and becomes a __+2 greater striking__
-    __keen__ scythe while the lesser death wields it.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
-resistances: null
-ritual_lists: null
 saves:
   fort: 30
   fort_misc: null
@@ -160,51 +129,35 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: The lesser death can choose whether or not it counts as undead for
+  description: 'The lesser death can choose whether or not it counts as undead for
     effects that affect undead differently. Even if it does not count as undead, the
     lesser death still never counts as a living creature.
+
+
+    **Status Sight** The lesser death automatically knows the Hit Points, conditions,
+    afflictions, and emotions of all creatures it can see.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Death's Grace
   range: null
   raw_description: '**Death''s Grace** The lesser death can choose whether or not
     it counts as undead for effects that affect undead differently. Even if it does
-    not count as undead, the lesser death still never counts as a living creature.'
+    not count as undead, the lesser death still never counts as a living creature.
+
+
+    **Status Sight** The lesser death automatically knows the Hit Points, conditions,
+    afflictions, and emotions of all creatures it can see.'
   requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 'The lesser death automatically knows the Hit Points, conditions, afflictions,
-    and emotions of all creatures it can see.
-
-
-    '
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Status Sight
-  range: null
-  raw_description: '**Status Sight** The lesser death automatically knows the Hit
-    Points, conditions, afflictions, and emotions of all creatures it can see.
-
-
-    '
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +32
 - darkvision
 - see invisibility
 - status sight
@@ -213,62 +166,56 @@ size: Medium
 skills:
 - bonus: 33
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 28
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 30
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 32
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 30
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 26
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 35
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 197
+  page_start: '197'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 38
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: 6
-    level: -1
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: 3
-    level: -1
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: haste
-      requirement: null
-  - heightened_level: 2
-    level: -1
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: see invisibility
-      requirement: null
-  to_hit: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Divine Innate Spells
 traits:
-- Rare
-- NE
-- Medium
 - Undead
-type: Creature
-weaknesses: null

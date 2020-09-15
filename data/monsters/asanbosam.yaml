@@ -7,12 +7,84 @@ ability_mods:
   wis_mod: 1
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: If an asanbosam is positioned above a target (usually by using its
+    Climb speed), it can make a claw Strike with its reach increased to 15 feet. This
+    Strike deals an additional 1d6 slashing damage, and if it hits, the asanbosam
+    Grabs the target and pulls it to a space adjacent to the asanbosam. This counts
+    as two attacks when calculating the asanbosam's multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Attack from Above
+  range: null
+  raw_description: '**Attack from Above** [Two Actions]  If an asanbosam is positioned
+    above a target (usually by using its Climb speed), it can make a claw Strike with
+    its reach increased to 15 feet. This Strike deals an additional 1d6 slashing damage,
+    and if it hits, the asanbosam Grabs the target and pulls it to a space adjacent
+    to the asanbosam. This counts as two attacks when calculating the asanbosam''s
+    multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: 'The asanbosam sinks its teeth into the creature to drink its blood. If
+    the victim is grabbed, this is automatic; otherwise, the asanbosam must succeed
+    at an __Athletics__ check against the victim''s Fortitude DC. The victim becomes
+    __drained 1__ and the asanbosam regains 10 HP, gaining any excess HP as temporary
+    Hit Points. Drinking Blood from a creature that''s already drained increases the
+    victim''s drained value by 1, but doesn''t restore any HP to the asanbosam.
+
+
+    A victim''s drained condition decreases by 1 each week. A blood transfusion, which
+    requires a successful DC 20 Medicine check and a blood donor or sufficient blood,
+    reduces the drained value by 1 after 10 minutes.'
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drink Blood
+  range: null
+  raw_description: '**Drink Blood** [One Action]  **Requirements** A __grabbed__,
+    __paralyzed__, __restrained__, __unconscious__, or willing creature is within
+    reach of the asanbosam''s jaws. **Effect** The asanbosam sinks its teeth into
+    the creature to drink its blood. If the victim is grabbed, this is automatic;
+    otherwise, the asanbosam must succeed at an __Athletics__ check against the victim''s
+    Fortitude DC. The victim becomes __drained 1__ and the asanbosam regains 10 HP,
+    gaining any excess HP as temporary Hit Points. Drinking Blood from a creature
+    that''s already drained increases the victim''s drained value by 1, but doesn''t
+    restore any HP to the asanbosam.
+
+
+    A victim''s drained condition decreases by 1 each week. A blood transfusion, which
+    requires a successful DC 20 Medicine check and a blood donor or sufficient blood,
+    reduces the drained value by 1 after 10 minutes.'
+  requirements: A grabbed, paralyzed, restrained, unconscious, or willing creature
+    is within reach of the asanbosam's jaws.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Asanbosams are monstrous, hairy humanoids with cold iron fangs and muscular
   limbs that end in powerful, hooked claws. They hide in treetops and grab prey from
   above, latching onto their unfortunate victims'' necks to drain their blood. Locals
-  in nearby communities tell horror stories of these "bloodsucking tree-folk," and
+  in nearby communities tell horror stories of these “bloodsucking tree-folk,” and
   experienced jungle explorers keep a close watch on the treetops in asanbosam territory.
 
 
@@ -37,12 +109,10 @@ description: 'Asanbosams are monstrous, hairy humanoids with cold iron fangs and
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 22'
 hp: 95
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Mwangi
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -66,69 +136,7 @@ melee:
   - reach 10 feet
 name: Asanbosam
 perception: 17
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: If an asanbosam is positioned above a target (usually by using its
-    Climb speed), it can make a claw Strike with its reach increased to 15 feet. This
-    Strike deals an additional 1d6 slashing damage, and if it hits, the asanbosam
-    Grabs the target and pulls it to a space adjacent to the asanbosam. This counts
-    as two attacks when calculating the asanbosam's multiple attack penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Attack from Above
-  range: null
-  raw_description: '**Attack from Above** [Two Actions]  If an asanbosam is positioned
-    above a target (usually by using its Climb speed), it can make a claw Strike with
-    its reach increased to 15 feet. This Strike deals an additional 1d6 slashing damage,
-    and if it hits, the asanbosam Grabs the target and pulls it to a space adjacent
-    to the asanbosam. This counts as two attacks when calculating the asanbosam''s
-    multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A __grabbed__, __paralyzed__, __restrained__, __unconscious__, or willing
-    creature is within reach of the asanbosam's jaws.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drink Blood
-  range: null
-  raw_description: '**Drink Blood**   **Requirements** A __grabbed__, __paralyzed__,
-    __restrained__, __unconscious__, or willing creature is within reach of the asanbosam''s
-    jaws. **Effect** The asanbosam sinks its teeth into the creature to drink its
-    blood. If the victim is grabbed, this is automatic; otherwise, the asanbosam must
-    succeed at an __Athletics__ check against the victim''s Fortitude DC. The victim
-    becomes __drained 1__ and the asanbosam regains 10 HP, gaining any excess HP as
-    temporary Hit Points. Drinking Blood from a creature that''s already drained increases
-    the victim''s drained value by 1, but doesn''t restore any HP to the asanbosam.
-
-
-    A victim''s drained condition decreases by 1 each week. A blood transfusion, which
-    requires a successful DC 20 Medicine check and a blood donor or sufficient blood,
-    reduces the drained value by 1 after 10 minutes.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 15
   fort_misc: null
@@ -137,40 +145,36 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 size: Large
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 16
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 14
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #146: Cult of Cinders'
-  page_start: 80
+  page_start: '80'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- CE
-- Large
 - Humanoid
-type: Creature
-weaknesses: null

@@ -7,6 +7,176 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the iridescent elephant stomps its foot, a bright, disorienting
+    burst of light pulses through its leg. Each creatures adjacent to the iridescent
+    elephant when it makes a foot Strike (regardless of whether or not it hit) must
+    succeed at a DC 24 Will save or be __flat-footed__ until the beginning of the
+    elephant's next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Color Splash
+  range: null
+  raw_description: '**Color Splash** (__visual__) When the iridescent elephant stomps
+    its foot, a bright, disorienting burst of light pulses through its leg. Each creatures
+    adjacent to the iridescent elephant when it makes a foot Strike (regardless of
+    whether or not it hit) must succeed at a DC 24 Will save or be __flat-footed__
+    until the beginning of the elephant''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A Medium or smaller creature hit by the elephant's trunk is __grabbed__.
+    If the elephant moves, it can bring the grabbed creature along with it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Grabbing Trunk
+  range: null
+  raw_description: '**Grabbing Trunk** A Medium or smaller creature hit by the elephant''s
+    trunk is __grabbed__. If the elephant moves, it can bring the grabbed creature
+    along with it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Large or smaller, foot, DC 22
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 22'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The iridescent elephant blasts a beam of light from its trunk in a 30-foot
+    line. Each creature in the area must attempt a DC 22 Fortitude save.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trunk Beam
+  range: null
+  raw_description: '**Trunk Beam** (__visual__, __light__) **Frequency** once per
+    day; **Effect** The iridescent elephant blasts a beam of light from its trunk
+    in a 30-foot line. Each creature in the area must attempt a DC 22 Fortitude save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - visual
+  - light
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __dazzled__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __dazzled__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __dazzled__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __blinded__ for 1 minute.
+  effect: null
+  failure: The creature is __blinded__ for 1 minute.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is __blinded__ for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is blinded permanently.
+  critical_success: null
+  description: The creature is blinded permanently.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is blinded permanently.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -17,11 +187,11 @@ automatic_abilities:
     single action, which has the __concentrate__ trait. The color of the light is
     determined by the iridescent animal's creator.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Glowing Bones
   range: null
   raw_description: '**Glowing Bones** An iridescent animal emits phosphorescent bright
@@ -29,6 +199,8 @@ automatic_abilities:
     its next turn as a single action, which has the __concentrate__ trait. The color
     of the light is determined by the iridescent animal''s creator.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -52,11 +224,8 @@ description: 'An iridescent animal is a wild or domesticated animal that has und
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 25'
 hp: 110
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+7
@@ -67,7 +236,9 @@ melee:
   traits:
   - reach 10 feet
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: grabbing trunk
   name: trunk
   plus_damage: null
   to_hit: 16
@@ -86,101 +257,8 @@ melee:
   - reach 10 feet
 name: Iridescent Elephant
 perception: 11
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the iridescent elephant stomps its foot, a bright, disorienting
-    burst of light pulses through its leg. Each creatures adjacent to the iridescent
-    elephant when it makes a foot Strike (regardless of whether or not it hit) must
-    succeed at a DC 24 Will save or be __flat-footed__ until the beginning of the
-    elephant's next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Color Splash
-  range: null
-  raw_description: '**Color Splash** (__visual__) When the iridescent elephant stomps
-    its foot, a bright, disorienting burst of light pulses through its leg. Each creatures
-    adjacent to the iridescent elephant when it makes a foot Strike (regardless of
-    whether or not it hit) must succeed at a DC 24 Will save or be __flat-footed__
-    until the beginning of the elephant''s next turn.'
-  requirements: null
-  success: null
-  traits:
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A Medium or smaller creature hit by the elephant's trunk is __grabbed__.
-    If the elephant moves, it can bring the grabbed creature along with it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Grabbing Trunk
-  range: null
-  raw_description: '**Grabbing Trunk** A Medium or smaller creature hit by the elephant''s
-    trunk is __grabbed__. If the elephant moves, it can bring the grabbed creature
-    along with it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Large or smaller, foot, DC 22
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 22'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is blinded permanently.
-  critical_success: The creature is unaffected.
-  description: null
-  effect: "The iridescent elephant blasts a beam of light from its trunk in a 30-foot\
-    \ line. Each creature in the area must attempt a DC 22 Fortitude save. \n\n"
-  effects: null
-  failure: The creature is blinded for 1 minute.
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Trunk Beam
-  range: null
-  raw_description: "**Trunk Beam** (__visual__, __light__) **Frequency** once per\
-    \ day; **Effect** The iridescent elephant blasts a beam of light from its trunk\
-    \ in a 30-foot line. Each creature in the area must attempt a DC 22 Fortitude\
-    \ save. \n\n**Critical Success** The creature is unaffected.\n\n**Success** The\
-    \ creature is __dazzled__ for 1 round.\n\n**Failure** The creature is __blinded__\
-    \ for 1 minute.\n\n**Critical Failure** The creature is blinded permanently."
-  requirements: null
-  success: The creature is dazzled for 1 round.
-  traits:
-  - visual
-  - light
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 16
   fort_misc: null
@@ -189,30 +267,24 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #152: Legacy of the Lost God'
-  page_start: 80
+  page_start: '80'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Huge
 - Animal
-type: Creature
-weaknesses: null

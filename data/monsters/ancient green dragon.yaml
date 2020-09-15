@@ -7,89 +7,158 @@ ability_mods:
   wis_mod: 5
 ac: 41
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a toxic cloud that deals 18d6 poison damage in
+    a 60-foot cone (DC 37 basic Fortitude save). The Breath Weapon also creates a
+    miasma. It can't use Breath Weapon again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon ** [Two Actions]  (__arcane__, __evocation__,
+    __poison__) The dragon breathes a toxic cloud that deals 18d6 poison damage in
+    a 60-foot cone (DC 37 basic Fortitude save). The Breath Weapon also creates a
+    miasma. It can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - evocation
+  - poison
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one horn Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one horn Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges its Breath Weapon whenever it scores a critical
+    hit with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
+    it scores a critical hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The green dragon always gains the benefits of Cover Tracks in natural
+    surroundings, even while moving at full speed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trackless Step
+  range: null
+  raw_description: '**Trackless Step** The green dragon always gains the benefits
+    of Cover Tracks in natural surroundings, even while moving at full speed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The green dragon ignores difficult terrain and greater difficult terrain
+    from non-magical foliage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Woodland Stride
+  range: null
+  raw_description: '**Woodland Stride** The green dragon ignores difficult terrain
+    and greater difficult terrain from non-magical foliage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 37
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
+    hits, the dragon disrupts the creature's action.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 37 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 20 feet. After the dragon uses its Breath Weapon, a cloud of poison
-    gas continues to emanate from its body for 1 round. Any creature that ends its
-    turn in the miasma takes 4d6 poison damage (DC 37 basic Fortitude save). Any creature
-    in the miasma is concealed and treats other creatures as concealed. The dragon
-    can see through this concealment.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Miasma
-  range: null
-  raw_description: '**Miasma** (__aura__, __poison__); 20 feet. After the dragon uses
-    its Breath Weapon, a cloud of poison gas continues to emanate from its body for
-    1 round. Any creature that ends its turn in the miasma takes 4d6 poison damage
-    (DC 37 basic Fortitude save). Any creature in the miasma is concealed and treats
-    other creatures as concealed. The dragon can see through this concealment.'
-  requirements: null
-  success: null
-  traits:
-  - aura
-  - poison
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The dragon makes a tail Strike at the creature with a -2 penalty. If it
-    hits, the dragon disrupts the creature's action.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Twisting Tail
-  range: null
-  raw_description: '**Twisting Tail** [Reaction] **Trigger** A creature within reach
-    of the dragon''s tail uses a move action or leaves a square during a move action
-    it''s using. **Effect** The dragon makes a tail Strike at the creature with a
-    -2 penalty. If it hits, the dragon disrupts the creature''s action.'
-  requirements: null
-  success: null
-  traits: null
   trigger: A creature within reach of the dragon's tail uses a move action or leaves
     a square during a move action it's using.
 description: 'Green dragons are the most contemplative of the chromatic dragons as
@@ -140,7 +209,6 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Abyssal
 - Common
@@ -149,15 +217,15 @@ languages:
 - Jotun
 - Sylvan
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+15
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 4d4
-    type: poison
+  - formula: null
+    type: 4d4 poison
   to_hit: 33
   traits:
   - magical
@@ -196,111 +264,8 @@ melee:
   - reach 20 feet
 name: Ancient Green Dragon
 perception: 30
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a toxic cloud that deals 18d6 poison damage in
-    a 60-foot cone (DC 37 basic Fortitude save). The Breath Weapon also creates a
-    miasma. It can't use Breath Weapon again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon ** [Two Actions]  (__arcane__, __evocation__,
-    __poison__) The dragon breathes a toxic cloud that deals 18d6 poison damage in
-    a 60-foot cone (DC 37 basic Fortitude save). The Breath Weapon also creates a
-    miasma. It can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - evocation
-  - poison
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one horn Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one horn Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges its Breath Weapon whenever it scores a critical
-    hit with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
-    it scores a critical hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The green dragon always gains the benefits of Cover Tracks in natural
-    surroundings, even while moving at full speed.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trackless Step
-  range: null
-  raw_description: '**Trackless Step** The green dragon always gains the benefits
-    of Cover Tracks in natural surroundings, even while moving at full speed.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The green dragon ignores difficult terrain and greater difficult terrain
-    from non-magical foliage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Woodland Stride
-  range: null
-  raw_description: '**Woodland Stride** The green dragon ignores difficult terrain
-    and greater difficult terrain from non-magical foliage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 30
   fort_misc: null
@@ -316,102 +281,99 @@ sense_abilities:
   description: The dragon can Hide in natural environments even if it doesn't have
     cover.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Camouflage
   range: null
   raw_description: '**Camouflage** The dragon can Hide in natural environments even
     if it doesn''t have cover.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +30
 - darkvision
 - scent (imprecise) 60 feet
 size: Gargantuan
 skills:
 - bonus: 25
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 32
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 30
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 27
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 31
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 31
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 28
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 34
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 31
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 29
   misc: camouflage
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 110
+  page_start: '110'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 200
+  misc: null
   type: fly
 - amount: 50
+  misc: null
   type: swim
 - amount: null
+  misc: null
   type: trackless step
 - amount: null
+  misc: null
   type: woodland stride
 spell_lists:
-- dc: 39
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 39
+  focus_points: null
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+  spell_lists:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: dominate
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: charm
-      requirement: null
-    - frequency: null
+    - misc: null
       name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: entangle
-      requirement: null
-  to_hit: null
+  spells_source: Arcane Innate Spells
 traits:
-- Uncommon
-- LE
-- Gargantuan
 - Amphibious
 - Dragon
-type: Creature
-weaknesses: null

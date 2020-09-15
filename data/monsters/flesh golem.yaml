@@ -7,69 +7,31 @@ ability_mods:
   wis_mod: 0
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The flesh golem is berserk.'
+  effect: The flesh golem Strikes with its fist at a –1 circumstance penalty. If it
+    hits, it deals 1d6 extra damage and knocks the target __prone__.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Berserk Slam
+  range: null
+  raw_description: '**Berserk Slam** [One Action]  **Requirement** The flesh golem
+    is berserk. **Effect** The flesh golem Strikes with its fist at a –1 circumstance
+    penalty. If it hits, it deals 1d6 extra damage and knocks the target __prone__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A severely damaged flesh golem has a chance of going berserk. If it
-    has 40 or fewer HP at the start of its turn, the golem must succeed at a DC 5
-    flat check or go berserk. A berserk golem wildly attacks the nearest living creature,
-    or the nearest object if no creatures are nearby.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Berserk
-  range: null
-  raw_description: '**Berserk** A severely damaged flesh golem has a chance of going
-    berserk. If it has 40 or fewer HP at the start of its turn, the golem must succeed
-    at a DC 5 flat check or go berserk. A berserk golem wildly attacks the nearest
-    living creature, or the nearest object if no creatures are nearby.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: harmed by fire (5d8, 3d4 from areas or persistent damage); healed by
-    electricity (area 2d4 HP); slowed by cold
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Golem Antimagic
-  range: null
-  raw_description: '**Golem Antimagic** harmed by fire (5d8, 3d4 from areas or persistent
-    damage); healed by electricity (area 2d4 HP); slowed by cold'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Casting a flesh to stone spell on the flesh golem affects the golem
-    normally.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Vulnerable to Flesh to Stone
-  range: null
-  raw_description: '**Vulnerable to Flesh to Stone** Casting a flesh to stone spell
-    on the flesh golem affects the golem normally.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -77,19 +39,35 @@ automatic_abilities:
   effect: The golem lashes out and tries to grab a nearby creature. The golem attempts
     an Athletics check to Grapple an adjacent creature. The creature also takes 3d6
     electricity damage on a success, or 6d6 electricity damage on a critical success.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Electric Reflexes
+  maximum_duration: null
+  name: Berserk
   range: null
-  raw_description: '**Electric Reflexes** [Reaction] **Trigger** The golem takes electricity
-    damage and a creature is adjacent to it. **Effect** The golem lashes out and tries
-    to grab a nearby creature. The golem attempts an Athletics check to Grapple an
-    adjacent creature. The creature also takes 3d6 electricity damage on a success,
-    or 6d6 electricity damage on a critical success.'
+  raw_description: '**Berserk** A severely damaged flesh golem has a chance of going
+    berserk. If it has 40 or fewer HP at the start of its turn, the golem must succeed
+    at a DC 5 flat check or go berserk. A berserk golem wildly attacks the nearest
+    living creature, or the nearest object if no creatures are nearby.
+
+
+    **Golem Antimagic** harmed by fire (5d8, 3d4 from areas or persistent damage);
+    healed by electricity (area 2d4 HP); slowed by cold
+
+
+    **Vulnerable to Flesh to Stone** Casting a flesh to stone spell on the flesh golem
+    affects the golem normally.
+
+
+    **Electric Reflexes** [Reaction] **Trigger** The golem takes electricity damage
+    and a creature is adjacent to it. **Effect** The golem lashes out and tries to
+    grab a nearby creature. The golem attempts an Athletics check to Grapple an adjacent
+    creature. The creature also takes 3d6 electricity damage on a success, or 6d6
+    electricity damage on a critical success.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The golem takes electricity damage and a creature is adjacent to it.
@@ -126,10 +104,8 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
-languages: null
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+7
@@ -142,32 +118,12 @@ melee:
   - reach 10 feet
 name: Flesh Golem
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The flesh golem is berserk.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Berserk Slam
-  range: null
-  raw_description: '**Berserk Slam**   **Requirement** The flesh golem is berserk.
-    **Effect** The flesh golem Strikes with its fist at a -1 circumstance penalty.
-    If it hits, it deals 1d6 extra damage and knocks the target __prone__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 5
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 18
   fort_misc: null
@@ -176,29 +132,23 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - darkvision
 size: Large
 skills:
 - bonus: 19
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 185
+  page_start: '185'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Large
 - Construct
 - Golem
 - Mindless
-type: Creature
-weaknesses: null

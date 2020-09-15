@@ -1,0 +1,175 @@
+ability_mods:
+  cha_mod: -1
+  con_mod: 3
+  dex_mod: 4
+  int_mod: 1
+  str_mod: 3
+  wis_mod: -1
+ac: 18
+ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The zrukbat assumes the shape of any Small object or ornamentation,
+    although the zrukbat's mimicked objects usually have unrealistic or suspicious
+    quirks. This doesn't change the zrukbat's size but can alter their coloration
+    and visual appearance. They have an automatic result of 23 on __Deception__ checks
+    and DCs to pass as the mimicked object.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dubious Shifting
+  range: null
+  raw_description: '**Dubious Shifting** [One Action]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) The zrukbat assumes the shape of any Small object
+    or ornamentation, although the zrukbat''s mimicked objects usually have unrealistic
+    or suspicious quirks. This doesn''t change the zrukbat''s size but can alter their
+    coloration and visual appearance. They have an automatic result of 23 on __Deception__
+    checks and DCs to pass as the mimicked object.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The zrukbat flies up to its Speed and makes a claw Strike at the end
+    of its move. If the claw attack hits, the target must succeed on a DC 15 Fortitude
+    saving throw or be __blinded__ for 1 round (or blinded for 1 minute on a critical
+    failure). If the Strike was a critical hit, the target's save result is one degree
+    of success worse.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Go for the Eyes
+  range: null
+  raw_description: '**Go for the Eyes** [Two Actions]  The zrukbat flies up to its
+    Speed and makes a claw Strike at the end of its move. If the claw attack hits,
+    the target must succeed on a DC 15 Fortitude saving throw or be __blinded__ for
+    1 round (or blinded for 1 minute on a critical failure). If the Strike was a critical
+    hit, the target''s save result is one degree of success worse.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: CN
+automatic_abilities: null
+description: 'Zrukbats resemble long-limbed bats with gangly wings, which make them
+  clumsy fliers. Instead, these reclusive fey prefer to crawl along surfaces using
+  the hooked talons on the tips of their wings and feet. Their somewhat humanoid faces
+  feature bulging black eyes, dark fur, and pointed fangs, shocking—if not terrifying—those
+  who get a glimpse of them scuttling along a roof or peeping out from under an eave.
+  Sensitive creatures, zrukbats quickly learn that their appearance triggers negative
+  reactions, yet they prefer to live in urban settlements, observing busy streets
+  and houses from inconspicuous locations.
+
+
+
+
+  Zrukbats hide in plain sight using their shapeshifting abilities to mimic a broad
+  repertoire of objects. Despite their intelligence, they fundamentally don''t understand
+  others'' reasoning and often make foolish mistakes in their disguises. For example,
+  one might shapeshift into a lit lantern in an otherwise abandoned house, misjudge
+  the pattern of roof ornaments and become an out-of-place spire, or disguise themself
+  as smoke in an unlit chimney.
+
+
+
+
+  Due to their fearsome appearance and predisposition to conceal themselves, zrukbats
+  are associated with ghosts and other supernatural phenomena. This affiliation isn''t
+  wholly earned; as long as zrukbats feel they''ve gone unnoticed, they remain generally
+  peaceful. When their obsessive secrecy fails, they devolve into extremely volatile,
+  dangerous creatures. Once spotted, zrukbats fly into a rage if anyone utters even
+  a casual suspicion regarding their presence. In areas known to harbor zrukbats,
+  superstition forbids speaking aloud of curious phenomena, lest they take offense
+  and attack.
+
+
+
+
+  **__Recall Knowledge - Fey__ (__Nature__)**: DC 16'
+hp: 30
+hp_misc: null
+immunities:
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+languages:
+- Common
+- Sylvan
+level: 2
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 1d8+3
+    type: slashing
+  name: claw
+  plus_damage: null
+  to_hit: 11
+  traits: null
+- action_cost: One Action
+  damage:
+    formula: 1d6+3
+    type: piercing
+  name: fangs
+  plus_damage: null
+  to_hit: 11
+  traits: null
+name: Zrukbat
+perception: 7
+ranged_attacks: null
+saves:
+  fort: 9
+  fort_misc: null
+  misc: null
+  ref: 10
+  ref_misc: null
+  will: 5
+  will_misc: null
+senses:
+- darkvision
+size: Small
+skills:
+- bonus: 10
+  misc: null
+  name: Acrobatics
+- bonus: 9
+  misc: null
+  name: Athletics
+- bonus: 5
+  misc: null
+  name: Deception
+- bonus: 10
+  misc: null
+  name: Stealth
+sources:
+- abbr: 'Pathfinder #157: Devil at the Dreaming Palace'
+  page_start: '85'
+  page_stop: null
+speed:
+- amount: 20
+  misc: null
+  type: Land
+- amount: 20
+  misc: null
+  type: climb
+- amount: 20
+  misc: null
+  type: fly
+spell_lists: null
+traits:
+- Fey

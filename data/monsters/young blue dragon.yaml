@@ -7,63 +7,147 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes lightning that deals 5d12 electricity damage in
+    an 80-foot line (DC 28 basic Reflex save). It can't use Breath Weapon again for
+    1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __electricity__,
+    __evocation__) The dragon breathes lightning that deals 5d12 electricity damage
+    in an 80-foot line (DC 28 basic Reflex save). It can''t use Breath Weapon again
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - electricity
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When casting __create water__, the dragon can attempt to destroy liquid
+    instead of creating it, turning an equal amount of liquid into sand. This destroys
+    liquid magic or alchemical items if they're of a lower level than the dragon (a
+    creature can attempt a DC 26 Will save to protect all liquids in its possession).
+    This doesn't affect the liquids in a creature's body.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Desert Thirst
+  range: null
+  raw_description: '**Desert Thirst** (__arcane__, __transmutation__) When casting
+    __create water__, the dragon can attempt to destroy liquid instead of creating
+    it, turning an equal amount of liquid into sand. This destroys liquid magic or
+    alchemical items if they''re of a lower level than the dragon (a creature can
+    attempt a DC 26 Will save to protect all liquids in its possession). This doesn''t
+    affect the liquids in a creature''s body.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - transmutation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one horns Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one horns Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges its Breath Weapon whenever it scores a critical
+    hit with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
+    it scores a critical hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 26
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
+    the triggering attack. If the dragon is Flying, it descends 10 feet after the
+    attack is complete.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 26 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
-    the triggering attack. If the dragon is Flying, it descends 10 feet after the
-    attack is complete.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wing Deflection
-  range: null
-  raw_description: '**Wing Deflection** [Reaction] **Trigger** The dragon is targeted
-    with an attack. **Effect** The dragon raises its wing, gaining a +2 circumstance
-    bonus to AC against the triggering attack. If the dragon is Flying, it descends
-    10 feet after the attack is complete.'
-  requirements: null
-  success: null
-  traits: null
   trigger: The dragon is targeted with an attack.
 description: 'Blue dragons are the sleek and poised cosmopolitans of the chromatic
   dragons. Their brand of evil is organized, manipulative, and regal. Blue dragons
@@ -112,20 +196,19 @@ immunities:
 - electricity
 - paralyzed
 - sleep
-items: null
 languages:
 - Common
 - Draconic
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+11
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d12
-    type: electricity
+  - formula: null
+    type: 1d12 electricity
   to_hit: 21
   traits:
   - electricity
@@ -159,101 +242,7 @@ melee:
   - reach 10 feet
 name: Young Blue Dragon
 perception: 18
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes lightning that deals 5d12 electricity damage in
-    an 80-foot line (DC 28 basic Reflex save). It can't use Breath Weapon again for
-    1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __electricity__,
-    __evocation__) The dragon breathes lightning that deals 5d12 electricity damage
-    in an 80-foot line (DC 28 basic Reflex save). It can''t use Breath Weapon again
-    for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - electricity
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When casting __create water__, the dragon can attempt to destroy liquid
-    instead of creating it, turning an equal amount of liquid into sand. This destroys
-    liquid magic or alchemical items if they're of a lower level than the dragon (a
-    creature can attempt a DC 26 Will save to protect all liquids in its possession).
-    This doesn't affect the liquids in a creature's body.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Desert Thirst
-  range: null
-  raw_description: '**Desert Thirst** (__arcane__, __transmutation__) When casting
-    __create water__, the dragon can attempt to destroy liquid instead of creating
-    it, turning an equal amount of liquid into sand. This destroys liquid magic or
-    alchemical items if they''re of a lower level than the dragon (a creature can
-    attempt a DC 26 Will save to protect all liquids in its possession). This doesn''t
-    affect the liquids in a creature''s body.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - transmutation
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one horns Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one horns Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges its Breath Weapon whenever it scores a critical
-    hit with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
-    it scores a critical hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 19
   fort_misc: null
@@ -269,82 +258,81 @@ sense_abilities:
   description: The dragon can mimic any sound it has heard. It must succeed at a Deception
     check with a +4 circumstance bonus to do so.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sound Imitation
   range: null
   raw_description: '**Sound Imitation** The dragon can mimic any sound it has heard.
     It must succeed at a Deception check with a +4 circumstance bonus to do so.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +18
 - darkvision
 - scent (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 16
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 18
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 18
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 16
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 15
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 16
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 107
+  page_start: '107'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: burrow
 - amount: 100
+  misc: null
   type: fly
 spell_lists:
-- dc: 28
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: at will, see desert thirst
-      name: create water
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: at will; see desert thirst
+      name: create water
+  spells_source: Arcane Innate Spells
 traits:
-- LE
-- Large
 - Dragon
 - Electricity
-type: Creature
-weaknesses: null

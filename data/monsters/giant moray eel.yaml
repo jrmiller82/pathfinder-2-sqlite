@@ -7,6 +7,56 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The giant moray eel uses its second set of jaws to pull the prey into its
+    gullet. The eel deals 1d6+4 piercing damage to the grabbed creature and gains
+    a +2 circumstance bonus to its Swallow Whole attempts and to the DC for the creature
+    to Escape. This effect ends if the target Escapes or the giant moray eel Swallows
+    it Whole.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pharyngeal Jaws
+  range: null
+  raw_description: '**Pharyngeal Jaws** [Two Actions]  **Requirements** The giant
+    moray eel has a creature grabbed in its jaws. **Effect** The giant moray eel uses
+    its second set of jaws to pull the prey into its gullet. The eel deals 1d6+4 piercing
+    damage to the grabbed creature and gains a +2 circumstance bonus to its Swallow
+    Whole attempts and to the DC for the creature to Escape. This effect ends if the
+    target Escapes or the giant moray eel Swallows it Whole.'
+  requirements: The giant moray eel has a creature grabbed in its jaws.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Small, 1d6+6 bludgeoning, Rupture 12
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**Swallow Whole** [One Action]  (__attack__) Small, 1d6+6 bludgeoning,
+    Rupture 12'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -16,11 +66,11 @@ automatic_abilities:
   effect: The giant moray eel lunges out of its hiding place, Swims directly toward
     the triggering creature, and makes a jaws Strike against it. The target creature
     is flat-footed to this attack.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ambush
   range: null
   raw_description: '**Ambush** [Reaction] **Trigger** A target creature passes within
@@ -29,6 +79,8 @@ automatic_abilities:
     directly toward the triggering creature, and makes a jaws Strike against it. The
     target creature is flat-footed to this attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A target creature passes within 20 feet of the giant moray eel's hiding
@@ -44,11 +96,8 @@ description: 'Giant moray eels dwell in warm, tropical waters and build lairs in
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 20'
 hp: 65
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+8
@@ -62,56 +111,14 @@ melee:
   - reach 10 feet
 name: Giant Moray Eel
 perception: 11
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The giant moray eel has a creature grabbed in its jaws.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pharyngeal Jaws
-  range: null
-  raw_description: '**Pharyngeal Jaws** [Two Actions]  **Requirements** The giant
-    moray eel has a creature grabbed in its jaws. **Effect** The giant moray eel uses
-    its second set of jaws to pull the prey into its gullet. The eel deals 1d6+4 piercing
-    damage to the grabbed creature and gains a +2 circumstance bonus to its Swallow
-    Whole attempts and to the DC for the creature to Escape. This effect ends if the
-    target Escapes or the giant moray eel Swallows it Whole.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Small, 1d6+6 bludgeoning, Rupture 12
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**Swallow Whole**   (__attack__) Small, 1d6+6 bludgeoning, Rupture
-    12'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 14
   fort_misc: null
@@ -120,36 +127,32 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - low-light vision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 142
+  page_start: '142'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null

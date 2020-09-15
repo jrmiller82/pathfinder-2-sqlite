@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities: null
 alignment: NG
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +16,11 @@ automatic_abilities:
   description: null
   effect: The ember fox drapes itself across its ally, granting the ally fire resistance
     10 against the incoming attack.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Cloak in Embers
   range: null
   raw_description: '**Cloak in Embers [Reaction]** **Trigger **An adjacent ally is
@@ -27,9 +28,11 @@ automatic_abilities:
     itself across its ally, granting the ally fire resistance 10 against the incoming
     attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: An adjacent ally is targeted by an effect that deals fire damage
+  trigger: An adjacent ally is targeted by an effect that deals fire damage;
 description: 'Ember foxes resemble their canid namesakes, save for the flames that
   make their fur and the tips of their long whiskers flicker and glow.
 
@@ -42,36 +45,29 @@ hp_misc: null
 immunities:
 - bleed
 - fire
-- paralyzed
-- poison
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Ignan
 - can't speak any language
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+3
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d4
-    type: persistent fire
+  - formula: null
+    type: 1d4 persistent fire
   to_hit: 10
   traits:
   - agile
   - finesse
 name: Ember Fox
 perception: 8
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: cold
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -80,33 +76,32 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Small
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 110
+  page_start: '110'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NG
-- Small
 - Elemental
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold

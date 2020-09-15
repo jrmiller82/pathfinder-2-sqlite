@@ -7,27 +7,107 @@ ability_mods:
   wis_mod: 4
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ostiarius inspires their willing allies and themself by whispering
+    words of courage from their wounds. The ostiarius and their allies in a 50-foot
+    emanation gain a +1 status bonus to attack rolls, damage rolls, and saves against
+    fear effects. The ostiarius can Sustain Compel Courage. Non-velstracs who accept
+    this compelled courage find bleeding wounds opening on their own bodies to whisper
+    in thanks. They take 1 __persistent bleed damage__ and can't attempt a flat check
+    to end this damage as long as they're compelled.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Compel Courage
+  range: null
+  raw_description: '**Compel Courage** [One Action]  (__auditory__, __divine__, __emotion__,
+    __enchantment__, __linguistic__, __mental__) The ostiarius inspires their willing
+    allies and themself by whispering words of courage from their wounds. The ostiarius
+    and their allies in a 50-foot emanation gain a +1 status bonus to attack rolls,
+    damage rolls, and saves against fear effects. The ostiarius can Sustain Compel
+    Courage. Non-velstracs who accept this compelled courage find bleeding wounds
+    opening on their own bodies to whisper in thanks. They take 1 __persistent bleed
+    damage__ and can''t attempt a flat check to end this damage as long as they''re
+    compelled.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - divine
+  - emotion
+  - enchantment
+  - linguistic
+  - mental
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ostiarius stares at a creature they can see within 30 feet. The
+    creature must immediately attempt a Will save against Whispering Wounds. In addition,
+    if the creature was already __sickened__ and fails its save, the creature is __fascinated__
+    by the ostiarius and can't use hostile actions. This fascination lasts for 1 round
+    or until the ostiarius takes any hostile action against the creature or the creature's
+    allies. Whether the creature succeeds at or fails the save, it is temporarily
+    immune for 1 hour.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Focus Gaze
+  range: null
+  raw_description: '**Focus Gaze** [One Action]  (__concentrate__, __divine__, __enchantment__,
+    __fear__, __mental__, __visual__) The ostiarius stares at a creature they can
+    see within 30 feet. The creature must immediately attempt a Will save against
+    Whispering Wounds. In addition, if the creature was already __sickened__ and fails
+    its save, the creature is __fascinated__ by the ostiarius and can''t use hostile
+    actions. This fascination lasts for 1 round or until the ostiarius takes any hostile
+    action against the creature or the creature''s allies. Whether the creature succeeds
+    at or fails the save, it is temporarily immune for 1 hour.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - enchantment
+  - fear
+  - mental
+  - visual
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. When a creature ends its turn in the aura, it hears the wounds
-    on the ostiarius's body whisper obscene truths. The creature must succeed at a
-    DC 21 Will save or become __sickened 1__.
+  description: When a creature ends its turn in the aura, it hears the wounds on the
+    ostiarius's body whisper obscene truths. The creature must succeed at a DC 21
+    Will save or become __sickened 1__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Whispering Wounds
-  range: null
+  range: 30 feet
   raw_description: '**Whispering Wounds** (__aura__, __divine__, __enchantment__,
     __mental__, __visual__) 30 feet. When a creature ends its turn in the aura, it
     hears the wounds on the ostiarius''s body whisper obscene truths. The creature
     must succeed at a DC 21 Will save or become __sickened 1__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -50,25 +130,24 @@ description: 'Ostiariuses, as emissaries of the velstracs, tend to the portals b
 
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 20'
 hp: 67
-hp_misc: regeneration 5 (deactivated by good or silver
+hp_misc: regeneration 5 (deactivated by good or silver)
 immunities:
 - cold
-items: null
 languages:
 - Common
 - Infernal
 - Shadowtongue
 - telepathy 100 feet
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+2
     type: slashing
   name: claw
   plus_damage:
-  - formula: 2d6
-    type: persistent bleed
+  - formula: null
+    type: 2d6 persistent bleed
   to_hit: 13
   traits:
   - agile
@@ -77,98 +156,7 @@ melee:
   - magical
 name: Ostiarius
 perception: 15
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The ostiarius inspires their willing allies and themself by whispering
-    words of courage from their wounds. The ostiarius and their allies in a 50-foot
-    emanation gain a +1 status bonus to attack rolls, damage rolls, and saves against
-    fear effects. The ostiarius can Sustain Compel Courage. Non-velstracs who accept
-    this compelled courage find bleeding wounds opening on their own bodies to whisper
-    in thanks. They take 1 __persistent bleed damage__ and can't attempt a flat check
-    to end this damage as long as they're compelled.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Compel Courage
-  range: null
-  raw_description: '**Compel Courage**   (__auditory__, __divine__, __emotion__, __enchantment__,
-    __linguistic__, __mental__) The ostiarius inspires their willing allies and themself
-    by whispering words of courage from their wounds. The ostiarius and their allies
-    in a 50-foot emanation gain a +1 status bonus to attack rolls, damage rolls, and
-    saves against fear effects. The ostiarius can Sustain Compel Courage. Non-velstracs
-    who accept this compelled courage find bleeding wounds opening on their own bodies
-    to whisper in thanks. They take 1 __persistent bleed damage__ and can''t attempt
-    a flat check to end this damage as long as they''re compelled.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - divine
-  - emotion
-  - enchantment
-  - linguistic
-  - mental
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The ostiarius stares at a creature they can see within 30 feet. The
-    creature must immediately attempt a Will save against Whispering Wounds. In addition,
-    if the creature was already __sickened__ and fails its save, the creature is __fascinated__
-    by the ostiarius and can't use hostile actions. This fascination lasts for 1 round
-    or until the ostiarius takes any hostile action against the creature or the creature's
-    allies. Whether the creature succeeds at or fails the save, it is temporarily
-    immune for 1 hour.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Focus Gaze
-  range: null
-  raw_description: '**Focus Gaze**   (__concentrate__, __divine__, __enchantment__,
-    __fear__, __mental__, __visual__) The ostiarius stares at a creature they can
-    see within 30 feet. The creature must immediately attempt a Will save against
-    Whispering Wounds. In addition, if the creature was already __sickened__ and fails
-    its save, the creature is __fascinated__ by the ostiarius and can''t use hostile
-    actions. This fascination lasts for 1 round or until the ostiarius takes any hostile
-    action against the creature or the creature''s allies. Whether the creature succeeds
-    at or fails the save, it is temporarily immune for 1 hour.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - enchantment
-  - fear
-  - mental
-  - visual
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: good
-- amount: 5
-  type: silver
-ritual_lists:
-- dc: 22
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: inveigle
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -185,17 +173,19 @@ sense_abilities:
     the __doomed__, __dying__, and __wounded__ conditions, as well as the value of
     those conditions
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Painsight
   range: null
   raw_description: '**Painsight** (__divination__, __divine__) A velstrac automatically
     knows whether a creature it sees has any of the __doomed__, __dying__, and __wounded__
     conditions, as well as the value of those conditions'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
@@ -208,24 +198,25 @@ sense_abilities:
     portal between the __Shadow Plane__ and the Material Plane. This sense functions
     only on these two planes.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sense Portal
   range: null
   raw_description: '**Sense Portal** (__divination__, __divine__) The ostiarius always
     knows the direction and distance to the closest portal between the __Shadow Plane__
     and the Material Plane. This sense functions only on these two planes.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
   - divine
   trigger: null
 senses:
-- Perception +15
 - greater darkvision
 - painsight
 - sense portal
@@ -233,66 +224,76 @@ size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 12
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 12
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 16
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 11
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 11
   misc: null
-  name: 'Torture Lore '
-source:
+  name: Torture Lore
+sources:
 - abbr: Bestiary 2
-  page_start: 281
+  page_start: '281'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 24
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+- attack_bonus: null
+  cantrips:
+  - level: 3
     spells:
-    - frequency: null
-      name: enthrall
-      requirement: null
-    - frequency: null
-      name: wanderer's guide
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: calm emotions
-      requirement: null
-    - frequency: null
-      name: darkness
-      requirement: null
-    - frequency: null
-      name: silence
-      requirement: null
-  - heightened_level: 3
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 24
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: enthrall
+    - misc: null
+      name: wanderer's guide
+  - level: 2
+    spells:
+    - misc: at will
+      name: calm emotions
+    - misc: null
+      name: darkness
+    - misc: null
+      name: silence
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 22
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: inveigle
+  spells_source: Rituals
 traits:
-- LE
-- Medium
 - Fiend
 - Velstrac
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: good
+- amount: 5
+  misc: null
+  type: silver

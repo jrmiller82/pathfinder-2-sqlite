@@ -8,6 +8,51 @@ ability_mods:
 ac: 16
 ac_special:
 - descr: 18 with shield raised
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A lizardfolk defender can hold their breath for 175 rounds (17-1/2
+    minutes).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deep Breath
+  range: null
+  raw_description: '**Deep Breath** A lizardfolk defender can hold their breath for
+    175 rounds (17-1/2 minutes).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures
+    that are in water and lack a swim Speed are __flat-footed__ to the lizardfolk
+    defender.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Terrain Advantage
+  range: null
+  raw_description: '**Terrain Advantage** Non-lizardfolk creatures in difficult terrain
+    and non-lizardfolk creatures that are in water and lack a swim Speed are __flat-footed__
+    to the lizardfolk defender.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -19,11 +64,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -34,34 +79,12 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: You snap your shield in place to ward off a blow. Your shield prevents you
-    from taking an amount of damage up to the shield's Hardness. You and the shield
-    each take any remaining damage, possibly breaking or destroying the shield.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shield Block
-  range: null
-  raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
-    raised, you would take damage from a physical attack. **Effect** You snap your
-    shield in place to ward off a blow. Your shield prevents you from taking an amount
-    of damage up to the shield''s Hardness. You and the shield each take any remaining
-    damage, possibly breaking or destroying the shield.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: While you have your shield raised, you would take damage from a physical
-    attack.
 description: 'The lizardfolk defender serves as a protector of the young, guardian
   of the settlement, and when no other options are available, soldier in time of war.
   They eagerly rise to the defense of their kin but do not revel in battle. An iruxi
@@ -76,7 +99,6 @@ description: 'The lizardfolk defender serves as a protector of the young, guardi
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 21
 hp_misc: null
-immunities: null
 items:
 - flail
 - javelin (3)
@@ -85,7 +107,7 @@ languages:
 - Draconic
 - Iruxi
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -125,53 +147,7 @@ melee:
   - thrown 30 feet
 name: Lizardfolk Defender
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A lizardfolk defender can hold their breath for 175 rounds (17-1/2
-    minutes).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deep Breath
-  range: null
-  raw_description: '**Deep Breath** A lizardfolk defender can hold their breath for
-    175 rounds (17-1/2 minutes).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures
-    that are in water and lack a swim Speed are __flat-footed__ to the lizardfolk
-    defender.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Terrain Advantage
-  range: null
-  raw_description: '**Terrain Advantage** Non-lizardfolk creatures in difficult terrain
-    and non-lizardfolk creatures that are in water and lack a swim Speed are __flat-footed__
-    to the lizardfolk defender.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -180,34 +156,29 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
-senses:
-- Perception +7
 size: Medium
 skills:
 - bonus: 5
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 230
+  page_start: '230'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Medium
 - Humanoid
 - Lizardfolk
-type: Creature
-weaknesses: null

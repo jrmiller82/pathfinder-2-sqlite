@@ -7,6 +7,26 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Large or smaller, foot, DC 25
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 25'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -16,11 +36,11 @@ automatic_abilities:
   effect: The stegosaurus leans its dorsal plates into the attack, gaining a +2 circumstance
     bonus to its AC against the triggering attack. If the attack misses, the stegosaurus
     Steps after the attack.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Dorsal Deflection
   range: null
   raw_description: '**Dorsal Deflection** [Reaction] **Trigger** The stegosaurus is
@@ -28,6 +48,8 @@ automatic_abilities:
     into the attack, gaining a +2 circumstance bonus to its AC against the triggering
     attack. If the attack misses, the stegosaurus Steps after the attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The stegosaurus is targeted with a melee attack.
@@ -63,11 +85,8 @@ description: 'The stegosaurus is easily recognized by its twin rows of diamond-s
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 23'
 hp: 125
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
@@ -89,30 +108,7 @@ melee:
   - reach 10 feet
 name: Stegosaurus
 perception: 15
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Large or smaller, foot, DC 25
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 25'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -121,28 +117,23 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +15
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 20
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 98
+  page_start: '98'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
 - Dinosaur
-type: Creature
-weaknesses: null

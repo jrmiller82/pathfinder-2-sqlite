@@ -7,52 +7,7 @@ ability_mods:
   wis_mod: 1
 ac: 33
 ac_special: null
-alignment: NE
-automatic_abilities: null
-description: 'These batlike monstrosities inhabit the nooks and crevices of the Darklands,
-  where they hang from stalactites and swoop down on unsuspecting prey. Though they
-  are completely sightless, deculis possess rudimentary nerves in their skulls that
-  allow them to detect the presence of infrared light—information they use to locate
-  potential food and threats. They are deadly hunters, thanks largely to their magical
-  ability to manipulate the ebb and flow of shadows. Deculis prefer to feed upon the
-  warm blood of freshly killed prey, but they can subsist on carrion if they have
-  to.
-
-
-
-
-  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 30'
-hp: 215
-hp_misc: null
-immunities:
-- visual
-items: null
-languages:
-- Undercommon
-- can't speak any language
-level: 12
-melee:
-- action_cost: One Action
-  damage:
-    formula: 3d12+11
-    type: piercing
-  name: fangs
-  plus_damage: null
-  to_hit: 24
-  traits: null
-- action_cost: One Action
-  damage:
-    formula: 3d8+11
-    type: bludgeoning
-  name: wing
-  plus_damage: null
-  to_hit: 26
-  traits:
-  - agile
-  - finesse
-name: Deculi
-perception: 23
-proactive_abilities:
+active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -82,11 +37,11 @@ proactive_abilities:
     the extradimensional space, the shadow sanctuary immediately ends and the deculi''s
     corpse is expelled. If the area is illuminated, the corpse is not expelled until
     the sanctuary entrance is in darkness once again.'
-  effects: null
   failure: null
   frequency: once per day
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Create Shadow Sanctuary
   range: null
   raw_description: '**Create Shadow Sanctuary** [Two Actions]  (__conjuration__, __darkness__,
@@ -117,6 +72,8 @@ proactive_abilities:
     corpse is expelled. If the area is illuminated, the corpse is not expelled until
     the sanctuary entrance is in darkness once again.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - conjuration
@@ -128,19 +85,23 @@ proactive_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The deculi is in its shadow sanctuary.
-  effects: null
+  effect: The deculi Dismisses its shadow sanctuary. It Strides, Climbs, or Flies
+    up to its Speed, then makes a fangs Strike that deals an additional 4d6 precision
+    damage.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shadow Strike
   range: null
   raw_description: '**Shadow Strike** [Two Actions]  **Requirements** The deculi is
     in its shadow sanctuary. **Effect** The deculi Dismisses its shadow sanctuary.
     It Strides, Climbs, or Flies up to its Speed, then makes a fangs Strike that deals
     an additional 4d6 precision damage.'
-  requirements: null
+  requirements: The deculi is in its shadow sanctuary.
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -150,23 +111,66 @@ proactive_abilities:
   description: When the deculi is Hiding in darkness and Sneaks, it can move up to
     its full Speed instead of half its Speed.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Walk in Shadow
   range: null
   raw_description: '**Walk in Shadow** When the deculi is Hiding in darkness and Sneaks,
     it can move up to its full Speed instead of half its Speed.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+alignment: NE
+automatic_abilities: null
+description: 'These batlike monstrosities inhabit the nooks and crevices of the Darklands,
+  where they hang from stalactites and swoop down on unsuspecting prey. Though they
+  are completely sightless, deculis possess rudimentary nerves in their skulls that
+  allow them to detect the presence of infrared light—information they use to locate
+  potential food and threats. They are deadly hunters, thanks largely to their magical
+  ability to manipulate the ebb and flow of shadows. Deculis prefer to feed upon the
+  warm blood of freshly killed prey, but they can subsist on carrion if they have
+  to.
+
+
+
+
+  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 30'
+hp: 215
+hp_misc: null
+immunities:
+- visual
+languages:
+- Undercommon
+- can't speak any language
+level: 12
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d12+11
+    type: piercing
+  name: fangs
+  plus_damage: null
+  to_hit: 24
+  traits: null
+- action_cost: One Action
+  damage:
+    formula: 3d8+11
+    type: bludgeoning
+  name: wing
+  plus_damage: null
+  to_hit: 26
+  traits:
+  - agile
+  - finesse
+name: Deculi
+perception: 23
+ranged_attacks: null
 saves:
   fort: 21
   fort_misc: null
@@ -181,62 +185,64 @@ sense_abilities:
   critical_success: null
   description: A deculi can detect infrared radiation as a precise sense.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Infrared Vision
   range: null
   raw_description: '** Infrared Vision** A deculi can detect infrared radiation as
     a precise sense.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +23
 - infrared vision 60 feet
 - no vision
 size: Large
 skills:
 - bonus: 24
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 24
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 26
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #148: Fires of the Haunted City'
-  page_start: 78
+  page_start: '78'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 - amount: 50
+  misc: null
   type: fly
 - amount: null
+  misc: null
   type: walk in shadow
 spell_lists:
-- dc: 32
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 32
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+  spell_lists:
+  - level: 6
     spells:
-    - frequency: at will
+    - misc: at will
       name: darkness
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- NE
-- Large
 - Beast
-type: Creature
-weaknesses: null

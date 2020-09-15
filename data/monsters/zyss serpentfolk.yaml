@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Serpentfolk Venom
+  range: null
+  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
+    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
+  requirements: null
+  saving_throw: DC 16 Fortitude
+  stages:
+  - effect: 1d4 poison damage and __enfeebled 1__ (1 round)
+  - effect: 2d4 poison damage and enfeebled 1 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'Even the least among zyss serpentfolk consider themselves greater than
@@ -20,7 +45,6 @@ description: 'Even the least among zyss serpentfolk consider themselves greater 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
 hp: 25
 hp_misc: null
-immunities: null
 items:
 - dagger
 - shortbow (30 arrows)
@@ -30,7 +54,7 @@ languages:
 - Undercommon
 - telepathy 100 feet
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -57,30 +81,7 @@ melee:
   - versatile S
 name: Zyss Serpentfolk
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 16 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d4 poison damage and __enfeebled 1__ (1 round); **Stage 2** 2d4 poison damage
-    and enfeebled 1 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Serpentfolk Venom
-  range: null
-  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
-    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -96,8 +97,8 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 5
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -106,67 +107,57 @@ saves:
   ref_misc: null
   will: 8
   will_misc: +4 status vs. mental
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 9
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 8
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 8
   misc: null
-  name: 'Society '
-source:
+  name: Society
+sources:
 - abbr: Bestiary 2
-  page_start: 237
+  page_start: '237'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 18
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 18
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: mirror image
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: at will
+    - misc: at will
       name: illusory disguise
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: ventriloquism
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- NE
-- Medium
 - Humanoid
 - Serpentfolk
-type: Creature
-weaknesses: null

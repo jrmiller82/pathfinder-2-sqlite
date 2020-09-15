@@ -1,0 +1,385 @@
+ability_mods:
+  cha_mod: 6
+  con_mod: 4
+  dex_mod: 6
+  int_mod: 8
+  str_mod: 4
+  wis_mod: 5
+ac: 36
+ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The thoughtmaw invades the mind of a creature within 100 feet and attempts
+    to swallow its capacity for higher thought. The creature must attempt a DC 36
+    Will save. Using Consume Knowledge immediately ends any of the ability's previous
+    effects on a different creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Consume Knowledge
+  range: null
+  raw_description: '**Consume Knowledge** [Two Actions]  (__divination__, __mental__,
+    __occult__) The thoughtmaw invades the mind of a creature within 100 feet and
+    attempts to swallow its capacity for higher thought. The creature must attempt
+    a DC 36 Will save. Using Consume Knowledge immediately ends any of the ability''s
+    previous effects on a different creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divination
+  - mental
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __slowed 1__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __slowed 1__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __slowed 1__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is slowed 1 and can take no actions other than basic actions
+    for 1 minute.
+  effect: null
+  failure: The creature is slowed 1 and can take no actions other than basic actions
+    for 1 minute.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is slowed 1 and can take no actions other
+    than basic actions for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, and the thoughtmaw is __quickened 1__ for 1 minute.
+    It can use this extra action to Stride, Strike, or Cast a Spell if the target
+    had prepared spells or a spell repertoire.
+  critical_success: null
+  description: As failure, and the thoughtmaw is __quickened 1__ for 1 minute. It
+    can use this extra action to Stride, Strike, or Cast a Spell if the target had
+    prepared spells or a spell repertoire.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** As failure, and the thoughtmaw is __quickened
+    1__ for 1 minute. It can use this extra action to Stride, Strike, or Cast a Spell
+    if the target had prepared spells or a spell repertoire.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: CE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that enters the emanation must attempt a DC 36 Will save.
+    On a failure, the creature is __stupefied 1__ for 1 minute (stupefied 2 and also
+    paralyzed for 1 round on a critical failure). A creature that succeeds at its
+    save is temporarily immune to psychogenic secretions for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Psychogenic Secretions
+  range: 30 feet
+  raw_description: '**Psychogenic Secretions** (__aura__, __mental__) 30 feet. A creature
+    that enters the emanation must attempt a DC 36 Will save. On a failure, the creature
+    is __stupefied 1__ for 1 minute (stupefied 2 and also paralyzed for 1 round on
+    a critical failure). A creature that succeeds at its save is temporarily immune
+    to psychogenic secretions for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - mental
+  trigger: null
+description: 'Xulgath thoughtmaws are inheritors of the xulgaths'' ancient psychic
+  legacy. They eagerly and liberally use their ability to extract knowledge from their
+  foes to quicken their own prodigious intellects.
+
+
+
+
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 39'
+hp: 280
+hp_misc: null
+items:
+- +2 striking spear
+- +2 resilient leather armor
+languages:
+- Draconic
+- Undercommon
+- telepathy 100 feet
+level: 15
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d6+10
+    type: piercing
+  name: spear
+  plus_damage: null
+  to_hit: 30
+  traits:
+  - magical
+- action_cost: One Action
+  damage:
+    formula: 3d8+10
+    type: piercing
+  name: jaws
+  plus_damage: null
+  to_hit: 28
+  traits: null
+- action_cost: One Action
+  damage:
+    formula: 3d4+10
+    type: slashing
+  name: claw
+  plus_damage: null
+  to_hit: 28
+  traits:
+  - agile
+  - finesse
+name: Xulgath Thoughtmaw
+perception: 30
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d6+10
+    type: piercing
+  name: spear
+  plus_damage: null
+  to_hit: 30
+  traits:
+  - magical
+  - thrown 20 feet
+rarity: Rare
+resistances:
+- amount: 15
+  misc: null
+  type: mental
+saves:
+  fort: 23
+  fort_misc: null
+  misc: null
+  ref: 26
+  ref_misc: null
+  will: 30
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The thoughtmaw senses a creature's mental essence at the listed range.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Thoughtsense
+  range: null
+  raw_description: '**Thoughtsense** (__divination__, __mental__, __occult__) The
+    thoughtmaw senses a creature''s mental essence at the listed range.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divination
+  - mental
+  - occult
+  trigger: null
+senses:
+- darkvision
+- thoughtsense (imprecise) 60 feet
+size: Medium
+skills:
+- bonus: 25
+  misc: null
+  name: Acrobatics
+- bonus: 27
+  misc: null
+  name: Arcana
+- bonus: 29
+  misc: null
+  name: Deception
+- bonus: 27
+  misc: null
+  name: Diplomacy
+- bonus: 29
+  misc: null
+  name: Intimidation
+- bonus: 31
+  misc: null
+  name: Occultism
+- bonus: 27
+  misc: null
+  name: Society
+- bonus: 31
+  misc: null
+  name: Xulgath Lore
+sources:
+- abbr: 'Pathfinder #156: The Apocalypse Prophet'
+  page_start: '85'
+  page_stop: null
+speed:
+- amount: 25
+  misc: null
+  type: Land
+- amount: 35
+  misc: from fly
+  type: fly
+spell_lists:
+- attack_bonus: null
+  cantrips:
+  - level: 7
+    spells:
+    - misc: null
+      name: daze
+    - misc: null
+      name: forbidding ward
+    - misc: null
+      name: message
+    - misc: null
+      name: shield
+  constants: null
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: null
+      name: phantasmal killer
+    - misc: null
+      name: visions of danger
+    - misc: 3 slots
+      name: warp mind
+  - level: 6
+    spells:
+    - misc: null
+      name: phantasmal calamity
+    - misc: null
+      name: scrying
+    - misc: 3 slots
+      name: wall of force
+  - level: 5
+    spells:
+    - misc: null
+      name: hallucination
+    - misc: null
+      name: mind probe
+    - misc: 3 slots
+      name: synaptic pulse
+  - level: 4
+    spells:
+    - misc: null
+      name: invisibility
+    - misc: null
+      name: modify memory
+    - misc: 3 slots
+      name: suggestion
+  spells_source: Occult Spontaneous Spells
+- attack_bonus: 28
+  cantrips:
+  - level: 8
+    spells:
+    - misc: null
+      name: telekinetic projectile
+  constants:
+  - level: 8
+    spells:
+    - misc: null
+      name: fly
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: ×3
+      name: phantom pain
+  - level: 5
+    spells:
+    - misc: at will
+      name: telekinetic haul
+  - level: 2
+    spells:
+    - misc: at will
+      name: telekinetic maneuver
+  spells_source: Occult Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: inveigle
+  spells_source: Occult Rituals
+traits:
+- Amphibious
+- Humanoid
+- Xulgath

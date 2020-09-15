@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 3
 ac: 18
 ac_special: null
+active_abilities: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,17 +16,19 @@ automatic_abilities:
   description: null
   effect: The bat makes one or two wing Strikes—one against the triggering creature
     and one against another adjacent creature.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wing Thrash
   range: null
   raw_description: '**Wing Thrash** [Reaction] **Trigger** An adjacent enemy damages
     the giant bat. **Effect** The bat makes one or two wing Strikes—one against the
     triggering creature and one against another adjacent creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: An adjacent enemy damages the giant bat.
@@ -45,11 +48,8 @@ description: 'While big bats are certainly not uncommon in dark caves and abando
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 16'
 hp: 30
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+4
@@ -69,13 +69,7 @@ melee:
   - agile
 name: Giant Bat
 perception: 11
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -90,47 +84,46 @@ sense_abilities:
   critical_success: null
   description: A bat can use its hearing as a precise sense at the listed range.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Echolocation
   range: null
   raw_description: '**Echolocation** A bat can use its hearing as a precise sense
     at the listed range.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +11
 - echolocation (precise) 40 feet
 - low-light vision
 size: Large
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 39
+  page_start: '39'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

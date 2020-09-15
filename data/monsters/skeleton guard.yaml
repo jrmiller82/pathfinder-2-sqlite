@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 0
 ac: 16
 ac_special: null
+active_abilities: null
 alignment: NE
 automatic_abilities: null
 description: 'The most common skeletal minions are mere guardians.
@@ -27,9 +28,8 @@ immunities:
 items:
 - scimitar
 - shortbow (20 arrows)
-languages: null
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -52,12 +52,11 @@ melee:
   - finesse
 name: Skeleton Guard
 perception: 2
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6  piercing
   name: shortbow
   plus_damage: null
   to_hit: 6
@@ -65,19 +64,22 @@ ranged:
   - deadly 1d10
   - range increment 60 feet
   - reload 0
-rarity: Common
 resistances:
 - amount: 5
+  misc: null
   type: cold
 - amount: 5
+  misc: null
   type: electricity
 - amount: 5
+  misc: null
   type: fire
 - amount: 5
+  misc: null
   type: piercing
 - amount: 5
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 2
   fort_misc: null
@@ -86,31 +88,26 @@ saves:
   ref_misc: null
   will: 2
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +2
 - darkvision
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 3
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 298
+  page_start: '298'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Medium
 - Mindless
 - Skeleton
 - Undead
-type: Creature
-weaknesses: null

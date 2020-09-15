@@ -7,6 +7,45 @@ ability_mods:
   wis_mod: 4
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 'The hound of Tindalos casts a 4th-level __dimension door__ spell,
+    but it must transport itself into a space adjacent to an angle of 90º (or more
+    acute) in the structure or environment around it. For example, it could teleport
+    to a space adjacent to a wall (using the angle between the wall and floor) or
+    a corner in a room, or adjacent to a sizable tree growing straight up out of the
+    ground, but not to a flat plain or a room with only curved corners and edges.
+
+
+    Once per day, the hound can use this ability to plane shift to or from the __Dimension
+    of Time__, with the same restrictions on what angles it can appear next to.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Angled Entry
+  range: null
+  raw_description: '**Angled Entry** [One Action]  The hound of Tindalos casts a 4th-level
+    __dimension door__ spell, but it must transport itself into a space adjacent to
+    an angle of 90º (or more acute) in the structure or environment around it. For
+    example, it could teleport to a space adjacent to a wall (using the angle between
+    the wall and floor) or a corner in a room, or adjacent to a sizable tree growing
+    straight up out of the ground, but not to a flat plain or a room with only curved
+    corners and edges.
+
+
+    Once per day, the hound can use this ability to plane shift to or from the __Dimension
+    of Time__, with the same restrictions on what angles it can appear next to.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
@@ -21,11 +60,11 @@ automatic_abilities:
 
     also becomes __confused__ for 1d4 rounds.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Otherworldly Mind
   range: null
   raw_description: '**Otherworldly Mind** (__mental__) Whenever a creature targets
@@ -38,6 +77,8 @@ automatic_abilities:
 
     also becomes __confused__ for 1d4 rounds.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - mental
@@ -45,19 +86,19 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. The hound of Tindalos's eyes glow balefully, causing painful
-    but bloodless wounds to rip open in the body of a creature that meets its awful
-    gaze. When a creature ends its turn in the aura's emanation, it takes 4d6 slashing
-    damage (DC 25 basic Fortitude save). A creature that critically succeeds at its
-    save is temporarily immune for 24 hours.
+  description: The hound of Tindalos's eyes glow balefully, causing painful but bloodless
+    wounds to rip open in the body of a creature that meets its awful gaze. When a
+    creature ends its turn in the aura's emanation, it takes 4d6 slashing damage (DC
+    25 basic Fortitude save). A creature that critically succeeds at its save is temporarily
+    immune for 24 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ripping Gaze
-  range: null
+  range: 30 feet
   raw_description: '**Ripping Gaze** (__aura__, __evocation__, __occult__, __visual__)
     30 feet. The hound of Tindalos''s eyes glow balefully, causing painful but bloodless
     wounds to rip open in the body of a creature that meets its awful gaze. When a
@@ -65,6 +106,8 @@ automatic_abilities:
     (DC 25 basic Fortitude save). A creature that critically succeeds at its save
     is temporarily immune for 24 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -80,11 +123,11 @@ automatic_abilities:
     __sickened 1__. It can't recover from this sickened condition, but the condition
     ends automatically once the hound is again adjacent to a suitable angle.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vulnerable to Curved Space
   range: null
   raw_description: '**Vulnerable to Curved Space** When a hound of Tindalos is not
@@ -93,6 +136,8 @@ automatic_abilities:
     sickened condition, but the condition ends automatically once the hound is again
     adjacent to a suitable angle.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -116,20 +161,16 @@ description: 'Lean and athirst, the hounds of Tindalos are drawn to those who ta
 
 
 
-  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 28
-
-
-  '
+  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 28'
 hp: 90
 hp_misc: null
 immunities:
-- controlled
-- emotion
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=60">emotion</a>
 languages:
 - Aklo
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+7
@@ -149,53 +190,18 @@ melee:
   - agile
 name: Hound Of Tindalos
 perception: 17
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 'The hound of Tindalos casts a 4th-level __dimension door__ spell,
-    but it must transport itself into a space adjacent to an angle of 90º (or more
-    acute) in the structure or environment around it. For example, it could teleport
-    to a space adjacent to a wall (using the angle between the wall and floor) or
-    a corner in a room, or adjacent to a sizable tree growing straight up out of the
-    ground, but not to a flat plain or a room with only curved corners and edges.
-
-
-    Once per day, the hound can use this ability to plane shift to or from the __Dimension
-    of Time__, with the same restrictions on what angles it can appear next to.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Angled Entry
-  range: null
-  raw_description: '**Angled Entry**   The hound of Tindalos casts a 4th-level __dimension
-    door__ spell, but it must transport itself into a space adjacent to an angle of
-    90º (or more acute) in the structure or environment around it. For example, it
-    could teleport to a space adjacent to a wall (using the angle between the wall
-    and floor) or a corner in a room, or adjacent to a sizable tree growing straight
-    up out of the ground, but not to a flat plain or a room with only curved corners
-    and edges.
-
-
-    Once per day, the hound can use this ability to plane shift to or from the __Dimension
-    of Time__, with the same restrictions on what angles it can appear next to.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 10
+  misc: null
   type: mental
 - amount: 10
+  misc: null
   type: poison
 - amount: 10
+  misc: null
   type: physical
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -204,74 +210,63 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - greater darkvision
 size: Medium
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 17
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 17
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 13
   misc: +17 to Track
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 146
+  page_start: '146'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 21
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 21
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+  spell_lists:
+  - level: 8
     spells:
-    - frequency: null
+    - misc: null
       name: discern location
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: dimensional anchor
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: haste
-      requirement: null
-    - frequency: null
+    - misc: null
       name: slow
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: self only
+    - misc: self only
       name: invisibility
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Rare
-- NE
-- Medium
 - Aberration
 - Time
-type: Creature
-weaknesses: null

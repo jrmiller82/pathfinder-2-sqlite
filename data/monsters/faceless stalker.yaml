@@ -7,6 +7,126 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The faceless stalker spends 10 minutes reshaping its appearance to
+    take on the shape of any Small or Medium humanoid. It gains a +4 circumstance
+    bonus to Deception checks to pass as that creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Assume Form
+  range: null
+  raw_description: '**Assume Form** (__concentrate__, __occult__, __polymorph__, __transmutation__)
+    The faceless stalker spends 10 minutes reshaping its appearance to take on the
+    shape of any Small or Medium humanoid. It gains a +4 circumstance bonus to Deception
+    checks to pass as that creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - occult
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The faceless stalker uses its three-pronged tongue to drink the blood
+    of an adjacent restrained or unconscious creature. The creature gains drained
+    1.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Nourishment
+  range: null
+  raw_description: '**Blood Nourishment** [One Action]  The faceless stalker uses
+    its three-pronged tongue to drink the blood of an adjacent restrained or unconscious
+    creature. The creature gains drained 1.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the faceless stalker successfully Squeezes, it moves through the
+    tight space at full speed. Narrow confines are not difficult terrain for a faceless
+    stalker.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Compression
+  range: null
+  raw_description: '**Compression** When the faceless stalker successfully Squeezes,
+    it moves through the tight space at full speed. Narrow confines are not difficult
+    terrain for a faceless stalker.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The faceless stalker resumes its true form. Until the start of its next
+    turn, it gains a +2 status bonus to attack rolls, damage rolls, saving throws,
+    and skill checks.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Revert Form
+  range: null
+  raw_description: '**Revert Form** [Free Action]  **Requirements** The faceless stalker
+    is in an assumed form. **Effect** The faceless stalker resumes its true form.
+    Until the start of its next turn, it gains a +2 status bonus to attack rolls,
+    damage rolls, saving throws, and skill checks.'
+  requirements: The faceless stalker is in an assumed form.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The faceless stalker deals 1d6 extra precision damage to flat-footed
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The faceless stalker deals 1d6 extra precision
+    damage to flat-footed creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Among the subtler of the alghollthu creations were the ugothols—also
@@ -46,7 +166,6 @@ description: 'Among the subtler of the alghollthu creations were the ugothols—
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 19'
 hp: 60
 hp_misc: null
-immunities: null
 items:
 - longsword
 - studded leather armor
@@ -56,7 +175,7 @@ languages:
 - Common
 - tongues
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+6
@@ -79,120 +198,11 @@ melee:
   - agile
 name: Faceless Stalker
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The faceless stalker spends 10 minutes reshaping its appearance to
-    take on the shape of any Small or Medium humanoid. It gains a +4 circumstance
-    bonus to Deception checks to pass as that creature.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Assume Form
-  range: null
-  raw_description: '**Assume Form** (__concentrate__, __occult__, __polymorph__, __transmutation__)
-    The faceless stalker spends 10 minutes reshaping its appearance to take on the
-    shape of any Small or Medium humanoid. It gains a +4 circumstance bonus to Deception
-    checks to pass as that creature.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - occult
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The faceless stalker uses its three-pronged tongue to drink the blood
-    of an adjacent restrained or unconscious creature. The creature gains drained
-    1.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Nourishment
-  range: null
-  raw_description: '**Blood Nourishment**   The faceless stalker uses its three-pronged
-    tongue to drink the blood of an adjacent restrained or unconscious creature. The
-    creature gains drained 1.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the faceless stalker successfully Squeezes, it moves through the
-    tight space at full speed. Narrow confines are not difficult terrain for a faceless
-    stalker.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Compression
-  range: null
-  raw_description: '**Compression** When the faceless stalker successfully Squeezes,
-    it moves through the tight space at full speed. Narrow confines are not difficult
-    terrain for a faceless stalker.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The faceless stalker is in an assumed form.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Revert Form
-  range: null
-  raw_description: '**Revert Form** [Free Action]  **Requirements** The faceless stalker
-    is in an assumed form. **Effect** The faceless stalker resumes its true form.
-    Until the start of its next turn, it gains a +2 status bonus to attack rolls,
-    damage rolls, saving throws, and skill checks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The faceless stalker deals 1d6 extra precision damage to flat-footed
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The faceless stalker deals 1d6 extra precision
-    damage to flat-footed creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: bludgeoning
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -201,49 +211,45 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 12
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 12
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 13
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 9
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary
-  page_start: 13
+  page_start: '13'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 19
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: 5
-    level: -1
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: null
+  dc: 19
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Occult Innate Spells
 traits:
-- CE
-- Medium
 - Aberration
-type: Creature
-weaknesses: null

@@ -7,29 +7,80 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The blood boar Strides toward its quarry, ignoring difficult terrain
+    and gaining a +10-foot circumstance bonus to its Speed during the movement.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Chase Down
+  range: null
+  raw_description: '**Chase Down** [One Action]  The blood boar Strides toward its
+    quarry, ignoring difficult terrain and gaining a +10-foot circumstance bonus to
+    its Speed during the movement.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The blood boar lets forth a hair-raising squeal. Each creature within
+    30 feet must succeed at a DC 23 Will save or become __frightened 1__ (__frightened
+    2__ on a critical failure). If the blood boar uses Terrifying Squeal on the same
+    turn after using Chase Down, the Will save DC is instead 25.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Terrifying Squeal
+  range: null
+  raw_description: '**Terrifying Squeal** [One Action]  (__auditory__, __emotion__,
+    __fear__, __mental__) The blood boar lets forth a hair-raising squeal. Each creature
+    within 30 feet must succeed at a DC 23 Will save or become __frightened 1__ (__frightened
+    2__ on a critical failure). If the blood boar uses Terrifying Squeal on the same
+    turn after using Chase Down, the Will save DC is instead 25.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - emotion
+  - fear
+  - mental
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: The monster avoids being knocked out and remains at 1 HP, but its wounded
-    value increases by 1. When it is wounded 3, it can no longer use this ability.
-  effects: null
+  effect: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ferocity
   range: null
-  raw_description: '**Ferocity** [Reaction] **Trigger** The monster is reduced to
-    0 HP. **Effect** The monster avoids being knocked out and remains at 1 HP, but
-    its wounded value increases by 1. When it is wounded 3, it can no longer use this
-    ability.'
+  raw_description: '**Ferocity** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The monster is reduced to 0 HP.
+  trigger: null
 description: 'Blood boars are fearsome swine bred in Cheliax for the singular purpose
   of hunting down escaped slaves. The species originated from a type of large feral
   boar native to Nidal''s shadowy Uskwood, and blood boars retain their predecessors''
@@ -66,11 +117,8 @@ description: 'Blood boars are fearsome swine bred in Cheliax for the singular pu
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 22'
 hp: 98
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
@@ -81,61 +129,7 @@ melee:
   traits: null
 name: Blood Boar
 perception: 15
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The blood boar Strides toward its quarry, ignoring difficult terrain
-    and gaining a +10-foot circumstance bonus to its Speed during the movement.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Chase Down
-  range: null
-  raw_description: '**Chase Down**   The blood boar Strides toward its quarry, ignoring
-    difficult terrain and gaining a +10-foot circumstance bonus to its Speed during
-    the movement.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The blood boar lets forth a hair-raising squeal. Each creature within
-    30 feet must succeed at a DC 23 Will save or become __frightened 1__ (__frightened
-    2__ on a critical failure). If the blood boar uses Terrifying Squeal on the same
-    turn after using Chase Down, the Will save DC is instead 25.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Terrifying Squeal
-  range: null
-  raw_description: '**Terrifying Squeal**   (__auditory__, __emotion__, __fear__,
-    __mental__) The blood boar lets forth a hair-raising squeal. Each creature within
-    30 feet must succeed at a DC 23 Will save or become __frightened 1__ (__frightened
-    2__ on a critical failure). If the blood boar uses Terrifying Squeal on the same
-    turn after using Chase Down, the Will save DC is instead 25.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - emotion
-  - fear
-  - mental
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -148,44 +142,34 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: The blood boar can precisely sense bleeding creatures within 60 feet.
+  description: 'The blood boar can precisely sense bleeding creatures within 60 feet.
+
+
+    **Blood Quarry** On smelling a creature''s blood, the blood boar can designate
+    that creature as its quarry. The blood boar can smell its quarry from up to a
+    mile away. A blood boar can have only one quarry at a time.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Bloodsense
   range: null
   raw_description: '**Bloodsense** The blood boar can precisely sense bleeding creatures
-    within 60 feet.'
+    within 60 feet.
+
+
+    **Blood Quarry** On smelling a creature''s blood, the blood boar can designate
+    that creature as its quarry. The blood boar can smell its quarry from up to a
+    mile away. A blood boar can have only one quarry at a time.'
   requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: On smelling a creature's blood, the blood boar can designate that creature
-    as its quarry. The blood boar can smell its quarry from up to a mile away. A blood
-    boar can have only one quarry at a time.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Quarry
-  range: null
-  raw_description: '**Blood Quarry** On smelling a creature''s blood, the blood boar
-    can designate that creature as its quarry. The blood boar can smell its quarry
-    from up to a mile away. A blood boar can have only one quarry at a time.'
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +15
 - bloodsense 60 feet
 - low-light vision
 - scent (imprecise) 30 feet
@@ -193,24 +177,21 @@ size: Medium
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #147: Tomorrow Must Burn'
-  page_start: 76
+  page_start: '76'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Medium
 - Animal
-type: Creature
-weaknesses: null

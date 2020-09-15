@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 2
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each creature in the sportlebore swarm's area takes 4d6 piercing damage
+    (DC 25 basic Reflex save).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarming Bites
+  range: null
+  raw_description: '**Swarming Bites** [One Action]  Each creature in the sportlebore
+    swarm''s area takes 4d6 piercing damage (DC 25 basic Reflex save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +37,11 @@ automatic_abilities:
   description: null
   effect: A portion of the sportlebore swarm attempts to surge down the throat of
     the triggering creature, which must attempt a DC 25 Fortitude save.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Pour Down Throat
   range: null
   raw_description: '**Pour Down Throat [Reaction]** **Trigger** A creature in the
@@ -27,24 +49,28 @@ automatic_abilities:
     **Effect** A portion of the sportlebore swarm attempts to surge down the throat
     of the triggering creature, which must attempt a DC 25 Fortitude save.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature in the sportlebore swarm's area speaks, uses a verbal component,
-    or opens its mouth
+    or opens its mouth;
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The creature is unaffected.
   description: The creature is unaffected.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Success
   range: null
   raw_description: '**Critical Success** The creature is unaffected.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -55,11 +81,11 @@ automatic_abilities:
     out and avoids further damage, but it can't speak for 1 round, and if it was performing
     a verbal spellcasting action, the spell fails and the caster wastes the action.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Success
   range: null
   raw_description: '**Success** The creature gets a mouthful of sportlebores. It spits
@@ -67,7 +93,11 @@ automatic_abilities:
     if it was performing a verbal spellcasting action, the spell fails and the caster
     wastes the action.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The creature gets a mouthful of sportlebores. It spits the insects out
+    and avoids further damage, but it can't speak for 1 round, and if it was performing
+    a verbal spellcasting action, the spell fails and the caster wastes the action.
   traits: null
   trigger: null
 - action_cost: None
@@ -76,34 +106,40 @@ automatic_abilities:
   description: The creature takes 4d6 piercing damage from sportlebore bites, can't
     speak for 1 round, and loses a spell as noted under Success.
   effect: null
-  effects: null
-  failure: null
+  failure: The creature takes 4d6 piercing damage from sportlebore bites, can't speak
+    for 1 round, and loses a spell as noted under Success.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Failure
   range: null
   raw_description: '**Failure** The creature takes 4d6 piercing damage from sportlebore
     bites, can''t speak for 1 round, and loses a spell as noted under Success.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: As failure, but the creature is also exposed to __sportlebore
+    infestation__.
   critical_success: null
   description: As failure, but the creature is also exposed to __sportlebore infestation__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Failure
   range: null
   raw_description: '**Critical Failure** As failure, but the creature is also exposed
     to __sportlebore infestation__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -117,43 +153,22 @@ hp: 85
 hp_misc: null
 immunities:
 - precision
-- swarm mind
-items: null
-languages: null
+- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
 level: 7
-melee: null
+melee_attacks: null
 name: Sportlebore Swarm
 perception: 13
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Each creature in the sportlebore swarm's area takes 4d6 piercing damage
-    (DC 25 basic Reflex save).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swarming Bites
-  range: null
-  raw_description: '**Swarming Bites**   Each creature in the sportlebore swarm''s
-    area takes 4d6 piercing damage (DC 25 basic Reflex save).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 3
+  misc: null
   type: bludgeoning
 - amount: 7
+  misc: null
   type: piercing
 - amount: 7
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 15
   fort_misc: null
@@ -162,37 +177,35 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - low-light vision
 size: Large
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 251
+  page_start: '251'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
 - Swarm
-type: Creature
 weaknesses:
 - amount: 7
+  misc: null
   type: area damage
-- amount: 7
-  type: <a style="text-decoration:underline" href="Traits.aspx?ID=150">splash</a>
-    damage
+- amount: 150
+  misc: null
+  type: <a style="text-decoration:underline" href="Traits.aspx?ID=

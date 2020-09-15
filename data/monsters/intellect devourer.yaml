@@ -7,6 +7,126 @@ ability_mods:
   wis_mod: 4
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The intellect devourer reduces in size and burrows into the brain of
+    a creature dead for no longer than 1 day. At the start of the intellect devourer's
+    next turn, the body revives at its maximum Hit Points, controlled by the devourer.
+    The intellect devourer is conscious and can sense everything the possessed body
+    could. Any effect that ends the possession kills the host body with the same effects
+    as Exit Body. The intellect devourer can't use any of the host creature's spells
+    with Body Thief but can use its own spells. The host body slowly decays while
+    inhabited by the intellect devourer, becoming uninhabitable after 7 days unless
+    preserved with __gentle repose__ or a similar effect.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Body Thief
+  range: null
+  raw_description: '**Body Thief** [Three Actions]  (__manipulate__, __necromancy__,
+    __occult__, __possession__) The intellect devourer reduces in size and burrows
+    into the brain of a creature dead for no longer than 1 day. At the start of the
+    intellect devourer''s next turn, the body revives at its maximum Hit Points, controlled
+    by the devourer. The intellect devourer is conscious and can sense everything
+    the possessed body could. Any effect that ends the possession kills the host body
+    with the same effects as Exit Body. The intellect devourer can''t use any of the
+    host creature''s spells with Body Thief but can use its own spells. The host body
+    slowly decays while inhabited by the intellect devourer, becoming uninhabitable
+    after 7 days unless preserved with __gentle repose__ or a similar effect.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  - necromancy
+  - occult
+  - possession
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The intellect devourer leaves its host body, which dies instantly and is
+    no longer a suitable host for any Body Thief ability. The intellect devourer appears
+    at full size in an adjacent space.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Exit Body
+  range: null
+  raw_description: '**Exit Body** [One Action]  (__move__) **Requirements** The intellect
+    devourer is controlling a body with Body Thief; **Effect** The intellect devourer
+    leaves its host body, which dies instantly and is no longer a suitable host for
+    any Body Thief ability. The intellect devourer appears at full size in an adjacent
+    space.'
+  requirements: The intellect devourer is controlling a body with Body Thief
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The intellect devourer makes two talon Strikes against a __paralyzed__,
+    __restrained__, or __unconscious__ creature, using the same attack modifier as
+    its highest attack modifier. These Strikes gain the __death__ trait. If Ravage
+    kills the target, the intellect devourer may use Body Thief against it as a free
+    action.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ravage
+  range: null
+  raw_description: '**Ravage** [Three Actions]  The intellect devourer makes two talon
+    Strikes against a __paralyzed__, __restrained__, or __unconscious__ creature,
+    using the same attack modifier as its highest attack modifier. These Strikes gain
+    the __death__ trait. If Ravage kills the target, the intellect devourer may use
+    Body Thief against it as a free action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: While an intellect devourer uses Body Thief, it gains the ability to
+    understand and speak all languages known by the host, as well as knowledge of
+    the host body's abilities, identity, role in society, and personality. However,
+    it does not gain the specific memories or knowledge of the host body.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stolen Identity
+  range: null
+  raw_description: '**Stolen Identity** While an intellect devourer uses Body Thief,
+    it gains the ability to understand and speak all languages known by the host,
+    as well as knowledge of the host body''s abilities, identity, role in society,
+    and personality. However, it does not gain the specific memories or knowledge
+    of the host body.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Intellect devourers serve as advance scouts and infiltrators for the
@@ -27,11 +147,10 @@ description: 'Intellect devourers serve as advance scouts and infiltrators for t
 hp: 130
 hp_misc: null
 immunities:
-- blinded
-- controlled
-- emotion
-- possession
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=60">emotion</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=129">possession</a>
 languages:
 - Aklo
 - Common
@@ -39,7 +158,7 @@ languages:
 - can't speak any languages
 - telepathy 100 feet
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+5
@@ -52,119 +171,8 @@ melee:
   - finesse
 name: Intellect Devourer
 perception: 16
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The intellect devourer reduces in size and burrows into the brain of
-    a creature dead for no longer than 1 day. At the start of the intellect devourer's
-    next turn, the body revives at its maximum Hit Points, controlled by the devourer.
-    The intellect devourer is conscious and can sense everything the possessed body
-    could. Any effect that ends the possession kills the host body with the same effects
-    as Exit Body. The intellect devourer can't use any of the host creature's spells
-    with Body Thief but can use its own spells. The host body slowly decays while
-    inhabited by the intellect devourer, becoming uninhabitable after 7 days unless
-    preserved with __gentle repose__ or a similar effect.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Body Thief
-  range: null
-  raw_description: '**Body Thief** [Three Actions]  (__manipulate__, __necromancy__,
-    __occult__, __possession__) The intellect devourer reduces in size and burrows
-    into the brain of a creature dead for no longer than 1 day. At the start of the
-    intellect devourer''s next turn, the body revives at its maximum Hit Points, controlled
-    by the devourer. The intellect devourer is conscious and can sense everything
-    the possessed body could. Any effect that ends the possession kills the host body
-    with the same effects as Exit Body. The intellect devourer can''t use any of the
-    host creature''s spells with Body Thief but can use its own spells. The host body
-    slowly decays while inhabited by the intellect devourer, becoming uninhabitable
-    after 7 days unless preserved with __gentle repose__ or a similar effect.'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  - necromancy
-  - occult
-  - possession
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The intellect devourer is controlling a body with Body Thief
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Exit Body
-  range: null
-  raw_description: '**Exit Body**   (__move__) **Requirements** The intellect devourer
-    is controlling a body with Body Thief; **Effect** The intellect devourer leaves
-    its host body, which dies instantly and is no longer a suitable host for any Body
-    Thief ability. The intellect devourer appears at full size in an adjacent space.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The intellect devourer makes two talon Strikes against a __paralyzed__,
-    __restrained__, or __unconscious__ creature, using the same attack modifier as
-    its highest attack modifier. These Strikes gain the __death__ trait. If Ravage
-    kills the target, the intellect devourer may use Body Thief against it as a free
-    action.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ravage
-  range: null
-  raw_description: '**Ravage** [Three Actions]  The intellect devourer makes two talon
-    Strikes against a __paralyzed__, __restrained__, or __unconscious__ creature,
-    using the same attack modifier as its highest attack modifier. These Strikes gain
-    the __death__ trait. If Ravage kills the target, the intellect devourer may use
-    Body Thief against it as a free action.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: While an intellect devourer uses Body Thief, it gains the ability to
-    understand and speak all languages known by the host, as well as knowledge of
-    the host body's abilities, identity, role in society, and personality. However,
-    it does not gain the specific memories or knowledge of the host body.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stolen Identity
-  range: null
-  raw_description: '**Stolen Identity** While an intellect devourer uses Body Thief,
-    it gains the ability to understand and speak all languages known by the host,
-    as well as knowledge of the host body''s abilities, identity, role in society,
-    and personality. However, it does not gain the specific memories or knowledge
-    of the host body.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 14
   fort_misc: null
@@ -173,87 +181,71 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 - lifesense 60 feet
 size: Small
 skills:
 - bonus: 14
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 20
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 16
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 17
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 17
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 18
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 147
+  page_start: '147'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 27
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: confusion
-      requirement: null
-    - frequency: null
-      name: globe of invulnerability
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: ×3
-      name: soothe
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: gentle repose
-      requirement: null
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-    - frequency: at will
-      name: paranoia
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 27
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: confusion
+    - misc: null
+      name: globe of invulnerability
+  - level: 3
+    spells:
+    - misc: ×3
+      name: soothe
+  - level: 2
+    spells:
+    - misc: null
+      name: gentle repose
+    - misc: at will; self only
+      name: invisibility
+    - misc: at will
+      name: paranoia
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- CE
-- Small
 - Aberration
-type: Creature
-weaknesses: null

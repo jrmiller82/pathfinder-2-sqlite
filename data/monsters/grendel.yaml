@@ -7,36 +7,112 @@ ability_mods:
   wis_mod: 6
 ac: 44
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Grendel's fist Strikes deal 18 bludgeoning damage on a failure (but
+    no damage on a critical failure).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hands of the Murderer
+  range: null
+  raw_description: '**Hands of the Murderer** Grendel''s fist Strikes deal 18 bludgeoning
+    damage on a failure (but no damage on a critical failure).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: Grendel makes a bludgeoning jaws Strike against the creature he's grabbing.
+    On a hit, the creature also takes 2d6 __persistent bleed damage__ and becomes
+    __wounded 1__, or increases its wounded value by 1 if already wounded. On a critical
+    hit, the creature instead becomes wounded 2, or increases its wounded value by
+    2 if already wounded. If a creature dies from Tooth Grind, Grendel regains 40
+    HP; this is a __healing__ effect.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tooth Grind
+  range: null
+  raw_description: '**Tooth Grind** [One Action]  **Requirements** Grendel is grabbing
+    a creature; **Effect** Grendel makes a bludgeoning jaws Strike against the creature
+    he''s grabbing. On a hit, the creature also takes 2d6 __persistent bleed damage__
+    and becomes __wounded 1__, or increases its wounded value by 1 if already wounded.
+    On a critical hit, the creature instead becomes wounded 2, or increases its wounded
+    value by 2 if already wounded. If a creature dies from Tooth Grind, Grendel regains
+    40 HP; this is a __healing__ effect.'
+  requirements: Grendel is grabbing a creature
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 60 feet, DC 38.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 60 feet, DC 38. A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 60 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 38
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -54,11 +130,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -69,6 +145,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -77,34 +155,32 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The monster avoids being knocked out and remains at 1 HP, but its wounded
-    value increases by 1. When it is wounded 3, it can no longer use this ability.
-  effects: null
+  effect: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ferocity
   range: null
-  raw_description: '**Ferocity** [Reaction] **Trigger** The monster is reduced to
-    0 HP. **Effect** The monster avoids being knocked out and remains at 1 HP, but
-    its wounded value increases by 1. When it is wounded 3, it can no longer use this
-    ability.'
+  raw_description: '**__Ferocity__** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The monster is reduced to 0 HP.
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
   effect: The persistent damage or condition from the triggering effect doesn't affect
     Grendel.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Unstoppable
   range: null
   raw_description: '**Unstoppable [Reaction]** **Trigger** Grendel would take __persistent
@@ -114,13 +190,14 @@ automatic_abilities:
     __sickened__, __slowed__, __stunned__, or __stupefied__; **Effect** The persistent
     damage or condition from the triggering effect doesn''t affect Grendel.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: 'Grendel would take __persistent damage__ or gain one of the following
-    conditions: __blinded__, __clumsy__, __confused__, __controlled__, __dazzled__,
-    __deafened__, __doomed__, __drained__, __enfeebled__, __fascinated__, __fatigued__,
-    __fleeing__, __frightened__, __paralyzed__, __petrified__, __sickened__, __slowed__,
-    __stunned__, or __stupefied__'
+  trigger: 'Grendel would take persistent damage or gain one of the following conditions:
+    blinded, clumsy, confused, controlled, dazzled, deafened, doomed, drained, enfeebled,
+    fascinated, fatigued, fleeing, frightened, paralyzed, petrified, sickened, slowed,
+    stunned, or stupefied;'
 description: 'This reaver of the cold marsh is not just a monster; he is a force of
   nature. Where there is peace and prosperity in the world, Grendel strikes, eager
   to prove that tranquility is transitory and death is the only constant. He stalks
@@ -143,12 +220,10 @@ description: 'This reaver of the cold marsh is not just a monster; he is a force
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 49'
 hp: 360
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Common
 level: 19
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d8+18
@@ -175,67 +250,7 @@ melee:
   - versatile B
 name: Grendel
 perception: 35
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Grendel's fist Strikes deal 18 bludgeoning damage on a failure (but
-    no damage on a critical failure).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hands of the Murderer
-  range: null
-  raw_description: '**Hands of the Murderer** Grendel''s fist Strikes deal 18 bludgeoning
-    damage on a failure (but no damage on a critical failure).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: Grendel is grabbing a creature
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tooth Grind
-  range: null
-  raw_description: '**Tooth Grind**   **Requirements** Grendel is grabbing a creature;
-    **Effect** Grendel makes a bludgeoning jaws Strike against the creature he''s
-    grabbing. On a hit, the creature also takes 2d6 __persistent bleed damage__ and
-    becomes __wounded 1__, or increases its wounded value by 1 if already wounded.
-    On a critical hit, the creature instead becomes wounded 2, or increases its wounded
-    value by 2 if already wounded. If a creature dies from Tooth Grind, Grendel regains
-    40 HP; this is a __healing__ effect.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**__Throw Rock__**   '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+18
@@ -246,11 +261,11 @@ ranged:
   traits:
   - brutal
   - range increment 150 feet
-rarity: Rare
+rarity: Unique
 resistances:
 - amount: 15
-  type: all (except unarmed attacks)
-ritual_lists: null
+  misc: except unarmed attacks
+  type: all
 saves:
   fort: 36
   fort_misc: null
@@ -265,52 +280,49 @@ sense_abilities:
   critical_success: null
   description: Grendel's hearing is a precise sense to a range of 120 feet.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Keen Hearing
   range: null
   raw_description: '**Keen Hearing** Grendel''s hearing is a precise sense to a range
     of 120 feet.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +35
 - darkvision
 - keen hearing 120 feet
 size: Large
 skills:
 - bonus: 34
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 39
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 34
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 34
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 33
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 136
+  page_start: '136'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Rare
-- CE
-- Large
 - Humanoid
-type: Creature
-weaknesses: null

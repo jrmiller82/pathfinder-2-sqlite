@@ -7,6 +7,178 @@ ability_mods:
   wis_mod: 3
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living humanoid slain by a cairn wight's weapon or claw Strike rises
+    as a spawned wight after 1d4 rounds. This spawned wight is under the command of
+    the cairn wight that killed it. It doesn't have drain life or cairn wight spawn
+    and is __clumsy 2__ for as long as it is a spawned wight. If its creator dies,
+    the spawned wight becomes a full-fledged, autonomous cairn wight; it regains its
+    free will, gains drain life and cairn wight spawn, and is no longer clumsy.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cairn Wight Spawn
+  range: null
+  raw_description: '**Cairn Wight Spawn** (__divine__, __necromancy__) A living humanoid
+    slain by a cairn wight''s weapon or claw Strike rises as a spawned wight after
+    1d4 rounds. This spawned wight is under the command of the cairn wight that killed
+    it. It doesn''t have drain life or cairn wight spawn and is __clumsy 2__ for as
+    long as it is a spawned wight. If its creator dies, the spawned wight becomes
+    a full-fledged, autonomous cairn wight; it regains its free will, gains drain
+    life and cairn wight spawn, and is no longer clumsy.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the cairn wight damages a living creature with a melee Strike,
+    using an unarmed attack or its bound weapon, the cairn wight gains 5 temporary
+    Hit Points and the creature must succeed at a DC 18 Fortitude save or become __drained
+    1__. Further damage dealt by the cairn wraith increases the drained condition
+    value by 1 on a failed save, to a maximum of drained 4.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drain Life
+  range: null
+  raw_description: '**Drain Life** (__divine__, __necromancy__) When the cairn wight
+    damages a living creature with a melee Strike, using an unarmed attack or its
+    bound weapon, the cairn wight gains 5 temporary Hit Points and the creature must
+    succeed at a DC 18 Fortitude save or become __drained 1__. Further damage dealt
+    by the cairn wraith increases the drained condition value by 1 on a failed save,
+    to a maximum of drained 4.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The cairn wight chants a low, haunting melody. Living creatures within
+    50 feet must attempt a DC 21 Will save. The cairn wight can't chant a new Funereal
+    Dirge for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Funereal Dirge
+  range: null
+  raw_description: '**Funereal Dirge** [Two Actions]  (__auditory__, __divine__, __emotion__,
+    __fear__, __mental__, __necromancy__) The cairn wight chants a low, haunting melody.
+    Living creatures within 50 feet must attempt a DC 21 Will save. The cairn wight
+    can''t chant a new Funereal Dirge for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - divine
+  - emotion
+  - fear
+  - mental
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __frightened 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __frightened 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is frightened 2.
+  effect: null
+  failure: The creature is frightened 2.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is frightened 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is frightened 2 and takes a –2 status penalty to
+    saving throws against drain life.
+  critical_success: null
+  description: The creature is frightened 2 and takes a –2 status penalty to saving
+    throws against drain life.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is frightened 2 and takes a
+    –2 status penalty to saving throws against drain life.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: Reaction
@@ -15,20 +187,22 @@ automatic_abilities:
   description: null
   effect: The cairn wight makes a Strike before being destroyed. It doesn't gain any
     temporary HP from drain life on this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Final Spite
   range: null
   raw_description: '**Final Spite [Reaction]** **Trigger** The cairn wight is reduced
     to 0 Hit Points; **Effect** The cairn wight makes a Strike before being destroyed.
     It doesn''t gain any temporary HP from drain life on this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The cairn wight is reduced to 0 Hit Points
+  trigger: The cairn wight is reduced to 0 Hit Points;
 description: 'Jealous guardians of tombs, barrows, and sepulchers, cairn wights usually
   spawn from necromantic rituals. For those mortals who cannot abide the thought of
   separation from their earthly possessions, the undead existence offered by transformation
@@ -55,11 +229,11 @@ description: 'Jealous guardians of tombs, barrows, and sepulchers, cairn wights 
 hp: 67
 hp_misc: null
 immunities:
-- death effects
-- disease
-- paralyzed
-- poison
-- unconscious
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 items:
 - longsword
 - studded leather armor
@@ -67,7 +241,7 @@ languages:
 - Common
 - Necril
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+7
@@ -92,102 +266,8 @@ melee:
   - agile
 name: Cairn Wight
 perception: 11
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A living humanoid slain by a cairn wight's weapon or claw Strike rises
-    as a spawned wight after 1d4 rounds. This spawned wight is under the command of
-    the cairn wight that killed it. It doesn't have drain life or cairn wight spawn
-    and is __clumsy 2__ for as long as it is a spawned wight. If its creator dies,
-    the spawned wight becomes a full-fledged, autonomous cairn wight; it regains its
-    free will, gains drain life and cairn wight spawn, and is no longer clumsy.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Cairn Wight Spawn
-  range: null
-  raw_description: '**Cairn Wight Spawn** (__divine__, __necromancy__) A living humanoid
-    slain by a cairn wight''s weapon or claw Strike rises as a spawned wight after
-    1d4 rounds. This spawned wight is under the command of the cairn wight that killed
-    it. It doesn''t have drain life or cairn wight spawn and is __clumsy 2__ for as
-    long as it is a spawned wight. If its creator dies, the spawned wight becomes
-    a full-fledged, autonomous cairn wight; it regains its free will, gains drain
-    life and cairn wight spawn, and is no longer clumsy.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the cairn wight damages a living creature with a melee Strike,
-    using an unarmed attack or its bound weapon, the cairn wight gains 5 temporary
-    Hit Points and the creature must succeed at a DC 18 Fortitude save or become __drained
-    1__. Further damage dealt by the cairn wraith increases the drained condition
-    value by 1 on a failed save, to a maximum of drained 4.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drain Life
-  range: null
-  raw_description: '**Drain Life** (__divine__, __necromancy__) When the cairn wight
-    damages a living creature with a melee Strike, using an unarmed attack or its
-    bound weapon, the cairn wight gains 5 temporary Hit Points and the creature must
-    succeed at a DC 18 Fortitude save or become __drained 1__. Further damage dealt
-    by the cairn wraith increases the drained condition value by 1 on a failed save,
-    to a maximum of drained 4.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: The creature is frightened 2 and takes a -2 status penalty to
-    saving throws against drain life.
-  critical_success: The creature is unaffected.
-  description: "The cairn wight chants a low, haunting melody. Living creatures within\
-    \ 50 feet must attempt a DC 21 Will save. The cairn wight can't chant a new Funereal\
-    \ Dirge for 1d4 rounds. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Funereal Dirge
-  range: null
-  raw_description: "**Funereal Dirge** [Two Actions]  (__auditory__, __divine__, __emotion__,\
-    \ __fear__, __mental__, __necromancy__) The cairn wight chants a low, haunting\
-    \ melody. Living creatures within 50 feet must attempt a DC 21 Will save. The\
-    \ cairn wight can't chant a new Funereal Dirge for 1d4 rounds. \n\n**Critical\
-    \ Success** The creature is unaffected. \n\n**Success** The creature is __frightened\
-    \ 1__. \n\n**Failure** The creature is frightened 2. \n\n**Critical Failure**\
-    \ The creature is frightened 2 and takes a -2 status penalty to saving throws\
-    \ against drain life."
-  requirements: null
-  success: The creature is frightened 1.
-  traits:
-  - auditory
-  - divine
-  - emotion
-  - fear
-  - mental
-  - necromancy
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -196,37 +276,31 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 size: Medium
 skills:
 - bonus: 12
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 9
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 12
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 292
+  page_start: '292'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- LE
-- Medium
 - Undead
 - Wight
-type: Creature
-weaknesses: null

@@ -7,36 +7,107 @@ ability_mods:
   wis_mod: 1
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragonscarred dead's weapon is magically scorched by a dragon's
+    breath. When wielded by the dragonscarred dead who carried it in life, the sword
+    deals an extra 2d6 negative damage and 3d6 fire damage. In the hands of any other
+    creature, it is merely a broken greatsword.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath-Seared Sword
+  range: null
+  raw_description: '**Breath-Seared Sword** The dragonscarred dead''s weapon is magically
+    scorched by a dragon''s breath. When wielded by the dragonscarred dead who carried
+    it in life, the sword deals an extra 2d6 negative damage and 3d6 fire damage.
+    In the hands of any other creature, it is merely a broken greatsword.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: The creature is stunned for 1d4 rounds and is fatigued.
+  critical_success: The creature is unaffected.
+  description: The dragonscarred dead focuses its boundless frustration in a gaze
+    targeting one creature it can see within 30 feet. That creature must attempt a
+    DC 30 Will save.
+  effect: null
+  failure: The creature is stunned for 1 round.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Glare of Rage
+  range: null
+  raw_description: '**Glare of Rage** [Two Actions]  (__arcane__, __enchantment__,
+    __mental__, __visual__) The dragonscarred dead focuses its boundless frustration
+    in a gaze targeting one creature it can see within 30 feet. That creature must
+    attempt a DC 30 Will save.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __stunned 1__.
+
+
+    **Failure** The creature is stunned for 1 round.
+
+
+    **Critical Failure** The creature is stunned for 1d4 rounds and is fatigued.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __stunned 1__.
+  traits:
+  - arcane
+  - enchantment
+  - mental
+  - visual
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 60 feet, DC 29
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 60 feet, DC 29 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 60 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 29
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -65,7 +136,7 @@ description: 'Not all would-be dragonslayers who die a valiant death rest peacef
 
   **__Recall Knowledge - Undead__ (__Religion__)**: DC 33'
 hp: 210
-hp_misc: regeneration 20 (deactivated by cold
+hp_misc: regeneration 20 (deactivated by cold)
 immunities:
 - death effects
 - disease
@@ -80,94 +151,23 @@ languages:
 - Draconic
 - Necril
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+9
     type: slashing
   name: breath-seared greatsword
   plus_damage:
-  - formula: 2d6
-    type: negative
+  - formula: null
+    type: 2d6 negative
   to_hit: 27
   traits:
   - magical
   - versatile P
 name: Dragonscarred Dead
 perception: 24
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragonscarred dead's weapon is magically scorched by a dragon's
-    breath. When wielded by the dragonscarred dead who carried it in life, the sword
-    deals an extra 2d6 negative damage and 3d6 fire damage. In the hands of any other
-    creature, it is merely a broken greatsword.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath-Seared Sword
-  range: null
-  raw_description: '**Breath-Seared Sword** The dragonscarred dead''s weapon is magically
-    scorched by a dragon''s breath. When wielded by the dragonscarred dead who carried
-    it in life, the sword deals an extra 2d6 negative damage and 3d6 fire damage.
-    In the hands of any other creature, it is merely a broken greatsword.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: The creature is stunned for 1d4 rounds and is fatigued.
-  critical_success: The creature is unaffected.
-  description: 'The dragonscarred dead focuses its boundless frustration in a gaze
-    targeting one creature it can see within 30 feet. That creature must attempt a
-    DC 30 Will save.
-
-
-    '
-  effect: null
-  effects: null
-  failure: The creature is stunned for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Glare of Rage
-  range: null
-  raw_description: '**Glare of Rage** [Two Actions]  (__arcane__, __enchantment__,
-    __mental__, __visual__) The dragonscarred dead focuses its boundless frustration
-    in a gaze targeting one creature it can see within 30 feet. That creature must
-    attempt a DC 30 Will save.
-
-
-    **Critical Success** The creature is unaffected.
-
-
-    **Success** The creature is __stunned 1__.
-
-
-    **Failure** The creature is stunned for 1 round.
-
-
-    **Critical Failure** The creature is stunned for 1d4 rounds and is fatigued.'
-  requirements: null
-  success: The creature is stunned 1.
-  traits:
-  - arcane
-  - enchantment
-  - mental
-  - visual
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 10
-  type: cold
-- amount: 10
-  type: good
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -180,30 +180,26 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The dragonscarred dead is immediately aware of any intruder that enters
+  description: The dragonscarred dead is immediately aware of any intruder that enters
     the lair of its creator dragon. It does not know the exact location of the intruder
-    but remains aware of the intruder''s presence until the intruder either leaves
+    but remains aware of the intruder's presence until the intruder either leaves
     or is destroyed.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Guardian Sense
   range: null
   raw_description: '**Guardian Sense** (__arcane__, __detection__, __divination__)
     The dragonscarred dead is immediately aware of any intruder that enters the lair
     of its creator dragon. It does not know the exact location of the intruder but
     remains aware of the intruder''s presence until the intruder either leaves or
-    is destroyed.
-
-
-    '
+    is destroyed.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - arcane
@@ -211,33 +207,35 @@ sense_abilities:
   - divination
   trigger: null
 senses:
-- Perception +24
 - darkvision
 - guardian sense
 size: Medium
 skills:
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Dragon Lore '
+  name: Dragon Lore
 - bonus: 21
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: 'Pathfinder #148: Fires of the Haunted City'
-  page_start: 82
+  page_start: '82'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- NE
-- Medium
 - Fire
 - Undead
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold
+- amount: 10
+  misc: null
+  type: good

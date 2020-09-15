@@ -7,6 +7,70 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If the hellcrown hits with a nail Strike, the target must attempt a
+    DC 16 Fortitude save. On a failure, the nail is embedded in the creature, making
+    it __enfeebled 1__ for 1 minute and giving it 1 persistent bleed damage (__enfeebled
+    2__ and 1d4 persistent bleed damage on a critical failure). Each additional embedded
+    nail increases the __enfeebled__ value by 1 (to a maximum of __enfeebled 4__)
+    and the bleed damage by 1. A creature can remove a nail with an Interact action
+    to reduce the __enfeeblement__ and amount of bleed damage. Pulling out the last
+    nail removes both conditions.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bleeding Nail
+  range: null
+  raw_description: '**Bleeding Nail** If the hellcrown hits with a nail Strike, the
+    target must attempt a DC 16 Fortitude save. On a failure, the nail is embedded
+    in the creature, making it __enfeebled 1__ for 1 minute and giving it 1 persistent
+    bleed damage (__enfeebled 2__ and 1d4 persistent bleed damage on a critical failure).
+    Each additional embedded nail increases the __enfeebled__ value by 1 (to a maximum
+    of __enfeebled 4__) and the bleed damage by 1. A creature can remove a nail with
+    an Interact action to reduce the __enfeeblement__ and amount of bleed damage.
+    Pulling out the last nail removes both conditions.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: All creatures that can see the hellcrown and are suffering from its
+    bleeding nail must attempt a DC 16 Will saving throw. A creature that fails is
+    __frightened 1__, and on a critical failure becomes fleeing for as long as it's
+    __frightened__. Any creature that attempts a save is then temporarily immune for
+    10 minutes.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Terrifying Stare
+  range: null
+  raw_description: '**Terrifying Stare** [One Action]  (__fear__, __mental__, __visual__)
+    All creatures that can see the hellcrown and are suffering from its bleeding nail
+    must attempt a DC 16 Will saving throw. A creature that fails is __frightened
+    1__, and on a critical failure becomes fleeing for as long as it''s __frightened__.
+    Any creature that attempts a save is then temporarily immune for 10 minutes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fear
+  - mental
+  - visual
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'The life of a Hellknight is bloody, brutal, and often short. Many who
@@ -47,74 +111,13 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
 languages:
 - Common
 level: 1
-melee: null
+melee_attacks: null
 name: Hellcrown
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the hellcrown hits with a nail Strike, the target must attempt a
-    DC 16 Fortitude save. On a failure, the nail is embedded in the creature, making
-    it __enfeebled 1__ for 1 minute and giving it 1 persistent bleed damage (__enfeebled
-    2__ and 1d4 persistent bleed damage on a critical failure). Each additional embedded
-    nail increases the __enfeebled__ value by 1 (to a maximum of __enfeebled 4__)
-    and the bleed damage by 1. A creature can remove a nail with an Interact action
-    to reduce the __enfeeblement__ and amount of bleed damage. Pulling out the last
-    nail removes both conditions.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Bleeding Nail
-  range: null
-  raw_description: '**Bleeding Nail** If the hellcrown hits with a nail Strike, the
-    target must attempt a DC 16 Fortitude save. On a failure, the nail is embedded
-    in the creature, making it __enfeebled 1__ for 1 minute and giving it 1 persistent
-    bleed damage (__enfeebled 2__ and 1d4 persistent bleed damage on a critical failure).
-    Each additional embedded nail increases the __enfeebled__ value by 1 (to a maximum
-    of __enfeebled 4__) and the bleed damage by 1. A creature can remove a nail with
-    an Interact action to reduce the __enfeeblement__ and amount of bleed damage.
-    Pulling out the last nail removes both conditions.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: All creatures that can see the hellcrown and are suffering from its
-    bleeding nail must attempt a DC 16 Will saving throw. A creature that fails is
-    __frightened 1__, and on a critical failure becomes fleeing for as long as it's
-    __frightened__. Any creature that attempts a save is then temporarily immune for
-    10 minutes.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Terrifying Stare
-  range: null
-  raw_description: '**Terrifying Stare**   (__fear__, __mental__, __visual__) All
-    creatures that can see the hellcrown and are suffering from its bleeding nail
-    must attempt a DC 16 Will saving throw. A creature that fails is __frightened
-    1__, and on a critical failure becomes fleeing for as long as it''s __frightened__.
-    Any creature that attempts a save is then temporarily immune for 10 minutes.'
-  requirements: null
-  success: null
-  traits:
-  - fear
-  - mental
-  - visual
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
@@ -127,8 +130,6 @@ ranged:
   traits:
   - range increment 20 feet
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 4
   fort_misc: null
@@ -137,30 +138,24 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Tiny
 skills:
 - bonus: 8
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #145: Hellknight Hill'
-  page_start: 90
+  page_start: '90'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- Uncommon
-- LE
-- Tiny
 - Undead
-type: Creature
-weaknesses: null

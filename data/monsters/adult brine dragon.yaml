@@ -7,36 +7,132 @@ ability_mods:
   wis_mod: 5
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a spray of acidic salt water that deals 13d6 acid
+    damage in a 100-foot line (DC 32 basic Reflex save). They can't use Breath Weapon
+    again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__acid__, __evocation__, __primal__)
+    The dragon breathes a spray of acidic salt water that deals 13d6 acid damage in
+    a 100-foot line (DC 32 basic Reflex save). They can''t use Breath Weapon again
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - acid
+  - evocation
+  - primal
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one wing Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one wing Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges their Breath Weapon whenever they score a critical
+    hit with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
+    whenever they score a critical hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes a jaws Strike. On a hit, the target takes 4d6 __persistent
+    acid damage__, and is __sickened 2__ from the pain of salt and brine in its wounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Desiccating Bite
+  range: null
+  raw_description: '**Desiccating Bite** [Two Actions]  The dragon makes a jaws Strike.
+    On a hit, the target takes 4d6 __persistent acid damage__, and is __sickened 2__
+    from the pain of salt and brine in its wounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LN
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 30
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 30 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 30
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -50,11 +146,11 @@ automatic_abilities:
   effect: The dragon spits a glob of caustic salt water at the creature. The creature
     takes 5d6 acid damage (DC 30 basic Reflex save). On a failure, the concentrate
     action is disrupted.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Brine Spit
   range: null
   raw_description: '**Brine Spit [Reaction]** **Trigger **A creature the brine dragon
@@ -62,10 +158,12 @@ automatic_abilities:
     a glob of caustic salt water at the creature. The creature takes 5d6 acid damage
     (DC 30 basic Reflex save). On a failure, the concentrate action is disrupted.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature the brine dragon observes within 30 feet uses a __concentrate__
-    action
+  trigger: A creature the brine dragon observes within 30 feet uses a concentrate
+    action;
 description: 'Brine dragons are usually blue-green in color, with shiny scales, crests
   that help them glide through the water, and sweeping neck frills. They care little
   for either good or evil. As they are both opinionated and willing to impose their
@@ -107,24 +205,23 @@ hp: 222
 hp_misc: null
 immunities:
 - acid
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Aquan
 - Common
 - Draconic
 - Sylvan
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+12
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 3d4
-    type: acid
+  - formula: null
+    type: 3d4 acid
   to_hit: 26
   traits:
   - acid
@@ -163,93 +260,8 @@ melee:
   - reach 15 feet
 name: Adult Brine Dragon
 perception: 23
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a spray of acidic salt water that deals 13d6 acid
-    damage in a 100-foot line (DC 32 basic Reflex save). They can't use Breath Weapon
-    again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__acid__, __evocation__, __primal__)
-    The dragon breathes a spray of acidic salt water that deals 13d6 acid damage in
-    a 100-foot line (DC 32 basic Reflex save). They can''t use Breath Weapon again
-    for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - acid
-  - evocation
-  - primal
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one wing Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one wing Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges their Breath Weapon whenever they score a critical
-    hit with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
-    whenever they score a critical hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes a jaws Strike. On a hit, the target takes 4d6 __persistent
-    acid damage__, and is __sickened 2__ from the pain of salt and brine in its wounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Desiccating Bite
-  range: null
-  raw_description: '**Desiccating Bite** [Two Actions]  The dragon makes a jaws Strike.
-    On a hit, the target takes 4d6 __persistent acid damage__, and is __sickened 2__
-    from the pain of salt and brine in its wounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -258,76 +270,69 @@ saves:
   ref_misc: null
   will: 21
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +23
 - darkvision
 - scent (imprecise) 60 feet
 size: Huge
 skills:
 - bonus: 20
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 24
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 24
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 21
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 21
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 21
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 87
+  page_start: '87'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 120
+  misc: null
   type: fly
 - amount: 60
+  misc: null
   type: swim
 spell_lists:
-- dc: 32
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: 24
+  cantrips: null
+  constants: null
+  dc: 32
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: hydraulic torrent
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: hydraulic push
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: obscuring mist
-      requirement: null
-  to_hit: 24
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- LN
-- Huge
 - Amphibious
 - Dragon
 - Elemental
 - Water
-type: Creature
-weaknesses: null

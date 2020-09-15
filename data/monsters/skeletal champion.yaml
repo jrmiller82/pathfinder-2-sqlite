@@ -8,6 +8,7 @@ ability_mods:
 ac: 19
 ac_special:
 - descr: 21 with shield raised
+active_abilities: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -19,11 +20,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -34,34 +35,12 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: You snap your shield in place to ward off a blow. Your shield prevents you
-    from taking an amount of damage up to the shield's Hardness. You and the shield
-    each take any remaining damage, possibly breaking or destroying the shield.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shield Block
-  range: null
-  raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
-    raised, you would take damage from a physical attack. **Effect** You snap your
-    shield in place to ward off a blow. Your shield prevents you from taking an amount
-    of damage up to the shield''s Hardness. You and the shield each take any remaining
-    damage, possibly breaking or destroying the shield.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: While you have your shield raised, you would take damage from a physical
-    attack.
 description: 'These skeletons retain the cunning they possessed in life.
 
 
@@ -85,7 +64,7 @@ languages:
 - Common
 - Necril
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -117,21 +96,23 @@ melee:
   - reach 10 feet
 name: Skeletal Champion
 perception: 8
-proactive_abilities: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: cold
 - amount: 5
+  misc: null
   type: electricity
 - amount: 5
+  misc: null
   type: fire
 - amount: 5
+  misc: null
   type: piercing
 - amount: 5
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -140,33 +121,28 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary
-  page_start: 298
+  page_start: '298'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Medium
 - Skeleton
 - Undead
-type: Creature
-weaknesses: null

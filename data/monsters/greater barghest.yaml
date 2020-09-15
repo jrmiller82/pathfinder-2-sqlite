@@ -7,6 +7,76 @@ ability_mods:
   wis_mod: 3
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
+    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
+    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
+    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
+    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
+    one goblinoid form and one wolf form.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __divine__, __polymorph__,
+    __transmutation__) The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
+    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
+    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
+    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
+    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
+    one goblinoid form and one wolf form.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: "The barghest makes a claw Strike with a shriveled third arm hanging from\
+    \ its torso. This attack doesn't count for the barghest's multiple attack penalty,\
+    \ nor does that penalty apply on the attack.\n\n  * **Wings** The barghest has\
+    \ malformed wings extending from its back. It gains a fly Speed of 25 feet."
+  failure: null
+  frequency: once per round
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mutations
+  range: null
+  raw_description: "**Mutations** The process of consuming corpses to evolve into\
+    \ a greater barghest results in odd and unpredictable physiological changes. A\
+    \ greater barghest has one mutation, typically chosen from the following options.\n\
+    \n  * **Fangs** (__poison__) The barghest grows elongated fangs that seep poison.\
+    \ Its jaws deal 1d6 additional poison damage and 1d6 persistent poison damage.\n\
+    \n  * **Toxic Breath** [Two Actions] (__divine__, __evocation__, __poison__) The\
+    \ barghest breathes a cloud of toxic gas that deals 8d6 poison damage to all creatures\
+    \ in a 30-foot cone (DC 25 basic Fortitude save). It can't use Toxic Breath again\
+    \ for 1d4 rounds.\n\n  * **Vestigial Arm Strike**  **Frequency **once per round;\
+    \ **Trigger **The barghest completes a Strike. **Effect **The barghest makes a\
+    \ claw Strike with a shriveled third arm hanging from its torso. This attack doesn't\
+    \ count for the barghest's multiple attack penalty, nor does that penalty apply\
+    \ on the attack.\n\n  * **Wings** The barghest has malformed wings extending from\
+    \ its back. It gains a fly Speed of 25 feet."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The barghest completes a Strike.
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +88,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +103,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -66,14 +138,12 @@ description: 'Once a barghest has eaten enough to grow into a greater barghest, 
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 25'
 hp: 105
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - Common
 - Goblin
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+6
@@ -93,167 +163,15 @@ melee:
   - agile
 name: Greater Barghest
 perception: 16
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
-    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
-    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
-    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
-    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
-    one goblinoid form and one wolf form.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __divine__, __polymorph__,
-    __transmutation__) The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
-    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
-    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
-    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
-    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
-    one goblinoid form and one wolf form.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The process of consuming corpses to evolve into a greater barghest
-    results in odd and unpredictable physiological changes. A greater barghest has
-    one mutation, typically chosen from the following options.
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The barghest grows elongated fangs that seep poison. Its jaws deal
-      1d6 additional poison damage and 1d6 persistent poison damage.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Fangs
-    range: null
-    raw_description: '**Fangs** (__poison__) The barghest grows elongated fangs that
-      seep poison. Its jaws deal 1d6 additional poison damage and 1d6 persistent poison
-      damage.'
-    requirements: null
-    success: null
-    traits:
-    - poison
-    trigger: null
-  - action_cost: Two Actions
-    critical_failure: null
-    critical_success: null
-    description: The barghest breathes a cloud of toxic gas that deals 8d6 poison
-      damage to all creatures in a 30-foot cone (DC 25 basic Fortitude save). It can't
-      use Toxic Breath again for 1d4 rounds.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Toxic Breath
-    range: null
-    raw_description: '**Toxic Breath** [Two Actions] (__divine__, __evocation__, __poison__)
-      The barghest breathes a cloud of toxic gas that deals 8d6 poison damage to all
-      creatures in a 30-foot cone (DC 25 basic Fortitude save). It can''t use Toxic
-      Breath again for 1d4 rounds.'
-    requirements: null
-    success: null
-    traits:
-    - divine
-    - evocation
-    - poison
-    trigger: null
-  - action_cost: Free Action
-    critical_failure: null
-    critical_success: null
-    description: null
-    effect: The barghest makes a claw Strike with a shriveled third arm hanging from
-      its torso. This attack doesn't count for the barghest's multiple attack penalty,
-      nor does that penalty apply on the attack.
-    effects: null
-    failure: null
-    frequency: once per round
-    full_description: null
-    generic_description: null
-    name: Vestigial Arm Strike
-    range: null
-    raw_description: '**Vestigial Arm Strike** [Free Action] **Frequency **once per
-      round; **Trigger **The barghest completes a Strike. **Effect **The barghest
-      makes a claw Strike with a shriveled third arm hanging from its torso. This
-      attack doesn''t count for the barghest''s multiple attack penalty, nor does
-      that penalty apply on the attack.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: The barghest completes a Strike.
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The barghest has malformed wings extending from its back. It gains
-      a fly Speed of 25 feet.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Wings
-    range: null
-    raw_description: '**Wings** The barghest has malformed wings extending from its
-      back. It gains a fly Speed of 25 feet.'
-    requirements: null
-    success: null
-    traits: null
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mutations
-  range: null
-  raw_description: "**Mutations** The process of consuming corpses to evolve into\
-    \ a greater barghest results in odd and unpredictable physiological changes. A\
-    \ greater barghest has one mutation, typically chosen from the following options.\
-    \ \n\n  * **Fangs** (__poison__) The barghest grows elongated fangs that seep\
-    \ poison. Its jaws deal 1d6 additional poison damage and 1d6 persistent poison\
-    \ damage.\n\n  * **Toxic Breath**  (__divine__, __evocation__, __poison__) The\
-    \ barghest breathes a cloud of toxic gas that deals 8d6 poison damage to all creatures\
-    \ in a 30-foot cone (DC 25 basic Fortitude save). It can't use Toxic Breath again\
-    \ for 1d4 rounds.\n\n  * **Vestigial Arm Strike** [Free Action] **Frequency **once\
-    \ per round; **Trigger **The barghest completes a Strike. **Effect **The barghest\
-    \ makes a claw Strike with a shriveled third arm hanging from its torso. This\
-    \ attack doesn't count for the barghest's multiple attack penalty, nor does that\
-    \ penalty apply on the attack.\n\n  * **Wings** The barghest has malformed wings\
-    \ extending from its back. It gains a fly Speed of 25 feet."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
+  misc: null
   type: fire
 - amount: 10
-  type: physical (except magical)
-ritual_lists: null
+  misc: except magical
+  type: physical
 saves:
   fort: 17
   fort_misc: null
@@ -262,89 +180,78 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 18
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 14
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 16
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 15
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 14
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 37
+  page_start: '37'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 25
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 25
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: blink
-      requirement: null
-    - frequency: null
+    - misc: null
       name: confusion
-      requirement: null
-    - frequency: null
+    - misc: null
       name: dimension door
-      requirement: null
-    - frequency: null
+    - misc: null
       name: enlarge
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: at will
+    - misc: at will
       name: levitate
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: charm
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- Uncommon
-- CE
-- Large
 - Fiend
 - Mutant
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: good
 - amount: 5
+  misc: null
   type: lawful

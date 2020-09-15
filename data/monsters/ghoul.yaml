@@ -7,6 +7,111 @@ ability_mods:
   wis_mod: 2
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ghoul devours a chunk of the corpse and regains 1d6 Hit Points. It can
+    regain Hit Points from any given corpse only once.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Consume Flesh
+  range: null
+  raw_description: '**Consume Flesh** [One Action]  (__manipulate__) **Requirements**
+    The ghoul is adjacent to the corpse of a creature that died within the last hour.
+    **Effect** The ghoul devours a chunk of the corpse and regains 1d6 Hit Points.
+    It can regain Hit Points from any given corpse only once.'
+  requirements: The ghoul is adjacent to the corpse of a creature that died within
+    the last hour.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** Fortitude DC 15; **Stage 1** carrier with no ill
+    effect (1 day); **Stage 2** 2d6 negative damage and regains half as many Hit Points
+    from all healing (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** 2d6 negative
+    damage and gains no benefit from healing (1 day); **Stage 5** as stage 4 (1 day);
+    **Stage 6** dead, and rises as a ghoul the next midnight.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ghoul Fever
+  range: null
+  raw_description: '**Ghoul Fever** (__disease__) **Saving Throw** Fortitude DC 15;
+    **Stage 1** carrier with no ill effect (1 day); **Stage 2** 2d6 negative damage
+    and regains half as many Hit Points from all healing (1 day); **Stage 3** as stage
+    2 (1 day); **Stage 4** 2d6 negative damage and gains no benefit from healing (1
+    day); **Stage 5** as stage 4 (1 day); **Stage 6** dead, and rises as a ghoul the
+    next midnight.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any living, non-elf creature hit by a ghoul's attack must succeed at
+    a DC 15 Fortitude save or become __paralyzed__. It can attempt a new save at the
+    end of each of its turns, and the DC cumulatively decreases by 1 on each such
+    save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Paralysis
+  range: null
+  raw_description: '**Paralysis** (__incapacitation__, __occult__, __necromancy__)
+    Any living, non-elf creature hit by a ghoul''s attack must succeed at a DC 15
+    Fortitude save or become __paralyzed__. It can attempt a new save at the end of
+    each of its turns, and the DC cumulatively decreases by 1 on each such save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  - occult
+  - necromancy
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ghoul jumps up to half its Speed. This movement doesn't trigger
+    reactions.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swift Leap
+  range: null
+  raw_description: '**Swift Leap** [One Action]  (__move__) The ghoul jumps up to
+    half its Speed. This movement doesn''t trigger reactions.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Ghouls are ravenous undead who haunt graveyards and eat corpses.
@@ -23,12 +128,11 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
 languages:
 - Common
 - Necril
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -36,7 +140,9 @@ melee:
   name: jaws
   plus_damage:
   - formula: null
-    type: ghoul fever and paralysis
+    type: ghoul fever
+  - formula: null
+    type: paralysis
   to_hit: 9
   traits:
   - finesse
@@ -54,106 +160,7 @@ melee:
   - finesse
 name: Ghoul
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The ghoul is adjacent to the corpse of a creature that died within the last
-    hour.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Consume Flesh
-  range: null
-  raw_description: '**Consume Flesh**   (__manipulate__) **Requirements** The ghoul
-    is adjacent to the corpse of a creature that died within the last hour. **Effect**
-    The ghoul devours a chunk of the corpse and regains 1d6 Hit Points. It can regain
-    Hit Points from any given corpse only once.'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** Fortitude DC 15; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** 2d6 negative damage and regains half as many Hit Points
-    from all healing (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** 2d6 negative
-    damage and gains no benefit from healing (1 day); **Stage 5** as stage 4 (1 day);
-    **Stage 6** dead, and rises as a ghoul the next midnight.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ghoul Fever
-  range: null
-  raw_description: '**Ghoul Fever** (__disease__) **Saving Throw** Fortitude DC 15;
-    **Stage 1** carrier with no ill effect (1 day); **Stage 2** 2d6 negative damage
-    and regains half as many Hit Points from all healing (1 day); **Stage 3** as stage
-    2 (1 day); **Stage 4** 2d6 negative damage and gains no benefit from healing (1
-    day); **Stage 5** as stage 4 (1 day); **Stage 6** dead, and rises as a ghoul the
-    next midnight.'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any living, non-elf creature hit by a ghoul's attack must succeed at
-    a DC 15 Fortitude save or become __paralyzed__. It can attempt a new save at the
-    end of each of its turns, and the DC cumulatively decreases by 1 on each such
-    save.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Paralysis
-  range: null
-  raw_description: '**Paralysis** (__incapacitation__, __occult__, __necromancy__)
-    Any living, non-elf creature hit by a ghoul''s attack must succeed at a DC 15
-    Fortitude save or become __paralyzed__. It can attempt a new save at the end of
-    each of its turns, and the DC cumulatively decreases by 1 on each such save.'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  - occult
-  - necromancy
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The ghoul jumps up to half its Speed. This movement doesn't trigger
-    reactions.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swift Leap
-  range: null
-  raw_description: '**Swift Leap**   (__move__) The ghoul jumps up to half its Speed.
-    This movement doesn''t trigger reactions.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 4
   fort_misc: null
@@ -162,38 +169,34 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 5
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 169
+  page_start: '169'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 5
+  misc: null
   type: burrow
 spell_lists: null
 traits:
-- CE
-- Medium
 - Ghoul
 - Undead
-type: Creature
-weaknesses: null

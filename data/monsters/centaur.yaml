@@ -8,6 +8,26 @@ ability_mods:
 ac: 20
 ac_special:
 - descr: 22 with shield raised
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Medium or smaller, hoof, DC 18
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Medium or smaller, hoof, DC 18'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -17,11 +37,11 @@ automatic_abilities:
   effect: You snap your shield in place to ward off a blow. Your shield prevents you
     from taking an amount of damage up to the shield's Hardness. You and the shield
     each take any remaining damage, possibly breaking or destroying the shield.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shield Block
   range: null
   raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
@@ -30,6 +50,8 @@ automatic_abilities:
     of damage up to the shield''s Hardness. You and the shield each take any remaining
     damage, possibly breaking or destroying the shield.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: While you have your shield raised, you would take damage from a physical
@@ -81,7 +103,6 @@ description: 'Centaurs are legendary hunters and trackers who resemble heavily m
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 18'
 hp: 40
 hp_misc: null
-immunities: null
 items:
 - breastplate
 - longsword
@@ -92,7 +113,7 @@ languages:
 - Elven
 - Sylvan
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+4
@@ -121,25 +142,7 @@ melee:
   traits: null
 name: Centaur
 perception: 9
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Medium or smaller, hoof, DC 18
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Medium or smaller, hoof, DC 18'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -149,11 +152,6 @@ ranged:
   to_hit: 9
   traits:
   - thrown 20 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -162,38 +160,33 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 size: Large
 skills:
 - bonus: 11
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 6
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 7
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 7
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 60
+  page_start: '60'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Large
 - Beast
-type: Creature
-weaknesses: null

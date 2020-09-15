@@ -7,6 +7,30 @@ ability_mods:
   wis_mod: 3
 ac: 15
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each enemy in the bat swarm's space takes 1d4 piercing damage (DC 16
+    basic Reflex save). Creatures that fail this save also take 1 persistent bleed
+    damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Feast
+  range: null
+  raw_description: '**Blood Feast** [One Action]  Each enemy in the bat swarm''s space
+    takes 1d4 piercing damage (DC 16 basic Reflex save). Creatures that fail this
+    save also take 1 persistent bleed damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Although the typical vampire bat has a wingspan of 7 inches and doesn''t
@@ -25,44 +49,21 @@ hp_misc: null
 immunities:
 - precision
 - swarm mind
-items: null
-languages: null
 level: 1
-melee: null
+melee_attacks: null
 name: Vampire Bat Swarm
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Each enemy in the bat swarm's space takes 1d4 piercing damage (DC 16
-    basic Reflex save). Creatures that fail this save also take 1 persistent bleed
-    damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Feast
-  range: null
-  raw_description: '**Blood Feast**   Each enemy in the bat swarm''s space takes 1d4
-    piercing damage (DC 16 basic Reflex save). Creatures that fail this save also
-    take 1 persistent bleed damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 6
+  misc: null
   type: bludgeoning
 - amount: 6
+  misc: null
   type: piercing
 - amount: 3
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -77,52 +78,54 @@ sense_abilities:
   critical_success: null
   description: A bat swarm can use its hearing as a precise sense at the listed range.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Echolocation
   range: null
   raw_description: '**Echolocation** A bat swarm can use its hearing as a precise
     sense at the listed range.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +10
 - echolocation (precise) 20 feet
 - low-light vision
 size: Large
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: +7 to Climb
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 39
+  page_start: '39'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
 - Swarm
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: area damage
 - amount: 3
+  misc: null
   type: splash damage

@@ -7,26 +7,76 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The visitant gains a +2 circumstance bonus to damage rolls against
+    a creature it has grabbed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mauler
+  range: null
+  raw_description: '**Mauler** The visitant gains a +2 circumstance bonus to damage
+    rolls against a creature it has grabbed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Visitants can be carriers of diseases, even if they are immune to their
+    effects. **Saving Throw** DC 16 Fortitude. **Stage 1** sickened 1 (1 day); **Stage
+    2** sickened 2 (1 day); **Stage 3** confusion (1 day); **Stage 4** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rabies
+  range: null
+  raw_description: '**Rabies** (__disease__) Visitants can be carriers of diseases,
+    even if they are immune to their effects. **Saving Throw** DC 16 Fortitude. **Stage
+    1** sickened 1 (1 day); **Stage 2** sickened 2 (1 day); **Stage 3** confusion
+    (1 day); **Stage 4** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. A creature that starts its turn within the visitant's aura
-    must succeed at a DC 16 Will save or be overcome with a thirst for vengeance.
-    For 1d4 rounds (1 minute on a critical failure), if the affected creature was
-    attacked within the last round (whether or not the attack hit), the creature must
-    use at least 1 action per round to Strike or use a hostile action toward its last
-    attacker as long as the attacker is still alive. Failure to do so deals the affected
-    creature 1d6 mental damage, plus 1d6 for every 5 levels the visitant has.
+  description: 'A creature that starts its turn within the visitant''s aura must succeed
+    at a DC 16 Will save or be overcome with a thirst for vengeance. For 1d4 rounds
+    (1 minute on a critical failure), if the affected creature was attacked within
+    the last round (whether or not the attack hit), the creature must use at least
+    1 action per round to Strike or use a hostile action toward its last attacker
+    as long as the attacker is still alive. Failure to do so deals the affected creature
+    1d6 mental damage, plus 1d6 for every 5 levels the visitant has.
+
+
+    **Whip Vulnerability** A chimpanzee visitant takes 5 additional damage from whips.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vengeful Presence
-  range: null
+  range: 20 feet
   raw_description: '**Vengeful Presence** (__aura__, __emotion__, __enchantment__,
     __mental__) 20 feet. A creature that starts its turn within the visitant''s aura
     must succeed at a DC 16 Will save or be overcome with a thirst for vengeance.
@@ -34,32 +84,19 @@ automatic_abilities:
     attacked within the last round (whether or not the attack hit), the creature must
     use at least 1 action per round to Strike or use a hostile action toward its last
     attacker as long as the attacker is still alive. Failure to do so deals the affected
-    creature 1d6 mental damage, plus 1d6 for every 5 levels the visitant has.'
+    creature 1d6 mental damage, plus 1d6 for every 5 levels the visitant has.
+
+
+    **Whip Vulnerability** A chimpanzee visitant takes 5 additional damage from whips.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
   - emotion
   - enchantment
   - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A chimpanzee visitant takes 5 additional damage from whips.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Whip Vulnerability
-  range: null
-  raw_description: '**Whip Vulnerability** A chimpanzee visitant takes 5 additional
-    damage from whips.'
-  requirements: null
-  success: null
-  traits: null
   trigger: null
 description: 'Common circus animals viewed as expendable by their caretakers are perhaps
   the most likely to rise as visitants. Animals that die en masse—such as in a tent
@@ -80,10 +117,8 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+5
@@ -109,57 +144,7 @@ melee:
   - finesse
 name: Chimpanzee Visitant
 perception: 9
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The visitant gains a +2 circumstance bonus to damage rolls against
-    a creature it has grabbed.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mauler
-  range: null
-  raw_description: '**Mauler** The visitant gains a +2 circumstance bonus to damage
-    rolls against a creature it has grabbed.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Visitants can be carriers of diseases, even if they are immune to their
-    effects. **Saving Throw** DC 16 Fortitude. **Stage 1** sickened 1 (1 day); **Stage
-    2** sickened 2 (1 day); **Stage 3** confusion (1 day); **Stage 4** dead
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rabies
-  range: null
-  raw_description: '**Rabies** (__disease__) Visitants can be carriers of diseases,
-    even if they are immune to their effects. **Saving Throw** DC 16 Fortitude. **Stage
-    1** sickened 1 (1 day); **Stage 2** sickened 2 (1 day); **Stage 3** confusion
-    (1 day); **Stage 4** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: positive
-- amount: null
-  type: whip vulnerability
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -168,31 +153,33 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 - lifesense (imprecise) 60 feet
 size: Small
 skills:
 - bonus: 11
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 10
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: 'Pathfinder #152: Legacy of the Lost God'
-  page_start: 83
+  page_start: '83'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Small
 - Animal
 - Undead
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: positive
+- amount: null
+  misc: null
+  type: whip vulnerability

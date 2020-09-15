@@ -7,6 +7,41 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The giant frilled lizard Strides. If it ends that Stride adjacent to
+    at least one other creature, it suddenly displays its colorful neck frills and
+    issues a frightening hiss. Each adjacent creature must succeed at a DC 21 Will
+    save or become __frightened 2__ (or __frightened 3__ on a critical failure). The
+    creature is then temporarily immune to Intimidating Display for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Intimidating Display
+  range: null
+  raw_description: '**Intimidating Display** [Two Actions]  (__auditory__, __emotion__,
+    __fear__, __mental__, __visual__) The giant frilled lizard Strides. If it ends
+    that Stride adjacent to at least one other creature, it suddenly displays its
+    colorful neck frills and issues a frightening hiss. Each adjacent creature must
+    succeed at a DC 21 Will save or become __frightened 2__ (or __frightened 3__ on
+    a critical failure). The creature is then temporarily immune to Intimidating Display
+    for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - emotion
+  - fear
+  - mental
+  - visual
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Found in warm and tropical forests and savannas, these immense lizards
@@ -32,11 +67,8 @@ description: 'Found in warm and tropical forests and savannas, these immense liz
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 20'
 hp: 75
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -58,45 +90,7 @@ melee:
   - reach 10 feet
 name: Giant Frilled Lizard
 perception: 11
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The giant frilled lizard Strides. If it ends that Stride adjacent to
-    at least one other creature, it suddenly displays its colorful neck frills and
-    issues a frightening hiss. Each adjacent creature must succeed at a DC 21 Will
-    save or become __frightened 2__ (or __frightened 3__ on a critical failure). The
-    creature is then temporarily immune to Intimidating Display for 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Intimidating Display
-  range: null
-  raw_description: '**Intimidating Display** [Two Actions]  (__auditory__, __emotion__,
-    __fear__, __mental__, __visual__) The giant frilled lizard Strides. If it ends
-    that Stride adjacent to at least one other creature, it suddenly displays its
-    colorful neck frills and issues a frightening hiss. Each adjacent creature must
-    succeed at a DC 21 Will save or become __frightened 2__ (or __frightened 3__ on
-    a critical failure). The creature is then temporarily immune to Intimidating Display
-    for 1 minute.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - emotion
-  - fear
-  - mental
-  - visual
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 13
   fort_misc: null
@@ -105,35 +99,31 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - low-light vision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 229
+  page_start: '229'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

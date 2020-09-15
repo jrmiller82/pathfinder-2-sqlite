@@ -1,0 +1,266 @@
+ability_mods:
+  cha_mod: 6
+  con_mod: 8
+  dex_mod: 7
+  int_mod: 6
+  str_mod: 10
+  wis_mod: 8
+ac: 46
+ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The titan makes a fist Strike against a creature affected by their
+    Impossible Stature, even if it's outside of the titan's normal reach. On a hit,
+    the titan automatically __Grabs__ the creature and, if out of their reach, pulls
+    it within reach.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Titanic Grasp
+  range: null
+  raw_description: '**Titanic Grasp** [One Action]  The titan makes a fist Strike
+    against a creature affected by their Impossible Stature, even if it''s outside
+    of the titan''s normal reach. On a hit, the titan automatically __Grabs__ the
+    creature and, if out of their reach, pulls it within reach.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The titan makes a melee weapon Strike against each foe within their
+    reach. This counts as three attacks for the titan's multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wide Cleave
+  range: null
+  raw_description: '**Wide Cleave** [Two Actions]  The titan makes a melee weapon
+    Strike against each foe within their reach. This counts as three attacks for the
+    titan''s multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: CG
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Titans warp perception and distance around them to seem even larger
+    and more imposing. A creature that enters or begins its turn within the emanation
+    must succeed at a DC 44 Will save or its movement toward the titan is movement
+    over difficult terrain (greater difficult terrain on a critical failure) for 1
+    round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Impossible Stature
+  range: 100 feet
+  raw_description: '**Impossible Stature** (__aura__, __divine__, __illusion__, __mental__)
+    100 feet. Titans warp perception and distance around them to seem even larger
+    and more imposing. A creature that enters or begins its turn within the emanation
+    must succeed at a DC 44 Will save or its movement toward the titan is movement
+    over difficult terrain (greater difficult terrain on a critical failure) for 1
+    round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divine
+  - illusion
+  - mental
+  trigger: null
+description: 'Those titans who remained true to their creators earned their freedom.
+  Many train aspiring champions of freedom, sacrifice, and selflessness.
+
+
+
+
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 47'
+hp: 400
+hp_misc: null
+immunities:
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+items:
+- +3 greater striking greatpick
+- +2 greater resilient breastplate
+languages:
+- Abyssal
+- Celestial
+- Common
+- telepathy 100 feet
+level: 21
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 4d10+20
+    type: piercing
+  name: greatpick
+  plus_damage: null
+  to_hit: 41
+  traits:
+  - fatal d12
+  - magical
+  - reach 30 feet
+- action_cost: One Action
+  damage:
+    formula: 4d8+20
+    type: bludgeoning
+  name: fist
+  plus_damage: null
+  to_hit: 38
+  traits:
+  - agile
+  - reach 30 feet
+name: Elysian Titan
+perception: 36
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d12+20
+    type: bludgeoning
+  name: rock
+  plus_damage: null
+  to_hit: 38
+  traits:
+  - brutal
+  - range increment 200 feet
+rarity: Rare
+saves:
+  fort: 37
+  fort_misc: null
+  misc: +4 status to all saves vs. <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+  ref: 34
+  ref_misc: null
+  will: 35
+  will_misc: null
+senses:
+- darkvision
+- true seeing
+size: Gargantuan
+skills:
+- bonus: 36
+  misc: null
+  name: Acrobatics
+- bonus: 43
+  misc: null
+  name: Athletics
+- bonus: 37
+  misc: null
+  name: Crafting
+- bonus: 37
+  misc: null
+  name: Diplomacy
+- bonus: 35
+  misc: null
+  name: Intimidation
+- bonus: 37
+  misc: null
+  name: Religion
+- bonus: 37
+  misc: null
+  name: Survival
+sources:
+- abbr: 'Pathfinder #156: The Apocalypse Prophet'
+  page_start: '82'
+  page_stop: null
+speed:
+- amount: 40
+  misc: null
+  type: Land
+- amount: null
+  misc: null
+  type: air walk
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 10
+    spells:
+    - misc: null
+      name: air walk
+    - misc: null
+      name: true seeing
+  dc: 44
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: null
+      name: meteor swarm
+    - misc: null
+      name: revival
+  - level: 8
+    spells:
+    - misc: at will
+      name: dispel magic
+    - misc: at will
+      name: freedom of movement
+  - level: 7
+    spells:
+    - misc: at will
+      name: plane shift
+  - level: 6
+    spells:
+    - misc: ×3
+      name: scrying
+  - level: 5
+    spells:
+    - misc: ×3
+      name: sending
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 44
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: null
+      name: freedom
+  spells_source: Divine Rituals
+traits:
+- Humanoid
+- Titan

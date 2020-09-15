@@ -7,11 +7,70 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The bone croupier pulls on the threads of luck that bind all things. Instead
+    of rolling its check, the target automatically gets a failure.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change of Luck
+  range: null
+  raw_description: '**Change of Luck** [Free Action]  (__divination__, __misfortune__,
+    __occult__) **Frequency** once per day; **Trigger** A creature within 30 feet
+    of the bone croupier attempts a check that uses a d20, but hasn''t rolled yet;
+    **Effect** The bone croupier pulls on the threads of luck that bind all things.
+    Instead of rolling its check, the target automatically gets a failure.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divination
+  - misfortune
+  - occult
+  trigger: A creature within 30 feet of the bone croupier attempts a check that uses
+    a d20, but hasn't rolled yet;
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The bone croupier targets an adjacent creature that is __dying__. That
+    creature can either increase its dying value by 1 or roll a d4. On a 4, the creature
+    is no longer dying and is __unconscious__ at 0 HP. On a 1, 2, or 3, however, the
+    creature increases its dying value by that amount. Regardless, the creature is
+    temporarily immune for the next 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Roll the Bones
+  range: null
+  raw_description: '**Roll the Bones** [Two Actions]  (__death__, __occult__) The
+    bone croupier targets an adjacent creature that is __dying__. That creature can
+    either increase its dying value by 1 or roll a d4. On a 4, the creature is no
+    longer dying and is __unconscious__ at 0 HP. On a 1, 2, or 3, however, the creature
+    increases its dying value by that amount. Regardless, the creature is temporarily
+    immune for the next 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - death
+  - occult
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'For many, gambling is just fun and games, but for some, it can become
   a bad habit or even a life-consuming addiction. Bone croupiers take the meaning
-  of "life-consuming" to its literal extreme. Undead gamblers whose lust for cards
+  of “life-consuming” to its literal extreme. Undead gamblers whose lust for cards
   and dice couldn''t be sated in life, they haunt the shadowy corners of gambling
   halls and continue their search for that next hit of adrenaline.
 
@@ -50,11 +109,10 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
 languages:
 - Common
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+5
@@ -67,71 +125,17 @@ melee:
   - finesse
 name: Bone Croupier
 perception: 11
-proactive_abilities:
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The bone croupier pulls on the threads of luck that bind all things. Instead
-    of rolling its check, the target automatically gets a failure.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Change of Luck
-  range: null
-  raw_description: '**Change of Luck** [Free Action]  (__divination__, __misfortune__,
-    __occult__) **Frequency** once per day; **Trigger** A creature within 30 feet
-    of the bone croupier attempts a check that uses a d20, but hasn''t rolled yet;
-    **Effect** The bone croupier pulls on the threads of luck that bind all things.
-    Instead of rolling its check, the target automatically gets a failure.'
-  requirements: null
-  success: null
-  traits:
-  - divination
-  - misfortune
-  - occult
-  trigger: A creature within 30 feet of the bone croupier attempts a check that uses
-    a d20, but hasn't rolled yet
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The bone croupier targets an adjacent creature that is __dying__. That
-    creature can either increase its dying value by 1 or roll a d4. On a 4, the creature
-    is no longer dying and is __unconscious__ at 0 HP. On a 1, 2, or 3, however, the
-    creature increases its dying value by that amount. Regardless, the creature is
-    temporarily immune for the next 24 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Roll the Bones
-  range: null
-  raw_description: '**Roll the Bones** [Two Actions]  (__death__, __occult__) The
-    bone croupier targets an adjacent creature that is __dying__. That creature can
-    either increase its dying value by 1 or roll a d4. On a 4, the creature is no
-    longer dying and is __unconscious__ at 0 HP. On a 1, 2, or 3, however, the creature
-    increases its dying value by that amount. Regardless, the creature is temporarily
-    immune for the next 24 hours.'
-  requirements: null
-  success: null
-  traits:
-  - death
-  - occult
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: cold
 - amount: 5
+  misc: null
   type: piercing
 - amount: 5
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -140,70 +144,60 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 14
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 12
   misc: null
-  name: 'Gambling Lore '
+  name: Gambling Lore
 - bonus: 14
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 14
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: 'Pathfinder #151: The Show Must Go On'
-  page_start: 80
+  page_start: '80'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 22
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: discern lies
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: mind reading
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: illusory disguise
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: prestidigitation
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 22
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: discern lies
+  - level: 3
+    spells:
+    - misc: null
+      name: mind reading
+  - level: 1
+    spells:
+    - misc: null
+      name: illusory disguise
+  spells_source: Occult Innate Spells
 traits:
-- NE
-- Medium
 - Undead
-type: Creature
-weaknesses: null

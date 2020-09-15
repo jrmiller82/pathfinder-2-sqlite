@@ -7,6 +7,80 @@ ability_mods:
   wis_mod: 5
 ac: 34
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The nalfeshnee steals all unattended items glowing with its Light of
+    Avarice into an extradimensional space. The demon can __Interact__ to regurgitate
+    any number of these items into their hand or onto the ground. If the demon dies,
+    is affected by a __teleportation__ effect, or consumes an extradimensional space
+    (such as a __bag of holding__), they vomit up all the items.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Claim Wealth
+  range: null
+  raw_description: '**Claim Wealth** [One Action]  (__conjuration__, __divine__, __extradimensional__)
+    The nalfeshnee steals all unattended items glowing with its Light of Avarice into
+    an extradimensional space. The demon can __Interact__ to regurgitate any number
+    of these items into their hand or onto the ground. If the demon dies, is affected
+    by a __teleportation__ effect, or consumes an extradimensional space (such as
+    a __bag of holding__), they vomit up all the items.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - conjuration
+  - divine
+  - extradimensional
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: Beams of unholy light shoot from the nalfeshnee toward four items within
+    60 feet. If someone is holding or wearing a targeted item, they can keep it from
+    being affected with a successful DC 34 Reflex save. For 1 minute, the affected
+    items glow in nauseating colors. Any non-demon is __sickened 2__ and __slowed
+    1__ as long as it holds, wears, or touches a glowing item. Recovering from the
+    sickness requires a successful DC 29 Will save instead of a Fortitude save. Ending
+    the sickness this way ends the slowed condition and makes the creature temporarily
+    immune to Light of Avarice for 24 hours. If the creature removes or drops the
+    item, both conditions end immediately but the creature doesn't become immune to
+    Light of Avarice.
+  failure: null
+  frequency: once per hour
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Light of Avarice
+  range: null
+  raw_description: '**Light of Avarice** [Two Actions]  (__divine__, __enchantment__,
+    __light__, __mental__) **Frequency **once per hour; **Effect **Beams of unholy
+    light shoot from the nalfeshnee toward four items within 60 feet. If someone is
+    holding or wearing a targeted item, they can keep it from being affected with
+    a successful DC 34 Reflex save. For 1 minute, the affected items glow in nauseating
+    colors. Any non-demon is __sickened 2__ and __slowed 1__ as long as it holds,
+    wears, or touches a glowing item. Recovering from the sickness requires a successful
+    DC 29 Will save instead of a Fortitude save. Ending the sickness this way ends
+    the slowed condition and makes the creature temporarily immune to Light of Avarice
+    for 24 hours. If the creature removes or drops the item, both conditions end immediately
+    but the creature doesn''t become immune to Light of Avarice.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - enchantment
+  - light
+  - mental
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -15,17 +89,19 @@ automatic_abilities:
   description: A nalfeshnee's greed is such that losing possessions causes them harm.
     If an item is stolen from a nalfeshnee, the demon takes 3d6+10 __mental__ damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Forfeiture Aversion
   range: null
   raw_description: '**Forfeiture Aversion** A nalfeshnee''s greed is such that losing
     possessions causes them harm. If an item is stolen from a nalfeshnee, the demon
     takes 3d6+10 __mental__ damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -34,22 +110,24 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The nalfeshnee attempts to __Disarm__ the weapon used in the triggering
-    Strike at a -2 circumstance penalty. On a success, the nalfeshnee steals the weapon.
-  effects: null
+    Strike at a –2 circumstance penalty. On a success, the nalfeshnee steals the weapon.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Greedy Grab
   range: null
   raw_description: '**Greedy Grab [Reaction]** **Trigger **A creature critically fails
     a weapon Strike against the nalfeshnee; **Effect **The nalfeshnee attempts to
-    __Disarm__ the weapon used in the triggering Strike at a -2 circumstance penalty.
+    __Disarm__ the weapon used in the triggering Strike at a –2 circumstance penalty.
     On a success, the nalfeshnee steals the weapon.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature critically fails a weapon Strike against the nalfeshnee
+  trigger: A creature critically fails a weapon Strike against the nalfeshnee;
 description: 'Nalfeshnees are huge, corpulent, boar-headed demons that hoard treasures
   and knowledge alike and form from the souls of avaricious mortals. Few demons understand
   the inner workings of the __Abyss__ itself like nalfeshnees, and it''s not unusual
@@ -66,15 +144,13 @@ description: 'Nalfeshnees are huge, corpulent, boar-headed demons that hoard tre
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 32'
 hp: 365
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - Celestial
 - Draconic
 - telepathy 100 feet
 level: 14
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+14
@@ -98,91 +174,7 @@ melee:
   - reach 15 feet
 name: Nalfeshnee
 perception: 25
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The nalfeshnee steals all unattended items glowing with its Light of
-    Avarice into an extradimensional space. The demon can __Interact__ to regurgitate
-    any number of these items into their hand or onto the ground. If the demon dies,
-    is affected by a __teleportation__ effect, or consumes an extradimensional space
-    (such as a __bag of holding__), they vomit up all the items.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Claim Wealth
-  range: null
-  raw_description: '**Claim Wealth**   (__conjuration__, __divine__, __extradimensional__)
-    The nalfeshnee steals all unattended items glowing with its Light of Avarice into
-    an extradimensional space. The demon can __Interact__ to regurgitate any number
-    of these items into their hand or onto the ground. If the demon dies, is affected
-    by a __teleportation__ effect, or consumes an extradimensional space (such as
-    a __bag of holding__), they vomit up all the items.'
-  requirements: null
-  success: null
-  traits:
-  - conjuration
-  - divine
-  - extradimensional
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: Beams of unholy light shoot from the nalfeshnee toward four items within
-    60 feet. If someone is holding or wearing a targeted item, they can keep it from
-    being affected with a successful DC 34 Reflex save. For 1 minute, the affected
-    items glow in nauseating colors. Any non-demon is __sickened 2__ and __slowed
-    1__ as long as it holds, wears, or touches a glowing item. Recovering from the
-    sickness requires a successful DC 29 Will save instead of a Fortitude save. Ending
-    the sickness this way ends the slowed condition and makes the creature temporarily
-    immune to Light of Avarice for 24 hours. If the creature removes or drops the
-    item, both conditions end immediately but the creature doesn't become immune to
-    Light of Avarice.
-  effects: null
-  failure: null
-  frequency: once per hour
-  full_description: null
-  generic_description: null
-  name: Light of Avarice
-  range: null
-  raw_description: '**Light of Avarice** [Two Actions]  (__divine__, __enchantment__,
-    __light__, __mental__) **Frequency **once per hour; **Effect **Beams of unholy
-    light shoot from the nalfeshnee toward four items within 60 feet. If someone is
-    holding or wearing a targeted item, they can keep it from being affected with
-    a successful DC 34 Reflex save. For 1 minute, the affected items glow in nauseating
-    colors. Any non-demon is __sickened 2__ and __slowed 1__ as long as it holds,
-    wears, or touches a glowing item. Recovering from the sickness requires a successful
-    DC 29 Will save instead of a Fortitude save. Ending the sickness this way ends
-    the slowed condition and makes the creature temporarily immune to Light of Avarice
-    for 24 hours. If the creature removes or drops the item, both conditions end immediately
-    but the creature doesn''t become immune to Light of Avarice.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - enchantment
-  - light
-  - mental
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists:
-- dc: 34
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: abyssal pact
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 28
   fort_misc: null
@@ -191,87 +183,91 @@ saves:
   ref_misc: null
   will: 23
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +25
 - darkvision
 - true seeing
 size: Huge
 skills:
 - bonus: 25
   misc: null
-  name: 'Abyss Lore '
+  name: Abyss Lore
 - bonus: 25
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 28
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 26
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 24
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 28
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 25
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: Bestiary 2
-  page_start: 68
+  page_start: '86'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 34
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: at will
-      name: dispel magic
-      requirement: null
-    - frequency: at will
-      name: divine wrath
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: at will
-      name: illusory object
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 34
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: at will
+      name: dispel magic
+    - misc: at will
+      name: divine wrath
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+    - misc: at will
+      name: illusory object
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 34
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: abyssal pact
+  spells_source: Rituals
 traits:
-- CE
-- Huge
 - Demon
 - Fiend
-type: Creature
 weaknesses:
+- amount: 272
+  misc: null
+  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=
 - amount: 15
-  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=272">cold iron</a>
-- amount: 15
+  misc: null
   type: good

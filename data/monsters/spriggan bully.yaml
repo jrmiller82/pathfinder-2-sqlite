@@ -7,6 +7,50 @@ ability_mods:
   wis_mod: 3
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The spriggan bully makes a morningstar Strike with a +2 circumstance
+    bonus to its attack roll. This attack is __nonlethal__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bully's Bludgeon
+  range: null
+  raw_description: '**Bully''s Bludgeon** [One Action]  The spriggan bully makes a
+    morningstar Strike with a +2 circumstance bonus to its attack roll. This attack
+    is __nonlethal__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The spriggan bully's Strikes deal an additional 1d6 precision damage
+    to __flat-footed__ creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The spriggan bully''s Strikes deal an additional
+    1d6 precision damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -20,11 +64,11 @@ automatic_abilities:
     turn, but on any turn in which the spriggan bully deals damage to another creature
     and is not __fatigued__, the effect extends until the end of the following turn.
     When Enraged Growth ends, the spriggan bully is fatigued for 1 hour.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Enraged Growth
   range: null
   raw_description: '**Enraged Growth [Reaction]** (__polymorph__, __primal__, __transmutation__)
@@ -37,12 +81,14 @@ automatic_abilities:
     extends until the end of the following turn. When Enraged Growth ends, the spriggan
     bully is fatigued for 1 hour.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - polymorph
   - primal
   - transmutation
-  trigger: The spriggan bully takes damage
+  trigger: The spriggan bully takes damage;
 description: 'The typical spriggan is a bully who prefers to take live prisoners in
   fights, but only to ensure that they have a large stock of living victims to torment,
   tease, and abuse. They train to use weapons in nonlethal ways that inflict the maximum
@@ -56,7 +102,6 @@ description: 'The typical spriggan is a bully who prefers to take live prisoners
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
 hp: 48
 hp_misc: null
-immunities: null
 items:
 - crossbow (10 bolts)
 - morningstar
@@ -64,7 +109,7 @@ languages:
 - Aklo
 - Common
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+6
@@ -76,61 +121,17 @@ melee:
   - versatile P
 name: Spriggan Bully
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The spriggan bully makes a morningstar Strike with a +2 circumstance
-    bonus to its attack roll. This attack is __nonlethal__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Bully's Bludgeon
-  range: null
-  raw_description: '**Bully''s Bludgeon**   The spriggan bully makes a morningstar
-    Strike with a +2 circumstance bonus to its attack roll. This attack is __nonlethal__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The spriggan bully's Strikes deal an additional 1d6 precision damage
-    to __flat-footed__ creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The spriggan bully''s Strikes deal an additional
-    1d6 precision damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8
-    type: piercing
+    formula: null
+    type: 1d8 piercing
   name: crossbow
   plus_damage: null
   to_hit: 11
   traits:
   - range increment 120 feet
   - reload 1
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -139,69 +140,61 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - low-light vision
 size: Small
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 8
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 11
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 10
   misc: null
-  name: 'Survival '
+  name: Survival
 - bonus: 9
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 252
+  page_start: '252'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 20
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: shatter
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: fear
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 20
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: shatter
+  - level: 1
+    spells:
+    - misc: null
+      name: fear
+  spells_source: Primal Innate Spells
 traits:
-- CE
-- Small
 - Gnome
 - Humanoid
 - Spriggan
-type: Creature
-weaknesses: null

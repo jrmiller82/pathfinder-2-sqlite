@@ -7,36 +7,120 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The nuckelavee breathes a 30-foot cone of foulness, dealing 8d6 negative
+    damage (DC 28 basic Fortitude save) to living creatures in the area. A creature
+    that fails also takes 2d6 __persistent bleed damage__. The nuckelavee can't use
+    Breath Weapon again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__disease__, __necromancy__,
+    __poison__, __primal__) The nuckelavee breathes a 30-foot cone of foulness, dealing
+    8d6 negative damage (DC 28 basic Fortitude save) to living creatures in the area.
+    A creature that fails also takes 2d6 __persistent bleed damage__. The nuckelavee
+    can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  - necromancy
+  - poison
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target can't recover from the __fatigued__ condition caused by
+    mortasheen until the disease is cured. Mortasheen gains the __virulent__ trait
+    against __animals__ and __plants__; **Saving Throw** DC 28 Fortitude; **Stage
+    1** Carrier with no ill effect (1 day); **Stage 2** __drained 1__ and fatigued
+    (1 day); **Stage 3** drained 2 and fatigued (1 day); **Stage 4** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mortasheen
+  range: null
+  raw_description: '**Mortasheen** (__disease__) The target can''t recover from the
+    __fatigued__ condition caused by mortasheen until the disease is cured. Mortasheen
+    gains the __virulent__ trait against __animals__ and __plants__; **Saving Throw**
+    DC 28 Fortitude; **Stage 1** Carrier with no ill effect (1 day); **Stage 2** __drained
+    1__ and fatigued (1 day); **Stage 3** drained 2 and fatigued (1 day); **Stage
+    4** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Medium or smaller, hoof, DC 28
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**__Trample__** [Three Actions]  Medium or smaller, hoof, DC 28'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 30 feet, DC 25
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 30 feet, DC 25 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 30 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 25
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -50,11 +134,11 @@ automatic_abilities:
     to it and causing it to be __sickened 2__. A nuckelavee can't heal from damage
     when it's in an area that isn't polluted (subject to GM discretion).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Purity Vulnerability
   range: null
   raw_description: '**Purity Vulnerability** Unpolluted fresh water burns a nuckelavee
@@ -62,6 +146,8 @@ automatic_abilities:
     can''t heal from damage when it''s in an area that isn''t polluted (subject to
     GM discretion).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -74,11 +160,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -89,6 +175,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -116,8 +204,8 @@ description: 'When pollution despoils a natural waterway, it draws the dreaded n
 hp: 190
 hp_misc: null
 immunities:
-- disease
-- poison
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 items:
 - +1 striking bastard sword
 languages:
@@ -125,15 +213,17 @@ languages:
 - Common
 - Sylvan
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+12
     type: slashing
   name: bastard sword
   plus_damage:
-  - formula: 1d6
-    type: poison and mortasheen
+  - formula: null
+    type: 1d6 poison
+  - formula: null
+    type: mortasheen
   to_hit: 21
   traits:
   - magical
@@ -145,8 +235,10 @@ melee:
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: poison and mortasheen
+  - formula: null
+    type: 1d6 poison
+  - formula: null
+    type: mortasheen
   to_hit: 20
   traits:
   - agile
@@ -162,96 +254,7 @@ melee:
   traits: null
 name: Nuckelavee
 perception: 16
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The nuckelavee breathes a 30-foot cone of foulness, dealing 8d6 negative
-    damage (DC 28 basic Fortitude save) to living creatures in the area. A creature
-    that fails also takes 2d6 __persistent bleed damage__. The nuckelavee can't use
-    Breath Weapon again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__disease__, __necromancy__,
-    __poison__, __primal__) The nuckelavee breathes a 30-foot cone of foulness, dealing
-    8d6 negative damage (DC 28 basic Fortitude save) to living creatures in the area.
-    A creature that fails also takes 2d6 __persistent bleed damage__. The nuckelavee
-    can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  - necromancy
-  - poison
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target can't recover from the __fatigued__ condition caused by
-    mortasheen until the disease is cured. Mortasheen gains the __virulent__ trait
-    against __animals__ and __plants__; **Saving Throw** DC 28 Fortitude; **Stage
-    1** Carrier with no ill effect (1 day); **Stage 2** __drained 1__ and fatigued
-    (1 day); **Stage 3** drained 2 and fatigued (1 day); **Stage 4** dead
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mortasheen
-  range: null
-  raw_description: '**Mortasheen** (__disease__) The target can''t recover from the
-    __fatigued__ condition caused by mortasheen until the disease is cured. Mortasheen
-    gains the __virulent__ trait against __animals__ and __plants__; **Saving Throw**
-    DC 28 Fortitude; **Stage 1** Carrier with no ill effect (1 day); **Stage 2** __drained
-    1__ and fatigued (1 day); **Stage 3** drained 2 and fatigued (1 day); **Stage
-    4** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Medium or smaller, hoof, DC 28
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**__Trample__** [Three Actions]  Medium or smaller, hoof, DC 28'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: cold iron
-ritual_lists:
-- dc: 28
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: blight
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 19
   fort_misc: null
@@ -260,58 +263,69 @@ saves:
   ref_misc: null
   will: 20
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - low-light vision
 size: Large
 skills:
 - bonus: 19
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 16
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 18
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 16
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 186
+  page_start: '186'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: swim
 spell_lists:
-- dc: 28
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 28
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: control water
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: stinking cloud
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: blight
+  spells_source: Rituals
 traits:
-- NE
-- Large
 - Amphibious
 - Fey
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold iron

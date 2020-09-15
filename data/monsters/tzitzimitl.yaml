@@ -7,6 +7,73 @@ ability_mods:
   wis_mod: 7
 ac: 43
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a tzitzimitl's claw Strike deals damages to a living creature,
+    the tzitzimitl gains 20 temporary Hit Points, and the target must succeed at a
+    DC 41 Fortitude save or become __drained 2__. Further damage dealt by a tzitzimitl's
+    claw Strike increases the value of the drained condition by 2 on a failed save,
+    to a maximum of __drained 10__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drain Life
+  range: null
+  raw_description: '**Drain Life** When a tzitzimitl''s claw Strike deals damages
+    to a living creature, the tzitzimitl gains 20 temporary Hit Points, and the target
+    must succeed at a DC 41 Fortitude save or become __drained 2__. Further damage
+    dealt by a tzitzimitl''s claw Strike increases the value of the drained condition
+    by 2 on a failed save, to a maximum of __drained 10__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: The creature takes 16d8 cold damage, is __slowed 2__ for 1 minute,
+    and is __doomed 1__.
+  critical_success: The creature takes 4d8 cold damage.
+  description: null
+  effect: The tzitzimitl drains the heat and warmth from the __darkness__ spell, and
+    each creature within the spell's area must attempt a DC 41 Fortitude save.
+  failure: The creature takes 16d8 cold damage and is __slowed 1__ for 1 minute.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Eclipse
+  range: null
+  raw_description: '**Eclipse** [One Action]  (__cold__, __occult__) **Requirements**
+    The tzitzimitl is within 120 feet of an active __darkness__ spell; **Effect**
+    The tzitzimitl drains the heat and warmth from the __darkness__ spell, and each
+    creature within the spell''s area must attempt a DC 41 Fortitude save.
+
+
+    **Critical Success** The creature takes 4d8 cold damage.
+
+
+    **Success** The creature takes 8d8 cold damage and is __slowed 1__ for 1 round.
+
+
+    **Failure** The creature takes 16d8 cold damage and is __slowed 1__ for 1 minute.
+
+
+    **Critical Failure** The creature takes 16d8 cold damage, is __slowed 2__ for
+    1 minute, and is __doomed 1__.'
+  requirements: The tzitzimitl is within 120 feet of an active darkness spell
+  saving_throw: null
+  stages: null
+  success: The creature takes 8d8 cold damage and is __slowed 1__ for 1 round.
+  traits:
+  - cold
+  - occult
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -17,11 +84,11 @@ automatic_abilities:
     causing it to lose the positive trait and gain the negative trait, and changing
     all instances of positive energy or healing in the ability's description to negative
     energy.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Light to Dark
   range: null
   raw_description: '**Light to Dark** [Reaction] (__divine__, __negative__) **Trigger**
@@ -31,12 +98,14 @@ automatic_abilities:
     trait, and changing all instances of positive energy or healing in the ability''s
     description to negative energy.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
   - negative
   trigger: A creature uses an ability or spell with the positive trait within 120
-    feet of the tzitzimitl
+    feet of the tzitzimitl;
 description: 'Due to their affinity for darkness and apocalyptic terror, tzitzimitls
   are widely feared as harbingers of death and destruction. Some sages consider them
   to be instruments of the gods, called down to destroy worlds whose times have come,
@@ -59,22 +128,23 @@ immunities:
 - poison
 - precision
 - unconscious
-items: null
 languages:
 - Abyssal
 - Aklo
 - Celestial
 - Common
 level: 19
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 6d8+10
     type: slashing
   name: claw
   plus_damage:
-  - formula: 3d8
-    type: electricity and drain life
+  - formula: null
+    type: 3d8 electricity
+  - formula: null
+    type: drain life
   to_hit: 34
   traits:
   - agile
@@ -82,99 +152,29 @@ melee:
   - reach 20 feet
 name: Tzitzimitl
 perception: 32
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a tzitzimitl's claw Strike deals damages to a living creature,
-    the tzitzimitl gains 20 temporary Hit Points, and the target must succeed at a
-    DC 41 Fortitude save or become __drained 2__. Further damage dealt by a tzitzimitl's
-    claw Strike increases the value of the drained condition by 2 on a failed save,
-    to a maximum of __drained 10__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drain Life
-  range: null
-  raw_description: '**Drain Life** When a tzitzimitl''s claw Strike deals damages
-    to a living creature, the tzitzimitl gains 20 temporary Hit Points, and the target
-    must succeed at a DC 41 Fortitude save or become __drained 2__. Further damage
-    dealt by a tzitzimitl''s claw Strike increases the value of the drained condition
-    by 2 on a failed save, to a maximum of __drained 10__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
+ranged_attacks:
 - action_cost: One Action
-  critical_failure: The creature takes 16d8 cold damage, is slowed 2 for 1 minute,
-    and is doomed 1.
-  critical_success: The creature takes 4d8 cold damage.
-  description: null
-  effect: The tzitzimitl is within 120 feet of an active __darkness__ spell
-  effects: null
-  failure: The creature takes 16d8 cold damage and is slowed 1 for 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Eclipse
-  range: null
-  raw_description: '**Eclipse**   (__cold__, __occult__) **Requirements** The tzitzimitl
-    is within 120 feet of an active __darkness__ spell; **Effect** The tzitzimitl
-    drains the heat and warmth from the __darkness__ spell, and each creature within
-    the spell''s area must attempt a DC 41 Fortitude save.
-
-
-    **Critical Success** The creature takes 4d8 cold damage.
-
-
-    **Success** The creature takes 8d8 cold damage and is __slowed 1__ for 1 round.
-
-
-    **Failure** The creature takes 16d8 cold damage and is __slowed 1__ for 1 minute.
-
-
-    **Critical Failure** The creature takes 16d8 cold damage, is __slowed 2__ for
-    1 minute, and is __doomed 1__.'
-  requirements: null
-  success: The creature takes 8d8 cold damage and is slowed 1 for 1 round.
-  traits:
-  - cold
-  - occult
-  trigger: null
-ranged:
-- action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: 10d6 electricity
   name: eye beam
-  plus_damage: null
+  plus_damage:
+  - formula: null
+    type: 10d6 force
   to_hit: 34
   traits:
   - range 100 feet
 rarity: Uncommon
 resistances:
 - amount: 15
+  misc: null
   type: cold
 - amount: 15
+  misc: null
   type: fire
 - amount: 15
-  type: physical (except bludgeoning)
-ritual_lists:
-- dc: 38
-  misc: null
-  name: Occult Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 9
-    spells:
-    - frequency: null
-      name: create undead
-      requirement: null
-    - frequency: null
-      name: imprisonment
-      requirement: null
-  to_hit: null
+  misc: except bludgeoning
+  type: physical
 saves:
   fort: 29
   fort_misc: null
@@ -183,101 +183,99 @@ saves:
   ref_misc: null
   will: 35
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +32
 - darkvision
 - true seeing
 size: Gargantuan
 skills:
 - bonus: 33
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 37
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 33
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 37
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 37
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 40
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: 'Pathfinder #150: Broken Promises'
-  page_start: 82
+  page_start: '82'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists:
-- dc: 38
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+- attack_bonus: null
+  cantrips:
+  - level: 9
     spells:
-    - frequency: null
-      name: teleport
-      requirement: null
-    - frequency: null
-      name: wail of the banshee
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: null
-      name: eclipse burst
-      requirement: null
-    - frequency: x3
-      name: teleport
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: abyssal plague
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: x3
-      name: darkness
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: x3
-      name: haste
-      requirement: null
-  - heightened_level: 9
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-  - heightened_level: 6
-    level: -1
+  constants:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 9
+    spells:
+    - misc: null
+      name: teleport
+    - misc: null
+      name: wail of the banshee
+  - level: 7
+    spells:
+    - misc: null
+      name: eclipse burst
+    - misc: x3
+      name: teleport
+  - level: 5
+    spells:
+    - misc: null
+      name: abyssal plague
+  - level: 4
+    spells:
+    - misc: x3
+      name: darkness
+  - level: 3
+    spells:
+    - misc: x3
+      name: haste
+  spells_source: Occult Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 9
+    spells:
+    - misc: null
+      name: create undead
+    - misc: null
+      name: imprisonment
+  spells_source: Occult Rituals
 traits:
-- Uncommon
-- NE
-- Gargantuan
 - Electricity
 - Undead
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: good

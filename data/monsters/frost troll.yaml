@@ -7,6 +7,49 @@ ability_mods:
   wis_mod: 2
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A frost troll isn't impeded by difficult terrain caused by snow or
+    ice, nor do they need to attempt __Acrobatics__ checks to keep from falling on
+    slippery ice.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ice Stride
+  range: null
+  raw_description: '**Ice Stride** A frost troll isn''t impeded by difficult terrain
+    caused by snow or ice, nor do they need to attempt __Acrobatics__ checks to keep
+    from falling on slippery ice.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**__Rend__** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +61,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +76,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -47,7 +92,7 @@ description: Frost trolls are nightmarish frozen monsters of rime-stained claws 
   Their sickly, cracked flesh is of an icy, cerulean pallor. Frost trolls often adorn
   themselves with trophies of bone and hide flayed from their kills.
 hp: 90
-hp_misc: regeneration 15 (deactivated by acid or fire
+hp_misc: regeneration 15 (deactivated by acid or fire)
 immunities:
 - cold
 items:
@@ -56,7 +101,7 @@ languages:
 - Common
 - Jotun
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -89,50 +134,7 @@ melee:
   - reach 10 feet
 name: Frost Troll
 perception: 12
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A frost troll isn't impeded by difficult terrain caused by snow or
-    ice, nor do they need to attempt __Acrobatics__ checks to keep from falling on
-    slippery ice.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ice Stride
-  range: null
-  raw_description: '**Ice Stride** A frost troll isn''t impeded by difficult terrain
-    caused by snow or ice, nor do they need to attempt __Acrobatics__ checks to keep
-    from falling on slippery ice.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
@@ -145,10 +147,6 @@ ranged:
   - sweep
   - thrown 10 feet
 rarity: Uncommon
-resistances:
-- amount: 10
-  type: fire
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -157,37 +155,36 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - darkvision
 size: Large
 skills:
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 10
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 264
+  page_start: '264'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: null
+  misc: null
   type: ice stride
 spell_lists: null
 traits:
-- Uncommon
-- CE
-- Large
 - Cold
 - Giant
 - Troll
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: fire

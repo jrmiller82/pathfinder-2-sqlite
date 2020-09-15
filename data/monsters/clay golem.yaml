@@ -7,87 +7,96 @@ ability_mods:
   wis_mod: 0
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The golem is berserk.'
+  effect: The clay golem Strikes with its fist at a –1 circumstance penalty. If it
+    hits, it deals an additional 1d8 damage and knocks the target __prone__.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Berserk Slam
+  range: null
+  raw_description: '**Berserk Slam** [One Action]  **Requirement** The golem is berserk.
+    **Effect** The clay golem Strikes with its fist at a –1 circumstance penalty.
+    If it hits, it deals an additional 1d8 damage and knocks the target __prone__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature hit by the clay golem's fist must succeed at a DC 29 Fortitude
+    save or be cursed until healed to its maximum HP. The cursed creature can't regain
+    HP except via magic, and anyone casting a spell to heal the creature must succeed
+    at a DC 29 counteract check or the healing has no effect. The golem's counteract
+    level is equal to its creature level.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cursed Wound
+  range: null
+  raw_description: '**Cursed Wound** (__divine__, __curse__, __necromancy__) A creature
+    hit by the clay golem''s fist must succeed at a DC 29 Fortitude save or be cursed
+    until healed to its maximum HP. The cursed creature can''t regain HP except via
+    magic, and anyone casting a spell to heal the creature must succeed at a DC 29
+    counteract check or the healing has no effect. The golem''s counteract level is
+    equal to its creature level.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - curse
+  - necromancy
+  trigger: null
 alignment: N
 automatic_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A severely damaged clay golem has a chance of going berserk. If it
-    has 50 or fewer Hit Points at the start of its turn, the golem must succeed at
-    a DC 5 flat check or go berserk. A berserk golem wildly attacks the nearest living
-    creature, or the nearest object if no creatures are nearby.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Berserk
-  range: null
-  raw_description: '**Berserk** A severely damaged clay golem has a chance of going
-    berserk. If it has 50 or fewer Hit Points at the start of its turn, the golem
-    must succeed at a DC 5 flat check or go berserk. A berserk golem wildly attacks
-    the nearest living creature, or the nearest object if no creatures are nearby.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: harmed by cold and water (5d10, 2d6 from areas or persistent damage);
-    healed by acid (area 2d6 HP); slowed by earth
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Golem Antimagic
-  range: null
-  raw_description: '**Golem Antimagic** harmed by cold and water (5d10, 2d6 from areas
-    or persistent damage); healed by acid (area 2d6 HP); slowed by earth'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A __disintegrate__ spell affects the golem but deals half the normal
-    amount of damage and causes the golem to become slowed 2 for 1 round.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Vulnerable to Disintegrate
-  range: null
-  raw_description: '**Vulnerable to Disintegrate** A __disintegrate__ spell affects
-    the golem but deals half the normal amount of damage and causes the golem to become
-    slowed 2 for 1 round.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
 - action_cost: Free Action
   critical_failure: null
   critical_success: null
   description: null
   effect: The clay golem becomes quickened for 1 minute.
-  effects: null
   failure: null
   frequency: Once per day.
   full_description: null
   generic_description: null
-  name: Quicken
+  maximum_duration: null
+  name: Berserk
   range: null
-  raw_description: '**Quicken** [Free Action] (__divine__, __transmutation__) **Frequency**
-    Once per day. **Trigger** The clay golem''s turn begins. It can''t trigger this
-    free action on the first turn of combat. **Effect** The clay golem becomes quickened
-    for 1 minute.'
+  raw_description: '**Berserk** A severely damaged clay golem has a chance of going
+    berserk. If it has 50 or fewer Hit Points at the start of its turn, the golem
+    must succeed at a DC 5 flat check or go berserk. A berserk golem wildly attacks
+    the nearest living creature, or the nearest object if no creatures are nearby.
+
+
+    **Golem Antimagic** harmed by cold and water (5d10, 2d6 from areas or persistent
+    damage); healed by acid (area 2d6 HP); slowed by earth
+
+
+    **Vulnerable to Disintegrate** A __disintegrate__ spell affects the golem but
+    deals half the normal amount of damage and causes the golem to become slowed 2
+    for 1 round.
+
+
+    **Quicken** [Free Action] (__divine__, __transmutation__) **Frequency** Once per
+    day. **Trigger** The clay golem''s turn begins. It can''t trigger this free action
+    on the first turn of combat. **Effect** The clay golem becomes quickened for 1
+    minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -133,10 +142,8 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
-languages: null
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
@@ -151,61 +158,12 @@ melee:
   - reach 10 feet
 name: Clay Golem
 perception: 16
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The golem is berserk.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Berserk Slam
-  range: null
-  raw_description: '**Berserk Slam**   **Requirement** The golem is berserk. **Effect**
-    The clay golem Strikes with its fist at a -1 circumstance penalty. If it hits,
-    it deals an additional 1d8 damage and knocks the target __prone__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature hit by the clay golem's fist must succeed at a DC 29 Fortitude
-    save or be cursed until healed to its maximum HP. The cursed creature can't regain
-    HP except via magic, and anyone casting a spell to heal the creature must succeed
-    at a DC 29 counteract check or the healing has no effect. The golem's counteract
-    level is equal to its creature level.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Cursed Wound
-  range: null
-  raw_description: '**Cursed Wound** (__divine__, __curse__, __necromancy__) A creature
-    hit by the clay golem''s fist must succeed at a DC 29 Fortitude save or be cursed
-    until healed to its maximum HP. The cursed creature can''t regain HP except via
-    magic, and anyone casting a spell to heal the creature must succeed at a DC 29
-    counteract check or the healing has no effect. The golem''s counteract level is
-    equal to its creature level.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - curse
-  - necromancy
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 23
   fort_misc: null
@@ -214,29 +172,23 @@ saves:
   ref_misc: null
   will: 17
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 size: Large
 skills:
 - bonus: 24
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 186
+  page_start: '186'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Large
 - Construct
 - Golem
 - Mindless
-type: Creature
-weaknesses: null

@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the sand sentry critically hits with a fist Strike, the target
+    is blinded for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blinding Sand
+  range: null
+  raw_description: '**Blinding Sand** When the sand sentry critically hits with a
+    fist Strike, the target is blinded for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A sand sentry can __Burrow__ through earthen matter, including rock.
+    When it does so, it moves at its full burrow Speed, leaving no tunnels or signs
+    of its passing.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Earth Glide
+  range: null
+  raw_description: '**Earth Glide** A sand sentry can __Burrow__ through earthen matter,
+    including rock. When it does so, it moves at its full burrow Speed, leaving no
+    tunnels or signs of its passing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -18,11 +63,11 @@ automatic_abilities:
     force, piercing, and slashing damage. A sand sentry can't use earth glide while
     glass armor is active.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Glass Armor
   range: null
   raw_description: '**Glass Armor** When the sand sentry takes fire or lightning damage,
@@ -31,6 +76,8 @@ automatic_abilities:
     electricity, fire, force, piercing, and slashing damage. A sand sentry can''t
     use earth glide while glass armor is active.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -48,14 +95,13 @@ hp: 94
 hp_misc: null
 immunities:
 - bleed
-- paralyzed
-- poison
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Terran
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
@@ -68,51 +114,7 @@ melee:
   traits: null
 name: Sand Sentry
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the sand sentry critically hits with a fist Strike, the target
-    is blinded for 1 round.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blinding Sand
-  range: null
-  raw_description: '**Blinding Sand** When the sand sentry critically hits with a
-    fist Strike, the target is blinded for 1 round.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A sand sentry can __Burrow__ through earthen matter, including rock.
-    When it does so, it moves at its full burrow Speed, leaving no tunnels or signs
-    of its passing.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Earth Glide
-  range: null
-  raw_description: '**Earth Glide** A sand sentry can __Burrow__ through earthen matter,
-    including rock. When it does so, it moves at its full burrow Speed, leaving no
-    tunnels or signs of its passing.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -121,35 +123,32 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - darkvision
 - tremorsense (imprecise) 60 feet
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: +17 in sand
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 109
+  page_start: '109'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: burrow
 - amount: null
+  misc: null
   type: earth glide
 spell_lists: null
 traits:
-- N
-- Medium
 - Earth
 - Elemental
-type: Creature
-weaknesses: null

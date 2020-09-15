@@ -7,7 +7,64 @@ ability_mods:
   wis_mod: 0
 ac: 26
 ac_special:
-- descr: 22 when broken
+- descr: 22 when broken)
+- descr: construct armor
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The statue carries a wide brazier full of hot coals. To make flaming
+    coal Strikes or use Burn Alive, the statue must have the brazier held in one hand
+    or otherwise have it within reach. Instead of targeting the statue with an attack,
+    a creature can target the brazier directly. The brazier has the same AC and saves
+    as the statue. Dealing 15 cold damage to the brazier or dousing it with at least
+    2 gallons of water extinguishes the coals. This prevents the statue from using
+    Burn Alive and causes its ranged attacks to no longer deal 2d8 fire damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Brazier
+  range: null
+  raw_description: '**Brazier** The statue carries a wide brazier full of hot coals.
+    To make flaming coal Strikes or use Burn Alive, the statue must have the brazier
+    held in one hand or otherwise have it within reach. Instead of targeting the statue
+    with an attack, a creature can target the brazier directly. The brazier has the
+    same AC and saves as the statue. Dealing 15 cold damage to the brazier or dousing
+    it with at least 2 gallons of water extinguishes the coals. This prevents the
+    statue from using Burn Alive and causes its ranged attacks to no longer deal 2d8
+    fire damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The statue grinds a creature it has grabbed into the red-hot coals
+    of its brazier. The target takes 3d8 fire damage and 1d8 persistent fire damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Burn Alive
+  range: null
+  raw_description: '**Burn Alive** [One Action]  (__fire__) The statue grinds a creature
+    it has grabbed into the red-hot coals of its brazier. The target takes 3d8 fire
+    damage and 1d8 persistent fire damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fire
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -19,11 +76,11 @@ automatic_abilities:
     being damaged by a critical hit, its construct armor breaks and its Armor Class
     is reduced to 22.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Construct Armor
   range: null
   raw_description: '**Construct Armor** Like normal objects, an giant animated statue
@@ -32,6 +89,8 @@ automatic_abilities:
     Points, or immediately upon being damaged by a critical hit, its construct armor
     breaks and its Armor Class is reduced to 22.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -63,10 +122,8 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
-languages: null
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+6
@@ -80,59 +137,7 @@ melee:
   - magical
 name: Giant Animated Statue
 perception: 13
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The statue carries a wide brazier full of hot coals. To make flaming
-    coal Strikes or use Burn Alive, the statue must have the brazier held in one hand
-    or otherwise have it within reach. Instead of targeting the statue with an attack,
-    a creature can target the brazier directly. The brazier has the same AC and saves
-    as the statue. Dealing 15 cold damage to the brazier or dousing it with at least
-    2 gallons of water extinguishes the coals. This prevents the statue from using
-    Burn Alive and causes its ranged attacks to no longer deal 2d8 fire damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Brazier
-  range: null
-  raw_description: '**Brazier** The statue carries a wide brazier full of hot coals.
-    To make flaming coal Strikes or use Burn Alive, the statue must have the brazier
-    held in one hand or otherwise have it within reach. Instead of targeting the statue
-    with an attack, a creature can target the brazier directly. The brazier has the
-    same AC and saves as the statue. Dealing 15 cold damage to the brazier or dousing
-    it with at least 2 gallons of water extinguishes the coals. This prevents the
-    statue from using Burn Alive and causes its ranged attacks to no longer deal 2d8
-    fire damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The statue grinds a creature it has grabbed into the red-hot coals
-    of its brazier. The target takes 3d8 fire damage and 1d8 persistent fire damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Burn Alive
-  range: null
-  raw_description: '**Burn Alive**   (__fire__) The statue grinds a creature it has
-    grabbed into the red-hot coals of its brazier. The target takes 3d8 fire damage
-    and 1d8 persistent fire damage.'
-  requirements: null
-  success: null
-  traits:
-  - fire
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+6
@@ -144,9 +149,6 @@ ranged:
   - fire
   - magical
   - range increment 80 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 17
   fort_misc: null
@@ -155,28 +157,23 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 size: Huge
 skills:
 - bonus: 17
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 21
+  page_start: '21'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Construct
 - Earth
 - Mindless
-type: Creature
-weaknesses: null

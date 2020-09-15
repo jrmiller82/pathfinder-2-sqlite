@@ -7,6 +7,49 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The giant solifugid Strides and makes a Strike at the end of that movement.
+    If the giant solifugid began this action __hidden__, it remains hidden until after
+    this ability's Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pounce
+  range: null
+  raw_description: '**Pounce** [One Action]  The giant solifugid Strides and makes
+    a Strike at the end of that movement. If the giant solifugid began this action
+    __hidden__, it remains hidden until after this ability''s Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**__Rend__** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'The smallest of giant solifugids are still large enough to harry desert
@@ -18,11 +61,8 @@ description: 'The smallest of giant solifugids are still large enough to harry d
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+1
@@ -43,55 +83,7 @@ melee:
   - reach 10 feet
 name: Giant Solifugid
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The giant solifugid Strides and makes a Strike at the end of that movement.
-    If the giant solifugid began this action __hidden__, it remains hidden until after
-    this ability's Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pounce
-  range: null
-  raw_description: '**Pounce**   The giant solifugid Strides and makes a Strike at
-    the end of that movement. If the giant solifugid began this action __hidden__,
-    it remains hidden until after this ability''s Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -100,34 +92,30 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Large
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: +10 in deserts
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 246
+  page_start: '89'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

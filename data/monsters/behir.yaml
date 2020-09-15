@@ -7,49 +7,7 @@ ability_mods:
   wis_mod: 3
 ac: 27
 ac_special: null
-alignment: N
-automatic_abilities: null
-description: 'The behir is a massive, serpentine beast with never fewer than a dozen
-  short legs, each ending in three hooked talons. A behir can live to 80 years, but
-  most perish far younger to violence. Fully grown, a behir is 40 feet long and weighs
-  4,000 pounds.
-
-
-
-
-  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 24'
-hp: 140
-hp_misc: null
-immunities:
-- electricity
-items: null
-languages:
-- Draconic
-level: 8
-melee:
-- action_cost: One Action
-  damage:
-    formula: 2d12+10
-    type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: Grab
-  to_hit: 18
-  traits:
-  - reach 15 feet
-- action_cost: One Action
-  damage:
-    formula: 2d6+10
-    type: slashing
-  name: claw
-  plus_damage: null
-  to_hit: 18
-  traits:
-  - agile
-name: Behir
-perception: 17
-proactive_abilities:
+active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -57,11 +15,11 @@ proactive_abilities:
     60-foot line (DC 27 basic Reflex save). It can't use Breath Weapon again for 1d4
     rounds.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Breath Weapon
   range: null
   raw_description: '**Breath Weapon** [Two Actions]  (__electricity__, __evocation__,
@@ -69,6 +27,8 @@ proactive_abilities:
     an 60-foot line (DC 27 basic Reflex save). It can''t use Breath Weapon again for
     1d4 rounds.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - electricity
@@ -91,11 +51,11 @@ proactive_abilities:
     If it descends further than 60 feet, it takes damage normally from the remaining
     fall.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Claw Storm
   range: null
   raw_description: '**Claw Storm** [Three Actions]  The behir Strides up to its Speed,
@@ -111,6 +71,8 @@ proactive_abilities:
     taking no damage from the fall. If it descends further than 60 feet, it takes
     damage normally from the remaining fall.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -119,15 +81,17 @@ proactive_abilities:
   critical_success: null
   description: 2d6+7 bludgeoning, DC 27
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Constrict
   range: null
-  raw_description: '**__Constrict__**   2d6+7 bludgeoning, DC 27'
+  raw_description: '**__Constrict__** [One Action]  2d6+7 bludgeoning, DC 27'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -136,16 +100,18 @@ proactive_abilities:
   critical_success: null
   description: Large, 2d12+7 bludgeoning, Rupture 21
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Swallow Whole
   range: null
-  raw_description: '**__Swallow Whole__**   (__attack__) Large, 2d12+7 bludgeoning,
-    Rupture 21'
+  raw_description: '**__Swallow Whole__** [One Action]  (__attack__) Large, 2d12+7
+    bludgeoning, Rupture 21'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - attack
@@ -154,27 +120,69 @@ proactive_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The behir has a creature either __restrained__ or __grabbed__ in its jaws
-  effects: null
+  effect: The behir moves the creature into its coils, freeing its jaws. The creature
+    remains grabbed and takes 1d6+6 slashing damage. The behir's coils can hold as
+    many creatures as will fit in its space.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wrap in Coils
   range: null
-  raw_description: '**Wrap in Coils**   **Requirements **The behir has a creature
-    either __restrained__ or __grabbed__ in its jaws; **Effect **The behir moves the
-    creature into its coils, freeing its jaws. The creature remains grabbed and takes
-    1d6+6 slashing damage. The behir''s coils can hold as many creatures as will fit
-    in its space.'
-  requirements: null
+  raw_description: '**Wrap in Coils** [One Action]  **Requirements **The behir has
+    a creature either __restrained__ or __grabbed__ in its jaws; **Effect **The behir
+    moves the creature into its coils, freeing its jaws. The creature remains grabbed
+    and takes 1d6+6 slashing damage. The behir''s coils can hold as many creatures
+    as will fit in its space.'
+  requirements: The behir has a creature either restrained or grabbed in its jaws
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+alignment: N
+automatic_abilities: null
+description: 'The behir is a massive, serpentine beast with never fewer than a dozen
+  short legs, each ending in three hooked talons. A behir can live to 80 years, but
+  most perish far younger to violence. Fully grown, a behir is 40 feet long and weighs
+  4,000 pounds.
+
+
+
+
+  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 24'
+hp: 140
+hp_misc: null
+immunities:
+- electricity
+languages:
+- Draconic
+level: 8
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d12+10
+    type: piercing
+  name: jaws
+  plus_damage:
+  - formula: null
+    type: Grab
+  to_hit: 18
+  traits:
+  - reach 15 feet
+- action_cost: One Action
+  damage:
+    formula: 2d6+10
+    type: slashing
+  name: claw
+  plus_damage: null
+  to_hit: 18
+  traits:
+  - agile
+name: Behir
+perception: 17
+ranged_attacks: null
 saves:
   fort: 19
   fort_misc: null
@@ -183,41 +191,37 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 size: Huge
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 19
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 18
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 15
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 38
+  page_start: '38'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Huge
 - Beast
 - Electricity
-type: Creature
-weaknesses: null

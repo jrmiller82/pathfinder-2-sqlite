@@ -7,6 +7,84 @@ ability_mods:
   wis_mod: 5
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The quoppopak uses Tentacle Stab against a creature within reach; if either
+    of these Strikes hits, the creature must attempt a DC 30 Reflex save. On a failed
+    save, the quoppopak shoots water through its tentacles into the creature, dealing
+    2d6+5 bludgeoning damage and making the creature __sickened 1__ as its internal
+    organs fill with water (double damage and sickened 2 on a critical failure).
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Flooding Thrust
+  range: null
+  raw_description: '**Flooding Thrust** [Two Actions]  **Requirements** The quoppopak''s
+    ventral tube is in water; **Effect** The quoppopak uses Tentacle Stab against
+    a creature within reach; if either of these Strikes hits, the creature must attempt
+    a DC 30 Reflex save. On a failed save, the quoppopak shoots water through its
+    tentacles into the creature, dealing 2d6+5 bludgeoning damage and making the creature
+    __sickened 1__ as its internal organs fill with water (double damage and sickened
+    2 on a critical failure).'
+  requirements: The quoppopak's ventral tube is in water
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The quoppopak makes two tentacle Strikes against the same creature. These
+    Strikes deal piercing damage instead of bludgeoning, and the quoppopak can't __Grab__
+    with them. Its multiple attack penalty doesn't increase until after both attacks.
+  failure: null
+  frequency: once per round
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tentacle Stab
+  range: null
+  raw_description: '**Tentacle Stab** [One Action]  **Frequency** once per round;
+    **Effect** The quoppopak makes two tentacle Strikes against the same creature.
+    These Strikes deal piercing damage instead of bludgeoning, and the quoppopak can''t
+    __Grab__ with them. Its multiple attack penalty doesn''t increase until after
+    both attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The quoppopak can stand and move on the surface of water or other liquids
+    without falling through. It can go underwater if it wishes, but it must __Swim__
+    to do so.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Water Glide
+  range: null
+  raw_description: '**Water Glide** The quoppopak can stand and move on the surface
+    of water or other liquids without falling through. It can go underwater if it
+    wishes, but it must __Swim__ to do so.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +96,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +111,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -58,12 +138,10 @@ description: 'Quoppopaks combine the most terrifying aspects of water striders, 
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 28'
 hp: 195
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aquan
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+13
@@ -91,81 +169,14 @@ melee:
     type: slashing
   name: ventral tube
   plus_damage:
-  - formula: 1d6
-    type: persistent bleed
+  - formula: null
+    type: 1d6 persistent bleed
   to_hit: 24
   traits:
   - reach 10 feet
 name: Quoppopak
 perception: 22
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The quoppopak's ventral tube is in water
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Flooding Thrust
-  range: null
-  raw_description: '**Flooding Thrust** [Two Actions]  **Requirements** The quoppopak''s
-    ventral tube is in water; **Effect** The quoppopak uses Tentacle Stab against
-    a creature within reach; if either of these Strikes hits, the creature must attempt
-    a DC 30 Reflex save. On a failed save, the quoppopak shoots water through its
-    tentacles into the creature, dealing 2d6+5 bludgeoning damage and making the creature
-    __sickened 1__ as its internal organs fill with water (double damage and sickened
-    2 on a critical failure).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The quoppopak makes two tentacle Strikes against the same creature. These
-    Strikes deal piercing damage instead of bludgeoning, and the quoppopak can't __Grab__
-    with them. Its multiple attack penalty doesn't increase until after both attacks.
-  effects: null
-  failure: null
-  frequency: once per round
-  full_description: null
-  generic_description: null
-  name: Tentacle Stab
-  range: null
-  raw_description: '**Tentacle Stab**   **Frequency** once per round; **Effect** The
-    quoppopak makes two tentacle Strikes against the same creature. These Strikes
-    deal piercing damage instead of bludgeoning, and the quoppopak can''t __Grab__
-    with them. Its multiple attack penalty doesn''t increase until after both attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The quoppopak can stand and move on the surface of water or other liquids
-    without falling through. It can go underwater if it wishes, but it must __Swim__
-    to do so.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Water Glide
-  range: null
-  raw_description: '**Water Glide** The quoppopak can stand and move on the surface
-    of water or other liquids without falling through. It can go underwater if it
-    wishes, but it must __Swim__ to do so.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+13
@@ -178,11 +189,6 @@ ranged:
   traits:
   - range 100 feet
   - water
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 22
   fort_misc: null
@@ -191,37 +197,34 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - low-light vision
 size: Large
 skills:
 - bonus: 23
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 23
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 219
+  page_start: '219'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: swim
 - amount: 30
+  misc: null
   type: water glide
 spell_lists: null
 traits:
-- NE
-- Large
 - Aberration
 - Aquatic
-type: Creature
-weaknesses: null

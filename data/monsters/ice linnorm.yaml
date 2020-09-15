@@ -7,59 +7,123 @@ ability_mods:
   wis_mod: 6
 ac: 41
 ac_special: null
-alignment: CE
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: When a creature slays an ice linnorm, it must succeed at a DC 40 Will
-    save or permanently gain weakness to cold 15.
+  description: The ice linnorm spews out a blast of freezing, viscous ooze in a 60-foot
+    cone that deals 15d6 cold damage to creatures within the area (DC 38 basic Reflex
+    save). The freezing ooze clings to those struck and hardens into thick sheets
+    of ice. A creature that fails the saving throw is __immobilized__ by the ice until
+    it succeeds at a check to Escape or it or an ally Forces Open the ice (DC 34 for
+    either case). At the start of its turn, a creature still immobilized by the ice
+    takes 4d6 cold damage. Another creature can free a frozen target by dealing a
+    total of 20 fire damage to the frozen target. Left unattended, the ice crumbles
+    away in 1 minute on its own. Creatures with the fire trait can't be frozen in
+    place by this breath weapon. Flying creatures fall if frozen, and swimming creatures
+    that are frozen rise toward the surface of the water at a speed of 60 feet per
+    round. An ice linnorm can't use Breath Weapon again for 1d4 rounds.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Curse of Frost
+  maximum_duration: null
+  name: Breath Weapon
   range: null
-  raw_description: '**Curse of Frost** (__cold__, __curse__, __primal__) When a creature
-    slays an ice linnorm, it must succeed at a DC 40 Will save or permanently gain
-    weakness to cold 15.'
+  raw_description: '**Breath Weapon** [Two Actions]  (__cold__, __evocation__, __primal__)
+    The ice linnorm spews out a blast of freezing, viscous ooze in a 60-foot cone
+    that deals 15d6 cold damage to creatures within the area (DC 38 basic Reflex save).
+    The freezing ooze clings to those struck and hardens into thick sheets of ice.
+    A creature that fails the saving throw is __immobilized__ by the ice until it
+    succeeds at a check to Escape or it or an ally Forces Open the ice (DC 34 for
+    either case). At the start of its turn, a creature still immobilized by the ice
+    takes 4d6 cold damage. Another creature can free a frozen target by dealing a
+    total of 20 fire damage to the frozen target. Left unattended, the ice crumbles
+    away in 1 minute on its own. Creatures with the fire trait can''t be frozen in
+    place by this breath weapon. Flying creatures fall if frozen, and swimming creatures
+    that are frozen rise toward the surface of the water at a speed of 60 feet per
+    round. An ice linnorm can''t use Breath Weapon again for 1d4 rounds.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - cold
-  - curse
+  - evocation
   - primal
   trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 2d6+18 bludgeoning, DC 38
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  2d6+18 bludgeoning, DC 38'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 10 rounds
+  name: Ice Linnorm Venom
+  range: null
+  raw_description: '**Ice Linnorm Venom** (__cold__, __injury__, __poison__) **Saving
+    Throw** DC 38 Fortitude; **Maximum Duration** 10 rounds; **Stage 1** 5d6 cold
+    damage and __drained 1__; **Stage 2** 7d6 cold damage and __drained 2__.'
+  requirements: null
+  saving_throw: DC 38 Fortitude
+  stages:
+  - effect: 5d6 cold damage and __drained 1__
+  - effect: 7d6 cold damage and __drained 2__.
+  success: null
+  traits:
+  - cold
+  - injury
+  - poison
+  trigger: null
+alignment: CE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: Tail only.
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
+  effect: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Attack of Opportunity
+  maximum_duration: null
+  name: Curse of Frost
   range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
+  raw_description: '**Curse of Frost** (__cold__, __curse__, __primal__) When a creature
+    slays an ice linnorm, it must succeed at a DC 40 Will save or permanently gain
+    weakness to cold 15.
+
+
+    **Attack of Opportunity** [Reaction] Tail only.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
+  trigger: null
 description: 'The ice linnorm dwells amid glacial crevasses, atop wind-blasted mountain
   peaks, or within glittering caverns carved from the hearts of the mightiest of icebergs.
 
@@ -74,13 +138,12 @@ immunities:
 - curse
 - paralyzed
 - sleep
-items: null
 languages:
 - Aklo
 - Draconic
 - Sylvan
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+17
@@ -119,99 +182,8 @@ melee:
   - magical
 name: Ice Linnorm
 perception: 29
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The ice linnorm spews out a blast of freezing, viscous ooze in a 60-foot
-    cone that deals 15d6 cold damage to creatures within the area (DC 38 basic Reflex
-    save). The freezing ooze clings to those struck and hardens into thick sheets
-    of ice. A creature that fails the saving throw is __immobilized__ by the ice until
-    it succeeds at a check to Escape or it or an ally Forces Open the ice (DC 34 for
-    either case). At the start of its turn, a creature still immobilized by the ice
-    takes 4d6 cold damage. Another creature can free a frozen target by dealing a
-    total of 20 fire damage to the frozen target. Left unattended, the ice crumbles
-    away in 1 minute on its own. Creatures with the fire trait can't be frozen in
-    place by this breath weapon. Flying creatures fall if frozen, and swimming creatures
-    that are frozen rise toward the surface of the water at a speed of 60 feet per
-    round. An ice linnorm can't use Breath Weapon again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__cold__, __evocation__, __primal__)
-    The ice linnorm spews out a blast of freezing, viscous ooze in a 60-foot cone
-    that deals 15d6 cold damage to creatures within the area (DC 38 basic Reflex save).
-    The freezing ooze clings to those struck and hardens into thick sheets of ice.
-    A creature that fails the saving throw is __immobilized__ by the ice until it
-    succeeds at a check to Escape or it or an ally Forces Open the ice (DC 34 for
-    either case). At the start of its turn, a creature still immobilized by the ice
-    takes 4d6 cold damage. Another creature can free a frozen target by dealing a
-    total of 20 fire damage to the frozen target. Left unattended, the ice crumbles
-    away in 1 minute on its own. Creatures with the fire trait can''t be frozen in
-    place by this breath weapon. Flying creatures fall if frozen, and swimming creatures
-    that are frozen rise toward the surface of the water at a speed of 60 feet per
-    round. An ice linnorm can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - cold
-  - evocation
-  - primal
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 2d6+18 bludgeoning, DC 38
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   2d6+18 bludgeoning, DC 38'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 38 Fortitude; **Maximum Duration** 10 rounds;
-    **Stage 1** 5d6 cold damage and __drained 1__; **Stage 2** 7d6 cold damage and
-    __drained 2__.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ice Linnorm Venom
-  range: null
-  raw_description: '**Ice Linnorm Venom** (__cold__, __injury__, __poison__) **Saving
-    Throw** DC 38 Fortitude; **Maximum Duration** 10 rounds; **Stage 1** 5d6 cold
-    damage and __drained 1__; **Stage 2** 7d6 cold damage and __drained 2__.'
-  requirements: null
-  success: null
-  traits:
-  - cold
-  - injury
-  - poison
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 15
-  type: cold iron
-- amount: 10
-  type: fire
-ritual_lists: null
 saves:
   fort: 32
   fort_misc: null
@@ -220,9 +192,7 @@ saves:
   ref_misc: null
   will: 27
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +29
 - darkvision
 - scent (imprecise) 60 feet
 - true seeing
@@ -230,47 +200,51 @@ size: Gargantuan
 skills:
 - bonus: 28
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 32
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 225
+  page_start: '225'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 100
+  misc: null
   type: fly
 - amount: 40
-  type: swim
-- amount: 128
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>freedom of
-    movement</i></a>
-spell_lists:
-- dc: 38
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: 8
-    level: -1
+  type: swim
+- amount: null
+  misc: null
+  type: freedom of movement
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 8
     spells:
-    - frequency: null
+    - misc: null
       name: freedom of movement
-      requirement: null
-  - heightened_level: 7
-    level: -1
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- CE
-- Gargantuan
 - Cold
 - Dragon
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 15
+  misc: null
+  type: cold iron
+- amount: 10
+  misc: null
+  type: fire

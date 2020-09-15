@@ -7,25 +7,248 @@ ability_mods:
   wis_mod: 4
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Giant bat with fangs +19 for 2d8+9 piercing.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __divine__, __polymorph__,
+    __transmutation__) Giant bat with fangs +19 for 2d8+9 piercing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If a creature dies after being reduced to 0 HP by Drink Blood, the
+    vampire can turn this victim into a vampire by donating some of its own blood
+    to the victim and burying the victim in earth for 3 nights. If the new vampire
+    is lower level than its creator, it is under the creator's control. If a vampire
+    controls too many spawn at once (as determined by the GM), strong-willed spawn
+    can free themselves by succeeding at a Will saving throw against the vampire's
+    Will DC.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Create Spawn
+  range: null
+  raw_description: '**Create Spawn** (__divine__, __downtime__, __necromancy__) If
+    a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn
+    this victim into a vampire by donating some of its own blood to the victim and
+    burying the victim in earth for 3 nights. If the new vampire is lower level than
+    its creator, it is under the creator''s control. If a vampire controls too many
+    spawn at once (as determined by the GM), strong-willed spawn can free themselves
+    by succeeding at a Will saving throw against the vampire''s Will DC.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - downtime
+  - necromancy
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The vampire can cast __dominate__ (DC 26) at will as a divine innate
+    spell. Casting it requires staring into the target's eyes, giving the spell the
+    visual trait. A creature that succeeds is temporarily immune to that vampire's
+    Dominate for 24 hours. Fully destroying the vampire ends the domination, but merely
+    reducing the vampire to 0 HP is insufficient to break the spell.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dominate
+  range: null
+  raw_description: '**Dominate** [Two Actions]  (__divine__, __enchantment__, __incapacitation__,
+    __mental__, __visual__) The vampire can cast __dominate__ (DC 26) at will as a
+    divine innate spell. Casting it requires staring into the target''s eyes, giving
+    the spell the visual trait. A creature that succeeds is temporarily immune to
+    that vampire''s Dominate for 24 hours. Fully destroying the vampire ends the domination,
+    but merely reducing the vampire to 0 HP is insufficient to break the spell.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - enchantment
+  - incapacitation
+  - mental
+  - visual
+  trigger: null
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The vampire expends the power stored in its signet ring. This gives the
+    vampire the ability to cast one prepared spell it had already previously cast
+    today, without spending a spell slot. The vampire must still Cast the Spell and
+    meet the spell's other requirements.
+  failure: null
+  frequency: Once per day. Requirements The vampire hasn't acted yet on this turn.
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drain Bonded Item
+  range: null
+  raw_description: '**Drain Bonded Item** [Free Action]  (__arcane__, __wizard__)
+    **Frequency** Once per day. **Requirements** The vampire hasn''t acted yet on
+    this turn. **Effect** The vampire expends the power stored in its signet ring.
+    This gives the vampire the ability to cast one prepared spell it had already previously
+    cast today, without spending a spell slot. The vampire must still Cast the Spell
+    and meet the spell''s other requirements.'
+  requirements: The vampire hasn't acted yet on this turn.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - wizard
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** A __grabbed__, __paralyzed__, __restrained__, __unconscious__,
+    or willing creature is within the vampire''s reach.'
+  effect: The vampire sinks its fangs into that creature to drink its blood. This
+    requires an __Athletics__ check against the victim's Fortitude DC if the victim
+    is grabbed and is automatic for any of the other conditions. The victim is __drained
+    2__ and the vampire regains 10 HP, gaining any excess HP as temporary Hit Points.
+    Drinking Blood from a creature that's already drained doesn't restore any HP to
+    the vampire but increases the victim's drain value by 1. A vampire can also consume
+    blood that's been emptied into a vessel for sustenance, but it gains no HP from
+    doing so. A victim's drained condition decreases by 1 per week. A blood transfusion,
+    which requires a DC 20 __Medicine__ check and sufficient blood or a blood donor,
+    reduces the drain by 1 after 10 minutes.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drink Blood
+  range: null
+  raw_description: '**Drink Blood** [One Action]  (__divine__, __necromancy__) **Requirement**
+    A __grabbed__, __paralyzed__, __restrained__, __unconscious__, or willing creature
+    is within the vampire''s reach. **Effect** The vampire sinks its fangs into that
+    creature to drink its blood. This requires an __Athletics__ check against the
+    victim''s Fortitude DC if the victim is grabbed and is automatic for any of the
+    other conditions. The victim is __drained 2__ and the vampire regains 10 HP, gaining
+    any excess HP as temporary Hit Points. Drinking Blood from a creature that''s
+    already drained doesn''t restore any HP to the vampire but increases the victim''s
+    drain value by 1. A vampire can also consume blood that''s been emptied into a
+    vessel for sustenance, but it gains no HP from doing so. A victim''s drained condition
+    decreases by 1 per week. A blood transfusion, which requires a DC 20 __Medicine__
+    check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If another creature's reaction would disrupt the vampire mastermind's
+    spellcasting action, the vampire attempts a DC 15 flat check. If the vampire succeeds,
+    its action isn't disrupted.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Steady Spellcasting
+  range: null
+  raw_description: '**Steady Spellcasting** If another creature''s reaction would
+    disrupt the vampire mastermind''s spellcasting action, the vampire attempts a
+    DC 15 flat check. If the vampire succeeds, its action isn''t disrupted.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The vampire turns into a cloud of vapor, as the gaseous form spell,
+    or back to its normal form. The vampire loses fast healing while in gaseous form.
+    The vampire can remain in this form indefinitely.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Turn to Mist
+  range: null
+  raw_description: '**Turn to Mist** [One Action]  (__concentrate__, __divine__, __transmutation__)
+    The vampire turns into a cloud of vapor, as the gaseous form spell, or back to
+    its normal form. The vampire loses fast healing while in gaseous form. The vampire
+    can remain in this form indefinitely.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - transmutation
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Free Action
   critical_failure: null
   critical_success: null
   description: null
-  effect: null
-  effects: null
+  effect: The vampire uses Turn to Mist. It can take move actions to move toward its
+    coffin even though it's at 0 HP. While at 0 HP in this form, the vampire is unaffected
+    by further damage. It automatically returns to its corporeal form, unconscious,
+    if it reaches its coffin or after 2 hours, whichever comes first.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Mist Escape
   range: null
-  raw_description: '**Mist Escape** [Free Action]'
+  raw_description: '**Mist Escape** [Free Action]**Trigger** The vampire is reduced
+    to 0 HP. **Effect** The vampire uses Turn to Mist. It can take move actions to
+    move toward its coffin even though it''s at 0 HP. While at 0 HP in this form,
+    the vampire is unaffected by further damage. It automatically returns to its corporeal
+    form, unconscious, if it reaches its coffin or after 2 hours, whichever comes
+    first.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: The vampire is reduced to 0 HP.
 description: 'Vampire masterminds are evil wizards who control entire cabals of the
   undead and instill fear in the hearts of mortals far and wide.
 
@@ -48,7 +271,7 @@ languages:
 - Necril
 - plus one regional language
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
@@ -62,180 +285,12 @@ melee:
   - agile
 name: Vampire Mastermind
 perception: 20
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Giant bat with fangs +19 for 2d8+9 piercing.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __divine__, __polymorph__,
-    __transmutation__) Giant bat with fangs +19 for 2d8+9 piercing.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If a creature dies after being reduced to 0 HP by Drink Blood, the
-    vampire can turn this victim into a vampire by donating some of its own blood
-    to the victim and burying the victim in earth for 3 nights. If the new vampire
-    is lower level than its creator, it is under the creator's control. If a vampire
-    controls too many spawn at once (as determined by the GM), strong-willed spawn
-    can free themselves by succeeding at a Will saving throw against the vampire's
-    Will DC.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Create Spawn
-  range: null
-  raw_description: '**Create Spawn** (__divine__, __downtime__, __necromancy__) If
-    a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn
-    this victim into a vampire by donating some of its own blood to the victim and
-    burying the victim in earth for 3 nights. If the new vampire is lower level than
-    its creator, it is under the creator''s control. If a vampire controls too many
-    spawn at once (as determined by the GM), strong-willed spawn can free themselves
-    by succeeding at a Will saving throw against the vampire''s Will DC.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - downtime
-  - necromancy
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: DC 26
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dominate
-  range: null
-  raw_description: '**Dominate** [Two Actions]  (__divine__, __enchantment__, __incapacitation__,
-    __mental__, __visual__) DC 26'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - enchantment
-  - incapacitation
-  - mental
-  - visual
-  trigger: null
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The vampire hasn't acted yet on this turn.
-  effects: null
-  failure: null
-  frequency: Once per day.
-  full_description: null
-  generic_description: null
-  name: Drain Bonded Item
-  range: null
-  raw_description: '**Drain Bonded Item** [Free Action]  (__arcane__, __wizard__)
-    **Frequency** Once per day. **Requirements** The vampire hasn''t acted yet on
-    this turn. **Effect** The vampire expends the power stored in its signet ring.
-    This gives the vampire the ability to cast one prepared spell it had already previously
-    cast today, without spending a spell slot. The vampire must still Cast the Spell
-    and meet the spell''s other requirements.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - wizard
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: When Drinking Blood, the vampire regains 10 HP.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drink Blood
-  range: null
-  raw_description: '**Drink Blood**   (__divine__, __necromancy__) When Drinking Blood,
-    the vampire regains 10 HP.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If another creature's reaction would disrupt the vampire mastermind's
-    spellcasting action, the vampire attempts a DC 15 flat check. If the vampire succeeds,
-    its action isn't disrupted.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Steady Spellcasting
-  range: null
-  raw_description: '**Steady Spellcasting** If another creature''s reaction would
-    disrupt the vampire mastermind''s spellcasting action, the vampire attempts a
-    DC 15 flat check. If the vampire succeeds, its action isn''t disrupted.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The vampire turns into a cloud of vapor, as the gaseous form spell,
-    or back to its normal form. The vampire loses fast healing while in gaseous form.
-    The vampire can remain in this form indefinitely.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Turn to Mist
-  range: null
-  raw_description: '**Turn to Mist**   (__concentrate__, __divine__, __transmutation__)
-    The vampire turns into a cloud of vapor, as the gaseous form spell, or back to
-    its normal form. The vampire loses fast healing while in gaseous form. The vampire
-    can remain in this form indefinitely.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - transmutation
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
-  type: physical (except magical silver)
-ritual_lists: null
+  misc: except magical silver
+  type: physical
 saves:
   fort: 15
   fort_misc: null
@@ -248,23 +303,27 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '
-
-
-    '
+  description: The vampire's presence brings forth creatures of the night to do the
+    master's bidding. These typically include __rat swarms__, __bat swarms__, and
+    __wolves__, but can include other creatures. The vampire can give telepathic orders
+    to these creatures as long as they are within 100 feet, but they can't communicate
+    back.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Children of the Night
   range: null
   raw_description: '**Children of the Night** (__divine__, __enchantment__, __mental__)
-
-
-    '
+    The vampire''s presence brings forth creatures of the night to do the master''s
+    bidding. These typically include __rat swarms__, __bat swarms__, and __wolves__,
+    but can include other creatures. The vampire can give telepathic orders to these
+    creatures as long as they are within 100 feet, but they can''t communicate back.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -272,131 +331,107 @@ sense_abilities:
   - mental
   trigger: null
 senses:
-- Perception +20
 - darkvision
 size: Medium
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 21
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 20
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 20
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 19
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 19
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 321
+  page_start: '321'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: climb
 spell_lists:
-- dc: 29
-  misc: ''
-  name: Arcane Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: 19
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: fire shield
-      requirement: null
-    - frequency: null
-      name: phantasmal killer
-      requirement: null
-    - frequency: null
-      name: veil
-      requirement: null
-    - frequency: null
-      name: wall of fire
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: fireball
-      requirement: null
-    - frequency: null
-      name: haste
-      requirement: null
-    - frequency: null
-      name: lightning bolt
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: flaming sphere
-      requirement: null
-    - frequency: null
-      name: invisibility
-      requirement: null
-    - frequency: null
-      name: mirror image
-      requirement: null
-    - frequency: null
-      name: touch of idiocy
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: x2
-      name: color spray
-      requirement: null
-    - frequency: null
-      name: fleet step
-      requirement: null
-    - frequency: null
-      name: ray of enfeeblement
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: message
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ray of frost
-      requirement: null
-    - frequency: null
+    - misc: null
       name: sigil
-      requirement: null
-  to_hit: 19
+  constants: null
+  dc: 29
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: fire shield
+    - misc: null
+      name: phantasmal killer
+    - misc: null
+      name: veil
+    - misc: null
+      name: wall of fire
+  - level: 3
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: fireball
+    - misc: null
+      name: haste
+    - misc: null
+      name: lightning bolt
+  - level: 2
+    spells:
+    - misc: null
+      name: flaming sphere
+    - misc: null
+      name: invisibility
+    - misc: null
+      name: mirror image
+    - misc: null
+      name: touch of idiocy
+  - level: 1
+    spells:
+    - misc: x2
+      name: color spray
+    - misc: null
+      name: fleet step
+    - misc: null
+      name: ray of enfeeblement
+  spells_source: Arcane Prepared Spells
 traits:
-- Uncommon
-- CE
-- Medium
 - Undead
 - Vampire
-type: Creature
 weaknesses:
 - amount: null
+  misc: null
   type: vampire weaknesses

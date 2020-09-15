@@ -7,26 +7,76 @@ ability_mods:
   wis_mod: 6
 ac: 26
 ac_special: null
-alignment: LE
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: A stygira in an area of bright light is __sickened 1__.
+  description: The stygira holds aloft a gem and gazes into the mind of a creature
+    within 30 feet, infusing the creature's thoughts with visions of the creature's
+    own dead body slowly petrifying. The creature must succeed at a DC 25 Will save
+    or become __frightened 1__ (frightened 2 on a critical failure).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Light Sickness
+  maximum_duration: null
+  name: Gem Gaze
   range: null
-  raw_description: '**Light Sickness** A stygira in an area of bright light is __sickened
-    1__.'
+  raw_description: '**Gem Gaze** [One Action]  (__emotion__, __fear__, __mental__,
+    __primal__) The stygira holds aloft a gem and gazes into the mind of a creature
+    within 30 feet, infusing the creature''s thoughts with visions of the creature''s
+    own dead body slowly petrifying. The creature must succeed at a DC 25 Will save
+    or become __frightened 1__ (frightened 2 on a critical failure).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
-  traits: null
+  traits:
+  - emotion
+  - fear
+  - mental
+  - primal
   trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Wounds dealt by the stygira's claws leave the flesh bleached of color
+    and turn the blood that runs from them dark gray. Each time a creature is damaged
+    by the stygira's claw Strike, it must succeed at a DC 25 Fortitude save or become
+    permanently __slowed 1__ (slowed 2 on a critical failure) as its flesh stiffens
+    like stone. If a creature is reduced to 0 Hit Points from the stygira's claw Strike
+    and fails the saving throw against stone curse, it is __petrified__. A creature
+    that spends 8 hours in direct sunlight can attempt a new saving throw to remove
+    the effects of stone curse, even if it has been petrified.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stone Curse
+  range: null
+  raw_description: '**Stone Curse** (__curse__, __primal__, __transmutation__) Wounds
+    dealt by the stygira''s claws leave the flesh bleached of color and turn the blood
+    that runs from them dark gray. Each time a creature is damaged by the stygira''s
+    claw Strike, it must succeed at a DC 25 Fortitude save or become permanently __slowed
+    1__ (slowed 2 on a critical failure) as its flesh stiffens like stone. If a creature
+    is reduced to 0 Hit Points from the stygira''s claw Strike and fails the saving
+    throw against stone curse, it is __petrified__. A creature that spends 8 hours
+    in direct sunlight can attempt a new saving throw to remove the effects of stone
+    curse, even if it has been petrified.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - primal
+  - transmutation
+  trigger: null
+alignment: LE
+automatic_abilities: null
 description: 'Withered hermits wrapped in tattered rags, these scarred, eyeless creatures
   command strange secrets of the earth and interpret the fateful energies of the subterranean
   depths. In some regions, stygiras are worshipped as seers or even gods, although
@@ -54,9 +104,9 @@ description: 'Withered hermits wrapped in tattered rags, these scarred, eyeless 
 hp: 80
 hp_misc: null
 immunities:
-- paralyzed
-- petrified
-- visual
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=30">petrified</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
 items:
 - gemstone
 languages:
@@ -65,7 +115,7 @@ languages:
 - Jotun
 - Terran
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+10
@@ -79,76 +129,11 @@ melee:
   - agile
 name: Stygira
 perception: 17
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The stygira holds aloft a gem and gazes into the mind of a creature
-    within 30 feet, infusing the creature's thoughts with visions of the creature's
-    own dead body slowly petrifying. The creature must succeed at a DC 25 Will save
-    or become __frightened 1__ (frightened 2 on a critical failure).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Gem Gaze
-  range: null
-  raw_description: '**Gem Gaze**   (__emotion__, __fear__, __mental__, __primal__)
-    The stygira holds aloft a gem and gazes into the mind of a creature within 30
-    feet, infusing the creature''s thoughts with visions of the creature''s own dead
-    body slowly petrifying. The creature must succeed at a DC 25 Will save or become
-    __frightened 1__ (frightened 2 on a critical failure).'
-  requirements: null
-  success: null
-  traits:
-  - emotion
-  - fear
-  - mental
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Wounds dealt by the stygira's claws leave the flesh bleached of color
-    and turn the blood that runs from them dark gray. Each time a creature is damaged
-    by the stygira's claw Strike, it must succeed at a DC 25 Fortitude save or become
-    permanently __slowed 1__ (slowed 2 on a critical failure) as its flesh stiffens
-    like stone. If a creature is reduced to 0 Hit Points from the stygira's claw Strike
-    and fails the saving throw against stone curse, it is __petrified__. A creature
-    that spends 8 hours in direct sunlight can attempt a new saving throw to remove
-    the effects of stone curse, even if it has been petrified.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stone Curse
-  range: null
-  raw_description: '**Stone Curse** (__curse__, __primal__, __transmutation__) Wounds
-    dealt by the stygira''s claws leave the flesh bleached of color and turn the blood
-    that runs from them dark gray. Each time a creature is damaged by the stygira''s
-    claw Strike, it must succeed at a DC 25 Fortitude save or become permanently __slowed
-    1__ (slowed 2 on a critical failure) as its flesh stiffens like stone. If a creature
-    is reduced to 0 Hit Points from the stygira''s claw Strike and fails the saving
-    throw against stone curse, it is __petrified__. A creature that spends 8 hours
-    in direct sunlight can attempt a new saving throw to remove the effects of stone
-    curse, even if it has been petrified.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - primal
-  - transmutation
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 15
   fort_misc: null
@@ -161,108 +146,92 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'As long as the stygira holds a gemstone, they can see through the
-    gem with __darkvision__ and the effects of __true seeing__. The stygira is __blind__
+  description: As long as the stygira holds a gemstone, they can see through the gem
+    with __darkvision__ and the effects of __true seeing__. The stygira is __blind__
     when they are not holding a gem in a hand.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Gemsight
   range: null
   raw_description: '**Gemsight** As long as the stygira holds a gemstone, they can
     see through the gem with __darkvision__ and the effects of __true seeing__. The
-    stygira is __blind__ when they are not holding a gem in a hand.
-
-
-    '
+    stygira is __blind__ when they are not holding a gem in a hand.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +17
 - gemsight
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 17
   misc: null
-  name: 'Gem Lore '
+  name: Gem Lore
 - bonus: 17
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 17
   misc: null
-  name: 'Occultism '
-source:
+  name: Occultism
+sources:
 - abbr: Bestiary 2
-  page_start: 255
+  page_start: '255'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 25
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: clairvoyance
-      requirement: null
-    - frequency: null
-      name: read omens
-      requirement: null
-    - frequency: null
-      name: shape stone
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: clairaudience
-      requirement: null
-    - frequency: null
-      name: earthbind
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: augury
-      requirement: null
-    - frequency: null
-      name: undetectable alignment
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: know direction
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 25
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: clairvoyance
+    - misc: null
+      name: read omens
+    - misc: null
+      name: shape stone
+  - level: 3
+    spells:
+    - misc: null
+      name: clairaudience
+    - misc: null
+      name: earthbind
+  - level: 2
+    spells:
+    - misc: null
+      name: augury
+    - misc: null
+      name: undetectable alignment
+  spells_source: Occult Innate Spells
 traits:
-- LE
-- Medium
 - Earth
 - Fey
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron

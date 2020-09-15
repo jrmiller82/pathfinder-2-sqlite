@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 17
 ac_special: null
+active_abilities: null
 alignment: LG
 automatic_abilities: null
 description: 'If shoonies had their way, war would cease to exist altogether, but
@@ -23,7 +24,6 @@ description: 'If shoonies had their way, war would cease to exist altogether, bu
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 21'
 hp: 40
 hp_misc: null
-immunities: null
 items:
 - hide armor
 - javelin (2)
@@ -32,7 +32,7 @@ languages:
 - Common
 - Shoony
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -44,8 +44,7 @@ melee:
   - versatile P
 name: Shoony Militia Member
 perception: 8
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -57,10 +56,6 @@ ranged:
   - range increment 30 feet
   - thrown
 rarity: Rare
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -74,42 +69,36 @@ saves:
   ref: 6
   ref_misc: null
   will: 8
-  will_misc: such as inhaled poisons
-sense_abilities: null
+  will_misc: null
 senses:
-- Perception +8
 - low-light vision
 - scent (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 8
   misc: +9 to Tumble Through spaces of Medium or larger creatures
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 10
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 6
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 6
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #153: Life''s Long Shadow'
-  page_start: 82
+  page_start: '82'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Rare
-- LG
-- Small
 - Humanoid
 - Shoony
-type: Creature
-weaknesses: null

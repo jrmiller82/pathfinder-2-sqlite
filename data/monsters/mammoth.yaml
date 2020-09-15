@@ -7,6 +7,71 @@ ability_mods:
   wis_mod: 1
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The mammoth makes two tusk Strikes, each against a different creature.
+    This counts as one attack for the mammoth's multiple attack penalty, and the penalty
+    doesn't increase until after both attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dual Tusks
+  range: null
+  raw_description: '**Dual Tusks** [One Action]  The mammoth makes two tusk Strikes,
+    each against a different creature. This counts as one attack for the mammoth''s
+    multiple attack penalty, and the penalty doesn''t increase until after both attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A Medium or smaller creature hit by the mammoth's trunk is __grabbed__.
+    If the mammoth moves, it can bring the __grabbed__ creature along with it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Grabbing Trunk
+  range: null
+  raw_description: '**Grabbing Trunk** A Medium or smaller creature hit by the mammoth''s
+    trunk is __grabbed__. If the mammoth moves, it can bring the __grabbed__ creature
+    along with it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Large or smaller, foot, DC 28
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 28'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,16 +80,18 @@ automatic_abilities:
   description: The mammoth reduces the effects it suffers from cold environments by
     one step.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Cold Adaptation
   range: null
   raw_description: '**Cold Adaptation** The mammoth reduces the effects it suffers
     from cold environments by one step.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -39,11 +106,8 @@ description: 'Found mostly in colder climates, mammoths are accustomed to dealin
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 27'
 hp: 190
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+12
@@ -54,7 +118,9 @@ melee:
   traits:
   - reach 15 feet
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: grabbing trunk
   name: trunk
   plus_damage: null
   to_hit: 22
@@ -71,71 +137,7 @@ melee:
   - reach 10 feet
 name: Mammoth
 perception: 18
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The mammoth makes two tusk Strikes, each against a different creature.
-    This counts as one attack for the mammoth's multiple attack penalty, and the penalty
-    doesn't increase until after both attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dual Tusks
-  range: null
-  raw_description: '**Dual Tusks**   The mammoth makes two tusk Strikes, each against
-    a different creature. This counts as one attack for the mammoth''s multiple attack
-    penalty, and the penalty doesn''t increase until after both attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A Medium or smaller creature hit by the mammoth's trunk is __grabbed__.
-    If the mammoth moves, it can bring the __grabbed__ creature along with it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Grabbing Trunk
-  range: null
-  raw_description: '**Grabbing Trunk** A Medium or smaller creature hit by the mammoth''s
-    trunk is __grabbed__. If the mammoth moves, it can bring the __grabbed__ creature
-    along with it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Large or smaller, foot, DC 28
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 28'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 21
   fort_misc: null
@@ -144,30 +146,25 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 154
+  page_start: '154'
   page_stop: null
 speed:
 - amount: 45
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
-type: Creature
-weaknesses: null

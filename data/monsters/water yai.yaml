@@ -7,6 +7,147 @@ ability_mods:
   wis_mod: 9
 ac: 40
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The water yai takes on the appearance of a __storm giant__. This doesn't
+    change their Speed or Strike attack and damage. The yai can also turn into a puddle
+    of water, with the effects of __gaseous form__ except they retain their land Speed,
+    double their swim Speed, and can't fly.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**__Change Shape__** [One Action]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) The water yai takes on the appearance of a __storm
+    giant__. This doesn''t change their Speed or Strike attack and damage. The yai
+    can also turn into a puddle of water, with the effects of __gaseous form__ except
+    they retain their land Speed, double their swim Speed, and can''t fly.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The water yai extends a portion of their kimono to attempt to envelop a
+    creature within 15 feet. The water yai must attempt a Performance check against
+    the creature's Reflex DC.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Enveloping Kimono
+  range: null
+  raw_description: '**Enveloping Kimono** [One Action]  (__electricity__, __manipulate__,
+    __primal__, __transmutation__, __water__) **Requirements** The water yai''s last
+    action was a successful kimono Strike; **Effect** The water yai extends a portion
+    of their kimono to attempt to envelop a creature within 15 feet. The water yai
+    must attempt a Performance check against the creature''s Reflex DC.'
+  requirements: The water yai's last action was a successful kimono Strike
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - electricity
+  - manipulate
+  - primal
+  - transmutation
+  - water
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature takes 20d6 electricity damage and is __grabbed__
+    until the end of its next turn.
+  description: The creature takes 20d6 electricity damage and is __grabbed__ until
+    the end of its next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature takes 20d6 electricity damage
+    and is __grabbed__ until the end of its next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: As critical success, but only 10d6 electricity damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** As critical success, but only 10d6 electricity damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: As critical success, but only 10d6 electricity damage.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target takes 5d6 electricity damage but is not grabbed.
+  effect: null
+  failure: The target takes 5d6 electricity damage but is not grabbed.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The target takes 5d6 electricity damage but is not
+    grabbed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The target is unaffected.
+  critical_success: null
+  description: The target is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The target is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +159,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +174,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -45,11 +188,11 @@ automatic_abilities:
     __counteract__ the spell before it comes into effect. If the yai counters the
     spell, the triggering creature takes 9d6 electricity damage from electrified water
     that sprays from the kimono (DC 35 basic Reflex save).
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shocking Douse
   range: null
   raw_description: '**Shocking Douse [Reaction]** **Trigger** A creature within 100
@@ -59,9 +202,11 @@ automatic_abilities:
     damage from electrified water that sprays from the kimono (DC 35 basic Reflex
     save).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within 100 feet casts a fire spell
+  trigger: A creature within 100 feet casts a fire spell;
 description: 'Among the most powerful yai are those who emulate the form of __storm
   giants__. Rather than lord over their giant-kin like most oni, though, water yai
   prefer to lurk alone in the world''s oceans (or, much more rarely, large and remote
@@ -82,7 +227,7 @@ description: 'Among the most powerful yai are those who emulate the form of __st
 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 36'
 hp: 295
-hp_misc: regeneration 15 (deactivated by acid and fire
+hp_misc: regeneration 15 (deactivated by acid and fire)
 immunities:
 - electricity
 items:
@@ -91,15 +236,15 @@ languages:
 - Common
 - Jotun
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+15
     type: piercing
   name: longspear
   plus_damage:
-  - formula: 2d6
-    type: electricity
+  - formula: null
+    type: 2d6 electricity
   to_hit: 35
   traits:
   - evil
@@ -125,8 +270,8 @@ melee:
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 2d6
-    type: electricity
+  - formula: null
+    type: 2d6 electricity
   to_hit: 33
   traits:
   - agile
@@ -135,67 +280,7 @@ melee:
   - reach 15 feet
 name: Water Yai
 perception: 32
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The water yai takes on the appearance of a __storm giant__. This doesn't
-    change their Speed or Strike attack and damage. The yai can also turn into a puddle
-    of water, with the effects of __gaseous form__ except they retain their land Speed,
-    double their swim Speed, and can't fly.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**__Change Shape__**   (__concentrate__, __polymorph__, __primal__,
-    __transmutation__) The water yai takes on the appearance of a __storm giant__.
-    This doesn''t change their Speed or Strike attack and damage. The yai can also
-    turn into a puddle of water, with the effects of __gaseous form__ except they
-    retain their land Speed, double their swim Speed, and can''t fly.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: One Action
-  critical_failure: The target is unaffected.
-  critical_success: The creature takes 20d6 electricity damage and is grabbed until
-    the end of its next turn.
-  description: null
-  effect: The water yai's last action was a successful kimono Strike
-  effects: null
-  failure: The target takes 5d6 electricity damage but is not grabbed.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Enveloping Kimono
-  range: null
-  raw_description: "**Enveloping Kimono**   (__electricity__, __manipulate__, __primal__,\
-    \ __transmutation__, __water__) **Requirements** The water yai's last action was\
-    \ a successful kimono Strike; **Effect** The water yai extends a portion of their\
-    \ kimono to attempt to envelop a creature within 15 feet. The water yai must attempt\
-    \ a Performance check against the creature's Reflex DC. \n\n**Critical Success**\
-    \ The creature takes 20d6 electricity damage and is __grabbed__ until the end\
-    \ of its next turn. \n\n**Success** As critical success, but only 10d6 electricity\
-    \ damage. \n\n**Failure** The target takes 5d6 electricity damage but is not grabbed.\
-    \ \n\n**Critical Failure** The target is unaffected."
-  requirements: null
-  success: As critical success, but only 10d6 electricity damage.
-  traits:
-  - electricity
-  - manipulate
-  - primal
-  - transmutation
-  - water
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+12
@@ -210,9 +295,6 @@ ranged:
   - evil
   - magical
   - range increment 60 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 27
   fort_misc: null
@@ -221,101 +303,88 @@ saves:
   ref_misc: null
   will: 34
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +32
 - greater darkvision
 size: Huge
 skills:
 - bonus: 30
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 29
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 33
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 32
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 32
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 29
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 33
   misc: null
-  name: 'Performance '
-source:
+  name: Performance
+sources:
 - abbr: Bestiary 2
-  page_start: 191
+  page_start: '191'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 - amount: 50
-  type: swim
-- amount: 371
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>water walk</i></a>
-spell_lists:
-- dc: 38
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+  type: swim
+- amount: null
+  misc: null
+  type: water walk
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 9
     spells:
-    - frequency: null
-      name: chain lightning
-      requirement: null
-    - frequency: null
-      name: horrid wilting
-      requirement: null
-  - heightened_level: null
-    level: 8
-    spells:
-    - frequency: null
-      name: hydraulic torrent
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: at will
-      name: control water
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: ×3
-      name: charm
-      requirement: null
-    - frequency: null
-      name: darkness
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-  - heightened_level: 9
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: water walk
-      requirement: null
-  to_hit: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 9
+    spells:
+    - misc: null
+      name: chain lightning
+    - misc: null
+      name: horrid wilting
+  - level: 8
+    spells:
+    - misc: null
+      name: hydraulic torrent
+  - level: 5
+    spells:
+    - misc: at will
+      name: control water
+  - level: 4
+    spells:
+    - misc: ×3
+      name: charm
+    - misc: null
+      name: darkness
+  - level: 2
+    spells:
+    - misc: at will, self only
+      name: invisibility
+  spells_source: Primal Innate Spells
 traits:
-- CE
-- Huge
 - Fiend
 - Giant
 - Humanoid
 - Oni
 - Water
-type: Creature
-weaknesses: null

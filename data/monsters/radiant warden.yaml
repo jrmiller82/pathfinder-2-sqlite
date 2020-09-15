@@ -7,24 +7,104 @@ ability_mods:
   wis_mod: 5
 ac: 40
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Until it acts, the radiant warden appears to be an orrery (or similar
+    large mechanical contraption, such as a telescope). It has an automatic result
+    of 53 on __Deception__ checks and DCs to convincingly pass as such a machine.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Orrery
+  range: null
+  raw_description: '**Orrery** [One Action]  (__concentrate__) Until it acts, the
+    radiant warden appears to be an orrery (or similar large mechanical contraption,
+    such as a telescope). It has an automatic result of 53 on __Deception__ checks
+    and DCs to convincingly pass as such a machine.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The radiant warden releases a 50-foot cone of bright energy that deals
+    10d12 force damage (DC 38 basic Reflex save). The radiant warden can't use Radiant
+    Blast for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Radiant Blast
+  range: null
+  raw_description: '**Radiant Blast** [Two Actions]  (__evocation__, __force__, __occult__)
+    The radiant warden releases a 50-foot cone of bright energy that deals 10d12 force
+    damage (DC 38 basic Reflex save). The radiant warden can''t use Radiant Blast
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - evocation
+  - force
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a creature is hit by the radiant warden's hammer Strike, a flash
+    of radiant energy attempts to anchor the creature in place. The creature must
+    attempt a DC 38 Will save; on a failure, the creature can't use any __teleportation__
+    effects for 1 minute. On a critical failure, the creature is also permanently
+    __blinded__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Radiant Blow
+  range: null
+  raw_description: '**Radiant Blow** When a creature is hit by the radiant warden''s
+    hammer Strike, a flash of radiant energy attempts to anchor the creature in place.
+    The creature must attempt a DC 38 Will save; on a failure, the creature can''t
+    use any __teleportation__ effects for 1 minute. On a critical failure, the creature
+    is also permanently __blinded__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 60 feet. A creature that uses a __teleportation__ ability within the
-    aura's emanation or enters it via a teleportation ability must succeed a DC 38
-    Will save or become __sickened 1__ and have its destination changed to a point
-    of the radiant warden's choosing within the emanation. On a successful save, the
-    creature arrives as intended but is still sickened 1.
+  description: A creature that uses a __teleportation__ ability within the aura's
+    emanation or enters it via a teleportation ability must succeed a DC 38 Will save
+    or become __sickened 1__ and have its destination changed to a point of the radiant
+    warden's choosing within the emanation. On a successful save, the creature arrives
+    as intended but is still sickened 1.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Gatekeeper Aura
-  range: null
+  range: 60 feet
   raw_description: '**Gatekeeper Aura** (__abjuration__, __aura__, __occult__) 60
     feet. A creature that uses a __teleportation__ ability within the aura''s emanation
     or enters it via a teleportation ability must succeed a DC 38 Will save or become
@@ -32,6 +112,8 @@ automatic_abilities:
     choosing within the emanation. On a successful save, the creature arrives as intended
     but is still sickened 1.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
@@ -59,22 +141,21 @@ hp: 300
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
-- fatigued
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 languages:
 - any one ancient language (such as Jistkan)
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+15
@@ -90,85 +171,11 @@ melee:
   - shove
 name: Radiant Warden
 perception: 30
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Until it acts, the radiant warden appears to be an orrery (or similar
-    large mechanical contraption, such as a telescope). It has an automatic result
-    of 53 on __Deception__ checks and DCs to convincingly pass as such a machine.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Orrery
-  range: null
-  raw_description: '**Orrery**   (__concentrate__) Until it acts, the radiant warden
-    appears to be an orrery (or similar large mechanical contraption, such as a telescope).
-    It has an automatic result of 53 on __Deception__ checks and DCs to convincingly
-    pass as such a machine.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The radiant warden releases a 50-foot cone of bright energy that deals
-    10d12 force damage (DC 38 basic Reflex save). The radiant warden can't use Radiant
-    Blast for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Radiant Blast
-  range: null
-  raw_description: '**Radiant Blast** [Two Actions]  (__evocation__, __force__, __occult__)
-    The radiant warden releases a 50-foot cone of bright energy that deals 10d12 force
-    damage (DC 38 basic Reflex save). The radiant warden can''t use Radiant Blast
-    for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - evocation
-  - force
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a creature is hit by the radiant warden's hammer Strike, a flash
-    of radiant energy attempts to anchor the creature in place. The creature must
-    attempt a DC 38 Will save; on a failure, the creature can't use any __teleportation__
-    effects for 1 minute. On a critical failure, the creature is also permanently
-    __blinded__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Radiant Blow
-  range: null
-  raw_description: '**Radiant Blow** When a creature is hit by the radiant warden''s
-    hammer Strike, a flash of radiant energy attempts to anchor the creature in place.
-    The creature must attempt a DC 38 Will save; on a failure, the creature can''t
-    use any __teleportation__ effects for 1 minute. On a critical failure, the creature
-    is also permanently __blinded__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10
-    type: force
+    formula: null
+    type: 4d10 force
   name: radiant beam
   plus_damage: null
   to_hit: 32
@@ -178,10 +185,11 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 15
+  misc: null
   type: mental
 - amount: 15
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 32
   fort_misc: null
@@ -190,73 +198,61 @@ saves:
   ref_misc: null
   will: 28
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +30
 - darkvision
 size: Gargantuan
 skills:
 - bonus: 32
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 36
   misc: null
-  name: 'Astronomy Lore '
+  name: Astronomy Lore
 - bonus: 33
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 32
   misc: null
-  name: 'Occultism '
-source:
+  name: Occultism
+sources:
 - abbr: Bestiary 2
-  page_start: 220
+  page_start: '220'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 38
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 38
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+  spell_lists:
+  - level: 9
     spells:
-    - frequency: null
+    - misc: null
       name: teleport
-      requirement: null
-  - heightened_level: null
-    level: 8
+  - level: 8
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: collective transposition
-      requirement: null
-    - frequency: null
+    - misc: null
       name: scintillating pattern
-      requirement: null
-  - heightened_level: null
-    level: 7
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: dimensional lock
-      requirement: null
-    - frequency: null
+    - misc: null
       name: prismatic spray
-      requirement: null
-  - heightened_level: null
-    level: 5
+  - level: 5
     spells:
-    - frequency: at will
+    - misc: at will
       name: dimension door
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- N
-- Gargantuan
 - Construct
-type: Creature
-weaknesses: null

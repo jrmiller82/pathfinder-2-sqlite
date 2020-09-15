@@ -7,6 +7,205 @@ ability_mods:
   wis_mod: 5
 ac: 39
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Until the next time it acts, the zaramuun appears to be a sand dune.
+    It has an automatic result of 47 (50 in sandy terrain) on __Deception__ and __Stealth__
+    checks and DCs to pass as a sand dune. Any creature that walks onto the zaramuun
+    moves into its body and is Engulfed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dune
+  range: null
+  raw_description: '**Dune** [One Action]  (__concentrate__) Until the next time it
+    acts, the zaramuun appears to be a sand dune. It has an automatic result of 47
+    (50 in sandy terrain) on __Deception__ and __Stealth__ checks and DCs to pass
+    as a sand dune. Any creature that walks onto the zaramuun moves into its body
+    and is Engulfed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: DC 35, 4d12 bludgeoning damage and __dimensional anchor__, Escape DC
+    32, Rupture 28
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Engulf
+  range: null
+  raw_description: '**Engulf** [Two Actions]  DC 35, 4d12 bludgeoning damage and __dimensional
+    anchor__, Escape DC 32, Rupture 28'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The zaramuun attempts to Disarm one primarily metal or stone object from
+    the Struck or Engulfed creature and casts its innate dimensional anchor on the
+    target creature.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Raking Sand
+  range: null
+  raw_description: '**Raking Sand** [One Action]  **Requirements** The zaramuun hit
+    with a melee Strike with its last action, or it has a creature Engulfed. **Effect**
+    The zaramuun attempts to Disarm one primarily metal or stone object from the Struck
+    or Engulfed creature and casts its innate dimensional anchor on the target creature.'
+  requirements: The zaramuun hit with a melee Strike with its last action, or it has
+    a creature Engulfed.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The zaramuun can __Burrow__ through sand and dirt (but not stone) at
+    its full burrow Speed, leaving no tunnel or sign of its passing. Any Engulfed
+    creatures are left behind when it Burrows. Loose sand and scree are not difficult
+    terrain for a zaramuun.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sand Glide
+  range: null
+  raw_description: '**Sand Glide** The zaramuun can __Burrow__ through sand and dirt
+    (but not stone) at its full burrow Speed, leaving no tunnel or sign of its passing.
+    Any Engulfed creatures are left behind when it Burrows. Loose sand and scree are
+    not difficult terrain for a zaramuun.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The zaramuun sprays a blast of sand that deals 11d10 slashing damage
+    to all creatures in a 60-foot line (Reflex DC 38). It can't Sandblast again for
+    1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sandblast
+  range: null
+  raw_description: '**Sandblast** [Two Actions]  (__earth__) The zaramuun sprays a
+    blast of sand that deals 11d10 slashing damage to all creatures in a 60-foot line
+    (Reflex DC 38). It can''t Sandblast again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - earth
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: No effect.
+  description: No effect.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** No effect.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Half damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** Half damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: Half damage.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Full damage.
+  effect: null
+  failure: Full damage.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** Full damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: Full damage and blinded for 1 round.
+  critical_success: null
+  description: Full damage and blinded for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** Full damage and blinded for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +217,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +232,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -58,12 +259,11 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Abyssal
 - Terran
 level: 16
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d12+13
@@ -74,119 +274,7 @@ melee:
   traits: null
 name: Zaramuun
 perception: 30
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Until the next time it acts, the zaramuun appears to be a sand dune.
-    It has an automatic result of 47 (50 in sandy terrain) on __Deception__ and __Stealth__
-    checks and DCs to pass as a sand dune. Any creature that walks onto the zaramuun
-    moves into its body and is Engulfed.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dune
-  range: null
-  raw_description: '**Dune**   (__concentrate__) Until the next time it acts, the
-    zaramuun appears to be a sand dune. It has an automatic result of 47 (50 in sandy
-    terrain) on __Deception__ and __Stealth__ checks and DCs to pass as a sand dune.
-    Any creature that walks onto the zaramuun moves into its body and is Engulfed.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: DC 35, 4d12 bludgeoning damage and __dimensional anchor__, Escape DC
-    32, Rupture 28
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Engulf
-  range: null
-  raw_description: '**Engulf** [Two Actions]  DC 35, 4d12 bludgeoning damage and __dimensional
-    anchor__, Escape DC 32, Rupture 28'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The zaramuun hit with a melee Strike with its last action, or it has a creature
-    Engulfed.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Raking Sand
-  range: null
-  raw_description: '**Raking Sand**   **Requirements** The zaramuun hit with a melee
-    Strike with its last action, or it has a creature Engulfed. **Effect** The zaramuun
-    attempts to Disarm one primarily metal or stone object from the Struck or Engulfed
-    creature and casts its innate dimensional anchor on the target creature. '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The zaramuun can __Burrow__ through sand and dirt (but not stone) at
-    its full burrow Speed, leaving no tunnel or sign of its passing. Any Engulfed
-    creatures are left behind when it Burrows. Loose sand and scree are not difficult
-    terrain for a zaramuun.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sand Glide
-  range: null
-  raw_description: '**Sand Glide** The zaramuun can __Burrow__ through sand and dirt
-    (but not stone) at its full burrow Speed, leaving no tunnel or sign of its passing.
-    Any Engulfed creatures are left behind when it Burrows. Loose sand and scree are
-    not difficult terrain for a zaramuun. '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: Full damage and blinded for 1 round.
-  critical_success: No effect.
-  description: "The zaramuun sprays a blast of sand that deals 11d10 slashing damage\
-    \ to all creatures in a 60-foot line (Reflex DC 38). It can't Sandblast again\
-    \ for 1d4 rounds. \n\n"
-  effect: null
-  effects: null
-  failure: Full damage.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sandblast
-  range: null
-  raw_description: "**Sandblast** [Two Actions]  (__earth__) The zaramuun sprays a\
-    \ blast of sand that deals 11d10 slashing damage to all creatures in a 60-foot\
-    \ line (Reflex DC 38). It can't Sandblast again for 1d4 rounds. \n\n**Critical\
-    \ Success** No effect.\n\n**Success** Half damage.\n\n**Failure** Full damage.\n\
-    \n**Critical Failure** Full damage and blinded for 1 round."
-  requirements: null
-  success: Half damage.
-  traits:
-  - earth
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 4d8+13
@@ -196,20 +284,6 @@ ranged:
   to_hit: 29
   traits:
   - range increment 120 feet
-rarity: Common
-resistances: null
-ritual_lists:
-- dc: 37
-  misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: planar ally
-      requirement: null
-  to_hit: null
 saves:
   fort: 34
   fort_misc: null
@@ -218,70 +292,73 @@ saves:
   ref_misc: null
   will: 25
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +30
 - darkvision
 - tremorsense 60 feet
 size: Large
 skills:
 - bonus: 31
   misc: +35 to disarm stone or metal objects
-  name: 'Athletics '
+  name: Athletics
 - bonus: 26
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 27
   misc: +30 in sandy terrain
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 339
+  page_start: '339'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: burrow
 - amount: null
+  misc: null
   type: sand glide
 spell_lists:
-- dc: 37
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+- attack_bonus: 31
+  cantrips: null
+  constants:
+  - level: 8
     spells:
-    - frequency: at will
+    - misc: null
       name: dimensional anchor
-      requirement: null
-  - heightened_level: null
-    level: 6
+  dc: 37
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
     spells:
-    - frequency: null
+    - misc: at will
+      name: dimensional anchor
+  - level: 6
+    spells:
+    - misc: null
       name: disintegrate
-      requirement: null
-    - frequency: null
+    - misc: null
       name: spirit blast
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: suggestion
-      requirement: null
-  - heightened_level: 8
-    level: -1
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 37
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
-      name: dimensional anchor
-      requirement: null
-  to_hit: 31
+    - misc: null
+      name: planar ally
+  spells_source: Divine Rituals
 traits:
-- CE
-- Large
 - Earth
 - Elemental
-type: Creature
-weaknesses: null

@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The velociraptor Strides up to 10 feet, ignoring difficult terrain
+    as it leaps over obstacles. It then makes a Strike with its talons, gaining a
+    +1 circumstance bonus to its attack roll.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Leaping Charge
+  range: null
+  raw_description: '**Leaping Charge** [One Action]  The velociraptor Strides up to
+    10 feet, ignoring difficult terrain as it leaps over obstacles. It then makes
+    a Strike with its talons, gaining a +1 circumstance bonus to its attack roll.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The velociraptor deals 1d4 extra damage to any creature that's within
+    reach of at least two of the velociraptor's allies.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pack Attack
+  range: null
+  raw_description: '**Pack Attack** The velociraptor deals 1d4 extra damage to any
+    creature that''s within reach of at least two of the velociraptor''s allies.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'A smaller cousin of the deinonychus, the velociraptor is a swift, cunning
@@ -26,11 +71,8 @@ description: 'A smaller cousin of the deinonychus, the velociraptor is a swift, 
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -52,53 +94,7 @@ melee:
   - finesse
 name: Velociraptor
 perception: 6
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The velociraptor Strides up to 10 feet, ignoring difficult terrain
-    as it leaps over obstacles. It then makes a Strike with its talons, gaining a
-    +1 circumstance bonus to its attack roll.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Leaping Charge
-  range: null
-  raw_description: '**Leaping Charge**   The velociraptor Strides up to 10 feet, ignoring
-    difficult terrain as it leaps over obstacles. It then makes a Strike with its
-    talons, gaining a +1 circumstance bonus to its attack roll. '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The velociraptor deals 1d4 extra damage to any creature that's within
-    reach of at least two of the velociraptor's allies.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pack Attack
-  range: null
-  raw_description: '**Pack Attack** The velociraptor deals 1d4 extra damage to any
-    creature that''s within reach of at least two of the velociraptor''s allies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 5
   fort_misc: null
@@ -107,34 +103,29 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - low-light vision
 - scent (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: +8 jumping
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 96
+  page_start: '96'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
 - Dinosaur
-type: Creature
-weaknesses: null

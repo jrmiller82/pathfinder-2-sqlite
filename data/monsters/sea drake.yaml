@@ -7,6 +7,210 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The sea drake spews a ball of electricity that strikes a primary target
+    within 100 feet, dealing 7d6 electricity damage (DC 24 basic Reflex save). The
+    lightning then arcs to up to three secondary targets within 30 feet of the primary
+    target, striking the closest available targets first. The secondary bolts each
+    strike one secondary target and deal the same rolled damage value as the primary
+    bolt (DC 22 basic Reflex save). The sea drake can't use Ball Lightning Breath
+    again for 1d6 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ball Lightning Breath
+  range: null
+  raw_description: '**Ball Lightning Breath** [Two Actions]  (__arcane__, __electricity__,
+    __evocation__) The sea drake spews a ball of electricity that strikes a primary
+    target within 100 feet, dealing 7d6 electricity damage (DC 24 basic Reflex save).
+    The lightning then arcs to up to three secondary targets within 30 feet of the
+    primary target, striking the closest available targets first. The secondary bolts
+    each strike one secondary target and deal the same rolled damage value as the
+    primary bolt (DC 22 basic Reflex save). The sea drake can''t use Ball Lightning
+    Breath again for 1d6 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - electricity
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A sea drake's saliva carries a large quantity of salt, making its bite
+    wounds even more painful. When a creature takes damage from a sea drake's jaws
+    Strike, the creature must attempt a DC 24 Fortitude save; the creature is then
+    temporarily immune to briny wound for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Briny Wound
+  range: null
+  raw_description: '**Briny Wound** A sea drake''s saliva carries a large quantity
+    of salt, making its bite wounds even more painful. When a creature takes damage
+    from a sea drake''s jaws Strike, the creature must attempt a DC 24 Fortitude save;
+    the creature is then temporarily immune to briny wound for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __sickened 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The creature is __sickened 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __sickened 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is sickened 2.
+  effect: null
+  failure: The creature is sickened 2.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The creature is sickened 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is sickened 2 and slowed 1 as long as it's sickened.
+  critical_success: null
+  description: The creature is sickened 2 and slowed 1 as long as it's sickened.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **The creature is sickened 2 and slowed 1 as
+    long as it''s sickened.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The drake tries to capsize an adjacent aquatic vessel of its size or
+    smaller. The drake must succeed at an __Athletics__ check with a DC of 25 (reduced
+    by 5 for each size smaller the vessel is than the drake) or the pilot's __Sailing
+    Lore__ DC, whichever is higher.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Capsize
+  range: null
+  raw_description: '**Capsize** [One Action]  (__attack__) The drake tries to capsize
+    an adjacent aquatic vessel of its size or smaller. The drake must succeed at an
+    __Athletics__ check with a DC of 25 (reduced by 5 for each size smaller the vessel
+    is than the drake) or the pilot''s __Sailing Lore__ DC, whichever is higher.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The sea drake makes one jaws Strike and two tail Strikes in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The sea drake makes one jaws
+    Strike and two tail Strikes in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The sea drake Strides, __Flies__, or __Swims__ twice.
+  failure: null
+  frequency: three times per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Speed Surge
+  range: null
+  raw_description: '**Speed Surge** [One Action]  **Frequency **three times per day;
+    **Effect **The sea drake Strides, __Flies__, or __Swims__ twice.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +219,11 @@ automatic_abilities:
   description: null
   effect: An arc of electricity courses through the sea drake's blood. The triggering
     creature takes 1d6 electricity damage.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Electrified Blood
   range: null
   raw_description: '**Electrified Blood [Reaction]** (__electricity__) **Trigger **An
@@ -27,10 +231,12 @@ automatic_abilities:
     **An arc of electricity courses through the sea drake''s blood. The triggering
     creature takes 1d6 electricity damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - electricity
-  trigger: An adjacent creature deals piercing or slashing damage to the sea drake
+  trigger: An adjacent creature deals piercing or slashing damage to the sea drake;
 description: 'Long and slender, sea drakes have fins down the length of their backs
   and webbing between their talons, making them just as adapted for gliding through
   ocean waves as the skies above. More solitary than most drakes, they hunt and live
@@ -46,13 +252,12 @@ hp: 95
 hp_misc: null
 immunities:
 - electricity
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Draconic
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
@@ -75,133 +280,7 @@ melee:
   - reach 10 feet
 name: Sea Drake
 perception: 14
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The sea drake spews a ball of electricity that strikes a primary target
-    within 100 feet, dealing 7d6 electricity damage (DC 24 basic Reflex save). The
-    lightning then arcs to up to three secondary targets within 30 feet of the primary
-    target, striking the closest available targets first. The secondary bolts each
-    strike one secondary target and deal the same rolled damage value as the primary
-    bolt (DC 22 basic Reflex save). The sea drake can't use Ball Lightning Breath
-    again for 1d6 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ball Lightning Breath
-  range: null
-  raw_description: '**Ball Lightning Breath** [Two Actions]  (__arcane__, __electricity__,
-    __evocation__) The sea drake spews a ball of electricity that strikes a primary
-    target within 100 feet, dealing 7d6 electricity damage (DC 24 basic Reflex save).
-    The lightning then arcs to up to three secondary targets within 30 feet of the
-    primary target, striking the closest available targets first. The secondary bolts
-    each strike one secondary target and deal the same rolled damage value as the
-    primary bolt (DC 22 basic Reflex save). The sea drake can''t use Ball Lightning
-    Breath again for 1d6 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - electricity
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: "A sea drake's saliva carries a large quantity of salt, making its\
-    \ bite wounds even more painful. When a creature takes damage from a sea drake's\
-    \ jaws Strike, the creature must attempt a DC 24 Fortitude save; the creature\
-    \ is then temporarily immune to briny wound for 1 minute. \n\n**Critical Success\
-    \ **The creature is unaffected. \n\n**Success **The creature is __sickened 1__.\
-    \ \n\n**Failure **The creature is sickened 2. \n\n**Critical Failure **The creature\
-    \ is sickened 2 and slowed 1 as long as it's sickened."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Briny Wound
-  range: null
-  raw_description: "**Briny Wound** A sea drake's saliva carries a large quantity\
-    \ of salt, making its bite wounds even more painful. When a creature takes damage\
-    \ from a sea drake's jaws Strike, the creature must attempt a DC 24 Fortitude\
-    \ save; the creature is then temporarily immune to briny wound for 1 minute. \n\
-    \n**Critical Success **The creature is unaffected. \n\n**Success **The creature\
-    \ is __sickened 1__. \n\n**Failure **The creature is sickened 2. \n\n**Critical\
-    \ Failure **The creature is sickened 2 and slowed 1 as long as it's sickened."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The drake tries to capsize an adjacent aquatic vessel of its size or
-    smaller. The drake must succeed at an __Athletics__ check with a DC of 25 (reduced
-    by 5 for each size smaller the vessel is than the drake) or the pilot's __Sailing
-    Lore__ DC, whichever is higher.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Capsize
-  range: null
-  raw_description: '**Capsize**   (__attack__) The drake tries to capsize an adjacent
-    aquatic vessel of its size or smaller. The drake must succeed at an __Athletics__
-    check with a DC of 25 (reduced by 5 for each size smaller the vessel is than the
-    drake) or the pilot''s __Sailing Lore__ DC, whichever is higher.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The sea drake makes one jaws Strike and two tail Strikes in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The sea drake makes one jaws
-    Strike and two tail Strikes in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The sea drake Strides, __Flies__, or __Swims__ twice.
-  effects: null
-  failure: null
-  frequency: three times per day
-  full_description: null
-  generic_description: null
-  name: Speed Surge
-  range: null
-  raw_description: '**Speed Surge**   **Frequency **three times per day; **Effect
-    **The sea drake Strides, __Flies__, or __Swims__ twice.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -210,39 +289,36 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 101
+  page_start: '101'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 - amount: 50
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- NE
-- Large
 - Amphibious
 - Dragon
 - Water
-type: Creature
-weaknesses: null

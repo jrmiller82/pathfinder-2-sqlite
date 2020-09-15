@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 2
 ac: 15
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The wolf's Strikes deal 1d4 extra damage to creatures within reach
+    of at least two of the wolf's allies.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pack Attack
+  range: null
+  raw_description: '**Pack Attack** The wolf''s Strikes deal 1d4 extra damage to creatures
+    within reach of at least two of the wolf''s allies.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Wolves live and hunt in packs, which, contrary to popular belief, are
@@ -29,11 +51,8 @@ description: 'Wolves live and hunt in packs, which, contrary to popular belief, 
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 24
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -46,32 +65,7 @@ melee:
   traits: null
 name: Wolf
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The wolf's Strikes deal 1d4 extra damage to creatures within reach
-    of at least two of the wolf's allies.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pack Attack
-  range: null
-  raw_description: '**Pack Attack** The wolf''s Strikes deal 1d4 extra damage to creatures
-    within reach of at least two of the wolf''s allies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -80,36 +74,31 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 7
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 334
+  page_start: '334'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

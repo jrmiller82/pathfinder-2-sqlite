@@ -7,6 +7,79 @@ ability_mods:
   wis_mod: 7
 ac: 38
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the crucidaemon casts its innate __glyph of warding__ spell, it
+    can store any arcane or divine spell of an appropriate level in the glyph, even
+    if it can't otherwise cast the spell.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Daemonic Trap Making
+  range: null
+  raw_description: '**Daemonic Trap Making** (__divine__) When the crucidaemon casts
+    its innate __glyph of warding__ spell, it can store any arcane or divine spell
+    of an appropriate level in the glyph, even if it can''t otherwise cast the spell.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The crucidaemon makes two chained dagger Strikes against a single target.
+    These attacks count toward the crucidaemon's multiple attack penalty and its multiple
+    attack penalty doesn't increase until after both attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Flurry of Daggers
+  range: null
+  raw_description: '**Flurry of Daggers** [One Action]  The crucidaemon makes two
+    chained dagger Strikes against a single target. These attacks count toward the
+    crucidaemon''s multiple attack penalty and its multiple attack penalty doesn''t
+    increase until after both attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The crucidaemon summons a new chained dagger to replace a destroyed
+    one. A crucidaemon's daggers can't be disarmed, and they become non-magical when
+    severed from the daemon or upon the daemon's death.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Manifest Dagger
+  range: null
+  raw_description: '**Manifest Dagger** [One Action]  The crucidaemon summons a new
+    chained dagger to replace a destroyed one. A crucidaemon''s daggers can''t be
+    disarmed, and they become non-magical when severed from the daemon or upon the
+    daemon''s death.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
@@ -16,17 +89,19 @@ automatic_abilities:
     crucidaemon rolls a saving throw against a trap hazard, its degree of success
     is one better than it rolled.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Trap Dodger
   range: null
   raw_description: '**Trap Dodger** Crucidaemons are all but impossible to fool with
     traps. Whenever a crucidaemon rolls a saving throw against a trap hazard, its
     degree of success is one better than it rolled.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -57,22 +132,21 @@ hp: 225
 hp_misc: null
 immunities:
 - death effects
-items: null
 languages:
 - Abyssal
 - Draconic
 - Infernal
 - telepathy 100 feet
 level: 15
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d4+14
     type: piercing
   name: chained dagger
   plus_damage:
-  - formula: 2d6
-    type: persistent bleed
+  - formula: null
+    type: 2d6 persistent bleed
   to_hit: 30
   traits:
   - agile
@@ -82,78 +156,11 @@ melee:
   - versatile S
 name: Crucidaemon
 perception: 26
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the crucidaemon casts its innate __glyph of warding__ spell, it
-    can store any arcane or divine spell of an appropriate level in the glyph, even
-    if it can't otherwise cast the spell.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Daemonic Trap Making
-  range: null
-  raw_description: '**Daemonic Trap Making** (__divine__) When the crucidaemon casts
-    its innate __glyph of warding__ spell, it can store any arcane or divine spell
-    of an appropriate level in the glyph, even if it can''t otherwise cast the spell.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The crucidaemon makes two chained dagger Strikes against a single target.
-    These attacks count toward the crucidaemon's multiple attack penalty and its multiple
-    attack penalty doesn't increase until after both attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Flurry of Daggers
-  range: null
-  raw_description: '**Flurry of Daggers**   The crucidaemon makes two chained dagger
-    Strikes against a single target. These attacks count toward the crucidaemon''s
-    multiple attack penalty and its multiple attack penalty doesn''t increase until
-    after both attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The crucidaemon summons a new chained dagger to replace a destroyed
-    one. A crucidaemon's daggers can't be disarmed, and they become non-magical when
-    severed from the daemon or upon the daemon's death.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Manifest Dagger
-  range: null
-  raw_description: '**Manifest Dagger**   The crucidaemon summons a new chained dagger
-    to replace a destroyed one. A crucidaemon''s daggers can''t be disarmed, and they
-    become non-magical when severed from the daemon or upon the daemon''s death.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 26
   fort_misc: null
@@ -162,9 +169,7 @@ saves:
   ref_misc: null
   will: 26
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +26
 - darkvision
 - detect alignment (good only)
 - lifesense 30 feet
@@ -172,76 +177,69 @@ size: Medium
 skills:
 - bonus: 30
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 26
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 30
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 26
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 28
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 30
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 26
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: 'Pathfinder #149: Against the Scarlet Triad'
-  page_start: 85
+  page_start: '85'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
-- amount: 6
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>air walk</i></a>
+- amount: null
+  misc: null
+  type: air walk
 spell_lists:
-- dc: 32
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: 28
+  cantrips: null
+  constants:
+  - level: 2
     spells:
-    - frequency: x3
-      name: glyph of warding
-      requirement: null
-    - frequency: null
-      name: paralyze
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: death knell
-      requirement: null
-    - frequency: null
-      name: fear
-      requirement: null
-    - frequency: at will
-      name: invisibility
-      requirement: null
-    - frequency: at will
-      name: phantom pain
-      requirement: null
-  - heightened_level: 2
-    level: -1
-    spells:
-    - frequency: good only
+    - misc: good only
       name: detect alignment
-      requirement: null
-  to_hit: 28
+  dc: 32
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: x3
+      name: glyph of warding
+    - misc: null
+      name: paralyze
+  - level: 4
+    spells:
+    - misc: null
+      name: death knell
+    - misc: null
+      name: fear
+    - misc: at will
+      name: invisibility
+    - misc: at will
+      name: phantom pain
+  spells_source: Divine Innate Spells
 traits:
-- NE
-- Medium
 - Daemon
 - Fiend
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: good

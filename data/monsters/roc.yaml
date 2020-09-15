@@ -7,6 +7,74 @@ ability_mods:
   wis_mod: 1
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The roc Flies up to its Speed and makes two talon Strikes at any point
+    during that movement. Each Strike must target a different creature. Each attack
+    takes the normal multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Flying Strafe
+  range: null
+  raw_description: '**Flying Strafe** [Two Actions]  The roc Flies up to its Speed
+    and makes two talon Strikes at any point during that movement. Each Strike must
+    target a different creature. Each attack takes the normal multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A roc gains a +2 circumstance bonus to hit with its beak Strike if
+    the target is grabbed or restrained in its talon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Snack
+  range: null
+  raw_description: '**Snack** A roc gains a +2 circumstance bonus to hit with its
+    beak Strike if the target is grabbed or restrained in its talon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A roc can Fly at half Speed while it has a creature __grabbed__ or
+    __restrained__ in either or both of its talons, carrying that creature along with
+    it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Snatch
+  range: null
+  raw_description: '**Snatch** A roc can Fly at half Speed while it has a creature
+    __grabbed__ or __restrained__ in either or both of its talons, carrying that creature
+    along with it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +83,11 @@ automatic_abilities:
   description: null
   effect: The roc makes a wing Strike against the triggering creature. If the roc
     Pushes the creature, it disrupts the triggering move action.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wing Rebuff
   range: null
   raw_description: '**Wing Rebuff** [Reaction] **Trigger** A creature moves from beyond
@@ -27,6 +95,8 @@ automatic_abilities:
     The roc makes a wing Strike against the triggering creature. If the roc Pushes
     the creature, it disrupts the triggering move action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature moves from beyond the reach of the roc's wing to within the
@@ -68,11 +138,8 @@ description: 'Legendarily massive raptors capable of carrying off elephants as p
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 26'
 hp: 180
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
@@ -108,74 +175,7 @@ melee:
   - reach 30 feet
 name: Roc
 perception: 18
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The roc Flies up to its Speed and makes two talon Strikes at any point
-    during that movement. Each Strike must target a different creature. Each attack
-    takes the normal multiple attack penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Flying Strafe
-  range: null
-  raw_description: '**Flying Strafe** [Two Actions]  The roc Flies up to its Speed
-    and makes two talon Strikes at any point during that movement. Each Strike must
-    target a different creature. Each attack takes the normal multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A roc gains a +2 circumstance bonus to hit with its beak Strike if
-    the target is grabbed or restrained in its talon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Snack
-  range: null
-  raw_description: '**Snack** A roc gains a +2 circumstance bonus to hit with its
-    beak Strike if the target is grabbed or restrained in its talon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A roc can Fly at half Speed while it has a creature __grabbed__ or
-    __restrained__ in either or both of its talons, carrying that creature along with
-    it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Snatch
-  range: null
-  raw_description: '**Snatch** A roc can Fly at half Speed while it has a creature
-    __grabbed__ or __restrained__ in either or both of its talons, carrying that creature
-    along with it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 20
   fort_misc: null
@@ -184,31 +184,27 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - low-light vision
 size: Gargantuan
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 21
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 281
+  page_start: '281'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Gargantuan
 - Animal
-type: Creature
-weaknesses: null

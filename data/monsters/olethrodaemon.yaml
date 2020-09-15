@@ -7,25 +7,111 @@ ability_mods:
   wis_mod: 6
 ac: 44
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The daemon expels a shrieking black cloud of smoke from its mouth in
+    a 120-foot line or a 60-foot cone (or both a line and a cone in the same direction
+    if it spends 3 actions). Living creatures in the area take 24d6 negative damage
+    (DC 45 basic Reflex save). The olethrodaemon can't use Apocalypse Breath again
+    for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Apocalypse Breath
+  range: null
+  raw_description: '**Apocalypse Breath** [Three Actions] or   (__divine__, __negative__)
+    The daemon expels a shrieking black cloud of smoke from its mouth in a 120-foot
+    line or a 60-foot cone (or both a line and a cone in the same direction if it
+    spends 3 actions). Living creatures in the area take 24d6 negative damage (DC
+    45 basic Reflex save). The olethrodaemon can''t use Apocalypse Breath again for
+    1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - negative
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement **The olethrodaemon has a soul gem;'
+  effect: The olethrodaemon crushes the soul gem in one hand and regains the use of
+    Apocalypse Breath or any one of its innate spells.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Soul Crush
+  range: null
+  raw_description: '**Soul Crush** [Two Actions]  (__manipulate__) **Requirement **The
+    olethrodaemon has a soul gem; **Effect **The olethrodaemon crushes the soul gem
+    in one hand and regains the use of Apocalypse Breath or any one of its innate
+    spells.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Huge, 4d10+10 bludgeoning and __drained 2__, Rupture 43. An olethrodaemon
+    has numerous stomachs connected by labyrinthine digestive organs. Swallowed creatures
+    cannot __Escape__, but can attempt to cut their way out with a 1d6 roll. On a
+    roll of 1–3, the creature cuts into yet another stomach. On a roll of 4–6, the
+    creature manages to cut its way out of the olethrodaemon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**__Swallow Whole__** [One Action]  (__attack__) Huge, 4d10+10
+    bludgeoning and __drained 2__, Rupture 43. An olethrodaemon has numerous stomachs
+    connected by labyrinthine digestive organs. Swallowed creatures cannot __Escape__,
+    but can attempt to cut their way out with a 1d6 roll. On a roll of 1–3, the creature
+    cuts into yet another stomach. On a roll of 4–6, the creature manages to cut its
+    way out of the olethrodaemon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 60 feet. Any creature that begins its turn in the aura is __doomed
-    1__ for as long as it remains in the aura and for 1 hour thereafter.
+  description: Any creature that begins its turn in the aura is __doomed 1__ for as
+    long as it remains in the aura and for 1 hour thereafter.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Aura of Doom
-  range: null
+  range: 60 feet
   raw_description: '**Aura of Doom** (__aura__, __death__, __divine__) 60 feet. Any
     creature that begins its turn in the aura is __doomed 1__ for as long as it remains
     in the aura and for 1 hour thereafter.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -54,23 +140,25 @@ description: 'Even daemons fear the most massive and terrifying of their kind, o
 hp: 450
 hp_misc: null
 immunities:
-- death effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
 items:
-- soul gem
+- soul gem (4)
 languages:
 - Common
 - Daemonic
 - telepathy 100 feet
 level: 20
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d12+17
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: evil and Grab
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: Grab
   to_hit: 38
   traits:
   - evil
@@ -82,8 +170,10 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil and Grab
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: Grab
   to_hit: 38
   traits:
   - agile
@@ -92,98 +182,7 @@ melee:
   - reach 15 feet
 name: Olethrodaemon
 perception: 33
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: or [Three Actions]  (__divine__, __negative__) The daemon expels a
-    shrieking black cloud of smoke from its mouth in a 120-foot line or a 60-foot
-    cone. (or both a line and a cone in the same direction if it spends 3 actions).
-    Living creatures in the area take 24d6 negative damage (DC 45 basic Reflex save).
-    The olethrodaemon can't use Apocalypse Breath again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Apocalypse Breath
-  range: null
-  raw_description: '**Apocalypse Breath** [Two Actions] or   (__divine__, __negative__)
-    The daemon expels a shrieking black cloud of smoke from its mouth in a 120-foot
-    line or a 60-foot cone. (or both a line and a cone in the same direction if it
-    spends 3 actions). Living creatures in the area take 24d6 negative damage (DC
-    45 basic Reflex save). The olethrodaemon can''t use Apocalypse Breath again for
-    1d4 rounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The olethrodaemon has a soul gem
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Soul Crush
-  range: null
-  raw_description: '**Soul Crush** [Two Actions]  (__manipulate__) **Requirement **The
-    olethrodaemon has a soul gem; **Effect **The olethrodaemon crushes the soul gem
-    in one hand and regains the use of Apocalypse Breath or any one of its innate
-    spells.'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Huge, 4d10+10 bludgeoning and __drained 2__, Rupture 43. An olethrodaemon
-    has numerous stomachs connected by labyrinthine digestive organs. Swallowed creatures
-    cannot __Escape__, but can attempt to cut their way out with a 1d6 roll. On a
-    roll of 1-3, the creature cuts into yet another stomach. On a roll of 4-6, the
-    creature manages to cut its way out of the olethrodaemon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**__Swallow Whole__**   (__attack__) Huge, 4d10+10 bludgeoning
-    and __drained 2__, Rupture 43. An olethrodaemon has numerous stomachs connected
-    by labyrinthine digestive organs. Swallowed creatures cannot __Escape__, but can
-    attempt to cut their way out with a 1d6 roll. On a roll of 1-3, the creature cuts
-    into yet another stomach. On a roll of 4-6, the creature manages to cut its way
-    out of the olethrodaemon.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 20
-  type: good
-ritual_lists:
-- dc: 42
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 8
-    spells:
-    - frequency: 9th
-      name: control weather
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 35
   fort_misc: null
@@ -192,9 +191,7 @@ saves:
   ref_misc: null
   will: 34
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +33
 - darkvision
 - tremorsense (imprecise) 120 feet
 - true seeing
@@ -202,79 +199,82 @@ size: Gargantuan
 skills:
 - bonus: 40
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 38
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 34
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: Bestiary 2
-  page_start: 63
+  page_start: '63'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: burrow
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 42
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 10
+- attack_bonus: 34
+  cantrips: null
+  constants:
+  - level: 10
     spells:
-    - frequency: null
-      name: cataclysm
-      requirement: null
-    - frequency: null
-      name: massacre
-      requirement: null
-  - heightened_level: null
-    level: 9
-    spells:
-    - frequency: ×3
-      name: disintegrate
-      requirement: null
-    - frequency: null
-      name: disjunction
-      requirement: null
-    - frequency: null
-      name: wail of the banshee
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: good only, at will
-      name: detect alignment
-      requirement: null
-  - heightened_level: 10
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: 34
+  dc: 42
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: null
+      name: cataclysm
+    - misc: null
+      name: massacre
+  - level: 9
+    spells:
+    - misc: ×3
+      name: disintegrate
+    - misc: null
+      name: disjunction
+    - misc: null
+      name: wail of the banshee
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+  - level: 1
+    spells:
+    - misc: good only; at will
+      name: detect alignment
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 42
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: 9th
+      name: control weather
+  spells_source: Rituals
 traits:
-- NE
-- Gargantuan
 - Daemon
 - Fiend
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 20
+  misc: null
+  type: good

@@ -7,6 +7,57 @@ ability_mods:
   wis_mod: 3
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Grimstalker Sap
+  range: null
+  raw_description: '**Grimstalker Sap** (__poison__) **Saving Throw** DC 22 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage (1 round); **Stage
+    2** 1d6 poison damage and __clumsy 1__ (1 round), **Stage 3** 2d6 poison damage
+    and clumsy 2 (1 round)'
+  requirements: null
+  saving_throw: DC 22 Fortitude
+  stages:
+  - effect: 1d6 poison damage (1 round)
+  - effect: 1d6 poison damage and __clumsy 1__ (1 round),
+  - effect: 2d6 poison damage and clumsy 2 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A grimstalker can always find a path, almost as if foliage parts before
+    it. A grimstalker ignores difficult terrain caused by plants, such as bushes,
+    vines, and undergrowth. Even plants manipulated by magic don't impede its progress.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Woodland Stride
+  range: null
+  raw_description: '**Woodland Stride** A grimstalker can always find a path, almost
+    as if foliage parts before it. A grimstalker ignores difficult terrain caused
+    by plants, such as bushes, vines, and undergrowth. Even plants manipulated by
+    magic don''t impede its progress.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'These violently murderous fey have one purpose: to stealthily hunt down
@@ -27,7 +78,7 @@ description: 'These violently murderous fey have one purpose: to stealthily hunt
   stringing them up in the surrounding trees, a practice that often lures dangerous
   scavengers into their lands. Carnivorous and thorny plants are often found in wilds
   where grimstalkers dwell, filling roles that pets might in human society, though
-  grimstalkers tend to treat these "pets" poorly at best.
+  grimstalkers tend to treat these “pets” poorly at best.
 
 
 
@@ -57,13 +108,11 @@ description: 'These violently murderous fey have one purpose: to stealthily hunt
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 20'
 hp: 60
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Common
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
@@ -77,56 +126,7 @@ melee:
   - agile
 name: Grimstalker
 perception: 12
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 22 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison damage (1 round); **Stage 2** 1d6 poison damage and __clumsy 1__
-    (1 round), **Stage 3** 2d6 poison damage and clumsy 2 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Grimstalker Sap
-  range: null
-  raw_description: '**Grimstalker Sap** (__poison__) **Saving Throw** DC 22 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage (1 round); **Stage
-    2** 1d6 poison damage and __clumsy 1__ (1 round), **Stage 3** 2d6 poison damage
-    and clumsy 2 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A grimstalker can always find a path, almost as if foliage parts before
-    it. A grimstalker ignores difficult terrain caused by plants, such as bushes,
-    vines, and undergrowth. Even plants manipulated by magic don't impede its progress.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Woodland Stride
-  range: null
-  raw_description: '**Woodland Stride** A grimstalker can always find a path, almost
-    as if foliage parts before it. A grimstalker ignores difficult terrain caused
-    by plants, such as bushes, vines, and undergrowth. Even plants manipulated by
-    magic don''t impede its progress.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -142,88 +142,84 @@ sense_abilities:
   description: A grimstalker can __Hide__ in natural environments, even if it doesn't
     have cover.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Camouflage
   range: null
   raw_description: '**Camouflage** A grimstalker can __Hide__ in natural environments,
     even if it doesn''t have cover.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +12
 - low-light vision
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 11
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 13
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 12
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 137
+  page_start: '137'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 - amount: null
+  misc: null
   type: woodland stride
 spell_lists:
-- dc: 22
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+- attack_bonus: 14
+  cantrips:
+  - level: 3
     spells:
-    - frequency: null
-      name: earthbind
-      requirement: null
-    - frequency: null
-      name: wall of thorns
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: entangle
-      requirement: null
-    - frequency: null
-      name: pass without trace
-      requirement: null
-    - frequency: null
-      name: tree shape
-      requirement: null
-  - heightened_level: 3
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: tanglefoot
-      requirement: null
-  to_hit: 14
+  constants: null
+  dc: 22
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: earthbind
+    - misc: null
+      name: wall of thorns
+  - level: 2
+    spells:
+    - misc: null
+      name: entangle
+    - misc: null
+      name: pass without trace
+    - misc: null
+      name: tree shape
+  spells_source: Primal Innate Spells
 traits:
-- CE
-- Medium
 - Fey
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron

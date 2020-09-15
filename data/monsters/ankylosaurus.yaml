@@ -7,6 +7,50 @@ ability_mods:
   wis_mod: 2
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature struck by the anklyosaurus's tail must attempt a DC 24 Fortitude
+    save. On a failure, it's slowed 1 until the end of its next turn; on a critical
+    failure, it's stunned until the end of its next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Punishing Tail
+  range: null
+  raw_description: '**Punishing Tail** A creature struck by the anklyosaurus''s tail
+    must attempt a DC 24 Fortitude save. On a failure, it''s slowed 1 until the end
+    of its next turn; on a critical failure, it''s stunned until the end of its next
+    turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Medium or smaller, foot, DC 24
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Medium or smaller, foot, DC 24'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Squat, heavily armored quadrupeds, ankylosauruses are stubborn and irascible.
@@ -40,11 +84,8 @@ description: 'Squat, heavily armored quadrupeds, ankylosauruses are stubborn and
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 22'
 hp: 90
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -68,52 +109,7 @@ melee:
   - reach 10 feet
 name: Ankylosaurus
 perception: 12
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature struck by the anklyosaurus's tail must attempt a DC 24 Fortitude
-    save. On a failure, it's slowed 1 until the end of its next turn; on a critical
-    failure, it's stunned until the end of its next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Punishing Tail
-  range: null
-  raw_description: '**Punishing Tail** A creature struck by the anklyosaurus''s tail
-    must attempt a DC 24 Fortitude save. On a failure, it''s slowed 1 until the end
-    of its next turn; on a critical failure, it''s stunned until the end of its next
-    turn. '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Medium or smaller, foot, DC 24
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Medium or smaller, foot, DC 24'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -122,28 +118,23 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 17
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 97
+  page_start: '97'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
 - Dinosaur
-type: Creature
-weaknesses: null

@@ -7,6 +7,35 @@ ability_mods:
   wis_mod: 1
 ac: 15
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The __sickened__ and __unconscious__ conditions from filth fever don't
+    improve on their own until the disease is cured. **Saving Throw** DC 14 Fortitude;
+    **Stage 1** carrier with no ill effect (1d4 hours), **Stage 2** __sickened 1__
+    (1 day), **Stage 3** __sickened 1__ and __slowed 1__ (1 day), **Stage 4** __unconscious__
+    (1 day), **Stage 5** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Filth Fever
+  range: null
+  raw_description: '**Filth Fever** (__disease__) The __sickened__ and __unconscious__
+    conditions from filth fever don''t improve on their own until the disease is cured.
+    **Saving Throw** DC 14 Fortitude; **Stage 1** carrier with no ill effect (1d4
+    hours), **Stage 2** __sickened 1__ (1 day), **Stage 3** __sickened 1__ and __slowed
+    1__ (1 day), **Stage 4** __unconscious__ (1 day), **Stage 5** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Giant rats are enormous versions of the common vermin. They are typically
@@ -30,11 +59,8 @@ description: 'Giant rats are enormous versions of the common vermin. They are ty
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 13'
 hp: 8
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -49,39 +75,7 @@ melee:
   - finesse
 name: Giant Rat
 perception: 5
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The __sickened__ and __unconscious__ conditions from filth fever don't
-    improve on their own until the disease is cured. **Saving Throw** DC 14 Fortitude;
-    **Stage 1** carrier with no ill effect (1d4 hours), **Stage 2** __sickened 1__
-    (1 day), **Stage 3** __sickened 1__ and __slowed 1__ (1 day), **Stage 4** __unconscious__
-    (1 day), **Stage 5** dead
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Filth Fever
-  range: null
-  raw_description: '**Filth Fever** (__disease__) The __sickened__ and __unconscious__
-    conditions from filth fever don''t improve on their own until the disease is cured.
-    **Saving Throw** DC 14 Fortitude; **Stage 1** carrier with no ill effect (1d4
-    hours), **Stage 2** __sickened 1__ (1 day), **Stage 3** __sickened 1__ and __slowed
-    1__ (1 day), **Stage 4** __unconscious__ (1 day), **Stage 5** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -90,35 +84,31 @@ saves:
   ref_misc: null
   will: 3
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - low-light vision
 - scent (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 5
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 2
   misc: +4 to Climb or Swim
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 276
+  page_start: '276'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
-type: Creature
-weaknesses: null

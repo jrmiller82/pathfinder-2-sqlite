@@ -7,66 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
-alignment: CE
-automatic_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If an invidiak attempts to possess a creature and the creature rolls
-    a critical success on its saving throw to resist __possession__, or if an invidiak's
-    possession of a creature is ended prematurely, such as via a successful dispel
-    magic, the invidiak takes 6d6 mental damage and cannot use possession for 24 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Exorcism Vulnerability
-  range: null
-  raw_description: '**Exorcism Vulnerability** If an invidiak attempts to possess
-    a creature and the creature rolls a critical success on its saving throw to resist
-    __possession__, or if an invidiak''s possession of a creature is ended prematurely,
-    such as via a successful dispel magic, the invidiak takes 6d6 mental damage and
-    cannot use possession for 24 hours.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-description: "For most demons, possessing a creature requires a ritual, magic item,\
-  \ or condition, but for invidiaks, who lack a body, possession is akin to donning\
-  \ a suit of clothing. Known also as shadow demons, invidiaks are formed from envious\
-  \ mortal souls. \n\n\n\n**__Recall Knowledge - Fiend__ (__Religion__)**: DC 23"
-hp: 90
-hp_misc: null
-immunities:
-- disease
-- poison
-- precision
-items: null
-languages:
-- Abyssal
-- Common
-- telepathy 100 feet
-level: 7
-melee:
-- action_cost: One Action
-  damage:
-    formula: 2d8
-    type: cold
-  name: claw
-  plus_damage:
-  - formula: 2d6
-    type: evil
-  to_hit: 13
-  traits:
-  - agile
-  - evil
-  - finesse
-  - magical
-name: Invidiak
-perception: 15
-proactive_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -77,11 +18,11 @@ proactive_abilities:
     of possession increases to unlimited, and the effect lasts until dispelled or
     until the invidiak dismisses it.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Favored Host
   range: null
   raw_description: '**Favored Host** Each invidiak has a particular type of creature
@@ -91,6 +32,8 @@ proactive_abilities:
     host, the duration of possession increases to unlimited, and the effect lasts
     until dispelled or until the invidiak dismisses it.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -101,11 +44,11 @@ proactive_abilities:
     their movement in an area of dim light, they become hidden as long as they don't
     move and the lighting in the area they're in doesn't grow brighter than dim light.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shadow Blend
   range: null
   raw_description: '**Shadow Blend** [Two Actions]  (__divine__, __illusion__) The
@@ -113,6 +56,8 @@ proactive_abilities:
     in an area of dim light, they become hidden as long as they don''t move and the
     lighting in the area they''re in doesn''t grow brighter than dim light.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -123,40 +68,91 @@ proactive_abilities:
   critical_success: null
   description: An invidiak leaves no body behind when using __possession__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Unbodied Possession
   range: null
   raw_description: '**Unbodied Possession** An invidiak leaves no body behind when
     using __possession__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-ranged: null
-rarity: Common
+alignment: CE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If an invidiak attempts to possess a creature and the creature rolls
+    a critical success on its saving throw to resist __possession__, or if an invidiak's
+    possession of a creature is ended prematurely, such as via a successful dispel
+    magic, the invidiak takes 6d6 mental damage and cannot use possession for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Exorcism Vulnerability
+  range: null
+  raw_description: '**Exorcism Vulnerability** If an invidiak attempts to possess
+    a creature and the creature rolls a critical success on its saving throw to resist
+    __possession__, or if an invidiak''s possession of a creature is ended prematurely,
+    such as via a successful dispel magic, the invidiak takes 6d6 mental damage and
+    cannot use possession for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+description: 'For most demons, possessing a creature requires a ritual, magic item,
+  or condition, but for invidiaks, who lack a body, possession is akin to donning
+  a suit of clothing. Known also as shadow demons, invidiaks are formed from envious
+  mortal souls.
+
+
+
+
+  **__Recall Knowledge - Fiend__ (__Religion__)**: DC 23'
+hp: 90
+hp_misc: null
+immunities:
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- precision
+languages:
+- Abyssal
+- Common
+- telepathy 100 feet
+level: 7
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: null
+    type: 2d8 cold
+  name: claw
+  plus_damage:
+  - formula: null
+    type: 2d6 evil
+  to_hit: 13
+  traits:
+  - agile
+  - evil
+  - finesse
+  - magical
+name: Invidiak
+perception: 15
+ranged_attacks: null
 resistances:
 - amount: 5
-  type: all (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-ritual_lists:
-- dc: 26
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: abyssal pact
-      requirement: null
-  to_hit: null
+  type: all
 saves:
   fort: 15
   fort_misc: null
@@ -165,85 +161,86 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +15
 - darkvision
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 13
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 15
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 65
+  page_start: '65'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 26
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: range touch
-      name: possession
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: shadow blast
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: darkness
-      requirement: null
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: fear
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: telekinetic projectile
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: range touch
+      name: possession
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+    - misc: null
+      name: shadow blast
+  - level: 4
+    spells:
+    - misc: null
+      name: darkness
+    - misc: at will
+      name: dimension door
+  - level: 3
+    spells:
+    - misc: null
+      name: fear
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: abyssal pact
+  spells_source: Rituals
 traits:
-- CE
-- Medium
 - Demon
 - Fiend
 - Incorporeal
-type: Creature
 weaknesses:
+- amount: 272
+  misc: null
+  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=
 - amount: 5
-  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=272">cold iron</a>
-- amount: 5
+  misc: null
   type: good

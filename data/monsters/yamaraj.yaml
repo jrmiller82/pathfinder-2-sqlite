@@ -7,36 +7,218 @@ ability_mods:
   wis_mod: 7
 ac: 45
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The yamaraj breathes a blast of beetles in a 50-foot cone that deals
+    14d8 slashing damage and 4d8 __persistent slashing damage__ to creatures in the
+    area (DC 42 Reflex save). It can't use Breath Weapon again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__divine__, __evocation__) The
+    yamaraj breathes a blast of beetles in a 50-foot cone that deals 14d8 slashing
+    damage and 4d8 __persistent slashing damage__ to creatures in the area (DC 42
+    Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature takes no damage.
+  description: The creature takes no damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature takes no damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature takes half damage and is __sickened 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature takes half damage and is __sickened 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature takes half damage and is __sickened 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature takes full damage and is sickened 2.
+  effect: null
+  failure: The creature takes full damage and is sickened 2.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature takes full damage and is sickened 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature takes double damage and is sickened 3.
+  critical_success: null
+  description: The creature takes double damage and is sickened 3.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature takes double damage and is sickened
+    3.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A yamaraj's miracle spells are used only to pronounce judgment, typically
+    either to restore a dead or destroyed creature to life, bind a creature to the
+    __Boneyard__, or banish a creature from the Boneyard.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Final Judgment
+  range: null
+  raw_description: '**Final Judgment** A yamaraj''s miracle spells are used only to
+    pronounce judgment, typically either to restore a dead or destroyed creature to
+    life, bind a creature to the __Boneyard__, or banish a creature from the Boneyard.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A yamaraj's Strikes affect __incorporeal__ creatures with the effects
+    of a __ghost touch__ property rune and deal 3d6 negative damage to living creatures
+    and 3d6 positive damage to undead.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spirit Touch
+  range: null
+  raw_description: '**Spirit Touch** A yamaraj''s Strikes affect __incorporeal__ creatures
+    with the effects of a __ghost touch__ property rune and deal 3d6 negative damage
+    to living creatures and 3d6 positive damage to undead.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 10 rounds
+  name: Yamaraj Venom
+  range: null
+  raw_description: '**Yamaraj Venom** (__poison__) While a creature is __clumsy__
+    from this poison, it is __doomed__ with the same value; **Saving Throw** DC 42
+    Fortitude; **Maximum Duration** 10 rounds; **Stage 1** 3d8 poison damage and clumsy
+    1 (1 round); **Stage 2** 5d8 poison damage and clumsy 2 (1 round); **Stage 3**
+    7d8 poison damage and clumsy 3 (1 round)'
+  requirements: null
+  saving_throw: DC 42 Fortitude
+  stages:
+  - effect: 3d8 poison damage and clumsy 1 (1 round)
+  - effect: 5d8 poison damage and clumsy 2 (1 round)
+  - effect: 7d8 poison damage and clumsy 3 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 60 feet, DC 39
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 60 feet, DC 39 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 60 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 39
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -51,11 +233,11 @@ automatic_abilities:
     its breath weapon, the beetles crackle with electricity and deal 2d12 additional
     electricity damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Lightning Drinker
   range: null
   raw_description: '**Lightning Drinker** Whenever a yamaraj would take electricity
@@ -63,6 +245,8 @@ automatic_abilities:
     During that turn, if it uses its breath weapon, the beetles crackle with electricity
     and deal 2d12 additional electricity damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -82,10 +266,9 @@ description: 'The greatest judges among the psychopomps are the massive yamaraje
 hp: 375
 hp_misc: fast healing 20, lightning drinker
 immunities:
-- death effects
-- disease
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
 - electricity (see lightning drinker)
-items: null
 languages:
 - Abyssal
 - Celestial
@@ -94,7 +277,7 @@ languages:
 - telepathy 120 feet
 - tongues
 level: 20
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d8+18
@@ -102,7 +285,9 @@ melee:
   name: jaws
   plus_damage:
   - formula: null
-    type: Improved Grab and yamaraj venom and spirit touch
+    type: Improved Grab
+  - formula: null
+    type: yamaraj venom and spirit touch
   to_hit: 38
   traits:
   - magical
@@ -134,125 +319,15 @@ melee:
   - reach 20 feet
 name: Yamaraj
 perception: 37
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: The creature takes double damage and is sickened 3.
-  critical_success: The creature takes no damage.
-  description: "The yamaraj breathes a blast of beetles in a 50-foot cone that deals\
-    \ 14d8 slashing damage and 4d8 __persistent slashing damage__ to creatures in\
-    \ the area (DC 42 Reflex save). It can't use Breath Weapon again for 1d4 rounds.\
-    \ \n\n"
-  effect: null
-  effects: null
-  failure: The creature takes full damage and is sickened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: "**Breath Weapon** [Two Actions]  (__divine__, __evocation__) The\
-    \ yamaraj breathes a blast of beetles in a 50-foot cone that deals 14d8 slashing\
-    \ damage and 4d8 __persistent slashing damage__ to creatures in the area (DC 42\
-    \ Reflex save). It can't use Breath Weapon again for 1d4 rounds. \n\n**Critical\
-    \ Success** The creature takes no damage. \n\n**Success** The creature takes half\
-    \ damage and is __sickened 1__. \n\n**Failure** The creature takes full damage\
-    \ and is sickened 2. \n\n**Critical Failure** The creature takes double damage\
-    \ and is sickened 3."
-  requirements: null
-  success: The creature takes half damage and is sickened 1.
-  traits:
-  - divine
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A yamaraj's miracle spells are used only to pronounce judgment, typically
-    either to restore a dead or destroyed creature to life, bind a creature to the
-    __Boneyard__, or banish a creature from the Boneyard.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Final Judgment
-  range: null
-  raw_description: '**Final Judgment** A yamaraj''s miracle spells are used only to
-    pronounce judgment, typically either to restore a dead or destroyed creature to
-    life, bind a creature to the __Boneyard__, or banish a creature from the Boneyard.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A yamaraj's Strikes affect __incorporeal__ creatures with the effects
-    of a __ghost touch__ property rune and deal 3d6 negative damage to living creatures
-    and 3d6 positive damage to undead.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spirit Touch
-  range: null
-  raw_description: '**Spirit Touch** A yamaraj''s Strikes affect __incorporeal__ creatures
-    with the effects of a __ghost touch__ property rune and deal 3d6 negative damage
-    to living creatures and 3d6 positive damage to undead.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: While a creature is __clumsy__ from this poison, it is __doomed__ with
-    the same value; **Saving Throw** DC 42 Fortitude; **Maximum Duration** 10 rounds;
-    **Stage 1** 3d8 poison damage and clumsy 1 (1 round); **Stage 2** 5d8 poison damage
-    and clumsy 2 (1 round); **Stage 3** 7d8 poison damage and clumsy 3 (1 round)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Yamaraj Venom
-  range: null
-  raw_description: '**Yamaraj Venom** (__poison__) While a creature is __clumsy__
-    from this poison, it is __doomed__ with the same value; **Saving Throw** DC 42
-    Fortitude; **Maximum Duration** 10 rounds; **Stage 1** 3d8 poison damage and clumsy
-    1 (1 round); **Stage 2** 5d8 poison damage and clumsy 2 (1 round); **Stage 3**
-    7d8 poison damage and clumsy 3 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 20
+  misc: null
   type: negative
 - amount: 20
-  type: poison
-ritual_lists:
-- dc: 44
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: call spirit
-      requirement: null
-    - frequency: null
-      name: resurrect
-      requirement: null
-  to_hit: null
+  type: poison
 saves:
   fort: 33
   fort_misc: null
@@ -261,9 +336,7 @@ saves:
   ref_misc: null
   will: 35
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +37
 - darkvision
 - lifesense 240 feet
 - true seeing
@@ -271,110 +344,107 @@ size: Huge
 skills:
 - bonus: 33
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 36
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 40
   misc: null
-  name: 'Boneyard Lore '
+  name: Boneyard Lore
 - bonus: 34
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 34
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 36
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 40
   misc: null
-  name: 'Legal Lore '
+  name: Legal Lore
 - bonus: 38
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 38
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 38
   misc: null
-  name: 'Society '
-source:
+  name: Society
+sources:
 - abbr: Bestiary 2
-  page_start: 211
+  page_start: '211'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 - amount: 30
+  misc: null
   type: swim
 spell_lists:
-- dc: 44
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 10
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 10
     spells:
-    - frequency: null
-      name: miracle
-      requirement: null
-    - frequency: null
-      name: revival
-      requirement: null
-  - heightened_level: null
-    level: 9
-    spells:
-    - frequency: null
-      name: bind soul
-      requirement: null
-    - frequency: null
-      name: harm
-      requirement: null
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: wail of the banshee
-      requirement: null
-  - heightened_level: null
-    level: 8
-    spells:
-    - frequency: ×3
-      name: chain lightning
-      requirement: null
-    - frequency: ×3
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: spirit song
-      requirement: null
-    - frequency: null
-      name: wall of force
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-    - frequency: at will
-      name: mind probe
-      requirement: null
-  - heightened_level: 10
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 44
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: null
+      name: miracle
+    - misc: null
+      name: revival
+  - level: 9
+    spells:
+    - misc: null
+      name: bind soul
+    - misc: null
+      name: harm
+    - misc: null
+      name: heal
+    - misc: null
+      name: wail of the banshee
+  - level: 8
+    spells:
+    - misc: ×3
+      name: chain lightning
+    - misc: ×3
+      name: dispel magic
+    - misc: null
+      name: spirit song
+    - misc: null
+      name: wall of force
+  - level: 5
+    spells:
+    - misc: at will
+      name: dimension door
+    - misc: at will
+      name: mind probe
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 44
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: call spirit
+    - misc: null
+      name: resurrect
+  spells_source: Rituals
 traits:
-- Uncommon
-- N
-- Huge
 - Monitor
 - Psychopomp
-type: Creature
-weaknesses: null

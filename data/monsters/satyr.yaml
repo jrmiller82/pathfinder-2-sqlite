@@ -7,6 +7,63 @@ ability_mods:
   wis_mod: 2
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the satyr Plays the Pipes to cast a spell, he can Step or Stride
+    as part of the activity.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Fleet Performer
+  range: null
+  raw_description: '**Fleet Performer** When the satyr Plays the Pipes to cast a spell,
+    he can Step or Stride as part of the activity.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The satyr plays a melody on his instrument to cast __charm__, __fear__,
+    __sleep__, or __suggestion__ without expending the spell slot and using his music
+    in place of providing the spell's component actions. The spell gains the __auditory__
+    trait and targets all creatures in a 60-foot emanation instead of its usual targets.
+    A creature that succeeds at its Will save against any spell is then temporarily
+    immune from spells played from that satyr's pipes for 1 minute. Satyrs are immune
+    to this music.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Play the Pipes
+  range: null
+  raw_description: '**Play the Pipes** [Three Actions]  (__auditory__, __primal__)
+    **Requirements** The satyr is holding a musical instrument. **Effect** The satyr
+    plays a melody on his instrument to cast __charm__, __fear__, __sleep__, or __suggestion__
+    without expending the spell slot and using his music in place of providing the
+    spell''s component actions. The spell gains the __auditory__ trait and targets
+    all creatures in a 60-foot emanation instead of its usual targets. A creature
+    that succeeds at its Will save against any spell is then temporarily immune from
+    spells played from that satyr''s pipes for 1 minute. Satyrs are immune to this
+    music.'
+  requirements: The satyr is holding a musical instrument.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - primal
+  trigger: null
 alignment: CN
 automatic_abilities: null
 description: 'To a satyr, life is a party and everyone is invited. Notorious for their
@@ -48,7 +105,6 @@ description: 'To a satyr, life is a party and everyone is invited. Notorious for
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 19'
 hp: 80
 hp_misc: null
-immunities: null
 items:
 - dagger
 - panpipes
@@ -58,7 +114,7 @@ languages:
 - Common
 - Sylvan
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+6
@@ -72,54 +128,7 @@ melee:
   - versatile S
 name: Satyr
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the satyr Plays the Pipes to cast a spell, he can Step or Stride
-    as part of the activity.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fleet Performer
-  range: null
-  raw_description: '**Fleet Performer** When the satyr Plays the Pipes to cast a spell,
-    he can Step or Stride as part of the activity.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The satyr is holding a musical instrument.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Play the Pipes
-  range: null
-  raw_description: '**Play the Pipes** [Three Actions]  (__auditory__, __primal__)
-    **Requirements** The satyr is holding a musical instrument. **Effect** The satyr
-    plays a melody on his instrument to cast __charm__, __fear__, __sleep__, or __suggestion__
-    without expending the spell slot and using his music in place of providing the
-    spell''s component actions. The spell gains the __auditory__ trait and targets
-    all creatures in a 60-foot emanation instead of its usual targets. A creature
-    that succeeds at its Will save against any spell is then temporarily immune from
-    spells played from that satyr''s pipes for 1 minute. Satyrs are immune to this
-    music.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - primal
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -142,9 +151,6 @@ ranged:
   - agile
   - thrown 10 feet
   - versatile S
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -157,20 +163,17 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A satyr''s wineskin magically enchants any alcohol inside. With an
-    Interact action, a living creature can imbibe the alcohol and gain a +1 item bonus
-    to Will saves and a +3 item bonus to Will saves against fear effects for the following
-    hour. When the wineskin is removed from a satyr''s person, the magic remains only
+  description: A satyr's wineskin magically enchants any alcohol inside. With an Interact
+    action, a living creature can imbibe the alcohol and gain a +1 item bonus to Will
+    saves and a +3 item bonus to Will saves against fear effects for the following
+    hour. When the wineskin is removed from a satyr's person, the magic remains only
     until the wine spoils. The wineskin holds up to eight drafts of wine.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sylvan Wine
   range: null
   raw_description: '**Sylvan Wine** (__enchantment__, __mental__, __primal__) A satyr''s
@@ -178,11 +181,10 @@ sense_abilities:
     creature can imbibe the alcohol and gain a +1 item bonus to Will saves and a +3
     item bonus to Will saves against fear effects for the following hour. When the
     wineskin is removed from a satyr''s person, the magic remains only until the wine
-    spoils. The wineskin holds up to eight drafts of wine.
-
-
-    '
+    spoils. The wineskin holds up to eight drafts of wine.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - enchantment
@@ -190,85 +192,75 @@ sense_abilities:
   - primal
   trigger: null
 senses:
-- Perception +10
 - low-light vision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 13
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 11
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 9
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 13
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 11
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 284
+  page_start: '284'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 21
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: fear
-      requirement: null
-    - frequency: null
-      name: sleep
-      requirement: null
-    - frequency: null
-      name: suggestion
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-    - frequency: null
+    - misc: null
       name: inspire competence
-      requirement: null
-    - frequency: null
+    - misc: null
       name: inspire courage
-      requirement: null
-    - frequency: null
+    - misc: null
       name: triple time
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 21
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: fear
+    - misc: null
+      name: sleep
+    - misc: null
+      name: suggestion
+  spells_source: Primal Innate Spells
 traits:
-- CN
-- Medium
 - Fey
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron

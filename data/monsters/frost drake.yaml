@@ -7,6 +7,104 @@ ability_mods:
   wis_mod: 3
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The frost drake makes two Fangs Strikes and one Tail Strike in any
+    order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The frost drake makes two Fangs
+    Strikes and one Tail Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The frost drake spits a ball of liquid up to 60 feet that explodes
+    into a 20-foot __burst__ cloud of freezing mist. Those in the burst take 8d6 cold
+    damage (DC 25 basic Reflex save). The mist cakes all surfaces in the area with
+    a sheet of slippery ice that turns the area into __difficult terrain__ for 2d4
+    rounds. It can't use Freezing Mist Breath again for 1d6 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Freezing Mist Breath
+  range: null
+  raw_description: '**Freezing Mist Breath** [Two Actions]  (__arcane__, __cold__,
+    __evocation__) The frost drake spits a ball of liquid up to 60 feet that explodes
+    into a 20-foot __burst__ cloud of freezing mist. Those in the burst take 8d6 cold
+    damage (DC 25 basic Reflex save). The mist cakes all surfaces in the area with
+    a sheet of slippery ice that turns the area into __difficult terrain__ for 2d4
+    rounds. It can''t use Freezing Mist Breath again for 1d6 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - cold
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A frost drake can climb on ice as though it had the listed climb Speed.
+    It ignores __difficult terrain__ and __greater difficult terrain__ from ice and
+    snow and doesn't risk falling when crossing ice.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ice Climb
+  range: null
+  raw_description: '**Ice Climb** A frost drake can climb on ice as though it had
+    the listed climb Speed. It ignores __difficult terrain__ and __greater difficult
+    terrain__ from ice and snow and doesn''t risk falling when crossing ice.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The frost drake moves up to twice its Speed. It can do this three times
+    per day.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Speed Surge
+  range: null
+  raw_description: '**Speed Surge** [One Action]  (__move__) The frost drake moves
+    up to twice its Speed. It can do this three times per day.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +113,11 @@ automatic_abilities:
   description: null
   effect: The frost drake attempts to Strike with its tail. If the Strike hits, it
     deals an additional 1d6 damage.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Retaliatory Strike
   range: null
   raw_description: '**Retaliatory Strike** [Reaction] **Trigger** A creature within
@@ -27,6 +125,8 @@ automatic_abilities:
     **Effect** The frost drake attempts to Strike with its tail. If the Strike hits,
     it deals an additional 1d6 damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within reach of the frost drake's tail successfully damages
@@ -66,19 +166,18 @@ immunities:
 - cold
 - paralyzed
 - unconscious
-items: null
 languages:
 - Draconic
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+8
     type: piercing
   name: Fangs
   plus_damage:
-  - formula: 1d6
-    type: cold
+  - formula: null
+    type: 1d6 cold
   to_hit: 17
   traits: null
 - action_cost: One Action
@@ -92,102 +191,7 @@ melee:
   - reach 10 feet
 name: Frost Drake
 perception: 14
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The frost drake makes two Fangs Strikes and one Tail Strike in any
-    order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The frost drake makes two Fangs
-    Strikes and one Tail Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The frost drake spits a ball of liquid up to 60 feet that explodes
-    into a 20-foot __burst__ cloud of freezing mist. Those in the burst take 8d6 cold
-    damage (DC 25 basic Reflex save). The mist cakes all surfaces in the area with
-    a sheet of slippery ice that turns the area into __difficult terrain__ for 2d4
-    rounds. It can't use Freezing Mist Breath again for 1d6 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Freezing Mist Breath
-  range: null
-  raw_description: '**Freezing Mist Breath** [Two Actions]  (__arcane__, __cold__,
-    __evocation__) The frost drake spits a ball of liquid up to 60 feet that explodes
-    into a 20-foot __burst__ cloud of freezing mist. Those in the burst take 8d6 cold
-    damage (DC 25 basic Reflex save). The mist cakes all surfaces in the area with
-    a sheet of slippery ice that turns the area into __difficult terrain__ for 2d4
-    rounds. It can''t use Freezing Mist Breath again for 1d6 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - cold
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A frost drake can climb on ice as though it had the listed climb Speed.
-    It ignores __difficult terrain__ and __greater difficult terrain__ from ice and
-    snow and doesn't risk falling when crossing ice.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ice Climb
-  range: null
-  raw_description: '**Ice Climb** A frost drake can climb on ice as though it had
-    the listed climb Speed. It ignores __difficult terrain__ and __greater difficult
-    terrain__ from ice and snow and doesn''t risk falling when crossing ice.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The frost drake moves up to twice its Speed. It can do this three times
-    per day.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Speed Surge
-  range: null
-  raw_description: '**Speed Surge**   (__move__) The frost drake moves up to twice
-    its Speed. It can do this three times per day.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: fire
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -203,21 +207,22 @@ sense_abilities:
   description: Snow doesn't impair a frost drake's vision; it ignores concealment
     from snowfall.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Snow Vision
   range: null
   raw_description: '**Snow Vision** Snow doesn''t impair a frost drake''s vision;
     it ignores concealment from snowfall.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +14
 - darkvision
 - scent (imprecise) 30 feet
 - snow vision
@@ -225,34 +230,38 @@ size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 15
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 134
+  page_start: '134'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
-  type: burrow  (snow only)
+  misc: snow only
+  type: burrow
 - amount: 50
+  misc: null
   type: fly
 - amount: 20
+  misc: null
   type: ice climb
 spell_lists: null
 traits:
-- CE
-- Large
 - Cold
 - Dragon
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: fire

@@ -7,6 +7,61 @@ ability_mods:
   wis_mod: 4
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the sceaduinar damages a living creature with its jaws Strike,
+    the sceaduinar gains 5 temporary Hit Points and the creature must succeed at a
+    DC 25 Fortitude save or become __drained 1__. Further damage dealt to the creature
+    by the sceaduinar increases the drained value by 1 on a failed save, to a maximum
+    of drained 4.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drain Life
+  range: null
+  raw_description: '**Drain Life** (__necromancy__, __occult__) When the sceaduinar
+    damages a living creature with its jaws Strike, the sceaduinar gains 5 temporary
+    Hit Points and the creature must succeed at a DC 25 Fortitude save or become __drained
+    1__. Further damage dealt to the creature by the sceaduinar increases the drained
+    value by 1 on a failed save, to a maximum of drained 4.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - necromancy
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Negative damage dealt by a sceaduinar damages __undead__ and creatures
+    with negative healing as if it were positive damage. The sceaduinar's melee Strikes
+    have the benefits of the __ghost touch__ property rune on attacks against __incorporeal__
+    undead.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Entropic Touch
+  range: null
+  raw_description: '**Entropic Touch** Negative damage dealt by a sceaduinar damages
+    __undead__ and creatures with negative healing as if it were positive damage.
+    The sceaduinar''s melee Strikes have the benefits of the __ghost touch__ property
+    rune on attacks against __incorporeal__ undead.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
@@ -17,11 +72,11 @@ automatic_abilities:
     or that require knowledge of a creature's identity (such as __scrying__), and
     critically fails __Crafting__ checks.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Void Child
   range: null
   raw_description: '**Void Child** Sceaduinars have neither souls nor the ability
@@ -29,6 +84,8 @@ automatic_abilities:
     soul__ or __resurrect__) or that require knowledge of a creature''s identity (such
     as __scrying__), and critically fails __Crafting__ checks.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -39,11 +96,11 @@ automatic_abilities:
   effect: The sceaduinar flexes its wings to emit a brief pulse of negative energy
     that deals 4d6 negative damage to the triggering creature (DC 22 basic Reflex
     save).
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wing Flash
   range: null
   raw_description: '**Wing Flash [Reaction]** **Trigger** A creature attempts a melee
@@ -52,10 +109,12 @@ automatic_abilities:
     pulse of negative energy that deals 4d6 negative damage to the triggering creature
     (DC 22 basic Reflex save).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature attempts a melee attack against a sceaduinar or an __Acrobatics__
-    check to __Tumble Through__ the sceaduinar's space
+  trigger: A creature attempts a melee attack against a sceaduinar or an Acrobatics
+    check to Tumble Through the sceaduinar's space;
 description: 'Strange creatures born from jagged crystals in the heart of the __Negative
   Energy Plane__, sceaduinar are fueled by its negative energy and driven to extinguish
   all life. Resembling crystalline gargoyles with serrated limbs and sharp, bat-like
@@ -84,28 +143,26 @@ description: 'Strange creatures born from jagged crystals in the heart of the __
 
 
 
-  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 28
-
-
-  '
+  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 28'
 hp: 100
 hp_misc: negative healing
 immunities:
-- death effects
-- drained
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
 languages:
 - Aklo
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+4
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: negative and drain life
+  - formula: null
+    type: 2d6 negative
+  - formula: null
+    type: drain life
   to_hit: 18
   traits:
   - agile
@@ -117,8 +174,8 @@ melee:
     type: slashing
   name: wing
   plus_damage:
-  - formula: 2d6
-    type: negative
+  - formula: null
+    type: 2d6 negative
   to_hit: 18
   traits:
   - agile
@@ -127,65 +184,12 @@ melee:
   - reach 10 feet
 name: Sceaduinar
 perception: 15
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the sceaduinar damages a living creature with its jaws Strike,
-    the sceaduinar gains 5 temporary Hit Points and the creature must succeed at a
-    DC 25 Fortitude save or become __drained 1__. Further damage dealt to the creature
-    by the sceaduinar increases the drained value by 1 on a failed save, to a maximum
-    of drained 4.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drain Life
-  range: null
-  raw_description: '**Drain Life** (__necromancy__, __occult__) When the sceaduinar
-    damages a living creature with its jaws Strike, the sceaduinar gains 5 temporary
-    Hit Points and the creature must succeed at a DC 25 Fortitude save or become __drained
-    1__. Further damage dealt to the creature by the sceaduinar increases the drained
-    value by 1 on a failed save, to a maximum of drained 4.'
-  requirements: null
-  success: null
-  traits:
-  - necromancy
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Negative damage dealt by a sceaduinar damages __undead__ and creatures
-    with negative healing as if it were positive damage. The sceaduinar's melee Strikes
-    have the benefits of the __ghost touch__ property rune on attacks against __incorporeal__
-    undead.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Entropic Touch
-  range: null
-  raw_description: '**Entropic Touch** Negative damage dealt by a sceaduinar damages
-    __undead__ and creatures with negative healing as if it were positive damage.
-    The sceaduinar''s melee Strikes have the benefits of the __ghost touch__ property
-    rune on attacks against __incorporeal__ undead.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
-- amount: 10
-  type: good
 - amount: 5
-  type: Resistances physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 16
   fort_misc: null
@@ -194,84 +198,74 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +15
 - greater darkvision
 - lifesense 120 feet
 size: Medium
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 15
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 233
+  page_start: '233'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists:
-- dc: 25
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: darkness
-      requirement: null
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: harm
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: grim tendrils
-      requirement: null
-    - frequency: ×3
-      name: harm
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: silence
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 25
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: darkness
+    - misc: null
+      name: dimension door
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: harm
+  - level: 3
+    spells:
+    - misc: null
+      name: grim tendrils
+    - misc: ×3
+      name: harm
+  - level: 2
+    spells:
+    - misc: null
+      name: silence
+  spells_source: Occult Innate Spells
 traits:
-- Rare
-- NE
-- Medium
 - Aberration
 - Negative
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: good

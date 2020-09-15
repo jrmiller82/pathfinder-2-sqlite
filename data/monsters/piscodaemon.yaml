@@ -7,6 +7,74 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 2d10+6 bludgeoning, DC 30
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**Constrict** [One Action]  2d10+6 bludgeoning, DC 30'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The piscodaemon makes two claw Strikes against the same creature. If
+    both hit, the creature takes 2d10 __persistent bleed damage__ and is exposed to
+    piscovenom.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Gory Rend
+  range: null
+  raw_description: '**Gory Rend** [Two Actions]  The piscodaemon makes two claw Strikes
+    against the same creature. If both hit, the creature takes 2d10 __persistent bleed
+    damage__ and is exposed to piscovenom.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw **DC 30 Fortitude; **Maximum Duration **6 rounds; **Stage
+    1** 1d8 poison and __enfeebled 1__ (1 round); **Stage 2 **2d8 poison and enfeebled
+    1 (1 round); **Stage 3 **4d8 poison and enfeebled 2 (1 round)'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Piscovenom
+  range: null
+  raw_description: '**Piscovenom** (__poison__) **Saving Throw **DC 30 Fortitude;
+    **Maximum Duration **6 rounds; **Stage 1** 1d8 poison and __enfeebled 1__ (1 round);
+    **Stage 2 **2d8 poison and enfeebled 1 (1 round); **Stage 3 **4d8 poison and enfeebled
+    2 (1 round)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +86,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +101,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -43,11 +113,11 @@ automatic_abilities:
   description: null
   effect: The creature takes an additional 2d8 poison damage even if it succeeds at
     its save.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Enhance Venom
   range: null
   raw_description: '**Enhance Venom [Reaction]** (__divine__, __misfortune__, __necromancy__,
@@ -55,13 +125,15 @@ automatic_abilities:
     piscovenom; **Effect **The creature takes an additional 2d8 poison damage even
     if it succeeds at its save.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
   - misfortune
   - necromancy
   - poison
-  trigger: A creature within 30 feet attempts a saving throw against piscovenom
+  trigger: A creature within 30 feet attempts a saving throw against piscovenom;
 description: 'Scions of death by poisoning, piscodaemons are cruel even by daemonic
   standards, delighting in slow and painful suffering. To a piscodaemon, death is
   but the icing on a putrescent cake—its true pleasure comes from watching, hearing,
@@ -85,23 +157,24 @@ description: 'Scions of death by poisoning, piscodaemons are cruel even by daemo
 hp: 200
 hp_misc: null
 immunities:
-- death effects
-- poison
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 languages:
 - Common
 - Daemonic
 - telepathy 100 feet
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil and Grab
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: Grab
   to_hit: 23
   traits:
   - evil
@@ -112,8 +185,10 @@ melee:
     type: bludgeoning
   name: tentacle
   plus_damage:
-  - formula: 1d6
-    type: evil and piscovenom
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: piscovenom
   to_hit: 23
   traits:
   - agile
@@ -121,74 +196,7 @@ melee:
   - magical
 name: Piscodaemon
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 2d10+6 bludgeoning, DC 30
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**Constrict**   2d10+6 bludgeoning, DC 30'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The piscodaemon makes two claw Strikes against the same creature. If
-    both hit, the creature takes 2d10 __persistent bleed damage__ and is exposed to
-    piscovenom.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Gory Rend
-  range: null
-  raw_description: '**Gory Rend** [Two Actions]  The piscodaemon makes two claw Strikes
-    against the same creature. If both hit, the creature takes 2d10 __persistent bleed
-    damage__ and is exposed to piscovenom.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw **DC 30 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1** 1d8 poison and __enfeebled 1__ (1 round); **Stage 2 **2d8 poison and enfeebled
-    1 (1 round); **Stage 3 **4d8 poison and enfeebled 2 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Piscovenom
-  range: null
-  raw_description: '**Piscovenom** (__poison__) **Saving Throw **DC 30 Fortitude;
-    **Maximum Duration **6 rounds; **Stage 1** 1d8 poison and __enfeebled 1__ (1 round);
-    **Stage 2 **2d8 poison and enfeebled 1 (1 round); **Stage 3 **4d8 poison and enfeebled
-    2 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: good
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 22
   fort_misc: null
@@ -197,78 +205,71 @@ saves:
   ref_misc: null
   will: 19
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 - see invisibility
 size: Medium
 skills:
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 17
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 22
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 19
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 58
+  page_start: '58'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: swim
 spell_lists:
-- dc: 29
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 2
     spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-    - frequency: ×3
-      name: stinking cloud
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will, good only
-      name: detect alignment
-      requirement: null
-    - frequency: at will
-      name: detect poison
-      requirement: null
-  - heightened_level: 2
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: see invisibility
-      requirement: null
-  to_hit: null
+  dc: 29
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+    - misc: ×3
+      name: stinking cloud
+  - level: 1
+    spells:
+    - misc: at will; good only
+      name: detect alignment
+    - misc: at will
+      name: detect poison
+  spells_source: Divine Innate Spells
 traits:
-- NE
-- Medium
 - Amphibious
 - Daemon
 - Fiend
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: good

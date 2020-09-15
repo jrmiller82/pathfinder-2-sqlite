@@ -7,52 +7,138 @@ ability_mods:
   wis_mod: 0
 ac: 43
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: A guthallath releases two beams of destruction from its eyes. Each
+    beam is a 120-foot line. Everything in either line takes the effect of a hit from
+    a 10th-level __disintegrate__ spell (DC 41 Fortitude). There is no additional
+    effect on creatures in any area where the beams overlap. The guthallath can't
+    use this ability again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Annihilation Beams
+  range: null
+  raw_description: '**Annihilation Beams** [Two Actions]  A guthallath releases two
+    beams of destruction from its eyes. Each beam is a 120-foot line. Everything in
+    either line takes the effect of a hit from a 10th-level __disintegrate__ spell
+    (DC 41 Fortitude). There is no additional effect on creatures in any area where
+    the beams overlap. The guthallath can''t use this ability again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The guthallath throws the creature into the air, 100 feet high and 50 feet
+    away. If the flung creature lands on another creature, the creature it lands on
+    takes the same amount of bludgeoning damage. The creature being landed on can
+    attempt a DC 41 basic Reflex save.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deadly Throw
+  range: null
+  raw_description: '**Deadly Throw** [One Action]  **Requirements** The guthallath
+    has a creature grabbed. **Effect** The guthallath throws the creature into the
+    air, 100 feet high and 50 feet away. If the flung creature lands on another creature,
+    the creature it lands on takes the same amount of bludgeoning damage. The creature
+    being landed on can attempt a DC 41 basic Reflex save.'
+  requirements: The guthallath has a creature grabbed.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If a guthallath hits with an attack and rolls a natural 19 on the d20
+    roll, the attack is a critical hit. This has no effect if the 19 would be a failure.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Powerful Blows
+  range: null
+  raw_description: '**Powerful Blows** If a guthallath hits with an attack and rolls
+    a natural 19 on the d20 roll, the attack is a critical hit. This has no effect
+    if the 19 would be a failure.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Huge or smaller, foot, DC 45
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Huge or smaller, foot, DC 45'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 120 feet. The guthallath erodes away the physical integrity of all
-    around it. Creatures and objects in the emanation other than the guthallath have
-    their hardness and resistances reduced by 10. At the start of its turn, a creature
-    in the erosion aura's area takes 6d6 bludgeoning damage (basic Fortitude DC 39).
+  description: 'The guthallath erodes away the physical integrity of all around it.
+    Creatures and objects in the emanation other than the guthallath have their hardness
+    and resistances reduced by 10. At the start of its turn, a creature in the erosion
+    aura''s area takes 6d6 bludgeoning damage (basic Fortitude DC 39).
+
+
+    **Immunity to Magic** The guthallath is immune to spells of lower than 7th level
+    and the activated effects of magic items of lower than 14th level.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Erosion Aura
-  range: null
+  range: 120 feet
   raw_description: '**Erosion Aura** (__aura__, __primal__) 120 feet. The guthallath
     erodes away the physical integrity of all around it. Creatures and objects in
     the emanation other than the guthallath have their hardness and resistances reduced
     by 10. At the start of its turn, a creature in the erosion aura''s area takes
-    6d6 bludgeoning damage (basic Fortitude DC 39).'
+    6d6 bludgeoning damage (basic Fortitude DC 39).
+
+
+    **Immunity to Magic** The guthallath is immune to spells of lower than 7th level
+    and the activated effects of magic items of lower than 14th level.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
   - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The guthallath is immune to spells of lower than 7th level and the
-    activated effects of magic items of lower than 14th level.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Immunity to Magic
-  range: null
-  raw_description: '**Immunity to Magic** The guthallath is immune to spells of lower
-    than 7th level and the activated effects of magic items of lower than 14th level.'
-  requirements: null
-  success: null
-  traits: null
   trigger: null
 description: 'A guthallath is an enormous construct created long ago by some unknown
   empire, probably as a war machine. Nearly 100 feet tall, this massive stone statue
@@ -92,10 +178,8 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
-languages: null
 level: 19
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d12+18
@@ -124,96 +208,12 @@ melee:
   - reach 20 feet
 name: Guthallath
 perception: 30
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: A guthallath releases two beams of destruction from its eyes. Each
-    beam is a 120-foot line. Everything in either line takes the effect of a hit from
-    a 10th-level __disintegrate__ spell (DC 41 Fortitude). There is no additional
-    effect on creatures in any area where the beams overlap. The guthallath can't
-    use this ability again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Annihilation Beams
-  range: null
-  raw_description: '**Annihilation Beams** [Two Actions]  A guthallath releases two
-    beams of destruction from its eyes. Each beam is a 120-foot line. Everything in
-    either line takes the effect of a hit from a 10th-level __disintegrate__ spell
-    (DC 41 Fortitude). There is no additional effect on creatures in any area where
-    the beams overlap. The guthallath can''t use this ability again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The guthallath has a creature grabbed.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deadly Throw
-  range: null
-  raw_description: '**Deadly Throw**   **Requirements** The guthallath has a creature
-    grabbed. **Effect** The guthallath throws the creature into the air, 100 feet
-    high and 50 feet away. If the flung creature lands on another creature, the creature
-    it lands on takes the same amount of bludgeoning damage. The creature being landed
-    on can attempt a DC 41 basic Reflex save.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If a guthallath hits with an attack and rolls a natural 19 on the d20
-    roll, the attack is a critical hit. This has no effect if the 19 would be a failure.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Powerful Blows
-  range: null
-  raw_description: '**Powerful Blows** If a guthallath hits with an attack and rolls
-    a natural 19 on the d20 roll, the attack is a critical hit. This has no effect
-    if the 19 would be a failure.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Huge or smaller, foot, DC 45
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Huge or smaller, foot, DC 45'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 15
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 38
   fort_misc: null
@@ -222,50 +222,44 @@ saves:
   ref_misc: null
   will: 30
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +30
 - darkvision
 - true seeing
 size: Gargantuan
 skills:
 - bonus: 25
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 40
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 199
+  page_start: '199'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: burrow
 spell_lists:
-- dc: 37
-  misc: null
-  name: Innate Primal Spells
-  spell_groups:
-  - heightened_level: 8
-    level: -1
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 8
     spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: 3
-    level: -1
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: haste
-      requirement: null
-  to_hit: null
+  dc: 37
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Innate Primal Spells
 traits:
-- Rare
-- N
-- Gargantuan
 - Construct
-type: Creature
-weaknesses: null

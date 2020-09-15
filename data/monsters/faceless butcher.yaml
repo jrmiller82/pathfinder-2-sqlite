@@ -7,37 +7,135 @@ ability_mods:
   wis_mod: 3
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The faceless butcher can take on the exact form of any Small, Medium,
+    or Large humanoid whose face they carry in their bag of faces, changing their
+    shape and physical features to precisely match that of the victim whose face they
+    wear. This doesn't change the butcher's Speed or attack or damage bonuses with
+    their Strikes.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __occult__, __polymorph__,
+    __transmutation__) The faceless butcher can take on the exact form of any Small,
+    Medium, or Large humanoid whose face they carry in their bag of faces, changing
+    their shape and physical features to precisely match that of the victim whose
+    face they wear. This doesn''t change the butcher''s Speed or attack or damage
+    bonuses with their Strikes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - occult
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The faceless butcher attempts a cleaver Strike or an __Athletics__ check
+    against the creature's Fortitude DC. On a success, the faceless butcher deals
+    damage as if they had made a successful cleaver Strike against the creature and
+    removes the creature's face. On a critical success, the damage doubles and the
+    creature takes 4d6 __persistent bleed damage__. Once its face is removed, the
+    creature takes a permanent –4 status penalty to Charisma checks and Charisma-based
+    skill checks. This penalty can be removed only if the victim recovers its face
+    from the faceless butcher and has a __restoration__ spell cast on it.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Remove Face
+  range: null
+  raw_description: '**Remove Face** [Two Actions]  (__attack__) **Requirements** The
+    faceless butcher is within reach of a __dying__, __immobilized__, or __unconscious__
+    creature; **Effect** The faceless butcher attempts a cleaver Strike or an __Athletics__
+    check against the creature''s Fortitude DC. On a success, the faceless butcher
+    deals damage as if they had made a successful cleaver Strike against the creature
+    and removes the creature''s face. On a critical success, the damage doubles and
+    the creature takes 4d6 __persistent bleed damage__. Once its face is removed,
+    the creature takes a permanent –4 status penalty to Charisma checks and Charisma-based
+    skill checks. This penalty can be removed only if the victim recovers its face
+    from the faceless butcher and has a __restoration__ spell cast on it.'
+  requirements: The faceless butcher is within reach of a dying, immobilized, or unconscious
+    creature
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The faceless butcher Strides once and makes two cleaver Strikes against
+    the target. During the Stride, they gain a +10-foot circumstance bonus to their
+    Speed.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sudden Slices
+  range: null
+  raw_description: '**Sudden Slices** [Two Actions]  **Requirements** The faceless
+    butcher is __undetected__ by their target; **Effect** The faceless butcher Strides
+    once and makes two cleaver Strikes against the target. During the Stride, they
+    gain a +10-foot circumstance bonus to their Speed.'
+  requirements: The faceless butcher is undetected by their target
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 10 feet, DC 26. This aura is suppressed if the faceless butcher is
-    using Change Shape.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 10 feet, DC 26. This aura is suppressed
-    if the faceless butcher is using Change Shape. A creature that first enters the
-    area must attempt a Will save. Regardless of the result of the saving throw, the
-    creature is temporarily immune to this monster''s Frightful Presence for 1 minute.
+  range: 10 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 26
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -53,11 +151,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -68,6 +166,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -86,7 +186,6 @@ description: 'The deformed flesh on this humanoid horror''s head bears grim hole
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 30'
 hp: 175
 hp_misc: null
-immunities: null
 items:
 - bag of faces
 - cleaver
@@ -94,7 +193,7 @@ languages:
 - Common
 - one regional language (can't speak any language)
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+7
@@ -117,86 +216,7 @@ melee:
   - nonlethal
 name: Faceless Butcher
 perception: 21
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The faceless butcher can take on the exact form of any Small, Medium,
-    or Large humanoid whose face they carry in their bag of faces, changing their
-    shape and physical features to precisely match that of the victim whose face they
-    wear. This doesn't change the butcher's Speed or attack or damage bonuses with
-    their Strikes.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __occult__, __polymorph__,
-    __transmutation__) The faceless butcher can take on the exact form of any Small,
-    Medium, or Large humanoid whose face they carry in their bag of faces, changing
-    their shape and physical features to precisely match that of the victim whose
-    face they wear. This doesn''t change the butcher''s Speed or attack or damage
-    bonuses with their Strikes.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - occult
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The faceless butcher is within reach of a __dying__, __immobilized__, or
-    __unconscious__ creature
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Remove Face
-  range: null
-  raw_description: '**Remove Face** [Two Actions]  (__attack__) **Requirements** The
-    faceless butcher is within reach of a __dying__, __immobilized__, or __unconscious__
-    creature; **Effect** The faceless butcher attempts a cleaver Strike or an __Athletics__
-    check against the creature''s Fortitude DC. On a success, the faceless butcher
-    deals damage as if they had made a successful cleaver Strike against the creature
-    and removes the creature''s face. On a critical success, the damage doubles and
-    the creature takes 4d6 __persistent bleed damage__. Once its face is removed,
-    the creature takes a permanent -4 status penalty to Charisma checks and Charisma-based
-    skill checks. This penalty can be removed only if the victim recovers its face
-    from the faceless butcher and has a __restoration__ spell cast on it.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The faceless butcher is __undetected__ by their target
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sudden Slices
-  range: null
-  raw_description: '**Sudden Slices** [Two Actions]  **Requirements** The faceless
-    butcher is __undetected__ by their target; **Effect** The faceless butcher Strides
-    once and makes two cleaver Strikes against the target. During the Stride, they
-    gain a +10-foot circumstance bonus to their Speed.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+7
@@ -209,8 +229,8 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 8
+  misc: null
   type: bludgeoning
-ritual_lists: null
 saves:
   fort: 23
   fort_misc: null
@@ -223,61 +243,52 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'When using their Change Shape ability, the faceless butcher loses
-    their alignment aura and thus cannot be detected by spells such as __detect alignment__.
-
-
-    '
+  description: When using their Change Shape ability, the faceless butcher loses their
+    alignment aura and thus cannot be detected by spells such as __detect alignment__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Suppressed Alignment
   range: null
   raw_description: '**Suppressed Alignment** When using their Change Shape ability,
     the faceless butcher loses their alignment aura and thus cannot be detected by
-    spells such as __detect alignment__.
-
-
-    '
+    spells such as __detect alignment__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +21
 - darkvision
 size: Medium
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 24
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 24
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 24
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #154: Siege of the Dinosaurs'
-  page_start: 80
+  page_start: '80'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- NE
-- Medium
 - Humanoid
-type: Creature
-weaknesses: null

@@ -7,74 +7,25 @@ ability_mods:
   wis_mod: 5
 ac: 40
 ac_special: null
-alignment: CE
-automatic_abilities: null
-description: 'Wendigos are incarnations of the fears of starvation, loneliness, and
-  fatal exposure to cold weather. They haunt the frozen expanses of the world.
-
-
-
-
-  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 38'
-hp: 315
-hp_misc: regeneration 30 (deactivated by cold iron
-immunities:
-- cold
-- fear
-items: null
-languages:
-- Aklo
-- Common
-- Jotun
-- telepathy 1 mile
-level: 17
-melee:
-- action_cost: One Action
-  damage:
-    formula: 3d10+12
-    type: piercing
-  name: jaws
-  plus_damage:
-  - formula: 2d6
-    type: cold
-  to_hit: 33
-  traits:
-  - cold
-  - magical
-  - reach 10 feet
-- action_cost: One Action
-  damage:
-    formula: 3d8+12
-    type: slashing
-  name: claw
-  plus_damage:
-  - formula: 2d6
-    type: cold and Grab
-  to_hit: 33
-  traits:
-  - cold
-  - magical
-  - agile
-  - reach 10 feet
-name: Wendigo
-perception: 32
-proactive_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
   description: A target that fails its save against the wendigo's nightmare is exposed
     to wendigo torment.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Dream Haunting
   range: null
   raw_description: '**Dream Haunting** A target that fails its save against the wendigo''s
     nightmare is exposed to wendigo torment.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -91,11 +42,11 @@ proactive_abilities:
     1 in this way until 1 hour has passed or magic is used. Whether it succeeds or
     fails its save, a creature is then temporarily immune to that wendigo's Howl for
     24 hours.
-  effects: null
   failure: null
   frequency: Three times per day
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Howl
   range: null
   raw_description: '**Howl** [Three Actions]  (__auditory__, __concentrate__, __enchantment__,
@@ -110,6 +61,8 @@ proactive_abilities:
     it succeeds or fails its save, a creature is then temporarily immune to that wendigo''s
     Howl for 24 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - auditory
@@ -131,11 +84,11 @@ proactive_abilities:
     is exposed to wendigo torment. The target can attempt a new Will save each round
     to return to normal, though it immediately becomes corporeal and begins falling
     if it succeeds.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ride the Wind
   range: null
   raw_description: '**Ride the Wind** [Reaction]  (__air__, __concentrate__, __primal__,
@@ -148,6 +101,8 @@ proactive_abilities:
     a new Will save each round to return to normal, though it immediately becomes
     corporeal and begins falling if it succeeds.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - air
@@ -168,11 +123,11 @@ proactive_abilities:
     ritual can return the victim to life. The new wendigo remains even if the victim
     is resurrected.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wendigo Torment
   range: null
   raw_description: '**Wendigo Torment** (__curse__, __enchantment__, __mental__, __primal__)
@@ -185,6 +140,8 @@ proactive_abilities:
     over 2d6 minutes. Wish, similar magic, or a 9th-level resurrect ritual can return
     the victim to life. The new wendigo remains even if the victim is resurrected.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - curse
@@ -192,25 +149,60 @@ proactive_abilities:
   - mental
   - primal
   trigger: null
-ranged: null
+alignment: CE
+automatic_abilities: null
+description: 'Wendigos are incarnations of the fears of starvation, loneliness, and
+  fatal exposure to cold weather. They haunt the frozen expanses of the world.
+
+
+
+
+  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 38'
+hp: 315
+hp_misc: regeneration 30 (deactivated by cold iron)
+immunities:
+- cold
+- fear
+languages:
+- Aklo
+- Common
+- Jotun
+- telepathy 1 mile
+level: 17
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d10+12
+    type: piercing
+  name: jaws
+  plus_damage:
+  - formula: null
+    type: 2d6 cold
+  to_hit: 33
+  traits:
+  - cold
+  - magical
+  - reach 10 feet
+- action_cost: One Action
+  damage:
+    formula: 3d8+12
+    type: slashing
+  name: claw
+  plus_damage:
+  - formula: null
+    type: 2d6 cold
+  - formula: null
+    type: Grab
+  to_hit: 33
+  traits:
+  - cold
+  - magical
+  - agile
+  - reach 10 feet
+name: Wendigo
+perception: 32
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 10
-  type: cold iron
-- amount: 15
-  type: fire
-ritual_lists:
-- dc: 38
-  misc: null
-  name: Primal Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 8
-    spells:
-    - frequency: null
-      name: control weather
-      requirement: null
-  to_hit: null
 saves:
   fort: 32
   fort_misc: null
@@ -223,86 +215,101 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Heatsight is a precise sense that sees heat signatures.
+  description: ; Heatsight is a precise sense that sees heat signatures.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Heatsight
   range: null
   raw_description: '**Heatsight** (__divination__, __primal__); Heatsight is a precise
     sense that sees heat signatures.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
   - primal
   trigger: null
 senses:
-- Perception +32
 - darkvision
 - heatsight 60 feet
 size: Large
 skills:
 - bonus: 32
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 33
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 29
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 33
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 28
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 29
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 28
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 30
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 30
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 327
+  page_start: '327'
   page_stop: null
 speed:
 - amount: 100
+  misc: null
   type: fly
 spell_lists:
-- dc: 38
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 38
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+  spell_lists:
+  - level: 8
     spells:
-    - frequency: at will
+    - misc: at will
       name: wind walk
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: see dream haunting
+    - misc: see dream haunting
       name: nightmare
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: null
+      name: control weather
+  spells_source: Primal Rituals
 traits:
-- Uncommon
-- CE
-- Large
 - Beast
 - Cold
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold iron
+- amount: 15
+  misc: null
+  type: fire

@@ -7,48 +7,94 @@ ability_mods:
   wis_mod: 4
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** An enemy is under a fear effect or __dying__ within
+    15 feet of the will-o''-wisp.'
+  effect: The will-o'wisp feeds on the creature's terror. It regains 2d4 Hit Points,
+    and if it has Gone Dark, its glow reignites. A will-o'-wisp can take this action
+    only once per round.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Feed on Fear
+  range: null
+  raw_description: '**Feed on Fear** [One Action]  (__concentrate__) **Requirement**
+    An enemy is under a fear effect or __dying__ within 15 feet of the will-o''-wisp.
+    **Effect** The will-o''wisp feeds on the creature''s terror. It regains 2d4 Hit
+    Points, and if it has Gone Dark, its glow reignites. A will-o''-wisp can take
+    this action only once per round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The will-o'-wisp extinguishes its glow, becoming invisible. It can
+    end this effect with another use of this action. If it uses its shock attack while
+    invisible, the arc of electricity lets any observer determine its location, making
+    the will-o'-wisp only hidden to all observers until it moves.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Go Dark
+  range: null
+  raw_description: '**Go Dark** [One Action]  (__concentrate__) The will-o''-wisp
+    extinguishes its glow, becoming invisible. It can end this effect with another
+    use of this action. If it uses its shock attack while invisible, the arc of electricity
+    lets any observer determine its location, making the will-o''-wisp only hidden
+    to all observers until it moves.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. A will-o'-wisp is itself naturally invisible, but glows with
-    a colored light, casting bright light in the aura and making it visible.
+  description: 'A will-o''-wisp is itself naturally invisible, but glows with a colored
+    light, casting bright light in the aura and making it visible.
+
+
+    **Magic Immunity** A will-o''-wisp is immune to all spells except __faerie fire__,
+    __glitterdust__, __magic missile__, and __maze__.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Glow
-  range: null
+  range: 20 feet
   raw_description: '**Glow** (__aura__, __light__) 20 feet. A will-o''-wisp is itself
     naturally invisible, but glows with a colored light, casting bright light in the
-    aura and making it visible.'
+    aura and making it visible.
+
+
+    **Magic Immunity** A will-o''-wisp is immune to all spells except __faerie fire__,
+    __glitterdust__, __magic missile__, and __maze__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
   - light
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A will-o'-wisp is immune to all spells except __faerie fire__, __glitterdust__,
-    __magic missile__, and __maze__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Magic Immunity
-  range: null
-  raw_description: '**Magic Immunity** A will-o''-wisp is immune to all spells except
-    __faerie fire__, __glitterdust__, __magic missile__, and __maze__.'
-  requirements: null
-  success: null
-  traits: null
   trigger: null
 description: 'Malevolent balls of colored light, will-o''-wisps haunt lonely marshes
   and forests where they lure unsuspecting travelers into danger. Will-o''-wisps can
@@ -98,12 +144,11 @@ hp: 50
 hp_misc: null
 immunities:
 - magic
-items: null
 languages:
 - Aklo
 - Common
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+4
@@ -116,58 +161,7 @@ melee:
   - magical
 name: Will-o'-Wisp
 perception: 16
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: An enemy is under a fear effect or __dying__ within 15 feet of the will-o'-wisp.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Feed on Fear
-  range: null
-  raw_description: '**Feed on Fear**   (__concentrate__) **Requirement** An enemy
-    is under a fear effect or __dying__ within 15 feet of the will-o''-wisp. **Effect**
-    The will-o''wisp feeds on the creature''s terror. It regains 2d4 Hit Points, and
-    if it has Gone Dark, its glow reignites. A will-o''-wisp can take this action
-    only once per round.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The will-o'-wisp extinguishes its glow, becoming invisible. It can
-    end this effect with another use of this action. If it uses its shock attack while
-    invisible, the arc of electricity lets any observer determine its location, making
-    the will-o'-wisp only hidden to all observers until it moves.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Go Dark
-  range: null
-  raw_description: '**Go Dark**   (__concentrate__) The will-o''-wisp extinguishes
-    its glow, becoming invisible. It can end this effect with another use of this
-    action. If it uses its shock attack while invisible, the arc of electricity lets
-    any observer determine its location, making the will-o''-wisp only hidden to all
-    observers until it moves.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -176,36 +170,31 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 size: Small
 skills:
 - bonus: 18
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 12
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 12
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 16
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 333
+  page_start: '333'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- CE
-- Small
 - Aberration
 - Air
-type: Creature
-weaknesses: null

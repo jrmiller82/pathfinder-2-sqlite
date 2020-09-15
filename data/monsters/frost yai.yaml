@@ -7,6 +7,151 @@ ability_mods:
   wis_mod: 5
 ac: 34
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The frost yai takes on the appearance of a frost giant. This doesn't
+    change their Speed or Strike attack and damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**__Change Shape__** [One Action]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) The frost yai takes on the appearance of a frost
+    giant. This doesn''t change their Speed or Strike attack and damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ice yai makes two fist Strikes.
+  failure: null
+  frequency: once per round
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Double Punch
+  range: null
+  raw_description: '**Double Punch** [One Action]  **Frequency** once per round; **Effect**
+    The ice yai makes two fist Strikes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: On a critical hit with a fist Strike or a hit with an ice missile Strike,
+    the target creature must attempt a DC 33 Fortitude save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Frozen Strike
+  range: null
+  raw_description: '**Frozen Strike** On a critical hit with a fist Strike or a hit
+    with an ice missile Strike, the target creature must attempt a DC 33 Fortitude
+    save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is slowed 1 for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is slowed 1 for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is slowed 1 for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is slowed 2 for 1 round.
+  effect: null
+  failure: The creature is slowed 2 for 1 round.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is slowed 2 for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is slowed 3 for 1 round.
+  critical_success: null
+  description: The creature is slowed 3 for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is slowed 3 for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +163,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +178,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -45,11 +192,11 @@ automatic_abilities:
     bonus to AC against the triggering attack roll. If the attack misses, the ice
     yai redirects the attack to another creature within 20 feet of the yai. The attacker
     rerolls the attack roll against the new target.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Icy Deflection
   range: null
   raw_description: '**Icy Deflection [Reaction]** **Trigger** The ice yai is targeted
@@ -59,10 +206,12 @@ automatic_abilities:
     yai redirects the attack to another creature within 20 feet of the yai. The attacker
     rerolls the attack roll against the new target.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The ice yai is targeted by a ranged Strike or spell attack roll that doesn't
-    have the __fire__ trait
+    have the fire trait;
 description: 'Ice yai combine the brutality of __frost giants__ with the grace of
   martial artists. More than any other oni, ice yai delight not in the pleasures of
   the flesh, but in flesh itself—rather than indulging in oft-destructive mortal vices
@@ -79,23 +228,24 @@ description: 'Ice yai combine the brutality of __frost giants__ with the grace o
 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 31'
 hp: 230
-hp_misc: regeneration 15 (deactivated by acid or fire
+hp_misc: regeneration 15 (deactivated by acid or fire)
 immunities:
 - cold
-items: null
 languages:
 - Common
 - Jotun
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+16
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 2d6
-    type: cold and frozen strike
+  - formula: null
+    type: 2d6 cold
+  - formula: null
+    type: frozen strike
   to_hit: 27
   traits:
   - agile
@@ -104,72 +254,7 @@ melee:
   - reach 10 feet
 name: Frost Yai
 perception: 26
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The frost yai takes on the appearance of a frost giant. This doesn't
-    change their Speed or Strike attack and damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**__Change Shape__**   (__concentrate__, __polymorph__, __primal__,
-    __transmutation__) The frost yai takes on the appearance of a frost giant. This
-    doesn''t change their Speed or Strike attack and damage.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The ice yai makes two fist Strikes.
-  effects: null
-  failure: null
-  frequency: once per round
-  full_description: null
-  generic_description: null
-  name: Double Punch
-  range: null
-  raw_description: '**Double Punch**   **Frequency** once per round; **Effect** The
-    ice yai makes two fist Strikes.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is slowed 3 for 1 round.
-  critical_success: The creature is unaffected.
-  description: "On a critical hit with a fist Strike or a hit with an ice missile\
-    \ Strike, the target creature must attempt a DC 33 Fortitude save. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is slowed 2 for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Frozen Strike
-  range: null
-  raw_description: "**Frozen Strike** On a critical hit with a fist Strike or a hit\
-    \ with an ice missile Strike, the target creature must attempt a DC 33 Fortitude\
-    \ save. \n\n**Critical Success** The creature is unaffected. \n\n**Success** The\
-    \ creature is slowed 1 for 1 round. \n\n**Failure** The creature is slowed 2 for\
-    \ 1 round. \n\n**Critical Failure** The creature is slowed 3 for 1 round."
-  requirements: null
-  success: The creature is slowed 1 for 1 round.
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
@@ -182,11 +267,6 @@ ranged:
   - evil
   - magical
   - range increment 60 feet
-rarity: Common
-resistances:
-- amount: 15
-  type: fire
-ritual_lists: null
 saves:
   fort: 21
   fort_misc: null
@@ -195,91 +275,82 @@ saves:
   ref_misc: null
   will: 23
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +26
 - greater darkvision
 size: Large
 skills:
 - bonus: 24
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 23
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 27
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 27
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 24
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 26
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 189
+  page_start: '189'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 33
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 33
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+  spell_lists:
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: cone of cold
-      requirement: null
-    - frequency: null
+    - misc: null
       name: wall of ice
-      requirement: null
-  - heightened_level: null
-    level: 6
+  - level: 6
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: cone of cold
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: charm
-      requirement: null
-    - frequency: null
+    - misc: null
       name: darkness
-      requirement: null
-    - frequency: null
+    - misc: null
       name: gaseous form
-      requirement: null
-    - frequency: null
+    - misc: null
       name: solid fog
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will, self only
+    - misc: at will, self only
       name: invisibility
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- CE
-- Large
 - Cold
 - Fiend
 - Giant
 - Humanoid
 - Oni
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 15
+  misc: null
+  type: fire

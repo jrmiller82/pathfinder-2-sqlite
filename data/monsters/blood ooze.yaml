@@ -7,6 +7,35 @@ ability_mods:
   wis_mod: 0
 ac: 12
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The blood ooze draws forth blood from nearby creatures, causing their
+    flesh to break open and blood to spill out which replenishes the blood ooze. Each
+    living creature within 15 feet takes 3d6 slashing damage (DC 21 basic Fortitude
+    save). The blood ooze regains an amount of Hit Points equal to half the damage
+    Siphon Vitality dealt to the single creature that took the most damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Siphon Vitality
+  range: null
+  raw_description: '**Siphon Vitality** [Two Actions]  The blood ooze draws forth
+    blood from nearby creatures, causing their flesh to break open and blood to spill
+    out which replenishes the blood ooze. Each living creature within 15 feet takes
+    3d6 slashing damage (DC 21 basic Fortitude save). The blood ooze regains an amount
+    of Hit Points equal to half the damage Siphon Vitality dealt to the single creature
+    that took the most damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,17 +44,19 @@ automatic_abilities:
   description: null
   effect: The blood ooze forms a clot around the wound, reducing the damage taken
     by 5 (to a minimum of 0).
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Clot
   range: null
   raw_description: '**Clot** [Reaction] **Trigger** The blood ooze is damaged by a
     piercing or slashing attack. **Effect** The blood ooze forms a clot around the
     wound, reducing the damage taken by 5 (to a minimum of 0).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The blood ooze is damaged by a piercing or slashing attack.
@@ -35,17 +66,19 @@ automatic_abilities:
   description: Whenever a creature adjacent to a blood ooze takes bleed damage, the
     blood ooze regains an amount of Hit Points equal to the damage dealt.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Blood Pool
   range: null
   raw_description: '**Blood Pool** Whenever a creature adjacent to a blood ooze takes
     bleed damage, the blood ooze regains an amount of Hit Points equal to the damage
     dealt.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -92,54 +125,22 @@ immunities:
 - precision
 - unconscious
 - visual
-items: null
-languages: null
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+8
     type: bludgeoning
   name: pseudopod
   plus_damage:
-  - formula: 1d6
-    type: persistent bleed
+  - formula: null
+    type: 1d6 persistent bleed
   to_hit: 15
   traits:
   - reach 10 feet
 name: Blood Ooze
 perception: 8
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The blood ooze draws forth blood from nearby creatures, causing their
-    flesh to break open and blood to spill out which replenishes the blood ooze. Each
-    living creature within 15 feet takes 3d6 slashing damage (DC 21 basic Fortitude
-    save). The blood ooze regains an amount of Hit Points equal to half the damage
-    Siphon Vitality dealt to the single creature that took the most damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Siphon Vitality
-  range: null
-  raw_description: '**Siphon Vitality** [Two Actions]  The blood ooze draws forth
-    blood from nearby creatures, causing their flesh to break open and blood to spill
-    out which replenishes the blood ooze. Each living creature within 15 feet takes
-    3d6 slashing damage (DC 21 basic Fortitude save). The blood ooze regains an amount
-    of Hit Points equal to half the damage Siphon Vitality dealt to the single creature
-    that took the most damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 15
   fort_misc: null
@@ -155,45 +156,45 @@ sense_abilities:
   description: A blood ooze can seep into a corpse's wounds, displacing its natural
     blood. It can burst out of the corpse as a free action.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Infuse Corpse
   range: null
-  raw_description: '**Infuse Corpse**  A blood ooze can seep into a corpse''s wounds,
-    displacing its natural blood. It can burst out of the corpse as a free action.'
+  raw_description: '**Infuse Corpse** [One Action] A blood ooze can seep into a corpse''s
+    wounds, displacing its natural blood. It can burst out of the corpse as a free
+    action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +8
 - motion sense 60 feet
 - no vision
 size: Large
 skills:
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: +12 if hiding inside a dead body
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: The Fall of Plaguestone
-  page_start: 63
+  page_start: '63'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Large
 - Mindless
 - Ooze
-type: Creature
-weaknesses: null

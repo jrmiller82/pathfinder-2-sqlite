@@ -7,6 +7,100 @@ ability_mods:
   wis_mod: 2
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The giant slug can fit through tight spaces as if it were a Large creature.
+    While __Squeezing__, it can move at its full Speed. It can Squeeze through spaces
+    that typically fit only a Medium creature, but it does so at the usual Speed for
+    Squeezing.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Malleable
+  range: null
+  raw_description: '**Malleable** The giant slug can fit through tight spaces as if
+    it were a Large creature. While __Squeezing__, it can move at its full Speed.
+    It can Squeeze through spaces that typically fit only a Medium creature, but it
+    does so at the usual Speed for Squeezing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any creature hit by the giant slug or that moves into its mucus trail
+    is coated in sticky, caustic mucus. It takes 1d4 __persistent acid damage__ and
+    takes a –5-foot status penalty to its Speeds while the damage persists.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mucus
+  range: null
+  raw_description: '**Mucus** Any creature hit by the giant slug or that moves into
+    its mucus trail is coated in sticky, caustic mucus. It takes 1d4 __persistent
+    acid damage__ and takes a –5-foot status penalty to its Speeds while the damage
+    persists.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any square the giant slug moves into is coated in mucus. These spaces
+    are difficult terrain, and any creature that moves into one or ends its turn in
+    one is subjected to the slug's mucus. After an hour, the mucus dries and the area
+    is no longer difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mucus Trail
+  range: null
+  raw_description: '**Mucus Trail** Any square the giant slug moves into is coated
+    in mucus. These spaces are difficult terrain, and any creature that moves into
+    one or ends its turn in one is subjected to the slug''s mucus. After an hour,
+    the mucus dries and the area is no longer difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Large or smaller, foot, DC 27
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**__Trample__** [Three Actions]  Large or smaller, foot, DC 27'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These massive, primeval relatives of ordinary slugs squirm slowly through
@@ -43,11 +137,8 @@ description: 'These massive, primeval relatives of ordinary slugs squirm slowly 
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 24'
 hp: 165
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+10
@@ -72,111 +163,26 @@ melee:
   - reach 10 feet
 name: Giant Slug
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The giant slug can fit through tight spaces as if it were a Large creature.
-    While __Squeezing__, it can move at its full Speed. It can Squeeze through spaces
-    that typically fit only a Medium creature, but it does so at the usual Speed for
-    Squeezing.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Malleable
-  range: null
-  raw_description: '**Malleable** The giant slug can fit through tight spaces as if
-    it were a Large creature. While __Squeezing__, it can move at its full Speed.
-    It can Squeeze through spaces that typically fit only a Medium creature, but it
-    does so at the usual Speed for Squeezing.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any creature hit by the giant slug or that moves into its mucus trail
-    is coated in sticky, caustic mucus. It takes 1d4 __persistent acid damage__ and
-    takes a -5-foot status penalty to its Speeds while the damage persists.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mucus
-  range: null
-  raw_description: '**Mucus** Any creature hit by the giant slug or that moves into
-    its mucus trail is coated in sticky, caustic mucus. It takes 1d4 __persistent
-    acid damage__ and takes a -5-foot status penalty to its Speeds while the damage
-    persists.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any square the giant slug moves into is coated in mucus. These spaces
-    are difficult terrain, and any creature that moves into one or ends its turn in
-    one is subjected to the slug's mucus. After an hour, the mucus dries and the area
-    is no longer difficult terrain.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mucus Trail
-  range: null
-  raw_description: '**Mucus Trail** Any square the giant slug moves into is coated
-    in mucus. These spaces are difficult terrain, and any creature that moves into
-    one or ends its turn in one is subjected to the slug''s mucus. After an hour,
-    the mucus dries and the area is no longer difficult terrain.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Large or smaller, foot, DC 27
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**__Trample__** [Three Actions]  Large or smaller, foot, DC 27'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6
-    type: acid damage
+    formula: null
+    type: 3d6 acid damage
   name: disgorged mucus
   plus_damage:
   - formula: null
-    type: mucus and 1d6 acid splash damage
+    type: mucus
+  - formula: null
+    type: 1d6 acid splash damage
   to_hit: 17
   traits:
   - brutal
   - range increment 50 feet
   - splash
-rarity: Common
 resistances:
 - amount: 10
+  misc: null
   type: acid
-ritual_lists: null
 saves:
   fort: 21
   fort_misc: null
@@ -185,31 +191,29 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - no hearing
 - scent (imprecise) 60 feet
 size: Huge
 skills:
 - bonus: 19
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 244
+  page_start: '244'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: salt

@@ -7,6 +7,200 @@ ability_mods:
   wis_mod: 6
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: A non-evil target must succeed at a DC 32 Will save or become __confused__
+    for 1 round, or 1 minute on a critical failure. It is temporarily immune for 10
+    minutes.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Derghodaemon's Stare
+  range: null
+  raw_description: '**Derghodaemon''s Stare** [One Action]  (__divine__, __emotion__,
+    __enchantment__, __incapacitation__, __mental__, __visual__) A non-evil target
+    must succeed at a DC 32 Will save or become __confused__ for 1 round, or 1 minute
+    on a critical failure. It is temporarily immune for 10 minutes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - emotion
+  - enchantment
+  - incapacitation
+  - mental
+  - visual
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**__Rend__** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The derghodaemon makes up to five claw Strikes, each against a different
+    target. These attacks count toward the derghodaemon's multiple attack penalty,
+    but the penalty doesn't increase until after all the attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Savage Assault
+  range: null
+  raw_description: '**Savage Assault** [Two Actions]  The derghodaemon makes up to
+    five claw Strikes, each against a different target. These attacks count toward
+    the derghodaemon''s multiple attack penalty, but the penalty doesn''t increase
+    until after all the attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The derghodaemon spews a large swarm, making a swarm spit Strike against
+    up to two adjacent targets within range. Whether or not the targets are hit, each
+    must attempt a DC 31 Reflex save (at a –2 circumstance penalty if it was actually
+    hit by the swarm spit). __Persistent damage__ caused by the swarming infestation
+    ends as soon as the creature takes any amount of damage from an area effect. The
+    derghodaemon can't use this ability for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarming Infestation
+  range: null
+  raw_description: '**Swarming Infestation** [Two Actions]  The derghodaemon spews
+    a large swarm, making a swarm spit Strike against up to two adjacent targets within
+    range. Whether or not the targets are hit, each must attempt a DC 31 Reflex save
+    (at a –2 circumstance penalty if it was actually hit by the swarm spit). __Persistent
+    damage__ caused by the swarming infestation ends as soon as the creature takes
+    any amount of damage from an area effect. The derghodaemon can''t use this ability
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The swarm disperses as soon as it deals its swarm spit Strike
+    damage.
+  description: The swarm disperses as soon as it deals its swarm spit Strike damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The swarm disperses as soon as it deals its
+    swarm spit Strike damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The swarm clings to the target and infests it, dealing 1d6 persistent
+    piercing damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The swarm clings to the target and infests it, dealing
+    1d6 persistent piercing damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The swarm clings to the target and infests it, dealing 1d6 persistent piercing
+    damage.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The swarm clings to the target and infests it, dealing 2d6 persistent
+    piercing damage.
+  effect: null
+  failure: The swarm clings to the target and infests it, dealing 2d6 persistent piercing
+    damage.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The swarm clings to the target and infests it, dealing
+    2d6 persistent piercing damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but the hissing sounds caused by the infestation also
+    cause the target to become __confused__ for 1 round; this additional effect has
+    the __auditory__, __emotion__, and __mental__ traits.
+  critical_success: null
+  description: As failure, but the hissing sounds caused by the infestation also cause
+    the target to become __confused__ for 1 round; this additional effect has the
+    __auditory__, __emotion__, and __mental__ traits.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **As failure, but the hissing sounds caused
+    by the infestation also cause the target to become __confused__ for 1 round; this
+    additional effect has the __auditory__, __emotion__, and __mental__ traits.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'Derghodaemons represent death through unfathomable violence and being
@@ -39,24 +233,23 @@ description: 'Derghodaemons represent death through unfathomable violence and be
 hp: 240
 hp_misc: null
 immunities:
-- confusion
-- death effects
-- swarm attacks
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=5">confusion</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=239">swarm</a> attacks
 languages:
 - Common
 - Daemonic
 - telepathy 100 feet
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+10
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 25
   traits:
   - deadly 1d12
@@ -65,139 +258,20 @@ melee:
   - reach 10 feet
 name: Derghodaemon
 perception: 24
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: A non-evil target must succeed at a DC 32 Will save or become __confused__
-    for 1 round, or 1 minute on a critical failure. It is temporarily immune for 10
-    minutes.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Derghodaemon's Stare
-  range: null
-  raw_description: '**Derghodaemon''s Stare**   (__divine__, __emotion__, __enchantment__,
-    __incapacitation__, __mental__, __visual__) A non-evil target must succeed at
-    a DC 32 Will save or become __confused__ for 1 round, or 1 minute on a critical
-    failure. It is temporarily immune for 10 minutes.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - emotion
-  - enchantment
-  - incapacitation
-  - mental
-  - visual
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The derghodaemon makes up to five claw Strikes, each against a different
-    target. These attacks count toward the derghodaemon's multiple attack penalty,
-    but the penalty doesn't increase until after all the attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Savage Assault
-  range: null
-  raw_description: '**Savage Assault** [Two Actions]  The derghodaemon makes up to
-    five claw Strikes, each against a different target. These attacks count toward
-    the derghodaemon''s multiple attack penalty, but the penalty doesn''t increase
-    until after all the attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: "The derghodaemon spews a large swarm, making a swarm spit Strike against\
-    \ up to two adjacent targets within range. Whether or not the targets are hit,\
-    \ each must attempt a DC 31 Reflex save (at a -2 circumstance penalty if it was\
-    \ actually hit by the swarm spit). __Persistent damage__ caused by the swarming\
-    \ infestation ends as soon as the creature takes any amount of damage from an\
-    \ area effect. The derghodaemon can't use this ability for 1d4 rounds. \n\n**Critical\
-    \ Success **The swarm disperses as soon as it deals its swarm spit Strike damage.\
-    \ \n\n**Success **The swarm clings to the target and infests it, dealing 1d6 persistent\
-    \ piercing damage. \n\n**Failure **The swarm clings to the target and infests\
-    \ it, dealing 2d6 persistent piercing damage. \n\n**Critical Failure **As failure,\
-    \ but the hissing sounds caused by the infestation also cause the target to become\
-    \ __confused__ for 1 round; this additional effect has the __auditory__, __emotion__,\
-    \ and __mental__ traits."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swarming Infestation
-  range: null
-  raw_description: "**Swarming Infestation** [Two Actions]  The derghodaemon spews\
-    \ a large swarm, making a swarm spit Strike against up to two adjacent targets\
-    \ within range. Whether or not the targets are hit, each must attempt a DC 31\
-    \ Reflex save (at a -2 circumstance penalty if it was actually hit by the swarm\
-    \ spit). __Persistent damage__ caused by the swarming infestation ends as soon\
-    \ as the creature takes any amount of damage from an area effect. The derghodaemon\
-    \ can't use this ability for 1d4 rounds. \n\n**Critical Success **The swarm disperses\
-    \ as soon as it deals its swarm spit Strike damage. \n\n**Success **The swarm\
-    \ clings to the target and infests it, dealing 1d6 persistent piercing damage.\
-    \ \n\n**Failure **The swarm clings to the target and infests it, dealing 2d6 persistent\
-    \ piercing damage. \n\n**Critical Failure **As failure, but the hissing sounds\
-    \ caused by the infestation also cause the target to become __confused__ for 1\
-    \ round; this additional effect has the __auditory__, __emotion__, and __mental__\
-    \ traits."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+13
     type: piercing
   name: swarm spit
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 25
   traits:
   - evil
   - magical
   - range 60 feet
-rarity: Common
-resistances:
-- amount: 10
-  type: good
-ritual_lists: null
 saves:
   fort: 21
   fort_misc: null
@@ -206,69 +280,62 @@ saves:
   ref_misc: null
   will: 22
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +24
 - darkvision
 - scent (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 24
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 24
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 59
+  page_start: '59'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 32
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 32
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+  spell_lists:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: blade barrier
-      requirement: null
-    - frequency: ×3
+    - misc: ×3
       name: feeblemind
-      requirement: null
-  - heightened_level: null
-    level: 5
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: good only, at will
+    - misc: good only; at will
       name: detect alignment
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- NE
-- Large
 - Daemon
 - Fiend
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: good

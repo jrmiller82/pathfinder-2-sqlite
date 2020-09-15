@@ -1,0 +1,244 @@
+ability_mods:
+  cha_mod: 4
+  con_mod: 8
+  dex_mod: 6
+  int_mod: -1
+  str_mod: 9
+  wis_mod: 0
+ac: 42
+ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The creature takes 4d8+17 piercing damage.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Beak Crunch
+  range: null
+  raw_description: '**Beak Crunch** [One Action]  **Requirements** The deghuun has
+    a creature __grabbed__ with its tentacles; **Effect** The creature takes 4d8+17
+    piercing damage.'
+  requirements: The deghuun has a creature grabbed with its tentacles
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The deghuun vents caustic smog for 1d4 rounds. Any creature that ends
+    its turn within 30 feet of the deghuun during this time takes 6d6 fire damage
+    and is __sickened 1__ (DC 38 Fortitude save; the creature avoids the sickened
+    condition on a critical success, or is sickened 2 on a critical failure). While
+    sickened in this way, a creature takes a –2 status penalty to its saving throw
+    against the deghuun's __hallucination__. Any creature that's in the smog is __concealed__
+    and treats other creatures as concealed. Strong winds dissipate the smog.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sulfurous Plume
+  range: null
+  raw_description: '**Sulfurous Plume** [Two Actions]  (__fire__, __poison__) The
+    deghuun vents caustic smog for 1d4 rounds. Any creature that ends its turn within
+    30 feet of the deghuun during this time takes 6d6 fire damage and is __sickened
+    1__ (DC 38 Fortitude save; the creature avoids the sickened condition on a critical
+    success, or is sickened 2 on a critical failure). While sickened in this way,
+    a creature takes a –2 status penalty to its saving throw against the deghuun''s
+    __hallucination__. Any creature that''s in the smog is __concealed__ and treats
+    other creatures as concealed. Strong winds dissipate the smog.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fire
+  - poison
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The deghuun makes three tentacle Strikes, each against a different
+    creature within reach. These attacks count toward its multiple attack penalty
+    as normal.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tentacle Assault
+  range: null
+  raw_description: '**Tentacle Assault** [One Action]  The deghuun makes three tentacle
+    Strikes, each against a different creature within reach. These attacks count toward
+    its multiple attack penalty as normal.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: NE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Anytime a deghuun attempts a Will save against an __enchantment__ spell,
+    the spell's caster must attempt a DC 38 Will save or become __confused__ for up
+    to the spell's duration.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Unfathomable Aspect
+  range: null
+  raw_description: '**Unfathomable Aspect** Anytime a deghuun attempts a Will save
+    against an __enchantment__ spell, the spell''s caster must attempt a DC 38 Will
+    save or become __confused__ for up to the spell''s duration.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+description: 'Mhar, an ancient evil deity of caverns, mountains, and volcanoes, belongs
+  to the pantheon of the Great Old Ones—monstrous beings of alien intellect and unfathomable
+  power. The so-called children of Mhar (known as deghuuns in the chaotic tongues
+  of Mhar''s enraptured cultists) physically resemble blue-gray octopods made of stone,
+  mud, and molten iron. Venthole-like craters dot the surface of a deghuun''s body,
+  through which the creature can gaze out with a single golden eye that it can move
+  from crater to crater.
+
+
+
+
+  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 40'
+hp: 420
+hp_misc: null
+immunities:
+- fire
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+languages:
+- Aklo
+- telepathy 100 feet
+level: 18
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d10+17
+    type: bludgeoning
+  name: tentacle
+  plus_damage:
+  - formula: null
+    type: Grab
+  to_hit: 35
+  traits:
+  - agile
+  - reach 20 feet
+name: Children Of Mhar
+perception: 30
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 4d6+17
+    type: bludgeoning
+  name: lava ball
+  plus_damage:
+  - formula: null
+    type: 3d6 fire
+  to_hit: 34
+  traits:
+  - brutal
+  - range increment 60 feet
+rarity: Uncommon
+resistances:
+- amount: 10
+  misc: except <a style="text-decoration:underline" href="Equipment.aspx?ID=271">adamantine</a>
+  type: physical
+saves:
+  fort: 34
+  fort_misc: null
+  misc: null
+  ref: 30
+  ref_misc: null
+  will: 26
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The deghuun ignores the __concealed__ condition from smoke or smog,
+    including from Sulfurous Plume.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Smoke Vision
+  range: null
+  raw_description: '**Smoke Vision** The deghuun ignores the __concealed__ condition
+    from smoke or smog, including from Sulfurous Plume.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+senses:
+- greater darkvision
+- smoke vision
+size: Huge
+skills:
+- bonus: 37
+  misc: null
+  name: Athletics
+sources:
+- abbr: 'Pathfinder #156: The Apocalypse Prophet'
+  page_start: '78'
+  page_stop: null
+speed:
+- amount: 40
+  misc: null
+  type: Land
+- amount: 40
+  misc: null
+  type: climb
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: null
+      name: earthquake
+  - level: 6
+    spells:
+    - misc: ×3
+      name: earthbind
+    - misc: null
+      name: hallucination
+  spells_source: Divine Innate Spells
+traits:
+- Aberration
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold
+- amount: 10
+  misc: null
+  type: good

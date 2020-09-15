@@ -7,19 +7,62 @@ ability_mods:
   wis_mod: 0
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The drow rogue draws a weapon using the __Interact__ action, then Strikes
+    with that weapon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Draw
+  range: null
+  raw_description: '**Quick Draw** [One Action]  The drow rogue draws a weapon using
+    the __Interact__ action, then Strikes with that weapon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The drow rogue deals 1d6 extra __precision damage__ to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The drow rogue deals 1d6 extra __precision
+    damage__ to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: null
-  effect: The drow rogue is hit or critically hit by an attack made by a creature
-    the drow rogue can see.
-  effects: null
+  description: '**Requirement** A drow rogue can''t use this reaction while encumbered.'
+  effect: The drow rogue gains a +2 circumstance bonus to their Armor Class against
+    the triggering attack.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Nimble Dodge
   range: null
   raw_description: '**Nimble Dodge** [Reaction] **Requirement** A drow rogue can''t
@@ -28,9 +71,12 @@ automatic_abilities:
     rogue gains a +2 circumstance bonus to their Armor Class against the triggering
     attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A drow rogue can't use this reaction while encumbered.
+  trigger: The drow rogue is hit or critically hit by an attack made by a creature
+    the drow rogue can see.
 description: 'Loners at heart, drow rogues trust no one—least of all fellow slayers.
   These drow rely on awareness and adaptation to survive the cutthroat nature of their
   society.
@@ -52,7 +98,7 @@ languages:
 - Elven
 - Undercommon
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -66,8 +112,8 @@ melee:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: Hand Crossbow
   plus_damage:
   - formula: null
@@ -78,49 +124,7 @@ melee:
   - reload 1
 name: Drow Rogue
 perception: 6
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The drow rogue draws a weapon using the __Interact__ action, then Strikes
-    with that weapon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quick Draw
-  range: null
-  raw_description: '**Quick Draw**   The drow rogue draws a weapon using the __Interact__
-    action, then Strikes with that weapon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The drow rogue deals 1d6 extra __precision damage__ to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The drow rogue deals 1d6 extra __precision
-    damage__ to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -133,79 +137,69 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '
-
-
-    '
+  description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Light Blindness
   range: null
-  raw_description: '**Light Blindness**
-
-
-    '
+  raw_description: '**Light Blindness**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 4
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 10
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary
-  page_start: 137
+  page_start: '137'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists:
-- dc: 16
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-    - frequency: at will
-      name: faerie fire
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 16
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: at will
+      name: darkness
+    - misc: at will
+      name: faerie fire
+  spells_source: Divine Innate Spells
 traits:
-- CE
-- Medium
 - Drow
 - Elf
 - Humanoid
-type: Creature
-weaknesses: null

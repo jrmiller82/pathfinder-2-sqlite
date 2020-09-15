@@ -7,6 +7,60 @@ ability_mods:
   wis_mod: 5
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The elasmosaurus attempts an __Athletics__ check against a __grabbed__
+    foe's Fortitude DC. If the elasmosaurus succeeds, the foe is forcibly moved 5
+    feet toward the elasmosaurus's body. If the elasmosaurus critically succeeds,
+    the foe is moved 10 feet towards the elasmosaurus's body.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drag Below
+  range: null
+  raw_description: '**Drag Below** [One Action]  (__attack__) The elasmosaurus attempts
+    an __Athletics__ check against a __grabbed__ foe''s Fortitude DC. If the elasmosaurus
+    succeeds, the foe is forcibly moved 5 feet toward the elasmosaurus''s body. If
+    the elasmosaurus critically succeeds, the foe is moved 10 feet towards the elasmosaurus''s
+    body.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: A swimming elasmosaurus thrashes the area around it as it attempts
+    to flee. It makes two paddle Strikes, each of which must be against separate targets,
+    and each of which takes the normal multiple attack penalty. It then __Swims__
+    up to its swim Speed. This Swim does not trigger reactions based on movement.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Thrashing Retreat
+  range: null
+  raw_description: '**Thrashing Retreat** [Two Actions]  A swimming elasmosaurus thrashes
+    the area around it as it attempts to flee. It makes two paddle Strikes, each of
+    which must be against separate targets, and each of which takes the normal multiple
+    attack penalty. It then __Swims__ up to its swim Speed. This Swim does not trigger
+    reactions based on movement.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -18,11 +72,11 @@ automatic_abilities:
     gains __cover__ against attacks made against creatures who are above the water's
     surface while it is underwater, even if its head is above the surface.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Long Neck
   range: null
   raw_description: '**Long Neck** An elasmosaurus''s long neck allows it to interact
@@ -32,6 +86,8 @@ automatic_abilities:
     who are above the water''s surface while it is underwater, even if its head is
     above the surface.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -44,11 +100,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -59,6 +115,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -99,11 +157,8 @@ description: 'Elasmosauruses are long-necked, primeval reptiles that dwell in de
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 23'
 hp: 125
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+10
@@ -125,61 +180,7 @@ melee:
   traits: null
 name: Elasmosaurus
 perception: 16
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The elasmosaurus attempts an __Athletics__ check against a __grabbed__
-    foe's Fortitude DC. If the elasmosaurus succeeds, the foe is forcibly moved 5
-    feet toward the elasmosaurus's body. If the elasmosaurus critically succeeds,
-    the foe is moved 10 feet towards the elasmosaurus's body.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drag Below
-  range: null
-  raw_description: '**Drag Below**   (__attack__) The elasmosaurus attempts an __Athletics__
-    check against a __grabbed__ foe''s Fortitude DC. If the elasmosaurus succeeds,
-    the foe is forcibly moved 5 feet toward the elasmosaurus''s body. If the elasmosaurus
-    critically succeeds, the foe is moved 10 feet towards the elasmosaurus''s body.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: A swimming elasmosaurus thrashes the area around it as it attempts
-    to flee. It makes two paddle Strikes, each of which must be against separate targets,
-    and each of which takes the normal multiple attack penalty. It then __Swims__
-    up to its swim Speed. This Swim does not trigger reactions based on movement.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Thrashing Retreat
-  range: null
-  raw_description: '**Thrashing Retreat** [Two Actions]  A swimming elasmosaurus thrashes
-    the area around it as it attempts to flee. It makes two paddle Strikes, each of
-    which must be against separate targets, and each of which takes the normal multiple
-    attack penalty. It then __Swims__ up to its swim Speed. This Swim does not trigger
-    reactions based on movement.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -194,40 +195,39 @@ sense_abilities:
   critical_success: null
   description: The elasmosaurus can hold its breath for 2 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Deep Breath
   range: null
   raw_description: '**Deep Breath** The elasmosaurus can hold its breath for 2 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +16
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 17
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 105
+  page_start: '105'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
-type: Creature
-weaknesses: null

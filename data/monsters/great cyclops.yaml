@@ -7,6 +7,49 @@ ability_mods:
   wis_mod: 4
 ac: 32
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The great cyclops Strides twice and makes a horn Strike. If it moved
+    at least 20 feet away from its starting position, the Strike's damage is increased
+    to 3d10+20.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Powerful Charge
+  range: null
+  raw_description: '**Powerful Charge** [Two Actions]  The great cyclops Strides twice
+    and makes a horn Strike. If it moved at least 20 feet away from its starting position,
+    the Strike''s damage is increased to 3d10+20.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**Throw Rock** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -14,15 +57,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**Catch Rock** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -30,33 +75,31 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The monster avoids being knocked out and remains at 1 HP, but its wounded
-    value increases by 1. When it is wounded 3, it can no longer use this ability.
-  effects: null
+  effect: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ferocity
   range: null
-  raw_description: '**Ferocity** [Reaction] **Trigger** The monster is reduced to
-    0 HP. **Effect** The monster avoids being knocked out and remains at 1 HP, but
-    its wounded value increases by 1. When it is wounded 3, it can no longer use this
-    ability.'
+  raw_description: '**Ferocity** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The monster is reduced to 0 HP.
+  trigger: null
 - action_cost: Free Action
   critical_failure: null
   critical_success: null
   description: null
   effect: The attack becomes a critical success.
-  effects: null
   failure: null
   frequency: once per day, and recharges when the great cyclops uses Ferocity
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Flash of Brutality
   range: null
   raw_description: '**Flash of Brutality** [Free Action] (__divination__, __fortune__,
@@ -64,6 +107,8 @@ automatic_abilities:
     Ferocity; **Trigger** The great cyclops succeeds at an attack roll. **Effect**
     The attack becomes a critical success.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
@@ -100,7 +145,6 @@ description: 'Gigantic, dim-witted loners, the great cyclopes embody their lesse
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 32'
 hp: 235
 hp_misc: null
-immunities: null
 items:
 - greatclub
 - hide armor
@@ -109,7 +153,7 @@ languages:
 - Cyclops
 - Jotun
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+13
@@ -142,46 +186,7 @@ melee:
   - reach 15 feet
 name: Great Cyclops
 perception: 22
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The great cyclops Strides twice and makes a horn Strike. If it moved
-    at least 20 feet away from its starting position, the Strike's damage is increased
-    to 3d10+20.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Powerful Charge
-  range: null
-  raw_description: '**Powerful Charge** [Two Actions]  The great cyclops Strides twice
-    and makes a horn Strike. If it moved at least 20 feet away from its starting position,
-    the Strike''s damage is increased to 3d10+20.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**Throw Rock**  '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 4d6+7
@@ -193,10 +198,6 @@ ranged:
   - brutal
   - range increment 120 feet
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -205,35 +206,29 @@ saves:
   ref_misc: null
   will: 22
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - low-light vision
 size: Huge
 skills:
 - bonus: 18
   misc: null
-  name: 'any one Lore '
+  name: any one Lore
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 69
+  page_start: '69'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- CE
-- Huge
 - Giant
 - Humanoid
 - Mutant
-type: Creature
-weaknesses: null

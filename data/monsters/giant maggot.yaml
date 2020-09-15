@@ -7,6 +7,30 @@ ability_mods:
   wis_mod: 1
 ac: 13
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The giant maggot has __Grabbed__ a creature;'
+  effect: The giant maggot deals 1d8+2 slashing damage to the grabbed creature as
+    it chews the creature's flesh (DC 19 basic Reflex save).
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Gnaw Flesh
+  range: null
+  raw_description: '**Gnaw Flesh** [One Action]  **Requirement** The giant maggot
+    has __Grabbed__ a creature; **Effect** The giant maggot deals 1d8+2 slashing damage
+    to the grabbed creature as it chews the creature''s flesh (DC 19 basic Reflex
+    save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -17,11 +41,11 @@ automatic_abilities:
     5-foot emanation must succeed at a DC 16 Fortitude save or become __sickened 1__
     (or sickened 2 on a critical failure). The giant maggot can't use Regurgitation
     again until it spends at least an hour feeding on a corpse.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Regurgitation
   range: null
   raw_description: '**Regurgitation [Reaction]** **Trigger **The giant maggot takes
@@ -30,9 +54,11 @@ automatic_abilities:
     1__ (or sickened 2 on a critical failure). The giant maggot can''t use Regurgitation
     again until it spends at least an hour feeding on a corpse.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The giant maggot takes damage
+  trigger: The giant maggot takes damage;
 description: 'Giant flies lay their eggs on the bodies of larger monsters or livestock.
   When they hatch, these eggs release squirming maggots the size of human children,
   ravenous young who voraciously consume any flesh in the immediate vicinity—typically
@@ -44,11 +70,10 @@ description: 'Giant flies lay their eggs on the bodies of larger monsters or liv
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 14'
 hp: 18
 hp_misc: null
-immunities: null
-items: null
-languages: null
+immunities:
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+2
@@ -61,32 +86,7 @@ melee:
   traits: null
 name: Giant Maggot
 perception: 3
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The giant maggot has __Grabbed__ a creature
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Gnaw Flesh
-  range: null
-  raw_description: '**Gnaw Flesh**   **Requirement** The giant maggot has __Grabbed__
-    a creature; **Effect** The giant maggot deals 1d8+2 slashing damage to the grabbed
-    creature as it chews the creature''s flesh (DC 19 basic Reflex save).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -95,27 +95,22 @@ saves:
   ref_misc: null
   will: 3
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +3
 - no vision
 - tremorsense 30 feet
 size: Medium
 skills:
 - bonus: 4
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 120
+  page_start: '120'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

@@ -7,6 +7,75 @@ ability_mods:
   wis_mod: 2
 ac: 36
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: For each action spent to use this ability, the ankou creates one shadowy
+    duplicate of themself anywhere within 60 feet of themself. Shadow doubles have
+    the same statistics as an ankou, but they have the __summoned__ trait, have 84
+    Hit Points, can't use Shadow Doubles or innate spells, and have an attack bonus
+    of +25 for their Strikes. A shadow double that attempts a saving throw against
+    a __light__ effect can't get a result better than failure. Each double remains
+    for 1 round, until it's reduced to 0 Hit Points, or until it moves further than
+    120 feet from the ankou, whichever comes first. Each round thereafter, the ankou
+    can spend a single action that has the __concentrate__ trait to extend the duration
+    of surviving duplicates by 1 round, to a maximum duration of 1 minute. The ankou
+    can see through the eyes of all of the shadow doubles at once. A character who
+    __Seeks__ can identify an ankou as real or a shadow double with a successful DC
+    39 Perception check.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shadow Doubles
+  range: null
+  raw_description: '**Shadow Doubles** [Three Actions] to   (__illusion__, __occult__,
+    __shadow__) **Frequency **once per day; **Effect **For each action spent to use
+    this ability, the ankou creates one shadowy duplicate of themself anywhere within
+    60 feet of themself. Shadow doubles have the same statistics as an ankou, but
+    they have the __summoned__ trait, have 84 Hit Points, can''t use Shadow Doubles
+    or innate spells, and have an attack bonus of +25 for their Strikes. A shadow
+    double that attempts a saving throw against a __light__ effect can''t get a result
+    better than failure. Each double remains for 1 round, until it''s reduced to 0
+    Hit Points, or until it moves further than 120 feet from the ankou, whichever
+    comes first. Each round thereafter, the ankou can spend a single action that has
+    the __concentrate__ trait to extend the duration of surviving duplicates by 1
+    round, to a maximum duration of 1 minute. The ankou can see through the eyes of
+    all of the shadow doubles at once. A character who __Seeks__ can identify an ankou
+    as real or a shadow double with a successful DC 39 Perception check.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - illusion
+  - occult
+  - shadow
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An ankou's Strikes deal an additional 2d6 precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** An ankou''s Strikes deal an additional 2d6
+    precision damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'Ankous are shadowy killers who serve powerful fey creatures, or even
@@ -35,8 +104,6 @@ description: 'Ankous are shadowy killers who serve powerful fey creatures, or ev
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 32'
 hp: 280
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Common
@@ -44,7 +111,7 @@ languages:
 - (can't speak any languages)
 - telepathy 100 feet
 level: 14
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d6+15
@@ -61,80 +128,15 @@ melee:
     type: piercing
   name: wing
   plus_damage:
-  - formula: 2d6
-    type: persistent bleed
+  - formula: null
+    type: 2d6 persistent bleed
   to_hit: 29
   traits:
   - cold iron
   - reach 10 feet
 name: Ankou
 perception: 25
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: For each action spent to use this ability, the ankou creates one shadowy
-    duplicate of themself anywhere within 60 feet of themself. Shadow doubles have
-    the same statistics as an ankou, but they have the __summoned__ trait, have 84
-    Hit Points, can't use Shadow Doubles or innate spells, and have an attack bonus
-    of +25 for their Strikes. A shadow double that attempts a saving throw against
-    a __light__ effect can't get a result better than failure. Each double remains
-    for 1 round, until it's reduced to 0 Hit Points, or until it moves further than
-    120 feet from the ankou, whichever comes first. Each round thereafter, the ankou
-    can spend a single action that has the __concentrate__ trait to extend the duration
-    of surviving duplicates by 1 round, to a maximum duration of 1 minute. The ankou
-    can see through the eyes of all of the shadow doubles at once. A character who
-    __Seeks__ can identify an ankou as real or a shadow double with a successful DC
-    39 Perception check.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Shadow Doubles
-  range: null
-  raw_description: '**Shadow Doubles**  to   (__illusion__, __occult__, __shadow__)
-    **Frequency **once per day; **Effect **For each action spent to use this ability,
-    the ankou creates one shadowy duplicate of themself anywhere within 60 feet of
-    themself. Shadow doubles have the same statistics as an ankou, but they have the
-    __summoned__ trait, have 84 Hit Points, can''t use Shadow Doubles or innate spells,
-    and have an attack bonus of +25 for their Strikes. A shadow double that attempts
-    a saving throw against a __light__ effect can''t get a result better than failure.
-    Each double remains for 1 round, until it''s reduced to 0 Hit Points, or until
-    it moves further than 120 feet from the ankou, whichever comes first. Each round
-    thereafter, the ankou can spend a single action that has the __concentrate__ trait
-    to extend the duration of surviving duplicates by 1 round, to a maximum duration
-    of 1 minute. The ankou can see through the eyes of all of the shadow doubles at
-    once. A character who __Seeks__ can identify an ankou as real or a shadow double
-    with a successful DC 39 Perception check. '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An ankou's Strikes deal an additional 2d6 precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** An ankou''s Strikes deal an additional 2d6
-    precision damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 23
   fort_misc: null
@@ -143,88 +145,74 @@ saves:
   ref_misc: null
   will: 24
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +25
 - lifesense 120 feet
 - low-light vision
 size: Large
 skills:
 - bonus: 28
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 25
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 27
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 22
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 28
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 19
+  page_start: '19'
   page_stop: null
 speed:
 - amount: 75
+  misc: null
   type: fly
 spell_lists:
-- dc: 34
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+- attack_bonus: 26
+  cantrips: null
+  constants: null
+  dc: 34
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
     spells:
-    - frequency: null
+    - misc: null
       name: discern location
-      requirement: null
-  - heightened_level: null
-    level: 7
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: prismatic spray
-      requirement: null
-    - frequency: null
+    - misc: null
       name: teleport
-      requirement: null
-  - heightened_level: null
-    level: 6
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: darkness
-      requirement: null
-    - frequency: null
+    - misc: null
       name: dimensional anchor
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: silence
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: ray of enfeeblement
-      requirement: null
-  to_hit: 26
+  spells_source: Primal Innate Spells
 traits:
-- LE
-- Large
 - Fey
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: cold iron

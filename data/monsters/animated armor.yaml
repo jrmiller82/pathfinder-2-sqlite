@@ -7,7 +7,9 @@ ability_mods:
   wis_mod: 0
 ac: 17
 ac_special:
-- descr: 13 when broken
+- descr: 13 when broken)
+- descr: construct armor
+active_abilities: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -19,11 +21,11 @@ automatic_abilities:
     by a critical hit, its construct armor breaks and its Armor Class is reduced to
     13.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Construct Armor
   range: null
   raw_description: '**Construct Armor** Like normal objects, an animated armor has
@@ -32,6 +34,8 @@ automatic_abilities:
     or immediately upon being damaged by a critical hit, its construct armor breaks
     and its Armor Class is reduced to 13.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -60,10 +64,8 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -89,11 +91,7 @@ melee:
   - magical
 name: Animated Armor
 perception: 6
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -102,27 +100,22 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 9
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 20
+  page_start: '20'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Construct
 - Mindless
-type: Creature
-weaknesses: null

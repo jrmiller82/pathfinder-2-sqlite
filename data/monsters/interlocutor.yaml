@@ -7,12 +7,75 @@ ability_mods:
   wis_mod: 6
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The interlocutor stares at a creature they can see within 30 feet.
+    The creature must immediately attempt a Will save against Glimpse of Stolen Flesh.
+    In addition, if the creature was already __stunned__, on a failed save, it feels
+    its internal organs twist and writhe, and is __clumsy 2__ for 1 minute. After
+    attempting this save, the creature is then temporarily immune until the start
+    of the interlocutor's next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Focus Gaze
+  range: null
+  raw_description: '**Focus Gaze** [One Action]  (__concentrate__, __divine__, __enchantment__,
+    __fear__, __mental__, __visual__) The interlocutor stares at a creature they can
+    see within 30 feet. The creature must immediately attempt a Will save against
+    Glimpse of Stolen Flesh. In addition, if the creature was already __stunned__,
+    on a failed save, it feels its internal organs twist and writhe, and is __clumsy
+    2__ for 1 minute. After attempting this save, the creature is then temporarily
+    immune until the start of the interlocutor''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - enchantment
+  - fear
+  - mental
+  - visual
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: This functions as the __Rend__ ability, dealing claw damage. In addition,
+    if the target is a living creature with organs and muscle, the interlocutor opens
+    a precise wound. Until the creature is restored to its maximum Hit Points, thus
+    closing the wound, Strikes against the creature deal 1d6 extra precision damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Surgical Rend
+  range: null
+  raw_description: '**Surgical Rend** [One Action]  This functions as the __Rend__
+    ability, dealing claw damage. In addition, if the target is a living creature
+    with organs and muscle, the interlocutor opens a precise wound. Until the creature
+    is restored to its maximum Hit Points, thus closing the wound, Strikes against
+    the creature deal 1d6 extra precision damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '30 feet. When a
+  description: 'When a
 
 
     creature ends its turn in the aura, it sees pieces of its own body amid the interlocutor''s
@@ -20,13 +83,13 @@ automatic_abilities:
 
     form. The creature must succeed at a DC 29 Will save or become __stunned 1__.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Glimpse of Stolen Flesh
-  range: null
+  range: 30 feet
   raw_description: '**Glimpse of Stolen Flesh** (__aura__, __divine__, __enchantment__,
     __fear__, __mental__, __visual__) 30 feet. When a
 
@@ -36,6 +99,8 @@ automatic_abilities:
 
     form. The creature must succeed at a DC 29 Will save or become __stunned 1__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -54,11 +119,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -69,6 +134,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -87,24 +154,23 @@ description: 'Interlocutors are the most talented surgeon-sculptors of the velst
 
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 30'
 hp: 215
-hp_misc: regeneration 20 (deactivated by good or silver
+hp_misc: regeneration 20 (deactivated by good or silver)
 immunities:
 - cold
-items: null
 languages:
 - Common
 - Infernal
 - Shadowtongue
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+13
     type: slashing
   name: claw
   plus_damage:
-  - formula: 2d6
-    type: persistent bleed
+  - formula: null
+    type: 2d6 persistent bleed
   to_hit: 25
   traits:
   - deadly 2d10
@@ -113,73 +179,7 @@ melee:
   - reach 10 feet
 name: Interlocutor
 perception: 24
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The interlocutor stares at a creature they can see within 30 feet.
-    The creature must immediately attempt a Will save against Glimpse of Stolen Flesh.
-    In addition, if the creature was already __stunned__, on a failed save, it feels
-    its internal organs twist and writhe, and is __clumsy 2__ for 1 minute. After
-    attempting this save, the creature is then temporarily immune until the start
-    of the interlocutor's next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Focus Gaze
-  range: null
-  raw_description: '**Focus Gaze**   (__concentrate__, __divine__, __enchantment__,
-    __fear__, __mental__, __visual__) The interlocutor stares at a creature they can
-    see within 30 feet. The creature must immediately attempt a Will save against
-    Glimpse of Stolen Flesh. In addition, if the creature was already __stunned__,
-    on a failed save, it feels its internal organs twist and writhe, and is __clumsy
-    2__ for 1 minute. After attempting this save, the creature is then temporarily
-    immune until the start of the interlocutor''s next turn.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - enchantment
-  - fear
-  - mental
-  - visual
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: This functions as the __Rend__ ability, dealing claw damage. In addition,
-    if the target is a living creature with organs and muscle, the interlocutor opens
-    a precise wound. Until the creature is restored to its maximum Hit Points, thus
-    closing the wound, Strikes against the creature deal 1d6 extra precision damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Surgical Rend
-  range: null
-  raw_description: '**Surgical Rend**   This functions as the __Rend__ ability, dealing
-    claw damage. In addition, if the target is a living creature with organs and muscle,
-    the interlocutor opens a precise wound. Until the creature is restored to its
-    maximum Hit Points, thus closing the wound, Strikes against the creature deal
-    1d6 extra precision damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 15
-  type: good
-- amount: 15
-  type: silver
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 23
   fort_misc: null
@@ -196,94 +196,92 @@ sense_abilities:
     the __doomed__, __dying__, and __wounded__ conditions, as well as the value of
     those conditions.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Painsight
   range: null
   raw_description: '**Painsight** (divination, divine) A velstrac automatically knows
     whether a creature it sees has any of the __doomed__, __dying__, and __wounded__
     conditions, as well as the value of those conditions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
   - divine
   trigger: null
 senses:
-- Perception +24
 - greater darkvision
 - painsight
 size: Large
 skills:
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: +24 sculpting flesh
-  name: 'Crafting '
+  name: Crafting
 - bonus: 25
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 26
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 22
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 19
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 20
   misc: null
-  name: 'Torture Lore '
-source:
+  name: Torture Lore
+sources:
 - abbr: Bestiary 2
-  page_start: 285
+  page_start: '84'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists:
-- dc: 33
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips:
+  - level: 6
     spells:
-    - frequency: self only, to the Material Plane or <a style="text-decoration:underline"
-        href="Planes.aspx?ID=11">Shadow Plane</a> only
-      name: plane shift
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: breath of life
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: ×2
-      name: heal
-      requirement: null
-    - frequency: ×2
-      name: restoration
-      requirement: null
-  - heightened_level: 6
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: stabilize
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 33
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: self only; to the Material Plane or Shadow Plane only
+      name: plane shift
+  - level: 5
+    spells:
+    - misc: null
+      name: breath of life
+  - level: 4
+    spells:
+    - misc: ×2
+      name: heal
+    - misc: ×2
+      name: restoration
+  spells_source: Divine Innate Spells
 traits:
-- LE
-- Large
 - Fiend
 - Velstrac
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 15
+  misc: null
+  type: good
+- amount: 15
+  misc: null
+  type: silver

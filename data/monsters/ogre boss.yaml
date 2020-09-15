@@ -7,6 +7,55 @@ ability_mods:
   wis_mod: 1
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ogre boss issues a command to hasten their fellows. Each ogre ally
+    who hears and understands this command becomes quickened until the end of that
+    ally's next turn, but can use the extra action only to Step or Stride.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bellowing Command
+  range: null
+  raw_description: '**Bellowing Command** [One Action]  (__auditory__, __fear__, __linguistic__)
+    The ogre boss issues a command to hasten their fellows. Each ogre ally who hears
+    and understands this command becomes quickened until the end of that ally''s next
+    turn, but can use the extra action only to Step or Stride.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - fear
+  - linguistic
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ogre boss makes an ogre hook Strike against the creature they tripped.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sweeping Hook
+  range: null
+  raw_description: '**Sweeping Hook** [Reaction]  **Trigger** The ogre boss successfully
+    Trips a creature using an ogre hook. **Effect** The ogre boss makes an ogre hook
+    Strike against the creature they tripped.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The ogre boss successfully Trips a creature using an ogre hook.
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +67,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +82,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -51,7 +102,6 @@ description: 'In ogre society, might makes more than right—it makes the rules.
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 23'
 hp: 130
 hp_misc: null
-immunities: null
 items:
 - +1 ogre hook
 - breastplate
@@ -60,7 +110,7 @@ languages:
 - Common
 - Jotun
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+11
@@ -74,52 +124,7 @@ melee:
   - trip
 name: Ogre Boss
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The ogre boss issues a command to hasten their fellows. Each ogre ally
-    who hears and understands this command becomes quickened until the end of that
-    ally's next turn, but can use the extra action only to Step or Stride.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Bellowing Command
-  range: null
-  raw_description: '**Bellowing Command**   (__auditory__, __fear__, __linguistic__)
-    The ogre boss issues a command to hasten their fellows. Each ogre ally who hears
-    and understands this command becomes quickened until the end of that ally''s next
-    turn, but can use the extra action only to Step or Stride.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - fear
-  - linguistic
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The ogre boss makes an ogre hook Strike against the creature they tripped.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sweeping Hook
-  range: null
-  raw_description: '**Sweeping Hook** [Reaction]  **Trigger** The ogre boss successfully
-    Trips a creature using an ogre hook. **Effect** The ogre boss makes an ogre hook
-    Strike against the creature they tripped.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The ogre boss successfully Trips a creature using an ogre hook.
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+11
@@ -129,11 +134,6 @@ ranged:
   to_hit: 12
   traits:
   - thrown 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 17
   fort_misc: null
@@ -142,33 +142,28 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - darkvision
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 16
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 11
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 253
+  page_start: '253'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Large
 - Giant
 - Humanoid
-type: Creature
-weaknesses: null

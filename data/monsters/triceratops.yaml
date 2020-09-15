@@ -7,28 +7,93 @@ ability_mods:
   wis_mod: 2
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The triceratops Strides up to 10 feet and then makes a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Lumbering Charge
+  range: null
+  raw_description: '**Lumbering Charge** [One Action]  The triceratops Strides up
+    to 10 feet and then makes a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Large or smaller, foot, DC 26
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 26'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A triceratops deals 2d6 extra persistent bleed damage to prone targets
+    it hits with its horns.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Vicious Gore
+  range: null
+  raw_description: '**Vicious Gore** A triceratops deals 2d6 extra persistent bleed
+    damage to prone targets it hits with its horns.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: A creature must be mounted on the triceratops.
-  effects: null
+  effect: The triceratops intercepts the attack with its bony frill. The rider gains
+    a +2 circumstance bonus to its AC against the triggering attack.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Frill Defense
   range: null
   raw_description: '**Frill Defense** [Reaction] **Trigger** The rider is targeted
     with an attack. **Requirements** A creature must be mounted on the triceratops.
     **Effect** The triceratops intercepts the attack with its bony frill. The rider
     gains a +2 circumstance bonus to its AC against the triggering attack.'
-  requirements: null
+  requirements: A creature must be mounted on the triceratops.
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The rider is targeted with an attack.
+  trigger: The rider is targeted with an attack. Requirements A creature must be mounted
+    on the triceratops.
 description: 'Triceratopses are muscular quadrupeds with powerful but short legs,
   thick necks, and heads crowned by a wide, bony frill. Though they bear a large horn
   on their snout and one on each brow, these dinosaurs are herbivores and use these
@@ -53,11 +118,8 @@ description: 'Triceratopses are muscular quadrupeds with powerful but short legs
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 24'
 hp: 140
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
@@ -80,67 +142,7 @@ melee:
   - reach 10 feet
 name: Triceratops
 perception: 16
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The triceratops Strides up to 10 feet and then makes a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Lumbering Charge
-  range: null
-  raw_description: '**Lumbering Charge**   The triceratops Strides up to 10 feet and
-    then makes a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Large or smaller, foot, DC 26
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 26'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A triceratops deals 2d6 extra persistent bleed damage to prone targets
-    it hits with its horns.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Vicious Gore
-  range: null
-  raw_description: '**Vicious Gore** A triceratops deals 2d6 extra persistent bleed
-    damage to prone targets it hits with its horns.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 18
   fort_misc: null
@@ -149,28 +151,23 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 21
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 99
+  page_start: '99'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
 - Dinosaur
-type: Creature
-weaknesses: null

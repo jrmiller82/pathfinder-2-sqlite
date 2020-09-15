@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 3
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Drider Venom
+  range: null
+  raw_description: '**Drider Venom** (__poison__) **Saving Throw** DC 23 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d8 poison damage and __enfeebled 1__
+    (1 round)'
+  requirements: null
+  saving_throw: DC 23 Fortitude
+  stages:
+  - effect: 1d8 poison damage and __enfeebled 1__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature hit by a drider's web attack is __immobilized__ and stuck
+    to the nearest surface (Escape DC 21).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Web Trap
+  range: null
+  raw_description: '**Web Trap** A creature hit by a drider''s web attack is __immobilized__
+    and stuck to the nearest surface (Escape DC 21).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'The first fleshwarping process mastered by the drow remains both their
@@ -56,7 +101,7 @@ languages:
 - Elven
 - Undercommon
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+10
@@ -80,48 +125,7 @@ melee:
   traits: null
 name: Drider
 perception: 13
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 23 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d8 poison damage and __enfeebled 1__ (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drider Venom
-  range: null
-  raw_description: '**Drider Venom** (__poison__) **Saving Throw** DC 23 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d8 poison damage and __enfeebled 1__
-    (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature hit by a drider's web attack is __immobilized__ and stuck
-    to the nearest surface (Escape DC 21).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Web Trap
-  range: null
-  raw_description: '**Web Trap** A creature hit by a drider''s web attack is __immobilized__
-    and stuck to the nearest surface (Escape DC 21).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+8
@@ -137,15 +141,14 @@ ranged:
   - reload 0
   - volley 50 feet
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: web trap
   name: web
   plus_damage: null
   to_hit: 15
   traits:
   - range increment 30 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -154,125 +157,102 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 size: Large
 skills:
 - bonus: 14
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 12
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 13
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 15
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 159
+  page_start: '159'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists:
-- dc: 20
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 3
     spells:
-    - frequency: null
-      name: clairvoyance
-      requirement: null
-    - frequency: null
-      name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: clairaudience
-      requirement: null
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: levitate
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-    - frequency: at will
-      name: faerie fire
-      requirement: null
-  - heightened_level: 3
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-  to_hit: null
-- dc: 24
-  misc: ''
-  name: Arcane Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+  constants: null
+  dc: 20
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
-      name: fireball
-      requirement: null
-  - heightened_level: null
-    level: 2
+    - misc: null
+      name: clairvoyance
+    - misc: null
+      name: suggestion
+  - level: 3
     spells:
-    - frequency: null
-      name: acid arrow
-      requirement: null
-    - frequency: null
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
+    - misc: null
+      name: clairaudience
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: levitate
+  - level: 2
     spells:
-    - frequency: x2
-      name: magic missile
-      requirement: null
-    - frequency: null
-      name: ray of enfeeblement
-      requirement: null
-  - heightened_level: 3
-    level: 0
+    - misc: at will
+      name: darkness
+    - misc: at will
+      name: faerie fire
+  spells_source: Arcane Innate Spells
+- attack_bonus: 17
+  cantrips:
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ray of frost
-      requirement: null
-  to_hit: 17
+  constants: null
+  dc: 24
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: fireball
+  - level: 2
+    spells:
+    - misc: null
+      name: acid arrow
+    - misc: null
+      name: invisibility
+  - level: 1
+    spells:
+    - misc: x2
+      name: magic missile
+    - misc: null
+      name: ray of enfeeblement
+  spells_source: Arcane Prepared Spells
 traits:
-- CE
-- Large
 - Aberration
-type: Creature
-weaknesses: null

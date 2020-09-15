@@ -7,10 +7,44 @@ ability_mods:
   wis_mod: 5
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** Fortitude DC 25; **Stage 1** no ill effect (1 round);
+    **Stage 2** the victim''s skin softens, inflicting drained 1 (1 round); **Stage
+    3** the victim''s skin transforms into a clear, slimy membrane, inflicting drained
+    2 until the curse ends; every hour this membrane remains dry, the creature''s
+    drained condition increases by 1 (permanent). A __remove disease__ spell can counteract
+    this curse, but immunity to disease offers no protection against it.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Slime
+  range: null
+  raw_description: '**Slime** (__curse__, __occult__, __virulent__) **Saving Throw**
+    Fortitude DC 25; **Stage 1** no ill effect (1 round); **Stage 2** the victim''s
+    skin softens, inflicting drained 1 (1 round); **Stage 3** the victim''s skin transforms
+    into a clear, slimy membrane, inflicting drained 2 until the curse ends; every
+    hour this membrane remains dry, the creature''s drained condition increases by
+    1 (permanent). A __remove disease__ spell can counteract this curse, but immunity
+    to disease offers no protection against it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - occult
+  - virulent
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'Aboleths form the core of alghollthu society, and while they are the
-  "common folk" of their own societies, they see themselves as masters of all others.
+  “common folk” of their own societies, they see themselves as masters of all others.
   Unlike their leaders, who mask their actions using magical disguises, aboleths revel
   in their monstrous forms, appearing as primeval fish with tentacles. Masters of
   psychic manipulation, they are a species so ancient that they were present in the
@@ -25,8 +59,6 @@ description: 'Aboleths form the core of alghollthu society, and while they are t
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 25'
 hp: 135
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Alghollthu
@@ -34,7 +66,7 @@ languages:
 - Common
 - Undercommon
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+10
@@ -50,44 +82,8 @@ melee:
   - reach 15 feet
 name: Alghollthu Master
 perception: 17
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** Fortitude DC 25; **Stage 1** no ill effect (1 round);
-    **Stage 2** the victim''s skin softens, inflicting drained 1 (1 round); **Stage
-    3** the victim''s skin transforms into a clear, slimy membrane, inflicting drained
-    2 until the curse ends; every hour this membrane remains dry, the creature''s
-    drained condition increases by 1 (permanent). A __remove disease__ spell can counteract
-    this curse, but immunity to disease offers no protection against it.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Slime
-  range: null
-  raw_description: '**Slime** (__curse__, __occult__, __virulent__) **Saving Throw**
-    Fortitude DC 25; **Stage 1** no ill effect (1 round); **Stage 2** the victim''s
-    skin softens, inflicting drained 1 (1 round); **Stage 3** the victim''s skin transforms
-    into a clear, slimy membrane, inflicting drained 2 until the curse ends; every
-    hour this membrane remains dry, the creature''s drained condition increases by
-    1 (permanent). A __remove disease__ spell can counteract this curse, but immunity
-    to disease offers no protection against it.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - occult
-  - virulent
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 15
   fort_misc: null
@@ -100,104 +96,93 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 5 feet. While underwater, an aboleth exudes a cloud of transparent
-    slime. An air-breathing creature adjacent to an aboleth must succeed at a DC 25
-    Fortitude save each round or lose the ability to breathe air but gain the ability
-    to breathe water for 3 hours.
+  description: While underwater, an aboleth exudes a cloud of transparent slime. An
+    air-breathing creature adjacent to an aboleth must succeed at a DC 25 Fortitude
+    save each round or lose the ability to breathe air but gain the ability to breathe
+    water for 3 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Mucus Cloud
-  range: null
+  range: 5 feet
   raw_description: '**Mucus Cloud** (__aura__, __disease__) 5 feet. While underwater,
     an aboleth exudes a cloud of transparent slime. An air-breathing creature adjacent
     to an aboleth must succeed at a DC 25 Fortitude save each round or lose the ability
     to breathe air but gain the ability to breathe water for 3 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
   - disease
   trigger: null
 senses:
-- Perception +17
 - darkvision
 size: Huge
 skills:
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 15
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 14
   misc: any one subcategory
-  name: 'Lore '
+  name: Lore
 - bonus: 16
   misc: null
-  name: 'Occultism '
-source:
+  name: Occultism
+sources:
 - abbr: Bestiary
-  page_start: 14
+  page_start: '14'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: swim
 spell_lists:
-- dc: 25
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 25
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+  spell_lists:
+  - level: 7
     spells:
-    - frequency: at will
+    - misc: at will
       name: project image
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: veil
-      requirement: null
-  - heightened_level: null
-    level: 6
+  - level: 6
     spells:
-    - frequency: x3
+    - misc: x3
       name: dominate
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: illusory scene
-      requirement: null
-  - heightened_level: null
-    level: 5
+  - level: 5
     spells:
-    - frequency: at will
+    - misc: at will
       name: illusory object
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: hallucinatory terrain
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: at will
+    - misc: at will
       name: hypnotic pattern
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- LE
-- Huge
 - Aberration
 - Aquatic
-type: Creature
-weaknesses: null

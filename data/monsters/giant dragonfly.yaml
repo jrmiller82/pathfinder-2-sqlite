@@ -7,6 +7,80 @@ ability_mods:
   wis_mod: 3
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragonfly tries to transfer the grabbed creature to be clutched by its
+    legs. The giant dragonfly attempts an __Athletics__ check against the creature's
+    Reflex DC. On a success, it transfers the creature (which remains grabbed) to
+    its legs, freeing its mandibles to attack. The dragonfly can have only one creature
+    clutched at a time.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Clutch
+  range: null
+  raw_description: '**Clutch** [One Action]  **Requirements **The giant dragonfly
+    has a Medium or smaller creature __grabbed__ in its mandibles; **Effect **The
+    dragonfly tries to transfer the grabbed creature to be clutched by its legs. The
+    giant dragonfly attempts an __Athletics__ check against the creature''s Reflex
+    DC. On a success, it transfers the creature (which remains grabbed) to its legs,
+    freeing its mandibles to attack. The dragonfly can have only one creature clutched
+    at a time.'
+  requirements: The giant dragonfly has a Medium or smaller creature grabbed in its
+    mandibles
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The giant dragonfly can Fly at half Speed while it has a creature __grabbed__
+    or __restrained__ by Clutch, carrying that creature along with it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Snatch
+  range: null
+  raw_description: '**Snatch** The giant dragonfly can Fly at half Speed while it
+    has a creature __grabbed__ or __restrained__ by Clutch, carrying that creature
+    along with it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The giant dragonfly Flies up to its Speed and makes one mandible Strike
+    at any point during that movement.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swoop
+  range: null
+  raw_description: '**Swoop** [Two Actions]  The giant dragonfly Flies up to its Speed
+    and makes one mandible Strike at any point during that movement.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These buzzing insects are the size of a small horse. They are ambush
@@ -19,11 +93,8 @@ description: 'These buzzing insects are the size of a small horse. They are ambu
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 19'
 hp: 60
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+7
@@ -36,75 +107,7 @@ melee:
   traits: null
 name: Giant Dragonfly
 perception: 11
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The giant dragonfly has a Medium or smaller creature __grabbed__ in its
-    mandibles
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Clutch
-  range: null
-  raw_description: '**Clutch**   **Requirements **The giant dragonfly has a Medium
-    or smaller creature __grabbed__ in its mandibles; **Effect **The dragonfly tries
-    to transfer the grabbed creature to be clutched by its legs. The giant dragonfly
-    attempts an __Athletics__ check against the creature''s Reflex DC. On a success,
-    it transfers the creature (which remains grabbed) to its legs, freeing its mandibles
-    to attack. The dragonfly can have only one creature clutched at a time.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The giant dragonfly can Fly at half Speed while it has a creature __grabbed__
-    or __restrained__ by Clutch, carrying that creature along with it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Snatch
-  range: null
-  raw_description: '**Snatch** The giant dragonfly can Fly at half Speed while it
-    has a creature __grabbed__ or __restrained__ by Clutch, carrying that creature
-    along with it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The giant dragonfly Flies up to its Speed and makes one mandible Strike
-    at any point during that movement.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swoop
-  range: null
-  raw_description: '**Swoop** [Two Actions]  The giant dragonfly Flies up to its Speed
-    and makes one mandible Strike at any point during that movement.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 12
   fort_misc: null
@@ -113,35 +116,31 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 - wavesense (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 10
   misc: +12 to Maneuver in Flight
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 12
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 98
+  page_start: '98'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

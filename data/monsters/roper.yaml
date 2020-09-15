@@ -7,6 +7,119 @@ ability_mods:
   wis_mod: 3
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The roper extends or retracts six thin, sticky tendrils from its body.
+    While the strands are extended, the roper takes a –4 circumstance penalty to __Stealth__
+    checks, and while they're retracted, it can't use its strand Strikes.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Extend Strands
+  range: null
+  raw_description: '**Extend Strands** [One Action]  The roper extends or retracts
+    six thin, sticky tendrils from its body. While the strands are extended, the roper
+    takes a –4 circumstance penalty to __Stealth__ checks, and while they''re retracted,
+    it can''t use its strand Strikes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The roper makes a strand Strike with each of its strands (except those
+    that are immobilizing creatures). Each attack must be against a different target.
+    These attacks count toward the roper's multiple attack penalty, but its multiple
+    attack penalty doesn't increase until after all the attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Flurry of Strands
+  range: null
+  raw_description: '**Flurry of Strands** [One Action]  The roper makes a strand Strike
+    with each of its strands (except those that are immobilizing creatures). Each
+    attack must be against a different target. These attacks count toward the roper''s
+    multiple attack penalty, but its multiple attack penalty doesn''t increase until
+    after all the attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The roper pulls every creature grabbed by its strands toward itself.
+    The roper rolls a single __Athletics__ check and compares the result to each immobilized
+    creature's Fortitude DC. The roper pulls each creature it succeeds against up
+    to 25 feet closer and each creature it critically succeeds against up to 50 feet
+    closer.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pull the Strands
+  range: null
+  raw_description: '**Pull the Strands** [Two Actions]  The roper pulls every creature
+    grabbed by its strands toward itself. The roper rolls a single __Athletics__ check
+    and compares the result to each immobilized creature''s Fortitude DC. The roper
+    pulls each creature it succeeds against up to 25 feet closer and each creature
+    it critically succeeds against up to 50 feet closer.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any creature hit by a roper's strand is __enfeebled 1__ and __grabbed__.
+    Each additional hit from a strand increases the enfeebled condition value by 1
+    (to a maximum of __enfeebled 4__). This enfeebled value decreases by 1 every 8
+    hours. The roper can move while it has a creature grabbed with a strand, but it
+    automatically releases the creature if it moves beyond the strand's reach. The
+    roper can release an grabbed creature as a free action. A creature can sever a
+    strand with a target attack that hits AC 27 and deals at least 18 slashing damage.
+    This doesn't deal any damage to the roper itself, though it can no longer attack
+    with a severed strand.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sticky Strand
+  range: null
+  raw_description: '**Sticky Strand** Any creature hit by a roper''s strand is __enfeebled
+    1__ and __grabbed__. Each additional hit from a strand increases the enfeebled
+    condition value by 1 (to a maximum of __enfeebled 4__). This enfeebled value decreases
+    by 1 every 8 hours. The roper can move while it has a creature grabbed with a
+    strand, but it automatically releases the creature if it moves beyond the strand''s
+    reach. The roper can release an grabbed creature as a free action. A creature
+    can sever a strand with a target attack that hits AC 27 and deals at least 18
+    slashing damage. This doesn''t deal any damage to the roper itself, though it
+    can no longer attack with a severed strand.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -14,17 +127,19 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The roper makes a strand Strike against the triggering creature.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Reactive Lash
   range: null
   raw_description: '**Reactive Lash** [Reaction] **Trigger** A creature within reach
     of the roper''s strand leaves a square during a move action it''s using. **Effect**
     The roper makes a strand Strike against the triggering creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within reach of the roper's strand leaves a square during a
@@ -56,13 +171,11 @@ description: 'To all but the most sharp-eyed underground explorers, a roper appe
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 29'
 hp: 215
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Undercommon
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+12
@@ -72,7 +185,9 @@ melee:
   to_hit: 21
   traits: null
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: sticky strand
   name: strand
   plus_damage: null
   to_hit: 23
@@ -80,117 +195,12 @@ melee:
   - reach 50 feet
 name: Roper
 perception: 21
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The roper extends or retracts six thin, sticky tendrils from its body.
-    While the strands are extended, the roper takes a -4 circumstance penalty to __Stealth__
-    checks, and while they're retracted, it can't use its strand Strikes.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Extend Strands
-  range: null
-  raw_description: '**Extend Strands**   The roper extends or retracts six thin, sticky
-    tendrils from its body. While the strands are extended, the roper takes a -4 circumstance
-    penalty to __Stealth__ checks, and while they''re retracted, it can''t use its
-    strand Strikes.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The roper makes a strand Strike with each of its strands (except those
-    that are immobilizing creatures). Each attack must be against a different target.
-    These attacks count toward the roper's multiple attack penalty, but its multiple
-    attack penalty doesn't increase until after all the attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Flurry of Strands
-  range: null
-  raw_description: '**Flurry of Strands**   The roper makes a strand Strike with each
-    of its strands (except those that are immobilizing creatures). Each attack must
-    be against a different target. These attacks count toward the roper''s multiple
-    attack penalty, but its multiple attack penalty doesn''t increase until after
-    all the attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The roper pulls every creature grabbed by its strands toward itself.
-    The roper rolls a single __Athletics__ check and compares the result to each immobilized
-    creature's Fortitude DC. The roper pulls each creature it succeeds against up
-    to 25 feet closer and each creature it critically succeeds against up to 50 feet
-    closer.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pull the Strands
-  range: null
-  raw_description: '**Pull the Strands** [Two Actions]  The roper pulls every creature
-    grabbed by its strands toward itself. The roper rolls a single __Athletics__ check
-    and compares the result to each immobilized creature''s Fortitude DC. The roper
-    pulls each creature it succeeds against up to 25 feet closer and each creature
-    it critically succeeds against up to 50 feet closer.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any creature hit by a roper's strand is __enfeebled 1__ and __grabbed__.
-    Each additional hit from a strand increases the enfeebled condition value by 1
-    (to a maximum of __enfeebled 4__). This enfeebled value decreases by 1 every 8
-    hours. The roper can move while it has a creature grabbed with a strand, but it
-    automatically releases the creature if it moves beyond the strand's reach. The
-    roper can release an grabbed creature as a free action. A creature can sever a
-    strand with a target attack that hits AC 27 and deals at least 18 slashing damage.
-    This doesn't deal any damage to the roper itself, though it can no longer attack
-    with a severed strand.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sticky Strand
-  range: null
-  raw_description: '**Sticky Strand** Any creature hit by a roper''s strand is __enfeebled
-    1__ and __grabbed__. Each additional hit from a strand increases the enfeebled
-    condition value by 1 (to a maximum of __enfeebled 4__). This enfeebled value decreases
-    by 1 every 8 hours. The roper can move while it has a creature grabbed with a
-    strand, but it automatically releases the creature if it moves beyond the strand''s
-    reach. The roper can release an grabbed creature as a free action. A creature
-    can sever a strand with a target attack that hits AC 27 and deals at least 18
-    slashing damage. This doesn''t deal any damage to the roper itself, though it
-    can no longer attack with a severed strand.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
+  misc: null
   type: electricity
-ritual_lists: null
 saves:
   fort: 20
   fort_misc: null
@@ -199,40 +209,37 @@ saves:
   ref_misc: null
   will: 21
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +21
 - darkvision
 size: Large
 skills:
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 17
   misc: +21 about caves
-  name: 'Nature '
+  name: Nature
 - bonus: 19
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 17
   misc: +25 in stony or icy areas
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 282
+  page_start: '282'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- Uncommon
-- CE
-- Large
 - Aberration
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: fire

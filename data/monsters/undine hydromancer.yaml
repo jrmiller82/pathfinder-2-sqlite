@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 16
 ac_special: null
+active_abilities: null
 alignment: CG
 automatic_abilities: null
 description: 'Undines are infused with elemental water—the churning power of the briny
@@ -41,18 +42,17 @@ description: 'Undines are infused with elemental water—the churning power of t
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 15
 hp_misc: null
-immunities: null
 items:
 - dagger
 languages:
 - Aquan
 - Common
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: piercing
+    formula: null
+    type: 1d4 piercing
   name: dagger
   plus_damage: null
   to_hit: 7
@@ -62,113 +62,11 @@ melee:
   - versatile S
 name: Undine Hydromancer
 perception: 5
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 'DC 17, attack +9; **1st** __create water__, __heal__, __hydraulic
-    push__; **Cantrips** **(1st)** __acid splash__, __detect magic__, __know direction__,
-    __stabilize__, __tanglefoot__
-
-
-    **Sorcerer Bloodline Spells** DC 17, attack +9,  (1 Focus Point); **1st** __elemental
-    toss__
-
-
-
-
-    ## All Monsters in "Planar Scion, Geniekin"
-
-
-    **Name****Level**Ifrit1Oread1Suli1Sylph1Undine1Planar Scion, Geniekin**Source**
-    Bestiary 2 pg. 200
-
-
-    Geniekin are mortals whose ancestry has become entangled with that of __genies__,
-    causing them to exhibit elemental powers drawn from the Elemental Planes. Though
-    the geniekin found here are all of human descent and have example alignments,
-    geniekin and other planar scions can descend from other ancestries and have any
-    alignment.
-
-
-    ##  Geniekin on Golarion
-
-
-    While most geniekin planar scions live on their genie parent''s ancestral plane,
-    rare fonts of elemental power or genie activity sometimes give rise to geniekin
-    on Golarion. By far, geniekin are most commonly found in Katapesh, as genies are
-    more prevalent there than other regions due to the influence of genie binders.
-
-
-    ##  Geniekin Parentage
-
-
-    Planar scions from the elemental planes are known as geniekin because they are
-    overwhelmingly born from couplings between mortals and genies: __ifrits__ are
-    born of __efreeti__, __oreads__ of __shaitans__, __sulis__ of __jann__, __sylphs__
-    of __djinn__, and __undines__ of __marids__. Despite this distinguished ancestry,
-    geniekin do not display most of their parents'' exceptional talents, such as their
-    ability to grant wishes.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Primal Spontaneous Spells
-  range: null
-  raw_description: '**Primal Spontaneous Spells** DC 17, attack +9; **1st** __create
-    water__, __heal__, __hydraulic push__; **Cantrips** **(1st)** __acid splash__,
-    __detect magic__, __know direction__, __stabilize__, __tanglefoot__
-
-
-    **Sorcerer Bloodline Spells** DC 17, attack +9,  (1 Focus Point); **1st** __elemental
-    toss__
-
-
-
-
-    ## All Monsters in "Planar Scion, Geniekin"
-
-
-    **Name****Level**Ifrit1Oread1Suli1Sylph1Undine1Planar Scion, Geniekin**Source**
-    Bestiary 2 pg. 200
-
-
-    Geniekin are mortals whose ancestry has become entangled with that of __genies__,
-    causing them to exhibit elemental powers drawn from the Elemental Planes. Though
-    the geniekin found here are all of human descent and have example alignments,
-    geniekin and other planar scions can descend from other ancestries and have any
-    alignment.
-
-
-    ##  Geniekin on Golarion
-
-
-    While most geniekin planar scions live on their genie parent''s ancestral plane,
-    rare fonts of elemental power or genie activity sometimes give rise to geniekin
-    on Golarion. By far, geniekin are most commonly found in Katapesh, as genies are
-    more prevalent there than other regions due to the influence of genie binders.
-
-
-    ##  Geniekin Parentage
-
-
-    Planar scions from the elemental planes are known as geniekin because they are
-    overwhelmingly born from couplings between mortals and genies: __ifrits__ are
-    born of __efreeti__, __oreads__ of __shaitans__, __sulis__ of __jann__, __sylphs__
-    of __djinn__, and __undines__ of __marids__. Despite this distinguished ancestry,
-    geniekin do not display most of their parents'' exceptional talents, such as their
-    ability to grant wishes.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: piercing
+    formula: null
+    type: 1d4 piercing
   name: dagger
   plus_damage: null
   to_hit: 7
@@ -176,11 +74,6 @@ ranged:
   - agile
   - thrown 10 feet
   - versatile S
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 4
   fort_misc: null
@@ -189,45 +82,80 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
-senses:
-- Perception +5
 size: Medium
 skills:
 - bonus: 3
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 3
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 7
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 5
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 5
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 203
+  page_start: '203'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
-spell_lists: null
+spell_lists:
+- attack_bonus: 9
+  cantrips:
+  - level: 1
+    spells:
+    - misc: null
+      name: acid splash
+    - misc: null
+      name: detect magic
+    - misc: null
+      name: know direction
+    - misc: null
+      name: stabilize
+    - misc: null
+      name: tanglefoot
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: create water
+    - misc: null
+      name: heal
+    - misc: null
+      name: hydraulic push
+  spells_source: Primal Spontaneous Spells
+- attack_bonus: 9
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: 1
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: elemental toss
+  spells_source: Sorcerer Bloodline Spells
 traits:
-- CG
-- Medium
 - Amphibious
 - Human
 - Humanoid
 - Undine
-type: Creature
-weaknesses: null

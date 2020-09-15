@@ -7,31 +7,88 @@ ability_mods:
   wis_mod: 4
 ac: 37
 ac_special: null
-alignment: NE
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: Three Actions
   critical_failure: null
   critical_success: null
-  description: When a soulbound ruin fails a saving throw against a spell that would
-    banish tormented spirits or manipulate souls, such as __banishment__ or __bind
-    soul__, instead of experiencing the listed effects, it takes 10 damage per spell
-    level.
+  description: The ruin collapses up to three 10-footby- 10-foot sections of its ceiling.
+    The ruin takes 10 damage per section it collapses, and it can't collapse the same
+    section until it has been repaired. Each creature in one of these areas takes
+    8d10 bludgeoning damage with a DC 35 basic Reflex save. On a failed save, the
+    creature is also restrained under the rubble until it Escapes (DC 33).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Vulnerability to Exorcism
+  maximum_duration: null
+  name: Collapse Ceiling
   range: null
-  raw_description: '**Vulnerability to Exorcism** When a soulbound ruin fails a saving
-    throw against a spell that would banish tormented spirits or manipulate souls,
-    such as __banishment__ or __bind soul__, instead of experiencing the listed effects,
-    it takes 10 damage per spell level.'
+  raw_description: '**Collapse Ceiling** [Three Actions]  The ruin collapses up to
+    three 10-footby- 10-foot sections of its ceiling. The ruin takes 10 damage per
+    section it collapses, and it can''t collapse the same section until it has been
+    repaired. Each creature in one of these areas takes 8d10 bludgeoning damage with
+    a DC 35 basic Reflex save. On a failed save, the creature is also restrained under
+    the rubble until it Escapes (DC 33).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A soulbound ruin's edifice Strikes can target any creature inside the
+    ruin.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pervasive Attacks
+  range: null
+  raw_description: '**Pervasive Attacks** A soulbound ruin''s edifice Strikes can
+    target any creature inside the ruin.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The ruin can spend 10 minutes repairing itself to regain up to 30 Hit
+    Points. If the ruin is interrupted during this time, it loses its focus and the
+    repair fails. This ability functions even if the ruin is reduced to 0 HP, unless
+    a __consecrate__ ritual has been performed to purify the building, in which case
+    the soulbound ruin is destroyed. This ritual must be dedicated to a good deity
+    or a deity with a strong opposition to undead, such as __Pharasma__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Self-Repair
+  range: null
+  raw_description: '**Self-Repair** The ruin can spend 10 minutes repairing itself
+    to regain up to 30 Hit Points. If the ruin is interrupted during this time, it
+    loses its focus and the repair fails. This ability functions even if the ruin
+    is reduced to 0 HP, unless a __consecrate__ ritual has been performed to purify
+    the building, in which case the soulbound ruin is destroyed. This ritual must
+    be dedicated to a good deity or a deity with a strong opposition to undead, such
+    as __Pharasma__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: NE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -39,19 +96,27 @@ automatic_abilities:
   effect: The soulbound ruin reacts violently to stop the creature's movement, shooting
     spikes, throwing bricks, or otherwise impeding the target. The target must succeed
     at a DC 35 Reflex save or fall __prone__.
-  effects: null
   failure: null
   frequency: once per turn
   full_description: null
   generic_description: null
-  name: Impede
+  maximum_duration: null
+  name: Vulnerability to Exorcism
   range: null
-  raw_description: '**Impede** [Reaction] **Frequency** once per turn; **Trigger**
-    A creature within the soulbound ruin uses an action with the move trait. **Effect**
-    The soulbound ruin reacts violently to stop the creature''s movement, shooting
-    spikes, throwing bricks, or otherwise impeding the target. The target must succeed
-    at a DC 35 Reflex save or fall __prone__.'
+  raw_description: '**Vulnerability to Exorcism** When a soulbound ruin fails a saving
+    throw against a spell that would banish tormented spirits or manipulate souls,
+    such as __banishment__ or __bind soul__, instead of experiencing the listed effects,
+    it takes 10 damage per spell level.
+
+
+    **Impede** [Reaction] **Frequency** once per turn; **Trigger** A creature within
+    the soulbound ruin uses an action with the move trait. **Effect** The soulbound
+    ruin reacts violently to stop the creature''s movement, shooting spikes, throwing
+    bricks, or otherwise impeding the target. The target must succeed at a DC 35 Reflex
+    save or fall __prone__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within the soulbound ruin uses an action with the move trait.
@@ -87,12 +152,11 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
 languages:
 - Common
 - and other languages typical to the region
 level: 15
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d10+9
@@ -103,86 +167,11 @@ melee:
   traits: null
 name: Soulbound Ruin
 perception: 25
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The ruin collapses up to three 10-footby- 10-foot sections of its ceiling.
-    The ruin takes 10 damage per section it collapses, and it can't collapse the same
-    section until it has been repaired. Each creature in one of these areas takes
-    8d10 bludgeoning damage with a DC 35 basic Reflex save. On a failed save, the
-    creature is also restrained under the rubble until it Escapes (DC 33).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Collapse Ceiling
-  range: null
-  raw_description: '**Collapse Ceiling** [Three Actions]  The ruin collapses up to
-    three 10-footby- 10-foot sections of its ceiling. The ruin takes 10 damage per
-    section it collapses, and it can''t collapse the same section until it has been
-    repaired. Each creature in one of these areas takes 8d10 bludgeoning damage with
-    a DC 35 basic Reflex save. On a failed save, the creature is also restrained under
-    the rubble until it Escapes (DC 33).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A soulbound ruin's edifice Strikes can target any creature inside the
-    ruin.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pervasive Attacks
-  range: null
-  raw_description: '**Pervasive Attacks** A soulbound ruin''s edifice Strikes can
-    target any creature inside the ruin.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The ruin can spend 10 minutes repairing itself to regain up to 30 Hit
-    Points. If the ruin is interrupted during this time, it loses its focus and the
-    repair fails. This ability functions even if the ruin is reduced to 0 HP, unless
-    a __consecrate__ ritual has been performed to purify the building, in which case
-    the soulbound ruin is destroyed. This ritual must be dedicated to a good deity
-    or a deity with a strong opposition to undead, such as __Pharasma__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Self-Repair
-  range: null
-  raw_description: '**Self-Repair** The ruin can spend 10 minutes repairing itself
-    to regain up to 30 Hit Points. If the ruin is interrupted during this time, it
-    loses its focus and the repair fails. This ability functions even if the ruin
-    is reduced to 0 HP, unless a __consecrate__ ritual has been performed to purify
-    the building, in which case the soulbound ruin is destroyed. This ritual must
-    be dedicated to a good deity or a deity with a strong opposition to undead, such
-    as __Pharasma__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 29
   fort_misc: null
@@ -191,32 +180,29 @@ saves:
   ref_misc: null
   will: 27
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +25
 - darkvision
 size: Gargantuan
 skills:
 - bonus: 30
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 26
   misc: null
-  name: 'Deception '
-source:
+  name: Deception
+sources:
 - abbr: 'Pathfinder #148: Fires of the Haunted City'
-  page_start: 85
+  page_start: '85'
   page_stop: null
 speed:
 - amount: null
+  misc: null
   type: can't move
 spell_lists: null
 traits:
-- NE
-- Gargantuan
 - Construct
 - Undead
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: positive

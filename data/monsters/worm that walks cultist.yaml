@@ -7,6 +7,59 @@ ability_mods:
   wis_mod: 4
 ac: 36
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The worm that walks Strides, ending its movement sharing a space with
+    a creature, and deals 5d8 piercing damage to the creature. The creature can attempt
+    a DC 32 basic Reflex save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Squirming Embrace
+  range: null
+  raw_description: '**Squirming Embrace** [One Action]  The worm that walks Strides,
+    ending its movement sharing a space with a creature, and deals 5d8 piercing damage
+    to the creature. The creature can attempt a DC 32 basic Reflex save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The worm that walks collapses into a shapeless swarm of worms. It drops
+    all held, worn, and carried items. While discorporated, the worm that walks can't
+    use __attack__ actions and can't cast spells, but it can move through areas small
+    enough for its individual worms to fit without having to __Squeeze__. It can use
+    the same action to coalesce back into its normal form.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarm Shape
+  range: null
+  raw_description: '**Swarm Shape** [One Action]  (__concentrate__) The worm that
+    walks collapses into a shapeless swarm of worms. It drops all held, worn, and
+    carried items. While discorporated, the worm that walks can''t use __attack__
+    actions and can''t cast spells, but it can move through areas small enough for
+    its individual worms to fit without having to __Squeeze__. It can use the same
+    action to coalesce back into its normal form.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -30,11 +83,11 @@ automatic_abilities:
     discretion, clever means of trapping or otherwise detaining the vermin may extend
     the time allowed to finish off the worm that walks.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Discorporate
   range: null
   raw_description: '**Discorporate** When the worm that walks is reduced to 0 HP,
@@ -55,6 +108,8 @@ automatic_abilities:
     discretion, clever means of trapping or otherwise detaining the vermin may extend
     the time allowed to finish off the worm that walks.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -67,20 +122,19 @@ description: 'This worm that walks was a cultist of the Great Old One __Hastur__
 
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 34'
 hp: 200
-hp_misc: fast healing 10fast healing 10
+hp_misc: fast healing 10
 immunities:
-- disease
-- paralyzed
-- poison
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 - precision
-- swarm mind
-- unconscious
-items: null
+- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 languages:
 - Aklo
 - Common
 level: 14
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d8+14
@@ -92,61 +146,12 @@ melee:
   - reach 10 feet
 name: Worm That Walks Cultist
 perception: 25
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The worm that walks Strides, ending its movement sharing a space with
-    a creature, and deals 5d8 piercing damage to the creature. The creature can attempt
-    a DC 32 basic Reflex save.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Squirming Embrace
-  range: null
-  raw_description: '**Squirming Embrace**   The worm that walks Strides, ending its
-    movement sharing a space with a creature, and deals 5d8 piercing damage to the
-    creature. The creature can attempt a DC 32 basic Reflex save.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The worm that walks collapses into a shapeless swarm of worms. It drops
-    all held, worn, and carried items. While discorporated, the worm that walks can't
-    use __attack__ actions and can't cast spells, but it can move through areas small
-    enough for its individual worms to fit without having to __Squeeze__. It can use
-    the same action to coalesce back into its normal form.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swarm Shape
-  range: null
-  raw_description: '**Swarm Shape**   (__concentrate__) The worm that walks collapses
-    into a shapeless swarm of worms. It drops all held, worn, and carried items. While
-    discorporated, the worm that walks can''t use __attack__ actions and can''t cast
-    spells, but it can move through areas small enough for its individual worms to
-    fit without having to __Squeeze__. It can use the same action to coalesce back
-    into its normal form.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
+  misc: null
   type: physical
-ritual_lists: null
 saves:
   fort: 23
   fort_misc: null
@@ -155,174 +160,133 @@ saves:
   ref_misc: null
   will: 26
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +25
 - darkvision
 - tremorsense (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 24
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 28
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 26
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 27
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 23
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 28
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 297
+  page_start: '297'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists:
-- dc: 34
-  misc: ''
-  name: Occult Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: 26
+  cantrips:
+  - level: 7
     spells:
-    - frequency: null
-      name: phantasmal killer
-      requirement: null
-    - frequency: null
-      name: visions of danger
-      requirement: null
-    - frequency: 3 slots
-      name: warp mind
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: dominate
-      requirement: null
-    - frequency: null
-      name: paranoia
-      requirement: null
-    - frequency: 4 slots
-      name: summon entity
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: black tentacles
-      requirement: null
-    - frequency: null
-      name: mind probe
-      requirement: null
-    - frequency: null
-      name: phantom pain
-      requirement: null
-    - frequency: 4 slots
-      name: subconscious suggestion
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: modify memory
-      requirement: null
-    - frequency: null
-      name: suggestion
-      requirement: null
-    - frequency: 4 slots
-      name: veil
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: dream message
-      requirement: null
-    - frequency: null
-      name: haste
-      requirement: null
-    - frequency: null
-      name: hypercognition
-      requirement: null
-    - frequency: 4 slots
-      name: slow
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: comprehend language
-      requirement: null
-    - frequency: null
-      name: illusory creature
-      requirement: null
-    - frequency: null
-      name: mirror image
-      requirement: null
-    - frequency: 4 slots
-      name: undetectable alignment
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: illusory disguise
-      requirement: null
-    - frequency: null
-      name: mindlink
-      requirement: null
-    - frequency: 4 slots
-      name: ray of enfeeblement
-      requirement: null
-  - heightened_level: 7
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: 26
+  constants: null
+  dc: 34
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: null
+      name: phantasmal killer
+    - misc: null
+      name: visions of danger
+    - misc: 3 slots
+      name: warp mind
+  - level: 6
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: dominate
+    - misc: null
+      name: paranoia
+    - misc: 4 slots
+      name: summon entity
+  - level: 5
+    spells:
+    - misc: null
+      name: black tentacles
+    - misc: null
+      name: mind probe
+    - misc: null
+      name: phantom pain
+    - misc: 4 slots
+      name: subconscious suggestion
+  - level: 4
+    spells:
+    - misc: null
+      name: dimension door
+    - misc: null
+      name: modify memory
+    - misc: null
+      name: suggestion
+    - misc: 4 slots
+      name: veil
+  - level: 3
+    spells:
+    - misc: null
+      name: dream message
+    - misc: null
+      name: haste
+    - misc: null
+      name: hypercognition
+    - misc: 4 slots
+      name: slow
+  - level: 2
+    spells:
+    - misc: null
+      name: comprehend language
+    - misc: null
+      name: illusory creature
+    - misc: null
+      name: mirror image
+    - misc: 4 slots
+      name: undetectable alignment
+  - level: 1
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: illusory disguise
+    - misc: null
+      name: mindlink
+    - misc: 4 slots
+      name: ray of enfeeblement
+  spells_source: Occult Spontaneous Spells
 traits:
-- Uncommon
-- CE
-- Medium
 - Aberration
 - Swarm
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: area damage
-- amount: 10
-  type: <a style="text-decoration:underline" href="Traits.aspx?ID=150">splash</a>
-    damage
+- amount: 150
+  misc: null
+  type: <a style="text-decoration:underline" href="Traits.aspx?ID=

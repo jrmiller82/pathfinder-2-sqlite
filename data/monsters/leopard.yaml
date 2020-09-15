@@ -7,6 +7,73 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The leopard makes two claw Strikes against a creature it has grabbed.
+    Both count toward its multiple attack penalty, but the penalty increases only
+    after both attacks are made.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Maul
+  range: null
+  raw_description: '**Maul** [One Action]  The leopard makes two claw Strikes against
+    a creature it has grabbed. Both count toward its multiple attack penalty, but
+    the penalty increases only after both attacks are made.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The leopard Strides and makes a Strike at the end of that movement.
+    If the leopard began this action hidden, it remains hidden until after this ability's
+    Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pounce
+  range: null
+  raw_description: '**Pounce** [One Action]  The leopard Strides and makes a Strike
+    at the end of that movement. If the leopard began this action hidden, it remains
+    hidden until after this ability''s Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The leopard deals 1d4 extra precision damage to flat-footed creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The leopard deals 1d4 extra precision damage
+    to flat-footed creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Leopards are among the smallest of the big cats, yet they are still
@@ -19,11 +86,8 @@ description: 'Leopards are among the smallest of the big cats, yet they are stil
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 16'
 hp: 30
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+3
@@ -47,73 +111,7 @@ melee:
   - finesse
 name: Leopard
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The leopard makes two claw Strikes against a creature it has grabbed.
-    Both count toward its multiple attack penalty, but the penalty increases only
-    after both attacks are made.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Maul
-  range: null
-  raw_description: '**Maul**   The leopard makes two claw Strikes against a creature
-    it has grabbed. Both count toward its multiple attack penalty, but the penalty
-    increases only after both attacks are made.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The leopard Strides and makes a Strike at the end of that movement.
-    If the leopard began this action hidden, it remains hidden until after this ability's
-    Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pounce
-  range: null
-  raw_description: '**Pounce**   The leopard Strides and makes a Strike at the end
-    of that movement. If the leopard began this action hidden, it remains hidden until
-    after this ability''s Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The leopard deals 1d4 extra precision damage to flat-footed creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The leopard deals 1d4 extra precision damage
-    to flat-footed creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -122,35 +120,31 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 8
   misc: +11 in undergrowth
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 52
+  page_start: '52'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

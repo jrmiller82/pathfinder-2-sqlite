@@ -7,27 +7,30 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 5 feet. A creature that enters the aura or begins its turn there must
-    succeed at a DC 22 Fortitude save or become sickened 1. Everything within the
-    aura, including the cinder rat, is concealed by smoke.
+  description: A creature that enters the aura or begins its turn there must succeed
+    at a DC 22 Fortitude save or become sickened 1. Everything within the aura, including
+    the cinder rat, is concealed by smoke.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Fetid Fumes
-  range: null
+  range: 5 feet
   raw_description: '**Fetid Fumes** (__aura__, __fire__) 5 feet. A creature that enters
     the aura or begins its turn there must succeed at a DC 22 Fortitude save or become
     sickened 1. Everything within the aura, including the cinder rat, is concealed
     by smoke.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -48,30 +51,22 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
     type: fire
   name: jaws
   plus_damage:
-  - formula: 1d4
-    type: persistent fire
+  - formula: null
+    type: 1d4 persistent fire
   to_hit: 10
   traits:
   - finesse
 name: Cinder Rat
 perception: 9
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: cold
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -86,46 +81,48 @@ sense_abilities:
   critical_success: null
   description: The cinder rat ignores the concealed condition from smoke.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Smoke Vision
   range: null
   raw_description: '**Smoke Vision** The cinder rat ignores the concealed condition
     from smoke.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +9
 - darkvision
 - smoke vision
 size: Small
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 10
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 9
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 148
+  page_start: '148'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Small
 - Elemental
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold

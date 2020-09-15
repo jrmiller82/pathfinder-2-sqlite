@@ -7,6 +7,106 @@ ability_mods:
   wis_mod: 3
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The tyrannosaurus flings the creature into the air up to 10 feet up from
+    its mouth and 20ft away. The creature falls 25 feet (assuming the tyrannosaurus
+    flings it as high as it can) and takes falling damage accordingly. If the flung
+    creature lands on another creature, the creature it lands on takes the same amount
+    of bludgeoning damage. The creature being landed upon can attempt a DC 23 basic
+    Reflex save.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Fling
+  range: null
+  raw_description: '**Fling** [One Action]  **Requirements** A creature is Grabbed
+    in the tyrannosaurus''s jaws. **Effect** The tyrannosaurus flings the creature
+    into the air up to 10 feet up from its mouth and 20ft away. The creature falls
+    25 feet (assuming the tyrannosaurus flings it as high as it can) and takes falling
+    damage accordingly. If the flung creature lands on another creature, the creature
+    it lands on takes the same amount of bludgeoning damage. The creature being landed
+    upon can attempt a DC 23 basic Reflex save.'
+  requirements: A creature is Grabbed in the tyrannosaurus's jaws.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The creature struck by the foot is knocked prone and the tyrannosaurus uses
+    its foot to hold the creature in place. As long as the tyrannosaurus doesn't move
+    from its position, the pinned creature is Grabbed. A tyrannosaurus gains a +2
+    circumstance bonus to attack a creature it has pinned in this manner, but it cannot
+    use swallow whole on the target unless it uses its jaws to Grab the victim first.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pin Prey
+  range: null
+  raw_description: '**Pin Prey** [Reaction]  **Trigger** The tyrannosaurus critically
+    hits a Large or smaller foe with its foot. **Effect** The creature struck by the
+    foot is knocked prone and the tyrannosaurus uses its foot to hold the creature
+    in place. As long as the tyrannosaurus doesn''t move from its position, the pinned
+    creature is Grabbed. A tyrannosaurus gains a +2 circumstance bonus to attack a
+    creature it has pinned in this manner, but it cannot use swallow whole on the
+    target unless it uses its jaws to Grab the victim first.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The tyrannosaurus critically hits a Large or smaller foe with its foot.
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Medium, 3d6+8 bludgeoning, Rupture 26
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**Swallow Whole** [One Action]  (__attack__) Medium, 3d6+8 bludgeoning,
+    Rupture 26'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Huge or smaller, foot, DC 29
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Huge or smaller, foot, DC 29'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Widely regarded as the king of the dinosaurs, the tyrannosaurus is a
@@ -44,11 +144,8 @@ description: 'Widely regarded as the king of the dinosaurs, the tyrannosaurus is
   Recall Knowledge - Animal__ (__Nature__)**: DC 27'
 hp: 180
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+12
@@ -72,99 +169,7 @@ melee:
   - reach 15 feet
 name: Tyrannosaurus
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A creature is Grabbed in the tyrannosaurus's jaws.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fling
-  range: null
-  raw_description: '**Fling**   **Requirements** A creature is Grabbed in the tyrannosaurus''s
-    jaws. **Effect** The tyrannosaurus flings the creature into the air up to 10 feet
-    up from its mouth and 20ft away. The creature falls 25 feet (assuming the tyrannosaurus
-    flings it as high as it can) and takes falling damage accordingly. If the flung
-    creature lands on another creature, the creature it lands on takes the same amount
-    of bludgeoning damage. The creature being landed upon can attempt a DC 23 basic
-    Reflex save.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The creature struck by the foot is knocked prone and the tyrannosaurus uses
-    its foot to hold the creature in place. As long as the tyrannosaurus doesn't move
-    from its position, the pinned creature is Grabbed. A tyrannosaurus gains a +2
-    circumstance bonus to attack a creature it has pinned in this manner, but it cannot
-    use swallow whole on the target unless it uses its jaws to Grab the victim first.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pin Prey
-  range: null
-  raw_description: '**Pin Prey** [Reaction]  **Trigger** The tyrannosaurus critically
-    hits a Large or smaller foe with its foot. **Effect** The creature struck by the
-    foot is knocked prone and the tyrannosaurus uses its foot to hold the creature
-    in place. As long as the tyrannosaurus doesn''t move from its position, the pinned
-    creature is Grabbed. A tyrannosaurus gains a +2 circumstance bonus to attack a
-    creature it has pinned in this manner, but it cannot use swallow whole on the
-    target unless it uses its jaws to Grab the victim first.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The tyrannosaurus critically hits a Large or smaller foe with its foot.
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Medium, 3d6+8 bludgeoning, Rupture 26
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**Swallow Whole**   (__attack__) Medium, 3d6+8 bludgeoning, Rupture
-    26'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Huge or smaller, foot, DC 29
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Huge or smaller, foot, DC 29'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 21
   fort_misc: null
@@ -173,31 +178,26 @@ saves:
   ref_misc: null
   will: 19
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - low-light vision
 - scent (imprecise) 30 feet
 size: Gargantuan
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 24
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 101
+  page_start: '101'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Gargantuan
 - Animal
 - Dinosaur
-type: Creature
-weaknesses: null

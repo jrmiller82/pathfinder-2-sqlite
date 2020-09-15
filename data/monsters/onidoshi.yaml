@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 3
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The onidoshi takes on the appearance of an __ogre__. This doesn't change
+    their Speed or Strike attack and damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**__Change Shape__** [One Action]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) The onidoshi takes on the appearance of an __ogre__.
+    This doesn''t change their Speed or Strike attack and damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +45,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +60,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -55,8 +84,7 @@ description: 'Onidoshi, or ogre mages, are oni with the material form of an __og
 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 24'
 hp: 125
-hp_misc: regeneration 7 (deactivated by acid or fire
-immunities: null
+hp_misc: regeneration 7 (deactivated by acid or fire)
 items:
 - +1 striking falchion
 - breastplate
@@ -65,7 +93,7 @@ languages:
 - Common
 - Jotun
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+9
@@ -92,32 +120,7 @@ melee:
   - reach 10 feet
 name: Onidoshi
 perception: 17
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The onidoshi takes on the appearance of an __ogre__. This doesn't change
-    their Speed or Strike attack and damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**__Change Shape__**   (__concentrate__, __polymorph__, __primal__,
-    __transmutation__) The onidoshi takes on the appearance of an __ogre__. This doesn''t
-    change their Speed or Strike attack and damage.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+9
@@ -129,11 +132,6 @@ ranged:
   - deadly 1d10
   - range increment 100 feet
   - reload 0
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 18
   fort_misc: null
@@ -142,84 +140,72 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 18
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 17
   misc: null
-  name: 'Nature '
-source:
+  name: Nature
+sources:
 - abbr: Bestiary 2
-  page_start: 188
+  page_start: '188'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 24
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 24
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: cone of cold
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: charm
-      requirement: null
-    - frequency: null
+    - misc: null
       name: gaseous form
-      requirement: null
-    - frequency: null
+    - misc: null
       name: sleep
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: fear
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: darkness
-      requirement: null
-    - frequency: at will, self only
+    - misc: at will, self only
       name: invisibility
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- LE
-- Large
 - Fiend
 - Giant
 - Humanoid
 - Oni
-type: Creature
-weaknesses: null

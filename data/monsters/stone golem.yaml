@@ -7,45 +7,114 @@ ability_mods:
   wis_mod: 0
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The creature must succeed at a DC 30 Fortitude save or become __paralyzed__
+    for 1 round.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Impose Paralysis
+  range: null
+  raw_description: '**Impose Paralysis** [Reaction]  (__incapacitation__) **Trigger**
+    The stone golem hits a __slowed__ creature. **Effect** The creature must succeed
+    at a DC 30 Fortitude save or become __paralyzed__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  trigger: The stone golem hits a slowed creature.
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The stone golem Strides up to its Speed, pushing back each creature
+    whose space it moves into and damaging them if they try to stop its movement.
+    A creature can attempt to bar the way by succeeding at a DC 34 Fortitude save.
+    On a critical success, the resisting creature takes no damage; otherwise it is
+    damaged as if hit by the golem's fist.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Inexorable March
+  range: null
+  raw_description: '**Inexorable March** [One Action]  The stone golem Strides up
+    to its Speed, pushing back each creature whose space it moves into and damaging
+    them if they try to stop its movement. A creature can attempt to bar the way by
+    succeeding at a DC 34 Fortitude save. On a critical success, the resisting creature
+    takes no damage; otherwise it is damaged as if hit by the golem''s fist.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each creature in a 10-foot emanation must succeed at a DC 30 Fortitude
+    save or be __slowed 1__ for 1 minute. The golem can't use Slowing Pulse again
+    for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Slowing Pulse
+  range: null
+  raw_description: '**Slowing Pulse** [One Action]  (__arcane__, __concentrate__,
+    __transmutation__) Each creature in a 10-foot emanation must succeed at a DC 30
+    Fortitude save or be __slowed 1__ for 1 minute. The golem can''t use Slowing Pulse
+    again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - concentrate
+  - transmutation
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: harmed by cold and water (5d10, 2d8 from areas and persistent damage);
+  description: 'harmed by cold and water (5d10, 2d8 from areas and persistent damage);
     healed by acid (area 2d8 HP); slowed by earth
+
+
+    **Vulnerable to Stone to Flesh** A __stone to flesh__ spell negates the golem''s
+    golem antimagic and its resistance to physical damage for 1 round. A __flesh to
+    stone__ spell reverses this effect immediately.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Golem Antimagic
   range: null
   raw_description: '**Golem Antimagic** harmed by cold and water (5d10, 2d8 from areas
-    and persistent damage); healed by acid (area 2d8 HP); slowed by earth'
+    and persistent damage); healed by acid (area 2d8 HP); slowed by earth
+
+
+    **Vulnerable to Stone to Flesh** A __stone to flesh__ spell negates the golem''s
+    golem antimagic and its resistance to physical damage for 1 round. A __flesh to
+    stone__ spell reverses this effect immediately.'
   requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A __stone to flesh__ spell negates the golem's golem antimagic and
-    its resistance to physical damage for 1 round. A __flesh to stone__ spell reverses
-    this effect immediately.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Vulnerable to Stone to Flesh
-  range: null
-  raw_description: '**Vulnerable to Stone to Flesh** A __stone to flesh__ spell negates
-    the golem''s golem antimagic and its resistance to physical damage for 1 round.
-    A __flesh to stone__ spell reverses this effect immediately.'
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -92,10 +161,8 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
-languages: null
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+13
@@ -108,84 +175,12 @@ melee:
   - reach 10 feet
 name: Stone Golem
 perception: 17
-proactive_abilities:
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The creature must succeed at a DC 30 Fortitude save or become __paralyzed__
-    for 1 round.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Impose Paralysis
-  range: null
-  raw_description: '**Impose Paralysis** [Reaction]  (__incapacitation__) **Trigger**
-    The stone golem hits a __slowed__ creature. **Effect** The creature must succeed
-    at a DC 30 Fortitude save or become __paralyzed__ for 1 round.'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  trigger: The stone golem hits a __slowed__ creature.
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The stone golem Strides up to its Speed, pushing back each creature
-    whose space it moves into and damaging them if they try to stop its movement.
-    A creature can attempt to bar the way by succeeding at a DC 34 Fortitude save.
-    On a critical success, the resisting creature takes no damage; otherwise it is
-    damaged as if hit by the golem's fist.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Inexorable March
-  range: null
-  raw_description: '**Inexorable March**   The stone golem Strides up to its Speed,
-    pushing back each creature whose space it moves into and damaging them if they
-    try to stop its movement. A creature can attempt to bar the way by succeeding
-    at a DC 34 Fortitude save. On a critical success, the resisting creature takes
-    no damage; otherwise it is damaged as if hit by the golem''s fist.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Each creature in a 10-foot emanation must succeed at a DC 30 Fortitude
-    save or be __slowed 1__ for 1 minute. The golem can't use Slowing Pulse again
-    for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Slowing Pulse
-  range: null
-  raw_description: '**Slowing Pulse**   (__arcane__, __concentrate__, __transmutation__)
-    Each creature in a 10-foot emanation must succeed at a DC 30 Fortitude save or
-    be __slowed 1__ for 1 minute. The golem can''t use Slowing Pulse again for 1d4
-    rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - concentrate
-  - transmutation
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 24
   fort_misc: null
@@ -194,29 +189,23 @@ saves:
   ref_misc: null
   will: 19
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 size: Large
 skills:
 - bonus: 26
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 187
+  page_start: '187'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Large
 - Construct
 - Golem
 - Mindless
-type: Creature
-weaknesses: null

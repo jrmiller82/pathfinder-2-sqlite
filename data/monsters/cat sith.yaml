@@ -7,33 +7,100 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature hit by a cat sith's claw must succeed at a DC 23 Will save
+    or be cursed with misfortune. Whenever the cursed creature rolls a critical success
+    on a skill check or saving throw, it gets a success instead. Each day, a cursed
+    creature can attempt a DC 10 flat check to break the curse.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cat Sith's Mark
+  range: null
+  raw_description: '**Cat Sith''s Mark** (__curse__, __misfortune__) A creature hit
+    by a cat sith''s claw must succeed at a DC 23 Will save or be cursed with misfortune.
+    Whenever the cursed creature rolls a critical success on a skill check or saving
+    throw, it gets a success instead. Each day, a cursed creature can attempt a DC
+    10 flat check to break the curse.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - misfortune
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The cat sith touches a __dying__ creature or a creature that died within
+    the past 3 days. If the target is a dying creature, it must attempt a DC 25 Fortitude
+    save; on a failure, its dying value increases by 1 (or 2 on a critical failure).
+    If the target is dead, it receives no save and its soul is imprisoned in the cat
+    sith's body, becoming freed only if the cat sith is slain. While the soul is imprisoned,
+    the creature can't be brought back to life by any means short of a __wish__ or
+    __miracle__. The cat sith can hold only one soul at a time and can release a soul
+    as a free action.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Steal Soul
+  range: null
+  raw_description: '**Steal Soul** [Two Actions]  (__necromancy__, __occult__) The
+    cat sith touches a __dying__ creature or a creature that died within the past
+    3 days. If the target is a dying creature, it must attempt a DC 25 Fortitude save;
+    on a failure, its dying value increases by 1 (or 2 on a critical failure). If
+    the target is dead, it receives no save and its soul is imprisoned in the cat
+    sith''s body, becoming freed only if the cat sith is slain. While the soul is
+    imprisoned, the creature can''t be brought back to life by any means short of
+    a __wish__ or __miracle__. The cat sith can hold only one soul at a time and can
+    release a soul as a free action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - necromancy
+  - occult
+  trigger: null
 alignment: CN
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 60 feet. Any creature within the area that can see the cat sith must
-    succeed at a DC 21 Will save or become struck by an ill omen. On a failure, the
-    creature becomes immune to __fortune__ effects as long as it remains in the aura
-    and for 1 minute thereafter. On a critical failure, the creature takes a -1 penalty
-    to attack rolls, skill checks, and saving throws while within the ill omen aura
-    and becomes immune to fortune effects for 1 day.
+  description: Any creature within the area that can see the cat sith must succeed
+    at a DC 21 Will save or become struck by an ill omen. On a failure, the creature
+    becomes immune to __fortune__ effects as long as it remains in the aura and for
+    1 minute thereafter. On a critical failure, the creature takes a –1 penalty to
+    attack rolls, skill checks, and saving throws while within the ill omen aura and
+    becomes immune to fortune effects for 1 day.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ill Omen
-  range: null
+  range: 60 feet
   raw_description: '**Ill Omen** (__aura__, __curse__, __misfortune__, __occult__)
     60 feet. Any creature within the area that can see the cat sith must succeed at
     a DC 21 Will save or become struck by an ill omen. On a failure, the creature
     becomes immune to __fortune__ effects as long as it remains in the aura and for
-    1 minute thereafter. On a critical failure, the creature takes a -1 penalty to
+    1 minute thereafter. On a critical failure, the creature takes a –1 penalty to
     attack rolls, skill checks, and saving throws while within the ill omen aura and
     becomes immune to fortune effects for 1 day.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -65,13 +132,12 @@ description: 'Cat siths can easily pass for common black house cats, noteworthy 
 hp: 110
 hp_misc: null
 immunities:
-- misfortune effects
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=110">misfortune</a> effects
 languages:
 - Sylvan
 - speak with animals
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+3
@@ -94,73 +160,8 @@ melee:
   - finesse
 name: Cat Sith
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature hit by a cat sith's claw must succeed at a DC 23 Will save
-    or be cursed with misfortune. Whenever the cursed creature rolls a critical success
-    on a skill check or saving throw, it gets a success instead. Each day, a cursed
-    creature can attempt a DC 10 flat check to break the curse.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Cat Sith's Mark
-  range: null
-  raw_description: '**Cat Sith''s Mark** (__curse__, __misfortune__) A creature hit
-    by a cat sith''s claw must succeed at a DC 23 Will save or be cursed with misfortune.
-    Whenever the cursed creature rolls a critical success on a skill check or saving
-    throw, it gets a success instead. Each day, a cursed creature can attempt a DC
-    10 flat check to break the curse.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - misfortune
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The cat sith touches a __dying__ creature or a creature that died within
-    the past 3 days. If the target is a dying creature, it must attempt a DC 25 Fortitude
-    save; on a failure, its dying value increases by 1 (or 2 on a critical failure).
-    If the target is dead, it receives no save and its soul is imprisoned in the cat
-    sith's body, becoming freed only if the cat sith is slain. While the soul is imprisoned,
-    the creature can't be brought back to life by any means short of a __wish__ or
-    __miracle__. The cat sith can hold only one soul at a time and can release a soul
-    as a free action.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Steal Soul
-  range: null
-  raw_description: '**Steal Soul** [Two Actions]  (__necromancy__, __occult__) The
-    cat sith touches a __dying__ creature or a creature that died within the past
-    3 days. If the target is a dying creature, it must attempt a DC 25 Fortitude save;
-    on a failure, its dying value increases by 1 (or 2 on a critical failure). If
-    the target is dead, it receives no save and its soul is imprisoned in the cat
-    sith''s body, becoming freed only if the cat sith is slain. While the soul is
-    imprisoned, the creature can''t be brought back to life by any means short of
-    a __wish__ or __miracle__. The cat sith can hold only one soul at a time and can
-    release a soul as a free action.'
-  requirements: null
-  success: null
-  traits:
-  - necromancy
-  - occult
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 5
-  type: cold iron
-ritual_lists: null
 saves:
   fort: 14
   fort_misc: null
@@ -169,50 +170,47 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - low-light vision
 size: Tiny
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 15
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #153: Life''s Long Shadow'
-  page_start: 77
+  page_start: '77'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 23
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 23
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+  spell_lists:
+  - level: 3
     spells:
-    - frequency: at will
+    - misc: at will
       name: humanoid form
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: x2
+    - misc: x2
       name: paranoia
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- CN
-- Tiny
 - Fey
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold iron

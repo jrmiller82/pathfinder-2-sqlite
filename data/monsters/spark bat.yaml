@@ -7,6 +7,37 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The spark bat transforms into lightning that arcs to a large piece
+    of metal within 100 feet, such as a suit of metal armor or a metal weapon. The
+    bat then returns to its normal form in a space adjacent to the metal. This movement
+    doesn't trigger reactions.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Arc Lightning
+  range: null
+  raw_description: '**Arc Lightning** (__move__, __electricity__, __primal__, __transmutation__)
+    The spark bat transforms into lightning that arcs to a large piece of metal within
+    100 feet, such as a suit of metal armor or a metal weapon. The bat then returns
+    to its normal form in a space adjacent to the metal. This movement doesn''t trigger
+    reactions.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  - electricity
+  - primal
+  - transmutation
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Spark bats congregate around volatile weather in the Plane of Air.
@@ -20,13 +51,11 @@ hp_misc: null
 immunities:
 - bleed
 - electricity
-- paralyzed
-- poison
-- sleep
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+5
@@ -39,39 +68,7 @@ melee:
   - finesse
 name: Spark Bat
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The spark bat transforms into lightning that arcs to a large piece
-    of metal within 100 feet, such as a suit of metal armor or a metal weapon. The
-    bat then returns to its normal form in a space adjacent to the metal. This movement
-    doesn't trigger reactions.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Arc Lightning
-  range: null
-  raw_description: '**Arc Lightning** (__move__, __electricity__, __primal__, __transmutation__)
-    The spark bat transforms into lightning that arcs to a large piece of metal within
-    100 feet, such as a suit of metal armor or a metal weapon. The bat then returns
-    to its normal form in a space adjacent to the metal. This movement doesn''t trigger
-    reactions.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  - electricity
-  - primal
-  - transmutation
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 5
   fort_misc: null
@@ -80,32 +77,28 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Tiny
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 9
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 106
+  page_start: '106'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Tiny
 - Air
 - Elemental
-type: Creature
-weaknesses: null

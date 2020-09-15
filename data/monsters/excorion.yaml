@@ -1,0 +1,221 @@
+ability_mods:
+  cha_mod: 0
+  con_mod: 4
+  dex_mod: 5
+  int_mod: -3
+  str_mod: 4
+  wis_mod: 1
+ac: 24
+ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The excorion plants a magical handprint on the target, marking them
+    as chosen for death. The excorion makes a fist Strike against an adjacent creature;
+    this does not count toward the excorion's multiple attack penalty. On a hit, the
+    attack does no damage, but the creature becomes __observed__ to every excorion
+    within 60 feet, even if an excorion's line of sight would be blocked by a wall
+    or other obstacle. This effect lasts until the handprint is washed off, which
+    requires water and spending 3 actions to fully clean off.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bloody Handprint
+  range: null
+  raw_description: '**Bloody Handprint** [One Action]  The excorion plants a magical
+    handprint on the target, marking them as chosen for death. The excorion makes
+    a fist Strike against an adjacent creature; this does not count toward the excorion''s
+    multiple attack penalty. On a hit, the attack does no damage, but the creature
+    becomes __observed__ to every excorion within 60 feet, even if an excorion''s
+    line of sight would be blocked by a wall or other obstacle. This effect lasts
+    until the handprint is washed off, which requires water and spending 3 actions
+    to fully clean off.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The excorion sacrifices itself and transfers its bloody, vital energy to
+    a willing living creature within 30 feet. The excorion is immediately destroyed,
+    and the targeted living creature heals a number of HP equal to half the excorion's
+    remaining HP at the time that it used this ability. The living creature is __slowed
+    1__ during its next turn as its body adjusts to the newly transfused blood and
+    vital energy; the living creature also counts as an excorion for 1 minute for
+    the purpose of seeing other excorions' Bloody Handprint marks.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Vital Transfusion
+  range: null
+  raw_description: '**Vital Transfusion** [Two Actions]  **Requirements** The excorion
+    has at least 70 Hit Points; **Effect** The excorion sacrifices itself and transfers
+    its bloody, vital energy to a willing living creature within 30 feet. The excorion
+    is immediately destroyed, and the targeted living creature heals a number of HP
+    equal to half the excorion''s remaining HP at the time that it used this ability.
+    The living creature is __slowed 1__ during its next turn as its body adjusts to
+    the newly transfused blood and vital energy; the living creature also counts as
+    an excorion for 1 minute for the purpose of seeing other excorions'' Bloody Handprint
+    marks.'
+  requirements: The excorion has at least 70 Hit Points
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The excorion spews necrotic blood all over a foe it has __grabbed__.
+    The grabbed creature must succeed at a DC 25 Fortitude save or become __sickened
+    2__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Vomit Blood
+  range: null
+  raw_description: '**Vomit Blood** [One Action]  The excorion spews necrotic blood
+    all over a foe it has __grabbed__. The grabbed creature must succeed at a DC 25
+    Fortitude save or become __sickened 2__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: NE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The excorion moves about by way of hundreds of pulsating blood vessels,
+    which stretch from its body in dozens of tight, ropy bundles and anchor it to
+    the ground. An excorion cannot be __Tripped__, __Shoved__, or otherwise forcibly
+    moved except by magic, and the excorion ignores difficult terrain (but not greater
+    difficult terrain).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Vein Walker
+  range: null
+  raw_description: '**Vein Walker** The excorion moves about by way of hundreds of
+    pulsating blood vessels, which stretch from its body in dozens of tight, ropy
+    bundles and anchor it to the ground. An excorion cannot be __Tripped__, __Shoved__,
+    or otherwise forcibly moved except by magic, and the excorion ignores difficult
+    terrain (but not greater difficult terrain).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+description: 'These hideous undead creatures result from an exquisitely painful necromantic
+  process where flayed humanoids are animated through their exposed blood vessels.
+  Cults of undeath typically punish apostates and renegades with this cruel method
+  of reanimation, though sacrificial victims or unfortunate prisoners might suffer
+  a similar fate. Excorions have supernaturally strong, pulsing veins that extend
+  outward from their bodies like thousands of tiny, bloody cilia.
+
+
+
+
+  Excorions move their bulks not with their dead muscles, but with heaving contractions
+  of their blood vessels that pull them along in a swift but jerky manner. Excorions
+  can shift their magical blood easily throughout their bodies, allowing them to squirt
+  blood from their gaping, skinless mouths or to messily mark their foes.
+
+
+
+
+  **__Recall Knowledge - Undead__ (__Religion__)**: DC 25'
+hp: 160
+hp_misc: negative healing
+immunities:
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+level: 7
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d8+8
+    type: bludgeoning
+  name: fist
+  plus_damage:
+  - formula: null
+    type: Grab
+  to_hit: 18
+  traits:
+  - agile
+  - finesse
+name: Excorion
+perception: 18
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d6+4
+    type: bludgeoning and dazzled for 1 round
+  name: bloody spew
+  plus_damage: null
+  to_hit: 18
+  traits:
+  - range 20 feet
+rarity: Uncommon
+saves:
+  fort: 17
+  fort_misc: null
+  misc: null
+  ref: 18
+  ref_misc: null
+  will: 14
+  will_misc: null
+senses:
+- darkvision
+size: Medium
+skills:
+- bonus: 16
+  misc: null
+  name: Acrobatics
+- bonus: 17
+  misc: null
+  name: Athletics
+- bonus: 16
+  misc: null
+  name: Stealth
+sources:
+- abbr: 'Pathfinder #158: Sixty Feet Under'
+  page_start: '82'
+  page_stop: null
+speed:
+- amount: 35
+  misc: null
+  type: Land
+spell_lists: null
+traits:
+- Undead
+weaknesses:
+- amount: 10
+  misc: null
+  type: positive
+- amount: 5
+  misc: null
+  type: slashing

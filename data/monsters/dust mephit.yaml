@@ -7,6 +7,34 @@ ability_mods:
   wis_mod: 0
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dust mephit breathes a cloud of dust in a 15-foot cone that deals
+    2d6 slashing damage to each creature within the area (DC 17 basic Reflex save).
+    The dust mephit can't use Breath Weapon again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__air__, __arcane__, __earth__)
+    The dust mephit breathes a cloud of dust in a 15-foot cone that deals 2d6 slashing
+    damage to each creature within the area (DC 17 basic Reflex save). The dust mephit
+    can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - air
+  - arcane
+  - earth
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Whining and self-important creatures, dust mephits are known for their
@@ -23,15 +51,14 @@ hp: 16
 hp_misc: fast healing 2 (in dust or sand)
 immunities:
 - bleed
-- paralyzed
-- poison
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Auran
 - Terran
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -44,36 +71,8 @@ melee:
   - finesse
 name: Dust Mephit
 perception: 3
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dust mephit breathes a cloud of dust in a 15-foot cone that deals
-    2d6 slashing damage to each creature within the area (DC 17 basic Reflex save).
-    The dust mephit can't use Breath Weapon again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__air__, __arcane__, __earth__)
-    The dust mephit breathes a cloud of dust in a 15-foot cone that deals 2d6 slashing
-    damage to each creature within the area (DC 17 basic Reflex save). The dust mephit
-    can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - air
-  - arcane
-  - earth
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -82,45 +81,41 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +3
 - darkvision
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 112
+  page_start: '112'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: fly
 spell_lists:
-- dc: 17
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: glitterdust
-      requirement: null
-  to_hit: null
+  spells_source: Arcane Innate Spells
 traits:
-- Uncommon
-- N
-- Small
 - Air
 - Earth
 - Elemental
-type: Creature
-weaknesses: null

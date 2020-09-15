@@ -7,6 +7,86 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: 'talons +15, **Damage **1d3+1.
+
+
+    A blodeuwedd can return to their normal form as a free action.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [Two Actions]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) A blodeuwedd can take on the appearance of a single
+    unique humanoid or the form of a prairie owl. When in humanoid form, the blodeuwedd
+    loses its claw attack. In owl form, its statistics change as follows: **Size **Small;
+    **Speed **fly 60 feet; **Melee ** talons +15, **Damage **1d3+1.
+
+
+    A blodeuwedd can return to their normal form as a free action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Every Stride action taken by a blodeuwedd causes small plants, grasses,
+    and wildflowers to sprout from the ground, though they can suppress this effect
+    if they desire. In a region or terrain that wouldn't normally support plant life,
+    these plants thrive for 1 minute before withering away.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Living Footsteps
+  range: null
+  raw_description: '**Living Footsteps** Every Stride action taken by a blodeuwedd
+    causes small plants, grasses, and wildflowers to sprout from the ground, though
+    they can suppress this effect if they desire. In a region or terrain that wouldn''t
+    normally support plant life, these plants thrive for 1 minute before withering
+    away.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: While surrounded by any field or fertile plain, a blodeuwedd can infuse
+    themself with borrowed life energy from nearby plants and nutrients in the ground.
+    The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Nature's Infusion
+  range: null
+  raw_description: '**Nature''s Infusion** [Two Actions]  **Frequency **once per day;
+    **Effect **While surrounded by any field or fertile plain, a blodeuwedd can infuse
+    themself with borrowed life energy from nearby plants and nutrients in the ground.
+    The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CN
 automatic_abilities: null
 description: 'The mysterious blodeuwedds dwell in those parts of the world where the
@@ -35,7 +115,6 @@ description: 'The mysterious blodeuwedds dwell in those parts of the world where
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 24'
 hp: 105
 hp_misc: null
-immunities: null
 items:
 - +1 sling
 languages:
@@ -44,7 +123,7 @@ languages:
 - Sylvan
 - speak with plants
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -56,88 +135,7 @@ melee:
   - agile
 name: Blodeuwedd
 perception: 14
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 'A blodeuwedd can take on the appearance of a single unique humanoid
-    or the form of a prairie owl. When in humanoid form, the blodeuwedd loses its
-    claw attack. In owl form, its statistics change as follows: **Size **Small; **Speed
-    **fly 60 feet; **Melee ** talons +15, **Damage **1d3+1.
-
-
-    A blodeuwedd can return to their normal form as a free action.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __polymorph__, __primal__,
-    __transmutation__) A blodeuwedd can take on the appearance of a single unique
-    humanoid or the form of a prairie owl. When in humanoid form, the blodeuwedd loses
-    its claw attack. In owl form, its statistics change as follows: **Size **Small;
-    **Speed **fly 60 feet; **Melee ** talons +15, **Damage **1d3+1.
-
-
-    A blodeuwedd can return to their normal form as a free action.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Every Stride action taken by a blodeuwedd causes small plants, grasses,
-    and wildflowers to sprout from the ground, though they can suppress this effect
-    if they desire. In a region or terrain that wouldn't normally support plant life,
-    these plants thrive for 1 minute before withering away.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Living Footsteps
-  range: null
-  raw_description: '**Living Footsteps** Every Stride action taken by a blodeuwedd
-    causes small plants, grasses, and wildflowers to sprout from the ground, though
-    they can suppress this effect if they desire. In a region or terrain that wouldn''t
-    normally support plant life, these plants thrive for 1 minute before withering
-    away.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: While surrounded by any field or fertile plain, a blodeuwedd can infuse
-    themself with borrowed life energy from nearby plants and nutrients in the ground.
-    The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Nature's Infusion
-  range: null
-  raw_description: '**Nature''s Infusion** [Two Actions]  **Frequency **once per day;
-    **Effect **While surrounded by any field or fertile plain, a blodeuwedd can infuse
-    themself with borrowed life energy from nearby plants and nutrients in the ground.
-    The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+4
@@ -149,8 +147,6 @@ ranged:
   - propulsive
   - range increment 50 feet
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -169,11 +165,11 @@ sense_abilities:
     save is then temporarily immune to the allergen aura for 24 hours. A blodeuwedd
     can suppress this aura or activate it again as a free action.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Allergen Aura
   range: null
   raw_description: '**Allergen Aura** (__aura__, __primal__) A blodeuwedd exudes a
@@ -183,6 +179,8 @@ sense_abilities:
     aura for 24 hours. A blodeuwedd can suppress this aura or activate it again as
     a free action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -191,110 +189,93 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The blodeuwedd can use __Diplomacy__ to __Make an Impression__ on
-    and make very simple __Requests__ of __animals__.
-
-
-    '
+  description: The blodeuwedd can use __Diplomacy__ to __Make an Impression__ on and
+    make very simple __Requests__ of __animals__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wild Empathy
   range: null
   raw_description: '**Wild Empathy** The blodeuwedd can use __Diplomacy__ to __Make
-    an Impression__ on and make very simple __Requests__ of __animals__.
-
-
-    '
+    an Impression__ on and make very simple __Requests__ of __animals__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +14
 - low-light vision
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 13
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 15
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 13
   misc: +17 in grasslands
-  name: 'Stealth '
+  name: Stealth
 - bonus: 11
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 41
+  page_start: '41'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 25
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: hallucinatory terrain
-      requirement: null
-    - frequency: null
-      name: modify memory
-      requirement: null
-    - frequency: null
-      name: sleep
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: wall of thorns
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: ×3
-      name: entangle
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: tanglefoot
-      requirement: null
-  - heightened_level: 4
-    level: -1
+  constants:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: speak with plants
-      requirement: null
-  to_hit: null
+  dc: 25
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: hallucinatory terrain
+    - misc: null
+      name: modify memory
+    - misc: null
+      name: sleep
+  - level: 3
+    spells:
+    - misc: null
+      name: wall of thorns
+  - level: 2
+    spells:
+    - misc: ×3
+      name: entangle
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- CN
-- Medium
 - Fey
 - Plant
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron

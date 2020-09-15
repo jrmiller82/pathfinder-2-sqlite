@@ -7,6 +7,93 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**(1st)** __lesser acid flask__, __lesser alchemist fire__, __lesser
+    tanglefoot bag__'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Alchemical Formulas
+  range: null
+  raw_description: '**Alchemical Formulas** **(1st)** __lesser acid flask__, __lesser
+    alchemist fire__, __lesser tanglefoot bag__'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The duergar bombardier has a range increment of 30 feet with their
+    bombs instead of 20 feet.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Far Lobber
+  range: null
+  raw_description: '**Far Lobber** The duergar bombardier has a range increment of
+    30 feet with their bombs instead of 20 feet.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The duergar bombardier creates a single alchemical item from their
+    formula book (see Alchemical Formulas). This item has the __infused__ trait, but
+    it remains potent only until the start of the duergar bombardier's next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Alchemy
+  range: null
+  raw_description: '**Quick Alchemy** [One Action]  The duergar bombardier creates
+    a single alchemical item from their formula book (see Alchemical Formulas). This
+    item has the __infused__ trait, but it remains potent only until the start of
+    the duergar bombardier''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The duergar can use Interact to draw a bomb, then Strike with it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Bomber
+  range: null
+  raw_description: '**Quick Bomber** [One Action]  The duergar can use Interact to
+    draw a bomb, then Strike with it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
@@ -14,15 +101,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Light Blindness
   range: null
   raw_description: '**Light Blindness**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -40,7 +129,6 @@ description: 'Alchemy intrigues many duergars, and their cruel traditions often 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
 items:
 - alchemist's tools
 - infused lesser acid flask (2)
@@ -53,7 +141,7 @@ languages:
 - Dwarven
 - Undercommon
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+1
@@ -65,99 +153,17 @@ melee:
   - shove
 name: Duergar Bombardier
 perception: 4
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**(1st)** __lesser acid flask__, __lesser alchemist fire__, __lesser
-    tanglefoot bag__'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Alchemical Formulas
-  range: null
-  raw_description: '**Alchemical Formulas** **(1st)** __lesser acid flask__, __lesser
-    alchemist fire__, __lesser tanglefoot bag__'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The duergar bombardier has a range increment of 30 feet with their
-    bombs instead of 20 feet.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Far Lobber
-  range: null
-  raw_description: '**Far Lobber** The duergar bombardier has a range increment of
-    30 feet with their bombs instead of 20 feet.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
+ranged_attacks:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The duergar bombardier creates a single alchemical item from their
-    formula book (see Alchemical Formulas). This item has the __infused__ trait, but
-    it remains potent only until the start of the duergar bombardier's next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quick Alchemy
-  range: null
-  raw_description: '**Quick Alchemy**   The duergar bombardier creates a single alchemical
-    item from their formula book (see Alchemical Formulas). This item has the __infused__
-    trait, but it remains potent only until the start of the duergar bombardier''s
-    next turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The duergar can use Interact to draw a bomb, then Strike with it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quick Bomber
-  range: null
-  raw_description: '**Quick Bomber**   The duergar can use Interact to draw a bomb,
-    then Strike with it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
-- action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: varies by bomb
   name: Bomb
   plus_damage: null
   to_hit: 8
   traits:
   - range increment 30 feet
   - splash
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -170,75 +176,67 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A duergar bombardier''s items listed as infused last for 24 hours,
-    or until the next time they make their daily preparations.
-
-
-    '
+  description: A duergar bombardier's items listed as infused last for 24 hours, or
+    until the next time they make their daily preparations.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Infused Items
   range: null
   raw_description: '**Infused Items** A duergar bombardier''s items listed as infused
-    last for 24 hours, or until the next time they make their daily preparations.
-
-
-    '
+    last for 24 hours, or until the next time they make their daily preparations.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +4
 - darkvision
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 6
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 6
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 4
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 139
+  page_start: '139'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 17
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: self only
+    - misc: self only
       name: enlarge
-      requirement: null
-    - frequency: self only
+    - misc: self only
       name: invisibility
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- LE
-- Medium
 - Duergar
 - Dwarf
 - Humanoid
-type: Creature
-weaknesses: null

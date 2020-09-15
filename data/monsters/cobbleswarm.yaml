@@ -1,0 +1,237 @@
+ability_mods:
+  cha_mod: 0
+  con_mod: 2
+  dex_mod: 4
+  int_mod: -3
+  str_mod: 1
+  wis_mod: 3
+ac: 17
+ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The cobbleswarm attempts an __Athletics__ check and compares the result
+    to the Fortitude DC of all creatures in its space.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Grasping Bites
+  range: null
+  raw_description: '**Grasping Bites** [Two Actions]  (__attack__) The cobbleswarm
+    attempts an __Athletics__ check and compares the result to the Fortitude DC of
+    all creatures in its space.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature falls __prone__ and takes 1d6 bludgeoning damage,
+    and is __restrained__ by the cobbleswarm until the end of the cobbleswarm's next
+    turn.
+  description: The creature falls __prone__ and takes 1d6 bludgeoning damage, and
+    is __restrained__ by the cobbleswarm until the end of the cobbleswarm's next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature falls __prone__ and takes 1d6
+    bludgeoning damage, and is __restrained__ by the cobbleswarm until the end of
+    the cobbleswarm''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature falls prone, and is __grabbed__ by the cobbleswarm until
+    the creature until the end of the cobbleswarm's next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature falls prone, and is __grabbed__ by the
+    cobbleswarm until the creature until the end of the cobbleswarm''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature falls prone, and is __grabbed__ by the cobbleswarm until the
+    creature until the end of the cobbleswarm's next turn.
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each enemy in the cobbleswarm's space takes 2d4 bludgeoning damage
+    (DC 17 basic Reflex save).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pummeling Assault
+  range: null
+  raw_description: '**Pummeling Assault** [One Action]  Each enemy in the cobbleswarm''s
+    space takes 2d4 bludgeoning damage (DC 17 basic Reflex save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: N
+automatic_abilities: null
+description: 'Cobble mites look like stones or rocks with small mouths that resemble
+  the inside of geodes. Tiny, unassuming, and typically harmless, they reside in mountains
+  and cavernous regions, subsisting on scraps of food and gravel. When dozens of cobble
+  mites congregate, they use their collective might to overwhelm and consume small
+  creatures, much like a school of hungry piranhas attacking and devouring unfortunate
+  animals.
+
+
+
+
+  Cobbleswarms, also known as stone flocks or rock hives, typically live simple existences.
+  However, some cobble mites end up pulled from their native mountainsides or caverns.
+  Humanoids tend to see cobble mites as endearing little creatures and sometimes take
+  one as a pet. Because cobbleswarms have consistent, smooth shapes, they''re sometimes
+  inadvertently collected for use in road building and other construction. Other times,
+  cobble mites simply get lost after wandering far from their home territory. Lone
+  cobble mites have an uncanny knack for finding each other, especially when forming
+  a cobbleswarm.
+
+
+
+
+  Most cobbleswarms living in urban environments hide among cobbled city streets.
+  They consume the rocks caught in the grooves of boots and food dropped by pedestrians.
+  Cobble mites are tough creatures that can endure being trodden upon uninjured. Some
+  streets bear several cobble mites that even locals don''t suspect, as the creatures
+  stay well-fed enough to refrain from moving much or causing trouble. Loud explosions
+  frighten cobble mites, and many cobbleswarms lash out during firework displays,
+  mostly due to fear.
+
+
+
+
+  **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 16'
+hp: 20
+hp_misc: null
+immunities:
+- precision
+- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+level: 2
+melee_attacks: null
+name: Cobbleswarm
+perception: 9
+ranged_attacks: null
+resistances:
+- amount: 6
+  misc: null
+  type: piercing
+- amount: 6
+  misc: null
+  type: slashing
+saves:
+  fort: 10
+  fort_misc: null
+  misc: null
+  ref: 12
+  ref_misc: null
+  will: 7
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The cobbleswarm's space is difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Clutching Cobbles
+  range: null
+  raw_description: '**Clutching Cobbles** The cobbleswarm''s space is difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The cobbleswarm's tremorsense is a precise sense out to 40 feet and
+    an imprecise sense out to 80 feet. The cobbleswarm can't sense anything beyond
+    the range of its tremorsense.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Precise Tremorsense
+  range: null
+  raw_description: '**Precise Tremorsense** The cobbleswarm''s tremorsense is a precise
+    sense out to 40 feet and an imprecise sense out to 80 feet. The cobbleswarm can''t
+    sense anything beyond the range of its tremorsense.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+senses:
+- tremorsense (precise) 40 feet
+size: Large
+skills:
+- bonus: 10
+  misc: null
+  name: Athletics
+- bonus: 13
+  misc: null
+  name: Stealth
+sources:
+- abbr: 'Pathfinder #157: Devil at the Dreaming Palace'
+  page_start: '83'
+  page_stop: null
+speed:
+- amount: 20
+  misc: null
+  type: Land
+- amount: 10
+  misc: null
+  type: burrow
+spell_lists: null
+traits:
+- Aberration
+- Earth
+- Swarm
+weaknesses:
+- amount: 3
+  misc: null
+  type: area damage
+- amount: 150
+  misc: null
+  type: <a style="text-decoration:underline" href="Traits.aspx?ID=

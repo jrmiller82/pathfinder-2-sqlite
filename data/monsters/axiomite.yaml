@@ -7,6 +7,37 @@ ability_mods:
   wis_mod: 5
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The axiomite shifts between its humanoid form and that of a cloud of
+    crystalline dust in which strange symbols and equations flash. In this form it
+    gains a fly Speed of 40 feet and can fit through even tiny apertures, similarly
+    to __gaseous form__. It can cast spells, but it can't make melee or ranged attacks
+    in this state. It can return to its humanoid form by using this action while in
+    crystalline dust form.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Crystalline Dust Form
+  range: null
+  raw_description: '**Crystalline Dust Form** [One Action]  (__polymorph__) The axiomite
+    shifts between its humanoid form and that of a cloud of crystalline dust in which
+    strange symbols and equations flash. In this form it gains a fly Speed of 40 feet
+    and can fit through even tiny apertures, similarly to __gaseous form__. It can
+    cast spells, but it can''t make melee or ranged attacks in this state. It can
+    return to its humanoid form by using this action while in crystalline dust form.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - polymorph
+  trigger: null
 alignment: LN
 automatic_abilities: null
 description: 'According to the axiomites, their kind rose from the raw mathematical
@@ -58,15 +89,15 @@ languages:
 - Infernal
 - Utopian
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+11
     type: bludgeoning
   name: warhammer
   plus_damage:
-  - formula: 1d6
-    type: lawful
+  - formula: null
+    type: 1d6 lawful
   to_hit: 20
   traits:
   - lawful
@@ -78,8 +109,8 @@ melee:
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 1d6
-    type: lawful
+  - formula: null
+    type: 1d6 lawful
   to_hit: 17
   traits:
   - agile
@@ -87,43 +118,14 @@ melee:
   - magical
 name: Axiomite
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The axiomite shifts between its humanoid form and that of a cloud of
-    crystalline dust in which strange symbols and equations flash. In this form it
-    gains a fly Speed of 40 feet and can fit through even tiny apertures, similarly
-    to __gaseous form__. It can cast spells, but it can't make melee or ranged attacks
-    in this state. It can return to its humanoid form by using this action while in
-    crystalline dust form.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Crystalline Dust Form
-  range: null
-  raw_description: '**Crystalline Dust Form**   (__polymorph__) The axiomite shifts
-    between its humanoid form and that of a cloud of crystalline dust in which strange
-    symbols and equations flash. In this form it gains a fly Speed of 40 feet and
-    can fit through even tiny apertures, similarly to __gaseous form__. It can cast
-    spells, but it can''t make melee or ranged attacks in this state. It can return
-    to its humanoid form by using this action while in crystalline dust form.'
-  requirements: null
-  success: null
-  traits:
-  - polymorph
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
+  misc: null
   type: electricity
 - amount: 10
+  misc: null
   type: mental
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -132,94 +134,79 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 size: Medium
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Axis Lore '
+  name: Axis Lore
 - bonus: 21
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 15
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 17
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 17
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: Bestiary
-  page_start: 9
+  page_start: '9'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 27
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: 17
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: telekinetic haul
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: lawful
-      name: divine wrath
-      requirement: null
-    - frequency: x3
-      name: lightning bolt
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: x3
-      name: haste
-      requirement: null
-    - frequency: null
-      name: paralyze
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: telekinetic maneuver
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
-      name: true strike
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: telekinetic projectile
-      requirement: null
-  to_hit: 17
+  constants: null
+  dc: 27
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: telekinetic haul
+  - level: 4
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: lawful
+      name: divine wrath
+    - misc: x3
+      name: lightning bolt
+  - level: 3
+    spells:
+    - misc: x3
+      name: haste
+    - misc: null
+      name: paralyze
+  - level: 2
+    spells:
+    - misc: null
+      name: telekinetic maneuver
+  - level: 1
+    spells:
+    - misc: at will
+      name: true strike
+  spells_source: Divine Innate Spells
 traits:
-- LN
-- Medium
 - Aeon
 - Monitor
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: chaotic

@@ -7,6 +7,122 @@ ability_mods:
   wis_mod: 4
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: 'The Sandpoint Devil breathes a 30-foot cone of flame that deals 6d10
+    fire damage. Each creature in the area must attempt a DC 26 Reflex save. The Sandpoint
+    Devil can''t use Accursed Breath for 1d4 rounds.
+
+
+    Critical Success The creature is unaffected.
+
+
+    Success The creature takes half damage.
+
+
+    Failure The creature takes full damage and is __sickened 2__ by the agonizing
+    pain of its burns.
+
+
+    Critical Failure The creature takes full damage and is cursed. The victim''s flesh
+    appears charred and burned, and the pain of being burned alive never fully vanishes.
+    The cursed creature takes a –2 status penalty to all checks from the constant
+    pain. Healing doesn''t alter the appearance of the burns or lessen the penalty,
+    but removing the curse does.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Accursed Breath
+  range: null
+  raw_description: '**Accursed Breath** [Two Actions]  (__curse__, __evocation__,
+    __fire__, __occult__) The Sandpoint Devil breathes a 30-foot cone of flame that
+    deals 6d10 fire damage. Each creature in the area must attempt a DC 26 Reflex
+    save. The Sandpoint Devil can''t use Accursed Breath for 1d4 rounds.
+
+
+    Critical Success The creature is unaffected.
+
+
+    Success The creature takes half damage.
+
+
+    Failure The creature takes full damage and is __sickened 2__ by the agonizing
+    pain of its burns.
+
+
+    Critical Failure The creature takes full damage and is cursed. The victim''s flesh
+    appears charred and burned, and the pain of being burned alive never fully vanishes.
+    The cursed creature takes a –2 status penalty to all checks from the constant
+    pain. Healing doesn''t alter the appearance of the burns or lessen the penalty,
+    but removing the curse does.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - evocation
+  - fire
+  - occult
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The Sandpoint Devil unleashes a bloodcurdling howl that can be heard
+    for miles. Each creature within a 100-foot emanation must succeed at a DC 26 Will
+    save or become __frightened 2__ (frightened 3 and __fleeing__ as long as it remains
+    frightened on a critical failure). Creatures that attempt this Will save are then
+    immune to Devil's Howl for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Devil's Howl
+  range: null
+  raw_description: '**Devil''s Howl** [Two Actions]  (__auditory__, __emotion__, __enchantment__,
+    __fear__, __mental__, __occult__) The Sandpoint Devil unleashes a bloodcurdling
+    howl that can be heard for miles. Each creature within a 100-foot emanation must
+    succeed at a DC 26 Will save or become __frightened 2__ (frightened 3 and __fleeing__
+    as long as it remains frightened on a critical failure). Creatures that attempt
+    this Will save are then immune to Devil''s Howl for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - emotion
+  - enchantment
+  - fear
+  - mental
+  - occult
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Medium or smaller, hoof, DC 23
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**__Trample__** [Three Actions]  Medium or smaller, hoof, DC 23'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +134,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +149,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -62,13 +180,12 @@ hp: 165
 hp_misc: null
 immunities:
 - fire
-- fear
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
 languages:
 - Abyssal
 - Varisian
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
@@ -89,102 +206,8 @@ melee:
   - versatile S
 name: Sandpoint Devil
 perception: 16
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: "The Sandpoint Devil breathes a 30-foot cone of flame that deals 6d10\
-    \ fire damage. Each creature in the area must attempt a DC 26 Reflex save. The\
-    \ Sandpoint Devil can't use Accursed Breath for 1d4 rounds. \n\nCritical Success\
-    \ The creature is unaffected. \n\nSuccess The creature takes half damage. \n\n\
-    Failure The creature takes full damage and is __sickened 2__ by the agonizing\
-    \ pain of its burns. \n\nCritical Failure The creature takes full damage and is\
-    \ cursed. The victim's flesh appears charred and burned, and the pain of being\
-    \ burned alive never fully vanishes. The cursed creature takes a -2 status penalty\
-    \ to all checks from the constant pain. Healing doesn't alter the appearance of\
-    \ the burns or lessen the penalty, but removing the curse does."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Accursed Breath
-  range: null
-  raw_description: "**Accursed Breath** [Two Actions]  (__curse__, __evocation__,\
-    \ __fire__, __occult__) The Sandpoint Devil breathes a 30-foot cone of flame that\
-    \ deals 6d10 fire damage. Each creature in the area must attempt a DC 26 Reflex\
-    \ save. The Sandpoint Devil can't use Accursed Breath for 1d4 rounds. \n\nCritical\
-    \ Success The creature is unaffected. \n\nSuccess The creature takes half damage.\
-    \ \n\nFailure The creature takes full damage and is __sickened 2__ by the agonizing\
-    \ pain of its burns. \n\nCritical Failure The creature takes full damage and is\
-    \ cursed. The victim's flesh appears charred and burned, and the pain of being\
-    \ burned alive never fully vanishes. The cursed creature takes a -2 status penalty\
-    \ to all checks from the constant pain. Healing doesn't alter the appearance of\
-    \ the burns or lessen the penalty, but removing the curse does."
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - evocation
-  - fire
-  - occult
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The Sandpoint Devil unleashes a bloodcurdling howl that can be heard
-    for miles. Each creature within a 100-foot emanation must succeed at a DC 26 Will
-    save or become __frightened 2__ (frightened 3 and __fleeing__ as long as it remains
-    frightened on a critical failure). Creatures that attempt this Will save are then
-    immune to Devil's Howl for 24 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Devil's Howl
-  range: null
-  raw_description: '**Devil''s Howl** [Two Actions]  (__auditory__, __emotion__, __enchantment__,
-    __fear__, __mental__, __occult__) The Sandpoint Devil unleashes a bloodcurdling
-    howl that can be heard for miles. Each creature within a 100-foot emanation must
-    succeed at a DC 26 Will save or become __frightened 2__ (frightened 3 and __fleeing__
-    as long as it remains frightened on a critical failure). Creatures that attempt
-    this Will save are then immune to Devil''s Howl for 24 hours.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - emotion
-  - enchantment
-  - fear
-  - mental
-  - occult
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Medium or smaller, hoof, DC 23
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**__Trample__** [Three Actions]  Medium or smaller, hoof, DC 23'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Rare
-resistances:
-- amount: 5
-  type: cold iron
-ritual_lists: null
+ranged_attacks: null
+rarity: Unique
 saves:
   fort: 19
   fort_misc: null
@@ -193,81 +216,72 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - greater darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 18
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 16
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 230
+  page_start: '230'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 23
-  misc: ''
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: 15
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: phantasmal killer
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: stinking cloud
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: obscuring mist
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
-      name: gust of wind
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: produce flame
-      requirement: null
-  to_hit: 15
+  constants: null
+  dc: 23
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: dimension door
+    - misc: null
+      name: phantasmal killer
+  - level: 3
+    spells:
+    - misc: null
+      name: stinking cloud
+  - level: 2
+    spells:
+    - misc: null
+      name: obscuring mist
+  - level: 1
+    spells:
+    - misc: at will
+      name: gust of wind
+  spells_source: Occult Innate Spells
 traits:
-- Rare
-- NE
-- Large
 - Beast
 - Fiend
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold iron

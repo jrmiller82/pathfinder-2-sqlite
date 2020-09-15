@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 2
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The giant eagle Flies up to double its fly Speed in a straight line,
+    descending at least 10 feet, and then makes a talon Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Eagle Dive
+  range: null
+  raw_description: '**Eagle Dive** [Two Actions]  The giant eagle Flies up to double
+    its fly Speed in a straight line, descending at least 10 feet, and then makes
+    a talon Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A giant eagle can Fly at half Speed while it has a creature grabbed
+    or restrained in its talons, carrying that creature along with it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Snatch
+  range: null
+  raw_description: '**Snatch** A giant eagle can Fly at half Speed while it has a
+    creature grabbed or restrained in its talons, carrying that creature along with
+    it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
@@ -15,16 +60,18 @@ automatic_abilities:
   description: When a giant eagle rolls a success on a Reflex save, it gets a critical
     success instead.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Evasion
   range: null
   raw_description: '**Evasion** When a giant eagle rolls a success on a Reflex save,
     it gets a critical success instead.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -51,14 +98,12 @@ description: 'No mere animals, giant eagles have a keen intellect and a strong s
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 18'
 hp: 45
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Auran
 - Sylvan
 - (can't speak any language)
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+5
@@ -80,53 +125,7 @@ melee:
   - agile
 name: Giant Eagle
 perception: 11
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The giant eagle Flies up to double its fly Speed in a straight line,
-    descending at least 10 feet, and then makes a talon Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Eagle Dive
-  range: null
-  raw_description: '**Eagle Dive** [Two Actions]  The giant eagle Flies up to double
-    its fly Speed in a straight line, descending at least 10 feet, and then makes
-    a talon Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A giant eagle can Fly at half Speed while it has a creature grabbed
-    or restrained in its talons, carrying that creature along with it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Snatch
-  range: null
-  raw_description: '**Snatch** A giant eagle can Fly at half Speed while it has a
-    creature grabbed or restrained in its talons, carrying that creature along with
-    it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -135,31 +134,27 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - low-light vision
 size: Large
 skills:
 - bonus: 11
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 141
+  page_start: '141'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- NG
-- Large
 - Beast
-type: Creature
-weaknesses: null

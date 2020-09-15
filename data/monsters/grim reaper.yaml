@@ -7,50 +7,107 @@ ability_mods:
   wis_mod: 7
 ac: 47
 ac_special: null
-alignment: NE
-automatic_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. Living creatures in the aura must roll twice on all d20 rolls
-    and use the lower result.
+  description: A creature critically hit by any of the grim reaper's attacks or that
+    critically fails against any of its spells must succeed at a DC 47 Fortitude save
+    or die.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Aura of Misfortune
+  maximum_duration: null
+  name: Death Strike
   range: null
-  raw_description: '**Aura of Misfortune** (__aura__, __divination__, __divine__,
-    __misfortune__) 20 feet. Living creatures in the aura must roll twice on all d20
-    rolls and use the lower result.'
+  raw_description: '**Death Strike** (__death__) A creature critically hit by any
+    of the grim reaper''s attacks or that critically fails against any of its spells
+    must succeed at a DC 47 Fortitude save or die.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
-  - aura
-  - divination
-  - divine
-  - misfortune
+  - death
   trigger: null
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: The grim reaper can choose whether or not it takes positive damage.
+  description: When the grim reaper hits and deals damage with its scythe, it regains
+    20 Hit Points, and the target must succeed at a DC 43 Fortitude save or become
+    __doomed 1__. If the target is already doomed, the doomed value increases by 1
+    (to a maximum of doomed 3).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Negative Healing
+  maximum_duration: null
+  name: Energy Drain
   range: null
-  raw_description: '**Negative Healing** The grim reaper can choose whether or not
-    it takes positive damage.'
+  raw_description: '**Energy Drain** When the grim reaper hits and deals damage with
+    its scythe, it regains 20 Hit Points, and the target must succeed at a DC 43 Fortitude
+    save or become __doomed 1__. If the target is already doomed, the doomed value
+    increases by 1 (to a maximum of doomed 3).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature killed by the grim reaper can't be brought back to life
+    by any means short of divine intervention.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Final Death
+  range: null
+  raw_description: '**Final Death** A creature killed by the grim reaper can''t be
+    brought back to life by any means short of divine intervention.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any scythe gains the __agile__ trait, can't be disarmed, and becomes
+    a +3 __major striking__ __keen__ scythe while the grim reaper wields it. If the
+    grim reaper Strikes a creature with a weakness to any specific type of damage,
+    the scythe's damage counts as that type of damage, in addition to slashing.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Infuse Weapon
+  range: null
+  raw_description: '**Infuse Weapon** (__divine__, __evocation__) Any scythe gains
+    the __agile__ trait, can''t be disarmed, and becomes a +3 __major striking__ __keen__
+    scythe while the grim reaper wields it. If the grim reaper Strikes a creature
+    with a weakness to any specific type of damage, the scythe''s damage counts as
+    that type of damage, in addition to slashing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - evocation
+  trigger: null
+alignment: NE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -58,19 +115,30 @@ automatic_abilities:
   effect: The grim reaper teleports to a square adjacent to the triggering creature
     and makes a melee Strike against it. If the Strike hits, the grim reaper disrupts
     the triggering action.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Lurking Death
+  maximum_duration: null
+  name: Aura of Misfortune
   range: null
-  raw_description: '**Lurking Death** [Reaction] (__teleportation__); **Trigger**
-    A creature within 100 feet makes a ranged attack or uses an action that has the
-    concentrate, manipulate, or move trait. **Effect** The grim reaper teleports to
-    a square adjacent to the triggering creature and makes a melee Strike against
-    it. If the Strike hits, the grim reaper disrupts the triggering action.'
+  raw_description: '**Aura of Misfortune** (__aura__, __divination__, __divine__,
+    __misfortune__) 20 feet. Living creatures in the aura must roll twice on all d20
+    rolls and use the lower result.
+
+
+    **Negative Healing** The grim reaper can choose whether or not it takes positive
+    damage.
+
+
+    **Lurking Death** [Reaction] (__teleportation__); **Trigger** A creature within
+    100 feet makes a ranged attack or uses an action that has the concentrate, manipulate,
+    or move trait. **Effect** The grim reaper teleports to a square adjacent to the
+    triggering creature and makes a melee Strike against it. If the Strike hits, the
+    grim reaper disrupts the triggering action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - teleportation
@@ -135,7 +203,7 @@ languages:
 - Common
 - Necril
 level: 21
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d10+23
@@ -143,7 +211,9 @@ melee:
   name: keen scythe
   plus_damage:
   - formula: null
-    type: death strike and energy drain
+    type: death strike
+  - formula: null
+    type: energy drain
   to_hit: 40
   traits:
   - agile
@@ -153,103 +223,12 @@ melee:
   - trip
 name: Grim Reaper
 perception: 41
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature critically hit by any of the grim reaper's attacks or that
-    critically fails against any of its spells must succeed at a DC 47 Fortitude save
-    or die.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Death Strike
-  range: null
-  raw_description: '**Death Strike** (__death__) A creature critically hit by any
-    of the grim reaper''s attacks or that critically fails against any of its spells
-    must succeed at a DC 47 Fortitude save or die.'
-  requirements: null
-  success: null
-  traits:
-  - death
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the grim reaper hits and deals damage with its scythe, it regains
-    20 Hit Points, and the target must succeed at a DC 43 Fortitude save or become
-    __doomed 1__. If the target is already doomed, the doomed value increases by 1
-    (to a maximum of doomed 3).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Energy Drain
-  range: null
-  raw_description: '**Energy Drain** When the grim reaper hits and deals damage with
-    its scythe, it regains 20 Hit Points, and the target must succeed at a DC 43 Fortitude
-    save or become __doomed 1__. If the target is already doomed, the doomed value
-    increases by 1 (to a maximum of doomed 3).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature killed by the grim reaper can't be brought back to life
-    by any means short of divine intervention.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Final Death
-  range: null
-  raw_description: '**Final Death** A creature killed by the grim reaper can''t be
-    brought back to life by any means short of divine intervention.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any scythe gains the __agile__ trait, can't be disarmed, and becomes
-    a +3 __major striking__ __keen__ scythe while the grim reaper wields it. If the
-    grim reaper Strikes a creature with a weakness to any specific type of damage,
-    the scythe's damage counts as that type of damage, in addition to slashing.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Infuse Weapon
-  range: null
-  raw_description: '**Infuse Weapon** (__divine__, __evocation__) Any scythe gains
-    the __agile__ trait, can''t be disarmed, and becomes a +3 __major striking__ __keen__
-    scythe while the grim reaper wields it. If the grim reaper Strikes a creature
-    with a weakness to any specific type of damage, the scythe''s damage counts as
-    that type of damage, in addition to slashing.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  trigger: null
-ranged: null
-rarity: Rare
+ranged_attacks: null
+rarity: Unique
 resistances:
 - amount: 15
+  misc: null
   type: all damage
-ritual_lists: null
 saves:
   fort: 37
   fort_misc: null
@@ -262,51 +241,35 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: The grim reaper can choose whether or not it counts as undead for effects
-    that affect undead differently. Even if it does not count as undead, the grim
-    reaper still never counts as a living creature.
+  description: 'The grim reaper can choose whether or not it counts as undead for
+    effects that affect undead differently. Even if it does not count as undead, the
+    grim reaper still never counts as a living creature.
+
+
+    **Status Sight** The grim reaper automatically knows the Hit Points, conditions,
+    afflictions, and emotions of all creatures it can see.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Death's Grace
   range: null
   raw_description: '**Death''s Grace** The grim reaper can choose whether or not it
     counts as undead for effects that affect undead differently. Even if it does not
-    count as undead, the grim reaper still never counts as a living creature.'
+    count as undead, the grim reaper still never counts as a living creature.
+
+
+    **Status Sight** The grim reaper automatically knows the Hit Points, conditions,
+    afflictions, and emotions of all creatures it can see.'
   requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 'The grim reaper automatically knows the Hit Points, conditions, afflictions,
-    and emotions of all creatures it can see.
-
-
-    '
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Status Sight
-  range: null
-  raw_description: '**Status Sight** The grim reaper automatically knows the Hit Points,
-    conditions, afflictions, and emotions of all creatures it can see.
-
-
-    '
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +41
 - darkvision
 - see invisibility
 - status sight
@@ -315,74 +278,64 @@ size: Medium
 skills:
 - bonus: 43
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 38
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 40
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 43
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 39
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 36
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 43
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 196
+  page_start: '196'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 75
+  misc: null
   type: fly
 spell_lists:
-- dc: 47
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 10
+- attack_bonus: 37
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: x4
-      name: finger of death
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: null
-      name: plane shift
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: 3
-    level: -1
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: haste
-      requirement: null
-  - heightened_level: 2
-    level: -1
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: see invisibility
-      requirement: null
-  to_hit: 37
+  dc: 47
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: x4
+      name: finger of death
+  - level: 7
+    spells:
+    - misc: null
+      name: plane shift
+  spells_source: Divine Innate Spells
 traits:
-- Rare
-- NE
-- Medium
 - Undead
-type: Creature
-weaknesses: null

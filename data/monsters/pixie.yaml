@@ -7,6 +7,52 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: "The pixie sprinkles pixie dust onto one of its arrows. If the pixie\
+    \ hits a creature with that arrow before the pixie's next turn, the arrow inflicts\
+    \ one of the following special effects instead of dealing damage. Each effect\
+    \ depends on the target's DC 21 Will save. On a critical hit, the target treats\
+    \ its save result as one degree worse.\n\n  * **Charm** (emotion, enchantment,\
+    \ incapacitation, mental) The target suffers the effects of a charm spell, except\
+    \ it doesn't gain a bonus to its save if the only hostile act was the pixie firing\
+    \ its bow, and the pixie can choose to direct the target's adoration toward another\
+    \ creature rather than itself.\n\n  * **Memory Loss** (divination, mental) On\
+    \ a failed Will save, the target loses the last 5 minutes of its memory.\n\n \
+    \ * **Sleep** (enchantment, incapacitation, mental, sleep) The target suffers\
+    \ the effects of a 3rd-level sleep spell.\n\n  * **Subdual** (enchantment, mental,\
+    \ nonlethal) The target takes 4d6 mental damage, depending on its basic Will save."
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sprinkle Pixie Dust
+  range: null
+  raw_description: "**Sprinkle Pixie Dust** [One Action]  (__manipulate__) The pixie\
+    \ sprinkles pixie dust onto one of its arrows. If the pixie hits a creature with\
+    \ that arrow before the pixie's next turn, the arrow inflicts one of the following\
+    \ special effects instead of dealing damage. Each effect depends on the target's\
+    \ DC 21 Will save. On a critical hit, the target treats its save result as one\
+    \ degree worse.\n\n  * **Charm** (emotion, enchantment, incapacitation, mental)\
+    \ The target suffers the effects of a charm spell, except it doesn't gain a bonus\
+    \ to its save if the only hostile act was the pixie firing its bow, and the pixie\
+    \ can choose to direct the target's adoration toward another creature rather than\
+    \ itself.\n\n  * **Memory Loss** (divination, mental) On a failed Will save, the\
+    \ target loses the last 5 minutes of its memory.\n\n  * **Sleep** (enchantment,\
+    \ incapacitation, mental, sleep) The target suffers the effects of a 3rd-level\
+    \ sleep spell.\n\n  * **Subdual** (enchantment, mental, nonlethal) The target\
+    \ takes 4d6 mental damage, depending on its basic Will save."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
 alignment: CN
 automatic_abilities: null
 description: 'Insatiably curious, overly excitable, and just a bit puckish, pixies
@@ -20,7 +66,6 @@ description: 'Insatiably curious, overly excitable, and just a bit puckish, pixi
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 19'
 hp: 40
 hp_misc: null
-immunities: null
 items:
 - longbow (60 arrows)
 - shortsword
@@ -28,7 +73,7 @@ languages:
 - Common
 - Sylvan
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -43,135 +88,7 @@ melee:
   - versatile S
 name: Pixie
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The pixie sprinkles pixie dust onto one of its arrows. If the pixie
-    hits a creature with that arrow before the pixie's next turn, the arrow inflicts
-    one of the following special effects instead of dealing damage. Each effect depends
-    on the target's DC 21 Will save. On a critical hit, the target treats its save
-    result as one degree worse.
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The target suffers the effects of a charm spell, except it doesn't
-      gain a bonus to its save if the only hostile act was the pixie firing its bow,
-      and the pixie can choose to direct the target's adoration toward another creature
-      rather than itself.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Charm
-    range: null
-    raw_description: '**Charm** (emotion, enchantment, incapacitation, mental) The
-      target suffers the effects of a charm spell, except it doesn''t gain a bonus
-      to its save if the only hostile act was the pixie firing its bow, and the pixie
-      can choose to direct the target''s adoration toward another creature rather
-      than itself.'
-    requirements: null
-    success: null
-    traits:
-    - emotion
-    - enchantment
-    - incapacitation
-    - mental
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: On a failed Will save, the target loses the last 5 minutes of its
-      memory.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Memory Loss
-    range: null
-    raw_description: '**Memory Loss** (divination, mental) On a failed Will save,
-      the target loses the last 5 minutes of its memory.'
-    requirements: null
-    success: null
-    traits:
-    - divination
-    - mental
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The target suffers the effects of a 3rd-level sleep spell.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Sleep
-    range: null
-    raw_description: '**Sleep** (enchantment, incapacitation, mental, sleep) The target
-      suffers the effects of a 3rd-level sleep spell.'
-    requirements: null
-    success: null
-    traits:
-    - enchantment
-    - incapacitation
-    - mental
-    - sleep
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The target takes 4d6 mental damage, depending on its basic Will save.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Subdual
-    range: null
-    raw_description: '**Subdual** (enchantment, mental, nonlethal) The target takes
-      4d6 mental damage, depending on its basic Will save.'
-    requirements: null
-    success: null
-    traits:
-    - enchantment
-    - mental
-    - nonlethal
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sprinkle Pixie Dust
-  range: null
-  raw_description: "**Sprinkle Pixie Dust**   (__manipulate__) The pixie sprinkles\
-    \ pixie dust onto one of its arrows. If the pixie hits a creature with that arrow\
-    \ before the pixie's next turn, the arrow inflicts one of the following special\
-    \ effects instead of dealing damage. Each effect depends on the target's DC 21\
-    \ Will save. On a critical hit, the target treats its save result as one degree\
-    \ worse.\n\n  * **Charm** (emotion, enchantment, incapacitation, mental) The target\
-    \ suffers the effects of a charm spell, except it doesn't gain a bonus to its\
-    \ save if the only hostile act was the pixie firing its bow, and the pixie can\
-    \ choose to direct the target's adoration toward another creature rather than\
-    \ itself.\n\n  * **Memory Loss** (divination, mental) On a failed Will save, the\
-    \ target loses the last 5 minutes of its memory.\n\n  * **Sleep** (enchantment,\
-    \ incapacitation, mental, sleep) The target suffers the effects of a 3rd-level\
-    \ sleep spell.\n\n  * **Subdual** (enchantment, mental, nonlethal) The target\
-    \ takes 4d6 mental damage, depending on its basic Will save."
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -185,9 +102,6 @@ ranged:
   - range increment 100 feet
   - reload 0
   - volley 20 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -196,87 +110,74 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - low-light vision
 size: Small
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 11
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 10
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 11
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 309
+  page_start: '309'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 45
+  misc: null
   type: fly
 spell_lists:
-- dc: 21
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: entangle
-      requirement: null
-    - frequency: null
-      name: faerie fire
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: illusory disguise
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 21
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: at will; self only
+      name: invisibility
+  - level: 3
+    spells:
+    - misc: null
+      name: dispel magic
+  - level: 2
+    spells:
+    - misc: null
+      name: entangle
+    - misc: null
+      name: faerie fire
+  - level: 1
+    spells:
+    - misc: null
+      name: illusory disguise
+  spells_source: Primal Innate Spells
 traits:
-- CN
-- Small
 - Fey
 - Sprite
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron

@@ -7,25 +7,187 @@ ability_mods:
   wis_mod: 4
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any weapon gains the effect of a __holy__ property rune while a monadic
+    deva wields it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Holy Armaments
+  range: null
+  raw_description: '**Holy Armaments** (__divine__, __evocation__) Any weapon gains
+    the effect of a __holy__ property rune while a monadic deva wields it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - evocation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The monadic deva speaks a word to cause a creature's soul to recoil
+    at its sins or an undead creature to recoil at its lack of a soul. One non-good
+    living or undead target within 40 feet takes 5d10 good damage and must attempt
+    a DC 32 Fortitude save. Regardless of the outcome, the target is then temporarily
+    immune for 10 minutes.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rebuke Soul
+  range: null
+  raw_description: '**Rebuke Soul** [One Action]  (__auditory__, __divine__, __enchantment__,
+    __good__, __incapacitation__) The monadic deva speaks a word to cause a creature''s
+    soul to recoil at its sins or an undead creature to recoil at its lack of a soul.
+    One non-good living or undead target within 40 feet takes 5d10 good damage and
+    must attempt a DC 32 Fortitude save. Regardless of the outcome, the target is
+    then temporarily immune for 10 minutes.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - divine
+  - enchantment
+  - good
+  - incapacitation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The target is unaffected.
+  description: The target is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The target is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target takes half damage and is __stunned 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The target takes half damage and is __stunned 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The target takes half damage and is __stunned 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target takes full damage and is stunned 2.
+  effect: null
+  failure: The target takes full damage and is stunned 2.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The target takes full damage and is stunned 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The target takes double damage and is stunned 4.
+  critical_success: null
+  description: The target takes double damage and is stunned 4.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **The target takes double damage and is stunned
+    4.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a monadic deva hits a target for the second time during its turn
+    with its mace, it deals an additional 2d12 force damage as its weapon shimmers
+    with ripples of power.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Solid Blow
+  range: null
+  raw_description: '**Solid Blow** (__divine__, __evocation__, __force__) When a monadic
+    deva hits a target for the second time during its turn with its mace, it deals
+    an additional 2d12 force damage as its weapon shimmers with ripples of power.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - evocation
+  - force
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. Allies in the aura gain a +2 status bonus to saving throws
-    against __death__ effects and effects that target or manipulate their souls.
+  description: Allies in the aura gain a +2 status bonus to saving throws against
+    __death__ effects and effects that target or manipulate their souls.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Spiritual Warden
-  range: null
+  range: 20 feet
   raw_description: '**Spiritual Warden** (__abjuration__, __aura__, __divine__) 20
     feet. Allies in the aura gain a +2 status bonus to saving throws against __death__
     effects and effects that target or manipulate their souls.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
@@ -58,15 +220,17 @@ languages:
 - Infernal
 - tongues
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+15
     type: bludgeoning
   name: holy mace
   plus_damage:
-  - formula: 1d6
-    type: force and 1d6 good
+  - formula: null
+    type: 1d6 force
+  - formula: null
+    type: 1d6 good
   to_hit: 28
   traits:
   - good
@@ -74,106 +238,7 @@ melee:
   - shove
 name: Monadic Deva
 perception: 25
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any weapon gains the effect of a __holy__ property rune while a monadic
-    deva wields it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Holy Armaments
-  range: null
-  raw_description: '**Holy Armaments** (__divine__, __evocation__) Any weapon gains
-    the effect of a __holy__ property rune while a monadic deva wields it.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: "The monadic deva speaks a word to cause a creature's soul to recoil\
-    \ at its sins or an undead creature to recoil at its lack of a soul. One non-good\
-    \ living or undead target within 40 feet takes 5d10 good damage and must attempt\
-    \ a DC 32 Fortitude save. Regardless of the outcome, the target is then temporarily\
-    \ immune for 10 minutes. \n\n**Critical Success **The target is unaffected. \n\
-    \n**Success **The target takes half damage and is __stunned 1__. \n\n**Failure\
-    \ **The target takes full damage and is stunned 2. \n\n**Critical Failure **The\
-    \ target takes double damage and is stunned 4."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rebuke Soul
-  range: null
-  raw_description: "**Rebuke Soul**   (__auditory__, __divine__, __enchantment__,\
-    \ __good__, __incapacitation__) The monadic deva speaks a word to cause a creature's\
-    \ soul to recoil at its sins or an undead creature to recoil at its lack of a\
-    \ soul. One non-good living or undead target within 40 feet takes 5d10 good damage\
-    \ and must attempt a DC 32 Fortitude save. Regardless of the outcome, the target\
-    \ is then temporarily immune for 10 minutes. \n\n**Critical Success **The target\
-    \ is unaffected. \n\n**Success **The target takes half damage and is __stunned\
-    \ 1__. \n\n**Failure **The target takes full damage and is stunned 2. \n\n**Critical\
-    \ Failure **The target takes double damage and is stunned 4."
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - divine
-  - enchantment
-  - good
-  - incapacitation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a monadic deva hits a target for the second time during its turn
-    with its mace, it deals an additional 2d12 force damage as its weapon shimmers
-    with ripples of power.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Solid Blow
-  range: null
-  raw_description: '**Solid Blow** (__divine__, __evocation__, __force__) When a monadic
-    deva hits a target for the second time during its turn with its mace, it deals
-    an additional 2d12 force damage as its weapon shimmers with ripples of power.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  - force
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: evil
-ritual_lists:
-- dc: 32
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: angelic messenger
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 24
   fort_misc: null
@@ -182,100 +247,98 @@ saves:
   ref_misc: null
   will: 20
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +25
 - darkvision
 size: Medium
 skills:
 - bonus: 25
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 24
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 20
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 25
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 22
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 15
+  page_start: '15'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists:
-- dc: 31
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 5
     spells:
-    - frequency: null
-      name: divine wrath
-      requirement: null
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: paralyze
-      requirement: null
-    - frequency: null
-      name: remove curse
-      requirement: null
-    - frequency: null
-      name: remove disease
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: creation
-      requirement: null
-    - frequency: null
-      name: remove fear
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will, evil only
-      name: detect alignment
-      requirement: null
-  - heightened_level: 5
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: null
+  dc: 31
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: null
+      name: divine wrath
+    - misc: null
+      name: heal
+    - misc: null
+      name: paralyze
+    - misc: null
+      name: remove curse
+    - misc: null
+      name: remove disease
+  - level: 5
+    spells:
+    - misc: null
+      name: creation
+    - misc: null
+      name: remove fear
+  - level: 4
+    spells:
+    - misc: null
+      name: charm
+  - level: 2
+    spells:
+    - misc: at will; self only
+      name: invisibility
+  - level: 1
+    spells:
+    - misc: at will; evil only
+      name: detect alignment
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 32
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: angelic messenger
+  spells_source: Rituals
 traits:
-- NG
-- Medium
 - Angel
 - Celestial
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: evil

@@ -7,94 +7,137 @@ ability_mods:
   wis_mod: 4
 ac: 34
 ac_special: null
-alignment: LG
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: 10 feet, 1d12 electricity damage. The bronze dragon can turn this aura
-    on or off using a single action, which has the concentrate trait, and it can choose
-    to not affect allies with the aura.
+  description: "The bronze dragon breathes in one of two ways. The dragon can't use\
+    \ Breath Weapon again for 1d4 rounds.\n\n  * **Lightning** (__arcane__, __electricity__,\
+    \ __evocation__); The dragon breathes lightning in a 80-foot line that deals 8d12\
+    \ electricity damage (DC 33 basic Reflex save).\n\n  * **Repulsion Gas** (__abjuration__,\
+    \ __arcane__, __incapacitation__, __mental__); The dragon breathes a 80-foot line\
+    \ of repulsive gas. Each creature in the area must succeed at a DC 33 Will save\
+    \ or become __fleeing__ from the dragon for 1 round (or 2 rounds on a critical\
+    \ failure)."
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: "**Breath Weapon ** [Two Actions]  The bronze dragon breathes in\
+    \ one of two ways. The dragon can't use Breath Weapon again for 1d4 rounds.\n\n\
+    \  * **Lightning** (__arcane__, __electricity__, __evocation__); The dragon breathes\
+    \ lightning in a 80-foot line that deals 8d12 electricity damage (DC 33 basic\
+    \ Reflex save).\n\n  * **Repulsion Gas** (__abjuration__, __arcane__, __incapacitation__,\
+    \ __mental__); The dragon breathes a 80-foot line of repulsive gas. Each creature\
+    \ in the area must succeed at a DC 33 Will save or become __fleeing__ from the\
+    \ dragon for 1 round (or 2 rounds on a critical failure)."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one tail Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one tail Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the dragon scores a critical hit with a Strike, it recharges its
+    Breath Weapon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** When the dragon scores a critical hit with
+    a Strike, it recharges its Breath Weapon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: For up to 60 minutes per day, the dragon, along with allied creatures
+    and vessels within 50 feet, can move at double their normal Speed in water.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Water Mastery
+  range: null
+  raw_description: '**Water Mastery** (__arcane__, __transmutation__, __water__) For
+    up to 60 minutes per day, the dragon, along with allied creatures and vessels
+    within 50 feet, can move at double their normal Speed in water.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - transmutation
+  - water
+  trigger: null
+alignment: LG
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: Jaws only.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
   name: Electricity Aura
   range: null
   raw_description: '**Electricity Aura** (__aura__, __electricity__) 10 feet, 1d12
     electricity damage. The bronze dragon can turn this aura on or off using a single
     action, which has the concentrate trait, and it can choose to not affect allies
-    with the aura.'
+    with the aura.
+
+
+    **Frightful Presence** (__aura__, __emotion__, __fear__, __mental__) 90 feet,
+    DC 31
+
+
+    **Attack of Opportunity**[Reaction] Jaws only.'
   requirements: null
-  success: null
-  traits:
-  - aura
-  - electricity
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is frightened 4.
-  critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 31
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
-  name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 31 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
-
-    Critical Success The creature is unaffected by the presence.
-
-    Success The creature is frightened 1.
-
-    Failure The creature is frightened 2.
-
-    Critical Success The creature is frightened 4.'
-  requirements: null
-  success: The creature is frightened 1.
-  traits:
-  - aura
-  - emotion
-  - fear
-  - mental
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: Jaws only.
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Attack of Opportunity
-  range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
+  trigger: null
 description: 'Bronze dragons are among the most common of metallic dragons and the
   most likely to ally with mortals on worthy quests. However, they are naturally scholarly
   creatures who would rather remain in their lairs studying esoteric lore than go
@@ -131,7 +174,6 @@ immunities:
 - electricity
 - paralyzed
 - sleep
-items: null
 languages:
 - Aquan
 - Common
@@ -141,15 +183,15 @@ languages:
 - Gnomish
 - speak with animals
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+15
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d12
-    type: electricity
+  - formula: null
+    type: 1d12 electricity
   to_hit: 28
   traits:
   - electricity
@@ -178,145 +220,7 @@ melee:
   - reach 15 feet
 name: Adult Bronze Dragon
 perception: 23
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The bronze dragon breathes in one of two ways. The dragon can't use
-    Breath Weapon again for 1d4 rounds.
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The dragon breathes lightning in a 80-foot line that deals 8d12 electricity
-      damage (DC 33 basic Reflex save).
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Lightning
-    range: null
-    raw_description: '**Lightning** (__arcane__, __electricity__, __evocation__);
-      The dragon breathes lightning in a 80-foot line that deals 8d12 electricity
-      damage (DC 33 basic Reflex save).'
-    requirements: null
-    success: null
-    traits:
-    - arcane
-    - electricity
-    - evocation
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The dragon breathes a 80-foot line of repulsive gas. Each creature
-      in the area must succeed at a DC 33 Will save or become __fleeing__ from the
-      dragon for 1 round (or 2 rounds on a critical failure).
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Repulsion Gas
-    range: null
-    raw_description: '**Repulsion Gas** (__abjuration__, __arcane__, __incapacitation__,
-      __mental__); The dragon breathes a 80-foot line of repulsive gas. Each creature
-      in the area must succeed at a DC 33 Will save or become __fleeing__ from the
-      dragon for 1 round (or 2 rounds on a critical failure).'
-    requirements: null
-    success: null
-    traits:
-    - abjuration
-    - arcane
-    - incapacitation
-    - mental
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: "**Breath Weapon ** [Two Actions]  The bronze dragon breathes in\
-    \ one of two ways. The dragon can't use Breath Weapon again for 1d4 rounds.\n\n\
-    \  * **Lightning** (__arcane__, __electricity__, __evocation__); The dragon breathes\
-    \ lightning in a 80-foot line that deals 8d12 electricity damage (DC 33 basic\
-    \ Reflex save).\n\n  * **Repulsion Gas** (__abjuration__, __arcane__, __incapacitation__,\
-    \ __mental__); The dragon breathes a 80-foot line of repulsive gas. Each creature\
-    \ in the area must succeed at a DC 33 Will save or become __fleeing__ from the\
-    \ dragon for 1 round (or 2 rounds on a critical failure)."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one tail Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one tail Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the dragon scores a critical hit with a Strike, it recharges its
-    Breath Weapon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** When the dragon scores a critical hit with
-    a Strike, it recharges its Breath Weapon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: For up to 60 minutes per day, the dragon, along with allied creatures
-    and vessels within 50 feet, can move at double their normal Speed in water.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Water Mastery
-  range: null
-  raw_description: '**Water Mastery** (__arcane__, __transmutation__, __water__) For
-    up to 60 minutes per day, the dragon, along with allied creatures and vessels
-    within 50 feet, can move at double their normal Speed in water.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - transmutation
-  - water
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 24
   fort_misc: null
@@ -325,68 +229,64 @@ saves:
   ref_misc: null
   will: 26
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +23
 - darkvision
 - scent (imprecise) 60 feet
 size: Huge
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 28
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 24
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 23
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 23
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 24
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 22
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 120
+  page_start: '120'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 140
+  misc: null
   type: fly
 - amount: 50
+  misc: null
   type: swim
 spell_lists:
-- dc: 33
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 2
     spells:
-    - frequency: at will
-      name: obscuring mist
-      requirement: null
-  - heightened_level: 2
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: speak with animals
-      requirement: null
-  to_hit: null
+  dc: 33
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: at will
+      name: obscuring mist
+  spells_source: Arcane Innate Spells
 traits:
-- LG
-- Huge
 - Amphibious
 - Dragon
 - Water
-type: Creature
-weaknesses: null

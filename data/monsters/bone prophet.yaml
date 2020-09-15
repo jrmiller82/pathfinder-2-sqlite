@@ -7,6 +7,69 @@ ability_mods:
   wis_mod: 5
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The bone prophet animates corpses of snakes, serpentfolk, or similar serpentine
+    creatures within a 30-foot emanation. Any flesh on the bodies sloughs off, and
+    they rise as skeletons. The bone prophet can raise one Large creature as a __skeletal
+    giant__ or up to three Medium creatures as __skeletal champions__; the equipment
+    and attacks might be different depending on the corpses' possessionsThese skeletons
+    have the __minion__ trait and are under the bone prophet's control; the bone prophet
+    can give all these minions the same command with a single action that has the
+    __concentrate__ trait. Any skeletal minions that still remain after 10 minutes
+    crumble to dust.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Raise Serpent
+  range: null
+  raw_description: '**Raise Serpent** [Three Actions]  (__divine__, __necromancy__)
+    **Frequency** once per day; **Effect** The bone prophet animates corpses of snakes,
+    serpentfolk, or similar serpentine creatures within a 30-foot emanation. Any flesh
+    on the bodies sloughs off, and they rise as skeletons. The bone prophet can raise
+    one Large creature as a __skeletal giant__ or up to three Medium creatures as
+    __skeletal champions__; the equipment and attacks might be different depending
+    on the corpses'' possessionsThese skeletons have the __minion__ trait and are
+    under the bone prophet''s control; the bone prophet can give all these minions
+    the same command with a single action that has the __concentrate__ trait. Any
+    skeletal minions that still remain after 10 minutes crumble to dust.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Serpentfolk Venom
+  range: null
+  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 26 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
+    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
+  requirements: null
+  saving_throw: DC 26 Fortitude
+  stages:
+  - effect: 1d4 poison damage and __enfeebled 1__ (1 round)
+  - effect: 2d4 poison damage and enfeebled 1 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'The speakers for the dead known as bone prophets hold an esteemed place
@@ -21,7 +84,6 @@ description: 'The speakers for the dead known as bone prophets hold an esteemed 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 26'
 hp: 115
 hp_misc: null
-immunities: null
 items:
 - +1 striking staff
 - religious symbol of Ydersius
@@ -33,7 +95,7 @@ languages:
 - Undercommon
 - telepathy 100 feet
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d4+9
@@ -57,82 +119,12 @@ melee:
   - finesse
 name: Bone Prophet
 perception: 15
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The bone prophet animates corpses of snakes, serpentfolk, or similar serpentine
-    creatures within a 30-foot emanation. Any flesh on the bodies sloughs off, and
-    they rise as skeletons. The bone prophet can raise one Large creature as a __skeletal
-    giant__ or up to three Medium creatures as __skeletal champions__; the equipment
-    and attacks might be different depending on the corpses' possessionsThese skeletons
-    have the __minion__ trait and are under the bone prophet's control; the bone prophet
-    can give all these minions the same command with a single action that has the
-    __concentrate__ trait. Any skeletal minions that still remain after 10 minutes
-    crumble to dust.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Raise Serpent
-  range: null
-  raw_description: '**Raise Serpent** [Three Actions]  (__divine__, __necromancy__)
-    **Frequency** once per day; **Effect** The bone prophet animates corpses of snakes,
-    serpentfolk, or similar serpentine creatures within a 30-foot emanation. Any flesh
-    on the bodies sloughs off, and they rise as skeletons. The bone prophet can raise
-    one Large creature as a __skeletal giant__ or up to three Medium creatures as
-    __skeletal champions__; the equipment and attacks might be different depending
-    on the corpses'' possessionsThese skeletons have the __minion__ trait and are
-    under the bone prophet''s control; the bone prophet can give all these minions
-    the same command with a single action that has the __concentrate__ trait. Any
-    skeletal minions that still remain after 10 minutes crumble to dust.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 26 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d4 poison damage and __enfeebled 1__ (1 round); **Stage 2** 2d4 poison damage
-    and enfeebled 1 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Serpentfolk Venom
-  range: null
-  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 26 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
-    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
-  type: poison
-ritual_lists:
-- dc: 28
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: create undead
-      requirement: null
-  to_hit: null
+  type: poison
 saves:
   fort: 14
   fort_misc: null
@@ -141,168 +133,143 @@ saves:
   ref_misc: null
   will: 19
   will_misc: +4 status vs. mental
-sense_abilities: null
 senses:
-- Perception +15
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 18
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 16
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 17
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 19
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 15
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 13
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 239
+  page_start: '239'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 28
-  misc: ''
-  name: Divine Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: 20
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
-      name: air walk
-      requirement: null
-    - frequency: null
-      name: harm
-      requirement: null
-    - frequency: null
-      name: read omens
-      requirement: null
-    - frequency: 3 slots
-      name: talking corpse
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: bind undead
-      requirement: null
-    - frequency: null
-      name: blindness
-      requirement: null
-    - frequency: null
-      name: chilling darkness
-      requirement: null
-    - frequency: 4 slots
-      name: vampiric touch
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: darkness
-      requirement: null
-    - frequency: null
-      name: death knell
-      requirement: null
-    - frequency: null
-      name: resist energy
-      requirement: null
-    - frequency: 4 slots
-      name: see invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: bane
-      requirement: null
-    - frequency: null
-      name: command
-      requirement: null
-    - frequency: null
-      name: fear
-      requirement: null
-    - frequency: 4 slots
-      name: ventriloquism
-      requirement: null
-  - heightened_level: 4
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: guidance
-      requirement: null
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-  to_hit: 20
-- dc: 28
+  constants: null
+  dc: 28
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
-      name: dominate
-      requirement: null
-  - heightened_level: null
-    level: 5
+    - misc: null
+      name: air walk
+    - misc: null
+      name: harm
+    - misc: null
+      name: read omens
+    - misc: 3 slots
+      name: talking corpse
+  - level: 3
     spells:
-    - frequency: null
-      name: illusory scene
-      requirement: null
-    - frequency: null
-      name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
+    - misc: null
+      name: bind undead
+    - misc: null
+      name: blindness
+    - misc: null
+      name: chilling darkness
+    - misc: 4 slots
+      name: vampiric touch
+  - level: 2
     spells:
-    - frequency: at will
-      name: illusory disguise
-      requirement: null
-  - heightened_level: null
-    level: 2
+    - misc: null
+      name: darkness
+    - misc: null
+      name: death knell
+    - misc: null
+      name: resist energy
+    - misc: 4 slots
+      name: see invisibility
+  - level: 1
     spells:
-    - frequency: at will
-      name: mirror image
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
+    - misc: null
+      name: bane
+    - misc: null
+      name: command
+    - misc: null
+      name: fear
+    - misc: 4 slots
       name: ventriloquism
-      requirement: null
-  to_hit: null
+  spells_source: Divine Spontaneous Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: null
+      name: dominate
+  - level: 5
+    spells:
+    - misc: null
+      name: illusory scene
+    - misc: null
+      name: suggestion
+  - level: 3
+    spells:
+    - misc: at will
+      name: illusory disguise
+  - level: 2
+    spells:
+    - misc: at will
+      name: mirror image
+  - level: 1
+    spells:
+    - misc: at will
+      name: ventriloquism
+  spells_source: Occult Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: create undead
+  spells_source: Rituals
 traits:
-- Uncommon
-- NE
-- Medium
 - Humanoid
 - Serpentfolk
-type: Creature
-weaknesses: null

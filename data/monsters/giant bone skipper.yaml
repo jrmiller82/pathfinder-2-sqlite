@@ -1,0 +1,143 @@
+ability_mods:
+  cha_mod: -5
+  con_mod: 4
+  dex_mod: 6
+  int_mod: -5
+  str_mod: 4
+  wis_mod: 2
+ac: 25
+ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The giant bone skipper __Leaps__ up to 20 feet. It then makes a mandibles
+    Strike, gaining a +1 circumstance bonus to its attack roll.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Leaping Charge
+  range: null
+  raw_description: '**Leaping Charge** [One Action]  The giant bone skipper __Leaps__
+    up to 20 feet. It then makes a mandibles Strike, gaining a +1 circumstance bonus
+    to its attack roll.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Marrow rot affects only creatures with a skeletal system; **Saving
+    Throw** DC 25 Fortitude; **Onset** 1 day; **Stage 1** __enfeebled 1__ (1 day);
+    **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled 2 and __drained 1__ (1
+    day)
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Marrow Rot
+  range: null
+  raw_description: '**Marrow Rot** (__disease__) Marrow rot affects only creatures
+    with a skeletal system; **Saving Throw** DC 25 Fortitude; **Onset** 1 day; **Stage
+    1** __enfeebled 1__ (1 day); **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled
+    2 and __drained 1__ (1 day)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+alignment: N
+automatic_abilities: null
+description: 'While less common than the smaller variety, giant bone skippers are
+  the stuff of nightmares for morticians and graveyard keepers.
+
+
+
+
+  **__Recall Knowledge - Animal__ (__Nature__)**: DC 25'
+hp: 115
+hp_misc: null
+level: 7
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d10+6
+    type: piercing
+  name: mandibles
+  plus_damage:
+  - formula: null
+    type: marrow rot
+  to_hit: 18
+  traits: null
+name: Giant Bone Skipper
+perception: 17
+ranged_attacks: null
+rarity: Uncommon
+saves:
+  fort: 15
+  fort_misc: null
+  misc: null
+  ref: 17
+  ref_misc: null
+  will: 15
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A giant bone skipper identifies bones and creatures with a skeletal
+    system in the listed range.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bonesense
+  range: null
+  raw_description: '**Bonesense** A giant bone skipper identifies bones and creatures
+    with a skeletal system in the listed range.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+senses:
+- darkvision
+- bonesense (imprecise) 30 feet
+size: Large
+skills:
+- bonus: 19
+  misc: null
+  name: Acrobatics
+- bonus: 15
+  misc: null
+  name: Athletics
+- bonus: 15
+  misc: null
+  name: Stealth
+sources:
+- abbr: 'Pathfinder #158: Sixty Feet Under'
+  page_start: '80'
+  page_stop: null
+speed:
+- amount: 25
+  misc: null
+  type: Land
+- amount: 40
+  misc: null
+  type: fly
+spell_lists: null
+traits:
+- Animal

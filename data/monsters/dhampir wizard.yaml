@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 0
 ac: 17
 ac_special: null
+active_abilities: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
@@ -15,16 +16,18 @@ automatic_abilities:
   description: The dhampir's penalty and Hit Point reduction from the drained condition
     are reduced as though the condition value were 1 lower.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Blood of the Night
   range: null
   raw_description: '**Blood of the Night** The dhampir''s penalty and Hit Point reduction
     from the drained condition are reduced as though the condition value were 1 lower.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -36,7 +39,6 @@ description: 'This dhampir is a svetocher, the child of a moroi vampire.
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
 hp: 22
 hp_misc: negative healing
-immunities: null
 items:
 - dagger
 - spellbook containing their prepared spells
@@ -45,7 +47,7 @@ languages:
 - Common
 - Necril
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
@@ -79,8 +81,7 @@ melee:
   - nonlethal
 name: Dhampir Wizard
 perception: 4
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
@@ -92,11 +93,6 @@ ranged:
   - agile
   - thrown 10 feet
   - versatile S
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 4
   fort_misc: null
@@ -105,81 +101,69 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +4
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 5
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 5
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 8
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 7
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Vampire Lore '
-source:
+  name: Vampire Lore
+sources:
 - abbr: Bestiary
-  page_start: 95
+  page_start: '95'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 18
-  misc: ''
-  name: Arcane Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+- attack_bonus: 8
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
-      name: command
-      requirement: null
-    - frequency: x2
-      name: grim tendrils
-      requirement: null
-    - frequency: null
-      name: magic missile
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: prestidigitation
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ray of frost
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: 8
+  constants: null
+  dc: 18
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: command
+    - misc: x2
+      name: grim tendrils
+    - misc: null
+      name: magic missile
+  spells_source: Arcane Prepared Spells
 traits:
-- NE
-- Medium
 - Dhampir
 - Human
 - Humanoid
-type: Creature
-weaknesses: null

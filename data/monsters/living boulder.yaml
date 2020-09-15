@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 2
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living boulder can __Burrow__ through earthen matter, including rock.
+    When it does so, it moves at its full burrow Speed, leaving no tunnels or signs
+    of its passing.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Earth Glide
+  range: null
+  raw_description: '**Earth Glide** A living boulder can __Burrow__ through earthen
+    matter, including rock. When it does so, it moves at its full burrow Speed, leaving
+    no tunnels or signs of its passing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The living boulder Strides twice, and can then make a Strike with its
+    jaws. This jaws Strike gains __Knockdown__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rolling Charge
+  range: null
+  raw_description: '**Rolling Charge** [Two Actions]  The living boulder Strides twice,
+    and can then make a Strike with its jaws. This jaws Strike gains __Knockdown__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Living boulders roll and glide through the Plane of Earth, gathering
@@ -23,13 +68,11 @@ hp: 36
 hp_misc: null
 immunities:
 - bleed
-- paralyzed
-- poison
-- sleep
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+6
@@ -40,51 +83,7 @@ melee:
   traits: null
 name: Living Boulder
 perception: 6
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A living boulder can __Burrow__ through earthen matter, including rock.
-    When it does so, it moves at its full burrow Speed, leaving no tunnels or signs
-    of its passing.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Earth Glide
-  range: null
-  raw_description: '**Earth Glide** A living boulder can __Burrow__ through earthen
-    matter, including rock. When it does so, it moves at its full burrow Speed, leaving
-    no tunnels or signs of its passing.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The living boulder Strides twice, and can then make a Strike with its
-    jaws. This jaws Strike gains __Knockdown__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rolling Charge
-  range: null
-  raw_description: '**Rolling Charge** [Two Actions]  The living boulder Strides twice,
-    and can then make a Strike with its jaws. This jaws Strike gains __Knockdown__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -93,35 +92,32 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 - tremorsense 30 feet
 size: Small
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: +7 in rocky areas
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 108
+  page_start: '108'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: burrow
 - amount: null
+  misc: null
   type: earth glide
 spell_lists: null
 traits:
-- N
-- Small
 - Earth
 - Elemental
-type: Creature
-weaknesses: null

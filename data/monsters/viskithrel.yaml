@@ -1,0 +1,213 @@
+ability_mods:
+  cha_mod: -1
+  con_mod: 4
+  dex_mod: 6
+  int_mod: -3
+  str_mod: 8
+  wis_mod: 4
+ac: 37
+ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Large, 3d10 bludgeoning plus 2d10 acid, Rupture 25
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**__Swallow Whole__** [One Action]  (__attack__) Large, 3d10 bludgeoning
+    plus 2d10 acid, Rupture 25'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+alignment: NE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A viskithrel's many-chambered snout allows it to partition and ignore
+    scents. The creature can choose to critically succeed at any saving throw against
+    an inhaled threat (such as __inhaled__ poison) or __olfactory__ effects, regardless
+    of its roll.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Selective Scent
+  range: null
+  raw_description: '**Selective Scent** A viskithrel''s many-chambered snout allows
+    it to partition and ignore scents. The creature can choose to critically succeed
+    at any saving throw against an inhaled threat (such as __inhaled__ poison) or
+    __olfactory__ effects, regardless of its roll.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The viskithrel Steps up to 15 feet, ignoring difficult terrain as it leaps
+    over obstacles. If this movement takes the viskithrel out of range of the triggering
+    Strike, the Strike is disrupted. It then makes a jaws Strike against a __bleeding__
+    creature.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Predator's Leap
+  range: null
+  raw_description: '**Predator''s Leap [Reaction]** **Trigger** A creature within
+    10 feet of the viskithrel makes a melee Strike against it; **Effect** The viskithrel
+    Steps up to 15 feet, ignoring difficult terrain as it leaps over obstacles. If
+    this movement takes the viskithrel out of range of the triggering Strike, the
+    Strike is disrupted. It then makes a jaws Strike against a __bleeding__ creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within 10 feet of the viskithrel makes a melee Strike against
+    it;
+description: 'One of the many horrid life-forms native to __Zevgavizeb''s__ Abyssal
+  realm of Gluttondark, viskithrels—or “gluttonraptors”—are tireless hunters resembling
+  tentacled theropods. They are social creatures by nature and prefer to hunt in large
+  packs, chasing down prey and tearing them apart to share with their fellow hunters.
+  A lone viskithrel forgoes hunting to frantically seek out others of its kind, starving
+  to death if it cannot do so. Although viskithrels attack nearly any other creatures
+  they encounter, they virtually never fight other viskithrels; even beasts in rival
+  packs give each other space rather than fight over territory or prey.
+
+
+
+
+  Other, smarter denizens of Gluttondark, such as __xilvireks__  herd and train viskithrels,
+  working to convince the viskithrels that the trainer is one of their pack. This
+  not only protects the trainer from attacks by the viskithrels, but also enables
+  the trainer to easily direct them.
+
+
+
+
+  **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 36'
+hp: 275
+hp_misc: null
+immunities:
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+languages:
+- Abyssal
+- (can't speak any languages)
+level: 15
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d10+14
+    type: piercing
+  name: jaws
+  plus_damage:
+  - formula: null
+    type: 1d10 acid
+  - formula: null
+    type: Grab
+  to_hit: 30
+  traits:
+  - reach 15 feet
+- action_cost: One Action
+  damage:
+    formula: 3d10+14
+    type: slashing
+  name: talon
+  plus_damage: null
+  to_hit: 30
+  traits:
+  - agile
+  - reach 10 feet
+- action_cost: One Action
+  damage:
+    formula: 1d10+14
+    type: slashing
+  name: tentacle
+  plus_damage:
+  - formula: null
+    type: 2d10 persistent bleed
+  to_hit: 30
+  traits:
+  - reach 20 feet
+name: Viskithrel
+perception: 27
+ranged_attacks: null
+rarity: Uncommon
+saves:
+  fort: 25
+  fort_misc: null
+  misc: selective scent
+  ref: 27
+  ref_misc: null
+  will: 23
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A viskithrel can detect a creature's scent up to a week after the creature
+    has passed through or left an area, and it gains a +4 circumstance bonus to __Track__
+    a creature whose scent it has detected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ravenous Tracker
+  range: null
+  raw_description: '**Ravenous Tracker** A viskithrel can detect a creature''s scent
+    up to a week after the creature has passed through or left an area, and it gains
+    a +4 circumstance bonus to __Track__ a creature whose scent it has detected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+senses:
+- darkvision
+- scent (precise) 100 feet
+size: Huge
+skills:
+- bonus: 25
+  misc: null
+  name: Acrobatics
+- bonus: 31
+  misc: null
+  name: Athletics
+- bonus: 27
+  misc: null
+  name: Survival
+sources:
+- abbr: 'Pathfinder #156: The Apocalypse Prophet'
+  page_start: '84'
+  page_stop: null
+speed:
+- amount: 40
+  misc: null
+  type: Land
+- amount: 20
+  misc: null
+  type: swim
+spell_lists: null
+traits:
+- Beast

@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Spirit Naga Venom
+  range: null
+  raw_description: '**Spirit Naga Venom** (__poison__) **Saving Throw** DC 28; **Maximum
+    Duration** 6 rounds; **Stage 1** 2d6 poison damage and __stupefied 1__ (1 round);
+    **Stage 2** 2d6 poison damage and __stupefied 2__ (1 round)'
+  requirements: null
+  saving_throw: DC 28
+  stages:
+  - effect: 2d6 poison damage and __stupefied 1__ (1 round)
+  - effect: 2d6 poison damage and __stupefied 2__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'In naga culture, the foul-tempered, unkempt spirit naga holds a contemptible
@@ -31,7 +56,7 @@ description: 'In naga culture, the foul-tempered, unkempt spirit naga holds a co
   Despite their hideous appearance and treatment as pariahs by other nagas, spirit
   nagas feel a profound pride in their abilities and even in their hermetic existences.
   They see themselves as connected to a greater force whose mysteries are revealed
-  only to those who can cast off the trappings and morals of "civilized" society.
+  only to those who can cast off the trappings and morals of “civilized” society.
   Even so, spirit nagas gleefully accept the worship of other creatures willing to
   bow to their capricious whims. They often form cults around themselves, using their
   charm spells and rituals to ensnare the minds of a few key individuals who spread
@@ -43,13 +68,11 @@ description: 'In naga culture, the foul-tempered, unkempt spirit naga holds a co
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 28'
 hp: 160
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Common
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
@@ -64,46 +87,8 @@ melee:
   - finesse
 name: Spirit Naga
 perception: 18
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 28; **Maximum Duration** 6 rounds; **Stage 1**
-    2d6 poison damage and __stupefied 1__ (1 round); **Stage 2** 2d6 poison damage
-    and __stupefied 2__ (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spirit Naga Venom
-  range: null
-  raw_description: '**Spirit Naga Venom** (__poison__) **Saving Throw** DC 28; **Maximum
-    Duration** 6 rounds; **Stage 1** 2d6 poison damage and __stupefied 1__ (1 round);
-    **Stage 2** 2d6 poison damage and __stupefied 2__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists:
-- dc: 28
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: inveigle
-      requirement: null
-  to_hit: null
 saves:
   fort: 15
   fort_misc: null
@@ -119,151 +104,134 @@ sense_abilities:
   description: A spirit naga adds __hallucination__, __mind probe__, and __suggestion__
     to their coven's spells.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Coven
   range: null
   raw_description: '**Coven** A spirit naga adds __hallucination__, __mind probe__,
     and __suggestion__ to their coven''s spells.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +18
 - darkvision
 size: Large
 skills:
 - bonus: 18
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 17
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 19
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 20
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 20
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 179
+  page_start: '179'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: swim
 spell_lists:
-- dc: 28
-  misc: ''
-  name: Occult Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: 20
+  cantrips:
+  - level: 5
     spells:
-    - frequency: null
-      name: black tentacles
-      requirement: null
-    - frequency: null
-      name: sending
-      requirement: null
-    - frequency: 3 slots
-      name: subconscious suggestion
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: clairvoyance
-      requirement: null
-    - frequency: null
-      name: confusion
-      requirement: null
-    - frequency: null
-      name: fly
-      requirement: null
-    - frequency: 4 slots
-      name: modify memory
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: dream message
-      requirement: null
-    - frequency: null
-      name: mind reading
-      requirement: null
-    - frequency: null
-      name: paralyze
-      requirement: null
-    - frequency: 4 slots
-      name: vampiric touch
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: blur
-      requirement: null
-    - frequency: null
-      name: humanoid form
-      requirement: null
-    - frequency: null
-      name: mirror image
-      requirement: null
-    - frequency: 4 slots
-      name: telekinetic maneuver
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: command
-      requirement: null
-    - frequency: null
-      name: grim tendrils
-      requirement: null
-    - frequency: 4 slots
-      name: unseen servant
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-    - frequency: null
+    - misc: null
       name: sigil
-      requirement: null
-  to_hit: 20
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: black tentacles
+    - misc: null
+      name: sending
+    - misc: 3 slots
+      name: subconscious suggestion
+  - level: 4
+    spells:
+    - misc: null
+      name: clairvoyance
+    - misc: null
+      name: confusion
+    - misc: null
+      name: fly
+    - misc: 4 slots
+      name: modify memory
+  - level: 3
+    spells:
+    - misc: null
+      name: dream message
+    - misc: null
+      name: mind reading
+    - misc: null
+      name: paralyze
+    - misc: 4 slots
+      name: vampiric touch
+  - level: 2
+    spells:
+    - misc: null
+      name: blur
+    - misc: null
+      name: humanoid form
+    - misc: null
+      name: mirror image
+    - misc: 4 slots
+      name: telekinetic maneuver
+  - level: 1
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: command
+    - misc: null
+      name: grim tendrils
+    - misc: 4 slots
+      name: unseen servant
+  spells_source: Occult Spontaneous Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: inveigle
+  spells_source: Rituals
 traits:
-- Uncommon
-- N
-- Large
 - Aberration
-type: Creature
-weaknesses: null

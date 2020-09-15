@@ -7,33 +7,58 @@ ability_mods:
   wis_mod: 2
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The target must succeed at a DC 20 Fortitude save or become __enfeebled
+    1__ (or __enfeebled 2__ on a critical hit) for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Weakening Strike
+  range: null
+  raw_description: '**Weakening Strike** [One Action]  The target must succeed at
+    a DC 20 Fortitude save or become __enfeebled 1__ (or __enfeebled 2__ on a critical
+    hit) for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A creature that enters the area must attempt a DC 19 Fortitude
-    save. On a failure, the creature is sickened 1, and on a critical failure, the
-    creature also takes a -5-foot status penalty to its Speeds for 1 round. While
-    within the aura, the creature takes a -2 circumstance penalty to saves to recover
-    from the sickened condition. A creature that succeeds at its save is temporarily
-    immune to all xulgaths' stenches for 1 minute.
+  description: A creature that enters the area must attempt a DC 19 Fortitude save.
+    On a failure, the creature is sickened 1, and on a critical failure, the creature
+    also takes a –5-foot status penalty to its Speeds for 1 round. While within the
+    aura, the creature takes a –2 circumstance penalty to saves to recover from the
+    sickened condition. A creature that succeeds at its save is temporarily immune
+    to all xulgaths' stenches for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stench
-  range: null
+  range: 30 feet
   raw_description: '**Stench** (__aura__, __olfactory__) 30 feet. A creature that
     enters the area must attempt a DC 19 Fortitude save. On a failure, the creature
-    is sickened 1, and on a critical failure, the creature also takes a -5-foot status
+    is sickened 1, and on a critical failure, the creature also takes a –5-foot status
     penalty to its Speeds for 1 round. While within the aura, the creature takes a
-    -2 circumstance penalty to saves to recover from the sickened condition. A creature
+    –2 circumstance penalty to saves to recover from the sickened condition. A creature
     that succeeds at its save is temporarily immune to all xulgaths'' stenches for
     1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -50,7 +75,6 @@ description: 'Xulgath leaders are usually the strongest, most violent members of
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
 hp: 44
 hp_misc: null
-immunities: null
 items:
 - breastplate
 - greataxe
@@ -59,7 +83,7 @@ languages:
 - Draconic
 - Undercommon
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+6
@@ -92,27 +116,7 @@ melee:
   - agile
 name: Xulgath Leader
 perception: 9
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The target must succeed at a DC 20 Fortitude save or become __enfeebled
-    1__ (or __enfeebled 2__ on a critical hit) for 1 round.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Weakening Strike
-  range: null
-  raw_description: '**Weakening Strike**   The target must succeed at a DC 20 Fortitude
-    save or become __enfeebled 1__ (or __enfeebled 2__ on a critical hit) for 1 round.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -122,11 +126,6 @@ ranged:
   to_hit: 8
   traits:
   - thrown 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -135,33 +134,28 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 size: Medium
 skills:
 - bonus: 11
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 337
+  page_start: '337'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Medium
 - Humanoid
 - Xulgath
-type: Creature
-weaknesses: null

@@ -7,36 +7,109 @@ ability_mods:
   wis_mod: 2
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a flurry of piercing crystals that deal 8d6 piercing
+    damage in a 30-foot cone (DC 25 basic Reflex save). They can't use Breath Weapon
+    again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__evocation__, __primal__) The
+    dragon breathes a flurry of piercing crystals that deal 8d6 piercing damage in
+    a 30-foot cone (DC 25 basic Reflex save). They can''t use Breath Weapon again
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - evocation
+  - primal
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one tail Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one tail Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges their Breath Weapon whenever they critically hit
+    with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
+    whenever they critically hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 25
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 25 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 25
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -47,24 +120,26 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The dragon makes a tail Strike at the creature with a -2 penalty. If it
+  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
     hits, the dragon disrupts the creature's action.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Twisting Tail
   range: null
   raw_description: '**Twisting Tail [Reaction]** **Trigger **A creature within reach
     of the dragon''s tail uses a __move__ action or leaves a square during a move
     action it''s using; **Effect **The dragon makes a tail Strike at the creature
-    with a -2 penalty. If it hits, the dragon disrupts the creature''s action.'
+    with a –2 penalty. If it hits, the dragon disrupts the creature''s action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within reach of the dragon's tail uses a __move__ action or
-    leaves a square during a move action it's using
+  trigger: A creature within reach of the dragon's tail uses a move action or leaves
+    a square during a move action it's using;
 description: 'Good-natured but vain, crystal dragons are beautiful creatures with
   brilliant hides made of multicolored crystal and gemstone. Their beauty is a source
   of great pride but is also something of a weakness, as crystal dragons are easily
@@ -106,23 +181,22 @@ description: 'Good-natured but vain, crystal dragons are beautiful creatures wit
 hp: 105
 hp_misc: null
 immunities:
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Common
 - Draconic
 - Terran
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
     type: slashing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: piercing
+  - formula: null
+    type: 2d6 piercing
   to_hit: 18
   traits:
   - sonic
@@ -147,74 +221,8 @@ melee:
   - reach 15 feet
 name: Young Crystal Dragon
 perception: 15
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a flurry of piercing crystals that deal 8d6 piercing
-    damage in a 30-foot cone (DC 25 basic Reflex save). They can't use Breath Weapon
-    again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__evocation__, __primal__) The
-    dragon breathes a flurry of piercing crystals that deal 8d6 piercing damage in
-    a 30-foot cone (DC 25 basic Reflex save). They can''t use Breath Weapon again
-    for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - evocation
-  - primal
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one tail Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one tail Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges their Breath Weapon whenever they critically hit
-    with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
-    whenever they critically hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 5
-  type: sonic
-ritual_lists: null
 saves:
   fort: 16
   fort_misc: null
@@ -223,9 +231,7 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +15
 - darkvision
 - scent (imprecise) 60 feet
 - tremorsense (imprecise) 30 feet
@@ -233,60 +239,61 @@ size: Large
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 15
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 15
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 18
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 15
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 91
+  page_start: '91'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: burrow
 - amount: 100
+  misc: null
   type: fly
 spell_lists:
-- dc: 25
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+- attack_bonus: null
+  cantrips:
+  - level: 3
     spells:
-    - frequency: null
-      name: color spray
-      requirement: null
-  - heightened_level: 3
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 25
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: color spray
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- NG
-- Large
 - Dragon
 - Earth
 - Elemental
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: sonic

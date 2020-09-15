@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 0
 ac: 17
 ac_special: null
+active_abilities: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -14,16 +15,18 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The goblin commando Steps.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Goblin Scuttle
   range: null
   raw_description: '**Goblin Scuttle** [Reaction] **Trigger** A goblin ally ends a
     move action adjacent to the commando. **Effect** The goblin commando Steps.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A goblin ally ends a move action adjacent to the commando.
@@ -38,7 +41,6 @@ description: 'The theoretical leaders of goblin raids are called goblin commando
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 18
 hp_misc: null
-immunities: null
 items:
 - horsechopper
 - leather armor
@@ -47,7 +49,7 @@ languages:
 - Common
 - Goblin
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+3
@@ -61,12 +63,11 @@ melee:
   - versatile P
 name: Goblin Commando
 perception: 5
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: shortbow
   plus_damage: null
   to_hit: 8
@@ -74,11 +75,6 @@ ranged:
   - deadly 1d10
   - range increment 60 feet
   - reload 0
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -87,39 +83,34 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - darkvision
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 5
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 180
+  page_start: '180'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Small
 - Goblin
 - Humanoid
-type: Creature
-weaknesses: null
