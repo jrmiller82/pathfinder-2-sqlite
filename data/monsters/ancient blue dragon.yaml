@@ -7,63 +7,206 @@ ability_mods:
   wis_mod: 5
 ac: 42
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes lightning that deals 12d12 electricity damage in
+    a 120-foot line (DC 40 basic Reflex save). It can't use Breath Weapon again for
+    1d4 rounds.      Each time the dragon uses Breath Weapon, a 20-foot-radius storm
+    cloud appears 80 feet above a point of the dragon's choosing along the Breath
+    Weapon's path. Clouds last for 10 minutes and allow the dragon to use Storm Breath.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __electricity__,
+    __evocation__) The dragon breathes lightning that deals 12d12 electricity damage
+    in a 120-foot line (DC 40 basic Reflex save). It can''t use Breath Weapon again
+    for 1d4 rounds.      Each time the dragon uses Breath Weapon, a 20-foot-radius
+    storm cloud appears 80 feet above a point of the dragon''s choosing along the
+    Breath Weapon''s path. Clouds last for 10 minutes and allow the dragon to use
+    Storm Breath.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - electricity
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When casting __create water__, the dragon can attempt to destroy liquid
+    instead of creating it, turning an equal amount of liquid into sand. This destroys
+    liquid magic or alchemical items if they're of a lower level than the dragon (a
+    creature can attempt a DC 37 Will save to protect all liquids in its possession).
+    This doesn't affect the liquids in a creature's body.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Desert Thirst
+  range: null
+  raw_description: '**Desert Thirst** (__arcane__, __transmutation__) When casting
+    __create water__, the dragon can attempt to destroy liquid instead of creating
+    it, turning an equal amount of liquid into sand. This destroys liquid magic or
+    alchemical items if they''re of a lower level than the dragon (a creature can
+    attempt a DC 37 Will save to protect all liquids in its possession). This doesn''t
+    affect the liquids in a creature''s body.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - transmutation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one horns Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one horns Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges its Breath Weapon whenever it scores a critical
+    hit with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
+    it scores a critical hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Whenever the dragon uses Breath Weapon while the illusory image from
+    its innate  __project image__ spell persists, it can cause the Breath Weapon to
+    originate from itself or the image.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mirage
+  range: null
+  raw_description: '**Mirage** Whenever the dragon uses Breath Weapon while the illusory
+    image from its innate  __project image__ spell persists, it can cause the Breath
+    Weapon to originate from itself or the image.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon calls down a lightning bolt from a storm cloud created by its
+    Breath Weapon. This creates a vertical line of lightning to the ground that deals
+    6d12 electricity damage to all enemies in its path (DC 40 basic Reflex save).
+  failure: null
+  frequency: Once per round; Requirement A storm cloud created by Breath Weapon is
+    within 500 feet, and the dragon can see the cloud.
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Storm Breath
+  range: null
+  raw_description: '**Storm Breath** [One Action]  (__arcane__, __concentrate__, __electricity__,
+    __evocation__) **Frequency** Once per round; **Requirement** A storm cloud created
+    by Breath Weapon is within 500 feet, and the dragon can see the cloud. **Effect**
+    The dragon calls down a lightning bolt from a storm cloud created by its Breath
+    Weapon. This creates a vertical line of lightning to the ground that deals 6d12
+    electricity damage to all enemies in its path (DC 40 basic Reflex save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - concentrate
+  - electricity
+  - evocation
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 39
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
+    the triggering attack. If the dragon is Flying, it descends 10 feet after the
+    attack is complete.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 39 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
-    the triggering attack. If the dragon is Flying, it descends 10 feet after the
-    attack is complete.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wing Deflection
-  range: null
-  raw_description: '**Wing Deflection** [Reaction] **Trigger** The dragon is targeted
-    with an attack. **Effect** The dragon raises its wing, gaining a +2 circumstance
-    bonus to AC against the triggering attack. If the dragon is Flying, it descends
-    10 feet after the attack is complete.'
-  requirements: null
-  success: null
-  traits: null
   trigger: The dragon is targeted with an attack.
 description: 'Blue dragons are the sleek and poised cosmopolitans of the chromatic
   dragons. Their brand of evil is organized, manipulative, and regal. Blue dragons
@@ -112,7 +255,6 @@ immunities:
 - electricity
 - paralyzed
 - sleep
-items: null
 languages:
 - Auran
 - Common
@@ -121,15 +263,15 @@ languages:
 - Infernal
 - Jotun
 level: 18
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+15
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d12
-    type: electricity
+  - formula: null
+    type: 2d12 electricity
   to_hit: 35
   traits:
   - electricity
@@ -168,154 +310,8 @@ melee:
   - reach 20 feet
 name: Ancient Blue Dragon
 perception: 31
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes lightning that deals 12d12 electricity damage in
-    a 120-foot line (DC 40 basic Reflex save). It can't use Breath Weapon again for
-    1d4 rounds.      Each time the dragon uses Breath Weapon, a 20-foot-radius storm
-    cloud appears 80 feet above a point of the dragon's choosing along the Breath
-    Weapon's path. Clouds last for 10 minutes and allow the dragon to use Storm Breath.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __electricity__,
-    __evocation__) The dragon breathes lightning that deals 12d12 electricity damage
-    in a 120-foot line (DC 40 basic Reflex save). It can''t use Breath Weapon again
-    for 1d4 rounds.      Each time the dragon uses Breath Weapon, a 20-foot-radius
-    storm cloud appears 80 feet above a point of the dragon''s choosing along the
-    Breath Weapon''s path. Clouds last for 10 minutes and allow the dragon to use
-    Storm Breath.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - electricity
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When casting __create water__, the dragon can attempt to destroy liquid
-    instead of creating it, turning an equal amount of liquid into sand. This destroys
-    liquid magic or alchemical items if they're of a lower level than the dragon (a
-    creature can attempt a DC 37 Will save to protect all liquids in its possession).
-    This doesn't affect the liquids in a creature's body.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Desert Thirst
-  range: null
-  raw_description: '**Desert Thirst** (__arcane__, __transmutation__) When casting
-    __create water__, the dragon can attempt to destroy liquid instead of creating
-    it, turning an equal amount of liquid into sand. This destroys liquid magic or
-    alchemical items if they''re of a lower level than the dragon (a creature can
-    attempt a DC 37 Will save to protect all liquids in its possession). This doesn''t
-    affect the liquids in a creature''s body.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - transmutation
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one horns Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one horns Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges its Breath Weapon whenever it scores a critical
-    hit with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
-    it scores a critical hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Whenever the dragon uses Breath Weapon while the illusory image from
-    its innate  __project image__ spell persists, it can cause the Breath Weapon to
-    originate from itself or the image.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mirage
-  range: null
-  raw_description: '**Mirage** Whenever the dragon uses Breath Weapon while the illusory
-    image from its innate  __project image__ spell persists, it can cause the Breath
-    Weapon to originate from itself or the image.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A storm cloud created by Breath Weapon is within 500 feet, and the dragon
-    can see the cloud.
-  effects: null
-  failure: null
-  frequency: Once per round
-  full_description: null
-  generic_description: null
-  name: Storm Breath
-  range: null
-  raw_description: '**Storm Breath**   (__arcane__, __concentrate__, __electricity__,
-    __evocation__) **Frequency** Once per round; **Requirement** A storm cloud created
-    by Breath Weapon is within 500 feet, and the dragon can see the cloud. **Effect**
-    The dragon calls down a lightning bolt from a storm cloud created by its Breath
-    Weapon. This creates a vertical line of lightning to the ground that deals 6d12
-    electricity damage to all enemies in its path (DC 40 basic Reflex save).'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - concentrate
-  - electricity
-  - evocation
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 32
   fort_misc: null
@@ -331,104 +327,95 @@ sense_abilities:
   description: The dragon can mimic any sound it has heard. To do so, it must succeed
     at a Deception check with a +4 circumstance bonus.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sound Imitation
   range: null
   raw_description: '**Sound Imitation** The dragon can mimic any sound it has heard.
     To do so, it must succeed at a Deception check with a +4 circumstance bonus.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +31
 - darkvision
 - scent (imprecise) 60 feet
 size: Huge
 skills:
 - bonus: 28
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 33
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 35
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 35
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 33
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 35
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 28
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 29
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 108
+  page_start: '108'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: burrow
 - amount: 200
+  misc: null
   type: fly
 spell_lists:
-- dc: 43
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+- attack_bonus: null
+  cantrips:
+  - level: 8
     spells:
-    - frequency: at will
-      name: hallucinatory terrain
-      requirement: null
-    - frequency: at will
-      name: illusory creature
-      requirement: null
-    - frequency: at will
-      name: illusory object
-      requirement: null
-    - frequency: at will
-      name: ventriloquism
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: see mirage
-      name: project image
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will, see desert thirst
-      name: create water
-      requirement: null
-  - heightened_level: 8
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 43
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: at will
+      name: hallucinatory terrain
+    - misc: at will
+      name: illusory creature
+    - misc: at will
+      name: illusory object
+    - misc: at will
+      name: ventriloquism
+  - level: 7
+    spells:
+    - misc: see mirage
+      name: project image
+  - level: 1
+    spells:
+    - misc: at will; see desert thirst
+      name: create water
+  spells_source: Arcane Innate Spells
 traits:
-- Uncommon
-- LE
-- Huge
 - Dragon
 - Electricity
-type: Creature
-weaknesses: null

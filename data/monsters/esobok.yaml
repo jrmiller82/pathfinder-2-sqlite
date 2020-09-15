@@ -7,6 +7,178 @@ ability_mods:
   wis_mod: 3
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The esobok Strides and then makes a Strike. If it began this action
+    __hidden__, it remains hidden until after the Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pounce
+  range: null
+  raw_description: '**Pounce** [One Action]  The esobok Strides and then makes a Strike.
+    If it began this action __hidden__, it remains hidden until after the Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An esobok's Strikes affect __incorporeal__ creatures with the effects
+    of a __ghost touch__ property rune and deal 1d6 negative damage to living creatures
+    and 1d6 positive damage to undead.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spirit Touch
+  range: null
+  raw_description: '**Spirit Touch** An esobok''s Strikes affect __incorporeal__ creatures
+    with the effects of a __ghost touch__ property rune and deal 1d6 negative damage
+    to living creatures and 1d6 positive damage to undead.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** A creature is __grabbed__ by the esobok''s jaws;'
+  effect: The esobok releases the target from the Grab but wrenches its spirit free
+    as it does so. The creature must attempt a DC 20 Will save. Creatures without
+    souls (such as most __constructs__) and creatures whose bodies and souls are one
+    (such as most __celestials__, __fiends__, and __monitors__) that roll a failure
+    or critical failure on the save get a success instead.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wrench Spirit
+  range: null
+  raw_description: '**Wrench Spirit** [One Action]  (__attack__, __divine__, __incapacitation__,
+    __necromancy__) **Requirement** A creature is __grabbed__ by the esobok''s jaws;
+    **Effect** The esobok releases the target from the Grab but wrenches its spirit
+    free as it does so. The creature must attempt a DC 20 Will save. Creatures without
+    souls (such as most __constructs__) and creatures whose bodies and souls are one
+    (such as most __celestials__, __fiends__, and __monitors__) that roll a failure
+    or critical failure on the save get a success instead.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  - divine
+  - incapacitation
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target is __stunned 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The target is __stunned 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The target is __stunned 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The esobok wrenches the target's soul from its body into its jaws.
+    __Mindless__ __undead__ creatures of level 2 or lower are destroyed, other undead
+    creatures are stunned for 1 round, and all other creatures are __paralyzed__.
+    At the end of each of its turns, a creature paralyzed by this effect can attempt
+    a new save to end the effect. The paralysis ends automatically if the esobok attempts
+    a jaws Strike or speaks.
+  effect: null
+  failure: The esobok wrenches the target's soul from its body into its jaws. __Mindless__
+    __undead__ creatures of level 2 or lower are destroyed, other undead creatures
+    are stunned for 1 round, and all other creatures are __paralyzed__. At the end
+    of each of its turns, a creature paralyzed by this effect can attempt a new save
+    to end the effect. The paralysis ends automatically if the esobok attempts a jaws
+    Strike or speaks.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The esobok wrenches the target''s soul from its body
+    into its jaws. __Mindless__ __undead__ creatures of level 2 or lower are destroyed,
+    other undead creatures are stunned for 1 round, and all other creatures are __paralyzed__.
+    At the end of each of its turns, a creature paralyzed by this effect can attempt
+    a new save to end the effect. The paralysis ends automatically if the esobok attempts
+    a jaws Strike or speaks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but as long as a creature is stunned or paralyzed,
+    it is also __stupefied 2__.
+  critical_success: null
+  description: As failure, but as long as a creature is stunned or paralyzed, it is
+    also __stupefied 2__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** As failure, but as long as a creature is
+    stunned or paralyzed, it is also __stupefied 2__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Esoboks are brute hunters and pugnacious sentinels that serve as the
@@ -25,16 +197,15 @@ description: 'Esoboks are brute hunters and pugnacious sentinels that serve as t
 hp: 55
 hp_misc: null
 immunities:
-- death effects
-- disease
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
 languages:
 - Abyssal
 - Celestial
 - Infernal
 - Requian
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+3
@@ -42,7 +213,9 @@ melee:
   name: jaws
   plus_damage:
   - formula: null
-    type: Grab and spirit touch
+    type: Grab
+  - formula: null
+    type: spirit touch
   to_hit: 12
   traits:
   - magical
@@ -60,97 +233,14 @@ melee:
   - magical
 name: Esobok
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The esobok Strides and then makes a Strike. If it began this action
-    __hidden__, it remains hidden until after the Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pounce
-  range: null
-  raw_description: '**Pounce**   The esobok Strides and then makes a Strike. If it
-    began this action __hidden__, it remains hidden until after the Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An esobok's Strikes affect __incorporeal__ creatures with the effects
-    of a __ghost touch__ property rune and deal 1d6 negative damage to living creatures
-    and 1d6 positive damage to undead.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spirit Touch
-  range: null
-  raw_description: '**Spirit Touch** An esobok''s Strikes affect __incorporeal__ creatures
-    with the effects of a __ghost touch__ property rune and deal 1d6 negative damage
-    to living creatures and 1d6 positive damage to undead.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: As failure, but as long as a creature is stunned or paralyzed,
-    it is also stupefied 2.
-  critical_success: The creature is unaffected.
-  description: null
-  effect: A creature is __grabbed__ by the esobok's jaws
-  effects: null
-  failure: The esobok wrenches the target's soul from its body into its jaws. Mindless
-    undead creatures of level 2 or lower are destroyed, other undead creatures are
-    stunned for 1 round, and all other creatures are paralyzed. At the end of each
-    of its turns, a creature paralyzed by this effect can attempt a new save to end
-    the effect. The paralysis ends automatically if the esobok attempts a jaws Strike
-    or speaks.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wrench Spirit
-  range: null
-  raw_description: "**Wrench Spirit**   (__attack__, __divine__, __incapacitation__,\
-    \ __necromancy__) **Requirement** A creature is __grabbed__ by the esobok's jaws;\
-    \ **Effect** The esobok releases the target from the Grab but wrenches its spirit\
-    \ free as it does so. The creature must attempt a DC 20 Will save. Creatures without\
-    \ souls (such as most __constructs__) and creatures whose bodies and souls are\
-    \ one (such as most __celestials__, __fiends__, and __monitors__) that roll a\
-    \ failure or critical failure on the save get a success instead. \n\n**Critical\
-    \ Success** The creature is unaffected. \n\n**Success** The target is __stunned\
-    \ 1__. \n\n**Failure** The esobok wrenches the target's soul from its body into\
-    \ its jaws. __Mindless__ __undead__ creatures of level 2 or lower are destroyed,\
-    \ other undead creatures are stunned for 1 round, and all other creatures are\
-    \ __paralyzed__. At the end of each of its turns, a creature paralyzed by this\
-    \ effect can attempt a new save to end the effect. The paralysis ends automatically\
-    \ if the esobok attempts a jaws Strike or speaks. \n\n**Critical Failure** As\
-    \ failure, but as long as a creature is stunned or paralyzed, it is also __stupefied\
-    \ 2__."
-  requirements: null
-  success: The target is stunned 1.
-  traits:
-  - attack
-  - divine
-  - incapacitation
-  - necromancy
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: negative
 - amount: 5
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 11
   fort_misc: null
@@ -159,9 +249,7 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - darkvision
 - lifesense 60 feet
 - scent (imprecise) 60 feet
@@ -169,45 +257,43 @@ size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 10
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 4
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 8
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 10
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 208
+  page_start: '208'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists:
-- dc: 17
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: ×3, self only
+    - misc: ×3; self only
       name: invisibility
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- N
-- Medium
 - Monitor
 - Psychopomp
-type: Creature
-weaknesses: null

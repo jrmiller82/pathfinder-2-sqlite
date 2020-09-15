@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 0
 ac: 15
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: 'Elemental magic fills the dune dancer''s body or weapon. The dune
+    dancer chooses one element and makes a melee Strike. The Strike deals an additional
+    1d4 damage of the indicated type and has the trait corresponding to the element:
+    **Air** electricity, **Earth** bludgeoning, **Fire** fire, or **Water** cold.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Elemental Assault
+  range: null
+  raw_description: '**Elemental Assault** [Two Actions]  Elemental magic fills the
+    dune dancer''s body or weapon. The dune dancer chooses one element and makes a
+    melee Strike. The Strike deals an additional 1d4 damage of the indicated type
+    and has the trait corresponding to the element: **Air** electricity, **Earth**
+    bludgeoning, **Fire** fire, or **Water** cold.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -14,11 +41,11 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The dune dancer gain resistance 2 against the triggering damage.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Elemental Bulwark
   range: null
   raw_description: '**Elemental Bulwark [Reaction]** **Trigger** An enemy is about
@@ -26,11 +53,12 @@ automatic_abilities:
     has the __air__, __earth__, __fire__, or __water__ trait; **Effect** The dune
     dancer gain resistance 2 against the triggering damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: An enemy is about to damage the dune dancer with cold, electricity, or
-    fire, or with a spell that has the __air__, __earth__, __fire__, or __water__
-    trait
+    fire, or with a spell that has the air, earth, fire, or water trait;
 description: 'Because their genie forebears are native to the __Material Plane__,
   sulis (scions of mortals and __jann__) are by and large the most common geniekin
   on the Material Plane. They are often artisans and peace brokers, compelled to try
@@ -64,7 +92,6 @@ description: 'Because their genie forebears are native to the __Material Plane__
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 16
 hp_misc: null
-immunities: null
 items:
 - scimitar
 - tambourine
@@ -75,7 +102,7 @@ languages:
 - Ignan
 - Terran
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -88,37 +115,7 @@ melee:
   - sweep
 name: Suli Dune Dancer
 perception: 5
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: 'Elemental magic fills the dune dancer''s body or weapon. The dune
-    dancer chooses one element and makes a melee Strike. The Strike deals an additional
-    1d4 damage of the indicated type and has the trait corresponding to the element:
-    **Air** electricity, **Earth** bludgeoning, **Fire** fire, or **Water** cold.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Elemental Assault
-  range: null
-  raw_description: '**Elemental Assault** [Two Actions]  Elemental magic fills the
-    dune dancer''s body or weapon. The dune dancer chooses one element and makes a
-    melee Strike. The Strike deals an additional 1d4 damage of the indicated type
-    and has the trait corresponding to the element: **Air** electricity, **Earth**
-    bludgeoning, **Fire** fire, or **Water** cold.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 3
   fort_misc: null
@@ -127,80 +124,66 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
-senses:
-- Perception +5
 size: Medium
 skills:
 - bonus: 5
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 7
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 4
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 7
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 4
   misc: null
-  name: 'Society '
-source:
+  name: Society
+sources:
 - abbr: Bestiary 2
-  page_start: 202
+  page_start: '202'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 17
-  misc: ''
-  name: Occult Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+- attack_bonus: 9
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
-      name: color spray
-      requirement: null
-    - frequency: null
-      name: soothe
-      requirement: null
-    - frequency: 2 slots
-      name: true strike
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: guidance
-      requirement: null
-    - frequency: null
+    - misc: null
       name: inspire courage
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-    - frequency: null
+    - misc: null
       name: telekinetic projectile
-      requirement: null
-  to_hit: 9
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: color spray
+    - misc: null
+      name: soothe
+    - misc: 2 slots
+      name: true strike
+  spells_source: Occult Spontaneous Spells
 traits:
-- N
-- Medium
 - Human
 - Humanoid
 - Suli
-type: Creature
-weaknesses: null

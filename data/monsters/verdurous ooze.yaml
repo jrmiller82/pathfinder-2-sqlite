@@ -7,6 +7,161 @@ ability_mods:
   wis_mod: 0
 ac: 12
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 2d6 bludgeoning plus 1d6 acid, DC 24
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  2d6 bludgeoning plus 1d6 acid,
+    DC 24'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The verdurous ooze adjusts its aura of supernatural vapors to affect
+    living creatures within a 20-foot emanation, forcing them to attempt a DC 24 Will
+    save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sleep Gas
+  range: null
+  raw_description: '**Sleep Gas** [Two Actions]  (__incapacitation__, __mental__,
+    __poison__, __sleep__) The verdurous ooze adjusts its aura of supernatural vapors
+    to affect living creatures within a 20-foot emanation, forcing them to attempt
+    a DC 24 Will save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  - mental
+  - poison
+  - sleep
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and becomes temporarily immune to Sleep
+    Gas for 24 hours.
+  description: The creature is unaffected and becomes temporarily immune to Sleep
+    Gas for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected and becomes temporarily
+    immune to Sleep Gas for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __stupefied 1__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __stupefied 1__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __stupefied 1__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature falls __unconscious__. If it's still unconscious after
+    1 minute, it wakes up automatically.
+  effect: null
+  failure: The creature falls __unconscious__. If it's still unconscious after 1 minute,
+    it wakes up automatically.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature falls __unconscious__. If it''s still
+    unconscious after 1 minute, it wakes up automatically.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature falls unconscious. If it's still unconscious after
+    1 hour, it wakes up automatically.
+  critical_success: null
+  description: The creature falls unconscious. If it's still unconscious after 1 hour,
+    it wakes up automatically.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature falls unconscious. If it''s
+    still unconscious after 1 hour, it wakes up automatically.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A verdurous ooze's acid damages only metal and flesh—not bone, stone,
+    or other materials.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Verdurous Ooze Acid
+  range: null
+  raw_description: '**Verdurous Ooze Acid** A verdurous ooze''s acid damages only
+    metal and flesh—not bone, stone, or other materials.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -17,11 +172,11 @@ automatic_abilities:
     takes 2d4 acid damage (after dealing damage to the ooze as normal). __Thrown__
     weapons take this damage automatically with no save.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Corrosive Surface
   range: null
   raw_description: '**Corrosive Surface** A creature that hits a verdurous ooze with
@@ -29,34 +184,38 @@ automatic_abilities:
     the weapon or creature takes 2d4 acid damage (after dealing damage to the ooze
     as normal). __Thrown__ weapons take this damage automatically with no save.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. The verdurous ooze constantly emits supernatural vapors that
-    cause nearby plants to grow rapidly and writhe and grasp at anything and everything
-    within the emanation. This area becomes difficult terrain for non-verdurous ooze
+  description: The verdurous ooze constantly emits supernatural vapors that cause
+    nearby plants to grow rapidly and writhe and grasp at anything and everything
+    within the emanation. This area becomes difficult terrain for non–verdurous ooze
     creatures. When a creature starts its turn in this aura, it must succeed at a
-    DC 21 Reflex save or take a -10-foot circumstance penalty to its Speeds until
+    DC 21 Reflex save or take a –10-foot circumstance penalty to its Speeds until
     it leaves the emanation.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Enliven Foliage
-  range: null
+  range: 20 feet
   raw_description: '**Enliven Foliage** (__aura__, __primal__, __transmutation__)
     20 feet. The verdurous ooze constantly emits supernatural vapors that cause nearby
     plants to grow rapidly and writhe and grasp at anything and everything within
-    the emanation. This area becomes difficult terrain for non-verdurous ooze creatures.
+    the emanation. This area becomes difficult terrain for non–verdurous ooze creatures.
     When a creature starts its turn in this aura, it must succeed at a DC 21 Reflex
-    save or take a -10-foot circumstance penalty to its Speeds until it leaves the
+    save or take a –10-foot circumstance penalty to its Speeds until it leaves the
     emanation.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -73,11 +232,11 @@ automatic_abilities:
     it automatically pushes creatures and objects out of the way to fill a space (the
     GM decides if an object or creature is too big or heavy to push).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Split
   range: null
   raw_description: '**Split** When a verdurous ooze that has 10 or more HP is hit
@@ -87,6 +246,8 @@ automatic_abilities:
     is unoccupied, it automatically pushes creatures and objects out of the way to
     fill a space (the GM decides if an object or creature is too big or heavy to push).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -105,103 +266,29 @@ hp_misc: null
 immunities:
 - acid
 - critical hits
-- mental
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
 - piercing
 - precision
 - slashing
-- unconscious
-- visual
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
     type: bludgeoning
   name: pseudopod
   plus_damage:
-  - formula: 1d6
-    type: acid and Grab
+  - formula: null
+    type: 1d6 acid
+  - formula: null
+    type: Grab
   to_hit: 15
   traits: null
 name: Verdurous Ooze
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 2d6 bludgeoning plus 1d6 acid, DC 24
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   2d6 bludgeoning plus 1d6 acid, DC 24'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: The creature falls unconscious. If it's still unconscious after
-    1 hour, it wakes up automatically.
-  critical_success: The creature is unaffected and becomes temporarily immune to Sleep
-    Gas for 24 hours.
-  description: "The verdurous ooze adjusts its aura of supernatural vapors to affect\
-    \ living creatures within a 20-foot emanation, forcing them to attempt a DC 24\
-    \ Will save. \n\n"
-  effect: null
-  effects: null
-  failure: The creature falls unconscious. If it's still unconscious after 1 minute,
-    it wakes up automatically.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sleep Gas
-  range: null
-  raw_description: "**Sleep Gas** [Two Actions]  (__incapacitation__, __mental__,\
-    \ __poison__, __sleep__) The verdurous ooze adjusts its aura of supernatural vapors\
-    \ to affect living creatures within a 20-foot emanation, forcing them to attempt\
-    \ a DC 24 Will save. \n\n**Critical Success** The creature is unaffected and becomes\
-    \ temporarily immune to Sleep Gas for 24 hours. \n\n**Success** The creature is\
-    \ __stupefied 1__ for 1 round. \n\n**Failure** The creature falls __unconscious__.\
-    \ If it's still unconscious after 1 minute, it wakes up automatically. \n\n**Critical\
-    \ Failure** The creature falls unconscious. If it's still unconscious after 1\
-    \ hour, it wakes up automatically."
-  requirements: null
-  success: The creature is stupefied 1 for 1 round.
-  traits:
-  - incapacitation
-  - mental
-  - poison
-  - sleep
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A verdurous ooze's acid damages only metal and flesh—not bone, stone,
-    or other materials.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Verdurous Ooze Acid
-  range: null
-  raw_description: '**Verdurous Ooze Acid** A verdurous ooze''s acid damages only
-    metal and flesh—not bone, stone, or other materials.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -210,50 +297,26 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A verdurous ooze can sense nearby creatures through vibration and air
-    or water movement.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Motion Sense
-  range: null
-  raw_description: '**Motion Sense** A verdurous ooze can sense nearby creatures through
-    vibration and air or water movement.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
 senses:
-- Perception +8
 - motion sense 60 feet
 - no vision
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: +10 in tall grass or undergrowth
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 194
+  page_start: '194'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Mindless
 - Ooze
-type: Creature
-weaknesses: null

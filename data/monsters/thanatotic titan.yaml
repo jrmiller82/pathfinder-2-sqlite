@@ -1,0 +1,430 @@
+ability_mods:
+  cha_mod: 8
+  con_mod: 9
+  dex_mod: 4
+  int_mod: 8
+  str_mod: 10
+  wis_mod: 6
+ac: 46
+ac_special: null
+active_abilities:
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The creature must attempt a DC 45 Will save.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Godslayer
+  range: null
+  raw_description: '**Godslayer** [Free Action]  (__divine **Trigger** The titan damages
+    a creature capable of using __divine__ spells or abilities__) **Effect** The creature
+    must attempt a DC 45 Will save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine Trigger The titan damages a creature capable of using divine spells or
+    abilities
+  trigger: The titan damages a creature capable of using divine spells or abilities)
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature can't use divine spells or abilities for 1 round and is
+    __frightened 2__. Only powerful non-divine magic, such as __wish__, can undo this
+    effect.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature can''t use divine spells or abilities
+    for 1 round and is __frightened 2__. Only powerful non-divine magic, such as __wish__,
+    can undo this effect.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature can't use divine spells or abilities for 1 round and is __frightened
+    2__. Only powerful non-divine magic, such as __wish__, can undo this effect.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: As success, but the duration is 1 minute.
+  effect: null
+  failure: As success, but the duration is 1 minute.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** As success, but the duration is 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As success, but the duration is unlimited.
+  critical_success: null
+  description: As success, but the duration is unlimited.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** As success, but the duration is unlimited.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: If a titan's rock Strike isn't a critical failure, the rock explodes,
+    dealing 10d6 damage of a damage type of the titan's choice to all creatures in
+    a 20- foot burst (DC 45 basic Reflex save).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]  (__divine__, __transmutation__)
+    If a titan''s rock Strike isn''t a critical failure, the rock explodes, dealing
+    10d6 damage of a damage type of the titan''s choice to all creatures in a 20-
+    foot burst (DC 45 basic Reflex save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - transmutation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The titan Strides twice and makes a melee Strike. If the Strike hits,
+    the titan can cast __earthquake__ centered on the target as a free action.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Titanic Charge
+  range: null
+  raw_description: '**Titanic Charge** [Two Actions]  The titan Strides twice and
+    makes a melee Strike. If the Strike hits, the titan can cast __earthquake__ centered
+    on the target as a free action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Huge or smaller, foot, DC 45
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**__Trample__** [Three Actions]  Huge or smaller, foot, DC 45'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The titan makes a melee weapon Strike against each foe within their
+    reach. This counts as three attacks for the titan's multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wide Cleave
+  range: null
+  raw_description: '**Wide Cleave** [Two Actions]  The titan makes a melee weapon
+    Strike against each foe within their reach. This counts as three attacks for the
+    titan''s multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: CE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Titans warp perception and distance around them to seem even larger
+    and more imposing. A creature that enters or begins its turn within the emanation
+    must succeed at a DC 45 Will save or its movement toward the titan is movement
+    over difficult terrain (greater difficult terrain on a critical failure) for 1
+    round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Impossible Stature
+  range: 100 feet
+  raw_description: '**Impossible Stature** (__aura__, __divine__, __illusion__, __mental__)
+    100 feet. Titans warp perception and distance around them to seem even larger
+    and more imposing. A creature that enters or begins its turn within the emanation
+    must succeed at a DC 45 Will save or its movement toward the titan is movement
+    over difficult terrain (greater difficult terrain on a critical failure) for 1
+    round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divine
+  - illusion
+  - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: The titan can use their Attack of Opportunity when a creature within
+    their reach uses a __concentrate__ action, in additional to its normal trigger.
+    They disrupt actions on any hit, not just a critical hit—including triggering
+    concentrate actions.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+description: 'Thanatotic titans served as assassins in the war against the deities.
+  They learned to sever their targets'' divine connections, murdering mortal priests
+  and divine heralds alike. Thanatotic titans were locked away in the __Abyss__, but
+  some sneak away from the Abyss to continue their sprees of murder and mayhem.
+
+
+
+
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 49'
+hp: 540
+hp_misc: null
+immunities:
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+items:
+- +3 greater striking halberd
+- +2 greater resilient full plate
+languages:
+- Abyssal
+- Celestial
+- Common
+- telepathy 100 feet
+level: 22
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 4d10+25
+    type: piercing
+  name: halberd
+  plus_damage: null
+  to_hit: 42
+  traits:
+  - magical
+  - reach 40 feet
+  - versatile S
+- action_cost: One Action
+  damage:
+    formula: 4d8+20
+    type: bludgeoning
+  name: foot
+  plus_damage: null
+  to_hit: 39
+  traits:
+  - agile
+  - reach 30 feet
+name: Thanatotic Titan
+perception: 36
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d12+20
+    type: bludgeoning
+  name: rock
+  plus_damage: null
+  to_hit: 39
+  traits:
+  - brutal
+  - range increment 200 feet
+rarity: Rare
+saves:
+  fort: 37
+  fort_misc: null
+  misc: +4 status to all saves vs. <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+    or <a style="text-decoration:underline" href="Traits.aspx?ID=48">divine</a>
+  ref: 34
+  ref_misc: null
+  will: 35
+  will_misc: null
+senses:
+- darkvision
+- true seeing
+size: Gargantuan
+skills:
+- bonus: 45
+  misc: null
+  name: Athletics
+- bonus: 41
+  misc: null
+  name: Crafting
+- bonus: 36
+  misc: null
+  name: Deception
+- bonus: 38
+  misc: null
+  name: Intimidation
+- bonus: 38
+  misc: null
+  name: Religion
+- bonus: 36
+  misc: null
+  name: Stealth
+sources:
+- abbr: 'Pathfinder #156: The Apocalypse Prophet'
+  page_start: '83'
+  page_stop: null
+speed:
+- amount: 40
+  misc: null
+  type: Land
+- amount: null
+  misc: null
+  type: air walk
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 10
+    spells:
+    - misc: null
+      name: air walk
+    - misc: null
+      name: true seeing
+  dc: 45
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: null
+      name: massacre
+    - misc: null
+      name: meteor swarm
+  - level: 8
+    spells:
+    - misc: at will
+      name: dispel magic
+    - misc: at will
+      name: spiritual epidemic
+    - misc: at will
+      name: suggestion
+  - level: 7
+    spells:
+    - misc: null
+      name: spell turning
+  - level: 6
+    spells:
+    - misc: ×3
+      name: scrying
+  - level: 5
+    spells:
+    - misc: null
+      name: sending
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 45
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: planar ally
+    - misc: null
+      name: resurrect
+  spells_source: Divine Rituals
+traits:
+- Humanoid
+- Titan

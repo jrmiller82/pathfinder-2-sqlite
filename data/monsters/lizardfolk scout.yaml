@@ -7,6 +7,120 @@ ability_mods:
   wis_mod: 3
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A lizardfolk scout can hold their breath for 150 rounds (15 minutes).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deep Breath
+  range: null
+  raw_description: '**Deep Breath** A lizardfolk scout can hold their breath for 150
+    rounds (15 minutes).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Giant Centipede Venom
+  range: null
+  raw_description: '**Giant Centipede Venom** (__poison__) **Saving Throw** DC 17
+    Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage (1 round);
+    **Stage 2** 1d8 poison damage and __flat-footed__ (1 round); **Stage 3** 1d12
+    poison damage, __clumsy 1__, and __flat-footed__ (1 round)'
+  requirements: null
+  saving_throw: DC 17 Fortitude
+  stages:
+  - effect: 1d6 poison damage (1 round)
+  - effect: 1d8 poison damage and __flat-footed__ (1 round)
+  - effect: 1d12 poison damage, __clumsy 1__, and __flat-footed__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If the lizardfolk scout starts its turn undetected by a creature or
+    hidden from it, that creature is __flat-footed__ against the scout's attacks until
+    the end of the scout's turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hidden Movement
+  range: null
+  raw_description: '**Hidden Movement** If the lizardfolk scout starts its turn undetected
+    by a creature or hidden from it, that creature is __flat-footed__ against the
+    scout''s attacks until the end of the scout''s turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The lizardfolk scout deals an extra 1d6 precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The lizardfolk scout deals an extra 1d6 precision
+    damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures
+    that are in water and lack a swim Speed are __flat-footed__ to the lizardfolk
+    scout.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Terrain Advantage
+  range: null
+  raw_description: '**Terrain Advantage** Non-lizardfolk creatures in difficult terrain
+    and non-lizardfolk creatures that are in water and lack a swim Speed are __flat-footed__
+    to the lizardfolk scout.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Iruxi scouts are the lizardfolk most often encountered by adventurers,
@@ -22,7 +136,6 @@ description: 'Iruxi scouts are the lizardfolk most often encountered by adventur
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 17
 hp_misc: null
-immunities: null
 items:
 - blowgun (10 darts, 1 of which is coated with giant centipede venom)
 languages:
@@ -30,7 +143,7 @@ languages:
 - Draconic
 - Iruxi
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -51,126 +164,21 @@ melee:
   - finesse
 name: Lizardfolk Scout
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A lizardfolk scout can hold their breath for 150 rounds (15 minutes).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deep Breath
-  range: null
-  raw_description: '**Deep Breath** A lizardfolk scout can hold their breath for 150
-    rounds (15 minutes).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 17 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison damage (1 round); **Stage 2** 1d8 poison damage and __flat-footed__
-    (1 round); **Stage 3** 1d12 poison damage, __clumsy 1__, and __flat-footed__ (1
-    round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Giant Centipede Venom
-  range: null
-  raw_description: '**Giant Centipede Venom** (__poison__) **Saving Throw** DC 17
-    Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage (1 round);
-    **Stage 2** 1d8 poison damage and __flat-footed__ (1 round); **Stage 3** 1d12
-    poison damage, __clumsy 1__, and __flat-footed__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the lizardfolk scout starts its turn undetected by a creature or
-    hidden from it, that creature is __flat-footed__ against the scout's attacks until
-    the end of the scout's turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hidden Movement
-  range: null
-  raw_description: '**Hidden Movement** If the lizardfolk scout starts its turn undetected
-    by a creature or hidden from it, that creature is __flat-footed__ against the
-    scout''s attacks until the end of the scout''s turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The lizardfolk scout deals an extra 1d6 precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The lizardfolk scout deals an extra 1d6 precision
-    damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures
-    that are in water and lack a swim Speed are __flat-footed__ to the lizardfolk
-    scout.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Terrain Advantage
-  range: null
-  raw_description: '**Terrain Advantage** Non-lizardfolk creatures in difficult terrain
-    and non-lizardfolk creatures that are in water and lack a swim Speed are __flat-footed__
-    to the lizardfolk scout.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: 1 piercing
   name: blowgun
-  plus_damage: null
+  plus_damage:
+  - formula: null
+    type: giant centipede venom
   to_hit: 8
   traits:
   - agile
   - nonlethal
   - range increment 20 feet
   - reload 1
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -179,43 +187,38 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
-senses:
-- Perception +8
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 6
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 6
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 231
+  page_start: '231'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Medium
 - Humanoid
 - Lizardfolk
-type: Creature
-weaknesses: null

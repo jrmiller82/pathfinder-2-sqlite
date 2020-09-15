@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 1
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Homunculus Poison
+  range: null
+  raw_description: '**Homunculus Poison** (__poison__) A homunculus has one dose of
+    poison in a reservoir in its head. It can refill this poison from its reserves
+    with an Interact action. **Saving Throw** DC 15 Fortitude; **Maximum Duration**
+    6 rounds; **Stage 1** 1d6 poison and __enfeebled 1__ (1 round)'
+  requirements: null
+  saving_throw: DC 15 Fortitude
+  stages:
+  - effect: 1d6 poison and __enfeebled 1__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'A homunculus is a tiny servitor construct created by a crafter to serve
@@ -28,11 +53,11 @@ description: 'A homunculus is a tiny servitor construct created by a crafter to 
   its deceased creator''s child or successor and attempting to further its creator''s
   legacy as best it can. In such cases, and if the homunculus was in close proximity
   to its master upon that creature''s death, a portion of the dead master''s soul
-  "infects" the surviving homunculus as it passes on to the afterlife. This doesn''t
+  “infects” the surviving homunculus as it passes on to the afterlife. This doesn''t
   result in a truly soulbound homunculus (see sidebar), since only a fragment of the
   soul is left behind, but this is still enough to grant the homunculus a greater
   personality, free will of its own, and perhaps most importantly, the ability to
-  speak. Over time, a few of these "awakened" homunculi even go so far as to become
+  speak. Over time, a few of these “awakened” homunculi even go so far as to become
   convinced that they are the reincarnation of their prior masters, although their
   actual personalities never quite reach the depth and complexity of a truly living
   creature. They are, at best, caricatures of the master, and at worst they become
@@ -67,17 +92,16 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
 languages:
 - Common
 - (can't speak any language)
 - master link
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: piercing
+    formula: null
+    type: 1d4 piercing
   name: jaws
   plus_damage:
   - formula: null
@@ -88,35 +112,7 @@ melee:
   - magical
 name: Homunculus
 perception: 3
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A homunculus has one dose of poison in a reservoir in its head. It
-    can refill this poison from its reserves with an Interact action. **Saving Throw**
-    DC 15 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison and __enfeebled
-    1__ (1 round)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Homunculus Poison
-  range: null
-  raw_description: '**Homunculus Poison** (__poison__) A homunculus has one dose of
-    poison in a reservoir in its head. It can refill this poison from its reserves
-    with an Interact action. **Saving Throw** DC 15 Fortitude; **Maximum Duration**
-    6 rounds; **Stage 1** 1d6 poison and __enfeebled 1__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 2
   fort_misc: null
@@ -137,11 +133,11 @@ sense_abilities:
     homunculus becomes mindless, claims its current location as its lair, and instinctively
     attacks anyone who comes near.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Master Link
   range: null
   raw_description: '**Master Link** (__arcane__, __divination__, __mental__) A homunculus
@@ -153,6 +149,8 @@ sense_abilities:
     claims its current location as its lair, and instinctively attacks anyone who
     comes near.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - arcane
@@ -160,29 +158,26 @@ sense_abilities:
   - mental
   trigger: null
 senses:
-- Perception +3
 - darkvision
 size: Tiny
 skills:
 - bonus: 5
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 208
+  page_start: '208'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Tiny
 - Construct
-type: Creature
-weaknesses: null

@@ -7,29 +7,28 @@ ability_mods:
   wis_mod: 1
 ac: 15
 ac_special: null
+active_abilities: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: The monster avoids being knocked out and remains at 1 HP, but its wounded
-    value increases by 1. When it is wounded 3, it can no longer use this ability.
-  effects: null
+  effect: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ferocity
   range: null
-  raw_description: '**Ferocity** [Reaction] **Trigger** The monster is reduced to
-    0 HP. **Effect** The monster avoids being knocked out and remains at 1 HP, but
-    its wounded value increases by 1. When it is wounded 3, it can no longer use this
-    ability.'
+  raw_description: '**Ferocity** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The monster is reduced to 0 HP.
+  trigger: null
 description: 'If orc armies are rarely well organized, this shortcoming can likely
   be traced to the furious and undisciplined rank-and-file brutes who make up the
   bulk of an orc warband.
@@ -40,7 +39,6 @@ description: 'If orc armies are rarely well organized, this shortcoming can like
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 14'
 hp: 15
 hp_misc: null
-immunities: null
 items:
 - javelin (3)
 - orc knuckle dagger (2)
@@ -48,7 +46,7 @@ items:
 languages:
 - Orcish
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -71,8 +69,7 @@ melee:
   - nonlethal
 name: Orc Brute
 perception: 5
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -82,11 +79,6 @@ ranged:
   to_hit: 4
   traits:
   - thrown 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -95,30 +87,25 @@ saves:
   ref_misc: null
   will: 2
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - darkvision
 size: Medium
 skills:
 - bonus: 5
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 2
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary
-  page_start: 256
+  page_start: '256'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Speed
 spell_lists: null
 traits:
-- CE
-- Medium
 - Humanoid
 - Orc
-type: Creature
-weaknesses: null

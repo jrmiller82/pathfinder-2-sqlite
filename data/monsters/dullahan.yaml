@@ -7,70 +7,121 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any slashing weapon a dullahan wields becomes __keen__, and any hatchet
+    it wields becomes __returning__. If the dullahan kills a creature with a critical
+    hit using a slashing weapon, the target is decapitated as though the dullahan
+    had used Reap on the target. These effects remain only while the dullahan holds
+    the weapon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Head Hunter
+  range: null
+  raw_description: '**Head Hunter** Any slashing weapon a dullahan wields becomes
+    __keen__, and any hatchet it wields becomes __returning__. If the dullahan kills
+    a creature with a critical hit using a slashing weapon, the target is decapitated
+    as though the dullahan had used Reap on the target. These effects remain only
+    while the dullahan holds the weapon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dullahan removes the head of a dead creature within reach. Each
+    creature within the area of the dullahan's frightful presence must attempt a new
+    save, even if they are temporarily immune.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Reap
+  range: null
+  raw_description: '**Reap** [Two Actions]  The dullahan removes the head of a dead
+    creature within reach. Each creature within the area of the dullahan''s frightful
+    presence must attempt a new save, even if they are temporarily immune.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dullahan summons a __warhorse__ with elite adjustments and the
+    fiend trait. This steed remains until it is slain, the dullahan Dismisses it,
+    or the dullahan summons another steed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Summon Steed
+  range: null
+  raw_description: '**Summon Steed** [Two Actions]  The dullahan summons a __warhorse__
+    with elite adjustments and the fiend trait. This steed remains until it is slain,
+    the dullahan Dismisses it, or the dullahan summons another steed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 30 feet, DC 23
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 30 feet, DC 23 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
   trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Attack of Opportunity
-  range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Riding on a horse as black as night, the headless hunter known as the
   dullahan tracks down and takes the heads of those it deems unfit to continue living.
   When closing in for the kill, the dullahan first whispers its victim''s name, then
@@ -128,7 +179,7 @@ languages:
 - Common
 - Necril
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+10
@@ -161,75 +212,7 @@ melee:
   - nonlethal
 name: Dullahan
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any slashing weapon a dullahan wields becomes __keen__, and any hatchet
-    it wields becomes __returning__. If the dullahan kills a creature with a critical
-    hit using a slashing weapon, the target is decapitated as though the dullahan
-    had used Reap on the target. These effects remain only while the dullahan holds
-    the weapon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Head Hunter
-  range: null
-  raw_description: '**Head Hunter** Any slashing weapon a dullahan wields becomes
-    __keen__, and any hatchet it wields becomes __returning__. If the dullahan kills
-    a creature with a critical hit using a slashing weapon, the target is decapitated
-    as though the dullahan had used Reap on the target. These effects remain only
-    while the dullahan holds the weapon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dullahan removes the head of a dead creature within reach. Each
-    creature within the area of the dullahan's frightful presence must attempt a new
-    save, even if they are temporarily immune.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reap
-  range: null
-  raw_description: '**Reap** [Two Actions]  The dullahan removes the head of a dead
-    creature within reach. Each creature within the area of the dullahan''s frightful
-    presence must attempt a new save, even if they are temporarily immune.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dullahan summons a __warhorse__ with elite adjustments and the
-    fiend trait. This steed remains until it is slain, the dullahan Dismisses it,
-    or the dullahan summons another steed.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Summon Steed
-  range: null
-  raw_description: '**Summon Steed** [Two Actions]  The dullahan summons a __warhorse__
-    with elite adjustments and the fiend trait. This steed remains until it is slain,
-    the dullahan Dismisses it, or the dullahan summons another steed.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+10
@@ -241,10 +224,6 @@ ranged:
   - agile
   - thrown 10 feet
 rarity: Uncommon
-resistances:
-- amount: 5
-  type: good
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -253,36 +232,34 @@ saves:
   ref_misc: null
   will: 17
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - lifesense 60 feet
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 17
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 13
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 15
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 140
+  page_start: '140'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- LE
-- Medium
 - Undead
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: good

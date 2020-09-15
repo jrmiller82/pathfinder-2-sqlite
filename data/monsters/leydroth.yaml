@@ -7,6 +7,92 @@ ability_mods:
   wis_mod: 5
 ac: 40
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The leydroth unleashes a bestial roar that reverberates within a 30-foot
+    emanation. It rolls an __Intimidation__ check and compares the result to the Will
+    DC of each creature in the area, with the effects of __Demoralize__. It also uses
+    this result to attempt to counteract each spell or magical effect in the area,
+    plus one item or effect on each creature in the area, with the effects of __dispel
+    magic__. The leydroth can't use Dispelling Roar again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dispelling Roar
+  range: null
+  raw_description: '**Dispelling Roar** [Two Actions]  (__abjuration__, __auditory__,
+    __emotion__, __fear__, __mental__, __primal__) The leydroth unleashes a bestial
+    roar that reverberates within a 30-foot emanation. It rolls an __Intimidation__
+    check and compares the result to the Will DC of each creature in the area, with
+    the effects of __Demoralize__. It also uses this result to attempt to counteract
+    each spell or magical effect in the area, plus one item or effect on each creature
+    in the area, with the effects of __dispel magic__. The leydroth can''t use Dispelling
+    Roar again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - abjuration
+  - auditory
+  - emotion
+  - fear
+  - mental
+  - primal
+  trigger: null
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The leydroth casts its innate __dispel magic__, targeting one effect on
+    the creature struck.
+  failure: null
+  frequency: once per round
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dispelling Strike
+  range: null
+  raw_description: '**Dispelling Strike** [Free Action]  (__abjuration__, __primal__)
+    **Frequency** once per round; **Trigger** The leydroth hits a creature, object,
+    or spell effect with a Strike; **Effect** The leydroth casts its innate __dispel
+    magic__, targeting one effect on the creature struck.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - abjuration
+  - primal
+  trigger: The leydroth hits a creature, object, or spell effect with a Strike;
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any time a leydroth counteracts a spell or item, the spell's caster
+    or the creature holding the item takes 8d6 mental damage (DC 38 basic Will save).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spell Feedback
+  range: null
+  raw_description: '**Spell Feedback** (__primal__) Any time a leydroth counteracts
+    a spell or item, the spell''s caster or the creature holding the item takes 8d6
+    mental damage (DC 38 basic Will save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - primal
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -15,22 +101,24 @@ automatic_abilities:
   description: null
   effect: The leydroth attempts an __Intimidation__ check to counteract the triggering
     spell.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Menace to Magic
   range: null
   raw_description: '**Menace to Magic [Reaction]** (__abjuration__, __primal__) **Trigger**
     A creature within 60 feet Casts a Spell; **Effect** The leydroth attempts an __Intimidation__
     check to counteract the triggering spell.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
   - primal
-  trigger: A creature within 60 feet Casts a Spell
+  trigger: A creature within 60 feet Casts a Spell;
 description: 'In ancient times, a cabal of primalists imbued an amalgam of beasts
   with both supernatural might and a hatred of magic itself, hoping to achieve a potent
   weapon for use against arcane spellcasters. Effective beyond expectation, the first
@@ -49,20 +137,18 @@ description: 'In ancient times, a cabal of primalists imbued an amalgam of beast
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 38'
 hp: 315
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+16
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d10
-    type: persistent bleed
+  - formula: null
+    type: 1d10 persistent bleed
   to_hit: 33
   traits:
   - magical
@@ -92,92 +178,12 @@ melee:
   - versatile P
 name: Leydroth
 perception: 30
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The leydroth unleashes a bestial roar that reverberates within a 30-foot
-    emanation. It rolls an __Intimidation__ check and compares the result to the Will
-    DC of each creature in the area, with the effects of __Demoralize__. It also uses
-    this result to attempt to counteract each spell or magical effect in the area,
-    plus one item or effect on each creature in the area, with the effects of __dispel
-    magic__. The leydroth can't use Dispelling Roar again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dispelling Roar
-  range: null
-  raw_description: '**Dispelling Roar** [Two Actions]  (__abjuration__, __auditory__,
-    __emotion__, __fear__, __mental__, __primal__) The leydroth unleashes a bestial
-    roar that reverberates within a 30-foot emanation. It rolls an __Intimidation__
-    check and compares the result to the Will DC of each creature in the area, with
-    the effects of __Demoralize__. It also uses this result to attempt to counteract
-    each spell or magical effect in the area, plus one item or effect on each creature
-    in the area, with the effects of __dispel magic__. The leydroth can''t use Dispelling
-    Roar again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - abjuration
-  - auditory
-  - emotion
-  - fear
-  - mental
-  - primal
-  trigger: null
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The leydroth casts its innate __dispel magic__, targeting one effect on
-    the creature struck.
-  effects: null
-  failure: null
-  frequency: once per round
-  full_description: null
-  generic_description: null
-  name: Dispelling Strike
-  range: null
-  raw_description: '**Dispelling Strike** [Free Action]  (__abjuration__, __primal__)
-    **Frequency** once per round; **Trigger** The leydroth hits a creature, object,
-    or spell effect with a Strike; **Effect** The leydroth casts its innate __dispel
-    magic__, targeting one effect on the creature struck.'
-  requirements: null
-  success: null
-  traits:
-  - abjuration
-  - primal
-  trigger: The leydroth hits a creature, object, or spell effect with a Strike
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any time a leydroth counteracts a spell or item, the spell's caster
-    or the creature holding the item takes 8d6 mental damage (DC 38 basic Will save).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spell Feedback
-  range: null
-  raw_description: '**Spell Feedback** (__primal__) Any time a leydroth counteracts
-    a spell or item, the spell''s caster or the creature holding the item takes 8d6
-    mental damage (DC 38 basic Will save).'
-  requirements: null
-  success: null
-  traits:
-  - primal
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 15
-  type: all (except non-magical)
-ritual_lists: null
+  misc: except non-magical
+  type: all
 saves:
   fort: 32
   fort_misc: null
@@ -193,73 +199,69 @@ sense_abilities:
   description: The leydroth detects the source and school of each source of magic
     within 60 feet as an imprecise sense.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Magic Sense
   range: null
   raw_description: '**Magic Sense** (__primal__) The leydroth detects the source and
     school of each source of magic within 60 feet as an imprecise sense.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - primal
   trigger: null
 senses:
-- Perception +30
 - darkvision
 - magic sense (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 32
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 33
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 28
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 28
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 32
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 30
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 163
+  page_start: '163'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 spell_lists:
-- dc: 38
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 38
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+  spell_lists:
+  - level: 9
     spells:
-    - frequency: ×2
+    - misc: ×2
       name: disjunction
-      requirement: null
-  - heightened_level: null
-    level: 7
+  - level: 7
     spells:
-    - frequency: at will
+    - misc: at will
       name: dispel magic
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- NE
-- Large
 - Beast
-type: Creature
-weaknesses: null

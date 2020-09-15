@@ -7,6 +7,80 @@ ability_mods:
   wis_mod: 0
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw **DC 16 Fortitude; **Maximum Duration **6 rounds; **Stage
+    1 **1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **As stage 1; **Stage
+    3 **1d6 poison damage and enfeebled 2 (1 round). See __here__ for full details
+    on this alchemical poison.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Black Smear Poison
+  range: null
+  raw_description: '**Black Smear Poison** (__poison__) **Saving Throw **DC 16 Fortitude;
+    **Maximum Duration **6 rounds; **Stage 1 **1d6 poison damage and __enfeebled 1__
+    (1 round); **Stage 2 **As stage 1; **Stage 3 **1d6 poison damage and enfeebled
+    2 (1 round). See __here__ for full details on this alchemical poison.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: Each caligni within 30 feet gains a +2 status bonus to attack rolls
+    against __flat-footed__ creatures. This bonus lasts for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Call to Blood
+  range: null
+  raw_description: '**Call to Blood** [Two Actions]  (__enchantment__, __mental__,
+    __occult__) Each caligni within 30 feet gains a +2 status bonus to attack rolls
+    against __flat-footed__ creatures. This bonus lasts for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - enchantment
+  - mental
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The caligni slayer deals an additional 2d6 negative damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Soul Harvest
+  range: null
+  raw_description: '**Soul Harvest** (__necromancy__) The caligni slayer deals an
+    additional 2d6 negative damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - necromancy
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -17,11 +91,11 @@ automatic_abilities:
     area must attempt a DC 20 Fortitude save. The slayer's gear and treasure are unaffected
     by the implosion and are left in a pile where they died.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Death Implosion
   range: null
   raw_description: '**Death Implosion** (__sonic__) When the caligni slayer dies,
@@ -30,24 +104,28 @@ automatic_abilities:
     The slayer''s gear and treasure are unaffected by the implosion and are left in
     a pile where they died.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - sonic
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The creature is unaffected.
   description: The creature is unaffected.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Success
   range: null
   raw_description: '**Critical Success **The creature is unaffected.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -56,16 +134,18 @@ automatic_abilities:
   critical_success: null
   description: The creature takes half damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Success
   range: null
   raw_description: '**Success **The creature takes half damage.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The creature takes half damage.
   traits: null
   trigger: null
 - action_cost: None
@@ -73,34 +153,38 @@ automatic_abilities:
   critical_success: null
   description: The creature takes full damage and is __deafened__ for 1 minute.
   effect: null
-  effects: null
-  failure: null
+  failure: The creature takes full damage and is __deafened__ for 1 minute.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Failure
   range: null
   raw_description: '**Failure **The creature takes full damage and is __deafened__
     for 1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: The creature takes double damage and is deafened for 24 hours.
   critical_success: null
   description: The creature takes double damage and is deafened for 24 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Failure
   range: null
   raw_description: '**Critical Failure **The creature takes double damage and is deafened
     for 24 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -139,15 +223,14 @@ description: 'Caligni slayers possess greater occult talents than others of thei
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 20'
 hp: 45
 hp_misc: death implosion
-immunities: null
 items:
-- black smear poison (2 doses, see below)
+- black smear poison (2 doses; see below)
 - kukri
 languages:
 - Caligni
 - Undercommon
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -163,80 +246,8 @@ melee:
   - trip
 name: Caligni Slayer
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw **DC 16 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1 **1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **As stage 1; **Stage
-    3 **1d6 poison damage and enfeebled 2 (1 round). See __here__ for full details
-    on this alchemical poison.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Black Smear Poison
-  range: null
-  raw_description: '**Black Smear Poison** (__poison__) **Saving Throw **DC 16 Fortitude;
-    **Maximum Duration **6 rounds; **Stage 1 **1d6 poison damage and __enfeebled 1__
-    (1 round); **Stage 2 **As stage 1; **Stage 3 **1d6 poison damage and enfeebled
-    2 (1 round). See __here__ for full details on this alchemical poison.'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: Each caligni within 30 feet gains a +2 status bonus to attack rolls
-    against __flat-footed__ creatures. This bonus lasts for 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Call to Blood
-  range: null
-  raw_description: '**Call to Blood** [Two Actions]  (__enchantment__, __mental__,
-    __occult__) Each caligni within 30 feet gains a +2 status bonus to attack rolls
-    against __flat-footed__ creatures. This bonus lasts for 1 minute.'
-  requirements: null
-  success: null
-  traits:
-  - enchantment
-  - mental
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The caligni slayer deals an additional 2d6 negative damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Soul Harvest
-  range: null
-  raw_description: '**Soul Harvest** (__necromancy__) The caligni slayer deals an
-    additional 2d6 negative damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits:
-  - necromancy
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -249,91 +260,78 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '
-
-
-    '
+  description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Light Blindness
   range: null
-  raw_description: "**__Light Blindness__** \n\n"
+  raw_description: '**__Light Blindness__**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +8
 - greater darkvision
 size: Small
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 10
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 10
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 46
+  page_start: '46'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 20
-  misc: ''
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 12
+  cantrips:
+  - level: 2
     spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-    - frequency: null
-      name: death knell
-      requirement: null
-    - frequency: null
-      name: phantom pain
-      requirement: null
-    - frequency: null
-      name: spectral hand
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: 12
+  constants: null
+  dc: 20
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: at will
+      name: darkness
+    - misc: null
+      name: death knell
+    - misc: null
+      name: phantom pain
+    - misc: null
+      name: spectral hand
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- CE
-- Small
 - Caligni
 - Humanoid
-type: Creature
-weaknesses: null

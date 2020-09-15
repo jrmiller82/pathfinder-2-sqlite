@@ -7,24 +7,58 @@ ability_mods:
   wis_mod: 4
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: This disease and any damage from it can't be healed until this curse
+    is removed. A creature killed by mummy rot turns to dust and can't be resurrected
+    except by a 7th-level __resurrect__ ritual or similar magic. **Saving Throw**
+    DC 22 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
+    4d6 negative damage and __stupefied 1__ (1 day)
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mummy Rot
+  range: null
+  raw_description: '**Mummy Rot** (__curse__, __disease__, __divine__, __necromancy__,
+    __negative__) This disease and any damage from it can''t be healed until this
+    curse is removed. A creature killed by mummy rot turns to dust and can''t be resurrected
+    except by a 7th-level __resurrect__ ritual or similar magic. **Saving Throw**
+    DC 22 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
+    4d6 negative damage and __stupefied 1__ (1 day)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - disease
+  - divine
+  - necromancy
+  - negative
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. Living creatures are frightened 1 while in a mummy guardian's
-    despair aura. They can't naturally recover from this fear while in the area but
-    recover instantly once they leave the area. When a creature first enters the area,
-    it must succeed at a DC 22 Will save (after taking the penalty from being frightened)
+  description: Living creatures are frightened 1 while in a mummy guardian's despair
+    aura. They can't naturally recover from this fear while in the area but recover
+    instantly once they leave the area. When a creature first enters the area, it
+    must succeed at a DC 22 Will save (after taking the penalty from being frightened)
     or be paralyzed for 1 round. The creature is then temporarily immune for 24 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Despair
-  range: null
+  range: 30 feet
   raw_description: '**Despair** (__aura__, __divine__, __emotion__, __enchantment__,
     __fear__, __incapacitation__, __mental__) 30 feet. Living creatures are frightened
     1 while in a mummy guardian''s despair aura. They can''t naturally recover from
@@ -33,6 +67,8 @@ automatic_abilities:
     taking the penalty from being frightened) or be paralyzed for 1 round. The creature
     is then temporarily immune for 24 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -80,12 +116,11 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
 languages:
 - Necril
 - plus any one ancient language
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
@@ -98,44 +133,7 @@ melee:
   traits: null
 name: Mummy Guardian
 perception: 16
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: This disease and any damage from it can't be healed until this curse
-    is removed. A creature killed by mummy rot turns to dust and can't be resurrected
-    except by a 7th-level __resurrect__ ritual or similar magic. **Saving Throw**
-    DC 22 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
-    4d6 negative damage and __stupefied 1__ (1 day)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mummy Rot
-  range: null
-  raw_description: '**Mummy Rot** (__curse__, __disease__, __divine__, __necromancy__,
-    __negative__) This disease and any damage from it can''t be healed until this
-    curse is removed. A creature killed by mummy rot turns to dust and can''t be resurrected
-    except by a 7th-level __resurrect__ ritual or similar magic. **Saving Throw**
-    DC 22 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
-    4d6 negative damage and __stupefied 1__ (1 day)'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - disease
-  - divine
-  - necromancy
-  - negative
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: fire
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 14
   fort_misc: null
@@ -144,30 +142,29 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 240
+  page_start: '240'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Mummy
 - Undead
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: fire

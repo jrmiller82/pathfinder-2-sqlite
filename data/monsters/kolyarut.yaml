@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 4
 ac: 34
 ac_special: null
+active_abilities: null
 alignment: LN
 automatic_abilities: null
 description: 'Kolyarut inevitables are enforcers of bargains and punishers of those
@@ -22,7 +23,7 @@ description: 'Kolyarut inevitables are enforcers of bargains and punishers of th
 
   **__Recall Knowledge - Monitor__ (__Religion__)**: DC 30'
 hp: 215
-hp_misc: regeneration 15 (deactivated by chaotic
+hp_misc: regeneration 15 (deactivated by chaotic)
 immunities:
 - death effects
 - disease
@@ -37,15 +38,15 @@ languages:
 - Utopian
 - truespeech
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+13
     type: slashing
   name: bastard sword
   plus_damage:
-  - formula: 1d6
-    type: lawful
+  - formula: null
+    type: 1d6 lawful
   to_hit: 26
   traits:
   - lawful
@@ -57,8 +58,8 @@ melee:
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 1d6
-    type: lawful
+  - formula: null
+    type: 1d6 lawful
   to_hit: 23
   traits:
   - agile
@@ -66,24 +67,7 @@ melee:
   - magical
 name: Kolyarut
 perception: 23
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 15
-  type: chaotic
-ritual_lists:
-- dc: 32
-  misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: geas
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 23
   fort_misc: null
@@ -96,108 +80,105 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A kolyarut can speak with and understand any creature that has a language.
-
-
-    '
+  description: A kolyarut can speak with and understand any creature that has a language.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Truespeech
   range: null
   raw_description: '**Truespeech** A kolyarut can speak with and understand any creature
-    that has a language.
-
-
-    '
+    that has a language.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +23
 - (+27 to detect lies)
-- darkvision
 size: Medium
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 27
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Axis Lore '
+  name: Axis Lore
 - bonus: 20
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 20
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 22
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 10
+  page_start: '10'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 32
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 32
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+  spell_lists:
+  - level: 8
     spells:
-    - frequency: null
+    - misc: null
       name: discern location
-      requirement: null
-  - heightened_level: null
-    level: 5
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: command
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: illusory disguise
-      requirement: null
-    - frequency: x2
+    - misc: x2
       name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: x2
+    - misc: x2
       name: paralyze
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: self only
+    - misc: self only
       name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: at will
+    - misc: at will
       name: command
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 32
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: geas
+  spells_source: Divine Rituals
 traits:
-- LN
-- Medium
 - Aeon
 - Inevitable
 - Monitor
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 15
+  misc: null
+  type: chaotic

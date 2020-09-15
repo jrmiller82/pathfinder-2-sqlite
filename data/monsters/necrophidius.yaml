@@ -7,6 +7,150 @@ ability_mods:
   wis_mod: 2
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The necrophidius sways, its serpentine form undulating and clattering
+    in a hypnotic rhythm. Each creature that witnesses the dance must attempt a DC
+    18 Will save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dance of Death
+  range: null
+  raw_description: '**Dance of Death** [Three Actions]  (__enchantment__, __mental__,
+    __occult__, __visual__) The necrophidius sways, its serpentine form undulating
+    and clattering in a hypnotic rhythm. Each creature that witnesses the dance must
+    attempt a DC 18 Will save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - enchantment
+  - mental
+  - occult
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and is temporarily immune for 24 hours.
+  description: The creature is unaffected and is temporarily immune for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected and is temporarily
+    immune for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is unnerved by the swaying and becomes __flat-footed__
+    until the end of the necrophidius's next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is unnerved by the swaying and becomes
+    __flat-footed__ until the end of the necrophidius''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is unnerved by the swaying and becomes __flat-footed__ until
+    the end of the necrophidius's next turn.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is distracted by the swaying, becoming __stunned 1__.
+    After it recovers, it is flat-footed until the end of the necrophidius's next
+    turn.
+  effect: null
+  failure: The creature is distracted by the swaying, becoming __stunned 1__. After
+    it recovers, it is flat-footed until the end of the necrophidius's next turn.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is distracted by the swaying, becoming
+    __stunned 1__. After it recovers, it is flat-footed until the end of the necrophidius''s
+    next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but stunned 3.
+  critical_success: null
+  description: As failure, but stunned 3.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** As failure, but stunned 3.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living creature bitten by a necrophidius must succeed at a DC 20
+    Fortitude save or become __paralyzed__. It can attempt a new save at the end of
+    each of its turns, and the DC cumulatively decreases by 1 for each save attempted.
+    A creature that succeeds at this save is temporarily immune to necrophidic paralysis
+    for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Necrophidic Paralysis
+  range: null
+  raw_description: '**Necrophidic Paralysis** (__incapacitation__, __occult__, __necromancy__)
+    A living creature bitten by a necrophidius must succeed at a DC 20 Fortitude save
+    or become __paralyzed__. It can attempt a new save at the end of each of its turns,
+    and the DC cumulatively decreases by 1 for each save attempted. A creature that
+    succeeds at this save is temporarily immune to necrophidic paralysis for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  - occult
+  - necromancy
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Although the necrophidius is a mindless construct with no particular
@@ -45,23 +189,21 @@ hp: 50
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
-- fatigued
-- healing
-- mental
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+3
@@ -76,74 +218,7 @@ melee:
   - finesse
 name: Necrophidius
 perception: 9
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: As failure, but stunned 3.
-  critical_success: The creature is unaffected and is temporarily immune for 24 hours.
-  description: "The necrophidius sways, its serpentine form undulating and clattering\
-    \ in a hypnotic rhythm. Each creature that witnesses the dance must attempt a\
-    \ DC 18 Will save. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is distracted by the swaying, becoming stunned 1. After it
-    recovers, it is flat-footed until the end of the necrophidius's next turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dance of Death
-  range: null
-  raw_description: "**Dance of Death** [Three Actions]  (__enchantment__, __mental__,\
-    \ __occult__, __visual__) The necrophidius sways, its serpentine form undulating\
-    \ and clattering in a hypnotic rhythm. Each creature that witnesses the dance\
-    \ must attempt a DC 18 Will save. \n\n**Critical Success** The creature is unaffected\
-    \ and is temporarily immune for 24 hours. \n\n**Success** The creature is unnerved\
-    \ by the swaying and becomes __flat-footed__ until the end of the necrophidius's\
-    \ next turn. \n\n**Failure** The creature is distracted by the swaying, becoming\
-    \ __stunned 1__. After it recovers, it is flat-footed until the end of the necrophidius's\
-    \ next turn. \n\n**Critical Failure** As failure, but stunned 3."
-  requirements: null
-  success: The creature is unnerved by the swaying and becomes flat-footed until the
-    end of the necrophidius's next turn.
-  traits:
-  - enchantment
-  - mental
-  - occult
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A living creature bitten by a necrophidius must succeed at a DC 20
-    Fortitude save or become __paralyzed__. It can attempt a new save at the end of
-    each of its turns, and the DC cumulatively decreases by 1 for each save attempted.
-    A creature that succeeds at this save is temporarily immune to necrophidic paralysis
-    for 24 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Necrophidic Paralysis
-  range: null
-  raw_description: '**Necrophidic Paralysis** (__incapacitation__, __occult__, __necromancy__)
-    A living creature bitten by a necrophidius must succeed at a DC 20 Fortitude save
-    or become __paralyzed__. It can attempt a new save at the end of each of its turns,
-    and the DC cumulatively decreases by 1 for each save attempted. A creature that
-    succeeds at this save is temporarily immune to necrophidic paralysis for 24 hours.'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  - occult
-  - necromancy
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: bludgeoning
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -152,33 +227,32 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 size: Medium
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 10
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 180
+  page_start: '180'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Construct
 - Mindless
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: bludgeoning

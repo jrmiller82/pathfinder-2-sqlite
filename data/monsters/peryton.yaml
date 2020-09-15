@@ -7,6 +7,79 @@ ability_mods:
   wis_mod: 5
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The peryton rips out the heart of an adjacent corpse with their jaws.
+    The creature must have died in the last minute. As the peryton rips the heart
+    free and swallows it whole, they regain 2d6 HP, and any non-peryton that witnesses
+    this event must succeed at a DC 21 Will save or become __frightened 1__ (or frightened
+    2 on a critical failure).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Heart Ripper
+  range: null
+  raw_description: '**Heart Ripper** [One Action]  (__attack__, __emotion__, __fear__,
+    __visual__) The peryton rips out the heart of an adjacent corpse with their jaws.
+    The creature must have died in the last minute. As the peryton rips the heart
+    free and swallows it whole, they regain 2d6 HP, and any non-peryton that witnesses
+    this event must succeed at a DC 21 Will save or become __frightened 1__ (or frightened
+    2 on a critical failure).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  - emotion
+  - fear
+  - visual
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The peryton Flies, going no higher than 20 feet over the target creature.
+    The target creature must succeed at a DC 21 Will save or the peryton's shadow
+    changes to match that cast by the target creature. With their shadow so transformed,
+    the peryton gains a +2 status bonus to attack and damage rolls against that creature.
+    In addition, each time the peryton successfully Strikes that creature, the creature
+    must succeed at a DC 21 Will save or become __frightened 1__, or increase its
+    frightened condition by 1 if it's already frightened. This is an __emotion__ and
+    __fear__ effect. The shadow remains transformed for 1 hour or until the peryton
+    Mimics a Shadow again, whichever comes first.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mimic Shadow
+  range: null
+  raw_description: '**Mimic Shadow** [One Action]  (__necromancy__, __occult__, __shadow__)
+    **Requirements** The target must be casting a shadow; **Effect** The peryton Flies,
+    going no higher than 20 feet over the target creature. The target creature must
+    succeed at a DC 21 Will save or the peryton''s shadow changes to match that cast
+    by the target creature. With their shadow so transformed, the peryton gains a
+    +2 status bonus to attack and damage rolls against that creature. In addition,
+    each time the peryton successfully Strikes that creature, the creature must succeed
+    at a DC 21 Will save or become __frightened 1__, or increase its frightened condition
+    by 1 if it''s already frightened. This is an __emotion__ and __fear__ effect.
+    The shadow remains transformed for 1 hour or until the peryton Mimics a Shadow
+    again, whichever comes first.'
+  requirements: The target must be casting a shadow
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - necromancy
+  - occult
+  - shadow
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'The peryton is an amalgam of horror, merging the features of a stag,
@@ -47,12 +120,10 @@ description: 'The peryton is an amalgam of horror, merging the features of a sta
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 19'
 hp: 60
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Common
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+7
@@ -73,73 +144,7 @@ melee:
   - agile
 name: Peryton
 perception: 13
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The peryton rips out the heart of an adjacent corpse with their jaws.
-    The creature must have died in the last minute. As the peryton rips the heart
-    free and swallows it whole, they regain 2d6 HP, and any non-peryton that witnesses
-    this event must succeed at a DC 21 Will save or become __frightened 1__ (or frightened
-    2 on a critical failure).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Heart Ripper
-  range: null
-  raw_description: '**Heart Ripper**   (__attack__, __emotion__, __fear__, __visual__)
-    The peryton rips out the heart of an adjacent corpse with their jaws. The creature
-    must have died in the last minute. As the peryton rips the heart free and swallows
-    it whole, they regain 2d6 HP, and any non-peryton that witnesses this event must
-    succeed at a DC 21 Will save or become __frightened 1__ (or frightened 2 on a
-    critical failure).'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  - emotion
-  - fear
-  - visual
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The target must be casting a shadow
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mimic Shadow
-  range: null
-  raw_description: '**Mimic Shadow**   (__necromancy__, __occult__, __shadow__) **Requirements**
-    The target must be casting a shadow; **Effect** The peryton Flies, going no higher
-    than 20 feet over the target creature. The target creature must succeed at a DC
-    21 Will save or the peryton''s shadow changes to match that cast by the target
-    creature. With their shadow so transformed, the peryton gains a +2 status bonus
-    to attack and damage rolls against that creature. In addition, each time the peryton
-    successfully Strikes that creature, the creature must succeed at a DC 21 Will
-    save or become __frightened 1__, or increase its frightened condition by 1 if
-    it''s already frightened. This is an __emotion__ and __fear__ effect. The shadow
-    remains transformed for 1 hour or until the peryton Mimics a Shadow again, whichever
-    comes first.'
-  requirements: null
-  success: null
-  traits:
-  - necromancy
-  - occult
-  - shadow
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -148,34 +153,30 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 size: Medium
 skills:
 - bonus: 11
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 11
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 11
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 197
+  page_start: '197'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- CE
-- Medium
 - Beast
-type: Creature
-weaknesses: null

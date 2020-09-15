@@ -7,46 +7,57 @@ ability_mods:
   wis_mod: -1
 ac: 19
 ac_special: null
-alignment: CE
-automatic_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: A dero stalker takes 4 damage for every hour they're exposed to sunlight.
+  description: A dero stalker deals 1d6 extra precision damage to __flat-footed__
+    creatures.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Vulnerable to Sunlight
+  maximum_duration: null
+  name: Sneak Attack
   range: null
-  raw_description: '**Vulnerable to Sunlight** A dero stalker takes 4 damage for every
-    hour they''re exposed to sunlight.'
+  raw_description: '**__Sneak Attack__** A dero stalker deals 1d6 extra precision
+    damage to __flat-footed__ creatures.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
+alignment: CE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: A creature targets the dero with an attack and the dero can see the attacker.
-  effects: null
+  effect: The dero dodges out of the way, gaining a +2 circumstance bonus to AC against
+    the triggering attack.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Nimble Dodge
+  maximum_duration: null
+  name: Vulnerable to Sunlight
   range: null
-  raw_description: '**Nimble Dodge** [Reaction] **Requirements** The dero stalker
-    is not encumbered. **Trigger** A creature targets the dero with an attack and
-    the dero can see the attacker. **Effect** The dero dodges out of the way, gaining
-    a +2 circumstance bonus to AC against the triggering attack.'
-  requirements: null
+  raw_description: '**Vulnerable to Sunlight** A dero stalker takes 4 damage for every
+    hour they''re exposed to sunlight.
+
+
+    **Nimble Dodge** [Reaction] **Requirements** The dero stalker is not encumbered.
+    **Trigger** A creature targets the dero with an attack and the dero can see the
+    attacker. **Effect** The dero dodges out of the way, gaining a +2 circumstance
+    bonus to AC against the triggering attack.'
+  requirements: The dero stalker is not encumbered.
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The dero stalker is not encumbered.
+  trigger: A creature targets the dero with an attack and the dero can see the attacker.
 description: 'Dero stalkers are those charged with exploring the surface world by
   night and seeking out new victims to abduct.
 
@@ -56,7 +67,6 @@ description: 'Dero stalkers are those charged with exploring the surface world b
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
 hp: 30
 hp_misc: null
-immunities: null
 items:
 - aklys
 - giant centipede venom (4 doses)
@@ -65,7 +75,7 @@ languages:
 - Aklo
 - Undercommon
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -77,27 +87,7 @@ melee:
   - trip
 name: Dero Stalker
 perception: 5
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A dero stalker deals 1d6 extra precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** A dero stalker deals 1d6 extra precision
-    damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -111,8 +101,8 @@ ranged:
   - thrown 20 feet
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: hand crossbow
   plus_damage:
   - formula: null
@@ -121,9 +111,6 @@ ranged:
   traits:
   - range increment 60 feet
   - reload 1
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -132,52 +119,49 @@ saves:
   ref_misc: null
   will: 3
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - darkvision
 size: Small
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 3
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 8
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary
-  page_start: 84
+  page_start: '84'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 17
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: 1
-    level: 0
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Occult Innate Spells
 traits:
-- CE
-- Small
 - Dero
 - Humanoid
-type: Creature
 weaknesses:
 - amount: null
+  misc: null
   type: vulnerable to sunlight

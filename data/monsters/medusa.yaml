@@ -7,52 +7,92 @@ ability_mods:
   wis_mod: 1
 ac: 25
 ac_special: null
-alignment: LE
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: 30 feet. When a creature ends its turn in the aura, it must attempt
-    a DC 25 Fortitude save. If the creature fails, it becomes slowed 1 for 1 minute.
-    The medusa can deactivate or activate this aura by using a single action, which
-    has the concentrate trait.
+  description: The medusa fixes their glare at a creature they can see within 30 feet.
+    The target must immediately attempt a Fortitude save against the medusa's petrifying
+    gaze. If the creature was already slowed by petrifying gaze before attempting
+    its save, a failed save causes it to be __petrified__ permanently. After attempting
+    its save, the creature is then temporarily immune until the start of the medusa's
+    next turn.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
+  name: Focus Gaze
+  range: null
+  raw_description: '**Focus Gaze** [One Action]  (__arcane__, __concentrate__, __incapacitation__,
+    __transmutation__, __visual__) The medusa fixes their glare at a creature they
+    can see within 30 feet. The target must immediately attempt a Fortitude save against
+    the medusa''s petrifying gaze. If the creature was already slowed by petrifying
+    gaze before attempting its save, a failed save causes it to be __petrified__ permanently.
+    After attempting its save, the creature is then temporarily immune until the start
+    of the medusa''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - concentrate
+  - incapacitation
+  - transmutation
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Serpent Venom
+  range: null
+  raw_description: '**Serpent Venom** (__poison__) **Saving Throw** DC 25 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage and __enfeebled 1__
+    (1 round); **Stage 2** 2d6 poison damage and __enfeebled 2__ (1 round)'
+  requirements: null
+  saving_throw: DC 25 Fortitude
+  stages:
+  - effect: 1d6 poison damage and __enfeebled 1__ (1 round)
+  - effect: 2d6 poison damage and __enfeebled 2__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+alignment: LE
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The medusa makes a snake fangs Strike against the creature.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
   name: Petrifying Gaze
   range: null
   raw_description: '**Petrifying Gaze** (__arcane__, __aura__, __transmutation__,
     __visual__) 30 feet. When a creature ends its turn in the aura, it must attempt
     a DC 25 Fortitude save. If the creature fails, it becomes slowed 1 for 1 minute.
     The medusa can deactivate or activate this aura by using a single action, which
-    has the concentrate trait.'
+    has the concentrate trait.
+
+
+    **Biting Snakes** [Reaction] **Trigger** A creature ends its turn adjacent to
+    the medusa. **Effect** The medusa makes a snake fangs Strike against the creature.'
   requirements: null
-  success: null
-  traits:
-  - arcane
-  - aura
-  - transmutation
-  - visual
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The medusa makes a snake fangs Strike against the creature.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Biting Snakes
-  range: null
-  raw_description: '**Biting Snakes** [Reaction] **Trigger** A creature ends its turn
-    adjacent to the medusa. **Effect** The medusa makes a snake fangs Strike against
-    the creature.'
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature ends its turn adjacent to the medusa.
@@ -86,14 +126,13 @@ description: 'Monstrous humanoids that resemble humans with snakes instead of ha
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 23'
 hp: 105
 hp_misc: null
-immunities: null
 items:
 - +1 composite shortbow (60 arrows)
 - shortsword
 languages:
 - Common
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+8
@@ -121,63 +160,7 @@ melee:
   - finesse
 name: Medusa
 perception: 16
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The medusa fixes their glare at a creature they can see within 30 feet.
-    The target must immediately attempt a Fortitude save against the medusa's petrifying
-    gaze. If the creature was already slowed by petrifying gaze before attempting
-    its save, a failed save causes it to be __petrified__ permanently. After attempting
-    its save, the creature is then temporarily immune until the start of the medusa's
-    next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Focus Gaze
-  range: null
-  raw_description: '**Focus Gaze**   (__arcane__, __concentrate__, __incapacitation__,
-    __transmutation__, __visual__) The medusa fixes their glare at a creature they
-    can see within 30 feet. The target must immediately attempt a Fortitude save against
-    the medusa''s petrifying gaze. If the creature was already slowed by petrifying
-    gaze before attempting its save, a failed save causes it to be __petrified__ permanently.
-    After attempting its save, the creature is then temporarily immune until the start
-    of the medusa''s next turn.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - concentrate
-  - incapacitation
-  - transmutation
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 25 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2** 2d6 poison damage
-    and __enfeebled 2__ (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Serpent Venom
-  range: null
-  raw_description: '**Serpent Venom** (__poison__) **Saving Throw** DC 25 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage and __enfeebled 1__
-    (1 round); **Stage 2** 2d6 poison damage and __enfeebled 2__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+7
@@ -193,11 +176,6 @@ ranged:
   - propulsive
   - range increment 60 feet
   - reload 0
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 15
   fort_misc: null
@@ -206,32 +184,27 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 size: Medium
 skills:
 - bonus: 16
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 14
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 16
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 234
+  page_start: '234'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Humanoid
-type: Creature
-weaknesses: null

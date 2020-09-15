@@ -7,29 +7,153 @@ ability_mods:
   wis_mod: 7
 ac: 46
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: ; The volcano on the lerritan's back erupts and sends lava bombs raining
+    down in a 30-foot emanation, dealing 12d12 fire damage. Each creature in the area
+    must attempt a DC 46 Reflex saving throw. The lava globules quickly cool into
+    heavy stones, transforming the area into greater difficult terrain for non-lerritans.
+    The lerritan can't use Volcanic Eruption for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [Two Actions]  A lerritan can break stony scales
+    off its body to throw; these scales reform at the end of each round, so the lerritan
+    is never without a supply of rocks to hurl. __Volcanic Eruption__  (earth, evocation,
+    fire, primal); The volcano on the lerritan''s back erupts and sends lava bombs
+    raining down in a 30-foot emanation, dealing 12d12 fire damage. Each creature
+    in the area must attempt a DC 46 Reflex saving throw. The lava globules quickly
+    cool into heavy stones, transforming the area into greater difficult terrain for
+    non-lerritans. The lerritan can''t use Volcanic Eruption for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - earth
+  - evocation
+  - fire
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature takes half damage and is __encumbered__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature takes half damage and is __encumbered__
+    for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature takes half damage and is __encumbered__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature takes full damage and is __immobilized__ (Escape DC 46).
+  effect: null
+  failure: The creature takes full damage and is __immobilized__ (Escape DC 46).
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature takes full damage and is __immobilized__
+    (Escape DC 46).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature takes double damage and is encased in a rocky crust
+    with lava on the inside. The creature is __restrained__ (Escape DC 46), can't
+    breathe, takes 3d12 __persistent fire damage__, and can't recover from this persistent
+    fire damage until freed.
+  critical_success: null
+  description: The creature takes double damage and is encased in a rocky crust with
+    lava on the inside. The creature is __restrained__ (Escape DC 46), can't breathe,
+    takes 3d12 __persistent fire damage__, and can't recover from this persistent
+    fire damage until freed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature takes double damage and is encased
+    in a rocky crust with lava on the inside. The creature is __restrained__ (Escape
+    DC 46), can''t breathe, takes 3d12 __persistent fire damage__, and can''t recover
+    from this persistent fire damage until freed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '100 feet. Creatures in the emanation
+  description: 'Creatures in the emanation
 
 
     cannot recover from __persistent fire damage__.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Tenacious Flames
-  range: null
+  range: 100 feet
   raw_description: '**Tenacious Flames** (__aura__, __evocation__, __fire__, __primal__)
     100 feet. Creatures in the emanation
 
 
     cannot recover from __persistent fire damage__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -46,11 +170,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -61,6 +185,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -80,9 +206,9 @@ hp: 490
 hp_misc: null
 immunities:
 - fire
-- paralyzed
-- poison
-- sleep
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 items:
 - +3 greater striking warhammer
 languages:
@@ -91,15 +217,15 @@ languages:
 - Jotun
 - Terran
 level: 21
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d12+18
     type: bludgeoning
   name: warhammer
   plus_damage:
-  - formula: 2d6
-    type: persistent fire damage
+  - formula: null
+    type: 2d6 persistent fire damage
   to_hit: 40
   traits:
   - magical
@@ -111,76 +237,34 @@ melee:
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: persistent fire damage
+  - formula: null
+    type: 2d6 persistent fire damage
   to_hit: 39
   traits:
   - agile
   - reach 25 feet
 name: Lerritan
 perception: 35
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: The creature takes double damage and is encased in a rocky crust
-    with lava on the inside. The creature is restrained (Escape DC 46), can't breathe,
-    takes 3d12 persistent fire damage, and can't recover from this persistent fire
-    damage until freed.
-  critical_success: The creature is unaffected.
-  description: "A lerritan can break stony scales off its body to throw; these scales\
-    \ reform at the end of each round, so the lerritan is never without a supply of\
-    \ rocks to hurl. __Volcanic Eruption__ [Two Actions] (earth, evocation, fire,\
-    \ primal); The volcano on the lerritan's back erupts and sends lava bombs raining\
-    \ down in a 30-foot emanation, dealing 12d12 fire damage. Each creature in the\
-    \ area must attempt a DC 46 Reflex saving throw. The lava globules quickly cool\
-    \ into heavy stones, transforming the area into greater difficult terrain for\
-    \ non-lerritans. The lerritan can't use Volcanic Eruption for 1d4 rounds. \n\n"
-  effect: null
-  effects: null
-  failure: The creature takes full damage and is immobilized (Escape DC 46).
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: "**__Throw Rock__**   A lerritan can break stony scales off its\
-    \ body to throw; these scales reform at the end of each round, so the lerritan\
-    \ is never without a supply of rocks to hurl. __Volcanic Eruption__  (earth, evocation,\
-    \ fire, primal); The volcano on the lerritan's back erupts and sends lava bombs\
-    \ raining down in a 30-foot emanation, dealing 12d12 fire damage. Each creature\
-    \ in the area must attempt a DC 46 Reflex saving throw. The lava globules quickly\
-    \ cool into heavy stones, transforming the area into greater difficult terrain\
-    \ for non-lerritans. The lerritan can't use Volcanic Eruption for 1d4 rounds.\
-    \ \n\n**Critical Success** The creature is unaffected. \n\n**Success** The creature\
-    \ takes half damage and is __encumbered__ for 1 round. \n\n**Failure** The creature\
-    \ takes full damage and is __immobilized__ (Escape DC 46). \n\n**Critical Failure**\
-    \ The creature takes double damage and is encased in a rocky crust with lava on\
-    \ the inside. The creature is __restrained__ (Escape DC 46), can't breathe, takes\
-    \ 3d12 __persistent fire damage__, and can't recover from this persistent fire\
-    \ damage until freed."
-  requirements: null
-  success: The creature takes half damage and is encumbered for 1 round.
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 4d6+18
     type: bludgeoning
   name: rock
   plus_damage:
-  - formula: 2d6
-    type: persistent fire
+  - formula: null
+    type: 2d6 persistent fire
   to_hit: 39
   traits:
   - brutal
   - range increment 120 feet
-rarity: Common
 resistances:
 - amount: 20
+  misc: null
   type: piercing
 - amount: 20
+  misc: null
   type: slashing
-ritual_lists: null
 saves:
   fort: 38
   fort_misc: null
@@ -189,82 +273,69 @@ saves:
   ref_misc: null
   will: 36
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +35
 - low-light vision
 size: Gargantuan
 skills:
 - bonus: 41
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 33
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 35
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 36
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 38
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 159
+  page_start: '159'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 spell_lists:
-- dc: 46
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 10
+- attack_bonus: null
+  cantrips:
+  - level: 10
     spells:
-    - frequency: null
-      name: cataclysm
-      requirement: null
-  - heightened_level: null
-    level: 9
-    spells:
-    - frequency: null
-      name: fireball
-      requirement: null
-    - frequency: null
-      name: meteor swarm
-      requirement: null
-  - heightened_level: null
-    level: 8
-    spells:
-    - frequency: null
-      name: earthquake
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: to the Material Plane, <a style="text-decoration:underline" href="Planes.aspx?ID=6">Plane
-        of Fire</a>, or <a style="text-decoration:underline" href="Planes.aspx?ID=5">Plane
-        of Earth</a> only
-      name: plane shift
-      requirement: null
-  - heightened_level: 10
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: produce flame
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 46
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: null
+      name: cataclysm
+  - level: 9
+    spells:
+    - misc: null
+      name: fireball
+    - misc: null
+      name: meteor swarm
+  - level: 8
+    spells:
+    - misc: null
+      name: earthquake
+  - level: 7
+    spells:
+    - misc: to the Material Plane, Plane of Fire, or Plane of Earth only
+      name: plane shift
+  spells_source: Primal Innate Spells
 traits:
-- NE
-- Gargantuan
 - Earth
 - Elemental
 - Fire
-type: Creature
 weaknesses:
 - amount: 20
+  misc: null
   type: cold

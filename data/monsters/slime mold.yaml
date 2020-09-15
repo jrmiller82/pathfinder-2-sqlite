@@ -7,6 +7,36 @@ ability_mods:
   wis_mod: 0
 ac: 12
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** DC 18 Fortitude; **Onset** 1d4 days; **Stage 1**
+    __enfeebled 1__ and __sickened 1__ (1 day); **Stage 2** as stage 1 (1 day); **Stage
+    3** __drained 1__, enfeebled 2, and sickened 2 (1 day); **Stage 4** as stage 3
+    (1 day); **Stage 5** drained 2 plus __unconscious__ (no Perception check to wake
+    up) (1 day); **Stage 6** dead, and the body erupts to release a new slime mold'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Slime Rot
+  range: null
+  raw_description: '**Slime Rot** (__disease__) **Saving Throw** DC 18 Fortitude;
+    **Onset** 1d4 days; **Stage 1** __enfeebled 1__ and __sickened 1__ (1 day); **Stage
+    2** as stage 1 (1 day); **Stage 3** __drained 1__, enfeebled 2, and sickened 2
+    (1 day); **Stage 4** as stage 3 (1 day); **Stage 5** drained 2 plus __unconscious__
+    (no Perception check to wake up) (1 day); **Stage 6** dead, and the body erupts
+    to release a new slime mold'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'A slime mold appears as a mound of earth and detritus covered in a thick
@@ -32,14 +62,12 @@ hp: 60
 hp_misc: null
 immunities:
 - critical hits
-- mental
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
 - precision
-- unconscious
-- visual
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+3
@@ -52,38 +80,7 @@ melee:
   traits: null
 name: Slime Mold
 perception: 6
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 18 Fortitude; **Onset** 1d4 days; **Stage 1**
-    __enfeebled 1__ and __sickened 1__ (1 day); **Stage 2** as stage 1 (1 day); **Stage
-    3** __drained 1__, enfeebled 2, and sickened 2 (1 day); **Stage 4** as stage 3
-    (1 day); **Stage 5** drained 2 plus __unconscious__ (no Perception check to wake
-    up) (1 day); **Stage 6** dead, and the body erupts to release a new slime mold'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Slime Rot
-  range: null
-  raw_description: '**Slime Rot** (__disease__) **Saving Throw** DC 18 Fortitude;
-    **Onset** 1d4 days; **Stage 1** __enfeebled 1__ and __sickened 1__ (1 day); **Stage
-    2** as stage 1 (1 day); **Stage 3** __drained 1__, enfeebled 2, and sickened 2
-    (1 day); **Stage 4** as stage 3 (1 day); **Stage 5** drained 2 plus __unconscious__
-    (no Perception check to wake up) (1 day); **Stage 6** dead, and the body erupts
-    to release a new slime mold'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 11
   fort_misc: null
@@ -99,46 +96,45 @@ sense_abilities:
   description: A slime mold can sense nearby creatures through vibration and air or
     water movement.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Motion Sense
   range: null
   raw_description: '**Motion Sense** A slime mold can sense nearby creatures through
     vibration and air or water movement.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +6
 - motion sense 60 feet
 - no vision
 size: Large
 skills:
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: +8 amid decaying plant matter or fungus
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 193
+  page_start: '193'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Large
 - Fungus
 - Mindless
 - Ooze
-type: Creature
-weaknesses: null

@@ -7,6 +7,50 @@ ability_mods:
   wis_mod: -5
 ac: 13
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: DC 22, 2d6 acid, Escape DC 24, Rupture 10
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Engulf
+  range: null
+  raw_description: '**Engulf** [Two Actions]  DC 22, 2d6 acid, Escape DC 24, Rupture
+    10'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature hit by a living sap's pseudopod Strike must succeed at a
+    DC 24 Reflex save or become __grabbed__ until the end of the living sap's next
+    turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Entangling Residue
+  range: null
+  raw_description: '**Entangling Residue** A creature hit by a living sap''s pseudopod
+    Strike must succeed at a DC 24 Reflex save or become __grabbed__ until the end
+    of the living sap''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -18,11 +62,11 @@ automatic_abilities:
     sap with an unarmed attack must succeed at a DC 24 Reflex save or become __grabbed__
     by the living sap until the end of its next turn.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Adhesive Body
   range: null
   raw_description: '**Adhesive Body** A creature that Strikes a living sap with a
@@ -32,6 +76,8 @@ automatic_abilities:
     24 Reflex save or become __grabbed__ by the living sap until the end of its next
     turn.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -39,7 +85,7 @@ description: 'The tall sharinga trees of the Mwangi Expanse leak golden sap from
   swollen, bulbous trunks, which coagulates when exposed to air. The toxic resin,
   which has a bitter taste, protects the tree from herbivorous insects and other animals,
   but in rare cases—usually in areas awash in positive energy or the influence of
-  the First World—the sap gains a life of its own. Such "living sap" is a mindless
+  the First World—the sap gains a life of its own. Such “living sap” is a mindless
   ooze that attempts to smother and engulf just about anything that moves, from the
   bugs and small beasts that feed on its sharinga tree to larger creatures unlucky
   enough to stumble upon it. Due to its immunities to most forms of physical damage
@@ -74,10 +120,8 @@ immunities:
 - slashing
 - unconscious
 - visual
-items: null
-languages: null
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
@@ -90,52 +134,8 @@ melee:
   traits: null
 name: Living Sap
 perception: 7
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: DC 22, 2d6 acid, Escape DC 24, Rupture 10
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Engulf
-  range: null
-  raw_description: '**Engulf** [Two Actions]  DC 22, 2d6 acid, Escape DC 24, Rupture
-    10'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature hit by a living sap's pseudopod Strike must succeed at a
-    DC 24 Reflex save or become __grabbed__ until the end of the living sap's next
-    turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Entangling Residue
-  range: null
-  raw_description: '**Entangling Residue** A creature hit by a living sap''s pseudopod
-    Strike must succeed at a DC 24 Reflex save or become __grabbed__ until the end
-    of the living sap''s next turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 10
-  type: cold
-ritual_lists: null
 saves:
   fort: 18
   fort_misc: null
@@ -150,46 +150,48 @@ sense_abilities:
   critical_success: null
   description: Living sap can sense nearby motion through vibration and air movement.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Motion Sense
   range: null
   raw_description: '**Motion Sense** Living sap can sense nearby motion through vibration
     and air movement.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +7
 - motion sense 60 feet
 - no vision
 size: Medium
 skills:
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #146: Cult of Cinders'
-  page_start: 89
+  page_start: '89'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Medium
 - Mindless
 - Ooze
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold

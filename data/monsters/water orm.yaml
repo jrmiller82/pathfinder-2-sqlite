@@ -7,6 +7,63 @@ ability_mods:
   wis_mod: 5
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Large, 2d8+8 bludgeoning, Rupture 22
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**__Swallow Whole__** [One Action]  (__attack__) Large, 2d8+8
+    bludgeoning, Rupture 22'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: A water orm can dissolve into water, appearing only as a long, dark,
+    serpentine stretch of water. While in this form, a water orm's swim Speed increases
+    to 600 feet, it automatically succeeds at __Athletics__ checks to __swim__, and
+    it gains a +4 circumstance bonus to __Stealth__ checks in water. A water orm can
+    remain in this form for 8 hours, but it can't enter salt water when using this
+    ability. A water orm can return to its normal form using a single action which
+    has the __concentrate__ trait.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Water Travel
+  range: null
+  raw_description: '**Water Travel** [Three Actions]  (__primal__, __transmutation__,
+    __water__) A water orm can dissolve into water, appearing only as a long, dark,
+    serpentine stretch of water. While in this form, a water orm''s swim Speed increases
+    to 600 feet, it automatically succeeds at __Athletics__ checks to __swim__, and
+    it gains a +4 circumstance bonus to __Stealth__ checks in water. A water orm can
+    remain in this form for 8 hours, but it can''t enter salt water when using this
+    ability. A water orm can return to its normal form using a single action which
+    has the __concentrate__ trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - primal
+  - transmutation
+  - water
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Legendary creatures lurking in remote lakes, water orms always find
@@ -50,13 +107,11 @@ description: 'Legendary creatures lurking in remote lakes, water orms always fin
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 32'
 hp: 170
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aquan
 - (can't speak any language)
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+11
@@ -80,67 +135,15 @@ melee:
   - reach 15 feet
 name: Water Orm
 perception: 21
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Large, 2d8+8 bludgeoning, Rupture 22
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**__Swallow Whole__**   (__attack__) Large, 2d8+8 bludgeoning,
-    Rupture 22'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: A water orm can dissolve into water, appearing only as a long, dark,
-    serpentine stretch of water. While in this form, a water orm's swim Speed increases
-    to 600 feet, it automatically succeeds at __Athletics__ checks to __swim__, and
-    it gains a +4 circumstance bonus to __Stealth__ checks in water. A water orm can
-    remain in this form for 8 hours, but it can't enter salt water when using this
-    ability. A water orm can return to its normal form using a single action which
-    has the __concentrate__ trait.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Water Travel
-  range: null
-  raw_description: '**Water Travel** [Three Actions]  (__primal__, __transmutation__,
-    __water__) A water orm can dissolve into water, appearing only as a long, dark,
-    serpentine stretch of water. While in this form, a water orm''s swim Speed increases
-    to 600 feet, it automatically succeeds at __Athletics__ checks to __swim__, and
-    it gains a +4 circumstance bonus to __Stealth__ checks in water. A water orm can
-    remain in this form for 8 hours, but it can''t enter salt water when using this
-    ability. A water orm can return to its normal form using a single action which
-    has the __concentrate__ trait.'
-  requirements: null
-  success: null
-  traits:
-  - primal
-  - transmutation
-  - water
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 10
+  misc: null
   type: cold
 - amount: 10
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 21
   fort_misc: null
@@ -158,11 +161,11 @@ sense_abilities:
     impact its lifespan. A water orm that's slowed as a result of starvation can remove
     this condition by using Swallow Whole to gulp down a meal.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Slow Metabolism
   range: null
   raw_description: '**Slow Metabolism** A water orm can go for 10 years without feeding.
@@ -171,6 +174,8 @@ sense_abilities:
     of starvation can remove this condition by using Swallow Whole to gulp down a
     meal.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -181,49 +186,47 @@ sense_abilities:
     __revelation__, or __scrying__ __divination__ attempted against it, using its
     __Stealth__ modifier for the counteract check.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Undetectable
   range: null
   raw_description: '**Undetectable** (__abjuration__, __primal__) A water orm automatically
     tries to __counteract__ any __detection__, __revelation__, or __scrying__ __divination__
     attempted against it, using its __Stealth__ modifier for the counteract check.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
   - primal
   trigger: null
 senses:
-- Perception +21
 - darkvision
 size: Huge
 skills:
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 23
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 289
+  page_start: '289'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- Rare
-- N
-- Huge
 - Aquatic
 - Beast
 - Water
-type: Creature
-weaknesses: null

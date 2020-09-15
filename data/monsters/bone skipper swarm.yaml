@@ -1,0 +1,147 @@
+ability_mods:
+  cha_mod: -5
+  con_mod: 4
+  dex_mod: 5
+  int_mod: -5
+  str_mod: -4
+  wis_mod: 2
+ac: 24
+ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Marrow rot affects only creatures with a skeletal system; **Saving
+    Throw** DC 24 Fortitude; **Onset** 1 day; **Stage 1** __enfeebled 1__ (1 day);
+    **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled 2 and __drained 1__ (1
+    day)
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Marrow Rot
+  range: null
+  raw_description: '**Marrow Rot** (__disease__) Marrow rot affects only creatures
+    with a skeletal system; **Saving Throw** DC 24 Fortitude; **Onset** 1 day; **Stage
+    1** __enfeebled 1__ (1 day); **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled
+    2 and __drained 1__ (1 day)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Each enemy in the swarm's space takes 3d6 piercing damage (DC 24 basic
+    Reflex save) plus exposure to marrow rot.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarming Bites
+  range: null
+  raw_description: '**Swarming Bites** [One Action]  Each enemy in the swarm''s space
+    takes 3d6 piercing damage (DC 24 basic Reflex save) plus exposure to marrow rot.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: N
+automatic_abilities: null
+description: 'A large swarm of bone skippers can reduce a human skeleton into dry,
+  brittle fragments in a matter of hours.
+
+
+
+
+  **__Recall Knowledge - Animal__ (__Nature__)**: DC 24'
+hp: 120
+hp_misc: null
+immunities:
+- precision
+- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+level: 6
+melee_attacks: null
+name: Bone Skipper Swarm
+perception: 17
+ranged_attacks: null
+rarity: Uncommon
+resistances:
+- amount: 5
+  misc: null
+  type: bludgeoning
+- amount: 9
+  misc: null
+  type: piercing
+- amount: 9
+  misc: null
+  type: slashing
+saves:
+  fort: 14
+  fort_misc: null
+  misc: null
+  ref: 17
+  ref_misc: null
+  will: 12
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A bone skipper swarm identifies bones and creatures with a skeletal
+    system in the listed range.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bonesense
+  range: null
+  raw_description: '**Bonesense** A bone skipper swarm identifies bones and creatures
+    with a skeletal system in the listed range.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+senses:
+- darkvision
+- bonesense (imprecise) 30 feet
+size: Large
+skills:
+- bonus: 17
+  misc: null
+  name: Acrobatics
+sources:
+- abbr: 'Pathfinder #158: Sixty Feet Under'
+  page_start: '80'
+  page_stop: null
+speed:
+- amount: 25
+  misc: null
+  type: Land
+- amount: 40
+  misc: null
+  type: fly
+spell_lists: null
+traits:
+- Animal
+- Swarm
+weaknesses:
+- amount: 9
+  misc: null
+  type: area damage
+- amount: 150
+  misc: null
+  type: <a style="text-decoration:underline" href="Traits.aspx?ID=

@@ -7,58 +7,7 @@ ability_mods:
   wis_mod: 3
 ac: 30
 ac_special: null
-alignment: N
-automatic_abilities:
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A creature touches the hunting spider's web while the spider is on it.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spring Upon Prey
-  range: null
-  raw_description: '**Spring Upon Prey** [Reaction] (__attack__); **Requirement**
-    Initiative has not yet been rolled. **Trigger** A creature touches the hunting
-    spider''s web while the spider is on it. **Effect** The hunting spider automatically
-    notices the creature and Strides, Climbs, or Descends on a Web before it rolls
-    initiative.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: Initiative has not yet been rolled.
-description: 'Goliath spiders dwell in the deepest jungles, where they build webs
-  as big as temples and feast on prey as large as hippopotami.
-
-
-
-
-  **__Recall Knowledge - Animal__ (__Nature__)**: DC 28'
-hp: 220
-hp_misc: null
-immunities: null
-items: null
-languages: null
-level: 11
-melee:
-- action_cost: One Action
-  damage:
-    formula: 2d12+12
-    type: piercing
-  name: fangs
-  plus_damage:
-  - formula: null
-    type: goliath spider venom
-  to_hit: 24
-  traits:
-  - reach 10 feet
-name: Goliath Spider
-perception: 22
-proactive_abilities:
+active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -67,19 +16,21 @@ proactive_abilities:
     a Web doesn't count for falling damage. A creature that successfully Strikes the
     web (AC 20, Hardness 5, 20 HP) severs it, causing the spider to fall.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Descend on a Web
   range: null
-  raw_description: '**Descend on a Web**   (__move__) The goliath spider moves straight
-    down up to 120 feet, suspended by a web line. It can hang from the web or drop
-    off. The distance it Descends on a Web doesn''t count for falling damage. A creature
-    that successfully Strikes the web (AC 20, Hardness 5, 20 HP) severs it, causing
-    the spider to fall.'
+  raw_description: '**Descend on a Web** [One Action]  (__move__) The goliath spider
+    moves straight down up to 120 feet, suspended by a web line. It can hang from
+    the web or drop off. The distance it Descends on a Web doesn''t count for falling
+    damage. A creature that successfully Strikes the web (AC 20, Hardness 5, 20 HP)
+    severs it, causing the spider to fall.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - move
@@ -87,15 +38,13 @@ proactive_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** Fortitude DC 30; **Maximum Duration** 6 rounds; **Stage
-    1** 2d6 poison and slowed 1 (1 round); **Stage 2** 2d6 poison and slowed 2 (1
-    round); **Stage 3** paralyzed for 2d4 hours.'
+  description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: 6 rounds
   name: Goliath Spider Venom
   range: null
   raw_description: '**Goliath Spider Venom** (__incapacitation__, __poison__) **Saving
@@ -103,6 +52,11 @@ proactive_abilities:
     and slowed 1 (1 round); **Stage 2** 2d6 poison and slowed 2 (1 round); **Stage
     3** paralyzed for 2d4 hours.'
   requirements: null
+  saving_throw: Fortitude DC 30
+  stages:
+  - effect: 2d6 poison and slowed 1 (1 round)
+  - effect: 2d6 poison and slowed 2 (1 round)
+  - effect: paralyzed for 2d4 hours.
   success: null
   traits:
   - incapacitation
@@ -117,11 +71,11 @@ proactive_abilities:
     is 30. The tether can be severed with a Strike (AC 20, Hardness 5, HP 20), but
     this doesn't free the restrained creature.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Web Tether
   range: null
   raw_description: '**Web Tether** A creature hit by the spider''s web Strike is restrained
@@ -130,22 +84,72 @@ proactive_abilities:
     Open the web is 30. The tether can be severed with a Strike (AC 20, Hardness 5,
     HP 20), but this doesn''t free the restrained creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-ranged:
+alignment: N
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: ; **Requirement** Initiative has not yet been rolled.
+  effect: The hunting spider automatically notices the creature and Strides, Climbs,
+    or Descends on a Web before it rolls initiative.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spring Upon Prey
+  range: null
+  raw_description: '**Spring Upon Prey** [Reaction] (__attack__); **Requirement**
+    Initiative has not yet been rolled. **Trigger** A creature touches the hunting
+    spider''s web while the spider is on it. **Effect** The hunting spider automatically
+    notices the creature and Strides, Climbs, or Descends on a Web before it rolls
+    initiative.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: A creature touches the hunting spider's web while the spider is on it.
+description: 'Goliath spiders dwell in the deepest jungles, where they build webs
+  as big as temples and feast on prey as large as hippopotami.
+
+
+
+
+  **__Recall Knowledge - Animal__ (__Nature__)**: DC 28'
+hp: 220
+hp_misc: null
+level: 11
+melee_attacks:
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: 2d12+12
+    type: piercing
+  name: fangs
+  plus_damage:
+  - formula: null
+    type: goliath spider venom
+  to_hit: 24
+  traits:
+  - reach 10 feet
+name: Goliath Spider
+perception: 22
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: null
+    type: web tether
   name: web
   plus_damage: null
   to_hit: 22
   traits:
   - range increment 60 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -161,47 +165,46 @@ sense_abilities:
   description: The goliath spider has imprecise tremorsense to detect the vibrations
     of creatures touching its web.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Web Sense
   range: null
   raw_description: '**Web Sense** The goliath spider has imprecise tremorsense to
     detect the vibrations of creatures touching its web.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +22
 - darkvision
 - web sense
 size: Gargantuan
 skills:
 - bonus: 18
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 23
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 307
+  page_start: '307'
   page_stop: null
 speed:
 - amount: 45
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Gargantuan
 - Animal
-type: Creature
-weaknesses: null

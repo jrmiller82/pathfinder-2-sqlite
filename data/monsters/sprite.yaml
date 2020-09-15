@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 0
 ac: 15
 ac_special: null
+active_abilities: null
 alignment: CN
 automatic_abilities: null
 description: 'Common sprites are primeval guardians that latch onto a person, place,
@@ -23,22 +24,21 @@ description: 'Common sprites are primeval guardians that latch onto a person, pl
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 13'
 hp: 11
 hp_misc: null
-immunities: null
 items:
 - rapier
 languages:
 - Common
 - Sylvan
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6-3
-    type: piercing
+    formula: null
+    type: 1d6–3 piercing
   name: rapier
   plus_damage:
-  - formula: 1
-    type: fire
+  - formula: null
+    type: 1 fire
   to_hit: 8
   traits:
   - deadly 1d8
@@ -48,12 +48,11 @@ melee:
   - magical
 name: Sprite
 perception: 4
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: fire
+    formula: null
+    type: 1d4 fire
   name: luminous spark
   plus_damage: null
   to_hit: 8
@@ -61,9 +60,6 @@ ranged:
   - fire
   - light
   - range 20 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 2
   fort_misc: null
@@ -76,30 +72,26 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A sprite naturally sheds light like a torch. The sprite can extinguish,
+  description: A sprite naturally sheds light like a torch. The sprite can extinguish,
     rekindle, or change the color of this light using a single action, which has the
-    concentrate trait. While this light is extinguished, the sprite''s Strikes don''t
-    deal fire damage and they can''t use their luminous spark Strike.
-
-
-    '
+    concentrate trait. While this light is extinguished, the sprite's Strikes don't
+    deal fire damage and they can't use their luminous spark Strike.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Luminous Fire
   range: null
   raw_description: '**Luminous Fire** (__evocation__, __light__, __primal__) A sprite
     naturally sheds light like a torch. The sprite can extinguish, rekindle, or change
     the color of this light using a single action, which has the concentrate trait.
     While this light is extinguished, the sprite''s Strikes don''t deal fire damage
-    and they can''t use their luminous spark Strike.
-
-
-    '
+    and they can''t use their luminous spark Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - evocation
@@ -107,55 +99,51 @@ sense_abilities:
   - primal
   trigger: null
 senses:
-- Perception +4
 - low-light vision
 size: Tiny
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 308
+  page_start: '308'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 16
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
-      name: color spray
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 16
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: color spray
+  spells_source: Primal Innate Spells
 traits:
-- CN
-- Tiny
 - Fey
 - Sprite
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: cold iron

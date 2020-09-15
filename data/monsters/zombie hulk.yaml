@@ -7,6 +7,57 @@ ability_mods:
   wis_mod: 0
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A zombie hulk can throw corpses at foes. While any Medium dead body
+    will do, they sometimes throw zombie shamblers, who take just as much damage from
+    being thrown as the target they hit. A thrown shambler lands prone, but if it's
+    not destroyed, it can rise and use other actions normally.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Corpse Throwing
+  range: null
+  raw_description: '**Corpse Throwing** A zombie hulk can throw corpses at foes. While
+    any Medium dead body will do, they sometimes throw zombie shamblers, who take
+    just as much damage from being thrown as the target they hit. A thrown shambler
+    lands prone, but if it''s not destroyed, it can rise and use other actions normally.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The zombie hulk makes a hunk of meat Strike and compares the attack
+    roll result to the AC of up to two foes, each of whom must be within the Strike's
+    reach. This attack counts as two attacks for the zombie hulk's multiple attack
+    penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wide Swing
+  range: null
+  raw_description: '**Wide Swing** [One Action]  The zombie hulk makes a hunk of meat
+    Strike and compares the attack roll result to the AC of up to two foes, each of
+    whom must be within the Strike''s reach. This attack counts as two attacks for
+    the zombie hulk''s multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'These towering horrors are animated from the corpses of monstrosities.
@@ -24,10 +75,8 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
-languages: null
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+9
@@ -39,54 +88,7 @@ melee:
   - reach 15 feet
 name: Zombie Hulk
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A zombie hulk can throw corpses at foes. While any Medium dead body
-    will do, they sometimes throw zombie shamblers, who take just as much damage from
-    being thrown as the target they hit. A thrown shambler lands prone, but if it's
-    not destroyed, it can rise and use other actions normally.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Corpse Throwing
-  range: null
-  raw_description: '**Corpse Throwing** A zombie hulk can throw corpses at foes. While
-    any Medium dead body will do, they sometimes throw zombie shamblers, who take
-    just as much damage from being thrown as the target they hit. A thrown shambler
-    lands prone, but if it''s not destroyed, it can rise and use other actions normally. '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The zombie hulk makes a hunk of meat Strike and compares the attack
-    roll result to the AC of up to two foes, each of whom must be within the Strike's
-    reach. This attack counts as two attacks for the zombie hulk's multiple attack
-    penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wide Swing
-  range: null
-  raw_description: '**Wide Swing**   The zombie hulk makes a hunk of meat Strike and
-    compares the attack roll result to the AC of up to two foes, each of whom must
-    be within the Strike''s reach. This attack counts as two attacks for the zombie
-    hulk''s multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+9
@@ -106,13 +108,6 @@ ranged:
   traits:
   - brutal
   - range increment 30 feet
-rarity: Common
-resistances:
-- amount: 10
-  type: positive
-- amount: 10
-  type: slashing
-ritual_lists: null
 saves:
   fort: 16
   fort_misc: null
@@ -127,39 +122,44 @@ sense_abilities:
   critical_success: null
   description: A zombie is permanently slowed 1 and can't use reactions.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Slow
   range: null
   raw_description: '**Slow** A zombie is permanently slowed 1 and can''t use reactions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +8
 - darkvision
 size: Huge
 skills:
 - bonus: 18
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 341
+  page_start: '341'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Huge
 - Mindless
 - Undead
 - Zombie
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: positive
+- amount: 10
+  misc: null
+  type: slashing

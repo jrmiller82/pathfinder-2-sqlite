@@ -7,6 +7,58 @@ ability_mods:
   wis_mod: 0
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement **The fetchling is in dim light;'
+  effect: The fetchling Strides. They have a +10-foot status bonus to their Speed
+    during this Stride. The DC from shadow blending increases to 11 during this Stride,
+    and the fetchling remains __concealed__ by dim light until the end of the movement,
+    even if they leave dim light during the Stride.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shadow Stride
+  range: null
+  raw_description: '**Shadow Stride** [One Action]  (__illusion__, __occult__, __shadow__)
+    **Requirement **The fetchling is in dim light; **Effect **The fetchling Strides.
+    They have a +10-foot status bonus to their Speed during this Stride. The DC from
+    shadow blending increases to 11 during this Stride, and the fetchling remains
+    __concealed__ by dim light until the end of the movement, even if they leave dim
+    light during the Stride.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - illusion
+  - occult
+  - shadow
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The fetchling scout's Strikes deal an additional 1d6 precision damage
+    to __flat-footed__ creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The fetchling scout''s Strikes deal an additional
+    1d6 precision damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,16 +67,18 @@ automatic_abilities:
   description: When the fetchling scout is __concealed__ as a result of dim light,
     the flat check to target them has a DC of 7, not 5.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shadow Blending
   range: null
   raw_description: '**Shadow Blending** When the fetchling scout is __concealed__
     as a result of dim light, the flat check to target them has a DC of 7, not 5.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -75,7 +129,6 @@ description: 'The people known today as fetchlings are a distinct ancestry desce
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 18
 hp_misc: null
-immunities: null
 items:
 - chain shirt
 - dagger
@@ -83,7 +136,7 @@ languages:
 - Common
 - Shadowtongue
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+1
@@ -97,52 +150,7 @@ melee:
   - versatile S
 name: Fetchling Scout
 perception: 5
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The fetchling is in dim light
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shadow Stride
-  range: null
-  raw_description: '**Shadow Stride**   (__illusion__, __occult__, __shadow__) **Requirement
-    **The fetchling is in dim light; **Effect **The fetchling Strides. They have a
-    +10-foot status bonus to their Speed during this Stride. The DC from shadow blending
-    increases to 11 during this Stride, and the fetchling remains __concealed__ by
-    dim light until the end of the movement, even if they leave dim light during the
-    Stride.'
-  requirements: null
-  success: null
-  traits:
-  - illusion
-  - occult
-  - shadow
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The fetchling scout's Strikes deal an additional 1d6 precision damage
-    to __flat-footed__ creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The fetchling scout''s Strikes deal an additional
-    1d6 precision damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+1
@@ -155,11 +163,6 @@ ranged:
   - finesse
   - thrown 10 feet
   - versatile S
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 5
   fort_misc: null
@@ -168,57 +171,53 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 5
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 3
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 7
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 7
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 117
+  page_start: '117'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 15
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 15
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+  spell_lists:
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: illusory disguise
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- N
-- Medium
 - Fetchling
 - Humanoid
 - Shadow
-type: Creature
-weaknesses: null

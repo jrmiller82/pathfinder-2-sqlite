@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 3
 ac: 22
 ac_special: null
+active_abilities: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -14,16 +15,18 @@ automatic_abilities:
   critical_success: null
   description: An awakened tree takes 5 additional damage from axes.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Axe Vulnerability
   range: null
   raw_description: '**Axe Vulnerability** An awakened tree takes 5 additional damage
     from axes.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -40,13 +43,11 @@ description: 'Arboreal regents and other wielders of powerful primal magic grant
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 22'
 hp: 100
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Arboreal
 - (can't speak any language)
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+6
@@ -67,15 +68,14 @@ melee:
   - trip
 name: Awakened Tree
 perception: 13
-proactive_abilities: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 16
   fort_misc: null
@@ -84,33 +84,31 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - low-light vision
 size: Huge
 skills:
 - bonus: 14
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: +14 in forests
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 25
+  page_start: '25'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Plant
-type: Creature
 weaknesses:
 - amount: null
+  misc: null
   type: axe vulnerability
 - amount: 10
+  misc: null
   type: fire

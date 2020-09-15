@@ -7,6 +7,26 @@ ability_mods:
   wis_mod: 3
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d8+4 bludgeoning, DC 20
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d8+4 bludgeoning, DC 20'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -16,14 +36,14 @@ automatic_abilities:
   effect: The assassin vine causes vegetation within a 20-foot emanation to writhe
     for 1 round, turning this area into difficult terrain. When a creature starts
     its turn in this area, it must attempt a DC 20 Reflex save. On a failure, it takes
-    a -10-foot circumstance penalty to its Speeds until it leaves the area, and on
+    a –10-foot circumstance penalty to its Speeds until it leaves the area, and on
     a critical failure it is also __immobilized__ for 1 round. A creature can attempt
     to __Escape__ to remove these effects. Assassin vines are immune to Grasping Foliage.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Grasping Foliage
   range: null
   raw_description: '**Grasping Foliage [Reaction]** (__primal__, __transmutation__)
@@ -31,15 +51,17 @@ automatic_abilities:
     **Effect **The assassin vine causes vegetation within a 20-foot emanation to writhe
     for 1 round, turning this area into difficult terrain. When a creature starts
     its turn in this area, it must attempt a DC 20 Reflex save. On a failure, it takes
-    a -10-foot circumstance penalty to its Speeds until it leaves the area, and on
+    a –10-foot circumstance penalty to its Speeds until it leaves the area, and on
     a critical failure it is also __immobilized__ for 1 round. A creature can attempt
     to __Escape__ to remove these effects. Assassin vines are immune to Grasping Foliage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - primal
   - transmutation
-  trigger: The assassin vine detects a creature within 20 feet via __tremorsense__
+  trigger: The assassin vine detects a creature within 20 feet via tremorsense;
 description: 'The assassin vine is a carnivorous plant with a voracious appetite.
   Rather than consuming creatures directly, it creates its own fertilizer by entangling
   prey and squeezing the life from it. Once the plant has killed a creature, it pulls
@@ -79,11 +101,8 @@ description: 'The assassin vine is a carnivorous plant with a voracious appetite
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 18'
 hp: 68
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+6
@@ -97,28 +116,7 @@ melee:
   - reach 10 feet
 name: Assassin Vine
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d8+4 bludgeoning, DC 20
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d8+4 bludgeoning, DC 20'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -134,47 +132,48 @@ sense_abilities:
   description: The assassin vine can __Hide__ in natural environments even if it doesn't
     have cover.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Camouflage
   range: null
   raw_description: '**Camouflage** The assassin vine can __Hide__ in natural environments
     even if it doesn''t have cover.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +10
 - tremorsense 30 feet
 - low-light vision
 size: Large
 skills:
 - bonus: 9
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: +11 in forests or grasslands
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 26
+  page_start: '26'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Large
 - Mindless
 - Plant
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: fire
 - amount: 5
+  misc: null
   type: slashing

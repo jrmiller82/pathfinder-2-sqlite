@@ -7,6 +7,53 @@ ability_mods:
   wis_mod: 2
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The salamander stokes its internal flames. Until the start of its next
+    turn, it gains a +2 circumstance bonus to AC, and when an adjacent creature touches
+    it or hits it with a physical attack, that creature takes 2d6 persistent fire
+    damage unless it succeeds at a DC 25 Reflex save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Armor of Flames
+  range: null
+  raw_description: '**Armor of Flames** [One Action]  The salamander stokes its internal
+    flames. Until the start of its next turn, it gains a +2 circumstance bonus to
+    AC, and when an adjacent creature touches it or hits it with a physical attack,
+    that creature takes 2d6 persistent fire damage unless it succeeds at a DC 25 Reflex
+    save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d8+4 bludgeoning plus 1d6 fire, DC 25
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d8+4 bludgeoning plus 1d6 fire,
+    DC 25'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +65,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +80,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -59,7 +108,7 @@ languages:
 - Common
 - Ignan
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+7
@@ -77,61 +126,17 @@ melee:
     type: bludgeoning
   name: tail
   plus_damage:
-  - formula: 1d6
-    type: fire and Grab
+  - formula: null
+    type: 1d6 fire
+  - formula: null
+    type: Grab
   to_hit: 17
   traits:
   - agile
   - reach 10 feet
 name: Salamander
 perception: 15
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The salamander stokes its internal flames. Until the start of its next
-    turn, it gains a +2 circumstance bonus to AC, and when an adjacent creature touches
-    it or hits it with a physical attack, that creature takes 2d6 persistent fire
-    damage unless it succeeds at a DC 25 Reflex save.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Armor of Flames
-  range: null
-  raw_description: '**Armor of Flames**   The salamander stokes its internal flames.
-    Until the start of its next turn, it gains a +2 circumstance bonus to AC, and
-    when an adjacent creature touches it or hits it with a physical attack, that creature
-    takes 2d6 persistent fire damage unless it succeeds at a DC 25 Reflex save.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d8+4 bludgeoning plus 1d6 fire, DC 25
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d8+4 bludgeoning plus 1d6 fire, DC 25'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: cold
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 15
   fort_misc: null
@@ -140,42 +145,41 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +15
 - darkvision
 size: Medium
 skills:
 - bonus: 12
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: +17 for blacksmithing
-  name: 'Crafting '
+  name: Crafting
 - bonus: 12
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 14
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 13
   misc: null
-  name: 'Society '
-source:
+  name: Society
+sources:
 - abbr: Bestiary
-  page_start: 148
+  page_start: '148'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Medium
 - Elemental
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold

@@ -7,6 +7,29 @@ ability_mods:
   wis_mod: 1
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: On a critical hit, the target of the critical hit is moved 5 feet in
+    a direction of the hobgoblin general's choice.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Polearm Critical Specialization
+  range: null
+  raw_description: '**Polearm Critical Specialization** On a critical hit, the target
+    of the critical hit is moved 5 feet in a direction of the hobgoblin general''s
+    choice.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
@@ -16,17 +39,19 @@ automatic_abilities:
     gains a +1 circumstance bonus to AC and saving throws. This bonus increases to
     +2 to Reflex saves against area effects.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Formation
   range: null
   raw_description: '**Formation** When it''s adjacent to at least two other allies,
     the hobgoblin general gains a +1 circumstance bonus to AC and saving throws. This
     bonus increases to +2 to Reflex saves against area effects.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -42,7 +67,6 @@ description: 'Hobgoblin generals serve as leaders of entire armies and rulers of
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 22'
 hp: 90
 hp_misc: null
-immunities: null
 items:
 - +1 glaive
 - composite shortbow (20 arrows)
@@ -51,7 +75,7 @@ languages:
 - Common
 - Goblin
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+10
@@ -65,28 +89,7 @@ melee:
   - reach
 name: Hobgoblin General
 perception: 13
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: On a critical hit, the target of the critical hit is moved 5 feet in
-    a direction of the hobgoblin general's choice.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Polearm Critical Specialization
-  range: null
-  raw_description: '**Polearm Critical Specialization** On a critical hit, the target
-    of the critical hit is moved 5 feet in a direction of the hobgoblin general''s
-    choice.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+8
@@ -100,11 +103,6 @@ ranged:
   - propulsive
   - range increment 60 feet
   - reload 0
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -117,20 +115,17 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'When a hobgoblin general rolls initiative, as long as they can perceive
+  description: When a hobgoblin general rolls initiative, as long as they can perceive
     at least one foe, they can yell a mighty battle cry. The hobgoblin general attempts
     an Intimidate check to Demoralize a single foe within 60 feet as a free action.
     If successful, any ally with the goblin trait can, as its first action on its
     first turn of the combat, Stride up to double its speed as a single action.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: General's Cry
   range: null
   raw_description: '**General''s Cry** When a hobgoblin general rolls initiative,
@@ -138,43 +133,38 @@ sense_abilities:
     The hobgoblin general attempts an Intimidate check to Demoralize a single foe
     within 60 feet as a free action. If successful, any ally with the goblin trait
     can, as its first action on its first turn of the combat, Stride up to double
-    its speed as a single action.
-
-
-    '
+    its speed as a single action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +13
 - darkvision
 size: Medium
 skills:
 - bonus: 12
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 12
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 207
+  page_start: '207'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Goblin
 - Humanoid
-type: Creature
-weaknesses: null

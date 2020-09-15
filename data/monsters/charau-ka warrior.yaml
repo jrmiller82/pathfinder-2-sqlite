@@ -7,6 +7,60 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The charau-ka is __quickened__ until the end of its turn, and can use the
+    extra action to Stride or Strike. While in the frenzy, the charau-ka can't speak
+    and automatically critically fails Stealth checks, due to its loud wailing.
+  failure: null
+  frequency: once per hour
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shrieking Frenzy
+  range: null
+  raw_description: '**Shrieking Frenzy** [Free Action]  (__primal__, __transmutation__)
+    **Trigger** The charau-ka''s turn begins. **Frequency** once per hour; **Effect**
+    The charau-ka is __quickened__ until the end of its turn, and can use the extra
+    action to Stride or Strike. While in the frenzy, the charau-ka can''t speak and
+    automatically critically fails Stealth checks, due to its loud wailing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - primal
+  - transmutation
+  trigger: The charau-ka's turn begins.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any weapon a charau-ka throws gains the __deadly d6__ weapon trait.
+    Furthermore, when a charau-ka throws an improvised weapon, it does not take the
+    –2 penalty for doing so, nor does it take a penalty for using a thrown improvised
+    weapon with the __nonlethal__ trait to make a lethal attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Thrown Weapon Mastery
+  range: null
+  raw_description: '**Thrown Weapon Mastery** Any weapon a charau-ka throws gains
+    the __deadly d6__ weapon trait. Furthermore, when a charau-ka throws an improvised
+    weapon, it does not take the –2 penalty for doing so, nor does it take a penalty
+    for using a thrown improvised weapon with the __nonlethal__ trait to make a lethal
+    attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'A charau-ka warrior carries hatchets, daggers, and similar weaponry
@@ -19,7 +73,6 @@ description: 'A charau-ka warrior carries hatchets, daggers, and similar weaponr
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 18
 hp_misc: null
-immunities: null
 items:
 - dagger
 - hatchet
@@ -28,7 +81,7 @@ languages:
 - Draconic
 - Mwangi
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -62,57 +115,7 @@ melee:
   - nonlethal
 name: Charau-ka Warrior
 perception: 6
-proactive_abilities:
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The charau-ka is __quickened__ until the end of its turn, and can use the
-    extra action to Stride or Strike. While in the frenzy, the charau-ka can't speak
-    and automatically critically fails Stealth checks, due to its loud wailing.
-  effects: null
-  failure: null
-  frequency: The charau-ka's turn begins.
-  full_description: null
-  generic_description: null
-  name: Shrieking Frenzy
-  range: null
-  raw_description: '**Shrieking Frenzy** [Free Action]  (__primal__, __transmutation__)
-    **Trigger** The charau-ka''s turn begins. **Frequency** once per hour; **Effect**
-    The charau-ka is __quickened__ until the end of its turn, and can use the extra
-    action to Stride or Strike. While in the frenzy, the charau-ka can''t speak and
-    automatically critically fails Stealth checks, due to its loud wailing.'
-  requirements: null
-  success: null
-  traits:
-  - primal
-  - transmutation
-  trigger: once per hour
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any weapon a charau-ka throws gains the __deadly d6__ weapon trait.
-    Furthermore, when a charau-ka throws an improvised weapon, it does not take the
-    -2 penalty for doing so, nor does it take a penalty for using a thrown improvised
-    weapon with the __nonlethal__ trait to make a lethal attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Thrown Weapon Mastery
-  range: null
-  raw_description: '**Thrown Weapon Mastery** Any weapon a charau-ka throws gains
-    the __deadly d6__ weapon trait. Furthermore, when a charau-ka throws an improvised
-    weapon, it does not take the -2 penalty for doing so, nor does it take a penalty
-    for using a thrown improvised weapon with the __nonlethal__ trait to make a lethal
-    attack.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -147,11 +150,6 @@ ranged:
   traits:
   - deadly d6
   - thrown 20 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -160,36 +158,32 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 - scent (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #146: Cult of Cinders'
-  page_start: 84
+  page_start: '84'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- CE
-- Small
 - Charau-ka
 - Humanoid
-type: Creature
-weaknesses: null

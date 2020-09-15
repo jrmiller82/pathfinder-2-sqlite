@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 5
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Guardian Naga Venom
+  range: null
+  raw_description: '**Guardian Naga Venom** (__poison__) **Saving Throw** DC 29 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 3d6 poison (1 round); **Stage 2** 3d6
+    poison and __drained 1__ (1 round)'
+  requirements: null
+  saving_throw: DC 29 Fortitude
+  stages:
+  - effect: 3d6 poison (1 round)
+  - effect: 3d6 poison and __drained 1__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: LG
 automatic_abilities: null
 description: 'The opposite of dark nagas in many ways, guardian nagas are benevolent
@@ -43,13 +68,11 @@ description: 'The opposite of dark nagas in many ways, guardian nagas are benevo
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 29'
 hp: 175
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Celestial
 - Common
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
@@ -64,31 +87,11 @@ melee:
   - finesse
 name: Guardian Naga
 perception: 22
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 29 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 3d6 poison (1 round); **Stage 2** 3d6 poison and __drained 1__ (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Guardian Naga Venom
-  range: null
-  raw_description: '**Guardian Naga Venom** (__poison__) **Saving Throw** DC 29 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 3d6 poison (1 round); **Stage 2** 3d6
-    poison and __drained 1__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: guardian naga venom
   name: spit
   plus_damage: null
   to_hit: 22
@@ -97,10 +100,6 @@ ranged:
   - poison
   - range increment 30 feet
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 20
   fort_misc: null
@@ -109,143 +108,107 @@ saves:
   ref_misc: null
   will: 22
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - darkvision
 size: Large
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 21
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 21
   misc: null
-  name: 'Heaven Lore '
+  name: Heaven Lore
 - bonus: 20
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 243
+  page_start: '243'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 29
-  misc: ''
-  name: Divine Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: 21
+  cantrips:
+  - level: 5
     spells:
-    - frequency: null
-      name: breath of life
-      requirement: null
-    - frequency: null
-      name: death ward
-      requirement: null
-    - frequency: null
-      name: flame strike
-      requirement: null
-    - frequency: 4 slots
-      name: heal
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: air walk
-      requirement: null
-    - frequency: null
-      name: freedom of movement
-      requirement: null
-    - frequency: null
-      name: remove curse
-      requirement: null
-    - frequency: 4 slots
-      name: restoration
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: neutralize poison
-      requirement: null
-    - frequency: null
-      name: remove disease
-      requirement: null
-    - frequency: 4 slots
-      name: searing light
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: calm emotions
-      requirement: null
-    - frequency: null
-      name: restoration
-      requirement: null
-    - frequency: null
-      name: see invisibility
-      requirement: null
-    - frequency: 4 slots
-      name: sound burst
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: bless
-      requirement: null
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: protection
-      requirement: null
-    - frequency: 4 slots
-      name: spirit link
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ray of frost
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-    - frequency: null
+    - misc: null
       name: stabilize
-      requirement: null
-  to_hit: 21
+  constants: null
+  dc: 29
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: breath of life
+    - misc: null
+      name: death ward
+    - misc: null
+      name: flame strike
+    - misc: 4 slots
+      name: heal
+  - level: 4
+    spells:
+    - misc: null
+      name: air walk
+    - misc: null
+      name: freedom of movement
+    - misc: null
+      name: remove curse
+    - misc: 4 slots
+      name: restoration
+  - level: 3
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: neutralize poison
+    - misc: null
+      name: remove disease
+    - misc: 4 slots
+      name: searing light
+  - level: 2
+    spells:
+    - misc: null
+      name: calm emotions
+    - misc: null
+      name: restoration
+    - misc: null
+      name: see invisibility
+    - misc: 4 slots
+      name: sound burst
+  - level: 1
+    spells:
+    - misc: null
+      name: bless
+    - misc: null
+      name: heal
+    - misc: null
+      name: protection
+    - misc: 4 slots
+      name: spirit link
+  spells_source: Divine Spontaneous Spells
 traits:
-- Uncommon
-- LG
-- Large
 - Aberration
-type: Creature
-weaknesses: null

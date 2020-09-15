@@ -7,32 +7,140 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ghast devours a chunk of the corpse and regains 3d6 Hit Points. It can
+    regain Hit Points from any given corpse only once.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Consume Flesh
+  range: null
+  raw_description: '**Consume Flesh** [One Action]  (__manipulate__) **Requirements**
+    The ghast is adjacent to the corpse of a creature that died within the last hour.
+    **Effect** The ghast devours a chunk of the corpse and regains 3d6 Hit Points.
+    It can regain Hit Points from any given corpse only once.'
+  requirements: The ghast is adjacent to the corpse of a creature that died within
+    the last hour.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** Fortitude DC 16; **Stage 1** carrier with no ill
+    effect (1 day); **Stage 2** 3d8 negative damage and regains half as many Hit Points
+    from all healing (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** 3d8 negative
+    damage and gains no benefit from healing (1 day); **Stage 5** as stage 4 (1 day);
+    **Stage 6** dead, and rises as a ghast the next midnight'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ghast Fever
+  range: null
+  raw_description: '**Ghast Fever** (__disease__) **Saving Throw** Fortitude DC 16;
+    **Stage 1** carrier with no ill effect (1 day); **Stage 2** 3d8 negative damage
+    and regains half as many Hit Points from all healing (1 day); **Stage 3** as stage
+    2 (1 day); **Stage 4** 3d8 negative damage and gains no benefit from healing (1
+    day); **Stage 5** as stage 4 (1 day); **Stage 6** dead, and rises as a ghast the
+    next midnight'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any living creature (including elves) hit by a ghast's attack must
+    succeed at a DC 16 Fortitude save or become __paralyzed__. It can attempt a new
+    save at the end of each of its turns, and the DC cumulatively decreases by 1 on
+    each such save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Paralysis
+  range: null
+  raw_description: '**Paralysis** (__incapacitation__, __occult__, __necromancy__)
+    Any living creature (including elves) hit by a ghast''s attack must succeed at
+    a DC 16 Fortitude save or become __paralyzed__. It can attempt a new save at the
+    end of each of its turns, and the DC cumulatively decreases by 1 on each such
+    save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  - occult
+  - necromancy
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ghast jumps up to half its Speed. This movement doesn't trigger
+    reactions.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swift Leap
+  range: null
+  raw_description: '**Swift Leap** [One Action]  (__move__) The ghast jumps up to
+    half its Speed. This movement doesn''t trigger reactions.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 10 feet. A creature entering the aura or starting its turn in the aura
-    must succeed at a DC 16 Fortitude save or become __sickened 1__ (plus __slowed
-    1__ as long as it's sickened on a critical failure). While within the aura, the
-    creature takes a -2 circumstance penalty to saves against disease and to recover
-    from the sickened condition. A creature that succeeds at its save is temporarily
-    immune for 1 minute.
+  description: A creature entering the aura or starting its turn in the aura must
+    succeed at a DC 16 Fortitude save or become __sickened 1__ (plus __slowed 1__
+    as long as it's sickened on a critical failure). While within the aura, the creature
+    takes a –2 circumstance penalty to saves against disease and to recover from the
+    sickened condition. A creature that succeeds at its save is temporarily immune
+    for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stench
-  range: null
+  range: 10 feet
   raw_description: '**Stench** (__aura__, __olfactory__) 10 feet. A creature entering
     the aura or starting its turn in the aura must succeed at a DC 16 Fortitude save
     or become __sickened 1__ (plus __slowed 1__ as long as it''s sickened on a critical
-    failure). While within the aura, the creature takes a -2 circumstance penalty
+    failure). While within the aura, the creature takes a –2 circumstance penalty
     to saves against disease and to recover from the sickened condition. A creature
     that succeeds at its save is temporarily immune for 1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -53,12 +161,11 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
 languages:
 - Common
 - Necril
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+5
@@ -66,7 +173,9 @@ melee:
   name: jaws
   plus_damage:
   - formula: null
-    type: ghast fever and paralysis
+    type: ghast fever
+  - formula: null
+    type: paralysis
   to_hit: 11
   traits:
   - finesse
@@ -84,107 +193,7 @@ melee:
   - finesse
 name: Ghast
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The ghast is adjacent to the corpse of a creature that died within the last
-    hour.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Consume Flesh
-  range: null
-  raw_description: '**Consume Flesh**   (__manipulate__) **Requirements** The ghast
-    is adjacent to the corpse of a creature that died within the last hour. **Effect**
-    The ghast devours a chunk of the corpse and regains 3d6 Hit Points. It can regain
-    Hit Points from any given corpse only once.'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** Fortitude DC 16; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** 3d8 negative damage and regains half as many Hit Points
-    from all healing (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** 3d8 negative
-    damage and gains no benefit from healing (1 day); **Stage 5** as stage 4 (1 day);
-    **Stage 6** dead, and rises as a ghast the next midnight'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ghast Fever
-  range: null
-  raw_description: '**Ghast Fever** (__disease__) **Saving Throw** Fortitude DC 16;
-    **Stage 1** carrier with no ill effect (1 day); **Stage 2** 3d8 negative damage
-    and regains half as many Hit Points from all healing (1 day); **Stage 3** as stage
-    2 (1 day); **Stage 4** 3d8 negative damage and gains no benefit from healing (1
-    day); **Stage 5** as stage 4 (1 day); **Stage 6** dead, and rises as a ghast the
-    next midnight'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any living creature (including elves) hit by a ghast's attack must
-    succeed at a DC 16 Fortitude save or become __paralyzed__. It can attempt a new
-    save at the end of each of its turns, and the DC cumulatively decreases by 1 on
-    each such save.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Paralysis
-  range: null
-  raw_description: '**Paralysis** (__incapacitation__, __occult__, __necromancy__)
-    Any living creature (including elves) hit by a ghast''s attack must succeed at
-    a DC 16 Fortitude save or become __paralyzed__. It can attempt a new save at the
-    end of each of its turns, and the DC cumulatively decreases by 1 on each such
-    save.'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  - occult
-  - necromancy
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The ghast jumps up to half its Speed. This movement doesn't trigger
-    reactions.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swift Leap
-  range: null
-  raw_description: '**Swift Leap**   (__move__) The ghast jumps up to half its Speed.
-    This movement doesn''t trigger reactions.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -193,38 +202,34 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Medium
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 169
+  page_start: '169'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 5
+  misc: null
   type: burrow
 spell_lists: null
 traits:
-- CE
-- Medium
 - Ghoul
 - Undead
-type: Creature
-weaknesses: null

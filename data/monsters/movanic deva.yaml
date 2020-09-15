@@ -7,24 +7,78 @@ ability_mods:
   wis_mod: 5
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The movanic deva attempts to unravel unwelcome magic effects on allies within
+    its aura of vitality to protect them from malevolent forces. The movanic deva
+    attempts a counteract check against as many spell effects affecting allies in
+    the area as it wishes with a +19 counteract modifier and a counteract level of
+    4, rolling once for the selected effects.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dispelling Field
+  range: null
+  raw_description: '**Dispelling Field** [Two Actions]  (__divine__, __transmutation__)
+    **Frequency **once per day; **Effect **The movanic deva attempts to unravel unwelcome
+    magic effects on allies within its aura of vitality to protect them from malevolent
+    forces. The movanic deva attempts a counteract check against as many spell effects
+    affecting allies in the area as it wishes with a +19 counteract modifier and a
+    counteract level of 4, rolling once for the selected effects.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a movanic deva wields a weapon, that weapon gains the effect of
+    a __flaming__ rune.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Flaming Armaments
+  range: null
+  raw_description: '**Flaming Armaments** (__divine__, __transmutation__) When a movanic
+    deva wields a weapon, that weapon gains the effect of a __flaming__ rune.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - transmutation
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. Allies in the movanic deva's aura gain a +1 status bonus to
-    all saving throws, resistance 10 to positive and negative damage, and are unharmed
-    by the effects of a plane's __positive__ and __negative__ traits. Animals in the
-    aura of 12th level or lower don't attack the movanic deva or the deva's allies
-    unless they are controlled or otherwise forced to attack.
+  description: Allies in the movanic deva's aura gain a +1 status bonus to all saving
+    throws, resistance 10 to positive and negative damage, and are unharmed by the
+    effects of a plane's __positive__ and __negative__ traits. Animals in the aura
+    of 12th level or lower don't attack the movanic deva or the deva's allies unless
+    they are controlled or otherwise forced to attack.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Aura of Vitality
-  range: null
+  range: 20 feet
   raw_description: '**Aura of Vitality** (__abjuration__, __aura__, __divine__) 20
     feet. Allies in the movanic deva''s aura gain a +1 status bonus to all saving
     throws, resistance 10 to positive and negative damage, and are unharmed by the
@@ -32,6 +86,8 @@ automatic_abilities:
     of 12th level or lower don''t attack the movanic deva or the deva''s allies unless
     they are controlled or otherwise forced to attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
@@ -67,15 +123,17 @@ languages:
 - Infernal
 - tongues
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
     type: slashing
   name: flaming bastard sword
   plus_damage:
-  - formula: 1d6
-    type: fire and 1d6 good
+  - formula: null
+    type: 1d6 fire
+  - formula: null
+    type: 1d6 good
   to_hit: 23
   traits:
   - good
@@ -83,79 +141,7 @@ melee:
   - two-hand d12
 name: Movanic Deva
 perception: 22
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The movanic deva attempts to unravel unwelcome magic effects on allies within
-    its aura of vitality to protect them from malevolent forces. The movanic deva
-    attempts a counteract check against as many spell effects affecting allies in
-    the area as it wishes with a +19 counteract modifier and a counteract level of
-    4, rolling once for the selected effects.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Dispelling Field
-  range: null
-  raw_description: '**Dispelling Field** [Two Actions]  (__divine__, __transmutation__)
-    **Frequency **once per day; **Effect **The movanic deva attempts to unravel unwelcome
-    magic effects on allies within its aura of vitality to protect them from malevolent
-    forces. The movanic deva attempts a counteract check against as many spell effects
-    affecting allies in the area as it wishes with a +19 counteract modifier and a
-    counteract level of 4, rolling once for the selected effects.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a movanic deva wields a weapon, that weapon gains the effect of
-    a __flaming__ rune.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Flaming Armaments
-  range: null
-  raw_description: '**Flaming Armaments** (__divine__, __transmutation__) When a movanic
-    deva wields a weapon, that weapon gains the effect of a __flaming__ rune.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - transmutation
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: evil
-ritual_lists:
-- dc: 29
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: null
-      name: awaken animal
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: angelic messenger
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 21
   fort_misc: null
@@ -164,94 +150,99 @@ saves:
   ref_misc: null
   will: 19
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - darkvision
 size: Medium
 skills:
 - bonus: 20
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 22
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 19
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 17
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 14
+  page_start: '14'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 29
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 5
     spells:
-    - frequency: null
-      name: divine wrath
-      requirement: null
-    - frequency: null
-      name: remove curse
-      requirement: null
-    - frequency: null
-      name: remove disease
-      requirement: null
-    - frequency: null
-      name: remove fear
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: create food
-      requirement: null
-    - frequency: ×3
-      name: heal
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will, evil only
-      name: detect alignment
-      requirement: null
-  - heightened_level: 5
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: null
+  dc: 29
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: divine wrath
+    - misc: null
+      name: remove curse
+    - misc: null
+      name: remove disease
+    - misc: null
+      name: remove fear
+  - level: 4
+    spells:
+    - misc: null
+      name: create food
+    - misc: ×3
+      name: heal
+  - level: 2
+    spells:
+    - misc: at will; self only
+      name: invisibility
+  - level: 1
+    spells:
+    - misc: at will; evil only
+      name: detect alignment
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 29
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: null
+      name: awaken animal
+  - level: 1
+    spells:
+    - misc: null
+      name: angelic messenger
+  spells_source: Rituals
 traits:
-- NG
-- Medium
 - Angel
 - Celestial
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: evil

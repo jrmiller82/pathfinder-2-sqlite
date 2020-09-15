@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 3
 ac: 22
 ac_special: null
+active_abilities: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,17 +16,19 @@ automatic_abilities:
   description: When the living wild fire dies, it explodes, dealing 3d6 fire damage
     to each creature in a 10-foot emanation (DC 19 basic Reflex save).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Explosion
   range: null
   raw_description: '**Explosion** (__fire__) When the living wild fire dies, it explodes,
     dealing 3d6 fire damage to each creature in a 10-foot emanation (DC 19 basic Reflex
     save).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - fire
@@ -44,19 +47,18 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Ignan
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+6
     type: fire
   name: tendril
   plus_damage:
-  - formula: 2d4
-    type: persistent fire
+  - formula: null
+    type: 2d4 persistent fire
   to_hit: 15
   traits:
   - agile
@@ -64,8 +66,7 @@ melee:
   - reach 10 feet
 name: Living Wildfire
 perception: 10
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+3
@@ -75,11 +76,6 @@ ranged:
   to_hit: 15
   traits:
   - range increment 60 feet
-rarity: Common
-resistances:
-- amount: 5
-  type: cold
-ritual_lists: null
 saves:
   fort: 11
   fort_misc: null
@@ -94,40 +90,42 @@ sense_abilities:
   critical_success: null
   description: The living wildfire ignores the concealed condition from smoke.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Smoke Vision
   range: null
   raw_description: '**Smoke Vision** The living wildfire ignores the concealed condition
     from smoke.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +10
 - darkvision
 - smoke vision
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
-source:
+  name: Acrobatics
+sources:
 - abbr: Bestiary
-  page_start: 148
+  page_start: '148'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Elemental
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold

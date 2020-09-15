@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 20
 ac_special: null
+active_abilities: null
 alignment: Any
 automatic_abilities: null
 description: 'Soulbound dolls are eerie mannequins or playthings that have been imbued
@@ -73,11 +74,10 @@ immunities:
 - poison
 - sickened
 - unconscious
-items: null
 languages:
 - one spoken by its creator (typically Common)
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -91,11 +91,7 @@ melee:
   - magical
 name: Soulbound Doll
 perception: 8
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -112,11 +108,11 @@ sense_abilities:
     though none of that creature's memories. This causes a soulbound doll to match
     the donor soul's alignment and gain the corresponding alignment traits.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Personality Fragments
   range: null
   raw_description: '**Personality Fragments** A soulbound doll shares fragments of
@@ -124,85 +120,71 @@ sense_abilities:
     causes a soulbound doll to match the donor soul''s alignment and gain the corresponding
     alignment traits.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +8
 - darkvision
 size: Tiny
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 304
+  page_start: '304'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 18
-  misc: ''
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+- attack_bonus: 8
+  cantrips:
+  - level: 1
     spells:
-    - frequency: if alignment is Lawful Evil
-      name: chilling darkness
-      requirement: null
-    - frequency: if alignment is Chaotic Neutral
-      name: grease
-      requirement: null
-    - frequency: if alignment is Neutral Evil
-      name: harm
-      requirement: null
-    - frequency: if alignment is Chaotic Good
-      name: heal
-      requirement: null
-    - frequency: if alignment is Neutral Good
-      name: heroism
-      requirement: null
-    - frequency: null
-      name: levitate
-      requirement: null
-    - frequency: if alignment is Lawful Neutral
-      name: nondetection
-      requirement: null
-    - frequency: if alignment is Chaotic Evil
-      name: vampiric touch
-      requirement: null
-    - frequency: if alignment is Neutral
-      name: wall of thorns
-      requirement: null
-    - frequency: if alignment is Lawful Good
-      name: zone of truth
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: prestidigitation
-      requirement: null
-  to_hit: 8
+  constants: null
+  dc: 18
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: if alignment is Lawful Evil
+      name: chilling darkness
+    - misc: if alignment is Chaotic Neutral
+      name: grease
+    - misc: if alignment is Neutral Evil
+      name: harm
+    - misc: if alignment is Chaotic Good
+      name: heal
+    - misc: if alignment is Neutral Good
+      name: heroism
+    - misc: null
+      name: levitate
+    - misc: if alignment is Lawful Neutral
+      name: nondetection
+    - misc: if alignment is Chaotic Evil
+      name: vampiric touch
+    - misc: if alignment is Neutral
+      name: wall of thorns
+    - misc: if alignment is Lawful Good
+      name: zone of truth
+  spells_source: Occult Innate Spells
 traits:
-- Any
-- Tiny
 - Construct
 - Soulbound
-type: Creature
-weaknesses: null

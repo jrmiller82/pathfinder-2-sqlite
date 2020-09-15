@@ -7,6 +7,63 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The giant mosquito uses its proboscis to drain blood from the grabbed creature.
+    This deals 3d6 damage, and the giant mosquito gains temporary Hit Points equal
+    to the damage dealt. A creature that has its blood drained by a giant mosquito
+    is __drained 1__ until it receives healing of any kind or amount.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Drain
+  range: null
+  raw_description: '**Blood Drain** [One Action]  **Requirements** The giant mosquito
+    has a creature grabbed; **Effect** The giant mosquito uses its proboscis to drain
+    blood from the grabbed creature. This deals 3d6 damage, and the giant mosquito
+    gains temporary Hit Points equal to the damage dealt. A creature that has its
+    blood drained by a giant mosquito is __drained 1__ until it receives healing of
+    any kind or amount.'
+  requirements: The giant mosquito has a creature grabbed
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The victim can't reduce its __sickened__ condition while it's affected
+    by septic malaria; **Saving Throw** DC 24 Fortitude; **Onset** 1 day; **Stage
+    1** sickened 1 (1 day); **Stage 2** __drained 1__ and sickened 1 (1 day); **Stage
+    3** as stage 2 (1 day); **Stage 4** __unconscious__ (1 day); **Stage 5** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Septic Malaria
+  range: null
+  raw_description: '**Septic Malaria** (__disease The victim can''t reduce its __sickened__
+    condition while it''s affected by septic malaria__)  The victim can''t reduce
+    its __sickened__ condition while it''s affected by septic malaria; **Saving Throw**
+    DC 24 Fortitude; **Onset** 1 day; **Stage 1** sickened 1 (1 day); **Stage 2**
+    __drained 1__ and sickened 1 (1 day); **Stage 3** as stage 2 (1 day); **Stage
+    4** __unconscious__ (1 day); **Stage 5** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease The victim can't reduce its sickened condition while it's affected by
+    septic malaria
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These horrifically enlarged versions of the common mosquito often prey
@@ -19,11 +76,8 @@ description: 'These horrifically enlarged versions of the common mosquito often 
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 22'
 hp: 80
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+7
@@ -31,65 +85,15 @@ melee:
   name: proboscis
   plus_damage:
   - formula: null
-    type: Grab and septic malaria
+    type: Grab
+  - formula: null
+    type: septic malaria
   to_hit: 17
   traits:
   - finesse
 name: Giant Mosquito
 perception: 17
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The giant mosquito has a creature grabbed
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Drain
-  range: null
-  raw_description: '**Blood Drain**   **Requirements** The giant mosquito has a creature
-    grabbed; **Effect** The giant mosquito uses its proboscis to drain blood from
-    the grabbed creature. This deals 3d6 damage, and the giant mosquito gains temporary
-    Hit Points equal to the damage dealt. A creature that has its blood drained by
-    a giant mosquito is __drained 1__ until it receives healing of any kind or amount.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 24 Fortitude; **Onset** 1 day; **Stage 1** sickened
-    1 (1 day); **Stage 2** __drained 1__ and sickened 1 (1 day); **Stage 3** as stage
-    2 (1 day); **Stage 4** __unconscious__ (1 day); **Stage 5** dead'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Septic Malaria
-  range: null
-  raw_description: '**Septic Malaria** (__disease The victim can''t reduce its __sickened__
-    condition while it''s affected by septic malaria__) **Saving Throw** DC 24 Fortitude;
-    **Onset** 1 day; **Stage 1** sickened 1 (1 day); **Stage 2** __drained 1__ and
-    sickened 1 (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** __unconscious__
-    (1 day); **Stage 5** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease The victim can't reduce its sickened condition while it's affected by
-    septic malaria
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 14
   fort_misc: null
@@ -98,32 +102,28 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 - scent (imprecise) 60 feet
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 175
+  page_start: '175'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 4 rounds
+  name: Stingray Venom
+  range: null
+  raw_description: '**Stingray Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
+    **Maximum Duration** 4 rounds; **Stage 1** 1d4 poison damage (1 round); **Stage
+    2** 1d6 poison damage and __clumsy 1__ (1 round)'
+  requirements: null
+  saving_throw: DC 16 Fortitude
+  stages:
+  - effect: 1d4 poison damage (1 round)
+  - effect: 1d6 poison damage and __clumsy 1__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Found in salt or fresh water, stingrays are normally passive creatures,
@@ -21,11 +46,8 @@ description: 'Found in salt or fresh water, stingrays are normally passive creat
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 14'
 hp: 15
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -40,35 +62,7 @@ melee:
   - finesse
 name: Stingray
 perception: 6
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 16 Fortitude; **Maximum Duration** 4 rounds; **Stage
-    1** 1d4 poison damage (1 round); **Stage 2** 1d6 poison damage and __clumsy 1__
-    (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stingray Venom
-  range: null
-  raw_description: '**Stingray Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
-    **Maximum Duration** 4 rounds; **Stage 1** 1d4 poison damage (1 round); **Stage
-    2** 1d6 poison damage and __clumsy 1__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 5
   fort_misc: null
@@ -85,44 +79,42 @@ sense_abilities:
     at the listed range to detect living creatures that are in the same body of water
     as itself.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Electrolocation
   range: null
   raw_description: '**Electrolocation** A stingray in water can use its electrolocation
     as an imprecise sense at the listed range to detect living creatures that are
     in the same body of water as itself.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +6
 - electrolocation (imprecise) 30 feet
 - low-light vision
 size: Medium
 skills:
 - bonus: 5
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 226
+  page_start: '226'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null

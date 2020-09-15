@@ -7,6 +7,102 @@ ability_mods:
   wis_mod: 1
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The troll king regains 15 HP.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Forced Regeneration
+  range: null
+  raw_description: '**Forced Regeneration** [One Action]  (__concentrate__) **Requirements**
+    The troll king''s regeneration is not currently deactivated. **Effect** The troll
+    king regains 15 HP.'
+  requirements: The troll king's regeneration is not currently deactivated.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: One Action
+  critical_failure: The creature is frightened 3.
+  critical_success: The creature is unaffected.
+  description: The troll king unleashes a bestial roar. Each non-troll creature within
+    100 feet must attempt a DC 29 Will save. The creature is then temporarily immune
+    for 10 minutes.
+  effect: null
+  failure: The creature is frightened 2.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Primordial Roar
+  range: null
+  raw_description: '**Primordial Roar** [One Action]  (__auditory__, __emotion__,
+    __fear__, __mental__) The troll king unleashes a bestial roar. Each non-troll
+    creature within 100 feet must attempt a DC 29 Will save. The creature is then
+    temporarily immune for 10 minutes.**Critical Success** The creature is unaffected.**Success**
+    The creature is frightened 1.**Failure** The creature is frightened 2.**Critical
+    Failure** The creature is frightened 3.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is frightened 1.
+  traits:
+  - auditory
+  - emotion
+  - fear
+  - mental
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**Rend** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The troll king Strides twice in a straight line. It can make up to
+    two claw Strikes during this movement and one jaws Strike at the end of its movement.
+    It can't Strike the same creature more than once.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Unstoppable Charge
+  range: null
+  raw_description: '**Unstoppable Charge** [Three Actions]  The troll king Strides
+    twice in a straight line. It can make up to two claw Strikes during this movement
+    and one jaws Strike at the end of its movement. It can''t Strike the same creature
+    more than once.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +114,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,35 +129,12 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The troll king shakes itself to remove persistent acid or fire effects.
-    The troll king immediately attempts a DC 15 flat check to end the persistent damage
-    that triggered this reaction. If the troll king succeeds at this check, it can
-    immediately use Primordial Roar as part of this reaction.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Vigorous Shake
-  range: null
-  raw_description: '**Vigorous Shake** [Reaction] **Trigger** The troll king takes
-    persistent acid or fire damage. **Effect** The troll king shakes itself to remove
-    persistent acid or fire effects. The troll king immediately attempts a DC 15 flat
-    check to end the persistent damage that triggered this reaction. If the troll
-    king succeeds at this check, it can immediately use Primordial Roar as part of
-    this reaction.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The troll king takes persistent acid or fire damage.
 description: Some trolls have learned the skills necessary to survive well beyond
   the typical life expectancy for their kind and rally others to follow their lead.
   These champions develop a number of talents that make them worthy leaders and potent
@@ -72,13 +145,11 @@ description: Some trolls have learned the skills necessary to survive well beyon
   even closer. If a troll king so much as suspects that one of its followers is plotting
   to usurp it, retribution is swift and fatal.
 hp: 220
-hp_misc: regeneration 30 (deactivated by acid or fire
-immunities: null
-items: null
+hp_misc: regeneration 30 (deactivated by acid or fire)
 languages:
 - Jotun
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+13
@@ -100,106 +171,7 @@ melee:
   - reach 10 feet
 name: Troll King
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The troll king's regeneration is not currently deactivated.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Forced Regeneration
-  range: null
-  raw_description: '**Forced Regeneration**   (__concentrate__) **Requirements** The
-    troll king''s regeneration is not currently deactivated. **Effect** The troll
-    king regains 15 HP.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: One Action
-  critical_failure: The creature is frightened 3.
-  critical_success: The creature is unaffected.Success The creature is frightened
-    1.Failure The creature is frightened 2.Critical Failure The creature is frightened
-    3.
-  description: The troll king unleashes a bestial roar. Each non-troll creature within
-    100 feet must attempt a DC 29 Will save. The creature is then temporarily immune
-    for 10 minutes.
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.Critical Failure The creature is frightened
-    3.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Primordial Roar
-  range: null
-  raw_description: '**Primordial Roar**   (__auditory__, __emotion__, __fear__, __mental__)
-    The troll king unleashes a bestial roar. Each non-troll creature within 100 feet
-    must attempt a DC 29 Will save. The creature is then temporarily immune for 10
-    minutes.**Critical Success** The creature is unaffected.**Success** The creature
-    is frightened 1.**Failure** The creature is frightened 2.**Critical Failure**
-    The creature is frightened 3.'
-  requirements: null
-  success: The creature is frightened 1.Failure The creature is frightened 2.Critical
-    Failure The creature is frightened 3.
-  traits:
-  - auditory
-  - emotion
-  - fear
-  - mental
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The troll king Strides twice in a straight line. It can make up to
-    two claw Strikes during this movement and one jaws Strike at the end of its movement.
-    It can't Strike the same creature more than once.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Unstoppable Charge
-  range: null
-  raw_description: '**Unstoppable Charge** [Three Actions]  The troll king Strides
-    twice in a straight line. It can make up to two claw Strikes during this movement
-    and one jaws Strike at the end of its movement. It can''t Strike the same creature
-    more than once.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 23
   fort_misc: null
@@ -208,35 +180,32 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 size: Large
 skills:
 - bonus: 21
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 17
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 315
+  page_start: '315'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Large
 - Giant
 - Troll
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: fire

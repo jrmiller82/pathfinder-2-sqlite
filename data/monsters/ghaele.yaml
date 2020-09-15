@@ -7,6 +7,92 @@ ability_mods:
   wis_mod: 4
 ac: 34
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: A ghaele attempts to Recall Knowledge about a foe it is facing. If
+    successful, it can change the elemental damage dealt by its greatsword and light
+    ray to acid, cold, electricity, fire, or sonic, usually to match the a foe's weakness.
+    It can also change its energy resistance to any of these energy types (this can
+    be a different type than for its attacks). The choices remain until it next uses
+    Choose Weakness.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Choose Weakness
+  range: null
+  raw_description: '**Choose Weakness** [One Action]  (__concentrate__, __divination__,
+    __divine__, __evocation__, __manipulate__) A ghaele attempts to Recall Knowledge
+    about a foe it is facing. If successful, it can change the elemental damage dealt
+    by its greatsword and light ray to acid, cold, electricity, fire, or sonic, usually
+    to match the a foe''s weakness. It can also change its energy resistance to any
+    of these energy types (this can be a different type than for its attacks). The
+    choices remain until it next uses Choose Weakness.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divination
+  - divine
+  - evocation
+  - manipulate
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: When a ghaele fixes its gaze upon a non-good creature, the creature
+    suffers the effects of __divine decree__ (DC 33 Will save). If it survives, the
+    creature is temporarily immune to Ghaele's Gaze for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ghaele's Gaze
+  range: null
+  raw_description: '**Ghaele''s Gaze** [One Action]  (__divine__, __evocation__, __visual__)
+    When a ghaele fixes its gaze upon a non-good creature, the creature suffers the
+    effects of __divine decree__ (DC 33 Will save). If it survives, the creature is
+    temporarily immune to Ghaele''s Gaze for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - evocation
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any weapon becomes a +2 __holy__ __striking__ weapon while the ghaele
+    wields it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Holy Blade
+  range: null
+  raw_description: '**Holy Blade** (__divine__, __evocation__) Any weapon becomes
+    a +2 __holy__ __striking__ weapon while the ghaele wields it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - evocation
+  trigger: null
 alignment: CG
 automatic_abilities:
 - action_cost: Free Action
@@ -17,12 +103,15 @@ automatic_abilities:
     can overpower any eflect that would interfere with its swordplay. The ghaele attempts
     to counteract each effect that prevents it from making a greatsword Strike, gives
     it a penalty to its greatsword Strike, or prevents it from acting. The ghaele
-    can use this ability even if it's otherwise unable to act.
-  effects: null
+    can use this ability even if it's otherwise unable to act.**Light Form** A ghaele's
+    body is partially corporeal and partially composed of light, with a color corresponding
+    to the elemental energy currently residing in its blade (see Choose Weakness).
+    It can move through solid objects but can't end its action within a solid object.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Free Blade
   range: null
   raw_description: '**Free Blade** [Free Action] **Trigger** The ghaele ends its turn
@@ -37,6 +126,8 @@ automatic_abilities:
     in its blade (see Choose Weakness). It can move through solid objects but can''t
     end its action within a solid object.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The ghaele ends its turn while unable to act or attempts a greatsword Strike
@@ -57,7 +148,6 @@ description: 'Ghaeles are fiend-hunting knights of Elysium and champions of the 
   **__Recall Knowledge - Celestial__ (__Religion__)**: DC 31'
 hp: 235
 hp_misc: null
-immunities: null
 items:
 - +1 greatsword
 languages:
@@ -66,15 +156,17 @@ languages:
 - Infernal
 - tongues
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+13
     type: slashing
   name: holy greatsword
   plus_damage:
-  - formula: 1d6
-    type: good and 1d6 other (see Choose Weakness)
+  - formula: null
+    type: 1d6 good
+  - formula: null
+    type: 1d6 other (see Choose Weakness)
   to_hit: 28
   traits:
   - good
@@ -82,117 +174,25 @@ melee:
   - versatile P
 name: Ghaele
 perception: 25
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: A ghaele attempts to Recall Knowledge about a foe it is facing. If
-    successful, it can change the elemental damage dealt by its greatsword and light
-    ray to acid, cold, electricity, fire, or sonic, usually to match the a foe's weakness.
-    It can also change its energy resistance to any of these energy types (this can
-    be a different type than for its attacks). The choices remain until it next uses
-    Choose Weakness.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Choose Weakness
-  range: null
-  raw_description: '**Choose Weakness**   (__concentrate__, __divination__, __divine__,
-    __evocation__, __manipulate__) A ghaele attempts to Recall Knowledge about a foe
-    it is facing. If successful, it can change the elemental damage dealt by its greatsword
-    and light ray to acid, cold, electricity, fire, or sonic, usually to match the
-    a foe''s weakness. It can also change its energy resistance to any of these energy
-    types (this can be a different type than for its attacks). The choices remain
-    until it next uses Choose Weakness.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divination
-  - divine
-  - evocation
-  - manipulate
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: When a ghaele fixes its gaze upon a non-good creature, the creature
-    suffers the effects of __divine decree__ (DC 33 Will save). If it survives, the
-    creature is temporarily immune to Ghaele's Gaze for 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ghaele's Gaze
-  range: null
-  raw_description: '**Ghaele''s Gaze**   (__divine__, __evocation__, __visual__) When
-    a ghaele fixes its gaze upon a non-good creature, the creature suffers the effects
-    of __divine decree__ (DC 33 Will save). If it survives, the creature is temporarily
-    immune to Ghaele''s Gaze for 1 minute.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any weapon becomes a +2 __holy__ __striking__ weapon while the ghaele
-    wields it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Holy Blade
-  range: null
-  raw_description: '**Holy Blade** (__divine__, __evocation__) Any weapon becomes
-    a +2 __holy__ __striking__ weapon while the ghaele wields it.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12
-    type: chaotic
+    formula: null
+    type: 1d12 chaotic
   name: light ray
   plus_damage:
-  - formula: 1d12
-    type: good
+  - formula: null
+    type: 1d12 good
   to_hit: 25
   traits:
   - chaotic
   - good
   - light
   - range 300 feet
-rarity: Common
 resistances:
 - amount: 15
-  type: energy (see Choose Weakness)
-ritual_lists:
-- dc: 33
-  misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: resurrect
-      requirement: null
-  to_hit: null
+  misc: see Choose Weakness
+  type: energy
 saves:
   fort: 26
   fort_misc: null
@@ -201,147 +201,131 @@ saves:
   ref_misc: null
   will: 23
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +25
 - darkvision
 - see invisibility
 size: Medium
 skills:
 - bonus: 27
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 26
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 26
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 23
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 23
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 21
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 26
   misc: null
-  name: 'Warfare Lore '
-source:
+  name: Warfare Lore
+sources:
 - abbr: Bestiary
-  page_start: 33
+  page_start: '33'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 100
+  misc: null
   type: fly
 spell_lists:
-- dc: 33
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips:
+  - level: 7
     spells:
-    - frequency: null
-      name: chromatic wall
-      requirement: null
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: prismatic spray
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: null
-      name: illusory scene
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: banishment
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: x4
-      name: heal
-      requirement: null
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-    - frequency: null
-      name: restoration
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: mind reading
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: continual flame
-      requirement: null
-    - frequency: at will
-      name: dispel magic
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: at will, evil only
-      name: detect alignment
-      requirement: null
-    - frequency: at will
-      name: illusory disguise
-      requirement: null
-  - heightened_level: 7
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-  - heightened_level: 7
-    level: -1
+  constants:
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: see invisibility
-      requirement: null
-  - heightened_level: 5
-    level: -1
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: null
+  dc: 33
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: null
+      name: chromatic wall
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: heal
+    - misc: null
+      name: prismatic spray
+  - level: 6
+    spells:
+    - misc: null
+      name: illusory scene
+  - level: 5
+    spells:
+    - misc: null
+      name: banishment
+  - level: 4
+    spells:
+    - misc: x4
+      name: heal
+    - misc: at will; self only
+      name: invisibility
+    - misc: null
+      name: restoration
+  - level: 3
+    spells:
+    - misc: null
+      name: mind reading
+  - level: 2
+    spells:
+    - misc: at will
+      name: continual flame
+    - misc: at will
+      name: dispel magic
+  - level: 1
+    spells:
+    - misc: null
+      name: charm
+    - misc: at will; evil only
+      name: detect alignment
+    - misc: at will
+      name: illusory disguise
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 33
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: resurrect
+  spells_source: Divine Rituals
 traits:
-- CG
-- Medium
 - Azata
 - Celestial
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: cold iron
 - amount: 15
+  misc: null
   type: evil

@@ -7,6 +7,57 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Until the scythe tree acts, it appears to be a dead tree. It has an
+    automatic result of 35 on __Deception__ checks and DCs to pass as a dead tree.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dead Tree
+  range: null
+  raw_description: '**Dead Tree** [One Action]  (__concentrate__) Until the scythe
+    tree acts, it appears to be a dead tree. It has an automatic result of 35 on __Deception__
+    checks and DCs to pass as a dead tree.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The scythe tree Strides up to 25 feet toward the triggering creature. Once
+    the creature is in reach, the scythe tree makes a scythe branch Strike against
+    it. The creature is __flat-footed__ against this Strike.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Woodland Ambush
+  range: null
+  raw_description: '**Woodland Ambush** [One Action]  **Requirements** The scythe
+    tree is using Dead Tree in forested terrain, and a creature that hasn''t detected
+    it is within 30 feet; **Effect** The scythe tree Strides up to 25 feet toward
+    the triggering creature. Once the creature is in reach, the scythe tree makes
+    a scythe branch Strike against it. The creature is __flat-footed__ against this
+    Strike.'
+  requirements: The scythe tree is using Dead Tree in forested terrain, and a creature
+    that hasn't detected it is within 30 feet
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -14,16 +65,18 @@ automatic_abilities:
   critical_success: null
   description: A scythe tree takes 5 additional damage from __axes__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Axe Vulnerability
   range: null
   raw_description: '**Axe Vulnerability** A scythe tree takes 5 additional damage
     from __axes__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -32,21 +85,23 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The scythe tree attempts to __Disarm__ the creature.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ripping Disarm
   range: null
   raw_description: '**Ripping Disarm [Reaction]** **Trigger** A creature rolls a critical
     failure on a melee weapon Strike against the scythe tree; **Effect** The scythe
     tree attempts to __Disarm__ the creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature rolls a critical failure on a melee weapon Strike against the
-    scythe tree
+    scythe tree;
 description: 'Malevolent, vicious, and cruel, scythe trees pose as normal trees near
   deep forest paths, where they wait to slaughter passersby. Instead of drawing sustenance
   from light and soil, scythe trees gorge themselves on the flesh, blood, and bone
@@ -84,14 +139,12 @@ description: 'Malevolent, vicious, and cruel, scythe trees pose as normal trees 
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 22'
 hp: 105
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Arboreal
 - Sylvan
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+9
@@ -105,58 +158,14 @@ melee:
   - reach 15 feet
 name: Scythe Tree
 perception: 14
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Until the scythe tree acts, it appears to be a dead tree. It has an
-    automatic result of 35 on __Deception__ checks and DCs to pass as a dead tree.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dead Tree
-  range: null
-  raw_description: '**Dead Tree**   (__concentrate__) Until the scythe tree acts,
-    it appears to be a dead tree. It has an automatic result of 35 on __Deception__
-    checks and DCs to pass as a dead tree.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The scythe tree is using Dead Tree in forested terrain, and a creature that
-    hasn't detected it is within 30 feet
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Woodland Ambush
-  range: null
-  raw_description: '**Woodland Ambush**   **Requirements** The scythe tree is using
-    Dead Tree in forested terrain, and a creature that hasn''t detected it is within
-    30 feet; **Effect** The scythe tree Strides up to 25 feet toward the triggering
-    creature. Once the creature is in reach, the scythe tree makes a scythe branch
-    Strike against it. The creature is __flat-footed__ against this Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 17
   fort_misc: null
@@ -165,30 +174,25 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - lifesense 30 feet
 - low-light vision
 size: Huge
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: +14 in forests
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 235
+  page_start: '235'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Huge
 - Plant
-type: Creature
-weaknesses: null

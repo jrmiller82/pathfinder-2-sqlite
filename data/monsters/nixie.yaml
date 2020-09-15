@@ -7,6 +7,36 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The nixie can duplicate any 1st-level spell or produce any effect with a
+    power level in line with a 1st-level spell, but only in response to the request
+    or desire of a non-fey creature. The creature whose desire is granted can never
+    again benefit from that particular nixie's Grant Desire ability.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Grant Desire
+  range: null
+  raw_description: '**Grant Desire** [Three Actions]  (__divination__, __primal__)
+    **Frequency** once per day; **Effect** The nixie can duplicate any 1st-level spell
+    or produce any effect with a power level in line with a 1st-level spell, but only
+    in response to the request or desire of a non-fey creature. The creature whose
+    desire is granted can never again benefit from that particular nixie''s Grant
+    Desire ability.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divination
+  - primal
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These aquatic fey often guard ponds, rivers, lakes, and springs, protecting
@@ -54,17 +84,15 @@ description: 'These aquatic fey often guard ponds, rivers, lakes, and springs, p
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 15'
 hp: 25
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aquan
 - Sylvan
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: slashing
+    formula: null
+    type: 1d6 slashing
   name: claw
   plus_damage: null
   to_hit: 7
@@ -73,38 +101,7 @@ melee:
   - finesse
 name: Nixie
 perception: 6
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The nixie can duplicate any 1st-level spell or produce any effect with a
-    power level in line with a 1st-level spell, but only in response to the request
-    or desire of a non-fey creature. The creature whose desire is granted can never
-    again benefit from that particular nixie's Grant Desire ability.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Grant Desire
-  range: null
-  raw_description: '**Grant Desire** [Three Actions]  (__divination__, __primal__)
-    **Frequency** once per day; **Effect** The nixie can duplicate any 1st-level spell
-    or produce any effect with a power level in line with a 1st-level spell, but only
-    in response to the request or desire of a non-fey creature. The creature whose
-    desire is granted can never again benefit from that particular nixie''s Grant
-    Desire ability.'
-  requirements: null
-  success: null
-  traits:
-  - divination
-  - primal
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -120,70 +117,69 @@ sense_abilities:
   description: The nixie can use __Diplomacy__ to __Make an Impression__ on and make
     very simple Requests of __aquatic__ or __amphibious__ animals.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wild Empathy
   range: null
   raw_description: '**Wild Empathy** The nixie can use __Diplomacy__ to __Make an
     Impression__ on and make very simple Requests of __aquatic__ or __amphibious__
     animals.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +6
 - low-light vision
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 183
+  page_start: '183'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: swim
 spell_lists:
-- dc: 17
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 9
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: water breathing
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: charm
-      requirement: null
-    - frequency: null
+    - misc: null
       name: hydraulic push
-      requirement: null
-  to_hit: 9
+  spells_source: Primal Innate Spells
 traits:
-- N
-- Small
 - Aquatic
 - Fey
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: cold iron

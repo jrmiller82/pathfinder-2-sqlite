@@ -7,6 +7,66 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: claw
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rend
+  range: null
+  raw_description: '**__Rend__** [One Action]  claw'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A cavern troll can burrow through solid stone at a Speed of 10 feet.
+    It can leave a tunnel if it desires.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rock Tunneler
+  range: null
+  raw_description: '**Rock Tunneler** A cavern troll can burrow through solid stone
+    at a Speed of 10 feet. It can leave a tunnel if it desires.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -20,11 +80,11 @@ automatic_abilities:
     petrify a cavern troll, but the troll is slowed 1 for 1d4 rounds after being exposed
     to such an effect.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sunlight Petrification
   range: null
   raw_description: '**Sunlight Petrification** If exposed to direct sunlight, a cavern
@@ -35,6 +95,8 @@ automatic_abilities:
     create magical sunlight cannot petrify a cavern troll, but the troll is slowed
     1 for 1d4 rounds after being exposed to such an effect.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -47,11 +109,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -62,6 +124,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -71,15 +135,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**__Catch Rock__ [Reaction]**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -99,15 +165,14 @@ description: 'Insatiable scavengers stalking the eternal gloom of the Darklands,
   large, crystalline fangs. A typical cavern troll stands 14 feet in height and weighs
   about 2,000 pounds.'
 hp: 135
-hp_misc: regeneration 20 (deactivated by acid or sonic
+hp_misc: regeneration 20 (deactivated by acid or sonic)
 immunities:
 - bleed
-items: null
 languages:
 - Jotun
 - Undercommon
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+8
@@ -129,65 +194,7 @@ melee:
   - reach 10 feet
 name: Cavern Troll
 perception: 14
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: claw
-  effect: The monster automatically deals that Strike's damage again to the enemy.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rend
-  range: null
-  raw_description: A Rend entry lists a Strike the monster has. **Requirements** The
-    monster hit the same enemy with two consecutive Strikes of the listed type in
-    the same round. **Effect** The monster automatically deals that Strike's damage
-    again to the enemy.
-  requirements: The monster hit the same enemy with two consecutive Strikes of the
-    listed type in the same round.
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A cavern troll can burrow through solid stone at a Speed of 10 feet.
-    It can leave a tunnel if it desires.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rock Tunneler
-  range: null
-  raw_description: '**Rock Tunneler** A cavern troll can burrow through solid stone
-    at a Speed of 10 feet. It can leave a tunnel if it desires.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**__Throw Rock__**   '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+8
@@ -199,8 +206,6 @@ ranged:
   - brutal
   - range increment 120 feet
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 18
   fort_misc: null
@@ -209,36 +214,32 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - darkvision
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary 2
-  page_start: 265
+  page_start: '265'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: burrow
 - amount: 20
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- Uncommon
-- CE
-- Large
 - Earth
 - Giant
 - Troll
-type: Creature
-weaknesses: null

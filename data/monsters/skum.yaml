@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 0
 ac: 16
 ac_special: null
+active_abilities: null
 alignment: LE
 automatic_abilities: null
 description: 'The most numerous of the alghollthus are the ulat-kinis, a servitor
@@ -18,7 +19,7 @@ description: 'The most numerous of the alghollthus are the ulat-kinis, a servito
   defeats and purposeful exterminations enacted by their enemies. Ulat-kini society
   degenerated, so that now only a few enclaves exist in the depths of the earth or
   along isolated coastlines. Few remember their own species'' name, instead using
-  the epithet their foes gave them: "skum."
+  the epithet their foes gave them: “skum.”
 
 
 
@@ -26,14 +27,13 @@ description: 'The most numerous of the alghollthus are the ulat-kinis, a servito
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
 hp: 40
 hp_misc: null
-immunities: null
 items:
 - trident
 languages:
 - Alghollthu
 - Undercommon
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -61,8 +61,7 @@ melee:
   traits: null
 name: Skum
 perception: 6
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+3
@@ -72,11 +71,10 @@ ranged:
   to_hit: 7
   traits:
   - thrown 20 feet
-rarity: Common
 resistances:
 - amount: 5
+  misc: null
   type: cold
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -85,35 +83,31 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 12
+  page_start: '12'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- LE
-- Medium
 - Amphibious
 - Humanoid
-type: Creature
-weaknesses: null

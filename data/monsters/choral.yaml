@@ -7,29 +7,82 @@ ability_mods:
   wis_mod: 4
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: On a critical hit with piercing hymn, the target is __deafened__ for
+    1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deafening Aria
+  range: null
+  raw_description: '**Deafening Aria** On a critical hit with piercing hymn, the target
+    is __deafened__ for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The choral angel adds its harmony to a choral angel ally within its
+    harmonizing aura. The ally can cast __calm emotions__ or __heroism__ on its next
+    turn in place of its 3rd-level __sound burst__ or heighten its 3rd-level __sound
+    burst__ by 1 level. If five different choral angels use Harmonize on the same
+    choral angel ally, it can instead cast __divine decree__ in place of its 3rd-level
+    __sound burst__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Harmonize
+  range: null
+  raw_description: '**Harmonize** [One Action]  The choral angel adds its harmony
+    to a choral angel ally within its harmonizing aura. The ally can cast __calm emotions__
+    or __heroism__ on its next turn in place of its 3rd-level __sound burst__ or heighten
+    its 3rd-level __sound burst__ by 1 level. If five different choral angels use
+    Harmonize on the same choral angel ally, it can instead cast __divine decree__
+    in place of its 3rd-level __sound burst__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. Allies in the area gain a +2 status bonus to sonic damage
-    rolls and a +1 status bonus to AC and all saves against sonic and auditory effects.
-    Enemies in the area take a -2 status penalty to sonic damage rolls and a -1 status
-    penalty to AC and all saves against sonic and auditory effects.
+  description: Allies in the area gain a +2 status bonus to sonic damage rolls and
+    a +1 status bonus to AC and all saves against sonic and auditory effects. Enemies
+    in the area take a –2 status penalty to sonic damage rolls and a –1 status penalty
+    to AC and all saves against sonic and auditory effects.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Harmonizing Aura
-  range: null
+  range: 20 feet
   raw_description: '**Harmonizing Aura** (__aura__, __divine__, __evocation__, __sonic__)
     20 feet. Allies in the area gain a +2 status bonus to sonic damage rolls and a
     +1 status bonus to AC and all saves against sonic and auditory effects. Enemies
-    in the area take a -2 status penalty to sonic damage rolls and a -1 status penalty
+    in the area take a –2 status penalty to sonic damage rolls and a –1 status penalty
     to AC and all saves against sonic and auditory effects.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -46,23 +99,21 @@ description: "Choral angels are incredible singers who \x1Ffill the halls of Nir
   \ 22"
 hp: 100
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Celestial
 - Draconic
 - Infernal
 - tongues
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d6+1
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 1d6
-    type: good
+  - formula: null
+    type: 1d6 good
   to_hit: 14
   traits:
   - agile
@@ -71,84 +122,27 @@ melee:
   - magical
 name: Choral
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: On a critical hit with piercing hymn, the target is __deafened__ for
-    1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deafening Aria
-  range: null
-  raw_description: '**Deafening Aria** On a critical hit with piercing hymn, the target
-    is __deafened__ for 1 minute.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The choral angel adds its harmony to a choral angel ally within its
-    harmonizing aura. The ally can cast __calm emotions__ or __heroism__ on its next
-    turn in place of its 3rd-level __sound burst__ or heighten its 3rd-level __sound
-    burst__ by 1 level. If five different choral angels use Harmonize on the same
-    choral angel ally, it can instead cast __divine decree__ in place of its 3rd-level
-    __sound burst__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Harmonize
-  range: null
-  raw_description: '**Harmonize**   The choral angel adds its harmony to a choral
-    angel ally within its harmonizing aura. The ally can cast __calm emotions__ or
-    __heroism__ on its next turn in place of its 3rd-level __sound burst__ or heighten
-    its 3rd-level __sound burst__ by 1 level. If five different choral angels use
-    Harmonize on the same choral angel ally, it can instead cast __divine decree__
-    in place of its 3rd-level __sound burst__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d6
-    type: sonic damage
+    formula: null
+    type: 4d6 sonic damage
   name: piercing hymn
   plus_damage:
-  - formula: 1d6
-    type: good and deafening aria
+  - formula: null
+    type: 1d6 good
+  - formula: null
+    type: deafening aria
   to_hit: 17
   traits:
   - good
   - magical
   - range 90 feet
   - sonic
-rarity: Common
 resistances:
 - amount: 5
-  type: sonic
-ritual_lists:
-- dc: 23
   misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: angelic messenger
-      requirement: null
-  to_hit: null
+  type: sonic
 saves:
   fort: 10
   fort_misc: null
@@ -157,96 +151,92 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - darkvision
 size: Small
 skills:
 - bonus: 12
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 17
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 14
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: Bestiary
-  page_start: 17
+  page_start: '17'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 23
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+- attack_bonus: 13
+  cantrips:
+  - level: 3
     spells:
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: remove curse
-      requirement: null
-    - frequency: null
-      name: remove disease
-      requirement: null
-    - frequency: at will
-      name: remove fear
-      requirement: null
-    - frequency: null
-      name: sound burst
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-    - frequency: at will
-      name: sound burst
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
-      name: counter performance
-      requirement: null
-  - heightened_level: 3
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-    - frequency: null
+    - misc: null
       name: inspire competence
-      requirement: null
-    - frequency: null
+    - misc: null
       name: inspire courage
-      requirement: null
-  - heightened_level: 5
-    level: -1
+  constants:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: 13
+  dc: 23
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: heal
+    - misc: null
+      name: remove curse
+    - misc: null
+      name: remove disease
+    - misc: at will
+      name: remove fear
+    - misc: null
+      name: sound burst
+  - level: 2
+    spells:
+    - misc: at will, self only
+      name: invisibility
+    - misc: at will
+      name: sound burst
+  - level: 1
+    spells:
+    - misc: at will
+      name: counter performance
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 23
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: angelic messenger
+  spells_source: Divine Rituals
 traits:
-- NG
-- Small
 - Angel
 - Celestial
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: evil

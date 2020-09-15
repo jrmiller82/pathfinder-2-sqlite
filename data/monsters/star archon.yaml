@@ -7,6 +7,71 @@ ability_mods:
   wis_mod: 9
 ac: 43
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Once per day, if an archon sees another creature cast dimension door,
+    the archon can use __dimension door__ (heightened to 5th level) within 1 round
+    to attempt to follow that creature to the maximum distance of the archon's dimension
+    door. If the archon's dimension door has enough distance, the archon appears the
+    same distance and direction from the creature as before either creature used dimension
+    door.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Archon's Door
+  range: null
+  raw_description: '**Archon''s Door** Once per day, if an archon sees another creature
+    cast dimension door, the archon can use __dimension door__ (heightened to 5th
+    level) within 1 round to attempt to follow that creature to the maximum distance
+    of the archon''s dimension door. If the archon''s dimension door has enough distance,
+    the archon appears the same distance and direction from the creature as before
+    either creature used dimension door.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The star archon calculates a celestial constellation and sends their
+    starknife flying along that path from one foe to the next. It makes a starknife
+    Strike against a target within 60 feet. If the Strike hits, it can make another
+    Strike at a different target within 60 feet of the first target, and so on, until
+    it misses with a Strike or runs out of targets it hasn't attacked within range
+    of the most recent target. The star archon can attack a given target only once
+    per use of this ability. These attacks don't apply any range increment penalty,
+    and the star archon resolves all the attacks before increasing the multiple attack
+    penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Prudent Asterism
+  range: null
+  raw_description: '**Prudent Asterism** [Two Actions]  The star archon calculates
+    a celestial constellation and sends their starknife flying along that path from
+    one foe to the next. It makes a starknife Strike against a target within 60 feet.
+    If the Strike hits, it can make another Strike at a different target within 60
+    feet of the first target, and so on, until it misses with a Strike or runs out
+    of targets it hasn''t attacked within range of the most recent target. The star
+    archon can attack a given target only once per use of this ability. These attacks
+    don''t apply any range increment penalty, and the star archon resolves all the
+    attacks before increasing the multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LG
 automatic_abilities:
 - action_cost: None
@@ -18,11 +83,11 @@ automatic_abilities:
     creature is __blinded__ for 1d4 rounds instead. The creature is then temporarily
     immune for 1 round.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Blinding Soul
   range: null
   raw_description: '**Blinding Soul** (__divine__, __evocation__, __light__, __visual__)
@@ -32,6 +97,8 @@ automatic_abilities:
     __blinded__ for 1d4 rounds instead. The creature is then temporarily immune for
     1 round.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -48,11 +115,11 @@ automatic_abilities:
     and critically fails its save is permanently __blinded__ as well. The slain star
     archon reincarnates 1d4 rounds later as a __shield archon__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Explosive Rebirth
   range: null
   raw_description: '**Explosive Rebirth** (__death__, __divine__, __evocation__, __fire__,
@@ -62,6 +129,8 @@ automatic_abilities:
     and critically fails its save is permanently __blinded__ as well. The slain star
     archon reincarnates 1d4 rounds later as a __shield archon__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - death
@@ -76,17 +145,19 @@ automatic_abilities:
   description: A star archon can also make a Retributive Strike by throwing its starknife,
     and the enemy and ally can be within 60 feet instead of 15 feet.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Retributive Strike
   range: null
   raw_description: '**__Retributive Strike__ [Reaction]** A star archon can also make
     a Retributive Strike by throwing its starknife, and the enemy and ally can be
     within 60 feet instead of 15 feet.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -106,7 +177,6 @@ description: 'Embodiments of the virtue of prudence, star archons serve as philo
   **__Recall Knowledge - Celestial__ (__Religion__)**: DC 39'
 hp: 400
 hp_misc: null
-immunities: null
 items:
 - +2 greater striking returning starknife
 - +2 greater resilient full plate
@@ -116,15 +186,17 @@ languages:
 - Infernal
 - tongues
 level: 19
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d4+16
     type: piercing
   name: returning starknife
   plus_damage:
-  - formula: 2d6
-    type: good and 3d6 fire
+  - formula: null
+    type: 2d6 good
+  - formula: null
+    type: 3d6 fire
   to_hit: 38
   traits:
   - agile
@@ -136,76 +208,17 @@ melee:
   - versatile S
 name: Star Archon
 perception: 35
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Once per day, if an archon sees another creature cast dimension door,
-    the archon can use __dimension door__ (heightened to 5th level) within 1 round
-    to attempt to follow that creature to the maximum distance of the archon's dimension
-    door. If the archon's dimension door has enough distance, the archon appears the
-    same distance and direction from the creature as before either creature used dimension
-    door.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Archon's Door
-  range: null
-  raw_description: '**Archon''s Door** Once per day, if an archon sees another creature
-    cast dimension door, the archon can use __dimension door__ (heightened to 5th
-    level) within 1 round to attempt to follow that creature to the maximum distance
-    of the archon''s dimension door. If the archon''s dimension door has enough distance,
-    the archon appears the same distance and direction from the creature as before
-    either creature used dimension door.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The star archon calculates a celestial constellation and sends their
-    starknife flying along that path from one foe to the next. It makes a starknife
-    Strike against a target within 60 feet. If the Strike hits, it can make another
-    Strike at a different target within 60 feet of the first target, and so on, until
-    it misses with a Strike or runs out of targets it hasn't attacked within range
-    of the most recent target. The star archon can attack a given target only once
-    per use of this ability. These attacks don't apply any range increment penalty,
-    and the star archon resolves all the attacks before increasing the multiple attack
-    penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Prudent Asterism
-  range: null
-  raw_description: '**Prudent Asterism** [Two Actions]  The star archon calculates
-    a celestial constellation and sends their starknife flying along that path from
-    one foe to the next. It makes a starknife Strike against a target within 60 feet.
-    If the Strike hits, it can make another Strike at a different target within 60
-    feet of the first target, and so on, until it misses with a Strike or runs out
-    of targets it hasn''t attacked within range of the most recent target. The star
-    archon can attack a given target only once per use of this ability. These attacks
-    don''t apply any range increment penalty, and the star archon resolves all the
-    attacks before increasing the multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 3d4+16
     type: piercing
   name: starknife
   plus_damage:
-  - formula: 2d6
-    type: good and 3d6 fire
+  - formula: null
+    type: 2d6 good
+  - formula: null
+    type: 3d6 fire
   to_hit: 38
   traits:
   - agile
@@ -214,11 +227,10 @@ ranged:
   - magical
   - thrown 60 feet
   - versatile S
-rarity: Common
 resistances:
 - amount: 15
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 31
   fort_misc: null
@@ -227,106 +239,92 @@ saves:
   ref_misc: null
   will: 34
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +35
 - darkvision
 - true seeing
 size: Medium
 skills:
 - bonus: 31
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 33
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 37
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 33
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 33
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 33
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 37
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 33
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 39
   misc: null
-  name: 'Warfare Lore '
-source:
+  name: Warfare Lore
+sources:
 - abbr: Bestiary 2
-  page_start: 23
+  page_start: '23'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 75
+  misc: null
   type: fly
 spell_lists:
-- dc: 43
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: null
-      name: blindness
-      requirement: null
-    - frequency: null
-      name: implosion
-      requirement: null
-    - frequency: null
-      name: sunburst
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: prismatic spray
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: sending
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: 5
-    level: -1
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  to_hit: null
+  dc: 43
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 9
+    spells:
+    - misc: null
+      name: blindness
+    - misc: null
+      name: implosion
+    - misc: null
+      name: sunburst
+  - level: 7
+    spells:
+    - misc: null
+      name: heal
+    - misc: null
+      name: prismatic spray
+  - level: 5
+    spells:
+    - misc: null
+      name: sending
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+  spells_source: Divine Innate Spells
 traits:
-- LG
-- Medium
 - Archon
 - Celestial
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: evil

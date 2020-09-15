@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 0
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The air mephit breathes sand and grit in a 15-foot cone that deals
+    2d6 slashing damage to each creature within the area (DC 17 basic Reflex save).
+    The air mephit can't use Breath Weapon again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__air__, __arcane__) The air
+    mephit breathes sand and grit in a 15-foot cone that deals 2d6 slashing damage
+    to each creature within the area (DC 17 basic Reflex save). The air mephit can''t
+    use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - air
+  - arcane
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Air mephits are capricious and flighty relative to their kin; they are
@@ -25,11 +52,10 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Auran
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -42,35 +68,7 @@ melee:
   - finesse
 name: Air Mephit
 perception: 3
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The air mephit breathes sand and grit in a 15-foot cone that deals
-    2d6 slashing damage to each creature within the area (DC 17 basic Reflex save).
-    The air mephit can't use Breath Weapon again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__air__, __arcane__) The air
-    mephit breathes sand and grit in a 15-foot cone that deals 2d6 slashing damage
-    to each creature within the area (DC 17 basic Reflex save). The air mephit can''t
-    use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - air
-  - arcane
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 3
   fort_misc: null
@@ -79,49 +77,44 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +3
 - darkvision
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 150
+  page_start: '150'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 17
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: blur
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: gust of wind
-      requirement: null
-  to_hit: null
+  spells_source: Arcane Innate Spells
 traits:
-- N
-- Small
 - Air
 - Elemental
-type: Creature
-weaknesses: null

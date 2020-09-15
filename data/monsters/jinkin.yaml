@@ -7,6 +7,60 @@ ability_mods:
   wis_mod: 2
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The jinkin deals 1d6 extra precision damage to __flat-footed__ creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The jinkin deals 1d6 extra precision damage
+    to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A group of six jinkins can work together for an hour to imbue an item
+    with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive
+    and can be performed while Hiding. Jinkins prefer to use this ability on magic
+    items. The curse makes the item unreliable (DC 5 flat check or waste any action
+    to Interact with or Activate the item), adds a bizarre requirement to use the
+    item, or imparts some other curse of a similar caliber.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tinker
+  range: null
+  raw_description: '**Tinker** (__curse__, __primal__, __transmutation__) A group
+    of six jinkins can work together for an hour to imbue an item with a curse at
+    a range of 60 feet. While this process is lengthy, it''s also unobtrusive and
+    can be performed while Hiding. Jinkins prefer to use this ability on magic items.
+    The curse makes the item unreliable (DC 5 flat check or waste any action to Interact
+    with or Activate the item), adds a bizarre requirement to use the item, or imparts
+    some other curse of a similar caliber.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - primal
+  - transmutation
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Jinkins are sadistic tinkers who steal and sabotage items and take great
@@ -24,13 +78,12 @@ description: 'Jinkins are sadistic tinkers who steal and sabotage items and take
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 15'
 hp: 19
 hp_misc: null
-immunities: null
 items:
 - shortsword
 languages:
 - Undercommon
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6-2
@@ -45,60 +98,7 @@ melee:
   - versatile S
 name: Jinkin
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The jinkin deals 1d6 extra precision damage to __flat-footed__ creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The jinkin deals 1d6 extra precision damage
-    to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A group of six jinkins can work together for an hour to imbue an item
-    with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive
-    and can be performed while Hiding. Jinkins prefer to use this ability on magic
-    items. The curse makes the item unreliable (DC 5 flat check or waste any action
-    to Interact with or Activate the item), adds a bizarre requirement to use the
-    item, or imparts some other curse of a similar caliber.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tinker
-  range: null
-  raw_description: '**Tinker** (__curse__, __primal__, __transmutation__) A group
-    of six jinkins can work together for an hour to imbue an item with a curse at
-    a range of 60 feet. While this process is lengthy, it''s also unobtrusive and
-    can be performed while Hiding. Jinkins prefer to use this ability on magic items.
-    The curse makes the item unreliable (DC 5 flat check or waste any action to Interact
-    with or Activate the item), adds a bizarre requirement to use the item, or imparts
-    some other curse of a similar caliber.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - primal
-  - transmutation
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -107,55 +107,53 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Tiny
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: +7 traps
-  name: 'Crafting '
+  name: Crafting
 - bonus: 5
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 5
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 7
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 7
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary
-  page_start: 193
+  page_start: '193'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists:
-- dc: 17
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: 1
-    level: 0
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: prestidigitation
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Primal Innate Spells
 traits:
-- CE
-- Tiny
 - Fey
 - Gremlin
-type: Creature
 weaknesses:
 - amount: 2
+  misc: null
   type: cold iron

@@ -1,0 +1,225 @@
+ability_mods:
+  cha_mod: 2
+  con_mod: 3
+  dex_mod: 5
+  int_mod: 0
+  str_mod: 4
+  wis_mod: 0
+ac: 21
+ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The tenome has a creature __grabbed__ or __restrained__;'
+  effect: The tenome makes a jaws Strike against the grabbed or restrained creature.
+    If the Strike hits, the creature must succeed at a DC 18 Fortitude save or become
+    __drained 1__ (or the value of the creature's drained condition increases by 1
+    if it already has a drained value, to a maximum of drained 4). The tenome regains
+    1d8 Hit Points each time it uses Bone Drink.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bone Drink
+  range: null
+  raw_description: '**Bone Drink** [Two Actions]  (__healing__, __necromancy__, __occult__)
+    **Requirement** The tenome has a creature __grabbed__ or __restrained__; **Effect**
+    The tenome makes a jaws Strike against the grabbed or restrained creature. If
+    the Strike hits, the creature must succeed at a DC 18 Fortitude save or become
+    __drained 1__ (or the value of the creature''s drained condition increases by
+    1 if it already has a drained value, to a maximum of drained 4). The tenome regains
+    1d8 Hit Points each time it uses Bone Drink.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - healing
+  - necromancy
+  - occult
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The tenome Strides twice, Steps twice, or Steps and Strides (in either
+    order). It cannot use Burst of Speed again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Burst of Speed
+  range: null
+  raw_description: '**Burst of Speed** [One Action]  The tenome Strides twice, Steps
+    twice, or Steps and Strides (in either order). It cannot use Burst of Speed again
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: A tenome can gaze at a creature within 30 feet by presenting one of
+    its eyes. The target must succeed at a DC 21 Will save or become __frightened
+    1__. If the tenome uses 2 actions and presents both of its eyes, the target is
+    also __paralyzed__ if it fails the save. A creature that successfully saves is
+    temporarily immune for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Terrifying Gaze
+  range: null
+  raw_description: '**Terrifying Gaze** [Two Actions] or   (__emotion__, __enchantment__,
+    __fear__, __incapacitation__, __mental__, __occult__, __visual__) A tenome can
+    gaze at a creature within 30 feet by presenting one of its eyes. The target must
+    succeed at a DC 21 Will save or become __frightened 1__. If the tenome uses 2
+    actions and presents both of its eyes, the target is also __paralyzed__ if it
+    fails the save. A creature that successfully saves is temporarily immune for 24
+    hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - emotion
+  - enchantment
+  - fear
+  - incapacitation
+  - mental
+  - occult
+  - visual
+  trigger: null
+alignment: NE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: While the tenome is Grabbing a creature, all other creatures are __concealed__
+    to the tenome.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Obscuring Grab
+  range: null
+  raw_description: '**Obscuring Grab** While the tenome is Grabbing a creature, all
+    other creatures are __concealed__ to the tenome.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+description: 'A tenome resembles an eyeless humanoid with rumpled, pale skin and a
+  single eye embedded in each palm of its cadaverous hands. When they opens their
+  disturbingly wide mouth, this sly, frightful predator''s fangs hum and pulse with
+  an eerie drone.
+
+
+
+
+  Tenomes prefer to stalk urban environments; they often wear hooded cloaks or flowing
+  robes to obscure their monstrous features, posing as beggars or corpses to blend
+  in with society. When they attack, tenomes approach their victim with their palms
+  outstretched, attempting to trap prey with their terrifying gaze. Once they seize
+  their prey, tenomes vibrate their strange teeth rapidly as they feasts, emulsifying
+  the bones into a digestible ooze that they slurps from a wound. Tenomes can be put
+  at a disadvantage while hunting, as their vision is obscured when they have prey
+  grabbed. Because of this, tenomes either wait for lone victims or hunts in packs.
+  Members of these groups work together to secure meals for the entire pack and protect
+  each other from being ambushed while feeding.
+
+
+
+
+  There are rumors that if tenomes pluck the eyes from their victim and places one
+  in each of the corpse''s palms, the slain creature will rise as a new tenome the
+  next nightfall. Even tenomes aren''t sure of the truth of this rumor, as none remember
+  their own origins, but they might mutilate the corpses of their victims this way
+  in the hopes of creating a pack mate or to instill terror in those who discover
+  the body.
+
+
+
+
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 19'
+hp: 60
+hp_misc: null
+languages:
+- Common
+level: 4
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d8+4
+    type: piercing
+  name: jaws
+  plus_damage: null
+  to_hit: 14
+  traits: null
+- action_cost: One Action
+  damage:
+    formula: 2d6+4
+    type: slashing
+  name: claw
+  plus_damage:
+  - formula: null
+    type: Grab
+  to_hit: 14
+  traits:
+  - agile
+name: Tenome
+perception: 14
+ranged_attacks: null
+saves:
+  fort: 13
+  fort_misc: null
+  misc: null
+  ref: 15
+  ref_misc: null
+  will: 12
+  will_misc: null
+senses:
+- darkvision
+size: Medium
+skills:
+- bonus: 12
+  misc: null
+  name: Acrobatics
+- bonus: 11
+  misc: null
+  name: Athletics
+- bonus: 10
+  misc: null
+  name: Deception
+- bonus: 10
+  misc: null
+  name: Intimidation
+- bonus: 12
+  misc: null
+  name: Stealth
+- bonus: 8
+  misc: null
+  name: Survival
+sources:
+- abbr: 'Pathfinder #158: Sixty Feet Under'
+  page_start: '85'
+  page_stop: null
+speed:
+- amount: 25
+  misc: null
+  type: Land
+spell_lists: null
+traits:
+- Humanoid

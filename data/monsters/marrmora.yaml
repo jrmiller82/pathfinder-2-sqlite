@@ -7,27 +7,53 @@ ability_mods:
   wis_mod: 6
 ac: 37
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The marrmora is not under the effect of __fire shield__;'
+  effect: The marrmora makes a claw Strike. If it hits, it can immediately cast one
+    of its available fire shield innate spells as a free action.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Igniting Assault
+  range: null
+  raw_description: '**Igniting Assault** [One Action]  **Requirement** The marrmora
+    is not under the effect of __fire shield__; **Effect** The marrmora makes a claw
+    Strike. If it hits, it can immediately cast one of its available fire shield innate
+    spells as a free action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A creature that enters or begins its turn in this aura's emanation
+  description: A creature that enters or begins its turn in this aura's emanation
     must attempt a DC 33 Will save. Regardless of the result of the saving throw,
     the creature is temporarily immune for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Fascination of Flame
-  range: null
+  range: 30 feet
   raw_description: '**Fascination of Flame** (__aura__, __emotion__, __enchantment__,
     __mental__, __primal__) 30 feet. A creature that enters or begins its turn in
     this aura''s emanation must attempt a DC 33 Will save. Regardless of the result
     of the saving throw, the creature is temporarily immune for 1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -38,18 +64,20 @@ automatic_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The creature is unaffected.
   description: The creature is unaffected.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Success
   range: null
   raw_description: '**Critical Success** The creature is unaffected.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -58,16 +86,18 @@ automatic_abilities:
   critical_success: null
   description: The creature loses any resistance to fire for 1 round.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Success
   range: null
   raw_description: '**Success** The creature loses any resistance to fire for 1 round.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The creature loses any resistance to fire for 1 round.
   traits: null
   trigger: null
 - action_cost: None
@@ -75,34 +105,39 @@ automatic_abilities:
   critical_success: null
   description: The creature loses any resistance to fire for 1 hour.
   effect: null
-  effects: null
-  failure: null
+  failure: The creature loses any resistance to fire for 1 hour.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Failure
   range: null
   raw_description: '**Failure** The creature loses any resistance to fire for 1 hour.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: The creature loses any resistance to fire for 1 hour and gains
+    weakness 15 to fire for the same duration.
   critical_success: null
   description: The creature loses any resistance to fire for 1 hour and gains weakness
     15 to fire for the same duration.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Failure
   range: null
   raw_description: '**Critical Failure** The creature loses any resistance to fire
     for 1 hour and gains weakness 15 to fire for the same duration.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -112,11 +147,11 @@ automatic_abilities:
   description: null
   effect: The marrmora is healed by the fire damage, regaining Hit Points equal to
     half the damage the fire effect would have dealt.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Absorb Flame
   range: null
   raw_description: '**Absorb Flame [Reaction]** **Trigger** The marrmora is targeted
@@ -124,10 +159,12 @@ automatic_abilities:
     The marrmora is healed by the fire damage, regaining Hit Points equal to half
     the damage the fire effect would have dealt.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The marrmora is targeted by a __fire__ spell or effect, or is in the area
-    of a fire effect
+  trigger: The marrmora is targeted by a fire spell or effect, or is in the area of
+    a fire effect;
 description: 'On the __First World__, marrmoras dwell in ruined wildlands perpetually
   scourged by fire and rarely, if ever, travel elsewhere. When a wildfire devastates
   a wilderness region on the Material Plane and results in the death of other fey,
@@ -160,64 +197,43 @@ hp: 280
 hp_misc: null
 immunities:
 - fire
-items: null
 languages:
 - Common
 - Elven
 - Sylvan
 level: 15
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d6+14
     type: slashing
   name: claw
   plus_damage:
-  - formula: 3d6
-    type: fire and 1d6 persistent fire
+  - formula: null
+    type: 3d6 fire
+  - formula: null
+    type: 1d6 persistent fire
   to_hit: 29
   traits: null
 name: Marrmora
 perception: 27
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The marrmora is not under the effect of __fire shield__
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Igniting Assault
-  range: null
-  raw_description: '**Igniting Assault**   **Requirement** The marrmora is not under
-    the effect of __fire shield__; **Effect** The marrmora makes a claw Strike. If
-    it hits, it can immediately cast one of its available fire shield innate spells
-    as a free action.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 6d6
-    type: fire
+    formula: null
+    type: 6d6 fire
   name: flame jet
   plus_damage:
-  - formula: 2d6
-    type: persistent fire
+  - formula: null
+    type: 2d6 persistent fire
   to_hit: 29
   traits:
   - fire
   - range increment 40 feet
-rarity: Common
 resistances:
 - amount: 10
-  type: physical (except slashing)
-ritual_lists: null
+  misc: except slashing
+  type: physical
 saves:
   fort: 29
   fort_misc: null
@@ -226,94 +242,81 @@ saves:
   ref_misc: null
   will: 27
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +27
 - low-light vision
 size: Medium
 skills:
 - bonus: 25
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 30
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 30
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 30
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 27
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 27
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 171
+  page_start: '171'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 36
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 8
+- attack_bonus: 28
+  cantrips:
+  - level: 8
     spells:
-    - frequency: null
-      name: fire shield
-      requirement: null
-    - frequency: null
-      name: fireball
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: <a style="text-decoration:underline" href="MonsterFamilies.aspx?ID=43">fire
-        elemental</a> only
-      name: elemental form
-      requirement: null
-    - frequency: null
-      name: volcanic eruption
-      requirement: null
-    - frequency: null
-      name: wall of fire
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: x3
-      name: fire shield
-      requirement: null
-    - frequency: x3
-      name: fireball
-      requirement: null
-    - frequency: at will, appears as a burnt, dead tree
-      name: tree shape
-      requirement: null
-  - heightened_level: 8
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: produce flame
-      requirement: null
-  to_hit: 28
+  constants: null
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 8
+    spells:
+    - misc: null
+      name: fire shield
+    - misc: null
+      name: fireball
+  - level: 7
+    spells:
+    - misc: fire elemental only
+      name: elemental form
+    - misc: null
+      name: volcanic eruption
+    - misc: null
+      name: wall of fire
+  - level: 6
+    spells:
+    - misc: x3
+      name: fire shield
+    - misc: x3
+      name: fireball
+    - misc: at will; appears as a burnt, dead tree
+      name: tree shape
+  spells_source: Primal Innate Spells
 traits:
-- NE
-- Medium
 - Fey
 - Fire
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: cold iron

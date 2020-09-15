@@ -7,24 +7,55 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The flash beetle creates a brilliant flash of light. All creatures
+    in its luminescent aura must succeed at a DC 17 Fortitude save or be __dazzled__
+    for 1 minute. The flash beetle's glow then goes out, disabling its aura for 24
+    hours, during which time it cannot use Light Flash.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Light Flash
+  range: null
+  raw_description: '**Light Flash** [One Action]  (__concentrate__, __light__) The
+    flash beetle creates a brilliant flash of light. All creatures in its luminescent
+    aura must succeed at a DC 17 Fortitude save or be __dazzled__ for 1 minute. The
+    flash beetle''s glow then goes out, disabling its aura for 24 hours, during which
+    time it cannot use Light Flash.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - light
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 10 feet. The flash beetle's bioluminescent organs fill the area with
-    bright light.
+  description: The flash beetle's bioluminescent organs fill the area with bright
+    light.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Luminescent Aura
-  range: null
+  range: 10 feet
   raw_description: '**Luminescent Aura** (__aura__, __light__) 10 feet. The flash
     beetle''s bioluminescent organs fill the area with bright light.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -44,11 +75,8 @@ description: 'These 3-foot-long insects boast a pair of glowing organs on the ba
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 13'
 hp: 6
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+1
@@ -61,39 +89,7 @@ melee:
   - finesse
 name: Flash Beetle
 perception: 6
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The flash beetle creates a brilliant flash of light. All creatures
-    in its luminescent aura must succeed at a DC 17 Fortitude save or be __dazzled__
-    for 1 minute. The flash beetle's glow then goes out, disabling its aura for 24
-    hours, during which time it cannot use Light Flash.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Light Flash
-  range: null
-  raw_description: '**Light Flash**   (__concentrate__, __light__) The flash beetle
-    creates a brilliant flash of light. All creatures in its luminescent aura must
-    succeed at a DC 17 Fortitude save or be __dazzled__ for 1 minute. The flash beetle''s
-    glow then goes out, disabling its aura for 24 hours, during which time it cannot
-    use Light Flash.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - light
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 5
   fort_misc: null
@@ -102,31 +98,27 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - low-light vision
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 41
+  page_start: '41'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
-type: Creature
-weaknesses: null

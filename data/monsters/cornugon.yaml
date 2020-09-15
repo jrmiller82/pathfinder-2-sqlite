@@ -7,25 +7,109 @@ ability_mods:
   wis_mod: 6
 ac: 38
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The devil pulls the creature 5 feet closer and grabs it with the spiked
+    chain (__Escape__ DC 42). The creature is automatically freed if the devil makes
+    another spiked chain attack or moves away.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Chain of Malebolge
+  range: null
+  raw_description: '**Chain of Malebolge** [One Action]  **Requirements **The cornugon''s
+    last action was a success with a __spiked chain__ Strike; **Effect **The devil
+    pulls the creature 5 feet closer and grabs it with the spiked chain (__Escape__
+    DC 42). The creature is automatically freed if the devil makes another spiked
+    chain attack or moves away.'
+  requirements: The cornugon's last action was a success with a spiked chain Strike
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A cornugon's tail Strike deals 4d6 __persistent bleed damage__. The
+    DC of the flat check to stop the bleeding starts at 20 and is reduced to 15 only
+    if someone successfully assists. The DC to __Administer First Aid__ to a creature
+    with an infernal wound increases by 10. A spellcaster or item using healing magic
+    on an infernally wounded creature must succeed at a DC 34 counteract check or
+    the magic fails to heal the creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Infernal Wound
+  range: null
+  raw_description: '**Infernal Wound** (__divine__, __necromancy__) A cornugon''s
+    tail Strike deals 4d6 __persistent bleed damage__. The DC of the flat check to
+    stop the bleeding starts at 20 and is reduced to 15 only if someone successfully
+    assists. The DC to __Administer First Aid__ to a creature with an infernal wound
+    increases by 10. A spellcaster or item using healing magic on an infernally wounded
+    creature must succeed at a DC 34 counteract check or the magic fails to heal the
+    creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If the cornugon critically hits with its __spiked chain__ Strike, the
+    target must succeed at a DC 34 Fortitude save or be __stunned__ for 1 round (1d4
+    rounds on a critical failure).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stunning Chain
+  range: null
+  raw_description: '**Stunning Chain** (__incapacitation__) If the cornugon critically
+    hits with its __spiked chain__ Strike, the target must succeed at a DC 34 Fortitude
+    save or be __stunned__ for 1 round (1d4 rounds on a critical failure).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 10 feet. A constant __circle of protection__ against good is centered
-    on the cornugon.
+  description: A constant __circle of protection__ against good is centered on the
+    cornugon.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Circle of Protection
-  range: null
+  range: 10 feet
   raw_description: '**Circle of Protection** (__abjuration__, __aura__, __divine__,
     __evil__) 10 feet. A constant __circle of protection__ against good is centered
     on the cornugon.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
@@ -36,22 +120,24 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 100 feet. Allied evil creatures in the aura of a level lower than the
-    devil's gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves,
-    and skill checks.
+  description: Allied evil creatures in the aura of a level lower than the devil's
+    gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves, and skill
+    checks.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Commander's Aura
-  range: null
+  range: 100 feet
   raw_description: '**Commander''s Aura** (__aura__, __divine__, __enchantment__)
     100 feet. Allied evil creatures in the aura of a level lower than the devil''s
     gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves, and skill
     checks.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -59,38 +145,41 @@ automatic_abilities:
   - enchantment
   trigger: null
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 10 feet, DC 34
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 10 feet, DC 34 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 10 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 34
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
-  - divine
   - emotion
-  - enchantment
   - fear
   - mental
   trigger: null
@@ -103,11 +192,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -118,6 +207,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -148,15 +239,17 @@ languages:
 - Infernal
 - telepathy 100 feet
 level: 16
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+16
     type: slashing
   name: spiked chain
   plus_damage:
-  - formula: 2d6
-    type: evil and stunning chain
+  - formula: null
+    type: 2d6 evil
+  - formula: null
+    type: stunning chain
   to_hit: 34
   traits:
   - disarm
@@ -171,8 +264,8 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 32
   traits:
   - agile
@@ -184,107 +277,24 @@ melee:
     type: slashing
   name: tail
   plus_damage:
-  - formula: 1d6
-    type: evil and infernal wound
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: infernal wound
   to_hit: 32
   traits:
   - magical
   - reach 10 feet
 name: Cornugon
 perception: 28
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The cornugon's last action was a success with a __spiked chain__ Strike
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Chain of Malebolge
-  range: null
-  raw_description: '**Chain of Malebolge**   **Requirements **The cornugon''s last
-    action was a success with a __spiked chain__ Strike; **Effect **The devil pulls
-    the creature 5 feet closer and grabs it with the spiked chain (__Escape__ DC 42).
-    The creature is automatically freed if the devil makes another spiked chain attack
-    or moves away.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A cornugon's tail Strike deals 4d6 __persistent bleed damage__. The
-    DC of the flat check to stop the bleeding starts at 20 and is reduced to 15 only
-    if someone successfully assists. The DC to __Administer First Aid__ to a creature
-    with an infernal wound increases by 10. A spellcaster or item using healing magic
-    on an infernally wounded creature must succeed at a DC 34 counteract check or
-    the magic fails to heal the creature.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Infernal Wound
-  range: null
-  raw_description: '**Infernal Wound** (__divine__, __necromancy__) A cornugon''s
-    tail Strike deals 4d6 __persistent bleed damage__. The DC of the flat check to
-    stop the bleeding starts at 20 and is reduced to 15 only if someone successfully
-    assists. The DC to __Administer First Aid__ to a creature with an infernal wound
-    increases by 10. A spellcaster or item using healing magic on an infernally wounded
-    creature must succeed at a DC 34 counteract check or the magic fails to heal the
-    creature.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the cornugon critically hits with its __spiked chain__ Strike, the
-    target must succeed at a DC 34 Fortitude save or be __stunned__ for 1 round (1d4
-    rounds on a critical failure).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stunning Chain
-  range: null
-  raw_description: '**Stunning Chain** (__incapacitation__) If the cornugon critically
-    hits with its __spiked chain__ Strike, the target must succeed at a DC 34 Fortitude
-    save or be __stunned__ for 1 round (1d4 rounds on a critical failure).'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 15
-  type: physical (except silver)
-- amount: 15
-  type: poison
-ritual_lists:
-- dc: 36
+  misc: except <a style="text-decoration:underline" href="Equipment.aspx?ID=277">silver</a>
+  type: physical
+- amount: 126
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: infernal pact
-      requirement: null
-  to_hit: null
+  type: <a style="text-decoration:underline" href="Traits.aspx?ID=
 saves:
   fort: 31
   fort_misc: null
@@ -293,75 +303,80 @@ saves:
   ref_misc: null
   will: 26
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +28
 - greater darkvision
 size: Large
 skills:
 - bonus: 28
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 32
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 30
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 28
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 26
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 30
   misc: null
-  name: 'Warfare Lore '
-source:
+  name: Warfare Lore
+sources:
 - abbr: Bestiary 2
-  page_start: 76
+  page_start: '87'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 36
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 36
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+  spell_lists:
+  - level: 7
     spells:
-    - frequency: null
+    - misc: null
       name: dispel magic
-      requirement: null
-    - frequency: ×2
+    - misc: ×2
       name: fireball
-      requirement: null
-    - frequency: ×2
+    - misc: ×2
       name: lightning bolt
-      requirement: null
-  - heightened_level: null
-    level: 5
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: dimension door
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: infernal pact
+  spells_source: Rituals
 traits:
-- LE
-- Large
 - Devil
 - Fiend
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: good

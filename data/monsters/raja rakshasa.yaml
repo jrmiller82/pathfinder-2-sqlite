@@ -7,19 +7,91 @@ ability_mods:
   wis_mod: 1
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The raja rakshasa takes on the appearance of any Medium humanoid. This
+    doesn't change the raja rakshasa's Speed or its attack and damage modifiers with
+    its Strikes but might change the damage type its Strikes deal (typically to bludgeoning).
+    It typically loses its fangs Strike unless the humanoid form has fangs or a similar
+    unarmed attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __occult__, __polymorph__,
+    __transmutation__) The raja rakshasa takes on the appearance of any Medium humanoid.
+    This doesn''t change the raja rakshasa''s Speed or its attack and damage modifiers
+    with its Strikes but might change the damage type its Strikes deal (typically
+    to bludgeoning). It typically loses its fangs Strike unless the humanoid form
+    has fangs or a similar unarmed attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - occult
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The raja rakshasa's eyes flash green as it projects a telepathic wave
+    in a 30-foot emanation. All creatures in the area are assailed by a vision of
+    evil decadence from one of the rakshasa's past lives. Each non-evil creature in
+    the area must succeed at a DC 29 Will save or become __sickened 1__ (and __stunned
+    1__ on a critical failure). The visions last 1d4 rounds, and while they do, the
+    raja rakshasa and all evil creatures in the area gain a +1 status bonus to all
+    checks. The raja rakshasa can use this ability again only once the previous visions
+    end.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Disturbing Vision
+  range: null
+  raw_description: '**Disturbing Vision** [One Action]  (__concentrate__, __enchantment__,
+    __mental__, __occult__) The raja rakshasa''s eyes flash green as it projects a
+    telepathic wave in a 30-foot emanation. All creatures in the area are assailed
+    by a vision of evil decadence from one of the rakshasa''s past lives. Each non-evil
+    creature in the area must succeed at a DC 29 Will save or become __sickened 1__
+    (and __stunned 1__ on a critical failure). The visions last 1d4 rounds, and while
+    they do, the raja rakshasa and all evil creatures in the area gain a +1 status
+    bonus to all checks. The raja rakshasa can use this ability again only once the
+    previous visions end.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - enchantment
+  - mental
+  - occult
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: The raja rakshasa has an unexpended spell slot that can be used to cast
-    __dispel magic__.
-  effects: null
+  effect: The raja rakshasa expends a spell slot that could be used to cast dispel
+    magic and attempts to counteract the triggering spell or ability. The raja rakshasa
+    can't Scoff at the Divine for 1d4 rounds.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Scoff at the Divine
   range: null
   raw_description: '**Scoff at the Divine** [Reaction] **Trigger** A creature within
@@ -28,10 +100,15 @@ automatic_abilities:
     **Effect** The raja rakshasa expends a spell slot that could be used to cast dispel
     magic and attempts to counteract the triggering spell or ability. The raja rakshasa
     can''t Scoff at the Divine for 1d4 rounds.'
-  requirements: null
+  requirements: The raja rakshasa has an unexpended spell slot that can be used to
+    cast dispel magic.
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within 30 feet casts a divine spell or uses a divine ability.
+    Requirements The raja rakshasa has an unexpended spell slot that can be used to
+    cast dispel magic.
 description: 'When not disguised as a humanoid, the raja rakshasa has the head of
   an animal. The hands of a raja rakshasa are more subtly unsettling, for the fingers
   of these fiends bend outward, away from the palms.
@@ -55,7 +132,6 @@ description: 'When not disguised as a humanoid, the raja rakshasa has the head o
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 27'
 hp: 155
 hp_misc: null
-immunities: null
 items:
 - +1 striking kukri
 languages:
@@ -63,7 +139,7 @@ languages:
 - Infernal
 - Undercommon
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+10
@@ -99,79 +175,11 @@ melee:
   - magical
 name: Raja Rakshasa
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The raja rakshasa takes on the appearance of any Medium humanoid. This
-    doesn't change the raja rakshasa's Speed or its attack and damage modifiers with
-    its Strikes but might change the damage type its Strikes deal (typically to bludgeoning).
-    It typically loses its fangs Strike unless the humanoid form has fangs or a similar
-    unarmed attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __occult__, __polymorph__,
-    __transmutation__) The raja rakshasa takes on the appearance of any Medium humanoid.
-    This doesn''t change the raja rakshasa''s Speed or its attack and damage modifiers
-    with its Strikes but might change the damage type its Strikes deal (typically
-    to bludgeoning). It typically loses its fangs Strike unless the humanoid form
-    has fangs or a similar unarmed attack.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - occult
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The raja rakshasa's eyes flash green as it projects a telepathic wave
-    in a 30-foot emanation. All creatures in the area are assailed by a vision of
-    evil decadence from one of the rakshasa's past lives. Each non-evil creature in
-    the area must succeed at a DC 29 Will save or become __sickened 1__ (and __stunned
-    1__ on a critical failure). The visions last 1d4 rounds, and while they do, the
-    raja rakshasa and all evil creatures in the area gain a +1 status bonus to all
-    checks. The raja rakshasa can use this ability again only once the previous visions
-    end.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Disturbing Vision
-  range: null
-  raw_description: '**Disturbing Vision**   (__concentrate__, __enchantment__, __mental__,
-    __occult__) The raja rakshasa''s eyes flash green as it projects a telepathic
-    wave in a 30-foot emanation. All creatures in the area are assailed by a vision
-    of evil decadence from one of the rakshasa''s past lives. Each non-evil creature
-    in the area must succeed at a DC 29 Will save or become __sickened 1__ (and __stunned
-    1__ on a critical failure). The visions last 1d4 rounds, and while they do, the
-    raja rakshasa and all evil creatures in the area gain a +1 status bonus to all
-    checks. The raja rakshasa can use this ability again only once the previous visions
-    end.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - enchantment
-  - mental
-  - occult
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
-  type: physical (except piercing)
-ritual_lists: null
+  misc: except piercing
+  type: physical
 saves:
   fort: 19
   fort_misc: null
@@ -180,144 +188,117 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 size: Medium
 skills:
 - bonus: 23
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 21
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 21
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 18
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 19
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 20
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 275
+  page_start: '275'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists:
-- dc: 31
-  misc: null
-  name: Occult Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips:
+  - level: 5
     spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: hallucination
-      requirement: null
-    - frequency: 3 slots
-      name: shadow blast
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: clairvoyance
-      requirement: null
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: fly
-      requirement: null
-    - frequency: 4 slots
-      name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: clairaudience
-      requirement: null
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: null
-      name: nondetection
-      requirement: null
-    - frequency: 4 slots
-      name: vampiric touch
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: blur
-      requirement: null
-    - frequency: null
-      name: hideous laughter
-      requirement: null
-    - frequency: 4 slots
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: illusory object
-      requirement: null
-    - frequency: 4 slots
-      name: item facade
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-    - frequency: null
+    - misc: null
       name: sigil
-      requirement: null
-  to_hit: null
-- dc: 31
+  constants: null
+  dc: 31
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: at will
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: hallucination
+    - misc: 3 slots
+      name: shadow blast
+  - level: 4
+    spells:
+    - misc: null
+      name: clairvoyance
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: fly
+    - misc: 4 slots
+      name: suggestion
+  - level: 3
+    spells:
+    - misc: null
+      name: clairaudience
+    - misc: null
+      name: dispel magic
+    - misc: null
+      name: nondetection
+    - misc: 4 slots
+      name: vampiric touch
+  - level: 2
+    spells:
+    - misc: null
+      name: blur
+    - misc: null
+      name: hideous laughter
+    - misc: 4 slots
+      name: invisibility
+  - level: 1
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: illusory object
+    - misc: 4 slots
+      name: item facade
+  spells_source: Occult Spontaneous Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 31
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: at will
       name: mind reading
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- LE
-- Medium
 - Fiend
 - Rakshasa
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: good

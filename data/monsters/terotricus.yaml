@@ -7,24 +7,108 @@ ability_mods:
   wis_mod: 6
 ac: 42
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The terotricus drains nutrients from nearby trees and undergrowth while
+    simultaneously infesting them with fungal growth. All non-magical plant life (though
+    not plant creatures) within a 60-foot emanation withers and sprouts foul mold
+    and slimy mushrooms, removing any cover and concealment provided by trees and
+    undergrowth. The terotricus is healed 200 Hit Points.
+  failure: null
+  frequency: once per day. Requirement The terotricus is in a swamp or forested area.
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Infest Environs
+  range: null
+  raw_description: '**Infest Environs** [Two Actions]  (__healing__, __necromancy__,
+    __primal__) **Frequency** once per day. **Requirement** The terotricus is in a
+    swamp or forested area. **Effect** The terotricus drains nutrients from nearby
+    trees and undergrowth while simultaneously infesting them with fungal growth.
+    All non-magical plant life (though not plant creatures) within a 60-foot emanation
+    withers and sprouts foul mold and slimy mushrooms, removing any cover and concealment
+    provided by trees and undergrowth. The terotricus is healed 200 Hit Points.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - healing
+  - necromancy
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Plants and fungi are immune. **Saving Throw** Fortitude DC 40; **Stage
+    1** enfeebled 2 (1 day); **Stage 2** enfeebled 4 and slowed 1 (1 day); **Stage
+    3** controlled by the terotricus (as dominate; 5d8 days); **Stage 4** dead.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spore Blight
+  range: null
+  raw_description: '**Spore Blight** (__disease__) Plants and fungi are immune. **Saving
+    Throw** Fortitude DC 40; **Stage 1** enfeebled 2 (1 day); **Stage 2** enfeebled
+    4 and slowed 1 (1 day); **Stage 3** controlled by the terotricus (as dominate;
+    5d8 days); **Stage 4** dead.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature hit by a terotricus's spores must succeed at a DC 40 Reflex
+    save or take a –10-foot status penalty to all its Speeds for 1 minute. On a critical
+    failure, the creature is immobilized until it Escapes (DC 40).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sticky Spores
+  range: null
+  raw_description: '**Sticky Spores** A creature hit by a terotricus''s spores must
+    succeed at a DC 40 Reflex save or take a –10-foot status penalty to all its Speeds
+    for 1 minute. On a critical failure, the creature is immobilized until it Escapes
+    (DC 40).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A creature entering the aura or starting its turn there is
-    exposed to spore blight.
+  description: ; 30 feet. A creature entering the aura or starting its turn there
+    is exposed to spore blight.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Spore Cloud
   range: null
   raw_description: '**Spore Cloud** (__aura__, __disease__); 30 feet. A creature entering
     the aura or starting its turn there is exposed to spore blight.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -39,7 +123,7 @@ description: 'The legendary terotricus is a massive slime-mold that hails from t
 
 
 
-  Terotricuses move by rapidly expanding and contracting their slimy "bodies," which
+  Terotricuses move by rapidly expanding and contracting their slimy “bodies,” which
   are capable of burrowing through soil, gliding across water, and scrabbling up steep
   slopes. These behemoths of rot don''t need to travel to see their plans come to
   fruition, though; their spores easily latch onto demons and other denizens of the
@@ -61,29 +145,28 @@ description: 'The legendary terotricus is a massive slime-mold that hails from t
 
   **__Recall Knowledge - Fungus__ (__Nature__)**: DC 44'
 hp: 370
-hp_misc: regeneration 25 (deactivated by cold
+hp_misc: regeneration 25 (deactivated by cold)
 immunities:
 - controlled
 - disease
 - paralyzed
 - sleep
-items: null
 languages:
 - Abyssal
 - Elven
 - Sylvan
 level: 19
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d10+16
     type: bludgeoning
   name: tentacle
   plus_damage:
-  - formula: 2d6
-    type: chaotic
-  - formula: 2d6
-    type: evil
+  - formula: null
+    type: 2d6 chaotic
+  - formula: null
+    type: 2d6 evil
   - formula: null
     type: Improved Grab or Improved Push 20 feet (40 feet on a critical hit)
   to_hit: 37
@@ -94,89 +177,17 @@ melee:
   - reach 20 feet
 name: Terotricus
 perception: 31
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The terotricus is in a swamp or forested area.
-  effects: null
-  failure: null
-  frequency: once per day.
-  full_description: null
-  generic_description: null
-  name: Infest Environs
-  range: null
-  raw_description: '**Infest Environs** [Two Actions]  (__healing__, __necromancy__,
-    __primal__) **Frequency** once per day. **Requirement** The terotricus is in a
-    swamp or forested area. **Effect** The terotricus drains nutrients from nearby
-    trees and undergrowth while simultaneously infesting them with fungal growth.
-    All non-magical plant life (though not plant creatures) within a 60-foot emanation
-    withers and sprouts foul mold and slimy mushrooms, removing any cover and concealment
-    provided by trees and undergrowth. The terotricus is healed 200 Hit Points.'
-  requirements: null
-  success: null
-  traits:
-  - healing
-  - necromancy
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Plants and fungi are immune. **Saving Throw** Fortitude DC 40; **Stage
-    1** enfeebled 2 (1 day); **Stage 2** enfeebled 4 and slowed 1 (1 day); **Stage
-    3** controlled by the terotricus (as dominate; 5d8 days); **Stage 4** dead.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spore Blight
-  range: null
-  raw_description: '**Spore Blight** (__disease__) Plants and fungi are immune. **Saving
-    Throw** Fortitude DC 40; **Stage 1** enfeebled 2 (1 day); **Stage 2** enfeebled
-    4 and slowed 1 (1 day); **Stage 3** controlled by the terotricus (as dominate;
-    5d8 days); **Stage 4** dead.'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature hit by a terotricus's spores must succeed at a DC 40 Reflex
-    save or take a -10-foot status penalty to all its Speeds for 1 minute. On a critical
-    failure, the creature is immobilized until it Escapes (DC 40).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sticky Spores
-  range: null
-  raw_description: '**Sticky Spores** A creature hit by a terotricus''s spores must
-    succeed at a DC 40 Reflex save or take a -10-foot status penalty to all its Speeds
-    for 1 minute. On a critical failure, the creature is immobilized until it Escapes
-    (DC 40).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 4d8+6
     type: poison
   name: spores
   plus_damage:
-  - formula: 2d6
-    type: chaotic
-  - formula: 2d6
-    type: evil
+  - formula: null
+    type: 2d6 chaotic
+  - formula: null
+    type: 2d6 evil
   - formula: null
     type: spore blight
   - formula: null
@@ -190,8 +201,8 @@ ranged:
 rarity: Rare
 resistances:
 - amount: 15
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 34
   fort_misc: null
@@ -200,54 +211,56 @@ saves:
   ref_misc: null
   will: 33
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +31
 - darkvision
 - tremorsense (imprecise) 120 feet
 size: Gargantuan
 skills:
 - bonus: 37
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 32
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 35
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 31
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 31
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 311
+  page_start: '311'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: burrow
 - amount: 25
+  misc: null
   type: climb
 - amount: 35
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- Rare
-- CE
-- Gargantuan
 - Fungus
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: cold
 - amount: 15
+  misc: null
   type: cold iron
 - amount: 15
+  misc: null
   type: good
 - amount: 10
+  misc: null
   type: slashing

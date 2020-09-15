@@ -7,6 +7,126 @@ ability_mods:
   wis_mod: 1
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The reef octopus can change the color of its skin to __Hide__ even
+    if it doesn't have cover.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Camouflage
+  range: null
+  raw_description: '**Camouflage** The reef octopus can change the color of its skin
+    to __Hide__ even if it doesn''t have cover.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The reef octopus emits a cloud of dark-brown ink in a 10-foot emanation.
+    This cloud has no effect outside of water. Creatures inside the cloud are __hidden__
+    and can't use their sense of smell. The cloud dissipates after 1 minute. The octopus
+    can't use Ink Cloud again for 2d6 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ink Cloud
+  range: null
+  raw_description: '**Ink Cloud** [One Action]  The reef octopus emits a cloud of
+    dark-brown ink in a 10-foot emanation. This cloud has no effect outside of water.
+    Creatures inside the cloud are __hidden__ and can''t use their sense of smell.
+    The cloud dissipates after 1 minute. The octopus can''t use Ink Cloud again for
+    2d6 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The reef octopus moves up to 80 feet in a straight line through the
+    water without triggering reactions.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Jet
+  range: null
+  raw_description: '**Jet** [Two Actions]  The reef octopus moves up to 80 feet in
+    a straight line through the water without triggering reactions.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Reef Octopus Venom
+  range: null
+  raw_description: '**Reef Octopus Venom** (__poison__) **Saving Throw** DC 17 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __flat-footed__
+    (1 round); **Stage 2** 1d6 poison damage and flat-footed (1 round); **Stage 3**
+    1d8 poison damage and flat-footed (1 round)'
+  requirements: null
+  saving_throw: DC 17 Fortitude
+  stages:
+  - effect: 1d4 poison damage and __flat-footed__ (1 round)
+  - effect: 1d6 poison damage and flat-footed (1 round)
+  - effect: 1d8 poison damage and flat-footed (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The reef octopus makes up to four arm Strikes with different arms,
+    each against a different target. These attacks count toward the octopus's multiple
+    attack penalty, but the multiple attack penalty doesn't increase until after it
+    makes all of its attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Writhing Arms
+  range: null
+  raw_description: '**Writhing Arms** [Two Actions]  The reef octopus makes up to
+    four arm Strikes with different arms, each against a different target. These attacks
+    count toward the octopus''s multiple attack penalty, but the multiple attack penalty
+    doesn''t increase until after it makes all of its attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'The common reef octopus is a risky but valuable catch for coastal fishers.
@@ -17,11 +137,8 @@ description: 'The common reef octopus is a risky but valuable catch for coastal 
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+1
@@ -47,120 +164,11 @@ melee:
   - finesse
 name: Reef Octopus
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The reef octopus can change the color of its skin to __Hide__ even
-    if it doesn't have cover.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Camouflage
-  range: null
-  raw_description: '**Camouflage** The reef octopus can change the color of its skin
-    to __Hide__ even if it doesn''t have cover.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The reef octopus emits a cloud of dark-brown ink in a 10-foot emanation.
-    This cloud has no effect outside of water. Creatures inside the cloud are __hidden__
-    and can't use their sense of smell. The cloud dissipates after 1 minute. The octopus
-    can't use Ink Cloud again for 2d6 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ink Cloud
-  range: null
-  raw_description: '**Ink Cloud**   The reef octopus emits a cloud of dark-brown ink
-    in a 10-foot emanation. This cloud has no effect outside of water. Creatures inside
-    the cloud are __hidden__ and can''t use their sense of smell. The cloud dissipates
-    after 1 minute. The octopus can''t use Ink Cloud again for 2d6 rounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The reef octopus moves up to 80 feet in a straight line through the
-    water without triggering reactions.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Jet
-  range: null
-  raw_description: '**Jet** [Two Actions]  The reef octopus moves up to 80 feet in
-    a straight line through the water without triggering reactions.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 17 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d4 poison damage and __flat-footed__ (1 round); **Stage 2** 1d6 poison damage
-    and flat-footed (1 round); **Stage 3** 1d8 poison damage and flat-footed (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reef Octopus Venom
-  range: null
-  raw_description: '**Reef Octopus Venom** (__poison__) **Saving Throw** DC 17 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __flat-footed__
-    (1 round); **Stage 2** 1d6 poison damage and flat-footed (1 round); **Stage 3**
-    1d8 poison damage and flat-footed (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The reef octopus makes up to four arm Strikes with different arms,
-    each against a different target. These attacks count toward the octopus's multiple
-    attack penalty, but the multiple attack penalty doesn't increase until after it
-    makes all of its attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Writhing Arms
-  range: null
-  raw_description: '**Writhing Arms** [Two Actions]  The reef octopus makes up to
-    four arm Strikes with different arms, each against a different target. These attacks
-    count toward the octopus''s multiple attack penalty, but the multiple attack penalty
-    doesn''t increase until after it makes all of its attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 3
+  misc: null
   type: cold
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -169,32 +177,28 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 187
+  page_start: '187'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null

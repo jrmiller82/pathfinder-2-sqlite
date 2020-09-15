@@ -7,6 +7,38 @@ ability_mods:
   wis_mod: 3
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An akata implants its parasitic larval young into any creature it bites,
+    but only Medium or Small humanoids make suitable hosts; all other creatures are
+    immune to this disease; **Saving Throw** DC 17 Fortitude; **Stage 1** carrier
+    with no ill effect 1 (1 day); **Stage 2** __drained 1__ (1 day); **Stage 3** as
+    stage 2 (1 day); **Stage 4** drained 2 and __fatigued__ (1 day); **Stage 5** as
+    stage 4 (1 day); **Stage 6** dead and corpse rises as a void zombie in 2d4 hours
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Void Death
+  range: null
+  raw_description: '**Void Death** (__disease__) An akata implants its parasitic larval
+    young into any creature it bites, but only Medium or Small humanoids make suitable
+    hosts; all other creatures are immune to this disease; **Saving Throw** DC 17
+    Fortitude; **Stage 1** carrier with no ill effect 1 (1 day); **Stage 2** __drained
+    1__ (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** drained 2 and __fatigued__
+    (1 day); **Stage 5** as stage 4 (1 day); **Stage 6** dead and corpse rises as
+    a void zombie in 2d4 hours'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,16 +47,18 @@ automatic_abilities:
   description: An akata doesn't breathe and is immune to effects that require breathing
     (such as an __inhaled__ poison).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: No Breath
   range: null
   raw_description: '**No Breath** An akata doesn''t breathe and is immune to effects
     that require breathing (such as an __inhaled__ poison).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -34,16 +68,18 @@ automatic_abilities:
   description: Salt water acts as an extremely strong acid to an akata. Full immersion
     in salt water deals 4d6 acid damage per round.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Salt Water Vulnerability
   range: null
   raw_description: '**Salt Water Vulnerability** Salt water acts as an extremely strong
     acid to an akata. Full immersion in salt water deals 4d6 acid damage per round.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -73,10 +109,8 @@ hp: 15
 hp_misc: null
 immunities:
 - disease
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -90,44 +124,15 @@ melee:
   - agile
 name: Akata
 perception: 6
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An akata implants its parasitic larval young into any creature it bites,
-    but only Medium or Small humanoids make suitable hosts; all other creatures are
-    immune to this disease; **Saving Throw** DC 17 Fortitude; **Stage 1** carrier
-    with no ill effect 1 (1 day); **Stage 2** __drained 1__ (1 day); **Stage 3** as
-    stage 2 (1 day); **Stage 4** drained 2 and __fatigued__ (1 day); **Stage 5** as
-    stage 4 (1 day); **Stage 6** dead and corpse rises as a void zombie in 2d4 hours
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Void Death
-  range: null
-  raw_description: '**Void Death** (__disease__) An akata implants its parasitic larval
-    young into any creature it bites, but only Medium or Small humanoids make suitable
-    hosts; all other creatures are immune to this disease; **Saving Throw** DC 17
-    Fortitude; **Stage 1** carrier with no ill effect 1 (1 day); **Stage 2** __drained
-    1__ (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** drained 2 and __fatigued__
-    (1 day); **Stage 5** as stage 4 (1 day); **Stage 6** dead and corpse rises as
-    a void zombie in 2d4 hours'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 5
+  misc: null
   type: fire
 - amount: 5
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -149,11 +154,11 @@ sense_abilities:
     senses a living creature, at which point it can burst free of its cocoon in 1d4
     minutes.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Hibernation
   range: null
   raw_description: '**Hibernation** After 3 or more days without eating, an akata
@@ -165,6 +170,8 @@ sense_abilities:
     extreme heat or senses a living creature, at which point it can burst free of
     its cocoon in 1d4 minutes.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -173,26 +180,27 @@ sense_abilities:
   critical_success: null
   description: An akata has no auditory senses. It is immune to __auditory__ effects,
     automatically critically fails Perception checks that require it to hear, and
-    takes a -2 status penalty to Perception checks (but not initiative rolls) that
+    takes a –2 status penalty to Perception checks (but not initiative rolls) that
     involve sound but also rely on other senses.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: No Hearing
   range: null
   raw_description: '**No Hearing** An akata has no auditory senses. It is immune to
     __auditory__ effects, automatically critically fails Perception checks that require
-    it to hear, and takes a -2 status penalty to Perception checks (but not initiative
+    it to hear, and takes a –2 status penalty to Perception checks (but not initiative
     rolls) that involve sound but also rely on other senses.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +6
 - darkvision
 - no hearing
 - scent (imprecise) 30 feet
@@ -200,29 +208,28 @@ size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 13
+  page_start: '13'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- Rare
-- N
-- Medium
 - Aberration
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: salt water

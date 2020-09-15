@@ -7,68 +7,172 @@ ability_mods:
   wis_mod: 9
 ac: 45
 ac_special: null
-alignment: CN
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: A mu spore is a massive creature and takes up a space of 10 squares
-    by 10 squares (50 feet by 50 feet).
+  description: The mu spore releases a cloud of burrowing spores in a 400-foot cone.
+    The spores deal 22d6 piercing damage to all creatures, objects, and wooden structures
+    in the area, but not to plants or fungi (DC 46 basic Reflex save). The mu spore
+    can't use this ability again for 1d4 rounds.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Enormous
+  maximum_duration: null
+  name: Cough Spores
   range: null
-  raw_description: '**Enormous** A mu spore is a massive creature and takes up a space
-    of 10 squares by 10 squares (50 feet by 50 feet).'
+  raw_description: '**Cough Spores** [Two Actions]  The mu spore releases a cloud
+    of burrowing spores in a 400-foot cone. The spores deal 22d6 piercing damage to
+    all creatures, objects, and wooden structures in the area, but not to plants or
+    fungi (DC 46 basic Reflex save). The mu spore can''t use this ability again for
+    1d4 rounds.'
   requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The mu spore pulls all creatures and objects in a 400-foot cone 400
+    feet towards it's mouth. A successful DC 43 Fortitude save halves the distance,
+    or avoids the pull on a critical success. The mu spore automatically attempts
+    to Swallow Whole each creature adjacent to it at the end of the inhalation.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Enormous Inhalation
+  range: null
+  raw_description: '**Enormous Inhalation** [Two Actions]  The mu spore pulls all
+    creatures and objects in a 400-foot cone 400 feet towards it''s mouth. A successful
+    DC 43 Fortitude save halves the distance, or avoids the pull on a critical success.
+    The mu spore automatically attempts to Swallow Whole each creature adjacent to
+    it at the end of the inhalation.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The spore uses Swallow Whole.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Fast Swallow
+  range: null
+  raw_description: '**Fast Swallow** [Reaction]  **Trigger** The mu spore Grabs a
+    creature with its jaws. **Effect** The spore uses Swallow Whole.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The mu spore Grabs a creature with its jaws.
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 15 bludgeoning, DC 45.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Greater Constrict
+  range: null
+  raw_description: '**Greater Constrict** [One Action]  15 bludgeoning, DC 45.'
+  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 60 feet. A living creature that enters the area or ends its turn within
-    it is corrupted by spores. It must succeed at a DC 42 Fortitude save or be clumsy
-    1, enfeebled 1, and slowed 1 for 1 round. Fungi and plants are immune.
+  description: The mu spore still deals 18 piercing damage if its jaws Strike is a
+    failure (but not on critical failure)
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Spores
+  maximum_duration: null
+  name: Overpowering Jaws
   range: null
-  raw_description: '**Spores** (__aura__) 60 feet. A living creature that enters the
-    area or ends its turn within it is corrupted by spores. It must succeed at a DC
-    42 Fortitude save or be clumsy 1, enfeebled 1, and slowed 1 for 1 round. Fungi
-    and plants are immune.'
+  raw_description: '**Overpowering Jaws** The mu spore still deals 18 piercing damage
+    if its jaws Strike is a failure (but not on critical failure)'
   requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Gargantuan, 20d6+9 acid, Rupture 37.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**Swallow Whole** [One Action]  (__attack__) Gargantuan, 20d6+9
+    acid, Rupture 37.'
+  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
-  - aura
+  - attack
   trigger: null
+alignment: CN
+automatic_abilities:
 - action_cost: Free Action
   critical_failure: null
   critical_success: null
   description: null
   effect: The spore uses Grab on the triggering creature. There is no limit to how
     many creatures it can grab with the sticky tendrils that cover its body.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Grasping Tendrils
+  maximum_duration: null
+  name: Enormous
   range: null
-  raw_description: '**Grasping Tendrils** [Free Action] **Trigger** A creature within
-    10 feet of the mu spore moves or attacks the mu spore. **Effect** The spore uses
-    Grab on the triggering creature. There is no limit to how many creatures it can
-    grab with the sticky tendrils that cover its body.'
+  raw_description: '**Enormous** A mu spore is a massive creature and takes up a space
+    of 10 squares by 10 squares (50 feet by 50 feet).
+
+
+    **Spores** (__aura__) 60 feet. A living creature that enters the area or ends
+    its turn within it is corrupted by spores. It must succeed at a DC 42 Fortitude
+    save or be clumsy 1, enfeebled 1, and slowed 1 for 1 round. Fungi and plants are
+    immune.
+
+
+    **Grasping Tendrils** [Free Action] **Trigger** A creature within 10 feet of the
+    mu spore moves or attacks the mu spore. **Effect** The spore uses Grab on the
+    triggering creature. There is no limit to how many creatures it can grab with
+    the sticky tendrils that cover its body.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within 10 feet of the mu spore moves or attacks the mu spore.
@@ -95,15 +199,13 @@ description: 'A mu spore is a thankfully rare fungoid monstrosity of vast power 
   **__Recall Knowledge - Fungus__ (__Nature__)**: DC 42'
 hp: 350
 hp_misc: regeneration 50 (deactivated by sonic)
-immunities: null
-items: null
 languages:
 - Aklo
 - Common
 - Terran
 - Undercommon
 level: 21
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 4d12+18
@@ -118,136 +220,14 @@ melee:
   - reach 30 feet
 name: Mu Spore
 perception: 36
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The mu spore releases a cloud of burrowing spores in a 400-foot cone.
-    The spores deal 22d6 piercing damage to all creatures, objects, and wooden structures
-    in the area, but not to plants or fungi (DC 46 basic Reflex save). The mu spore
-    can't use this ability again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Cough Spores
-  range: null
-  raw_description: '**Cough Spores** [Two Actions]  The mu spore releases a cloud
-    of burrowing spores in a 400-foot cone. The spores deal 22d6 piercing damage to
-    all creatures, objects, and wooden structures in the area, but not to plants or
-    fungi (DC 46 basic Reflex save). The mu spore can''t use this ability again for
-    1d4 rounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The mu spore pulls all creatures and objects in a 400-foot cone 400
-    feet towards it's mouth. A successful DC 43 Fortitude save halves the distance,
-    or avoids the pull on a critical success. The mu spore automatically attempts
-    to Swallow Whole each creature adjacent to it at the end of the inhalation.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Enormous Inhalation
-  range: null
-  raw_description: '**Enormous Inhalation** [Two Actions]  The mu spore pulls all
-    creatures and objects in a 400-foot cone 400 feet towards it''s mouth. A successful
-    DC 43 Fortitude save halves the distance, or avoids the pull on a critical success.
-    The mu spore automatically attempts to Swallow Whole each creature adjacent to
-    it at the end of the inhalation.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The spore uses Swallow Whole.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fast Swallow
-  range: null
-  raw_description: '**Fast Swallow** [Reaction]  **Trigger** The mu spore Grabs a
-    creature with its jaws. **Effect** The spore uses Swallow Whole.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The mu spore Grabs a creature with its jaws.
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 15 bludgeoning, DC 45.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Greater Constrict
-  range: null
-  raw_description: '**Greater Constrict**   15 bludgeoning, DC 45.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The mu spore still deals 18 piercing damage if its jaws Strike is a
-    failure (but not on critical failure)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Overpowering Jaws
-  range: null
-  raw_description: '**Overpowering Jaws** The mu spore still deals 18 piercing damage
-    if its jaws Strike is a failure (but not on critical failure)'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Gargantuan, 20d6+9 acid, Rupture 37.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**Swallow Whole**   (__attack__) Gargantuan, 20d6+9 acid, Rupture
-    37.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 20
+  misc: null
   type: acid
 - amount: 10
+  misc: except sonic
   type: all (except sonic)
-ritual_lists: null
 saves:
   fort: 38
   fort_misc: null
@@ -262,50 +242,49 @@ sense_abilities:
   critical_success: null
   description: The mu spore senses vibrations in the air through its aerial spores.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Windsense
   range: null
   raw_description: '**Windsense** The mu spore senses vibrations in the air through
     its aerial spores.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +36
 - low-light vision
 - windsense 240 feet
 size: Gargantuan
 skills:
 - bonus: 26
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 41
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 38
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 36
   misc: null
-  name: 'Occultism '
-source:
+  name: Occultism
+sources:
 - abbr: Bestiary
-  page_start: 238
+  page_start: '238'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- CN
-- Gargantuan
 - Fungus
-type: Creature
-weaknesses: null

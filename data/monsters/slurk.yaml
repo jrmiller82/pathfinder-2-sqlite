@@ -7,6 +7,59 @@ ability_mods:
   wis_mod: 0
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The slurk extrudes a slippery grease from its ventral glands to coat
+    the floor under it and in a 5-foot emanation, turning the affected area into uneven
+    ground for 10 minutes, after which it dries to a putrid crust. The DC to Balance
+    across the slime is 18.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Belly Grease
+  range: null
+  raw_description: '**Belly Grease** [Three Actions]  The slurk extrudes a slippery
+    grease from its ventral glands to coat the floor under it and in a 5-foot emanation,
+    turning the affected area into uneven ground for 10 minutes, after which it dries
+    to a putrid crust. The DC to Balance across the slime is 18.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature struck by a slurk's slime squirt becomes clumsy 1 and takes
+    a –5-foot penalty to Speed for 1 hour or until the slime is removed. The slime
+    can be removed with a total of three Interact actions by the entangled creature
+    or creatures adjacent to the creature. These actions don't need to be consecutive
+    or made by the same creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Entangling Slime
+  range: null
+  raw_description: '**Entangling Slime** A creature struck by a slurk''s slime squirt
+    becomes clumsy 1 and takes a –5-foot penalty to Speed for 1 hour or until the
+    slime is removed. The slime can be removed with a total of three Interact actions
+    by the entangled creature or creatures adjacent to the creature. These actions
+    don''t need to be consecutive or made by the same creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'The slurk is a sticky, tusked frog-beast found in underground lairs
@@ -50,13 +103,11 @@ description: 'The slurk is a sticky, tusked frog-beast found in underground lair
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 16'
 hp: 35
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Draconic
 - (can't speak any language)
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -68,68 +119,16 @@ melee:
   - deadly 1d10
 name: Slurk
 perception: 6
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The slurk extrudes a slippery grease from its ventral glands to coat
-    the floor under it and in a 5-foot emanation, turning the affected area into uneven
-    ground for 10 minutes, after which it dries to a putrid crust. The DC to Balance
-    across the slime is 18.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Belly Grease
-  range: null
-  raw_description: '**Belly Grease** [Three Actions]  The slurk extrudes a slippery
-    grease from its ventral glands to coat the floor under it and in a 5-foot emanation,
-    turning the affected area into uneven ground for 10 minutes, after which it dries
-    to a putrid crust. The DC to Balance across the slime is 18.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature struck by a slurk's slime squirt becomes clumsy 1 and takes
-    a -5-foot penalty to Speed for 1 hour or until the slime is removed. The slime
-    can be removed with a total of three Interact actions by the entangled creature
-    or creatures adjacent to the creature. These actions don't need to be consecutive
-    or made by the same creature.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Entangling Slime
-  range: null
-  raw_description: '**Entangling Slime** A creature struck by a slurk''s slime squirt
-    becomes clumsy 1 and takes a -5-foot penalty to Speed for 1 hour or until the
-    slime is removed. The slime can be removed with a total of three Interact actions
-    by the entangled creature or creatures adjacent to the creature. These actions
-    don''t need to be consecutive or made by the same creature.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: entangling slime
   name: slime squirt
   plus_damage: null
   to_hit: 9
   traits:
   - range increment 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 10
   fort_misc: +12 vs. Grapple or Shove
@@ -138,34 +137,30 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 6
   misc: +8 to Escape
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 301
+  page_start: '301'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

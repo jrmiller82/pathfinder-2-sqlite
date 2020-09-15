@@ -7,6 +7,30 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The giant dragonfly nymph extends its jaws to a surprising distance.
+    The dragonfly nymph makes a mandibles Strike with a reach of 10 feet, but the
+    mandibles lose the __agile__ trait for this Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Extend Mandibles
+  range: null
+  raw_description: '**Extend Mandibles** [One Action]  The giant dragonfly nymph extends
+    its jaws to a surprising distance. The dragonfly nymph makes a mandibles Strike
+    with a reach of 10 feet, but the mandibles lose the __agile__ trait for this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'The aquatic, wingless offspring of dragonflies are called dragonfly
@@ -21,11 +45,8 @@ description: 'The aquatic, wingless offspring of dragonflies are called dragonfl
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 18'
 hp: 46
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+6
@@ -37,34 +58,7 @@ melee:
   - agile
 name: Giant Dragonfly Nymph
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The giant dragonfly nymph extends its jaws to a surprising distance.
-    The dragonfly nymph makes a mandibles Strike with a reach of 10 feet, but the
-    mandibles lose the __agile__ trait for this Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Extend Mandibles
-  range: null
-  raw_description: '**Extend Mandibles**   The giant dragonfly nymph extends its jaws
-    to a surprising distance. The dragonfly nymph makes a mandibles Strike with a
-    reach of 10 feet, but the mandibles lose the __agile__ trait for this Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 11
   fort_misc: null
@@ -73,33 +67,29 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - low-light vision
 - wavesense (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 10
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: +11 in water
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 98
+  page_start: '98'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null

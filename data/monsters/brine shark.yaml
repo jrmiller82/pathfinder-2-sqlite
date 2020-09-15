@@ -7,6 +7,30 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The brine shark dives straight down into the water, moving up to twice
+    its swim Speed in a straight vertical line. It can use this ability while grabbing
+    a creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deep Plunge
+  range: null
+  raw_description: '**Deep Plunge** [One Action]  The brine shark dives straight down
+    into the water, moving up to twice its swim Speed in a straight vertical line.
+    It can use this ability while grabbing a creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Brine sharks are deadly elementals that roam the endless oceans of the
@@ -23,10 +47,8 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+7
@@ -39,34 +61,11 @@ melee:
   traits: null
 name: Brine Shark
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The brine shark dives straight down into the water, moving up to twice
-    its swim Speed in a straight vertical line. It can use this ability while grabbing
-    a creature.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deep Plunge
-  range: null
-  raw_description: '**Deep Plunge**   The brine shark dives straight down into the
-    water, moving up to twice its swim Speed in a straight vertical line. It can use
-    this ability while grabbing a creature.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -75,36 +74,32 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Medium
 skills:
 - bonus: 10
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 152
+  page_start: '152'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Medium
 - Aquatic
 - Elemental
 - Water
-type: Creature
-weaknesses: null

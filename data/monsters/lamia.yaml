@@ -7,6 +7,37 @@ ability_mods:
   wis_mod: 3
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The lamia touches a creature, who must succeed at a DC 23 Will save
+    or become __stupefied 1__. If the target fails additional saves against this ability,
+    the condition value increases by 1 (to a maximum of stupefied 4). This condition
+    value decreases by 1 every 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Lamia's Caress
+  range: null
+  raw_description: '**Lamia''s Caress** [Two Actions]  (__curse__, __enchantment__,
+    __mental__, __occult__) The lamia touches a creature, who must succeed at a DC
+    23 Will save or become __stupefied 1__. If the target fails additional saves against
+    this ability, the condition value increases by 1 (to a maximum of stupefied 4).
+    This condition value decreases by 1 every 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - enchantment
+  - mental
+  - occult
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Just as they were cursed long ago, lamias can curse those they touch,
@@ -56,7 +87,6 @@ description: 'Just as they were cursed long ago, lamias can curse those they tou
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 22'
 hp: 95
 hp_misc: null
-immunities: null
 items:
 - +1 spear
 - javelin (2)
@@ -64,7 +94,7 @@ languages:
 - Abyssal
 - Common
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+8
@@ -86,36 +116,7 @@ melee:
   - agile
 name: Lamia
 perception: 13
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The lamia touches a creature, who must succeed at a DC 23 Will save
-    or become __stupefied 1__. If the target fails additional saves against this ability,
-    the condition value increases by 1 (to a maximum of stupefied 4). This condition
-    value decreases by 1 every 24 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Lamia's Caress
-  range: null
-  raw_description: '**Lamia''s Caress** [Two Actions]  (__curse__, __enchantment__,
-    __mental__, __occult__) The lamia touches a creature, who must succeed at a DC
-    23 Will save or become __stupefied 1__. If the target fails additional saves against
-    this ability, the condition value increases by 1 (to a maximum of stupefied 4).
-    This condition value decreases by 1 every 24 hours.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - enchantment
-  - mental
-  - occult
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+8
@@ -135,11 +136,6 @@ ranged:
   to_hit: 15
   traits:
   - thrown 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -148,82 +144,68 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 size: Large
 skills:
 - bonus: 11
   misc: null
-  name: 'Cult Lore '
+  name: Cult Lore
 - bonus: 15
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 11
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 13
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 15
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 11
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 216
+  page_start: '216'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists:
-- dc: 25
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 25
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: x3
+    - misc: x3
       name: charm
-      requirement: null
-    - frequency: null
+    - misc: null
       name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: sleep
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: humanoid form
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mirror image
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: at will
+    - misc: at will
       name: illusory disguise
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: illusory object
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: ventriloquism
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- CE
-- Large
 - Beast
-type: Creature
-weaknesses: null

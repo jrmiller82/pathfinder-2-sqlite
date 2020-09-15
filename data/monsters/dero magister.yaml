@@ -7,6 +7,36 @@ ability_mods:
   wis_mod: -1
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The magister focuses their gaze on a creature they can see within 30 feet.
+    The target is __dazzled__ for 1 round and must succeed at a DC 24 Will saving
+    throw or be __confused__ for 1 round.
+  failure: null
+  frequency: once per round
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cytillesh Stare
+  range: null
+  raw_description: '**Cytillesh Stare** [One Action]  (__concentrate__, __incapacitation__,
+    __mental__, __visual__) **Frequency** once per round; **Effect** The magister
+    focuses their gaze on a creature they can see within 30 feet. The target is __dazzled__
+    for 1 round and must succeed at a DC 24 Will saving throw or be __confused__ for
+    1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - incapacitation
+  - mental
+  - visual
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -14,16 +44,18 @@ automatic_abilities:
   critical_success: null
   description: A dero magister takes 10 damage for every hour they're exposed to sunlight.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vulnerable to Sunlight
   range: null
   raw_description: '**Vulnerable to Sunlight** A dero magister takes 10 damage for
     every hour they''re exposed to sunlight.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -44,7 +76,7 @@ languages:
 - Aklo
 - Undercommon
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -56,35 +88,7 @@ melee:
   - trip
 name: Dero Magister
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The magister focuses their gaze on a creature they can see within 30 feet.
-    The target is __dazzled__ for 1 round and must succeed at a DC 24 Will saving
-    throw or be __confused__ for 1 round.
-  effects: null
-  failure: null
-  frequency: once per round
-  full_description: null
-  generic_description: null
-  name: Cytillesh Stare
-  range: null
-  raw_description: '**Cytillesh Stare**   (__concentrate__, __incapacitation__, __mental__,
-    __visual__) **Frequency** once per round; **Effect** The magister focuses their
-    gaze on a creature they can see within 30 feet. The target is __dazzled__ for
-    1 round and must succeed at a DC 24 Will saving throw or be __confused__ for 1
-    round.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - incapacitation
-  - mental
-  - visual
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -97,10 +101,6 @@ ranged:
   - tethered
   - thrown 20 feet
 rarity: Uncommon
-resistances:
-- amount: null
-  type: vulnerable to sunlight
-ritual_lists: null
 saves:
   fort: 10
   fort_misc: null
@@ -109,128 +109,105 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Small
 skills:
 - bonus: 12
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 8
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 12
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 11
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 85
+  page_start: '85'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 24
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
-      name: modify memory
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-    - frequency: null
-      name: sound burst
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-  to_hit: null
-- dc: 24
+  constants: null
+  dc: 24
+  focus_points: null
   misc: null
-  name: Occult Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
-      name: blindness
-      requirement: null
-    - frequency: 3 slots
-      name: vampiric touch
-      requirement: null
-  - heightened_level: null
-    level: 2
+    - misc: null
+      name: modify memory
+  - level: 2
     spells:
-    - frequency: null
-      name: hideous laughter
-      requirement: null
-    - frequency: null
-      name: paranoia
-      requirement: null
-    - frequency: null
-      name: spectral hand
-      requirement: null
-    - frequency: 4 slots
-      name: touch of idiocy
-      requirement: null
-  - heightened_level: null
-    level: 1
+    - misc: at will
+      name: darkness
+    - misc: null
+      name: sound burst
+  spells_source: Occult Innate Spells
+- attack_bonus: null
+  cantrips:
+  - level: 3
     spells:
-    - frequency: null
-      name: grim tendrils
-      requirement: null
-    - frequency: null
-      name: magic missile
-      requirement: null
-    - frequency: null
-      name: phantom pain
-      requirement: null
-    - frequency: 4 slots
-      name: soothe
-      requirement: null
-  - heightened_level: 3
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: forbidding ward
-      requirement: null
-    - frequency: null
+    - misc: null
       name: message
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 24
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: blindness
+    - misc: 3 slots
+      name: vampiric touch
+  - level: 2
+    spells:
+    - misc: null
+      name: hideous laughter
+    - misc: null
+      name: paranoia
+    - misc: null
+      name: spectral hand
+    - misc: 4 slots
+      name: touch of idiocy
+  - level: 1
+    spells:
+    - misc: null
+      name: grim tendrils
+    - misc: null
+      name: magic missile
+    - misc: null
+      name: phantom pain
+    - misc: 4 slots
+      name: soothe
+  spells_source: Occult Spontaneous Spells
 traits:
-- Uncommon
-- CE
-- Small
 - Dero
 - Humanoid
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: null
+  misc: null
+  type: vulnerable to sunlight

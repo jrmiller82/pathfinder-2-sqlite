@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 16
 ac_special: null
+active_abilities: null
 alignment: N
 automatic_abilities: null
 description: 'These roughly human-sized reptiles have amazing feet capable of clinging
@@ -34,11 +35,8 @@ description: 'These roughly human-sized reptiles have amazing feet capable of cl
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+2
@@ -49,13 +47,7 @@ melee:
   traits: null
 name: Giant Gecko
 perception: 7
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -72,47 +64,46 @@ sense_abilities:
     how slick or sheer. If a giant gecko attempts an Athletics check to climb and
     critically fails, it gets a failure instead.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Uncanny Climber
   range: null
   raw_description: '**Uncanny Climber** A giant gecko''s feet allow it to climb virtually
     any surface, no matter how slick or sheer. If a giant gecko attempts an Athletics
     check to climb and critically fails, it gets a failure instead.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +7
 - low-light vision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: +9 to Climb
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 228
+  page_start: '228'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 0
 ac: 13
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The void zombie uses its feeding tendril to drain blood from the creature
+    struck. The void zombie regains 4 Hit Points, and the creature is __drained 1__
+    until it receives healing of any kind or amount.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Feed on Blood
+  range: null
+  raw_description: '**Feed on Blood** [One Action]  **Requirements** The void zombie''s
+    previous action was a successful feeding tendril Strike against the target creature;
+    **Effect** The void zombie uses its feeding tendril to drain blood from the creature
+    struck. The void zombie regains 4 Hit Points, and the creature is __drained 1__
+    until it receives healing of any kind or amount.'
+  requirements: The void zombie's previous action was a successful feeding tendril
+    Strike against the target creature
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -18,11 +45,11 @@ automatic_abilities:
     weakness, the larval akata retreats to the depths of the void zombie's body, causing
     the void zombie to become __slowed 1__ until the end of its next turn.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Salt Water Vulnerability
   range: null
   raw_description: '**Salt Water Vulnerability** Salt water acts as an extremely strong
@@ -32,6 +59,8 @@ automatic_abilities:
     void zombie''s body, causing the void zombie to become __slowed 1__ until the
     end of its next turn.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -53,13 +82,13 @@ description: 'A void zombie arises when a humanoid dies from an __akata''s__ voi
 
 
 
-  The name "void zombie" is something of a misnomer; though still compelled by necromantic
+  The name “void zombie” is something of a misnomer; though still compelled by necromantic
   energies, a void zombie is a host in the life cycle of a parasitic alien, not a
   mindless, reanimated corpse (despite their similar appearances). The fact that a
   typical void zombie shares the neutral alignment of the larval akata within, rather
   than the intrinsically evil nature of other zombies, has caused some scholars to
-  push to reclassify them under other names. Suggestions have included "void dead,"
-  "akata spawn," or "bloodwalker," but the visceral and compelling commonplace name
+  push to reclassify them under other names. Suggestions have included “void dead,”
+  “akata spawn,” or “bloodwalker,” but the visceral and compelling commonplace name
   has proven difficult to shed.
 
 
@@ -85,14 +114,12 @@ description: 'A void zombie arises when a humanoid dies from an __akata''s__ voi
 hp: 26
 hp_misc: negative healing
 immunities:
-- death effects
-- disease
-- paralyzed
-- poison
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -114,37 +141,8 @@ melee:
   - agile
 name: Void Zombie
 perception: 3
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The void zombie's previous action was a successful feeding tendril Strike
-    against the target creature
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Feed on Blood
-  range: null
-  raw_description: '**Feed on Blood**   **Requirements** The void zombie''s previous
-    action was a successful feeding tendril Strike against the target creature; **Effect**
-    The void zombie uses its feeding tendril to drain blood from the creature struck.
-    The void zombie regains 4 Hit Points, and the creature is __drained 1__ until
-    it receives healing of any kind or amount.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
-resistances:
-- amount: 5
-  type: salt water
-- amount: 2
-  type: slashing
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -153,27 +151,28 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +3
 - darkvision
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 288
+  page_start: '288'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Rare
-- N
-- Medium
 - Undead
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: salt water
+- amount: 2
+  misc: null
+  type: slashing

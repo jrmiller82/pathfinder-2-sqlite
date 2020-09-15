@@ -7,6 +7,76 @@ ability_mods:
   wis_mod: 4
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The arboreal regent causes a tree within 180 feet to uproot itself
+    and fight as a minion using the statistics for an __awakened tree__. The arboreal
+    regent can control up to two awakened trees at a time, and it can issue commands
+    to both trees as a single action, which has the __concentrate__ and __auditory__
+    traits.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Awaken Tree
+  range: null
+  raw_description: '**Awaken Tree** [Two Actions]  (__concentrate__, __primal__) The
+    arboreal regent causes a tree within 180 feet to uproot itself and fight as a
+    minion using the statistics for an __awakened tree__. The arboreal regent can
+    control up to two awakened trees at a time, and it can issue commands to both
+    trees as a single action, which has the __concentrate__ and __auditory__ traits.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When an arboreal regent damages an item or structure, it deals an additional
+    2d10 damage to that item or structure.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sunder Objects
+  range: null
+  raw_description: '**Sunder Objects** When an arboreal regent damages an item or
+    structure, it deals an additional 2d10 damage to that item or structure.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**Throw Rock** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
@@ -14,16 +84,18 @@ automatic_abilities:
   critical_success: null
   description: The arboreal regent takes 5 additional damage from axes.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Axe Vulnerability
   range: null
   raw_description: '**Axe Vulnerability** The arboreal regent takes 5 additional damage
     from axes.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -45,15 +117,13 @@ description: 'Arboreal regents—also called treants—are lumbering, solitary c
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 24'
 hp: 150
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Arboreal
 - Common
 - Sylvan
 - speak with plants
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+7
@@ -74,71 +144,7 @@ melee:
   - trip
 name: Arboreal Regent
 perception: 18
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The arboreal regent causes a tree within 180 feet to uproot itself
-    and fight as a minion using the statistics for an __awakened tree__. The arboreal
-    regent can control up to two awakened trees at a time, and it can issue commands
-    to both trees as a single action, which has the __concentrate__ and __auditory__
-    traits.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Awaken Tree
-  range: null
-  raw_description: '**Awaken Tree** [Two Actions]  (__concentrate__, __primal__) The
-    arboreal regent causes a tree within 180 feet to uproot itself and fight as a
-    minion using the statistics for an __awakened tree__. The arboreal regent can
-    control up to two awakened trees at a time, and it can issue commands to both
-    trees as a single action, which has the __concentrate__ and __auditory__ traits.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When an arboreal regent damages an item or structure, it deals an additional
-    2d10 damage to that item or structure.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sunder Objects
-  range: null
-  raw_description: '**Sunder Objects** When an arboreal regent damages an item or
-    structure, it deals an additional 2d10 damage to that item or structure.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**Throw Rock**  '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+7
@@ -149,13 +155,13 @@ ranged:
   traits:
   - brutal
   - range increment 120 feet
-rarity: Common
 resistances:
 - amount: 5
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 20
   fort_misc: null
@@ -164,53 +170,52 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - low-light vision
 size: Huge
 skills:
 - bonus: 19
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 16
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 16
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 18
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 11
   misc: +21 in forests
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 25
+  page_start: '25'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 26
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: 4
-    level: -1
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: speak with plants
-      requirement: null
-  to_hit: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists: null
+  spells_source: Primal Innate Spells
 traits:
-- NG
-- Huge
 - Plant
-type: Creature
 weaknesses:
 - amount: null
+  misc: null
   type: axe vulnerability
 - amount: 10
+  misc: null
   type: fire

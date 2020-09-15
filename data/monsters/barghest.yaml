@@ -7,6 +7,66 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
+    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
+    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
+    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
+    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
+    one goblinoid form and one wolf form.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __divine__, __polymorph__,
+    __transmutation__) The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
+    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
+    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
+    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
+    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
+    one goblinoid form and one wolf form.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Once per month, a barghest can spend 1 minute to devour a corpse, gaining
+    a permanent +1 status bonus to its checks and DCs. Each subsequent time it feeds,
+    this bonus increases by 1. The fourth time a barghest feeds, it sheds its skin
+    and mutates into a greater barghest, and the status bonus ends.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Feed
+  range: null
+  raw_description: '**Feed** Once per month, a barghest can spend 1 minute to devour
+    a corpse, gaining a permanent +1 status bonus to its checks and DCs. Each subsequent
+    time it feeds, this bonus increases by 1. The fourth time a barghest feeds, it
+    sheds its skin and mutates into a greater barghest, and the status bonus ends.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +78,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +93,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -51,14 +113,12 @@ description: 'Typical barghests are ravenous gluttons of life who feed and grow 
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 19'
 hp: 50
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - Common
 - Goblin
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+5
@@ -78,70 +138,14 @@ melee:
   - agile
 name: Barghest
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
-    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
-    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
-    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
-    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
-    one goblinoid form and one wolf form.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __divine__, __polymorph__,
-    __transmutation__) The barghest takes on the shape of a goblinoid (a goblin, hobgoblin,
-    or bugbear) or a wolf, or it transforms back into its true form. When the barghest
-    is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is
-    a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed
-    changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only
-    one goblinoid form and one wolf form.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Once per month, a barghest can spend 1 minute to devour a corpse, gaining
-    a permanent +1 status bonus to its checks and DCs. Each subsequent time it feeds,
-    this bonus increases by 1. The fourth time a barghest feeds, it sheds its skin
-    and mutates into a greater barghest, and the status bonus ends.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Feed
-  range: null
-  raw_description: '**Feed** Once per month, a barghest can spend 1 minute to devour
-    a corpse, gaining a permanent +1 status bonus to its checks and DCs. Each subsequent
-    time it feeds, this bonus increases by 1. The fourth time a barghest feeds, it
-    sheds its skin and mutates into a greater barghest, and the status bonus ends.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: fire
 - amount: 5
-  type: physical (except magical)
-ritual_lists: null
+  misc: except magical
+  type: physical
 saves:
   fort: 11
   fort_misc: null
@@ -150,71 +154,61 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 12
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 9
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 11
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 10
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 36
+  page_start: '36'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 21
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 21
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: blink
-      requirement: null
-    - frequency: null
+    - misc: null
       name: confusion
-      requirement: null
-    - frequency: self only
+    - misc: self only
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: at will
+    - misc: at will
       name: levitate
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: charm
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- CE
-- Medium
 - Fiend
-type: Creature
-weaknesses: null

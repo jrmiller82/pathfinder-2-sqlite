@@ -7,6 +7,29 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The shambler makes a vine Strike against each creature within reach.
+    Its multiple attack penalty increases only after all the attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Vine Lash
+  range: null
+  raw_description: '**Vine Lash** [Two Actions]  The shambler makes a vine Strike
+    against each creature within reach. Its multiple attack penalty increases only
+    after all the attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -16,11 +39,11 @@ automatic_abilities:
     with an electricity effect, it gains 12 temporary HP and is quickened until the
     end of its next turn. It can use its extra action to Stride, Strike, or Swim.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Electric Surge
   range: null
   raw_description: '**Electric Surge** Whenever the shambler would take electricity
@@ -28,6 +51,8 @@ automatic_abilities:
     is quickened until the end of its next turn. It can use its extra action to Stride,
     Strike, or Swim.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -35,27 +60,29 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: A creature unaware of the shambler's true nature comes within 10 feet.
-  effects: null
+  effect: The shambler makes a vine Strike against the creature. Then roll initiative.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shamble
   range: null
   raw_description: '**Shamble** [Reaction] **Requirements** The shambler is in mound
     form. **Trigger** A creature unaware of the shambler''s true nature comes within
     10 feet. **Effect** The shambler makes a vine Strike against the creature. Then
     roll initiative.'
-  requirements: null
+  requirements: The shambler is in mound form.
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The shambler is in mound form.
+  trigger: A creature unaware of the shambler's true nature comes within 10 feet.
 description: 'Shamblers are cunning carnivorous plants that resemble heaps of wet,
   rotting vegetation. Even when standing erect on their stumpy legs, shamblers don''t
   have much in the way of identifiable anatomy; they are tangles of parasitic vines
   that lash out at prey with their longest creepers, entwined together to deliver
-  powerful blows. Sometimes called "shambling mounds," these ambush predators have
+  powerful blows. Sometimes called “shambling mounds,” these ambush predators have
   a particular fondness for flesh, and are most well known for their ability to hunker
   down and hide in plain sight. A shambler can draw nutrients from plant matter or
   soil, but won''t do so if it suspects meat might soon wander near, and indeed may
@@ -81,7 +108,7 @@ description: 'Shamblers are cunning carnivorous plants that resemble heaps of we
 
 
   Other types of shamblers exist, including those composed not of plant matter but
-  fungal growth. These creatures, known as "spore mounds," discharge clouds of toxic
+  fungal growth. These creatures, known as “spore mounds,” discharge clouds of toxic
   spores from their bodies when struck in combat. In semiarid deserts, shambler-like
   plants called tanglethorns dwell amid sagebrush and rock formations; they resemble
   bunches of tumbleweeds and cacti and in  ict deep, bloody lacerations with their
@@ -95,14 +122,13 @@ hp: 120
 hp_misc: null
 immunities:
 - electricity
-items: null
 languages:
 - Common
 - Elven
 - Sylvan
 - (can't speak any language)
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
@@ -116,33 +142,11 @@ melee:
   - reach 10 feet
 name: Shambler
 perception: 12
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The shambler makes a vine Strike against each creature within reach.
-    Its multiple attack penalty increases only after all the attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Vine Lash
-  range: null
-  raw_description: '**Vine Lash** [Two Actions]  The shambler makes a vine Strike
-    against each creature within reach. Its multiple attack penalty increases only
-    after all the attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 17
   fort_misc: null
@@ -160,11 +164,11 @@ sense_abilities:
     must actively Seek and succeed at a DC 22 Perception check (DC 28 in forests or
     swamps) to detect the shambler's true nature.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Mound
   range: null
   raw_description: '**Mound** When it''s not in danger, the shambler spends 1 minute
@@ -172,33 +176,32 @@ sense_abilities:
     this form, creatures must actively Seek and succeed at a DC 22 Perception check
     (DC 28 in forests or swamps) to detect the shambler''s true nature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +12
 - darkvision
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: +18 in forests or swamps
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 290
+  page_start: '290'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Large
 - Plant
-type: Creature
-weaknesses: null

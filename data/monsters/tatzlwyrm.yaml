@@ -7,6 +7,111 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The tatzlwyrm belches a puff of poisonous vapor into the face of an
+    adjacent creature, which must attempt a DC 15 Fortitude save; the creature takes
+    a –2 circumstance penalty to this save if it's __grabbed__ or __flat-footed__.
+    The tatzlwyrm can't use Poison Gasp again for 2 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Poison Gasp
+  range: null
+  raw_description: '**Poison Gasp** [One Action]  The tatzlwyrm belches a puff of
+    poisonous vapor into the face of an adjacent creature, which must attempt a DC
+    15 Fortitude save; the creature takes a –2 circumstance penalty to this save if
+    it''s __grabbed__ or __flat-footed__. The tatzlwyrm can''t use Poison Gasp again
+    for 2 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The target is unaffected.
+  description: The target is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The target is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target is __sickened 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The target is __sickened 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The target is __sickened 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target takes 2d6 poison damage and is __enfeebled 1__ for 1 round.
+  effect: null
+  failure: The target takes 2d6 poison damage and is __enfeebled 1__ for 1 round.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The target takes 2d6 poison damage and is __enfeebled
+    1__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The target takes 4d6 poison damage and is enfeebled 1 for 1 minute.
+  critical_success: null
+  description: The target takes 4d6 poison damage and is enfeebled 1 for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The target takes 4d6 poison damage and is
+    enfeebled 1 for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Tatzlwyrms resemble human-sized snakes with two arms and a dragon''s
@@ -58,13 +163,12 @@ description: 'Tatzlwyrms resemble human-sized snakes with two arms and a dragon'
 hp: 30
 hp_misc: null
 immunities:
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Draconic
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+6
@@ -86,38 +190,7 @@ melee:
   - magical
 name: Tatzlwyrm
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: The target takes 4d6 poison damage and is enfeebled 1 for 1 minute.
-  critical_success: The target is unaffected.
-  description: "The tatzlwyrm belches a puff of poisonous vapor into the face of an\
-    \ adjacent creature, which must attempt a DC 15 Fortitude save; the creature takes\
-    \ a -2 circumstance penalty to this save if it's __grabbed__ or __flat-footed__.\
-    \ The tatzlwyrm can't use Poison Gasp again for 2 rounds. \n\n"
-  effect: null
-  effects: null
-  failure: The target takes 2d6 poison damage and is enfeebled 1 for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Poison Gasp
-  range: null
-  raw_description: "**Poison Gasp**   The tatzlwyrm belches a puff of poisonous vapor\
-    \ into the face of an adjacent creature, which must attempt a DC 15 Fortitude\
-    \ save; the creature takes a -2 circumstance penalty to this save if it's __grabbed__\
-    \ or __flat-footed__. The tatzlwyrm can't use Poison Gasp again for 2 rounds.\
-    \ \n\n**Critical Success** The target is unaffected. \n\n**Success** The target\
-    \ is __sickened 1__. \n\n**Failure** The target takes 2d6 poison damage and is\
-    \ __enfeebled 1__ for 1 round. \n\n**Critical Failure** The target takes 4d6 poison\
-    \ damage and is enfeebled 1 for 1 minute."
-  requirements: null
-  success: The target is sickened 1.
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 11
   fort_misc: null
@@ -134,11 +207,11 @@ sense_abilities:
     In areas of dense undergrowth, a tatzlwyrm can move at its full Speed when __Sneaking__,
     and it gains a +4 circumstance bonus to __Hide__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Natural Camouflage
   range: null
   raw_description: '**Natural Camouflage** A tatzlwyrm''s green, gray, and brown scales
@@ -146,42 +219,41 @@ sense_abilities:
     move at its full Speed when __Sneaking__, and it gains a +4 circumstance bonus
     to __Hide__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +8
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 6
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 256
+  page_start: '256'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Dragon
-type: Creature
-weaknesses: null

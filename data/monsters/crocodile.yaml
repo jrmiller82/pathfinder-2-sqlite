@@ -7,6 +7,73 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Aquatic Ambush
+  range: 35 feet
+  raw_description: '**Aquatic Ambush** [One Action]  35 feet'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The crocodile must have a creature grabbed.'
+  effect: The crocodile tucks its legs and rolls rapidly, twisting its victim. It
+    makes a jaws Strike with a +2 circumstance bonus to the attack roll against the
+    grabbed creature. If it hits, it also knocks the creature prone. If it fails,
+    it releases the creature.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Death Roll
+  range: null
+  raw_description: '**Death Roll** [One Action]  (__attack__) **Requirement** The
+    crocodile must have a creature grabbed. **Effect** The crocodile tucks its legs
+    and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance
+    bonus to the attack roll against the grabbed creature. If it hits, it also knocks
+    the creature prone. If it fails, it releases the creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The crocodile can hold its breath for about 2 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deep Breath
+  range: null
+  raw_description: '**Deep Breath** The crocodile can hold its breath for about 2
+    hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Crocodiles can be found basking on riverbanks, lurking in swamps, or
@@ -22,11 +89,8 @@ description: 'Crocodiles can be found basking on riverbanks, lurking in swamps, 
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 16'
 hp: 30
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+4
@@ -48,70 +112,7 @@ melee:
   - agile
 name: Crocodile
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 35 feet
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Aquatic Ambush
-  range: null
-  raw_description: '**Aquatic Ambush**   35 feet'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The crocodile must have a creature grabbed.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Death Roll
-  range: null
-  raw_description: '**Death Roll**   (__attack__) **Requirement** The crocodile must
-    have a creature grabbed. **Effect** The crocodile tucks its legs and rolls rapidly,
-    twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the
-    attack roll against the grabbed creature. If it hits, it also knocks the creature
-    prone. If it fails, it releases the creature.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The crocodile can hold its breath for about 2 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deep Breath
-  range: null
-  raw_description: '**Deep Breath** The crocodile can hold its breath for about 2
-    hours.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -120,31 +121,27 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 size: Large
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: +11 in water
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 67
+  page_start: '67'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

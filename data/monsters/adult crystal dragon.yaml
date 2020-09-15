@@ -7,36 +7,231 @@ ability_mods:
   wis_mod: 3
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a flurry of piercing crystals that deal 12d6 piercing
+    damage in a 40-foot cone (DC 30 basic Reflex save). They can't use Breath Weapon
+    again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__evocation__, __primal__) The
+    dragon breathes a flurry of piercing crystals that deal 12d6 piercing damage in
+    a 40-foot cone (DC 30 basic Reflex save). They can''t use Breath Weapon again
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - evocation
+  - primal
+  trigger: null
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon embeds transformative crystals in the creature's flesh. The creature
+    must attempt a DC 30 Fortitude save.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Crystallize Flesh
+  range: null
+  raw_description: '**Crystallize Flesh** [Free Action]  (__primal__, __transmutation__)
+    **Trigger **The crystal dragon damages a creature made of flesh with a jaws Strike;
+    **Frequency **once per day; **Effect **The dragon embeds transformative crystals
+    in the creature''s flesh. The creature must attempt a DC 30 Fortitude save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - primal
+  - transmutation
+  trigger: The crystal dragon damages a creature made of flesh with a jaws Strike;
+- action_cost: None
+  critical_failure: null
+  critical_success: The target is unaffected.
+  description: The target is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The target is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target is __slowed 1__ for 1 round as portions of its flesh turn
+    crystalline.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The target is __slowed 1__ for 1 round as portions
+    of its flesh turn crystalline.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The target is __slowed 1__ for 1 round as portions of its flesh turn crystalline.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The target is slowed 1 and must attempt a Fortitude save at the end
+    of each of its turns; this ongoing save has the __incapacitation__ trait. On a
+    failed save, the slowed condition value increases by 1 (or by 2 on a critical
+    failure). A successful save reduces the slowed condition value by 1. A creature
+    unable to act due to the slowed condition from Crystallize Flesh is __petrified__
+    permanently, transforming into a crystalline statue. The effect ends if the creature
+    is petrified or the slowed condition is removed.
+  effect: null
+  failure: The target is slowed 1 and must attempt a Fortitude save at the end of
+    each of its turns; this ongoing save has the __incapacitation__ trait. On a failed
+    save, the slowed condition value increases by 1 (or by 2 on a critical failure).
+    A successful save reduces the slowed condition value by 1. A creature unable to
+    act due to the slowed condition from Crystallize Flesh is __petrified__ permanently,
+    transforming into a crystalline statue. The effect ends if the creature is petrified
+    or the slowed condition is removed.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The target is slowed 1 and must attempt a Fortitude
+    save at the end of each of its turns; this ongoing save has the __incapacitation__
+    trait. On a failed save, the slowed condition value increases by 1 (or by 2 on
+    a critical failure). A successful save reduces the slowed condition value by 1.
+    A creature unable to act due to the slowed condition from Crystallize Flesh is
+    __petrified__ permanently, transforming into a crystalline statue. The effect
+    ends if the creature is petrified or the slowed condition is removed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but the target is initially slowed 2.
+  critical_success: null
+  description: As failure, but the target is initially slowed 2.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **As failure, but the target is initially slowed
+    2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one tail Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one tail Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges their Breath Weapon whenever they critically hit
+    with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
+    whenever they critically hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 30
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 30 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 30
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -47,24 +242,26 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The dragon makes a tail Strike at the creature with a -2 penalty. If it
+  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
     hits, the dragon disrupts the creature's action.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Twisting Tail
   range: null
   raw_description: '**Twisting Tail [Reaction]** **Trigger **A creature within reach
     of the dragon''s tail uses a __move__ action or leaves a square during a move
     action it''s using; **Effect **The dragon makes a tail Strike at the creature
-    with a -2 penalty. If it hits, the dragon disrupts the creature''s action.'
+    with a –2 penalty. If it hits, the dragon disrupts the creature''s action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within reach of the dragon's tail uses a __move__ action or
-    leaves a square during a move action it's using
+  trigger: A creature within reach of the dragon's tail uses a move action or leaves
+    a square during a move action it's using;
 description: 'Good-natured but vain, crystal dragons are beautiful creatures with
   brilliant hides made of multicolored crystal and gemstone. Their beauty is a source
   of great pride but is also something of a weakness, as crystal dragons are easily
@@ -106,24 +303,23 @@ description: 'Good-natured but vain, crystal dragons are beautiful creatures wit
 hp: 185
 hp_misc: null
 immunities:
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Common
 - Draconic
 - Terran
 - Undercommon
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+13
     type: slashing
   name: jaws
   plus_damage:
-  - formula: 3d6
-    type: piercing
+  - formula: null
+    type: 3d6 piercing
   to_hit: 24
   traits:
   - sonic
@@ -151,107 +347,8 @@ melee:
   - reach 20 feet
 name: Adult Crystal Dragon
 perception: 20
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a flurry of piercing crystals that deal 12d6 piercing
-    damage in a 40-foot cone (DC 30 basic Reflex save). They can't use Breath Weapon
-    again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__evocation__, __primal__) The
-    dragon breathes a flurry of piercing crystals that deal 12d6 piercing damage in
-    a 40-foot cone (DC 30 basic Reflex save). They can''t use Breath Weapon again
-    for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - evocation
-  - primal
-  trigger: null
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: "The dragon embeds transformative crystals in the creature's flesh. The\
-    \ creature must attempt a DC 30 Fortitude save. \n\n"
-  effects: null
-  failure: null
-  frequency: The crystal dragon damages a creature made of flesh with a jaws Strike
-  full_description: null
-  generic_description: null
-  name: Crystallize Flesh
-  range: null
-  raw_description: "**Crystallize Flesh** [Free Action]  (__primal__, __transmutation__)\
-    \ **Trigger **The crystal dragon damages a creature made of flesh with a jaws\
-    \ Strike; **Frequency **once per day; **Effect **The dragon embeds transformative\
-    \ crystals in the creature's flesh. The creature must attempt a DC 30 Fortitude\
-    \ save. \n\n**Critical Success **The target is unaffected. \n\n**Success **The\
-    \ target is __slowed 1__ for 1 round as portions of its flesh turn crystalline.\
-    \ \n\n**Failure **The target is slowed 1 and must attempt a Fortitude save at\
-    \ the end of each of its turns; this ongoing save has the __incapacitation__ trait.\
-    \ On a failed save, the slowed condition value increases by 1 (or by 2 on a critical\
-    \ failure). A successful save reduces the slowed condition value by 1. A creature\
-    \ unable to act due to the slowed condition from Crystallize Flesh is __petrified__\
-    \ permanently, transforming into a crystalline statue. The effect ends if the\
-    \ creature is petrified or the slowed condition is removed. \n\n**Critical Failure\
-    \ **As failure, but the target is initially slowed 2."
-  requirements: null
-  success: null
-  traits:
-  - primal
-  - transmutation
-  trigger: once per day
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one tail Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one tail Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges their Breath Weapon whenever they critically hit
-    with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
-    whenever they critically hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 10
-  type: sonic
-ritual_lists: null
 saves:
   fort: 24
   fort_misc: null
@@ -260,9 +357,7 @@ saves:
   ref_misc: null
   will: 20
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +20
 - darkvision
 - scent (imprecise) 60 feet
 - tremorsense (imprecise) 30 feet
@@ -270,66 +365,65 @@ size: Huge
 skills:
 - bonus: 19
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 24
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 19
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 21
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 20
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 92
+  page_start: '92'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: burrow
 - amount: 120
+  misc: null
   type: fly
 spell_lists:
-- dc: 30
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+- attack_bonus: null
+  cantrips:
+  - level: 5
     spells:
-    - frequency: ×3
-      name: color spray
-      requirement: null
-    - frequency: null
-      name: glitterdust
-      requirement: null
-    - frequency: null
-      name: hypnotic pattern
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 30
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: ×3
+      name: color spray
+    - misc: null
+      name: glitterdust
+    - misc: null
+      name: hypnotic pattern
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- NG
-- Huge
 - Dragon
 - Earth
 - Elemental
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: sonic

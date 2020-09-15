@@ -7,6 +7,190 @@ ability_mods:
   wis_mod: 5
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 2d10+7 bludgeoning, DC 29
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Greater Constrict
+  range: null
+  raw_description: '**__Greater Constrict__** [One Action]  2d10+7 bludgeoning, DC
+    29'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A quetz couatl's venom deals good damage rather than poison damage
+    to fiends; **Saving Throw **DC 29 Fortitude; **Maximum Duration **6 rounds; **Stage
+    1 **2d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **2d8 poison damage,
+    enfeebled 1, and __flat-footed__ (1 round); **Stage 3 **2d10 poison damage, enfeebled
+    2, and flat-footed (1 round)
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quetz Couatl Venom
+  range: null
+  raw_description: '**Quetz Couatl Venom** (__poison__) A quetz couatl''s venom deals
+    good damage rather than poison damage to fiends; **Saving Throw **DC 29 Fortitude;
+    **Maximum Duration **6 rounds; **Stage 1 **2d6 poison damage and __enfeebled 1__
+    (1 round); **Stage 2 **2d8 poison damage, enfeebled 1, and __flat-footed__ (1
+    round); **Stage 3 **2d10 poison damage, enfeebled 2, and flat-footed (1 round)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The quetz couatl spreads its multicolored wings and radiant plumage.
+    Each enemy within 30 feet must attempt a DC 29 Will save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Radiant Wings
+  range: null
+  raw_description: '**Radiant Wings** [Two Actions]  (__divine__, __enchantment__,
+    __incapacitation__, __mental__, __visual__) The quetz couatl spreads its multicolored
+    wings and radiant plumage. Each enemy within 30 feet must attempt a DC 29 Will
+    save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - enchantment
+  - incapacitation
+  - mental
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and is temporarily immune to Radiant
+    Wings for 24 hours.
+  description: The creature is unaffected and is temporarily immune to Radiant Wings
+    for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The creature is unaffected and is temporarily
+    immune to Radiant Wings for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __dazzled__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The creature is __dazzled__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __dazzled__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is dazzled for 1 minute.
+  effect: null
+  failure: The creature is dazzled for 1 minute.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The creature is dazzled for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but if the creature is evil, it is also __stunned
+    3__.
+  critical_success: null
+  description: As failure, but if the creature is evil, it is also __stunned 3__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **As failure, but if the creature is evil,
+    it is also __stunned 3__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The quetz couatl moves the creature into its coils, freeing its fangs to
+    make attacks, then uses __Greater Constrict__ against the creature. The quetz
+    couatl can hold as many creatures in its coils as will fit in its space.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wrap in Coils
+  range: null
+  raw_description: '**Wrap in Coils** [One Action]  **Requirements **The quetz couatl
+    has a Medium or smaller creature __grabbed__ or __restrained__ in its jaws; **Effect
+    **The quetz couatl moves the creature into its coils, freeing its fangs to make
+    attacks, then uses __Greater Constrict__ against the creature. The quetz couatl
+    can hold as many creatures in its coils as will fit in its space.'
+  requirements: The quetz couatl has a Medium or smaller creature grabbed or restrained
+    in its jaws
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LG
 automatic_abilities: null
 description: 'These sacred feathered serpents tirelessly serve the powers of law and
@@ -31,15 +215,13 @@ description: 'These sacred feathered serpents tirelessly serve the powers of law
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 29'
 hp: 175
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Celestial
 - Common
 - Draconic
 - telepathy 100 feet
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+13
@@ -47,117 +229,16 @@ melee:
   name: jaws
   plus_damage:
   - formula: null
-    type: quetz couatl venom and Grab
+    type: quetz couatl venom
+  - formula: null
+    type: Grab
   to_hit: 23
   traits:
   - magical
 name: Quetz Couatl
 perception: 21
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 2d10+7 bludgeoning, DC 29
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Greater Constrict
-  range: null
-  raw_description: '**__Greater Constrict__**   2d10+7 bludgeoning, DC 29'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A quetz couatl's venom deals good damage rather than poison damage
-    to fiends; **Saving Throw **DC 29 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1 **2d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **2d8 poison damage,
-    enfeebled 1, and __flat-footed__ (1 round); **Stage 3 **2d10 poison damage, enfeebled
-    2, and flat-footed (1 round)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quetz Couatl Venom
-  range: null
-  raw_description: '**Quetz Couatl Venom** (__poison__) A quetz couatl''s venom deals
-    good damage rather than poison damage to fiends; **Saving Throw **DC 29 Fortitude;
-    **Maximum Duration **6 rounds; **Stage 1 **2d6 poison damage and __enfeebled 1__
-    (1 round); **Stage 2 **2d8 poison damage, enfeebled 1, and __flat-footed__ (1
-    round); **Stage 3 **2d10 poison damage, enfeebled 2, and flat-footed (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: "The quetz couatl spreads its multicolored wings and radiant plumage.\
-    \ Each enemy within 30 feet must attempt a DC 29 Will save. \n\n**Critical Success\
-    \ **The creature is unaffected and is temporarily immune to Radiant Wings for\
-    \ 24 hours. \n\n**Success **The creature is __dazzled__ for 1 round. \n\n**Failure\
-    \ **The creature is dazzled for 1 minute. \n\n**Critical Failure **As failure,\
-    \ but if the creature is evil, it is also __stunned 3__."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Radiant Wings
-  range: null
-  raw_description: "**Radiant Wings** [Two Actions]  (__divine__, __enchantment__,\
-    \ __incapacitation__, __mental__, __visual__) The quetz couatl spreads its multicolored\
-    \ wings and radiant plumage. Each enemy within 30 feet must attempt a DC 29 Will\
-    \ save. \n\n**Critical Success **The creature is unaffected and is temporarily\
-    \ immune to Radiant Wings for 24 hours. \n\n**Success **The creature is __dazzled__\
-    \ for 1 round. \n\n**Failure **The creature is dazzled for 1 minute. \n\n**Critical\
-    \ Failure **As failure, but if the creature is evil, it is also __stunned 3__."
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - enchantment
-  - incapacitation
-  - mental
-  - visual
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The quetz couatl has a Medium or smaller creature __grabbed__ or __restrained__
-    in its jaws
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wrap in Coils
-  range: null
-  raw_description: '**Wrap in Coils**   **Requirements **The quetz couatl has a Medium
-    or smaller creature __grabbed__ or __restrained__ in its jaws; **Effect **The
-    quetz couatl moves the creature into its coils, freeing its fangs to make attacks,
-    then uses __Greater Constrict__ against the creature. The quetz couatl can hold
-    as many creatures in its coils as will fit in its space.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 19
   fort_misc: null
@@ -166,111 +247,90 @@ saves:
   ref_misc: null
   will: 21
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +21
 - darkvision
 - detect alignment
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 19
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 22
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 22
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 19
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 22
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 16
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 54
+  page_start: '54'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 29
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips:
+  - level: 5
     spells:
-    - frequency: at will
-      name: ethereal jaunt
-      requirement: null
-    - frequency: self only
-      name: plane shift
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: breath of life
-      requirement: null
-    - frequency: null
-      name: divine wrath
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: gaseous form
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: at will
-      name: mind reading
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: self only, at will
-      name: invisibility
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: disrupt undead
-      requirement: null
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-  - heightened_level: 5
-    level: -1
+  constants:
+  - level: 5
     spells:
-    - frequency: all alignments simultaneously
+    - misc: all alignments simultaneously
       name: detect alignment
-      requirement: null
-  to_hit: null
+  dc: 29
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: at will
+      name: ethereal jaunt
+    - misc: self only
+      name: plane shift
+  - level: 5
+    spells:
+    - misc: null
+      name: breath of life
+    - misc: null
+      name: divine wrath
+  - level: 4
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: gaseous form
+  - level: 3
+    spells:
+    - misc: at will
+      name: mind reading
+  - level: 2
+    spells:
+    - misc: self only; at will
+      name: invisibility
+  spells_source: Divine Innate Spells
 traits:
-- Uncommon
-- LG
-- Large
 - Beast
 - Couatl
-type: Creature
-weaknesses: null

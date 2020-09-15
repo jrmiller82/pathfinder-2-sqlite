@@ -7,32 +7,94 @@ ability_mods:
   wis_mod: 5
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The ghonhatine is adjacent to the corpse of a creature
+    that died within the last hour;'
+  effect: The ghonhatine devours a chunk of the corpse. For 1 minute, the ghonhatine
+    gains fast healing 5 and a +2 status bonus to damage rolls. It can gain these
+    benefits from any given corpse only once.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Feed
+  range: null
+  raw_description: '**Feed** [One Action]  (__manipulate__) **Requirement** The ghonhatine
+    is adjacent to the corpse of a creature that died within the last hour; **Effect**
+    The ghonhatine devours a chunk of the corpse. For 1 minute, the ghonhatine gains
+    fast healing 5 and a +2 status bonus to damage rolls. It can gain these benefits
+    from any given corpse only once.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A ghonhatine's vomit carries an awful disease that, over time, can
+    cause a suffering creature's flesh to develop painful boils that eventually slough
+    away, leaving gaping wounds; **Saving Throw** DC 28 Fortitude; **Stage 1** carrier
+    with no ill effect (1d4 hours); **Stage 2** __enfeebled 1__ and __drained 1__
+    (1 day); **Stage 3** enfeebled 2 and drained 2 (1 day); **Stage 4** enfeebled
+    2 and drained 3 (1 day); **Stage 5** drained 4, enfeebled 2, and __unconscious__
+    (1 day); **Stage 6** dead
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Fleshgout
+  range: null
+  raw_description: '**Fleshgout** (__disease__) A ghonhatine''s vomit carries an awful
+    disease that, over time, can cause a suffering creature''s flesh to develop painful
+    boils that eventually slough away, leaving gaping wounds; **Saving Throw** DC
+    28 Fortitude; **Stage 1** carrier with no ill effect (1d4 hours); **Stage 2**
+    __enfeebled 1__ and __drained 1__ (1 day); **Stage 3** enfeebled 2 and drained
+    2 (1 day); **Stage 4** enfeebled 2 and drained 3 (1 day); **Stage 5** drained
+    4, enfeebled 2, and __unconscious__ (1 day); **Stage 6** dead'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A creature entering the aura or starting its turn in the aura
-    must succeed at a DC 26 Fortitude save or become __sickened 1__ (plus __slowed
-    1__ for as long as it's sickened on a critical failure). While within the aura,
-    affected creatures take a -2 circumstance penalty to saves against __disease__
-    and to recover from the sickened condition. A creature that succeeds at its save
-    is temporarily immune for 1 minute.
+  description: A creature entering the aura or starting its turn in the aura must
+    succeed at a DC 26 Fortitude save or become __sickened 1__ (plus __slowed 1__
+    for as long as it's sickened on a critical failure). While within the aura, affected
+    creatures take a –2 circumstance penalty to saves against __disease__ and to recover
+    from the sickened condition. A creature that succeeds at its save is temporarily
+    immune for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stench
-  range: null
+  range: 30 feet
   raw_description: '**Stench** (__aura__, __olfactory__) 30 feet. A creature entering
     the aura or starting its turn in the aura must succeed at a DC 26 Fortitude save
     or become __sickened 1__ (plus __slowed 1__ for as long as it''s sickened on a
-    critical failure). While within the aura, affected creatures take a -2 circumstance
+    critical failure). While within the aura, affected creatures take a –2 circumstance
     penalty to saves against __disease__ and to recover from the sickened condition.
     A creature that succeeds at its save is temporarily immune for 1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -50,20 +112,19 @@ description: 'In transforming __xulgaths__, __drow__ fleshwarpers sought not to 
 hp: 175
 hp_misc: null
 immunities:
-- disease
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
 languages:
 - Undercommon
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+10
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: persistent acid
+  - formula: null
+    type: 1d6 persistent acid
   to_hit: 23
   traits:
   - reach 10 feet
@@ -79,65 +140,11 @@ melee:
   - reach 10 feet
 name: Ghonhatine
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The ghonhatine is adjacent to the corpse of a creature that died within
-    the last hour
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Feed
-  range: null
-  raw_description: '**Feed**   (__manipulate__) **Requirement** The ghonhatine is
-    adjacent to the corpse of a creature that died within the last hour; **Effect**
-    The ghonhatine devours a chunk of the corpse. For 1 minute, the ghonhatine gains
-    fast healing 5 and a +2 status bonus to damage rolls. It can gain these benefits
-    from any given corpse only once.'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A ghonhatine's vomit carries an awful disease that, over time, can
-    cause a suffering creature's flesh to develop painful boils that eventually slough
-    away, leaving gaping wounds; **Saving Throw** DC 28 Fortitude; **Stage 1** carrier
-    with no ill effect (1d4 hours); **Stage 2** __enfeebled 1__ and __drained 1__
-    (1 day); **Stage 3** enfeebled 2 and drained 2 (1 day); **Stage 4** enfeebled
-    2 and drained 3 (1 day); **Stage 5** drained 4, enfeebled 2, and __unconscious__
-    (1 day); **Stage 6** dead
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fleshgout
-  range: null
-  raw_description: '**Fleshgout** (__disease__) A ghonhatine''s vomit carries an awful
-    disease that, over time, can cause a suffering creature''s flesh to develop painful
-    boils that eventually slough away, leaving gaping wounds; **Saving Throw** DC
-    28 Fortitude; **Stage 1** carrier with no ill effect (1d4 hours); **Stage 2**
-    __enfeebled 1__ and __drained 1__ (1 day); **Stage 3** enfeebled 2 and drained
-    2 (1 day); **Stage 4** enfeebled 2 and drained 3 (1 day); **Stage 5** drained
-    4, enfeebled 2, and __unconscious__ (1 day); **Stage 6** dead'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d6
-    type: acid
+    formula: null
+    type: 5d6 acid
   name: vomit
   plus_damage:
   - formula: null
@@ -146,11 +153,10 @@ ranged:
   traits:
   - acid
   - range increment 20 feet
-rarity: Common
 resistances:
 - amount: 10
+  misc: null
   type: acid
-ritual_lists: null
 saves:
   fort: 22
   fort_misc: null
@@ -159,33 +165,28 @@ saves:
   ref_misc: null
   will: 19
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 21
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 19
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 119
+  page_start: '119'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Large
 - Aberration
-type: Creature
-weaknesses: null

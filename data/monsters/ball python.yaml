@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d8 bludgeoning, DC 17
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**Constrict** [One Action]  1d8 bludgeoning, DC 17'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** A Medium or smaller creature is grabbed or restrained
+    in the ball python''s jaws.'
+  effect: The ball python moves the creature into its coils, freeing its jaws to make
+    attacks, then uses Constrict against the creature. The ball python's coils can
+    hold one creature.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wrap in Coils
+  range: null
+  raw_description: '**Wrap in Coils** [One Action]  **Requirement** A Medium or smaller
+    creature is grabbed or restrained in the ball python''s jaws. **Effect** The ball
+    python moves the creature into its coils, freeing its jaws to make attacks, then
+    uses Constrict against the creature. The ball python''s coils can hold one creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -14,17 +59,19 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The DC of the Escape check is increased by 2.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Tighten Coils
   range: null
   raw_description: '**Tighten Coils** [Reaction] **Trigger** A creature grabbed or
     restrained by the ball python attempts to Escape. **Effect** The DC of the Escape
     check is increased by 2.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature grabbed or restrained by the ball python attempts to Escape.
@@ -39,11 +86,8 @@ description: 'This nonvenomous snake''s name comes from its tendency to curl int
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
 hp: 20
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+3
@@ -56,51 +100,7 @@ melee:
   traits: null
 name: Ball Python
 perception: 6
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d8 bludgeoning, DC 17
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**Constrict**   1d8 bludgeoning, DC 17'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A Medium or smaller creature is grabbed or restrained in the ball python's
-    jaws.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wrap in Coils
-  range: null
-  raw_description: '**Wrap in Coils**   **Requirement** A Medium or smaller creature
-    is grabbed or restrained in the ball python''s jaws. **Effect** The ball python
-    moves the creature into its coils, freeing its jaws to make attacks, then uses
-    Constrict against the creature. The ball python''s coils can hold one creature.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -109,40 +109,37 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - low-light vision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 4
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 302
+  page_start: '302'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

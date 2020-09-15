@@ -7,6 +7,105 @@ ability_mods:
   wis_mod: 4
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The devourer touches a creature within reach, dealing 8d6 negative
+    damage (DC 31 basic Fortitude save). If a creature is slain by this attack, its
+    soul becomes trapped within the devourer. While its soul is trapped, a creature
+    can't be resurrected except by powerful magic such as a __wish__ spell. Destroying
+    the devourer or successfully counteracting Devour Soul (see Spell Deflection above)
+    releases the soul. The devourer can hold only one soul at a time. A soul has 5
+    soul charges per level of the originating creature (see Soul Spells below). The
+    devourer can expend these charges to cast spells. If the soul is freed and the
+    creature returns to life, the creature is drained 1 for every 5 soul charges expended.
+    If reduced to 0 soul charges, the soul is consumed and can be restored to life
+    only by powerful magic such as wish.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Devour Soul
+  range: null
+  raw_description: '**Devour Soul** [Two Actions]  (__death__, __divine__, __necromancy__)
+    The devourer touches a creature within reach, dealing 8d6 negative damage (DC
+    31 basic Fortitude save). If a creature is slain by this attack, its soul becomes
+    trapped within the devourer. While its soul is trapped, a creature can''t be resurrected
+    except by powerful magic such as a __wish__ spell. Destroying the devourer or
+    successfully counteracting Devour Soul (see Spell Deflection above) releases the
+    soul. The devourer can hold only one soul at a time. A soul has 5 soul charges
+    per level of the originating creature (see Soul Spells below). The devourer can
+    expend these charges to cast spells. If the soul is freed and the creature returns
+    to life, the creature is drained 1 for every 5 soul charges expended. If reduced
+    to 0 soul charges, the soul is consumed and can be restored to life only by powerful
+    magic such as wish.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - death
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the devourer damages a living creature with its claw Strike, the
+    devourer gains 10 temporary Hit Points and the creature must succeed at a DC 24
+    Fortitude save or become __drained 1__. Further damage dealt by the devourer increases
+    the condition value by 1 on a failed save, to a maximum of drained 4.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drain Life
+  range: null
+  raw_description: '**Drain Life** (__divine__, __necromancy__) When the devourer
+    damages a living creature with its claw Strike, the devourer gains 10 temporary
+    Hit Points and the creature must succeed at a DC 24 Fortitude save or become __drained
+    1__. Further damage dealt by the devourer increases the condition value by 1 on
+    a failed save, to a maximum of drained 4.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A devourer casts occult innate spells, but to do so it must expend
+    a number of soul charges equal to the spell's level (similar to casting a spell
+    using charges from a staff). It can heighten any spell to a maximum of 6th level
+    by expending more charges as it Casts the Spell. When encountered, a devourer
+    typically has one trapped soul with 10 soul charges.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Soul Spells
+  range: null
+  raw_description: '**Soul Spells** A devourer casts occult innate spells, but to
+    do so it must expend a number of soul charges equal to the spell''s level (similar
+    to casting a spell using charges from a staff). It can heighten any spell to a
+    maximum of 6th level by expending more charges as it Casts the Spell. When encountered,
+    a devourer typically has one trapped soul with 10 soul charges.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
@@ -19,11 +118,11 @@ automatic_abilities:
     soul is released (though the creature remains dead), and the devourer can't use
     any soul charges from that creature. Devourers are otherwise immune to these spells.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Spell Deflection
   range: null
   raw_description: '**Spell Deflection** (__abjuration__, __divine__) A spellcaster
@@ -34,6 +133,8 @@ automatic_abilities:
     (though the creature remains dead), and the devourer can''t use any soul charges
     from that creature. Devourers are otherwise immune to these spells.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
@@ -55,13 +156,12 @@ description: 'When fiends and powerful evil spellcasters are lost beyond the far
 hp: 175
 hp_misc: negative healing
 immunities:
-- death effects
-- disease
-- paralyzed
-- poison
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 - spell deflection
-- unconscious
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 languages:
 - Abyssal
 - Celestial
@@ -69,7 +169,7 @@ languages:
 - Infernal
 - Necril
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+13
@@ -84,114 +184,8 @@ melee:
   - reach 10 feet
 name: Devourer
 perception: 22
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The devourer touches a creature within reach, dealing 8d6 negative
-    damage (DC 31 basic Fortitude save). If a creature is slain by this attack, its
-    soul becomes trapped within the devourer. While its soul is trapped, a creature
-    can't be resurrected except by powerful magic such as a __wish__ spell. Destroying
-    the devourer or successfully counteracting Devour Soul (see Spell Deflection above)
-    releases the soul. The devourer can hold only one soul at a time. A soul has 5
-    soul charges per level of the originating creature (see Soul Spells below). The
-    devourer can expend these charges to cast spells. If the soul is freed and the
-    creature returns to life, the creature is drained 1 for every 5 soul charges expended.
-    If reduced to 0 soul charges, the soul is consumed and can be restored to life
-    only by powerful magic such as wish.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Devour Soul
-  range: null
-  raw_description: '**Devour Soul** [Two Actions]  (__death__, __divine__, __necromancy__)
-    The devourer touches a creature within reach, dealing 8d6 negative damage (DC
-    31 basic Fortitude save). If a creature is slain by this attack, its soul becomes
-    trapped within the devourer. While its soul is trapped, a creature can''t be resurrected
-    except by powerful magic such as a __wish__ spell. Destroying the devourer or
-    successfully counteracting Devour Soul (see Spell Deflection above) releases the
-    soul. The devourer can hold only one soul at a time. A soul has 5 soul charges
-    per level of the originating creature (see Soul Spells below). The devourer can
-    expend these charges to cast spells. If the soul is freed and the creature returns
-    to life, the creature is drained 1 for every 5 soul charges expended. If reduced
-    to 0 soul charges, the soul is consumed and can be restored to life only by powerful
-    magic such as wish.'
-  requirements: null
-  success: null
-  traits:
-  - death
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the devourer damages a living creature with its claw Strike, the
-    devourer gains 10 temporary Hit Points and the creature must succeed at a DC 24
-    Fortitude save or become __drained 1__. Further damage dealt by the devourer increases
-    the condition value by 1 on a failed save, to a maximum of drained 4.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drain Life
-  range: null
-  raw_description: '**Drain Life** (__divine__, __necromancy__) When the devourer
-    damages a living creature with its claw Strike, the devourer gains 10 temporary
-    Hit Points and the creature must succeed at a DC 24 Fortitude save or become __drained
-    1__. Further damage dealt by the devourer increases the condition value by 1 on
-    a failed save, to a maximum of drained 4.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A devourer casts occult innate spells, but to do so it must expend
-    a number of soul charges equal to the spell's level (similar to casting a spell
-    using charges from a staff). It can heighten any spell to a maximum of 6th level
-    by expending more charges as it Casts the Spell. When encountered, a devourer
-    typically has one trapped soul with 10 soul charges.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Soul Spells
-  range: null
-  raw_description: '**Soul Spells** A devourer casts occult innate spells, but to
-    do so it must expend a number of soul charges equal to the spell''s level (similar
-    to casting a spell using charges from a staff). It can heighten any spell to a
-    maximum of 6th level by expending more charges as it Casts the Spell. When encountered,
-    a devourer typically has one trapped soul with 10 soul charges.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists:
-- dc: 31
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: create undead
-      requirement: null
-  to_hit: null
 saves:
   fort: 20
   fort_misc: null
@@ -200,85 +194,82 @@ saves:
   ref_misc: null
   will: 24
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - darkvision
 size: Large
 skills:
 - bonus: 21
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 21
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 23
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 23
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 19
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 78
+  page_start: '79'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 31
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 31
+  focus_points: null
+  misc: see soul spells below
+  spell_lists:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: feeblemind
-      requirement: null
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: confusion
-      requirement: null
-    - frequency: null
+    - misc: null
       name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: bind undead
-      requirement: null
-    - frequency: null
+    - misc: null
       name: paralyze
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: death knell
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: harm
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 31
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: create undead
+  spells_source: Rituals
 traits:
-- Uncommon
-- NE
-- Large
 - Undead
-type: Creature
-weaknesses: null

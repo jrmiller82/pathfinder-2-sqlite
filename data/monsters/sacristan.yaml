@@ -7,12 +7,169 @@ ability_mods:
   wis_mod: 3
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The sacristan stares at a creature they can see within 30 feet. The
+    creature must immediately attempt a Will save against Staggering Servitude. In
+    addition, if the creature was already __stunned__, on a failed save its revulsion
+    toward the sacristan's presence causes it to be __stupefied 2__ for 1 minute.
+    After attempting this save, the creature is then temporarily immune until the
+    start of the sacristan's next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Focus Gaze
+  range: null
+  raw_description: '**Focus Gaze** [One Action]  (__concentrate__, __divine__, __enchantment__,
+    __fear__, __mental__, __visual__) The sacristan stares at a creature they can
+    see within 30 feet. The creature must immediately attempt a Will save against
+    Staggering Servitude. In addition, if the creature was already __stunned__, on
+    a failed save its revulsion toward the sacristan''s presence causes it to be __stupefied
+    2__ for 1 minute. After attempting this save, the creature is then temporarily
+    immune until the start of the sacristan''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - enchantment
+  - fear
+  - mental
+  - visual
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The sacristan opens their mouth to unloose the wailing howls and mind-twisting
+    darkness of the __Shadow Plane__. This creates a 30-foot emanation of darkness
+    and wailing sounds around the sacristan. Creatures with __darkvision__ can't see
+    through this darkness. The sacristan can Sustain Shadow Scream for up to 1 minute.
+    Non-velstrac creatures in the area when the ability is used, as well as those
+    who enter or start their turn in the area, must attempt a DC 28 Will save.
+  failure: null
+  frequency: once per hour
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shadow Scream
+  range: null
+  raw_description: '**Shadow Scream** [Three Actions]  (__aura__, __concentrate__,
+    __darkness__, __divine__, __evocation__, __mental__, __sonic__) **Frequency**
+    once per hour; **Effect** The sacristan opens their mouth to unloose the wailing
+    howls and mind-twisting darkness of the __Shadow Plane__. This creates a 30-foot
+    emanation of darkness and wailing sounds around the sacristan. Creatures with
+    __darkvision__ can''t see through this darkness. The sacristan can Sustain Shadow
+    Scream for up to 1 minute. Non-velstrac creatures in the area when the ability
+    is used, as well as those who enter or start their turn in the area, must attempt
+    a DC 28 Will save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - concentrate
+  - darkness
+  - divine
+  - evocation
+  - mental
+  - sonic
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and is then temporarily immune for
+    24 hours.
+  description: The creature is unaffected and is then temporarily immune for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected and is then temporarily
+    immune for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __deafened__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __deafened__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __deafened__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __confused__ and deafened for 1 round.
+  effect: null
+  failure: The creature is __confused__ and deafened for 1 round.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is __confused__ and deafened for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature takes 20 mental damage, and is confused and deafened
+    for 1 round.
+  critical_success: null
+  description: The creature takes 20 mental damage, and is confused and deafened for
+    1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature takes 20 mental damage, and
+    is confused and deafened for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '30 feet. When a
+  description: 'When a
 
 
     creature ends its turn in the aura, it sees a vision of the sacristan groveling
@@ -22,13 +179,13 @@ automatic_abilities:
     servitude. The creature must succeed at a DC 27 Will save or become __stunned
     1__.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Staggering Servitude
-  range: null
+  range: 30 feet
   raw_description: '**Staggering Servitude** (__aura__, __divine__, __enchantment__,
     __fear__, __mental__, __visual__) 30 feet. When a
 
@@ -40,6 +197,8 @@ automatic_abilities:
     servitude. The creature must succeed at a DC 27 Will save or become __stunned
     1__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -58,11 +217,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -73,6 +232,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -91,24 +252,25 @@ description: 'Sacristans are failures among the velstracs, creatures whose bodie
 
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 27'
 hp: 175
-hp_misc: regeneration 10 (deactivated by good or silver
+hp_misc: regeneration 10 (deactivated by good or silver)
 immunities:
 - cold
-items: null
 languages:
 - Common
 - Infernal
 - Shadowtongue
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
     type: piercing
   name: barbed chain
   plus_damage:
-  - formula: 1d6
-    type: evil and 2d6 persistent bleed
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: 2d6 persistent bleed
   to_hit: 22
   traits:
   - evil
@@ -118,93 +280,7 @@ melee:
   - versatile S
 name: Sacristan
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The sacristan stares at a creature they can see within 30 feet. The
-    creature must immediately attempt a Will save against Staggering Servitude. In
-    addition, if the creature was already __stunned__, on a failed save its revulsion
-    toward the sacristan's presence causes it to be __stupefied 2__ for 1 minute.
-    After attempting this save, the creature is then temporarily immune until the
-    start of the sacristan's next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Focus Gaze
-  range: null
-  raw_description: '**Focus Gaze**   (__concentrate__, __divine__, __enchantment__,
-    __fear__, __mental__, __visual__) The sacristan stares at a creature they can
-    see within 30 feet. The creature must immediately attempt a Will save against
-    Staggering Servitude. In addition, if the creature was already __stunned__, on
-    a failed save its revulsion toward the sacristan''s presence causes it to be __stupefied
-    2__ for 1 minute. After attempting this save, the creature is then temporarily
-    immune until the start of the sacristan''s next turn.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - enchantment
-  - fear
-  - mental
-  - visual
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: The creature takes 20 mental damage, and is confused and deafened
-    for 1 round.
-  critical_success: The creature is unaffected and is then temporarily immune for
-    24 hours.
-  description: null
-  effect: "The sacristan opens their mouth to unloose the wailing howls and mind-twisting\
-    \ darkness of the __Shadow Plane__. This creates a 30-foot emanation of darkness\
-    \ and wailing sounds around the sacristan. Creatures with __darkvision__ can't\
-    \ see through this darkness. The sacristan can Sustain Shadow Scream for up to\
-    \ 1 minute. Non-velstrac creatures in the area when the ability is used, as well\
-    \ as those who enter or start their turn in the area, must attempt a DC 28 Will\
-    \ save. \n\n"
-  effects: null
-  failure: The creature is confused and deafened for 1 round.
-  frequency: once per hour
-  full_description: null
-  generic_description: null
-  name: Shadow Scream
-  range: null
-  raw_description: "**Shadow Scream** [Three Actions]  (__aura__, __concentrate__,\
-    \ __darkness__, __divine__, __evocation__, __mental__, __sonic__) **Frequency**\
-    \ once per hour; **Effect** The sacristan opens their mouth to unloose the wailing\
-    \ howls and mind-twisting darkness of the __Shadow Plane__. This creates a 30-foot\
-    \ emanation of darkness and wailing sounds around the sacristan. Creatures with\
-    \ __darkvision__ can't see through this darkness. The sacristan can Sustain Shadow\
-    \ Scream for up to 1 minute. Non-velstrac creatures in the area when the ability\
-    \ is used, as well as those who enter or start their turn in the area, must attempt\
-    \ a DC 28 Will save. \n\n**Critical Success** The creature is unaffected and is\
-    \ then temporarily immune for 24 hours. \n\n**Success** The creature is __deafened__\
-    \ for 1 round. \n\n**Failure** The creature is __confused__ and deafened for 1\
-    \ round. \n\n**Critical Failure** The creature takes 20 mental damage, and is\
-    \ confused and deafened for 1 round."
-  requirements: null
-  success: The creature is deafened for 1 round.
-  traits:
-  - aura
-  - concentrate
-  - darkness
-  - divine
-  - evocation
-  - mental
-  - sonic
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: good
-- amount: 10
-  type: silver
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 22
   fort_misc: null
@@ -221,72 +297,76 @@ sense_abilities:
     the __doomed__, __dying__, and __wounded__ conditions, as well as the value of
     those conditions
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Painsight
   range: null
   raw_description: '**Painsight** (__divination__, __divine__) A velstrac automatically
     knows whether a creature it sees has any of the __doomed__, __dying__, and __wounded__
     conditions, as well as the value of those conditions'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
   - divine
   trigger: null
 senses:
-- Perception +19
 - greater darkvision
 - painsight
 size: Medium
 skills:
 - bonus: 19
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 21
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 16
   misc: null
-  name: 'Torture Lore '
-source:
+  name: Torture Lore
+sources:
 - abbr: Bestiary 2
-  page_start: 283
+  page_start: '283'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 29
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 29
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: chilling darkness
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: fear
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- LE
-- Medium
 - Fiend
 - Velstrac
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: good
+- amount: 10
+  misc: null
+  type: silver

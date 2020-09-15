@@ -7,64 +7,150 @@ ability_mods:
   wis_mod: 3
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a spray of acid that deals 12d6 acid damage in
+    an 80-foot line (DC 30 basic Reflex save). It can't use Breath Weapon again for
+    1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon ** [Two Actions]  (__acid__, __arcane__, __evocation__)
+    The dragon breathes a spray of acid that deals 12d6 acid damage in an 80-foot
+    line (DC 30 basic Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - acid
+  - arcane
+  - evocation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon permanently befouls 10 cubic feet of liquid within 90 feet. The
+    liquid becomes undrinkable and unable to support water-breathing life. This destroys
+    liquid magic or alchemical items if they're of a lower level than the dragon (a
+    creature can attempt a DC 28 Will save to protect liquids in its possession).
+    This doesn't affect liquids in a creature's body.
+  failure: null
+  frequency: Once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Corrupt Water
+  range: null
+  raw_description: '**Corrupt Water** [One Action]  (__arcane__, __concentrate__,
+    __necromancy__) **Frequency** Once per day; **Effect** The dragon permanently
+    befouls 10 cubic feet of liquid within 90 feet. The liquid becomes undrinkable
+    and unable to support water-breathing life. This destroys liquid magic or alchemical
+    items if they''re of a lower level than the dragon (a creature can attempt a DC
+    28 Will save to protect liquids in its possession). This doesn''t affect liquids
+    in a creature''s body.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - concentrate
+  - necromancy
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one horns Strike in any order
+    in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one horns Strike in any order in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges its Breath Weapon whenever it scores a critical
+    hit with a Strike
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
+    it scores a critical hit with a Strike'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 28
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: The dragon Strikes with its tail at the triggering creature at a –2 penalty.
+    If it hits, the creature takes a –2 circumstance penalty to the triggering roll.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 28 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The dragon Strikes with its tail at the triggering creature at a -2 penalty.
-    If it hits, the creature takes a -2 circumstance penalty to the triggering roll.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tail Lash
-  range: null
-  raw_description: '**Tail Lash** [Reaction] **Trigger** A creature within reach of
-    the dragon''s tail takes an action to Strike or attempt a skill check; **Effect**
-    The dragon Strikes with its tail at the triggering creature at a -2 penalty. If
-    it hits, the creature takes a -2 circumstance penalty to the triggering roll.'
-  requirements: null
-  success: null
-  traits: null
   trigger: A creature within reach of the dragon's tail takes an action to Strike
-    or attempt a skill check
+    or attempt a skill check;
 description: 'Murderous tyrants of marshes, swamps, bogs, and fens, black dragons
   terrorize their domains with intense fervor. Gleefully sadistic, they rule their
   fetid principalities from a deep cave or otherwise isolated part of the swamp with
@@ -102,21 +188,20 @@ immunities:
 - acid
 - paralyzed
 - sleep
-items: null
 languages:
 - Common
 - Draconic
 - Jotun
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+13
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: acid
+  - formula: null
+    type: 2d6 acid
   to_hit: 25
   traits:
   - acid
@@ -154,103 +239,7 @@ melee:
   - reach 10 feet
 name: Adult Black Dragon
 perception: 22
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a spray of acid that deals 12d6 acid damage in
-    an 80-foot line (DC 30 basic Reflex save). It can't use Breath Weapon again for
-    1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon ** [Two Actions]  (__acid__, __arcane__, __evocation__)
-    The dragon breathes a spray of acid that deals 12d6 acid damage in an 80-foot
-    line (DC 30 basic Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - acid
-  - arcane
-  - evocation
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The dragon permanently befouls 10 cubic feet of liquid within 90 feet. The
-    liquid becomes undrinkable and unable to support water-breathing life. This destroys
-    liquid magic or alchemical items if they're of a lower level than the dragon (a
-    creature can attempt a DC 28 Will save to protect liquids in its possession).
-    This doesn't affect liquids in a creature's body.
-  effects: null
-  failure: null
-  frequency: Once per day
-  full_description: null
-  generic_description: null
-  name: Corrupt Water
-  range: null
-  raw_description: '**Corrupt Water**   (__arcane__, __concentrate__, __necromancy__)
-    **Frequency** Once per day; **Effect** The dragon permanently befouls 10 cubic
-    feet of liquid within 90 feet. The liquid becomes undrinkable and unable to support
-    water-breathing life. This destroys liquid magic or alchemical items if they''re
-    of a lower level than the dragon (a creature can attempt a DC 28 Will save to
-    protect liquids in its possession). This doesn''t affect liquids in a creature''s
-    body.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - concentrate
-  - necromancy
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one horns Strike in any order
-    in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one horns Strike in any order in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges its Breath Weapon whenever it scores a critical
-    hit with a Strike
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges its Breath Weapon whenever
-    it scores a critical hit with a Strike'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 23
   fort_misc: null
@@ -259,59 +248,57 @@ saves:
   ref_misc: null
   will: 21
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - darkvision
 - scent (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 18
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 19
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 24
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 20
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 20
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 20
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 105
+  page_start: '105'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 120
+  misc: null
   type: fly
 - amount: 50
+  misc: null
   type: swim
 spell_lists:
-- dc: 30
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 30
+  focus_points: null
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: darkness
-      requirement: null
-  to_hit: null
+  spells_source: Arcane Innate Spells
 traits:
-- CE
-- Large
 - Acid
 - Amphibious
 - Dragon
-type: Creature
-weaknesses: null

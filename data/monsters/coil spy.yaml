@@ -7,6 +7,101 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The Coil spy Strides up to half their Speed and attempts a __Feint__,
+    in either order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deceptive Reposition
+  range: null
+  raw_description: '**Deceptive Reposition** [One Action]  The Coil spy Strides up
+    to half their Speed and attempts a __Feint__, in either order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A Coil spy can maintain an ongoing illusory disguise as long as they
+    are conscious without having to re-cast the spell; they need only Cast the Spell
+    again to reassume their illusory disguise if they wish to change their appearance
+    or if the active spell is dispelled. Coil spies typically seek privacy when they
+    need to sleep, as an ongoing illusory disguise ends an hour after they fall __unconscious__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Maintain Disguise
+  range: null
+  raw_description: '**Maintain Disguise** A Coil spy can maintain an ongoing illusory
+    disguise as long as they are conscious without having to re-cast the spell; they
+    need only Cast the Spell again to reassume their illusory disguise if they wish
+    to change their appearance or if the active spell is dispelled. Coil spies typically
+    seek privacy when they need to sleep, as an ongoing illusory disguise ends an
+    hour after they fall __unconscious__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Serpentfolk Venom
+  range: null
+  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 19 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
+    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
+  requirements: null
+  saving_throw: DC 19 Fortitude
+  stages:
+  - effect: 1d4 poison damage and __enfeebled 1__ (1 round)
+  - effect: 2d4 poison damage and enfeebled 1 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The Coil spy's Strikes deal an extra 2d6 precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The Coil spy''s Strikes deal an extra 2d6
+    precision damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'Some serpentfolk undergo intense ritual training and practice to improve
@@ -28,7 +123,6 @@ description: 'Some serpentfolk undergo intense ritual training and practice to i
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 21'
 hp: 48
 hp_misc: null
-immunities: null
 items:
 - hand crossbow (20 bolts)
 - hunting spider venom (2)
@@ -42,7 +136,7 @@ languages:
 - Undercommon
 - telepathy 100 feet
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+5
@@ -69,94 +163,7 @@ melee:
   - finesse
 name: Coil Spy
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The Coil spy Strides up to half their Speed and attempts a __Feint__,
-    in either order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deceptive Reposition
-  range: null
-  raw_description: '**Deceptive Reposition**   The Coil spy Strides up to half their
-    Speed and attempts a __Feint__, in either order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A Coil spy can maintain an ongoing illusory disguise as long as they
-    are conscious without having to re-cast the spell; they need only Cast the Spell
-    again to reassume their illusory disguise if they wish to change their appearance
-    or if the active spell is dispelled. Coil spies typically seek privacy when they
-    need to sleep, as an ongoing illusory disguise ends an hour after they fall __unconscious__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Maintain Disguise
-  range: null
-  raw_description: '**Maintain Disguise** A Coil spy can maintain an ongoing illusory
-    disguise as long as they are conscious without having to re-cast the spell; they
-    need only Cast the Spell again to reassume their illusory disguise if they wish
-    to change their appearance or if the active spell is dispelled. Coil spies typically
-    seek privacy when they need to sleep, as an ongoing illusory disguise ends an
-    hour after they fall __unconscious__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 19 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d4 poison damage and __enfeebled 1__ (1 round); **Stage 2** 2d4 poison damage
-    and enfeebled 1 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Serpentfolk Venom
-  range: null
-  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 19 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
-    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The Coil spy's Strikes deal an extra 2d6 precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The Coil spy''s Strikes deal an extra 2d6
-    precision damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -172,8 +179,8 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 5
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -182,79 +189,68 @@ saves:
   ref_misc: null
   will: 10
   will_misc: +4 status vs. mental
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 11
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 11
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 10
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 10
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 12
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 12
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 238
+  page_start: '238'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 21
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 21
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: suggestion
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: at will
+    - misc: at will
       name: illusory disguise
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: mirror image
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: at will
+    - misc: at will
       name: ventriloquism
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- NE
-- Medium
 - Humanoid
 - Serpentfolk
-type: Creature
-weaknesses: null

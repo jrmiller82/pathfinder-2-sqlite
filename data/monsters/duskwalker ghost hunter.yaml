@@ -7,7 +7,91 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special:
-- descr: 22 against prey; see Hunt Prey
+- descr: 22 against prey
+- descr: see Hunt Prey
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The duskwalker's weapons have the benefits of the __ghost touch__ property
+    rune on attacks against incorporeal undead.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ghost Hunter
+  range: null
+  raw_description: '**Ghost Hunter** The duskwalker''s weapons have the benefits of
+    the __ghost touch__ property rune on attacks against incorporeal undead.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 'The duskwalker designates as its prey a single creature that it can
+    see and hear or that it is Tracking. It gains a +2 circumstance bonus to Perception
+    checks when it Seeks its prey and a +2 circumstance bonus to __Survival__ checks
+    when it Tracks its prey. It also ignores the penalty for making ranged attacks
+    within its second range increment against its prey.
+
+
+    Lastly, it gains a +2 circumstance bonus to __Deception__ checks, __Intimidation__
+    checks, and __Stealth__ checks against its prey and to any check to Recall Knowledge
+    about its prey, as well as a +1 circumstance bonus to AC against its prey''s attacks.
+    The duskwalker can have only one prey designated at a time.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hunt Prey
+  range: null
+  raw_description: '**Hunt Prey** [One Action]  The duskwalker designates as its prey
+    a single creature that it can see and hear or that it is Tracking. It gains a
+    +2 circumstance bonus to Perception checks when it Seeks its prey and a +2 circumstance
+    bonus to __Survival__ checks when it Tracks its prey. It also ignores the penalty
+    for making ranged attacks within its second range increment against its prey.
+
+
+    Lastly, it gains a +2 circumstance bonus to __Deception__ checks, __Intimidation__
+    checks, and __Stealth__ checks against its prey and to any check to Recall Knowledge
+    about its prey, as well as a +1 circumstance bonus to AC against its prey''s attacks.
+    The duskwalker can have only one prey designated at a time.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The duskwalker makes two longbow Strikes against its hunted prey. If both
+    Strikes hit, combine their damage for the purpose of resistances and weaknesses.
+  failure: null
+  frequency: Once per round
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hunted Shot
+  range: null
+  raw_description: '**Hunted Shot** [One Action]  **Frequency** Once per round; **Effect**
+    The duskwalker makes two longbow Strikes against its hunted prey. If both Strikes
+    hit, combine their damage for the purpose of resistances and weaknesses.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Duskwalkers are infused with the same energies as psychopomps. These
@@ -30,7 +114,7 @@ languages:
 - Common
 - Necril
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+5
@@ -43,84 +127,7 @@ melee:
   - sweep
 name: Duskwalker Ghost Hunter
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The duskwalker's weapons have the benefits of the __ghost touch__ property
-    rune on attacks against incorporeal undead.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ghost Hunter
-  range: null
-  raw_description: '**Ghost Hunter** The duskwalker''s weapons have the benefits of
-    the __ghost touch__ property rune on attacks against incorporeal undead.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 'The duskwalker designates as its prey a single creature that it can
-    see and hear or that it is Tracking. It gains a +2 circumstance bonus to Perception
-    checks when it Seeks its prey and a +2 circumstance bonus to __Survival__ checks
-    when it Tracks its prey. It also ignores the penalty for making ranged attacks
-    within its second range increment against its prey.
-
-
-    Lastly, it gains a +2 circumstance bonus to __Deception__ checks, __Intimidation__
-    checks, and __Stealth__ checks against its prey and to any check to Recall Knowledge
-    about its prey, as well as a +1 circumstance bonus to AC against its prey''s attacks.
-    The duskwalker can have only one prey designated at a time.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hunt Prey
-  range: null
-  raw_description: '**Hunt Prey**   The duskwalker designates as its prey a single
-    creature that it can see and hear or that it is Tracking. It gains a +2 circumstance
-    bonus to Perception checks when it Seeks its prey and a +2 circumstance bonus
-    to __Survival__ checks when it Tracks its prey. It also ignores the penalty for
-    making ranged attacks within its second range increment against its prey.
-
-
-    Lastly, it gains a +2 circumstance bonus to __Deception__ checks, __Intimidation__
-    checks, and __Stealth__ checks against its prey and to any check to Recall Knowledge
-    about its prey, as well as a +1 circumstance bonus to AC against its prey''s attacks.
-    The duskwalker can have only one prey designated at a time.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The duskwalker makes two longbow Strikes against its hunted prey. If both
-    Strikes hit, combine their damage for the purpose of resistances and weaknesses.
-  effects: null
-  failure: null
-  frequency: Once per round
-  full_description: null
-  generic_description: null
-  name: Hunted Shot
-  range: null
-  raw_description: '**Hunted Shot**   **Frequency** Once per round; **Effect** The
-    duskwalker makes two longbow Strikes against its hunted prey. If both Strikes
-    hit, combine their damage for the purpose of resistances and weaknesses.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -145,11 +152,10 @@ ranged:
   - agile
   - sweep
   - thrown 10 feet
-rarity: Common
 resistances:
 - amount: 2
+  misc: null
   type: negative energy
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -158,46 +164,41 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 6
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 8
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 12
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 262
+  page_start: '262'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Duskwalker
 - Human
 - Humanoid
-type: Creature
-weaknesses: null

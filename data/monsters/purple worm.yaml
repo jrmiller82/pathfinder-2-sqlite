@@ -7,53 +7,186 @@ ability_mods:
   wis_mod: -1
 ac: 32
 ac_special: null
-alignment: N
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: The purple worm recovers from the paralyzed, slowed, and stunned conditions
-    at the end of its turn. It's also immune to penalties to its Speeds and the immobilized
-    condition, and it ignores difficult terrain and greater difficult terrain.
-  effect: null
-  effects: null
+  description: null
+  effect: The worm uses Swallow Whole.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Inexorable
+  maximum_duration: null
+  name: Fast Swallow
   range: null
-  raw_description: '**Inexorable** The purple worm recovers from the paralyzed, slowed,
-    and stunned conditions at the end of its turn. It''s also immune to penalties
-    to its Speeds and the immobilized condition, and it ignores difficult terrain
-    and greater difficult terrain.'
+  raw_description: '**Fast Swallow** [Reaction]  **Trigger** The purple worm Grabs
+    a creature. **Effect** The worm uses Swallow Whole.'
   requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The purple worm Grabs a creature.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** DC 32 Fortitude, **Maximum Duration** 6 rounds; **Stage
+    1** 5d6 poison damage and enfeebled 2 (1 round), **Stage 2** 6d6 poison damage,
+    and enfeebled 2 (1 round); **Stage 3** 8d6 poison damage and enfeebled 2 (1 round).'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Purple Worm Venom
+  range: null
+  raw_description: '**Purple Worm Venom** (__poison__) **Saving Throw** DC 32 Fortitude,
+    **Maximum Duration** 6 rounds; **Stage 1** 5d6 poison damage and enfeebled 2 (1
+    round), **Stage 2** 6d6 poison damage, and enfeebled 2 (1 round); **Stage 3**
+    8d6 poison damage and enfeebled 2 (1 round).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: 'The purple worm can violently regurgitate a creature or boulder it
+    has swallowed to make a ranged Strike. The Strike deals bludgeoning damage depending
+    on the size of the projectile: Tiny deals 2d6+13, Small 3d6+13, Medium 4d6+13,
+    Large 5d6+13, and Huge 6d6+13. A regurgitated creature takes falling damage from
+    the height of the target or from 20 feet, whichever is greater.Boulders occupy
+    space in the worm''s stomach as a creature of equivalent size, and purple worms
+    often have several boulders swallowed. A purple worm can use a single action to
+    swallow a new boulder.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Regurgitate
+  range: null
+  raw_description: '**Regurgitate** The purple worm can violently regurgitate a creature
+    or boulder it has swallowed to make a ranged Strike. The Strike deals bludgeoning
+    damage depending on the size of the projectile: Tiny deals 2d6+13, Small 3d6+13,
+    Medium 4d6+13, Large 5d6+13, and Huge 6d6+13. A regurgitated creature takes falling
+    damage from the height of the target or from 20 feet, whichever is greater.Boulders
+    occupy space in the worm''s stomach as a creature of equivalent size, and purple
+    worms often have several boulders swallowed. A purple worm can use a single action
+    to swallow a new boulder.'
+  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A purple worm can burrow through solid stone at a Speed of 20 feet.
+    It can leave a tunnel if it desires, and it usually does.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rock Tunneler
+  range: null
+  raw_description: '**Rock Tunneler** A purple worm can burrow through solid stone
+    at a Speed of 20 feet. It can leave a tunnel if it desires, and it usually does.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Huge, 3d6+9 bludgeoning, Rupture 24
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**Swallow Whole** [One Action]  Huge, 3d6+9 bludgeoning, Rupture
+    24'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The worm makes a Strike once against each creature in its reach. It
+    can Strike up to once with its jaws, up to once with its stinger, and any number
+    of times with its body. Each attack counts toward the worm's multiple attack penalty,
+    but the multiple attack penalty doesn't increase until after it makes all the
+    attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Thrash
+  range: null
+  raw_description: '**Thrash** [Two Actions]  The worm makes a Strike once against
+    each creature in its reach. It can Strike up to once with its jaws, up to once
+    with its stinger, and any number of times with its body. Each attack counts toward
+    the worm''s multiple attack penalty, but the multiple attack penalty doesn''t
+    increase until after it makes all the attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: N
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
   effect: The purple worm negates the triggering condition or effect. Effects from
     artifacts, deities, or a similarly powerful source can't be avoided in this way.
-  effects: null
   failure: null
   frequency: once per day
   full_description: null
   generic_description: null
-  name: Shake It Off
+  maximum_duration: null
+  name: Inexorable
   range: null
-  raw_description: '**Shake It Off** [Reaction] **Frequency** once per day; **Trigger**
-    The purple worm would be affected by a condition or adverse effect (such as __baleful
-    polymorph__). **Effect** The purple worm negates the triggering condition or effect.
-    Effects from artifacts, deities, or a similarly powerful source can''t be avoided
-    in this way.'
+  raw_description: '**Inexorable** The purple worm recovers from the paralyzed, slowed,
+    and stunned conditions at the end of its turn. It''s also immune to penalties
+    to its Speeds and the immobilized condition, and it ignores difficult terrain
+    and greater difficult terrain.
+
+
+    **Shake It Off** [Reaction] **Frequency** once per day; **Trigger** The purple
+    worm would be affected by a condition or adverse effect (such as __baleful polymorph__).
+    **Effect** The purple worm negates the triggering condition or effect. Effects
+    from artifacts, deities, or a similarly powerful source can''t be avoided in this
+    way.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The purple worm would be affected by a condition or adverse effect (such
-    as __baleful polymorph__).
+    as baleful polymorph).
 description: 'The purple worm is the most common and infamous of the cave worms, a
   much-feared monster wandering the twisting tunnels of the Darklands that is capable
   of carving out entire cave systems. Tunnels bored by a purple worm don''t always
@@ -68,11 +201,8 @@ description: 'The purple worm is the most common and infamous of the cave worms,
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 31'
 hp: 270
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+15
@@ -109,154 +239,17 @@ melee:
   - reach 15 feet
 name: Purple Worm
 perception: 20
-proactive_abilities:
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The worm uses Swallow Whole.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fast Swallow
-  range: null
-  raw_description: '**Fast Swallow** [Reaction]  **Trigger** The purple worm Grabs
-    a creature. **Effect** The worm uses Swallow Whole.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The purple worm Grabs a creature.
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 32 Fortitude, **Maximum Duration** 6 rounds; **Stage
-    1** 5d6 poison damage and enfeebled 2 (1 round), **Stage 2** 6d6 poison damage,
-    and enfeebled 2 (1 round); **Stage 3** 8d6 poison damage and enfeebled 2 (1 round).'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Purple Worm Venom
-  range: null
-  raw_description: '**Purple Worm Venom** (__poison__) **Saving Throw** DC 32 Fortitude,
-    **Maximum Duration** 6 rounds; **Stage 1** 5d6 poison damage and enfeebled 2 (1
-    round), **Stage 2** 6d6 poison damage, and enfeebled 2 (1 round); **Stage 3**
-    8d6 poison damage and enfeebled 2 (1 round).'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 'The purple worm can violently regurgitate a creature or boulder it
-    has swallowed to make a ranged Strike. The Strike deals bludgeoning damage depending
-    on the size of the projectile: Tiny deals 2d6+13, Small 3d6+13, Medium 4d6+13,
-    Large 5d6+13, and Huge 6d6+13. A regurgitated creature takes falling damage from
-    the height of the target or from 20 feet, whichever is greater.Boulders occupy
-    space in the worm''s stomach as a creature of equivalent size, and purple worms
-    often have several boulders swallowed. A purple worm can use a single action to
-    swallow a new boulder.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Regurgitate
-  range: null
-  raw_description: '**Regurgitate** The purple worm can violently regurgitate a creature
-    or boulder it has swallowed to make a ranged Strike. The Strike deals bludgeoning
-    damage depending on the size of the projectile: Tiny deals 2d6+13, Small 3d6+13,
-    Medium 4d6+13, Large 5d6+13, and Huge 6d6+13. A regurgitated creature takes falling
-    damage from the height of the target or from 20 feet, whichever is greater.Boulders
-    occupy space in the worm''s stomach as a creature of equivalent size, and purple
-    worms often have several boulders swallowed. A purple worm can use a single action
-    to swallow a new boulder.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A purple worm can burrow through solid stone at a Speed of 20 feet.
-    It can leave a tunnel if it desires, and it usually does.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rock Tunneler
-  range: null
-  raw_description: '**Rock Tunneler** A purple worm can burrow through solid stone
-    at a Speed of 20 feet. It can leave a tunnel if it desires, and it usually does.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
+ranged_attacks:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Huge, 3d6+9 bludgeoning, Rupture 24
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**Swallow Whole**   Huge, 3d6+9 bludgeoning, Rupture 24'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The worm makes a Strike once against each creature in its reach. It
-    can Strike up to once with its jaws, up to once with its stinger, and any number
-    of times with its body. Each attack counts toward the worm's multiple attack penalty,
-    but the multiple attack penalty doesn't increase until after it makes all the
-    attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Thrash
-  range: null
-  raw_description: '**Thrash** [Two Actions]  The worm makes a Strike once against
-    each creature in its reach. It can Strike up to once with its jaws, up to once
-    with its stinger, and any number of times with its body. Each attack counts toward
-    the worm''s multiple attack penalty, but the multiple attack penalty doesn''t
-    increase until after it makes all the attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
-- action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: varies (see ability)
   name: regurgitate
   plus_damage: null
   to_hit: 26
   traits:
   - brutal
   - range increment 60 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 28
   fort_misc: null
@@ -265,31 +258,28 @@ saves:
   ref_misc: null
   will: 21
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +20
 - darkvision
 - tremorsense (imprecise) 100 feet
 size: Gargantuan
 skills:
 - bonus: 30
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 56
+  page_start: '56'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: burrow
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Gargantuan
 - Animal
-type: Creature
-weaknesses: null

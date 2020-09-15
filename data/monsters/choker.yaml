@@ -7,6 +7,75 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d6+3 bludgeoning, DC 19
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d6+3 bludgeoning, DC 19'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If the choker starts its turn hidden from or undetected by a creature,
+    that creature is __flat-footed__ against the choker's attacks until the end of
+    the turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hidden Movement
+  range: null
+  raw_description: '**Hidden Movement** If the choker starts its turn hidden from
+    or undetected by a creature, that creature is __flat-footed__ against the choker''s
+    attacks until the end of the turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any creature hit by a choker's arm Strike is automatically __grabbed__,
+    and the choker begins to strangle the target. The creature is suffocating and
+    can't speak as long as it's strangled. This prevents it from casting spells with
+    a verbal component or activating items with a command component.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Strangling Fingers
+  range: null
+  raw_description: '**Strangling Fingers** Any creature hit by a choker''s arm Strike
+    is automatically __grabbed__, and the choker begins to strangle the target. The
+    creature is suffocating and can''t speak as long as it''s strangled. This prevents
+    it from casting spells with a verbal component or activating items with a command
+    component.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -25,11 +94,11 @@ automatic_abilities:
     a space between itself and the attacker against a ranged attack. The choker can''t
     use this ability to make the attacker target itself, even if it''s grabbing or
     restraining the attacker.'
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Yank
   range: null
   raw_description: '**Yank [Reaction]** (__manipulate__) **Trigger **An enemy targets
@@ -47,10 +116,12 @@ automatic_abilities:
     use this ability to make the attacker target itself, even if it''s grabbing or
     restraining the attacker.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - manipulate
-  trigger: An enemy targets the choker with an attack
+  trigger: An enemy targets the choker with an attack;
 description: 'With long, cartilaginous limbs and gray skin, chokers easily hide in
   stony alcoves, rocky fissures, and darkened staircases to ambush their prey. The
   strange little aberrations prefer to pick off weak and solitary creatures, especially
@@ -84,13 +155,11 @@ description: 'With long, cartilaginous limbs and gray skin, chokers easily hide 
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 16'
 hp: 28
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Undercommon
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -104,75 +173,7 @@ melee:
   - reach 10 feet
 name: Choker
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d6+3 bludgeoning, DC 19
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d6+3 bludgeoning, DC 19'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the choker starts its turn hidden from or undetected by a creature,
-    that creature is __flat-footed__ against the choker's attacks until the end of
-    the turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hidden Movement
-  range: null
-  raw_description: '**Hidden Movement** If the choker starts its turn hidden from
-    or undetected by a creature, that creature is __flat-footed__ against the choker''s
-    attacks until the end of the turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any creature hit by a choker's arm Strike is automatically __grabbed__,
-    and the choker begins to strangle the target. The creature is suffocating and
-    can't speak as long as it's strangled. This prevents it from casting spells with
-    a verbal component or activating items with a command component.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Strangling Fingers
-  range: null
-  raw_description: '**Strangling Fingers** Any creature hit by a choker''s arm Strike
-    is automatically __grabbed__, and the choker begins to strangle the target. The
-    creature is suffocating and can''t speak as long as it''s strangled. This prevents
-    it from casting spells with a verbal component or activating items with a command
-    component.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -181,31 +182,27 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Small
 skills:
 - bonus: 9
   misc: +11 to Grapple
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 51
+  page_start: '51'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- CE
-- Small
 - Aberration
-type: Creature
-weaknesses: null

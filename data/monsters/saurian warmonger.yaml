@@ -1,0 +1,254 @@
+ability_mods:
+  cha_mod: 4
+  con_mod: 6
+  dex_mod: 5
+  int_mod: 4
+  str_mod: 8
+  wis_mod: 6
+ac: 39
+ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The saurian warmonger bellows, evoking the power of the primordial
+    world. Non-__dinosaur__ creatures within 30 feet take 10d6 sonic damage (DC 34
+    basic Fortitude save). On a failed save, a creature is also __slowed 2__ for 1
+    round (stunned 1d4 on a critical failure). The saurian can't use Boneshaking Roar
+    again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Boneshaking Roar
+  range: null
+  raw_description: '**Boneshaking Roar** [Two Actions]  (__incapacitation__, __sonic__)
+    The saurian warmonger bellows, evoking the power of the primordial world. Non-__dinosaur__
+    creatures within 30 feet take 10d6 sonic damage (DC 34 basic Fortitude save).
+    On a failed save, a creature is also __slowed 2__ for 1 round (stunned 1d4 on
+    a critical failure). The saurian can''t use Boneshaking Roar again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  - sonic
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A warmonger wields their mancatcher in one hand.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Primordial Balance
+  range: null
+  raw_description: '**Primordial Balance** A warmonger wields their mancatcher in
+    one hand.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the warmonger makes a successful mancatcher Strike, their target
+    must succeed at a DC 34 Reflex save or become __grabbed__ until the end of the
+    warmonger's next turn. Each time the creature fails an attempt to __Escape__ the
+    warmonger, it takes 2d6 piercing damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Restrain
+  range: null
+  raw_description: '**Restrain** When the warmonger makes a successful mancatcher
+    Strike, their target must succeed at a DC 34 Reflex save or become __grabbed__
+    until the end of the warmonger''s next turn. Each time the creature fails an attempt
+    to __Escape__ the warmonger, it takes 2d6 piercing damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 'The saurian warmonger makes three Strikes: one Strike each with the
+    weapons in their hands and one Strike with their tail. They can perform these
+    attacks in any order, though each counts toward their multiple attack penalty
+    as normal. After making a Three-Limbed Lunge, the warmonger is __flat-footed__
+    until the beginning of their next turn.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Three-Limbed Lunge
+  range: null
+  raw_description: '**Three-Limbed Lunge** [One Action]  The saurian warmonger makes
+    three Strikes: one Strike each with the weapons in their hands and one Strike
+    with their tail. They can perform these attacks in any order, though each counts
+    toward their multiple attack penalty as normal. After making a Three-Limbed Lunge,
+    the warmonger is __flat-footed__ until the beginning of their next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: NE
+automatic_abilities: null
+description: 'These saurians adopt warfare as their primary role and greatest calling.
+  They particularly excel at taking slaves.
+
+
+
+
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 37'
+hp: 340
+hp_misc: null
+items:
+- +1 striking mancatcher
+- +2 greater striking spear
+- leather armor
+languages:
+- Common
+- Ignan
+- Sylvan
+- speak with animals
+level: 16
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d6+16
+    type: piercing
+  name: spear
+  plus_damage: null
+  to_hit: 32
+  traits:
+  - magical
+  - reach 15 feet
+- action_cost: One Action
+  damage:
+    formula: 2d6+16
+    type: slashing
+  name: mancatcher
+  plus_damage:
+  - formula: null
+    type: restrain
+  to_hit: 31
+  traits:
+  - magical
+  - reach 20 feet
+- action_cost: One Action
+  damage:
+    formula: 3d10+16
+    type: piercing
+  name: jaws
+  plus_damage: null
+  to_hit: 30
+  traits:
+  - deadly d12
+  - reach 15 feet
+- action_cost: One Action
+  damage:
+    formula: 3d6+16
+    type: bludgeoning
+  name: tail
+  plus_damage: null
+  to_hit: 30
+  traits:
+  - agile
+  - finesse
+  - reach 10 feet
+  - trip
+name: Saurian Warmonger
+perception: 31
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d6+16
+    type: piercing
+  name: spear
+  plus_damage: null
+  to_hit: 32
+  traits:
+  - magical
+  - thrown 20 feet
+rarity: Uncommon
+resistances:
+- amount: 10
+  misc: null
+  type: fire
+saves:
+  fort: 26
+  fort_misc: null
+  misc: null
+  ref: 25
+  ref_misc: null
+  will: 28
+  will_misc: null
+senses:
+- darkvision
+size: Huge
+skills:
+- bonus: 32
+  misc: null
+  name: Athletics
+- bonus: 28
+  misc: null
+  name: Crafting
+- bonus: 28
+  misc: null
+  name: Intimidation
+- bonus: 30
+  misc: null
+  name: Nature
+- bonus: 30
+  misc: null
+  name: Survival
+sources:
+- abbr: 'Pathfinder #156: The Apocalypse Prophet'
+  page_start: '80'
+  page_stop: null
+speed:
+- amount: 40
+  misc: null
+  type: Land
+spell_lists:
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 2
+    spells:
+    - misc: null
+      name: speak with animals
+  dc: 37
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: air walk
+  - level: 3
+    spells:
+    - misc: at will; dinosaurs only
+      name: animal vision
+  spells_source: Primal Innate Spells
+traits:
+- Dinosaur
+- Humanoid

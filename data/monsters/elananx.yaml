@@ -7,6 +7,50 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The elananx's Strikes deal an extra 1d6 damage to creatures within
+    the reach of at least two of its allies.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pack Attack
+  range: null
+  raw_description: '**Pack Attack** The elananx''s Strikes deal an extra 1d6 damage
+    to creatures within the reach of at least two of its allies.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The elananx Strides and makes a Strike at the end of that movement.
+    If the elananx began this action hidden, it remains hidden until after the attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pounce
+  range: null
+  raw_description: '**Pounce** [One Action]  The elananx Strides and makes a Strike
+    at the end of that movement. If the elananx began this action hidden, it remains
+    hidden until after the attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -21,11 +65,11 @@ automatic_abilities:
     If the elananx Strikes a creature using its first action after returning to its
     normal form, the target is flat-footed and the Strike deals an extra 1d6 fire
     damage.
-  effects: null
   failure: null
   frequency: once per day.
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Cinder Dispersal
   range: null
   raw_description: '**Cinder Dispersal** [Reaction] (__fire__, __primal__, __transmutation__);
@@ -39,6 +83,8 @@ automatic_abilities:
     normal form, the target is flat-footed and the Strike deals an extra 1d6 fire
     damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - fire
@@ -57,7 +103,7 @@ description: 'These strange, fey felines resemble large, broad bobcats from a di
 
 
   Elananxes typically hunt alone, but sometimes these cunning and malicious hunters
-  of the First World roam in packs called "billows" to take down large prey. Like
+  of the First World roam in packs called “billows” to take down large prey. Like
   many house cats, elananxes are not content to merely track and devour prey, but
   prefer to toy with their victims, drawing joy and excitement from the fear and pain
   of those they capture. To this end, elananxes rarely use their cinder dispersal
@@ -94,12 +140,11 @@ hp: 95
 hp_misc: null
 immunities:
 - fire
-items: null
 languages:
 - Sylvan
 - (can't speak any language)
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+8
@@ -120,52 +165,7 @@ melee:
   - agile
 name: Elananx
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The elananx's Strikes deal an extra 1d6 damage to creatures within
-    the reach of at least two of its allies.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pack Attack
-  range: null
-  raw_description: '**Pack Attack** The elananx''s Strikes deal an extra 1d6 damage
-    to creatures within the reach of at least two of its allies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The elananx Strides and makes a Strike at the end of that movement.
-    If the elananx began this action hidden, it remains hidden until after the attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pounce
-  range: null
-  raw_description: '**Pounce**   The elananx Strides and makes a Strike at the end
-    of that movement. If the elananx began this action hidden, it remains hidden until
-    after the attack.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: cold iron
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 12
   fort_misc: null
@@ -174,33 +174,32 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - darkvision
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: +17 to Track
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 143
+  page_start: '143'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Medium
 - Fey
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold iron

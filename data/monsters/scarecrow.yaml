@@ -7,31 +7,115 @@ ability_mods:
   wis_mod: 3
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: The scarecrow's head bursts into ghostly, heatless flame that sheds
+    bright light in a 20-foot emanation (and dim light to the next 20 feet). If the
+    scarecrow uses this ability on the first round of combat, any creature that has
+    not acted yet is startled and becomes __flat-footed__ against the scarecrow for
+    1 round. It can suppress the light by using this action again.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Baleful Glow
+  range: null
+  raw_description: '**Baleful Glow** [Free Action]  (__concentrate__, __mental__,
+    __occult__) The scarecrow''s head bursts into ghostly, heatless flame that sheds
+    bright light in a 20-foot emanation (and dim light to the next 20 feet). If the
+    scarecrow uses this ability on the first round of combat, any creature that has
+    not acted yet is startled and becomes __flat-footed__ against the scarecrow for
+    1 round. It can suppress the light by using this action again.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - mental
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The scarecrow's strikes deal an additional 1d6 mental damage to __frightened__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Clawing Fear
+  range: null
+  raw_description: '**Clawing Fear** The scarecrow''s strikes deal an additional 1d6
+    mental damage to __frightened__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Until it acts, the scarecrow resembles an ordinary scarecrow. It has
+    an automatic result of 32 on __Deception__ checks and DCs to pass as an ordinary
+    scarecrow.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mundane Appearance
+  range: null
+  raw_description: '**Mundane Appearance** [One Action]  (__concentrate__) Until it
+    acts, the scarecrow resembles an ordinary scarecrow. It has an automatic result
+    of 32 on __Deception__ checks and DCs to pass as an ordinary scarecrow.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: "40 feet. The scarecrow's eyes flicker with an unnerving glow. A creature\
-    \ can't reduce its __frightened__ condition below 1 as long as it is in the aura's\
-    \ emanation. \n\nWhen a creature enters or starts its turn in the aura, it must\
-    \ attempt a DC 18 Will save. Birds and other avian creatures take a -2 circumstance\
-    \ penalty to this save."
+  description: 'The scarecrow''s eyes flicker with an unnerving glow. A creature can''t
+    reduce its __frightened__ condition below 1 as long as it is in the aura''s emanation.
+
+
+    When a creature enters or starts its turn in the aura, it must attempt a DC 18
+    Will save. Birds and other avian creatures take a –2 circumstance penalty to this
+    save.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Scarecrow's Leer
-  range: null
-  raw_description: "**Scarecrow's Leer** (__aura__, __emotion__, __fear__, __mental__,\
-    \ __occult__, __visual__) 40 feet. The scarecrow's eyes flicker with an unnerving\
-    \ glow. A creature can't reduce its __frightened__ condition below 1 as long as\
-    \ it is in the aura's emanation. \n\nWhen a creature enters or starts its turn\
-    \ in the aura, it must attempt a DC 18 Will save. Birds and other avian creatures\
-    \ take a -2 circumstance penalty to this save."
+  range: 40 feet
+  raw_description: '**Scarecrow''s Leer** (__aura__, __emotion__, __fear__, __mental__,
+    __occult__, __visual__) 40 feet. The scarecrow''s eyes flicker with an unnerving
+    glow. A creature can''t reduce its __frightened__ condition below 1 as long as
+    it is in the aura''s emanation.
+
+
+    When a creature enters or starts its turn in the aura, it must attempt a DC 18
+    Will save. Birds and other avian creatures take a –2 circumstance penalty to this
+    save.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -43,19 +127,22 @@ automatic_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The creature is unaffected and is then temporarily immune for
+    24 hours.
   description: The creature is unaffected and is then temporarily immune for 24 hours.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Success
   range: null
   raw_description: '**Critical Success** The creature is unaffected and is then temporarily
     immune for 24 hours.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -64,16 +151,18 @@ automatic_abilities:
   critical_success: null
   description: The creature is frightened 1.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Success
   range: null
   raw_description: '**Success** The creature is frightened 1.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The creature is frightened 1.
   traits: null
   trigger: null
 - action_cost: None
@@ -82,33 +171,38 @@ automatic_abilities:
   description: The creature is frightened 2 and is __fascinated__ by the scarecrow
     until the end of its next turn.
   effect: null
-  effects: null
-  failure: null
+  failure: The creature is frightened 2 and is __fascinated__ by the scarecrow until
+    the end of its next turn.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Failure
   range: null
   raw_description: '**Failure** The creature is frightened 2 and is __fascinated__
     by the scarecrow until the end of its next turn.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: As failure, but frightened 3.
   critical_success: null
   description: As failure, but frightened 3.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Failure
   range: null
   raw_description: '**Critical Failure** As failure, but frightened 3.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -142,23 +236,21 @@ hp: 60
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
-- fatigued
-- healing
-- mental
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
@@ -172,83 +264,11 @@ melee:
   - versatile S
 name: Scarecrow
 perception: 11
-proactive_abilities:
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: The scarecrow's head bursts into ghostly, heatless flame that sheds
-    bright light in a 20-foot emanation (and dim light to the next 20 feet). If the
-    scarecrow uses this ability on the first round of combat, any creature that has
-    not acted yet is startled and becomes __flat-footed__ against the scarecrow for
-    1 round. It can suppress the light by using this action again.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Baleful Glow
-  range: null
-  raw_description: '**Baleful Glow** [Free Action]  (__concentrate__, __mental__,
-    __occult__) The scarecrow''s head bursts into ghostly, heatless flame that sheds
-    bright light in a 20-foot emanation (and dim light to the next 20 feet). If the
-    scarecrow uses this ability on the first round of combat, any creature that has
-    not acted yet is startled and becomes __flat-footed__ against the scarecrow for
-    1 round. It can suppress the light by using this action again.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - mental
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The scarecrow's strikes deal an additional 1d6 mental damage to __frightened__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Clawing Fear
-  range: null
-  raw_description: '**Clawing Fear** The scarecrow''s strikes deal an additional 1d6
-    mental damage to __frightened__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Until it acts, the scarecrow resembles an ordinary scarecrow. It has
-    an automatic result of 32 on __Deception__ checks and DCs to pass as an ordinary
-    scarecrow.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mundane Appearance
-  range: null
-  raw_description: '**Mundane Appearance**   (__concentrate__) Until it acts, the
-    scarecrow resembles an ordinary scarecrow. It has an automatic result of 32 on
-    __Deception__ checks and DCs to pass as an ordinary scarecrow.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
-  type: physical (except slashing)
-ritual_lists: null
+  misc: except slashing
+  type: physical
 saves:
   fort: 13
   fort_misc: null
@@ -257,28 +277,25 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 size: Medium
 skills:
 - bonus: 12
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 232
+  page_start: '232'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Construct
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: fire

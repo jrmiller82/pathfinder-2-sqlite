@@ -7,6 +7,54 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The snapping turtle clenches its jaws down and automatically deals an additional
+    1d4 bludgeoning damage to the creature it just bit.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Clench Jaws
+  range: null
+  raw_description: '**Clench Jaws** [One Action]  **Requirements** The snapping turtle
+    damaged a creature with a jaws Strike in its previous action; **Effect** The snapping
+    turtle clenches its jaws down and automatically deals an additional 1d4 bludgeoning
+    damage to the creature it just bit.'
+  requirements: The snapping turtle damaged a creature with a jaws Strike in its previous
+    action
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The snapping turtle retracts its limbs and head into its shell and
+    ends its turn. This increases its AC to 18, but it can't act except to reemerge,
+    which it can do as a single action.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shell Defense
+  range: null
+  raw_description: '**Shell Defense** [One Action]  The snapping turtle retracts its
+    limbs and head into its shell and ends its turn. This increases its AC to 18,
+    but it can''t act except to reemerge, which it can do as a single action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Snapping turtles are freshwater reptiles with a long flexible neck,
@@ -20,11 +68,8 @@ description: 'Snapping turtles are freshwater reptiles with a long flexible neck
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 13'
 hp: 9
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
@@ -35,55 +80,7 @@ melee:
   traits: null
 name: Snapping Turtle
 perception: 3
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The snapping turtle damaged a creature with a jaws Strike in its previous
-    action
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Clench Jaws
-  range: null
-  raw_description: '**Clench Jaws**   **Requirements** The snapping turtle damaged
-    a creature with a jaws Strike in its previous action; **Effect** The snapping
-    turtle clenches its jaws down and automatically deals an additional 1d4 bludgeoning
-    damage to the creature it just bit.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The snapping turtle retracts its limbs and head into its shell and
-    ends its turn. This increases its AC to 18, but it can't act except to reemerge,
-    which it can do as a single action.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shell Defense
-  range: null
-  raw_description: '**Shell Defense**   The snapping turtle retracts its limbs and
-    head into its shell and ends its turn. This increases its AC to 18, but it can''t
-    act except to reemerge, which it can do as a single action.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -98,44 +95,43 @@ sense_abilities:
   critical_success: null
   description: The snapping turtle can hold its breath for 30 minutes.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Deep Breath
   range: null
   raw_description: '**Deep Breath** The snapping turtle can hold its breath for 30
     minutes.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +3
 - low-light vision
 - scent (imprecise) 30 feet
 size: Tiny
 skills:
 - bonus: 5
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 3
   misc: +5 in water
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 269
+  page_start: '269'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Tiny
 - Animal
-type: Creature
-weaknesses: null

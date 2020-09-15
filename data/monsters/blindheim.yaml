@@ -7,6 +7,113 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Bright light shines from the blindheim's eyes in a 30-foot emanation
+    (also creating dim light to 60 feet). Each creature in the bright light when the
+    blindheim uses this action, or who enters it while the light continues, must attempt
+    a DC 18 Fortitude save. It is then temporarily immune for 1 hour. This light remains
+    until the blindheim dims its eyes by using this action again.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spotlight
+  range: null
+  raw_description: '**Spotlight** [One Action]  (__concentrate__, __light__) Bright
+    light shines from the blindheim''s eyes in a 30-foot emanation (also creating
+    dim light to 60 feet). Each creature in the bright light when the blindheim uses
+    this action, or who enters it while the light continues, must attempt a DC 18
+    Fortitude save. It is then temporarily immune for 1 hour. This light remains until
+    the blindheim dims its eyes by using this action again.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - light
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __dazzled__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The creature is __dazzled__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __dazzled__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __blinded__ for 1d4 rounds.
+  effect: null
+  failure: The creature is __blinded__ for 1d4 rounds.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The creature is __blinded__ for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is blinded for 1 hour.
+  critical_success: null
+  description: The creature is blinded for 1 hour.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **The creature is blinded for 1 hour.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Inhabitants of damp, subterranean caves, blindheims resemble stubby
@@ -37,7 +144,7 @@ description: 'Inhabitants of damp, subterranean caves, blindheims resemble stubb
 
   It''s not just animals that endanger blindheims. Underground peoples find the creatures
   useful and attempt to capture them for specialized purposes. __Duergars__ use them
-  as "raid frogs," placing heavy hoods over blindheims'' heads and revealing them
+  as “raid frogs,” placing heavy hoods over blindheims'' heads and revealing them
   suddenly during raids to blind their foes. They sometimes send the creatures along
   with their slaves that lack darkvision into the mines as a source of light. __Drow__
   use them for some of these same purposes, and some nobles have been known to treat
@@ -52,12 +159,10 @@ description: 'Inhabitants of damp, subterranean caves, blindheims resemble stubb
 hp: 27
 hp_misc: null
 immunities:
-- blinded
-- light
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=100">light</a>
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+2
@@ -78,45 +183,7 @@ melee:
   - finesse
 name: Blindheim
 perception: 9
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: "Bright light shines from the blindheim's eyes in a 30-foot emanation\
-    \ (also creating dim light to 60 feet). Each creature in the bright light when\
-    \ the blindheim uses this action, or who enters it while the light continues,\
-    \ must attempt a DC 18 Fortitude save. It is then temporarily immune for 1 hour.\
-    \ This light remains until the blindheim dims its eyes by using this action again.\
-    \ \n\n**Critical Success **The creature is unaffected. \n\n**Success **The creature\
-    \ is __dazzled__ for 1 round. \n\n**Failure **The creature is __blinded__ for\
-    \ 1d4 rounds. \n\n**Critical Failure **The creature is blinded for 1 hour."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spotlight
-  range: null
-  raw_description: "**Spotlight**   (__concentrate__, __light__) Bright light shines\
-    \ from the blindheim's eyes in a 30-foot emanation (also creating dim light to\
-    \ 60 feet). Each creature in the bright light when the blindheim uses this action,\
-    \ or who enters it while the light continues, must attempt a DC 18 Fortitude save.\
-    \ It is then temporarily immune for 1 hour. This light remains until the blindheim\
-    \ dims its eyes by using this action again. \n\n**Critical Success **The creature\
-    \ is unaffected. \n\n**Success **The creature is __dazzled__ for 1 round. \n\n\
-    **Failure **The creature is __blinded__ for 1d4 rounds. \n\n**Critical Failure\
-    \ **The creature is blinded for 1 hour."
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - light
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -125,36 +192,33 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: +9 to Leap or Swim
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 39
+  page_start: '39'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: climb
 - amount: 15
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
-type: Creature
-weaknesses: null

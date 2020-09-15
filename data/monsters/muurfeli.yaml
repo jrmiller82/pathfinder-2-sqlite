@@ -7,26 +7,59 @@ ability_mods:
   wis_mod: 3
 ac: 39
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The muurfeli can take on the form of an owl. The owl form always looks
+    the same, but the muurfeli can choose to become either Tiny or Small in this form.
+    This transformation doesn't change their Speed or the attack and damage bonuses
+    of their Strikes, but might change the damage type their Strikes deal (typically
+    to slashing).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**__Change Shape__** [One Action]  (__arcane__, __concentrate__,
+    __polymorph__, __transmutation__) The muurfeli can take on the form of an owl.
+    The owl form always looks the same, but the muurfeli can choose to become either
+    Tiny or Small in this form. This transformation doesn''t change their Speed or
+    the attack and damage bonuses of their Strikes, but might change the damage type
+    their Strikes deal (typically to slashing).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - concentrate
+  - polymorph
+  - transmutation
+  trigger: null
 alignment: CN
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet, DC 33. Swirling winds of noxious, flammable gas surround a
-    muurfeli. An open flame, spark, or similar fire effect in the area causes an explosion
-    that deals 20d6 fire damage to all creatures in the aura (including the muurfeli)
-    and temporarily disables the aura for 1 minute. When the muurfeli takes damage
-    from an ability with the __water__ trait or fails a saving throw against a water
-    effect, their firedamp winds aura is disabled for 1 minute. A creature that enters
-    or begins its turn in the aura must attempt a Fortitude save.
+  description: . Swirling winds of noxious, flammable gas surround a muurfeli. An
+    open flame, spark, or similar fire effect in the area causes an explosion that
+    deals 20d6 fire damage to all creatures in the aura (including the muurfeli) and
+    temporarily disables the aura for 1 minute. When the muurfeli takes damage from
+    an ability with the __water__ trait or fails a saving throw against a water effect,
+    their firedamp winds aura is disabled for 1 minute. A creature that enters or
+    begins its turn in the aura must attempt a Fortitude save.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Firedamp Winds
-  range: null
+  range: 30 feet
   raw_description: '**Firedamp Winds** (__air__, __aura__) 30 feet, DC 33. Swirling
     winds of noxious, flammable gas surround a muurfeli. An open flame, spark, or
     similar fire effect in the area causes an explosion that deals 20d6 fire damage
@@ -36,6 +69,8 @@ automatic_abilities:
     winds aura is disabled for 1 minute. A creature that enters or begins its turn
     in the aura must attempt a Fortitude save.'
   requirements: null
+  saving_throw: DC 33
+  stages: null
   success: null
   traits:
   - air
@@ -43,18 +78,20 @@ automatic_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The creature is unaffected.
   description: The creature is unaffected.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Success
   range: null
   raw_description: '**Critical Success** The creature is unaffected.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -63,16 +100,18 @@ automatic_abilities:
   critical_success: null
   description: The creature is __sickened 1__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Success
   range: null
   raw_description: '**Success** The creature is __sickened 1__.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The creature is __sickened 1__.
   traits: null
   trigger: null
 - action_cost: None
@@ -80,32 +119,36 @@ automatic_abilities:
   critical_success: null
   description: The creature is sickened 2.
   effect: null
-  effects: null
-  failure: null
+  failure: The creature is sickened 2.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Failure
   range: null
   raw_description: '**Failure** The creature is sickened 2.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: The creature is sickened 2 and __fatigued__.
   critical_success: null
   description: The creature is sickened 2 and __fatigued__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Critical Failure
   range: null
   raw_description: '**Critical Failure** The creature is sickened 2 and __fatigued__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -119,22 +162,21 @@ description: 'Whereas typical __djinn__ can cleanse or clear areas with their ar
   **__Recall Knowledge - Elemental__ (__Arcana__, __Nature__)**: DC 40'
 hp: 300
 hp_misc: null
-immunities: null
 items:
 - +2 greater striking scimitar
 languages:
 - Auran
 - Undercommon
 level: 16
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+15
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 2d6
-    type: poison
+  - formula: null
+    type: 2d6 poison
   to_hit: 29
   traits:
   - agile
@@ -148,8 +190,8 @@ melee:
     type: slashing
   name: scimitar
   plus_damage:
-  - formula: 2d6
-    type: poison
+  - formula: null
+    type: 2d6 poison
   to_hit: 31
   traits:
   - forceful
@@ -158,38 +200,7 @@ melee:
   - sweep
 name: Muurfeli
 perception: 30
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The muurfeli can take on the form of an owl. The owl form always looks
-    the same, but the muurfeli can choose to become either Tiny or Small in this form.
-    This transformation doesn't change their Speed or the attack and damage bonuses
-    of their Strikes, but might change the damage type their Strikes deal (typically
-    to slashing).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**__Change Shape__**   (__arcane__, __concentrate__, __polymorph__,
-    __transmutation__) The muurfeli can take on the form of an owl. The owl form always
-    looks the same, but the muurfeli can choose to become either Tiny or Small in
-    this form. This transformation doesn''t change their Speed or the attack and damage
-    bonuses of their Strikes, but might change the damage type their Strikes deal
-    (typically to slashing).'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - concentrate
-  - polymorph
-  - transmutation
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -208,10 +219,11 @@ ranged:
 rarity: Rare
 resistances:
 - amount: 15
+  misc: null
   type: fire
 - amount: 15
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -220,87 +232,75 @@ saves:
   ref_misc: null
   will: 27
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +30
 - darkvision
 - detect magic
 size: Large
 skills:
 - bonus: 33
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 27
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 31
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 28
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 31
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #155: Lord of the Black Sands'
-  page_start: 78
+  page_start: '78'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 36
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 4
     spells:
-    - frequency: null
-      name: cloudkill
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: illusory creature
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: burning hands
-      requirement: null
-    - frequency: null
-      name: gaseous form
-      requirement: null
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: enhance victuals
-      requirement: null
-  - heightened_level: 4
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-  to_hit: null
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: null
+      name: cloudkill
+  - level: 5
+    spells:
+    - misc: null
+      name: illusory creature
+  - level: 4
+    spells:
+    - misc: at will
+      name: burning hands
+    - misc: null
+      name: gaseous form
+    - misc: at will; self only
+      name: invisibility
+  - level: 2
+    spells:
+    - misc: at will
+      name: enhance victuals
+  spells_source: Arcane Innate Spells
 traits:
-- Rare
-- CN
-- Large
 - Air
 - Elemental
 - Genie
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: cold

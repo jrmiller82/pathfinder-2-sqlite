@@ -7,6 +7,98 @@ ability_mods:
   wis_mod: 0
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The glass golem creates waves of scintillating luminosity that cast
+    bright light in a 60-foot emanation (and dim light for the next 60 feet). The
+    light lasts until the start of the glass golem's next turn, after which the glass
+    golem can't use Dazzling Brilliance for 1d4 rounds. A creature within the bright
+    light or that enters the bright light must attempt a DC 23 Will save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dazzling Brilliance
+  range: null
+  raw_description: '**Dazzling Brilliance** [Two Actions]  (__evocation__, __light__,
+    __visual__) The glass golem creates waves of scintillating luminosity that cast
+    bright light in a 60-foot emanation (and dim light for the next 60 feet). The
+    light lasts until the start of the glass golem''s next turn, after which the glass
+    golem can''t use Dazzling Brilliance for 1d4 rounds. A creature within the bright
+    light or that enters the bright light must attempt a DC 23 Will save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - evocation
+  - light
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is unaffected.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __dazzled__ for 1 round.
+  effect: null
+  failure: The creature is __dazzled__ for 1 round.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is __dazzled__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __blinded__ for 1 round and then dazzled for an
+    additional 4 rounds.
+  critical_success: null
+  description: The creature is __blinded__ for 1 round and then dazzled for an additional
+    4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is __blinded__ for 1 round and
+    then dazzled for an additional 4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,16 +107,18 @@ automatic_abilities:
   description: harmed by sonic (6d6, 2d6 from areas or __persistent damage__); healed
     by fire (area 2d6 HP); __slowed__ by cold
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Golem Antimagic
   range: null
   raw_description: '**Golem Antimagic** harmed by sonic (6d6, 2d6 from areas or __persistent
     damage__); healed by fire (area 2d6 HP); __slowed__ by cold'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -34,16 +128,18 @@ automatic_abilities:
   description: A glass golem is affected by the __shatter__ spell as though the golem
     were an unattended object.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vulnerable to Shatter
   range: null
   raw_description: '**Vulnerable to Shatter** A glass golem is affected by the __shatter__
     spell as though the golem were an unattended object.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -52,28 +148,30 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The glass golem positions its magical, reflective surfaces to turn the spell
-    back on the caster. It tries to counteract the spell by attempting an __Acrobatics__
-    check for its counteract check. If it successfully counteract the spell, the effect
-    is turned back on the caster.
-  effects: null
+    back on the caster. It tries to __counteract__ the spell by attempting an __Acrobatics__
+    check for its counteract check. If it successfully counteracts the spell, the
+    effect is turned back on the caster.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Spell Reflection
   range: null
   raw_description: '**Spell Reflection [Reaction]** (__abjuration__, __arcane__) **Trigger**
     The glass golem is targeted by a spell; **Effect** The glass golem positions its
     magical, reflective surfaces to turn the spell back on the caster. It tries to
-    counteract the spell by attempting an __Acrobatics__ check for its counteract
-    check. If it successfully counteract the spell, the effect is turned back on the
-    caster.'
+    __counteract__ the spell by attempting an __Acrobatics__ check for its counteract
+    check. If it successfully counteracts the spell, the effect is turned back on
+    the caster.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
   - arcane
-  trigger: The glass golem is targeted by a spell
+  trigger: The glass golem is targeted by a spell;
 description: 'Crafted of hardened glass and held together by magically treated lead,
   glass golems are both deadly guardians and works of exquisite art. Glass golems
   most often protect grand cathedrals or opulent palaces—testaments to the wealth
@@ -98,32 +196,30 @@ hp: 135
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
-- fatigued
-- healing
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
 - magic (see Golem Antimagic below)
-- mental
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+8
     type: slashing
   name: bladed limb
   plus_damage:
-  - formula: 1d6
-    type: bleed
+  - formula: null
+    type: 1d6 bleed
   to_hit: 20
   traits:
   - agile
@@ -131,47 +227,12 @@ melee:
   - versatile P
 name: Glass Golem
 perception: 14
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: The creature is blinded for 1 round and then dazzled for an additional
-    4 rounds.
-  critical_success: null
-  description: "The glass golem creates waves of scintillating luminosity that cast\
-    \ bright light in a 60-foot emanation (and dim light for the next 60 feet). The\
-    \ light lasts until the start of the glass golem's next turn, after which the\
-    \ glass golem can't use Dazzling Brilliance for 1d4 rounds. A creature within\
-    \ the bright light or that enters the bright light must attempt a DC 23 Will save.\
-    \ \n\n"
-  effect: null
-  effects: null
-  failure: The creature is dazzled for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dazzling Brilliance
-  range: null
-  raw_description: "**Dazzling Brilliance** [Two Actions]  (__evocation__, __light__,\
-    \ __visual__) The glass golem creates waves of scintillating luminosity that cast\
-    \ bright light in a 60-foot emanation (and dim light for the next 60 feet). The\
-    \ light lasts until the start of the glass golem's next turn, after which the\
-    \ glass golem can't use Dazzling Brilliance for 1d4 rounds. A creature within\
-    \ the bright light or that enters the bright light must attempt a DC 23 Will save.\
-    \ \n\n**Success** The creature is unaffected. \n\n**Failure** The creature is\
-    \ __dazzled__ for 1 round. \n\n**Critical Failure** The creature is __blinded__\
-    \ for 1 round and then dazzled for an additional 4 rounds."
-  requirements: null
-  success: The creature is unaffected.
-  traits:
-  - evocation
-  - light
-  - visual
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
-  type: physical (except adamantine or bludgeoning)
-ritual_lists: null
+  misc: except adamantine or bludgeoning
+  type: physical
 saves:
   fort: 17
   fort_misc: null
@@ -180,35 +241,29 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - darkvision
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 19
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 131
+  page_start: '131'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Large
 - Construct
 - Golem
 - Mindless
-type: Creature
-weaknesses: null

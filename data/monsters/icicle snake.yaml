@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Until the next time it acts, the icicle snake appears to be an unassuming
+    icicle. It has an automatic result of 27 on __Deception__ checks and DCs to pass
+    as an icicle.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Icicle
+  range: null
+  raw_description: '**Icicle** [One Action]  (__concentrate__) Until the next time
+    it acts, the icicle snake appears to be an unassuming icicle. It has an automatic
+    result of 27 on __Deception__ checks and DCs to pass as an icicle.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Translucent and capable of hanging suspended and near motionless, icicle
@@ -22,55 +47,25 @@ hp_misc: null
 immunities:
 - bleed
 - cold
-- paralyzed
-- poison
-- sleep
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: persistent cold
+  - formula: null
+    type: 1d6 persistent cold
   to_hit: 9
   traits:
   - finesse
 name: Icicle Snake
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Until the next time it acts, the icicle snake appears to be an unassuming
-    icicle. It has an automatic result of 27 on __Deception__ checks and DCs to pass
-    as an icicle.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Icicle
-  range: null
-  raw_description: '**Icicle**   (__concentrate__) Until the next time it acts, the
-    icicle snake appears to be an unassuming icicle. It has an automatic result of
-    27 on __Deception__ checks and DCs to pass as an icicle.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: fire
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -79,33 +74,33 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 114
+  page_start: '114'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Small
 - Cold
 - Elemental
 - Water
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: fire

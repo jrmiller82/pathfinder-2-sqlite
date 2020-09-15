@@ -7,6 +7,36 @@ ability_mods:
   wis_mod: 0
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature grabbed by a vine lasher is not immobilized, but the grabbed
+    creature's space and every adjacent square use the rules for difficult terrain.
+    If the creature moves, the vine lasher moves with it, always keeping the grabbed
+    creature within 10 feet of itself. If two or more vine lashers have a creature
+    grabbed in this way, then the target's space and adjacent square instead use the
+    rules for greater difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Light Hold
+  range: null
+  raw_description: '**Light Hold** A creature grabbed by a vine lasher is not immobilized,
+    but the grabbed creature''s space and every adjacent square use the rules for
+    difficult terrain. If the creature moves, the vine lasher moves with it, always
+    keeping the grabbed creature within 10 feet of itself. If two or more vine lashers
+    have a creature grabbed in this way, then the target''s space and adjacent square
+    instead use the rules for greater difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'What first appears to be a simple shrub suddenly stirs to life.
@@ -23,15 +53,12 @@ description: 'What first appears to be a simple shrub suddenly stirs to life.
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 14'
 hp: 15
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+2
-    type: null
+    type: ''
   name: vine
   plus_damage:
   - formula: null
@@ -43,40 +70,7 @@ melee:
   - reach 10 feet
 name: Vine Lasher
 perception: 4
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature grabbed by a vine lasher is not immobilized, but the grabbed
-    creature's space and every adjacent square use the rules for difficult terrain.
-    If the creature moves, the vine lasher moves with it, always keeping the grabbed
-    creature within 10 feet of itself. If two or more vine lashers have a creature
-    grabbed in this way, then the target's space and adjacent square instead use the
-    rules for greater difficult terrain.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Light Hold
-  range: null
-  raw_description: '**Light Hold** A creature grabbed by a vine lasher is not immobilized,
-    but the grabbed creature''s space and every adjacent square use the rules for
-    difficult terrain. If the creature moves, the vine lasher moves with it, always
-    keeping the grabbed creature within 10 feet of itself. If two or more vine lashers
-    have a creature grabbed in this way, then the target''s space and adjacent square
-    instead use the rules for greater difficult terrain.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 6
   fort_misc: null
@@ -85,29 +79,24 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +4
 - tremorsense (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: The Fall of Plaguestone
-  page_start: 62
+  page_start: '62'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Small
 - Plant
-type: Creature
-weaknesses: null

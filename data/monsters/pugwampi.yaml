@@ -7,25 +7,25 @@ ability_mods:
   wis_mod: 2
 ac: 16
 ac_special: null
+active_abilities: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 20 feet. Creatures other than animals, gremlins, and gnolls in the
-    aura become extremely unlucky (DC 16 Will save; creature must roll this Will save
-    twice and take the worse result). On a successful save, the creature is temporarily
-    immune to pugwampi unluck auras for 24 hours. On a failure, the creature must
-    roll twice and take the worse result on all checks as long as it is within the
-    aura.
+  description: Creatures other than animals, gremlins, and gnolls in the aura become
+    extremely unlucky (DC 16 Will save; creature must roll this Will save twice and
+    take the worse result). On a successful save, the creature is temporarily immune
+    to pugwampi unluck auras for 24 hours. On a failure, the creature must roll twice
+    and take the worse result on all checks as long as it is within the aura.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Unluck Aura
-  range: null
+  range: 20 feet
   raw_description: '**Unluck Aura** (__aura__, __divination__, __mental__, __misfortune__,
     __primal__) 20 feet. Creatures other than animals, gremlins, and gnolls in the
     aura become extremely unlucky (DC 16 Will save; creature must roll this Will save
@@ -34,6 +34,8 @@ automatic_abilities:
     roll twice and take the worse result on all checks as long as it is within the
     aura.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -56,7 +58,6 @@ description: 'Mean, dog-faced, and craven, pugwampis take disproportionate enjoy
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 14'
 hp: 17
 hp_misc: null
-immunities: null
 items:
 - shortbow (60 arrows)
 - shortsword
@@ -64,7 +65,7 @@ languages:
 - Gnoll
 - Undercommon
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6-3
@@ -79,12 +80,11 @@ melee:
   - versatile S
 name: Pugwampi
 perception: 6
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: shortbow
   plus_damage: null
   to_hit: 8
@@ -93,9 +93,6 @@ ranged:
   - magical
   - range increment 60 feet
   - reload 0
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 5
   fort_misc: null
@@ -104,59 +101,54 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
-- (-2 to hear things)
-- darkvision
+- (–2 to hear things)
 size: Tiny
 skills:
 - bonus: 2
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 2
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 4
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 5
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 5
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary
-  page_start: 193
+  page_start: '193'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 16
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: at will
-      name: speak with animals
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: prestidigitation
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 16
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: at will
+      name: speak with animals
+  spells_source: Primal Innate Spells
 traits:
-- NE
-- Tiny
 - Fey
 - Gremlin
-type: Creature
 weaknesses:
 - amount: 2
+  misc: null
   type: cold iron

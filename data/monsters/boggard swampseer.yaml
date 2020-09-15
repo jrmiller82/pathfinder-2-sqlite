@@ -7,46 +7,7 @@ ability_mods:
   wis_mod: 4
 ac: 18
 ac_special: null
-alignment: CE
-automatic_abilities: null
-description: 'The boggard swampseer has been gifted with magic through its worship
-  of the demon lord Gogunta, and uses its power to rule a boggard village, keeping
-  the rest of the village in line and planning raids on nearby communities.
-
-
-
-
-  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
-hp: 40
-hp_misc: null
-immunities: null
-items:
-- staff
-languages:
-- Abyssal
-- Boggard
-- Common
-level: 3
-melee:
-- action_cost: One Action
-  damage:
-    formula: 1d4+6
-    type: bludgeoning
-  name: staff
-  plus_damage: null
-  to_hit: 10
-  traits:
-  - two-hand d8
-- action_cost: One Action
-  damage: null
-  name: Tongue
-  plus_damage: null
-  to_hit: 10
-  traits:
-  - reach 10 feet
-name: Boggard Swampseer
-perception: 11
-proactive_abilities:
+active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -56,11 +17,11 @@ proactive_abilities:
     the value of their frightened condition. The boggard can't use Destructive Croak
     again for 1d4 rounds
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Destructive Croak
   range: null
   raw_description: '**Destructive Croak** [Two Actions]  (__sonic__) The swampseer
@@ -69,6 +30,8 @@ proactive_abilities:
     condition takes additional sonic damage equal to twice the value of their frightened
     condition. The boggard can''t use Destructive Croak again for 1d4 rounds'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - sonic
@@ -81,11 +44,11 @@ proactive_abilities:
     check. It and boggard allies in the area can use the higher result of the swampseer's
     Performance check or their saves to resolve the effects against the __auditory__
     or __sonic__ effect.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Drowning Drone
   range: null
   raw_description: '**Drowning Drone** [Reaction]  (__auditory__, __mental__) **Trigger**
@@ -96,28 +59,32 @@ proactive_abilities:
     check or their saves to resolve the effects against the __auditory__ or __sonic__
     effect.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - auditory
   - mental
   trigger: The boggard swampseer or one of its allies within 60 feet attempts a saving
-    throw against an __auditory__ or __sonic__ effect.
+    throw against an auditory or sonic effect.
 - action_cost: None
   critical_failure: null
   critical_success: null
   description: A boggard swampseer ignores difficult terrain caused by swamp terrain
     features.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Swamp Stride
   range: null
   raw_description: '**Swamp Stride** A boggard swampseer ignores difficult terrain
     caused by swamp terrain features.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -128,18 +95,20 @@ proactive_abilities:
     within 30 feet becomes __frightened 1__ unless they succeed at a DC 19 Will save;
     those who critically succeed are temporarily immune for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Terrifying Croak
   range: null
-  raw_description: '**Terrifying Croak**   (__auditory__, __emotion__, __fear__, __mental__)
-    The boggard swampseer unleashes a terrifying croak. Any non-boggard within 30
-    feet becomes __frightened 1__ unless they succeed at a DC 19 Will save; those
-    who critically succeed are temporarily immune for 1 minute.'
+  raw_description: '**Terrifying Croak** [One Action]  (__auditory__, __emotion__,
+    __fear__, __mental__) The boggard swampseer unleashes a terrifying croak. Any
+    non-boggard within 30 feet becomes __frightened 1__ unless they succeed at a DC
+    19 Will save; those who critically succeed are temporarily immune for 1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - auditory
@@ -157,11 +126,11 @@ proactive_abilities:
     damage. Though this doesn't deal any damage to the boggard, it prevents it from
     using its tongue Strike until it regrows its tongue, which takes a week.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Tongue Grab
   range: null
   raw_description: '**Tongue Grab** If the boggard swampseer hits a creature with
@@ -172,15 +141,52 @@ proactive_abilities:
     boggard, it prevents it from using its tongue Strike until it regrows its tongue,
     which takes a week.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+alignment: CE
+automatic_abilities: null
+description: 'The boggard swampseer has been gifted with magic through its worship
+  of the demon lord Gogunta, and uses its power to rule a boggard village, keeping
+  the rest of the village in line and planning raids on nearby communities.
+
+
+
+
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
+hp: 40
+hp_misc: null
+items:
+- staff
+languages:
+- Abyssal
+- Boggard
+- Common
+level: 3
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 1d4+6
+    type: bludgeoning
+  name: staff
+  plus_damage: null
+  to_hit: 10
+  traits:
+  - two-hand d8
+- action_cost: One Action
+  damage:
+    formula: null
+    type: Tongue Grab
+  name: Tongue
+  plus_damage: null
+  to_hit: 10
+  traits:
+  - reach 10 feet
+name: Boggard Swampseer
+perception: 11
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -189,88 +195,76 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 8
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 9
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 11
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 8
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 9
   misc: null
-  name: 'Religion '
-source:
+  name: Religion
+sources:
 - abbr: Bestiary
-  page_start: 45
+  page_start: '45'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
 - amount: null
+  misc: null
   type: swamp stride
 spell_lists:
-- dc: 21
-  misc: ''
-  name: Primal Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 11
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: acid arrow
-      requirement: null
-    - frequency: null
-      name: obscuring mist
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: fear
-      requirement: null
-    - frequency: null
-      name: jump
-      requirement: null
-    - frequency: null
-      name: shillelagh
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: acid splash
-      requirement: null
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-    - frequency: null
+    - misc: null
       name: ray of frost
-      requirement: null
-    - frequency: null
+    - misc: null
       name: tanglefoot
-      requirement: null
-  to_hit: 11
+  constants: null
+  dc: 21
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: acid arrow
+    - misc: null
+      name: obscuring mist
+  - level: 1
+    spells:
+    - misc: null
+      name: fear
+    - misc: null
+      name: jump
+    - misc: null
+      name: shillelagh
+  spells_source: Primal Prepared Spells
 traits:
-- CE
-- Medium
 - Amphibious
 - Boggard
 - Humanoid
-type: Creature
-weaknesses: null

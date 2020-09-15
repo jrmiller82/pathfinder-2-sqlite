@@ -7,6 +7,30 @@ ability_mods:
   wis_mod: 2
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If the deep gnome scout starts its turn undetected or hidden to a creature,
+    that creature is __flat-footed__ against the deep gnome scout's attacks until
+    the end of the turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Hidden Movement
+  range: null
+  raw_description: '**Hidden Movement** If the deep gnome scout starts its turn undetected
+    or hidden to a creature, that creature is __flat-footed__ against the deep gnome
+    scout''s attacks until the end of the turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Deep gnome scouts patrol the tunnels that lead into their settlements.
@@ -19,7 +43,6 @@ description: 'Deep gnome scouts patrol the tunnels that lead into their settleme
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 18
 hp_misc: null
-immunities: null
 items:
 - light pick
 - sling (20 bullets)
@@ -27,7 +50,7 @@ languages:
 - Gnomish
 - Undercommon
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
@@ -40,29 +63,7 @@ melee:
   - fatal d8
 name: Deep Gnome Scout
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the deep gnome scout starts its turn undetected or hidden to a creature,
-    that creature is __flat-footed__ against the deep gnome scout's attacks until
-    the end of the turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Hidden Movement
-  range: null
-  raw_description: '**Hidden Movement** If the deep gnome scout starts its turn undetected
-    or hidden to a creature, that creature is __flat-footed__ against the deep gnome
-    scout''s attacks until the end of the turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -74,11 +75,6 @@ ranged:
   - propulsive
   - range increment 50 feet
   - reload 1
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -87,47 +83,43 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 5
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 7
   misc: +10 underground
-  name: 'Stealth '
+  name: Stealth
 - bonus: 5
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 74
+  page_start: '74'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 14
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 14
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+  spell_lists:
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: illusory disguise
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- N
-- Small
 - Gnome
 - Humanoid
-type: Creature
-weaknesses: null

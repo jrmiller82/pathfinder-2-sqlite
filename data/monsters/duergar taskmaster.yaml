@@ -7,41 +7,60 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The duergar taskmaster smashes their maul into the ground and invokes
+    Droskar's name to rally their allies to action. All allied duergars of equal or
+    lower __level__ that are within 20 feet of the duergar taskmaster gain a +1 status
+    bonus to attack rolls and damage rolls until the end of the duergar taskmaster's
+    next turn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Take Them Down!
+  range: null
+  raw_description: '**Take Them Down!** [One Action]  The duergar taskmaster smashes
+    their maul into the ground and invokes Droskar''s name to rally their allies to
+    action. All allied duergars of equal or lower __level__ that are within 20 feet
+    of the duergar taskmaster gain a +1 status bonus to attack rolls and damage rolls
+    until the end of the duergar taskmaster''s next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Duergar taskmasters automatically disbelieve all illusions of 1st level
-    or lower.
+  description: 'Duergar taskmasters automatically disbelieve all illusions of 1st
+    level or lower.
+
+
+    **Light Blindness**'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Iron Mind
   range: null
   raw_description: '**Iron Mind** Duergar taskmasters automatically disbelieve all
-    illusions of 1st level or lower.'
+    illusions of 1st level or lower.
+
+
+    **Light Blindness**'
   requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Light Blindness
-  range: null
-  raw_description: '**Light Blindness**'
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -58,7 +77,6 @@ description: 'Duergar priests of the taskmaster god Droskar often assume leaders
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
 hp: 30
 hp_misc: null
-immunities: null
 items:
 - chain mail
 - maul
@@ -68,7 +86,7 @@ languages:
 - Dwarven
 - Undercommon
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d12+2
@@ -80,38 +98,7 @@ melee:
   - shove
 name: Duergar Taskmaster
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The duergar taskmaster smashes their maul into the ground and invokes
-    Droskar's name to rally their allies to action. All allied duergars of equal or
-    lower __level__ that are within 20 feet of the duergar taskmaster gain a +1 status
-    bonus to attack rolls and damage rolls until the end of the duergar taskmaster's
-    next turn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Take Them Down!
-  range: null
-  raw_description: '**Take Them Down!**   The duergar taskmaster smashes their maul
-    into the ground and invokes Droskar''s name to rally their allies to action. All
-    allied duergars of equal or lower __level__ that are within 20 feet of the duergar
-    taskmaster gain a +1 status bonus to attack rolls and damage rolls until the end
-    of the duergar taskmaster''s next turn.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -120,83 +107,74 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 7
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 5
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 6
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 6
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 139
+  page_start: '139'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 18
-  misc: null
-  name: Divine Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+- attack_bonus: null
+  cantrips:
+  - level: 1
     spells:
-    - frequency: null
-      name: fear
-      requirement: null
-    - frequency: null
-      name: harm
-      requirement: null
-    - frequency: null
-      name: magic weapon
-      requirement: null
-  - heightened_level: 1
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: null
-- dc: 18
+  constants: null
+  dc: 18
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 1
     spells:
-    - frequency: self only
+    - misc: null
+      name: fear
+    - misc: null
+      name: harm
+    - misc: null
+      name: magic weapon
+  spells_source: Divine Prepared Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 18
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: self only
       name: enlarge
-      requirement: null
-    - frequency: self only
+    - misc: self only
       name: invisibility
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- LE
-- Medium
 - Duergar
 - Dwarf
 - Humanoid
-type: Creature
-weaknesses: null

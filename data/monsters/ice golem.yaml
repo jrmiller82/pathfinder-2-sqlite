@@ -7,6 +7,59 @@ ability_mods:
   wis_mod: 0
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The ice golem exhales a blast of freezing mist that deals 6d6 cold
+    damage in a 30-foot cone (DC 22 basic Reflex save). It can't use Breath Weapon
+    again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __cold__, __evocation__)
+    The ice golem exhales a blast of freezing mist that deals 6d6 cold damage in a
+    30-foot cone (DC 22 basic Reflex save). It can''t use Breath Weapon again for
+    1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - cold
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the ice golem gets a critical hit with a fist Strike, the target
+    also takes 2d6 __persistent cold damage__ and is __slowed 1__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Creeping Cold
+  range: null
+  raw_description: '**Creeping Cold** (__arcane__, __cold__, __evocation__) When the
+    ice golem gets a critical hit with a fist Strike, the target also takes 2d6 __persistent
+    cold damage__ and is __slowed 1__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - cold
+  - evocation
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,16 +68,18 @@ automatic_abilities:
   description: harmed by fire (4d6, 1d10 from areas or __persistent damage__); healed
     by cold (area 1d6 HP); __slowed__ by water
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Golem Antimagic
   range: null
   raw_description: '**Golem Antimagic** harmed by fire (4d6, 1d10 from areas or __persistent
     damage__); healed by cold (area 1d6 HP); __slowed__ by water'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -35,11 +90,11 @@ automatic_abilities:
     air and razor-sharp ice, dealing 2d6 slashing damage and 2d6 cold damage to creatures
     in a 20-foot emanation, with a DC 19 basic Reflex save.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Icy Demise
   range: null
   raw_description: '**Icy Demise** (__arcane__, __cold__, __evocation__) When an ice
@@ -47,6 +102,8 @@ automatic_abilities:
     ice, dealing 2d6 slashing damage and 2d6 cold damage to creatures in a 20-foot
     emanation, with a DC 19 basic Reflex save.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - arcane
@@ -60,11 +117,11 @@ automatic_abilities:
     not willing. If it is targeted, for 1 round it can't use Breath Weapon or benefit
     from creeping cold, and its fist attack doesn't deal cold damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Vulnerable to Endure Elements
   range: null
   raw_description: '**Vulnerable to Endure Elements** An ice golem can be targeted
@@ -72,6 +129,8 @@ automatic_abilities:
     it can''t use Breath Weapon or benefit from creeping cold, and its fist attack
     doesn''t deal cold damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -103,94 +162,43 @@ hp_misc: null
 immunities:
 - bleed
 - cold
-- death effects
-- disease
-- doomed
-- drained
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
 - electricity
-- fatigued
-- healing
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
 - magic (see Golem Antimagic below)
-- mental
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 1d6
-    type: cold
+  - formula: null
+    type: 1d6 cold
   to_hit: 15
   traits:
   - magical
   - versatile P
 name: Ice Golem
 perception: 9
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The ice golem exhales a blast of freezing mist that deals 6d6 cold
-    damage in a 30-foot cone (DC 22 basic Reflex save). It can't use Breath Weapon
-    again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __cold__, __evocation__)
-    The ice golem exhales a blast of freezing mist that deals 6d6 cold damage in a
-    30-foot cone (DC 22 basic Reflex save). It can''t use Breath Weapon again for
-    1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - cold
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the ice golem gets a critical hit with a fist Strike, the target
-    also takes 2d6 __persistent cold damage__ and is __slowed 1__ for 1 round.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Creeping Cold
-  range: null
-  raw_description: '**Creeping Cold** (__arcane__, __cold__, __evocation__) When the
-    ice golem gets a critical hit with a fist Strike, the target also takes 2d6 __persistent
-    cold damage__ and is __slowed 1__ for 1 round.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - cold
-  - evocation
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 5
-  type: physical (except adamantine and bludgeoning)
-ritual_lists: null
+  misc: except adamantine and bludgeoning
+  type: physical
 saves:
   fort: 15
   fort_misc: null
@@ -199,30 +207,24 @@ saves:
   ref_misc: null
   will: 9
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +9
 - darkvision
 size: Medium
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 129
+  page_start: '129'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Medium
 - Cold
 - Construct
 - Golem
 - Mindless
-type: Creature
-weaknesses: null

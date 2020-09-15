@@ -7,6 +7,105 @@ ability_mods:
   wis_mod: 3
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d8+2 bludgeoning, DC 18
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d8+2 bludgeoning, DC 18'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The mudwretch squeezes harder, dealing 1d6 __persistent bleed damage__ to
+    the target. The mudwretch absorbs this blood, removing any penalties it had as
+    a result of being dehydrated.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Gory Hydration
+  range: null
+  raw_description: '**Gory Hydration** [Reaction]  **Requirements** The mudwretch
+    is dehydrated; **Trigger** The mudwretch deals Constrict damage to a living creature
+    that has blood; **Effect** The mudwretch squeezes harder, dealing 1d6 __persistent
+    bleed damage__ to the target. The mudwretch absorbs this blood, removing any penalties
+    it had as a result of being dehydrated.'
+  requirements: The mudwretch is dehydrated
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The mudwretch deals Constrict damage to a living creature that has blood;
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Until it next acts, the mudwretch appears to be an ordinary puddle
+    of mud. It has an automatic result of 20 on __Deception__ checks to pass as a
+    mud puddle and can make a fist Strike against a creature that walks onto the mud
+    puddle as a reaction.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mud Puddle
+  range: null
+  raw_description: '**Mud Puddle** [One Action]  (__concentrate__) Until it next acts,
+    the mudwretch appears to be an ordinary puddle of mud. It has an automatic result
+    of 20 on __Deception__ checks to pass as a mud puddle and can make a fist Strike
+    against a creature that walks onto the mud puddle as a reaction.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The mudwretch spews a 20-foot line of pressurized mud that deals 2d10
+    bludgeoning damage (DC 18 basic Reflex save). On a critical failure, a creature
+    also takes a –10-foot status penalty to its Speeds for 1 round. The mudwretch
+    can't Spew Mud again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spew Mud
+  range: null
+  raw_description: '**Spew Mud** [Two Actions]  (__conjuration__, __primal__) The
+    mudwretch spews a 20-foot line of pressurized mud that deals 2d10 bludgeoning
+    damage (DC 18 basic Reflex save). On a critical failure, a creature also takes
+    a –10-foot status penalty to its Speeds for 1 round. The mudwretch can''t Spew
+    Mud again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - conjuration
+  - primal
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -20,11 +119,11 @@ automatic_abilities:
     in water, spends 1 minute in the rain, or rehydrates in another way (such as via
     Gory Hydration).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Susceptible to Desiccation
   range: null
   raw_description: '**Susceptible to Desiccation** If a mudwretch takes any damage
@@ -35,6 +134,8 @@ automatic_abilities:
     1__ until it either fully immerses in water, spends 1 minute in the rain, or rehydrates
     in another way (such as via Gory Hydration).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -63,14 +164,13 @@ hp_misc: null
 immunities:
 - bleed
 - critical hits
-- paralyzed
-- poison
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Terran
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -84,103 +184,14 @@ melee:
   - agile
 name: Mudwretch
 perception: 9
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d8+2 bludgeoning, DC 18
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d8+2 bludgeoning, DC 18'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The mudwretch deals Constrict damage to a living creature that has blood
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Gory Hydration
-  range: null
-  raw_description: '**Gory Hydration** [Reaction]  **Requirements** The mudwretch
-    is dehydrated; **Trigger** The mudwretch deals Constrict damage to a living creature
-    that has blood; **Effect** The mudwretch squeezes harder, dealing 1d6 __persistent
-    bleed damage__ to the target. The mudwretch absorbs this blood, removing any penalties
-    it had as a result of being dehydrated.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The mudwretch is dehydrated
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Until it next acts, the mudwretch appears to be an ordinary puddle
-    of mud. It has an automatic result of 20 on __Deception__ checks to pass as a
-    mud puddle and can make a fist Strike against a creature that walks onto the mud
-    puddle as a reaction.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mud Puddle
-  range: null
-  raw_description: '**Mud Puddle**   (__concentrate__) Until it next acts, the mudwretch
-    appears to be an ordinary puddle of mud. It has an automatic result of 20 on __Deception__
-    checks to pass as a mud puddle and can make a fist Strike against a creature that
-    walks onto the mud puddle as a reaction.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The mudwretch spews a 20-foot line of pressurized mud that deals 2d10
-    bludgeoning damage (DC 18 basic Reflex save). On a critical failure, a creature
-    also takes a -10-foot status penalty to its Speeds for 1 round. The mudwretch
-    can't Spew Mud again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spew Mud
-  range: null
-  raw_description: '**Spew Mud** [Two Actions]  (__conjuration__, __primal__) The
-    mudwretch spews a 20-foot line of pressurized mud that deals 2d10 bludgeoning
-    damage (DC 18 basic Reflex save). On a critical failure, a creature also takes
-    a -10-foot status penalty to its Speeds for 1 round. The mudwretch can''t Spew
-    Mud again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - conjuration
-  - primal
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 3
+  misc: null
   type: acid
 - amount: 3
-  type: physical (except bludgeoning)
-ritual_lists: null
+  misc: except bludgeoning
+  type: physical
 saves:
   fort: 11
   fort_misc: null
@@ -193,51 +204,51 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 10 feet. The ground in the area is difficult terrain for all non-mudwretch
-    creatures.
+  description: The ground in the area is difficult terrain for all non-mudwretch creatures.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Muddy Field
-  range: null
+  range: 10 feet
   raw_description: '**Muddy Field** (__aura__) 10 feet. The ground in the area is
     difficult terrain for all non-mudwretch creatures.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
   trigger: null
 senses:
-- Perception +9
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 176
+  page_start: '176'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Medium
 - Earth
 - Elemental
 - Water
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: fire

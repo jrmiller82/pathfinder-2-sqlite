@@ -7,6 +7,76 @@ ability_mods:
   wis_mod: 4
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The skrik nettle attempts to __counteract__ (with a modifier of +17)
+    a single effect currently levitating a creature it can detect with its motionsense.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Negate Levitation
+  range: null
+  raw_description: '**Negate Levitation** [One Action]  (__evocation__, __primal__)
+    The skrik nettle attempts to __counteract__ (with a modifier of +17) a single
+    effect currently levitating a creature it can detect with its motionsense.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - evocation
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Skrik Nettle Venom
+  range: null
+  raw_description: '**Skrik Nettle Venom** (__evocation__, __poison__, __primal__)
+    **Saving Throw** DC 27 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** __clumsy
+    1__ and levitate upward 5 feet (1 round); **Stage 2** clumsy 2 and levitate upward
+    10 feet (1 round)
+
+
+    A levitating creature takes a –2 circumstance penalty to attack rolls. It can
+    spend an Interact action to stabilize itself and negate this penalty for the remainder
+    of its turn. If it''s adjacent to a fixed object or stable terrain, it can move
+    across the surface by climbing (if the surface is vertical) or crawling (if the
+    surface is horizontal, such as a ceiling). A flying creature can move normally
+    but still increases its altitude as appropriate from the venom. A creature that
+    can''t fly falls as soon as it recovers from skrik nettle venom.'
+  requirements: null
+  saving_throw: DC 27 Fortitude
+  stages:
+  - effect: __clumsy 1__ and levitate upward 5 feet (1 round)
+  - effect: 'clumsy 2 and levitate upward 10 feet (1 round)
+
+
+      A levitating creature takes a –2 circumstance penalty to attack rolls. It can
+      spend an Interact action to stabilize itself and negate this penalty for the
+      remainder of its turn. If it''s adjacent to a fixed object or stable terrain,
+      it can move across the surface by climbing (if the surface is vertical) or crawling
+      (if the surface is horizontal, such as a ceiling). A flying creature can move
+      normally but still increases its altitude as appropriate from the venom. A creature
+      that can''t fly falls as soon as it recovers from skrik nettle venom.'
+  success: null
+  traits:
+  - evocation
+  - poison
+  - primal
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,20 +85,22 @@ automatic_abilities:
   description: null
   effect: The skrik nettle ejects its venom onto an adjacent creature. That creature
     is exposed to skrik nettle venom.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Spill Venom
   range: null
   raw_description: '**Spill Venom [Reaction]** **Trigger** The skrik nettle takes
     piercing or slashing damage; **Effect** The skrik nettle ejects its venom onto
     an adjacent creature. That creature is exposed to skrik nettle venom.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The skrik nettle takes piercing or slashing damage
+  trigger: The skrik nettle takes piercing or slashing damage;
 description: 'The expansive skies of the __First World__ are home to skrik nettles—delicate,
   bizarre-looking creatures that resemble large jellyfishes. A fringe of brightly
   colored feathers circles their bodies, and long tendrils trail from their center,
@@ -63,11 +135,8 @@ description: 'The expansive skies of the __First World__ are home to skrik nettl
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 22'
 hp: 130
 hp_misc: fast healing 5
-immunities: null
-items: null
-languages: null
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+6
@@ -83,76 +152,7 @@ melee:
   - reach 10 feet
 name: Skrik Nettle
 perception: 16
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The skrik nettle attempts to __counteract__ (with a modifier of +17)
-    a single effect currently levitating a creature it can detect with its motionsense.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Negate Levitation
-  range: null
-  raw_description: '**Negate Levitation**   (__evocation__, __primal__) The skrik
-    nettle attempts to __counteract__ (with a modifier of +17) a single effect currently
-    levitating a creature it can detect with its motionsense.'
-  requirements: null
-  success: null
-  traits:
-  - evocation
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 27 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** __clumsy 1__ and levitate upward 5 feet (1 round); **Stage 2** clumsy 2 and
-    levitate upward 10 feet (1 round)
-
-
-    A levitating creature takes a -2 circumstance penalty to attack rolls. It can
-    spend an Interact action to stabilize itself and negate this penalty for the remainder
-    of its turn. If it''s adjacent to a fixed object or stable terrain, it can move
-    across the surface by climbing (if the surface is vertical) or crawling (if the
-    surface is horizontal, such as a ceiling). A flying creature can move normally
-    but still increases its altitude as appropriate from the venom. A creature that
-    can''t fly falls as soon as it recovers from skrik nettle venom.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Skrik Nettle Venom
-  range: null
-  raw_description: '**Skrik Nettle Venom** (__evocation__, __poison__, __primal__)
-    **Saving Throw** DC 27 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** __clumsy
-    1__ and levitate upward 5 feet (1 round); **Stage 2** clumsy 2 and levitate upward
-    10 feet (1 round)
-
-
-    A levitating creature takes a -2 circumstance penalty to attack rolls. It can
-    spend an Interact action to stabilize itself and negate this penalty for the remainder
-    of its turn. If it''s adjacent to a fixed object or stable terrain, it can move
-    across the surface by climbing (if the surface is vertical) or crawling (if the
-    surface is horizontal, such as a ceiling). A flying creature can move normally
-    but still increases its altitude as appropriate from the venom. A creature that
-    can''t fly falls as soon as it recovers from skrik nettle venom.'
-  requirements: null
-  success: null
-  traits:
-  - evocation
-  - poison
-  - primal
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -170,11 +170,11 @@ sense_abilities:
     sense at the listed range, but it works only against creatures and objects that
     moved through air in the previous round.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Motionsense
   range: null
   raw_description: '**Motionsense** A flying skrik nettle can detect the movement
@@ -182,34 +182,36 @@ sense_abilities:
     This is a precise sense at the listed range, but it works only against creatures
     and objects that moved through air in the previous round.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +16
 - motionsense 30 feet
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
-source:
+  name: Acrobatics
+sources:
 - abbr: Bestiary 2
-  page_start: 242
+  page_start: '242'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Large
 - Aberration
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: piercing
 - amount: 5
+  misc: null
   type: slashing

@@ -7,6 +7,145 @@ ability_mods:
   wis_mod: 1
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The jungle drake makes one Fangs Strike and two Stinger Strikes in
+    any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The jungle drake makes one
+    Fangs Strike and two Stinger Strikes in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Jungle Drake Venom
+  range: null
+  raw_description: '**Jungle Drake Venom** (__poison__) **Saving Throw** Fortitude
+    DC 24; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage and __enfeebled
+    1__ (1 round); **Stage 2** 1d6 poison damage and __enfeebled 2__ (1 round)'
+  requirements: null
+  saving_throw: Fortitude DC 24
+  stages:
+  - effect: 1d6 poison damage and __enfeebled 1__ (1 round)
+  - effect: 1d6 poison damage and __enfeebled 2__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: As Grab, but the jungle drake's Grab does not end if it moves away.
+    Instead, it carries the grabbed creature with it. A jungle drake can't Fly while
+    grabbing a creature unless that creature can also Fly.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Predatory Grab
+  range: null
+  raw_description: '**Predatory Grab** As Grab, but the jungle drake''s Grab does
+    not end if it moves away. Instead, it carries the grabbed creature with it. A
+    jungle drake can''t Fly while grabbing a creature unless that creature can also
+    Fly.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The jungle drake moves up to twice its Speed. It can do this three
+    times per day.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Speed Surge
+  range: null
+  raw_description: '**Speed Surge** [One Action]  (__move__) The jungle drake moves
+    up to twice its Speed. It can do this three times per day.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: A jungle drake can spit a sticky glob of its venom to a range of 50
+    feet that explodes in a 10-foot __burst__. Those in the burst must succeed at
+    a DC 24 Reflex save or be exposed to jungle drake venom. The jungle drake can't
+    use Spit Venom again for 1d6 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spit Venom
+  range: null
+  raw_description: '**Spit Venom** [Two Actions]  (__poison__) A jungle drake can
+    spit a sticky glob of its venom to a range of 50 feet that explodes in a 10-foot
+    __burst__. Those in the burst must succeed at a DC 24 Reflex save or be exposed
+    to jungle drake venom. The jungle drake can''t use Spit Venom again for 1d6 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The jungle drake ignores __difficult terrain__ and __greater difficult
+    terrain__ from non-magical foliage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Woodland Stride
+  range: null
+  raw_description: '**Woodland Stride** The jungle drake ignores __difficult terrain__
+    and __greater difficult terrain__ from non-magical foliage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +154,11 @@ automatic_abilities:
   description: null
   effect: The jungle drake Strikes the target with its stinger. If it hits, the jungle
     drake disrupts the creature's action.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Twisting Tail
   range: null
   raw_description: '**Twisting Tail** [Reaction] **Trigger** A creature within reach
@@ -27,6 +166,8 @@ automatic_abilities:
     move action it''s using. **Effect** The jungle drake Strikes the target with its
     stinger. If it hits, the jungle drake disrupts the creature''s action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within reach of the jungle drake's stinger uses a move action
@@ -50,11 +191,10 @@ immunities:
 - paralyzed
 - poison
 - unconscious
-items: null
 languages:
 - Draconic
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+7
@@ -78,137 +218,7 @@ melee:
   - reach 10 feet
 name: Jungle Drake
 perception: 13
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The jungle drake makes one Fangs Strike and two Stinger Strikes in
-    any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The jungle drake makes one
-    Fangs Strike and two Stinger Strikes in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** Fortitude DC 24; **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2** 1d6 poison damage
-    and __enfeebled 2__ (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Jungle Drake Venom
-  range: null
-  raw_description: '**Jungle Drake Venom** (__poison__) **Saving Throw** Fortitude
-    DC 24; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage and __enfeebled
-    1__ (1 round); **Stage 2** 1d6 poison damage and __enfeebled 2__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: As Grab, but the jungle drake's Grab does not end if it moves away.
-    Instead, it carries the grabbed creature with it. A jungle drake can't Fly while
-    grabbing a creature unless that creature can also Fly.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Predatory Grab
-  range: null
-  raw_description: '**Predatory Grab** As Grab, but the jungle drake''s Grab does
-    not end if it moves away. Instead, it carries the grabbed creature with it. A
-    jungle drake can''t Fly while grabbing a creature unless that creature can also
-    Fly.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The jungle drake moves up to twice its Speed. It can do this three
-    times per day.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Speed Surge
-  range: null
-  raw_description: '**Speed Surge**   (__move__) The jungle drake moves up to twice
-    its Speed. It can do this three times per day.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: A jungle drake can spit a sticky glob of its venom to a range of 50
-    feet that explodes in a 10-foot __burst__. Those in the burst must succeed at
-    a DC 24 Reflex save or be exposed to jungle drake venom. The jungle drake can't
-    use Spit Venom again for 1d6 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spit Venom
-  range: null
-  raw_description: '**Spit Venom** [Two Actions]  (__poison__) A jungle drake can
-    spit a sticky glob of its venom to a range of 50 feet that explodes in a 10-foot
-    __burst__. Those in the burst must succeed at a DC 24 Reflex save or be exposed
-    to jungle drake venom. The jungle drake can''t use Spit Venom again for 1d6 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The jungle drake ignores __difficult terrain__ and __greater difficult
-    terrain__ from non-magical foliage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Woodland Stride
-  range: null
-  raw_description: '**Woodland Stride** The jungle drake ignores __difficult terrain__
-    and __greater difficult terrain__ from non-magical foliage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -217,41 +227,38 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 11
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 132
+  page_start: '132'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 - amount: null
+  misc: null
   type: woodland stride
 spell_lists: null
 traits:
-- NE
-- Large
 - Dragon
 - Earth
-type: Creature
-weaknesses: null

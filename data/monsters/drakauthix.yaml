@@ -7,6 +7,76 @@ ability_mods:
   wis_mod: 2
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The drakauthix pulls all creatures it has __grabbed__ 15 feet closer
+    to itself.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Reel In
+  range: null
+  raw_description: '**Reel In** [One Action]  The drakauthix pulls all creatures it
+    has __grabbed__ 15 feet closer to itself.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The tendrils that cover the drakauthix's body reach out and infest
+    adjacent creatures, dealing 4d6 poison damage and 1d6 __persistent__ poison damage.
+    A creature can attempt a basic DC 27 Reflex save to reduce this damage, but one
+    __grabbed__ by the drakauthix takes a –4 circumstance penalty to this save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spore Tendrils
+  range: null
+  raw_description: '**Spore Tendrils** [One Action]  The tendrils that cover the drakauthix''s
+    body reach out and infest adjacent creatures, dealing 4d6 poison damage and 1d6
+    __persistent__ poison damage. A creature can attempt a basic DC 27 Reflex save
+    to reduce this damage, but one __grabbed__ by the drakauthix takes a –4 circumstance
+    penalty to this save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The drakauthix whirls, whipping creatures around it. The drakauthix
+    makes a tentacle Strike against every creature within its reach.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Whirlwind of Hooks
+  range: null
+  raw_description: '**Whirlwind of Hooks** [Two Actions]  The drakauthix whirls, whipping
+    creatures around it. The drakauthix makes a tentacle Strike against every creature
+    within its reach.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -17,11 +87,11 @@ automatic_abilities:
     around the drakauthix. This cloud of spores does not move with the drakauthix,
     nor is it displaced by its movement.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Obscuring Spores
   range: null
   raw_description: '**Obscuring Spores** Whenever the drakauthix takes at least 10
@@ -29,6 +99,8 @@ automatic_abilities:
     mist for 1 minute, centered around the drakauthix. This cloud of spores does not
     move with the drakauthix, nor is it displaced by its movement.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -70,11 +142,8 @@ description: 'The drakauthix is a massive fungus that floats through the heights
   **__Recall Knowledge - Fungus__ (__Nature__)**: DC 26'
 hp: 190
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+9
@@ -88,74 +157,7 @@ melee:
   - reach 30 feet
 name: Drakauthix
 perception: 17
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The drakauthix pulls all creatures it has __grabbed__ 15 feet closer
-    to itself.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reel In
-  range: null
-  raw_description: '**Reel In**   The drakauthix pulls all creatures it has __grabbed__
-    15 feet closer to itself.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The tendrils that cover the drakauthix's body reach out and infest
-    adjacent creatures, dealing 4d6 poison damage and 1d6 __persistent__ poison damage.
-    A creature can attempt a basic DC 27 Reflex save to reduce this damage, but one
-    __grabbed__ by the drakauthix takes a -4 circumstance penalty to this save.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spore Tendrils
-  range: null
-  raw_description: '**Spore Tendrils**   The tendrils that cover the drakauthix''s
-    body reach out and infest adjacent creatures, dealing 4d6 poison damage and 1d6
-    __persistent__ poison damage. A creature can attempt a basic DC 27 Reflex save
-    to reduce this damage, but one __grabbed__ by the drakauthix takes a -4 circumstance
-    penalty to this save.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The drakauthix whirls, whipping creatures around it. The drakauthix
-    makes a tentacle Strike against every creature within its reach.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Whirlwind of Hooks
-  range: null
-  raw_description: '**Whirlwind of Hooks** [Two Actions]  The drakauthix whirls, whipping
-    creatures around it. The drakauthix makes a tentacle Strike against every creature
-    within its reach.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 21
   fort_misc: null
@@ -172,50 +174,51 @@ sense_abilities:
     an imprecise sense that functions only in areas without strong wind currents.
     Sporesight does not function underwater.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sporesight
   range: null
   raw_description: '**Sporesight** The drakauthix exudes a cloud of spores that it
     uses to see. This is an imprecise sense that functions only in areas without strong
     wind currents. Sporesight does not function underwater.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +17
 - darkvision
 - sporesight (imprecise) 60 feet
 size: Huge
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 20
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 129
+  page_start: '129'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Huge
 - Fungus
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: fire
 - amount: 10
+  misc: null
   type: slashing

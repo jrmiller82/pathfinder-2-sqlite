@@ -7,6 +7,56 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 4 rounds
+  name: Giant Ant Venom
+  range: null
+  raw_description: '**Giant Ant Venom** (__poison__) **Saving Throw** DC 18 Fortitude;
+    **Maximum Duration** 4 rounds; **Stage 1** 1d8 poison and __enfeebled 1__ (1 round);
+    **Stage 2** 1d10 poison and enfeebled 2 (1 round); **Stage 3** 1d12 poison and
+    enfeebled 3 (1 round)'
+  requirements: null
+  saving_throw: DC 18 Fortitude
+  stages:
+  - effect: 1d8 poison and __enfeebled 1__ (1 round)
+  - effect: 1d10 poison and enfeebled 2 (1 round)
+  - effect: 1d12 poison and enfeebled 3 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The giant ant Strides up to its full Speed, carrying the grabbed creature
+    with it. It is __encumbered__ if the grabbed creature is Medium or larger.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Haul Away
+  range: null
+  raw_description: '**Haul Away** [One Action]  **Requirements** The giant ant has
+    a Large or smaller creature grabbed; **Effect** The giant ant Strides up to its
+    full Speed, carrying the grabbed creature with it. It is __encumbered__ if the
+    grabbed creature is Medium or larger.'
+  requirements: The giant ant has a Large or smaller creature grabbed
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Giant ants are much like their smaller kin in their industrious habits,
@@ -18,11 +68,8 @@ description: 'Giant ants are much like their smaller kin in their industrious ha
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 16'
 hp: 30
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -46,56 +93,7 @@ melee:
   - agile
 name: Giant Ant
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 18 Fortitude; **Maximum Duration** 4 rounds; **Stage
-    1** 1d8 poison and __enfeebled 1__ (1 round); **Stage 2** 1d10 poison and enfeebled
-    2 (1 round); **Stage 3** 1d12 poison and enfeebled 3 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Giant Ant Venom
-  range: null
-  raw_description: '**Giant Ant Venom** (__poison__) **Saving Throw** DC 18 Fortitude;
-    **Maximum Duration** 4 rounds; **Stage 1** 1d8 poison and __enfeebled 1__ (1 round);
-    **Stage 2** 1d10 poison and enfeebled 2 (1 round); **Stage 3** 1d12 poison and
-    enfeebled 3 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The giant ant has a Large or smaller creature grabbed
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Haul Away
-  range: null
-  raw_description: '**Haul Away**   **Requirements** The giant ant has a Large or
-    smaller creature grabbed; **Effect** The giant ant Strides up to its full Speed,
-    carrying the grabbed creature with it. It is __encumbered__ if the grabbed creature
-    is Medium or larger.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -104,32 +102,28 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 20
+  page_start: '20'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

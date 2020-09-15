@@ -7,54 +7,93 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
-alignment: LE
-automatic_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: A wraith caught in sunlight is stunned 2 and clumsy 2.
+  description: When the wraith damages a living creature with its spectral hand Strike,
+    the wraith gains 5 temporary Hit Points and the creature must succeed at a DC
+    23 Fortitude save or become __drained 1__. Further damage dealt by the wraith
+    increases the amount of drain by 1 on a failed save to a maximum of __drained
+    4__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Sunlight Powerlessness
+  maximum_duration: null
+  name: Drain Life
   range: null
-  raw_description: '**Sunlight Powerlessness** A wraith caught in sunlight is stunned
-    2 and clumsy 2.'
+  raw_description: '**Drain Life** (__divine__, __necromancy__) When the wraith damages
+    a living creature with its spectral hand Strike, the wraith gains 5 temporary
+    Hit Points and the creature must succeed at a DC 23 Fortitude save or become __drained
+    1__. Further damage dealt by the wraith increases the amount of drain by 1 on
+    a failed save to a maximum of __drained 4__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
-  traits: null
+  traits:
+  - divine
+  - necromancy
   trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living humanoid slain by a wraith's spectral hand Strike rises as
+    a wraith spawn after 1d4 rounds. This wraith spawn is under the command of the
+    wraith that killed it. It doesn't have drain life or wraith spawn and becomes
+    __clumsy 2__ for as long as it is a wraith spawn. If the creator of the wraith
+    spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains
+    its free will, gains Wraith Spawn, and is no longer __clumsy__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wraith Spawn
+  range: null
+  raw_description: '**Wraith Spawn** (__divine__, __necromancy__) A living humanoid
+    slain by a wraith''s spectral hand Strike rises as a wraith spawn after 1d4 rounds.
+    This wraith spawn is under the command of the wraith that killed it. It doesn''t
+    have drain life or wraith spawn and becomes __clumsy 2__ for as long as it is
+    a wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes
+    a full-fledged, autonomous wraith; it regains its free will, gains Wraith Spawn,
+    and is no longer __clumsy__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+alignment: LE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
+  effect: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Attack of Opportunity
+  maximum_duration: null
+  name: Sunlight Powerlessness
   range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
+  raw_description: '**Sunlight Powerlessness** A wraith caught in sunlight is stunned
+    2 and clumsy 2.
+
+
+    **Attack of Opportunity** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
+  trigger: null
 description: 'Wraiths are malevolent undead who drain life and shun light. Their shadowy,
   incorporeal forms are dotted with burning eyes that reffect their hatred for the
   living, and shadowy claws are weapon enough to steal the vitality from their enemies.
@@ -108,12 +147,11 @@ immunities:
 - poison
 - precision
 - unconscious
-items: null
 languages:
 - Common
 - Necril
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+5
@@ -127,76 +165,11 @@ melee:
   - finesse
 name: Wraith
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the wraith damages a living creature with its spectral hand Strike,
-    the wraith gains 5 temporary Hit Points and the creature must succeed at a DC
-    23 Fortitude save or become __drained 1__. Further damage dealt by the wraith
-    increases the amount of drain by 1 on a failed save to a maximum of __drained
-    4__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drain Life
-  range: null
-  raw_description: '**Drain Life** (__divine__, __necromancy__) When the wraith damages
-    a living creature with its spectral hand Strike, the wraith gains 5 temporary
-    Hit Points and the creature must succeed at a DC 23 Fortitude save or become __drained
-    1__. Further damage dealt by the wraith increases the amount of drain by 1 on
-    a failed save to a maximum of __drained 4__.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A living humanoid slain by a wraith's spectral hand Strike rises as
-    a wraith spawn after 1d4 rounds. This wraith spawn is under the command of the
-    wraith that killed it. It doesn't have drain life or wraith spawn and becomes
-    __clumsy 2__ for as long as it is a wraith spawn. If the creator of the wraith
-    spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains
-    its free will, gains Wraith Spawn, and is no longer __clumsy__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wraith Spawn
-  range: null
-  raw_description: '**Wraith Spawn** (__divine__, __necromancy__) A living humanoid
-    slain by a wraith''s spectral hand Strike rises as a wraith spawn after 1d4 rounds.
-    This wraith spawn is under the command of the wraith that killed it. It doesn''t
-    have drain life or wraith spawn and becomes __clumsy 2__ for as long as it is
-    a wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes
-    a full-fledged, autonomous wraith; it regains its free will, gains Wraith Spawn,
-    and is no longer __clumsy__.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
-  type: all (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-- amount: null
-  type: double resistance vs. non-magical)
-ritual_lists: null
+  misc: null
+  type: all
 saves:
   fort: 8
   fort_misc: null
@@ -212,49 +185,47 @@ sense_abilities:
   description: Wraiths sense the vital essence of living and undead creatures within
     the listed range.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Lifesense
   range: null
   raw_description: '**Lifesense** (__divination__, __divine__) Wraiths sense the vital
     essence of living and undead creatures within the listed range.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
   - divine
   trigger: null
 senses:
-- Perception +14
 - darkvision
 - lifesense 60 feet
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 14
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 335
+  page_start: '335'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- LE
-- Medium
 - Incorporeal
 - Undead
 - Wraith
-type: Creature
-weaknesses: null

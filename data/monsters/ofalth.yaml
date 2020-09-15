@@ -7,55 +7,72 @@ ability_mods:
   wis_mod: 2
 ac: 31
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** DC 26 Fortitude; **Stage 1** carrier with no ill
+    effect (1 day); **Stage 2** 2d8 persistent bleed damage every hour and __enfeebled
+    1__ (1 day); **Stage 3** 2d8 persistent bleed damage every hour and __enfeebled
+    2__ (1 day)'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wretched Weeps
+  range: null
+  raw_description: '**Wretched Weeps** (__disease__) **Saving Throw** DC 26 Fortitude;
+    **Stage 1** carrier with no ill effect (1 day); **Stage 2** 2d8 persistent bleed
+    damage every hour and __enfeebled 1__ (1 day); **Stage 3** 2d8 persistent bleed
+    damage every hour and __enfeebled 2__ (1 day)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A creature entering the aura must succeed at a DC 28 Fortitude
-    save or become sickened 1 until the end of its turn (plus slowed 1 for as long
-    as it is sickened on a critical failure). While within the aura, an affected creature
-    takes a -2 circumstance penalty to saves against disease and to recover from the
+  description: 'A creature entering the aura must succeed at a DC 28 Fortitude save
+    or become sickened 1 until the end of its turn (plus slowed 1 for as long as it
+    is sickened on a critical failure). While within the aura, an affected creature
+    takes a –2 circumstance penalty to saves against disease and to recover from the
     sickened condition. A creature that succeeds at its save is temporarily immune
     for 1 minute.
+
+
+    **Filth Wallow** A ofalth gains fast healing 2 when in an area with a high concentration
+    of debris, junk, or excrement, such as a refuse heap or sewer.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Putrid Stench
-  range: null
+  range: 30 feet
   raw_description: '**Putrid Stench** (__aura__) 30 feet. A creature entering the
     aura must succeed at a DC 28 Fortitude save or become sickened 1 until the end
     of its turn (plus slowed 1 for as long as it is sickened on a critical failure).
-    While within the aura, an affected creature takes a -2 circumstance penalty to
+    While within the aura, an affected creature takes a –2 circumstance penalty to
     saves against disease and to recover from the sickened condition. A creature that
-    succeeds at its save is temporarily immune for 1 minute.'
+    succeeds at its save is temporarily immune for 1 minute.
+
+
+    **Filth Wallow** A ofalth gains fast healing 2 when in an area with a high concentration
+    of debris, junk, or excrement, such as a refuse heap or sewer.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A ofalth gains fast healing 2 when in an area with a high concentration
-    of debris, junk, or excrement, such as a refuse heap or sewer.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Filth Wallow
-  range: null
-  raw_description: '**Filth Wallow** A ofalth gains fast healing 2 when in an area
-    with a high concentration of debris, junk, or excrement, such as a refuse heap
-    or sewer.'
-  requirements: null
-  success: null
-  traits: null
   trigger: null
 description: 'Found in castle dung heaps, city dumps, and sewers, ofalths are thought
   to be cousins of shamblers. But whereas shamblers are living heaps of soggy vegetation,
@@ -95,12 +112,11 @@ hp_misc: fllth wallow
 immunities:
 - disease
 - poison
-items: null
 languages:
 - Common
 - (can't speak any language)
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+13
@@ -114,32 +130,7 @@ melee:
   - reach 10 feet
 name: Ofalth
 perception: 18
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 26 Fortitude; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** 2d8 persistent bleed damage every hour and __enfeebled
-    1__ (1 day); **Stage 3** 2d8 persistent bleed damage every hour and __enfeebled
-    2__ (1 day)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wretched Weeps
-  range: null
-  raw_description: '**Wretched Weeps** (__disease__) **Saving Throw** DC 26 Fortitude;
-    **Stage 1** carrier with no ill effect (1 day); **Stage 2** 2d8 persistent bleed
-    damage every hour and __enfeebled 1__ (1 day); **Stage 3** 2d8 persistent bleed
-    damage every hour and __enfeebled 2__ (1 day)'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+7
@@ -151,9 +142,6 @@ ranged:
   to_hit: 19
   traits:
   - range increment 30 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 22
   fort_misc: null
@@ -173,11 +161,11 @@ sense_abilities:
     attempt a save against the ofalth's putrid stench and wretched weeps disease.
     An ofalth can leave this form using a single action.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Refuse Pile
   range: null
   raw_description: '**Refuse Pile** When it''s not in danger, an ofalth can spend
@@ -187,31 +175,29 @@ sense_abilities:
     or interacts with it must attempt a save against the ofalth''s putrid stench and
     wretched weeps disease. An ofalth can leave this form using a single action.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +18
 - darkvision
 size: Large
 skills:
 - bonus: 23
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: +23 in trash and rubbish
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 251
+  page_start: '251'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Large
 - Aberration
-type: Creature
-weaknesses: null

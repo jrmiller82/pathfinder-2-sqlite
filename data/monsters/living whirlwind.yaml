@@ -7,6 +7,27 @@ ability_mods:
   wis_mod: 1
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The living whirlwind's movement doesn't trigger reactions.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swiftness
+  range: null
+  raw_description: '**Swiftness** The living whirlwind''s movement doesn''t trigger
+    reactions.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -19,11 +40,11 @@ automatic_abilities:
     space in which it can fit within 25 feet of where it dispersed and any auras or
     emanations it has are restored as long as their duration didn't run out while
     it was dispersed.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Disperse
   range: null
   raw_description: '**Disperse** [Reaction] **Trigger** The living whirlwind takes
@@ -34,6 +55,8 @@ automatic_abilities:
     feet of where it dispersed and any auras or emanations it has are restored as
     long as their duration didn''t run out while it was dispersed.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The living whirlwind takes damage from a hostile action.
@@ -50,11 +73,10 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Auran
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
@@ -69,29 +91,7 @@ melee:
   - reach 10 feet
 name: Living Whirlwind
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The living whirlwind's movement doesn't trigger reactions.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swiftness
-  range: null
-  raw_description: '**Swiftness** The living whirlwind''s movement doesn''t trigger
-    reactions.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -100,32 +100,28 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 144
+  page_start: '144'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: fly
 - amount: null
+  misc: null
   type: swiftness
 spell_lists: null
 traits:
-- N
-- Medium
 - Air
 - Elemental
-type: Creature
-weaknesses: null

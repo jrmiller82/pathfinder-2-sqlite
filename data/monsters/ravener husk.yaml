@@ -7,36 +7,98 @@ ability_mods:
   wis_mod: 4
 ac: 35
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The ravener husk breathes a torrent of negative energy that deals 16d6
+    negative damage in a 40-foot cone (DC 34 basic Reflex save). They can't use Breath
+    Weapon again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__divine__, __evocation__, __negative__)
+    The ravener husk breathes a torrent of negative energy that deals 16d6 negative
+    damage in a 40-foot cone (DC 34 basic Reflex save). They can''t use Breath Weapon
+    again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - evocation
+  - negative
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ravener husk makes a jaws Strike against a deceased creature that has
+    been dead no longer than 1 minute, was good aligned, and was at least level 15
+    in life. The ravener attempts a DC 5 flat check; if successful, they transform
+    back into a ravener with 1 Hit Point in their soul ward.
+  failure: null
+  frequency: once per day
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ravenous Repast
+  range: null
+  raw_description: '**Ravenous Repast** [Three Actions]  (__divine__, __necromancy__)
+    **Frequency** once per day; **Effect** The ravener husk makes a jaws Strike against
+    a deceased creature that has been dead no longer than 1 minute, was good aligned,
+    and was at least level 15 in life. The ravener attempts a DC 5 flat check; if
+    successful, they transform back into a ravener with 1 Hit Point in their soul
+    ward.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 31
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 31 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 31
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -50,11 +112,11 @@ automatic_abilities:
   effect: The ravener's brittle bones shatter, spraying bone shards everywhere. Every
     creature within a 10-foot emanation of the ravener husk takes 7d6 piercing damage
     (DC 31 basic Reflex save).
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Boneshatter
   range: null
   raw_description: '**Boneshatter [Reaction]** **Trigger** The ravener husk takes
@@ -62,9 +124,11 @@ automatic_abilities:
     spraying bone shards everywhere. Every creature within a 10-foot emanation of
     the ravener husk takes 7d6 piercing damage (DC 31 basic Reflex save).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The ravener husk takes any amount of bludgeoning damage
+  trigger: The ravener husk takes any amount of bludgeoning damage;
 description: 'Raveners require a steady diet of souls, and a ravener that''s unable
   to feed for too long eventually cannibalizes their own soul. Should a ravener''s
   soul ward ever be reduced to 0 Hit Points by hunger while the ravener has more than
@@ -82,23 +146,21 @@ description: 'Raveners require a steady diet of souls, and a ravener that''s una
 hp: 325
 hp_misc: null
 immunities:
-- death effects
-- disease
-- paralyzed
-- poison
-- sleep
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 level: 14
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+16
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: negative
+  - formula: null
+    type: 2d6 negative
   to_hit: 30
   traits:
   - magical
@@ -109,8 +171,8 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 2d6
-    type: negative
+  - formula: null
+    type: 2d6 negative
   to_hit: 30
   traits:
   - agile
@@ -118,65 +180,8 @@ melee:
   - reach 10 feet
 name: Ravener Husk
 perception: 26
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The ravener husk breathes a torrent of negative energy that deals 16d6
-    negative damage in a 40-foot cone (DC 34 basic Reflex save). They can't use Breath
-    Weapon again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__divine__, __evocation__, __negative__)
-    The ravener husk breathes a torrent of negative energy that deals 16d6 negative
-    damage in a 40-foot cone (DC 34 basic Reflex save). They can''t use Breath Weapon
-    again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  - negative
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The ravener husk makes a jaws Strike against a deceased creature that has
-    been dead no longer than 1 minute, was good aligned, and was at least level 15
-    in life. The ravener attempts a DC 5 flat check; if successful, they transform
-    back into a ravener with 1 Hit Point in their soul ward.
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Ravenous Repast
-  range: null
-  raw_description: '**Ravenous Repast** [Three Actions]  (__divine__, __necromancy__)
-    **Frequency** once per day; **Effect** The ravener husk makes a jaws Strike against
-    a deceased creature that has been dead no longer than 1 minute, was good aligned,
-    and was at least level 15 in life. The ravener attempts a DC 5 flat check; if
-    successful, they transform back into a ravener with 1 Hit Point in their soul
-    ward.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
-resistances:
-- amount: 10
-  type: good
-ritual_lists: null
 saves:
   fort: 28
   fort_misc: null
@@ -185,34 +190,33 @@ saves:
   ref_misc: null
   will: 26
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +26
 - darkvision
 - soulsense 60 feet
 size: Gargantuan
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 28
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 224
+  page_start: '224'
   page_stop: null
 speed:
 - amount: 60
+  misc: null
   type: Land
 - amount: 180
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- Rare
-- CE
-- Gargantuan
 - Dragon
 - Undead
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: good

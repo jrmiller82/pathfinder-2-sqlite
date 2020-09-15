@@ -7,59 +7,18 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
-alignment: N
-automatic_abilities: null
-description: 'Usually found in freshwater rivers and lakes, an electric eel is not
-  particularly aggressive, but its ability to stun predators and prey alike can be
-  dangerous to larger creatures searching for their next meals.
-
-
-
-
-  **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
-hp: 18
-hp_misc: null
-immunities: null
-items: null
-languages: null
-level: 1
-melee:
-- action_cost: One Action
-  damage:
-    formula: 1d6+3
-    type: piercing
-  name: jaws
-  plus_damage: null
-  to_hit: 6
-  traits: null
-- action_cost: One Action
-  damage:
-    formula: 1d4+1
-    type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: 1d4
-    type: electricity and stunning shock
-  to_hit: 6
-  traits:
-  - agile
-name: Electric Eel
-perception: 4
-proactive_abilities:
+active_abilities:
 - action_cost: None
-  critical_failure: The creature is stunned 3.
+  critical_failure: The creature is __stunned 3__.
   critical_success: The creature is unaffected.
-  description: 'A creature critically hit by the electric eel''s tail must attempt
-    a DC 17 Fortitude save.
-
-
-    '
+  description: A creature critically hit by the electric eel's tail must attempt a
+    DC 17 Fortitude save.
   effect: null
-  effects: null
-  failure: The creature is stunned 2.
+  failure: The creature is __stunned 2__.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stunning Shock
   range: null
   raw_description: '**Stunning Shock** (__incapacitation__) A creature critically
@@ -77,16 +36,54 @@ proactive_abilities:
 
     **Critical Failure** The creature is __stunned 3__.'
   requirements: null
-  success: The creature is stunned 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __stunned 1__.
   traits:
   - incapacitation
   trigger: null
-ranged: null
-rarity: Common
+alignment: N
+automatic_abilities: null
+description: 'Usually found in freshwater rivers and lakes, an electric eel is not
+  particularly aggressive, but its ability to stun predators and prey alike can be
+  dangerous to larger creatures searching for their next meals.
+
+
+
+
+  **__Recall Knowledge - Animal__ (__Nature__)**: DC 15'
+hp: 18
+hp_misc: null
+level: 1
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 1d6+3
+    type: piercing
+  name: jaws
+  plus_damage: null
+  to_hit: 6
+  traits: null
+- action_cost: One Action
+  damage:
+    formula: 1d4+1
+    type: bludgeoning
+  name: tail
+  plus_damage:
+  - formula: null
+    type: 1d4 electricity
+  - formula: null
+    type: stunning shock
+  to_hit: 6
+  traits:
+  - agile
+name: Electric Eel
+perception: 4
+ranged_attacks: null
 resistances:
 - amount: 7
+  misc: null
   type: electricity
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -95,32 +92,28 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +4
 - low-light vision
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 142
+  page_start: '142'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null

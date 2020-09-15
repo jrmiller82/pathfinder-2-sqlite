@@ -7,6 +7,66 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The poracha teleports up to 40 feet. It must have line of sight to
+    the space it teleports to. It can't use Jaunt again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Jaunt
+  range: null
+  raw_description: '**Jaunt** [One Action]  (__conjuration__, __move__, __primal__,
+    __teleportation__) The poracha teleports up to 40 feet. It must have line of sight
+    to the space it teleports to. It can''t use Jaunt again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - conjuration
+  - move
+  - primal
+  - teleportation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The poracha touches an adjacent object of enough volume to contain
+    it. It merges into the object indefinitely, and while it's inside, time moves
+    exceptionally slowly for it and it has only limited perception of the outside
+    world. The poracha can sense what's going on outside the object only using tremorsense.
+    The poracha can use only mental actions or Jaunt; if it Jaunts, it leaves the
+    object and appears where it chooses. If a creature Strikes the object, the poracha
+    is expelled unharmed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Object Meld
+  range: null
+  raw_description: '**Object Meld** [Two Actions]  (__primal__, __transmutation__)
+    The poracha touches an adjacent object of enough volume to contain it. It merges
+    into the object indefinitely, and while it''s inside, time moves exceptionally
+    slowly for it and it has only limited perception of the outside world. The poracha
+    can sense what''s going on outside the object only using tremorsense. The poracha
+    can use only mental actions or Jaunt; if it Jaunts, it leaves the object and appears
+    where it chooses. If a creature Strikes the object, the poracha is expelled unharmed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - primal
+  - transmutation
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Porachas are feline beasts native to the mystical Forest of Spirits
@@ -54,13 +114,11 @@ description: 'Porachas are feline beasts native to the mystical Forest of Spirit
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 21'
 hp: 50
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Common
 - Sylvan
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+7
@@ -84,66 +142,8 @@ melee:
   - magical
 name: Poracha
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The poracha teleports up to 40 feet. It must have line of sight to
-    the space it teleports to. It can't use Jaunt again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Jaunt
-  range: null
-  raw_description: '**Jaunt**   (__conjuration__, __move__, __primal__, __teleportation__)
-    The poracha teleports up to 40 feet. It must have line of sight to the space it
-    teleports to. It can''t use Jaunt again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - conjuration
-  - move
-  - primal
-  - teleportation
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The poracha touches an adjacent object of enough volume to contain
-    it. It merges into the object indefinitely, and while it's inside, time moves
-    exceptionally slowly for it and it has only limited perception of the outside
-    world. The poracha can sense what's going on outside the object only using tremorsense.
-    The poracha can use only mental actions or Jaunt; if it Jaunts, it leaves the
-    object and appears where it chooses. If a creature Strikes the object, the poracha
-    is expelled unharmed.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Object Meld
-  range: null
-  raw_description: '**Object Meld** [Two Actions]  (__primal__, __transmutation__)
-    The poracha touches an adjacent object of enough volume to contain it. It merges
-    into the object indefinitely, and while it''s inside, time moves exceptionally
-    slowly for it and it has only limited perception of the outside world. The poracha
-    can sense what''s going on outside the object only using tremorsense. The poracha
-    can use only mental actions or Jaunt; if it Jaunts, it leaves the object and appears
-    where it chooses. If a creature Strikes the object, the poracha is expelled unharmed.'
-  requirements: null
-  success: null
-  traits:
-  - primal
-  - transmutation
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -152,45 +152,41 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - tremorsense (imprecise) 10 feet
 - darkvision
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 9
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 11
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 13
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 10
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 265
+  page_start: '265'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Medium
 - Beast
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: sonic

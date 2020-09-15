@@ -7,87 +7,120 @@ ability_mods:
   wis_mod: 1
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The redcap dips its cap in the blood of a slain foe. The foe must have
+    died in the last minute, and the redcap must have helped kill it. The redcap gains
+    a +4 status bonus to damage rolls for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Soak
+  range: null
+  raw_description: '**Blood Soak** [One Action]  (__manipulate__) The redcap dips
+    its cap in the blood of a slain foe. The foe must have died in the last minute,
+    and the redcap must have helped kill it. The redcap gains a +4 status bonus to
+    damage rolls for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The redcap makes another scythe Strike against a different creature, using
+    the same multiple attack penalty as the scythe Strike that triggered this reaction.
+    This counts toward its multiple attack penalty.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Deadly Cleave
+  range: null
+  raw_description: '**Deadly Cleave** [Reaction]  **Trigger** The redcap reduces a
+    creature to 0 Hit Points with a scythe Strike. **Effect** The redcap makes another
+    scythe Strike against a different creature, using the same multiple attack penalty
+    as the scythe Strike that triggered this reaction. This counts toward its multiple
+    attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The redcap reduces a creature to 0 Hit Points with a scythe Strike.
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The redcap Strides up to half its Speed and makes a boot Strike at
+    any point during that movement. If the boot Strike hits a __prone__ creature,
+    it deals an extra 2d6 persistent bleed damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stomp
+  range: null
+  raw_description: '**Stomp** [One Action]  The redcap Strides up to half its Speed
+    and makes a boot Strike at any point during that movement. If the boot Strike
+    hits a __prone__ creature, it deals an extra 2d6 persistent bleed damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The redcap is unaffected.
   description: If a redcap sees a creature brandish a religious symbol of a good deity
     (which requires an interact action by that creature) or use one to cast a divine
     spell, the redcap must attempt a DC 19 Will save. It then becomes temporarily
     immune to all brandished religious symbols for 10 minutes.
   effect: null
-  effects: null
-  failure: null
+  failure: The redcap gains the fleeing condition for 1 round and is frightened 4.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Divine Revulsion
   range: null
   raw_description: '**Divine Revulsion** (__emotion__, __fear__, __mental__) If a
     redcap sees a creature brandish a religious symbol of a good deity (which requires
     an interact action by that creature) or use one to cast a divine spell, the redcap
     must attempt a DC 19 Will save. It then becomes temporarily immune to all brandished
-    religious symbols for 10 minutes.'
+    religious symbols for 10 minutes.
+
+
+    **Critical Success** The redcap is unaffected.
+
+
+    **Success** The redcap is frightened 2.
+
+
+    **Failure** The redcap gains the fleeing condition for 1 round and is frightened
+    4.'
   requirements: null
-  success: null
+  saving_throw: null
+  stages: null
+  success: The redcap is frightened 2.
   traits:
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The redcap is unaffected.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The redcap is unaffected.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The redcap is frightened 2.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Success
-  range: null
-  raw_description: '**Success** The redcap is frightened 2.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The redcap gains the fleeing condition for 1 round and is frightened
-    4.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The redcap gains the fleeing condition for 1 round
-    and is frightened 4.'
-  requirements: null
-  success: null
-  traits: null
   trigger: null
 description: 'Redcaps are sadistic and capricious fey who thrill in bloodletting and
   murder. While they are most famous for appearing as wizened, bearded men, redcap
@@ -107,7 +140,6 @@ description: 'Redcaps are sadistic and capricious fey who thrill in bloodletting
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 20'
 hp: 60
 hp_misc: fast healing 10
-immunities: null
 items:
 - iron boots
 - red cap
@@ -116,7 +148,7 @@ languages:
 - Common
 - Sylvan
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+10
@@ -139,78 +171,7 @@ melee:
   - versatile B
 name: Redcap
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The redcap dips its cap in the blood of a slain foe. The foe must have
-    died in the last minute, and the redcap must have helped kill it. The redcap gains
-    a +4 status bonus to damage rolls for 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Soak
-  range: null
-  raw_description: '**Blood Soak**   (__manipulate__) The redcap dips its cap in the
-    blood of a slain foe. The foe must have died in the last minute, and the redcap
-    must have helped kill it. The redcap gains a +4 status bonus to damage rolls for
-    1 minute.'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The redcap makes another scythe Strike against a different creature, using
-    the same multiple attack penalty as the scythe Strike that triggered this reaction.
-    This counts toward its multiple attack penalty.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Deadly Cleave
-  range: null
-  raw_description: '**Deadly Cleave** [Reaction]  **Trigger** The redcap reduces a
-    creature to 0 Hit Points with a scythe Strike. **Effect** The redcap makes another
-    scythe Strike against a different creature, using the same multiple attack penalty
-    as the scythe Strike that triggered this reaction. This counts toward its multiple
-    attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The redcap reduces a creature to 0 Hit Points with a scythe Strike.
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The redcap Strides up to half its Speed and makes a boot Strike at
-    any point during that movement. If the boot Strike hits a __prone__ creature,
-    it deals an extra 2d6 persistent bleed damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stomp
-  range: null
-  raw_description: '**Stomp**   The redcap Strides up to half its Speed and makes
-    a boot Strike at any point during that movement. If the boot Strike hits a __prone__
-    creature, it deals an extra 2d6 persistent bleed damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 11
   fort_misc: null
@@ -223,75 +184,70 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A redcap''s woolen hat is dyed with the blood of its victims. If the
-    redcap loses its cap, it no longer benefits from fast healing and takes a -4 status
+  description: A redcap's woolen hat is dyed with the blood of its victims. If the
+    redcap loses its cap, it no longer benefits from fast healing and takes a –4 status
     penalty to its damage rolls. It can create a new cap in 10 minutes, but that cap
-    doesn''t grant its powers until the redcap has turned it red with Blood Soak.
-    A cap has no benefit for creatures other than the redcap who made it.
-
-
-    '
+    doesn't grant its powers until the redcap has turned it red with Blood Soak. A
+    cap has no benefit for creatures other than the redcap who made it.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Red Cap
   range: null
   raw_description: '**Red Cap** (__necromancy__, __primal__) A redcap''s woolen hat
     is dyed with the blood of its victims. If the redcap loses its cap, it no longer
-    benefits from fast healing and takes a -4 status penalty to its damage rolls.
+    benefits from fast healing and takes a –4 status penalty to its damage rolls.
     It can create a new cap in 10 minutes, but that cap doesn''t grant its powers
     until the redcap has turned it red with Blood Soak. A cap has no benefit for creatures
-    other than the redcap who made it.
-
-
-    '
+    other than the redcap who made it.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - necromancy
   - primal
   trigger: null
 senses:
-- Perception +12
 - low-light vision
 size: Small
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 13
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 10
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 13
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 278
+  page_start: '278'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Small
 - Fey
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron
 - amount: null
+  misc: null
   type: divine revulsion

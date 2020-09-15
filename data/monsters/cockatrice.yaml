@@ -7,6 +7,48 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A peck from a cockatrice hardens the flesh of the creature struck.
+    The target must succeed at a DC 20 Fortitude save or become slowed 1 (or slowed
+    2 on a critical failure). Further failed saves against calcification increase
+    the slowed condition. Once a creature's actions are reduced to 0 by calcification,
+    that creature becomes petrified.Every 24 hours after it was petrified, the victim
+    can attempt a DC 20 Fortitude save to recover. On a success, it becomes flesh
+    again, but is slowed 1 for the next 24 hours. On a critical success, the creature
+    recovers and isn't slowed. On a failure, the creature remains petrified, but can
+    try again in 24 hours. On a critical failure, the petrification is permanent,
+    and the creature can't attempt any more saves.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Calcification
+  range: null
+  raw_description: '**Calcification** (__incapacitation__, __primal__, __transmutation__)
+    A peck from a cockatrice hardens the flesh of the creature struck. The target
+    must succeed at a DC 20 Fortitude save or become slowed 1 (or slowed 2 on a critical
+    failure). Further failed saves against calcification increase the slowed condition.
+    Once a creature''s actions are reduced to 0 by calcification, that creature becomes
+    petrified.Every 24 hours after it was petrified, the victim can attempt a DC 20
+    Fortitude save to recover. On a success, it becomes flesh again, but is slowed
+    1 for the next 24 hours. On a critical success, the creature recovers and isn''t
+    slowed. On a failure, the creature remains petrified, but can try again in 24
+    hours. On a critical failure, the petrification is permanent, and the creature
+    can''t attempt any more saves.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - incapacitation
+  - primal
+  - transmutation
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Ugly and aggressive, the dread cockatrice stalks garbage pits and hillside
@@ -59,10 +101,8 @@ hp: 45
 hp_misc: null
 immunities:
 - calcification
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8-2
@@ -77,50 +117,7 @@ melee:
   - magical
 name: Cockatrice
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A peck from a cockatrice hardens the flesh of the creature struck.
-    The target must succeed at a DC 20 Fortitude save or become slowed 1 (or slowed
-    2 on a critical failure). Further failed saves against calcification increase
-    the slowed condition. Once a creature's actions are reduced to 0 by calcification,
-    that creature becomes petrified.Every 24 hours after it was petrified, the victim
-    can attempt a DC 20 Fortitude save to recover. On a success, it becomes flesh
-    again, but is slowed 1 for the next 24 hours. On a critical success, the creature
-    recovers and isn't slowed. On a failure, the creature remains petrified, but can
-    try again in 24 hours. On a critical failure, the petrification is permanent,
-    and the creature can't attempt any more saves.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Calcification
-  range: null
-  raw_description: '**Calcification** (__incapacitation__, __primal__, __transmutation__)
-    A peck from a cockatrice hardens the flesh of the creature struck. The target
-    must succeed at a DC 20 Fortitude save or become slowed 1 (or slowed 2 on a critical
-    failure). Further failed saves against calcification increase the slowed condition.
-    Once a creature''s actions are reduced to 0 by calcification, that creature becomes
-    petrified.Every 24 hours after it was petrified, the victim can attempt a DC 20
-    Fortitude save to recover. On a success, it becomes flesh again, but is slowed
-    1 for the next 24 hours. On a critical success, the creature recovers and isn''t
-    slowed. On a failure, the creature remains petrified, but can try again in 24
-    hours. On a critical failure, the petrification is permanent, and the creature
-    can''t attempt any more saves.'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  - primal
-  - transmutation
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -129,28 +126,24 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Small
 skills:
 - bonus: 11
   misc: null
-  name: 'Acrobatics '
-source:
+  name: Acrobatics
+sources:
 - abbr: Bestiary
-  page_start: 66
+  page_start: '66'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Small
 - Beast
-type: Creature
-weaknesses: null

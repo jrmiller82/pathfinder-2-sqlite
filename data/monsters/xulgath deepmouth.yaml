@@ -7,6 +7,69 @@ ability_mods:
   wis_mod: 7
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The deepmouth warps part of a scalescribed creature's flesh into a
+    mouthed tentacle, then wills it to lash out. The deepmouth makes a jaws Strike
+    that originates from any living scalescribed creature within 120 feet; this Strike
+    also has __reach 15 feet__ and deals an additional 2d8 negative damage. If the
+    Strike originates from a creature other than the deepmouth, that creature triggers
+    reactions as though it had made the Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Devourer's Dictum
+  range: null
+  raw_description: '**Devourer''s Dictum** [One Action]  (__concentrate__) The deepmouth
+    warps part of a scalescribed creature''s flesh into a mouthed tentacle, then wills
+    it to lash out. The deepmouth makes a jaws Strike that originates from any living
+    scalescribed creature within 120 feet; this Strike also has __reach 15 feet__
+    and deals an additional 2d8 negative damage. If the Strike originates from a creature
+    other than the deepmouth, that creature triggers reactions as though it had made
+    the Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: With 10 minutes of work, a deepmouth can carve a magical rune called
+    a scalescript on the flesh of a living, willing xulgath (including the deepmouth
+    itself). A creature cannot be inscribed with more than one scalescribe rune at
+    a time, and a deepmouth can create and maintain no more than three scalescripts
+    at a time. If the deepmouth Scalescribed itself, it can provide material and somatic
+    components while Casting a Spell without a free hand.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Scalescribe
+  range: null
+  raw_description: '**Scalescribe** (__manipulate__) With 10 minutes of work, a deepmouth
+    can carve a magical rune called a scalescript on the flesh of a living, willing
+    xulgath (including the deepmouth itself). A creature cannot be inscribed with
+    more than one scalescribe rune at a time, and a deepmouth can create and maintain
+    no more than three scalescripts at a time. If the deepmouth Scalescribed itself,
+    it can provide material and somatic components while Casting a Spell without a
+    free hand.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +81,11 @@ automatic_abilities:
 
 
     round (or __blinded__ for 1 round on a critical failure).'
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Blood Eruption
   range: null
   raw_description: '**Blood Eruption [Reaction]** **Trigger** A creature lands a critical
@@ -33,6 +96,8 @@ automatic_abilities:
 
     round (or __blinded__ for 1 round on a critical failure).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature lands a critical hit with a melee Strike against the vitalia
@@ -49,7 +114,6 @@ description: 'Xulgath deepmouths wield the powers of the __Abyss__ against their
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 32'
 hp: 215
 hp_misc: null
-immunities: null
 items:
 - bone religious symbol of Zevgavizeb
 - +1 hide armor
@@ -59,7 +123,7 @@ languages:
 - Draconic
 - Undercommon
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d4+6
@@ -90,88 +154,8 @@ melee:
   - agile
 name: Xulgath Deepmouth
 perception: 26
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The deepmouth warps part of a scalescribed creature's flesh into a
-    mouthed tentacle, then wills it to lash out. The deepmouth makes a jaws Strike
-    that originates from any living scalescribed creature within 120 feet; this Strike
-    also has __reach 15 feet__ and deals an additional 2d8 negative damage. If the
-    Strike originates from a creature other than the deepmouth, that creature triggers
-    reactions as though it had made the Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Devourer's Dictum
-  range: null
-  raw_description: '**Devourer''s Dictum**   (__concentrate__) The deepmouth warps
-    part of a scalescribed creature''s flesh into a mouthed tentacle, then wills it
-    to lash out. The deepmouth makes a jaws Strike that originates from any living
-    scalescribed creature within 120 feet; this Strike also has __reach 15 feet__
-    and deals an additional 2d8 negative damage. If the Strike originates from a creature
-    other than the deepmouth, that creature triggers reactions as though it had made
-    the Strike.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: With 10 minutes of work, a deepmouth can carve a magical rune called
-    a scalescript on the flesh of a living, willing xulgath (including the deepmouth
-    itself). A creature cannot be inscribed with more than one scalescribe rune at
-    a time, and a deepmouth can create and maintain no more than three scalescripts
-    at a time. If the deepmouth Scalescribed itself, it can provide material and somatic
-    components while Casting a Spell without a free hand.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Scalescribe
-  range: null
-  raw_description: '**Scalescribe** (__manipulate__) With 10 minutes of work, a deepmouth
-    can carve a magical rune called a scalescript on the flesh of a living, willing
-    xulgath (including the deepmouth itself). A creature cannot be inscribed with
-    more than one scalescribe rune at a time, and a deepmouth can create and maintain
-    no more than three scalescripts at a time. If the deepmouth Scalescribed itself,
-    it can provide material and somatic components while Casting a Spell without a
-    free hand.'
-  requirements: null
-  success: null
-  traits:
-  - manipulate
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists:
-- dc: 1
-  misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: null
-      name: commune
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: null
-      name: consecrate
-      requirement: null
-  to_hit: null
 saves:
   fort: 18
   fort_misc: null
@@ -180,137 +164,126 @@ saves:
   ref_misc: null
   will: 25
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +26
 - darkvision
 size: Medium
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 22
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 25
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 25
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 25
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 25
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 22
   misc: null
-  name: 'Society '
-source:
+  name: Society
+sources:
 - abbr: 'Pathfinder #155: Lord of the Black Sands'
-  page_start: 85
+  page_start: '85'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 33
-  misc: ''
-  name: Divine Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: 27
+  cantrips:
+  - level: 6
     spells:
-    - frequency: null
-      name: divine wrath
-      requirement: null
-    - frequency: ×6
-      name: harm
-      requirement: null
-    - frequency: ×2
-      name: repulsion
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: ×2
-      name: heal
-      requirement: null
-    - frequency: null
-      name: ravening maw
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: ×2
-      name: air walk
-      requirement: null
-    - frequency: APG
-      name: null
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: heroism
-      requirement: null
-    - frequency: null
-      name: meld into stone
-      requirement: null
-    - frequency: null
-      name: vampiric touch
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: ×3
-      name: status
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: protection
-      requirement: null
-    - frequency: ×2
-      name: ray of enfeeblement
-      requirement: null
-  - heightened_level: 6
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: 27
-- dc: 33
+  constants: null
+  dc: 33
+  focus_points: null
   misc: null
-  name: Cleric Domain Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+  spell_lists:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
+      name: divine wrath
+    - misc: ×6
+      name: harm
+    - misc: ×2
+      name: repulsion
+  - level: 5
+    spells:
+    - misc: ×2
+      name: heal
+    - misc: null
+      name: ravening maw
+  - level: 4
+    spells:
+    - misc: ×2
+      name: air walk
+    - misc: APG
+      name: enervation
+  - level: 3
+    spells:
+    - misc: null
+      name: heroism
+    - misc: null
+      name: meld into stone
+    - misc: null
+      name: vampiric touch
+  - level: 2
+    spells:
+    - misc: ×3
+      name: status
+  - level: 1
+    spells:
+    - misc: null
+      name: protection
+    - misc: ×2
+      name: ray of enfeeblement
+  spells_source: Divine Prepared Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 33
+  focus_points: 3
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: null
       name: commanding lash
-      requirement: null
-    - frequency: null
+    - misc: null
       name: vibrant thorns
-      requirement: null
-  to_hit: null
+  spells_source: Cleric Domain Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 1
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: null
+      name: commune
+  - level: 2
+    spells:
+    - misc: null
+      name: consecrate
+  spells_source: Divine Rituals
 traits:
-- Uncommon
-- CE
-- Medium
 - Humanoid
 - Xulgath
-type: Creature
-weaknesses: null

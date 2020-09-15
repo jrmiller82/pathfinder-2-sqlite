@@ -7,6 +7,71 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The first time the archer hits with a crossbow attack in a round, it
+    deals 1d8 extra precision damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Crossbow Precision
+  range: null
+  raw_description: '**Crossbow Precision** The first time the archer hits with a crossbow
+    attack in a round, it deals 1d8 extra precision damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The hobgoblin archer ignores the concealed condition. Their targets
+    don't benefit from lesser cover, and they reduce the AC bonus from standard cover
+    by 2 against the hobgoblin archer's attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Perfect Aim
+  range: null
+  raw_description: '**Perfect Aim** The hobgoblin archer ignores the concealed condition.
+    Their targets don''t benefit from lesser cover, and they reduce the AC bonus from
+    standard cover by 2 against the hobgoblin archer''s attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The archer Strides, Steps, or Sneaks, then Interacts to reload.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Running Reload
+  range: null
+  raw_description: '**Running Reload** [One Action]  The archer Strides, Steps, or
+    Sneaks, then Interacts to reload.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
@@ -16,17 +81,19 @@ automatic_abilities:
     gains a +1 circumstance bonus to AC and saving throws. This bonus increases to
     +2 to Reflex saves against area effects.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Formation
   range: null
   raw_description: '**Formation** When it''s adjacent to at least two other allies,
     the hobgoblin archer gains a +1 circumstance bonus to AC and saving throws. This
     bonus increases to +2 to Reflex saves against area effects.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -40,7 +107,6 @@ description: 'Bands of hobgoblin soldiers typically have at least one archer amo
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 19'
 hp: 50
 hp_misc: null
-immunities: null
 items:
 - crossbow (20 bolts)
 - scale mail
@@ -49,7 +115,7 @@ languages:
 - Common
 - Goblin
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -62,66 +128,7 @@ melee:
   - versatile S
 name: Hobgoblin Archer
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The first time the archer hits with a crossbow attack in a round, it
-    deals 1d8 extra precision damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Crossbow Precision
-  range: null
-  raw_description: '**Crossbow Precision** The first time the archer hits with a crossbow
-    attack in a round, it deals 1d8 extra precision damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The hobgoblin archer ignores the concealed condition. Their targets
-    don't benefit from lesser cover, and they reduce the AC bonus from standard cover
-    by 2 against the hobgoblin archer's attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Perfect Aim
-  range: null
-  raw_description: '**Perfect Aim** The hobgoblin archer ignores the concealed condition.
-    Their targets don''t benefit from lesser cover, and they reduce the AC bonus from
-    standard cover by 2 against the hobgoblin archer''s attack.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The archer Strides, Steps, or Sneaks, then Interacts to reload.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Running Reload
-  range: null
-  raw_description: '**Running Reload**   The archer Strides, Steps, or Sneaks, then
-    Interacts to reload.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+2
@@ -134,11 +141,6 @@ ranged:
   traits:
   - range increment 120 feet
   - reload 1
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 10
   fort_misc: null
@@ -147,33 +149,28 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 207
+  page_start: '207'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Goblin
 - Humanoid
-type: Creature
-weaknesses: null

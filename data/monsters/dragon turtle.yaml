@@ -7,6 +7,85 @@ ability_mods:
   wis_mod: 3
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon turtle breathes a massive blast of steam that deals 10d6
+    fire damage to creatures within a 50-foot __cone__ (DC 27 basic Reflex save).
+    This steam blast affects creatures within the water, as well as outside. The dragon
+    turtle can't use its Breath Weapon again for 1d4 rounds or until it takes a critical
+    hit (whichever comes first).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__air__, __fire__, __primal__)
+    The dragon turtle breathes a massive blast of steam that deals 10d6 fire damage
+    to creatures within a 50-foot __cone__ (DC 27 basic Reflex save). This steam blast
+    affects creatures within the water, as well as outside. The dragon turtle can''t
+    use its Breath Weapon again for 1d4 rounds or until it takes a critical hit (whichever
+    comes first).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - air
+  - fire
+  - primal
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The dragon turtle tries to capsize an adjacent aquatic vessel of its
+    size or smaller. The dragon turtle must succeed at an __Athletics__ check with
+    a DC of 30 or the pilot's __Sailing Lore__ DC, whichever is higher.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Capsize
+  range: null
+  raw_description: '**Capsize** [One Action]  (__attack__, __move__) The dragon turtle
+    tries to capsize an adjacent aquatic vessel of its size or smaller. The dragon
+    turtle must succeed at an __Athletics__ check with a DC of 30 or the pilot''s
+    __Sailing Lore__ DC, whichever is higher.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  - move
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon turtle makes two Claw Strikes and one Jaws Strike in any
+    order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon turtle makes two
+    Claw Strikes and one Jaws Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +94,11 @@ automatic_abilities:
   description: null
   effect: The dragon turtle rolls its shell toward the triggering creature, gaining
     a +2 circumstance bonus to its AC against the triggering attack.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shell Block
   range: null
   raw_description: '**Shell Block **[Reaction] **Trigger** A creature adjacent to
@@ -27,6 +106,8 @@ automatic_abilities:
     rolls its shell toward the triggering creature, gaining a +2 circumstance bonus
     to its AC against the triggering attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature adjacent to the dragon turtle targets it with a melee attack.
@@ -65,13 +146,12 @@ immunities:
 - fire
 - paralyzed
 - sleep
-items: null
 languages:
 - Aquan
 - Common
 - Draconic
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+9
@@ -92,83 +172,7 @@ melee:
   - agile
 name: Dragon Turtle
 perception: 18
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon turtle breathes a massive blast of steam that deals 10d6
-    fire damage to creatures within a 50-foot __cone__ (DC 27 basic Reflex save).
-    This steam blast affects creatures within the water, as well as outside. The dragon
-    turtle can't use its Breath Weapon again for 1d4 rounds or until it takes a critical
-    hit (whichever comes first).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__air__, __fire__, __primal__)
-    The dragon turtle breathes a massive blast of steam that deals 10d6 fire damage
-    to creatures within a 50-foot __cone__ (DC 27 basic Reflex save). This steam blast
-    affects creatures within the water, as well as outside. The dragon turtle can''t
-    use its Breath Weapon again for 1d4 rounds or until it takes a critical hit (whichever
-    comes first).'
-  requirements: null
-  success: null
-  traits:
-  - air
-  - fire
-  - primal
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The dragon turtle tries to capsize an adjacent aquatic vessel of its
-    size or smaller. The dragon turtle must succeed at an __Athletics__ check with
-    a DC of 30 or the pilot's __Sailing Lore__ DC, whichever is higher.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Capsize
-  range: null
-  raw_description: '**Capsize**   (__attack__, __move__) The dragon turtle tries to
-    capsize an adjacent aquatic vessel of its size or smaller. The dragon turtle must
-    succeed at an __Athletics__ check with a DC of 30 or the pilot''s __Sailing Lore__
-    DC, whichever is higher. '
-  requirements: null
-  success: null
-  traits:
-  - attack
-  - move
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon turtle makes two Claw Strikes and one Jaws Strike in any
-    order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon turtle makes two
-    Claw Strikes and one Jaws Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 19
   fort_misc: null
@@ -177,41 +181,37 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - darkvision
 size: Huge
 skills:
 - bonus: 21
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 16
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 13
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 128
+  page_start: '128'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Huge
 - Amphibious
 - Dragon
-type: Creature
-weaknesses: null

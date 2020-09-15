@@ -7,6 +7,38 @@ ability_mods:
   wis_mod: 3
 ac: 32
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The nilith reaches into the mind of the grabbed creature and implants disjointed
+    images of the victim's worst fears and nightmares. The grabbed creature takes
+    6d6 mental damage (DC 31 basic Will save). On a critical failure, the target is
+    also affected as though by __feeblemind__, and it must attempt a second Will save
+    against that effect.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mind Crush
+  range: null
+  raw_description: '**Mind Crush** [One Action]  (__enchantment__, __mental__, __occult__)
+    **Requirements** The nilith has a creature grabbed. **Effect** The nilith reaches
+    into the mind of the grabbed creature and implants disjointed images of the victim''s
+    worst fears and nightmares. The grabbed creature takes 6d6 mental damage (DC 31
+    basic Will save). On a critical failure, the target is also affected as though
+    by __feeblemind__, and it must attempt a second Will save against that effect.'
+  requirements: The nilith has a creature grabbed.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - enchantment
+  - mental
+  - occult
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'The sleek, dark niliths resemble hairless, emaciated tree sloths. These
@@ -48,14 +80,12 @@ description: 'The sleek, dark niliths resemble hairless, emaciated tree sloths. 
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 27'
 hp: 150
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Common
 - telepathy 30 feet
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+9
@@ -81,40 +111,14 @@ melee:
   - magical
 name: Nilith
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The nilith has a creature grabbed.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mind Crush
-  range: null
-  raw_description: '**Mind Crush**   (__enchantment__, __mental__, __occult__) **Requirements**
-    The nilith has a creature grabbed. **Effect** The nilith reaches into the mind
-    of the grabbed creature and implants disjointed images of the victim''s worst
-    fears and nightmares. The grabbed creature takes 6d6 mental damage (DC 31 basic
-    Will save). On a critical failure, the target is also affected as though by __feeblemind__,
-    and it must attempt a second Will save against that effect.'
-  requirements: null
-  success: null
-  traits:
-  - enchantment
-  - mental
-  - occult
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
+  misc: null
   type: mental
 - amount: 5
-  type: physical (except silver)
-ritual_lists: null
+  misc: except silver
+  type: physical
 saves:
   fort: 17
   fort_misc: null
@@ -123,99 +127,81 @@ saves:
   ref_misc: null
   will: 20
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 size: Medium
 skills:
 - bonus: 21
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 23
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 19
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 21
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 245
+  page_start: '245'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists:
-- dc: 29
-  misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips:
+  - level: 5
     spells:
-    - frequency: null
-      name: hallucination
-      requirement: null
-    - frequency: null
-      name: mind probe
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: blink
-      requirement: null
-    - frequency: null
-      name: confusion
-      requirement: null
-    - frequency: null
-      name: crushing despair
-      requirement: null
-    - frequency: null
-      name: dream message
-      requirement: null
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-    - frequency: null
-      name: nightmare
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: at will
-      name: mind reading
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: message
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 29
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: hallucination
+    - misc: null
+      name: mind probe
+  - level: 4
+    spells:
+    - misc: null
+      name: blink
+    - misc: null
+      name: confusion
+    - misc: null
+      name: crushing despair
+    - misc: null
+      name: dream message
+    - misc: at will, self only
+      name: invisibility
+    - misc: null
+      name: nightmare
+  - level: 3
+    spells:
+    - misc: at will
+      name: mind reading
+  spells_source: Occult Innate Spells
 traits:
-- NE
-- Medium
 - Aberration
-type: Creature
-weaknesses: null

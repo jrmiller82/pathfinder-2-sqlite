@@ -7,6 +7,57 @@ ability_mods:
   wis_mod: 5
 ac: 30
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The icewyrm breathes a 60-foot line of freezing shards of razor-sharp
+    ice, dealing 3d12 cold damage and 3d12 piercing damage to every creature in the
+    line (DC 29 basic Reflex save). The icewyrm can't use Breath Weapon again for
+    1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__cold__, __evocation__, __primal__)
+    The icewyrm breathes a 60-foot line of freezing shards of razor-sharp ice, dealing
+    3d12 cold damage and 3d12 piercing damage to every creature in the line (DC 29
+    basic Reflex save). The icewyrm can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - cold
+  - evocation
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The Icewyrm can Burrow through ice or snow with a Speed of 20 feet.
+    It moves at its full burrow Speed, leaving no tunnels or signs of its passing.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ice Burrow
+  range: null
+  raw_description: '**Ice Burrow** The Icewyrm can Burrow through ice or snow with
+    a Speed of 20 feet. It moves at its full burrow Speed, leaving no tunnels or signs
+    of its passing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -15,16 +66,18 @@ automatic_abilities:
   description: When the icewyrm dies, it explodes, dealing 8d6 cold damage to each
     creature in a 10-foot emanation (DC 27 basic Reflex save).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Explosion
   range: null
   raw_description: '**Explosion** (__cold__) When the icewyrm dies, it explodes, dealing
     8d6 cold damage to each creature in a 10-foot emanation (DC 27 basic Reflex save).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - cold
@@ -38,20 +91,19 @@ description: 'Resembling wingless, serpentine dragons formed of jagged ice and s
 
 
 
-  **__Recall Knowledge - Elemental__ (__Arcana__, __Nature__)**: DC 24'
+  **__Recall Knowledge - Elemental__ (__Arcana__, __Nature__)**: DC 27'
 hp: 185
 hp_misc: null
 immunities:
 - bleed
 - cold
-- paralyzed
-- poison
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Aquan
-level: 8
-melee:
+level: 10
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+13
@@ -67,78 +119,26 @@ melee:
     type: slashing
   name: tail
   plus_damage:
-  - formula: 1d6
-    type: persistent cold
+  - formula: null
+    type: 1d6 persistent cold
   to_hit: 23
   traits:
   - agile
   - reach 15 feet
 name: Icewyrm
 perception: 19
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The icewyrm breathes a 60-foot line of freezing shards of razor-sharp
-    ice, dealing 3d12 cold damage and 3d12 piercing damage to every creature in the
-    line (DC 29 basic Reflex save). The icewyrm can't use Breath Weapon again for
-    1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__cold__, __evocation__, __primal__)
-    The icewyrm breathes a 60-foot line of freezing shards of razor-sharp ice, dealing
-    3d12 cold damage and 3d12 piercing damage to every creature in the line (DC 29
-    basic Reflex save). The icewyrm can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - cold
-  - evocation
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The Icewyrm can Burrow through ice or snow with a Speed of 20 feet.
-    It moves at its full burrow Speed, leaving no tunnels or signs of its passing.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ice Burrow
-  range: null
-  raw_description: '**Ice Burrow** The Icewyrm can Burrow through ice or snow with
-    a Speed of 20 feet. It moves at its full burrow Speed, leaving no tunnels or signs
-    of its passing.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+13
     type: piercing
   name: ice shard
   plus_damage:
-  - formula: 1d6
-    type: persistent cold
+  - formula: null
+    type: 1d6 persistent cold
   to_hit: 23
   traits:
   - range increment 60 feet
-rarity: Common
-resistances:
-- amount: 10
-  type: fire
-ritual_lists: null
 saves:
   fort: 20
   fort_misc: null
@@ -147,33 +147,34 @@ saves:
   ref_misc: null
   will: 17
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 size: Huge
 skills:
 - bonus: 21
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 115
+  page_start: '115'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: ice burrow
 - amount: 60
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Huge
 - Amphibious
 - Cold
 - Elemental
 - Water
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: fire

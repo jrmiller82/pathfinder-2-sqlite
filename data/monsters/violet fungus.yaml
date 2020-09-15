@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 1
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Violet Rot
+  range: null
+  raw_description: '**Violet Rot** (__poison__) **Saving Throw** DC 20 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison plus __enfeebled 1__ (1
+    round); **Stage 2** 1d6 poison plus enfeebled 1 and __drained 1__ (1 round); **Stage
+    3** 2d6 poison plus enfeebled 1 and drained 1 (1 round)'
+  requirements: null
+  saving_throw: DC 20 Fortitude
+  stages:
+  - effect: 1d6 poison plus __enfeebled 1__ (1 round)
+  - effect: 1d6 poison plus enfeebled 1 and __drained 1__ (1 round)
+  - effect: 2d6 poison plus enfeebled 1 and drained 1 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'At a glance, a violet fungus might seem to be little more than an unsightly
@@ -37,15 +64,13 @@ hp: 60
 hp_misc: null
 immunities:
 - bleed
-- fatigued
-- mental
-- poison
-- sleep
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+4
@@ -60,37 +85,7 @@ melee:
   - reach 10 feet
 name: Violet Fungus
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 20 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison plus __enfeebled 1__ (1 round); **Stage 2** 1d6 poison plus enfeebled
-    1 and __drained 1__ (1 round); **Stage 3** 2d6 poison plus enfeebled 1 and drained
-    1 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Violet Rot
-  range: null
-  raw_description: '**Violet Rot** (__poison__) **Saving Throw** DC 20 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison plus __enfeebled 1__ (1
-    round); **Stage 2** 1d6 poison plus enfeebled 1 and __drained 1__ (1 round); **Stage
-    3** 2d6 poison plus enfeebled 1 and drained 1 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: fire
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -99,28 +94,27 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - no vision
 - tremorsense 60 feet
 size: Medium
 skills:
 - bonus: 9
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 286
+  page_start: '286'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Fungus
 - Mindless
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: fire

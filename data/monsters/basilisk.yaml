@@ -7,6 +7,52 @@ ability_mods:
   wis_mod: 2
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: 'The basilisk stares at a creature it can see within 30 feet. That
+    creature must attempt a DC 22 Fortitude save. If it fails and has not already
+    been slowed by Petrifying Glance or this ability, it becomes __slowed 1__. If
+    the creature was already slowed by this ability or Petrifying Glance, a failed
+    save causes the creature to be petrified permanently.
+
+
+    A creature petrified in this manner that is coated (not just splashed) with fresh
+    basilisk blood (taken from a basilisk that has been dead no longer than 1 hour)
+    is instantly restored to flesh. A single basilisk contains enough blood to coat
+    1d3 Medium creatures in this manner.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Petrifying Gaze
+  range: null
+  raw_description: '**Petrifying Gaze** [Two Actions]  (__arcane__, __concentrate__,
+    __incapacitation__, __transmutation__, __visual__) The basilisk stares at a creature
+    it can see within 30 feet. That creature must attempt a DC 22 Fortitude save.
+    If it fails and has not already been slowed by Petrifying Glance or this ability,
+    it becomes __slowed 1__. If the creature was already slowed by this ability or
+    Petrifying Glance, a failed save causes the creature to be petrified permanently.
+
+
+    A creature petrified in this manner that is coated (not just splashed) with fresh
+    basilisk blood (taken from a basilisk that has been dead no longer than 1 hour)
+    is instantly restored to flesh. A single basilisk contains enough blood to coat
+    1d3 Medium creatures in this manner.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - concentrate
+  - incapacitation
+  - transmutation
+  - visual
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,11 +61,11 @@ automatic_abilities:
   description: null
   effect: The target must attempt a DC 20 Fortitude save. If it fails, it's slow 1
     for 1 minute as its body slowly stiffens.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Petrifying Glance
   range: null
   raw_description: '**Petrifying Glance** [Reaction] (__arcane__, __aura__, __transmutation__,
@@ -27,6 +73,8 @@ automatic_abilities:
     its turn. **Effect** The target must attempt a DC 20 Fortitude save. If it fails,
     it''s slow 1 for 1 minute as its body slowly stiffens.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - arcane
@@ -47,7 +95,7 @@ description: 'The basilisk is an eight-legged reptile with a nasty disposition a
   the basilisk crunches the fossilized corpse with its powerful jaws and lets its
   potent stomach acids do the rest. This digestive process is extremely slow and inefficient,
   causing the basilisk to move so lethargically that it appears as if in mid-petrification
-  itself. This has even led to the saying "as slow as a well-fed basilisk." Certainly
+  itself. This has even led to the saying “as slow as a well-fed basilisk.” Certainly
   basilisks are well-known for their slow gait and slothful nature, but a predator
   that can turn its prey to stone with a glance hardly has much need for speed.
 
@@ -77,11 +125,8 @@ description: 'The basilisk is an eight-legged reptile with a nasty disposition a
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 20'
 hp: 75
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+4
@@ -92,56 +137,7 @@ melee:
   traits: null
 name: Basilisk
 perception: 11
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: 'The basilisk stares at a creature it can see within 30 feet. That
-    creature must attempt a DC 22 Fortitude save. If it fails and has not already
-    been slowed by Petrifying Glance or this ability, it becomes __slowed 1__. If
-    the creature was already slowed by this ability or Petrifying Glance, a failed
-    save causes the creature to be petrified permanently.
-
-
-    A creature petrified in this manner that is coated (not just splashed) with fresh
-    basilisk blood (taken from a basilisk that has been dead no longer than 1 hour)
-    is instantly restored to flesh. A single basilisk contains enough blood to coat
-    1d3 Medium creatures in this manner.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Petrifying Gaze
-  range: null
-  raw_description: '**Petrifying Gaze** [Two Actions]  (__arcane__, __concentrate__,
-    __incapacitation__, __transmutation__, __visual__) The basilisk stares at a creature
-    it can see within 30 feet. That creature must attempt a DC 22 Fortitude save.
-    If it fails and has not already been slowed by Petrifying Glance or this ability,
-    it becomes __slowed 1__. If the creature was already slowed by this ability or
-    Petrifying Glance, a failed save causes the creature to be petrified permanently.
-
-
-    A creature petrified in this manner that is coated (not just splashed) with fresh
-    basilisk blood (taken from a basilisk that has been dead no longer than 1 hour)
-    is instantly restored to flesh. A single basilisk contains enough blood to coat
-    1d3 Medium creatures in this manner.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - concentrate
-  - incapacitation
-  - transmutation
-  - visual
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 14
   fort_misc: null
@@ -150,29 +146,24 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - darkvision
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 38
+  page_start: '38'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Beast
-type: Creature
-weaknesses: null

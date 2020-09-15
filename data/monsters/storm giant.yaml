@@ -7,6 +7,82 @@ ability_mods:
   wis_mod: 5
 ac: 34
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The storm giant raises one hand to the sky, channeling a bolt of lightning
+    into the blade held in the other. The giant makes a greatsword Strike with a –2
+    circumstance penalty against each creature within its reach. It makes only one
+    attack roll and compares the result against each creature's AC. This Strike deals
+    an additional 3d12 electricity damage and counts as two attacks for the giant's
+    multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Lightning Blade
+  range: null
+  raw_description: '**Lightning Blade** [Three Actions]  (__electricity__, __evocation__,
+    __primal__) The storm giant raises one hand to the sky, channeling a bolt of lightning
+    into the blade held in the other. The giant makes a greatsword Strike with a –2
+    circumstance penalty against each creature within its reach. It makes only one
+    attack roll and compares the result against each creature''s AC. This Strike deals
+    an additional 3d12 electricity damage and counts as two attacks for the giant''s
+    multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - electricity
+  - evocation
+  - primal
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**Throw Rock** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The storm giant makes a single greatsword Strike and compares the attack
+    roll result to the ACs of up to two foes within its reach. This counts as two
+    attacks for the giant's multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wide Swing
+  range: null
+  raw_description: '**Wide Swing** [One Action]  The storm giant makes a single greatsword
+    Strike and compares the attack roll result to the ACs of up to two foes within
+    its reach. This counts as two attacks for the giant''s multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CG
 automatic_abilities:
 - action_cost: Reaction
@@ -14,15 +90,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**Catch Rock** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -62,15 +140,15 @@ languages:
 - Draconic
 - Jotun
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+16
     type: slashing
   name: greatsword
   plus_damage:
-  - formula: 1d6
-    type: electricity
+  - formula: null
+    type: 1d6 electricity
   to_hit: 28
   traits:
   - magical
@@ -82,85 +160,15 @@ melee:
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 1d6
-    type: electricity
+  - formula: null
+    type: 1d6 electricity
   to_hit: 27
   traits:
   - agile
   - reach 15 feet
 name: Storm Giant
 perception: 24
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The storm giant raises one hand to the sky, channeling a bolt of lightning
-    into the blade held in the other. The giant makes a greatsword Strike with a -2
-    circumstance penalty against each creature within its reach. It makes only one
-    attack roll and compares the result against each creature's AC. This Strike deals
-    an additional 3d12 electricity damage and counts as two attacks for the giant's
-    multiple attack penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Lightning Blade
-  range: null
-  raw_description: '**Lightning Blade** [Three Actions]  (__electricity__, __evocation__,
-    __primal__) The storm giant raises one hand to the sky, channeling a bolt of lightning
-    into the blade held in the other. The giant makes a greatsword Strike with a -2
-    circumstance penalty against each creature within its reach. It makes only one
-    attack roll and compares the result against each creature''s AC. This Strike deals
-    an additional 3d12 electricity damage and counts as two attacks for the giant''s
-    multiple attack penalty.'
-  requirements: null
-  success: null
-  traits:
-  - electricity
-  - evocation
-  - primal
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**Throw Rock**  '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The storm giant makes a single greatsword Strike and compares the attack
-    roll result to the ACs of up to two foes within its reach. This counts as two
-    attacks for the giant's multiple attack penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wide Swing
-  range: null
-  raw_description: '**Wide Swing**   The storm giant makes a single greatsword Strike
-    and compares the attack roll result to the ACs of up to two foes within its reach.
-    This counts as two attacks for the giant''s multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+16
@@ -171,9 +179,6 @@ ranged:
   traits:
   - brutal
   - range increment 120 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 28
   fort_misc: null
@@ -182,71 +187,62 @@ saves:
   ref_misc: null
   will: 23
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +24
 - low-light vision
 size: Huge
 skills:
 - bonus: 20
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 27
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 24
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 24
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 22
   misc: null
-  name: 'Performance '
-source:
+  name: Performance
+sources:
 - abbr: Bestiary
-  page_start: 174
+  page_start: '174'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: swim
 spell_lists:
-- dc: 33
-  misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 4
     spells:
-    - frequency: x3
-      name: chain lightning
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: at will
-      name: control weather
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: at will
-      name: levitate
-      requirement: null
-  - heightened_level: 4
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: freedom of movement
-      requirement: null
-  to_hit: null
+  dc: 33
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
+    spells:
+    - misc: x3
+      name: chain lightning
+  - level: 5
+    spells:
+    - misc: at will
+      name: control weather
+  - level: 3
+    spells:
+    - misc: at will
+      name: levitate
+  spells_source: Arcane Innate Spells
 traits:
-- CG
-- Huge
 - Amphibious
 - Giant
 - Humanoid
-type: Creature
-weaknesses: null

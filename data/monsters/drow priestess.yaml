@@ -8,6 +8,7 @@ ability_mods:
 ac: 20
 ac_special:
 - descr: 22 with shield raised
+active_abilities: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -17,11 +18,11 @@ automatic_abilities:
   effect: You snap your shield in place to ward off a blow. Your shield prevents you
     from taking an amount of damage up to the shield's Hardness. You and the shield
     each take any remaining damage, possibly breaking or destroying the shield.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shield Block
   range: null
   raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
@@ -30,6 +31,8 @@ automatic_abilities:
     of damage up to the shield''s Hardness. You and the shield each take any remaining
     damage, possibly breaking or destroying the shield.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: While you have your shield raised, you would take damage from a physical
@@ -56,7 +59,7 @@ languages:
 - Elven
 - Undercommon
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -70,12 +73,11 @@ melee:
   - finesse
 name: Drow Priestess
 perception: 9
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: Hand Crossbow
   plus_damage:
   - formula: null
@@ -84,9 +86,6 @@ ranged:
   traits:
   - range increment 60 feet
   - reload 1
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -99,147 +98,119 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '
-
-
-    '
+  description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Light Blindness
   range: null
-  raw_description: '**Light Blindness**
-
-
-    '
+  raw_description: '**Light Blindness**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +9
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 8
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 9
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 5
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 137
+  page_start: '137'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists:
-- dc: 21
-  misc: null
-  name: Divine Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: x3
-      name: harm
-      requirement: null
-    - frequency: null
-      name: silence
-      requirement: null
-    - frequency: null
-      name: spiritual weapon
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: bless
-      requirement: null
-    - frequency: null
-      name: command
-      requirement: null
-    - frequency: null
-      name: fear
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: guidance
-      requirement: null
-    - frequency: null
+    - misc: null
       name: know direction
-      requirement: null
-    - frequency: null
+    - misc: null
       name: read aura
-      requirement: null
-    - frequency: null
+    - misc: null
       name: stabilize
-      requirement: null
-  to_hit: null
-- dc: 17
+  constants: null
+  dc: 21
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: null
-      name: darkness
-      requirement: null
-  - heightened_level: null
-    level: 3
+    - misc: x3
+      name: harm
+    - misc: null
+      name: silence
+    - misc: null
+      name: spiritual weapon
+  - level: 1
     spells:
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: x3
-      name: levitate
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-    - frequency: at will
-      name: faerie fire
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will
+    - misc: null
+      name: bless
+    - misc: null
       name: command
-      requirement: null
-  - heightened_level: 4
-    level: 0
+    - misc: null
+      name: fear
+  spells_source: Divine Prepared Spells
+- attack_bonus: null
+  cantrips:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: dancing lights
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 4
+    spells:
+    - misc: null
+      name: darkness
+  - level: 3
+    spells:
+    - misc: null
+      name: dispel magic
+    - misc: x3
+      name: levitate
+  - level: 2
+    spells:
+    - misc: at will
+      name: darkness
+    - misc: at will
+      name: faerie fire
+  - level: 1
+    spells:
+    - misc: at will
+      name: command
+  spells_source: Divine Innate Spells
 traits:
-- CE
-- Medium
 - Drow
 - Elf
 - Humanoid
-type: Creature
-weaknesses: null

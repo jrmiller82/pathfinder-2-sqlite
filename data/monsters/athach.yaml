@@ -7,6 +7,76 @@ ability_mods:
   wis_mod: 4
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Athach Venom
+  range: null
+  raw_description: '**Athach Venom** (__poison__) **Saving Throw** DC 32 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 2d6 poison damage and __enfeebled 1__;
+    **Stage 2** 2d6 poison damage and enfeebled 2; **Stage 3** 2d6 poison damage and
+    enfeebled 3'
+  requirements: null
+  saving_throw: DC 32 Fortitude
+  stages:
+  - effect: 2d6 poison damage and __enfeebled 1__
+  - effect: 2d6 poison damage and enfeebled 2
+  - effect: 2d6 poison damage and enfeebled 3
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The athach makes a claw Strike with no multiple attack penalty against the
+    creature it hit with its fist Strikes. This claw attack does not increase the
+    athach's multiple attack penalty.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swift Claw
+  range: null
+  raw_description: '**Swift Claw** [Reaction]  **Trigger **The athach hits a creature
+    with two fist Strikes; **Effect **The athach makes a claw Strike with no multiple
+    attack penalty against the creature it hit with its fist Strikes. This claw attack
+    does not increase the athach''s multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The athach hits a creature with two fist Strikes;
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -20,11 +90,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -35,6 +105,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -44,15 +116,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**__Catch Rock__ [Reaction]**'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -86,12 +160,10 @@ description: 'The towering and brutish giants known as athaches are reviled for 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 30'
 hp: 250
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Jotun
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d12+13
@@ -122,70 +194,7 @@ melee:
   - agile
 name: Athach
 perception: 22
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 32 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 2d6 poison damage and __enfeebled 1__; **Stage 2** 2d6 poison damage and enfeebled
-    2; **Stage 3** 2d6 poison damage and enfeebled 3'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Athach Venom
-  range: null
-  raw_description: '**Athach Venom** (__poison__) **Saving Throw** DC 32 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 2d6 poison damage and __enfeebled 1__;
-    **Stage 2** 2d6 poison damage and enfeebled 2; **Stage 3** 2d6 poison damage and
-    enfeebled 3'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The athach makes a claw Strike with no multiple attack penalty against the
-    creature it hit with its fist Strikes. This claw attack does not increase the
-    athach's multiple attack penalty.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swift Claw
-  range: null
-  raw_description: '**Swift Claw** [Reaction]  **Trigger **The athach hits a creature
-    with two fist Strikes; **Effect **The athach makes a claw Strike with no multiple
-    attack penalty against the creature it hit with its fist Strikes. This claw attack
-    does not increase the athach''s multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The athach hits a creature with two fist Strikes
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**__Throw Rock__**   '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+13
@@ -196,9 +205,6 @@ ranged:
   traits:
   - brutal
   - range increment 120 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -207,32 +213,29 @@ saves:
   ref_misc: null
   will: 21
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - darkvision
 size: Huge
 skills:
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 21
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary 2
-  page_start: 27
+  page_start: '27'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Huge
 - Giant
 - Humanoid
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: cold iron

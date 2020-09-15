@@ -1,0 +1,218 @@
+ability_mods:
+  cha_mod: -5
+  con_mod: 7
+  dex_mod: 2
+  int_mod: -5
+  str_mod: 4
+  wis_mod: 0
+ac: 13
+ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: DC 23, 2d8+9 acid, __Escape__ DC 23, Rupture 14 (19 when using Metallify)
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Engulf
+  range: null
+  raw_description: '**__Engulf__** [Two Actions]  DC 23, 2d8+9 acid, __Escape__ DC
+    23, Rupture 14 (19 when using Metallify)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The vaultbreaker ooze instinctually shapes its pseudopod into a key,
+    lockpick, or tool required to bypass a locking mechanism; it uses this pseudopod
+    as __thieves' tools__ to __Pick a Lock__ or __Disable a Device__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Form Tool
+  range: null
+  raw_description: '**Form Tool** [Two Actions]  (__manipulate__, __polymorph__, __transmutation__)
+    The vaultbreaker ooze instinctually shapes its pseudopod into a key, lockpick,
+    or tool required to bypass a locking mechanism; it uses this pseudopod as __thieves''
+    tools__ to __Pick a Lock__ or __Disable a Device__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  - polymorph
+  - transmutation
+  trigger: null
+alignment: N
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ooze's outer plasm hardens into a protective shell of precious metals.
+    Until the start of its next turn, it gains resistance 5 to physical damage (except
+    __adamantine__), it has a –5-foot penalty to its Speed, and its pseudopod Strikes
+    gain the __versatile S or P__ weapon trait.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Metallify
+  range: null
+  raw_description: '**Metallify [Reaction]** (__manipulate__, __polymorph__, __transmutation__)
+    **Trigger** A creature Strikes the vaultbreaker ooze; **Effect** The ooze''s outer
+    plasm hardens into a protective shell of precious metals. Until the start of its
+    next turn, it gains resistance 5 to physical damage (except __adamantine__), it
+    has a –5-foot penalty to its Speed, and its pseudopod Strikes gain the __versatile
+    S or P__ weapon trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - manipulate
+  - polymorph
+  - transmutation
+  trigger: A creature Strikes the vaultbreaker ooze;
+description: 'Though many oozes hunt among the dreary confines of underground caverns,
+  dungeons, and abandoned ruins, others seek to quell their hunger in areas well-trafficked
+  by civilized creatures. The aptly named vaultbreaker oozes exhibit a mindless compulsion
+  to feed on and digest precious metals. When near precious metals, the ichor exuded
+  from their metallic plasm tarnishes black and forms small, jagged crystals that
+  dot the oozes'' surface. Like a strange biological compass, these crystals point
+  vaultbreaker oozes to their next meal.
+
+
+
+
+  Though mindless, these strange oozes exhibit an innate instinct for picking and
+  bypassing locks to reach their meals by inserting a gelatinous pseudopod into a
+  keyhole and then hardening the appendage into solid metal, forming a tool similar
+  to a skeleton key.
+
+
+
+
+  Vaultbreaker oozes can often be found in cities where tectonic instability has created
+  fissures and cracks, allowing them to infiltrate basements, vaults, and underground
+  chambers that may contain treasure. When rumors of vaultbreaker ooze sightings surface,
+  banker consortiums, Abadaran priests, and even local thieves guilds offer hefty
+  sums to have the dangerous oozes destroyed—though some might instead offer a bounty
+  for their capture.
+
+
+
+
+  **__Recall Knowledge - Ooze__ (__Occultism__)**: DC 24'
+hp: 150
+hp_misc: null
+immunities:
+- <a style="text-decoration:underline" href="Traits.aspx?ID=3">acid</a>
+- critical hits
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- precision
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+level: 6
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 1d8+8
+    type: bludgeoning
+  name: pseudopod
+  plus_damage:
+  - formula: null
+    type: 2d6 acid
+  to_hit: 17
+  traits: null
+name: Vaultbreaker Ooze
+perception: 10
+ranged_attacks: null
+rarity: Uncommon
+saves:
+  fort: 17
+  fort_misc: null
+  misc: null
+  ref: 10
+  ref_misc: null
+  will: 8
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A vaultbreaker ooze can sense nearby motion through vibration and air
+    movement.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Motion Sense
+  range: null
+  raw_description: '**Motion Sense** A vaultbreaker ooze can sense nearby motion through
+    vibration and air movement.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The vaultbreaker ooze's metallic plasm alerts it to the presence of
+    metals with the __precious__ trait (including gold and platinum) within 30 feet.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Treasure Sense
+  range: null
+  raw_description: '**Treasure Sense** The vaultbreaker ooze''s metallic plasm alerts
+    it to the presence of metals with the __precious__ trait (including gold and platinum)
+    within 30 feet.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+senses:
+- motion sense 60 feet
+size: Large
+skills:
+- bonus: 17
+  misc: null
+  name: Thievery
+sources:
+- abbr: 'Pathfinder #158: Sixty Feet Under'
+  page_start: '87'
+  page_stop: null
+speed:
+- amount: 20
+  misc: null
+  type: Land
+- amount: 10
+  misc: null
+  type: climb
+spell_lists: null
+traits:
+- Mindless
+- Ooze

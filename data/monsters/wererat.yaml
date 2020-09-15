@@ -7,24 +7,131 @@ ability_mods:
   wis_mod: 2
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Human with fist +10 for 1d4+2 bludgeoning, or Small rat with Speed
+    30 feet, climb 10 feet.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __polymorph__,
+    __primal__, __transmutation__) Human with fist +10 for 1d4+2 bludgeoning, or Small
+    rat with Speed 30 feet, climb 10 feet.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: This curse affects only humanoids. **Saving Throw** DC 18 Fortitude
+    save. On each full moon, the cursed creature must succeed at another Fortitude
+    save or turn into a wererat until dawn. The creature is under the GM's control
+    and goes on a rampage for half the night before falling unconscious until dawn.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Curse of the Wererat
+  range: null
+  raw_description: '**Curse of the Wererat** (__curse__, __necromancy__, __primal__)
+    This curse affects only humanoids. **Saving Throw** DC 18 Fortitude save. On each
+    full moon, the cursed creature must succeed at another Fortitude save or turn
+    into a wererat until dawn. The creature is under the GM''s control and goes on
+    a rampage for half the night before falling unconscious until dawn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - necromancy
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a full moon appears in the night sky, the wererat must enter hybrid
+    form, can't Change Shape thereafter, becomes one size larger, increases its reach
+    by 5 feet, and increases the damage of its jaws by 2. When the moon sets or the
+    sun rises, the wererat returns to humanoid form and is fatigued for 2d4 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Moon Frenzy
+  range: null
+  raw_description: '**Moon Frenzy** (__polymorph__, __primal__, __transmutation__)
+    When a full moon appears in the night sky, the wererat must enter hybrid form,
+    can''t Change Shape thereafter, becomes one size larger, increases its reach by
+    5 feet, and increases the damage of its jaws by 2. When the moon sets or the sun
+    rises, the wererat returns to humanoid form and is fatigued for 2d4 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - polymorph
+  - primal
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The wererat deals 1d6 extra precision damage to flat-footed creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The wererat deals 1d6 extra precision damage
+    to flat-footed creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: null
-  effects: null
+  effect: The wererat gains a +2 circumstance bonus to AC against the triggering attack.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Nimble Dodge
   range: null
   raw_description: '**Nimble Dodge** [Reaction] **Trigger** The wererat is targeted
-    with a melee or ranged attack by an attacker it can see. **Eflect** The wererat
+    with a melee or ranged attack by an attacker it can see. **Effect** The wererat
     gains a +2 circumstance bonus to AC against the triggering attack.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The wererat is targeted with a melee or ranged attack by an attacker it
@@ -50,7 +157,6 @@ description: 'Wererats tend to be selfishly opportunistic, avaricious, and paran
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
 hp: 45
 hp_misc: null
-immunities: null
 items:
 - hand crossbow (20 bolts)
 - leather armor
@@ -59,7 +165,7 @@ languages:
 - Common
 - rat empathy
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -94,117 +200,17 @@ melee:
   - finesse
 name: Wererat
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Human with fist +10 for 1d4+2 bludgeoning, or Small rat with Speed
-    30 feet, climb 10 feet.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Charge Shape
-  range: null
-  raw_description: '**Charge Shape**   (__concentrate__, __polymorph__, __primal__,
-    __transmutation__) Human with fist +10 for 1d4+2 bludgeoning, or Small rat with
-    Speed 30 feet, climb 10 feet.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: This curse affects only humanoids. **Saving Throw** DC 18 Fortitude
-    save. On each full moon, the cursed creature must succeed at another Fortitude
-    save or turn into a wererat until dawn. The creature is under the GM's control
-    and goes on a rampage for half the night before falling unconscious until dawn.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Curse of the Wererat
-  range: null
-  raw_description: '**Curse of the Wererat** (__curse__, __necromancy__, __primal__)
-    This curse affects only humanoids. **Saving Throw** DC 18 Fortitude save. On each
-    full moon, the cursed creature must succeed at another Fortitude save or turn
-    into a wererat until dawn. The creature is under the GM''s control and goes on
-    a rampage for half the night before falling unconscious until dawn.'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - necromancy
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When a full moon appears in the night sky, the wererat must enter hybrid
-    form, can't Change Shape thereafter, becomes one size larger, increases its reach
-    by 5 feet, and increases the damage of its jaws by 2. When the moon sets or the
-    sun rises, the wererat returns to humanoid form and is fatigued for 2d4 hours.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Moon Frenzy
-  range: null
-  raw_description: '**Moon Frenzy** (__polymorph__, __primal__, __transmutation__)
-    When a full moon appears in the night sky, the wererat must enter hybrid form,
-    can''t Change Shape thereafter, becomes one size larger, increases its reach by
-    5 feet, and increases the damage of its jaws by 2. When the moon sets or the sun
-    rises, the wererat returns to humanoid form and is fatigued for 2d4 hours.'
-  requirements: null
-  success: null
-  traits:
-  - polymorph
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The wererat deals 1d6 extra precision damage to flat-footed creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The wererat deals 1d6 extra precision damage
-    to flat-footed creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: hand crossbow
   plus_damage: null
   to_hit: 10
   traits:
   - range increment 60 feet
   - reload 1
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 6
   fort_misc: null
@@ -217,66 +223,60 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The wererat can communicate with rodents.
-
-
-    '
+  description: The wererat can communicate with rodents.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Rat Empathy
   range: null
   raw_description: '**Rat Empathy** (__divination__, __primal__) The wererat can communicate
-    with rodents.
-
-
-    '
+    with rodents.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
   - primal
   trigger: null
 senses:
-- Perception +8
 - low-light vision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: +8 to Climb or Swim
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 4
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 8
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 329
+  page_start: '329'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Beast
 - Human
 - Humanoid
 - Werecreature
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: silver

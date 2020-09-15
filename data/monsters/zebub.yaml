@@ -7,6 +7,84 @@ ability_mods:
   wis_mod: 3
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw **DC 18 Fortitude; **Onset **1d4 days; **Stage 1 **__enfeebled
+    1__ (1 day); **Stage 2 **enfeebled 2 (1 day); **Stage 3 **enfeebled 3 (1 day)'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cocytan Filth
+  range: null
+  raw_description: '**Cocytan Filth** (__disease__, __virulent__) **Saving Throw **DC
+    18 Fortitude; **Onset **1d4 days; **Stage 1 **__enfeebled 1__ (1 day); **Stage
+    2 **enfeebled 2 (1 day); **Stage 3 **enfeebled 3 (1 day)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  - virulent
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The zebub records everything they see, and though they don't remember
+    all observations, they can pass them along to another creature. The zebub replays
+    10 minutes of witnessed events to a touched willing creature, which receives the
+    memories in a flash of information. By remaining in contact, the zebub can spend
+    additional 3-action activities to replay more information. After relaying their
+    visions to another, the zebub can't ever recall those events again.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Infernal Eye
+  range: null
+  raw_description: '**Infernal Eye** [Three Actions]  (__divine__, __divination__)
+    The zebub records everything they see, and though they don''t remember all observations,
+    they can pass them along to another creature. The zebub replays 10 minutes of
+    witnessed events to a touched willing creature, which receives the memories in
+    a flash of information. By remaining in contact, the zebub can spend additional
+    3-action activities to replay more information. After relaying their visions to
+    another, the zebub can''t ever recall those events again.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - divination
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The zebub's Strikes deal an additional 1d6 precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The zebub''s Strikes deal an additional 1d6
+    precision damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'Zebubs serve as __Hell''s__ messengers and spies. Their ability to share
@@ -28,22 +106,23 @@ hp: 30
 hp_misc: null
 immunities:
 - fire
-items: null
 languages:
 - Celestial
 - Draconic
 - Infernal
 - telepathy 100 feet
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+3
     type: piercing
   name: mandibles
   plus_damage:
-  - formula: 1d6
-    type: evil and Cocytan filth
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: Cocytan filth
   to_hit: 12
   traits:
   - evil
@@ -51,97 +130,14 @@ melee:
   - magical
 name: Zebub
 perception: 12
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw **DC 18 Fortitude; **Onset **1d4 days; **Stage 1 **__enfeebled
-    1__ (1 day); **Stage 2 **enfeebled 2 (1 day); **Stage 3 **enfeebled 3 (1 day)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Cocytan Filth
-  range: null
-  raw_description: '**Cocytan Filth** (__disease__, __virulent__) **Saving Throw **DC
-    18 Fortitude; **Onset **1d4 days; **Stage 1 **__enfeebled 1__ (1 day); **Stage
-    2 **enfeebled 2 (1 day); **Stage 3 **enfeebled 3 (1 day)'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  - virulent
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The zebub records everything they see, and though they don't remember
-    all observations, they can pass them along to another creature. The zebub replays
-    10 minutes of witnessed events to a touched willing creature, which receives the
-    memories in a flash of information. By remaining in contact, the zebub can spend
-    additional 3-action activities to replay more information. After relaying their
-    visions to another, the zebub can't ever recall those events again.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Infernal Eye
-  range: null
-  raw_description: '**Infernal Eye** [Three Actions]  (__divine__, __divination__)
-    The zebub records everything they see, and though they don''t remember all observations,
-    they can pass them along to another creature. The zebub replays 10 minutes of
-    witnessed events to a touched willing creature, which receives the memories in
-    a flash of information. By remaining in contact, the zebub can spend additional
-    3-action activities to replay more information. After relaying their visions to
-    another, the zebub can''t ever recall those events again.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - divination
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The zebub's Strikes deal an additional 1d6 precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The zebub''s Strikes deal an additional 1d6
-    precision damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
-  type: physical (except silver)
+  misc: except <a style="text-decoration:underline" href="Equipment.aspx?ID=277">silver</a>
+  type: physical
 - amount: 5
-  type: poison
-ritual_lists:
-- dc: 17
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: infernal pact
-      requirement: null
-  to_hit: null
+  type: poison
 saves:
   fort: 8
   fort_misc: null
@@ -150,75 +146,79 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - greater darkvision
 size: Small
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 8
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 9
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 10
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 72
+  page_start: '72'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 17
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-    - frequency: swarm creatures only
-      name: summon animal
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: message
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: dimension door
+  - level: 4
+    spells:
+    - misc: at will
+      name: dimension door
+  - level: 2
+    spells:
+    - misc: at will; self only
+      name: invisibility
+    - misc: swarm creatures only
+      name: summon animal
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: infernal pact
+  spells_source: Rituals
 traits:
-- LE
-- Small
 - Devil
 - Fiend
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: good

@@ -7,6 +7,103 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a vampiric mist damages a creature with a misty tendril Strike,
+    the creature must attempt a DC 20 Fortitude save. If the Strike was a critical
+    hit, the outcome of the creature's save is one degree worse than the result of
+    the saving throw. Any temporary Hit Points the vampiric mist gains from Blood
+    Siphon fade after 1 hour.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Siphon
+  range: null
+  raw_description: '**Blood Siphon** When a vampiric mist damages a creature with
+    a misty tendril Strike, the creature must attempt a DC 20 Fortitude save. If the
+    Strike was a critical hit, the outcome of the creature''s save is one degree worse
+    than the result of the saving throw. Any temporary Hit Points the vampiric mist
+    gains from Blood Siphon fade after 1 hour.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is unaffected.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __drained 1__, and the vampiric mist gains 5 temporary
+    Hit Points.
+  effect: null
+  failure: The creature is __drained 1__, and the vampiric mist gains 5 temporary
+    Hit Points.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is __drained 1__, and the vampiric mist
+    gains 5 temporary Hit Points.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is drained 2. The vampiric mist gains 10 temporary
+    Hit Points and takes on an intense red until the end of its next turn. During
+    this time, it gains a +2 status bonus to AC and saves and is __quickened__. It
+    can use its extra action only to Strike.
+  critical_success: null
+  description: The creature is drained 2. The vampiric mist gains 10 temporary Hit
+    Points and takes on an intense red until the end of its next turn. During this
+    time, it gains a +2 status bonus to AC and saves and is __quickened__. It can
+    use its extra action only to Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is drained 2. The vampiric mist
+    gains 10 temporary Hit Points and takes on an intense red until the end of its
+    next turn. During this time, it gains a +2 status bonus to AC and saves and is
+    __quickened__. It can use its extra action only to Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'Though they''re often mistaken for __vampires__ in gaseous form or an
@@ -41,66 +138,31 @@ hp: 35
 hp_misc: null
 immunities:
 - precision
-items: null
 languages:
 - Aklo
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6
-    type: slashing damage
+    formula: null
+    type: 2d6 slashing damage
   name: misty tendril
   plus_damage:
-  - formula: 1d6
-    type: persistent bleed damage and blood siphon
+  - formula: null
+    type: 1d6 persistent bleed damage
+  - formula: null
+    type: blood siphon
   to_hit: 10
   traits:
   - agile
   - finesse
 name: Vampiric Mist
 perception: 9
-proactive_abilities:
-- action_cost: None
-  critical_failure: The creature is drained 2. The vampiric mist gains 10 temporary
-    Hit Points and takes on an intense red until the end of its next turn. During
-    this time, it gains a +2 status bonus to AC and saves and is quickened. It can
-    use its extra action only to Strike.
-  critical_success: null
-  description: "When a vampiric mist damages a creature with a misty tendril Strike,\
-    \ the creature must attempt a DC 20 Fortitude save. If the Strike was a critical\
-    \ hit, the outcome of the creature's save is one degree worse than the result\
-    \ of the saving throw. Any temporary Hit Points the vampiric mist gains from Blood\
-    \ Siphon fade after 1 hour. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is drained 1, and the vampiric mist gains 5 temporary Hit
-    Points.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Siphon
-  range: null
-  raw_description: "**Blood Siphon** When a vampiric mist damages a creature with\
-    \ a misty tendril Strike, the creature must attempt a DC 20 Fortitude save. If\
-    \ the Strike was a critical hit, the outcome of the creature's save is one degree\
-    \ worse than the result of the saving throw. Any temporary Hit Points the vampiric\
-    \ mist gains from Blood Siphon fade after 1 hour. \n\n**Success** The creature\
-    \ is unaffected. \n\n**Failure** The creature is __drained 1__, and the vampiric\
-    \ mist gains 5 temporary Hit Points. \n\n**Critical Failure** The creature is\
-    \ drained 2. The vampiric mist gains 10 temporary Hit Points and takes on an intense\
-    \ red until the end of its next turn. During this time, it gains a +2 status bonus\
-    \ to AC and saves and is __quickened__. It can use its extra action only to Strike."
-  requirements: null
-  success: The creature is unaffected.
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: physical
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -119,11 +181,11 @@ sense_abilities:
     mist can't wear or interact with objects. It also can't enter water or other fluids,
     and it's treated as Tiny for the purpose of how wind affects it.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Misty Form
   range: null
   raw_description: '**Misty Form** A vampiric mist''s body is composed of a semisolid
@@ -133,6 +195,8 @@ sense_abilities:
     enter water or other fluids, and it''s treated as Tiny for the purpose of how
     wind affects it.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -142,44 +206,44 @@ sense_abilities:
   description: A vampiric mist can sense creatures that have blood within 60 feet.
     It can sense exposed blood within a mile.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Sense Blood
   range: null
   raw_description: '**Sense Blood** A vampiric mist can sense creatures that have
     blood within 60 feet. It can sense exposed blood within a mile.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +9
 - darkvision
 - sense blood (imprecise) 60 feet
 size: Medium
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 10
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 278
+  page_start: '278'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- NE
-- Medium
 - Aberration
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: fire

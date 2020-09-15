@@ -7,6 +7,66 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The rust monster attempts to Disarm a metal item a creature is holding
+    using its antenna (with the same modifier as an antenna Strike). On a success,
+    the item is subject to the rust monster's rust ability (see below) in addition
+    to the effects of the Disarm, and if the check to Disarm is a critical success,
+    the rust monster drops the item on the ground in its own space.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Antenna Disarm
+  range: null
+  raw_description: '**Antenna Disarm** [One Action]  The rust monster attempts to
+    Disarm a metal item a creature is holding using its antenna (with the same modifier
+    as an antenna Strike). On a success, the item is subject to the rust monster''s
+    rust ability (see below) in addition to the effects of the Disarm, and if the
+    check to Disarm is a critical success, the rust monster drops the item on the
+    ground in its own space.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A rust monster's antenna causes metal to rapidly rust and corrode.
+    If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust
+    monster deals 2d6 damage (doubled on a critical hit) to a metal item the target
+    is wearing or holding, ignoring its Hardness. If the rust monster hits an unattended
+    metal item, the item takes this damage automatically. If a creature uses the Shield
+    Block reaction with a metal shield against an antenna attack, the shield is automatically
+    broken, but no other item is rusted on that attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rust
+  range: null
+  raw_description: '**Rust** A rust monster''s antenna causes metal to rapidly rust
+    and corrode. If it succeeds at an antenna Strike or Disarm attempt with its antenna,
+    the rust monster deals 2d6 damage (doubled on a critical hit) to a metal item
+    the target is wearing or holding, ignoring its Hardness. If the rust monster hits
+    an unattended metal item, the item takes this damage automatically. If a creature
+    uses the Shield Block reaction with a metal shield against an antenna attack,
+    the shield is automatically broken, but no other item is rusted on that attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -14,17 +74,19 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The rust monster makes a tail Strike against the triggering creature.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Tail Trip
   range: null
   raw_description: '**Tail Trip** [Reaction] **Trigger** A creature carrying a metal
     item attempts to move out of a square within reach of the rust monster''s tail.
     **Effect** The rust monster makes a tail Strike against the triggering creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature carrying a metal item attempts to move out of a square within
@@ -61,13 +123,12 @@ description: 'Found in lost dungeons, deep caves, and abandoned mines, rust mons
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 18'
 hp: 40
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: rust
   name: antenna
   plus_damage: null
   to_hit: 10
@@ -95,68 +156,7 @@ melee:
   - finesse
 name: Rust Monster
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The rust monster attempts to Disarm a metal item a creature is holding
-    using its antenna (with the same modifier as an antenna Strike). On a success,
-    the item is subject to the rust monster's rust ability (see below) in addition
-    to the effects of the Disarm, and if the check to Disarm is a critical success,
-    the rust monster drops the item on the ground in its own space.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Antenna Disarm
-  range: null
-  raw_description: '**Antenna Disarm**   The rust monster attempts to Disarm a metal
-    item a creature is holding using its antenna (with the same modifier as an antenna
-    Strike). On a success, the item is subject to the rust monster''s rust ability
-    (see below) in addition to the effects of the Disarm, and if the check to Disarm
-    is a critical success, the rust monster drops the item on the ground in its own
-    space.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A rust monster's antenna causes metal to rapidly rust and corrode.
-    If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust
-    monster deals 2d6 damage (doubled on a critical hit) to a metal item the target
-    is wearing or holding, ignoring its Hardness. If the rust monster hits an unattended
-    metal item, the item takes this damage automatically. If a creature uses the Shield
-    Block reaction with a metal shield against an antenna attack, the shield is automatically
-    broken, but no other item is rusted on that attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rust
-  range: null
-  raw_description: '**Rust** A rust monster''s antenna causes metal to rapidly rust
-    and corrode. If it succeeds at an antenna Strike or Disarm attempt with its antenna,
-    the rust monster deals 2d6 damage (doubled on a critical hit) to a metal item
-    the target is wearing or holding, ignoring its Hardness. If the rust monster hits
-    an unattended metal item, the item takes this damage automatically. If a creature
-    uses the Shield Block reaction with a metal shield against an antenna attack,
-    the shield is automatically broken, but no other item is rusted on that attack.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 8
   fort_misc: null
@@ -171,40 +171,39 @@ sense_abilities:
   critical_success: null
   description: A rust monster can smell metal as a precise sense.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Metal Scent
   range: null
   raw_description: '**Metal Scent** A rust monster can smell metal as a precise sense.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +8
 - darkvision
 - metal scent 30 feet
 size: Medium
 skills:
 - bonus: 7
   misc: +13 to Disarm a metal item
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 283
+  page_start: '283'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Aberration
-type: Creature
-weaknesses: null

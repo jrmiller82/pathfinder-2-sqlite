@@ -7,64 +7,192 @@ ability_mods:
   wis_mod: 1
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a cloud of frost that deals 7d6 cold damage in
+    a 30-foot cone (DC 24 basic Reflex save). It can't use Breath Weapon again for
+    1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __cold__, __evocation__)
+    The dragon breathes a cloud of frost that deals 7d6 cold damage in a 30-foot cone
+    (DC 24 basic Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - cold
+  - evocation
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one tail Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one tail Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the dragon scores a critical hit with a Strike, it recharges its
+    Breath Weapon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** When the dragon scores a critical hit with
+    a Strike, it recharges its Breath Weapon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The dragon slams into the ground. It can do this if it's on the ground
+    or Flying within 10 feet of the ground. Each creature on the ground within 10
+    feet must succeed at a DC 24 Reflex save or fall prone and take 2d6 bludgeoning
+    damage. The dragon can then Step.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ground Slam
+  range: null
+  raw_description: '**Ground Slam** [One Action]  The dragon slams into the ground.
+    It can do this if it''s on the ground or Flying within 10 feet of the ground.
+    Each creature on the ground within 10 feet must succeed at a DC 24 Reflex save
+    or fall prone and take 2d6 bludgeoning damage. The dragon can then Step.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A white dragon can climb on ice as though it had the listed climb Speed.
+    It ignores difficult terrain and greater difficult terrain from ice and snow and
+    doesn't risk falling when crossing ice.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ice Climb
+  range: null
+  raw_description: '**Ice Climb** A white dragon can climb on ice as though it had
+    the listed climb Speed. It ignores difficult terrain and greater difficult terrain
+    from ice and snow and doesn''t risk falling when crossing ice.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon reshapes a cube of ice or snow it touches, up to 10 feet
+    across. Any creature standing atop the ice must succeed at a DC 15 Reflex save
+    or __Acrobatics__ check. On a failure, the creature falls __prone__ atop the ice;
+    on a critical failure, it falls off the ice entirely and is also prone.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shape Ice
+  range: null
+  raw_description: '**Shape Ice** [Two Actions]  (__arcane__, __transmutation__, __water__)
+    The dragon reshapes a cube of ice or snow it touches, up to 10 feet across. Any
+    creature standing atop the ice must succeed at a DC 15 Reflex save or __Acrobatics__
+    check. On a failure, the creature falls __prone__ atop the ice; on a critical
+    failure, it falls off the ice entirely and is also prone.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - transmutation
+  - water
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 20
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: The dragon's blood sprays on the creature, dealing 1d6 cold damage. A creature
+    that takes cold damage in this way is slowed 1 for 1 round.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 20 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The dragon's blood sprays on the creature, dealing 1d6 cold damage. A creature
-    that takes cold damage in this way is slowed 1 for 1 round.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Freezing Blood
-  range: null
-  raw_description: '**Freezing Blood** [Reaction] (__arcane__, __cold__); **Trigger**
-    An adjacent creature deals piercing or slashing damage to the dragon. **Effect**
-    The dragon''s blood sprays on the creature, dealing 1d6 cold damage. A creature
-    that takes cold damage in this way is slowed 1 for 1 round.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - cold
   trigger: An adjacent creature deals piercing or slashing damage to the dragon.
 description: 'The most feral and least intelligent of all the chromatic dragons, white
   dragons are brutish, predatory, and chiefly motivated by self-preservation. Nearly
@@ -99,19 +227,18 @@ immunities:
 - cold
 - paralyzed
 - sleep
-items: null
 languages:
 - Draconic
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: cold
+  - formula: null
+    type: 1d6 cold
   to_hit: 17
   traits:
   - cold
@@ -136,145 +263,7 @@ melee:
   - reach 15 feet
 name: Young White Dragon
 perception: 13
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a cloud of frost that deals 7d6 cold damage in
-    a 30-foot cone (DC 24 basic Reflex save). It can't use Breath Weapon again for
-    1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__arcane__, __cold__, __evocation__)
-    The dragon breathes a cloud of frost that deals 7d6 cold damage in a 30-foot cone
-    (DC 24 basic Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - cold
-  - evocation
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one tail Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one tail Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the dragon scores a critical hit with a Strike, it recharges its
-    Breath Weapon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** When the dragon scores a critical hit with
-    a Strike, it recharges its Breath Weapon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The dragon slams into the ground. It can do this if it's on the ground
-    or Flying within 10 feet of the ground. Each creature on the ground within 10
-    feet must succeed at a DC 24 Reflex save or fall prone and take 2d6 bludgeoning
-    damage. The dragon can then Step.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ground Slam
-  range: null
-  raw_description: '**Ground Slam**   The dragon slams into the ground. It can do
-    this if it''s on the ground or Flying within 10 feet of the ground. Each creature
-    on the ground within 10 feet must succeed at a DC 24 Reflex save or fall prone
-    and take 2d6 bludgeoning damage. The dragon can then Step.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A white dragon can climb on ice as though it had the listed climb Speed.
-    It ignores difficult terrain and greater difficult terrain from ice and snow and
-    doesn't risk falling when crossing ice.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ice Climb
-  range: null
-  raw_description: '**Ice Climb** A white dragon can climb on ice as though it had
-    the listed climb Speed. It ignores difficult terrain and greater difficult terrain
-    from ice and snow and doesn''t risk falling when crossing ice.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon reshapes a cube of ice or snow it touches, up to 10 feet
-    across. Any creature standing atop the ice must succeed at a DC 15 Reflex save
-    or __Acrobatics__ check. On a failure, the creature falls __prone__ atop the ice;
-    on a critical failure, it falls off the ice entirely and is also prone.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shape Ice
-  range: null
-  raw_description: '**Shape Ice** [Two Actions]  (__arcane__, __transmutation__, __water__)
-    The dragon reshapes a cube of ice or snow it touches, up to 10 feet across. Any
-    creature standing atop the ice must succeed at a DC 15 Reflex save or __Acrobatics__
-    check. On a failure, the creature falls __prone__ atop the ice; on a critical
-    failure, it falls off the ice entirely and is also prone.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - transmutation
-  - water
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: fire
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -290,21 +279,22 @@ sense_abilities:
   description: Snow doesn't impair a white dragon's vision; it ignores concealment
     from snowfall.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Snow Vision
   range: null
   raw_description: '**Snow Vision** Snow doesn''t impair a white dragon''s vision;
     it ignores concealment from snowfall.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +13
 - darkvision
 - scent (imprecise) 60 feet
 - snow vision
@@ -312,35 +302,38 @@ size: Large
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 14
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 113
+  page_start: '113'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 80
+  misc: null
   type: fly
 - amount: 30
+  misc: null
   type: ice climb
 spell_lists: null
 traits:
-- CE
-- Large
 - Cold
 - Dragon
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: fire

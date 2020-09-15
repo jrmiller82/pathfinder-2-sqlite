@@ -7,6 +7,64 @@ ability_mods:
   wis_mod: 2
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The grodair transforms all soil, sand, or similar sediment in a 10-foot
+    emanation into mud for 1 round. This mud is difficult terrain for creatures other
+    than grodairs.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Muddy Field
+  range: null
+  raw_description: '**Muddy Field** [One Action]  (__primal__, __transmutation__,
+    __water__) The grodair transforms all soil, sand, or similar sediment in a 10-foot
+    emanation into mud for 1 round. This mud is difficult terrain for creatures other
+    than grodairs.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - primal
+  - transmutation
+  - water
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The grodair causes water to pour from a magical sac on its spine, either
+    a stream of water at a rate of 1 gallon per round, or a fountain in a 5-foot-long
+    stream at a rate of 5 gallons per round. It can stop the flow of water as a single
+    action.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Organ of Endless Water
+  range: null
+  raw_description: '**Organ of Endless Water** [One Action]  (__conjuration__, __manipulate__,
+    __primal__, __water__) The grodair causes water to pour from a magical sac on
+    its spine, either a stream of water at a rate of 1 gallon per round, or a fountain
+    in a 5-foot-long stream at a rate of 5 gallons per round. It can stop the flow
+    of water as a single action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - conjuration
+  - manipulate
+  - primal
+  - water
+  trigger: null
 alignment: CN
 automatic_abilities:
 - action_cost: None
@@ -17,11 +75,11 @@ automatic_abilities:
     22 basic Reflex save). A creature that fails its save is pushed 5 feet (or 10
     feet on a critical failure).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Death Flood
   range: null
   raw_description: '**Death Flood** (__conjuration__, __primal__, __water__) When
@@ -30,6 +88,8 @@ automatic_abilities:
     save). A creature that fails its save is pushed 5 feet (or 10 feet on a critical
     failure).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - conjuration
@@ -75,13 +135,11 @@ description: 'Grodairs are bizarre fishlike creature native to the First World. 
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 20'
 hp: 88
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aquan
 - Sylvan
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -102,64 +160,11 @@ melee:
   traits: null
 name: Grodair
 perception: 13
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The grodair transforms all soil, sand, or similar sediment in a 10-foot
-    emanation into mud for 1 round. This mud is difficult terrain for creatures other
-    than grodairs.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Muddy Field
-  range: null
-  raw_description: '**Muddy Field**   (__primal__, __transmutation__, __water__) The
-    grodair transforms all soil, sand, or similar sediment in a 10-foot emanation
-    into mud for 1 round. This mud is difficult terrain for creatures other than grodairs.'
-  requirements: null
-  success: null
-  traits:
-  - primal
-  - transmutation
-  - water
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The grodair causes water to pour from a magical sac on its spine, either
-    a stream of water at a rate of 1 gallon per round, or a fountain in a 5-foot-long
-    stream at a rate of 5 gallons per round. It can stop the flow of water as a single
-    action.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Organ of Endless Water
-  range: null
-  raw_description: '**Organ of Endless Water**   (__conjuration__, __manipulate__,
-    __primal__, __water__) The grodair causes water to pour from a magical sac on
-    its spine, either a stream of water at a rate of 1 gallon per round, or a fountain
-    in a 5-foot-long stream at a rate of 5 gallons per round. It can stop the flow
-    of water as a single action.'
-  requirements: null
-  success: null
-  traits:
-  - conjuration
-  - manipulate
-  - primal
-  - water
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6
-    type: bludgeoning
+    formula: null
+    type: 3d6 bludgeoning
   name: water jet
   plus_damage:
   - formula: null
@@ -167,11 +172,6 @@ ranged:
   to_hit: 13
   traits:
   - range increment 60 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 15
   fort_misc: null
@@ -180,48 +180,45 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 11
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 140
+  page_start: '140'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: swim
 spell_lists:
-- dc: 22
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 22
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: control water
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- CN
-- Medium
 - Amphibious
 - Beast
 - Fey
 - Water
-type: Creature
-weaknesses: null

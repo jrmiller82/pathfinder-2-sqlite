@@ -8,27 +8,64 @@ ability_mods:
 ac: 29
 ac_special:
 - descr: 31 with tightened bracts
-alignment: N
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: Whenever the counteflora takes cold damage, it takes a -10-foot circumstance
-    penalty to Speed for 1 round.
+  description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Frost Susceptibility
+  maximum_duration: 6 rounds
+  name: Black Seed Cloud
   range: null
-  raw_description: '**Frost Susceptibility** Whenever the counteflora takes cold damage,
-    it takes a -10-foot circumstance penalty to Speed for 1 round.'
+  raw_description: '**Black Seed Cloud** [Two Actions]  The counteflora releases a
+    cloud of black seedpods in a 15-foot-radius emanation. Non-counteflora creatures
+    in the area must succeed at a Fortitude save or breathe in the toxic seeds. (Against
+    plants and fungi, the seeds burrow into the creatures'' flesh rather than infiltrate
+    their lungs.)
+
+
+    **Counteflora Toxin** (__contact__ [for plants and fungi] or __inhaled__, __poison__)
+    **Saving Throw** DC 30 Fortitude (DC 32 for plants and fungi); **Maximum Duration**
+    6 rounds; **Stage 1** 4d6 poison damage and __enfeebled__ 1 (1 round); **Stage
+    2** 6d6 poison damage, enfeebled 1, and __fascinated__ (1 round)'
   requirements: null
+  saving_throw: DC 30 Fortitude (DC 32 for plants and fungi)
+  stages:
+  - effect: 4d6 poison damage and __enfeebled__ 1 (1 round)
+  - effect: 6d6 poison damage, enfeebled 1, and __fascinated__ (1 round)
   success: null
   traits: null
   trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The counteflora makes up to four headbutt Strikes (see Flower Headbutt),
+    each against a different creature within reach.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Furious Swing
+  range: null
+  raw_description: '**Furious Swing** [Three Actions]  (__attack__) **Requirements**
+    The counteflora''s bracts are tightened; **Effect** The counteflora makes up to
+    four headbutt Strikes (see Flower Headbutt), each against a different creature
+    within reach.'
+  requirements: The counteflora's bracts are tightened
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+alignment: N
+automatic_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -41,23 +78,28 @@ automatic_abilities:
     bracts are tightened. The counteflora can loosen its bracts as a free action (this
     action has the __concentrate__ trait).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Tighten Bracts
+  maximum_duration: null
+  name: Frost Susceptibility
   range: null
-  raw_description: '**Tighten Bracts** [Two Actions] The counteflora stiffens the
-    specialized leaves around its flower head, protecting its sensitive seedpods.
-    While its bracts are tightened, a counteflora gains a +2 circumstance bonus to
-    AC and can use its head Strike and Furious Swing abilities, but it cannot use
-    its Black Seed Cloud ability and it loses its sense of sight (so it must rely
-    on its imprecise tremorsense when targeting other creatures). The counteflora
-    can''t use its head Strike of Furious Swing ability unless its bracts are tightened.
-    The counteflora can loosen its bracts as a free action (this action has the __concentrate__
-    trait).'
+  raw_description: '**Frost Susceptibility** Whenever the counteflora takes cold damage,
+    it takes a –10-foot circumstance penalty to Speed for 1 round.
+
+
+    **Tighten Bracts** [Two Actions] The counteflora stiffens the specialized leaves
+    around its flower head, protecting its sensitive seedpods. While its bracts are
+    tightened, a counteflora gains a +2 circumstance bonus to AC and can use its head
+    Strike and Furious Swing abilities, but it cannot use its Black Seed Cloud ability
+    and it loses its sense of sight (so it must rely on its imprecise tremorsense
+    when targeting other creatures). The counteflora can''t use its head Strike of
+    Furious Swing ability unless its bracts are tightened. The counteflora can loosen
+    its bracts as a free action (this action has the __concentrate__ trait).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -85,11 +127,9 @@ description: 'The counteflora resembles an oversized dandelion with black flower
 hp: 220
 hp_misc: null
 immunities:
-- poison
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+9
@@ -111,72 +151,7 @@ melee:
   - sweep
 name: Counteflora
 perception: 18
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: 'The counteflora releases a cloud of black seedpods in a 15-foot-radius
-    emanation. Non-counteflora creatures in the area must succeed at a Fortitude save
-    or breathe in the toxic seeds. (Against plants and fungi, the seeds burrow into
-    the creatures'' flesh rather than infiltrate their lungs.)
-
-
-    **Counteflora Toxin** (__contact__ [for plants and fungi] or __inhaled__, __poison__)
-    **Saving Throw** DC 30 Fortitude (DC 32 for plants and fungi); **Maximum Duration**
-    6 rounds; **Stage 1** 4d6 poison damage and __enfeebled__ 1 (1 round); **Stage
-    2** 6d6 poison damage, enfeebled 1, and __fascinated__ (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Black Seed Cloud
-  range: null
-  raw_description: '**Black Seed Cloud** [Two Actions]  The counteflora releases a
-    cloud of black seedpods in a 15-foot-radius emanation. Non-counteflora creatures
-    in the area must succeed at a Fortitude save or breathe in the toxic seeds. (Against
-    plants and fungi, the seeds burrow into the creatures'' flesh rather than infiltrate
-    their lungs.)
-
-
-    **Counteflora Toxin** (__contact__ [for plants and fungi] or __inhaled__, __poison__)
-    **Saving Throw** DC 30 Fortitude (DC 32 for plants and fungi); **Maximum Duration**
-    6 rounds; **Stage 1** 4d6 poison damage and __enfeebled__ 1 (1 round); **Stage
-    2** 6d6 poison damage, enfeebled 1, and __fascinated__ (1 round)'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The counteflora's bracts are tightened
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Furious Swing
-  range: null
-  raw_description: '**Furious Swing** [Three Actions]  (__attack__) **Requirements**
-    The counteflora''s bracts are tightened; **Effect** The counteflora makes up to
-    four headbutt Strikes (see Flower Headbutt), each against a different creature
-    within reach.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: cold
-- amount: 10
-  type: fire
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 22
   fort_misc: null
@@ -185,29 +160,31 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - tremorsense (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 23
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 20
   misc: +24 in jungles and flower fields
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #153: Life''s Long Shadow'
-  page_start: 78
+  page_start: '78'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Large
 - Plant
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold
+- amount: 10
+  misc: null
+  type: fire

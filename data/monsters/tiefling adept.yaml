@@ -7,6 +7,34 @@ ability_mods:
   wis_mod: 1
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The adept expends the power stored in its staff. This gives the adept the
+    ability to cast one prepared spell it had already previously cast today (choosing
+    a different spell level each time), without spending a spell slot. The adept must
+    still Cast the Spell and meet the spell's other requirements.
+  failure: null
+  frequency: Once per day; Requirements The adept hasn't acted yet on this turn.
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drain Bonded Item
+  range: null
+  raw_description: '**Drain Bonded Item** [Free Action]  **Frequency** Once per day;
+    **Requirements** The adept hasn''t acted yet on this turn. **Effect** The adept
+    expends the power stored in its staff. This gives the adept the ability to cast
+    one prepared spell it had already previously cast today (choosing a different
+    spell level each time), without spending a spell slot. The adept must still Cast
+    the Spell and meet the spell''s other requirements.'
+  requirements: The adept hasn't acted yet on this turn.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Tieflings are planar scions with fiendish blood. One of the most common
@@ -20,7 +48,6 @@ description: 'Tieflings are planar scions with fiendish blood. One of the most c
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 18'
 hp: 29
 hp_misc: null
-immunities: null
 items:
 - dagger
 - explorer's clothing
@@ -30,11 +57,11 @@ languages:
 - Abyssal
 - Common
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: bludgeoning
+    formula: null
+    type: 1d6 bludgeoning
   name: staff
   plus_damage: null
   to_hit: 6
@@ -42,8 +69,8 @@ melee:
   - two-handed 1d8
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: piercing
+    formula: null
+    type: 1d4 piercing
   name: dagger
   plus_damage: null
   to_hit: 7
@@ -53,30 +80,7 @@ melee:
   - versatile S
 name: Tiefling Adept
 perception: 6
-proactive_abilities:
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The adept hasn't acted yet on this turn.
-  effects: null
-  failure: null
-  frequency: Once per day
-  full_description: null
-  generic_description: null
-  name: Drain Bonded Item
-  range: null
-  raw_description: '**Drain Bonded Item** [Free Action]  **Frequency** Once per day;
-    **Requirements** The adept hasn''t acted yet on this turn. **Effect** The adept
-    expends the power stored in its staff. This gives the adept the ability to cast
-    one prepared spell it had already previously cast today (choosing a different
-    spell level each time), without spending a spell slot. The adept must still Cast
-    the Spell and meet the spell''s other requirements.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+1
@@ -88,11 +92,6 @@ ranged:
   - agile
   - thrown 10 feet
   - versatile S
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 5
   fort_misc: null
@@ -101,107 +100,93 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 9
   misc: null
-  name: 'Abyss Lore '
+  name: Abyss Lore
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 9
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 9
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 7
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 9
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 6
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 9
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 262
+  page_start: '262'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 21
-  misc: ''
-  name: Arcane Prepared Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 11
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: flaming sphere
-      requirement: null
-    - frequency: null
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: magic missile
-      requirement: null
-    - frequency: null
-      name: ray of enfeeblement
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: chill touch
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mage hand
-      requirement: null
-    - frequency: null
+    - misc: null
       name: shield
-      requirement: null
-    - frequency: null
+    - misc: null
       name: tanglefoot
-      requirement: null
-  to_hit: 11
-- dc: 17
+  constants: null
+  dc: 21
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
+      name: flaming sphere
+    - misc: null
+      name: invisibility
+  - level: 1
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: magic missile
+    - misc: null
+      name: ray of enfeeblement
+  spells_source: Arcane Prepared Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
       name: darkness
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
 traits:
-- CE
-- Medium
 - Human
 - Humanoid
 - Tiefling
-type: Creature
-weaknesses: null

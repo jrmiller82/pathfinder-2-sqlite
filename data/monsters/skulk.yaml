@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 2
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A skulk's Strikes deal an extra 1d6 precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** A skulk''s Strikes deal an extra 1d6 precision
+    damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'The cowardly and lazy skulks live on the fringes of organized societies
@@ -56,14 +78,13 @@ description: 'The cowardly and lazy skulks live on the fringes of organized soci
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 21
 hp_misc: null
-immunities: null
 items:
 - dagger (2)
 - shortsword
 languages:
 - Common
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+2
@@ -77,27 +98,7 @@ melee:
   - versatile S
 name: Skulk
 perception: 5
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A skulk's Strikes deal an extra 1d6 precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** A skulk''s Strikes deal an extra 1d6 precision
-    damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4+2
@@ -109,11 +110,6 @@ ranged:
   - agile
   - thrown 10 feet
   - versatile S
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 7
   fort_misc: null
@@ -129,78 +125,72 @@ sense_abilities:
   description: The skulk gains the benefit of the __Cover Tracks__ action in forests
     and subterranean settings without moving at half Speed.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Camouflaged Step
   range: null
   raw_description: '**Camouflaged Step** The skulk gains the benefit of the __Cover
     Tracks__ action in forests and subterranean settings without moving at half Speed.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The skulk''s skin shifts and changes to match the surroundings. As
-    long as most of their body is not covered by clothing or armor, the skulk gains
-    a +2 circumstance bonus to __Stealth__ checks to __Hide__.
-
-
-    '
+  description: The skulk's skin shifts and changes to match the surroundings. As long
+    as most of their body is not covered by clothing or armor, the skulk gains a +2
+    circumstance bonus to __Stealth__ checks to __Hide__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Chameleon Skin
   range: null
   raw_description: '**Chameleon Skin** The skulk''s skin shifts and changes to match
     the surroundings. As long as most of their body is not covered by clothing or
-    armor, the skulk gains a +2 circumstance bonus to __Stealth__ checks to __Hide__.
-
-
-    '
+    armor, the skulk gains a +2 circumstance bonus to __Stealth__ checks to __Hide__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +5
 - low-light vision
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 4
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 8
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 6
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 243
+  page_start: '243'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Medium
 - Humanoid
 - Skulk
-type: Creature
-weaknesses: null

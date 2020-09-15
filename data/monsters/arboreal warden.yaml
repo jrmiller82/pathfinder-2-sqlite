@@ -8,6 +8,28 @@ ability_mods:
 ac: 20
 ac_special:
 - descr: 22 with shield raised
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The arboreal warden Strides and then makes a shield bash Strike. If
+    the attack hits, the target is pushed 10 feet.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shield Push
+  range: null
+  raw_description: '**Shield Push** [Two Actions]  The arboreal warden Strides and
+    then makes a shield bash Strike. If the attack hits, the target is pushed 10 feet.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NG
 automatic_abilities:
 - action_cost: None
@@ -15,16 +37,18 @@ automatic_abilities:
   critical_success: null
   description: An arboreal warden takes 5 additional damage from axes.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Axe Vulnerability
   range: null
   raw_description: '**Axe Vulnerability** An arboreal warden takes 5 additional damage
     from axes.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -37,11 +61,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -52,6 +76,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -63,11 +89,11 @@ automatic_abilities:
   effect: You snap your shield in place to ward off a blow. Your shield prevents you
     from taking an amount of damage up to the shield's Hardness. You and the shield
     each take any remaining damage, possibly breaking or destroying the shield.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shield Block
   range: null
   raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
@@ -76,6 +102,8 @@ automatic_abilities:
     of damage up to the shield''s Hardness. You and the shield each take any remaining
     damage, possibly breaking or destroying the shield.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: While you have your shield raised, you would take damage from a physical
@@ -98,7 +126,6 @@ description: 'Arboreal wardens are the rangers of arboreal society. These itiner
   **__Recall Knowledge - Plant__ (__Nature__)**: DC 19'
 hp: 75
 hp_misc: null
-immunities: null
 items:
 - large bark shield (Hardness 3, Hit Points 20, BT 10)
 - stone longsword
@@ -107,7 +134,7 @@ languages:
 - Common
 - Sylvan
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+10
@@ -127,34 +154,14 @@ melee:
   traits: null
 name: Arboreal Warden
 perception: 11
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The arboreal warden Strides and then makes a shield bash Strike. If
-    the attack hits, the target is pushed 10 feet.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shield Push
-  range: null
-  raw_description: '**Shield Push** [Two Actions]  The arboreal warden Strides and
-    then makes a shield bash Strike. If the attack hits, the target is pushed 10 feet.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -163,33 +170,31 @@ saves:
   ref_misc: null
   will: 11
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +11
 - low-light vision
 size: Large
 skills:
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: +14 in forests
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 24
+  page_start: '24'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NG
-- Large
 - Plant
-type: Creature
 weaknesses:
 - amount: null
+  misc: null
   type: axe vulnerability
 - amount: 10
+  misc: null
   type: fire

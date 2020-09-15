@@ -8,6 +8,32 @@ ability_mods:
 ac: 16
 ac_special:
 - descr: 18 with shield raised
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If a biloko feasts on a human corpse for 1 minute or more, they gain
+    a +1 status bonus to attack rolls and a +2 status bonus to damage rolls for 1
+    hour.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Inspired Feast
+  range: null
+  raw_description: '**Inspired Feast** (__emotion__, __mental__) If a biloko feasts
+    on a human corpse for 1 minute or more, they gain a +1 status bonus to attack
+    rolls and a +2 status bonus to damage rolls for 1 hour.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - emotion
+  - mental
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -17,11 +43,11 @@ automatic_abilities:
   effect: You snap your shield in place to ward off a blow. Your shield prevents you
     from taking an amount of damage up to the shield's Hardness. You and the shield
     each take any remaining damage, possibly breaking or destroying the shield.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shield Block
   range: null
   raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
@@ -30,6 +56,8 @@ automatic_abilities:
     of damage up to the shield''s Hardness. You and the shield each take any remaining
     damage, possibly breaking or destroying the shield.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: While you have your shield raised, you would take damage from a physical
@@ -42,7 +70,6 @@ description: 'Rank-and-file bilokos stalk the jungles in small hunting bands.
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 15'
 hp: 19
 hp_misc: null
-immunities: null
 items:
 - spear
 - wooden shield (Hardness 3, 12 HP, BT 6)
@@ -50,7 +77,7 @@ languages:
 - Mwangi
 - Sylvan
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+3
@@ -69,31 +96,7 @@ melee:
   traits: null
 name: Biloko Warrior
 perception: 7
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If a biloko feasts on a human corpse for 1 minute or more, they gain
-    a +1 status bonus to attack rolls and a +2 status bonus to damage rolls for 1
-    hour.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Inspired Feast
-  range: null
-  raw_description: '**Inspired Feast** (__emotion__, __mental__) If a biloko feasts
-    on a human corpse for 1 minute or more, they gain a +1 status bonus to attack
-    rolls and a +2 status bonus to damage rolls for 1 hour.'
-  requirements: null
-  success: null
-  traits:
-  - emotion
-  - mental
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+3
@@ -103,11 +106,6 @@ ranged:
   to_hit: 7
   traits:
   - thrown 20 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 4
   fort_misc: null
@@ -116,50 +114,46 @@ saves:
   ref_misc: null
   will: 7
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 - scent (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 5
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 6
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 6
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #146: Cult of Cinders'
-  page_start: 82
+  page_start: '82'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 spell_lists:
-- dc: 17
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 17
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+  spell_lists:
+  - level: 1
     spells:
-    - frequency: null
+    - misc: null
       name: charm
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- NE
-- Small
 - Fey
-type: Creature
-weaknesses: null

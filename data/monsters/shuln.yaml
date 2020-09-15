@@ -7,6 +7,82 @@ ability_mods:
   wis_mod: 4
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any time the shuln scores a critical hit with a melee Strike, it also
+    deals the same amount of damage to the target's armor, bypassing any Hardness
+    lower than 10, like __adamantine__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Armor-Rending
+  range: null
+  raw_description: '**Armor-Rending** Any time the shuln scores a critical hit with
+    a melee Strike, it also deals the same amount of damage to the target''s armor,
+    bypassing any Hardness lower than 10, like __adamantine__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Shuln Saliva
+  range: null
+  raw_description: '**Shuln Saliva** (__incapacitation__, __poison__) **Saving Throw**
+    DC 32 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 2d6 poison damage
+    and __slowed 1__ (1 round); **Stage 2** 3d6 poison damage, and __slowed 1__ (1
+    round); **Stage 3** 4d6 poison damage and __paralyzed__ for 2d6 hours. Shuln saliva
+    overcomes the inexorable ability.'
+  requirements: null
+  saving_throw: DC 32 Fortitude
+  stages:
+  - effect: 2d6 poison damage and __slowed 1__ (1 round)
+  - effect: 3d6 poison damage, and __slowed 1__ (1 round)
+  - effect: 4d6 poison damage and __paralyzed__ for 2d6 hours. Shuln saliva overcomes
+      the inexorable ability.
+  success: null
+  traits:
+  - incapacitation
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Shulns can burrow into solid rock and any metal with a hardness less
+    than that of __adamantine__ like it is soil or loose rubble, leaving a tunnel
+    10 feet in diameter.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Unstoppable Burrow
+  range: null
+  raw_description: '**Unstoppable Burrow** Shulns can burrow into solid rock and any
+    metal with a hardness less than that of __adamantine__ like it is soil or loose
+    rubble, leaving a tunnel 10 feet in diameter.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Scourges of the upper Darklands, these enormous, mole-like monstrosities
@@ -51,11 +127,8 @@ description: 'Scourges of the upper Darklands, these enormous, mole-like monstro
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 35'
 hp: 195
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+10
@@ -79,83 +152,15 @@ melee:
   - reach 15 feet
 name: Shuln
 perception: 20
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any time the shuln scores a critical hit with a melee Strike, it also
-    deals the same amount of damage to the target's armor, bypassing any Hardness
-    lower than 10, like __adamantine__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Armor-Rending
-  range: null
-  raw_description: '**Armor-Rending** Any time the shuln scores a critical hit with
-    a melee Strike, it also deals the same amount of damage to the target''s armor,
-    bypassing any Hardness lower than 10, like __adamantine__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 32 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 2d6 poison damage and __slowed 1__ (1 round); **Stage 2** 3d6 poison damage,
-    and __slowed 1__ (1 round); **Stage 3** 4d6 poison damage and __paralyzed__ for
-    2d6 hours. Shuln saliva overcomes the inexorable ability.'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shuln Saliva
-  range: null
-  raw_description: '**Shuln Saliva** (__incapacitation__, __poison__) **Saving Throw**
-    DC 32 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 2d6 poison damage
-    and __slowed 1__ (1 round); **Stage 2** 3d6 poison damage, and __slowed 1__ (1
-    round); **Stage 3** 4d6 poison damage and __paralyzed__ for 2d6 hours. Shuln saliva
-    overcomes the inexorable ability.'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Shulns can burrow into solid rock and any metal with a hardness less
-    than that of __adamantine__ like it is soil or loose rubble, leaving a tunnel
-    10 feet in diameter.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Unstoppable Burrow
-  range: null
-  raw_description: '**Unstoppable Burrow** Shulns can burrow into solid rock and any
-    metal with a hardness less than that of __adamantine__ like it is soil or loose
-    rubble, leaving a tunnel 10 feet in diameter.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 10
-  type: physical (except adamantine or bludgeoning)
+  misc: except adamantine or bludgeoning
+  type: physical
 - amount: 15
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -164,35 +169,31 @@ saves:
   ref_misc: null
   will: 21
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +20
 - scent 30 feet
 - tremorsense (imprecise) 60 feet
 size: Huge
 skills:
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 294
+  page_start: '294'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: burrow
 - amount: null
+  misc: null
   type: unstoppable burrow
 spell_lists: null
 traits:
-- Rare
-- N
-- Huge
 - Beast
-type: Creature
-weaknesses: null

@@ -7,6 +7,84 @@ ability_mods:
   wis_mod: 4
 ac: 32
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The taiga giant calls upon their ancestors' spirits to rise up and protect
+    them, causing a cloak of spectral faces to shimmer and swirl around them. The
+    taiga giant's AC increases to 34 until the start of its next turn.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ancestral Guardian
+  range: null
+  raw_description: '**Ancestral Guardian** [One Action]  (__concentrate__) **Requirements**
+    The taiga giant must be protected by the ancestors; **Effect** The taiga giant
+    calls upon their ancestors'' spirits to rise up and protect them, causing a cloak
+    of spectral faces to shimmer and swirl around them. The taiga giant''s AC increases
+    to 34 until the start of its next turn.'
+  requirements: The taiga giant must be protected by the ancestors
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A taiga giant's prayers to their ancestors grant them spiritual protection.
+    If a taiga giant loses this protection (such as by taking too much damage when
+    using Guardian Spirit, or if the ancestors are counteracted by __dispel magic__),
+    it loses its immunity to the __controlled__ condition and its status bonus to
+    saving throws against enchantment and illusion effects. A taiga giant can once
+    again be Protected by the Ancestors by performing a 10-minute prayer as an activity
+    that has the __concentrate__ trait.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Protected by the Ancestors
+  range: null
+  raw_description: '**Protected by the Ancestors** (__divine__) A taiga giant''s prayers
+    to their ancestors grant them spiritual protection. If a taiga giant loses this
+    protection (such as by taking too much damage when using Guardian Spirit, or if
+    the ancestors are counteracted by __dispel magic__), it loses its immunity to
+    the __controlled__ condition and its status bonus to saving throws against enchantment
+    and illusion effects. A taiga giant can once again be Protected by the Ancestors
+    by performing a 10-minute prayer as an activity that has the __concentrate__ trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**__Throw Rock__** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CN
 automatic_abilities:
 - action_cost: Reaction
@@ -14,15 +92,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**__Catch Rock__** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -34,11 +114,11 @@ automatic_abilities:
     taking up to 20 energy damage or 30 mental damage. The giant takes any remaining
     damage; if it does, the spirits depart and the giant is no longer protected by
     the ancestors.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Guardian Spirit
   range: null
   raw_description: '**Guardian Spirit [Reaction]** **Trigger** The taiga giant has
@@ -47,10 +127,12 @@ automatic_abilities:
     to 20 energy damage or 30 mental damage. The giant takes any remaining damage;
     if it does, the spirits depart and the giant is no longer protected by the ancestors.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The taiga giant has Ancestral Guardian active and would take energy or
-    mental damage
+    mental damage;
 description: 'Taiga giants prefer a nomadic lifestyle, both to keep from depleting
   any one area''s resources while satiating their massive appetites and to satisfy
   a constant wanderlust. They are deeply spiritual and frequently commune with their
@@ -92,7 +174,7 @@ description: 'Taiga giants prefer a nomadic lifestyle, both to keep from depleti
 hp: 230
 hp_misc: null
 immunities:
-- controlled
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
 items:
 - +1 striking longspear
 - sack with 5 rocks
@@ -100,7 +182,7 @@ languages:
 - Common
 - Jotun
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+15
@@ -123,77 +205,7 @@ melee:
   - reach 15 feet
 name: Taiga Giant
 perception: 23
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The taiga giant must be protected by the ancestors
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ancestral Guardian
-  range: null
-  raw_description: '**Ancestral Guardian**   (__concentrate__) **Requirements** The
-    taiga giant must be protected by the ancestors; **Effect** The taiga giant calls
-    upon their ancestors'' spirits to rise up and protect them, causing a cloak of
-    spectral faces to shimmer and swirl around them. The taiga giant''s AC increases
-    to 34 until the start of its next turn.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A taiga giant's prayers to their ancestors grant them spiritual protection.
-    If a taiga giant loses this protection (such as by taking too much damage when
-    using Guardian Spirit, or if the ancestors are counteracted by __dispel magic__),
-    it loses its immunity to the __controlled__ condition and its status bonus to
-    saving throws against enchantment and illusion effects. A taiga giant can once
-    again be Protected by the Ancestors by performing a 10-minute prayer as an activity
-    that has the __concentrate__ trait.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Protected by the Ancestors
-  range: null
-  raw_description: '**Protected by the Ancestors** (__divine__) A taiga giant''s prayers
-    to their ancestors grant them spiritual protection. If a taiga giant loses this
-    protection (such as by taking too much damage when using Guardian Spirit, or if
-    the ancestors are counteracted by __dispel magic__), it loses its immunity to
-    the __controlled__ condition and its status bonus to saving throws against enchantment
-    and illusion effects. A taiga giant can once again be Protected by the Ancestors
-    by performing a 10-minute prayer as an activity that has the __concentrate__ trait.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**__Throw Rock__**   '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+15
@@ -204,9 +216,6 @@ ranged:
   traits:
   - brutal
   - range increment 120 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 25
   fort_misc: null
@@ -219,61 +228,53 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A taiga giant can see invisible creatures and objects as translucent
+  description: A taiga giant can see invisible creatures and objects as translucent
     shapes, and they are __concealed__ to the taiga giant.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: See Invisibility
   range: null
   raw_description: '**See Invisibility** A taiga giant can see invisible creatures
-    and objects as translucent shapes, and they are __concealed__ to the taiga giant.
-
-
-    '
+    and objects as translucent shapes, and they are __concealed__ to the taiga giant.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +23
 - low-light vision
 - see invisibility
 size: Huge
 skills:
 - bonus: 22
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 16
   misc: null
-  name: 'Genealogy Lore '
+  name: Genealogy Lore
 - bonus: 20
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 10
   misc: +22 in undergrowth
-  name: 'Stealth '
+  name: Stealth
 - bonus: 25
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 126
+  page_start: '126'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CN
-- Huge
 - Giant
 - Humanoid
-type: Creature
-weaknesses: null

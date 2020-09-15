@@ -7,6 +7,49 @@ ability_mods:
   wis_mod: 1
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The polar bear gains a +3 circumstance bonus to damage rolls against
+    creatures it has __grabbed__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mauler
+  range: null
+  raw_description: '**Mauler** The polar bear gains a +3 circumstance bonus to damage
+    rolls against creatures it has __grabbed__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The polar bear's Strikes deal an additional 1d6 precision damage to
+    __flat-footed__ creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** The polar bear''s Strikes deal an additional
+    1d6 precision damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Polar bears are known for their pale fur, with black eyes, lips, and
@@ -21,11 +64,8 @@ description: 'Polar bears are known for their pale fur, with black eyes, lips, a
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 20'
 hp: 73
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -47,51 +87,7 @@ melee:
   - agile
 name: Polar Bear
 perception: 12
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The polar bear gains a +3 circumstance bonus to damage rolls against
-    creatures it has __grabbed__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mauler
-  range: null
-  raw_description: '**Mauler** The polar bear gains a +3 circumstance bonus to damage
-    rolls against creatures it has __grabbed__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The polar bear's Strikes deal an additional 1d6 precision damage to
-    __flat-footed__ creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** The polar bear''s Strikes deal an additional
-    1d6 precision damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 14
   fort_misc: null
@@ -100,35 +96,31 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - low-light vision
 - scent (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 14
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: +14 in icy or snowy areas
-  name: 'Stealth '
+  name: Stealth
 - bonus: 10
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 36
+  page_start: '36'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

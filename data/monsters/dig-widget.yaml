@@ -7,6 +7,59 @@ ability_mods:
   wis_mod: 0
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The dig-widget Leaps up 20 feet onto a creature or object and attempts
+    a corkscrew Strike against it. If the Strike damages the target, the dig-widget
+    attaches to the target (typically to the back of a creature). This is similar
+    to __Grabbing__ the creature, but the dig-widget moves with that creature rather
+    than holding it in place. While attached, the dig-widget can't use its corkscrew.
+    The dig-widget can be __Shoved__ off, or it can detach itself with an Interact
+    action.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Fastening Leap
+  range: null
+  raw_description: '**Fastening Leap** [One Action]  The dig-widget Leaps up 20 feet
+    onto a creature or object and attempts a corkscrew Strike against it. If the Strike
+    damages the target, the dig-widget attaches to the target (typically to the back
+    of a creature). This is similar to __Grabbing__ the creature, but the dig-widget
+    moves with that creature rather than holding it in place. While attached, the
+    dig-widget can''t use its corkscrew. The dig-widget can be __Shoved__ off, or
+    it can detach itself with an Interact action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A dig-widget's Strikes deal an additional 1d6 precision damage to __flat-footed__
+    creatures.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sneak Attack
+  range: null
+  raw_description: '**__Sneak Attack__** A dig-widget''s Strikes deal an additional
+    1d6 precision damage to __flat-footed__ creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -16,22 +69,24 @@ automatic_abilities:
     to __Disable a Device__ to damage a dig-widget. The DC is 22, and each success
     deals 20 damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Mechanical Vulnerability
   range: null
   raw_description: '**Mechanical Vulnerability** A creature with expert proficiency
     in __Thievery__ can attempt a check to __Disable a Device__ to damage a dig-widget.
     The DC is 22, and each success deals 20 damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 description: 'Thieves covet dig-widgets, specialized constructs built for infiltration.
-  Each dig.widget contains numerous simple tools, including a set of mechanical devices
+  Each dig-widget contains numerous simple tools, including a set of mechanical devices
   that function as __thieves'' tools__, two arms with drills, and two arms with corkscrews
   for attaching to and climbing surfaces. Once activated, these devices propel themselves
   forward. Though they have the full faculties typical of a construct, they usually
@@ -57,31 +112,29 @@ hp: 65
 hp_misc: null
 immunities:
 - bleed
-- death effects
-- disease
-- doomed
-- drained
-- fatigued
-- healing
-- mental
-- necromancy
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
 - nonlethal attacks
-- paralyzed
-- poison
-- sickened
-- unconscious
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+4
     type: piercing
   name: drill
   plus_damage:
-  - formula: 1d6
-    type: persistent bleed
+  - formula: null
+    type: 1d6 persistent bleed
   to_hit: 14
   traits:
   - fatal d10
@@ -97,63 +150,11 @@ melee:
   - finesse
 name: Dig-Widget
 perception: 9
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The dig-widget Leaps up 20 feet onto a creature or object and attempts
-    a corkscrew Strike against it. If the Strike damages the target, the dig-widget
-    attaches to the target (typically to the back of a creature). This is similar
-    to __Grabbing__ the creature, but the dig-widget moves with that creature rather
-    than holding it in place. While attached, the dig-widget can't use its corkscrew.
-    The dig-widget can be __Shoved__ off, or it can detach itself with an Interact
-    action.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Fastening Leap
-  range: null
-  raw_description: '**Fastening Leap**   The dig-widget Leaps up 20 feet onto a creature
-    or object and attempts a corkscrew Strike against it. If the Strike damages the
-    target, the dig-widget attaches to the target (typically to the back of a creature).
-    This is similar to __Grabbing__ the creature, but the dig-widget moves with that
-    creature rather than holding it in place. While attached, the dig-widget can''t
-    use its corkscrew. The dig-widget can be __Shoved__ off, or it can detach itself
-    with an Interact action.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A dig-widget's Strikes deal an additional 1d6 precision damage to __flat-footed__
-    creatures.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sneak Attack
-  range: null
-  raw_description: '**__Sneak Attack__** A dig-widget''s Strikes deal an additional
-    1d6 precision damage to __flat-footed__ creatures.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
-  misc: +1 status to all saves vs. magic
+  misc: null
   ref: 14
   ref_misc: null
   will: 7
@@ -166,52 +167,51 @@ sense_abilities:
     They can be salvaged from a destroyed dig-widget with a successful DC 20 __Crafting__
     check. On a failed check, the tools are destroyed.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Infiltration Tools
   range: null
   raw_description: '**Infiltration Tools** A dig-widget''s face consists of a set
     of __infiltrator thieves'' tools__. They can be salvaged from a destroyed dig-widget
     with a successful DC 20 __Crafting__ check. On a failed check, the tools are destroyed.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +9
 - darkvision
 - tremorsense (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 12
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 9
   misc: +12 to Leap or Climb
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 15
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary 2
-  page_start: 79
+  page_start: '79'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: burrow
 spell_lists: null
 traits:
-- N
-- Small
 - Construct
 - Mindless
-type: Creature
-weaknesses: null

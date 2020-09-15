@@ -7,6 +7,58 @@ ability_mods:
   wis_mod: 5
 ac: 34
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The irlgaunt violently regurgitates a melonsized clot of brittle stone
+    supernaturally infused with digestive enzymes. The stone and acid explode on impact
+    within a range of 30 feet, dealing 7d6 piercing damage and 7d6 acid damage to
+    creatures in a 20-foot burst (DC 33 basic Reflex save). The irlgaunt can't Regurgitate
+    Gastroliths for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Regurgitate Gastrolith
+  range: null
+  raw_description: '**Regurgitate Gastrolith** [Two Actions]  (__acid__, __evocation__,
+    __primal__) The irlgaunt violently regurgitates a melonsized clot of brittle stone
+    supernaturally infused with digestive enzymes. The stone and acid explode on impact
+    within a range of 30 feet, dealing 7d6 piercing damage and 7d6 acid damage to
+    creatures in a 20-foot burst (DC 33 basic Reflex save). The irlgaunt can''t Regurgitate
+    Gastroliths for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - acid
+  - evocation
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The irlgaunt ignores difficult terrain composed of rocks and stone.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stone Step
+  range: null
+  raw_description: '**Stone Step** The irlgaunt ignores difficult terrain composed
+    of rocks and stone.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'Irlgaunts resemble titanic spiders or crabs, but with cephalopod-like
@@ -46,23 +98,21 @@ description: 'Irlgaunts resemble titanic spiders or crabs, but with cephalopod-l
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 31'
 hp: 265
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Common
 - Jotun
 - Terran
 level: 13
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+13
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: acid
+  - formula: null
+    type: 2d6 acid
   to_hit: 26
   traits: null
 - action_cost: One Action
@@ -76,58 +126,7 @@ melee:
   - agile
 name: Irlgaunt
 perception: 24
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The irlgaunt violently regurgitates a melonsized clot of brittle stone
-    supernaturally infused with digestive enzymes. The stone and acid explode on impact
-    within a range of 30 feet, dealing 7d6 piercing damage and 7d6 acid damage to
-    creatures in a 20-foot burst (DC 33 basic Reflex save). The irlgaunt can't Regurgitate
-    Gastroliths for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Regurgitate Gastrolith
-  range: null
-  raw_description: '**Regurgitate Gastrolith** [Two Actions]  (__acid__, __evocation__,
-    __primal__) The irlgaunt violently regurgitates a melonsized clot of brittle stone
-    supernaturally infused with digestive enzymes. The stone and acid explode on impact
-    within a range of 30 feet, dealing 7d6 piercing damage and 7d6 acid damage to
-    creatures in a 20-foot burst (DC 33 basic Reflex save). The irlgaunt can''t Regurgitate
-    Gastroliths for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - acid
-  - evocation
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The irlgaunt ignores difficult terrain composed of rocks and stone.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stone Step
-  range: null
-  raw_description: '**Stone Step** The irlgaunt ignores difficult terrain composed
-    of rocks and stone.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 22
   fort_misc: null
@@ -136,65 +135,62 @@ saves:
   ref_misc: null
   will: 24
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +24
 - darkvision
 size: Large
 skills:
 - bonus: 25
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 26
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 23
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 27
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 22
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 148
+  page_start: '148'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 - amount: null
+  misc: null
   type: stone step
 spell_lists:
-- dc: 31
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 31
+  focus_points: null
   misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+  spell_lists:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: stone tell
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: meld into stone
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: shape stone
-      requirement: null
-  to_hit: null
+  spells_source: Primal Innate Spells
 traits:
-- NE
-- Large
 - Aberration
 - Earth
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: bludgeoning

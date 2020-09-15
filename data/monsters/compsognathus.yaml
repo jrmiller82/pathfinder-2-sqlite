@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 2
 ac: 15
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw** DC 16 Fortitude; **Maximum Duration **4 rounds; **Stage
+    1 **1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **1d8 poison damage
+    and enfeebled 1 (1 round)'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Compsognathus Venom
+  range: null
+  raw_description: '**Compsognathus Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
+    **Maximum Duration **4 rounds; **Stage 1 **1d6 poison damage and __enfeebled 1__
+    (1 round); **Stage 2 **1d8 poison damage and enfeebled 1 (1 round)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'The compsognathus is a small bipedal dinosaur that moves in swift, darting
@@ -34,15 +59,12 @@ description: 'The compsognathus is a small bipedal dinosaur that moves in swift,
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 13'
 hp: 8
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: jaws
   plus_damage:
   - formula: null
@@ -53,35 +75,7 @@ melee:
   - finesse
 name: Compsognathus
 perception: 5
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 16 Fortitude; **Maximum Duration **4 rounds; **Stage
-    1 **1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **1d8 poison damage
-    and enfeebled 1 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Compsognathus Venom
-  range: null
-  raw_description: '**Compsognathus Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
-    **Maximum Duration **4 rounds; **Stage 1 **1d6 poison damage and __enfeebled 1__
-    (1 round); **Stage 2 **1d8 poison damage and enfeebled 1 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 4
   fort_misc: null
@@ -90,33 +84,29 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +5
 - low-light vision
 - scent (imprecise) 30 feet
 size: Tiny
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 80
+  page_start: '80'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 15
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Tiny
 - Animal
 - Dinosaur
-type: Creature
-weaknesses: null

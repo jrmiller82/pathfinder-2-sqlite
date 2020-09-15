@@ -7,6 +7,48 @@ ability_mods:
   wis_mod: 2
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A Medium or smaller creature hit by the elephant's trunk is __grabbed__.
+    If the elephant moves, it can bring the __grabbed__ creature along with it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Grabbing Trunk
+  range: null
+  raw_description: '**Grabbing Trunk** A Medium or smaller creature hit by the elephant''s
+    trunk is __grabbed__. If the elephant moves, it can bring the __grabbed__ creature
+    along with it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Large or smaller, foot, DC 24
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 24'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Those who live near elephants have learned to be wary of angering the
@@ -21,11 +63,8 @@ description: 'Those who live near elephants have learned to be wary of angering 
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 23'
 hp: 130
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+9
@@ -36,7 +75,9 @@ melee:
   traits:
   - reach 10 feet
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: grabbing trunk
   name: trunk
   plus_damage: null
   to_hit: 18
@@ -53,50 +94,7 @@ melee:
   - reach 10 feet
 name: Elephant
 perception: 13
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A Medium or smaller creature hit by the elephant's trunk is __grabbed__.
-    If the elephant moves, it can bring the __grabbed__ creature along with it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Grabbing Trunk
-  range: null
-  raw_description: '**Grabbing Trunk** A Medium or smaller creature hit by the elephant''s
-    trunk is __grabbed__. If the elephant moves, it can bring the __grabbed__ creature
-    along with it.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Large or smaller, foot, DC 24
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**Trample** [Three Actions]  Large or smaller, foot, DC 24'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 18
   fort_misc: null
@@ -105,30 +103,25 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 154
+  page_start: '154'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
-type: Creature
-weaknesses: null

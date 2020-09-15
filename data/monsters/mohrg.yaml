@@ -7,6 +7,35 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living creature hit by a mohrg's tongue Strike must succeed at a
+    DC 26 Fortitude save or become __paralyzed__. The creature can attempt a new save
+    at the end of each of its turns, and the DC cumulatively decreases by 1 on each
+    attempt.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Paralysis
+  range: null
+  raw_description: '**Paralysis** (__occult__, __incapacitation__, __necromancy__)
+    A living creature hit by a mohrg''s tongue Strike must succeed at a DC 26 Fortitude
+    save or become __paralyzed__. The creature can attempt a new save at the end of
+    each of its turns, and the DC cumulatively decreases by 1 on each attempt.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - occult
+  - incapacitation
+  - necromancy
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -14,15 +43,17 @@ automatic_abilities:
   critical_success: null
   description: Resistances piercing 10, slashing 5
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: unconscious
   range: null
   raw_description: '**__unconscious__** Resistances piercing 10, slashing 5'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -35,11 +66,11 @@ automatic_abilities:
     is destroyed, the mohrg spawn is destroyed as well, immediately collapsing into
     a pile of decayed flesh and bones.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Mohrg Spawn
   range: null
   raw_description: '**Mohrg Spawn** (__occult__, __necromancy__) A living creature
@@ -49,55 +80,55 @@ automatic_abilities:
     is destroyed as well, immediately collapsing into a pile of decayed flesh and
     bones.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - occult
   - necromancy
   trigger: null
-description: "The weight of murder wears heavy on the soul. With souls marked by a\
-  \ lifetime of dealing death, these killers, whether mass murderers, bloodthirsty\
-  \ soldiers, or sadistic executioners, sometimes do not let judgment and lawful execution\
-  \ stanch their slaying sprees. When such individuals are brought to justice, they\
-  \ may rise after death as mohrgs to continue their ruinous work.\n\n\n\nDrawn to\
-  \ others of their kind, mohrgs prefer to hunt in small groups, occasionally in partnership\
-  \ with weaker free-willed undead such as shadows and wights. They seek out weak\
-  \ prey and revel in causing drawn-out suffering. Some mohrgs haunt locations they\
-  \ favored in life, reenacting old crimes on new victims. They may even skulk about\
-  \ in public, wearing rags, cloaks, or freshly harvested skins to hide their nature.\
-  \ The most dangerous mohrgs are those who grow powerful enough to no longer fear\
-  \ being struck down again and openly assault settlements in an attempt to turn living\
-  \ towns into mass graves.\n\n\n\nSince those slain by a mohrg rise soon thereafter\
-  \ as mohrg spawn, the murders of a mohrg rarely go unnoticed for long, even when\
-  \ they take extra care to prey only on a society's dregs. Since mohrg spawn remain\
-  \ under a mohrg's control, a canny mohrg might order its spawn to remain in hiding\
-  \ to keep its presence secret until a point where it feels confident unleashing\
-  \ its undead army upon a doomed settlement. Mohrgs retain a twisted sentimentality\
-  \ for the crimes of their mortal life, seeking out trinkets that remind them of\
-  \ favorite murders. When not out hunting, mohrgs arrange their mementos into disturbing\
-  \ shrines. Often, these trinkets are valuable objects, and might even provide important\
-  \ clues to ongoing mysteries.\n\n\n\n\n\n## Mohrg Spawn\n\n When a creature returns\
-  \ after death as a mohrg spawn, its flesh decays away save for its entrails, and\
-  \ it grows a long, awful tongue. The creature gains the undead trait and becomes\
-  \ chaotic evil, and it loses any abilities that come from it being a living creature.\
-  \ It gains __darkvision__, __negative healing__, and the mohrg's immunities and\
-  \ resistances. If the creature had hands, it gains a claw Strike (an unarmed attack\
-  \ that deals slashing damage). The creature also gains a tongue Strike, an __agile__\
-  \ attack that causes paralysis, as the mohrg ability; the Fortitude save uses the\
-  \ DC for the __mohrg spawn's level__. Mohrg spawn cannot create mohrg spawn of their\
-  \ own.\n\n\n\n**__Recall Knowledge - Undead__ (__Religion__)**: DC 24"
+description: 'The weight of murder wears heavy on the soul. With souls marked by a
+  lifetime of dealing death, these killers, whether mass murderers, bloodthirsty soldiers,
+  or sadistic executioners, sometimes do not let judgment and lawful execution stanch
+  their slaying sprees. When such individuals are brought to justice, they may rise
+  after death as mohrgs to continue their ruinous work.
+
+
+
+
+  Drawn to others of their kind, mohrgs prefer to hunt in small groups, occasionally
+  in partnership with weaker free-willed undead such as shadows and wights. They seek
+  out weak prey and revel in causing drawn-out suffering. Some mohrgs haunt locations
+  they favored in life, reenacting old crimes on new victims. They may even skulk
+  about in public, wearing rags, cloaks, or freshly harvested skins to hide their
+  nature. The most dangerous mohrgs are those who grow powerful enough to no longer
+  fear being struck down again and openly assault settlements in an attempt to turn
+  living towns into mass graves.
+
+
+
+
+  Since those slain by a mohrg rise soon thereafter as mohrg spawn, the murders of
+  a mohrg rarely go unnoticed for long, even when they take extra care to prey only
+  on a society''s dregs. Since mohrg spawn remain under a mohrg''s control, a canny
+  mohrg might order its spawn to remain in hiding to keep its presence secret until
+  a point where it feels confident unleashing its undead army upon a doomed settlement.
+  Mohrgs retain a twisted sentimentality for the crimes of their mortal life, seeking
+  out trinkets that remind them of favorite murders. When not out hunting, mohrgs
+  arrange their mementos into disturbing shrines. Often, these trinkets are valuable
+  objects, and might even provide important clues to ongoing mysteries.'
 hp: 120
-hp_misc: negative healing
+hp_misc: "negative healing\r\n"
 immunities:
-- death effects
-- disease
-- paralyzed
-- poison
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 languages:
 - Common
 - Necril
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+9
@@ -109,7 +140,9 @@ melee:
   to_hit: 20
   traits: null
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: paralysis
   name: tongue
   plus_damage: null
   to_hit: 20
@@ -117,37 +150,7 @@ melee:
   - agile
 name: Mohrg
 perception: 17
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A living creature hit by a mohrg's tongue Strike must succeed at a
-    DC 26 Fortitude save or become __paralyzed__. The creature can attempt a new save
-    at the end of each of its turns, and the DC cumulatively decreases by 1 on each
-    attempt.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Paralysis
-  range: null
-  raw_description: '**Paralysis** (__occult__, __incapacitation__, __necromancy__)
-    A living creature hit by a mohrg''s tongue Strike must succeed at a DC 26 Fortitude
-    save or become __paralyzed__. The creature can attempt a new save at the end of
-    each of its turns, and the DC cumulatively decreases by 1 on each attempt.'
-  requirements: null
-  success: null
-  traits:
-  - occult
-  - incapacitation
-  - necromancy
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 18
   fort_misc: null
@@ -156,38 +159,33 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 size: Medium
 skills:
 - bonus: 16
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 15
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 18
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 172
+  page_start: '172'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Medium
 - Undead
-type: Creature
-weaknesses: null

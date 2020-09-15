@@ -7,6 +7,31 @@ ability_mods:
   wis_mod: 4
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The other head uses their reaction to make a jaws Strike against the creature
+    that was hit.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Reactive Chomp
+  range: null
+  raw_description: '**Reactive Chomp** [One Action]  **Requirements** One of the troll''s
+    heads hit the same enemy with two consecutive claw Strikes in the same round;
+    **Effect** The other head uses their reaction to make a jaws Strike against the
+    creature that was hit.'
+  requirements: One of the troll's heads hit the same enemy with two consecutive claw
+    Strikes in the same round
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -17,11 +42,11 @@ automatic_abilities:
     flat check. On a success, the missing head is fully restored. If a two-headed
     troll loses their last remaining head, they die immediately.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Head Regrowth
   range: null
   raw_description: '**Head Regrowth** A two-headed troll''s regeneration can regrow
@@ -29,6 +54,8 @@ automatic_abilities:
     attempts a DC 10 flat check. On a success, the missing head is fully restored.
     If a two-headed troll loses their last remaining head, they die immediately.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -41,11 +68,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -56,6 +83,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -63,11 +92,11 @@ automatic_abilities:
 description: 'Two-headed trolls are savage, dual-minded monsters with an unquenchable
   thirst for bloodshed, and dread tales of their ravenous appetites are whispered
   of in homesteads throughout the lands of the Inner Sea. Indeed, it is a custom for
-  parents to invoke the two-headed troll as a warning to misbehaving children. "Finish
-  your chores," a parent might say to a stubborn child, "or a two-headed troll will
-  snatch you away at night and swallow you whole!" It''s unclear why such a morbid
+  parents to invoke the two-headed troll as a warning to misbehaving children. “Finish
+  your chores,” a parent might say to a stubborn child, “or a two-headed troll will
+  snatch you away at night and swallow you whole!” It''s unclear why such a morbid
   tradition gained traction with parents, but it''s an undeniable fact that two-headed
-  trolls have an appetite for "nibbles"—creatures small enough to devour with one
+  trolls have an appetite for “nibbles”—creatures small enough to devour with one
   bite.
 
 
@@ -77,14 +106,13 @@ description: 'Two-headed trolls are savage, dual-minded monsters with an unquenc
   Unlike common trolls, two-headed trolls share the upright gait of their __ettin__
   ancestry and do not walk hunched over.'
 hp: 190
-hp_misc: regeneration 25 (deactivated by acid or fire
-immunities: null
+hp_misc: regeneration 25 (deactivated by acid or fire)
 items:
 - club
 languages:
 - Jotun
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+8
@@ -115,29 +143,7 @@ melee:
   - reach 10 feet
 name: Two-Headed Troll
 perception: 18
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: One of the troll's heads hit the same enemy with two consecutive claw Strikes
-    in the same round
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reactive Chomp
-  range: null
-  raw_description: '**Reactive Chomp**   **Requirements** One of the troll''s heads
-    hit the same enemy with two consecutive claw Strikes in the same round; **Effect**
-    The other head uses their reaction to make a jaws Strike against the creature
-    that was hit.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+8
@@ -148,8 +154,6 @@ ranged:
   traits:
   - thrown 10 feet
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 20
   fort_misc: null
@@ -158,33 +162,29 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - darkvision
 size: Large
 skills:
 - bonus: 18
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 17
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary 2
-  page_start: 266
+  page_start: '266'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- CE
-- Large
 - Giant
 - Troll
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: fire

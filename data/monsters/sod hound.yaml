@@ -7,6 +7,30 @@ ability_mods:
   wis_mod: 2
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The sod hound can Burrow through any earthen matter, including rock.
+    When it does so, the sod hound moves at its full burrow Speed, leaving no tunnels
+    or signs of its passing.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Earth Glide
+  range: null
+  raw_description: '**Earth Glide** The sod hound can Burrow through any earthen matter,
+    including rock. When it does so, the sod hound moves at its full burrow Speed,
+    leaving no tunnels or signs of its passing.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Sod hounds are mossy extraplanar canines formed of packed dirt and pebbles.
@@ -22,10 +46,8 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+6
@@ -38,32 +60,7 @@ melee:
   traits: null
 name: Sod Hound
 perception: 9
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The sod hound can Burrow through any earthen matter, including rock.
-    When it does so, the sod hound moves at its full burrow Speed, leaving no tunnels
-    or signs of its passing.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Earth Glide
-  range: null
-  raw_description: '**Earth Glide** The sod hound can Burrow through any earthen matter,
-    including rock. When it does so, the sod hound moves at its full burrow Speed,
-    leaving no tunnels or signs of its passing.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 12
   fort_misc: null
@@ -79,47 +76,47 @@ sense_abilities:
   description: A sod hound can sense crystals or gems within 60 feet as if using the
     scent ability
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Crystal Sense
   range: null
   raw_description: '**Crystal Sense** A sod hound can sense crystals or gems within
     60 feet as if using the scent ability'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +9
 - crystal sense (imprecise) 60 feet
 - darkvision
 size: Small
 skills:
 - bonus: 11
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: +11 to Track
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 146
+  page_start: '146'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: burrow
 - amount: null
+  misc: null
   type: earth glide
 spell_lists: null
 traits:
-- N
-- Small
 - Earth
 - Elemental
-type: Creature
-weaknesses: null

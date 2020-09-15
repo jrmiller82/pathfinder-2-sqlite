@@ -7,6 +7,87 @@ ability_mods:
   wis_mod: 3
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The wyvern Flies up to its fly Speed and must both move forward at
+    least 20 feet and descend at least 10 feet. If it ends the movement within melee
+    reach of at least one enemy its size or smaller, it can make a claw Strike against
+    that enemy. If the claw hits, as a free action the wyvern can either automatically
+    __Grab__ the target or knock it __prone__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Powerful Dive
+  range: null
+  raw_description: '**Powerful Dive** [Two Actions]  (__move__) The wyvern Flies up
+    to its fly Speed and must both move forward at least 20 feet and descend at least
+    10 feet. If it ends the movement within melee reach of at least one enemy its
+    size or smaller, it can make a claw Strike against that enemy. If the claw hits,
+    as a free action the wyvern can either automatically __Grab__ the target or knock
+    it __prone__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - move
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The wyvern can Fly at half Speed while holding the creature in its claws,
+    carrying that creature along with it and dropping it at the end of its movement.
+    Alternatively, the wyvern can Strike the creature with its stinger with a +2 circumstance
+    bonus.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Punishing Momentum
+  range: null
+  raw_description: '**Punishing Momentum** [One Action]  **Requirements** The wyvern
+    grabbed a creature this turn using Powerful Dive. **Effect** The wyvern can Fly
+    at half Speed while holding the creature in its claws, carrying that creature
+    along with it and dropping it at the end of its movement. Alternatively, the wyvern
+    can Strike the creature with its stinger with a +2 circumstance bonus.'
+  requirements: The wyvern grabbed a creature this turn using Powerful Dive.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Wyvern Poison
+  range: null
+  raw_description: '**Wyvern Poison** (__poison__) **Saving Throw** Fortitude DC 22;
+    **Maximum Duration** 6 rounds; **Stage 1** 5d6 poison damage (1 round); **Stage
+    2** 6d6 poison damage (1 round); **Stage 3** 8d6 poison damage (1 round)'
+  requirements: null
+  saving_throw: Fortitude DC 22
+  stages:
+  - effect: 5d6 poison damage (1 round)
+  - effect: 6d6 poison damage (1 round)
+  - effect: 8d6 poison damage (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +99,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,29 +114,12 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The wyvern makes a stinger Strike against the triggering creature.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Savage
-  range: null
-  raw_description: '**Savage** [Reaction] **Trigger** A creature grabbed by the wyvern
-    critically fails a skill check to Escape. **Effect** The wyvern makes a stinger
-    Strike against the triggering creature.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: A creature grabbed by the wyvern critically fails a skill check to Escape.
 description: 'A wyvern is a venomous drake with a well-earned reputation for impatience
   and aggression. As much as 15 feet long and weighing up to 1,000 pounds, a wyvern''s
   resilient body allows it to crash talons-first into large prey without serious risk
@@ -88,11 +152,10 @@ hp_misc: null
 immunities:
 - paralyzed
 - unconscious
-items: null
 languages:
 - Draconic
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+5
@@ -125,81 +188,7 @@ melee:
   - reach 10 feet
 name: Wyvern
 perception: 13
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The wyvern Flies up to its fly Speed and must both move forward at
-    least 20 feet and descend at least 10 feet. If it ends the movement within melee
-    reach of at least one enemy its size or smaller, it can make a claw Strike against
-    that enemy. If the claw hits, as a free action the wyvern can either automatically
-    __Grab__ the target or knock it __prone__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Powerful Dive
-  range: null
-  raw_description: '**Powerful Dive** [Two Actions]  (__move__) The wyvern Flies up
-    to its fly Speed and must both move forward at least 20 feet and descend at least
-    10 feet. If it ends the movement within melee reach of at least one enemy its
-    size or smaller, it can make a claw Strike against that enemy. If the claw hits,
-    as a free action the wyvern can either automatically __Grab__ the target or knock
-    it __prone__.'
-  requirements: null
-  success: null
-  traits:
-  - move
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The wyvern grabbed a creature this turn using Powerful Dive.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Punishing Momentum
-  range: null
-  raw_description: '**Punishing Momentum**   **Requirements** The wyvern grabbed a
-    creature this turn using Powerful Dive. **Effect** The wyvern can Fly at half
-    Speed while holding the creature in its claws, carrying that creature along with
-    it and dropping it at the end of its movement. Alternatively, the wyvern can Strike
-    the creature with its stinger with a +2 circumstance bonus.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** Fortitude DC 22; **Maximum Duration** 6 rounds; **Stage
-    1** 5d6 poison damage (1 round); **Stage 2** 6d6 poison damage (1 round); **Stage
-    3** 8d6 poison damage (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wyvern Poison
-  range: null
-  raw_description: '**Wyvern Poison** (__poison__) **Saving Throw** Fortitude DC 22;
-    **Maximum Duration** 6 rounds; **Stage 1** 5d6 poison damage (1 round); **Stage
-    2** 6d6 poison damage (1 round); **Stage 3** 8d6 poison damage (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -208,35 +197,31 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 133
+  page_start: '133'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- NE
-- Large
 - Dragon
-type: Creature
-weaknesses: null

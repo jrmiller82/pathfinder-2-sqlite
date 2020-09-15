@@ -1,1340 +1,1329 @@
 - name: Alchemist
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - alchemy
-        - formula book
-        - research field
-        - class feat
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - general feat
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - ability boosts
-        - ancestry feat
-        - field discovery
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - alchemical weapon expertise
-        - general feat
-        - iron will
-        - perpetual infusions
-        - skill increase
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - alchemical expertise
-        - alertness
-        - ancestry feat
-        - double brew
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - general feat
-        - juggernaut
-        - perpetual potency
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - ancestry feat
-        - greater field discovery
-        - light armor expertise
-        - skill increase
-        - weapon specialization
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - ability boosts
-        - alchemical alacrity
-        - evasion
-        - general feat
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - alchemical mastery
-        - ancestry feat
-        - perpetual perfection
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - general feat
-        - light armor mastery
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - alchemy
+    - formula book
+    - research field
+    - class feat
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - general feat
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - ability boosts
+    - ancestry feat
+    - field discovery
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - alchemical weapon expertise
+    - general feat
+    - iron will
+    - perpetual infusions
+    - skill increase
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - alchemical expertise
+    - alertness
+    - ancestry feat
+    - double brew
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - general feat
+    - juggernaut
+    - perpetual potency
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - ancestry feat
+    - greater field discovery
+    - light armor expertise
+    - skill increase
+    - weapon specialization
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - ability boosts
+    - alchemical alacrity
+    - evasion
+    - general feat
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - alchemical mastery
+    - ancestry feat
+    - perpetual perfection
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - general feat
+    - light armor mastery
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Barbarian
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - rage
-        - instinct
-        - class feat
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - deny advantage
-        - general feat
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - ability boosts
-        - ancestry feat
-        - brutality
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - general feat
-        - juggernaut
-        - skill increase
-        - weapon specialization
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - ancestry feat
-        - lightning reflexes
-        - raging resistance
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - general feat
-        - mighty rage
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - ancestry feat
-        - greater juggernaut
-        - medium armor expertise
-        - skill increase
-        - weapon fury
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - ability boosts
-        - general feat
-        - greater weapon specialization
-        - indomitable will
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - ancestry feat
-        - heightened senses
-        - skill increase
-        - quick rage
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - armor of fury
-        - devastator
-        - general feat
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - rage
+    - instinct
+    - class feat
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - deny advantage
+    - general feat
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - ability boosts
+    - ancestry feat
+    - brutality
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - general feat
+    - juggernaut
+    - skill increase
+    - weapon specialization
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - ancestry feat
+    - lightning reflexes
+    - raging resistance
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - general feat
+    - mighty rage
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - ancestry feat
+    - greater juggernaut
+    - medium armor expertise
+    - skill increase
+    - weapon fury
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - ability boosts
+    - general feat
+    - greater weapon specialization
+    - indomitable will
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - ancestry feat
+    - heightened senses
+    - skill increase
+    - quick rage
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - armor of fury
+    - devastator
+    - general feat
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Bard
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - occult spellcasting
-        - spell repertoire
-        - composition spellcasting
-        - muse
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - 2nd-level spells
-        - general feat
-        - lightning reflexes
-        - signature spells
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - 3rd-level spells
-        - ability boosts
-        - ancestry feat
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - 4th-level spells
-        - expert spellcaster
-        - general feat
-        - skill increase
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - 5th-level spells
-        - ancestry feat
-        - great fortitude
-        - resolve
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - 6th-level spells
-        - bard weapon expertise
-        - general feat
-        - skill increase
-        - vigilant senses
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - 7th-level spells
-        - ancestry feat
-        - light armor expertise
-        - skill increase
-        - weapon specialization
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - 8th-level spells
-        - ability boosts
-        - general feat
-        - master spellcaster
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - 9th-level spells
-        - ancestry feat
-        - greater resolve
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - general feat
-        - legendary spellcaster
-        - magnum opus
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - occult spellcasting
+    - spell repertoire
+    - composition spellcasting
+    - muse
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - 2nd-level spells
+    - general feat
+    - lightning reflexes
+    - signature spells
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - 3rd-level spells
+    - ability boosts
+    - ancestry feat
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - 4th-level spells
+    - expert spellcaster
+    - general feat
+    - skill increase
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - 5th-level spells
+    - ancestry feat
+    - great fortitude
+    - resolve
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - 6th-level spells
+    - bard weapon expertise
+    - general feat
+    - skill increase
+    - vigilant senses
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - 7th-level spells
+    - ancestry feat
+    - light armor expertise
+    - skill increase
+    - weapon specialization
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - 8th-level spells
+    - ability boosts
+    - general feat
+    - master spellcaster
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - 9th-level spells
+    - ancestry feat
+    - greater resolve
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - general feat
+    - legendary spellcaster
+    - magnum opus
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Champion
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - champion's code
-        - deity and cause
-        - deific weapon
-        - champion's reaction
-        - devotion spells
-        - class feat
-        - shield block
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - divine ally
-        - general feat
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - ability boosts
-        - ancestry feat
-        - skill increase
-        - weapon expertise
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - armor expertise
-        - general feat
-        - skill increase
-        - weapon specialization
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - ancestry feat
-        - champion expertise
-        - divine smite
-        - juggernaut
-        - lightning reflexes
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - alertness
-        - divine will
-        - exalt
-        - general feat
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - ancestry feat
-        - armor mastery
-        - skill increase
-        - weapon mastery
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - ability boosts
-        - general feat
-        - greater weapon specialization
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - ancestry feat
-        - champion mastery
-        - legendary armor
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - general feat
-        - hero's defiance
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - champion's code
+    - deity and cause
+    - deific weapon
+    - champion's reaction
+    - devotion spells
+    - class feat
+    - shield block
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - divine ally
+    - general feat
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - ability boosts
+    - ancestry feat
+    - skill increase
+    - weapon expertise
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - armor expertise
+    - general feat
+    - skill increase
+    - weapon specialization
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - ancestry feat
+    - champion expertise
+    - divine smite
+    - juggernaut
+    - lightning reflexes
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - alertness
+    - divine will
+    - exalt
+    - general feat
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - ancestry feat
+    - armor mastery
+    - skill increase
+    - weapon mastery
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - ability boosts
+    - general feat
+    - greater weapon specialization
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - ancestry feat
+    - champion mastery
+    - legendary armor
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - general feat
+    - hero's defiance
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Cleric
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - deity
-        - divine spellcasting
-        - doctrine
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - 2nd-level spells
-        - general feat
-        - second doctrine
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - 3rd-level spells
-        - ability boosts
-        - alertness
-        - ancestry feat
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - 4th-level spells
-        - expert spellcaster
-        - general feat
-        - skill increase
-        - third doctrine
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - 5th-level spells
-        - ancestry feat
-        - resolve
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - 6th-level spells
-        - fourth doctrine
-        - general feat
-        - lightning reflexes
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - 7th-level spells
-        - ancestry feat
-        - divine defense
-        - skill increase
-        - weapon specialization
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - 8th-level spells
-        - ability boosts
-        - fifth doctrine
-        - general feat
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - 9th-level spells
-        - ancestry feat
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - final doctrine
-        - general feat
-        - miraculous spell
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - deity
+    - divine spellcasting
+    - doctrine
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - 2nd-level spells
+    - general feat
+    - second doctrine
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - 3rd-level spells
+    - ability boosts
+    - alertness
+    - ancestry feat
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - 4th-level spells
+    - expert spellcaster
+    - general feat
+    - skill increase
+    - third doctrine
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - 5th-level spells
+    - ancestry feat
+    - resolve
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - 6th-level spells
+    - fourth doctrine
+    - general feat
+    - lightning reflexes
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - 7th-level spells
+    - ancestry feat
+    - divine defense
+    - skill increase
+    - weapon specialization
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - 8th-level spells
+    - ability boosts
+    - fifth doctrine
+    - general feat
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - 9th-level spells
+    - ancestry feat
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - final doctrine
+    - general feat
+    - miraculous spell
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Druid
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - primal spellcasting
-        - anathema
-        - druidic language
-        - druidic order
-        - shield block
-        - wild empathy
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - 2nd-level spells
-        - alertness
-        - general feat
-        - great fortitude
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - 3rd-level spells
-        - ability boosts
-        - ancestry feat
-        - lightning reflexes
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - 4th-level spells
-        - expert spellcaster
-        - general feat
-        - skill increase
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - 5th-level spells
-        - ancestry feat
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - 6th-level spells
-        - druid weapon expertise
-        - general feat
-        - resolver
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - 7th-level spells
-        - ancestry feat
-        - medium armor expertise
-        - skill increase
-        - weapon specialization
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - 8th-level spells
-        - ability boosts
-        - general feat
-        - master spellcaster
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - 9th-level spells
-        - ancestry feat
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - general feat
-        - legendary spellcaster
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - primal spellcasting
+    - anathema
+    - druidic language
+    - druidic order
+    - shield block
+    - wild empathy
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - 2nd-level spells
+    - alertness
+    - general feat
+    - great fortitude
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - 3rd-level spells
+    - ability boosts
+    - ancestry feat
+    - lightning reflexes
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - 4th-level spells
+    - expert spellcaster
+    - general feat
+    - skill increase
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - 5th-level spells
+    - ancestry feat
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - 6th-level spells
+    - druid weapon expertise
+    - general feat
+    - resolver
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - 7th-level spells
+    - ancestry feat
+    - medium armor expertise
+    - skill increase
+    - weapon specialization
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - 8th-level spells
+    - ability boosts
+    - general feat
+    - master spellcaster
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - 9th-level spells
+    - ancestry feat
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - general feat
+    - legendary spellcaster
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Fighter
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - attack of opportunity
-        - class feat
-        - shield block
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - bravery
-        - general feat
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - ability boosts
-        - ancestry feat
-        - fighter weapon mastery
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - battlefield surveyor
-        - general feat
-        - skill increase
-        - weapon specialization
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - ancestry feat
-        - combat flexibility
-        - juggernaut
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - armor expertise
-        - fighter expertise
-        - general feat
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - ancestry feat
-        - skill increase
-        - weapon legend
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - ability boosts
-        - evasion
-        - general feat
-        - greater weapon specialization
-        - improved flexibility
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - ancestry feat
-        - armor mastery
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - general feat
-        - skill increase
-        - versatile leyend
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - attack of opportunity
+    - class feat
+    - shield block
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - bravery
+    - general feat
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - ability boosts
+    - ancestry feat
+    - fighter weapon mastery
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - battlefield surveyor
+    - general feat
+    - skill increase
+    - weapon specialization
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - ancestry feat
+    - combat flexibility
+    - juggernaut
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - armor expertise
+    - fighter expertise
+    - general feat
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - ancestry feat
+    - skill increase
+    - weapon legend
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - ability boosts
+    - evasion
+    - general feat
+    - greater weapon specialization
+    - improved flexibility
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - ancestry feat
+    - armor mastery
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - general feat
+    - skill increase
+    - versatile leyend
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Monk
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - flurry of blows
-        - class feat
-        - powerfull fist
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - general feat
-        - incredible movement +10 feet
-        - mystic strikes
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - ability boosts
-        - alertness
-        - ancestry feat
-        - expert strikes
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - general feat
-        - incredible movement +15 feet
-        - path to perfection
-        - skill increase
-        - weapon specialization
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - ancestry feat
-        - metal strikes
-        - monk expertise
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - general feat
-        - second path to perfection
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - ancestry feat
-        - graceful mastery
-        - master strikes
-        - skill increase
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - ability boosts
-        - general feat
-        - greater weapon specialization
-        - incredible movement +25 feet
-        - skill increase
-        - third path to perfection
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - adamantine strikes
-        - ancestry feat
-        - graceful legend
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - general feat
-        - incredible movement +30 feet
-        - perfect formula
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - flurry of blows
+    - class feat
+    - powerfull fist
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - general feat
+    - incredible movement +10 feet
+    - mystic strikes
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - ability boosts
+    - alertness
+    - ancestry feat
+    - expert strikes
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - general feat
+    - incredible movement +15 feet
+    - path to perfection
+    - skill increase
+    - weapon specialization
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - ancestry feat
+    - metal strikes
+    - monk expertise
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - general feat
+    - second path to perfection
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - ancestry feat
+    - graceful mastery
+    - master strikes
+    - skill increase
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - ability boosts
+    - general feat
+    - greater weapon specialization
+    - incredible movement +25 feet
+    - skill increase
+    - third path to perfection
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - adamantine strikes
+    - ancestry feat
+    - graceful legend
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - general feat
+    - incredible movement +30 feet
+    - perfect formula
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Ranger
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - hunt prey
-        - hunter's edge
-        - class feat
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - general feat
-        - iron will
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - ability boosts
-        - ancestry feat
-        - skill increase
-        - trackless step
-        - weapon expertise
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - evasion
-        - general feat
-        - skill increase
-        - vigilant senses
-        - weapon specialization
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - ancestry feat
-        - nature's edge
-        - ranger expertise
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - general feat
-        - juggernaut
-        - medium armor expertise
-        - skill increase
-        - wild stride
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - ancestry feat
-        - skill increase
-        - weapon mastery
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - ability boosts
-        - general feat
-        - greater weapon specialization
-        - improved evasion
-        - incredible senses
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - ancestry feat
-        - masterful hunter
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - general feat
-        - second skin
-        - skill increase
-        - swift prey
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - hunt prey
+    - hunter's edge
+    - class feat
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - general feat
+    - iron will
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - ability boosts
+    - ancestry feat
+    - skill increase
+    - trackless step
+    - weapon expertise
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - evasion
+    - general feat
+    - skill increase
+    - vigilant senses
+    - weapon specialization
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - ancestry feat
+    - nature's edge
+    - ranger expertise
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - general feat
+    - juggernaut
+    - medium armor expertise
+    - skill increase
+    - wild stride
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - ancestry feat
+    - skill increase
+    - weapon mastery
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - ability boosts
+    - general feat
+    - greater weapon specialization
+    - improved evasion
+    - incredible senses
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - ancestry feat
+    - masterful hunter
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - general feat
+    - second skin
+    - skill increase
+    - swift prey
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Rogue
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - rogue's racket
-        - sneak attack 1d6
-        - surprise attack
-        - class feat
-        - skill feat
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - deny advantage
-        - general feat
-        - skill feat
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 5
-      items:
-        - ability boosts
-        - ancestry feat
-        - skill feat
-        - skill increase
-        - sneak attack 2d6
-        - weapon tricks
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 7
-      items:
-        - evasion
-        - general feat
-        - skill feat
-        - skill increase
-        - vigilant senses
-        - weapon specialization
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 9
-      items:
-        - ancestry feat
-        - debilitating strike
-        - great fortitude
-        - skill feat
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 11
-      items:
-        - general feat
-        - rogue expertise
-        - skill feat
-        - skill increase
-        - sneak attack 3d6
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 13
-      items:
-        - ancestry feat
-        - improved evasion
-        - incredible senses
-        - light armor expertise
-        - master tricks
-        - skill feat
-        - skill increase
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 15
-      items:
-        - ability boosts
-        - double debilitation
-        - general feat
-        - greater weapon specialization
-        - skill feat
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 17
-      items:
-        - ancestry feat
-        - skill feat
-        - skill increase
-        - slippery mind
-        - sneak attack 4d6
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-        - skill increase
-    - level: 19
-      items:
-        - general feat
-        - light armor mastery
-        - master strike
-        - skill feat
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-        - skill increase
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - rogue's racket
+    - sneak attack 1d6
+    - surprise attack
+    - class feat
+    - skill feat
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - deny advantage
+    - general feat
+    - skill feat
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    - skill increase
+    level: 4
+  - items:
+    - ability boosts
+    - ancestry feat
+    - skill feat
+    - skill increase
+    - sneak attack 2d6
+    - weapon tricks
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    - skill increase
+    level: 6
+  - items:
+    - evasion
+    - general feat
+    - skill feat
+    - skill increase
+    - vigilant senses
+    - weapon specialization
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    - skill increase
+    level: 8
+  - items:
+    - ancestry feat
+    - debilitating strike
+    - great fortitude
+    - skill feat
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    - skill increase
+    level: 10
+  - items:
+    - general feat
+    - rogue expertise
+    - skill feat
+    - skill increase
+    - sneak attack 3d6
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    - skill increase
+    level: 12
+  - items:
+    - ancestry feat
+    - improved evasion
+    - incredible senses
+    - light armor expertise
+    - master tricks
+    - skill feat
+    - skill increase
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    - skill increase
+    level: 14
+  - items:
+    - ability boosts
+    - double debilitation
+    - general feat
+    - greater weapon specialization
+    - skill feat
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    - skill increase
+    level: 16
+  - items:
+    - ancestry feat
+    - skill feat
+    - skill increase
+    - slippery mind
+    - sneak attack 4d6
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    - skill increase
+    level: 18
+  - items:
+    - general feat
+    - light armor mastery
+    - master strike
+    - skill feat
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    - skill increase
+    level: 20
 - name: Sorcerer
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - bloodline
-        - sorcerer spellcasting
-        - spell repertoire
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - 2nd-level spells
-        - general feat
-        - signature spells
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - 3rd-level spells
-        - ability boosts
-        - ancestry feat
-        - magical fortitude
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - 4th-level spells
-        - expert spellcaster
-        - general feat
-        - skill increase
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - 5th-level spells
-        - ancestry feat
-        - lightning reflexes
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - 6th-level spells
-        - alertness
-        - general feat
-        - simple weapon expertise
-        - skill increase
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - 7th-level spells
-        - ancestry feat
-        - defensive robes
-        - skill increase
-        - weapon specialization
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - 8th-level spells
-        - ability boosts
-        - general feat
-        - master spellcaster
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - 9th-level spells
-        - ancestry feat
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - bloodline paragon
-        - general feat
-        - legendary spellcaster
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - bloodline
+    - sorcerer spellcasting
+    - spell repertoire
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - 2nd-level spells
+    - general feat
+    - signature spells
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - 3rd-level spells
+    - ability boosts
+    - ancestry feat
+    - magical fortitude
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - 4th-level spells
+    - expert spellcaster
+    - general feat
+    - skill increase
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - 5th-level spells
+    - ancestry feat
+    - lightning reflexes
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - 6th-level spells
+    - alertness
+    - general feat
+    - simple weapon expertise
+    - skill increase
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - 7th-level spells
+    - ancestry feat
+    - defensive robes
+    - skill increase
+    - weapon specialization
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - 8th-level spells
+    - ability boosts
+    - general feat
+    - master spellcaster
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - 9th-level spells
+    - ancestry feat
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - bloodline paragon
+    - general feat
+    - legendary spellcaster
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20
 - name: Wizard
   progression:
-    - level: 1
-      items:
-        - ancestry
-        - background
-        - initial proficiencies
-        - arcane spellcasting
-        - arcane school
-        - arcane bond
-        - arcane thesis
-        - class feat
-    - level: 2
-      items:
-        - class feat
-        - skill feat
-    - level: 3
-      items:
-        - 2nd-level spells
-        - general feat
-        - skill increase
-    - level: 4
-      items:
-        - class feat
-        - skill feat
-    - level: 5
-      items:
-        - 3rd-level spells
-        - ability boosts
-        - ancestry feat
-        - lightning reflexes
-        - skill increase
-    - level: 6
-      items:
-        - class feat
-        - skill feat
-    - level: 7
-      items:
-        - 4th-level spells
-        - expert spellcaster
-        - general feat
-        - skill increase
-    - level: 8
-      items:
-        - class feat
-        - skill feat
-    - level: 9
-      items:
-        - 5th-level spells
-        - ancestry feat
-        - magical fortitude
-        - skill increase
-    - level: 10
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
-    - level: 11
-      items:
-        - 6th-level spells
-        - alertness
-        - general feat
-        - skill increase
-        - wizard weapon expertise
-    - level: 12
-      items:
-        - class feat
-        - skill feat
-    - level: 13
-      items:
-        - 7th-level spells
-        - ancestry feat
-        - defensive robes
-        - skill increase
-        - weapon specialization
-    - level: 14
-      items:
-        - class feat
-        - skill feat
-    - level: 15
-      items:
-        - 8th-level spells
-        - ability boosts
-        - general feat
-        - master spellcaster
-        - skill increase
-    - level: 16
-      items:
-        - class feat
-        - skill feat
-    - level: 17
-      items:
-        - 9th-level spells
-        - ancestry feat
-        - resolve
-        - skill increase
-    - level: 18
-      items:
-        - class feat
-        - skill feat
-    - level: 19
-      items:
-        - archwizard's spellcraft
-        - legendary archwizard
-        - general feat
-        - skill increase
-    - level: 20
-      items:
-        - ability boosts
-        - class feat
-        - skill feat
+  - items:
+    - ancestry
+    - background
+    - initial proficiencies
+    - arcane spellcasting
+    - arcane school
+    - arcane bond
+    - arcane thesis
+    - class feat
+    level: 1
+  - items:
+    - class feat
+    - skill feat
+    level: 2
+  - items:
+    - 2nd-level spells
+    - general feat
+    - skill increase
+    level: 3
+  - items:
+    - class feat
+    - skill feat
+    level: 4
+  - items:
+    - 3rd-level spells
+    - ability boosts
+    - ancestry feat
+    - lightning reflexes
+    - skill increase
+    level: 5
+  - items:
+    - class feat
+    - skill feat
+    level: 6
+  - items:
+    - 4th-level spells
+    - expert spellcaster
+    - general feat
+    - skill increase
+    level: 7
+  - items:
+    - class feat
+    - skill feat
+    level: 8
+  - items:
+    - 5th-level spells
+    - ancestry feat
+    - magical fortitude
+    - skill increase
+    level: 9
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 10
+  - items:
+    - 6th-level spells
+    - alertness
+    - general feat
+    - skill increase
+    - wizard weapon expertise
+    level: 11
+  - items:
+    - class feat
+    - skill feat
+    level: 12
+  - items:
+    - 7th-level spells
+    - ancestry feat
+    - defensive robes
+    - skill increase
+    - weapon specialization
+    level: 13
+  - items:
+    - class feat
+    - skill feat
+    level: 14
+  - items:
+    - 8th-level spells
+    - ability boosts
+    - general feat
+    - master spellcaster
+    - skill increase
+    level: 15
+  - items:
+    - class feat
+    - skill feat
+    level: 16
+  - items:
+    - 9th-level spells
+    - ancestry feat
+    - resolve
+    - skill increase
+    level: 17
+  - items:
+    - class feat
+    - skill feat
+    level: 18
+  - items:
+    - archwizard's spellcraft
+    - legendary archwizard
+    - general feat
+    - skill increase
+    level: 19
+  - items:
+    - ability boosts
+    - class feat
+    - skill feat
+    level: 20

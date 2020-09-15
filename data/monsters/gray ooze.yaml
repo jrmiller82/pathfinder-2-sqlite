@@ -7,6 +7,47 @@ ability_mods:
   wis_mod: 0
 ac: 14
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d6 bludgeoning plus 1d6 acid, DC 21
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d6 bludgeoning plus 1d6 acid,
+    DC 21'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A gray ooze's acid damages only metal and organic materials, not stone.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Gray Ooze Acid
+  range: null
+  raw_description: '**Gray Ooze Acid** A gray ooze''s acid damages only metal and
+    organic materials, not stone.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These dangerous oozes are the bane of any who travel through swamps,
@@ -24,71 +65,35 @@ hp_misc: null
 immunities:
 - acid
 - critical hits
-- mental
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
 - precision
-- unconscious
-- visual
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+5
     type: bludgeoning
   name: pseudopod
   plus_damage:
-  - formula: 1d6
-    type: acid and Grab
+  - formula: null
+    type: 1d6 acid
+  - formula: null
+    type: Grab
   to_hit: 13
   traits:
   - agile
 name: Gray Ooze
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d6 bludgeoning plus 1d6 acid, DC 21
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d6 bludgeoning plus 1d6 acid, DC 21'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A gray ooze's acid damages only metal and organic materials, not stone.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Gray Ooze Acid
-  range: null
-  raw_description: '**Gray Ooze Acid** A gray ooze''s acid damages only metal and
-    organic materials, not stone.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: slashing
 - amount: 5
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -104,16 +109,18 @@ sense_abilities:
   description: A gray ooze can sense nearby creatures through vibration and air or
     water movement.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Motion Sense
   range: null
   raw_description: '**Motion Sense** A gray ooze can sense nearby creatures through
     vibration and air or water movement.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -121,48 +128,49 @@ sense_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: Initiative has not yet been rolled
-  effects: null
+  effect: The gray ooze automatically notices the creature, then makes a pseudopod
+    Strike against one creature adjacent to itself before rolling initiative.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Puddled Ambush
   range: null
   raw_description: '**Puddled Ambush [Reaction]** **Trigger** A creature enters a
     space occupied by a gray ooze; **Requirements** Initiative has not yet been rolled;
     **Effect** The gray ooze automatically notices the creature, then makes a pseudopod
     Strike against one creature adjacent to itself before rolling initiative.'
-  requirements: null
+  requirements: Initiative has not yet been rolled
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature enters a space occupied by a gray ooze
+  trigger: A creature enters a space occupied by a gray ooze; Requirements Initiative
+    has not yet been rolled;
 senses:
-- Perception +8
 - motion sense 60 feet
 - no vision
 size: Medium
 skills:
 - bonus: 11
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: +12 in moist environments
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 194
+  page_start: '194'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Mindless
 - Ooze
-type: Creature
-weaknesses: null

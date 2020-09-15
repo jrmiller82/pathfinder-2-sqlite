@@ -7,6 +7,79 @@ ability_mods:
   wis_mod: 2
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The hive mother makes a mandibles Strike; if the Strike hits, the target's
+    armor takes the damage and the acid damage bypasses the armor's Hardness.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Armor-Rending Bite
+  range: null
+  raw_description: '**Armor-Rending Bite** [Two Actions]  The hive mother makes a
+    mandibles Strike; if the Strike hits, the target''s armor takes the damage and
+    the acid damage bypasses the armor''s Hardness.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The hive mother unleashes a pheromone that causes all other ankhravs
+    within a 100-foot emanation to become quickened 1 until the start of the hive
+    mother's next turn, and they can use the extra action only for Burrow, Stride,
+    or Strike actions. The hive mother can't unleash the pheromone again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Frenzy Pheromone
+  range: null
+  raw_description: '**Frenzy Pheromone** [Two Actions]  The hive mother unleashes
+    a pheromone that causes all other ankhravs within a 100-foot emanation to become
+    quickened 1 until the start of the hive mother''s next turn, and they can use
+    the extra action only for Burrow, Stride, or Strike actions. The hive mother can''t
+    unleash the pheromone again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The hive mother spews acid in a 60-foot cone, dealing 8d6 acid damage
+    and 1d6 persistent acid damage (DC 26 basic Reflex save). It can't spew acid again
+    for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spray Acid
+  range: null
+  raw_description: '**Spray Acid** [Two Actions]  (__acid__) The hive mother spews
+    acid in a 60-foot cone, dealing 8d6 acid damage and 1d6 persistent acid damage
+    (DC 26 basic Reflex save). It can''t spew acid again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - acid
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +91,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +106,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -47,96 +122,26 @@ description: 'Ankhrav hive mothers are fearsome predators that one can easily di
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 26'
 hp: 120
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+6
     type: piercing
   name: mandibles
   plus_damage:
-  - formula: 2d6
-    type: acid
+  - formula: null
+    type: 2d6 acid
   to_hit: 20
   traits:
   - acid
 name: Hive Mother
 perception: 16
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The hive mother makes a mandibles Strike; if the Strike hits, the target's
-    armor takes the damage and the acid damage bypasses the armor's Hardness.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Armor-Rending Bite
-  range: null
-  raw_description: '**Armor-Rending Bite** [Two Actions]  The hive mother makes a
-    mandibles Strike; if the Strike hits, the target''s armor takes the damage and
-    the acid damage bypasses the armor''s Hardness.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The hive mother unleashes a pheromone that causes all other ankhravs
-    within a 100-foot emanation to become quickened 1 until the start of the hive
-    mother's next turn, and they can use the extra action only for Burrow, Stride,
-    or Strike actions. The hive mother can't unleash the pheromone again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Frenzy Pheromone
-  range: null
-  raw_description: '**Frenzy Pheromone** [Two Actions]  The hive mother unleashes
-    a pheromone that causes all other ankhravs within a 100-foot emanation to become
-    quickened 1 until the start of the hive mother''s next turn, and they can use
-    the extra action only for Burrow, Stride, or Strike actions. The hive mother can''t
-    unleash the pheromone again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The hive mother spews acid in a 60-foot cone, dealing 8d6 acid damage
-    and 1d6 persistent acid damage (DC 26 basic Reflex save). It can't spew acid again
-    for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spray Acid
-  range: null
-  raw_description: '**Spray Acid** [Two Actions]  (__acid__) The hive mother spews
-    acid in a 60-foot cone, dealing 8d6 acid damage and 1d6 persistent acid damage
-    (DC 26 basic Reflex save). It can''t spew acid again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - acid
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d6
-    type: acid
+    formula: null
+    type: 5d6 acid
   name: acid spit
   plus_damage: null
   to_hit: 17
@@ -144,10 +149,6 @@ ranged:
   - acid
   - range 30 feet
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 18
   fort_misc: null
@@ -156,39 +157,34 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 - tremorsense (imprecise) 90 feet
 size: Huge
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 20
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 16
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 22
+  page_start: '22'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 20
+  misc: null
   type: burrow
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Huge
 - Animal
-type: Creature
-weaknesses: null

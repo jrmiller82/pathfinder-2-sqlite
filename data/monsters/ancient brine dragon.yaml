@@ -7,36 +7,184 @@ ability_mods:
   wis_mod: 5
 ac: 40
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon breathes a spray of acidic salt water that deals 18d6 acid
+    damage in a 120-foot line (DC 38 basic Reflex save). They can't use Breath Weapon
+    again for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** [Two Actions]  (__acid__, __evocation__, __primal__)
+    The dragon breathes a spray of acidic salt water that deals 18d6 acid damage in
+    a 120-foot line (DC 38 basic Reflex save). They can''t use Breath Weapon again
+    for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - acid
+  - evocation
+  - primal
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The dragon tries to capsize an adjacent aquatic vessel of their size
+    or smaller. They must succeed at an __Athletics__ check with a DC of 35 (reduced
+    by 5 for each size smaller the vessel is than the dragon) or the pilot's __Sailing
+    Lore__ DC, whichever is higher.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Capsize
+  range: null
+  raw_description: '**Capsize** [One Action]  (__attack__) The dragon tries to capsize
+    an adjacent aquatic vessel of their size or smaller. They must succeed at an __Athletics__
+    check with a DC of 35 (reduced by 5 for each size smaller the vessel is than the
+    dragon) or the pilot''s __Sailing Lore__ DC, whichever is higher.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes a jaws Strike. On a hit, the target takes 6d6 __persistent
+    acid damage__, and is __sickened 3__ from the pain of salt and brine in its wounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Desiccating Bite
+  range: null
+  raw_description: '**Desiccating Bite** [Two Actions]  The dragon makes a jaws Strike.
+    On a hit, the target takes 6d6 __persistent acid damage__, and is __sickened 3__
+    from the pain of salt and brine in its wounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one wing Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one wing Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges their Breath Weapon whenever they score a critical
+    hit with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
+    whenever they score a critical hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The brine dragon's body is encrusted with salty, acidic crystals. When
+    a target takes damage from one of the dragon's melee Strikes, it must succeed
+    at a DC 38 Fortitude Save or be __stunned 1__ (stunned 3 on a critical failure).
+    The target then becomes temporarily immune for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Painful Strikes
+  range: null
+  raw_description: '**Painful Strikes** (__acid__) The brine dragon''s body is encrusted
+    with salty, acidic crystals. When a target takes damage from one of the dragon''s
+    melee Strikes, it must succeed at a DC 38 Fortitude Save or be __stunned 1__ (stunned
+    3 on a critical failure). The target then becomes temporarily immune for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - acid
+  trigger: null
 alignment: LN
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 36
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 36 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 36
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -50,11 +198,11 @@ automatic_abilities:
   effect: The dragon spits a glob of caustic salt water at the creature. The creature
     takes 7d6 acid damage (DC 36 basic Reflex save). On a failure, the concentrate
     action is disrupted.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Brine Spit
   range: null
   raw_description: '**Brine Spit [Reaction]** **Trigger **A creature the brine dragon
@@ -62,10 +210,12 @@ automatic_abilities:
     a glob of caustic salt water at the creature. The creature takes 7d6 acid damage
     (DC 36 basic Reflex save). On a failure, the concentrate action is disrupted.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature the brine dragon observes within 30 feet uses a __concentrate__
-    action
+  trigger: A creature the brine dragon observes within 30 feet uses a concentrate
+    action;
 description: 'Brine dragons are usually blue-green in color, with shiny scales, crests
   that help them glide through the water, and sweeping neck frills. They care little
   for either good or evil. As they are both opinionated and willing to impose their
@@ -107,9 +257,8 @@ hp: 330
 hp_misc: null
 immunities:
 - acid
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Aquan
 - Common
@@ -117,15 +266,15 @@ languages:
 - Sylvan
 - Utopian
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+17
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 5d4
-    type: acid
+  - formula: null
+    type: 5d4 acid
   to_hit: 34
   traits:
   - acid
@@ -164,141 +313,8 @@ melee:
   - reach 20 feet
 name: Ancient Brine Dragon
 perception: 32
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon breathes a spray of acidic salt water that deals 18d6 acid
-    damage in a 120-foot line (DC 38 basic Reflex save). They can't use Breath Weapon
-    again for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** [Two Actions]  (__acid__, __evocation__, __primal__)
-    The dragon breathes a spray of acidic salt water that deals 18d6 acid damage in
-    a 120-foot line (DC 38 basic Reflex save). They can''t use Breath Weapon again
-    for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - acid
-  - evocation
-  - primal
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The dragon tries to capsize an adjacent aquatic vessel of their size
-    or smaller. They must succeed at an __Athletics__ check with a DC of 35 (reduced
-    by 5 for each size smaller the vessel is than the dragon) or the pilot's __Sailing
-    Lore__ DC, whichever is higher.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Capsize
-  range: null
-  raw_description: '**Capsize**   (__attack__) The dragon tries to capsize an adjacent
-    aquatic vessel of their size or smaller. They must succeed at an __Athletics__
-    check with a DC of 35 (reduced by 5 for each size smaller the vessel is than the
-    dragon) or the pilot''s __Sailing Lore__ DC, whichever is higher.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes a jaws Strike. On a hit, the target takes 6d6 __persistent
-    acid damage__, and is __sickened 3__ from the pain of salt and brine in its wounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Desiccating Bite
-  range: null
-  raw_description: '**Desiccating Bite** [Two Actions]  The dragon makes a jaws Strike.
-    On a hit, the target takes 6d6 __persistent acid damage__, and is __sickened 3__
-    from the pain of salt and brine in its wounds.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one wing Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one wing Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges their Breath Weapon whenever they score a critical
-    hit with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
-    whenever they score a critical hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The brine dragon's body is encrusted with salty, acidic crystals. When
-    a target takes damage from one of the dragon's melee Strikes, it must succeed
-    at a DC 38 Fortitude Save or be __stunned 1__ (stunned 3 on a critical failure).
-    The target then becomes temporarily immune for 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Painful Strikes
-  range: null
-  raw_description: '**Painful Strikes** (__acid__) The brine dragon''s body is encrusted
-    with salty, acidic crystals. When a target takes damage from one of the dragon''s
-    melee Strikes, it must succeed at a DC 38 Fortitude Save or be __stunned 1__ (stunned
-    3 on a critical failure). The target then becomes temporarily immune for 1 minute.'
-  requirements: null
-  success: null
-  traits:
-  - acid
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
-resistances: null
-ritual_lists: null
 saves:
   fort: 31
   fort_misc: null
@@ -307,82 +323,73 @@ saves:
   ref_misc: null
   will: 30
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +32
 - darkvision
 - scent (imprecise) 60 feet
 size: Gargantuan
 skills:
 - bonus: 28
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 32
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 32
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 34
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 30
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 30
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 29
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 88
+  page_start: '88'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 140
+  misc: null
   type: fly
 - amount: 70
+  misc: null
   type: swim
 spell_lists:
-- dc: 38
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 6
+- attack_bonus: 30
+  cantrips: null
+  constants: null
+  dc: 38
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: hydraulic torrent
-      requirement: null
-  - heightened_level: null
-    level: 5
+  - level: 5
     spells:
-    - frequency: ×3
+    - misc: ×3
       name: control water
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mariner's curse
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: hydraulic push
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: obscuring mist
-      requirement: null
-  to_hit: 30
+  spells_source: Primal Innate Spells
 traits:
-- Rare
-- LN
-- Gargantuan
 - Amphibious
 - Dragon
 - Elemental
 - Water
-type: Creature
-weaknesses: null

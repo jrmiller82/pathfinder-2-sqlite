@@ -7,24 +7,141 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The vrock dances in flight and chants to create a ruinous explosion
+    of electricity. If more vrocks within 30 feet want to join the dance, the vrock
+    can delay the dance to wait for more vrocks; in that case, the effect occurs after
+    the last vrock uses Dance of Ruin or one of the vrocks chooses to complete that
+    round of the dance. Each non-demon creature in a 20-foot emanation from any of
+    the dancing vrocks takes 2d12 electricity damage (DC 28 basic Reflex save). For
+    each additional vrock that joins the dance, the damage increases by 1d12 and the
+    save DC increases by 1 (to a maximum of four vrocks dealing 5d12 damage with a
+    DC 31 save). The vrocks can continue dancing by using Dance of Ruin each round,
+    for up to 3 rounds in total. The emanation's size increases by 20 feet each round,
+    and the damage increases by 1d12 per vrock each round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dance of Ruin
+  range: null
+  raw_description: '**Dance of Ruin** [Three Actions]  (__divine__, __electricity__,
+    __evocation__, __manipulate__, __move__) The vrock dances in flight and chants
+    to create a ruinous explosion of electricity. If more vrocks within 30 feet want
+    to join the dance, the vrock can delay the dance to wait for more vrocks; in that
+    case, the effect occurs after the last vrock uses Dance of Ruin or one of the
+    vrocks chooses to complete that round of the dance. Each non-demon creature in
+    a 20-foot emanation from any of the dancing vrocks takes 2d12 electricity damage
+    (DC 28 basic Reflex save). For each additional vrock that joins the dance, the
+    damage increases by 1d12 and the save DC increases by 1 (to a maximum of four
+    vrocks dealing 5d12 damage with a DC 31 save). The vrocks can continue dancing
+    by using Dance of Ruin each round, for up to 3 rounds in total. The emanation''s
+    size increases by 20 feet each round, and the damage increases by 1d12 per vrock
+    each round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - electricity
+  - evocation
+  - manipulate
+  - move
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The vrock emits a cloud of spores from their body, dealing 2d8 poison
+    damage to all adjacent creatures. Each creature damaged this way must succeed
+    at a DC 28 Fortitude save or take 2d8 persistent piercing damage as the spores
+    penetrate its skin and grow into thick, green vines. The vines cease growing after
+    10 rounds, and they wither away in 1d4 days if not shaved off before then. The
+    vines can be destroyed if the creature is affected by a good spell or if holy
+    water is applied to the vines (with an Interact action). Once the vrock uses Spore
+    Cloud, the ability can't be used for 1d6 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Spore Cloud
+  range: null
+  raw_description: '**Spore Cloud** [One Action]  (__disease__, __poison__) The vrock
+    emits a cloud of spores from their body, dealing 2d8 poison damage to all adjacent
+    creatures. Each creature damaged this way must succeed at a DC 28 Fortitude save
+    or take 2d8 persistent piercing damage as the spores penetrate its skin and grow
+    into thick, green vines. The vines cease growing after 10 rounds, and they wither
+    away in 1d4 days if not shaved off before then. The vines can be destroyed if
+    the creature is affected by a good spell or if holy water is applied to the vines
+    (with an Interact action). Once the vrock uses Spore Cloud, the ability can''t
+    be used for 1d6 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - disease
+  - poison
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The vrock emits a shrill screech. Each non-demon creature within a 30-foot
+    burst must attempt a DC 28 Fortitude save. On a failure, the creature is __stunned
+    2__, and on a critical failure, it's __stunned 3__.
+  failure: null
+  frequency: once per minute.
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stunning Screech
+  range: null
+  raw_description: '**Stunning Screech** [One Action]  (__auditory__, __divine__,
+    __incapacitation__, __sonic__) **Frequency** once per minute. **Effect** The vrock
+    emits a shrill screech. Each non-demon creature within a 30-foot burst must attempt
+    a DC 28 Fortitude save. On a failure, the creature is __stunned 2__, and on a
+    critical failure, it''s __stunned 3__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - divine
+  - incapacitation
+  - sonic
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: If the vrock is flying and a creature triggers an attack of opportunity,
+  description: 'If the vrock is flying and a creature triggers an attack of opportunity,
     the vrock can make 2 Strikes with its talons against that creature instead of
     1 Strike.
+
+
+    **Peace Vulnerability** A vrock''s wrath is the heart of their essence, and forcing
+    peace upon them wrenches at their soul. If they fail a save against __calm emotions__
+    or a similar effect forcing them to be peaceful, a vrock takes 4d6 mental damage.'
   effect: You lash out at a foe that leaves an opening. Make a melee Strike against
     the triggering creature. If your attack is a critical hit and the trigger was
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -35,32 +152,12 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A vrock's wrath is the heart of their essence, and forcing peace upon
-    them wrenches at their soul. If they fail a save against __calm emotions__ or
-    a similar effect forcing them to be peaceful, a vrock takes 4d6 mental damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Peace Vulnerability
-  range: null
-  raw_description: '**Peace Vulnerability** A vrock''s wrath is the heart of their
-    essence, and forcing peace upon them wrenches at their soul. If they fail a save
-    against __calm emotions__ or a similar effect forcing them to be peaceful, a vrock
-    takes 4d6 mental damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
 description: 'When the gates to the Abyss swing wide, the first demons through are
   often vrocks, vulture-headed scions of rage who wheel through the air on black wings
   or dance with the exultation of their fiendish power. Their hatred for mortals is
@@ -83,23 +180,21 @@ description: 'When the gates to the Abyss swing wide, the first demons through a
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 26'
 hp: 185
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - Celestial
 - Draconic
 - telepathy 100 feet
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d8+9
     type: piercing
   name: beak
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 21
   traits:
   - evil
@@ -111,8 +206,8 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 21
   traits:
   - agile
@@ -125,8 +220,8 @@ melee:
     type: slashing
   name: talon
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 19
   traits:
   - agile
@@ -135,129 +230,11 @@ melee:
   - reach 10 feet
 name: Vrock
 perception: 18
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: The vrock dances in flight and chants to create a ruinous explosion
-    of electricity. If more vrocks within 30 feet want to join the dance, the vrock
-    can delay the dance to wait for more vrocks; in that case, the effect occurs after
-    the last vrock uses Dance of Ruin or one of the vrocks chooses to complete that
-    round of the dance. Each non-demon creature in a 20-foot emanation from any of
-    the dancing vrocks takes 2d12 electricity damage (DC 28 basic Reflex save). For
-    each additional vrock that joins the dance, the damage increases by 1d12 and the
-    save DC increases by 1 (to a maximum of four vrocks dealing 5d12 damage with a
-    DC 31 save). The vrocks can continue dancing by using Dance of Ruin each round,
-    for up to 3 rounds in total. The emanation's size increases by 20 feet each round,
-    and the damage increases by 1d12 per vrock each round.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dance of Ruin
-  range: null
-  raw_description: '**Dance of Ruin** [Three Actions]  (__divine__, __electricity__,
-    __evocation__, __manipulate__, __move__) The vrock dances in flight and chants
-    to create a ruinous explosion of electricity. If more vrocks within 30 feet want
-    to join the dance, the vrock can delay the dance to wait for more vrocks; in that
-    case, the effect occurs after the last vrock uses Dance of Ruin or one of the
-    vrocks chooses to complete that round of the dance. Each non-demon creature in
-    a 20-foot emanation from any of the dancing vrocks takes 2d12 electricity damage
-    (DC 28 basic Reflex save). For each additional vrock that joins the dance, the
-    damage increases by 1d12 and the save DC increases by 1 (to a maximum of four
-    vrocks dealing 5d12 damage with a DC 31 save). The vrocks can continue dancing
-    by using Dance of Ruin each round, for up to 3 rounds in total. The emanation''s
-    size increases by 20 feet each round, and the damage increases by 1d12 per vrock
-    each round.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - electricity
-  - evocation
-  - manipulate
-  - move
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The vrock emits a cloud of spores from their body, dealing 2d8 poison
-    damage to all adjacent creatures. Each creature damaged this way must succeed
-    at a DC 28 Fortitude save or take 2d8 persistent piercing damage as the spores
-    penetrate its skin and grow into thick, green vines. The vines cease growing after
-    10 rounds, and they wither away in 1d4 days if not shaved off before then. The
-    vines can be destroyed if the creature is affected by a good spell or if holy
-    water is applied to the vines (with an Interact action). Once the vrock uses Spore
-    Cloud, the ability can't be used for 1d6 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spore Cloud
-  range: null
-  raw_description: '**Spore Cloud**   (__disease__, __poison__) The vrock emits a
-    cloud of spores from their body, dealing 2d8 poison damage to all adjacent creatures.
-    Each creature damaged this way must succeed at a DC 28 Fortitude save or take
-    2d8 persistent piercing damage as the spores penetrate its skin and grow into
-    thick, green vines. The vines cease growing after 10 rounds, and they wither away
-    in 1d4 days if not shaved off before then. The vines can be destroyed if the creature
-    is affected by a good spell or if holy water is applied to the vines (with an
-    Interact action). Once the vrock uses Spore Cloud, the ability can''t be used
-    for 1d6 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - disease
-  - poison
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The vrock emits a shrill screech. Each non-demon creature within a 30-foot
-    burst must attempt a DC 28 Fortitude save. On a failure, the creature is __stunned
-    2__, and on a critical failure, it's __stunned 3__.
-  effects: null
-  failure: null
-  frequency: once per minute.
-  full_description: null
-  generic_description: null
-  name: Stunning Screech
-  range: null
-  raw_description: '**Stunning Screech**   (__auditory__, __divine__, __incapacitation__,
-    __sonic__) **Frequency** once per minute. **Effect** The vrock emits a shrill
-    screech. Each non-demon creature within a 30-foot burst must attempt a DC 28 Fortitude
-    save. On a failure, the creature is __stunned 2__, and on a critical failure,
-    it''s __stunned 3__.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - divine
-  - incapacitation
-  - sonic
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
-  type: electricity
-ritual_lists:
-- dc: 26
   misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: abyssal pact
-      requirement: null
-  to_hit: null
+  type: electricity
 saves:
   fort: 20
   fort_misc: null
@@ -266,71 +243,79 @@ saves:
   ref_misc: null
   will: 15
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - darkvision
 size: Large
 skills:
 - bonus: 18
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 18
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 18
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 18
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 16
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 78
+  page_start: '78'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: fly
 spell_lists:
-- dc: 26
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: null
+    - misc: null
       name: mirror image
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: abyssal pact
+  spells_source: Divine Rituals
 traits:
-- CE
-- Large
 - Demon
 - Fiend
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: cold iron
 - amount: 10
+  misc: null
   type: good

@@ -7,6 +7,99 @@ ability_mods:
   wis_mod: 2
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d8+9 bludgeoning, DC 25 (grabbed by claws only)
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**Constrict** [One Action]  1d8+9 bludgeoning, DC 25 (grabbed
+    by claws only)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** A creature is grabbed and paralyzed by the chuul''s
+    tentacles.'
+  effect: The creature takes 3d6 piercing damage.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mandibles
+  range: null
+  raw_description: '**Mandibles** [One Action]  **Requirement** A creature is grabbed
+    and paralyzed by the chuul''s tentacles. **Effect** The creature takes 3d6 piercing
+    damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Paralytic Venom
+  range: null
+  raw_description: '**Paralytic Venom** (__incapacitation__, __poison__) **Saving
+    Throw** DC 25 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** paralyzed
+    (1 round).'
+  requirements: null
+  saving_throw: DC 25 Fortitude
+  stages:
+  - effect: paralyzed (1 round).
+  success: null
+  traits:
+  - incapacitation
+  - poison
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The chuul has a creature grabbed.'
+  effect: The chuul transfers the grabbed creature from its claws to its tentacles,
+    or vice versa. A creature is exposed to the chuul's paralytic venom when transferred
+    into the tentacles and at the start of each of the chuul's turns if it remains
+    grabbed by the tentacles.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tentacle Transfer
+  range: null
+  raw_description: '**Tentacle Transfer** [One Action]  **Requirement** The chuul
+    has a creature grabbed. **Effect** The chuul transfers the grabbed creature from
+    its claws to its tentacles, or vice versa. A creature is exposed to the chuul''s
+    paralytic venom when transferred into the tentacles and at the start of each of
+    the chuul''s turns if it remains grabbed by the tentacles.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +111,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +126,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -60,7 +155,7 @@ description: 'Also known as chu''ulothis, these large, armor-plated, crustacean 
   Chuuls are capable of speech and reason, but these creatures rarely speak with those
   outside their species except to taunt their food. Before it begins consuming its
   prey, a chuul often speaks in a gurgling, nearly incomprehensible dialect about
-  how it will enjoy feasting on the creature''s   esh. Perhaps chuuls believe that
+  how it will enjoy feasting on the creature''s flesh. Perhaps chuuls believe that
   insults and degradation lead to more tender and tastier food, but the truth will
   likely never be known; almost all chuuls stubbornly refuse any meaningful conversation,
   even when imprisoned and compelled by treats or pain.
@@ -81,14 +176,12 @@ hp: 100
 hp_misc: null
 immunities:
 - poison
-items: null
 languages:
 - Aklo
 - Common
-- (or Undercommon
-- for Darklands variants)
+- (or Undercommon, for Darklands variants)
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+9
@@ -102,89 +195,7 @@ melee:
   - reach 10 feet
 name: Chuul
 perception: 15
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d8+9 bludgeoning, DC 25 (grabbed by claws only)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**Constrict**   1d8+9 bludgeoning, DC 25 (grabbed by claws only)'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: A creature is grabbed and paralyzed by the chuul's tentacles.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mandibles
-  range: null
-  raw_description: '**Mandibles**   **Requirement** A creature is grabbed and paralyzed
-    by the chuul''s tentacles. **Effect** The creature takes 3d6 piercing damage.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 25 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** paralyzed (1 round).'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Paralytic Venom
-  range: null
-  raw_description: '**Paralytic Venom** (__incapacitation__, __poison__) **Saving
-    Throw** DC 25 Fortitude; **Maximum Duration** 6 rounds; **Stage 1** paralyzed
-    (1 round).'
-  requirements: null
-  success: null
-  traits:
-  - incapacitation
-  - poison
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The chuul has a creature grabbed.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tentacle Transfer
-  range: null
-  raw_description: '**Tentacle Transfer**   **Requirement** The chuul has a creature
-    grabbed. **Effect** The chuul transfers the grabbed creature from its claws to
-    its tentacles, or vice versa. A creature is exposed to the chuul''s paralytic
-    venom when transferred into the tentacles and at the start of each of the chuul''s
-    turns if it remains grabbed by the tentacles.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 18
   fort_misc: null
@@ -193,39 +204,35 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +15
 - darkvision
 - tremorsense (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 13
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 14
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 13
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 64
+  page_start: '64'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- CE
-- Large
 - Aberration
 - Amphibious
-type: Creature
-weaknesses: null

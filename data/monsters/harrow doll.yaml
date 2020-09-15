@@ -7,6 +7,45 @@ ability_mods:
   wis_mod: 5
 ac: 26
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: 'A creature struck by one of the harrow doll''s cards must attempt
+    a DC 25 Will save or be cursed with misfortune, which forces the creature to roll
+    twice and take the lower result on its next roll of a specific type, determined
+    by the card''s suit (roll 1d6 to randomly determine the suit). A creature can
+    be cursed with only one effect from harrowing misfortune at a time, with a new
+    curse overriding any previous curse. The curse ends after 1 minute or after the
+    specified roll is made, whichever comes first. The suits and their effects are:
+    Hammers (melee attack roll), Keys (Reflex save), Shields (Fortitude save), Books
+    (skill check), Stars (Will save), and Crowns (spell attack roll).'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Harrowing Misfortune
+  range: null
+  raw_description: '**Harrowing Misfortune** (__curse__, __misfortune__) A creature
+    struck by one of the harrow doll''s cards must attempt a DC 25 Will save or be
+    cursed with misfortune, which forces the creature to roll twice and take the lower
+    result on its next roll of a specific type, determined by the card''s suit (roll
+    1d6 to randomly determine the suit). A creature can be cursed with only one effect
+    from harrowing misfortune at a time, with a new curse overriding any previous
+    curse. The curse ends after 1 minute or after the specified roll is made, whichever
+    comes first. The suits and their effects are: Hammers (melee attack roll), Keys
+    (Reflex save), Shields (Fortitude save), Books (skill check), Stars (Will save),
+    and Crowns (spell attack roll).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - misfortune
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -19,11 +58,11 @@ automatic_abilities:
     If the suit of its latest harrow reading is unknown, roll 1d6 at the beginning
     of combat to randomly determine it.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Fortune's Favor
   range: null
   raw_description: '**Fortune''s Favor** (__fortune__) Whenever the harrow doll attempts
@@ -33,6 +72,8 @@ automatic_abilities:
     (Keys or Books), or Will (Stars or Crowns). If the suit of its latest harrow reading
     is unknown, roll 1d6 at the beginning of combat to randomly determine it.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - fortune
@@ -70,7 +111,7 @@ items:
 languages:
 - Common
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+6
@@ -85,44 +126,7 @@ melee:
   - magical
 name: Harrow Doll
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 'A creature struck by one of the harrow doll''s cards must attempt
-    a DC 25 Will save or be cursed with misfortune, which forces the creature to roll
-    twice and take the lower result on its next roll of a specific type, determined
-    by the card''s suit (roll 1d6 to randomly determine the suit). A creature can
-    be cursed with only one effect from harrowing misfortune at a time, with a new
-    curse overriding any previous curse. The curse ends after 1 minute or after the
-    specified roll is made, whichever comes first. The suits and their effects are:
-    Hammers (melee attack roll), Keys (Reflex save), Shields (Fortitude save), Books
-    (skill check), Stars (Will save), and Crowns (spell attack roll).'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Harrowing Misfortune
-  range: null
-  raw_description: '**Harrowing Misfortune** (__curse__, __misfortune__) A creature
-    struck by one of the harrow doll''s cards must attempt a DC 25 Will save or be
-    cursed with misfortune, which forces the creature to roll twice and take the lower
-    result on its next roll of a specific type, determined by the card''s suit (roll
-    1d6 to randomly determine the suit). A creature can be cursed with only one effect
-    from harrowing misfortune at a time, with a new curse overriding any previous
-    curse. The curse ends after 1 minute or after the specified roll is made, whichever
-    comes first. The suits and their effects are: Hammers (melee attack roll), Keys
-    (Reflex save), Shields (Fortitude save), Books (skill check), Stars (Will save),
-    and Crowns (spell attack roll).'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - misfortune
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+6
@@ -138,8 +142,8 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 5
-  type: physical (except adamantine)
-ritual_lists: null
+  misc: except adamantine
+  type: physical
 saves:
   fort: 16
   fort_misc: null
@@ -152,80 +156,69 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A harrow doll can cast __augury__ as part of a harrow reading, which
-    takes the usual 10 minutes. When casting __locate__, the harrow doll doesn''t
-    need to have previously observed a specific object to learn its direction, but
-    instead can detail the direction only vaguely, using such phrases as "beside a
-    weeping mound" or "beneath the lost sky." When the harrow doll casts __mind reading__,
+  description: A harrow doll can cast __augury__ as part of a harrow reading, which
+    takes the usual 10 minutes. When casting __locate__, the harrow doll doesn't need
+    to have previously observed a specific object to learn its direction, but instead
+    can detail the direction only vaguely, using such phrases as “beside a weeping
+    mound” or “beneath the lost sky.” When the harrow doll casts __mind reading__,
     there is no effect if the target critically succeeds its save. Each time a harrow
     doll makes a harrow reading, it also changes which saving throw is affected by
-    its fortune''s favor ability.
-
-
-    '
+    its fortune's favor ability.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Uncanny Divination
   range: null
   raw_description: '**Uncanny Divination** A harrow doll can cast __augury__ as part
     of a harrow reading, which takes the usual 10 minutes. When casting __locate__,
     the harrow doll doesn''t need to have previously observed a specific object to
     learn its direction, but instead can detail the direction only vaguely, using
-    such phrases as "beside a weeping mound" or "beneath the lost sky." When the harrow
+    such phrases as “beside a weeping mound” or “beneath the lost sky.” When the harrow
     doll casts __mind reading__, there is no effect if the target critically succeeds
     its save. Each time a harrow doll makes a harrow reading, it also changes which
-    saving throw is affected by its fortune''s favor ability.
-
-
-    '
+    saving throw is affected by its fortune''s favor ability.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +14
 - darkvision
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Fortune-Telling Lore '
-source:
+  name: Fortune-Telling Lore
+sources:
 - abbr: 'Pathfinder #154: Siege of the Dinosaurs'
-  page_start: 81
+  page_start: '81'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists:
-- dc: 27
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 27
+  focus_points: null
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+  spell_lists:
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: locate
-      requirement: null
-    - frequency: null
+    - misc: null
       name: mind reading
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: augury
-      requirement: null
-  to_hit: null
+  spells_source: Arcane Innate Spells
 traits:
-- Uncommon
-- N
-- Large
 - Construct
-type: Creature
-weaknesses: null

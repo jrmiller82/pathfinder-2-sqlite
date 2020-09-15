@@ -7,6 +7,28 @@ ability_mods:
   wis_mod: 2
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The pteranodon Flies up to its Speed and makes one beak Strike at any
+    point during that movement.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swoop
+  range: null
+  raw_description: '**Swoop** [Two Actions]  The pteranodon Flies up to its Speed
+    and makes one beak Strike at any point during that movement.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Pteranodons are quick and agile reptiles with 20-foot wingspans that
@@ -19,11 +41,8 @@ description: 'Pteranodons are quick and agile reptiles with 20-foot wingspans th
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 16'
 hp: 35
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+3
@@ -34,32 +53,7 @@ melee:
   traits: null
 name: Pteranodon
 perception: 8
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The pteranodon Flies up to its Speed and makes one beak Strike at any
-    point during that movement.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swoop
-  range: null
-  raw_description: '**Swoop** [Two Actions]  The pteranodon Flies up to its Speed
-    and makes one beak Strike at any point during that movement.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -68,32 +62,28 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - low-light vision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 272
+  page_start: '272'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- N
-- Large
 - Animal
-type: Creature
-weaknesses: null

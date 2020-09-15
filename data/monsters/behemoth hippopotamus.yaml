@@ -7,6 +7,116 @@ ability_mods:
   wis_mod: 5
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Aquatic Ambush
+  range: 40 feet
+  raw_description: '**__Aquatic Ambush__** [One Action]  40 feet'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The behemoth hippopotamus tries to capsize an adjacent aquatic vessel
+    of its size or smaller. The behemoth hippopotamus must succeed at an __Athletics__
+    check with a DC of 30 (reduced by 5 for each size smaller the vessel is than the
+    hippo) or the pilot's __Sailing Lore__ DC, whichever is higher.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Capsize
+  range: null
+  raw_description: '**Capsize** [One Action]  (__attack__) The behemoth hippopotamus
+    tries to capsize an adjacent aquatic vessel of its size or smaller. The behemoth
+    hippopotamus must succeed at an __Athletics__ check with a DC of 30 (reduced by
+    5 for each size smaller the vessel is than the hippo) or the pilot''s __Sailing
+    Lore__ DC, whichever is higher.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The behemoth hippo makes a jaws Strike targeting two creatures adjacent
+    to each other. Roll the attack and damage once, and apply it to each creature
+    separately. An Engulfing Chomp counts as two attacks for the multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Double Chomp
+  range: null
+  raw_description: '**Double Chomp** [One Action]  The behemoth hippo makes a jaws
+    Strike targeting two creatures adjacent to each other. Roll the attack and damage
+    once, and apply it to each creature separately. An Engulfing Chomp counts as two
+    attacks for the multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: Medium, 2d12+10 bludgeoning, Rupture 26.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swallow Whole
+  range: null
+  raw_description: '**__Swallow Whole__** [One Action]  Medium, 2d12+10 bludgeoning,
+    Rupture 26.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: Large or smaller, foot, DC 29
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Trample
+  range: null
+  raw_description: '**__Trample__** [Three Actions]  Large or smaller, foot, DC 29'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Behemoth hippopotamuses stand taller than elephants. They spend less
@@ -19,11 +129,8 @@ description: 'Behemoth hippopotamuses stand taller than elephants. They spend le
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 27'
 hp: 190
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+10
@@ -46,111 +153,7 @@ melee:
   traits: null
 name: Behemoth Hippopotamus
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 40 feet
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Aquatic Ambush
-  range: null
-  raw_description: '**__Aquatic Ambush__**   40 feet'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The behemoth hippopotamus tries to capsize an adjacent aquatic vessel
-    of its size or smaller. The behemoth hippopotamus must succeed at an __Athletics__
-    check with a DC of 30 (reduced by 5 for each size smaller the vessel is than the
-    hippo) or the pilot's __Sailing Lore__ DC, whichever is higher.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Capsize
-  range: null
-  raw_description: '**Capsize**   (__attack__) The behemoth hippopotamus tries to
-    capsize an adjacent aquatic vessel of its size or smaller. The behemoth hippopotamus
-    must succeed at an __Athletics__ check with a DC of 30 (reduced by 5 for each
-    size smaller the vessel is than the hippo) or the pilot''s __Sailing Lore__ DC,
-    whichever is higher.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The behemoth hippo makes a jaws Strike targeting two creatures adjacent
-    to each other. Roll the attack and damage once, and apply it to each creature
-    separately. An Engulfing Chomp counts as two attacks for the multiple attack penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Double Chomp
-  range: null
-  raw_description: '**Double Chomp**   The behemoth hippo makes a jaws Strike targeting
-    two creatures adjacent to each other. Roll the attack and damage once, and apply
-    it to each creature separately. An Engulfing Chomp counts as two attacks for the
-    multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: Medium, 2d12+10 bludgeoning, Rupture 26.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swallow Whole
-  range: null
-  raw_description: '**__Swallow Whole__**   Medium, 2d12+10 bludgeoning, Rupture 26.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: Large or smaller, foot, DC 29
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Trample
-  range: null
-  raw_description: '**__Trample__** [Three Actions]  Large or smaller, foot, DC 29'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 22
   fort_misc: null
@@ -165,47 +168,46 @@ sense_abilities:
   critical_success: null
   description: The behemoth hippopotamus can hold its breath for 1 hour.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Deep Breath
   range: null
   raw_description: '**Deep Breath** The behemoth hippopotamus can hold its breath
     for 1 hour.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +19
 - low-light vision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 23
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 18
   misc: +20 in water
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 144
+  page_start: '144'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Huge
 - Animal
-type: Creature
-weaknesses: null

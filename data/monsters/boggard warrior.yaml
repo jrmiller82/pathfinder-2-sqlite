@@ -7,61 +7,25 @@ ability_mods:
   wis_mod: 2
 ac: 17
 ac_special: null
-alignment: CE
-automatic_abilities: null
-description: 'Boggard warriors exalt in single combat, and prefer to fight alone so
-  that none can contest their kills. They have been known to pursue enemies who flee
-  combat with a single-mindedness that seems almost supernatural.
-
-
-
-
-  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
-hp: 38
-hp_misc: null
-immunities: null
-items:
-- club
-- javelin (3)
-- studded leather armor
-languages:
-- Boggard
-level: 2
-melee:
-- action_cost: One Action
-  damage:
-    formula: 1d6+6
-    type: bludgeoning
-  name: Club
-  plus_damage: null
-  to_hit: 10
-  traits: null
-- action_cost: One Action
-  damage: null
-  name: Tongue
-  plus_damage: null
-  to_hit: 10
-  traits:
-  - reach 10 feet
-name: Boggard Warrior
-perception: 8
-proactive_abilities:
+active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
   description: A boggard warrior ignores difficult terrain caused by swamp terrain
     features.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Swamp Stride
   range: null
   raw_description: '**Swamp Stride** A boggard warrior ignores difficult terrain caused
     by swamp terrain features.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -72,18 +36,20 @@ proactive_abilities:
     30 feet becomes __frightened 1__ unless they succeed at a DC 18 Will save; those
     who critically succeed are temporarily immune for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Terrifying Croak
   range: null
-  raw_description: '**Terrifying Croak**   (__auditory__, __emotion__, __fear__, __mental__)
-    The boggard warrior unleashes a terrifying croak. Any non-boggard within 30 feet
-    becomes __frightened 1__ unless they succeed at a DC 18 Will save; those who critically
-    succeed are temporarily immune for 1 minute.'
+  raw_description: '**Terrifying Croak** [One Action]  (__auditory__, __emotion__,
+    __fear__, __mental__) The boggard warrior unleashes a terrifying croak. Any non-boggard
+    within 30 feet becomes __frightened 1__ unless they succeed at a DC 18 Will save;
+    those who critically succeed are temporarily immune for 1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - auditory
@@ -101,11 +67,11 @@ proactive_abilities:
     damage. Though this doesn't deal any damage to the boggard, it prevents it from
     using its tongue Strike until it regrows its tongue, which takes a week.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Tongue Grab
   range: null
   raw_description: '**Tongue Grab** If the boggard warrior hits a creature with its
@@ -116,10 +82,51 @@ proactive_abilities:
     boggard, it prevents it from using its tongue Strike until it regrows its tongue,
     which takes a week.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-ranged:
+alignment: CE
+automatic_abilities: null
+description: 'Boggard warriors exalt in single combat, and prefer to fight alone so
+  that none can contest their kills. They have been known to pursue enemies who flee
+  combat with a single-mindedness that seems almost supernatural.
+
+
+
+
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
+hp: 38
+hp_misc: null
+items:
+- club
+- javelin (3)
+- studded leather armor
+languages:
+- Boggard
+level: 2
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 1d6+6
+    type: bludgeoning
+  name: Club
+  plus_damage: null
+  to_hit: 10
+  traits: null
+- action_cost: One Action
+  damage:
+    formula: null
+    type: Tongue Grab
+  name: Tongue
+  plus_damage: null
+  to_hit: 10
+  traits:
+  - reach 10 feet
+name: Boggard Warrior
+perception: 8
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -138,11 +145,6 @@ ranged:
   to_hit: 6
   traits:
   - thrown 10 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 10
   fort_misc: null
@@ -151,38 +153,35 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Medium
 skills:
 - bonus: 8
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 6
   misc: +8 in water
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 44
+  page_start: '44'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
 - amount: null
+  misc: null
   type: swamp stride
 spell_lists: null
 traits:
-- CE
-- Medium
 - Amphibious
 - Boggard
 - Humanoid
-type: Creature
-weaknesses: null

@@ -7,6 +7,50 @@ ability_mods:
   wis_mod: 4
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A unicorn's Strikes have the effects of a ghost touch property rune.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ghost Touch
+  range: null
+  raw_description: '**Ghost Touch** A unicorn''s Strikes have the effects of a ghost
+    touch property rune.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The unicorn Strides up to double its Speed in a straight line and then
+    makes a horn Strike. If the unicorn moved at least 20 feet, it deals an additional
+    2d6 damage on a hit.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Powerful Charge
+  range: null
+  raw_description: '**Powerful Charge** [Two Actions]  The unicorn Strides up to double
+    its Speed in a straight line and then makes a horn Strike. If the unicorn moved
+    at least 20 feet, it deals an additional 2d6 damage on a hit.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CG
 automatic_abilities: null
 description: 'Symbols of grace and purity, unicorns resemble proud and noble horses.
@@ -40,20 +84,21 @@ hp: 45
 hp_misc: null
 immunities:
 - poison
-items: null
 languages:
 - Common
 - Sylvan
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+4
     type: piercing
   name: horn
   plus_damage:
-  - formula: 1d6
-    type: good and ghost touch
+  - formula: null
+    type: 1d6 good
+  - formula: null
+    type: ghost touch
   to_hit: 12
   traits:
   - good
@@ -70,50 +115,7 @@ melee:
   - magical
 name: Unicorn
 perception: 13
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A unicorn's Strikes have the effects of a ghost touch property rune.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ghost Touch
-  range: null
-  raw_description: '**Ghost Touch** A unicorn''s Strikes have the effects of a ghost
-    touch property rune.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The unicorn Strides up to double its Speed in a straight line and then
-    makes a horn Strike. If the unicorn moved at least 20 feet, it deals an additional
-    2d6 damage on a hit.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Powerful Charge
-  range: null
-  raw_description: '**Powerful Charge** [Two Actions]  The unicorn Strides up to double
-    its Speed in a straight line and then makes a horn Strike. If the unicorn moved
-    at least 20 feet, it deals an additional 2d6 damage on a hit.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -130,11 +132,11 @@ sense_abilities:
     that allows it to communicate with them. The unicorn can use Diplomacy to Make
     an Impression on animals and to make very simple Requests of them.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Wild Empathy
   range: null
   raw_description: '**Wild Empathy** The unicorn has a connection to the creatures
@@ -142,71 +144,63 @@ sense_abilities:
     use Diplomacy to Make an Impression on animals and to make very simple Requests
     of them.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +13
 - darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 10
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 11
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 8
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 9
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 316
+  page_start: '316'
   page_stop: null
 speed:
 - amount: 45
+  misc: null
   type: Land
 spell_lists:
-- dc: 21
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: tree stride
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: x2
-      name: heal
-      requirement: null
-    - frequency: null
-      name: neutralize poison
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: at will, good only
-      name: detect alignment
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 21
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: tree stride
+  - level: 3
+    spells:
+    - misc: x2
+      name: heal
+    - misc: null
+      name: neutralize poison
+  - level: 1
+    spells:
+    - misc: at will, good only
+      name: detect alignment
+  spells_source: Primal Innate Spells
 traits:
-- CG
-- Large
 - Beast
 - Fey
-type: Creature
-weaknesses: null

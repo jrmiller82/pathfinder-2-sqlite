@@ -7,6 +7,140 @@ ability_mods:
   wis_mod: 5
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: '**Requirement** The nyogoth has __grabbed__ a creature;'
+  effect: The nyogoth slavers and chews at the grabbed creature, dealing 2d6+7 slashing
+    and 1d6 acid damage (DC 29 basic Fortitude save).
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Feeding Frenzy
+  range: null
+  raw_description: '**Feeding Frenzy** [One Action]  **Requirement** The nyogoth has
+    __grabbed__ a creature; **Effect** The nyogoth slavers and chews at the grabbed
+    creature, dealing 2d6+7 slashing and 1d6 acid damage (DC 29 basic Fortitude save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The nyogoth untangles its tentacles and prolapses its many mouths,
+    turning itself inside out in a truly nauseating display. Creatures in a 30-foot
+    emanation must attempt a DC 29 Will save, after which they are temporarily immune
+    to further Nauseating Displays for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Nauseating Display
+  range: null
+  raw_description: '**Nauseating Display** [Two Actions]  (__concentrate__, __emotion__,
+    __enchantment__, __fear__, __incapacitation__, __mental__, __occult__, __visual__)
+    The nyogoth untangles its tentacles and prolapses its many mouths, turning itself
+    inside out in a truly nauseating display. Creatures in a 30-foot emanation must
+    attempt a DC 29 Will save, after which they are temporarily immune to further
+    Nauseating Displays for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - emotion
+  - enchantment
+  - fear
+  - incapacitation
+  - mental
+  - occult
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Success The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical
+  range: null
+  raw_description: '**Critical** Success The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __sickened 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __sickened 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __sickened 1__.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __stunned 3__ and sickened 1.
+  effect: null
+  failure: The creature is __stunned 3__ and sickened 1.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is __stunned 3__ and sickened 1.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is stunned 5 and sickened 2.
+  critical_success: null
+  description: The creature is stunned 5 and sickened 2.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is stunned 5 and sickened 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -15,20 +149,22 @@ automatic_abilities:
   description: null
   effect: The nyogoth sprays its acidic blood on adjacent creatures, dealing 6d6 acid
     damage (DC 29 basic Reflex save).
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Caustic Blood
   range: null
   raw_description: '**Caustic Blood [Reaction]** **Trigger** The nyogoth takes piercing
     or slashing damage; **Effect** The nyogoth sprays its acidic blood on adjacent
     creatures, dealing 6d6 acid damage (DC 29 basic Reflex save).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: The nyogoth takes piercing or slashing damage
+  trigger: The nyogoth takes piercing or slashing damage;
 description: 'Little more than a coiled mass of intestines encircling a massive gaping
   maw, this qlippoth is an __Abyssal__ scavenger, subsisting on the filth and leftovers
   of __demons__ and qlippoth alike, although it relishes any opportunity to consume
@@ -44,24 +180,23 @@ hp: 175
 hp_misc: null
 immunities:
 - acid
-- controlled
-- fear
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
 languages:
 - Abyssal
 - telepathy 100 ft.
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+13
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: acid
-  - formula: 1d6
-    type: chaotic
+  - formula: null
+    type: 2d6 acid
+  - formula: null
+    type: 1d6 chaotic
   - formula: null
     type: Grab
   to_hit: 23
@@ -74,10 +209,10 @@ melee:
     type: piercing
   name: tentacle mouth
   plus_damage:
-  - formula: 1d6
-    type: acid
-  - formula: 1d6
-    type: chaotic
+  - formula: null
+    type: 1d6 acid
+  - formula: null
+    type: 1d6 chaotic
   - formula: null
     type: Grab
   to_hit: 23
@@ -88,69 +223,15 @@ melee:
   - reach 10 feet
 name: Nyogoth
 perception: 19
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The nyogoth has __grabbed__ a creature
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Feeding Frenzy
-  range: null
-  raw_description: '**Feeding Frenzy**   **Requirement** The nyogoth has __grabbed__
-    a creature; **Effect** The nyogoth slavers and chews at the grabbed creature,
-    dealing 2d6+7 slashing and 1d6 acid damage (DC 29 basic Fortitude save).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: The creature is stunned 5 and sickened 2.
-  critical_success: null
-  description: "The nyogoth untangles its tentacles and prolapses its many mouths,\
-    \ turning itself inside out in a truly nauseating display. Creatures in a 30-foot\
-    \ emanation must attempt a DC 29 Will save, after which they are temporarily immune\
-    \ to further Nauseating Displays for 1 minute. \n\n**Critical** Success The creature\
-    \ is unaffected. \n\n"
-  effect: null
-  effects: null
-  failure: The creature is stunned 3 and sickened 1.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Nauseating Display
-  range: null
-  raw_description: "**Nauseating Display** [Two Actions]  (__concentrate__, __emotion__,\
-    \ __enchantment__, __fear__, __incapacitation__, __mental__, __occult__, __visual__)\
-    \ The nyogoth untangles its tentacles and prolapses its many mouths, turning itself\
-    \ inside out in a truly nauseating display. Creatures in a 30-foot emanation must\
-    \ attempt a DC 29 Will save, after which they are temporarily immune to further\
-    \ Nauseating Displays for 1 minute. \n\n**Critical** Success The creature is unaffected.\
-    \ \n\n**Success** The creature is __sickened 1__. \n\n**Failure** The creature\
-    \ is __stunned 3__ and sickened 1. \n\n**Critical Failure** The creature is stunned\
-    \ 5 and sickened 2."
-  requirements: null
-  success: The creature is sickened 1.
-  traits:
-  - concentrate
-  - emotion
-  - enchantment
-  - fear
-  - incapacitation
-  - mental
-  - occult
-  - visual
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
+  misc: null
   type: mental
-ritual_lists: null
+- amount: 10
+  misc: except cold iron
+  type: physical
 saves:
   fort: 20
   fort_misc: null
@@ -159,72 +240,63 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 size: Medium
 skills:
 - bonus: 21
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 21
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 19
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 16
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 21
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 214
+  page_start: '214'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: fly
 spell_lists:
-- dc: 26
-  misc: ''
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: 20
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: cloudkill
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: acid arrow
-      requirement: null
-    - frequency: null
+    - misc: null
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: at will
+    - misc: at will
       name: fear
-      requirement: null
-  to_hit: 20
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- CE
-- Medium
 - Fiend
 - Qlippoth
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: lawful
-- amount: 10
-  type: physical (except cold iron)

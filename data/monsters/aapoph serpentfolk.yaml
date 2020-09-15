@@ -7,6 +7,56 @@ ability_mods:
   wis_mod: 1
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Serpentfolk Venom
+  range: null
+  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 20 Fortitude;
+    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
+    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
+  requirements: null
+  saving_throw: DC 20 Fortitude
+  stages:
+  - effect: 1d4 poison damage and __enfeebled 1__ (1 round)
+  - effect: 2d4 poison damage and enfeebled 1 (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The aapoph serpentfolk makes one scimitar or fangs Strike and one tail
+    Strike, each targeting a different creature. These attacks both count toward the
+    aapoph's multiple attack penalty, but the penalty doesn't increase until after
+    the aapoph makes both attacks.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Slithering Attack
+  range: null
+  raw_description: '**Slithering Attack** [One Action]  The aapoph serpentfolk makes
+    one scimitar or fangs Strike and one tail Strike, each targeting a different creature.
+    These attacks both count toward the aapoph''s multiple attack penalty, but the
+    penalty doesn''t increase until after the aapoph makes both attacks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +68,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +83,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -53,7 +105,6 @@ description: 'Aapophs possess greater strength and stronger venom than their zys
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 20'
 hp: 60
 hp_misc: null
-immunities: null
 items:
 - scimitar
 languages:
@@ -61,7 +112,7 @@ languages:
 - Undercommon
 - telepathy 100 feet
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+6
@@ -95,58 +146,12 @@ melee:
   - agile
 name: Aapoph Serpentfolk
 perception: 8
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 20 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d4 poison damage and __enfeebled 1__ (1 round); **Stage 2** 2d4 poison damage
-    and enfeebled 1 (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Serpentfolk Venom
-  range: null
-  raw_description: '**Serpentfolk Venom** (__poison__) **Saving Throw** DC 20 Fortitude;
-    **Maximum Duration** 6 rounds; **Stage 1** 1d4 poison damage and __enfeebled 1__
-    (1 round); **Stage 2** 2d4 poison damage and enfeebled 1 (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The aapoph serpentfolk makes one scimitar or fangs Strike and one tail
-    Strike, each targeting a different creature. These attacks both count toward the
-    aapoph's multiple attack penalty, but the penalty doesn't increase until after
-    the aapoph makes both attacks.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Slithering Attack
-  range: null
-  raw_description: '**Slithering Attack**   The aapoph serpentfolk makes one scimitar
-    or fangs Strike and one tail Strike, each targeting a different creature. These
-    attacks both count toward the aapoph''s multiple attack penalty, but the penalty
-    doesn''t increase until after the aapoph makes both attacks.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 5
+  misc: null
   type: poison
-ritual_lists: null
 saves:
   fort: 10
   fort_misc: null
@@ -155,36 +160,30 @@ saves:
   ref_misc: null
   will: 6
   will_misc: +2 status vs. mental
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 11
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary 2
-  page_start: 238
+  page_start: '238'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- CE
-- Medium
 - Humanoid
 - Mutant
 - Serpentfolk
-type: Creature
-weaknesses: null

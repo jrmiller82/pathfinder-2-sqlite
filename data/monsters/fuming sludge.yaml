@@ -1,0 +1,246 @@
+ability_mods:
+  cha_mod: -5
+  con_mod: 5
+  dex_mod: -3
+  int_mod: -5
+  str_mod: 6
+  wis_mod: 0
+ac: 16
+ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d8+6 bludgeoning plus 1d8 persistent fire, DC 24
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d8+6 bludgeoning plus 1d8 persistent
+    fire, DC 24'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A fuming sludge's ejected globs cling to targets. A creature hit by
+    an ejected glob Strike is __encumbered__ for 1 round. If the attack was a critical
+    hit, the creature is instead __restrained__ for 1 round (__Escape__ DC 24).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cooling Glob
+  range: null
+  raw_description: '**Cooling Glob** A fuming sludge''s ejected globs cling to targets.
+    A creature hit by an ejected glob Strike is __encumbered__ for 1 round. If the
+    attack was a critical hit, the creature is instead __restrained__ for 1 round
+    (__Escape__ DC 24).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: N
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+description: 'The slurry from alchemical experiments is often as flammable as it is
+  toxic. In especially volatile cases, a fuming sludge can form from ignited pools
+  of unstable alchemical runoff. It resembles a charcoal-colored slurry studded with
+  tiny embers, and it continually emits a thin haze of accelerant that amplifies the
+  fires it starts.
+
+
+
+
+  A fuming sludge must consume the base chemicals of living creatures to survive and
+  can instinctively identify the complex molecules found in most animate creatures.
+  The first meal of many a fuming sludge is its accidental creator, but it soon moves
+  on to hunt in lush forests or densely populated settlements. A fuming sludge can
+  extrude a powerful pseudopod to strike its victims, but it can also eject portions
+  of its body with peristaltic contractions. These rapidly-cooling globs of goo slow
+  down fleeing prey, but the cold, crusty residue can also alert canny explorers to
+  their presence.
+
+
+
+
+  **__Recall Knowledge - Ooze__ (__Occultism__)**: DC 25'
+hp: 160
+hp_misc: null
+immunities:
+- critical hits
+- fire
+- mental
+- piercing
+- precision
+- slashing
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+level: 7
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 2d10+6
+    type: bludgeoning
+  name: pseudopod
+  plus_damage:
+  - formula: null
+    type: 1d8 persistent fire
+  - formula: null
+    type: Grab
+  to_hit: 17
+  traits: null
+name: Fuming Sludge
+perception: 11
+ranged_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d6+6
+    type: bludgeoning
+  name: ejected glob
+  plus_damage:
+  - formula: null
+    type: 1d8 persistent fire
+  - formula: null
+    type: cooling glob
+  to_hit: 17
+  traits:
+  - brutal
+  - range increment 20 feet
+rarity: Uncommon
+saves:
+  fort: 18
+  fort_misc: null
+  misc: null
+  ref: 8
+  ref_misc: null
+  will: 11
+  will_misc: null
+sense_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A fuming sludge detects nearby living and __undead__ creatures by their
+    complex chemical compositions, but it can't detect __elementals__ or other creatures
+    composed of a single element.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Chemical Sense
+  range: null
+  raw_description: '**Chemical Sense** A fuming sludge detects nearby living and __undead__
+    creatures by their complex chemical compositions, but it can''t detect __elementals__
+    or other creatures composed of a single element.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The fuming sludge constantly emits incendiary smoke that creates __concealment__
+    around it. The smoke doesn't impair the fuming sludge's chemical sense. A creature
+    that enters the aura or begins its turn in the aura becomes __sickened 1__ (DC
+    25 Fortitude negates) and cannot recover from __persistent fire damage__ for 1
+    round. It is then temporarily immune to the sickening effect of the smoldering
+    haze for 1 minute. A creature that is currently holding its breath, that doesn't
+    need to breathe, or that's immune to __poison__ is immune to the aura's sickened
+    effect but not the concealment or inability to recover from persistent fire damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Smoldering Haze
+  range: 15 feet
+  raw_description: '**Smoldering Haze** (__aura__, __fire__) 15 feet. The fuming sludge
+    constantly emits incendiary smoke that creates __concealment__ around it. The
+    smoke doesn''t impair the fuming sludge''s chemical sense. A creature that enters
+    the aura or begins its turn in the aura becomes __sickened 1__ (DC 25 Fortitude
+    negates) and cannot recover from __persistent fire damage__ for 1 round. It is
+    then temporarily immune to the sickening effect of the smoldering haze for 1 minute.
+    A creature that is currently holding its breath, that doesn''t need to breathe,
+    or that''s immune to __poison__ is immune to the aura''s sickened effect but not
+    the concealment or inability to recover from persistent fire damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - fire
+  trigger: null
+senses:
+- chemical sense 60 feet
+- no vision
+size: Medium
+skills:
+- bonus: 19
+  misc: null
+  name: Athletics
+sources:
+- abbr: The Slithering
+  page_start: '63'
+  page_stop: null
+speed:
+- amount: 20
+  misc: null
+  type: Land
+- amount: 20
+  misc: null
+  type: climb
+spell_lists: null
+traits:
+- Mindless
+- Ooze
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold

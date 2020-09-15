@@ -7,6 +7,63 @@ ability_mods:
   wis_mod: 3
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The muse ceases its thespian aura and deals 4d8 mental damage to creatures
+    in a 30-foot burst, including the creature it is possessing, if any (DC 22 basic
+    Will save). Creatures that fail their Will saves are __fascinated__ by the muse
+    phantom for 1 minute. The muse phantom can't use Grand Finale again for 1d4 rounds.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Grand Finale
+  range: null
+  raw_description: '**Grand Finale** [Three Actions]  (__mental__, __occult__) **Requirements**
+    The muse phantom''s thespian aura is active; **Effect** The muse ceases its thespian
+    aura and deals 4d8 mental damage to creatures in a 30-foot burst, including the
+    creature it is possessing, if any (DC 22 basic Will save). Creatures that fail
+    their Will saves are __fascinated__ by the muse phantom for 1 minute. The muse
+    phantom can''t use Grand Finale again for 1d4 rounds.'
+  requirements: The muse phantom's thespian aura is active
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - mental
+  - occult
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The phantom muse attempts to possess an adjacent corporeal creature.
+    This has the same effect as the possession spell (DC 20), except the duration
+    is 1d4 hours, and since the phantom muse doesn't have a physical body, it is unaffected
+    by that restriction of the spell. If the target is at least trained in __Performance__,
+    the DC of this ability is 24.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Muse Possession
+  range: null
+  raw_description: '**Muse Possession** [Two Actions]  The phantom muse attempts to
+    possess an adjacent corporeal creature. This has the same effect as the possession
+    spell (DC 20), except the duration is 1d4 hours, and since the phantom muse doesn''t
+    have a physical body, it is unaffected by that restriction of the spell. If the
+    target is at least trained in __Performance__, the DC of this ability is 24.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'For performers who die before their time and whose love of the theater
@@ -41,12 +98,11 @@ immunities:
 - poison
 - precision
 - unconscious
-items: null
 languages:
 - Common
 - Necril
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+5
@@ -60,57 +116,7 @@ melee:
   - magical
 name: Muse Phantom
 perception: 10
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The muse phantom's thespian aura is active
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Grand Finale
-  range: null
-  raw_description: '**Grand Finale** [Three Actions]  (__mental__, __occult__) **Requirements**
-    The muse phantom''s thespian aura is active; **Effect** The muse ceases its thespian
-    aura and deals 4d8 mental damage to creatures in a 30-foot burst, including the
-    creature it is possessing, if any (DC 22 basic Will save). Creatures that fail
-    their Will saves are __fascinated__ by the muse phantom for 1 minute. The muse
-    phantom can''t use Grand Finale again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - mental
-  - occult
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The phantom muse attempts to possess an adjacent corporeal creature.
-    This has the same effect as the possession spell (DC 20), except the duration
-    is 1d4 hours, and since the phantom muse doesn't have a physical body, it is unaffected
-    by that restriction of the spell. If the target is at least trained in __Performance__,
-    the DC of this ability is 24.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Muse Possession
-  range: null
-  raw_description: '**Muse Possession** [Two Actions]  The phantom muse attempts to
-    possess an adjacent corporeal creature. This has the same effect as the possession
-    spell (DC 20), except the duration is 1d4 hours, and since the phantom muse doesn''t
-    have a physical body, it is unaffected by that restriction of the spell. If the
-    target is at least trained in __Performance__, the DC of this ability is 24.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d4+5
@@ -125,14 +131,8 @@ ranged:
 rarity: Uncommon
 resistances:
 - amount: 5
-  type: all damage (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-- amount: null
-  type: double resistance vs. non-magical)
-ritual_lists: null
+  misc: null
+  type: all damage
 saves:
   fort: 9
   fort_misc: null
@@ -145,7 +145,7 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '30 feet. The muse phantom inspires a supernatural emotional response—either
+  description: 'The muse phantom inspires a supernatural emotional response—either
     comedy or drama. Each creature that begins its turn in the aura must attempt a
     DC 20 Will save; on a failure, the creature is affected as long as it remains
     within the aura. If the muse phantom is emitting a comedic aura, affected creatures
@@ -157,13 +157,13 @@ sense_abilities:
     cease or activate this aura, by spending a single action, which has the __concentrate__
     trait. A creature possessed by a muse phantom is immune to this aura.'
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Thespian Aura
-  range: null
+  range: 30 feet
   raw_description: '**Thespian Aura** (__aura__, __emotion__, __mental__, __occult__)
     30 feet. The muse phantom inspires a supernatural emotional response—either comedy
     or drama. Each creature that begins its turn in the aura must attempt a DC 20
@@ -177,6 +177,8 @@ sense_abilities:
     cease or activate this aura, by spending a single action, which has the __concentrate__
     trait. A creature possessed by a muse phantom is immune to this aura.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -185,74 +187,62 @@ sense_abilities:
   - occult
   trigger: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 14
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 13
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 16
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 11
   misc: null
-  name: 'Theater Lore '
-source:
+  name: Theater Lore
+sources:
 - abbr: 'Pathfinder #152: Legacy of the Lost God'
-  page_start: 81
+  page_start: '81'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: fly
 spell_lists:
-- dc: 22
-  misc: ''
-  name: Occult Spontaneous Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 14
+  cantrips:
+  - level: 2
     spells:
-    - frequency: null
-      name: hideous laughter
-      requirement: null
-    - frequency: at will, self only
-      name: invisibility
-      requirement: null
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: charm
-      requirement: null
-    - frequency: null
-      name: fear
-      requirement: null
-    - frequency: null
-      name: mindlink
-      requirement: null
-  - heightened_level: 2
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: ghost sound
-      requirement: null
-    - frequency: null
+    - misc: null
       name: telekinetic projectile
-      requirement: null
-  to_hit: 14
+  constants: null
+  dc: 22
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
+    spells:
+    - misc: null
+      name: hideous laughter
+    - misc: at will; self only
+      name: invisibility
+  - level: 1
+    spells:
+    - misc: null
+      name: charm
+    - misc: null
+      name: fear
+    - misc: null
+      name: mindlink
+  spells_source: Occult Spontaneous Spells
 traits:
-- Uncommon
-- CE
-- Medium
 - Incorporeal
 - Spirit
 - Undead
-type: Creature
-weaknesses: null

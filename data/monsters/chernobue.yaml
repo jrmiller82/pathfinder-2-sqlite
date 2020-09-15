@@ -7,27 +7,116 @@ ability_mods:
   wis_mod: 7
 ac: 33
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: 'The chernobue''s eye pulses and its lid peels back to reveal mind-bending
+    awfulness. Creatures in a 30-foot emanation must attempt a DC 32 Will save, after
+    which they are temporarily immune to further Paralyzing Displays for 1 minute.
+
+
+    Critical Success The creature is unaffected.
+
+
+    Success The creature is __slowed 1__ for 1 round.
+
+
+    Failure The creature is __paralyzed__ for 1d4 rounds. It can attempt a new save
+    to end the effect at the end of each of its turns.
+
+
+    Critical Failure As failure, but paralyzed for 1 minute.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Paralyzing Display
+  range: null
+  raw_description: '**Paralyzing Display** [Two Actions]  (__concentrate__, __emotion__,
+    __enchantment__, __fear__, __incapacitation__, __mental__, __occult__, __visual__)
+    The chernobue''s eye pulses and its lid peels back to reveal mind-bending awfulness.
+    Creatures in a 30-foot emanation must attempt a DC 32 Will save, after which they
+    are temporarily immune to further Paralyzing Displays for 1 minute.
+
+
+    Critical Success The creature is unaffected.
+
+
+    Success The creature is __slowed 1__ for 1 round.
+
+
+    Failure The creature is __paralyzed__ for 1d4 rounds. It can attempt a new save
+    to end the effect at the end of each of its turns.
+
+
+    Critical Failure As failure, but paralyzed for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - emotion
+  - enchantment
+  - fear
+  - incapacitation
+  - mental
+  - occult
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Rupturing Venom
+  range: null
+  raw_description: '**Rupturing Venom** (__poison__) The thick, orange venom injected
+    by a chernobue is semi-alive, and as it seethes in a creature''s body, it deals
+    poison damage in addition to bludgeoning damage as it ruptures flesh; **Saving
+    Throw** Fortitude DC 32; **Maximum Duration** 6 rounds; **Stage 1** 2d6 poison
+    and 2d6 bludgeoning (1 round); **Stage 2** 2d6 poison, 2d6 bludgeoning, and __enfeebled
+    2__ (1 round)'
+  requirements: null
+  saving_throw: Fortitude DC 32
+  stages:
+  - effect: 2d6 poison and 2d6 bludgeoning (1 round)
+  - effect: 2d6 poison, 2d6 bludgeoning, and __enfeebled 2__ (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A lawful or good creature that begins its turn in this aura's
-    emanation must attempt a DC 29 Will save or become __sickened 1__ (lawful good
-    creatures instead become sickened 2).
+  description: A lawful or good creature that begins its turn in this aura's emanation
+    must attempt a DC 29 Will save or become __sickened 1__ (lawful good creatures
+    instead become sickened 2).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Aura of Order's Ruin
-  range: null
+  range: 30 feet
   raw_description: '**Aura of Order''s Ruin** (__aura__, __necromancy__, __occult__)
     30 feet. A lawful or good creature that begins its turn in this aura''s emanation
     must attempt a DC 29 Will save or become __sickened 1__ (lawful good creatures
     instead become sickened 2).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -40,16 +129,18 @@ automatic_abilities:
   description: A chernobue takes 2d10 points of fire damage each time it starts its
     turn in an area of bright light.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Boiled by Light
   range: null
   raw_description: '**Boiled by Light** A chernobue takes 2d10 points of fire damage
     each time it starts its turn in an area of bright light.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -62,11 +153,11 @@ automatic_abilities:
     into one of the chernobue's mouths. The poisoned creature takes 7d6 bludgeoning
     damage (DC 32 basic Fortitude save) as the venom exits its body, but is thereafter
     cured of rupturing venom, and the chernobue regains an equal number of Hit Points.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Recall Venom
   range: null
   raw_description: '**Recall Venom [Reaction]** **Trigger** A creature within 30 feet
@@ -77,10 +168,12 @@ automatic_abilities:
     save) as the venom exits its body, but is thereafter cured of rupturing venom,
     and the chernobue regains an equal number of Hit Points.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within 30 feet suffers the effects from stage 2 of rupturing
-    venom
+    venom;
 description: 'The chernobue infects all creatures it encounters with itself, spreading
   pain and calamity wherever it flops and writhes. It sheds ruin and sups on anguish,
   but a chernobue can sometimes be persuaded to pause for a few moments of conversation
@@ -96,22 +189,23 @@ description: 'The chernobue infects all creatures it encounters with itself, spr
 hp: 220
 hp_misc: null
 immunities:
-- controlled
-- fear
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
 languages:
 - Abyssal
 - telepathy 100 feet
 level: 12
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+13
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: chaotic and rupturing venom
+  - formula: null
+    type: 1d6 chaotic
+  - formula: null
+    type: rupturing venom
   to_hit: 26
   traits:
   - chaotic
@@ -122,8 +216,8 @@ melee:
     type: piercing
   name: tentacle mouth
   plus_damage:
-  - formula: 1d6
-    type: chaotic
+  - formula: null
+    type: 1d6 chaotic
   to_hit: 26
   traits:
   - agile
@@ -132,81 +226,15 @@ melee:
   - reach 15 feet
 name: Chernobue
 perception: 25
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: "The chernobue's eye pulses and its lid peels back to reveal mind-bending\
-    \ awfulness. Creatures in a 30-foot emanation must attempt a DC 32 Will save,\
-    \ after which they are temporarily immune to further Paralyzing Displays for 1\
-    \ minute. \n\nCritical Success The creature is unaffected. \n\nSuccess The creature\
-    \ is __slowed 1__ for 1 round. \n\nFailure The creature is __paralyzed__ for 1d4\
-    \ rounds. It can attempt a new save to end the effect at the end of each of its\
-    \ turns. \n\nCritical Failure As failure, but paralyzed for 1 minute."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Paralyzing Display
-  range: null
-  raw_description: "**Paralyzing Display** [Two Actions]  (__concentrate__, __emotion__,\
-    \ __enchantment__, __fear__, __incapacitation__, __mental__, __occult__, __visual__)\
-    \ The chernobue's eye pulses and its lid peels back to reveal mind-bending awfulness.\
-    \ Creatures in a 30-foot emanation must attempt a DC 32 Will save, after which\
-    \ they are temporarily immune to further Paralyzing Displays for 1 minute. \n\n\
-    Critical Success The creature is unaffected. \n\nSuccess The creature is __slowed\
-    \ 1__ for 1 round. \n\nFailure The creature is __paralyzed__ for 1d4 rounds. It\
-    \ can attempt a new save to end the effect at the end of each of its turns. \n\
-    \nCritical Failure As failure, but paralyzed for 1 minute."
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - emotion
-  - enchantment
-  - fear
-  - incapacitation
-  - mental
-  - occult
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The thick, orange venom injected by a chernobue is semi-alive, and
-    as it seethes in a creature's body, it deals poison damage in addition to bludgeoning
-    damage as it ruptures flesh; **Saving Throw** Fortitude DC 32; **Maximum Duration**
-    6 rounds; **Stage 1** 2d6 poison and 2d6 bludgeoning (1 round); **Stage 2** 2d6
-    poison, 2d6 bludgeoning, and __enfeebled 2__ (1 round)
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rupturing Venom
-  range: null
-  raw_description: '**Rupturing Venom** (__poison__) The thick, orange venom injected
-    by a chernobue is semi-alive, and as it seethes in a creature''s body, it deals
-    poison damage in addition to bludgeoning damage as it ruptures flesh; **Saving
-    Throw** Fortitude DC 32; **Maximum Duration** 6 rounds; **Stage 1** 2d6 poison
-    and 2d6 bludgeoning (1 round); **Stage 2** 2d6 poison, 2d6 bludgeoning, and __enfeebled
-    2__ (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 10
+  misc: null
   type: mental
 - amount: 10
-  type: physical (except cold iron)
-ritual_lists: null
+  misc: except cold iron
+  type: physical
 saves:
   fort: 23
   fort_misc: null
@@ -215,89 +243,75 @@ saves:
   ref_misc: null
   will: 25
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +25
 - greater darkvision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 22
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 25
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 25
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 22
   misc: null
-  name: 'Occultism '
-source:
+  name: Occultism
+sources:
 - abbr: Bestiary 2
-  page_start: 214
+  page_start: '214'
   page_stop: null
 speed:
 - amount: 30
-  type: Land
-- amount: 6
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>air walk</i></a>
-spell_lists:
-- dc: 32
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+  type: Land
+- amount: null
+  misc: null
+  type: air walk
+spell_lists:
+- attack_bonus: null
+  cantrips:
+  - level: 6
     spells:
-    - frequency: self only
-      name: plane shift
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: null
-      name: phantasmal calamity
-      requirement: null
-    - frequency: null
-      name: phantom pain
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: null
-      name: subconscious suggestion
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-  - heightened_level: 6
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: daze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-  - heightened_level: 4
-    level: -1
+  constants:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: air walk
-      requirement: null
-  to_hit: null
+  dc: 32
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: self only
+      name: plane shift
+  - level: 6
+    spells:
+    - misc: null
+      name: phantasmal calamity
+    - misc: null
+      name: phantom pain
+  - level: 5
+    spells:
+    - misc: null
+      name: subconscious suggestion
+  - level: 4
+    spells:
+    - misc: at will
+      name: darkness
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- CE
-- Large
 - Fiend
 - Qlippoth
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: lawful

@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 1
 ac: 15
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 6 rounds
+  name: Giant Centipede Venom
+  range: null
+  raw_description: '**Giant Centipede Venom** (__poison__) **Saving Throw** DC 14
+    Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage (1 round);
+    **Stage 2** 1d8 poison damage and flat-footed (1 round) **Stage 3** 1d12 poison
+    damage, clumsy 1, and flat-footed (1 round)'
+  requirements: null
+  saving_throw: DC 14 Fortitude
+  stages:
+  - effect: 1d6 poison damage (1 round)
+  - effect: 1d8 poison damage and flat-footed (1 round)
+  - effect: 1d12 poison damage, clumsy 1, and flat-footed (1 round)
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Most giant centipedes (known as sewer centipedes when found in cities)
@@ -24,11 +51,8 @@ description: 'Most giant centipedes (known as sewer centipedes when found in cit
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 13'
 hp: 8
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: -1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d4-1
@@ -42,36 +66,7 @@ melee:
   - finesse
 name: Giant Centipede
 perception: 6
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 14 Fortitude; **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison damage (1 round); **Stage 2** 1d8 poison damage and flat-footed
-    (1 round) **Stage 3** 1d12 poison damage, clumsy 1, and flat-footed (1 round)'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Giant Centipede Venom
-  range: null
-  raw_description: '**Giant Centipede Venom** (__poison__) **Saving Throw** DC 14
-    Fortitude; **Maximum Duration** 6 rounds; **Stage 1** 1d6 poison damage (1 round);
-    **Stage 2** 1d8 poison damage and flat-footed (1 round) **Stage 3** 1d12 poison
-    damage, clumsy 1, and flat-footed (1 round)'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -80,34 +75,30 @@ saves:
   ref_misc: null
   will: 2
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 2
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 61
+  page_start: '61'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
-type: Creature
-weaknesses: null

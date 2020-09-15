@@ -7,6 +7,73 @@ ability_mods:
   wis_mod: 1
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The gnoll sergeant commands its allies to reposition. Any allies who
+    hear and understand this order can use a reaction to Step.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bark Orders
+  range: null
+  raw_description: '**Bark Orders** [One Action]  (__auditory__, __linguistic__) The
+    gnoll sergeant commands its allies to reposition. Any allies who hear and understand
+    this order can use a reaction to Step.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - linguistic
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A gnoll sergeant deals 1d4 extra damage to any creature that's within
+    reach of at least two of the gnoll sergeant's allies.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Pack Attack
+  range: null
+  raw_description: '**Pack Attack** A gnoll sergeant deals 1d4 extra damage to any
+    creature that''s within reach of at least two of the gnoll sergeant''s allies.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A gnoll ignores the first square of difficult terrain it moves into
+    each time it Steps or Strides.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Rugged Travel
+  range: null
+  raw_description: '**Rugged Travel** A gnoll ignores the first square of difficult
+    terrain it moves into each time it Steps or Strides.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +85,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +100,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -50,7 +119,6 @@ description: 'When gnolls band together to form hunting or raiding parties, the 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 19'
 hp: 60
 hp_misc: null
-immunities: null
 items:
 - composite shortbow (20 arrows)
 - hide armor
@@ -59,7 +127,7 @@ languages:
 - Common
 - Gnoll
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+7
@@ -81,68 +149,7 @@ melee:
   - agile
 name: Gnoll Sergeant
 perception: 10
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The gnoll sergeant commands its allies to reposition. Any allies who
-    hear and understand this order can use a reaction to Step.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Bark Orders
-  range: null
-  raw_description: '**Bark Orders**   (__auditory__, __linguistic__) The gnoll sergeant
-    commands its allies to reposition. Any allies who hear and understand this order
-    can use a reaction to Step.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - linguistic
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A gnoll sergeant deals 1d4 extra damage to any creature that's within
-    reach of at least two of the gnoll sergeant's allies.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Pack Attack
-  range: null
-  raw_description: '**Pack Attack** A gnoll sergeant deals 1d4 extra damage to any
-    creature that''s within reach of at least two of the gnoll sergeant''s allies.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A gnoll ignores the first square of difficult terrain it moves into
-    each time it Steps or Strides.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Rugged Travel
-  range: null
-  raw_description: '**Rugged Travel** A gnoll ignores the first square of difficult
-    terrain it moves into each time it Steps or Strides.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -155,11 +162,6 @@ ranged:
   - propulsive
   - range increment 60 feet
   - reload 0
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 12
   fort_misc: null
@@ -168,36 +170,31 @@ saves:
   ref_misc: null
   will: 8
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 11
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 10
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 179
+  page_start: '179'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Medium
 - Gnoll
 - Humanoid
-type: Creature
-weaknesses: null

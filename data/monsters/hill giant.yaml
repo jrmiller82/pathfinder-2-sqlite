@@ -7,6 +7,49 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Throw Rock
+  range: null
+  raw_description: '**Throw Rock** [One Action]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The hill giant makes a single greatclub Strike and compares the attack
+    roll result to the ACs of up to two foes within its reach. This counts as two
+    attacks for the hill giant's multiple attack penalty.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wide Swing
+  range: null
+  raw_description: '**Wide Swing** [One Action]  The hill giant makes a single greatclub
+    Strike and compares the attack roll result to the ACs of up to two foes within
+    its reach. This counts as two attacks for the hill giant''s multiple attack penalty.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -14,15 +57,17 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Catch Rock
   range: null
   raw_description: '**Catch Rock** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -40,7 +85,6 @@ description: 'Selfish and crude, these rough-skinned raiders are bullies and ult
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 23'
 hp: 140
 hp_misc: null
-immunities: null
 items:
 - greatpick
 - hide armor
@@ -49,7 +93,7 @@ languages:
 - Common
 - Jotun
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+14
@@ -73,46 +117,7 @@ melee:
   - reach 10 feet
 name: Hill Giant
 perception: 13
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: ''
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Throw Rock
-  range: null
-  raw_description: '**Throw Rock**  '
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The hill giant makes a single greatclub Strike and compares the attack
-    roll result to the ACs of up to two foes within its reach. This counts as two
-    attacks for the hill giant's multiple attack penalty.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wide Swing
-  range: null
-  raw_description: '**Wide Swing**   The hill giant makes a single greatclub Strike
-    and compares the attack roll result to the ACs of up to two foes within its reach.
-    This counts as two attacks for the hill giant''s multiple attack penalty.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+14
@@ -123,11 +128,6 @@ ranged:
   traits:
   - brutal
   - range increment 120 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 17
   fort_misc: null
@@ -136,31 +136,26 @@ saves:
   ref_misc: null
   will: 13
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - low-light vision
 size: Large
 skills:
 - bonus: 19
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 11
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary
-  page_start: 170
+  page_start: '170'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Large
 - Earth
 - Giant
 - Humanoid
-type: Creature
-weaknesses: null

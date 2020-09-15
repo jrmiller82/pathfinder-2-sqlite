@@ -7,6 +7,33 @@ ability_mods:
   wis_mod: 3
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The zelekhut makes two chain Strikes, each targeting a different creature.
+    Each Strike counts toward the zelekhut's multiple attack penalty, but the penalty
+    doesn't increase until after it has made both attacks. If the zelekhut subsequently
+    uses the __Knockdown__ action, it affects all creatures it hit with Double Attack.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Double Attack
+  range: null
+  raw_description: '**Double Attack** [Two Actions]  The zelekhut makes two chain
+    Strikes, each targeting a different creature. Each Strike counts toward the zelekhut''s
+    multiple attack penalty, but the penalty doesn''t increase until after it has
+    made both attacks. If the zelekhut subsequently uses the __Knockdown__ action,
+    it affects all creatures it hit with Double Attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LN
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +45,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +60,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -69,22 +98,23 @@ immunities:
 - emotion
 - poison
 - unconscious
-items: null
 languages:
 - Celestial
 - Infernal
 - Utopian
 - truespeech
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+6
     type: slashing
   name: chain
   plus_damage:
-  - formula: 2d6
-    type: electricity and 1d6 lawful
+  - formula: null
+    type: 2d6 electricity
+  - formula: null
+    type: 1d6 lawful
   to_hit: 21
   traits:
   - lawful
@@ -92,48 +122,7 @@ melee:
   - reach 10 feet
 name: Zelekhut
 perception: 21
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The zelekhut makes two chain Strikes, each targeting a different creature.
-    Each Strike counts toward the zelekhut's multiple attack penalty, but the penalty
-    doesn't increase until after it has made both attacks. If the zelekhut subsequently
-    uses the __Knockdown__ action, it affects all creatures it hit with Double Attack.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Double Attack
-  range: null
-  raw_description: '**Double Attack** [Two Actions]  The zelekhut makes two chain
-    Strikes, each targeting a different creature. Each Strike counts toward the zelekhut''s
-    multiple attack penalty, but the penalty doesn''t increase until after it has
-    made both attacks. If the zelekhut subsequently uses the __Knockdown__ action,
-    it affects all creatures it hit with Double Attack.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: chaotic
-ritual_lists:
-- dc: 32
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: null
-      name: geas
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -148,90 +137,98 @@ sense_abilities:
   critical_success: null
   description: A zelekhut can speak with and understand any creature with a language.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Truespeech
   range: null
   raw_description: '**Truespeech** A zelekhut can speak with and understand any creature
     with a language.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +21
 - darkvision
 - true seeing
 size: Large
 skills:
 - bonus: 18
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 21
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: null
-  name: 'Axis Lore '
+  name: Axis Lore
 - bonus: 16
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 21
   misc: +23 when tracking
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 9
+  page_start: '9'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 28
-  misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: null
+  cantrips: null
+  constants:
+  - level: 6
     spells:
-    - frequency: null
-      name: locate
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: clairaudience
-      requirement: null
-    - frequency: null
-      name: clairvoyance
-      requirement: null
-    - frequency: null
-      name: dimensional anchor
-      requirement: null
-    - frequency: null
-      name: dispel magic
-      requirement: null
-    - frequency: ×3
-      name: paralyze
-      requirement: null
-  - heightened_level: 6
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: true seeing
-      requirement: null
-  to_hit: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: locate
+  - level: 4
+    spells:
+    - misc: null
+      name: clairaudience
+    - misc: null
+      name: clairvoyance
+    - misc: null
+      name: dimensional anchor
+    - misc: null
+      name: dispel magic
+    - misc: ×3
+      name: paralyze
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 32
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 3
+    spells:
+    - misc: null
+      name: geas
+  spells_source: Rituals
 traits:
-- LN
-- Large
 - Aeon
 - Inevitable
 - Monitor
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: chaotic

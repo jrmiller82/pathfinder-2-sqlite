@@ -7,6 +7,50 @@ ability_mods:
   wis_mod: 1
 ac: 20
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d6 bludgeoning, DC 17
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d6 bludgeoning, DC 17'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: 4 rounds
+  name: Reefclaw Venom
+  range: null
+  raw_description: '**Reefclaw Venom** (__poison__) **Saving Throw** DC 17 Fortitude;
+    **Maximum Duration** 4 rounds; **Stage 1** 1d6 poison damage and __enfeebled 1__
+    (1 round), **Stage 2** 1d6 poison damage and __enfeebled 2__ (1 round).'
+  requirements: null
+  saving_throw: DC 17 Fortitude
+  stages:
+  - effect: 1d6 poison damage and __enfeebled 1__ (1 round),
+  - effect: 1d6 poison damage and __enfeebled 2__ (1 round).
+  success: null
+  traits:
+  - poison
+  trigger: null
 alignment: CN
 automatic_abilities:
 - action_cost: Reaction
@@ -14,16 +58,18 @@ automatic_abilities:
   critical_success: null
   description: null
   effect: The reefclaw makes a claw Strike before dying.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Death Frenzy
   range: null
   raw_description: '**Death Frenzy** [Reaction] **Trigger** The reefclaw is reduced
     to 0 Hit Points. **Effect** The reefclaw makes a claw Strike before dying.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The reefclaw is reduced to 0 Hit Points.
@@ -77,13 +123,11 @@ description: 'Reefclaws are aquatic monsters that resemble huge shrimp or lobste
   **__Recall Knowledge - Aberration__ (__Occultism__)**: DC 15'
 hp: 17
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Common
 - (can't speak any language)
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+1
@@ -91,58 +135,15 @@ melee:
   name: claw
   plus_damage:
   - formula: null
-    type: reefclaw venom and Grab
+    type: reefclaw venom
+  - formula: null
+    type: Grab
   to_hit: 9
   traits:
   - finesse
 name: Reefclaw
 perception: 8
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d6 bludgeoning, DC 17
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d6 bludgeoning, DC 17'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 17 Fortitude; **Maximum Duration** 4 rounds; **Stage
-    1** 1d6 poison damage and __enfeebled 1__ (1 round), **Stage 2** 1d6 poison damage
-    and __enfeebled 2__ (1 round).'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reefclaw Venom
-  range: null
-  raw_description: '**Reefclaw Venom** (__poison__) **Saving Throw** DC 17 Fortitude;
-    **Maximum Duration** 4 rounds; **Stage 1** 1d6 poison damage and __enfeebled 1__
-    (1 round), **Stage 2** 1d6 poison damage and __enfeebled 2__ (1 round).'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -151,32 +152,28 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +8
 - darkvision
 size: Small
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 4
   misc: +8 to Swim
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 279
+  page_start: '279'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- CN
-- Small
 - Aberration
 - Aquatic
-type: Creature
-weaknesses: null

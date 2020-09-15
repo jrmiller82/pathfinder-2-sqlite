@@ -7,6 +7,30 @@ ability_mods:
   wis_mod: 4
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The giant hippocampus makes a tail Strike, then __Swims__ with a +10-foot
+    circumstance bonus to its swim Speed. It gains a +2 circumstance bonus to AC against
+    reactions triggered by this movement.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sudden Retreat
+  range: null
+  raw_description: '**Sudden Retreat** [Two Actions]  The giant hippocampus makes
+    a tail Strike, then __Swims__ with a +10-foot circumstance bonus to its swim Speed.
+    It gains a +2 circumstance bonus to AC against reactions triggered by this movement.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -14,15 +38,17 @@ automatic_abilities:
   critical_success: null
   description: DC 28
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Buck
   range: null
   raw_description: '**__Buck__ [Reaction]** DC 28'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -35,11 +61,8 @@ description: 'Living in the deepest reaches of the ocean, giant hippocampi haven
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 26'
 hp: 170
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+10
@@ -51,34 +74,8 @@ melee:
   - reach 15 feet
 name: Giant Hippocampus
 perception: 16
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The giant hippocampus makes a tail Strike, then __Swims__ with a +10-foot
-    circumstance bonus to its swim Speed. It gains a +2 circumstance bonus to AC against
-    reactions triggered by this movement.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sudden Retreat
-  range: null
-  raw_description: '**Sudden Retreat** [Two Actions]  The giant hippocampus makes
-    a tail Strike, then __Swims__ with a +10-foot circumstance bonus to its swim Speed.
-    It gains a +2 circumstance bonus to AC against reactions triggered by this movement.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 18
   fort_misc: null
@@ -87,34 +84,29 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 - scent (imprecise) 30 feet
 size: Huge
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 20
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary 2
-  page_start: 142
+  page_start: '142'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 80
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Huge
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null

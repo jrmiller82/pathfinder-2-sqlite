@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 1
 ac: 24
 ac_special: null
+active_abilities: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -16,11 +17,11 @@ automatic_abilities:
   effect: The gahlepod is spurred into a frenzy by the others. For the rest of the
     round, their jaws Strike deals 1d6 persistent bleed damage in addition to the
     listed damage.
-  effects: null
   failure: null
-  frequency: The gahlepod becomes adjacent to at least one other gahlepod
+  frequency: once per round
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Churning Frenzy
   range: null
   raw_description: '**Churning Frenzy** [Reaction] **Trigger** The gahlepod becomes
@@ -29,9 +30,11 @@ automatic_abilities:
     their jaws Strike deals 1d6 persistent bleed damage in addition to the listed
     damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: once per round
+  trigger: The gahlepod becomes adjacent to at least one other gahlepod;
 description: 'The youngest brughadatches resemble overlarge tadpoles about 2 feet
   long.
 
@@ -41,13 +44,11 @@ description: 'The youngest brughadatches resemble overlarge tadpoles about 2 fee
   **__Recall Knowledge - Fey__ (__Nature__)**: DC 23'
 hp: 140
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Sylvan
 - (can't speak any languages)
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+7
@@ -58,11 +59,7 @@ melee:
   traits: null
 name: Gahlepod
 perception: 13
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 17
   fort_misc: null
@@ -71,35 +68,33 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +13
 - darkvision
 - scent (imprecise) 30 feet
 size: Small
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 14
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #154: Siege of the Dinosaurs'
-  page_start: 78
+  page_start: '78'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- CE
-- Small
 - Amphibious
 - Fey
-type: Creature
 weaknesses:
 - amount: 5
+  misc: null
   type: cold iron

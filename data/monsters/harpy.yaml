@@ -7,6 +7,65 @@ ability_mods:
   wis_mod: 1
 ac: 22
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: As failure, but if attacked by the harpy, the creature can attempt
+    a new save at the start of its next turn, rather than being freed at the end of
+    the harpy's turn.
+  critical_success: null
+  description: The harpy cries out an eerie, compelling melody. Each non-harpy creature
+    within a 300-foot aura must attempt a DC 21 Will save to avoid becoming captivated
+    by the harpy's song. The effect lasts for 1 round, but if the harpy uses this
+    ability again on subsequent rounds, it extends the duration by 1 round for all
+    affected creatures. Once a creature succeeds at any save against Captivating Song,
+    that creature is temporarily immune to Captivating Songs for 24 hours.
+  effect: null
+  failure: The creature is __fascinated__, and it must spend each of its actions to
+    move closer to the harpy as expediently as possible, while avoiding obvious dangers.
+    If a captivated creature is adjacent to the harpy, it stays still and doesn't
+    act. If attacked by the harpy, the creature is freed from captivation at the end
+    of the harpy's turn.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Captivating Song
+  range: null
+  raw_description: '**Captivating Song** [One Action]  (__auditory__, __concentrate__,
+    __enchantment__, __incapacitation__, __mental__, __primal__) The harpy cries out
+    an eerie, compelling melody. Each non-harpy creature within a 300-foot aura must
+    attempt a DC 21 Will save to avoid becoming captivated by the harpy''s song. The
+    effect lasts for 1 round, but if the harpy uses this ability again on subsequent
+    rounds, it extends the duration by 1 round for all affected creatures. Once a
+    creature succeeds at any save against Captivating Song, that creature is temporarily
+    immune to Captivating Songs for 24 hours.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __fascinated__, and it must spend each of its actions
+    to move closer to the harpy as expediently as possible, while avoiding obvious
+    dangers. If a captivated creature is adjacent to the harpy, it stays still and
+    doesn''t act. If attacked by the harpy, the creature is freed from captivation
+    at the end of the harpy''s turn.
+
+
+    **Critical Failure** As failure, but if attacked by the harpy, the creature can
+    attempt a new save at the start of its next turn, rather than being freed at the
+    end of the harpy''s turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is unaffected.
+  traits:
+  - auditory
+  - concentrate
+  - enchantment
+  - incapacitation
+  - mental
+  - primal
+  trigger: null
 alignment: CE
 automatic_abilities: null
 description: 'Harpies are filthy amalgamations of human and bird, resembling feral
@@ -38,13 +97,12 @@ description: 'Harpies are filthy amalgamations of human and bird, resembling fer
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 20'
 hp: 68
 hp_misc: null
-immunities: null
 items:
 - club
 languages:
 - Common
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -65,67 +123,7 @@ melee:
   - finesse
 name: Harpy
 perception: 12
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: As failure, but if attacked by the harpy, the creature can attempt
-    a new save at the start of its next turn, rather than being freed at the end of
-    the harpy's turn.
-  critical_success: null
-  description: 'The harpy cries out an eerie, compelling melody. Each non-harpy creature
-    within a 300-foot aura must attempt a DC 21 Will save to avoid becoming captivated
-    by the harpy''s song. The effect lasts for 1 round, but if the harpy uses this
-    ability again on subsequent rounds, it extends the duration by 1 round for all
-    affected creatures. Once a creature succeeds at any save against Captivating Song,
-    that creature is temporarily immune to Captivating Songs for 24 hours.
-
-
-    '
-  effect: null
-  effects: null
-  failure: The creature is fascinated, and it must spend each of its actions to move
-    closer to the harpy as expediently as possible, while avoiding obvious dangers.
-    If a captivated creature is adjacent to the harpy, it stays still and doesn't
-    act. If attacked by the harpy, the creature is freed from captivation at the end
-    of the harpy's turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Captivating Song
-  range: null
-  raw_description: '**Captivating Song**   (__auditory__, __concentrate__, __enchantment__,
-    __incapacitation__, __mental__, __primal__) The harpy cries out an eerie, compelling
-    melody. Each non-harpy creature within a 300-foot aura must attempt a DC 21 Will
-    save to avoid becoming captivated by the harpy''s song. The effect lasts for 1
-    round, but if the harpy uses this ability again on subsequent rounds, it extends
-    the duration by 1 round for all affected creatures. Once a creature succeeds at
-    any save against Captivating Song, that creature is temporarily immune to Captivating
-    Songs for 24 hours.
-
-
-    **Success** The creature is unaffected.
-
-
-    **Failure** The creature is __fascinated__, and it must spend each of its actions
-    to move closer to the harpy as expediently as possible, while avoiding obvious
-    dangers. If a captivated creature is adjacent to the harpy, it stays still and
-    doesn''t act. If attacked by the harpy, the creature is freed from captivation
-    at the end of the harpy''s turn.
-
-
-    **Critical Failure** As failure, but if attacked by the harpy, the creature can
-    attempt a new save at the start of its next turn, rather than being freed at the
-    end of the harpy''s turn.'
-  requirements: null
-  success: The creature is unaffected.
-  traits:
-  - auditory
-  - concentrate
-  - enchantment
-  - incapacitation
-  - mental
-  - primal
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -135,11 +133,6 @@ ranged:
   to_hit: 15
   traits:
   - thrown 10 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -148,37 +141,33 @@ saves:
   ref_misc: null
   will: 12
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +12
 - darkvision
 size: Medium
 skills:
 - bonus: 13
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 13
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 11
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 14
   misc: +16 singing
-  name: 'Performance '
-source:
+  name: Performance
+sources:
 - abbr: Bestiary
-  page_start: 204
+  page_start: '204'
   page_stop: null
 speed:
 - amount: 20
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- CE
-- Medium
 - Humanoid
-type: Creature
-weaknesses: null

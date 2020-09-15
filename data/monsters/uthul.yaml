@@ -7,91 +7,34 @@ ability_mods:
   wis_mod: -2
 ac: 36
 ac_special: null
-alignment: CE
-automatic_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 40 feet. Air in the aura is difficult terrain for Flying creatures
-    without the air trait.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: High Winds
-  range: null
-  raw_description: '**High Winds** (__air__, __aura__) 40 feet. Air in the aura is
-    difficult terrain for Flying creatures without the air trait.'
-  requirements: null
-  success: null
-  traits:
-  - air
-  - aura
-  trigger: null
-description: 'An uthul most often appears to be a dark, swirling cloud filled with
-  flying debris and streaked with sudden flashes of lightning. Although they are clearly
-  elemental in nature, uthuls are nearly always found on the Material Plane, where
-  they hide among natural cloud formations, especially thunderstorms.
-
-
-
-
-  **__Recall Knowledge - Elemental__ (__Arcana__, __Nature__)**: DC 32'
-hp: 250
-hp_misc: null
-immunities:
-- electricity
-- paralyze
-- poison
-- sleep
-items: null
-languages:
-- Aquan
-level: 14
-melee:
-- action_cost: One Action
-  damage:
-    formula: 3d12+11
-    type: slashing
-  name: claw
-  plus_damage: null
-  to_hit: 29
-  traits:
-  - agile
-name: Uthul
-perception: 20
-proactive_abilities:
+active_abilities:
 - action_cost: One Action
   critical_failure: The creature is stunned for 1d4 rounds.
-  critical_success: The creature is unaffected.Success The creature is stunned 1.Failure
-    The creature is stunned for 1 round.Critical Failure The creature is stunned for
-    1d4 rounds.
+  critical_success: The creature is unaffected.
   description: The uthul unleashes a powerful bolt of lightning and a stunning thunderclap.
     The bolt deals 6d12 electricity damage to all creatures in a 30-foot line, with
     a DC 34 basic Reflex save, and every creature in a 20-foot emanation must attempt
     a DC 34 Fortitude save. The uthul can't use Lightning Crash again for 1d4 rounds.
   effect: null
-  effects: null
-  failure: The creature is stunned for 1 round.Critical Failure The creature is stunned
-    for 1d4 rounds.
+  failure: The creature is stunned for 1 round.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Lightning Crash
   range: null
-  raw_description: '**Lightning Crash**   (__electricity__, __incapacitation__, __sonic__)
-    The uthul unleashes a powerful bolt of lightning and a stunning thunderclap. The
-    bolt deals 6d12 electricity damage to all creatures in a 30-foot line, with a
-    DC 34 basic Reflex save, and every creature in a 20-foot emanation must attempt
+  raw_description: '**Lightning Crash** [One Action]  (__electricity__, __incapacitation__,
+    __sonic__) The uthul unleashes a powerful bolt of lightning and a stunning thunderclap.
+    The bolt deals 6d12 electricity damage to all creatures in a 30-foot line, with
+    a DC 34 basic Reflex save, and every creature in a 20-foot emanation must attempt
     a DC 34 Fortitude save. The uthul can''t use Lightning Crash again for 1d4 rounds.**Critical
     Success** The creature is unaffected.**Success** The creature is stunned 1.**Failure**
     The creature is stunned for 1 round.**Critical Failure** The creature is stunned
     for 1d4 rounds.'
   requirements: null
-  success: The creature is stunned 1.Failure The creature is stunned for 1 round.Critical
-    Failure The creature is stunned for 1d4 rounds.
+  saving_throw: null
+  stages: null
+  success: The creature is stunned 1.
   traits:
   - electricity
   - incapacitation
@@ -102,15 +45,17 @@ proactive_abilities:
   critical_success: null
   description: An uthul's movement doesn't trigger reactions.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Swiftness
   range: null
   raw_description: '**Swiftness** An uthul''s movement doesn''t trigger reactions.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -133,11 +78,11 @@ proactive_abilities:
     remain aloft. After returning to its normal form, the uthul must wait 1 minute
     before it can use Whirlwind Form again.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Whirlwind Form
   range: null
   raw_description: '**Whirlwind Form** [Two Actions]  (__concentrate__) The uthul
@@ -157,11 +102,69 @@ proactive_abilities:
     returning to its normal form, the uthul must wait 1 minute before it can use Whirlwind
     Form again.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - concentrate
   trigger: null
-ranged:
+alignment: CE
+automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Air in the aura is difficult terrain for Flying creatures without the
+    air trait.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: High Winds
+  range: 40 feet
+  raw_description: '**High Winds** (__air__, __aura__) 40 feet. Air in the aura is
+    difficult terrain for Flying creatures without the air trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - air
+  - aura
+  trigger: null
+description: 'An uthul most often appears to be a dark, swirling cloud filled with
+  flying debris and streaked with sudden flashes of lightning. Although they are clearly
+  elemental in nature, uthuls are nearly always found on the Material Plane, where
+  they hide among natural cloud formations, especially thunderstorms.
+
+
+
+
+  **__Recall Knowledge - Elemental__ (__Arcana__, __Nature__)**: DC 32'
+hp: 250
+hp_misc: null
+immunities:
+- electricity
+- paralyze
+- poison
+- sleep
+languages:
+- Aquan
+level: 14
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 3d12+11
+    type: slashing
+  name: claw
+  plus_damage: null
+  to_hit: 29
+  traits:
+  - agile
+name: Uthul
+perception: 20
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 5d8+15
@@ -171,9 +174,6 @@ ranged:
   to_hit: 29
   traits:
   - range increment 60 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 28
   fort_misc: null
@@ -182,38 +182,34 @@ saves:
   ref_misc: null
   will: 22
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +20
 - darkvision
 size: Huge
 skills:
 - bonus: 29
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 27
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 23
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 25
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 317
+  page_start: '317'
   page_stop: null
 speed:
 - amount: 100
+  misc: null
   type: fly
 - amount: null
+  misc: null
   type: swiftness
 spell_lists: null
 traits:
-- CE
-- Huge
 - Air
 - Elemental
-type: Creature
-weaknesses: null

@@ -7,137 +7,7 @@ ability_mods:
   wis_mod: 9
 ac: 49
 ac_special: null
-alignment: CE
-automatic_abilities:
-- action_cost: None
-  critical_failure: The creature is frightened 4.
-  critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 46
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
-  name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 46 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
-
-    Critical Success The creature is unaffected by the presence.
-
-    Success The creature is frightened 1.
-
-    Failure The creature is frightened 2.
-
-    Critical Success The creature is frightened 4.'
-  requirements: null
-  success: The creature is frightened 1.
-  traits:
-  - aura
-  - emotion
-  - fear
-  - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A wyrmwraith in sunlight is __clumsy 2__ and __stunned 2__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sunlight Powerlessness
-  range: null
-  raw_description: '**Sunlight Powerlessness** A wyrmwraith in sunlight is __clumsy
-    2__ and __stunned 2__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The wyrmwraith transfers all positive damage from the effect to a single
-    undead creature of its choice that it controls within 120 feet.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Positive Energy Transfer
-  range: null
-  raw_description: '**Positive Energy Transfer** [Reaction] (__divine__, __conjuration__)
-    **Trigger** The wyrmwraith succeeds at a saving throw to resist positive damage,
-    but still takes damage from that effect; **Effect** The wyrmwraith transfers all
-    positive damage from the effect to a single undead creature of its choice that
-    it controls within 120 feet.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - conjuration
-  trigger: The wyrmwraith succeeds at a saving throw to resist positive damage, but
-    still takes damage from that effect
-description: 'Wyrmwraiths rise from the souls of dragons who refuse to accept death
-  or have an irrational fear of the afterlife.
-
-
-
-
-  **__Recall Knowledge - Dragon__ (__Arcana__)**: DC 51
-
-
-  **__Recall Knowledge - Undead__ (__Religion__)**: DC 51'
-hp: 450
-hp_misc: negative healing
-immunities:
-- death effects
-- disease
-- paralyzed
-- poison
-- precision
-- unconscious
-items: null
-languages:
-- Common
-- Draconic
-- Necril
-level: 23
-melee:
-- action_cost: One Action
-  damage:
-    formula: 9d8+8
-    type: negative
-  name: spectral jaws
-  plus_damage:
-  - formula: null
-    type: drain life
-  to_hit: 42
-  traits:
-  - reach 20 feet
-- action_cost: One Action
-  damage:
-    formula: 9d6+8
-    type: negative
-  name: spectral claw
-  plus_damage:
-  - formula: null
-    type: divine dispelling and drain life
-  to_hit: 42
-  traits:
-  - agile
-  - reach 15 feet
-name: Elder Wyrmwraith
-perception: 40
-proactive_abilities:
+active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -145,11 +15,11 @@ proactive_abilities:
     24d6 negative damage to all creatures in a 90-foot cone (DC 46 basic Reflex save).
     It can't use Breath Weapon again for 1d4 rounds.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Breath Weapon
   range: null
   raw_description: '**Breath Weapon** [Two Actions]  (__divine__, __necromancy__,
@@ -157,6 +27,8 @@ proactive_abilities:
     24d6 negative damage to all creatures in a 90-foot cone (DC 46 basic Reflex save).
     It can''t use Breath Weapon again for 1d4 rounds.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -167,18 +39,15 @@ proactive_abilities:
   critical_failure: The creature is slain. As long as the wyrmwraith still exists,
     the slain creature cannot be returned to life through any means.
   critical_success: The creature is unaffected.
-  description: 'The elder wyrmwraith inhales sharply, sucking in the souls of nearby
+  description: The elder wyrmwraith inhales sharply, sucking in the souls of nearby
     creatures. Each creature in a 60-foot cone must attempt a DC 46 Will save. The
-    elder wyrmwraith can''t Consume Souls again for 1d4 rounds.
-
-
-    '
+    elder wyrmwraith can't Consume Souls again for 1d4 rounds.
   effect: null
-  effects: null
-  failure: The creature gains doomed 2 and takes 100 negative damage.
+  failure: The creature gains __doomed 2__ and takes 100 negative damage.
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Consume Souls
   range: null
   raw_description: '**Consume Souls** [Two Actions]  (__divine__, __death__, __necromancy__)
@@ -199,7 +68,9 @@ proactive_abilities:
     **Critical Failure** The creature is slain. As long as the wyrmwraith still exists,
     the slain creature cannot be returned to life through any means.'
   requirements: null
-  success: The creature gains doomed 1.
+  saving_throw: null
+  stages: null
+  success: The creature gains __doomed 1__.
   traits:
   - divine
   - death
@@ -213,11 +84,11 @@ proactive_abilities:
     a Religion check to counteract an ongoing divine spell effect (of spell level
     8th or lower) on the creature.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Divine Dispelling
   range: null
   raw_description: '**Divine Dispelling** (__abjuration__, __divine__) An elder wyrmwraith''s
@@ -225,6 +96,8 @@ proactive_abilities:
     of its spectral claws, the elder wyrmwraith can attempt a Religion check to counteract
     an ongoing divine spell effect (of spell level 8th or lower) on the creature.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - abjuration
@@ -240,11 +113,11 @@ proactive_abilities:
     Strikes increases the value of the drained condition by 2 on a failed save, to
     a maximum of __drained 14__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Drain Life
   range: null
   raw_description: '**Drain Life** (__divine__, __necromancy__) When an elder wyrmwraith
@@ -254,6 +127,8 @@ proactive_abilities:
     elder wyrmwraith''s spectral jaws or spectral claws Strikes increases the value
     of the drained condition by 2 on a failed save, to a maximum of __drained 14__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -265,16 +140,18 @@ proactive_abilities:
   description: The elder wyrmwraith makes two claw Strikes and one jaws Strike in
     any order.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Draconic Frenzy
   range: null
   raw_description: '**Draconic Frenzy** [Two Actions]  The elder wyrmwraith makes
     two claw Strikes and one jaws Strike in any order.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -291,23 +168,26 @@ proactive_abilities:
     and jaws Strikes deal slashing and piercing damage, respectively, instead of negative
     damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Ectoplasmic Form
   range: null
-  raw_description: '**Ectoplasmic Form**   (__divine__, __necromancy__) An elder wyrmwraith
-    can push through the ectoplasmic veil to temporarily assume a physical form made
-    of ectoplasm. The elder wyrmwraith loses the incorporeal trait for 1d4 rounds,
-    though it can return to its incorporeal form as a free action before then. Once
-    this ability ends, the elder wyrmwraith can''t use this ability again for 1d4
-    rounds. While in ectoplasmic form, the elder wyrmwraith''s AC increases to 52
-    and it gains 125 temporary Hit Points. It loses its immunity to non-magical attacks
-    and precision damage, as well as its resistance to all damage. Its claw and jaws
-    Strikes deal slashing and piercing damage, respectively, instead of negative damage.'
+  raw_description: '**Ectoplasmic Form** [One Action]  (__divine__, __necromancy__)
+    An elder wyrmwraith can push through the ectoplasmic veil to temporarily assume
+    a physical form made of ectoplasm. The elder wyrmwraith loses the incorporeal
+    trait for 1d4 rounds, though it can return to its incorporeal form as a free action
+    before then. Once this ability ends, the elder wyrmwraith can''t use this ability
+    again for 1d4 rounds. While in ectoplasmic form, the elder wyrmwraith''s AC increases
+    to 52 and it gains 125 temporary Hit Points. It loses its immunity to non-magical
+    attacks and precision damage, as well as its resistance to all damage. Its claw
+    and jaws Strikes deal slashing and piercing damage, respectively, instead of negative
+    damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -317,51 +197,131 @@ proactive_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: The elder wyrmwraith is in ectoplasmic form
-  effects: null
+  effect: As the Stride action, but the elder wyrmwraith can pass through walls or
+    material obstacles as though it were incorporeal. It must begin and end its movement
+    outside of any physical obstacles, and passing through solid material is difficult
+    terrain.
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Phase Lurch
   range: null
-  raw_description: '**Phase Lurch**   (__divine__, __move__) **Requirements** The
-    elder wyrmwraith is in ectoplasmic form; **Effect** As the Stride action, but
-    the elder wyrmwraith can pass through walls or material obstacles as though it
-    were incorporeal. It must begin and end its movement outside of any physical obstacles,
-    and passing through solid material is difficult terrain.'
-  requirements: null
+  raw_description: '**Phase Lurch** [One Action]  (__divine__, __move__) **Requirements**
+    The elder wyrmwraith is in ectoplasmic form; **Effect** As the Stride action,
+    but the elder wyrmwraith can pass through walls or material obstacles as though
+    it were incorporeal. It must begin and end its movement outside of any physical
+    obstacles, and passing through solid material is difficult terrain.'
+  requirements: The elder wyrmwraith is in ectoplasmic form
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
   - move
   trigger: null
-ranged: null
+alignment: CE
+automatic_abilities:
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: The wyrmwraith transfers all positive damage from the effect to a single
+    undead creature of its choice that it controls within 120 feet.
+  failure: The creature is __frightened 2__.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: null
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
+
+
+    **Critical Success** The creature is unaffected by the presence.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: The wyrmwraith succeeds at a saving throw to resist positive damage, but
+    still takes damage from that effect;
+description: 'Wyrmwraiths rise from the souls of dragons who refuse to accept death
+  or have an irrational fear of the afterlife.
+
+
+
+
+  **__Recall Knowledge - Dragon__ (__Arcana__)**: DC 51
+
+
+  **__Recall Knowledge - Undead__ (__Religion__)**: DC 51'
+hp: 450
+hp_misc: negative healing
+immunities:
+- death effects
+- disease
+- paralyzed
+- poison
+- precision
+- unconscious
+languages:
+- Common
+- Draconic
+- Necril
+level: 23
+melee_attacks:
+- action_cost: One Action
+  damage:
+    formula: 9d8+8
+    type: negative
+  name: spectral jaws
+  plus_damage:
+  - formula: null
+    type: drain life
+  to_hit: 42
+  traits:
+  - reach 20 feet
+- action_cost: One Action
+  damage:
+    formula: 9d6+8
+    type: negative
+  name: spectral claw
+  plus_damage:
+  - formula: null
+    type: divine dispelling
+  - formula: null
+    type: drain life
+  to_hit: 42
+  traits:
+  - agile
+  - reach 15 feet
+name: Elder Wyrmwraith
+perception: 40
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 25
-  type: all (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-- amount: null
-  type: double resistance vs. non-magical)
-ritual_lists:
-- dc: 46
   misc: null
-  name: Divine Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 10
-    spells:
-    - frequency: null
-      name: create undead
-      requirement: null
-    - frequency: null
-      name: imprisonment
-      requirement: null
-  to_hit: null
+  type: all
 saves:
   fort: 32
   fort_misc: null
@@ -370,92 +330,90 @@ saves:
   ref_misc: null
   will: 42
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +40
 - darkvision
 - lifesense 120 feet
 size: Gargantuan
 skills:
 - bonus: 38
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 38
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 43
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 43
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 43
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: 'Pathfinder #150: Broken Promises'
-  page_start: 85
+  page_start: '85'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 100
+  misc: null
   type: fly
 spell_lists:
-- dc: 46
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 10
+- attack_bonus: 42
+  cantrips: null
+  constants: null
+  dc: 46
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
     spells:
-    - frequency: null
+    - misc: null
       name: miracle
-      requirement: null
-  - heightened_level: null
-    level: 8
+  - level: 8
     spells:
-    - frequency: undead targets only
+    - misc: undead targets only
       name: charm
-      requirement: null
-  - heightened_level: null
-    level: 7
+  - level: 7
     spells:
-    - frequency: x3
+    - misc: x3
       name: divine wrath
-      requirement: null
-    - frequency: null
+    - misc: null
       name: finger of death
-      requirement: null
-  - heightened_level: null
-    level: 6
+  - level: 6
     spells:
-    - frequency: null
+    - misc: null
       name: vampiric exsanguination
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: x3, undead targets only
+    - misc: x3; undead targets only
       name: charm
-      requirement: null
-    - frequency: null
+    - misc: null
       name: darkness
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: at will
+    - misc: at will
       name: bind undead
-      requirement: null
-  to_hit: 42
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 46
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 10
+    spells:
+    - misc: null
+      name: create undead
+    - misc: null
+      name: imprisonment
+  spells_source: Divine Rituals
 traits:
-- Rare
-- CE
-- Gargantuan
 - Dragon
 - Incorporeal
 - Undead
 - Wraith
-type: Creature
-weaknesses: null

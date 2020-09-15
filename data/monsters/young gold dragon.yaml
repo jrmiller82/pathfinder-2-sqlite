@@ -7,70 +7,122 @@ ability_mods:
   wis_mod: 4
 ac: 32
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: "The gold dragon breathes in one of two ways. The dragon can't use\
+    \ Breath Weapon again for 1d4 rounds.\n\n  * **Flame** (__arcane__, __evocation__,\
+    \ __fire__); The dragon breathes a blast of flame in a 30-foot cone that deals\
+    \ 11d6 fire damage (DC 31 basic Reflex save).\n\n  * **Weakening Gas** (__arcane__,\
+    \ __necromancy__); The dragon breathes a blast of weakening gas. Each creature\
+    \ within a 30-foot cone must succeed at a DC 31 Fortitude save or become __enfeebled\
+    \ 1__ for 1 minute (or __enfeebled 2__ on a critical failure)."
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: "**Breath Weapon** [Two Actions]  The gold dragon breathes in one\
+    \ of two ways. The dragon can't use Breath Weapon again for 1d4 rounds.\n\n  *\
+    \ **Flame** (__arcane__, __evocation__, __fire__); The dragon breathes a blast\
+    \ of flame in a 30-foot cone that deals 11d6 fire damage (DC 31 basic Reflex save).\n\
+    \n  * **Weakening Gas** (__arcane__, __necromancy__); The dragon breathes a blast\
+    \ of weakening gas. Each creature within a 30-foot cone must succeed at a DC 31\
+    \ Fortitude save or become __enfeebled 1__ for 1 minute (or __enfeebled 2__ on\
+    \ a critical failure)."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The gold dragon makes two claw Strikes and one horns Strike in any
+    order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The gold dragon makes two claw
+    Strikes and one horns Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the gold dragon scores a critical hit with a Strike, it recharges
+    Breath Weapon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** When the gold dragon scores a critical hit
+    with a Strike, it recharges Breath Weapon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LG
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 27
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 27 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
   trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: Jaws only.
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Attack of Opportunity
-  range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Gold dragons are the epitome of metallic dragonkind, unrivaled in their
   strength as well as their wisdom. They command the unwavering reverence of all other
   metallic dragons, who view gold dragons as their leaders and counselors. Golds rival
@@ -104,6 +156,8 @@ description: 'Gold dragons are the epitome of metallic dragonkind, unrivaled in 
   from truly important matters.
 
 
+
+
   A gold dragon''s incredible foresight and unparalleled enlightenment means they
   are unlikely to interfere in the business of individual mortals, though the rare
   person who captures the attention of a gold dragon is fortunate indeed, for there
@@ -111,6 +165,8 @@ description: 'Gold dragons are the epitome of metallic dragonkind, unrivaled in 
   Rulers and individuals in stations of high power have an easier time of garnering
   the aid of a gold dragon; entire wars have been avoided thanks to a gold dragon''s
   last-minute intermediation.
+
+
 
 
   Gold dragons are often found in warm grasslands and savannas, lands where they can
@@ -131,22 +187,21 @@ immunities:
 - fire
 - paralyzed
 - sleep
-items: null
 languages:
 - Common
 - Draconic
 - Elven
 - Sylvan
 level: 11
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+12
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 2d6
-    type: fire
+  - formula: null
+    type: 2d6 fire
   to_hit: 24
   traits:
   - fire
@@ -181,123 +236,7 @@ melee:
   - reach 10 feet
 name: Young Gold Dragon
 perception: 21
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The gold dragon breathes in one of two ways. The dragon can't use Breath
-    Weapon again for 1d4 rounds.
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The dragon breathes a blast of flame in a 30-foot cone that deals
-      11d6 fire damage (DC 31 basic Reflex save).
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Flame
-    range: null
-    raw_description: '**Flame** (__arcane__, __evocation__, __fire__); The dragon
-      breathes a blast of flame in a 30-foot cone that deals 11d6 fire damage (DC
-      31 basic Reflex save).'
-    requirements: null
-    success: null
-    traits:
-    - arcane
-    - evocation
-    - fire
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The dragon breathes a blast of weakening gas. Each creature within
-      a 30-foot cone must succeed at a DC 31 Fortitude save or become __enfeebled
-      1__ for 1 minute (or __enfeebled 2__ on a critical failure).
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Weakening Gas
-    range: null
-    raw_description: '**Weakening Gas** (__arcane__, __necromancy__); The dragon breathes
-      a blast of weakening gas. Each creature within a 30-foot cone must succeed at
-      a DC 31 Fortitude save or become __enfeebled 1__ for 1 minute (or __enfeebled
-      2__ on a critical failure).'
-    requirements: null
-    success: null
-    traits:
-    - arcane
-    - necromancy
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: "**Breath Weapon** [Two Actions]  The gold dragon breathes in one\
-    \ of two ways. The dragon can't use Breath Weapon again for 1d4 rounds. \n\n \
-    \ * **Flame** (__arcane__, __evocation__, __fire__); The dragon breathes a blast\
-    \ of flame in a 30-foot cone that deals 11d6 fire damage (DC 31 basic Reflex save).\n\
-    \n  * **Weakening Gas** (__arcane__, __necromancy__); The dragon breathes a blast\
-    \ of weakening gas. Each creature within a 30-foot cone must succeed at a DC 31\
-    \ Fortitude save or become __enfeebled 1__ for 1 minute (or __enfeebled 2__ on\
-    \ a critical failure)."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The gold dragon makes two claw Strikes and one horns Strike in any
-    order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The gold dragon makes two claw
-    Strikes and one horns Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the gold dragon scores a critical hit with a Strike, it recharges
-    Breath Weapon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** When the gold dragon scores a critical hit
-    with a Strike, it recharges Breath Weapon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 10
-  type: cold
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 22
   fort_misc: null
@@ -306,67 +245,67 @@ saves:
   ref_misc: null
   will: 22
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +21
 - darkvision
 - scent (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 23
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 23
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 21
   misc: null
-  name: 'Medicine '
+  name: Medicine
 - bonus: 21
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 18
   misc: null
-  name: 'Society '
-source:
+  name: Society
+sources:
 - abbr: Bestiary
-  page_start: 124
+  page_start: '124'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 140
+  misc: null
   type: fly
 - amount: 40
+  misc: null
   type: swim
 spell_lists:
-- dc: 29
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 29
+  focus_points: null
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 3
+  spell_lists:
+  - level: 3
     spells:
-    - frequency: gems only
+    - misc: gems only
       name: locate
-      requirement: null
-  - heightened_level: null
-    level: 1
+  - level: 1
     spells:
-    - frequency: evil only
+    - misc: evil only
       name: detect alignment
-      requirement: null
-  to_hit: null
+  spells_source: Arcane Innate Spells
 traits:
-- LG
-- Large
 - Dragon
 - Fire
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 10
+  misc: null
+  type: cold

@@ -7,6 +7,58 @@ ability_mods:
   wis_mod: 6
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The jyoti breathes a blast of searing flame infused with positive energy
+    in a 40-foot cone that deals 8d6 fire damage plus 4d6 positive damage to creatures
+    in the area (DC 28 basic Reflex save). The jyoti can't use Breath Weapon again
+    for 1d4 rounds.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: '**Breath Weapon** (__evocation__, __fire__, __occult__) The jyoti
+    breathes a blast of searing flame infused with positive energy in a 40-foot cone
+    that deals 8d6 fire damage plus 4d6 positive damage to creatures in the area (DC
+    28 basic Reflex save). The jyoti can''t use Breath Weapon again for 1d4 rounds.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - evocation
+  - fire
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any weapon a jyoti wields becomes a __flaming__ __ghost touch__ weapon
+    while the jyoti holds it.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Infuse Weapons
+  range: null
+  raw_description: '**Infuse Weapons** (__occult__, __evocation__) Any weapon a jyoti
+    wields becomes a __flaming__ __ghost touch__ weapon while the jyoti holds it.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - occult
+  - evocation
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -16,21 +68,23 @@ automatic_abilities:
     amount. It doesn't gain the automatic Hit Points or temporary Hit Points from
     being on a plane with the positive planar essence.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Positive Energy Affinity
   range: null
   raw_description: '**Positive Energy Affinity** Positive __healing__ effects always
     heal the jyoti for the maximum amount. It doesn''t gain the automatic Hit Points
     or temporary Hit Points from being on a plane with the positive planar essence.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
-description: 'Jyotis are sometimes called "false phoenixes" (a term they find insulting)
+description: 'Jyotis are sometimes called “false phoenixes” (a term they find insulting)
   by the ignorant or willful. These avian humanoids are native to the __Positive Energy
   Plane__. They rarely leave this enigmatic realm and view visitors from other planes
   as stains on the purity of their home. Jyotis particularly distrust divine spellcasters
@@ -54,31 +108,28 @@ description: 'Jyotis are sometimes called "false phoenixes" (a term they find in
 
 
 
-  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 26
-
-
-  '
+  **__Recall Knowledge - Humanoid__ (__Society__)**: DC 26'
 hp: 155
 hp_misc: null
 immunities:
-- death effects
-- disease
-- poison
+- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
 items:
 - +1 striking longspear
 languages:
 - Common
 - Jyoti
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+6
     type: piercing
   name: flaming ghost touch longspear
   plus_damage:
-  - formula: 1d6
-    type: fire
+  - formula: null
+    type: 1d6 fire
   to_hit: 20
   traits:
   - magical
@@ -89,8 +140,8 @@ melee:
     type: piercing
   name: beak
   plus_damage:
-  - formula: 1d6
-    type: fire
+  - formula: null
+    type: 1d6 fire
   to_hit: 21
   traits:
   - finesse
@@ -100,70 +151,22 @@ melee:
     type: slashing
   name: talon
   plus_damage:
-  - formula: 1d6
-    type: fire
+  - formula: null
+    type: 1d6 fire
   to_hit: 21
   traits:
   - agile
   - finesse
 name: Jyoti
 perception: 21
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The jyoti breathes a blast of searing flame infused with positive energy
-    in a 40-foot cone that deals 8d6 fire damage plus 4d6 positive damage to creatures
-    in the area (DC 28 basic Reflex save). The jyoti can't use Breath Weapon again
-    for 1d4 rounds.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: '**Breath Weapon** (__evocation__, __fire__, __occult__) The jyoti
-    breathes a blast of searing flame infused with positive energy in a 40-foot cone
-    that deals 8d6 fire damage plus 4d6 positive damage to creatures in the area (DC
-    28 basic Reflex save). The jyoti can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  success: null
-  traits:
-  - evocation
-  - fire
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any weapon a jyoti wields becomes a __flaming__ __ghost touch__ weapon
-    while the jyoti holds it.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Infuse Weapons
-  range: null
-  raw_description: '**Infuse Weapons** (__occult__, __evocation__) Any weapon a jyoti
-    wields becomes a __flaming__ __ghost touch__ weapon while the jyoti holds it.'
-  requirements: null
-  success: null
-  traits:
-  - occult
-  - evocation
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
+  misc: null
   type: fire
 - amount: 10
+  misc: null
   type: negative
-ritual_lists: null
 saves:
   fort: 15
   fort_misc: null
@@ -171,87 +174,72 @@ saves:
   ref: 18
   ref_misc: null
   will: 21
-  will_misc: +2 vs. divine magic
-sense_abilities: null
+  will_misc: null
 senses:
-- Perception +21
 - darkvision
 size: Medium
 skills:
 - bonus: 20
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 20
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 18
   misc: null
-  name: 'Society '
-source:
+  name: Society
+sources:
 - abbr: Bestiary 2
-  page_start: 153
+  page_start: '153'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 60
+  misc: null
   type: fly
 spell_lists:
-- dc: 28
-  misc: ''
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+- attack_bonus: 20
+  cantrips:
+  - level: 5
     spells:
-    - frequency: null
-      name: banishment
-      requirement: null
-    - frequency: null
-      name: breath of life
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: null
-      name: heal
-      requirement: null
-    - frequency: null
-      name: searing light
-      requirement: null
-  - heightened_level: null
-    level: 3
-    spells:
-    - frequency: ×3
-      name: heal
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: ×3
-      name: restoration
-      requirement: null
-  - heightened_level: 5
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: disrupt undead
-      requirement: null
-    - frequency: null
+    - misc: null
       name: light
-      requirement: null
-  to_hit: 20
+  constants: null
+  dc: 28
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 5
+    spells:
+    - misc: null
+      name: banishment
+    - misc: null
+      name: breath of life
+  - level: 4
+    spells:
+    - misc: null
+      name: dimension door
+    - misc: null
+      name: heal
+    - misc: null
+      name: searing light
+  - level: 3
+    spells:
+    - misc: ×3
+      name: heal
+  - level: 2
+    spells:
+    - misc: ×3
+      name: restoration
+  spells_source: Occult Innate Spells
 traits:
-- N
-- Medium
 - Fire
 - Humanoid
 - Positive
-type: Creature
-weaknesses: null

@@ -7,6 +7,76 @@ ability_mods:
   wis_mod: 0
 ac: 8
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d4 bludgeoning plus 1d4 acid, DC 17
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d4 bludgeoning plus 1d4 acid,
+    DC 17'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The giant amoeba maintains the __Grab__ and extends pseudopods to surround
+    the creature and pull it inside the amoeba's body. This thereafter has the same
+    effect as if the amoeba had __Engulfed__ the creature (DC 17, 1d6 acid, Escape
+    DC 17, Rupture 3).
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Envelop
+  range: null
+  raw_description: '**Envelop** [Three Actions]  **Requirements** The giant amoeba
+    begins its turn with a target its size or smaller __grabbed__; **Effect** The
+    giant amoeba maintains the __Grab__ and extends pseudopods to surround the creature
+    and pull it inside the amoeba''s body. This thereafter has the same effect as
+    if the amoeba had __Engulfed__ the creature (DC 17, 1d6 acid, Escape DC 17, Rupture
+    3).'
+  requirements: The giant amoeba begins its turn with a target its size or smaller
+    grabbed
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A giant amoeba's acid damages only organic material—not metal, stone,
+    or other inorganic substances.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Weak Acid
+  range: null
+  raw_description: '**Weak Acid** A giant amoeba''s acid damages only organic material—not
+    metal, stone, or other inorganic substances.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'These blobs of nearly transparent protoplasm are identical in form and
@@ -27,18 +97,16 @@ hp_misc: null
 immunities:
 - acid
 - critical hits
-- mental
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
 - precision
-- unconscious
-- visual
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: acid
+    formula: null
+    type: 1d6 acid
   name: pseudopod
   plus_damage:
   - formula: null
@@ -47,71 +115,7 @@ melee:
   traits: null
 name: Giant Amoeba
 perception: 4
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d4 bludgeoning plus 1d4 acid, DC 17
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d4 bludgeoning plus 1d4 acid, DC 17'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The giant amoeba begins its turn with a target its size or smaller __grabbed__
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Envelop
-  range: null
-  raw_description: '**Envelop** [Three Actions]  **Requirements** The giant amoeba
-    begins its turn with a target its size or smaller __grabbed__; **Effect** The
-    giant amoeba maintains the __Grab__ and extends pseudopods to surround the creature
-    and pull it inside the amoeba''s body. This thereafter has the same effect as
-    if the amoeba had __Engulfed__ the creature (DC 17, 1d6 acid, Escape DC 17, Rupture
-    3).'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A giant amoeba's acid damages only organic material—not metal, stone,
-    or other inorganic substances.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Weak Acid
-  range: null
-  raw_description: '**Weak Acid** A giant amoeba''s acid damages only organic material—not
-    metal, stone, or other inorganic substances.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: 5
-  type: slashing
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 7
   fort_misc: null
@@ -127,48 +131,52 @@ sense_abilities:
   description: A giant amoeba can sense nearby creatures through vibration and air
     or water movement.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Motion Sense
   range: null
   raw_description: '**Motion Sense** A giant amoeba can sense nearby creatures through
     vibration and air or water movement.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +4
 - motion sense 60 feet
 - no vision
 size: Small
 skills:
 - bonus: 6
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 3
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 192
+  page_start: '192'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 - amount: 10
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Small
 - Amphibious
 - Mindless
 - Ooze
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: slashing

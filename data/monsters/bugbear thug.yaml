@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 1
 ac: 17
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The bugbear thug __Strides__ up to 10 feet and attempts to __Grapple__
+    a creature they're __undetected__ by. If they succeed, they also deal fist damage
+    to that creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bushwhack
+  range: null
+  raw_description: '**Bushwhack** [One Action]  The bugbear thug __Strides__ up to
+    10 feet and attempts to __Grapple__ a creature they''re __undetected__ by. If
+    they succeed, they also deal fist damage to that creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The bugbear thug gains a +3 circumstance bonus to damage rolls against
+    creatures they have __grabbed__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Mauler
+  range: null
+  raw_description: '**Mauler** The bugbear thug gains a +3 circumstance bonus to damage
+    rolls against creatures they have __grabbed__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'The more common bugbear thug specializes in the art of lurking in the
@@ -18,7 +63,6 @@ description: 'The more common bugbear thug specializes in the art of lurking in 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 16'
 hp: 34
 hp_misc: null
-immunities: null
 items:
 - bastard sword
 - javelin (3)
@@ -27,7 +71,7 @@ languages:
 - Common
 - Goblin
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+4
@@ -49,48 +93,7 @@ melee:
   - nonlethal
 name: Bugbear Thug
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The bugbear thug __Strides__ up to 10 feet and attempts to __Grapple__
-    a creature they're __undetected__ by. If they succeed, they also deal fist damage
-    to that creature.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Bushwhack
-  range: null
-  raw_description: '**Bushwhack**   The bugbear thug __Strides__ up to 10 feet and
-    attempts to __Grapple__ a creature they''re __undetected__ by. If they succeed,
-    they also deal fist damage to that creature.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The bugbear thug gains a +3 circumstance bonus to damage rolls against
-    creatures they have __grabbed__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Mauler
-  range: null
-  raw_description: '**Mauler** The bugbear thug gains a +3 circumstance bonus to damage
-    rolls against creatures they have __grabbed__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -100,11 +103,6 @@ ranged:
   to_hit: 8
   traits:
   - thrown 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 9
   fort_misc: null
@@ -113,37 +111,32 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 6
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 4
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 47
+  page_start: '47'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- NE
-- Medium
 - Goblin
 - Humanoid
-type: Creature
-weaknesses: null

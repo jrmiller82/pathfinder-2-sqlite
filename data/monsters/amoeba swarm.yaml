@@ -7,6 +7,51 @@ ability_mods:
   wis_mod: 0
 ac: 9
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The amoeba swarm slithers over each creature in its space, dealing
+    1d6 acid damage (DC 14 basic Reflex save). A creature that critically fails is
+    __sickened 1__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarming Slither
+  range: null
+  raw_description: '**Swarming Slither** [One Action]  The amoeba swarm slithers over
+    each creature in its space, dealing 1d6 acid damage (DC 14 basic Reflex save).
+    A creature that critically fails is __sickened 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An amoeba's acid damages only organic material—not metal, stone, or
+    other inorganic substances.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Weak Acid
+  range: null
+  raw_description: '**Weak Acid** An amoeba''s acid damages only organic material—not
+    metal, stone, or other inorganic substances.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'An amoeba swarm consists of thousands of individual single-celled organisms
@@ -22,65 +67,22 @@ hp_misc: null
 immunities:
 - acid
 - critical hits
-- mental
+- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
 - precision
-- unconscious
-- visual
-items: null
-languages: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
 level: 1
-melee: null
+melee_attacks: null
 name: Amoeba Swarm
 perception: 3
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The amoeba swarm slithers over each creature in its space, dealing
-    1d6 acid damage (DC 14 basic Reflex save). A creature that critically fails is
-    __sickened 1__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swarming Slither
-  range: null
-  raw_description: '**Swarming Slither**   The amoeba swarm slithers over each creature
-    in its space, dealing 1d6 acid damage (DC 14 basic Reflex save). A creature that
-    critically fails is __sickened 1__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An amoeba's acid damages only organic material—not metal, stone, or
-    other inorganic substances.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Weak Acid
-  range: null
-  raw_description: '**Weak Acid** An amoeba''s acid damages only organic material—not
-    metal, stone, or other inorganic substances.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 4
+  misc: null
   type: slashing
 - amount: 4
+  misc: null
   type: piercing
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -96,53 +98,56 @@ sense_abilities:
   description: An amoeba swarm can sense nearby creatures through vibration and air
     or water movement.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Motion Sense
   range: null
   raw_description: '**Motion Sense** An amoeba swarm can sense nearby creatures through
     vibration and air or water movement.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +3
 - motion sense 60 feet
 - no vision
 size: Large
 skills:
 - bonus: 1
   misc: +3 in water
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 192
+  page_start: '192'
   page_stop: null
 speed:
 - amount: 5
+  misc: null
   type: Land
 - amount: 5
+  misc: null
   type: climb
 - amount: 10
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Large
 - Amphibious
 - Mindless
 - Ooze
 - Swarm
-type: Creature
 weaknesses:
 - amount: 3
+  misc: null
   type: area
 - amount: 3
+  misc: null
   type: fire
-- amount: 3
-  type: <a style="text-decoration:underline" href="Traits.aspx?ID=150">splash</a>
-    damage
+- amount: 150
+  misc: null
+  type: <a style="text-decoration:underline" href="Traits.aspx?ID=

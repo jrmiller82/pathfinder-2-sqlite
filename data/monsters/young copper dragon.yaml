@@ -7,62 +7,140 @@ ability_mods:
   wis_mod: 2
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: "The copper dragon breathes in one of two ways. The dragon can't use\
+    \ Breath Weapon again for 1d4 rounds.\n\n  * **Acid** (__acid__, __arcane__, __evocation__);\
+    \ The dragon breathes acid in a 60-foot line that deals 8d6 acid damage (DC 26\
+    \ basic Fortitude save).\n\n  * **Slowing Gas** (__arcane__, __transmutation__);\
+    \ The dragon breathes a 60-foot line of slowing gas. Each creature in the area\
+    \ must succeed at a DC 26 Fortitude save or be __slowed 1__ for 1 round (or __slowed\
+    \ 2__ on a critical failure)."
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: "**Breath Weapon** [Two Actions]  The copper dragon breathes in\
+    \ one of two ways. The dragon can't use Breath Weapon again for 1d4 rounds.\n\n\
+    \  * **Acid** (__acid__, __arcane__, __evocation__); The dragon breathes acid\
+    \ in a 60-foot line that deals 8d6 acid damage (DC 26 basic Fortitude save).\n\
+    \n  * **Slowing Gas** (__arcane__, __transmutation__); The dragon breathes a 60-foot\
+    \ line of slowing gas. Each creature in the area must succeed at a DC 26 Fortitude\
+    \ save or be __slowed 1__ for 1 round (or __slowed 2__ on a critical failure)."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon's climb speed functions only when climbing stone surfaces.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Climb Stone
+  range: null
+  raw_description: '**Climb Stone** The dragon''s climb speed functions only when
+    climbing stone surfaces.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one tail Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one tail Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the dragon scores a critical hit with a Strike, it recharges Breath
+    Weapon.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** When the dragon scores a critical hit with
+    a Strike, it recharges Breath Weapon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CG
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 23
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
+    hits, the dragon disrupts the triggering action.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
   range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 23 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The dragon makes a tail Strike at the creature with a -2 penalty. If it
-    hits, the dragon disrupts the triggering action.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Twisting Tail
-  range: null
-  raw_description: '**Twisting Tail** [Reaction] **Trigger** A creature within reach
-    of the copper dragon''s tail uses a move action or leaves a square during a move
-    action it''s using. **Effect** The dragon makes a tail Strike at the creature
-    with a -2 penalty. If it hits, the dragon disrupts the triggering action.'
-  requirements: null
-  success: null
-  traits: null
   trigger: A creature within reach of the copper dragon's tail uses a move action
     or leaves a square during a move action it's using.
 description: 'Capricious and always eager to share a good laugh, copper dragons are
@@ -104,21 +182,20 @@ immunities:
 - acid
 - paralyzed
 - sleep
-items: null
 languages:
 - Common
 - Draconic
 - Gnomish
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d8
-    type: acid
+  - formula: null
+    type: 1d8 acid
   to_hit: 20
   traits:
   - acid
@@ -143,136 +220,7 @@ melee:
   - reach 15 feet
 name: Young Copper Dragon
 perception: 16
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The copper dragon breathes in one of two ways. The dragon can't use
-    Breath Weapon again for 1d4 rounds.
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The dragon breathes acid in a 60-foot line that deals 8d6 acid damage
-      (DC 26 basic Fortitude save).
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Acid
-    range: null
-    raw_description: '**Acid** (__acid__, __arcane__, __evocation__); The dragon breathes
-      acid in a 60-foot line that deals 8d6 acid damage (DC 26 basic Fortitude save).'
-    requirements: null
-    success: null
-    traits:
-    - acid
-    - arcane
-    - evocation
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The dragon breathes a 60-foot line of slowing gas. Each creature
-      in the area must succeed at a DC 26 Fortitude save or be __slowed 1__ for 1
-      round (or __slowed 2__ on a critical failure).
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Slowing Gas
-    range: null
-    raw_description: '**Slowing Gas** (__arcane__, __transmutation__); The dragon
-      breathes a 60-foot line of slowing gas. Each creature in the area must succeed
-      at a DC 26 Fortitude save or be __slowed 1__ for 1 round (or __slowed 2__ on
-      a critical failure).'
-    requirements: null
-    success: null
-    traits:
-    - arcane
-    - transmutation
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: "**Breath Weapon** [Two Actions]  The copper dragon breathes in\
-    \ one of two ways. The dragon can't use Breath Weapon again for 1d4 rounds. \n\
-    \n  * **Acid** (__acid__, __arcane__, __evocation__); The dragon breathes acid\
-    \ in a 60-foot line that deals 8d6 acid damage (DC 26 basic Fortitude save).\n\
-    \n  * **Slowing Gas** (__arcane__, __transmutation__); The dragon breathes a 60-foot\
-    \ line of slowing gas. Each creature in the area must succeed at a DC 26 Fortitude\
-    \ save or be __slowed 1__ for 1 round (or __slowed 2__ on a critical failure)."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon's climb speed functions only when climbing stone surfaces.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Climb Stone
-  range: null
-  raw_description: '**Climb Stone** The dragon''s climb speed functions only when
-    climbing stone surfaces.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one tail Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one tail Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the dragon scores a critical hit with a Strike, it recharges Breath
-    Weapon.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** When the dragon scores a critical hit with
-    a Strike, it recharges Breath Weapon.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -281,61 +229,59 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - darkvision
 - scent (imprecise) 60 feet
 size: Large
 skills:
 - bonus: 17
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 14
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 15
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 16
   misc: null
-  name: 'Performance '
+  name: Performance
 - bonus: 16
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 17
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 121
+  page_start: '121'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 - amount: 120
+  misc: null
   type: fly
 - amount: 30
+  misc: null
   type: climb stone
 spell_lists:
-- dc: 27
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 27
+  focus_points: null
   misc: null
-  name: Arcane Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 1
+  spell_lists:
+  - level: 1
     spells:
-    - frequency: at will
+    - misc: at will
       name: grease
-      requirement: null
-  to_hit: null
+  spells_source: Arcane Innate Spells
 traits:
-- CG
-- Large
 - Dragon
 - Earth
-type: Creature
-weaknesses: null

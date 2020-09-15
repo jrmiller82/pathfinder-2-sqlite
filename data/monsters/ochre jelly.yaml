@@ -7,6 +7,48 @@ ability_mods:
   wis_mod: 0
 ac: 12
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d8+3 bludgeoning plus 1d4 acid, DC 23
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**Constrict** [One Action]  1d8+3 bludgeoning plus 1d4 acid, DC
+    23'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An ochre jelly's acid damages only flesh—not bone, stone, wood, or
+    other materials.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ochre Acid
+  range: null
+  raw_description: '**Ochre Acid** An ochre jelly''s acid damages only flesh—not bone,
+    stone, wood, or other materials.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
@@ -20,11 +62,11 @@ automatic_abilities:
     creatures and objects out of the way to fill a space (the GM decides if an object
     or creature is too big or sturdy to push).
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Split
   range: null
   raw_description: '**Split** Whenever an ochre jelly is hit by an attack or effect
@@ -35,6 +77,8 @@ automatic_abilities:
     automatically pushes creatures and objects out of the way to fill a space (the
     GM decides if an object or creature is too big or sturdy to push).'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -60,63 +104,23 @@ immunities:
 - slashing
 - unconscious
 - visual
-items: null
-languages: null
 level: 5
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+7
     type: bludgeoning
   name: pseudopod
   plus_damage:
-  - formula: 2d4
-    type: acid and Grab
+  - formula: null
+    type: 2d4 acid
+  - formula: null
+    type: Grab
   to_hit: 15
   traits: null
 name: Ochre Jelly
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d8+3 bludgeoning plus 1d4 acid, DC 23
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**Constrict**   1d8+3 bludgeoning plus 1d4 acid, DC 23'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An ochre jelly's acid damages only flesh—not bone, stone, wood, or
-    other materials.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ochre Acid
-  range: null
-  raw_description: '**Ochre Acid** An ochre jelly''s acid damages only flesh—not bone,
-    stone, wood, or other materials.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 15
   fort_misc: null
@@ -131,42 +135,41 @@ sense_abilities:
   critical_success: null
   description: A ochre jelly can sense nearby motion through vibration and air movement.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Motion Sense
   range: null
   raw_description: '**Motion Sense** A ochre jelly can sense nearby motion through
     vibration and air movement.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +7
 - motion sense 60 feet
 - no vision
 size: Large
 skills:
 - bonus: 13
   misc: null
-  name: 'Athletics '
-source:
+  name: Athletics
+sources:
 - abbr: Bestiary
-  page_start: 255
+  page_start: '255'
   page_stop: null
 speed:
 - amount: 15
+  misc: null
   type: Land
 - amount: 10
+  misc: null
   type: climb
 spell_lists: null
 traits:
-- N
-- Large
 - Mindless
 - Ooze
-type: Creature
-weaknesses: null

@@ -7,25 +7,169 @@ ability_mods:
   wis_mod: 3
 ac: 27
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The nabasu focuses their death-stealing gaze upon a single target they
+    can see within 30 feet. The target must immediately attempt a Fortitude save against
+    death-stealing gaze.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Consume Death
+  range: null
+  raw_description: '**Consume Death** [One Action]  (__concentrate__, __divine__,
+    __necromancy__, __visual__) The nabasu focuses their death-stealing gaze upon
+    a single target they can see within 30 feet. The target must immediately attempt
+    a Fortitude save against death-stealing gaze.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - necromancy
+  - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and the nabasu suffers starvation vulnerability.
+  description: The creature is unaffected and the nabasu suffers starvation vulnerability.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The creature is unaffected and the nabasu
+    suffers starvation vulnerability.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is unaffected.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is affected by death-stealing gaze and becomes __drained
+    1__. If the creature was already drained 1 by the death-stealing gaze before attempting
+    the save, a failed save increases the value of the drained condition by 1, to
+    a maximum of drained 4. The nabasu gains 10 temporary Hit Points, and the drained
+    creature is temporarily immune until the start of the nabasu's next turn.
+  effect: null
+  failure: The creature is affected by death-stealing gaze and becomes __drained 1__.
+    If the creature was already drained 1 by the death-stealing gaze before attempting
+    the save, a failed save increases the value of the drained condition by 1, to
+    a maximum of drained 4. The nabasu gains 10 temporary Hit Points, and the drained
+    creature is temporarily immune until the start of the nabasu's next turn.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The creature is affected by death-stealing gaze and
+    becomes __drained 1__. If the creature was already drained 1 by the death-stealing
+    gaze before attempting the save, a failed save increases the value of the drained
+    condition by 1, to a maximum of drained 4. The nabasu gains 10 temporary Hit Points,
+    and the drained creature is temporarily immune until the start of the nabasu''s
+    next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: As failure, but the creature increases the amount of drain by
+    2.
+  critical_success: null
+  description: As failure, but the creature increases the amount of drain by 2.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **As failure, but the creature increases the
+    amount of drain by 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that dies while suffering drain from a nabasu's death-stealing
+    gaze rises as a __ghoul__ the next midnight.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stolen Death
+  range: null
+  raw_description: '**Stolen Death** A creature that dies while suffering drain from
+    a nabasu''s death-stealing gaze rises as a __ghoul__ the next midnight.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. When a non-demon ends its turn in the aura, it must attempt
-    a DC 23 Fortitude save. If it fails, it becomes __drained 1__.
+  description: When a non-demon ends its turn in the aura, it must attempt a DC 23
+    Fortitude save. If it fails, it becomes __drained 1__.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Death-Stealing Gaze
-  range: null
+  range: 30 feet
   raw_description: '**Death-Stealing Gaze** (__aura__, __divine__, __necromancy__,
     __visual__) 30 feet. When a non-demon ends its turn in the aura, it must attempt
     a DC 23 Fortitude save. If it fails, it becomes __drained 1__.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -41,11 +185,11 @@ automatic_abilities:
     (such as by a fighter using __Disruptive Stance__) or a creature resists the effect
     with a critical success, the nabasu takes 4d6 __mental__ damage.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Starvation Vulnerability
   range: null
   raw_description: '**Starvation Vulnerability** A nabasu denied food suffers painful
@@ -54,6 +198,8 @@ automatic_abilities:
     Stance__) or a creature resists the effect with a critical success, the nabasu
     takes 4d6 __mental__ damage.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -77,23 +223,21 @@ description: 'Nabasus are birthed directly into the Material Plane from the __Ab
   **__Recall Knowledge - Fiend__ (__Religion__)**: DC 24'
 hp: 165
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Abyssal
 - Celestial
 - Draconic
 - telepathy 100 feet
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+9
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 20
   traits:
   - evil
@@ -104,8 +248,8 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 20
   traits:
   - agile
@@ -113,83 +257,7 @@ melee:
   - magical
 name: Nabasu
 perception: 17
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: "The nabasu focuses their death-stealing gaze upon a single target\
-    \ they can see within 30 feet. The target must immediately attempt a Fortitude\
-    \ save against death-stealing gaze. \n\n**Critical Success **The creature is unaffected\
-    \ and the nabasu suffers starvation vulnerability. \n\n**Success **The creature\
-    \ is unaffected. \n\n**Failure **The creature is affected by deathstealing gaze\
-    \ and becomes __drained 1__. If the creature was already drained 1 by the death-stealing\
-    \ gaze before attempting the save, a failed save increases the value of the drained\
-    \ condition by 1, to a maximum of drained 4. The nabasu gains 10 temporary Hit\
-    \ Points, and the drained creature is temporarily immune until the start of the\
-    \ nabasu's next turn. \n\n**Critical Failure **As failure, but the creature increases\
-    \ the amount of drain by 2."
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Consume Death
-  range: null
-  raw_description: "**Consume Death**   (__concentrate__, __divine__, __necromancy__,\
-    \ __visual__) The nabasu focuses their death-stealing gaze upon a single target\
-    \ they can see within 30 feet. The target must immediately attempt a Fortitude\
-    \ save against death-stealing gaze. \n\n**Critical Success **The creature is unaffected\
-    \ and the nabasu suffers starvation vulnerability. \n\n**Success **The creature\
-    \ is unaffected. \n\n**Failure **The creature is affected by deathstealing gaze\
-    \ and becomes __drained 1__. If the creature was already drained 1 by the death-stealing\
-    \ gaze before attempting the save, a failed save increases the value of the drained\
-    \ condition by 1, to a maximum of drained 4. The nabasu gains 10 temporary Hit\
-    \ Points, and the drained creature is temporarily immune until the start of the\
-    \ nabasu's next turn. \n\n**Critical Failure **As failure, but the creature increases\
-    \ the amount of drain by 2."
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - necromancy
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature that dies while suffering drain from a nabasu's death-stealing
-    gaze rises as a __ghoul__ the next midnight.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stolen Death
-  range: null
-  raw_description: '**Stolen Death** A creature that dies while suffering drain from
-    a nabasu''s death-stealing gaze rises as a __ghoul__ the next midnight.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists:
-- dc: 26
-  misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: abyssal pact
-      requirement: null
-  to_hit: null
+ranged_attacks: null
 saves:
   fort: 19
   fort_misc: null
@@ -198,71 +266,78 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +17
 - darkvision
 size: Medium
 skills:
 - bonus: 18
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 16
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 16
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 18
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 17
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 66
+  page_start: '66'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 spell_lists:
-- dc: 26
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: dimension door
-      requirement: null
-    - frequency: null
+    - misc: null
       name: grim tendrils
-      requirement: null
-    - frequency: null
+    - misc: null
       name: paralyze
-      requirement: null
-    - frequency: null
+    - misc: null
       name: vampiric touch
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: abyssal pact
+  spells_source: Rituals
 traits:
-- CE
-- Medium
 - Demon
 - Fiend
-type: Creature
 weaknesses:
+- amount: 272
+  misc: null
+  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=
 - amount: 5
-  type: <a style="text-decoration:underline" href="Equipment.aspx?ID=272">cold iron</a>
-- amount: 5
+  misc: null
   type: good

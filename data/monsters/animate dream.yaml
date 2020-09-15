@@ -7,6 +7,40 @@ ability_mods:
   wis_mod: 2
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An animate dream's touch fills the victim's mind with terrifying visions;
+    **Saving Throw **DC 26 Fortitude; **Stage 1 **__fatigued__ (1 day); **Stage 2
+    **fatigued and __stupefied 1__ (1 day); **Stage 3** The victim falls __asleep__
+    and can't be awakened as long as they remain at this stage (1 day).
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Endless Nightmare
+  range: null
+  raw_description: '**Endless Nightmare** (__curse__, __emotion__, __enchantment__,
+    __fear__, __mental__, __occult__) An animate dream''s touch fills the victim''s
+    mind with terrifying visions; **Saving Throw **DC 26 Fortitude; **Stage 1 **__fatigued__
+    (1 day); **Stage 2 **fatigued and __stupefied 1__ (1 day); **Stage 3** The victim
+    falls __asleep__ and can''t be awakened as long as they remain at this stage (1
+    day).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - emotion
+  - enchantment
+  - fear
+  - mental
+  - occult
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'An animate dream coalesces from centuries of stray fragments of reverie
@@ -62,14 +96,14 @@ immunities:
 - poison
 - precision
 - sleep
-items: null
-languages: null
+languages:
+- telepathy 100 feet
 level: 8
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8
-    type: negative
+    formula: null
+    type: 4d8 negative
   name: nightmare tendril
   plus_damage:
   - formula: null
@@ -80,50 +114,12 @@ melee:
   - finesse
 name: Animate Dream
 perception: 14
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An animate dream's touch fills the victim's mind with terrifying visions;
-    **Saving Throw **DC 26 Fortitude; **Stage 1 **__fatigued__ (1 day); **Stage 2
-    **fatigued and __stupefied 1__ (1 day); **Stage 3** The victim falls __asleep__
-    and can't be awakened as long as they remain at this stage (1 day).
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Endless Nightmare
-  range: null
-  raw_description: '**Endless Nightmare** (__curse__, __emotion__, __enchantment__,
-    __fear__, __mental__, __occult__) An animate dream''s touch fills the victim''s
-    mind with terrifying visions; **Saving Throw **DC 26 Fortitude; **Stage 1 **__fatigued__
-    (1 day); **Stage 2 **fatigued and __stupefied 1__ (1 day); **Stage 3** The victim
-    falls __asleep__ and can''t be awakened as long as they remain at this stage (1
-    day).'
-  requirements: null
-  success: null
-  traits:
-  - curse
-  - emotion
-  - enchantment
-  - fear
-  - mental
-  - occult
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
 resistances:
 - amount: 5
-  type: all (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or negative
-- amount: null
-  type: double resistance vs. non-magical)
-ritual_lists: null
+  misc: null
+  type: all
 saves:
   fort: 15
   fort_misc: null
@@ -132,69 +128,58 @@ saves:
   ref_misc: null
   will: 14
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +14
 - darkvision
 size: Medium
 skills:
 - bonus: 14
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 18
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 18
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 12
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 18
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 18
+  page_start: '18'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: fly
 spell_lists:
-- dc: 26
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 26
+  focus_points: null
   misc: null
-  name: Occult Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 4
+  spell_lists:
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: confusion
-      requirement: null
-    - frequency: at will
+    - misc: at will
       name: dimension door
-      requirement: null
-    - frequency: null
+    - misc: null
       name: nightmare
-      requirement: null
-    - frequency: null
+    - misc: null
       name: phantasmal killer
-      requirement: null
-    - frequency: null
+    - misc: null
       name: sleep
-      requirement: null
-  - heightened_level: null
-    level: 3
+  - level: 3
     spells:
-    - frequency: null
+    - misc: null
       name: fear
-      requirement: null
-  to_hit: null
+  spells_source: Occult Innate Spells
 traits:
-- Uncommon
-- NE
-- Medium
 - Dream
 - Incorporeal
-type: Creature
-weaknesses: null

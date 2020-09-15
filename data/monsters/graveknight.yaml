@@ -7,53 +7,144 @@ ability_mods:
   wis_mod: 3
 ac: 31
 ac_special: null
-alignment: LE
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: 30 feet. +17
+  description: The graveknight unleashes a 30-foot cone of energy. Creatures in the
+    area take 6d12 cold damage (DC 29 basic Reflex save). The graveknight can use
+    this ability once every 1d4 rounds.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Sacrilegious Aura
+  maximum_duration: null
+  name: Devastating Blast
   range: null
-  raw_description: '**Sacrilegious Aura** 30 feet. +17'
+  raw_description: '**Devastating Blast** [Two Actions]  (__arcane__, __cold__, __evocation__)
+    The graveknight unleashes a 30-foot cone of energy. Creatures in the area take
+    6d12 cold damage (DC 29 basic Reflex save). The graveknight can use this ability
+    once every 1d4 rounds.'
   requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - cold
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: This curse affects anyone who wears a graveknight's armor for at least
+    1 hour. **Saving Throw** DC 33 Will save; **Onset** 1 hour; **Stage 1** doomed
+    1 and cannot remove the armor (1 day); **Stage 2** doomed 2, hampered 10, and
+    cannot remove the armor (1 day); **Stage 3** dies and transforms into the armor's
+    graveknight.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Graveknight's Curse
+  range: null
+  raw_description: '**Graveknight''s Curse** This curse affects anyone who wears a
+    graveknight''s armor for at least 1 hour. **Saving Throw** DC 33 Will save; **Onset**
+    1 hour; **Stage 1** doomed 1 and cannot remove the armor (1 day); **Stage 2**
+    doomed 2, hampered 10, and cannot remove the armor (1 day); **Stage 3** dies and
+    transforms into the armor''s graveknight.'
+  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: The graveknight summons a supernatural mount as per __phantom steed__,
+    heightened to a level equal to half the graveknight's level. Unlike phantom steed,
+    the steed's AC and saving throw bonuses are all 4 lower than the graveknight's,
+    and the steed has one-third the graveknight's Hit Points (rounded down). If the
+    steed is destroyed, the graveknight must wait 1 hour before using this ability
+    again.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Phantom Mount
+  range: null
+  raw_description: '**Phantom Mount** [Three Actions]  (__arcane__, __conjuration__)
+    The graveknight summons a supernatural mount as per __phantom steed__, heightened
+    to a level equal to half the graveknight''s level. Unlike phantom steed, the steed''s
+    AC and saving throw bonuses are all 4 lower than the graveknight''s, and the steed
+    has one-third the graveknight''s Hit Points (rounded down). If the steed is destroyed,
+    the graveknight must wait 1 hour before using this ability again.
+
+
+
+    HP 58; AC 27, Fort +17, Ref +15, Will +14.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - conjuration
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The graveknight has access to the critical specialization effects of
+    any weapons it wields.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Weapon Master
+  range: null
+  raw_description: '**Weapon Master** The graveknight has access to the critical specialization
+    effects of any weapons it wields.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+alignment: LE
+automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
+  effect: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
-  name: Attack of Opportunity
+  maximum_duration: null
+  name: Sacrilegious Aura
   range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
+  raw_description: '**Sacrilegious Aura** (__abjuration__, __aura__, __divine__, __evil__)
+    30 feet. When a creature in the aura uses a __positive__ spell or ability, the
+    graveknight automatically attempts to __counteract__ it, with a +17 counteract
+    modifier.
+
+
+    **Attack of Opportunity** [Reaction]'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
+  trigger: null
 description: 'Graveknights are undead warriors granted unlife by a cursed suit of
   armor.
 
@@ -78,15 +169,15 @@ languages:
 - Common
 - Necril
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+10
     type: slashing
   name: frost greatsword
   plus_damage:
-  - formula: 1d6
-    type: cold
+  - formula: null
+    type: 1d6 cold
   to_hit: 24
   traits:
   - cold
@@ -98,99 +189,23 @@ melee:
     type: bludgeoning
   name: fist
   plus_damage:
-  - formula: 1d6
-    type: cold
+  - formula: null
+    type: 1d6 cold
   to_hit: 23
   traits:
   - agile
   - cold
 name: Graveknight
 perception: 19
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: 6d12 cold, DC 29
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Devastating Blast
-  range: null
-  raw_description: '**Devastating Blast** [Two Actions]  (__arcane__, __cold__, __evocation__)
-    6d12 cold, DC 29'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - cold
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: DC 33
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Graveknight's Curse
-  range: null
-  raw_description: '**Graveknight''s Curse** DC 33'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: HP 58; AC 27, Fort +17, Ref +15, Will +14.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Phantom Mount
-  range: null
-  raw_description: '**Phantom Mount** [Three Actions]  (__arcane__, __conjuration__)
-    HP 58; AC 27, Fort +17, Ref +15, Will +14.'
-  requirements: null
-  success: null
-  traits:
-  - arcane
-  - conjuration
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Weapon Master
-  range: null
-  raw_description: '**Weapon Master**'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+6
     type: piercing
   name: frost composite longbow
   plus_damage:
-  - formula: 1d6
-    type: cold
+  - formula: null
+    type: 1d6 cold
   to_hit: 21
   traits:
   - cold
@@ -199,9 +214,6 @@ ranged:
   - range increment 100 feet
   - reload 0
   - volley 30 feet
-rarity: Common
-resistances: null
-ritual_lists: null
 saves:
   fort: 21
   fort_misc: null
@@ -210,35 +222,30 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +19
 - darkvision
 size: Medium
 skills:
 - bonus: 23
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 22
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 19
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 20
   misc: null
-  name: 'Warfare Lore '
-source:
+  name: Warfare Lore
+sources:
 - abbr: Bestiary
-  page_start: 191
+  page_start: '191'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Undead
-type: Creature
-weaknesses: null

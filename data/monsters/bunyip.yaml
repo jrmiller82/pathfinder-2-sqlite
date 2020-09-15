@@ -7,6 +7,101 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the
+    bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 __temporary
+    HP__ that go away at the end of the frenzy, and takes a –2 penalty to AC.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Frenzy
+  range: null
+  raw_description: '**Blood Frenzy** [Reaction]  **Requirements** The bunyip is not
+    __fatigued__ or already in a frenzy. **Trigger** The bunyip deals __bleed damage__
+    to a living creature. **Effect** The bunyip flies into a frenzy that lasts 1 minute.
+    While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws,
+    gains 8 __temporary HP__ that go away at the end of the frenzy, and takes a –2
+    penalty to AC.'
+  requirements: The bunyip is not fatigued or already in a frenzy.
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The bunyip deals bleed damage to a living creature.
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The bunyip lets out a loud and horrifying roar. Other creatures within
+    100 feet must succeed at a DC 21 Will save or become __frightened 2__ (__frightened
+    3__ on a critical failure, __frightened 1__ on a success, or unaffected on a critical
+    success). No matter the result, the creature is temporarily immune to the  effect
+    for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Roar
+  range: null
+  raw_description: '**Roar** [One Action]  (__auditory__, __concentrate__, __emotion__,
+    __enchantment__, __fear__, __mental__, __primal__) The bunyip lets out a loud
+    and horrifying roar. Other creatures within 100 feet must succeed at a DC 21 Will
+    save or become __frightened 2__ (__frightened 3__ on a critical failure, __frightened
+    1__ on a success, or unaffected on a critical success). No matter the result,
+    the creature is temporarily immune to the  effect for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - concentrate
+  - emotion
+  - enchantment
+  - fear
+  - mental
+  - primal
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: A bunyip can alter its form slightly to gain an advantage and make
+    it harder to recognize. When it does, its teeth shrink and its Jaws Strike doesn't
+    deal the 1d6 __persistent__ __bleed damage__. It can choose to gain either a long
+    snake tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile
+    legs, increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip
+    can return to normal or switch between a long tail or crocodile legs.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Shift Form
+  range: null
+  raw_description: '**Shift Form** [One Action]  (__morph__, __primal__, __transmutation__)
+    A bunyip can alter its form slightly to gain an advantage and make it harder to
+    recognize. When it does, its teeth shrink and its Jaws Strike doesn''t deal the
+    1d6 __persistent__ __bleed damage__. It can choose to gain either a long snake
+    tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile legs,
+    increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip
+    can return to normal or switch between a long tail or crocodile legs.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - morph
+  - primal
+  - transmutation
+  trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: Reaction
@@ -15,16 +110,18 @@ automatic_abilities:
   description: As Attack of Opportunity, but both the bunyip and the triggering creature
     must be in water.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Aquatic Opportunity
   range: null
   raw_description: '**Aquatic Opportunity** [Reaction] As Attack of Opportunity, but
     both the bunyip and the triggering creature must be in water.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
@@ -64,19 +161,16 @@ description: 'Bunyips are dangerous aquatic predators that resemble a cross betw
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 18'
 hp: 45
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d10+4
     type: piercing
   name: Jaws
   plus_damage:
-  - formula: 1d6
-    type: persistent bleed damage
+  - formula: null
+    type: 1d6 persistent bleed damage
   to_hit: 11
   traits: null
 - action_cost: One Action
@@ -90,99 +184,7 @@ melee:
   - agile
 name: Bunyip
 perception: 10
-proactive_abilities:
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The bunyip deals __bleed damage__ to a living creature.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Frenzy
-  range: null
-  raw_description: '**Blood Frenzy** [Reaction]  **Requirements** The bunyip is not
-    __fatigued__ or already in a frenzy. **Trigger** The bunyip deals __bleed damage__
-    to a living creature. **Effect** The bunyip flies into a frenzy that lasts 1 minute.
-    While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws,
-    gains 8 __temporary HP__ that go away at the end of the frenzy, and takes a -2
-    penalty to AC.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: The bunyip is not __fatigued__ or already in a frenzy.
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The bunyip lets out a loud and horrifying roar. Other creatures within
-    100 feet must succeed at a DC 21 Will save or become __frightened 2__ (__frightened
-    3__ on a critical failure, __frightened 1__ on a success, or unaffected on a critical
-    success). No matter the result, the creature is temporarily immune to the  effect
-    for 1 minute.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Roar
-  range: null
-  raw_description: '**Roar**   (__auditory__, __concentrate__, __emotion__, __enchantment__,
-    __fear__, __mental__, __primal__) The bunyip lets out a loud and horrifying roar.
-    Other creatures within 100 feet must succeed at a DC 21 Will save or become __frightened
-    2__ (__frightened 3__ on a critical failure, __frightened 1__ on a success, or
-    unaffected on a critical success). No matter the result, the creature is temporarily
-    immune to the  effect for 1 minute.'
-  requirements: null
-  success: null
-  traits:
-  - auditory
-  - concentrate
-  - emotion
-  - enchantment
-  - fear
-  - mental
-  - primal
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: A bunyip can alter its form slightly to gain an advantage and make
-    it harder to recognize. When it does, its teeth shrink and its Jaws Strike doesn't
-    deal the 1d6 __persistent__ __bleed damage__. It can choose to gain either a long
-    snake tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile
-    legs, increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip
-    can return to normal or switch between a long tail or crocodile legs.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Shift Form
-  range: null
-  raw_description: '**Shift Form**   (__morph__, __primal__, __transmutation__) A
-    bunyip can alter its form slightly to gain an advantage and make it harder to
-    recognize. When it does, its teeth shrink and its Jaws Strike doesn''t deal the
-    1d6 __persistent__ __bleed damage__. It can choose to gain either a long snake
-    tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile legs,
-    increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip
-    can return to normal or switch between a long tail or crocodile legs.'
-  requirements: null
-  success: null
-  traits:
-  - morph
-  - primal
-  - transmutation
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 9
   fort_misc: null
@@ -197,21 +199,22 @@ sense_abilities:
   critical_success: null
   description: The bunyip can smell blood in the water from up to 1 mile away.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Blood Scent
   range: null
   raw_description: '**Blood Scent** The bunyip can smell blood in the water from up
     to 1 mile away.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +10
 - blood scent
 - darkvision
 - scent (imprecise) 100 feet
@@ -219,27 +222,25 @@ size: Medium
 skills:
 - bonus: 11
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 8
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 49
+  page_start: '49'
   page_stop: null
 speed:
 - amount: 10
+  misc: null
   type: Land
 - amount: 40
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null

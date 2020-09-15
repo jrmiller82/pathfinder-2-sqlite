@@ -7,6 +7,36 @@ ability_mods:
   wis_mod: 7
 ac: 29
 ac_special: null
+active_abilities:
+- action_cost: Three Actions
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The remnant of Barzillai stirs up and amplifies unsettled spirits in the
+    area to create a single haunt of 6th level or lower at his present location. This
+    haunt is permanent until it is disabled or the remnant of Barzillai is destroyed.
+  failure: null
+  frequency: three times per day; Requirements The remnant of Barzillai is within
+    Ravounel.
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Create Haunt
+  range: null
+  raw_description: '**Create Haunt** [Three Actions]  (__divine__, __necromancy__)
+    **Frequency** three times per day; **Requirements** The remnant of Barzillai is
+    within Ravounel. **Effect** The remnant of Barzillai stirs up and amplifies unsettled
+    spirits in the area to create a single haunt of 6th level or lower at his present
+    location. This haunt is permanent until it is disabled or the remnant of Barzillai
+    is destroyed.'
+  requirements: The remnant of Barzillai is within Ravounel.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: None
@@ -17,11 +47,11 @@ automatic_abilities:
     he's within 60 feet of a haunt. When a haunt within 60 feet of Barzillai is disabled,
     he takes 20 force damage from the backlash.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Haunted Form
   range: null
   raw_description: '**Haunted Form** (__divine__, __necromancy__) The remnant of Barzillai
@@ -29,6 +59,8 @@ automatic_abilities:
     to all damage increases to 12 while he''s within 60 feet of a haunt. When a haunt
     within 60 feet of Barzillai is disabled, he takes 20 force damage from the backlash.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divine
@@ -55,7 +87,7 @@ description: 'Though the Silver Ravens defeated the evil tyrant Barzillai Thrune
 
 
   While a remnant of Barzillai can draw power from any haunt it is associated with,
-  remnants tend to do so with specific haunts. The haunts presented on pages 27-28
+  remnants tend to do so with specific haunts. The haunts presented on pages 27–28
   are commonly associated with remnants of Barzillai. These are far from the only
   haunts Barzillai can create, however; the Silver Ravens'' records mention many phenomena
   associated with the undead being, some of which deal with themes of various birds,
@@ -74,7 +106,6 @@ immunities:
 - poison
 - precision
 - unconscious
-items: null
 languages:
 - Aklo
 - Azlanti
@@ -89,15 +120,15 @@ languages:
 - Strix
 - Varisian
 level: 10
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+8
     type: bludgeoning
   name: burning mace
   plus_damage:
-  - formula: 2d6
-    type: fire
+  - formula: null
+    type: 2d6 fire
   to_hit: 22
   traits:
   - magical
@@ -105,45 +136,12 @@ melee:
   - shove
 name: Remnant of Barzillai
 perception: 22
-proactive_abilities:
-- action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The remnant of Barzillai is within Ravounel.
-  effects: null
-  failure: null
-  frequency: three times per day
-  full_description: null
-  generic_description: null
-  name: Create Haunt
-  range: null
-  raw_description: '**Create Haunt** [Three Actions]  (__divine__, __necromancy__)
-    **Frequency** three times per day; **Requirements** The remnant of Barzillai is
-    within Ravounel. **Effect** The remnant of Barzillai stirs up and amplifies unsettled
-    spirits in the area to create a single haunt of 6th level or lower at his present
-    location. This haunt is permanent until it is disabled or the remnant of Barzillai
-    is destroyed.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Rare
 resistances:
 - amount: 8
-  type: all damage (except force
-- amount: null
-  type: ghost touch
-- amount: null
-  type: or positive
-- amount: null
-  type: double resistance vs. non-magical)
-- amount: null
-  type: haunted form
-ritual_lists: null
+  misc: null
+  type: all damage
 saves:
   fort: 14
   fort_misc: null
@@ -152,40 +150,34 @@ saves:
   ref_misc: null
   will: 23
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +22
 - darkvision
 size: Medium
 skills:
 - bonus: 21
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 23
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 21
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 19
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 21
   misc: null
-  name: 'Torture Lore '
-source:
+  name: Torture Lore
+sources:
 - abbr: 'Pathfinder #147: Tomorrow Must Burn'
-  page_start: 80
+  page_start: '80'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: fly
 spell_lists: null
 traits:
-- Rare
-- LE
-- Medium
 - Incorporeal
 - Undead
-type: Creature
-weaknesses: null

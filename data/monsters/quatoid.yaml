@@ -7,29 +7,50 @@ ability_mods:
   wis_mod: 3
 ac: 25
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d12+6 bludgeoning, DC 25
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d12+6 bludgeoning, DC 25'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LN
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. The aura sheds dim light. Creatures in the emanation gain
-    a +2 circumstance bonus to saving throws against emotion effects. The quatoid
-    can activate or deactivate its calming bioluminescence as a single action, which
-    has the concentrate trait.
+  description: The aura sheds dim light. Creatures in the emanation gain a +2 circumstance
+    bonus to saving throws against emotion effects. The quatoid can activate or deactivate
+    its calming bioluminescence as a single action, which has the concentrate trait.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Calming Bioluminescence
-  range: null
+  range: 30 feet
   raw_description: '**Calming Bioluminescence** (__aura__, __emotion__, __mental__,
     __visual__) 30 feet. The aura sheds dim light. Creatures in the emanation gain
     a +2 circumstance bonus to saving throws against emotion effects. The quatoid
     can activate or deactivate its calming bioluminescence as a single action, which
     has the concentrate trait.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -52,12 +73,11 @@ immunities:
 - paralyzed
 - poison
 - sleep
-items: null
 languages:
 - Aquan
 - Common
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d12+6
@@ -71,32 +91,14 @@ melee:
   - reach 10 feet
 name: Quatoid
 perception: 18
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d12+6 bludgeoning, DC 25
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d12+6 bludgeoning, DC 25'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: bludgeoning
 - amount: 5
+  misc: null
   type: fire
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -105,56 +107,53 @@ saves:
   ref_misc: null
   will: 18
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +18
 - darkvision
 size: Small
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 12
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 17
   misc: null
-  name: 'Elemental Lore '
+  name: Elemental Lore
 - bonus: 17
   misc: null
-  name: 'Occultism '
+  name: Occultism
 - bonus: 17
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 13
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 153
+  page_start: '153'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 25
+  misc: null
   type: swim
 spell_lists:
-- dc: 27
-  misc: ''
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 2
+- attack_bonus: 17
+  cantrips: null
+  constants: null
+  dc: 27
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 2
     spells:
-    - frequency: at will
+    - misc: at will
       name: hydraulic push
-      requirement: null
-  to_hit: 17
+  spells_source: Primal Innate Spells
 traits:
-- LN
-- Small
 - Aquatic
 - Elemental
 - Water
-type: Creature
-weaknesses: null

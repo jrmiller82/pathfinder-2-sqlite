@@ -7,6 +7,98 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A ratfolk grenadier has stretchy cheek pouches that can store up to
+    1 cubic foot of objects (though no more than 4 light items). The ratfolk can remove
+    or store an item using the Interact action. As long as the ratfolk has at least
+    one object in its cheek pouches, its speech is noticeably difficult to understand.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Cheek Pouches
+  range: null
+  raw_description: '**Cheek Pouches** A ratfolk grenadier has stretchy cheek pouches
+    that can store up to 1 cubic foot of objects (though no more than 4 light items).
+    The ratfolk can remove or store an item using the Interact action. As long as
+    the ratfolk has at least one object in its cheek pouches, its speech is noticeably
+    difficult to understand.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The ratfolk grenadier draws an alchemical bomb with an Interact action
+    and throws it as a ranged Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Bomber
+  range: null
+  raw_description: '**Quick Bomber** [One Action]  The ratfolk grenadier draws an
+    alchemical bomb with an Interact action and throws it as a ranged Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ratfolk grenadier stores one held item of light or negligible Bulk in
+    its cheek pouches.
+  failure: null
+  frequency: once per round.
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Stow
+  range: null
+  raw_description: '**Quick Stow** [Free Action]  **Frequency** once per round. **Effect**
+    The ratfolk grenadier stores one held item of light or negligible Bulk in its
+    cheek pouches.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A ratfolk grenadier can end its movement in the same square as an ally
+    that also has this ability. Only two such creatures can share the same space.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Swarming
+  range: null
+  raw_description: '**Swarming** A ratfolk grenadier can end its movement in the same
+    square as an ally that also has this ability. Only two such creatures can share
+    the same space.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LN
 automatic_abilities: null
 description: 'Ratfolk grenadiers use alchemy and stealth to defend their communities.
@@ -17,7 +109,6 @@ description: 'Ratfolk grenadiers use alchemy and stealth to defend their communi
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 19'
 hp: 60
 hp_misc: null
-immunities: null
 items:
 - alchemist's tools
 - hand crossbow (20 bolts)
@@ -25,11 +116,11 @@ items:
 languages:
 - Common
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4
-    type: piercing
+    formula: null
+    type: 1d4 piercing
   name: fangs
   plus_damage: null
   to_hit: 12
@@ -38,95 +129,11 @@ melee:
   - finesse
 name: Ratfolk Grenadier
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A ratfolk grenadier has stretchy cheek pouches that can store up to
-    1 cubic foot of objects (though no more than 4 light items). The ratfolk can remove
-    or store an item using the Interact action. As long as the ratfolk has at least
-    one object in its cheek pouches, its speech is noticeably difficult to understand.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Cheek Pouches
-  range: null
-  raw_description: '**Cheek Pouches** A ratfolk grenadier has stretchy cheek pouches
-    that can store up to 1 cubic foot of objects (though no more than 4 light items).
-    The ratfolk can remove or store an item using the Interact action. As long as
-    the ratfolk has at least one object in its cheek pouches, its speech is noticeably
-    difficult to understand.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The ratfolk grenadier draws an alchemical bomb with an Interact action
-    and throws it as a ranged Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quick Bomber
-  range: null
-  raw_description: '**Quick Bomber**   The ratfolk grenadier draws an alchemical bomb
-    with an Interact action and throws it as a ranged Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The ratfolk grenadier stores one held item of light or negligible Bulk in
-    its cheek pouches.
-  effects: null
-  failure: null
-  frequency: once per round.
-  full_description: null
-  generic_description: null
-  name: Quick Stow
-  range: null
-  raw_description: '**Quick Stow** [Free Action]  **Frequency** once per round. **Effect**
-    The ratfolk grenadier stores one held item of light or negligible Bulk in its
-    cheek pouches.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A ratfolk grenadier can end its movement in the same square as an ally
-    that also has this ability. Only two such creatures can share the same space.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Swarming
-  range: null
-  raw_description: '**Swarming** A ratfolk grenadier can end its movement in the same
-    square as an ally that also has this ability. Only two such creatures can share
-    the same space.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: piercing
+    formula: null
+    type: 1d6 piercing
   name: hand crossbow
   plus_damage: null
   to_hit: 12
@@ -134,18 +141,15 @@ ranged:
   - range increment 60 feet
   - reload 1
 - action_cost: One Action
-  damage: null
+  damage:
+    formula: null
+    type: varies by bomb
   name: alchemical bomb
   plus_damage: null
   to_hit: 13
   traits:
   - range increment 20 feet
   - splash
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 11
   fort_misc: null
@@ -158,66 +162,58 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A ratfolk grenadier carries 2 infused moderate acid flasks, 2 infused
-    moderate alchemist''s fires, and 2 infused moderate frost vials. These items last
+  description: A ratfolk grenadier carries 2 infused moderate acid flasks, 2 infused
+    moderate alchemist's fires, and 2 infused moderate frost vials. These items last
     for 24 hours, or until the next time they make their daily preparations.
-
-
-    '
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Infused Items
   range: null
   raw_description: '**Infused Items** A ratfolk grenadier carries 2 infused moderate
     acid flasks, 2 infused moderate alchemist''s fires, and 2 infused moderate frost
     vials. These items last for 24 hours, or until the next time they make their daily
-    preparations.
-
-
-    '
+    preparations.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +10
 - darkvision
 size: Small
 skills:
 - bonus: 9
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 12
   misc: null
-  name: 'Crafting '
+  name: Crafting
 - bonus: 7
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 10
   misc: null
-  name: 'Society '
+  name: Society
 - bonus: 12
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 9
   misc: null
-  name: 'Thievery '
-source:
+  name: Thievery
+sources:
 - abbr: Bestiary
-  page_start: 277
+  page_start: '277'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LN
-- Small
 - Humanoid
 - Ratfolk
-type: Creature
-weaknesses: null

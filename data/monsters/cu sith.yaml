@@ -7,6 +7,156 @@ ability_mods:
   wis_mod: 3
 ac: 24
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: Any creature within 200 feet of the cu sith that hears its Dooming
+    Bark must attempt a DC 24 Will save.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Dooming Bark
+  range: null
+  raw_description: '**Dooming Bark** [Two Actions]  (__auditory__, __concentrate__,
+    __fear__, __mental__, __necromancy__, __primal__) Any creature within 200 feet
+    of the cu sith that hears its Dooming Bark must attempt a DC 24 Will save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - concentrate
+  - fear
+  - mental
+  - necromancy
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected and immune to Dooming Bark for 24 hours.
+  description: The creature is unaffected and immune to Dooming Bark for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success** The creature is unaffected and immune to
+    Dooming Bark for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __frightened__ 1.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success** The creature is __frightened__ 1.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __frightened__ 1.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is frightened 2.
+  effect: null
+  failure: The creature is frightened 2.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure** The creature is frightened 2.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is frightened 3 and __fleeing__.
+  critical_success: null
+  description: 'The creature is frightened 3 and __fleeing__.
+
+
+    If a creature is already frightened when it fails a save against Dooming Bark,
+    its frightened value increases by 1 and it becomes __doomed__ 1. A creature in
+    an area that the cu sith can''t easily reach—such as a hidden burrow or enclosed
+    building—increases the degree of success of its saving throw against Dooming Bark
+    by one step.'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is frightened 3 and __fleeing__.
+
+
+    If a creature is already frightened when it fails a save against Dooming Bark,
+    its frightened value increases by 1 and it becomes __doomed__ 1. A creature in
+    an area that the cu sith can''t easily reach—such as a hidden burrow or enclosed
+    building—increases the degree of success of its saving throw against Dooming Bark
+    by one step.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The cu sith viciously shakes its prey. The cu sith makes a jaws Strike against
+    the grabbed creature with a +2 circumstance bonus to the attack roll. If the cu
+    sith hits, it deals jaws damage, maintains its Grab, and attempts an __Athletics__
+    check to __Disarm__ its target of anything it is holding. On a miss, the cu sith
+    releases the creature.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Worry Prey
+  range: null
+  raw_description: '**Worry Prey** [One Action]  (__attack__) **Requirements** The
+    cu sith has a Large or smaller creature grabbed in its jaws; **Effect** The cu
+    sith viciously shakes its prey. The cu sith makes a jaws Strike against the grabbed
+    creature with a +2 circumstance bonus to the attack roll. If the cu sith hits,
+    it deals jaws damage, maintains its Grab, and attempts an __Athletics__ check
+    to __Disarm__ its target of anything it is holding. On a miss, the cu sith releases
+    the creature.'
+  requirements: The cu sith has a Large or smaller creature grabbed in its jaws
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - attack
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Cu siths are hound-like doorkeepers of remote portals to other planes,
@@ -34,13 +184,12 @@ description: 'Cu siths are hound-like doorkeepers of remote portals to other pla
 hp: 140
 hp_misc: null
 immunities:
-- fear
-items: null
+- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
 languages:
 - Sylvan
 - can't speak any language
 level: 7
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+9
@@ -53,73 +202,8 @@ melee:
   traits: null
 name: Cu Sith
 perception: 16
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: The creature is frightened 3 and fleeing.
-  critical_success: The creature is unaffected and immune to Dooming Bark for 24 hours.
-  description: 'Any creature within 200 feet of the cu sith that hears its Dooming
-    Bark must attempt a DC 24 Will save.
-
-
-    '
-  effect: null
-  effects: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Dooming Bark
-  range: null
-  raw_description: "**Dooming Bark** [Two Actions]  (__auditory__, __concentrate__,\
-    \ __fear__, __mental__, __necromancy__, __primal__) Any creature within 200 feet\
-    \ of the cu sith that hears its Dooming Bark must attempt a DC 24 Will save.\n\
-    \n**Critical Success** The creature is unaffected and immune to Dooming Bark for\
-    \ 24 hours.\n\n**Success** The creature is __frightened__ 1.\n\n**Failure** The\
-    \ creature is frightened 2.\n\n**Critical Failure** The creature is frightened\
-    \ 3 and __fleeing__. \n\nIf a creature is already frightened when it fails a save\
-    \ against Dooming Bark, its frightened value increases by 1 and it becomes __doomed__\
-    \ 1. A creature in an area that the cu sith can't easily reach—such as a hidden\
-    \ burrow or enclosed building—increases the degree of success of its saving throw\
-    \ against Dooming Bark by one step."
-  requirements: null
-  success: The creature is frightened 1.
-  traits:
-  - auditory
-  - concentrate
-  - fear
-  - mental
-  - necromancy
-  - primal
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The cu sith has a Large or smaller creature grabbed in its jaws
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Worry Prey
-  range: null
-  raw_description: '**Worry Prey**   (__attack__) **Requirements** The cu sith has
-    a Large or smaller creature grabbed in its jaws; **Effect** The cu sith viciously
-    shakes its prey. The cu sith makes a jaws Strike against the grabbed creature
-    with a +2 circumstance bonus to the attack roll. If the cu sith hits, it deals
-    jaws damage, maintains its Grab, and attempts an __Athletics__ check to __Disarm__
-    its target of anything it is holding. On a miss, the cu sith releases the creature.'
-  requirements: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: 5
-  type: cold iron
-ritual_lists: null
 saves:
   fort: 15
   fort_misc: null
@@ -128,37 +212,35 @@ saves:
   ref_misc: null
   will: 16
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +16
 - low-light vision
 - scent (imprecise) 30 feet
 size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 17
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 17
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 16
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: 'Pathfinder #153: Life''s Long Shadow'
-  page_start: 79
+  page_start: '79'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- Uncommon
-- N
-- Large
 - Fey
-type: Creature
-weaknesses: null
+weaknesses:
+- amount: 5
+  misc: null
+  type: cold iron

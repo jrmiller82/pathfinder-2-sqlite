@@ -7,6 +7,82 @@ ability_mods:
   wis_mod: 1
 ac: 21
 ac_special: null
+active_abilities:
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the
+    sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains
+    a +4 status bonus to damage rolls with its claws and jaws, gains 11 temporary
+    HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil
+    can't voluntarily stop its frenzy. After its frenzy, the sea devil is __fatigued__.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Blood Frenzy
+  range: null
+  raw_description: '**Blood Frenzy** [Free Action]  (__rage__) **Requirements** The
+    sea devil is not __fatigued__ or already in a frenzy. **Trigger** The sea devil
+    deals bleed damage to a living creature. **Effect** The sea devil flies into a
+    frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus
+    to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls
+    with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and
+    takes a -2 status penalty to AC. The sea devil can''t voluntarily stop its frenzy.
+    After its frenzy, the sea devil is __fatigued__.'
+  requirements: The sea devil is not fatigued or already in a frenzy.
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - rage
+  trigger: The sea devil deals bleed damage to a living creature.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the sea devil deals piercing or slashing damage, it also deals
+    1d4 persistent bleed damage if the target was __flat-footed__ or if the attack
+    was a critical hit.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Bloodletting
+  range: null
+  raw_description: '**Bloodletting** When the sea devil deals piercing or slashing
+    damage, it also deals 1d4 persistent bleed damage if the target was __flat-footed__
+    or if the attack was a critical hit.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A sea devil brute can use thrown ranged weapons underwater with no
+    penalty due to range increment.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Unimpeded Throw
+  range: null
+  raw_description: '**Unimpeded Throw** A sea devil brute can use thrown ranged weapons
+    underwater with no penalty due to range increment.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'Physically imposing sea devils are equipped with some of the best weaponry
@@ -19,14 +95,13 @@ description: 'Physically imposing sea devils are equipped with some of the best 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 19'
 hp: 60
 hp_misc: null
-immunities: null
 items:
 - trident
 languages:
 - Aquan
 - shark commune 150 feet
 level: 4
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+8
@@ -54,73 +129,7 @@ melee:
   traits: null
 name: Sea Devil Brute
 perception: 7
-proactive_abilities:
-- action_cost: Free Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The sea devil deals bleed damage to a living creature.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Blood Frenzy
-  range: null
-  raw_description: '**Blood Frenzy** [Free Action]  (__rage__) **Requirements** The
-    sea devil is not __fatigued__ or already in a frenzy. **Trigger** The sea devil
-    deals bleed damage to a living creature. **Effect** The sea devil flies into a
-    frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus
-    to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls
-    with its claws and jaws, gains 11 temporary HP until the end of the frenzy, and
-    takes a -2 status penalty to AC. The sea devil can''t voluntarily stop its frenzy.
-    After its frenzy, the sea devil is __fatigued__.'
-  requirements: null
-  success: null
-  traits:
-  - rage
-  trigger: The sea devil is not __fatigued__ or already in a frenzy.
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the sea devil deals piercing or slashing damage, it also deals
-    1d4 persistent bleed damage if the target was __flat-footed__ or if the attack
-    was a critical hit.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Bloodletting
-  range: null
-  raw_description: '**Bloodletting** When the sea devil deals piercing or slashing
-    damage, it also deals 1d4 persistent bleed damage if the target was __flat-footed__
-    or if the attack was a critical hit.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A sea devil brute can use thrown ranged weapons underwater with no
-    penalty due to range increment.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Unimpeded Throw
-  range: null
-  raw_description: '**Unimpeded Throw** A sea devil brute can use thrown ranged weapons
-    underwater with no penalty due to range increment.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d8+8
@@ -130,11 +139,6 @@ ranged:
   to_hit: 11
   traits:
   - thrown 20 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 13
   fort_misc: null
@@ -147,61 +151,54 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The sea devil can communicate telepathically with sharks within range.
-    It can communicate only simple concepts like "come," "guard," or "attack."
-
-
-    '
+  description: The sea devil can communicate telepathically with sharks within range.
+    It can communicate only simple concepts like “come,” “guard,” or “attack.”
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Shark Commune
   range: null
   raw_description: '**Shark Commune** (__mental__, __telepathy__) The sea devil can
     communicate telepathically with sharks within range. It can communicate only simple
-    concepts like "come," "guard," or "attack."
-
-
-    '
+    concepts like “come,” “guard,” or “attack.”'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - mental
   - telepathy
   trigger: null
 senses:
-- Perception +7
 - darkvision
 - wavesense 30 feet
 size: Medium
 skills:
 - bonus: 12
   misc: +15 to Swim
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 9
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary
-  page_start: 287
+  page_start: '287'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- LE
-- Medium
 - Amphibious
 - Humanoid
 - Sea Devil
-type: Creature
-weaknesses: null

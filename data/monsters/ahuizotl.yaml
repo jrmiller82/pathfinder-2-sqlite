@@ -7,6 +7,118 @@ ability_mods:
   wis_mod: 3
 ac: 23
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The ahuizotl attempts an __Athletics__ check against the creature's Fortitude
+    DC.
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tail Drag
+  range: null
+  raw_description: '**Tail Drag** [One Action]  **Requirements **The ahuizotl has
+    a Medium or smaller creature grabbed with its tail claw; **Effect **The ahuizotl
+    attempts an __Athletics__ check against the creature''s Fortitude DC.'
+  requirements: The ahuizotl has a Medium or smaller creature grabbed with its tail
+    claw
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: If the creature is 10 feet away from the ahuizotl, it is dragged
+    into a square adjacent to the ahuizotl. The ahuizotl can make a jaws Strike against
+    the creature.
+  description: If the creature is 10 feet away from the ahuizotl, it is dragged into
+    a square adjacent to the ahuizotl. The ahuizotl can make a jaws Strike against
+    the creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **If the creature is 10 feet away from the
+    ahuizotl, it is dragged into a square adjacent to the ahuizotl. The ahuizotl can
+    make a jaws Strike against the creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If the creature is 10 feet away from the ahuizotl, it is dragged into
+    a square adjacent to the ahuizotl.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **If the creature is 10 feet away from the ahuizotl,
+    it is dragged into a square adjacent to the ahuizotl.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: If the creature is 10 feet away from the ahuizotl, it is dragged into a
+    square adjacent to the ahuizotl.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is not dragged.
+  effect: null
+  failure: The creature is not dragged.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The creature is not dragged.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is not dragged and the ahuizotl no longer has the
+    creature grabbed.
+  critical_success: null
+  description: The creature is not dragged and the ahuizotl no longer has the creature
+    grabbed.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure** The creature is not dragged and the ahuizotl
+    no longer has the creature grabbed.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities: null
 description: 'The ahuizotl is a vicious, semi-aquatic predator that resembles a hideous
@@ -42,13 +154,11 @@ description: 'The ahuizotl is a vicious, semi-aquatic predator that resembles a 
   **__Recall Knowledge - Beast__ (__Arcana__, __Nature__)**: DC 24'
 hp: 105
 hp_misc: null
-immunities: null
-items: null
 languages:
 - Aklo
 - Common
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d8+8
@@ -80,39 +190,8 @@ melee:
   - reach 10 feet
 name: Ahuizotl
 perception: 13
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: The creature is not dragged and the ahuizotl no longer has the
-    creature grabbed.
-  critical_success: null
-  description: null
-  effect: The ahuizotl has a Medium or smaller creature grabbed with its tail claw
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tail Drag
-  range: null
-  raw_description: "**Tail Drag**   **Requirements **The ahuizotl has a Medium or\
-    \ smaller creature grabbed with its tail claw; **Effect **The ahuizotl attempts\
-    \ an __Athletics__ check against the creature's Fortitude DC. \n\n**Critical Success\
-    \ **If the creature is 10 feet away from the ahuizotl, it is dragged into a square\
-    \ adjacent to the ahuizotl. The ahuizotl can make a jaws Strike against the creature.\
-    \ \n\n**Success **If the creature is 10 feet away from the ahuizotl, it is dragged\
-    \ into a square adjacent to the ahuizotl. \n\n**Failure **The creature is not\
-    \ dragged. \n\n**Critical Failure** The creature is not dragged and the ahuizotl\
-    \ no longer has the creature grabbed."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 17
   fort_misc: null
@@ -129,49 +208,47 @@ sense_abilities:
     a __Deception__ check to __Lie__. The ahuizotl has a +4 circumstance bonus to
     this check.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Voice Imitation
   range: null
   raw_description: '**Voice Imitation** An ahuizotl can mimic the sounds of a person
     in distress by attempting a __Deception__ check to __Lie__. The ahuizotl has a
     +4 circumstance bonus to this check.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +13
 - darkvision
 size: Large
 skills:
 - bonus: 15
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 15
   misc: +19 when using Voice Imitation
-  name: 'Deception '
+  name: Deception
 - bonus: 15
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 12
+  page_start: '12'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 - amount: 35
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- Uncommon
-- NE
-- Large
 - Amphibious
 - Beast
-type: Creature
-weaknesses: null

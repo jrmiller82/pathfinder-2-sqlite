@@ -7,33 +7,36 @@ ability_mods:
   wis_mod: 1
 ac: 16
 ac_special: null
+active_abilities: null
 alignment: CE
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 30 feet. A creature that enters the area must attempt a DC 16 Fortitude
-    save. On a failure, the creature is sickened 1, and on a critical failure, the
-    creature also takes a -5-foot status penalty to its Speeds for 1 round. While
-    within the aura, the creature takes a -2 circumstance penalty to saves to recover
-    from the sickened condition. A creature that succeeds at its save is temporarily
-    immune to all xulgaths' stenches for 1 minute.
+  description: A creature that enters the area must attempt a DC 16 Fortitude save.
+    On a failure, the creature is sickened 1, and on a critical failure, the creature
+    also takes a –5-foot status penalty to its Speeds for 1 round. While within the
+    aura, the creature takes a –2 circumstance penalty to saves to recover from the
+    sickened condition. A creature that succeeds at its save is temporarily immune
+    to all xulgaths' stenches for 1 minute.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Stench
-  range: null
+  range: 30 feet
   raw_description: '**Stench** (__aura__, __olfactory__) 30 feet. A creature that
     enters the area must attempt a DC 16 Fortitude save. On a failure, the creature
-    is sickened 1, and on a critical failure, the creature also takes a -5-foot status
+    is sickened 1, and on a critical failure, the creature also takes a –5-foot status
     penalty to its Speeds for 1 round. While within the aura, the creature takes a
-    -2 circumstance penalty to saves to recover from the sickened condition. A creature
+    –2 circumstance penalty to saves to recover from the sickened condition. A creature
     that succeeds at its save is temporarily immune to all xulgaths'' stenches for
     1 minute.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - aura
@@ -52,7 +55,6 @@ description: 'Xulgath warriors strike with fury and eager cruelty, always ready 
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 15'
 hp: 21
 hp_misc: null
-immunities: null
 items:
 - club
 - javelin (3)
@@ -60,7 +62,7 @@ languages:
 - Draconic
 - Undercommon
 level: 1
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -88,8 +90,7 @@ melee:
   - agile
 name: Xulgath Warrior
 perception: 6
-proactive_abilities: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -108,11 +109,6 @@ ranged:
   to_hit: 7
   traits:
   - thrown 30 feet
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
 saves:
   fort: 8
   fort_misc: null
@@ -121,30 +117,25 @@ saves:
   ref_misc: null
   will: 4
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +6
 - darkvision
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 5
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 336
+  page_start: '336'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Medium
 - Humanoid
 - Xulgath
-type: Creature
-weaknesses: null

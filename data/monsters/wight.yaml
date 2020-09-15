@@ -7,6 +7,67 @@ ability_mods:
   wis_mod: 3
 ac: 18
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the wight damages a living creature with its claw Strike, the
+    wight gains 3 temporary Hit Points and the creature must succeed at a DC 17 Fortitude
+    save or become __drained 1__. Further damage dealt by the wraith increases the
+    amount of drain by 1 on a failed save to a maximum of __drained 4__
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Drain Life
+  range: null
+  raw_description: '**Drain Life** (__divine__, __necromancy__) When the wight damages
+    a living creature with its claw Strike, the wight gains 3 temporary Hit Points
+    and the creature must succeed at a DC 17 Fortitude save or become __drained 1__.
+    Further damage dealt by the wraith increases the amount of drain by 1 on a failed
+    save to a maximum of __drained 4__'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living humanoid slain by a wight's claw Strike rises as a wight after
+    1d4 rounds. This wight spawn is under the command of the wight that killed it.
+    It doesn't have Drain Life or Wight Spawn and becomes __clumsy 2__ for as long
+    as it is a wight spawn. If the creator of the wight spawn dies, the wight spawn
+    becomes a full-fledged, autonomous wight; it regains its free will, gains Drain
+    Life and Wight Spawn, and is no longer __clumsy__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Wight Spawn
+  range: null
+  raw_description: '**Wight Spawn** (__divine__, __necromancy__) A living humanoid
+    slain by a wight''s claw Strike rises as a wight after 1d4 rounds. This wight
+    spawn is under the command of the wight that killed it. It doesn''t have Drain
+    Life or Wight Spawn and becomes __clumsy 2__ for as long as it is a wight spawn.
+    If the creator of the wight spawn dies, the wight spawn becomes a full-fledged,
+    autonomous wight; it regains its free will, gains Drain Life and Wight Spawn,
+    and is no longer __clumsy__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
 alignment: LE
 automatic_abilities:
 - action_cost: Reaction
@@ -15,17 +76,19 @@ automatic_abilities:
   description: null
   effect: The wight makes a Strike before being destroyed. It doesn't gain any temporary
     HP from drain life on this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Final Spite
   range: null
   raw_description: '**Final Spite** [Reaction] **Trigger** The wight is reduced to
     0 Hit Points. **Effect** The wight makes a Strike before being destroyed. It doesn''t
     gain any temporary HP from drain life on this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: The wight is reduced to 0 Hit Points.
@@ -43,7 +106,7 @@ description: 'Wights are undead humanoids that, much like wraiths, can drain the
   parts of the world where exposure is a common end. Regardless, wights typically
   haunt burial grounds, catacombs, or other places of the dead. But their hunger is
   targeted toward the living—those individuals who remind them of the shackles of
-  mortality and whom they feel compelled to "free" to the state of undeath.
+  mortality and whom they feel compelled to “free” to the state of undeath.
 
 
 
@@ -76,12 +139,11 @@ immunities:
 - paralyze
 - poison
 - unconscious
-items: null
 languages:
 - Common
 - Necril
 level: 3
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 1d6+4
@@ -94,67 +156,7 @@ melee:
   traits: null
 name: Wight
 perception: 10
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the wight damages a living creature with its claw Strike, the
-    wight gains 3 temporary Hit Points and the creature must succeed at a DC 17 Fortitude
-    save or become __drained 1__. Further damage dealt by the wraith increases the
-    amount of drain by 1 on a failed save to a maximum of __drained 4__
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Drain Life
-  range: null
-  raw_description: '**Drain Life** (__divine__, __necromancy__) When the wight damages
-    a living creature with its claw Strike, the wight gains 3 temporary Hit Points
-    and the creature must succeed at a DC 17 Fortitude save or become __drained 1__.
-    Further damage dealt by the wraith increases the amount of drain by 1 on a failed
-    save to a maximum of __drained 4__'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A living humanoid slain by a wight's claw Strike rises as a wight after
-    1d4 rounds. This wight spawn is under the command of the wight that killed it.
-    It doesn't have Drain Life or Wight Spawn and becomes __clumsy 2__ for as long
-    as it is a wight spawn. If the creator of the wight spawn dies, the wight spawn
-    becomes a full-fledged, autonomous wight; it regains its free will, gains Drain
-    Life and Wight Spawn, and is no longer __clumsy__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Wight Spawn
-  range: null
-  raw_description: '**Wight Spawn** (__divine__, __necromancy__) A living humanoid
-    slain by a wight''s claw Strike rises as a wight after 1d4 rounds. This wight
-    spawn is under the command of the wight that killed it. It doesn''t have Drain
-    Life or Wight Spawn and becomes __clumsy 2__ for as long as it is a wight spawn.
-    If the creator of the wight spawn dies, the wight spawn becomes a full-fledged,
-    autonomous wight; it regains its free will, gains Drain Life and Wight Spawn,
-    and is no longer __clumsy__.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-ranged: null
-rarity: Common
-resistances: null
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 11
   fort_misc: null
@@ -163,33 +165,28 @@ saves:
   ref_misc: null
   will: 10
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +10
 - darkvision
 size: Medium
 skills:
 - bonus: 11
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 9
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 6
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 332
+  page_start: '332'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- LE
-- Medium
 - Undead
 - Wight
-type: Creature
-weaknesses: null

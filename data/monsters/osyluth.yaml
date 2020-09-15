@@ -7,6 +7,125 @@ ability_mods:
   wis_mod: 4
 ac: 28
 ac_special: null
+active_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: '**Saving Throw **DC 25 Fortitude; **Maximum Duration **6 rounds; **Stage
+    1 **2d6 poison damage, __enfeebled 1__ (1 round); **Stage 2 **3d6 poison damage
+    and enfeebled 1 (1 round); **Stage 3 **3d6 poison damage and enfeebled 2 (1 round).
+    Once a creature reaches stage 3, it takes a –4 status penalty to Will saves against
+    attempts to __Coerce__ it for 1 hour (this is a mental effect).'
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Osyluth Venom
+  range: null
+  raw_description: '**Osyluth Venom** (__poison__) **Saving Throw **DC 25 Fortitude;
+    **Maximum Duration **6 rounds; **Stage 1 **2d6 poison damage, __enfeebled 1__
+    (1 round); **Stage 2 **3d6 poison damage and enfeebled 1 (1 round); **Stage 3
+    **3d6 poison damage and enfeebled 2 (1 round). Once a creature reaches stage 3,
+    it takes a –4 status penalty to Will saves against attempts to __Coerce__ it for
+    1 hour (this is a mental effect).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - poison
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The osyluth can cast innate __invisibility__ using only 1 action.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Quick Invisibility
+  range: null
+  raw_description: '**Quick Invisibility** The osyluth can cast innate __invisibility__
+    using only 1 action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An osyluth deals an extra 2d6 damage whenever they Strike an __enfeebled__,
+    __frightened__, or __prone__ creature.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Sadistic Strike
+  range: null
+  raw_description: '**Sadistic Strike** An osyluth deals an extra 2d6 damage whenever
+    they Strike an __enfeebled__, __frightened__, or __prone__ creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The osyluth telepathically questions a creature affected by zone of
+    truth. After 1 round, if the creature intentionally refuses to answer the question,
+    it takes 2d6 __mental__ damage.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Stygian Inquisitor
+  range: null
+  raw_description: '**Stygian Inquisitor** [One Action]  (__linguistic__, __mental__)
+    The osyluth telepathically questions a creature affected by zone of truth. After
+    1 round, if the creature intentionally refuses to answer the question, it takes
+    2d6 __mental__ damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - linguistic
+  - mental
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The osyluth sweeps their tail in a 15-foot cone. Each creature in the
+    cone must succeed at a DC 26 Reflex save or be knocked __prone__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Tail Sweep
+  range: null
+  raw_description: '**Tail Sweep** [One Action]  The osyluth sweeps their tail in
+    a 15-foot cone. Each creature in the cone must succeed at a DC 26 Reflex save
+    or be knocked __prone__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: LE
 automatic_abilities: null
 description: 'An osyluth is an unparalleled inquisitor that revels in the sadism and
@@ -26,22 +145,21 @@ hp: 135
 hp_misc: null
 immunities:
 - fire
-items: null
 languages:
 - Celestial
 - Draconic
 - Infernal
 - telepathy 100 feet
 level: 9
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d10+11
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 21
   traits:
   - evil
@@ -52,8 +170,8 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: evil
+  - formula: null
+    type: 1d6 evil
   to_hit: 21
   traits:
   - agile
@@ -66,8 +184,10 @@ melee:
     type: piercing
   name: stinger
   plus_damage:
-  - formula: 1d6
-    type: evil and osyluth venom
+  - formula: null
+    type: 1d6 evil
+  - formula: null
+    type: osyluth venom
   to_hit: 21
   traits:
   - evil
@@ -75,115 +195,7 @@ melee:
   - reach 15 feet
 name: Osyluth
 perception: 21
-proactive_abilities:
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw **DC 25 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1 **2d6 poison damage, __enfeebled 1__ (1 round); **Stage 2 **3d6 poison damage
-    and enfeebled 1 (1 round); **Stage 3 **3d6 poison damage and enfeebled 2 (1 round).
-    Once a creature reaches stage 3, it takes a -4 status penalty to Will saves against
-    attempts to __Coerce__ it for 1 hour (this is a mental effect).'
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Osyluth Venom
-  range: null
-  raw_description: '**Osyluth Venom** (__poison__) **Saving Throw **DC 25 Fortitude;
-    **Maximum Duration **6 rounds; **Stage 1 **2d6 poison damage, __enfeebled 1__
-    (1 round); **Stage 2 **3d6 poison damage and enfeebled 1 (1 round); **Stage 3
-    **3d6 poison damage and enfeebled 2 (1 round). Once a creature reaches stage 3,
-    it takes a -4 status penalty to Will saves against attempts to __Coerce__ it for
-    1 hour (this is a mental effect).'
-  requirements: null
-  success: null
-  traits:
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The osyluth can cast innate __invisibility__ using only 1 action.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Quick Invisibility
-  range: null
-  raw_description: '**Quick Invisibility** The osyluth can cast innate __invisibility__
-    using only 1 action.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An osyluth deals an extra 2d6 damage whenever they Strike an __enfeebled__,
-    __frightened__, or __prone__ creature.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Sadistic Strike
-  range: null
-  raw_description: '**Sadistic Strike** An osyluth deals an extra 2d6 damage whenever
-    they Strike an __enfeebled__, __frightened__, or __prone__ creature.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The osyluth telepathically questions a creature affected by zone of
-    truth. After 1 round, if the creature intentionally refuses to answer the question,
-    it takes 2d6 __mental__ damage.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Stygian Inquisitor
-  range: null
-  raw_description: '**Stygian Inquisitor**   (__linguistic__, __mental__) The osyluth
-    telepathically questions a creature affected by zone of truth. After 1 round,
-    if the creature intentionally refuses to answer the question, it takes 2d6 __mental__
-    damage.'
-  requirements: null
-  success: null
-  traits:
-  - linguistic
-  - mental
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The osyluth sweeps their tail in a 15-foot cone. Each creature in the
-    cone must succeed at a DC 26 Reflex save or be knocked __prone__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Tail Sweep
-  range: null
-  raw_description: '**Tail Sweep**   The osyluth sweeps their tail in a 15-foot cone.
-    Each creature in the cone must succeed at a DC 26 Reflex save or be knocked __prone__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged:
+ranged_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+8
@@ -195,24 +207,13 @@ ranged:
   - evil
   - magical
   - range increment 30 feet
-rarity: Common
 resistances:
 - amount: 10
-  type: physical (except silver)
+  misc: except <a style="text-decoration:underline" href="Equipment.aspx?ID=277">silver</a>
+  type: physical
 - amount: 10
-  type: poison
-ritual_lists:
-- dc: 25
   misc: null
-  name: Rituals
-  spell_groups:
-  - heightened_level: null
-    level: 1
-    spells:
-    - frequency: null
-      name: infernal pact
-      requirement: null
-  to_hit: null
+  type: poison
 saves:
   fort: 17
   fort_misc: null
@@ -221,78 +222,81 @@ saves:
   ref_misc: null
   will: 17
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +21
 - greater darkvision
 size: Large
 skills:
 - bonus: 18
   misc: null
-  name: 'Arcana '
+  name: Arcana
 - bonus: 19
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 21
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 17
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 20
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 73
+  page_start: '78'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 - amount: 30
+  misc: null
   type: fly
 spell_lists:
-- dc: 25
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 25
+  focus_points: null
   misc: null
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 5
+  spell_lists:
+  - level: 5
     spells:
-    - frequency: null
+    - misc: null
       name: dimension door
-      requirement: null
-    - frequency: null
+    - misc: null
       name: phantom pain
-      requirement: null
-  - heightened_level: null
-    level: 4
+  - level: 4
     spells:
-    - frequency: at will
+    - misc: at will
       name: dimension door
-      requirement: null
-    - frequency: ×2
+    - misc: ×2
       name: dimensional anchor
-      requirement: null
-    - frequency: null
+    - misc: null
       name: discern lies
-      requirement: null
-    - frequency: null
+    - misc: null
       name: zone of truth
-      requirement: null
-  - heightened_level: null
-    level: 2
+  - level: 2
     spells:
-    - frequency: at will, self only
+    - misc: at will; self only
       name: invisibility
-      requirement: null
-  to_hit: null
+  spells_source: Divine Innate Spells
+- attack_bonus: null
+  cantrips: null
+  constants: null
+  dc: 25
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 1
+    spells:
+    - misc: null
+      name: infernal pact
+  spells_source: Rituals
 traits:
-- LE
-- Large
 - Devil
 - Fiend
-type: Creature
 weaknesses:
 - amount: 10
+  misc: null
   type: good

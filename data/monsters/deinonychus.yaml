@@ -7,6 +7,48 @@ ability_mods:
   wis_mod: 1
 ac: 19
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: The deinonychus Strides up to 10 feet and then makes a Strike, or makes
+    a Strike and then Strides up to 10 feet.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Darting Attack
+  range: null
+  raw_description: '**Darting Attack** [One Action]  The deinonychus Strides up to
+    10 feet and then makes a Strike, or makes a Strike and then Strides up to 10 feet.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Bleeding creatures are flat-footed to the deinonychus.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Predator's Advantage
+  range: null
+  raw_description: '**Predator''s Advantage** Bleeding creatures are flat-footed to
+    the deinonychus.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Deinonychuses are wily hunters that attack in groups of up to a dozen
@@ -29,11 +71,8 @@ description: 'Deinonychuses are wily hunters that attack in groups of up to a do
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 16'
 hp: 30
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 2
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+3
@@ -48,57 +87,14 @@ melee:
     type: slashing
   name: talon
   plus_damage:
-  - formula: 1d4
-    type: bleed
+  - formula: null
+    type: 1d4 bleed
   to_hit: 9
   traits:
   - agile
 name: Deinonychus
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The deinonychus Strides up to 10 feet and then makes a Strike, or makes
-    a Strike and then Strides up to 10 feet.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Darting Attack
-  range: null
-  raw_description: '**Darting Attack**   The deinonychus Strides up to 10 feet and
-    then makes a Strike, or makes a Strike and then Strides up to 10 feet.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Bleeding creatures are flat-footed to the deinonychus.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Predator's Advantage
-  range: null
-  raw_description: '**Predator''s Advantage** Bleeding creatures are flat-footed to
-    the deinonychus.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 10
   fort_misc: null
@@ -107,34 +103,29 @@ saves:
   ref_misc: null
   will: 5
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - low-light vision
 - scent (imprecise) 30 feet
 size: Medium
 skills:
 - bonus: 7
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 9
   misc: +12 jumping
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 97
+  page_start: '97'
   page_stop: null
 speed:
 - amount: 30
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- N
-- Medium
 - Animal
 - Dinosaur
-type: Creature
-weaknesses: null

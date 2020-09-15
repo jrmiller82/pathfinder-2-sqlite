@@ -4,6 +4,7 @@
 import yaml
 import glob
 import os
+import sys
 
 
 
@@ -14,8 +15,15 @@ def main():
 
     # gets all files with a yaml extension in the directory
     yfiles = []
+    filter =  ""
+    if len(sys.argv) > 1:
+        filter = sys.argv[1]
     for file in glob.glob("**/*.yaml", recursive=True):
-        yfiles.append(file)
+        if filter == "":
+          yfiles.append(file)
+        elif file.find(filter) > -1:
+          yfiles.append(file)
+        
 
     yfiles.sort()
     print("Going to clean up the following files: {}".format(yfiles))

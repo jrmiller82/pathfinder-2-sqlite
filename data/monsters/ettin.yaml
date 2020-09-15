@@ -7,6 +7,7 @@ ability_mods:
   wis_mod: 2
 ac: 21
 ac_special: null
+active_abilities: null
 alignment: CE
 automatic_abilities:
 - action_cost: Reaction
@@ -18,11 +19,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -33,6 +34,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -79,7 +82,6 @@ description: 'Two heads aren''t always better than one. The slovenly, violent gi
   **__Recall Knowledge - Humanoid__ (__Society__)**: DC 22'
 hp: 110
 hp_misc: null
-immunities: null
 items:
 - flail (2)
 languages:
@@ -87,7 +89,7 @@ languages:
 - Jotun
 - and Orcish
 level: 6
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 2d6+10
@@ -112,13 +114,7 @@ melee:
   - reach 10 feet
 name: Ettin
 perception: 16
-proactive_abilities: null
-ranged: null
-rarity: Common
-resistances:
-- amount: null
-  type: '>'
-ritual_lists: null
+ranged_attacks: null
 saves:
   fort: 16
   fort_misc: null
@@ -131,23 +127,19 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'Each of an ettin''s heads rolls its own initiative and has its own
-    turn. Neither head can Delay. At the start of a head''s turn, that head gets 2
-    actions and 1 reaction. Each brain controls one of the ettin''s arms, but both
-    can move the legs. Any ability that would sever an ettin''s head (such as the
-    __vorpal__ weapon property) doesn''t cause the ettin to die if it still has its
-    other head, but does cause it to lose the turns, actions, and reactions of the
-    severed head. Mental effects that target a single creature affect only one of
-    the ettin''s heads.
-
-
-    '
+  description: Each of an ettin's heads rolls its own initiative and has its own turn.
+    Neither head can Delay. At the start of a head's turn, that head gets 2 actions
+    and 1 reaction. Each brain controls one of the ettin's arms, but both can move
+    the legs. Any ability that would sever an ettin's head (such as the __vorpal__
+    weapon property) doesn't cause the ettin to die if it still has its other head,
+    but does cause it to lose the turns, actions, and reactions of the severed head.
+    Mental effects that target a single creature affect only one of the ettin's heads.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Independent Brains
   range: null
   raw_description: '**Independent Brains** Each of an ettin''s heads rolls its own
@@ -157,37 +149,32 @@ sense_abilities:
     head (such as the __vorpal__ weapon property) doesn''t cause the ettin to die
     if it still has its other head, but does cause it to lose the turns, actions,
     and reactions of the severed head. Mental effects that target a single creature
-    affect only one of the ettin''s heads.
-
-
-    '
+    affect only one of the ettin''s heads.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: null
 senses:
-- Perception +16
 - low-light vision
 size: Large
 skills:
 - bonus: 16
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 10
   misc: null
-  name: 'Intimidation '
-source:
+  name: Intimidation
+sources:
 - abbr: Bestiary
-  page_start: 156
+  page_start: '156'
   page_stop: null
 speed:
 - amount: 35
+  misc: null
   type: Land
 spell_lists: null
 traits:
-- CE
-- Large
 - Giant
 - Humanoid
-type: Creature
-weaknesses: null

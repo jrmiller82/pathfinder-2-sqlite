@@ -7,36 +7,216 @@ ability_mods:
   wis_mod: 6
 ac: 37
 ac_special: null
+active_abilities:
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: "The umbral dragon breathes in one of two ways. They can't use Breath\
+    \ Weapon again for 1d4 rounds.\n\n  * **Negative **(__necromancy__, __negative__,\
+    \ __primal__) The dragon breathes a blast of darkness in a 40-foot cone that deals\
+    \ 16d6 negative damage (DC 36 basic Reflex save). Undead creatures take 19d6 force\
+    \ damage instead of the negative damage.\n\n  * **Shadows **(__necromancy__, __primal__,\
+    \ __shadow__) The dragon breathes a blast of shadows in a 40-foot cone. Each creature\
+    \ within the cone must attempt a DC 36 Fortitude save."
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Breath Weapon
+  range: null
+  raw_description: "**Breath Weapon** [Two Actions]  The umbral dragon breathes in\
+    \ one of two ways. They can't use Breath Weapon again for 1d4 rounds.\n\n  * **Negative\
+    \ **(__necromancy__, __negative__, __primal__) The dragon breathes a blast of\
+    \ darkness in a 40-foot cone that deals 16d6 negative damage (DC 36 basic Reflex\
+    \ save). Undead creatures take 19d6 force damage instead of the negative damage.\n\
+    \n  * **Shadows **(__necromancy__, __primal__, __shadow__) The dragon breathes\
+    \ a blast of shadows in a 40-foot cone. Each creature within the cone must attempt\
+    \ a DC 36 Fortitude save."
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: The creature is unaffected.
+  description: The creature is unaffected.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Success
+  range: null
+  raw_description: '**Critical Success **The creature is unaffected.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is __enfeebled 2__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Success
+  range: null
+  raw_description: '**Success **The creature is __enfeebled 2__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: The creature is __enfeebled 2__ for 1 round.
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The creature is enfeebled 2 for 1 minute.
+  effect: null
+  failure: The creature is enfeebled 2 for 1 minute.
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Failure
+  range: null
+  raw_description: '**Failure **The creature is enfeebled 2 for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is enfeebled 2 for 1 minute and __blinded__ for 1
+    round.
+  critical_success: null
+  description: The creature is enfeebled 2 for 1 minute and __blinded__ for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Critical Failure
+  range: null
+  raw_description: '**Critical Failure **The creature is enfeebled 2 for 1 minute
+    and __blinded__ for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Two Actions
+  critical_failure: null
+  critical_success: null
+  description: The dragon makes two claw Strikes and one wing Strike in any order.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Frenzy
+  range: null
+  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
+    and one wing Strike in any order.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The dragon recharges their Breath Weapon whenever they score a critical
+    hit with a Strike.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Draconic Momentum
+  range: null
+  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
+    whenever they score a critical hit with a Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An umbral dragon's Strikes affect __incorporeal__ creatures with the
+    effects of a __ghost touch__ property rune, and an umbral dragon's jaws deal an
+    additional 6d6 force damage to __undead__.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Ghost Bane
+  range: null
+  raw_description: '**Ghost Bane** An umbral dragon''s Strikes affect __incorporeal__
+    creatures with the effects of a __ghost touch__ property rune, and an umbral dragon''s
+    jaws deal an additional 6d6 force damage to __undead__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: NE
 automatic_abilities:
 - action_cost: None
-  critical_failure: The creature is frightened 4.
+  critical_failure: The creature is __frightened 4__.
   critical_success: The creature is unaffected by the presence.
-  description: 90 feet, DC 34
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
   effect: null
-  effects: null
-  failure: The creature is frightened 2.
+  failure: The creature is __frightened 2__.
   frequency: null
   full_description: null
-  generic_description: A creature that first enters the area must attempt a Will save.
-    Regardless of the result of the saving throw, the creature is temporarily immune
-    to this monster's Frightful Presence for 1 minute.
+  generic_description: null
+  maximum_duration: null
   name: Frightful Presence
-  range: null
-  raw_description: '**Frightful Presence** 90 feet, DC 34 A creature that first enters
-    the area must attempt a Will save. Regardless of the result of the saving throw,
-    the creature is temporarily immune to this monster''s Frightful Presence for 1
-    minute.
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
-    Critical Success The creature is unaffected by the presence.
 
-    Success The creature is frightened 1.
+    **Critical Success** The creature is unaffected by the presence.
 
-    Failure The creature is frightened 2.
 
-    Critical Success The creature is frightened 4.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  success: The creature is frightened 1.
+  saving_throw: DC 34
+  stages: null
+  success: The creature is __frightened 1__.
   traits:
   - aura
   - emotion
@@ -52,11 +232,11 @@ automatic_abilities:
     a manipulate action, you disrupt that action. This Strike doesn't count toward
     your multiple attack penalty, and your multiple attack penalty doesn't apply to
     this Strike.
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Attack of Opportunity
   range: null
   raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
@@ -67,6 +247,8 @@ automatic_abilities:
     disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
     and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
@@ -104,24 +286,23 @@ hp: 275
 hp_misc: null
 immunities:
 - negative
-- paralyzed
-- sleep
-items: null
+- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
 languages:
 - Common
 - Draconic
 - Necril
 - Shadowtongue
 level: 15
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+14
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 3d6
-    type: negative
+  - formula: null
+    type: 3d6 negative
   to_hit: 30
   traits:
   - negative
@@ -160,152 +341,8 @@ melee:
   - reach 15 feet
 name: Adult Umbral Dragon
 perception: 29
-proactive_abilities:
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The umbral dragon breathes in one of two ways. They can't use Breath
-    Weapon again for 1d4 rounds.
-  effect: null
-  effects:
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: The dragon breathes a blast of darkness in a 40-foot cone that deals
-      16d6 negative damage (DC 36 basic Reflex save). Undead creatures take 19d6 force
-      damage instead of the negative damage.
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Negative
-    range: null
-    raw_description: '**Negative **(__necromancy__, __negative__, __primal__) The
-      dragon breathes a blast of darkness in a 40-foot cone that deals 16d6 negative
-      damage (DC 36 basic Reflex save). Undead creatures take 19d6 force damage instead
-      of the negative damage.'
-    requirements: null
-    success: null
-    traits:
-    - necromancy
-    - negative
-    - primal
-    trigger: null
-  - action_cost: None
-    critical_failure: null
-    critical_success: null
-    description: "The dragon breathes a blast of shadows in a 40-foot cone. Each creature\
-      \ within the cone must attempt a DC 36 Fortitude save. \n\n**Critical Success\
-      \ **The creature is unaffected. \n\n**Success **The creature is __enfeebled\
-      \ 2__ for 1 round. \n\n**Failure **The creature is enfeebled 2 for 1 minute.\
-      \ \n\n**Critical Failure **The creature is enfeebled 2 for 1 minute and __blinded__\
-      \ for 1 round."
-    effect: null
-    effects: null
-    failure: null
-    frequency: null
-    full_description: null
-    generic_description: null
-    name: Shadows
-    range: null
-    raw_description: "**Shadows **(__necromancy__, __primal__, __shadow__) The dragon\
-      \ breathes a blast of shadows in a 40-foot cone. Each creature within the cone\
-      \ must attempt a DC 36 Fortitude save. \n\n**Critical Success **The creature\
-      \ is unaffected. \n\n**Success **The creature is __enfeebled 2__ for 1 round.\
-      \ \n\n**Failure **The creature is enfeebled 2 for 1 minute. \n\n**Critical Failure\
-      \ **The creature is enfeebled 2 for 1 minute and __blinded__ for 1 round."
-    requirements: null
-    success: null
-    traits:
-    - necromancy
-    - primal
-    - shadow
-    trigger: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Breath Weapon
-  range: null
-  raw_description: "**Breath Weapon** [Two Actions]  The umbral dragon breathes in\
-    \ one of two ways. They can't use Breath Weapon again for 1d4 rounds.\n\n  * **Negative\
-    \ **(__necromancy__, __negative__, __primal__) The dragon breathes a blast of\
-    \ darkness in a 40-foot cone that deals 16d6 negative damage (DC 36 basic Reflex\
-    \ save). Undead creatures take 19d6 force damage instead of the negative damage.\n\
-    \n  * **Shadows **(__necromancy__, __primal__, __shadow__) The dragon breathes\
-    \ a blast of shadows in a 40-foot cone. Each creature within the cone must attempt\
-    \ a DC 36 Fortitude save. \n\n**Critical Success **The creature is unaffected.\
-    \ \n\n**Success **The creature is __enfeebled 2__ for 1 round. \n\n**Failure **The\
-    \ creature is enfeebled 2 for 1 minute. \n\n**Critical Failure **The creature\
-    \ is enfeebled 2 for 1 minute and __blinded__ for 1 round."
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: The dragon makes two claw Strikes and one wing Strike in any order.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Frenzy
-  range: null
-  raw_description: '**Draconic Frenzy** [Two Actions]  The dragon makes two claw Strikes
-    and one wing Strike in any order.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The dragon recharges their Breath Weapon whenever they score a critical
-    hit with a Strike.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Draconic Momentum
-  range: null
-  raw_description: '**Draconic Momentum** The dragon recharges their Breath Weapon
-    whenever they score a critical hit with a Strike.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: An umbral dragon's Strikes affect __incorporeal__ creatures with the
-    effects of a __ghost touch__ property rune, and an umbral dragon's jaws deal an
-    additional 6d6 force damage to __undead__.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Ghost Bane
-  range: null
-  raw_description: '**Ghost Bane** An umbral dragon''s Strikes affect __incorporeal__
-    creatures with the effects of a __ghost touch__ property rune, and an umbral dragon''s
-    jaws deal an additional 6d6 force damage to __undead__.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
+ranged_attacks: null
 rarity: Uncommon
-resistances: null
-ritual_lists: null
 saves:
   fort: 27
   fort_misc: null
@@ -314,72 +351,64 @@ saves:
   ref_misc: null
   will: 27
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +29
 - greater darkvision
 - scent (imprecise) 60 feet
 size: Huge
 skills:
 - bonus: 25
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 31
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 28
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 28
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 25
   misc: null
-  name: 'Nature '
+  name: Nature
 - bonus: 27
   misc: null
-  name: 'Stealth '
+  name: Stealth
 - bonus: 28
   misc: null
-  name: 'Survival '
-source:
+  name: Survival
+sources:
 - abbr: Bestiary 2
-  page_start: 96
+  page_start: '96'
   page_stop: null
 speed:
 - amount: 50
+  misc: null
   type: Land
 - amount: 180
+  misc: null
   type: fly
 spell_lists:
-- dc: 36
-  misc: null
-  name: Primal Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 7
+- attack_bonus: null
+  cantrips:
+  - level: 7
     spells:
-    - frequency: at will
-      name: darkness
-      requirement: null
-    - frequency: null
-      name: shadow walk
-      requirement: null
-    - frequency: null
-      name: vampiric exsanguination
-      requirement: null
-  - heightened_level: 7
-    level: 0
-    spells:
-    - frequency: null
+    - misc: null
       name: detect magic
-      requirement: null
-  to_hit: null
+  constants: null
+  dc: 36
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 7
+    spells:
+    - misc: at will
+      name: darkness
+    - misc: null
+      name: shadow walk
+    - misc: null
+      name: vampiric exsanguination
+  spells_source: Primal Innate Spells
 traits:
-- Uncommon
-- NE
-- Huge
 - Dragon
 - Shadow
-type: Creature
-weaknesses: null

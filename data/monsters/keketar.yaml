@@ -7,27 +7,121 @@ ability_mods:
   wis_mod: 7
 ac: 40
 ac_special: null
-alignment: CN
-automatic_abilities:
-- action_cost: None
+active_abilities:
+- action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: 'A keketar''s vital organs shift and change shape and position constantly.
-    Immediately after the keketar takes acid, electricity, or sonic damage, it gains
-    the listed amount of resistance to that damage type. This lasts for 1 hour or
-    until the next time the protean takes damage of one of the other types (in which
-    case its resistance changes to match that type), whichever comes first.
-
-
-    The keketar is immune to polymorph effects unless it is a willing target. If blinded
-    or deafened, the keketar automatically recovers at the end of its next turn as
-    new sensory organs grow to replace the compromised ones.'
+  description: The keketar can take the appearance of any Huge or smaller creature.
+    This doesn't change its Speed or its attack and damage bonuses with its Strikes,
+    but might change the damage type its Strikes deal.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
+  name: Change Shape
+  range: null
+  raw_description: '**Change Shape** [One Action]  (__concentrate__, __divine__, __polymorph__,
+    __transmutation__) The keketar can take the appearance of any Huge or smaller
+    creature. This doesn''t change its Speed or its attack and damage bonuses with
+    its Strikes, but might change the damage type its Strikes deal.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: 1d10+15 bludgeoning, DC 42
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Constrict
+  range: null
+  raw_description: '**__Constrict__** [One Action]  1d10+15 bludgeoning, DC 42'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the keketar casts __hallucinatory terrain__, it infuses the illusion
+    with quasi-real substance. Creatures that do not disbelieve the illusion treat
+    structures and terrain created through the spell as though they were real, ascending
+    illusory stairs, becoming trapped by illusory quicksand, and so on.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Reshape Reality
+  range: null
+  raw_description: '**Reshape Reality** (__concentrate__, __divine__, __polymorph__,
+    __transmutation__) When the keketar casts __hallucinatory terrain__, it infuses
+    the illusion with quasi-real substance. Creatures that do not disbelieve the illusion
+    treat structures and terrain created through the spell as though they were real,
+    ascending illusory stairs, becoming trapped by illusory quicksand, and so on.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - concentrate
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature struck by a keketar's jaws or claw Strike must succeed at
+    a DC 36 Fortitude save or be subject to a warpwave.
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Warpwave Strike
+  range: null
+  raw_description: '**Warpwave Strike** (__divine__, __polymorph__, __transmutation__)
+    A creature struck by a keketar''s jaws or claw Strike must succeed at a DC 36
+    Fortitude save or be subject to a warpwave.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - polymorph
+  - transmutation
+  trigger: null
+alignment: CN
+automatic_abilities:
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  full_description: null
+  generic_description: null
+  maximum_duration: null
   name: Protean Anatomy
   range: null
   raw_description: '**Protean Anatomy** (__divine__, __transmutation__) A keketar''s
@@ -40,70 +134,24 @@ automatic_abilities:
 
     The keketar is immune to polymorph effects unless it is a willing target. If blinded
     or deafened, the keketar automatically recovers at the end of its next turn as
-    new sensory organs grow to replace the compromised ones.'
+    new sensory organs grow to replace the compromised ones.
+
+
+    **Spatial Riptide** (__aura__, __divine__, __transmutation__) 30 feet. A creature
+    using a teleportation ability within the aura or arriving in it via teleportation
+    must succeed at a DC 38 Fortitude save or wink out of existence for 1d4 rounds
+    before completing the teleport. The creature can''t act, sense anything, or be
+    targeted. On a successful save, the creature completes the teleport normally but
+    is stunned 1. Keketars are immune to this effect.
+
+
+    **Attack of Opportunity** [Reaction]'
   requirements: null
-  success: null
-  traits:
-  - divine
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: 30 feet. A creature using a teleportation ability within the aura or
-    arriving in it via teleportation must succeed at a DC 38 Fortitude save or wink
-    out of existence for 1d4 rounds before completing the teleport. The creature can't
-    act, sense anything, or be targeted. On a successful save, the creature completes
-    the teleport normally but is stunned 1. Keketars are immune to this effect.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Spatial Riptide
-  range: null
-  raw_description: '**Spatial Riptide** (__aura__, __divine__, __transmutation__)
-    30 feet. A creature using a teleportation ability within the aura or arriving
-    in it via teleportation must succeed at a DC 38 Fortitude save or wink out of
-    existence for 1d4 rounds before completing the teleport. The creature can''t act,
-    sense anything, or be targeted. On a successful save, the creature completes the
-    teleport normally but is stunned 1. Keketars are immune to this effect.'
-  requirements: null
-  success: null
-  traits:
-  - aura
-  - divine
-  - transmutation
-  trigger: null
-- action_cost: Reaction
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
-    the triggering creature. If your attack is a critical hit and the trigger was
-    a manipulate action, you disrupt that action. This Strike doesn't count toward
-    your multiple attack penalty, and your multiple attack penalty doesn't apply to
-    this Strike.
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Attack of Opportunity
-  range: null
-  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
-    your reach uses a manipulate action or a move action, makes a ranged attack, or
-    leaves a square during a move action it''s using. **Effect** You lash out at a
-    foe that leaves an opening. Make a melee Strike against the triggering creature.
-    If your attack is a critical hit and the trigger was a manipulate action, you
-    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
-    and your multiple attack penalty doesn''t apply to this Strike.'
-  requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits: null
-  trigger: A creature within your reach uses a manipulate action or a move action,
-    makes a ranged attack, or leaves a square during a move action it's using.
+  trigger: null
 description: 'The ruling caste of the proteans, keketars orchestrate attacks against
   the bastions of law and adjudicate protean disputes confidently and capriciously.
   A keketar resembles a shimmering, serpentine creature with spines, claws, and a
@@ -134,8 +182,6 @@ description: 'The ruling caste of the proteans, keketars orchestrate attacks aga
   **__Recall Knowledge - Monitor__ (__Religion__)**: DC 36'
 hp: 290
 hp_misc: fast healing 10
-immunities: null
-items: null
 languages:
 - Abyssal
 - Celestial
@@ -143,15 +189,17 @@ languages:
 - telepathy 100 feet
 - tongues
 level: 17
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
     formula: 3d10+15
     type: piercing
   name: jaws
   plus_damage:
-  - formula: 1d6
-    type: chaotic and warpwave strike
+  - formula: null
+    type: 1d6 chaotic
+  - formula: null
+    type: warpwave strike
   to_hit: 33
   traits:
   - chaotic
@@ -163,8 +211,10 @@ melee:
     type: slashing
   name: claw
   plus_damage:
-  - formula: 1d6
-    type: chaotic and warpwave strike
+  - formula: null
+    type: 1d6 chaotic
+  - formula: null
+    type: warpwave strike
   to_hit: 33
   traits:
   - agile
@@ -184,109 +234,14 @@ melee:
   - reach 15 feet
 name: Keketar
 perception: 30
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: The keketar can take the appearance of any Huge or smaller creature.
-    This doesn't change its Speed or its attack and damage bonuses with its Strikes,
-    but might change the damage type its Strikes deal.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Change Shape
-  range: null
-  raw_description: '**Change Shape**   (__concentrate__, __divine__, __polymorph__,
-    __transmutation__) The keketar can take the appearance of any Huge or smaller
-    creature. This doesn''t change its Speed or its attack and damage bonuses with
-    its Strikes, but might change the damage type its Strikes deal.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: 1d10+15 bludgeoning, DC 42
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Constrict
-  range: null
-  raw_description: '**__Constrict__**   1d10+15 bludgeoning, DC 42'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: When the keketar casts __hallucinatory terrain__, it infuses the illusion
-    with quasi-real substance. Creatures that do not disbelieve the illusion treat
-    structures and terrain created through the spell as though they were real, ascending
-    illusory stairs, becoming trapped by illusory quicksand, and so on.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Reshape Reality
-  range: null
-  raw_description: '**Reshape Reality** (__concentrate__, __divine__, __polymorph__,
-    __transmutation__) When the keketar casts __hallucinatory terrain__, it infuses
-    the illusion with quasi-real substance. Creatures that do not disbelieve the illusion
-    treat structures and terrain created through the spell as though they were real,
-    ascending illusory stairs, becoming trapped by illusory quicksand, and so on.'
-  requirements: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature struck by a keketar's jaws or claw Strike must succeed at
-    a DC 36 Fortitude save or be subject to a warpwave.
-  effect: null
-  effects: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  name: Warpwave Strike
-  range: null
-  raw_description: '**Warpwave Strike** (__divine__, __polymorph__, __transmutation__)
-    A creature struck by a keketar''s jaws or claw Strike must succeed at a DC 36
-    Fortitude save or be subject to a warpwave.'
-  requirements: null
-  success: null
-  traits:
-  - divine
-  - polymorph
-  - transmutation
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 10
+  misc: null
   type: precision
 - amount: 25
+  misc: null
   type: protean anatomy
-ritual_lists: null
 saves:
   fort: 30
   fort_misc: null
@@ -305,11 +260,11 @@ sense_abilities:
     of __nondetection__ or that is otherwise shielded from divinations and predictions
     cannot be noticed via entropy sense.
   effect: null
-  effects: null
   failure: null
   frequency: null
   full_description: null
   generic_description: null
+  maximum_duration: null
   name: Entropy Sense
   range: null
   raw_description: '**Entropy Sense** (__divination__, __divine__, __prediction__)
@@ -319,6 +274,8 @@ sense_abilities:
     or that is otherwise shielded from divinations and predictions cannot be noticed
     via entropy sense.'
   requirements: null
+  saving_throw: null
+  stages: null
   success: null
   traits:
   - divination
@@ -326,136 +283,113 @@ sense_abilities:
   - prediction
   trigger: null
 senses:
-- Perception +30
 - entropy sense (imprecise) 60 feet
 - darkvision
 size: Large
 skills:
 - bonus: 26
   misc: null
-  name: 'Acrobatics '
+  name: Acrobatics
 - bonus: 30
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 33
   misc: null
-  name: 'Deception '
+  name: Deception
 - bonus: 35
   misc: null
-  name: 'Diplomacy '
+  name: Diplomacy
 - bonus: 35
   misc: null
-  name: 'Intimidation '
+  name: Intimidation
 - bonus: 30
   misc: null
-  name: 'Religion '
+  name: Religion
 - bonus: 28
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary
-  page_start: 269
+  page_start: '269'
   page_stop: null
 speed:
 - amount: 40
+  misc: null
   type: Land
 - amount: 50
+  misc: null
   type: fly
 - amount: 40
+  misc: null
   type: swim
-- amount: 128
-  type: <a style="text-decoration:underline" href="Spells.aspx?ID="><i>freedom of
-    movement</i></a>
+- amount: null
+  misc: null
+  type: freedom of movement
 spell_lists:
-- dc: 42
-  misc: ''
-  name: Divine Innate Spells
-  spell_groups:
-  - heightened_level: null
-    level: 9
+- attack_bonus: 32
+  cantrips: null
+  constants:
+  - level: 5
     spells:
-    - frequency: chaotic only
-      name: divine wrath
-      requirement: null
-    - frequency: null
-      name: prismatic sphere
-      requirement: null
-  - heightened_level: null
-    level: 8
-    spells:
-    - frequency: null
-      name: baleful polymorph
-      requirement: null
-    - frequency: null
-      name: confusion
-      requirement: null
-  - heightened_level: null
-    level: 7
-    spells:
-    - frequency: null
-      name: disintegrate
-      requirement: null
-    - frequency: at will
-      name: dispel magic
-      requirement: null
-    - frequency: at will
-      name: shatter
-      requirement: null
-    - frequency: x3
-      name: warp mind
-      requirement: null
-  - heightened_level: null
-    level: 6
-    spells:
-    - frequency: at will, self only
-      name: teleport
-      requirement: null
-  - heightened_level: null
-    level: 5
-    spells:
-    - frequency: at will
-      name: creation
-      requirement: null
-    - frequency: null
-      name: dimension door
-      requirement: null
-    - frequency: x2, see reshape reality
-      name: hallucinatory terrain
-      requirement: null
-  - heightened_level: null
-    level: 4
-    spells:
-    - frequency: at will
-      name: confusion
-      requirement: null
-    - frequency: at will
-      name: dimension door
-      requirement: null
-  - heightened_level: null
-    level: 2
-    spells:
-    - frequency: at will, lawful only
-      name: detect alignment
-      requirement: null
-  - heightened_level: 5
-    level: -1
-    spells:
-    - frequency: null
+    - misc: null
       name: tongues
-      requirement: null
-  - heightened_level: 4
-    level: -1
+  - level: 4
     spells:
-    - frequency: null
+    - misc: null
       name: freedom of movement
-      requirement: null
-  to_hit: 32
+  dc: 42
+  focus_points: null
+  misc: null
+  spell_lists:
+  - level: 9
+    spells:
+    - misc: chaotic only
+      name: divine wrath
+    - misc: null
+      name: prismatic sphere
+  - level: 8
+    spells:
+    - misc: null
+      name: baleful polymorph
+    - misc: null
+      name: confusion
+  - level: 7
+    spells:
+    - misc: null
+      name: disintegrate
+    - misc: at will
+      name: dispel magic
+    - misc: at will
+      name: shatter
+    - misc: x3
+      name: warp mind
+  - level: 6
+    spells:
+    - misc: at will; self only
+      name: teleport
+  - level: 5
+    spells:
+    - misc: at will
+      name: creation
+    - misc: null
+      name: dimension door
+    - misc: x2; see reshape reality
+      name: hallucinatory terrain
+  - level: 4
+    spells:
+    - misc: at will
+      name: confusion
+    - misc: at will
+      name: dimension door
+  - level: 2
+    spells:
+    - misc: at will; lawful only
+      name: detect alignment
+  spells_source: Divine Innate Spells
 traits:
-- CN
-- Large
 - Monitor
 - Protean
-type: Creature
 weaknesses:
 - amount: 15
+  misc: null
   type: lawful

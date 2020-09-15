@@ -7,6 +7,35 @@ ability_mods:
   wis_mod: 3
 ac: 16
 ac_special: null
+active_abilities:
+- action_cost: One Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The vampire squid ejects a cloud of bioluminescent mucus in a 15-foot cone.
+    Non-squid creatures within the cloud must attempt a DC 16 Fortitude save or become
+    __sickened 1__. The glowing mucus remains in the area for 1 minute, and any creature
+    that ends its turn in the area must succeed at a DC 13 Fortitude save or become
+    sickened 1.
+  failure: null
+  frequency: once per day; Requirements The vampire squid is in water
+  full_description: null
+  generic_description: null
+  maximum_duration: null
+  name: Glowing Mucus
+  range: null
+  raw_description: '**Glowing Mucus** [One Action]  **Frequency** once per day; **Requirements**
+    The vampire squid is in water; **Effect** The vampire squid ejects a cloud of
+    bioluminescent mucus in a 15-foot cone. Non-squid creatures within the cloud must
+    attempt a DC 16 Fortitude save or become __sickened 1__. The glowing mucus remains
+    in the area for 1 minute, and any creature that ends its turn in the area must
+    succeed at a DC 13 Fortitude save or become sickened 1.'
+  requirements: The vampire squid is in water
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 alignment: N
 automatic_abilities: null
 description: 'Vampire squid are neither undead nor blood drinkers. Their name is instead
@@ -20,15 +49,12 @@ description: 'Vampire squid are neither undead nor blood drinkers. Their name is
   **__Recall Knowledge - Animal__ (__Nature__)**: DC 14'
 hp: 15
 hp_misc: null
-immunities: null
-items: null
-languages: null
 level: 0
-melee:
+melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8
-    type: piercing
+    formula: null
+    type: 1d8 piercing
   name: beak
   plus_damage: null
   to_hit: 7
@@ -36,8 +62,8 @@ melee:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d6
-    type: bludgeoning
+    formula: null
+    type: 1d6 bludgeoning
   name: tentacles
   plus_damage: null
   to_hit: 7
@@ -46,35 +72,11 @@ melee:
   - finesse
 name: Vampire Squid
 perception: 7
-proactive_abilities:
-- action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: The vampire squid is in water
-  effects: null
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  name: Glowing Mucus
-  range: null
-  raw_description: '**Glowing Mucus**   **Frequency** once per day; **Requirements**
-    The vampire squid is in water; **Effect** The vampire squid ejects a cloud of
-    bioluminescent mucus in a 15-foot cone. Non-squid creatures within the cloud must
-    attempt a DC 16 Fortitude save or become __sickened 1__. The glowing mucus remains
-    in the area for 1 minute, and any creature that ends its turn in the area must
-    succeed at a DC 13 Fortitude save or become sickened 1.'
-  requirements: null
-  success: null
-  traits: null
-  trigger: null
-ranged: null
-rarity: Common
+ranged_attacks: null
 resistances:
 - amount: 5
+  misc: null
   type: cold
-ritual_lists: null
 saves:
   fort: 4
   fort_misc: null
@@ -83,30 +85,25 @@ saves:
   ref_misc: null
   will: 6
   will_misc: null
-sense_abilities: null
 senses:
-- Perception +7
 - darkvision
 size: Small
 skills:
 - bonus: 4
   misc: null
-  name: 'Athletics '
+  name: Athletics
 - bonus: 7
   misc: null
-  name: 'Stealth '
-source:
+  name: Stealth
+sources:
 - abbr: Bestiary 2
-  page_start: 254
+  page_start: '254'
   page_stop: null
 speed:
 - amount: 25
+  misc: null
   type: swim
 spell_lists: null
 traits:
-- N
-- Small
 - Animal
 - Aquatic
-type: Creature
-weaknesses: null
