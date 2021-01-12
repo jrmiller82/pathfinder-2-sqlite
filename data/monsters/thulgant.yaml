@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Demon Hunter
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greater Constrict
   range: null
@@ -56,13 +52,11 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Requirement** The thulgant hits the same enemy with two consecutive
-    sting Strikes in the same round;'
+    sting Strikes in the same round'
   effect: The thulgant deals 3d12+17 mental damage to the enemy. If the enemy is affected
     by thulgant venom, that poison gains the __virulent__ trait.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mind-Rending Sting
   range: null
@@ -77,17 +71,15 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is stunned 8.
+  critical_success: The creature is unaffected.
   description: The thulgant rises up on its twitching limbs and presents its numerous
     tentacles and stingers in a horrifying display of awfulness. Creatures in a 30-foot
     emanation must attempt a DC 40 Will save, after which they are temporarily immune
     to further Stunning Displays for 1 minute.
   effect: null
-  failure: null
+  failure: The creature is stunned 4.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stunning Display
   range: null
@@ -96,11 +88,23 @@ active_abilities:
     The thulgant rises up on its twitching limbs and presents its numerous tentacles
     and stingers in a horrifying display of awfulness. Creatures in a 30-foot emanation
     must attempt a DC 40 Will save, after which they are temporarily immune to further
-    Stunning Displays for 1 minute.'
+    Stunning Displays for 1 minute.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __stunned 1__.
+
+
+    **Failure** The creature is stunned 4.
+
+
+    **Critical Failure** The creature is stunned 8.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __stunned 1__.
   traits:
   - concentrate
   - emotion
@@ -113,89 +117,11 @@ active_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __stunned 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __stunned 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __stunned 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is stunned 4.
-  effect: null
-  failure: The creature is stunned 4.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is stunned 4.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is stunned 8.
-  critical_success: null
-  description: The creature is stunned 8.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is stunned 8.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
   critical_success: null
   description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Thulgant Venom
   range: null
@@ -244,31 +170,29 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+17
+  - formula: 3d12+17
     type: piercing
-  name: stinger
-  plus_damage:
-  - formula: null
-    type: 3d6 mental
-  - formula: null
-    type: 1d6 chaotic
+  - formula: 3d6
+    type: mental
+  - formula: 1d6
+    type: chaotic
   - formula: null
     type: thulgant venom
+  name: stinger
   to_hit: 35
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+17
+  - formula: 3d8+17
     type: bludgeoning
-  name: tentacle
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
-  - formula: null
-    type: 1d6 chaotic
+  - formula: 2d6
+    type: acid
+  - formula: 1d6
+    type: chaotic
   - formula: null
     type: Grab
+  name: tentacle
   to_hit: 35
   traits:
   - agile

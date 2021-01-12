@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fling Shards
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shred Armor
   range: null
@@ -66,8 +62,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Assimilate Lava
   range: null
@@ -88,8 +82,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Golem Antimagic
   range: null
@@ -111,8 +103,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Shatter
   range: null
@@ -161,10 +151,9 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+15
+  - formula: 4d10+15
     type: piercing
   name: fist
-  plus_damage: null
   to_hit: 33
   traits:
   - deadly d10
@@ -173,10 +162,9 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 3d10+15
+  - formula: 3d10+15
     type: piercing
   name: wing
-  plus_damage: null
   to_hit: 31
   traits:
   - agile
@@ -189,10 +177,9 @@ perception: 28
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+15
+  - formula: 4d8+15
     type: piercing
   name: obsidian sliver
-  plus_damage: null
   to_hit: 32
   traits:
   - deadly d8

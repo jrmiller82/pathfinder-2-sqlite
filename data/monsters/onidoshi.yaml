@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -47,8 +45,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -96,10 +92,9 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: slashing
   name: falchion
-  plus_damage: null
   to_hit: 21
   traits:
   - forceful
@@ -108,10 +103,9 @@ melee_attacks:
   - sweep
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 20
   traits:
   - agile
@@ -123,10 +117,9 @@ perception: 17
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: piercing
   name: composite shortbow
-  plus_damage: null
   to_hit: 17
   traits:
   - deadly 1d10

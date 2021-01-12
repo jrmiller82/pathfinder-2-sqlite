@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Dream Spider Venom
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Trap
   range: null
@@ -71,12 +67,11 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
-  name: bite
-  plus_damage:
+  - formula: 1d6
+    type: piercing
   - formula: null
     type: dream spider venom
+  name: bite
   to_hit: 7
   traits:
   - finesse
@@ -85,12 +80,11 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: web trap
-  name: web
-  plus_damage:
   - formula: null
     type: dream spider venom
+  name: web
   to_hit: 7
   traits:
   - range increment 10 feet
@@ -111,8 +105,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Sense
   range: null

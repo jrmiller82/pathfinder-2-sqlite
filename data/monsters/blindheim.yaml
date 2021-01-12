@@ -9,18 +9,16 @@ ac: 18
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is blinded for 1 hour.
+  critical_success: The creature is unaffected.
   description: Bright light shines from the blindheim's eyes in a 30-foot emanation
     (also creating dim light to 60 feet). Each creature in the bright light when the
     blindheim uses this action, or who enters it while the light continues, must attempt
     a DC 18 Fortitude save. It is then temporarily immune for 1 hour. This light remains
     until the blindheim dims its eyes by using this action again.
   effect: null
-  failure: null
+  failure: The creature is __blinded__ for 1d4 rounds.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spotlight
   range: null
@@ -29,90 +27,26 @@ active_abilities:
     dim light to 60 feet). Each creature in the bright light when the blindheim uses
     this action, or who enters it while the light continues, must attempt a DC 18
     Fortitude save. It is then temporarily immune for 1 hour. This light remains until
-    the blindheim dims its eyes by using this action again.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - concentrate
-  - light
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __dazzled__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is __dazzled__ for 1 round.'
+    the blindheim dims its eyes by using this action again.
+
+
+    **Critical Success **The creature is unaffected.
+
+
+    **Success **The creature is __dazzled__ for 1 round.
+
+
+    **Failure **The creature is __blinded__ for 1d4 rounds.
+
+
+    **Critical Failure **The creature is blinded for 1 hour.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is __dazzled__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __blinded__ for 1d4 rounds.
-  effect: null
-  failure: The creature is __blinded__ for 1d4 rounds.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature is __blinded__ for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is blinded for 1 hour.
-  critical_success: null
-  description: The creature is blinded for 1 hour.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The creature is blinded for 1 hour.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - concentrate
+  - light
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -165,18 +99,16 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+2
+  - formula: 1d12+2
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 10
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 11
   traits:
   - agile

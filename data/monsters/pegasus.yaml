@@ -16,8 +16,6 @@ active_abilities:
     adjacent creature to Mount it. That creature must use a reaction to do so.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Assisted Mount
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gallop
   range: null
@@ -62,8 +58,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Buck
   range: null
@@ -122,18 +116,16 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+5
+  - formula: 1d8+5
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 10
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+5
+  - formula: 1d6+5
     type: bludgeoning
   name: wing
-  plus_damage: null
   to_hit: 10
   traits:
   - agile

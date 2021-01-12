@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fate Drain
   range: null
@@ -53,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wrath of Fate
   range: null
@@ -102,26 +98,24 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+4
+  - formula: 2d10+4
     type: bludgeoning
+  - formula: 1d6
+    type: lawful
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 lawful
   to_hit: 17
   traits:
   - lawful
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: slashing
-  name: tentacle
-  plus_damage:
-  - formula: null
-    type: 1d6 lawful
+  - formula: 1d6
+    type: lawful
   - formula: null
     type: fate drain
+  name: tentacle
   to_hit: 17
   traits:
   - agile
@@ -150,8 +144,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Envisioning
   range: null

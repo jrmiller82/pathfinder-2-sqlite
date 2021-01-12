@@ -19,8 +19,6 @@ active_abilities:
     to the target can Interact with the net to remove it.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hurl Net
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jungle Stride
   range: null
@@ -116,10 +112,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: slashing
   name: sickle
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -130,10 +125,9 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: piercing
   name: dart
-  plus_damage: null
   to_hit: 9
   traits:
   - agile

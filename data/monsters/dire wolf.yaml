@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pack Attack
   range: null
@@ -37,8 +35,6 @@ active_abilities:
     1d10+2 damage (DC 20 basic Fortitude save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Worry
   range: null
@@ -62,8 +58,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Buck
   range: null
@@ -89,12 +83,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+5
+  - formula: 1d10+5
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Knockdown or Grab
+  name: jaws
   to_hit: 12
   traits:
   - reach 10 feet

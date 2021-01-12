@@ -19,8 +19,6 @@ automatic_abilities:
     listed damage.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Churning Frenzy
   range: null
@@ -34,7 +32,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The gahlepod becomes adjacent to at least one other gahlepod;
+  trigger: The gahlepod becomes adjacent to at least one other gahlepod
 description: 'The youngest brughadatches resemble overlarge tadpoles about 2 feet
   long.
 
@@ -51,10 +49,9 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 17
   traits: null
 name: Gahlepod

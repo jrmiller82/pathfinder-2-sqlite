@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: The creature is Pushed 40 feet.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -54,8 +52,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swiftness
   range: null
@@ -68,6 +64,27 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Air within the emanation is difficult terrain for Flying creatures
+    that do not have the air trait.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: High Winds
+  range: 40 feet
+  raw_description: '**High Winds** (__air__, __aura__) 40 feet. Air within the emanation
+    is difficult terrain for Flying creatures that do not have the air trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - air
+  - aura
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -80,20 +97,16 @@ automatic_abilities:
     while it was dispersed.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: High Winds
+  name: Disperse
   range: null
-  raw_description: "**High Winds** (__air__, __aura__) 40 feet. Air within the emanation\
-    \ is difficult terrain for Flying creatures that do not have the air trait.\n\n\
-    \ **Disperse** [Reaction] **Trigger** The elemental hurricane takes damage from\
-    \ a hostile action. **Effect** The elemental hurricane disperses. Until the end\
-    \ of the current turn, it can't be attacked or targeted, doesn't take up space,\
-    \ and any auras or emanations it has are suppressed. At the end of the turn, the\
-    \ elemental hurricane reforms in any space in which it can fit within 100 feet\
-    \ of where it dispersed and any auras or emanations it has are restored as long\
-    \ as their duration didn't run out while it was dispersed."
+  raw_description: '**Disperse** [Reaction] **Trigger** The elemental hurricane takes
+    damage from a hostile action. **Effect** The elemental hurricane disperses. Until
+    the end of the current turn, it can''t be attacked or targeted, doesn''t take
+    up space, and any auras or emanations it has are suppressed. At the end of the
+    turn, the elemental hurricane reforms in any space in which it can fit within
+    100 feet of where it dispersed and any auras or emanations it has are restored
+    as long as their duration didn''t run out while it was dispersed.'
   requirements: null
   saving_throw: null
   stages: null
@@ -119,12 +132,11 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: bludgeoning
-  name: gust
-  plus_damage:
   - formula: null
     type: Push 10 feet
+  name: gust
   to_hit: 24
   traits:
   - finesse
@@ -134,10 +146,9 @@ perception: 20
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+6
+  - formula: 2d12+6
     type: electricity
   name: lightning lash
-  plus_damage: null
   to_hit: 24
   traits:
   - range increment 75 feet

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Invigorating Passion
   range: null
@@ -79,8 +75,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Smoke
   range: null
@@ -142,12 +136,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+7
+  - formula: 1d6+7
     type: piercing
+  - formula: 1d4
+    type: good
   name: silver rapier
-  plus_damage:
-  - formula: null
-    type: 1d4 good
   to_hit: 13
   traits:
   - deadly 1d10

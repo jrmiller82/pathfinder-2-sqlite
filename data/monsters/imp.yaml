@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: The imp regains 1d6 Hit Points.
   failure: null
   frequency: once per round.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Diabolic Healing
   range: null
@@ -76,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Imp Venom
   range: null
@@ -105,8 +99,6 @@ active_abilities:
     saving throw twice and use the higher result.
   failure: null
   frequency: once per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infernal Temptation
   range: null
@@ -157,14 +149,13 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4-1
+  - formula: 1d4-1
     type: piercing
-  name: stinger
-  plus_damage:
-  - formula: null
-    type: 1d4 evil
+  - formula: 1d4
+    type: evil
   - formula: null
     type: imp venom
+  name: stinger
   to_hit: 9
   traits:
   - agile

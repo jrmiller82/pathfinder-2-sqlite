@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -45,8 +43,6 @@ active_abilities:
     back into a ravener with 1 Hit Point in their soul ward.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ravenous Repast
   range: null
@@ -75,8 +71,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -114,8 +108,6 @@ automatic_abilities:
     (DC 31 basic Reflex save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Boneshatter
   range: null
@@ -128,7 +120,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The ravener husk takes any amount of bludgeoning damage;
+  trigger: The ravener husk takes any amount of bludgeoning damage
 description: 'Raveners require a steady diet of souls, and a ravener that''s unable
   to feed for too long eventually cannibalizes their own soul. Should a ravener''s
   soul ward ever be reduced to 0 Hit Points by hunger while the ravener has more than
@@ -155,24 +147,22 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+16
+  - formula: 3d8+16
     type: piercing
+  - formula: 2d6
+    type: negative
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 30
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d4+16
+  - formula: 3d4+16
     type: slashing
+  - formula: 2d6
+    type: negative
   name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 30
   traits:
   - agile

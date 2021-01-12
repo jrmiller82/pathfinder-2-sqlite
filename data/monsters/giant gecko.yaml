@@ -39,10 +39,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 8
   traits: null
 name: Giant Gecko
@@ -66,8 +65,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Uncanny Climber
   range: null

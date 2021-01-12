@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mangling Rend
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: The creature is __frightened 1__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Display
   range: null
@@ -91,20 +87,18 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 21
   traits:
   - agile
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 21
   traits:
   - reach 10 feet

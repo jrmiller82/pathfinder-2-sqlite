@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -37,15 +35,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: This curse affects only humanoids. **Saving Throw** DC 18 Fortitude
-    save. On each full moon, the cursed creature must succeed at another Fortitude
-    save or turn into a wererat until dawn. The creature is under the GM's control
-    and goes on a rampage for half the night before falling unconscious until dawn.
+  description: This curse affects only humanoids.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Curse of the Wererat
   range: null
@@ -55,7 +48,10 @@ active_abilities:
     into a wererat until dawn. The creature is under the GM''s control and goes on
     a rampage for half the night before falling unconscious until dawn.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 18 Fortitude save. On each full moon, the cursed creature must
+    succeed at another Fortitude save or turn into a wererat until dawn. The creature
+    is under the GM's control and goes on a rampage for half the night before falling
+    unconscious until dawn.
   stages: null
   success: null
   traits:
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Moon Frenzy
   range: null
@@ -99,8 +93,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -121,8 +113,6 @@ automatic_abilities:
   effect: The wererat gains a +2 circumstance bonus to AC against the triggering attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nimble Dodge
   range: null
@@ -168,10 +158,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -179,22 +168,20 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: curse of the wererat
+  name: jaws
   to_hit: 10
   traits:
   - finesse
@@ -203,10 +190,9 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: hand crossbow
-  plus_damage: null
   to_hit: 10
   traits:
   - range increment 60 feet
@@ -227,8 +213,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rat Empathy
   range: null

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -39,8 +37,6 @@ automatic_abilities:
     each take any remaining damage, possibly breaking or destroying the shield.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shield Block
   range: null
@@ -116,28 +112,25 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 11
   traits:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 11
   traits: null
 name: Centaur
@@ -145,10 +138,9 @@ perception: 9
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 9
   traits:
   - thrown 20 feet

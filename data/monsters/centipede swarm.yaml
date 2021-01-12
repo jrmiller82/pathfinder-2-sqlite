@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Centipede Swarm Venom
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Bites
   range: null

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Derghodaemon's Stare
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Savage Assault
   range: null
@@ -82,8 +76,11 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the hissing sounds caused by the infestation also
+    cause the target to become __confused__ for 1 round; this additional effect has
+    the __auditory__, __emotion__, and __mental__ traits.
+  critical_success: The swarm disperses as soon as it deals its swarm spit Strike
+    damage.
   description: The derghodaemon spews a large swarm, making a swarm spit Strike against
     up to two adjacent targets within range. Whether or not the targets are hit, each
     must attempt a DC 31 Reflex save (at a –2 circumstance penalty if it was actually
@@ -91,10 +88,9 @@ active_abilities:
     ends as soon as the creature takes any amount of damage from an area effect. The
     derghodaemon can't use this ability for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The swarm clings to the target and infests it, dealing 2d6 persistent piercing
+    damage.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Infestation
   range: null
@@ -104,101 +100,29 @@ active_abilities:
     (at a –2 circumstance penalty if it was actually hit by the swarm spit). __Persistent
     damage__ caused by the swarming infestation ends as soon as the creature takes
     any amount of damage from an area effect. The derghodaemon can''t use this ability
-    for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The swarm disperses as soon as it deals its swarm spit Strike
+    for 1d4 rounds.
+
+
+    **Critical Success **The swarm disperses as soon as it deals its swarm spit Strike
     damage.
-  description: The swarm disperses as soon as it deals its swarm spit Strike damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The swarm disperses as soon as it deals its
-    swarm spit Strike damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The swarm clings to the target and infests it, dealing 1d6 persistent
+
+
+    **Success **The swarm clings to the target and infests it, dealing 1d6 persistent
     piercing damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The swarm clings to the target and infests it, dealing
-    1d6 persistent piercing damage.'
+
+
+    **Failure **The swarm clings to the target and infests it, dealing 2d6 persistent
+    piercing damage.
+
+
+    **Critical Failure **As failure, but the hissing sounds caused by the infestation
+    also cause the target to become __confused__ for 1 round; this additional effect
+    has the __auditory__, __emotion__, and __mental__ traits.'
   requirements: null
   saving_throw: null
   stages: null
   success: The swarm clings to the target and infests it, dealing 1d6 persistent piercing
     damage.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The swarm clings to the target and infests it, dealing 2d6 persistent
-    piercing damage.
-  effect: null
-  failure: The swarm clings to the target and infests it, dealing 2d6 persistent piercing
-    damage.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The swarm clings to the target and infests it, dealing
-    2d6 persistent piercing damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the hissing sounds caused by the infestation also
-    cause the target to become __confused__ for 1 round; this additional effect has
-    the __auditory__, __emotion__, and __mental__ traits.
-  critical_success: null
-  description: As failure, but the hissing sounds caused by the infestation also cause
-    the target to become __confused__ for 1 round; this additional effect has the
-    __auditory__, __emotion__, and __mental__ traits.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, but the hissing sounds caused
-    by the infestation also cause the target to become __confused__ for 1 round; this
-    additional effect has the __auditory__, __emotion__, and __mental__ traits.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 alignment: NE
@@ -244,12 +168,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+10
+  - formula: 3d8+10
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 25
   traits:
   - deadly 1d12
@@ -261,12 +184,11 @@ perception: 24
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+13
+  - formula: 2d6+13
     type: piercing
+  - formula: 1d6
+    type: evil
   name: swarm spit
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 25
   traits:
   - evil

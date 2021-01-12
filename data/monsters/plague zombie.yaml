@@ -17,8 +17,6 @@ active_abilities:
     damage. A creature damaged by the jaws is exposed to zombie rot.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jaws
   range: null
@@ -38,15 +36,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: An infected creature can't heal damage it takes from zombie rot until
-    it has been cured of the disease. **Saving Throw** DC 18 Fortitude; **Stage 1**
-    carrier with no ill effect (1 day); **Stage 2** 1d6 negative damage (1 day); **Stage
-    3** 1d6 negative damage (1 day); **Stage 4** 1d6 negative damage (1 day); **Stage
-    5** dead, rising as a plague zombie immediately
+    it has been cured of the disease.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Zombie Rot
   range: null
@@ -57,8 +50,13 @@ active_abilities:
     **Stage 4** 1d6 negative damage (1 day); **Stage 5** dead, rising as a plague
     zombie immediately'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 18 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1 day)
+  - effect: 1d6 negative damage (1 day)
+  - effect: 1d6 negative damage (1 day)
+  - effect: 1d6 negative damage (1 day)
+  - effect: dead, rising as a plague zombie immediately
   success: null
   traits:
   - disease
@@ -85,14 +83,13 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Grab
   - formula: null
     type: zombie rot
+  name: fist
   to_hit: 9
   traits: null
 name: Plague Zombie
@@ -114,8 +111,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slow
   range: null

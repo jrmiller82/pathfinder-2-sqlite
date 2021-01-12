@@ -17,8 +17,6 @@ active_abilities:
     HP__ that go away at the end of the frenzy, and takes a –2 penalty to AC.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Frenzy
   range: null
@@ -28,12 +26,12 @@ active_abilities:
     While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws,
     gains 8 __temporary HP__ that go away at the end of the frenzy, and takes a –2
     penalty to AC.'
-  requirements: The bunyip is not fatigued or already in a frenzy.
+  requirements: The bunyip is not __fatigued__ or already in a frenzy.
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: The bunyip deals bleed damage to a living creature.
+  trigger: The bunyip deals __bleed damage__ to a living creature.
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Roar
   range: null
@@ -81,8 +77,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shift Form
   range: null
@@ -112,8 +106,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aquatic Opportunity
   range: null
@@ -165,20 +157,18 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: piercing
+  - formula: 1d6
+    type: persistent bleed damage
   name: Jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent bleed damage
   to_hit: 11
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: bludgeoning
   name: Tail
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
@@ -201,8 +191,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Scent
   range: null

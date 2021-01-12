@@ -26,8 +26,6 @@ active_abilities:
     act. If attacked by the harpy, the creature is freed from captivation at the end
     of the harpy's turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Captivating Song
   range: null
@@ -105,18 +103,16 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 12
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: slashing
   name: talon
-  plus_damage: null
   to_hit: 15
   traits:
   - agile
@@ -126,10 +122,9 @@ perception: 12
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 15
   traits:
   - thrown 10 feet

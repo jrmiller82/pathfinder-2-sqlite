@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bay
   range: null
@@ -55,8 +53,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sinister Bite
   range: null
@@ -118,16 +114,15 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Knockdown
   - formula: null
     type: sinister bite
+  name: jaws
   to_hit: 11
   traits: null
 name: Yeth Hound

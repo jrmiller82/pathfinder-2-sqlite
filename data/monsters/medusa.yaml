@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Gaze
   range: null
@@ -50,8 +48,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Serpent Venom
   range: null
@@ -69,6 +65,34 @@ active_abilities:
   trigger: null
 alignment: LE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a creature ends its turn in the aura, it must attempt a DC 25
+    Fortitude save. If the creature fails, it becomes slowed 1 for 1 minute. The medusa
+    can deactivate or activate this aura by using a single action, which has the concentrate
+    trait.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Petrifying Gaze
+  range: 30 feet
+  raw_description: '**Petrifying Gaze** (__arcane__, __aura__, __transmutation__,
+    __visual__) 30 feet. When a creature ends its turn in the aura, it must attempt
+    a DC 25 Fortitude save. If the creature fails, it becomes slowed 1 for 1 minute.
+    The medusa can deactivate or activate this aura by using a single action, which
+    has the concentrate trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - aura
+  - transmutation
+  - visual
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -76,20 +100,12 @@ automatic_abilities:
   effect: The medusa makes a snake fangs Strike against the creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Petrifying Gaze
+  name: Biting Snakes
   range: null
-  raw_description: '**Petrifying Gaze** (__arcane__, __aura__, __transmutation__,
-    __visual__) 30 feet. When a creature ends its turn in the aura, it must attempt
-    a DC 25 Fortitude save. If the creature fails, it becomes slowed 1 for 1 minute.
-    The medusa can deactivate or activate this aura by using a single action, which
-    has the concentrate trait.
-
-
-    **Biting Snakes** [Reaction] **Trigger** A creature ends its turn adjacent to
-    the medusa. **Effect** The medusa makes a snake fangs Strike against the creature.'
+  raw_description: '**Biting Snakes** [Reaction] **Trigger** A creature ends its turn
+    adjacent to the medusa. **Effect** The medusa makes a snake fangs Strike against
+    the creature.'
   requirements: null
   saving_throw: null
   stages: null
@@ -135,12 +151,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+8
+  - formula: 1d6+8
     type: piercing
-  name: shortsword
-  plus_damage:
   - formula: null
     type: serpent venom
+  name: shortsword
   to_hit: 18
   traits:
   - agile
@@ -148,12 +163,11 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d4+8
+  - formula: 1d4+8
     type: piercing
-  name: snake fangs
-  plus_damage:
   - formula: null
     type: serpent venom
+  name: snake fangs
   to_hit: 16
   traits:
   - agile
@@ -163,12 +177,11 @@ perception: 16
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+7
+  - formula: 1d6+7
     type: piercing
-  name: composite shortbow
-  plus_damage:
   - formula: null
     type: serpent venom
+  name: composite shortbow
   to_hit: 19
   traits:
   - deadly 1d10

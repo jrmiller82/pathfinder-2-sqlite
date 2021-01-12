@@ -31,8 +31,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Calcification
   range: null
@@ -72,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -109,12 +105,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+9
+  - formula: 2d12+9
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: calcification
+  name: tail
   to_hit: 20
   traits:
   - forceful

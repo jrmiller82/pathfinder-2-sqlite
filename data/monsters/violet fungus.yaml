@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Violet Rot
   range: null
@@ -73,12 +71,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: violet rot
+  name: tentacle
   to_hit: 11
   traits:
   - agile

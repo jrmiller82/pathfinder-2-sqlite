@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Battle Cry
   range: null
@@ -49,8 +47,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -68,6 +64,23 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Ferocity
+  range: null
+  raw_description: '**Ferocity** [Reaction]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 description: 'When orcs raid, the strongest is chosen as the leader, backed up by
   brothers, sisters, and other immediate family.
 
@@ -88,20 +101,18 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: bludgeoning
   name: greatclub
-  plus_damage: null
   to_hit: 10
   traits:
   - backswing
   - shove
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -111,10 +122,9 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 8
   traits:
   - thrown 30 feet

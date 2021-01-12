@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Quick Draw
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -60,8 +56,6 @@ automatic_abilities:
     the triggering attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nimble Dodge
   range: null
@@ -101,10 +95,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: Shortsword
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -112,12 +105,11 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
-  name: Hand Crossbow
-  plus_damage:
+  - formula: 1d6
+    type: piercing
   - formula: null
     type: lethargy poison
+  name: Hand Crossbow
   to_hit: 10
   traits:
   - range increment 60 feet
@@ -141,8 +133,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Blindness
   range: null

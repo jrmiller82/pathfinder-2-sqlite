@@ -17,8 +17,6 @@ active_abilities:
     a 15 feet take 4d6 mental damage (DC 20 basic Will save).
   failure: null
   frequency: once per minute
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Overwhelming Anguish
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rejuvenation
   range: null
@@ -73,8 +69,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Exorcism
   range: null
@@ -95,8 +89,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Surreptitious Siege
   range: null
@@ -136,10 +128,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: bludgeoning
   name: slam
-  plus_damage: null
   to_hit: 11
   traits: null
 name: Siege Shard

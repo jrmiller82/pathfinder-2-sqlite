@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hidden Movement
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -53,6 +49,36 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that enters the area must attempt a DC 16 Fortitude save.
+    On a failure, the creature is sickened 1, and on a critical failure, the creature
+    also takes a –5-foot status penalty to its Speeds for 1 round. While within the
+    aura, the creature takes a –2 circumstance penalty to saves to recover from the
+    sickened condition. A creature that succeeds at its save is temporarily immune
+    to all xulgaths' stenches for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Stench
+  range: 30 feet
+  raw_description: '**Stench** (__aura__, __olfactory__) 30 feet. A creature that
+    enters the area must attempt a DC 16 Fortitude save. On a failure, the creature
+    is sickened 1, and on a critical failure, the creature also takes a –5-foot status
+    penalty to its Speeds for 1 round. While within the aura, the creature takes a
+    –2 circumstance penalty to saves to recover from the sickened condition. A creature
+    that succeeds at its save is temporarily immune to all xulgaths'' stenches for
+    1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - olfactory
+  trigger: null
 - action_cost: Free Action
   critical_failure: null
   critical_success: null
@@ -61,23 +87,12 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Stench
+  name: Stench Suppression
   range: null
-  raw_description: '**Stench** (__aura__, __olfactory__) 30 feet. A creature that
-    enters the area must attempt a DC 16 Fortitude save. On a failure, the creature
-    is sickened 1, and on a critical failure, the creature also takes a –5-foot status
-    penalty to its Speeds for 1 round. While within the aura, the creature takes a
-    –2 circumstance penalty to saves to recover from the sickened condition. A creature
-    that succeeds at its save is temporarily immune to all xulgaths'' stenches for
-    1 minute.
-
-
-    **Stench Suppression** [Free Action] A xulgath skulker can suppress its stench
-    aura as a free action to better hide its presence. The skulker can resume its
-    stench aura as a free action.'
+  raw_description: '**Stench Suppression** [Free Action] A xulgath skulker can suppress
+    its stench aura as a free action to better hide its presence. The skulker can
+    resume its stench aura as a free action.'
   requirements: null
   saving_throw: null
   stages: null
@@ -103,10 +118,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -114,18 +128,16 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 9
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -135,10 +147,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 10
   traits:
   - agile

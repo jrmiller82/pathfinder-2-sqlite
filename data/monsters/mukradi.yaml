@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pull Apart
   range: null
@@ -79,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thrash
   range: null
@@ -102,8 +96,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -116,43 +108,53 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: Free Action
   critical_failure: null
   critical_success: null
   description: null
-  effect: 'The mukradi confines the debilitating effect to a certain portion of its
+  effect: The mukradi confines the debilitating effect to a certain portion of its
     nervous system, ignoring the effect but causing a maw of its choice to go dormant
-    for the effect''s duration. That maw can''t be used for a Strike or Breath Weapon
-    during that time. This ability can''t be used if all the mukradi''s heads are
-    dormant.
-
-
-    **Spitting Rage** [Reaction]'
+    for the effect's duration. That maw can't be used for a Strike or Breath Weapon
+    during that time. This ability can't be used if all the mukradi's heads are dormant.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Partitioned Anatomy
   range: null
-  raw_description: '**Partitioned Anatomy** [Reaction] **Trigger** The mukradi would
-    be confused, paralyzed, slowed, or stunned. **Effect** The mukradi confines the
-    debilitating effect to a certain portion of its nervous system, ignoring the effect
-    but causing a maw of its choice to go dormant for the effect''s duration. That
-    maw can''t be used for a Strike or Breath Weapon during that time. This ability
-    can''t be used if all the mukradi''s heads are dormant.
-
-
-    **Spitting Rage**  **Trigger** A creature scores a critical hit on the mukradi.
-    **Effect** The mukradi''s Breath Weapon recharges. It can use its Breath Weapon
-    immediately as part of this reaction. It can''t use this reaction again until
-    it recharges its Breath Weapon naturally.'
+  raw_description: '**Partitioned Anatomy** [Free Action] **Trigger** The mukradi
+    would be confused, paralyzed, slowed, or stunned. **Effect** The mukradi confines
+    the debilitating effect to a certain portion of its nervous system, ignoring the
+    effect but causing a maw of its choice to go dormant for the effect''s duration.
+    That maw can''t be used for a Strike or Breath Weapon during that time. This ability
+    can''t be used if all the mukradi''s heads are dormant.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: The mukradi would be confused, paralyzed, slowed, or stunned.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The mukradi's Breath Weapon recharges. It can use its Breath Weapon immediately
+    as part of this reaction. It can't use this reaction again until it recharges
+    its Breath Weapon naturally.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Spitting Rage
+  range: null
+  raw_description: '**Spitting Rage** [Reaction] **Trigger** A creature scores a critical
+    hit on the mukradi. **Effect** The mukradi''s Breath Weapon recharges. It can
+    use its Breath Weapon immediately as part of this reaction. It can''t use this
+    reaction again until it recharges its Breath Weapon naturally.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature scores a critical hit on the mukradi.
 description: 'Fearsome centipede-like creatures, mukradis are three-headed predators
   with a devastating array of breath weapons. A Darklands version of the mukradi is
   rumored to exist. It''s said these variant mukradis have black scales, and all of
@@ -169,46 +171,42 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+17
+  - formula: 2d12+17
     type: piercing
+  - formula: 3d6
+    type: acid
   name: acid maw
-  plus_damage:
-  - formula: null
-    type: 3d6 acid
   to_hit: 32
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d12+17
+  - formula: 2d12+17
     type: piercing
+  - formula: 3d6
+    type: fire
   name: flame maw
-  plus_damage:
-  - formula: null
-    type: 3d6 fire
   to_hit: 32
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d12+17
+  - formula: 2d12+17
     type: piercing
+  - formula: 3d6
+    type: electricity
   name: shock maw
-  plus_damage:
-  - formula: null
-    type: 3d6 electricity
   to_hit: 32
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+17
+  - formula: 2d10+17
     type: piercing
   name: leg
-  plus_damage: null
   to_hit: 32
   traits:
   - agile
@@ -216,12 +214,11 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: slashing
-  name: tail lash
-  plus_damage:
   - formula: null
     type: Knockdown
+  name: tail lash
   to_hit: 32
   traits:
   - magical

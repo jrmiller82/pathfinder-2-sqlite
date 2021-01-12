@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dancer's Curse
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -66,32 +62,16 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: 'The target ally can roll the save twice and take the better result.
-
-
-    **Death Flare** (__light__) When the dancer dies, their body combusts in a flare
-    of white light. All creatures in a 10-foot emanation must succeed at a DC 17 Fortitude
-    save or be dazzled for 1d4 rounds. Calignis that fail this save are also frightened
-    1. The dancer''s gear and treasure are left in a pile where they died. As this
-    isn''t a magical effect, the light has no effect within magical darkness.'
+  effect: The target ally can roll the save twice and take the better result.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Distracting Frolic
   range: null
   raw_description: '**Distracting Frolic** [Reaction] (__fortune__, __manipulate__)
     **Trigger** An ally within 10 feet of the dancer rolls a saving throw against
     a mental or illusion effect. **Effect** The target ally can roll the save twice
-    and take the better result.
-
-
-    **Death Flare** (__light__) When the dancer dies, their body combusts in a flare
-    of white light. All creatures in a 10-foot emanation must succeed at a DC 17 Fortitude
-    save or be dazzled for 1d4 rounds. Calignis that fail this save are also frightened
-    1. The dancer''s gear and treasure are left in a pile where they died. As this
-    isn''t a magical effect, the light has no effect within magical darkness.'
+    and take the better result.'
   requirements: null
   saving_throw: null
   stages: null
@@ -101,6 +81,33 @@ automatic_abilities:
   - manipulate
   trigger: An ally within 10 feet of the dancer rolls a saving throw against a mental
     or illusion effect.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the dancer dies, their body combusts in a flare of white light.
+    All creatures in a 10-foot emanation must succeed at a DC 17 Fortitude save or
+    be dazzled for 1d4 rounds. Calignis that fail this save are also frightened 1.
+    The dancer's gear and treasure are left in a pile where they died. As this isn't
+    a magical effect, the light has no effect within magical darkness.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Death Flare
+  range: null
+  raw_description: '**Death Flare** (__light__) When the dancer dies, their body combusts
+    in a flare of white light. All creatures in a 10-foot emanation must succeed at
+    a DC 17 Fortitude save or be dazzled for 1d4 rounds. Calignis that fail this save
+    are also frightened 1. The dancer''s gear and treasure are left in a pile where
+    they died. As this isn''t a magical effect, the light has no effect within magical
+    darkness.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - light
+  trigger: null
 description: 'Caligni dancers serve as intermediaries between caligni clans.
 
 
@@ -118,10 +125,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 bludgeoning
+  - formula: 1d4
+    type: bludgeoning
   name: Baton
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -129,10 +135,9 @@ melee_attacks:
   - shove
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
+  - formula: 1d4
+    type: piercing
   name: Dagger
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -143,10 +148,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
+  - formula: 1d4
+    type: piercing
   name: Dagger
-  plus_damage: null
   to_hit: 9
   traits:
   - agile

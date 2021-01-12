@@ -21,8 +21,6 @@ active_abilities:
     immediately attempt an additional flat DC 15 check to end the persistent damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dig Quickly
   range: null
@@ -67,10 +65,9 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: bludgeoning
   name: hoe
-  plus_damage: null
   to_hit: 6
   traits: null
 name: Shoony Tiller
@@ -78,10 +75,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: 1 nonlethal
   name: dirt clod
-  plus_damage: null
   to_hit: 4
   traits:
   - range increment 10 feet

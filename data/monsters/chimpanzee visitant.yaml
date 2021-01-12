@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mauler
   range: null
@@ -33,13 +31,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: Visitants can be carriers of diseases, even if they are immune to their
-    effects. **Saving Throw** DC 16 Fortitude. **Stage 1** sickened 1 (1 day); **Stage
-    2** sickened 2 (1 day); **Stage 3** confusion (1 day); **Stage 4** dead
+    effects.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rabies
   range: null
@@ -48,8 +43,12 @@ active_abilities:
     1** sickened 1 (1 day); **Stage 2** sickened 2 (1 day); **Stage 3** confusion
     (1 day); **Stage 4** dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 16 Fortitude.
+  stages:
+  - effect: sickened 1 (1 day)
+  - effect: sickened 2 (1 day)
+  - effect: confusion (1 day)
+  - effect: dead
   success: null
   traits:
   - disease
@@ -59,21 +58,16 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A creature that starts its turn within the visitant''s aura must succeed
+  description: A creature that starts its turn within the visitant's aura must succeed
     at a DC 16 Will save or be overcome with a thirst for vengeance. For 1d4 rounds
     (1 minute on a critical failure), if the affected creature was attacked within
     the last round (whether or not the attack hit), the creature must use at least
     1 action per round to Strike or use a hostile action toward its last attacker
     as long as the attacker is still alive. Failure to do so deals the affected creature
     1d6 mental damage, plus 1d6 for every 5 levels the visitant has.
-
-
-    **Whip Vulnerability** A chimpanzee visitant takes 5 additional damage from whips.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vengeful Presence
   range: 20 feet
@@ -84,10 +78,7 @@ automatic_abilities:
     attacked within the last round (whether or not the attack hit), the creature must
     use at least 1 action per round to Strike or use a hostile action toward its last
     attacker as long as the attacker is still alive. Failure to do so deals the affected
-    creature 1d6 mental damage, plus 1d6 for every 5 levels the visitant has.
-
-
-    **Whip Vulnerability** A chimpanzee visitant takes 5 additional damage from whips.'
+    creature 1d6 mental damage, plus 1d6 for every 5 levels the visitant has.'
   requirements: null
   saving_throw: null
   stages: null
@@ -97,6 +88,24 @@ automatic_abilities:
   - emotion
   - enchantment
   - mental
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A chimpanzee visitant takes 5 additional damage from whips.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Whip Vulnerability
+  range: null
+  raw_description: '**Whip Vulnerability** A chimpanzee visitant takes 5 additional
+    damage from whips.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: null
 description: 'Common circus animals viewed as expendable by their caretakers are perhaps
   the most likely to rise as visitants. Animals that die en masse—such as in a tent
@@ -121,23 +130,21 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+5
+  - formula: 2d6+5
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: rabies
+  name: jaws
   to_hit: 12
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d4+3
+  - formula: 2d4+3
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 13
   traits:
   - agile

@@ -19,8 +19,6 @@ active_abilities:
     DC 26 Will save.
   failure: The duration is 1 day.
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Brand of the Impenitent
   range: null
@@ -59,8 +57,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flaming Armament
   range: null
@@ -87,8 +83,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Guiding Angel
   range: null
@@ -119,8 +113,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Confessor's Aura
   range: 20 feet
@@ -166,14 +158,13 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
+  - formula: 1d6
+    type: fire
+  - formula: 1d6
+    type: good
   name: flaming scimitar
-  plus_damage:
-  - formula: null
-    type: 1d6 fire
-  - formula: null
-    type: 1d6 good
   to_hit: 20
   traits:
   - fire

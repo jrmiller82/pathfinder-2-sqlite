@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -84,8 +78,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Magma Swim
   range: null
@@ -108,8 +100,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Magma Tomb
   range: null
@@ -135,8 +125,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Volcanic Purge
   range: null
@@ -162,8 +150,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -201,8 +187,6 @@ automatic_abilities:
     attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wing Deflection
   range: null
@@ -215,7 +199,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The dragon is targeted with an attack;
+  trigger: The dragon is targeted with an attack
 description: 'Magma dragons have a reputation among other dragons for being unpredictable
   and brash. Their temperament and tendency for violent outbursts ensure that the
   typical magma dragon lives a solitary life, with hatchlings often bickering or fighting
@@ -255,22 +239,20 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: piercing
+  - formula: 4d6
+    type: fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 4d6 fire
   to_hit: 36
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 36
   traits:
   - agile
@@ -278,20 +260,18 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+16
+  - formula: 3d12+16
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 34
   traits:
   - magical
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: piercing
   name: horns
-  plus_damage: null
   to_hit: 34
   traits:
   - magical

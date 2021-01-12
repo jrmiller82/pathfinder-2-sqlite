@@ -9,114 +9,46 @@ ac: 28
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature becomes petrified permanently.
+  critical_success: The creature is unaffected.
   description: The gorgon breathes a 60-foot cone of green gas. Each creature in the
     area must attempt a DC 25 Fortitude save. The gorgon can't use Breath Weapon again
     for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature becomes __petrified__ for 1 minute. It can attempt a new save
+    at the end of each of its turns.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
   raw_description: '**Breath Weapon** [Two Actions]  (__earth__, __incapacitation__,
     __primal__, __transmutation__) The gorgon breathes a 60-foot cone of green gas.
     Each creature in the area must attempt a DC 25 Fortitude save. The gorgon can''t
-    use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - earth
-  - incapacitation
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature's body hardens and stiffens, causing it to become __slowed
+    use Breath Weapon again for 1d4 rounds.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature''s body hardens and stiffens, causing it to become __slowed
     1__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature''s body hardens and stiffens, causing
-    it to become __slowed 1__ for 1 round.'
+
+
+    **Failure** The creature becomes __petrified__ for 1 minute. It can attempt a
+    new save at the end of each of its turns.
+
+
+    **Critical Failure** The creature becomes petrified permanently.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature's body hardens and stiffens, causing it to become __slowed
     1__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature becomes __petrified__ for 1 minute. It can attempt a new
-    save at the end of each of its turns.
-  effect: null
-  failure: The creature becomes __petrified__ for 1 minute. It can attempt a new save
-    at the end of each of its turns.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature becomes __petrified__ for 1 minute. It
-    can attempt a new save at the end of each of its turns.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature becomes petrified permanently.
-  critical_success: null
-  description: The creature becomes petrified permanently.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature becomes petrified permanently.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - earth
+  - incapacitation
+  - primal
+  - transmutation
   trigger: null
 - action_cost: Two Actions
   critical_failure: null
@@ -127,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Powerful Charge
   range: null
@@ -148,8 +78,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -204,18 +132,16 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 20
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 18
   traits: null
 name: Gorgon

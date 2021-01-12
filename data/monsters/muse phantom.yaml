@@ -18,8 +18,6 @@ active_abilities:
     phantom for 1 minute. The muse phantom can't use Grand Finale again for 1d4 rounds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grand Finale
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Muse Possession
   range: null
@@ -105,10 +101,9 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+5
+  - formula: 2d6+5
     type: negative
   name: phantom hand
-  plus_damage: null
   to_hit: 13
   traits:
   - agile
@@ -119,10 +114,9 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+5
+  - formula: 2d4+5
     type: sonic
   name: resonating note
-  plus_damage: null
   to_hit: 15
   traits:
   - magical
@@ -159,8 +153,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thespian Aura
   range: 30 feet

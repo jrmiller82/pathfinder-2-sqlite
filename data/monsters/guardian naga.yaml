@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Guardian Naga Venom
   range: null
@@ -75,12 +73,11 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: guardian naga venom
+  name: fangs
   to_hit: 22
   traits:
   - agile
@@ -90,10 +87,9 @@ perception: 22
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: guardian naga venom
   name: spit
-  plus_damage: null
   to_hit: 22
   traits:
   - agile

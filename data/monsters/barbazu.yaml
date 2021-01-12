@@ -11,14 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 23 Fortitude; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** __enfeebled 1__ (1 day); **Stage 3** __enfeebled 2__
-    (1 day)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Avernal Fever
   range: null
@@ -26,8 +22,11 @@ active_abilities:
     **Stage 1** carrier with no ill effect (1 day); **Stage 2** __enfeebled 1__ (1
     day); **Stage 3** __enfeebled 2__ (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 23 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1 day)
+  - effect: __enfeebled 1__ (1 day)
+  - effect: __enfeebled 2__ (1 day)
   success: null
   traits:
   - disease
@@ -48,8 +47,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infernal Wound
   range: null
@@ -79,8 +76,6 @@ active_abilities:
     must be within reach of the devil's glaive. This movement doesn't trigger reactions.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reposition
   range: null
@@ -102,8 +97,6 @@ active_abilities:
     penalty and doesn't count toward that penalty.
   failure: null
   frequency: once per round.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wriggling Beard
   range: null
@@ -129,8 +122,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -184,14 +175,13 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: slashing
-  name: glaive
-  plus_damage:
-  - formula: null
-    type: 2d6 evil
+  - formula: 2d6
+    type: evil
   - formula: null
     type: infernal wound
+  name: glaive
   to_hit: 15
   traits:
   - deadly 1d8
@@ -201,12 +191,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 15
   traits:
   - agile
@@ -214,12 +203,11 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 1d6+7
+  - formula: 1d6+7
     type: piercing
-  name: beard
-  plus_damage:
   - formula: null
     type: Avernal fever
+  name: beard
   to_hit: 15
   traits:
   - magical

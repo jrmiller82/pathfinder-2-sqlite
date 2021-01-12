@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ice Stride
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -63,8 +59,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -104,19 +98,17 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 13
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: slashing
   name: hatchet
-  plus_damage: null
   to_hit: 13
   traits:
   - agile
@@ -124,10 +116,9 @@ melee_attacks:
   - sweep
 - action_cost: One Action
   damage:
-    formula: 2d4+7
+  - formula: 2d4+7
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 13
   traits:
   - agile
@@ -137,10 +128,9 @@ perception: 12
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: slashing
   name: hatchet
-  plus_damage: null
   to_hit: 10
   traits:
   - agile

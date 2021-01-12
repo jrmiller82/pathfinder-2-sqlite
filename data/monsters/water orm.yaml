@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Water Travel
   range: null
@@ -114,21 +110,19 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+11
+  - formula: 2d10+11
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 24
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+11
+  - formula: 2d6+11
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 24
   traits:
   - agile
@@ -163,8 +157,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slow Metabolism
   range: null
@@ -188,8 +180,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Undetectable
   range: null

@@ -11,12 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: __ style="text-decoration:underline" href="Rules.aspx?ID=364">
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Brain Collector Venom
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Collect Brain
   range: null
@@ -71,8 +67,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Brain Blisters
   range: null
@@ -94,8 +88,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Brain Loss
   range: null
@@ -156,20 +148,18 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+6
+  - formula: 2d12+6
     type: piercing
-  name: Jaws
-  plus_damage:
   - formula: null
     type: brain collector venom
+  name: Jaws
   to_hit: 20
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: slashing
   name: Claw
-  plus_damage: null
   to_hit: 20
   traits:
   - agile

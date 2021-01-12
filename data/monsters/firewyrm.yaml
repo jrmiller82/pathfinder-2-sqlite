@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -40,30 +38,42 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'When the firewyrm dies, it explodes, dealing 6d6 fire damage to each
+  description: When the firewyrm dies, it explodes, dealing 6d6 fire damage to each
     creature in a 10-foot emanation (DC 28 basic Reflex save).
-
-
-    **Intense Heat** (__aura__, __fire__) 10 feet, 4d6 fire, DC 25 basic Reflex.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Explosion
   range: null
   raw_description: '**Explosion** (__fire__) When the firewyrm dies, it explodes,
     dealing 6d6 fire damage to each creature in a 10-foot emanation (DC 28 basic Reflex
-    save).
-
-
-    **Intense Heat** (__aura__, __fire__) 10 feet, 4d6 fire, DC 25 basic Reflex.'
+    save).'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits:
+  - fire
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: ', 4d6 fire, DC 25 basic Reflex.'
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Intense Heat
+  range: 10 feet
+  raw_description: '**Intense Heat** (__aura__, __fire__) 10 feet, 4d6 fire, DC 25
+    basic Reflex.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
   - fire
   trigger: null
 description: 'Firewyrms live in tubes of molten lava found throughout the Plane of
@@ -87,12 +97,11 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+11
+  - formula: 2d8+11
     type: fire
+  - formula: 2d8
+    type: persistent fire
   name: tail
-  plus_damage:
-  - formula: null
-    type: 2d8 persistent fire
   to_hit: 20
   traits:
   - reach 15 feet
@@ -101,10 +110,9 @@ perception: 16
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: fire
   name: fire mote
-  plus_damage: null
   to_hit: 20
   traits:
   - range increment 60 feet
@@ -124,8 +132,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

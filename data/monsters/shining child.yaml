@@ -10,6 +10,34 @@ ac_special: null
 active_abilities: null
 alignment: CE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The shining child sheds bright light. Any creature that starts its
+    turn in the aura must succeed at a Fortitude DC 29 save. If it fails, it is blinded
+    for 1 minute, and if it critically fails, it's permanently blinded. A creature
+    that succeeds at its save is temporarily immune to this effect for 24 hours.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Blinding Aura
+  range: 60 feet
+  raw_description: '**Blinding Aura** (__arcane__, __aura__, __incapacitation__, __light__)
+    60 feet. The shining child sheds bright light. Any creature that starts its turn
+    in the aura must succeed at a Fortitude DC 29 save. If it fails, it is blinded
+    for 1 minute, and if it critically fails, it''s permanently blinded. A creature
+    that succeeds at its save is temporarily immune to this effect for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - aura
+  - incapacitation
+  - light
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -18,22 +46,13 @@ automatic_abilities:
     spell).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Blinding Aura
+  name: Overwhelming Light
   range: null
-  raw_description: '**Blinding Aura** (__arcane__, __aura__, __incapacitation__, __light__)
-    60 feet. The shining child sheds bright light. Any creature that starts its turn
-    in the aura must succeed at a Fortitude DC 29 save. If it fails, it is blinded
-    for 1 minute, and if it critically fails, it''s permanently blinded. A creature
-    that succeeds at its save is temporarily immune to this effect for 24 hours.
-
-
-    **Overwhelming Light** [Reaction] (__light__) **Trigger** The shining child enters
-    an area of magical darkness or begins its turn in an area of magical darkness.
-    **Effect** The shining child attempts to counteract the magical darkness (as a
-    7th-level spell).'
+  raw_description: '**Overwhelming Light** [Reaction] (__light__) **Trigger** The
+    shining child enters an area of magical darkness or begins its turn in an area
+    of magical darkness. **Effect** The shining child attempts to counteract the magical
+    darkness (as a 7th-level spell).'
   requirements: null
   saving_throw: null
   stages: null
@@ -97,14 +116,13 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d4+5
+  - formula: 3d4+5
     type: bludgeoning
+  - formula: 4d6
+    type: fire
+  - formula: 2d4
+    type: persistent fire
   name: fist
-  plus_damage:
-  - formula: null
-    type: 4d6 fire
-  - formula: null
-    type: 2d4 persistent fire
   to_hit: 25
   traits:
   - agile
@@ -112,12 +130,11 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 3d10+3
+  - formula: 3d10+3
     type: fire,
+  - formula: 2d10
+    type: positive damage if the target is undead
   name: fire ray
-  plus_damage:
-  - formula: null
-    type: 2d10 positive damage if the target is undead
   to_hit: 25
   traits:
   - arcane
@@ -143,8 +160,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Radiance Dependence
   range: null

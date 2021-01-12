@@ -16,8 +16,6 @@ active_abilities:
     hits, it deals 1d6 extra damage and knocks the target __prone__.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Berserk Slam
   range: null
@@ -32,6 +30,67 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A severely damaged flesh golem has a chance of going berserk. If it
+    has 40 or fewer HP at the start of its turn, the golem must succeed at a DC 5
+    flat check or go berserk. A berserk golem wildly attacks the nearest living creature,
+    or the nearest object if no creatures are nearby.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Berserk
+  range: null
+  raw_description: '**Berserk** A severely damaged flesh golem has a chance of going
+    berserk. If it has 40 or fewer HP at the start of its turn, the golem must succeed
+    at a DC 5 flat check or go berserk. A berserk golem wildly attacks the nearest
+    living creature, or the nearest object if no creatures are nearby.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: harmed by fire (5d8, 3d4 from areas or persistent damage); healed by
+    electricity (area 2d4 HP); slowed by cold
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Golem Antimagic
+  range: null
+  raw_description: '**Golem Antimagic** harmed by fire (5d8, 3d4 from areas or persistent
+    damage); healed by electricity (area 2d4 HP); slowed by cold'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Casting a flesh to stone spell on the flesh golem affects the golem
+    normally.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vulnerable to Flesh to Stone
+  range: null
+  raw_description: '**Vulnerable to Flesh to Stone** Casting a flesh to stone spell
+    on the flesh golem affects the golem normally.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -41,30 +100,14 @@ automatic_abilities:
     electricity damage on a success, or 6d6 electricity damage on a critical success.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Berserk
+  name: Electric Reflexes
   range: null
-  raw_description: '**Berserk** A severely damaged flesh golem has a chance of going
-    berserk. If it has 40 or fewer HP at the start of its turn, the golem must succeed
-    at a DC 5 flat check or go berserk. A berserk golem wildly attacks the nearest
-    living creature, or the nearest object if no creatures are nearby.
-
-
-    **Golem Antimagic** harmed by fire (5d8, 3d4 from areas or persistent damage);
-    healed by electricity (area 2d4 HP); slowed by cold
-
-
-    **Vulnerable to Flesh to Stone** Casting a flesh to stone spell on the flesh golem
-    affects the golem normally.
-
-
-    **Electric Reflexes** [Reaction] **Trigger** The golem takes electricity damage
-    and a creature is adjacent to it. **Effect** The golem lashes out and tries to
-    grab a nearby creature. The golem attempts an Athletics check to Grapple an adjacent
-    creature. The creature also takes 3d6 electricity damage on a success, or 6d6
-    electricity damage on a critical success.'
+  raw_description: '**Electric Reflexes** [Reaction] **Trigger** The golem takes electricity
+    damage and a creature is adjacent to it. **Effect** The golem lashes out and tries
+    to grab a nearby creature. The golem attempts an Athletics check to Grapple an
+    adjacent creature. The creature also takes 3d6 electricity damage on a success,
+    or 6d6 electricity damage on a critical success.'
   requirements: null
   saving_throw: null
   stages: null
@@ -108,10 +151,9 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 20
   traits:
   - magical

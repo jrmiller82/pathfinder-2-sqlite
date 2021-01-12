@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cloud Walk
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -90,8 +84,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -111,16 +103,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
-    the triggering attack. If the dragon is flying, it descends 10 feet after the
-    attack is complete.
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 90 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -137,7 +125,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 28
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -145,6 +133,28 @@ automatic_abilities:
   - emotion
   - fear
   - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
+    the triggering attack. If the dragon is flying, it descends 10 feet after the
+    attack is complete.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Wing Deflection
+  range: null
+  raw_description: '**Wing Deflection** [Reaction] **Trigger** The silver dragon is
+    targeted with an attack. **Effect** The dragon raises its wing, gaining a +2 circumstance
+    bonus to AC against the triggering attack. If the dragon is flying, it descends
+    10 feet after the attack is complete.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: The silver dragon is targeted with an attack.
 description: 'Silver dragons are among the most chivalrous of all dragonkind; they
   wield frost and cold as weapons, can walk on clouds, and dwell high upon snowy mountain
@@ -205,31 +215,28 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: piercing
+  - formula: 2d6
+    type: cold
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 cold
   to_hit: 23
   traits:
   - cold
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+12
+  - formula: 2d8+12
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d10+10
+  - formula: 1d10+10
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 21
   traits:
   - reach 15 feet
@@ -252,8 +259,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fog Vision
   range: null

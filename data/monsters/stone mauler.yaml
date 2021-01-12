@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -33,6 +31,40 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Spikes of rock rise up from all stone surfaces in the emanation, creating
+    difficult terrain. A creature moving in the terrain takes 2d6 piercing damage
+    for each square of spikes it moves into (a Large or larger creature takes damage
+    only once for each square it moves, even if its space covers multiple squares
+    of spikes). Creatures with the __earth__ trait ignore all effects within the area.
+    The stone mauler can disable or activate spike stones as a single action, which
+    has the __concentrate__ trait.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Spike Stones
+  range: 5 feet
+  raw_description: '**Spike Stones** (__aura__, __earth__, __primal__, __transmutation__)
+    5 feet. Spikes of rock rise up from all stone surfaces in the emanation, creating
+    difficult terrain. A creature moving in the terrain takes 2d6 piercing damage
+    for each square of spikes it moves into (a Large or larger creature takes damage
+    only once for each square it moves, even if its space covers multiple squares
+    of spikes). Creatures with the __earth__ trait ignore all effects within the area.
+    The stone mauler can disable or activate spike stones as a single action, which
+    has the __concentrate__ trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - earth
+  - primal
+  - transmutation
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -42,25 +74,13 @@ automatic_abilities:
     1d4 rounds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Spike Stones
+  name: Crumble
   range: null
-  raw_description: '**Spike Stones** (__aura__, __earth__, __primal__, __transmutation__)
-    5 feet. Spikes of rock rise up from all stone surfaces in the emanation, creating
-    difficult terrain. A creature moving in the terrain takes 2d6 piercing damage
-    for each square of spikes it moves into (a Large or larger creature takes damage
-    only once for each square it moves, even if its space covers multiple squares
-    of spikes). Creatures with the __earth__ trait ignore all effects within the area.
-    The stone mauler can disable or activate spike stones as a single action, which
-    has the __concentrate__ trait.
-
-
-    **Crumble** [Reaction] **Trigger** The stone mauler takes damage from a hostile
-    source while atop rock or earth. **Effect** The stone mauler crumbles into the
-    ground, Burrowing down 15 feet. This Burrowing does not trigger reactions. The
-    stone mauler can''t Crumble again for 1d4 rounds.'
+  raw_description: '**Crumble** [Reaction] **Trigger** The stone mauler takes damage
+    from a hostile source while atop rock or earth. **Effect** The stone mauler crumbles
+    into the ground, Burrowing down 15 feet. This Burrowing does not trigger reactions.
+    The stone mauler can''t Crumble again for 1d4 rounds.'
   requirements: null
   saving_throw: null
   stages: null
@@ -88,12 +108,11 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Push 10 feet
+  name: fist
   to_hit: 21
   traits:
   - reach 10 feet
@@ -102,10 +121,9 @@ perception: 16
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+6
+  - formula: 2d12+6
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 21
   traits:
   - brutal
@@ -127,8 +145,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earthbound
   range: null

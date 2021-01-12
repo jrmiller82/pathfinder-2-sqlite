@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -43,8 +41,6 @@ active_abilities:
     that failed its Will save.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Instant Suggestion
   range: null
@@ -57,7 +53,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature fails a Will save against a spell or effect created by the neothelid;
+  trigger: A creature fails a Will save against a spell or effect created by the neothelid
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -68,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lashing Tongues
   range: null
@@ -91,8 +85,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -116,8 +108,6 @@ automatic_abilities:
     creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dimensional Wormhole
   range: null
@@ -135,7 +125,7 @@ automatic_abilities:
   - conjuration
   - occult
   - teleportation
-  trigger: A creature the neothelid is aware of uses a teleportation effect;
+  trigger: A creature the neothelid is aware of uses a __teleportation__ effect
 description: 'This gigantic, mauve worm has a hooked mouth with multiple circular
   bands of teeth and four barbed tongues. A wielder of terrible occult powers and
   a vast alien intellect, the neothelid serves the ageless horrors that dwell in strange
@@ -161,21 +151,19 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+13
+  - formula: 3d12+13
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 28
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: slashing
   name: rasping tongue
-  plus_damage: null
   to_hit: 28
   traits:
   - agile
@@ -206,8 +194,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thoughtsense
   range: null

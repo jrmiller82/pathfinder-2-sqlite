@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fated
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sever Fate
   range: null
@@ -80,8 +76,6 @@ active_abilities:
     she decides which trait to apply.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shift Fate
   range: null
@@ -98,7 +92,7 @@ active_abilities:
   traits:
   - divination
   - occult
-  trigger: A creature within 120 feet attempts a saving throw;
+  trigger: A creature within 120 feet attempts a saving throw
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -114,8 +108,6 @@ active_abilities:
     rounds.
   failure: null
   frequency: three times per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snip Thread
   range: null
@@ -192,14 +184,13 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d6+15
+  - formula: 4d6+15
     type: slashing
-  name: norn shears
-  plus_damage:
-  - formula: null
-    type: 5d6 negative
+  - formula: 5d6
+    type: negative
   - formula: null
     type: sever fate
+  name: norn shears
   to_hit: 38
   traits:
   - deadly 2d12
@@ -208,12 +199,11 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 4d10+15
+  - formula: 4d10+15
     type: negative
-  name: hand of fate
-  plus_damage:
   - formula: null
     type: sever fate
+  name: hand of fate
   to_hit: 38
   traits:
   - agile
@@ -239,8 +229,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sense Fate
   range: null
@@ -263,8 +251,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Triumvirate
   range: null

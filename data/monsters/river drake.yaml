@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Caustic Mucus
   range: null
@@ -49,8 +47,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -70,8 +66,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Speed Surge
   range: null
@@ -94,8 +88,6 @@ automatic_abilities:
     If it hits, the creature takes a –2 circumstance penalty to the triggering roll.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tail Lash
   range: null
@@ -132,18 +124,16 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+3
+  - formula: 2d8+3
     type: piercing
   name: Fangs
-  plus_damage: null
   to_hit: 12
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+3
+  - formula: 2d6+3
     type: bludgeoning
   name: Tail
-  plus_damage: null
   to_hit: 12
   traits:
   - reach 10 feet

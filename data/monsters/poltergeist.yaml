@@ -19,8 +19,6 @@ active_abilities:
     At the start of its next turn, the poltergeist becomes invisible again.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frighten
   range: null
@@ -59,8 +57,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Telekinetic Storm
   range: null
@@ -86,6 +82,50 @@ active_abilities:
   trigger: null
 alignment: LE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A poltergeist is naturally invisible. It becomes visible only when
+    it uses Frighten.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Natural Invisibility
+  range: null
+  raw_description: '**Natural Invisibility** A poltergeist is naturally invisible.
+    It becomes visible only when it uses Frighten.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a poltergeist is destroyed, it re-forms, fully healed, where it
+    was destroyed after 2d4 days. A poltergeist can be permanently destroyed only
+    if someone determines the reason for its existence and sets right whatever prevents
+    the spirit from resting.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Rejuvenation
+  range: null
+  raw_description: '**Rejuvenation** (__necromancy__, __occult__) When a poltergeist
+    is destroyed, it re-forms, fully healed, where it was destroyed after 2d4 days.
+    A poltergeist can be permanently destroyed only if someone determines the reason
+    for its existence and sets right whatever prevents the spirit from resting.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - necromancy
+  - occult
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -94,24 +134,12 @@ automatic_abilities:
     creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Natural Invisibility
+  name: Telekinetic Defense
   range: null
-  raw_description: '**Natural Invisibility** A poltergeist is naturally invisible.
-    It becomes visible only when it uses Frighten.
-
-
-    **Rejuvenation** (__necromancy__, __occult__) When a poltergeist is destroyed,
-    it re-forms, fully healed, where it was destroyed after 2d4 days. A poltergeist
-    can be permanently destroyed only if someone determines the reason for its existence
-    and sets right whatever prevents the spirit from resting.
-
-
-    **Telekinetic Defense** [Reaction] **Trigger** A creature approaches within 10
-    feet of the poltergeist. **Effect** The poltergeist makes a telekinetic object
-    Strike against the triggering creature.'
+  raw_description: '**Telekinetic Defense** [Reaction] **Trigger** A creature approaches
+    within 10 feet of the poltergeist. **Effect** The poltergeist makes a telekinetic
+    object Strike against the triggering creature.'
   requirements: null
   saving_throw: null
   stages: null
@@ -149,10 +177,9 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d12 bludgeoning, piercing, or slashing (depending on object)
+  - formula: 2d12
+    type: bludgeoning, piercing, or slashing (depending on object)
   name: telekinetic object
-  plus_damage: null
   to_hit: 13
   traits:
   - evocation
@@ -181,8 +208,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Site Bound
   range: null

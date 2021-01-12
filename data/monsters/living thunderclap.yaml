@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swiftness
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thunderbolt
   range: null
@@ -85,12 +81,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: bludgeoning
-  name: gust
-  plus_damage:
   - formula: null
     type: Push 5 feet
+  name: gust
   to_hit: 14
   traits:
   - agile
@@ -100,10 +95,9 @@ perception: 9
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d12 electricity
+  - formula: 2d12
+    type: electricity
   name: lightning bolt
-  plus_damage: null
   to_hit: 14
   traits:
   - electricity

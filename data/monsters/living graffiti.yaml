@@ -13,34 +13,43 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'When a creature attempts to Strike a living graffiti and critically
+  description: When a creature attempts to Strike a living graffiti and critically
     misses, the attacker hits the surface (a wall, canvas, or so on) behind the living
     graffiti. This may damage or break the weapon or surface.
-
-
-    **Surface-Bound** A living graffiti can move only along flat surfaces such as
-    floors and walls. If the surface it''s on is destroyed (such as a portrait hit
-    by a __fireball__ spell or a puddle being splashed), the graffiti takes 2d6 damage
-    and is shunted to the nearest flat surface. If there is no flat surface within
-    5 feet, the living graffiti is destroyed.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Backdrop
   range: null
   raw_description: '**Backdrop** When a creature attempts to Strike a living graffiti
     and critically misses, the attacker hits the surface (a wall, canvas, or so on)
-    behind the living graffiti. This may damage or break the weapon or surface.
-
-
-    **Surface-Bound** A living graffiti can move only along flat surfaces such as
-    floors and walls. If the surface it''s on is destroyed (such as a portrait hit
-    by a __fireball__ spell or a puddle being splashed), the graffiti takes 2d6 damage
-    and is shunted to the nearest flat surface. If there is no flat surface within
-    5 feet, the living graffiti is destroyed.'
+    behind the living graffiti. This may damage or break the weapon or surface.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living graffiti can move only along flat surfaces such as floors
+    and walls. If the surface it's on is destroyed (such as a portrait hit by a __fireball__
+    spell or a puddle being splashed), the graffiti takes 2d6 damage and is shunted
+    to the nearest flat surface. If there is no flat surface within 5 feet, the living
+    graffiti is destroyed.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Surface-Bound
+  range: null
+  raw_description: '**Surface-Bound** A living graffiti can move only along flat surfaces
+    such as floors and walls. If the surface it''s on is destroyed (such as a portrait
+    hit by a __fireball__ spell or a puddle being splashed), the graffiti takes 2d6
+    damage and is shunted to the nearest flat surface. If there is no flat surface
+    within 5 feet, the living graffiti is destroyed.'
   requirements: null
   saving_throw: null
   stages: null
@@ -79,10 +88,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+4
+  - formula: 2d4+4
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 13
   traits:
   - agile
@@ -92,12 +100,11 @@ perception: 9
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: ''
-  name: splatter
-  plus_damage:
   - formula: null
     type: blinded 1 round
+  name: splatter
   to_hit: 11
   traits:
   - nonlethal

@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mind Lash
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -58,17 +54,20 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, except the stupefied value increases by 2 instead
+    of by 1.
+  critical_success: The creature is unaffected, and is temporarily immune to Soul
+    Scream for 24 hours.
   description: null
   effect: The irnakurse unleashes an alien shriek of nightmarish horror and pain.
     All non-evil creatures within a 10-foot emanation must attempt a DC 28 Will save.
     The irnakurse can Sustain Soul Scream for up to 6 rounds; each time it does, it
     repeats the effect.
-  failure: null
+  failure: The creature is stupefied 1. Further failed saves against Soul Scream increase
+    the condition value by 1, to a maximum of stupefied 4. Each time the character
+    gets a full night's rest, the stupefied condition gained from Soul Scream decreases
+    by 1.
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Scream
   range: null
@@ -77,11 +76,28 @@ active_abilities:
     **Effect** The irnakurse unleashes an alien shriek of nightmarish horror and pain.
     All non-evil creatures within a 10-foot emanation must attempt a DC 28 Will save.
     The irnakurse can Sustain Soul Scream for up to 6 rounds; each time it does, it
-    repeats the effect.'
+    repeats the effect.
+
+
+    **Critical Success** The creature is unaffected, and is temporarily immune to
+    Soul Scream for 24 hours.
+
+
+    **Success **The creature is __stupefied 1__ for 1 round.
+
+
+    **Failure **The creature is stupefied 1. Further failed saves against Soul Scream
+    increase the condition value by 1, to a maximum of stupefied 4. Each time the
+    character gets a full night''s rest, the stupefied condition gained from Soul
+    Scream decreases by 1.
+
+
+    **Critical Failure **As failure, except the stupefied value increases by 2 instead
+    of by 1.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __stupefied 1__ for 1 round.
   traits:
   - auditory
   - concentrate
@@ -89,97 +105,6 @@ active_abilities:
   - enchantment
   - mental
   - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected, and is temporarily immune to Soul
-    Scream for 24 hours.
-  description: The creature is unaffected, and is temporarily immune to Soul Scream
-    for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected, and is temporarily
-    immune to Soul Scream for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __stupefied 1__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is __stupefied 1__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __stupefied 1__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is stupefied 1. Further failed saves against Soul Scream
-    increase the condition value by 1, to a maximum of stupefied 4. Each time the
-    character gets a full night's rest, the stupefied condition gained from Soul Scream
-    decreases by 1.
-  effect: null
-  failure: The creature is stupefied 1. Further failed saves against Soul Scream increase
-    the condition value by 1, to a maximum of stupefied 4. Each time the character
-    gets a full night's rest, the stupefied condition gained from Soul Scream decreases
-    by 1.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature is stupefied 1. Further failed saves
-    against Soul Scream increase the condition value by 1, to a maximum of stupefied
-    4. Each time the character gets a full night''s rest, the stupefied condition
-    gained from Soul Scream decreases by 1.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, except the stupefied value increases by 2 instead
-    of by 1.
-  critical_success: null
-  description: As failure, except the stupefied value increases by 2 instead of by
-    1.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, except the stupefied value increases
-    by 2 instead of by 1.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: Two Actions
   critical_failure: null
@@ -190,8 +115,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Storm of Tentacles
   range: null
@@ -218,8 +141,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -261,21 +182,19 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+11
+  - formula: 2d12+11
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 20
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+11
+  - formula: 2d8+11
     type: slashing
-  name: tentacle
-  plus_damage:
   - formula: null
     type: mind lash
+  name: tentacle
   to_hit: 20
   traits:
   - agile

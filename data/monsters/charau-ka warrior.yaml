@@ -17,8 +17,6 @@ active_abilities:
     and automatically critically fails Stealth checks, due to its loud wailing.
   failure: null
   frequency: once per hour
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shrieking Frenzy
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thrown Weapon Mastery
   range: null
@@ -84,20 +80,18 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: slashing
   name: hatchet
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -105,10 +99,9 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -118,10 +111,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: slashing
   name: hatchet
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -130,10 +122,9 @@ ranged_attacks:
   - thrown 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -142,10 +133,9 @@ ranged_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: bludgeoning
   name: thrown debris
-  plus_damage: null
   to_hit: 8
   traits:
   - deadly d6

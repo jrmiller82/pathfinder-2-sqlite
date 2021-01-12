@@ -16,8 +16,6 @@ active_abilities:
     that was hit.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reactive Chomp
   range: null
@@ -44,8 +42,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Head Regrowth
   range: null
@@ -70,8 +66,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -115,29 +109,26 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+8
+  - formula: 2d12+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 18
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 18
   traits:
   - agile
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 18
   traits:
   - reach 10 feet
@@ -146,10 +137,9 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 13
   traits:
   - thrown 10 feet

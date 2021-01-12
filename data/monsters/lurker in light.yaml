@@ -16,8 +16,6 @@ active_abilities:
     light or darkness, or until it uses a hostile action.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blend with Light
   range: null
@@ -30,104 +28,48 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The lurker in light uses a move action; Requirements The lurker in light
-    is in an area of bright light;
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A creature that takes damage from a lurker in light's mote of light
-    must attempt a DC 22 Will save.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Lurker's Glow
-  range: null
-  raw_description: '**Lurker''s Glow** (__evocation__, __light__, __primal__) A creature
-    that takes damage from a lurker in light''s mote of light must attempt a DC 22
-    Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - evocation
-  - light
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected and is temporarily immune to lurker's glow
-    for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected and is temporarily immune
-    to lurker''s glow for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected and is temporarily immune to lurker's glow for
-    24 hours.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is lined in golden light for 1 minute and can't be __concealed__
-    during this time. If the creature becomes __invisible__, it is concealed rather
-    than being __undetected__.
-  effect: null
-  failure: The creature is lined in golden light for 1 minute and can't be __concealed__
-    during this time. If the creature becomes __invisible__, it is concealed rather
-    than being __undetected__.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is lined in golden light for 1 minute
-    and can''t be __concealed__ during this time. If the creature becomes __invisible__,
-    it is concealed rather than being __undetected__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
+  trigger: The lurker in light uses a __move__ action
 - action_cost: None
   critical_failure: As failure, but the creature sheds bright light in a 20-foot emanation
     for the duration of the effect. In addition, the creature is __dazzled__ on its
     first turn after failing this save.
   critical_success: null
-  description: As failure, but the creature sheds bright light in a 20-foot emanation
-    for the duration of the effect. In addition, the creature is __dazzled__ on its
-    first turn after failing this save.
+  description: A creature that takes damage from a lurker in light's mote of light
+    must attempt a DC 22 Will save.
   effect: null
-  failure: null
+  failure: The creature is lined in golden light for 1 minute and can't be __concealed__
+    during this time. If the creature becomes __invisible__, it is concealed rather
+    than being __undetected__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Critical Failure
+  name: Lurker's Glow
   range: null
-  raw_description: '**Critical Failure** As failure, but the creature sheds bright
-    light in a 20-foot emanation for the duration of the effect. In addition, the
-    creature is __dazzled__ on its first turn after failing this save.'
+  raw_description: '**Lurker''s Glow** (__evocation__, __light__, __primal__) A creature
+    that takes damage from a lurker in light''s mote of light must attempt a DC 22
+    Will save.
+
+
+    **Success** The creature is unaffected and is temporarily immune to lurker''s
+    glow for 24 hours.
+
+
+    **Failure** The creature is lined in golden light for 1 minute and can''t be __concealed__
+    during this time. If the creature becomes __invisible__, it is concealed rather
+    than being __undetected__.
+
+
+    **Critical Failure** As failure, but the creature sheds bright light in a 20-foot
+    emanation for the duration of the effect. In addition, the creature is __dazzled__
+    on its first turn after failing this save.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
-  traits: null
+  success: The creature is unaffected and is temporarily immune to lurker's glow for
+    24 hours.
+  traits:
+  - evocation
+  - light
+  - primal
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -140,8 +82,6 @@ active_abilities:
     of 1 minute.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ritual Gate
   range: null
@@ -154,7 +94,7 @@ active_abilities:
     lurker in light can sustain the summon fey spell for up to 1 hour instead of 1
     minute.'
   requirements: The lurker in light has reduced a living creature to 0 Hit Points
-    on this turn or its previous turn and has a summon fey innate spell available
+    on this turn or its previous turn and has a __summon fey__ innate spell available
   saving_throw: null
   stages: null
   success: null
@@ -170,8 +110,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -217,10 +155,9 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+2
+  - formula: 2d6+2
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
@@ -230,12 +167,11 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+2
+  - formula: 2d4+2
     type: force
-  name: mote of light
-  plus_damage:
   - formula: null
     type: lurker's glow
+  name: mote of light
   to_hit: 14
   traits:
   - agile

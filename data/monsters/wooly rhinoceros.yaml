@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rhinoceros Charge
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -64,8 +60,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cold Adaptation
   range: null
@@ -84,8 +78,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -111,19 +103,17 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+6
+  - formula: 2d12+6
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 16
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 16
   traits: null
 name: Wooly Rhinoceros

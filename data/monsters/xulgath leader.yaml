@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Weakening Strike
   range: null
@@ -44,8 +42,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet
@@ -86,31 +82,28 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: slashing
-  name: greataxe
-  plus_damage:
   - formula: null
     type: Weakening Strike
+  name: greataxe
   to_hit: 11
   traits:
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Weakening Strike
+  name: jaws
   to_hit: 11
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
@@ -119,10 +112,9 @@ perception: 9
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 8
   traits:
   - thrown 30 feet

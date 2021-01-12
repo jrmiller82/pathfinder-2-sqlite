@@ -17,8 +17,6 @@ active_abilities:
     41 Will save or lose any electricity resistance it has until this curse is lifted.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lightning-Struck Curse
   range: null
@@ -36,7 +34,7 @@ active_abilities:
   - curse
   - necromancy
   - primal
-  trigger: The sard is about to damage a creature that has electricity resistance;
+  trigger: The sard is about to damage a creature that has electricity resistance
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Sard Venom
   range: null
@@ -76,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thorn Volley
   range: null
@@ -97,8 +91,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -121,8 +113,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Splintering Death
   range: null
@@ -162,36 +152,33 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d6+18
+  - formula: 4d6+18
     type: bludgeoning
+  - formula: 3d6
+    type: persistent electricity
   name: trunk
-  plus_damage:
-  - formula: null
-    type: 3d6 persistent electricity
   to_hit: 37
   traits:
   - fatal d12
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+18
+  - formula: 4d8+18
     type: piercing
-  name: branch
-  plus_damage:
   - formula: null
     type: sard venom
+  name: branch
   to_hit: 37
   traits:
   - agile
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 4d6+18
+  - formula: 4d6+18
     type: bludgeoning
+  - formula: 1d6
+    type: electricity
   name: root
-  plus_damage:
-  - formula: null
-    type: 1d6 electricity
   to_hit: 37
   traits:
   - reach 10 feet
@@ -200,12 +187,11 @@ perception: 35
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d4+16
+  - formula: 4d4+16
     type: piercing
-  name: thorn
-  plus_damage:
   - formula: null
     type: sard venom
+  name: thorn
   to_hit: 35
   traits:
   - deadly d10
@@ -236,8 +222,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Planar Acclimation
   range: null

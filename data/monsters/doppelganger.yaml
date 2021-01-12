@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -49,8 +47,6 @@ automatic_abilities:
     that creature is flat-footed against this attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: End the Charade
   range: null
@@ -133,10 +129,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+5
+  - formula: 2d6+5
     type: slashing
   name: Claw
-  plus_damage: null
   to_hit: 10
   traits:
   - agile

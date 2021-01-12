@@ -24,8 +24,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -56,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -78,8 +74,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slashing Claws
   range: null
@@ -100,8 +94,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Tor Linnorm Venom
   range: null
@@ -121,15 +113,16 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: Tail only.
+  description: When a creature slays a tor linnorm, it must succeed at a DC 48 Will
+    save or permanently gain weakness to fire 20 and slowed 1 from the agonizing pain
+    it now endures at all times. As long as a character continues to suffer this curse,
+    its slowed condition can never be reduced below slowed 1.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Curse of Boiling Blood
   range: null
@@ -137,20 +130,63 @@ automatic_abilities:
     a creature slays a tor linnorm, it must succeed at a DC 48 Will save or permanently
     gain weakness to fire 20 and slowed 1 from the agonizing pain it now endures at
     all times. As long as a character continues to suffer this curse, its slowed condition
-    can never be reduced below slowed 1.
-
-
-    **Lava Affinity** A tor linnorm can breathe and swim freely while submerged in
-    lava and magma.
-
-
-    **Attack of Opportunity** [Reaction] Tail only.'
+    can never be reduced below slowed 1.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - fire
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A tor linnorm can breathe and swim freely while submerged in lava and
+    magma.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Lava Affinity
+  range: null
+  raw_description: '**Lava Affinity** A tor linnorm can breathe and swim freely while
+    submerged in lava and magma.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: Tail only.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Tor linnorms dwell in the tallest volcanic mountains, either within
   natural formed caverns or within molten craters. A tor linnorm''s temper can be
   as hot and destructive as the magma the creature resembles.
@@ -174,22 +210,20 @@ level: 21
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+19
+  - formula: 4d12+19
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: tor linnorm venom
+  name: jaws
   to_hit: 40
   traits:
   - reach 30 feet
   - magical
 - action_cost: One Action
   damage:
-    formula: 4d8+19
+  - formula: 4d8+19
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 40
   traits:
   - reach 30 feet
@@ -197,12 +231,11 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 4d6+19
+  - formula: 4d6+19
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tail
   to_hit: 40
   traits:
   - reach 30 feet

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hidden Movement
   range: null
@@ -60,8 +56,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Strangling Fingers
   range: null
@@ -96,8 +90,6 @@ automatic_abilities:
     restraining the attacker.'
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Yank
   range: null
@@ -121,7 +113,7 @@ automatic_abilities:
   success: null
   traits:
   - manipulate
-  trigger: An enemy targets the choker with an attack;
+  trigger: An enemy targets the choker with an attack
 description: 'With long, cartilaginous limbs and gray skin, chokers easily hide in
   stony alcoves, rocky fissures, and darkened staircases to ambush their prey. The
   strange little aberrations prefer to pick off weak and solitary creatures, especially
@@ -162,12 +154,11 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: bludgeoning
-  name: arm
-  plus_damage:
   - formula: null
     type: strangling fingers
+  name: arm
   to_hit: 11
   traits:
   - reach 10 feet

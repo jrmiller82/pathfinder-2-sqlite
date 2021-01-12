@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hidden Movement
   range: null
@@ -53,10 +51,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+2
+  - formula: 1d4+2
     type: piercing
   name: light pick
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
@@ -66,10 +63,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: bludgeoning
   name: sling
-  plus_damage: null
   to_hit: 9
   traits:
   - propulsive

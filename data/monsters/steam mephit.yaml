@@ -17,8 +17,6 @@ active_abilities:
     save), and small unattended flames (such as torches) are extinguished.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Boiling Rain
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -90,10 +86,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
@@ -119,8 +114,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Steam Vision
   range: null

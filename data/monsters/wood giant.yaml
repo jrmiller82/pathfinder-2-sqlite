@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Piercing Shot
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -68,8 +64,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -125,10 +119,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+11
+  - formula: 1d8+11
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
@@ -136,10 +129,9 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6+11
+  - formula: 1d6+11
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
@@ -149,10 +141,9 @@ perception: 15
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+8
+  - formula: 1d8+8
     type: piercing
   name: composite longbow
-  plus_damage: null
   to_hit: 18
   traits:
   - deadly d10
@@ -161,10 +152,9 @@ ranged_attacks:
   - volley 30 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+11
+  - formula: 2d6+11
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 17
   traits:
   - brutal

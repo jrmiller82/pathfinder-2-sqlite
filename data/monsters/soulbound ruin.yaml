@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Collapse Ceiling
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pervasive Attacks
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Self-Repair
   range: null
@@ -89,6 +83,29 @@ active_abilities:
   trigger: null
 alignment: NE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a soulbound ruin fails a saving throw against a spell that would
+    banish tormented spirits or manipulate souls, such as __banishment__ or __bind
+    soul__, instead of experiencing the listed effects, it takes 10 damage per spell
+    level.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vulnerability to Exorcism
+  range: null
+  raw_description: '**Vulnerability to Exorcism** When a soulbound ruin fails a saving
+    throw against a spell that would banish tormented spirits or manipulate souls,
+    such as __banishment__ or __bind soul__, instead of experiencing the listed effects,
+    it takes 10 damage per spell level.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -98,22 +115,14 @@ automatic_abilities:
     at a DC 35 Reflex save or fall __prone__.
   failure: null
   frequency: once per turn
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Vulnerability to Exorcism
+  name: Impede
   range: null
-  raw_description: '**Vulnerability to Exorcism** When a soulbound ruin fails a saving
-    throw against a spell that would banish tormented spirits or manipulate souls,
-    such as __banishment__ or __bind soul__, instead of experiencing the listed effects,
-    it takes 10 damage per spell level.
-
-
-    **Impede** [Reaction] **Frequency** once per turn; **Trigger** A creature within
-    the soulbound ruin uses an action with the move trait. **Effect** The soulbound
-    ruin reacts violently to stop the creature''s movement, shooting spikes, throwing
-    bricks, or otherwise impeding the target. The target must succeed at a DC 35 Reflex
-    save or fall __prone__.'
+  raw_description: '**Impede** [Reaction] **Frequency** once per turn; **Trigger**
+    A creature within the soulbound ruin uses an action with the move trait. **Effect**
+    The soulbound ruin reacts violently to stop the creature''s movement, shooting
+    spikes, throwing bricks, or otherwise impeding the target. The target must succeed
+    at a DC 35 Reflex save or fall __prone__.'
   requirements: null
   saving_throw: null
   stages: null
@@ -159,10 +168,9 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+9
+  - formula: 4d10+9
     type: bludgeoning
   name: edifice
-  plus_damage: null
   to_hit: 30
   traits: null
 name: Soulbound Ruin

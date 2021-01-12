@@ -19,8 +19,6 @@ active_abilities:
     4, rolling once for the selected effects.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dispelling Field
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flaming Armaments
   range: null
@@ -74,8 +70,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aura of Vitality
   range: 20 feet
@@ -126,14 +120,13 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: slashing
+  - formula: 1d6
+    type: fire
+  - formula: 1d6
+    type: good
   name: flaming bastard sword
-  plus_damage:
-  - formula: null
-    type: 1d6 fire
-  - formula: null
-    type: 1d6 good
   to_hit: 23
   traits:
   - good

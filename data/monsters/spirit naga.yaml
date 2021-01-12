@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Spirit Naga Venom
   range: null
@@ -75,12 +73,11 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: spirit naga venom
+  name: fangs
   to_hit: 19
   traits:
   - agile
@@ -106,8 +103,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Coven
   range: null

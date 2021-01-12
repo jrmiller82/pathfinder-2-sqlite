@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eight Coils
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mask Settlement
   range: null
@@ -127,21 +121,19 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+9
+  - formula: 2d12+9
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 20
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tail
   to_hit: 20
   traits:
   - reach 15 feet

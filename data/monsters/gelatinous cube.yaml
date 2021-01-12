@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Paralysis
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Weak Acid
   range: null
@@ -99,12 +93,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 acid
-  name: cube face
-  plus_damage:
+  - formula: 1d6
+    type: acid
   - formula: null
     type: paralysis
+  name: cube face
   to_hit: 11
   traits: null
 name: Gelatinous Cube
@@ -126,30 +119,40 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A gelatinous cube can sense nearby motion through vibration and air
+  description: A gelatinous cube can sense nearby motion through vibration and air
     movement.
-
-
-    **Transparent** A gelatinous cube is so clear that it''s difficult to spot. A
-    successful DC 23 Perception check is required to notice a stationary cube, and
-    a creature must be Searching to attempt this check. A creature that walks into
-    the cube is automatically Engulfed (this usually causes the GM to call for initiative).'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null
   raw_description: '**Motion Sense** A gelatinous cube can sense nearby motion through
-    vibration and air movement.
-
-
-    **Transparent** A gelatinous cube is so clear that it''s difficult to spot. A
-    successful DC 23 Perception check is required to notice a stationary cube, and
-    a creature must be Searching to attempt this check. A creature that walks into
-    the cube is automatically Engulfed (this usually causes the GM to call for initiative).'
+    vibration and air movement.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A gelatinous cube is so clear that it's difficult to spot. A successful
+    DC 23 Perception check is required to notice a stationary cube, and a creature
+    must be Searching to attempt this check. A creature that walks into the cube is
+    automatically Engulfed (this usually causes the GM to call for initiative).
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Transparent
+  range: null
+  raw_description: '**Transparent** A gelatinous cube is so clear that it''s difficult
+    to spot. A successful DC 23 Perception check is required to notice a stationary
+    cube, and a creature must be Searching to attempt this check. A creature that
+    walks into the cube is automatically Engulfed (this usually causes the GM to call
+    for initiative).'
   requirements: null
   saving_throw: null
   stages: null

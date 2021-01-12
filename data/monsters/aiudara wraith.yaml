@@ -18,8 +18,6 @@ active_abilities:
   failure: The creature is teleported 20 feet in a direction of the aiudara wraith's
     choice.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dimensional Shunt
   range: null
@@ -61,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -90,8 +86,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Instantaneous Movement
   range: null
@@ -120,8 +114,6 @@ automatic_abilities:
     arrives beside.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Teleportation Attachment
   range: null
@@ -138,7 +130,7 @@ automatic_abilities:
   traits:
   - conjuration
   - teleportation
-  trigger: A creature within 60 feet uses a teleportation effect;
+  trigger: A creature within 60 feet uses a teleportation effect
 description: 'Dahak''s influence in Alseta''s Landing created a soul-draining effect
   that slays unprotected creatures within, transforming them into ghostly creatures
   known as aiudara wraiths, but these rare undead can rise within modern aiudara portals
@@ -175,14 +167,13 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+16
+  - formula: 4d10+16
     type: force
-  name: spectral hand
-  plus_damage:
   - formula: null
     type: dimensional shunt
   - formula: null
     type: drain life
+  name: spectral hand
   to_hit: 35
   traits:
   - agile

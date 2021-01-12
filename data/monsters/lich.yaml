@@ -18,8 +18,6 @@ active_abilities:
     the lich to use this ability.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Phylactery
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Paralyzing Touch
   range: null
@@ -74,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Steady Spellcasting
   range: null
@@ -96,16 +90,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: The lich expends a prepared spell to counter the triggering creature's casting
-    of that same spell. The lich loses its spell slot as if it had cast the triggering
-    spell. The lich then attempts to counteract the triggering spell.
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 60 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -122,7 +112,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 29
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -130,6 +120,29 @@ automatic_abilities:
   - emotion
   - fear
   - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The lich expends a prepared spell to counter the triggering creature's casting
+    of that same spell. The lich loses its spell slot as if it had cast the triggering
+    spell. The lich then attempts to counteract the triggering spell.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Counterspell
+  range: null
+  raw_description: '**Counterspell** [Reaction] **Trigger** A creature casts a spell
+    the lich has prepared. **Effect** The lich expends a prepared spell to counter
+    the triggering creature''s casting of that same spell. The lich loses its spell
+    slot as if it had cast the triggering spell. The lich then attempts to counteract
+    the triggering spell.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: A creature casts a spell the lich has prepared.
 description: 'A wizard whose insatiable desire for arcane power eclipsed their mortal
   life, the lich is a truly devious and versatile spellcaster.
@@ -163,12 +176,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 4d8 negative
-  name: hand
-  plus_damage:
+  - formula: 4d8
+    type: negative
   - formula: null
     type: paralyzing touch
+  name: hand
   to_hit: 24
   traits:
   - finesse

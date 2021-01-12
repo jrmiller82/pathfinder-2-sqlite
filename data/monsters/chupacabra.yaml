@@ -19,8 +19,6 @@ active_abilities:
     1__ until it receives healing (of any kind or amount).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Chupar
   range: null
@@ -30,7 +28,7 @@ active_abilities:
     extra action only for Strike and Stride actions. A chupacabra can''t use Chupar
     again while it is quickened in this way. A creature that has its blood drained
     by a chupacabra is __drained 1__ until it receives healing (of any kind or amount).'
-  requirements: The chupacabra has a creature grabbed
+  requirements: The chupacabra has a creature __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pounce
   range: null
@@ -111,21 +107,19 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+5
+  - formula: 1d10+5
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 11
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d6+5
+  - formula: 1d6+5
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 11
   traits:
   - agile

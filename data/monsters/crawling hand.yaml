@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grip Throat
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mark Quarry
   range: null
@@ -84,12 +80,11 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 7
   traits:
   - agile

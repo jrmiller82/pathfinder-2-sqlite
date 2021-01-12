@@ -9,7 +9,8 @@ ac: 26
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
+  critical_failure: The creature is __blinded__ for 1 round and then dazzled for an
+    additional 4 rounds.
   critical_success: null
   description: The glass golem creates waves of scintillating luminosity that cast
     bright light in a 60-foot emanation (and dim light for the next 60 feet). The
@@ -17,10 +18,8 @@ active_abilities:
     golem can't use Dazzling Brilliance for 1d4 rounds. A creature within the bright
     light or that enters the bright light must attempt a DC 23 Will save.
   effect: null
-  failure: null
+  failure: The creature is __dazzled__ for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dazzling Brilliance
   range: null
@@ -29,75 +28,25 @@ active_abilities:
     bright light in a 60-foot emanation (and dim light for the next 60 feet). The
     light lasts until the start of the glass golem''s next turn, after which the glass
     golem can''t use Dazzling Brilliance for 1d4 rounds. A creature within the bright
-    light or that enters the bright light must attempt a DC 23 Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - evocation
-  - light
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
+    light or that enters the bright light must attempt a DC 23 Will save.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __dazzled__ for 1 round.
+
+
+    **Critical Failure** The creature is __blinded__ for 1 round and then dazzled
+    for an additional 4 rounds.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __dazzled__ for 1 round.
-  effect: null
-  failure: The creature is __dazzled__ for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __dazzled__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is __blinded__ for 1 round and then dazzled for an
-    additional 4 rounds.
-  critical_success: null
-  description: The creature is __blinded__ for 1 round and then dazzled for an additional
-    4 rounds.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is __blinded__ for 1 round and
-    then dazzled for an additional 4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - evocation
+  - light
+  - visual
   trigger: null
 alignment: N
 automatic_abilities:
@@ -109,8 +58,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Golem Antimagic
   range: null
@@ -130,8 +77,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Shatter
   range: null
@@ -153,8 +98,6 @@ automatic_abilities:
     effect is turned back on the caster.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spell Reflection
   range: null
@@ -171,7 +114,7 @@ automatic_abilities:
   traits:
   - abjuration
   - arcane
-  trigger: The glass golem is targeted by a spell;
+  trigger: The glass golem is targeted by a spell
 description: 'Crafted of hardened glass and held together by magically treated lead,
   glass golems are both deadly guardians and works of exquisite art. Glass golems
   most often protect grand cathedrals or opulent palaces—testaments to the wealth
@@ -214,12 +157,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
+  - formula: 1d6
+    type: bleed
   name: bladed limb
-  plus_damage:
-  - formula: null
-    type: 1d6 bleed
   to_hit: 20
   traits:
   - agile

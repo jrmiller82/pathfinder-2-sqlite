@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draining Strike
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Gaze
   range: null
@@ -78,8 +74,6 @@ active_abilities:
     15__ for 1 minute.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Crush
   range: null
@@ -104,8 +98,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Gaze
   range: 30 feet
@@ -154,16 +146,15 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+14
+  - formula: 3d8+14
     type: bludgeoning
-  name: bo staff
-  plus_damage:
-  - formula: null
-    type: 1d6 negative
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: negative
+  - formula: 1d6
+    type: evil
   - formula: null
     type: draining strike
+  name: bo staff
   to_hit: 28
   traits:
   - evil
@@ -173,14 +164,13 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 3d6+14
+  - formula: 3d6+14
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: draining strike
+  name: claw
   to_hit: 27
   traits:
   - agile

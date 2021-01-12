@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blade of Justice
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -68,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Holy Armaments
   range: null
@@ -94,8 +88,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aura of Righteousness
   range: 20 feet
@@ -137,12 +129,11 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+16
+  - formula: 3d12+16
     type: slashing
+  - formula: 1d6
+    type: good
   name: holy greatsword
-  plus_damage:
-  - formula: null
-    type: 1d6 good
   to_hit: 32
   traits:
   - good

@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ramming Speed
   range: null
@@ -52,18 +50,16 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: bludgeoning
   name: snout
-  plus_damage: null
   to_hit: 6
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 6
   traits: null
 name: Bottlenose Dolphin
@@ -86,8 +82,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aquatic Echolocation
   range: null
@@ -106,8 +100,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null

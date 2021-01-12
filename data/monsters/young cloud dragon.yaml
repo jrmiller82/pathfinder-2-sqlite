@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cloud Walk
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -83,8 +77,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -107,8 +99,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -148,8 +138,6 @@ automatic_abilities:
     triggering attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deflecting Cloud
   range: null
@@ -165,8 +153,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The dragon is the target of a ranged attack; Requirements The dragon is
-    aware of the attack and has a free wing;
+  trigger: The dragon is the target of a ranged attack
 description: 'At heart, cloud dragons are wanderers, explorers, and travelers who
   enjoy nothing more than seeing new lands and meeting unusual creatures. Cloud dragons
   range in color from light blue to a pale, milky white and have thick, curling horns
@@ -222,40 +209,36 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: piercing
+  - formula: 1d12
+    type: electricity
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d12 electricity
   to_hit: 23
   traits:
   - electricity
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 21
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 1d12+11
+  - formula: 1d12+11
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 21
   traits:
   - deadly d8
@@ -281,8 +264,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mist Vision
   range: null

@@ -16,8 +16,6 @@ active_abilities:
     against the creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deadly Mandibles
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lunging Strike
   range: null
@@ -59,8 +55,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sudden Strike
   range: null
@@ -87,22 +81,20 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+5
+  - formula: 1d10+5
     type: piercing
-  name: leg
-  plus_damage:
   - formula: null
     type: Grab
+  name: leg
   to_hit: 12
   traits:
   - agile
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d12+5
+  - formula: 1d12+5
     type: piercing
   name: mandibles
-  plus_damage: null
   to_hit: 12
   traits: null
 name: Giant Mantis

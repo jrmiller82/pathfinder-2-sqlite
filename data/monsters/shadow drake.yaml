@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Breath
   range: null
@@ -70,8 +66,6 @@ active_abilities:
   effect: The shadow drake Strides or __Flies__ twice.
   failure: null
   frequency: three times per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Speed Surge
   range: null
@@ -108,19 +102,17 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+3
+  - formula: 1d10+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 11
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
@@ -144,8 +136,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Blindness
   range: null
@@ -165,8 +155,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Blend
   range: null
@@ -188,8 +176,6 @@ sense_abilities:
     __Hidden__ for the triggering attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Evade
   range: null
@@ -203,7 +189,7 @@ sense_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature attacks the shadow drake while it is in an area of dim light;
+  trigger: A creature attacks the shadow drake while it is in an area of dim light
 senses:
 - darkvision
 - scent (imprecise) 30 feet

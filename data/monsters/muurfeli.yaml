@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -43,8 +41,8 @@ active_abilities:
 alignment: CN
 automatic_abilities:
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is sickened 2 and __fatigued__.
+  critical_success: The creature is unaffected.
   description: . Swirling winds of noxious, flammable gas surround a muurfeli. An
     open flame, spark, or similar fire effect in the area causes an explosion that
     deals 20d6 fire damage to all creatures in the aura (including the muurfeli) and
@@ -53,10 +51,8 @@ automatic_abilities:
     their firedamp winds aura is disabled for 1 minute. A creature that enters or
     begins its turn in the aura must attempt a Fortitude save.
   effect: null
-  failure: null
+  failure: The creature is sickened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Firedamp Winds
   range: 30 feet
@@ -67,90 +63,26 @@ automatic_abilities:
     the aura for 1 minute. When the muurfeli takes damage from an ability with the
     __water__ trait or fails a saving throw against a water effect, their firedamp
     winds aura is disabled for 1 minute. A creature that enters or begins its turn
-    in the aura must attempt a Fortitude save.'
+    in the aura must attempt a Fortitude save.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __sickened 1__.
+
+
+    **Failure** The creature is sickened 2.
+
+
+    **Critical Failure** The creature is sickened 2 and __fatigued__.'
   requirements: null
   saving_throw: DC 33
   stages: null
-  success: null
+  success: The creature is __sickened 1__.
   traits:
   - air
   - aura
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __sickened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is sickened 2.
-  effect: null
-  failure: The creature is sickened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is sickened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is sickened 2 and __fatigued__.
-  critical_success: null
-  description: The creature is sickened 2 and __fatigued__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is sickened 2 and __fatigued__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 description: 'Whereas typical __djinn__ can cleanse or clear areas with their arcane
   winds, the air magic of muurfeli is tainted by the Black Desert''s noxious radiation
@@ -171,12 +103,11 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+15
+  - formula: 3d10+15
     type: bludgeoning
+  - formula: 2d6
+    type: poison
   name: fist
-  plus_damage:
-  - formula: null
-    type: 2d6 poison
   to_hit: 29
   traits:
   - agile
@@ -186,12 +117,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d6+17
+  - formula: 3d6+17
     type: slashing
+  - formula: 2d6
+    type: poison
   name: scimitar
-  plus_damage:
-  - formula: null
-    type: 2d6 poison
   to_hit: 31
   traits:
   - forceful
@@ -203,12 +133,11 @@ perception: 30
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: bludgeoning
-  name: fetid winds
-  plus_damage:
   - formula: 2d8+5
     type: poison
+  name: fetid winds
   to_hit: 31
   traits:
   - air

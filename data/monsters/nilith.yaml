@@ -19,8 +19,6 @@ active_abilities:
     against that effect.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mind Crush
   range: null
@@ -88,12 +86,11 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 23
   traits:
   - agile
@@ -101,10 +98,9 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d12+9
+  - formula: 2d12+9
     type: piercing
   name: fangs
-  plus_damage: null
   to_hit: 23
   traits:
   - finesse

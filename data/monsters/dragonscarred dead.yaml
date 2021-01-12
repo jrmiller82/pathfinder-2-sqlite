@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath-Seared Sword
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: The creature is stunned for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Glare of Rage
   range: null
@@ -84,8 +80,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 60 feet
@@ -154,12 +148,11 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+9
+  - formula: 1d12+9
     type: slashing
+  - formula: 2d6
+    type: negative
   name: breath-seared greatsword
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 27
   traits:
   - magical
@@ -187,8 +180,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Guardian Sense
   range: null

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Leaping Charge
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pack Attack
   range: null
@@ -75,19 +71,17 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 8
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: slashing
   name: talon
-  plus_damage: null
   to_hit: 8
   traits:
   - agile

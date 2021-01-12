@@ -12,7 +12,7 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Requirement **The belker occupies the same space as a Medium or
-    smaller creature;'
+    smaller creature'
   effect: The belker attempts to flow into the creature's lungs; the creature must
     attempt a DC 23 Fortitude save. On a failure, the creature partially inhales the
     belker and is __immobilized__ by the pain of the smoke rasping in its throat and
@@ -23,8 +23,6 @@ active_abilities:
     it.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Noxious Fumes
   range: null
@@ -46,13 +44,11 @@ active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: '**Requirement **The belker is partially inhaled by a creature;'
+  description: '**Requirement **The belker is partially inhaled by a creature'
   effect: The belker automatically deals its claw damage to the inhaling creature
     by forming a claw to slash and scrape the creature from within.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Slash
   range: null
@@ -75,8 +71,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Form
   range: null
@@ -109,20 +103,18 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+5
+  - formula: 2d10+5
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
   - finesse
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: bludgeoning
   name: wing
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
@@ -147,8 +139,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

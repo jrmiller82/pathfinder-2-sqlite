@@ -17,8 +17,6 @@ active_abilities:
     1__ until it receives any kind or amount of healing.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Drain
   range: null
@@ -27,7 +25,7 @@ active_abilities:
     blood from the creature it has grabbed. This deals 2d4 damage. A creature that
     has its blood drained by a giant leech is __drained 1__ until it receives any
     kind or amount of healing.'
-  requirements: The giant leech has a creature grabbed or restrained
+  requirements: The giant leech has a creature __grabbed__ or __restrained__
   saving_throw: null
   stages: null
   success: null
@@ -51,12 +49,11 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: piercing
-  name: mouth
-  plus_damage:
   - formula: null
     type: Grab
+  name: mouth
   to_hit: 10
   traits: null
 name: Giant Leech

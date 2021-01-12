@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Archon's Door
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -79,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Diligent Assault
   range: null
@@ -103,8 +97,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retributive Strike
   range: null
@@ -141,12 +133,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+6
+  - formula: 1d12+6
     type: slashing
+  - formula: 1d6
+    type: good
   name: greatsword
-  plus_damage:
-  - formula: null
-    type: 1d6 good
   to_hit: 14
   traits:
   - good
@@ -154,12 +145,11 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: piercing
+  - formula: 1d6
+    type: good
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 good
   to_hit: 14
   traits:
   - agile

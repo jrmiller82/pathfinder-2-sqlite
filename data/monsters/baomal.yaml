@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath of the Sea
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shell Rake
   range: null
@@ -79,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Two-Headed Strike
   range: null
@@ -96,53 +90,115 @@ active_abilities:
   trigger: null
 alignment: CN
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Double Opportunity** A baomal gains an extra reaction each round
-    that it can use only to make an Attack of Opportunity. It must use a different
-    head for each one it attempts, and it can''t make more than one Attack of Opportunity
-    for the same triggering action.
-
-
-    **Psychic Static Aura** (__aura__, __divination__, __mental__, __occult__) 120
-    feet. All creatures, except aberrations, that begin their turn in the area take
-    5d6 mental damage.
-
-
-    **Two Heads** Any ability that would sever a baomal''s head (such as a critical
-    hit with a __vorpal__ weapon) severs one head at random. Losing one head doesn''t
-    kill a baomal, but it does prevent the baomal from making Strikes with the lost
-    head and from using Double Opportunity or Two-Headed Strike.'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: All-Around Vision
   range: null
-  raw_description: '**All-Around Vision**
-
-
-    **Attack of Opportunity** [Reaction]
-
-
-    **Double Opportunity** A baomal gains an extra reaction each round that it can
-    use only to make an Attack of Opportunity. It must use a different head for each
-    one it attempts, and it can''t make more than one Attack of Opportunity for the
-    same triggering action.
-
-
-    **Psychic Static Aura** (__aura__, __divination__, __mental__, __occult__) 120
-    feet. All creatures, except aberrations, that begin their turn in the area take
-    5d6 mental damage.
-
-
-    **Two Heads** Any ability that would sever a baomal''s head (such as a critical
-    hit with a __vorpal__ weapon) severs one head at random. Losing one head doesn''t
-    kill a baomal, but it does prevent the baomal from making Strikes with the lost
-    head and from using Double Opportunity or Two-Headed Strike.'
+  raw_description: '**All-Around Vision**'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A baomal gains an extra reaction each round that it can use only to
+    make an Attack of Opportunity. It must use a different head for each one it attempts,
+    and it can't make more than one Attack of Opportunity for the same triggering
+    action.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Double Opportunity
+  range: null
+  raw_description: '**Double Opportunity** A baomal gains an extra reaction each round
+    that it can use only to make an Attack of Opportunity. It must use a different
+    head for each one it attempts, and it can''t make more than one Attack of Opportunity
+    for the same triggering action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: All creatures, except aberrations, that begin their turn in the area
+    take 5d6 mental damage.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Psychic Static Aura
+  range: 120 feet
+  raw_description: '**Psychic Static Aura** (__aura__, __divination__, __mental__,
+    __occult__) 120 feet. All creatures, except aberrations, that begin their turn
+    in the area take 5d6 mental damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divination
+  - mental
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any ability that would sever a baomal's head (such as a critical hit
+    with a __vorpal__ weapon) severs one head at random. Losing one head doesn't kill
+    a baomal, but it does prevent the baomal from making Strikes with the lost head
+    and from using Double Opportunity or Two-Headed Strike.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Two Heads
+  range: null
+  raw_description: '**Two Heads** Any ability that would sever a baomal''s head (such
+    as a critical hit with a __vorpal__ weapon) severs one head at random. Losing
+    one head doesn''t kill a baomal, but it does prevent the baomal from making Strikes
+    with the lost head and from using Double Opportunity or Two-Headed Strike.'
   requirements: null
   saving_throw: null
   stages: null
@@ -169,12 +225,11 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+18
+  - formula: 4d12+18
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 38
   traits:
   - reach 20 feet
@@ -183,12 +238,11 @@ perception: 34
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+18
+  - formula: 4d10+18
     type: bludgeoning
-  name: tsunami jet
-  plus_damage:
   - formula: null
     type: Push 40 feet
+  name: tsunami jet
   to_hit: 38
   traits:
   - brutal

@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Belly Grease
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Entangling Slime
   range: null
@@ -110,10 +106,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
   name: tusks
-  plus_damage: null
   to_hit: 11
   traits:
   - deadly 1d10
@@ -122,10 +117,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: entangling slime
   name: slime squirt
-  plus_damage: null
   to_hit: 9
   traits:
   - range increment 30 feet

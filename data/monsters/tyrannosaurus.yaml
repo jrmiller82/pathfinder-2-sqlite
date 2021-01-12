@@ -20,8 +20,6 @@ active_abilities:
     Reflex save.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fling
   range: null
@@ -49,8 +47,6 @@ active_abilities:
     use swallow whole on the target unless it uses its jaws to Grab the victim first.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pin Prey
   range: null
@@ -74,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -95,8 +89,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -148,22 +140,20 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 22
   traits:
   - deadly 1d12
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 22
   traits:
   - reach 15 feet

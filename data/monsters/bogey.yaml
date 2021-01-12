@@ -19,8 +19,6 @@ active_abilities:
     into a bugaboo.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devour Soul
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Surprise Attack
   range: null
@@ -83,10 +79,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits:
   - agile

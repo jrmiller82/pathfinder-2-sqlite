@@ -12,14 +12,12 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Requirement** The ghonhatine is adjacent to the corpse of a creature
-    that died within the last hour;'
+    that died within the last hour'
   effect: The ghonhatine devours a chunk of the corpse. For 1 minute, the ghonhatine
     gains fast healing 5 and a +2 status bonus to damage rolls. It can gain these
     benefits from any given corpse only once.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Feed
   range: null
@@ -40,16 +38,10 @@ active_abilities:
   critical_success: null
   description: A ghonhatine's vomit carries an awful disease that, over time, can
     cause a suffering creature's flesh to develop painful boils that eventually slough
-    away, leaving gaping wounds; **Saving Throw** DC 28 Fortitude; **Stage 1** carrier
-    with no ill effect (1d4 hours); **Stage 2** __enfeebled 1__ and __drained 1__
-    (1 day); **Stage 3** enfeebled 2 and drained 2 (1 day); **Stage 4** enfeebled
-    2 and drained 3 (1 day); **Stage 5** drained 4, enfeebled 2, and __unconscious__
-    (1 day); **Stage 6** dead
+    away, leaving gaping wounds
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fleshgout
   range: null
@@ -61,8 +53,14 @@ active_abilities:
     2 (1 day); **Stage 4** enfeebled 2 and drained 3 (1 day); **Stage 5** drained
     4, enfeebled 2, and __unconscious__ (1 day); **Stage 6** dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 28 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1d4 hours)
+  - effect: __enfeebled 1__ and __drained 1__ (1 day)
+  - effect: enfeebled 2 and drained 2 (1 day)
+  - effect: enfeebled 2 and drained 3 (1 day)
+  - effect: drained 4, enfeebled 2, and __unconscious__ (1 day)
+  - effect: dead
   success: null
   traits:
   - disease
@@ -81,8 +79,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet
@@ -119,21 +115,19 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: piercing
+  - formula: 1d6
+    type: persistent acid
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent acid
   to_hit: 23
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
@@ -143,12 +137,11 @@ perception: 19
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 5d6 acid
-  name: vomit
-  plus_damage:
+  - formula: 5d6
+    type: acid
   - formula: null
     type: fleshgout
+  name: vomit
   to_hit: 19
   traits:
   - acid

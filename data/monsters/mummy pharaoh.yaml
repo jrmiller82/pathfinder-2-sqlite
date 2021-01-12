@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Channel Rot
   range: null
@@ -36,14 +34,10 @@ active_abilities:
   critical_success: null
   description: This disease and any damage from it can't be healed until this curse
     is removed. A creature killed by insidious mummy rot turns to sand and can't be
-    resurrected except by a 7th-level __resurrect__ ritual or similar magic. **Saving
-    Throw** DC 26 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage
-    2** 8d6 negative damage and __stupefied 2__ (1 day)
+    resurrected except by a 7th-level __resurrect__ ritual or similar magic.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Insidious Mummy Rot
   range: null
@@ -54,8 +48,10 @@ active_abilities:
     DC 26 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
     8d6 negative damage and __stupefied 2__ (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 26 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1 minute)
+  - effect: 8d6 negative damage and __stupefied 2__ (1 day)
   success: null
   traits:
   - curse
@@ -72,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sandstorm Wrath
   range: null
@@ -93,6 +87,91 @@ active_abilities:
   trigger: null
 alignment: LE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Living creatures are frightened 1 while in a mummy guardian's despair
+    aura. They can't naturally recover from this fear while in the area but recover
+    instantly once they leave the area. When a creature first enters the area, it
+    must succeed at a DC 26 Will save (after taking the penalty from being frightened)
+    or be paralyzed for 1d4 rounds. The creature is then temporarily immune for 24
+    hours.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Great Despair
+  range: 30 feet
+  raw_description: '**Great Despair** (__aura__, __divine__, __emotion__, __enchantment__,
+    __fear__, __incapacitation__, __mental__) 30 feet. Living creatures are frightened
+    1 while in a mummy guardian''s despair aura. They can''t naturally recover from
+    this fear while in the area but recover instantly once they leave the area. When
+    a creature first enters the area, it must succeed at a DC 26 Will save (after
+    taking the penalty from being frightened) or be paralyzed for 1d4 rounds. The
+    creature is then temporarily immune for 24 hours.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divine
+  - emotion
+  - enchantment
+  - fear
+  - incapacitation
+  - mental
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a mummy pharaoh is destroyed, necromantic energies rebuild its
+    body in its tomb over 1d10 days. If the re-forming body is destroyed during that
+    time, the process starts anew. A slain mummy pharaoh can be destroyed for good
+    with a __consecrate__ ritual.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Rejuvenation
+  range: null
+  raw_description: '**Rejuvenation** (__divine__, __necromancy__) When a mummy pharaoh
+    is destroyed, necromantic energies rebuild its body in its tomb over 1d10 days.
+    If the re-forming body is destroyed during that time, the process starts anew.
+    A slain mummy pharaoh can be destroyed for good with a __consecrate__ ritual.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Commanded or allied undead in the aura that have a lower level than
+    the mummy pharaoh gain a +1 circumstance bonus to attack rolls, damage rolls,
+    AC, saves, and skill checks.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Undead Mastery
+  range: 100 feet
+  raw_description: '**Undead Mastery** (__aura__, __divine__, __necromancy__) 100
+    feet. Commanded or allied undead in the aura that have a lower level than the
+    mummy pharaoh gain a +1 circumstance bonus to attack rolls, damage rolls, AC,
+    saves, and skill checks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divine
+  - necromancy
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -100,44 +179,30 @@ automatic_abilities:
     its reach uses a concentrate action, in addition to its normal trigger. It can
     disrupt triggering concentrate actions, and it disrupts actions on any hit, not
     just a critical hit.
-  effect: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Great Despair
+  name: Attack of Opportunity
   range: null
-  raw_description: '**Great Despair** (__aura__, __divine__, __emotion__, __enchantment__,
-    __fear__, __incapacitation__, __mental__) 30 feet. Living creatures are frightened
-    1 while in a mummy guardian''s despair aura. They can''t naturally recover from
-    this fear while in the area but recover instantly once they leave the area. When
-    a creature first enters the area, it must succeed at a DC 26 Will save (after
-    taking the penalty from being frightened) or be paralyzed for 1d4 rounds. The
-    creature is then temporarily immune for 24 hours.
-
-
-    **Rejuvenation** (__divine__, __necromancy__) When a mummy pharaoh is destroyed,
-    necromantic energies rebuild its body in its tomb over 1d10 days. If the re-forming
-    body is destroyed during that time, the process starts anew. A slain mummy pharaoh
-    can be destroyed for good with a __consecrate__ ritual.
-
-
-    **Undead Mastery** (__aura__, __divine__, __necromancy__) 100 feet. Commanded
-    or allied undead in the aura that have a lower level than the mummy pharaoh gain
-    a +1 circumstance bonus to attack rolls, damage rolls, AC, saves, and skill checks.
-
-
-    **Attack of Opportunity** [Reaction] The mummy pharaoh can use Attack of Opportunity
-    when a creature within its reach uses a concentrate action, in addition to its
-    normal trigger. It can disrupt triggering concentrate actions, and it disrupts
-    actions on any hit, not just a critical hit.'
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'While mummy guardians are undead crafted from the corpses of sacrificed—usually
   unwilling victims—and retain only fragments of their memories, a mummy pharaoh is
   the result of a deliberate embrace of undeath by a sadistic and cruel ruler. The
@@ -175,23 +240,21 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+11
+  - formula: 1d10+11
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: insidious mummy rot
+  name: fist
   to_hit: 20
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d8+11
+  - formula: 2d8+11
     type: piercing
-  name: longspear
-  plus_damage:
   - formula: null
     type: insidious mummy rot
+  name: longspear
   to_hit: 21
   traits:
   - magical

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -35,8 +33,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gray Ooze Acid
   range: null
@@ -73,14 +69,13 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+5
+  - formula: 1d6+5
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
-  - formula: null
-    type: 1d6 acid
+  - formula: 1d6
+    type: acid
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 13
   traits:
   - agile
@@ -111,8 +106,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null
@@ -132,8 +125,6 @@ sense_abilities:
     Strike against one creature adjacent to itself before rolling initiative.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Puddled Ambush
   range: null
@@ -146,8 +137,7 @@ sense_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature enters a space occupied by a gray ooze; Requirements Initiative
-    has not yet been rolled;
+  trigger: A creature enters a space occupied by a gray ooze
 senses:
 - motion sense 60 feet
 - no vision

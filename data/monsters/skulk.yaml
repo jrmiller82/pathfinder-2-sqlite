@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -87,10 +85,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -101,10 +98,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+2
+  - formula: 1d4+2
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -127,8 +123,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Camouflaged Step
   range: null
@@ -149,8 +143,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Chameleon Skin
   range: null

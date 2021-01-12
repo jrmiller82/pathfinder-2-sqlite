@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Quick Draw
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Skewer
   range: null
@@ -65,8 +61,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -107,10 +101,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
   name: Rapier
-  plus_damage: null
   to_hit: 9
   traits:
   - deadly 1d8
@@ -118,10 +111,9 @@ melee_attacks:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d4+2
+  - formula: 1d4+2
     type: piercing
   name: Main-gauche
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -134,12 +126,11 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
-  name: Hand Crossbow
-  plus_damage:
   - formula: null
     type: lethargy poison
+  name: Hand Crossbow
   to_hit: 9
   traits:
   - range increment 60 feet
@@ -160,8 +151,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Blindness
   range: null

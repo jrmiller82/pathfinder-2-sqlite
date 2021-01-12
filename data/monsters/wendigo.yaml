@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dream Haunting
   range: null
@@ -44,8 +42,6 @@ active_abilities:
     24 hours.
   failure: null
   frequency: Three times per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Howl
   range: null
@@ -86,8 +82,6 @@ active_abilities:
     if it succeeds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ride the Wind
   range: null
@@ -114,19 +108,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: A creature affected by wendigo torment can't recover beyond stage 1
-    until it has been restored to full HP. **Saving Throw** Will DC 38; **Stage 1**
-    Stupefied 4 (1 day); **Stage 2** As stage 1 (1 day); **Stage 3** The creature
-    searches for an individual of its own ancestry to kill and devour. It then becomes
-    affected by wind walk and sprints into the sky so fast that its feet burn away
-    into jagged stumps. As the creature wind walks into the sky, it is replaced by
-    a new wendigo over 2d6 minutes. Wish, similar magic, or a 9th-level resurrect
-    ritual can return the victim to life. The new wendigo remains even if the victim
-    is resurrected.
+    until it has been restored to full HP.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wendigo Torment
   range: null
@@ -140,8 +125,16 @@ active_abilities:
     over 2d6 minutes. Wish, similar magic, or a 9th-level resurrect ritual can return
     the victim to life. The new wendigo remains even if the victim is resurrected.'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: Will DC 38
+  stages:
+  - effect: Stupefied 4 (1 day)
+  - effect: As stage 1 (1 day)
+  - effect: The creature searches for an individual of its own ancestry to kill and
+      devour. It then becomes affected by wind walk and sprints into the sky so fast
+      that its feet burn away into jagged stumps. As the creature wind walks into
+      the sky, it is replaced by a new wendigo over 2d6 minutes. Wish, similar magic,
+      or a 9th-level resurrect ritual can return the victim to life. The new wendigo
+      remains even if the victim is resurrected.
   success: null
   traits:
   - curse
@@ -172,12 +165,11 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+12
+  - formula: 3d10+12
     type: piercing
+  - formula: 2d6
+    type: cold
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 cold
   to_hit: 33
   traits:
   - cold
@@ -185,14 +177,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 cold
+  - formula: 2d6
+    type: cold
   - formula: null
     type: Grab
+  name: claw
   to_hit: 33
   traits:
   - cold
@@ -215,12 +206,10 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: ; Heatsight is a precise sense that sees heat signatures.
+  description: Heatsight is a precise sense that sees heat signatures.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Heatsight
   range: null

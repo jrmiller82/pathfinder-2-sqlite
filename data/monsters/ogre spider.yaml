@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eerie Flexibility
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Ogre Spider Venom
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Trap
   range: null
@@ -96,12 +90,11 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
-  name: bite
-  plus_damage:
   - formula: null
     type: ogre spider venom
+  name: bite
   to_hit: 15
   traits: null
 name: Ogre Spider
@@ -109,10 +102,9 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: web trap
   name: web
-  plus_damage: null
   to_hit: 13
   traits:
   - range increment 30 feet
@@ -133,8 +125,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Sense
   range: null

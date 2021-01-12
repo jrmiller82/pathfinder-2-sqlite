@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Awaken Tree
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sunder Objects
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -86,8 +80,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Axe Vulnerability
   range: null
@@ -126,19 +118,17 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+7
+  - formula: 2d12+7
     type: bludgeoning
   name: branch
-  plus_damage: null
   to_hit: 19
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: bludgeoning
   name: root
-  plus_damage: null
   to_hit: 19
   traits:
   - trip
@@ -147,10 +137,9 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 19
   traits:
   - brutal

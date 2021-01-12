@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rip and Tear
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Toss
   range: null
@@ -72,8 +68,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -124,29 +118,26 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: bludgeoning
-  name: spiked tail
-  plus_damage:
   - formula: null
     type: Knockdown
+  name: spiked tail
   to_hit: 17
   traits:
   - reach 10 feet
@@ -172,8 +163,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trackless
   range: null

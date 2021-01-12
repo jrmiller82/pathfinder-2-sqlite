@@ -9,215 +9,78 @@ ac: 20
 ac_special: null
 active_abilities:
 - action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is helpful toward the zuipnyrn for 1 day and will
+    actively attempt to defend the zuipnyrn and even risk its life for it.
+  critical_success: The creature is unaffected and is no longer fascinated.
   description: The zuipnyrn attempts to charm a creature within 30 feet that is currently
     fascinated by the zuipnyrn. The target must attempt a DC 22 Will save. Whether
     it succeeds or fails the save, the target is temporarily immune for 1 hour.
   effect: null
-  failure: null
+  failure: The creature is helpful toward the zuipnyrn for 1 hour.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Beguiling Gaze
   range: null
   raw_description: '**Beguiling Gaze** [Three Actions]  (__occult__, __visual__) The
     zuipnyrn attempts to charm a creature within 30 feet that is currently fascinated
     by the zuipnyrn. The target must attempt a DC 22 Will save. Whether it succeeds
-    or fails the save, the target is temporarily immune for 1 hour.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - occult
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is no longer fascinated.
-  description: The creature is unaffected and is no longer fascinated.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is no longer
-    fascinated.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
+    or fails the save, the target is temporarily immune for 1 hour.
+
+
+    **Critical Success** The creature is unaffected and is no longer fascinated.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is helpful toward the zuipnyrn for 1 hour.
+
+
+    **Critical Failure** The creature is helpful toward the zuipnyrn for 1 day and
+    will actively attempt to defend the zuipnyrn and even risk its life for it.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is helpful toward the zuipnyrn for 1 hour.
-  effect: null
-  failure: The creature is helpful toward the zuipnyrn for 1 hour.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is helpful toward the zuipnyrn for 1
-    hour.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is helpful toward the zuipnyrn for 1 day and will
-    actively attempt to defend the zuipnyrn and even risk its life for it.
-  critical_success: null
-  description: The creature is helpful toward the zuipnyrn for 1 day and will actively
-    attempt to defend the zuipnyrn and even risk its life for it.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is helpful toward the zuipnyrn
-    for 1 day and will actively attempt to defend the zuipnyrn and even risk its life
-    for it.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - occult
+  - visual
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is blinded for 1 minute.
+  critical_success: The creature is unaffected.
   description: The zuipnyrn's eye produces a bright flash of light. Each creature
     in a 30-foot cone must attempt a DC 22 Fortitude save. The zuipnyrn can't use
     Blinding Flare again for 1 minute.
   effect: null
-  failure: null
+  failure: The creature is blinded for 1 round and dazzled for 1 minute.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blinding Flare
   range: null
   raw_description: '**Blinding Flare** [Two Actions]  (__occult__, __visual__) The
     zuipnyrn''s eye produces a bright flash of light. Each creature in a 30-foot cone
     must attempt a DC 22 Fortitude save. The zuipnyrn can''t use Blinding Flare again
-    for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - occult
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is dazzled for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is dazzled for 1 round.'
+    for 1 minute.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is dazzled for 1 round.
+
+
+    **Failure** The creature is blinded for 1 round and dazzled for 1 minute.
+
+
+    **Critical Failure** The creature is blinded for 1 minute.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is dazzled for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is blinded for 1 round and dazzled for 1 minute.
-  effect: null
-  failure: The creature is blinded for 1 round and dazzled for 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is blinded for 1 round and dazzled for
-    1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is blinded for 1 minute.
-  critical_success: null
-  description: The creature is blinded for 1 minute.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is blinded for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - occult
+  - visual
   trigger: null
 alignment: N
 automatic_abilities:
@@ -232,8 +95,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Alluring Aspect
   range: 30 feet
@@ -285,10 +146,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+2
+  - formula: 2d4+2
     type: bludgeoning
   name: eye stalk
-  plus_damage: null
   to_hit: 8
   traits:
   - agile

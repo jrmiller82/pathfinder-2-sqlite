@@ -9,72 +9,36 @@ ac: 28
 ac_special: null
 active_abilities:
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the creature gains weakness 10 to fire.
+  critical_success: The creature is unaffected and is temporarily immune to witchflame
+    for 1 hour.
   description: Any creature that takes negative damage from a witchfire's Strike must
     attempt a DC 26 Will save.
   effect: null
-  failure: null
+  failure: As success, but the effect is permanent until removed.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Witchflame
   range: null
   raw_description: '**Witchflame** (__curse__, __fire__, __necromancy__, __occult__)
     Any creature that takes negative damage from a witchfire''s Strike must attempt
-    a DC 26 Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - curse
-  - fire
-  - necromancy
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is temporarily immune to witchflame
+    a DC 26 Will save.
+
+
+    **Critical Success** The creature is unaffected and is temporarily immune to witchflame
     for 1 hour.
-  description: The creature is unaffected and is temporarily immune to witchflame
-    for 1 hour.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is temporarily
-    immune to witchflame for 1 hour.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature appears to catch fire with sickly green flames. These
+
+
+    **Success** The creature appears to catch fire with sickly green flames. These
     flames deal no damage on their own, but as long as the flames burn, the creature
-    can't be __concealed__ (__invisible__ creatures are concealed rather than being
+    can''t be __concealed__ (__invisible__ creatures are concealed rather than being
     __undetected__) and gains weakness 5 to fire for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature appears to catch fire with sickly green
-    flames. These flames deal no damage on their own, but as long as the flames burn,
-    the creature can''t be __concealed__ (__invisible__ creatures are concealed rather
-    than being __undetected__) and gains weakness 5 to fire for 1 round.'
+
+
+    **Failure** As success, but the effect is permanent until removed.
+
+
+    **Critical Failure** As failure, but the creature gains weakness 10 to fire.'
   requirements: null
   saving_throw: null
   stages: null
@@ -82,46 +46,11 @@ active_abilities:
     deal no damage on their own, but as long as the flames burn, the creature can't
     be __concealed__ (__invisible__ creatures are concealed rather than being __undetected__)
     and gains weakness 5 to fire for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: As success, but the effect is permanent until removed.
-  effect: null
-  failure: As success, but the effect is permanent until removed.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** As success, but the effect is permanent until removed.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the creature gains weakness 10 to fire.
-  critical_success: null
-  description: As failure, but the creature gains weakness 10 to fire.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but the creature gains weakness
-    10 to fire.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - curse
+  - fire
+  - necromancy
+  - occult
   trigger: null
 - action_cost: Two Actions
   critical_failure: null
@@ -133,8 +62,6 @@ active_abilities:
     use Witchflame Kindling for 1d4 rounds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Witchflame Kindling
   range: null
@@ -162,8 +89,6 @@ automatic_abilities:
   effect: The witchfire makes a witchflame caress Strike against the triggering creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Opportune Witchflame
   range: null
@@ -175,7 +100,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature makes a melee Strike against or touches the witchfire;
+  trigger: A creature makes a melee Strike against or touches the witchfire
 description: 'Manifesting as a sinuous form wreathed in sickly green flames, this
   incorporeal undead forms when a powerful __hag__ or __witch__ dies in agony or rage.
   The body at the center of the flames usually resembles the witch''s idealized self-image,
@@ -217,14 +142,13 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 3d6 fire
-  name: witchflame caress
-  plus_damage:
-  - formula: null
-    type: 3d6 negative
+  - formula: 3d6
+    type: fire
+  - formula: 3d6
+    type: negative
   - formula: null
     type: witchflame
+  name: witchflame caress
   to_hit: 21
   traits:
   - agile
@@ -236,14 +160,13 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d6 fire
-  name: witchflame bolt
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
+  - formula: 2d6
+    type: fire
+  - formula: 2d6
+    type: negative
   - formula: null
     type: witchflame
+  name: witchflame bolt
   to_hit: 21
   traits:
   - evil
@@ -273,8 +196,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Coven
   range: null

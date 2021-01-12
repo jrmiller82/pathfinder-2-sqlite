@@ -35,10 +35,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 10
   traits:
   - versatile P
@@ -47,10 +46,9 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 10
   traits:
   - range increment 30 feet

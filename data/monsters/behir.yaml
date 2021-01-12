@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -53,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Claw Storm
   range: null
@@ -83,8 +79,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -102,8 +96,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -125,8 +117,6 @@ active_abilities:
     many creatures as will fit in its space.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wrap in Coils
   range: null
@@ -135,7 +125,8 @@ active_abilities:
     moves the creature into its coils, freeing its jaws. The creature remains grabbed
     and takes 1d6+6 slashing damage. The behir''s coils can hold as many creatures
     as will fit in its space.'
-  requirements: The behir has a creature either restrained or grabbed in its jaws
+  requirements: The behir has a creature either __restrained__ or __grabbed__ in its
+    jaws
   saving_throw: null
   stages: null
   success: null
@@ -162,21 +153,19 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 18
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 18
   traits:
   - agile

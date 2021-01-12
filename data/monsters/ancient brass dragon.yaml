@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -50,8 +48,6 @@ active_abilities:
     failure).
   failure: null
   frequency: three times per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Desert Wind
   range: null
@@ -77,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -98,8 +92,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -119,16 +111,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
-    the triggering attack. If the dragon is flying, it descends 10 feet after the
-    attack is complete.
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 90 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -145,7 +133,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 35
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -153,6 +141,28 @@ automatic_abilities:
   - emotion
   - fear
   - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon raises its wing, gaining a +2 circumstance bonus to AC against
+    the triggering attack. If the dragon is flying, it descends 10 feet after the
+    attack is complete.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Wing Deflection
+  range: null
+  raw_description: '**Wing Deflection** [Reaction] **Trigger** The dragon is targeted
+    with an attack. **Effect** The dragon raises its wing, gaining a +2 circumstance
+    bonus to AC against the triggering attack. If the dragon is flying, it descends
+    10 feet after the attack is complete.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: The dragon is targeted with an attack.
 description: 'Brass dragons are whimsical tricksters who delight in humor and play.
   They particularly enjoy conversations with humans and other civilized humanoids,
@@ -211,14 +221,13 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+15
+  - formula: 3d10+15
     type: piercing
+  - formula: 3d6
+    type: fire
+  - formula: 2d6
+    type: persistent fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 fire
-  - formula: null
-    type: 2d6 persistent fire
   to_hit: 32
   traits:
   - fire
@@ -226,10 +235,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+15
+  - formula: 3d10+15
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 32
   traits:
   - agile
@@ -237,10 +245,9 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: slashing
   name: wing
-  plus_damage: null
   to_hit: 30
   traits:
   - magical

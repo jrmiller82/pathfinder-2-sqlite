@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Quick Bomber
   range: null
@@ -72,10 +70,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
+  - formula: 1d4
+    type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -87,14 +84,13 @@ perception: 3
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d8 fire
-  name: lesser alchemist's fire
-  plus_damage:
+  - formula: 1d8
+    type: fire
   - formula: null
     type: 1 persistent fire damage
   - formula: null
     type: 1 fire splash damage
+  name: lesser alchemist's fire
   to_hit: 8
   traits:
   - range increment 30 feet
@@ -120,8 +116,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infused Items
   range: null

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sandstorm Breath
   range: null
@@ -68,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Speed Surge
   range: null
@@ -90,8 +84,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Surprise Attacker
   range: null
@@ -114,8 +106,6 @@ automatic_abilities:
     attacked, it descends 10 feet after the attack is complete.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wing Deflection
   range: null
@@ -160,22 +150,20 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+8
+  - formula: 2d12+8
     type: piercing
+  - formula: 1d6
+    type: electricity
   name: Fangs
-  plus_damage:
-  - formula: null
-    type: 1d6 electricity
   to_hit: 20
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: bludgeoning
-  name: Tail
-  plus_damage:
   - formula: null
     type: Push 5 feet
+  name: Tail
   to_hit: 20
   traits:
   - reach 10 feet

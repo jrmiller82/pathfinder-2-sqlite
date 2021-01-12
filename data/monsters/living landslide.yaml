@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -42,8 +40,6 @@ automatic_abilities:
     for 1d4 rounds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Crumble
   range: null
@@ -77,10 +73,9 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 16
   traits:
   - reach 10 feet
@@ -104,8 +99,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earthbound
   range: null

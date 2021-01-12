@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lumbering Charge
   range: null
@@ -35,8 +33,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -55,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vicious Gore
   range: null
@@ -78,8 +72,6 @@ automatic_abilities:
     a +2 circumstance bonus to its AC against the triggering attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frill Defense
   range: null
@@ -92,8 +84,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The rider is targeted with an attack. Requirements A creature must be mounted
-    on the triceratops.
+  trigger: The rider is targeted with an attack.
 description: 'Triceratopses are muscular quadrupeds with powerful but short legs,
   thick necks, and heads crowned by a wide, bony frill. Though they bear a large horn
   on their snout and one on each brow, these dinosaurs are herbivores and use these
@@ -122,21 +113,19 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: piercing
-  name: horns
-  plus_damage:
   - formula: null
     type: Knockdown
+  name: horns
   to_hit: 19
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 19
   traits:
   - reach 10 feet

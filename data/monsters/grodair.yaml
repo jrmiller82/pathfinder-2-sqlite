@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Muddy Field
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Organ of Endless Water
   range: null
@@ -77,8 +73,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death Flood
   range: null
@@ -142,20 +136,18 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 15
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d10+7
+  - formula: 1d10+7
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: Knockdown
+  name: tentacle
   to_hit: 15
   traits: null
 name: Grodair
@@ -163,12 +155,11 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 3d6 bludgeoning
-  name: water jet
-  plus_damage:
+  - formula: 3d6
+    type: bludgeoning
   - formula: null
     type: Push 10 feet
+  name: water jet
   to_hit: 13
   traits:
   - range increment 60 feet

@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Brazier
   range: null
@@ -50,8 +48,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Burn Alive
   range: null
@@ -78,8 +74,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Construct Armor
   range: null
@@ -126,12 +120,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+6
+  - formula: 2d12+6
     type: bludgeoning
-  name: stone fist
-  plus_damage:
   - formula: null
     type: Grab
+  name: stone fist
   to_hit: 19
   traits:
   - magical
@@ -140,10 +133,9 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: bludgeoning and 2d8 fire
   name: flaming coal
-  plus_damage: null
   to_hit: 12
   traits:
   - fire

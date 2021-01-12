@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aquatic Ambush
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Barbed Tongue
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flailing Tentacles
   range: null
@@ -87,8 +81,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greater Constrict
   range: null
@@ -110,8 +102,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retract Tongue
   range: null
@@ -133,8 +123,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -157,8 +145,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Electric Torpor
   range: null
@@ -189,35 +175,32 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+14
+  - formula: 3d12+14
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 27
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+14
+  - formula: 3d8+14
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tentacle
   to_hit: 27
   traits:
   - agile
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+14
+  - formula: 2d10+14
     type: piercing
-  name: tongue
-  plus_damage:
   - formula: null
     type: barbed tongue
+  name: tongue
   to_hit: 27
   traits:
   - agile
@@ -246,8 +229,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Otherworldly Vision
   range: null

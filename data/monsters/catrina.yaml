@@ -9,65 +9,11 @@ ac: 22
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
+  critical_failure: As failure, but damage does not end the effect.
   critical_success: null
   description: The catrina telepathically compels a creature within 30 feet to approach
     and allow the catrina to kiss them, in preparation for using Kiss of Death. The
     target must attempt a DC 22 Will save.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Compel Condemned
-  range: null
-  raw_description: '**Compel Condemned** [One Action]  (__divine__, __enchantment__,
-    __incapacitation__, __mental__) The catrina telepathically compels a creature
-    within 30 feet to approach and allow the catrina to kiss them, in preparation
-    for using Kiss of Death. The target must attempt a DC 22 Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - divine
-  - enchantment
-  - incapacitation
-  - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected and is temporarily immune to Compel Condemned
-    for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected and is temporarily immune
-    to Compel Condemned for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected and is temporarily immune to Compel Condemned
-    for 24 hours.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature must spend each of its actions to move closer to the catrina
-    as quickly as possible, while avoiding obvious dangers. If the compelled creature
-    is adjacent to the catrina, it stays still and doesn't act. If the creature takes
-    any damage, the effect ends and the creature is temporarily immune to Compel Condemned
-    for 24 hours. This effect lasts for 1 round, but if the catrina uses this ability
-    again on subsequent rounds, it extend the duration by 1 round for all affected
-    creatures.
   effect: null
   failure: The creature must spend each of its actions to move closer to the catrina
     as quickly as possible, while avoiding obvious dangers. If the compelled creature
@@ -77,42 +23,39 @@ active_abilities:
     again on subsequent rounds, it extend the duration by 1 round for all affected
     creatures.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Failure
+  name: Compel Condemned
   range: null
-  raw_description: '**Failure** The creature must spend each of its actions to move
-    closer to the catrina as quickly as possible, while avoiding obvious dangers.
-    If the compelled creature is adjacent to the catrina, it stays still and doesn''t
-    act. If the creature takes any damage, the effect ends and the creature is temporarily
-    immune to Compel Condemned for 24 hours. This effect lasts for 1 round, but if
-    the catrina uses this ability again on subsequent rounds, it extend the duration
-    by 1 round for all affected creatures.'
+  raw_description: '**Compel Condemned** [One Action]  (__divine__, __enchantment__,
+    __incapacitation__, __mental__) The catrina telepathically compels a creature
+    within 30 feet to approach and allow the catrina to kiss them, in preparation
+    for using Kiss of Death. The target must attempt a DC 22 Will save.
+
+
+    **Success** The creature is unaffected and is temporarily immune to Compel Condemned
+    for 24 hours.
+
+
+    **Failure** The creature must spend each of its actions to move closer to the
+    catrina as quickly as possible, while avoiding obvious dangers. If the compelled
+    creature is adjacent to the catrina, it stays still and doesn''t act. If the creature
+    takes any damage, the effect ends and the creature is temporarily immune to Compel
+    Condemned for 24 hours. This effect lasts for 1 round, but if the catrina uses
+    this ability again on subsequent rounds, it extend the duration by 1 round for
+    all affected creatures.
+
+
+    **Critical Failure** As failure, but damage does not end the effect.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but damage does not end the effect.
-  critical_success: null
-  description: As failure, but damage does not end the effect.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but damage does not end the effect.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  success: The creature is unaffected and is temporarily immune to Compel Condemned
+    for 24 hours.
+  traits:
+  - divine
+  - enchantment
+  - incapacitation
+  - mental
   trigger: null
 - action_cost: Two Actions
   critical_failure: null
@@ -124,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Kiss of Death
   range: null
@@ -153,8 +94,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spirit Touch
   range: null
@@ -170,17 +109,19 @@ active_abilities:
 alignment: N
 automatic_abilities:
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but hostility doesn't end the effect.
+  critical_success: The creature is unaffected and is temporarily immune to calming
+    presence for 24 hours.
   description: 'A
 
 
     creature that begins its turn within the area must attempt a DC 18 Will save.'
   effect: null
-  failure: null
+  failure: Any __emotion__ effects that would affect the creature are suppressed and
+    the creature can't use hostile actions. If the creature is subjected to hostility
+    from any other creature, it ceases to be affected by calming presence and is temporarily
+    immune to calming presence for 24 hours.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Calming Presence
   range: 30 feet
@@ -188,107 +129,33 @@ automatic_abilities:
     __incapacitation__) 30 feet. A
 
 
-    creature that begins its turn within the area must attempt a DC 18 Will save.'
+    creature that begins its turn within the area must attempt a DC 18 Will save.
+
+
+    **Critical Success** The creature is unaffected and is temporarily immune to calming
+    presence for 24 hours.
+
+
+    **Success** The creature''s attack rolls take a –1 status penalty for 1 round.
+
+
+    **Failure** Any __emotion__ effects that would affect the creature are suppressed
+    and the creature can''t use hostile actions. If the creature is subjected to hostility
+    from any other creature, it ceases to be affected by calming presence and is temporarily
+    immune to calming presence for 24 hours.
+
+
+    **Critical Failure** As failure, but hostility doesn''t end the effect.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature's attack rolls take a –1 status penalty for 1 round.
   traits:
   - aura
   - divine
   - emotion
   - enchantment
   - incapacitation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is temporarily immune to calming
-    presence for 24 hours.
-  description: The creature is unaffected and is temporarily immune to calming presence
-    for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is temporarily
-    immune to calming presence for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature's attack rolls take a –1 status penalty for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature''s attack rolls take a –1 status penalty
-    for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature's attack rolls take a –1 status penalty for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Any __emotion__ effects that would affect the creature are suppressed
-    and the creature can't use hostile actions. If the creature is subjected to hostility
-    from any other creature, it ceases to be affected by calming presence and is temporarily
-    immune to calming presence for 24 hours.
-  effect: null
-  failure: Any __emotion__ effects that would affect the creature are suppressed and
-    the creature can't use hostile actions. If the creature is subjected to hostility
-    from any other creature, it ceases to be affected by calming presence and is temporarily
-    immune to calming presence for 24 hours.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** Any __emotion__ effects that would affect the creature
-    are suppressed and the creature can''t use hostile actions. If the creature is
-    subjected to hostility from any other creature, it ceases to be affected by calming
-    presence and is temporarily immune to calming presence for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but hostility doesn't end the effect.
-  critical_success: null
-  description: As failure, but hostility doesn't end the effect.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but hostility doesn''t end the
-    effect.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 description: 'Not all spirits who enter the __Boneyard__ realize they have died. Catrinas
   meet these souls, helping to convince them of the finality of their fate to ease
@@ -325,12 +192,11 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+2
+  - formula: 2d8+2
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: spirit touch
+  name: fist
   to_hit: 14
   traits:
   - agile

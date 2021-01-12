@@ -17,8 +17,6 @@ active_abilities:
     negates).
   failure: null
   frequency: Once per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Size
   range: null
@@ -46,8 +44,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Elemental Endurance
   range: null
@@ -85,20 +81,18 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+10
+  - formula: 1d6+10
     type: slashing
   name: scimitar
-  plus_damage: null
   to_hit: 14
   traits:
   - forceful +1
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+10
+  - formula: 1d4+10
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
@@ -109,10 +103,9 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+5
+  - formula: 1d6+5
     type: piercing
   name: composite shortbow
-  plus_damage: null
   to_hit: 12
   traits:
   - deadly 1d10

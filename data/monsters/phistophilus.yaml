@@ -28,8 +28,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draft Contract
   range: null
@@ -66,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infernal Investment
   range: null
@@ -96,8 +92,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infernal Wound
   range: null
@@ -131,8 +125,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ward Contract
   range: null
@@ -179,16 +171,15 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+11
+  - formula: 3d6+11
     type: slashing
-  name: binding contract
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Grab
   - formula: null
     type: infernal wound
+  name: binding contract
   to_hit: 23
   traits:
   - agile
@@ -199,10 +190,9 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 3d10+11
+  - formula: 3d10+11
     type: piercing and infernal wound
   name: horn
-  plus_damage: null
   to_hit: 21
   traits:
   - magical

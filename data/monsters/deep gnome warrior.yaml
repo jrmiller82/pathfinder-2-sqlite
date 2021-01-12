@@ -22,8 +22,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -41,6 +39,30 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You snap your shield in place to ward off a blow. Your shield prevents you
+    from taking an amount of damage up to the shield's Hardness. You and the shield
+    each take any remaining damage, possibly breaking or destroying the shield.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Shield Block
+  range: null
+  raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
+    raised, you would take damage from a physical attack. **Effect** You snap your
+    shield in place to ward off a blow. Your shield prevents you from taking an amount
+    of damage up to the shield''s Hardness. You and the shield each take any remaining
+    damage, possibly breaking or destroying the shield.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: While you have your shield raised, you would take damage from a physical
+    attack.
 description: 'Deep gnome warriors are quick to charge into battle but focus on defending
   their kin and their homes over more aggressive tactics when a choice is available.
 
@@ -62,10 +84,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 10
   traits: null
 name: Deep Gnome Warrior
@@ -73,10 +94,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d10 piercing
+  - formula: 1d10
+    type: piercing
   name: heavy crossbow
-  plus_damage: null
   to_hit: 8
   traits:
   - range increment 120 feet

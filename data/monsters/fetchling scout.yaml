@@ -11,15 +11,13 @@ active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: '**Requirement **The fetchling is in dim light;'
+  description: '**Requirement **The fetchling is in dim light'
   effect: The fetchling Strides. They have a +10-foot status bonus to their Speed
     during this Stride. The DC from shadow blending increases to 11 during this Stride,
     and the fetchling remains __concealed__ by dim light until the end of the movement,
     even if they leave dim light during the Stride.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Stride
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -69,8 +65,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Blending
   range: null
@@ -139,10 +133,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -153,10 +146,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 9
   traits:
   - agile

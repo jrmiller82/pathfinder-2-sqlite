@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Boar Charge
   range: null
@@ -39,8 +37,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -69,10 +65,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: piercing
   name: Tusk
-  plus_damage: null
   to_hit: 10
   traits: null
 name: Boar

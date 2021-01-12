@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Corrosive Touch
   range: null
@@ -58,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Suction
   range: null
@@ -76,38 +70,48 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A creature that hits the pudding with a metal or wooden weapon must
+  description: A creature that hits the pudding with a metal or wooden weapon must
     succeed at a DC 22 Reflex save or the weapon takes 2d6 acid damage (after dealing
     damage to the black pudding as normal). Thrown weapons and ammunition take this
     damage automatically with no save.
-
-
-    **Split** When the black pudding is hit by an attack that would deal slashing
-    or piercing damage and has 10 or more HP, it splits into two identical puddings,
-    each with half the original''s HP. One pudding is in the same space as the original,
-    and the other appears in an adjacent unoccupied space. If no adjacent space is
-    unoccupied, it automatically pushes creatures and objects out of the way to fill
-    a space (the GM decides if an object or creature is too big or sturdy to push).'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Corrosive Mass
   range: null
   raw_description: '**Corrosive Mass** A creature that hits the pudding with a metal
     or wooden weapon must succeed at a DC 22 Reflex save or the weapon takes 2d6 acid
     damage (after dealing damage to the black pudding as normal). Thrown weapons and
-    ammunition take this damage automatically with no save.
-
-
-    **Split** When the black pudding is hit by an attack that would deal slashing
+    ammunition take this damage automatically with no save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When the black pudding is hit by an attack that would deal slashing
     or piercing damage and has 10 or more HP, it splits into two identical puddings,
-    each with half the original''s HP. One pudding is in the same space as the original,
+    each with half the original's HP. One pudding is in the same space as the original,
     and the other appears in an adjacent unoccupied space. If no adjacent space is
     unoccupied, it automatically pushes creatures and objects out of the way to fill
-    a space (the GM decides if an object or creature is too big or sturdy to push).'
+    a space (the GM decides if an object or creature is too big or sturdy to push).
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Split
+  range: null
+  raw_description: '**Split** When the black pudding is hit by an attack that would
+    deal slashing or piercing damage and has 10 or more HP, it splits into two identical
+    puddings, each with half the original''s HP. One pudding is in the same space
+    as the original, and the other appears in an adjacent unoccupied space. If no
+    adjacent space is unoccupied, it automatically pushes creatures and objects out
+    of the way to fill a space (the GM decides if an object or creature is too big
+    or sturdy to push).'
   requirements: null
   saving_throw: null
   stages: null
@@ -137,16 +141,15 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
+  - formula: 2d6
+    type: acid
   - formula: null
     type: corrosive touch
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 18
   traits:
   - reach 10 feet
@@ -169,8 +172,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

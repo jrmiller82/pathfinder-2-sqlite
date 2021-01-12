@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Signal Arrow
   range: null
@@ -63,10 +61,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 bludgeoning
+  - formula: 1d4
+    type: bludgeoning
   name: staff
-  plus_damage: null
   to_hit: 9
   traits:
   - two-hand d8
@@ -75,10 +72,9 @@ perception: 12
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: piercing
   name: longbow
-  plus_damage: null
   to_hit: 11
   traits:
   - deadly 1d10

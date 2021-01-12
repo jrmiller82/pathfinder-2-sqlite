@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dubious Shifting
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Go for the Eyes
   range: null
@@ -115,18 +111,16 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 11
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: fangs
-  plus_damage: null
   to_hit: 11
   traits: null
 name: Zrukbat

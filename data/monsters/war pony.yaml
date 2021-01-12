@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gallop
   range: null
@@ -38,8 +36,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Buck
   range: null
@@ -62,10 +58,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 7
   traits: null
 name: War Pony

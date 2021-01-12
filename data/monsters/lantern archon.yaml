@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gestalt
   range: null
@@ -56,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lantern of Hope
   range: null
@@ -85,8 +81,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retributive Strike
   range: null
@@ -123,12 +117,11 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 fire
+  - formula: 1d4
+    type: fire
+  - formula: 1d4
+    type: good
   name: light ray
-  plus_damage:
-  - formula: null
-    type: 1d4 good
   to_hit: 8
   traits:
   - agile

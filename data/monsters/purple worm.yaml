@@ -15,8 +15,6 @@ active_abilities:
   effect: The worm uses Swallow Whole.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fast Swallow
   range: null
@@ -31,15 +29,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 32 Fortitude, **Maximum Duration** 6 rounds; **Stage
-    1** 5d6 poison damage and enfeebled 2 (1 round), **Stage 2** 6d6 poison damage,
-    and enfeebled 2 (1 round); **Stage 3** 8d6 poison damage and enfeebled 2 (1 round).'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Purple Worm Venom
   range: null
   raw_description: '**Purple Worm Venom** (__poison__) **Saving Throw** DC 32 Fortitude,
@@ -47,8 +41,11 @@ active_abilities:
     round), **Stage 2** 6d6 poison damage, and enfeebled 2 (1 round); **Stage 3**
     8d6 poison damage and enfeebled 2 (1 round).'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 32 Fortitude,
+  stages:
+  - effect: 5d6 poison damage and enfeebled 2 (1 round),
+  - effect: 6d6 poison damage, and enfeebled 2 (1 round)
+  - effect: 8d6 poison damage and enfeebled 2 (1 round).
   success: null
   traits:
   - poison
@@ -67,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Regurgitate
   range: null
@@ -94,8 +89,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rock Tunneler
   range: null
@@ -114,8 +107,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -138,8 +129,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thrash
   range: null
@@ -156,6 +145,28 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The purple worm recovers from the paralyzed, slowed, and stunned conditions
+    at the end of its turn. It's also immune to penalties to its Speeds and the immobilized
+    condition, and it ignores difficult terrain and greater difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Inexorable
+  range: null
+  raw_description: '**Inexorable** The purple worm recovers from the paralyzed, slowed,
+    and stunned conditions at the end of its turn. It''s also immune to penalties
+    to its Speeds and the immobilized condition, and it ignores difficult terrain
+    and greater difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -164,29 +175,21 @@ automatic_abilities:
     artifacts, deities, or a similarly powerful source can't be avoided in this way.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Inexorable
+  name: Shake It Off
   range: null
-  raw_description: '**Inexorable** The purple worm recovers from the paralyzed, slowed,
-    and stunned conditions at the end of its turn. It''s also immune to penalties
-    to its Speeds and the immobilized condition, and it ignores difficult terrain
-    and greater difficult terrain.
-
-
-    **Shake It Off** [Reaction] **Frequency** once per day; **Trigger** The purple
-    worm would be affected by a condition or adverse effect (such as __baleful polymorph__).
-    **Effect** The purple worm negates the triggering condition or effect. Effects
-    from artifacts, deities, or a similarly powerful source can''t be avoided in this
-    way.'
+  raw_description: '**Shake It Off** [Reaction] **Frequency** once per day; **Trigger**
+    The purple worm would be affected by a condition or adverse effect (such as __baleful
+    polymorph__). **Effect** The purple worm negates the triggering condition or effect.
+    Effects from artifacts, deities, or a similarly powerful source can''t be avoided
+    in this way.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: The purple worm would be affected by a condition or adverse effect (such
-    as baleful polymorph).
+    as __baleful polymorph__).
 description: 'The purple worm is the most common and infamous of the cave worms, a
   much-feared monster wandering the twisting tunnels of the Darklands that is capable
   of carving out entire cave systems. Tunnels bored by a purple worm don''t always
@@ -205,24 +208,22 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+15
+  - formula: 3d10+15
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 28
   traits:
   - deadly 2d10
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d12+15
+  - formula: 2d12+15
     type: piercing
-  name: stinger
-  plus_damage:
   - formula: null
     type: purple worm venom
+  name: stinger
   to_hit: 28
   traits:
   - agile
@@ -230,10 +231,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+13
+  - formula: 1d10+13
     type: bludgeoning
   name: body
-  plus_damage: null
   to_hit: 26
   traits:
   - reach 15 feet
@@ -242,10 +242,9 @@ perception: 20
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: varies (see ability)
   name: regurgitate
-  plus_damage: null
   to_hit: 26
   traits:
   - brutal

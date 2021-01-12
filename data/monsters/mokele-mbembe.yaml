@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: The creature is __stunned 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whip Tail
   range: null
@@ -81,28 +77,25 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 22
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 22
   traits:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 22
   traits:
   - reach 10 feet

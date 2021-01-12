@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: __Sickened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sinful Bite
   range: null
@@ -57,8 +55,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sin
   range: null
@@ -85,8 +81,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -134,21 +128,19 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: sinful bite
+  name: jaws
   to_hit: 10
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits: null
 name: Sinspawn
@@ -175,8 +167,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sin Scent
   range: null

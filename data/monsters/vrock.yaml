@@ -25,8 +25,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dance of Ruin
   range: null
@@ -68,8 +66,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spore Cloud
   range: null
@@ -99,8 +95,6 @@ active_abilities:
     2__, and on a critical failure, it's __stunned 3__.
   failure: null
   frequency: once per minute.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stunning Screech
   range: null
@@ -124,14 +118,9 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: 'If the vrock is flying and a creature triggers an attack of opportunity,
+  description: If the vrock is flying and a creature triggers an attack of opportunity,
     the vrock can make 2 Strikes with its talons against that creature instead of
     1 Strike.
-
-
-    **Peace Vulnerability** A vrock''s wrath is the heart of their essence, and forcing
-    peace upon them wrenches at their soul. If they fail a save against __calm emotions__
-    or a similar effect forcing them to be peaceful, a vrock takes 4d6 mental damage.'
   effect: You lash out at a foe that leaves an opening. Make a melee Strike against
     the triggering creature. If your attack is a critical hit and the trigger was
     a manipulate action, you disrupt that action. This Strike doesn't count toward
@@ -139,8 +128,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -158,6 +145,28 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A vrock's wrath is the heart of their essence, and forcing peace upon
+    them wrenches at their soul. If they fail a save against __calm emotions__ or
+    a similar effect forcing them to be peaceful, a vrock takes 4d6 mental damage.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Peace Vulnerability
+  range: null
+  raw_description: '**Peace Vulnerability** A vrock''s wrath is the heart of their
+    essence, and forcing peace upon them wrenches at their soul. If they fail a save
+    against __calm emotions__ or a similar effect forcing them to be peaceful, a vrock
+    takes 4d6 mental damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 description: 'When the gates to the Abyss swing wide, the first demons through are
   often vrocks, vulture-headed scions of rage who wheel through the air on black wings
   or dance with the exultation of their fiendish power. Their hatred for mortals is
@@ -189,12 +198,11 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+9
+  - formula: 3d8+9
     type: piercing
+  - formula: 1d6
+    type: evil
   name: beak
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 21
   traits:
   - evil
@@ -202,12 +210,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d6+9
+  - formula: 3d6+9
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 21
   traits:
   - agile
@@ -216,12 +223,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
+  - formula: 1d6
+    type: evil
   name: talon
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 19
   traits:
   - agile

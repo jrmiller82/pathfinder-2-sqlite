@@ -11,13 +11,11 @@ active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: '**Requirement** The giant maggot has __Grabbed__ a creature;'
+  description: '**Requirement** The giant maggot has __Grabbed__ a creature'
   effect: The giant maggot deals 1d8+2 slashing damage to the grabbed creature as
     it chews the creature's flesh (DC 19 basic Reflex save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gnaw Flesh
   range: null
@@ -43,8 +41,6 @@ automatic_abilities:
     again until it spends at least an hour feeding on a corpse.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Regurgitation
   range: null
@@ -58,7 +54,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The giant maggot takes damage;
+  trigger: The giant maggot takes damage
 description: 'Giant flies lay their eggs on the bodies of larger monsters or livestock.
   When they hatch, these eggs release squirming maggots the size of human children,
   ravenous young who voraciously consume any flesh in the immediate vicinity—typically
@@ -76,12 +72,11 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: piercing
-  name: mandibles
-  plus_damage:
   - formula: null
     type: Grab
+  name: mandibles
   to_hit: 6
   traits: null
 name: Giant Maggot

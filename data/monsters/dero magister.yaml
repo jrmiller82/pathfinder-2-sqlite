@@ -17,8 +17,6 @@ active_abilities:
     throw or be __confused__ for 1 round.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cytillesh Stare
   range: null
@@ -46,8 +44,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Sunlight
   range: null
@@ -79,10 +75,9 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: bludgeoning
   name: aklys
-  plus_damage: null
   to_hit: 10
   traits:
   - trip
@@ -91,10 +86,9 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: bludgeoning
   name: aklys
-  plus_damage: null
   to_hit: 13
   traits:
   - ranged trip

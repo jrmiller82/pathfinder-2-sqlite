@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Seed Spray
   range: null
@@ -50,8 +48,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cold Healing
   range: null
@@ -80,8 +76,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mold Mulch
   range: null
@@ -132,23 +126,21 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: bludgeoning
+  - formula: 1d6
+    type: cold
   name: flower
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 13
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 2d4+4
+  - formula: 2d4+4
     type: slashing
+  - formula: 1d4
+    type: cold
   name: tendril
-  plus_damage:
-  - formula: null
-    type: 1d4 cold
   to_hit: 13
   traits:
   - agile

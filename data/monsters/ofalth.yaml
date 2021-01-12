@@ -11,15 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 26 Fortitude; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** 2d8 persistent bleed damage every hour and __enfeebled
-    1__ (1 day); **Stage 3** 2d8 persistent bleed damage every hour and __enfeebled
-    2__ (1 day)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wretched Weeps
   range: null
@@ -28,8 +23,11 @@ active_abilities:
     damage every hour and __enfeebled 1__ (1 day); **Stage 3** 2d8 persistent bleed
     damage every hour and __enfeebled 2__ (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 26 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1 day)
+  - effect: 2d8 persistent bleed damage every hour and __enfeebled 1__ (1 day)
+  - effect: 2d8 persistent bleed damage every hour and __enfeebled 2__ (1 day)
   success: null
   traits:
   - disease
@@ -39,21 +37,15 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A creature entering the aura must succeed at a DC 28 Fortitude save
+  description: A creature entering the aura must succeed at a DC 28 Fortitude save
     or become sickened 1 until the end of its turn (plus slowed 1 for as long as it
     is sickened on a critical failure). While within the aura, an affected creature
     takes a –2 circumstance penalty to saves against disease and to recover from the
     sickened condition. A creature that succeeds at its save is temporarily immune
     for 1 minute.
-
-
-    **Filth Wallow** A ofalth gains fast healing 2 when in an area with a high concentration
-    of debris, junk, or excrement, such as a refuse heap or sewer.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Putrid Stench
   range: 30 feet
@@ -62,17 +54,33 @@ automatic_abilities:
     of its turn (plus slowed 1 for as long as it is sickened on a critical failure).
     While within the aura, an affected creature takes a –2 circumstance penalty to
     saves against disease and to recover from the sickened condition. A creature that
-    succeeds at its save is temporarily immune for 1 minute.
-
-
-    **Filth Wallow** A ofalth gains fast healing 2 when in an area with a high concentration
-    of debris, junk, or excrement, such as a refuse heap or sewer.'
+    succeeds at its save is temporarily immune for 1 minute.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits:
   - aura
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A ofalth gains fast healing 2 when in an area with a high concentration
+    of debris, junk, or excrement, such as a refuse heap or sewer.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Filth Wallow
+  range: null
+  raw_description: '**Filth Wallow** A ofalth gains fast healing 2 when in an area
+    with a high concentration of debris, junk, or excrement, such as a refuse heap
+    or sewer.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: null
 description: 'Found in castle dung heaps, city dumps, and sewers, ofalths are thought
   to be cousins of shamblers. But whereas shamblers are living heaps of soggy vegetation,
@@ -119,12 +127,11 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: wretched weeps
+  name: fist
   to_hit: 23
   traits:
   - reach 10 feet
@@ -133,12 +140,11 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: bludgeoning
-  name: fling offal
-  plus_damage:
   - formula: null
     type: wretched weeps
+  name: fling offal
   to_hit: 19
   traits:
   - range increment 30 feet
@@ -163,8 +169,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Refuse Pile
   range: null

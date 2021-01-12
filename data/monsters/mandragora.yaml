@@ -19,8 +19,6 @@ active_abilities:
     kind or amount.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Drain
   range: null
@@ -30,7 +28,7 @@ active_abilities:
     __sorcerer__, the mandragora gains temporary Hit Points equal to the damage dealt.
     A creature that has its blood drained by a mandragora is __drained 1__ until it
     receives healing of any kind or amount.'
-  requirements: The mandragora has a creature grabbed
+  requirements: The mandragora has a creature __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Mandragora Venom
   range: null
@@ -63,111 +59,44 @@ active_abilities:
   - poison
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is sickened 2 and __slowed 1__. As long as the creature
+    remains sickened, this slowed condition value can't be reduced below 1.
+  critical_success: The creature is unaffected.
   description: null
   effect: The mandragora emits an unsettling shriek. Each non-mandragora creature
     within 30 feet must attempt a DC 25 Will save.
-  failure: null
+  failure: The creature is sickened 2.
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Piercing Shriek
   range: null
   raw_description: '**Piercing Shriek** [One Action]  (__auditory__, __evocation__,
     __mental__, __primal__) **Frequency** once per day; **Effect** The mandragora
     emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt
-    a DC 25 Will save.'
+    a DC 25 Will save.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __sickened 1__.
+
+
+    **Failure** The creature is sickened 2.
+
+
+    **Critical Failure** The creature is sickened 2 and __slowed 1__. As long as the
+    creature remains sickened, this slowed condition value can''t be reduced below
+    1.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __sickened 1__.
   traits:
   - auditory
   - evocation
   - mental
   - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __sickened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is sickened 2.
-  effect: null
-  failure: The creature is sickened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is sickened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is sickened 2 and __slowed 1__. As long as the creature
-    remains sickened, this slowed condition value can't be reduced below 1.
-  critical_success: null
-  description: The creature is sickened 2 and __slowed 1__. As long as the creature
-    remains sickened, this slowed condition value can't be reduced below 1.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is sickened 2 and __slowed 1__.
-    As long as the creature remains sickened, this slowed condition value can''t be
-    reduced below 1.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: CE
 automatic_abilities:
@@ -179,8 +108,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerability to Supernatural Darkness
   range: null
@@ -230,23 +157,21 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 14
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 2d4+4
+  - formula: 2d4+4
     type: slashing
-  name: thorny vine
-  plus_damage:
   - formula: null
     type: mandragora venom
+  name: thorny vine
   to_hit: 14
   traits:
   - agile
@@ -280,8 +205,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Scent
   range: null

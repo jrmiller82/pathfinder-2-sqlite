@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snatch
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swoop
   range: null
@@ -72,24 +68,22 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: piercing
+  - formula: 1d8
+    type: persistent bleed
   name: beak
-  plus_damage:
-  - formula: null
-    type: 1d8 persistent bleed
   to_hit: 17
   traits:
   - deadly 1d10
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: piercing
-  name: talon
-  plus_damage:
   - formula: null
     type: Grab
+  name: talon
   to_hit: 17
   traits: null
 name: Quetzalcoatlus

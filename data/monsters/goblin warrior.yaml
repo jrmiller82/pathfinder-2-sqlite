@@ -17,8 +17,6 @@ automatic_abilities:
   effect: The goblin warrior Steps.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Goblin Scuttle
   range: null
@@ -49,10 +47,9 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 slashing
+  - formula: 1d6
+    type: slashing
   name: dogslicer
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -63,10 +60,9 @@ perception: 2
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 8
   traits:
   - deadly 1d10

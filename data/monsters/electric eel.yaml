@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: The creature is __stunned 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stunning Shock
   range: null
@@ -58,22 +56,20 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 6
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 1d4 electricity
+  - formula: 1d4
+    type: electricity
   - formula: null
     type: stunning shock
+  name: tail
   to_hit: 6
   traits:
   - agile

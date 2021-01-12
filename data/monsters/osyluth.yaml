@@ -11,17 +11,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 25 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1 **2d6 poison damage, __enfeebled 1__ (1 round); **Stage 2 **3d6 poison damage
-    and enfeebled 1 (1 round); **Stage 3 **3d6 poison damage and enfeebled 2 (1 round).
-    Once a creature reaches stage 3, it takes a –4 status penalty to Will saves against
-    attempts to __Coerce__ it for 1 hour (this is a mental effect).'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Osyluth Venom
   range: null
   raw_description: '**Osyluth Venom** (__poison__) **Saving Throw **DC 25 Fortitude;
@@ -31,8 +25,13 @@ active_abilities:
     it takes a –4 status penalty to Will saves against attempts to __Coerce__ it for
     1 hour (this is a mental effect).'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 25 Fortitude
+  stages:
+  - effect: 2d6 poison damage, __enfeebled 1__ (1 round)
+  - effect: 3d6 poison damage and enfeebled 1 (1 round)
+  - effect: 3d6 poison damage and enfeebled 2 (1 round). Once a creature reaches stage
+      3, it takes a –4 status penalty to Will saves against attempts to __Coerce__
+      it for 1 hour (this is a mental effect).
   success: null
   traits:
   - poison
@@ -44,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Quick Invisibility
   range: null
@@ -65,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sadistic Strike
   range: null
@@ -87,8 +82,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stygian Inquisitor
   range: null
@@ -112,8 +105,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tail Sweep
   range: null
@@ -154,24 +145,22 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+11
+  - formula: 2d10+11
     type: piercing
+  - formula: 1d6
+    type: evil
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 21
   traits:
   - evil
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d6+11
+  - formula: 2d6+11
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 21
   traits:
   - agile
@@ -180,14 +169,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+11
+  - formula: 1d10+11
     type: piercing
-  name: stinger
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: osyluth venom
+  name: stinger
   to_hit: 21
   traits:
   - evil
@@ -198,10 +186,9 @@ perception: 21
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: piercing
   name: bone shard
-  plus_damage: null
   to_hit: 21
   traits:
   - evil

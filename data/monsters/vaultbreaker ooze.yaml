@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Form Tool
   range: null
@@ -67,8 +63,6 @@ automatic_abilities:
     gain the __versatile S or P__ weapon trait.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Metallify
   range: null
@@ -86,7 +80,7 @@ automatic_abilities:
   - manipulate
   - polymorph
   - transmutation
-  trigger: A creature Strikes the vaultbreaker ooze;
+  trigger: A creature Strikes the vaultbreaker ooze
 description: 'Though many oozes hunt among the dreary confines of underground caverns,
   dungeons, and abandoned ruins, others seek to quell their hunger in areas well-trafficked
   by civilized creatures. The aptly named vaultbreaker oozes exhibit a mindless compulsion
@@ -130,12 +124,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+8
+  - formula: 1d8+8
     type: bludgeoning
+  - formula: 2d6
+    type: acid
   name: pseudopod
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
   to_hit: 17
   traits: null
 name: Vaultbreaker Ooze
@@ -159,8 +152,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null
@@ -180,8 +171,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Treasure Sense
   range: null

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Cave Scorpion Venom
   range: null
@@ -53,24 +51,22 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: slashing
-  name: pincer
-  plus_damage:
   - formula: null
     type: Grab
+  name: pincer
   to_hit: 9
   traits:
   - agile
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
-  name: stinger
-  plus_damage:
   - formula: null
     type: cave scorpion venom
+  name: stinger
   to_hit: 9
   traits:
   - finesse

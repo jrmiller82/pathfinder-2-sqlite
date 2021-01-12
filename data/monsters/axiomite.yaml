@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Crystalline Dust Form
   range: null
@@ -92,12 +90,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+11
+  - formula: 2d8+11
     type: bludgeoning
+  - formula: 1d6
+    type: lawful
   name: warhammer
-  plus_damage:
-  - formula: null
-    type: 1d6 lawful
   to_hit: 20
   traits:
   - lawful
@@ -105,12 +102,11 @@ melee_attacks:
   - shove
 - action_cost: One Action
   damage:
-    formula: 1d8+5
+  - formula: 1d8+5
     type: bludgeoning
+  - formula: 1d6
+    type: lawful
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 lawful
   to_hit: 17
   traits:
   - agile

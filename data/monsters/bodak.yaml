@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bodak Spawn
   range: null
@@ -33,8 +31,8 @@ active_abilities:
   - occult
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is doomed 1 and drained 4.
+  critical_success: The creature is unaffected.
   description: The bodak stares at a living creature within 30 feet that it can sense
     with its __lifesense__. That creature must attempt a DC 26 Fortitude save. If
     the target becomes __drained__, the bodak gains a number of temporary Hit Points
@@ -43,10 +41,8 @@ active_abilities:
     of 4. If the bodak is destroyed, any __doomed__ condition a creature has gained
     from Death Gaze are removed.
   effect: null
-  failure: null
+  failure: The creature is doomed 1 and drained 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death Gaze
   range: null
@@ -57,92 +53,28 @@ active_abilities:
     equal to 5 times the value of the drained condition the target gained. Multiple
     exposures to this ability can increase a creature''s drained condition to a maximum
     of 4. If the bodak is destroyed, any __doomed__ condition a creature has gained
-    from Death Gaze are removed.'
+    from Death Gaze are removed.
+
+
+    **Critical Success **The creature is unaffected.
+
+
+    **Success **The creature is drained 1.
+
+
+    **Failure **The creature is doomed 1 and drained 2.
+
+
+    **Critical Failure **The creature is doomed 1 and drained 4.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is drained 1.
   traits:
   - death
   - necromancy
   - occult
   - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is drained 1.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is drained 1.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is drained 1.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is doomed 1 and drained 2.
-  effect: null
-  failure: The creature is doomed 1 and drained 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature is doomed 1 and drained 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is doomed 1 and drained 4.
-  critical_success: null
-  description: The creature is doomed 1 and drained 4.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The creature is doomed 1 and drained 4.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: CE
 automatic_abilities:
@@ -156,8 +88,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sunlight Vulnerability
   range: null
@@ -179,8 +109,6 @@ automatic_abilities:
     5 Hit Points and the target becomes __drained 1__.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draining Glance
   range: null
@@ -199,8 +127,8 @@ automatic_abilities:
   - necromancy
   - occult
   - visual
-  trigger: A living creature within 30 feet that the bodak can perceive with its lifesense
-    starts its turn;
+  trigger: A living creature within 30 feet that the bodak can perceive with its __lifesense__
+    starts its turn
 description: 'When a living, sentient humanoid is exposed to an extreme expression
   of supernatural evil, the experience can irrevocably damn the victim, crushing their
   mind and ripping out their soul in an appalling, unholy transformation that results
@@ -248,12 +176,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: bludgeoning
+  - formula: 1d6
+    type: negative
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 negative
   to_hit: 18
   traits:
   - agile

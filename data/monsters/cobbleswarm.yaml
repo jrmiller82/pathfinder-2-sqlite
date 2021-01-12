@@ -10,72 +10,36 @@ ac_special: null
 active_abilities:
 - action_cost: Two Actions
   critical_failure: null
-  critical_success: null
+  critical_success: The creature falls __prone__ and takes 1d6 bludgeoning damage,
+    and is __restrained__ by the cobbleswarm until the end of the cobbleswarm's next
+    turn.
   description: The cobbleswarm attempts an __Athletics__ check and compares the result
     to the Fortitude DC of all creatures in its space.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grasping Bites
   range: null
   raw_description: '**Grasping Bites** [Two Actions]  (__attack__) The cobbleswarm
     attempts an __Athletics__ check and compares the result to the Fortitude DC of
-    all creatures in its space.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - attack
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature falls __prone__ and takes 1d6 bludgeoning damage,
-    and is __restrained__ by the cobbleswarm until the end of the cobbleswarm's next
+    all creatures in its space.
+
+
+    **Critical Success** The creature falls __prone__ and takes 1d6 bludgeoning damage,
+    and is __restrained__ by the cobbleswarm until the end of the cobbleswarm''s next
     turn.
-  description: The creature falls __prone__ and takes 1d6 bludgeoning damage, and
-    is __restrained__ by the cobbleswarm until the end of the cobbleswarm's next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature falls __prone__ and takes 1d6
-    bludgeoning damage, and is __restrained__ by the cobbleswarm until the end of
-    the cobbleswarm''s next turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature falls prone, and is __grabbed__ by the cobbleswarm until
-    the creature until the end of the cobbleswarm's next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature falls prone, and is __grabbed__ by the
-    cobbleswarm until the creature until the end of the cobbleswarm''s next turn.'
+
+
+    **Success** The creature falls prone, and is __grabbed__ by the cobbleswarm until
+    the creature until the end of the cobbleswarm''s next turn.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature falls prone, and is __grabbed__ by the cobbleswarm until the
     creature until the end of the cobbleswarm's next turn.
-  traits: null
+  traits:
+  - attack
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -85,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pummeling Assault
   range: null
@@ -167,8 +129,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Clutching Cobbles
   range: null
@@ -188,8 +148,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Precise Tremorsense
   range: null

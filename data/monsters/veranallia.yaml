@@ -16,8 +16,6 @@ active_abilities:
     producing any of the results of a successful 9th-level __control weather__ ritual.
   failure: null
   frequency: three times per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Alter Weather
   range: null
@@ -41,8 +39,6 @@ active_abilities:
     Rebirth can change the creature's ancestry or heritage, typically into an aasimar.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rebirth
   range: null
@@ -99,14 +95,13 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d4+16
+  - formula: 3d4+16
     type: slashing
+  - formula: 4d6
+    type: cold
+  - formula: 1d6
+    type: good
   name: sickle
-  plus_damage:
-  - formula: null
-    type: 4d6 cold
-  - formula: null
-    type: 1d6 good
   to_hit: 39
   traits:
   - agile
@@ -114,14 +109,13 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 4d12+16
+  - formula: 4d12+16
     type: bludgeoning
-  name: vine
-  plus_damage:
-  - formula: null
-    type: 1d6 good
+  - formula: 1d6
+    type: good
   - formula: null
     type: Improved Grab
+  name: vine
   to_hit: 39
   traits:
   - reach 20 feet

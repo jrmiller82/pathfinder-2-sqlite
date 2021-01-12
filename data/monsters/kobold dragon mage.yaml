@@ -18,10 +18,7 @@ active_abilities:
     a space that's not adjacent to any enemeies. This is a 1st-level spell that requires
     a somatic component.
   failure: null
-  frequency: once per hour; Requirements The kobold dragon mage is adjacent to at
-    least one enemy.
-  full_description: null
-  generic_description: null
+  frequency: once per hour
   maximum_duration: null
   name: Illusory Retreat
   range: null
@@ -50,8 +47,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -74,8 +69,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dragonscaled
   range: null
@@ -107,20 +100,18 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6-1
+  - formula: 1d6-1
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d4-1
+  - formula: 1d4-1
     type: bludgeoning
   name: staff
-  plus_damage: null
   to_hit: 3
   traits:
   - two-hand d8

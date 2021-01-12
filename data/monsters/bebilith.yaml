@@ -12,15 +12,11 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: The __drained__ condition from Abyssal rot is cumulative, to a maximum
-    of drained 4; **Saving Throw **DC 29 Fortitude; **Maximum Duration **6 rounds;
-    **Stage 1 **3d6 negative damage (1 round); **Stage 2 **3d6 negative damage and
-    drained 1 (1 round); **Stage 3 **3d6 negative damage and drained 2 (1 round)
+    of drained 4
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Abyssal Rot
   range: null
   raw_description: '**Abyssal Rot** (__disease__, __necromancy__) The __drained__
@@ -29,8 +25,11 @@ active_abilities:
     damage (1 round); **Stage 2 **3d6 negative damage and drained 1 (1 round); **Stage
     3 **3d6 negative damage and drained 2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 29 Fortitude
+  stages:
+  - effect: 3d6 negative damage (1 round)
+  - effect: 3d6 negative damage and drained 1 (1 round)
+  - effect: 3d6 negative damage and drained 2 (1 round)
   success: null
   traits:
   - disease
@@ -50,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dimensional Tether
   range: null
@@ -76,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Penetrating Strike
   range: null
@@ -102,8 +97,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -152,22 +145,20 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Abyssal rot
+  name: jaws
   to_hit: 23
   traits:
   - magical
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
@@ -178,10 +169,9 @@ perception: 21
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: dimensional tether
   name: web
-  plus_damage: null
   to_hit: 23
   traits:
   - range increment 60 feet
@@ -201,8 +191,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Scent Demons
   range: null

@@ -11,13 +11,11 @@ active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: '**Requirement** The marrmora is not under the effect of __fire shield__;'
+  description: '**Requirement** The marrmora is not under the effect of __fire shield__'
   effect: The marrmora makes a claw Strike. If it hits, it can immediately cast one
     of its available fire shield innate spells as a free action.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Igniting Assault
   range: null
@@ -34,112 +32,45 @@ active_abilities:
 alignment: NE
 automatic_abilities:
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature loses any resistance to fire for 1 hour and gains
+    weakness 15 to fire for the same duration.
+  critical_success: The creature is unaffected.
   description: A creature that enters or begins its turn in this aura's emanation
     must attempt a DC 33 Will save. Regardless of the result of the saving throw,
     the creature is temporarily immune for 1 minute.
   effect: null
-  failure: null
+  failure: The creature loses any resistance to fire for 1 hour.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fascination of Flame
   range: 30 feet
   raw_description: '**Fascination of Flame** (__aura__, __emotion__, __enchantment__,
     __mental__, __primal__) 30 feet. A creature that enters or begins its turn in
     this aura''s emanation must attempt a DC 33 Will save. Regardless of the result
-    of the saving throw, the creature is temporarily immune for 1 minute.'
+    of the saving throw, the creature is temporarily immune for 1 minute.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature loses any resistance to fire for 1 round.
+
+
+    **Failure** The creature loses any resistance to fire for 1 hour.
+
+
+    **Critical Failure** The creature loses any resistance to fire for 1 hour and
+    gains weakness 15 to fire for the same duration.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature loses any resistance to fire for 1 round.
   traits:
   - aura
   - emotion
   - enchantment
   - mental
   - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature loses any resistance to fire for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature loses any resistance to fire for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature loses any resistance to fire for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature loses any resistance to fire for 1 hour.
-  effect: null
-  failure: The creature loses any resistance to fire for 1 hour.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature loses any resistance to fire for 1 hour.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature loses any resistance to fire for 1 hour and gains
-    weakness 15 to fire for the same duration.
-  critical_success: null
-  description: The creature loses any resistance to fire for 1 hour and gains weakness
-    15 to fire for the same duration.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature loses any resistance to fire
-    for 1 hour and gains weakness 15 to fire for the same duration.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: Reaction
   critical_failure: null
@@ -149,8 +80,6 @@ automatic_abilities:
     half the damage the fire effect would have dealt.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Absorb Flame
   range: null
@@ -163,8 +92,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The marrmora is targeted by a fire spell or effect, or is in the area of
-    a fire effect;
+  trigger: The marrmora is targeted by a __fire__ spell or effect, or is in the area
+    of a fire effect
 description: 'On the __First World__, marrmoras dwell in ruined wildlands perpetually
   scourged by fire and rarely, if ever, travel elsewhere. When a wildfire devastates
   a wilderness region on the Material Plane and results in the death of other fey,
@@ -205,14 +134,13 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+14
+  - formula: 3d6+14
     type: slashing
+  - formula: 3d6
+    type: fire
+  - formula: 1d6
+    type: persistent fire
   name: claw
-  plus_damage:
-  - formula: null
-    type: 3d6 fire
-  - formula: null
-    type: 1d6 persistent fire
   to_hit: 29
   traits: null
 name: Marrmora
@@ -220,12 +148,11 @@ perception: 27
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 6d6 fire
+  - formula: 6d6
+    type: fire
+  - formula: 2d6
+    type: persistent fire
   name: flame jet
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent fire
   to_hit: 29
   traits:
   - fire

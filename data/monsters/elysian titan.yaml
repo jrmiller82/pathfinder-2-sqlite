@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Titanic Grasp
   range: null
@@ -60,8 +56,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wide Cleave
   range: null
@@ -87,8 +81,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Impossible Stature
   range: 100 feet
@@ -132,10 +124,9 @@ level: 21
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+20
+  - formula: 4d10+20
     type: piercing
   name: greatpick
-  plus_damage: null
   to_hit: 41
   traits:
   - fatal d12
@@ -143,10 +134,9 @@ melee_attacks:
   - reach 30 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+20
+  - formula: 4d8+20
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 38
   traits:
   - agile
@@ -156,10 +146,9 @@ perception: 36
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+20
+  - formula: 3d12+20
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 38
   traits:
   - brutal

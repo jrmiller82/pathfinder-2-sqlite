@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Spear Frog Venom
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sticky Feet
   range: null
@@ -63,8 +59,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Toxic Skin
   range: null
@@ -90,12 +84,11 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
-  name: jaws
-  plus_damage:
+  - formula: 1d6
+    type: piercing
   - formula: null
     type: spear frog venom
+  name: jaws
   to_hit: 7
   traits:
   - agile

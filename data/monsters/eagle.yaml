@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eagle Dive
   range: null
@@ -48,19 +46,17 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: beak
-  plus_damage: null
   to_hit: 6
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 slashing
+  - formula: 1d4
+    type: slashing
   name: talon
-  plus_damage: null
   to_hit: 6
   traits:
   - agile

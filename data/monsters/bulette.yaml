@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Favored Prey
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Leaping Charge
   range: null
@@ -71,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Powerful Jumper
   range: null
@@ -130,18 +124,16 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: piercing
   name: Jaws
-  plus_damage: null
   to_hit: 21
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: slashing
   name: Claw
-  plus_damage: null
   to_hit: 21
   traits:
   - agile

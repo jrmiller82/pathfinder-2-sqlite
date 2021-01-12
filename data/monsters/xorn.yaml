@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Claw Frenzy
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -78,19 +74,17 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: piercing
   name: jaw
-  plus_damage: null
   to_hit: 18
   traits:
   - deadly 1d10
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 18
   traits:
   - agile

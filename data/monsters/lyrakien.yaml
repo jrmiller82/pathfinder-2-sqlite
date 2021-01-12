@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Starlight Blast
   range: null
@@ -76,14 +74,13 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4-2
+  - formula: 1d4-2
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: 1 chaotic
   - formula: null
     type: 1 good
+  name: fist
   to_hit: 9
   traits:
   - agile
@@ -96,10 +93,9 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 chaotic and 1d4 good
+  - formula: 1d4
+    type: chaotic and 1d4 good
   name: starlight ray
-  plus_damage: null
   to_hit: 9
   traits:
   - chaotic

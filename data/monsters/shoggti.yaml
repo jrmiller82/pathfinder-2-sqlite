@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Braincloud
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -84,8 +80,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fascinating Display
   range: null
@@ -146,12 +140,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+8
+  - formula: 2d12+8
     type: piercing
+  - formula: 1d6
+    type: chaotic
   name: bite
-  plus_damage:
-  - formula: null
-    type: 1d6 chaotic
   to_hit: 18
   traits:
   - chaotic
@@ -159,14 +152,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: slashing
-  name: pincer
-  plus_damage:
-  - formula: null
-    type: 1d6 chaotic
+  - formula: 1d6
+    type: chaotic
   - formula: null
     type: Grab
+  name: pincer
   to_hit: 18
   traits:
   - agile

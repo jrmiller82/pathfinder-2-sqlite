@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Archon's Door
   range: null
@@ -45,8 +43,6 @@ active_abilities:
     The creature's save result is one degree of success worse than the result it rolled.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blinding Beams
   range: null
@@ -60,7 +56,7 @@ active_abilities:
   success: null
   traits: null
   trigger: The bastion archon hits a creature with two fist Strikes this turn and
-    can use its Holy Beam;
+    can use its Holy Beam
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -71,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Entrench
   range: null
@@ -88,110 +82,42 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature takes double damage and is blinded permanently.
+  critical_success: The creature is unaffected.
   description: The bastion archon releases a blinding beam of holy light in a 500-foot
     line that deals 20d6 good damage to non-archons in the area, with a DC 38 Reflex
     save. The bastion archon can't use Holy Beam again for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature takes full damage and is __blinded__ for 1d4 rounds.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Holy Beam
   range: null
   raw_description: '**Holy Beam** [Two Actions]  (__divine__, __good__, __incapacitation__,
     __light__) The bastion archon releases a blinding beam of holy light in a 500-foot
     line that deals 20d6 good damage to non-archons in the area, with a DC 38 Reflex
-    save. The bastion archon can''t use Holy Beam again for 1d4 rounds.'
+    save. The bastion archon can''t use Holy Beam again for 1d4 rounds.
+
+
+    **Critical Success **The creature is unaffected.
+
+
+    **Success **The creature takes half damage.
+
+
+    **Failure **The creature takes full damage and is __blinded__ for 1d4 rounds.
+
+
+    **Critical Failure **The creature takes double damage and is blinded permanently.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature takes half damage.
   traits:
   - divine
   - good
   - incapacitation
   - light
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes half damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature takes half damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature takes half damage.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes full damage and is __blinded__ for 1d4 rounds.
-  effect: null
-  failure: The creature takes full damage and is __blinded__ for 1d4 rounds.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature takes full damage and is __blinded__
-    for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature takes double damage and is blinded permanently.
-  critical_success: null
-  description: The creature takes double damage and is blinded permanently.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The creature takes double damage and is blinded
-    permanently.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: LG
 automatic_abilities:
@@ -204,8 +130,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bastion Aura
   range: 50 feet
@@ -235,8 +159,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ultimate Sacrifice
   range: null
@@ -263,8 +185,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retributive Strike
   range: null
@@ -309,12 +229,11 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+20
+  - formula: 4d8+20
     type: bludgeoning
+  - formula: 2d6
+    type: good
   name: fist
-  plus_damage:
-  - formula: null
-    type: 2d6 good
   to_hit: 40
   traits:
   - good

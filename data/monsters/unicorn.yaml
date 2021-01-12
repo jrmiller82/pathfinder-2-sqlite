@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ghost Touch
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Powerful Charge
   range: null
@@ -91,24 +87,22 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: piercing
-  name: horn
-  plus_damage:
-  - formula: null
-    type: 1d6 good
+  - formula: 1d6
+    type: good
   - formula: null
     type: ghost touch
+  name: horn
   to_hit: 12
   traits:
   - good
   - magical
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: bludgeoning and ghost touch
   name: hoof
-  plus_damage: null
   to_hit: 12
   traits:
   - agile
@@ -134,8 +128,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wild Empathy
   range: null

@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Archon's Door
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Courageous Switch
   range: null
@@ -73,8 +69,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Living Shield
   range: null
@@ -123,12 +117,11 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: piercing
+  - formula: 1d6
+    type: good
   name: holy striking spear
-  plus_damage:
-  - formula: null
-    type: 1d6 good
   to_hit: 22
   traits:
   - magical
@@ -157,8 +150,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Morphic Hands
   range: null

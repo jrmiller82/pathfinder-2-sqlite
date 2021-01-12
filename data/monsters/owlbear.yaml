@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bloodcurdling Screech
   range: null
@@ -56,8 +54,6 @@ active_abilities:
     Strike hits, the target must attempt a DC 22 Will save.
   failure: The target is __sickened 1__ and __slowed 1__ as long as it remains __sickened__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gnaw
   range: null
@@ -89,8 +85,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Screeching Advance
   range: null
@@ -148,21 +142,19 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: piercing
-  name: talon
-  plus_damage:
   - formula: null
     type: Grab
+  name: talon
   to_hit: 14
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d12+6
+  - formula: 1d12+6
     type: piercing
   name: beak
-  plus_damage: null
   to_hit: 14
   traits: null
 name: Owlbear

@@ -16,10 +16,7 @@ active_abilities:
     area to create a single haunt of 6th level or lower at his present location. This
     haunt is permanent until it is disabled or the remnant of Barzillai is destroyed.
   failure: null
-  frequency: three times per day; Requirements The remnant of Barzillai is within
-    Ravounel.
-  full_description: null
-  generic_description: null
+  frequency: three times per day
   maximum_duration: null
   name: Create Haunt
   range: null
@@ -49,8 +46,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Haunted Form
   range: null
@@ -123,12 +118,11 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: bludgeoning
+  - formula: 2d6
+    type: fire
   name: burning mace
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
   to_hit: 22
   traits:
   - magical

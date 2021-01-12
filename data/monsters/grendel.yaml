@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hands of the Murderer
   range: null
@@ -41,8 +39,6 @@ active_abilities:
     HP; this is a __healing__ effect.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tooth Grind
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -89,8 +83,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 60 feet
@@ -132,8 +124,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -158,8 +148,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -178,8 +166,6 @@ automatic_abilities:
     Grendel.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unstoppable
   range: null
@@ -194,10 +180,11 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: 'Grendel would take persistent damage or gain one of the following conditions:
-    blinded, clumsy, confused, controlled, dazzled, deafened, doomed, drained, enfeebled,
-    fascinated, fatigued, fleeing, frightened, paralyzed, petrified, sickened, slowed,
-    stunned, or stupefied;'
+  trigger: 'Grendel would take __persistent damage__ or gain one of the following
+    conditions: __blinded__, __clumsy__, __confused__, __controlled__, __dazzled__,
+    __deafened__, __doomed__, __drained__, __enfeebled__, __fascinated__, __fatigued__,
+    __fleeing__, __frightened__, __paralyzed__, __petrified__, __sickened__, __slowed__,
+    __stunned__, or __stupefied__'
 description: 'This reaver of the cold marsh is not just a monster; he is a force of
   nature. Where there is peace and prosperity in the world, Grendel strikes, eager
   to prove that tranquility is transitory and death is the only constant. He stalks
@@ -226,12 +213,11 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+18
+  - formula: 4d8+18
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: fist
   to_hit: 37
   traits:
   - agile
@@ -239,10 +225,9 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+18
+  - formula: 4d10+18
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 37
   traits:
   - magical
@@ -253,10 +238,9 @@ perception: 35
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+18
+  - formula: 2d12+18
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 37
   traits:
   - brutal
@@ -282,8 +266,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Keen Hearing
   range: null

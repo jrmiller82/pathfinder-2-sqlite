@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blue Flames
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inferno Leap
   range: null
@@ -66,30 +62,42 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'When the elemental inferno dies, it explodes, dealing 7d6 fire damage
+  description: When the elemental inferno dies, it explodes, dealing 7d6 fire damage
     to each creature in a 10-foot emanation (DC 30 basic Reflex save).
-
-
-    **Intense Heat** (__aura__, __fire__) 10 feet, 7d6 fire, DC 28 basic Reflex.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Explosion
   range: null
   raw_description: '**Explosion** (__fire__) When the elemental inferno dies, it explodes,
     dealing 7d6 fire damage to each creature in a 10-foot emanation (DC 30 basic Reflex
-    save).
-
-
-    **Intense Heat** (__aura__, __fire__) 10 feet, 7d6 fire, DC 28 basic Reflex.'
+    save).'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits:
+  - fire
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: ', 7d6 fire, DC 28 basic Reflex.'
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Intense Heat
+  range: 10 feet
+  raw_description: '**Intense Heat** (__aura__, __fire__) 10 feet, 7d6 fire, DC 28
+    basic Reflex.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
   - fire
   trigger: null
 description: 'Walking conflagrations of unimaginably hot fire, elemental infernos
@@ -113,12 +121,11 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: fire
+  - formula: 3d8
+    type: persistent fire
   name: tendril
-  plus_damage:
-  - formula: null
-    type: 3d8 persistent fire
   to_hit: 24
   traits:
   - reach 15 feet
@@ -127,10 +134,9 @@ perception: 20
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: fire
   name: fire mote
-  plus_damage: null
   to_hit: 24
   traits:
   - range increment 60 feet
@@ -150,8 +156,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

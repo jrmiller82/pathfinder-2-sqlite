@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -39,16 +37,15 @@ active_abilities:
   - transmutation
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The target is unaffected.
+  critical_success: The creature takes 20d6 electricity damage and is __grabbed__
+    until the end of its next turn.
   description: null
   effect: The water yai extends a portion of their kimono to attempt to envelop a
     creature within 15 feet. The water yai must attempt a Performance check against
     the creature's Reflex DC.
-  failure: null
+  failure: The target takes 5d6 electricity damage but is not grabbed.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Enveloping Kimono
   range: null
@@ -56,97 +53,30 @@ active_abilities:
     __primal__, __transmutation__, __water__) **Requirements** The water yai''s last
     action was a successful kimono Strike; **Effect** The water yai extends a portion
     of their kimono to attempt to envelop a creature within 15 feet. The water yai
-    must attempt a Performance check against the creature''s Reflex DC.'
+    must attempt a Performance check against the creature''s Reflex DC.
+
+
+    **Critical Success** The creature takes 20d6 electricity damage and is __grabbed__
+    until the end of its next turn.
+
+
+    **Success** As critical success, but only 10d6 electricity damage.
+
+
+    **Failure** The target takes 5d6 electricity damage but is not grabbed.
+
+
+    **Critical Failure** The target is unaffected.'
   requirements: The water yai's last action was a successful kimono Strike
   saving_throw: null
   stages: null
-  success: null
+  success: As critical success, but only 10d6 electricity damage.
   traits:
   - electricity
   - manipulate
   - primal
   - transmutation
   - water
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature takes 20d6 electricity damage and is __grabbed__
-    until the end of its next turn.
-  description: The creature takes 20d6 electricity damage and is __grabbed__ until
-    the end of its next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature takes 20d6 electricity damage
-    and is __grabbed__ until the end of its next turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: As critical success, but only 10d6 electricity damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** As critical success, but only 10d6 electricity damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: As critical success, but only 10d6 electricity damage.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target takes 5d6 electricity damage but is not grabbed.
-  effect: null
-  failure: The target takes 5d6 electricity damage but is not grabbed.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The target takes 5d6 electricity damage but is not
-    grabbed.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The target is unaffected.
-  critical_success: null
-  description: The target is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: CE
 automatic_abilities:
@@ -161,8 +91,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -190,8 +118,6 @@ automatic_abilities:
     that sprays from the kimono (DC 35 basic Reflex save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shocking Douse
   range: null
@@ -206,7 +132,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature within 100 feet casts a fire spell;
+  trigger: A creature within 100 feet casts a fire spell
 description: 'Among the most powerful yai are those who emulate the form of __storm
   giants__. Rather than lord over their giant-kin like most oni, though, water yai
   prefer to lurk alone in the world''s oceans (or, much more rarely, large and remote
@@ -239,12 +165,11 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+15
+  - formula: 3d8+15
     type: piercing
+  - formula: 2d6
+    type: electricity
   name: longspear
-  plus_damage:
-  - formula: null
-    type: 2d6 electricity
   to_hit: 35
   traits:
   - evil
@@ -252,12 +177,11 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+12
+  - formula: 3d12+12
     type: electricity
-  name: kimono
-  plus_damage:
   - formula: null
     type: Enveloping Kimono
+  name: kimono
   to_hit: 33
   traits:
   - electricity
@@ -266,12 +190,11 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+15
+  - formula: 3d8+15
     type: bludgeoning
+  - formula: 2d6
+    type: electricity
   name: fist
-  plus_damage:
-  - formula: null
-    type: 2d6 electricity
   to_hit: 33
   traits:
   - agile
@@ -283,12 +206,11 @@ perception: 32
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+12
+  - formula: 3d12+12
     type: electricity
-  name: electric missile
-  plus_damage:
   - formula: null
     type: flat-footed for 1 round
+  name: electric missile
   to_hit: 30
   traits:
   - electricity

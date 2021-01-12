@@ -16,8 +16,6 @@ active_abilities:
     of rolling its check, the target automatically gets a failure.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change of Luck
   range: null
@@ -35,7 +33,7 @@ active_abilities:
   - misfortune
   - occult
   trigger: A creature within 30 feet of the bone croupier attempts a check that uses
-    a d20, but hasn't rolled yet;
+    a d20, but hasn't rolled yet
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Roll the Bones
   range: null
@@ -115,10 +111,9 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 14
   traits:
   - agile

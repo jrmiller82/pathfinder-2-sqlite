@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -61,14 +59,13 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
+  - formula: 1d6
+    type: evil
+  - formula: 1d6
+    type: fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
-  - formula: null
-    type: 1d6 fire
   to_hit: 13
   traits:
   - magical

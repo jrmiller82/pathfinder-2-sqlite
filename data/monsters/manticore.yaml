@@ -26,8 +26,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spike Volley
   range: null
@@ -85,18 +83,16 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
@@ -105,10 +101,9 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+5
+  - formula: 1d10+5
     type: piercing
   name: spike
-  plus_damage: null
   to_hit: 14
   traits:
   - range increment 40 feet

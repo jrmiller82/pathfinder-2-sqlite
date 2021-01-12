@@ -11,14 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 29 Fortitude; **Stage 1 **carrier (1 day); **Stage
-    2 **__enfeebled 1__ (1 day); **Stage 3 **enfeebled 2 (1 day); **Stage 4 **as stage
-    3; **Stage 5 **enfeebled 3 (1 week); **Stage 6 **dead'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Daemonic Famine
   range: null
@@ -27,8 +23,14 @@ active_abilities:
     2 (1 day); **Stage 4 **as stage 3; **Stage 5 **enfeebled 3 (1 week); **Stage 6
     **dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 29 Fortitude
+  stages:
+  - effect: carrier (1 day)
+  - effect: __enfeebled 1__ (1 day)
+  - effect: enfeebled 2 (1 day)
+  - effect: as stage 3
+  - effect: enfeebled 3 (1 week)
+  - effect: dead
   success: null
   traits:
   - disease
@@ -43,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Withering Touch
   range: null
@@ -74,8 +74,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Consumptive Aura
   range: 20 feet
@@ -100,8 +98,6 @@ automatic_abilities:
     attempt a save against the meladaemon's withering touch.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Withering Opportunity
   range: null
@@ -114,7 +110,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The meladaemon is attacked by an adjacent creature and the attack misses;
+  trigger: The meladaemon is attacked by an adjacent creature and the attack misses
 description: 'Meladaemons personify death by starvation and thirst, and revel in spreading
   the same despair that brought about their mortal demise. When they aren''t blighting
   fields, massacring livestock, or tainting water supplies, they experiment on prisoners
@@ -139,14 +135,13 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: ''
-  name: bite
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: daemonic famine
+  name: bite
   to_hit: 24
   traits:
   - evil
@@ -154,16 +149,15 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Grab
   - formula: null
     type: withering touch
+  name: claw
   to_hit: 24
   traits:
   - agile

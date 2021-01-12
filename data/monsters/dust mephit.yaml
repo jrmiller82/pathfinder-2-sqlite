@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -61,10 +59,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 9
   traits:
   - agile

@@ -23,8 +23,6 @@ active_abilities:
   failure: The target is enslaved and is __enfeebled 2__ for 24 hours or until the
     slaver demon is slain, whichever comes first.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Enslave Soul
   range: null
@@ -59,25 +57,22 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: The first time each round that a creature escapes from the slaver demon's
+    Enslave Soul or the slaver demon witnesses a creature being freed from captivity
+    or mental enslavement, the demon takes 3d6 mental damage.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Liberation Vulnerability
   range: null
   raw_description: '**Liberation Vulnerability** The first time each round that a
     creature escapes from the slaver demon''s Enslave Soul or the slaver demon witnesses
     a creature being freed from captivity or mental enslavement, the demon takes 3d6
-    mental damage.
-
-
-    **Attack of Opportunity** [Reaction]'
+    mental damage.'
   requirements: null
   saving_throw: null
   stages: null
@@ -88,13 +83,39 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
   effect: The slaver demon attempts to __Disarm__ the weapon used in the triggering
     Strike with a –2 penalty. If it rolls a success, it gets a critical success instead.
     The demon doesn't need a free hand to use this ability.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Horn Snare
   range: null
@@ -132,28 +153,25 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: piercing
   name: horns
-  plus_damage: null
   to_hit: 23
   traits:
   - deadly 1d8
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d6+13
+  - formula: 2d6+13
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 23
   traits: null
 name: Kalavakus

@@ -12,14 +12,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: The cacodaemon can telepathically communicate with the afflicted creature
-    at any distance on the same plane; **Saving Throw** DC 17 Fortitude; **Stage 1**
-    carrier (1 day); **Stage 2** __stupefied 1__ (1 day); **Stage 3** __stupefied
-    2__ (1 day)
+    at any distance on the same plane
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cacodaemonia
   range: null
@@ -28,8 +24,11 @@ active_abilities:
     Throw** DC 17 Fortitude; **Stage 1** carrier (1 day); **Stage 2** __stupefied
     1__ (1 day); **Stage 3** __stupefied 2__ (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 17 Fortitude
+  stages:
+  - effect: carrier (1 day)
+  - effect: __stupefied 1__ (1 day)
+  - effect: __stupefied 2__ (1 day)
   success: null
   traits:
   - disease
@@ -47,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -89,8 +86,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Lock
   range: null
@@ -140,14 +135,13 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d8 piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d4 evil
+  - formula: 1d8
+    type: piercing
+  - formula: 1d4
+    type: evil
   - formula: null
     type: cacodaemonia
+  name: jaws
   to_hit: 8
   traits:
   - agile

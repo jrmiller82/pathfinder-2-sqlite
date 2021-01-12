@@ -11,12 +11,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: The creature is extremely thirsty and can't quench its thirst while
+    poisoned
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 hours
   name: Najra Lizard Venom
   range: null
@@ -42,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Najra Swarm Attack
   range: null
@@ -65,8 +62,6 @@ automatic_abilities:
     the same targets.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shared Diversion
   range: null
@@ -79,8 +74,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: Another creature in the najra lizard's square succeeds at a Deception check
-    to Create a Diversion;
+  trigger: Another creature in the najra lizard's square succeeds at a __Deception__
+    check to __Create a Diversion__
 description: 'Among the smallest breeds of dragon on Golarion, these savage, cunning
   hunters dwell near the oases that dot the inhospitable Narhari Desert in Vudra.
   Land-bound, they scamper across the badlands on four short limbs, their speckled
@@ -123,12 +118,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d6 piercing
-  name: jaws
-  plus_damage:
+  - formula: 2d6
+    type: piercing
   - formula: null
     type: najra lizard venom
+  name: jaws
   to_hit: 14
   traits: null
 name: Najra Lizard
@@ -136,12 +130,11 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 poison
-  name: venomous spit
-  plus_damage:
+  - formula: 1d4
+    type: poison
   - formula: null
     type: najra lizard venom
+  name: venomous spit
   to_hit: 14
   traits:
   - agile

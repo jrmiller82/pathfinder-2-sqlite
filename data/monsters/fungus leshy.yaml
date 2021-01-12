@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spore Cloud
   range: null
@@ -72,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spores
   range: null
@@ -98,8 +92,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Verdant Burst
   range: null
@@ -134,10 +126,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -147,12 +138,11 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: bludgeoning
-  name: spore pod
-  plus_damage:
   - formula: null
     type: spores
+  name: spore pod
   to_hit: 10
   traits:
   - range increment 30 feet

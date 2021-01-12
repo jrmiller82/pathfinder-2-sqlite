@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -41,8 +39,6 @@ automatic_abilities:
     to __Escape__ to remove these effects. Assassin vines are immune to Grasping Foliage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grasping Foliage
   range: null
@@ -61,7 +57,7 @@ automatic_abilities:
   traits:
   - primal
   - transmutation
-  trigger: The assassin vine detects a creature within 20 feet via tremorsense;
+  trigger: The assassin vine detects a creature within 20 feet via __tremorsense__
 description: 'The assassin vine is a carnivorous plant with a voracious appetite.
   Rather than consuming creatures directly, it creates its own fertilizer by entangling
   prey and squeezing the life from it. Once the plant has killed a creature, it pulls
@@ -105,12 +101,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: bludgeoning
-  name: vine
-  plus_damage:
   - formula: null
     type: Grab
+  name: vine
   to_hit: 12
   traits:
   - reach 10 feet
@@ -134,8 +129,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Camouflage
   range: null

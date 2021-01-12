@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Malleable
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mucus
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mucus Trail
   range: null
@@ -89,8 +83,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -141,23 +133,21 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: slashing
-  name: radula
-  plus_damage:
   - formula: null
     type: mucus
+  name: radula
   to_hit: 21
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: bludgeoning
-  name: foot
-  plus_damage:
   - formula: null
     type: mucus
+  name: foot
   to_hit: 21
   traits:
   - reach 10 feet
@@ -166,14 +156,13 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 3d6 acid damage
-  name: disgorged mucus
-  plus_damage:
+  - formula: 3d6
+    type: acid damage
   - formula: null
     type: mucus
-  - formula: null
-    type: 1d6 acid splash damage
+  - formula: 1d6
+    type: acid splash damage
+  name: disgorged mucus
   to_hit: 17
   traits:
   - brutal

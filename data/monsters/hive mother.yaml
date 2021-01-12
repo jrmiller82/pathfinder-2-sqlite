@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Armor-Rending Bite
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frenzy Pheromone
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spray Acid
   range: null
@@ -93,8 +87,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -126,12 +118,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: piercing
+  - formula: 2d6
+    type: acid
   name: mandibles
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
   to_hit: 20
   traits:
   - acid
@@ -140,10 +131,9 @@ perception: 16
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 5d6 acid
+  - formula: 5d6
+    type: acid
   name: acid spit
-  plus_damage: null
   to_hit: 17
   traits:
   - acid

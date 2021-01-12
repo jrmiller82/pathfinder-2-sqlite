@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grotesque Gift
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swipe
   range: null
@@ -70,8 +66,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: The Sea's Revenge
   range: null
@@ -148,23 +142,21 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+4
+  - formula: 1d12+4
     type: slashing
-  name: greataxe
-  plus_damage:
   - formula: null
     type: grotesque gift
+  name: greataxe
   to_hit: 10
   traits:
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: slashing
-  name: fist
-  plus_damage:
   - formula: null
     type: grotesque gift
+  name: fist
   to_hit: 10
   traits:
   - agile

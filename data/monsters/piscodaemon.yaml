@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gory Rend
   range: null
@@ -53,15 +49,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 30 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1** 1d8 poison and __enfeebled 1__ (1 round); **Stage 2 **2d8 poison and enfeebled
-    1 (1 round); **Stage 3 **4d8 poison and enfeebled 2 (1 round)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Piscovenom
   range: null
   raw_description: '**Piscovenom** (__poison__) **Saving Throw **DC 30 Fortitude;
@@ -69,8 +61,11 @@ active_abilities:
     **Stage 2 **2d8 poison and enfeebled 1 (1 round); **Stage 3 **4d8 poison and enfeebled
     2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 30 Fortitude
+  stages:
+  - effect: 1d8 poison and __enfeebled 1__ (1 round)
+  - effect: 2d8 poison and enfeebled 1 (1 round)
+  - effect: 4d8 poison and enfeebled 2 (1 round)
   success: null
   traits:
   - poison
@@ -88,8 +83,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -115,8 +108,6 @@ automatic_abilities:
     its save.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Enhance Venom
   range: null
@@ -133,7 +124,7 @@ automatic_abilities:
   - misfortune
   - necromancy
   - poison
-  trigger: A creature within 30 feet attempts a saving throw against piscovenom;
+  trigger: A creature within 30 feet attempts a saving throw against piscovenom
 description: 'Scions of death by poisoning, piscodaemons are cruel even by daemonic
   standards, delighting in slow and painful suffering. To a piscodaemon, death is
   but the icing on a putrescent cake—its true pleasure comes from watching, hearing,
@@ -167,28 +158,26 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Grab
+  name: claw
   to_hit: 23
   traits:
   - evil
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d6+12
+  - formula: 2d6+12
     type: bludgeoning
-  name: tentacle
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: piscovenom
+  name: tentacle
   to_hit: 23
   traits:
   - agile

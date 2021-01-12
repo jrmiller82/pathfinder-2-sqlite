@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -85,8 +79,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ground Slam
   range: null
@@ -109,8 +101,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ice Climb
   range: null
@@ -133,8 +123,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shape Ice
   range: null
@@ -154,16 +142,17 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
-  effect: The dragon's blood sprays on the creature, dealing 3d6 cold damage. A creature
-    that takes cold damage in this way is slowed 1 for 1 round.
+  description: 50 feet. After the dragon uses its Breath Weapon, a fierce blizzard
+    of blinding snow surrounds its body for 1 round. Everything in the aura is diffcult
+    terrain for other creatures that are on the ground, climbing, or flying. The blowing
+    snow also makes all creatures in the area concealed. While the blizzard rages,
+    the dragon's dragon chill extends to the full area of the blizzard.
+  effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blizzard
   range: null
@@ -172,21 +161,90 @@ automatic_abilities:
     its body for 1 round. Everything in the aura is diffcult terrain for other creatures
     that are on the ground, climbing, or flying. The blowing snow also makes all creatures
     in the area concealed. While the blizzard rages, the dragon''s dragon chill extends
-    to the full area of the blizzard.
+    to the full area of the blizzard.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - aura
+  - cold
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: 10 feet, 3d6 cold damage (DC 34 basic Reflex)
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Dragon Chill
+  range: null
+  raw_description: '**Dragon Chill** (__arcane__, __aura__, __cold__, __evocation__);
+    10 feet, 3d6 cold damage (DC 34 basic Reflex)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - aura
+  - cold
+  - evocation
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: null
+  failure: The creature is __frightened 2__.
+  frequency: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
 
-    **Dragon Chill** (__arcane__, __aura__, __cold__, __evocation__); 10 feet, 3d6
-    cold damage (DC 34 basic Reflex)
+    **Critical Success** The creature is unaffected by the presence.
 
 
-    **Frightful Presence** (__aura__, __emotion__, __fear__, __mental__) 90 feet,
-    DC 34
+    **Success** The creature is __frightened 1__.
 
 
-    **Freezing Blood** [Reaction] (__arcane__, __cold__); **Trigger** An adjacent
-    creature deals piercing or slashing damage to the dragon. **Effect** The dragon''s
-    blood sprays on the creature, dealing 3d6 cold damage. A creature that takes cold
-    damage in this way is slowed 1 for 1 round.'
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: DC 34
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon's blood sprays on the creature, dealing 3d6 cold damage. A creature
+    that takes cold damage in this way is slowed 1 for 1 round.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Freezing Blood
+  range: null
+  raw_description: '**Freezing Blood** [Reaction] (__arcane__, __cold__); **Trigger**
+    An adjacent creature deals piercing or slashing damage to the dragon. **Effect**
+    The dragon''s blood sprays on the creature, dealing 3d6 cold damage. A creature
+    that takes cold damage in this way is slowed 1 for 1 round.'
   requirements: null
   saving_throw: null
   stages: null
@@ -236,12 +294,11 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+16
+  - formula: 3d12+16
     type: piercing
+  - formula: 3d6
+    type: cold
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 cold
   to_hit: 31
   traits:
   - cold
@@ -249,10 +306,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 31
   traits:
   - agile
@@ -260,10 +316,9 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+14
+  - formula: 2d10+14
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 29
   traits:
   - magical
@@ -289,8 +344,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snow Vision
   range: null

@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -49,8 +47,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -71,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Double Bite
   range: null
@@ -96,8 +90,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Overwhelming Breath
   range: null
@@ -118,8 +110,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Tarn Linnorm Venom
   range: null
@@ -139,31 +129,59 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: Tail only.
+  description: When a creature slays a tarn linnorm, it must succeed at a DC 46 Will
+    save or it can no longer recover Hit Points via any means, such as healing spells,
+    the Medicine skill, or natural healing from rest.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Curse of Death
   range: null
   raw_description: '**Curse of Death** (__curse__, __death__, __primal__) When a creature
     slays a tarn linnorm, it must succeed at a DC 46 Will save or it can no longer
     recover Hit Points via any means, such as healing spells, the Medicine skill,
-    or natural healing from rest.
-
-
-    **Attack of Opportunity** [Reaction] Tail only.'
+    or natural healing from rest.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - curse
+  - death
+  - primal
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: Tail only.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Although more powerful linnorms exist, the multi-headed tarn linnorm
   can wreak an awe-inspiring amount of devastation.
 
@@ -186,22 +204,20 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+18
+  - formula: 4d12+18
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: tarn linnorm venom
+  name: jaws
   to_hit: 38
   traits:
   - reach 30 feet
   - magical
 - action_cost: One Action
   damage:
-    formula: 4d8+18
+  - formula: 4d8+18
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 38
   traits:
   - reach 30 feet
@@ -209,12 +225,11 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 4d6+18
+  - formula: 4d6+18
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tail
   to_hit: 38
   traits:
   - reach 30 feet

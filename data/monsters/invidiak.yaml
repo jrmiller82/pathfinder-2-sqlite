@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Favored Host
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Blend
   range: null
@@ -70,8 +66,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unbodied Possession
   range: null
@@ -95,8 +89,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Exorcism Vulnerability
   range: null
@@ -134,12 +126,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d8 cold
+  - formula: 2d8
+    type: cold
+  - formula: 2d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 evil
   to_hit: 13
   traits:
   - agile

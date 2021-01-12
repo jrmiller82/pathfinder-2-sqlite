@@ -26,8 +26,6 @@ active_abilities:
     or a blood donor, reduces the drained value by 1 after 10 minutes.'
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drink Blood
   range: null
@@ -60,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -90,8 +86,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vrykolakas Vulnerabilities
   range: null
@@ -138,8 +132,6 @@ automatic_abilities:
     one, formed from the animal''s remains.'
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Feral Possession
   range: null
@@ -176,8 +168,8 @@ automatic_abilities:
   - mental
   - necromancy
   - possession
-  trigger: The vrykolakas is reduced to 0 Hit Points, and an animal is within 100
-    feet;
+  trigger: The vrykolakas is reduced to 0 Hit Points, and an __animal__ is within
+    100 feet
 description: 'Vrykolakas unleash their spawn upon the world to spread terror, plague,
   and suffering and to draw attention away from their masters.
 
@@ -199,20 +191,18 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: Drink Blood
+  name: fangs
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile

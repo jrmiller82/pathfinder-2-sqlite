@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death Strike
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Energy Drain
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Final Death
   range: null
@@ -88,8 +82,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infuse Weapon
   range: null
@@ -108,6 +100,48 @@ active_abilities:
   trigger: null
 alignment: NE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Living creatures in the aura must roll twice on all d20 rolls and use
+    the lower result.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Aura of Misfortune
+  range: 20 feet
+  raw_description: '**Aura of Misfortune** (__aura__, __divination__, __divine__,
+    __misfortune__) 20 feet. Living creatures in the aura must roll twice on all d20
+    rolls and use the lower result.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divination
+  - divine
+  - misfortune
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The grim reaper can choose whether or not it takes positive damage.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Negative Healing
+  range: null
+  raw_description: '**Negative Healing** The grim reaper can choose whether or not
+    it takes positive damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -117,25 +151,14 @@ automatic_abilities:
     the triggering action.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Aura of Misfortune
+  name: Lurking Death
   range: null
-  raw_description: '**Aura of Misfortune** (__aura__, __divination__, __divine__,
-    __misfortune__) 20 feet. Living creatures in the aura must roll twice on all d20
-    rolls and use the lower result.
-
-
-    **Negative Healing** The grim reaper can choose whether or not it takes positive
-    damage.
-
-
-    **Lurking Death** [Reaction] (__teleportation__); **Trigger** A creature within
-    100 feet makes a ranged attack or uses an action that has the concentrate, manipulate,
-    or move trait. **Effect** The grim reaper teleports to a square adjacent to the
-    triggering creature and makes a melee Strike against it. If the Strike hits, the
-    grim reaper disrupts the triggering action.'
+  raw_description: '**Lurking Death** [Reaction] (__teleportation__); **Trigger**
+    A creature within 100 feet makes a ranged attack or uses an action that has the
+    concentrate, manipulate, or move trait. **Effect** The grim reaper teleports to
+    a square adjacent to the triggering creature and makes a melee Strike against
+    it. If the Strike hits, the grim reaper disrupts the triggering action.'
   requirements: null
   saving_throw: null
   stages: null
@@ -206,14 +229,13 @@ level: 21
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+23
+  - formula: 4d10+23
     type: slashing
-  name: keen scythe
-  plus_damage:
   - formula: null
     type: death strike
   - formula: null
     type: energy drain
+  name: keen scythe
   to_hit: 40
   traits:
   - agile
@@ -241,28 +263,37 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The grim reaper can choose whether or not it counts as undead for
-    effects that affect undead differently. Even if it does not count as undead, the
-    grim reaper still never counts as a living creature.
-
-
-    **Status Sight** The grim reaper automatically knows the Hit Points, conditions,
-    afflictions, and emotions of all creatures it can see.'
+  description: The grim reaper can choose whether or not it counts as undead for effects
+    that affect undead differently. Even if it does not count as undead, the grim
+    reaper still never counts as a living creature.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death's Grace
   range: null
   raw_description: '**Death''s Grace** The grim reaper can choose whether or not it
     counts as undead for effects that affect undead differently. Even if it does not
-    count as undead, the grim reaper still never counts as a living creature.
-
-
-    **Status Sight** The grim reaper automatically knows the Hit Points, conditions,
-    afflictions, and emotions of all creatures it can see.'
+    count as undead, the grim reaper still never counts as a living creature.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The grim reaper automatically knows the Hit Points, conditions, afflictions,
+    and emotions of all creatures it can see.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Status Sight
+  range: null
+  raw_description: '**Status Sight** The grim reaper automatically knows the Hit Points,
+    conditions, afflictions, and emotions of all creatures it can see.'
   requirements: null
   saving_throw: null
   stages: null

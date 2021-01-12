@@ -16,8 +16,6 @@ active_abilities:
     or move action. The quickling can't use Fade from View again for 1d4 rounds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fade from View
   range: null
@@ -25,8 +23,8 @@ active_abilities:
     used no __attack__, __manipulate__, or __move__ actions in the previous round;
     **Effect** The quickling becomes __invisible__ until it uses an attack, manipulate,
     or move action. The quickling can''t use Fade from View again for 1d4 rounds.'
-  requirements: The quickling used no attack, manipulate, or move actions in the previous
-    round
+  requirements: The quickling used no __attack__, __manipulate__, or __move__ actions
+    in the previous round
   saving_throw: null
   stages: null
   success: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Supernatural Speed
   range: null
@@ -97,8 +91,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slow Susceptibility
   range: null
@@ -121,8 +113,6 @@ automatic_abilities:
     up to half their Speed after the Strike resolves.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Can't Catch Me
   range: null
@@ -134,7 +124,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The quickling is targeted by a Strike;
+  trigger: The quickling is targeted by a Strike
 description: 'Few creatures can match a quickling''s speed. These malicious fey creatures
   delight in striking with blinding speed and accuracy, racing in to stab and slash
   at foes before scampering away for cover with maddening— even frightening—swiftness.
@@ -170,12 +160,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
-  name: shortsword
-  plus_damage:
   - formula: null
     type: lethargy poison
+  name: shortsword
   to_hit: 11
   traits:
   - agile

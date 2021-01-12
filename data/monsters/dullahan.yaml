@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Head Hunter
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reap
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Summon Steed
   range: null
@@ -92,11 +86,9 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 30 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -113,7 +105,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 23
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -122,6 +114,34 @@ automatic_abilities:
   - fear
   - mental
   trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Riding on a horse as black as night, the headless hunter known as the
   dullahan tracks down and takes the heads of those it deems unfit to continue living.
   When closing in for the kill, the dullahan first whispers its victim''s name, then
@@ -182,30 +202,27 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+10
+  - formula: 1d8+10
     type: slashing
   name: keen longsword
-  plus_damage: null
   to_hit: 18
   traits:
   - magical
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 1d6+10
+  - formula: 1d6+10
     type: slashing
   name: keen returning hatchet
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+10
+  - formula: 1d4+10
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 18
   traits:
   - agile
@@ -215,10 +232,9 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: slashing
   name: keen returning hatchet
-  plus_damage: null
   to_hit: 14
   traits:
   - agile

@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hurl Blade
   range: null
@@ -45,8 +43,6 @@ active_abilities:
     bonus to attack and damage rolls until the end of its turn.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rev Up
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -92,8 +86,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whirling Death
   range: null
@@ -161,10 +153,9 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: slashing
   name: blade
-  plus_damage: null
   to_hit: 23
   traits:
   - agile

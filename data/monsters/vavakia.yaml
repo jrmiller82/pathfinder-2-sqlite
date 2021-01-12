@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoking Wound
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soulfire Breath
   range: null
@@ -72,8 +68,6 @@ active_abilities:
     which remain for 1 minute.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soulfire Inhalation
   range: null
@@ -100,8 +94,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stunning Tail
   range: null
@@ -122,8 +114,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -145,8 +135,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 60 feet
@@ -184,8 +172,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Restoration Vulnerability
   range: null
@@ -219,14 +205,13 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: piercing
-  name: ranseur
-  plus_damage:
-  - formula: null
-    type: 1d10 acid
+  - formula: 1d10
+    type: acid
   - formula: null
     type: Grab
+  name: ranseur
   to_hit: 36
   traits:
   - disarm
@@ -234,24 +219,22 @@ melee_attacks:
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+17
+  - formula: 3d8+17
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d8 persistent bleed
+  - formula: 2d8
+    type: persistent bleed
   - formula: null
     type: smoking wound
+  name: jaws
   to_hit: 35
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 35
   traits:
   - agile
@@ -259,12 +242,11 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+17
+  - formula: 3d12+17
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: stunning tail
+  name: tail
   to_hit: 35
   traits:
   - backswing

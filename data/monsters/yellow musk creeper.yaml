@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bore into Brain
   range: null
@@ -45,17 +43,20 @@ active_abilities:
   - mental
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
+  critical_failure: As failure, but the condition doesn't end automatically. The creature
+    can attempt a new save at the end of each of its turns. On a success, the fascinated
+    condition and other effects end.
   critical_success: null
   description: The yellow musk creeper blasts yellow pollen in either a 30-foot line
     or a 15-foot cone. Each creature in the emanation must attempt a DC 20 Will save.
     Once a creature succeeds at any save against Spray Pollen, it becomes temporarily
     immune for 24 hours.
   effect: null
-  failure: null
+  failure: The creature is __fascinated__. For as long as it is fascinated, it must
+    spend each of its actions to move closer to the yellow musk creeper as expediently
+    as possible, while avoiding obvious dangers. If the creature is adjacent to the
+    yellow musk creeper, it stays still and doesn't act.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spray Pollen
   range: null
@@ -63,86 +64,28 @@ active_abilities:
     musk creeper blasts yellow pollen in either a 30-foot line or a 15-foot cone.
     Each creature in the emanation must attempt a DC 20 Will save. Once a creature
     succeeds at any save against Spray Pollen, it becomes temporarily immune for 24
-    hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - mental
-  - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
+    hours.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __fascinated__. For as long as it is fascinated, it
+    must spend each of its actions to move closer to the yellow musk creeper as expediently
+    as possible, while avoiding obvious dangers. If the creature is adjacent to the
+    yellow musk creeper, it stays still and doesn''t act.
+
+
+    **Critical Failure** As failure, but the condition doesn''t end automatically.
+    The creature can attempt a new save at the end of each of its turns. On a success,
+    the fascinated condition and other effects end.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __fascinated__. For as long as it is fascinated, it
-    must spend each of its actions to move closer to the yellow musk creeper as expediently
-    as possible, while avoiding obvious dangers. If the creature is adjacent to the
-    yellow musk creeper, it stays still and doesn't act.
-  effect: null
-  failure: The creature is __fascinated__. For as long as it is fascinated, it must
-    spend each of its actions to move closer to the yellow musk creeper as expediently
-    as possible, while avoiding obvious dangers. If the creature is adjacent to the
-    yellow musk creeper, it stays still and doesn't act.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __fascinated__. For as long as it
-    is fascinated, it must spend each of its actions to move closer to the yellow
-    musk creeper as expediently as possible, while avoiding obvious dangers. If the
-    creature is adjacent to the yellow musk creeper, it stays still and doesn''t act.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the condition doesn't end automatically. The creature
-    can attempt a new save at the end of each of its turns. On a success, the fascinated
-    condition and other effects end.
-  critical_success: null
-  description: As failure, but the condition doesn't end automatically. The creature
-    can attempt a new save at the end of each of its turns. On a success, the fascinated
-    condition and other effects end.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but the condition doesn''t end
-    automatically. The creature can attempt a new save at the end of each of its turns.
-    On a success, the fascinated condition and other effects end.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - mental
+  - poison
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -178,10 +121,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+3
+  - formula: 1d10+3
     type: piercing
   name: tendril
-  plus_damage: null
   to_hit: 9
   traits:
   - reach 10 feet

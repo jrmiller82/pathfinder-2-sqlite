@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lightning Blade
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wide Swing
   range: null
@@ -92,8 +86,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -143,12 +135,11 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+16
+  - formula: 2d12+16
     type: slashing
+  - formula: 1d6
+    type: electricity
   name: greatsword
-  plus_damage:
-  - formula: null
-    type: 1d6 electricity
   to_hit: 28
   traits:
   - magical
@@ -156,12 +147,11 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 2d8+16
+  - formula: 2d8+16
     type: bludgeoning
+  - formula: 1d6
+    type: electricity
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 electricity
   to_hit: 27
   traits:
   - agile
@@ -171,10 +161,9 @@ perception: 24
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+16
+  - formula: 2d10+16
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 37
   traits:
   - brutal

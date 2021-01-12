@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 5 minutes
   name: Dark Naga Venom
   range: null
@@ -44,8 +42,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Guarded Thoughts
   range: null
@@ -91,12 +87,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: dark naga venom
+  name: fangs
   to_hit: 19
   traits:
   - agile

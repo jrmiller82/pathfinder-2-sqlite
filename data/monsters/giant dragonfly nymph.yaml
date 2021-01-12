@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Extend Mandibles
   range: null
@@ -49,10 +47,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: piercing
   name: mandibles
-  plus_damage: null
   to_hit: 12
   traits:
   - agile

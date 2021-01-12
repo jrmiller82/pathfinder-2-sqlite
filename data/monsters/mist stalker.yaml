@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Solidify Mist
   range: null
@@ -83,12 +79,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: Grab
+  name: tentacle
   to_hit: 14
   traits:
   - finesse
@@ -115,8 +110,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mist Cloud
   range: 15 feet
@@ -142,8 +135,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mist Vision
   range: null

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tongue Pull
   range: null
@@ -97,27 +93,24 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+5
+  - formula: 1d12+5
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 10
   traits: null
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: tongue pull
   name: tongue
-  plus_damage: null
   to_hit: 12
   traits:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+5
+  - formula: 1d10+5
     type: bludgeoning
   name: leg
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -142,8 +135,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Sense
   range: null

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -38,8 +36,6 @@ active_abilities:
     DC 17, Rupture 3).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Envelop
   range: null
@@ -50,7 +46,7 @@ active_abilities:
     if the amoeba had __Engulfed__ the creature (DC 17, 1d6 acid, Escape DC 17, Rupture
     3).'
   requirements: The giant amoeba begins its turn with a target its size or smaller
-    grabbed
+    __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -64,8 +60,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Weak Acid
   range: null
@@ -105,12 +99,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 acid
-  name: pseudopod
-  plus_damage:
+  - formula: 1d6
+    type: acid
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 8
   traits: null
 name: Giant Amoeba
@@ -133,8 +126,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

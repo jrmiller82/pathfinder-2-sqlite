@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Energy Touch
   range: null
@@ -53,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sphere of Creation
   range: null
@@ -104,8 +100,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sphere of Oblivion
   range: null
@@ -139,8 +133,6 @@ automatic_abilities:
   effect: The critical failure becomes a normal failure.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reality Twist
   range: null
@@ -181,12 +173,11 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d8+18
+  - formula: 5d8+18
     type: positive or negative damage
+  - formula: 1d6
+    type: lawful
   name: energy touch
-  plus_damage:
-  - formula: null
-    type: 1d6 lawful
   to_hit: 36
   traits:
   - agile
@@ -197,10 +188,9 @@ perception: 37
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: see Sphere of Oblivion
   name: Sphere of Oblivion
-  plus_damage: null
   to_hit: 37
   traits:
   - magical
@@ -225,8 +215,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Envisioning
   range: null

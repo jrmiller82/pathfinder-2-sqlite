@@ -19,8 +19,6 @@ active_abilities:
     crystal emerges from the remains.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Crystallize
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Freeze
   range: null
@@ -91,8 +85,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Razor Sharp
   range: null
@@ -110,24 +102,17 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'Whenever the carnivorous crystal takes a critical hit from an attack
+  description: Whenever the carnivorous crystal takes a critical hit from an attack
     that deals bludgeoning or sonic damage, or it critically fails its saving throw
     against an effect that deals bludgeoning or sonic damage, it might split. If the
     carnivorous crystal has at least 15 HP remaining after taking the damage, it splits
-    into two identical crystals, each with half the original''s Hit Points. When the
+    into two identical crystals, each with half the original's Hit Points. When the
     carnivorous crystal splits, one crystal remains in the same space and the other
     appears in an adjacent unoccupied space. If no adjacent space is unoccupied, the
     crystal automatically pushes creatures out of the way to fill a space.
-
-
-    **Subsonic Hum** (__auditory__, __aura__, __mental__) 60 feet. A creature that
-    enters or starts its turn within the aura must succeed at a DC 28 Will save or
-    become __stunned 1__.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Split
   range: null
@@ -139,17 +124,35 @@ automatic_abilities:
     Hit Points. When the carnivorous crystal splits, one crystal remains in the same
     space and the other appears in an adjacent unoccupied space. If no adjacent space
     is unoccupied, the crystal automatically pushes creatures out of the way to fill
-    a space.
-
-
-    **Subsonic Hum** (__auditory__, __aura__, __mental__) 60 feet. A creature that
-    enters or starts its turn within the aura must succeed at a DC 28 Will save or
-    become __stunned 1__.'
+    a space.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that enters or starts its turn within the aura must succeed
+    at a DC 28 Will save or become __stunned 1__.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Subsonic Hum
+  range: 60 feet
+  raw_description: '**Subsonic Hum** (__auditory__, __aura__, __mental__) 60 feet.
+    A creature that enters or starts its turn within the aura must succeed at a DC
+    28 Will save or become __stunned 1__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - aura
+  - mental
   trigger: null
 description: 'Carnivorous crystals are strange ooze creatures native to the Plane
   of Earth. Unlike most oozes, their bodies are not homogeneously fluid; rather, interspersed
@@ -174,10 +177,9 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+7
+  - formula: 4d8+7
     type: piercing
   name: pseudopod
-  plus_damage: null
   to_hit: 24
   traits:
   - versatile S
@@ -208,8 +210,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

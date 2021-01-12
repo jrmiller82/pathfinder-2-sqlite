@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lightning Blast
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stormflight
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thunderstrike
   range: null
@@ -97,8 +91,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Storm Aura
   range: 100 feet
@@ -130,8 +122,6 @@ automatic_abilities:
     dealing 8d6 electricity damage (DC 30 basic Reflex save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reactive Shock
   range: null
@@ -144,8 +134,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature enters the thunderbird's reach or uses a move action within
-    their reach;
+  trigger: A creature enters the thunderbird's reach or uses a __move__ action within
+    their reach
 description: 'Thunderbirds bring storms on their wings. In times of drought, they
   are welcomed. Other times, they are offered gifts in hopes they might leave before
   flooding begins. When angered, they call down hurricanes and lay waste to entire
@@ -174,20 +164,18 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+12
+  - formula: 2d6+12
     type: piercing
+  - formula: 3d6
+    type: electricity
   name: beak
-  plus_damage:
-  - formula: null
-    type: 3d6 electricity
   to_hit: 24
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+12
+  - formula: 2d8+12
     type: slashing
   name: talon
-  plus_damage: null
   to_hit: 24
   traits:
   - agile
@@ -196,12 +184,11 @@ perception: 22
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 3d6 electricity and 3d6 sonic
-  name: thunderbolt
-  plus_damage:
+  - formula: 3d6
+    type: electricity and 3d6 sonic
   - formula: null
     type: thunderstrike
+  name: thunderbolt
   to_hit: 23
   traits:
   - range 200 feet
@@ -228,8 +215,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stormsight
   range: null

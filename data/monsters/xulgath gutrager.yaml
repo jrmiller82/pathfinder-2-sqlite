@@ -19,8 +19,6 @@ active_abilities:
     acid damage__. The gutrager is __clumsy 1__ for 1 round as it re-coils its esophagus.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Corrosive Kiss
   range: null
@@ -50,8 +48,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Caustic Fog
   range: 10 feet
@@ -77,8 +73,6 @@ automatic_abilities:
     20-foot emanation centered on the gutrager (DC 31 basic Reflex save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Self-Detonate
   range: null
@@ -123,20 +117,18 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: piercing
+  - formula: 2d6
+    type: acid
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
   to_hit: 21
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
@@ -146,10 +138,9 @@ perception: 19
 ranged_attacks:
 - action_cost: Two Actions
   damage:
-    formula: 4d8+7
+  - formula: 4d8+7
     type: acid
   name: bile jet
-  plus_damage: null
   to_hit: 23
   traits:
   - acid

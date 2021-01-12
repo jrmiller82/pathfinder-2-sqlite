@@ -17,8 +17,6 @@ active_abilities:
     another spiked chain attack or moves away.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Chain of Malebolge
   range: null
@@ -27,7 +25,7 @@ active_abilities:
     pulls the creature 5 feet closer and grabs it with the spiked chain (__Escape__
     DC 42). The creature is automatically freed if the devil makes another spiked
     chain attack or moves away.'
-  requirements: The cornugon's last action was a success with a spiked chain Strike
+  requirements: The cornugon's last action was a success with a __spiked chain__ Strike
   saving_throw: null
   stages: null
   success: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infernal Wound
   range: null
@@ -74,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stunning Chain
   range: null
@@ -99,8 +93,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Circle of Protection
   range: 10 feet
@@ -126,8 +118,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Commander's Aura
   range: 100 feet
@@ -153,8 +143,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 10 feet
@@ -194,8 +182,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -242,14 +228,13 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+16
+  - formula: 3d8+16
     type: slashing
-  name: spiked chain
-  plus_damage:
-  - formula: null
-    type: 2d6 evil
+  - formula: 2d6
+    type: evil
   - formula: null
     type: stunning chain
+  name: spiked chain
   to_hit: 34
   traits:
   - disarm
@@ -260,12 +245,11 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 3d10+14
+  - formula: 3d10+14
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 32
   traits:
   - agile
@@ -273,14 +257,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+14
+  - formula: 3d8+14
     type: slashing
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: infernal wound
+  name: tail
   to_hit: 32
   traits:
   - magical

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Megalania Venom
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -71,14 +67,13 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
   - formula: null
     type: megalania venom
+  name: jaws
   to_hit: 18
   traits:
   - reach 10 feet

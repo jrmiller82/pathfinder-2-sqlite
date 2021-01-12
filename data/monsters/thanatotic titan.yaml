@@ -9,109 +9,41 @@ ac: 46
 ac_special: null
 active_abilities:
 - action_cost: Free Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: As success, but the duration is unlimited.
+  critical_success: The creature is unaffected.
   description: null
   effect: The creature must attempt a DC 45 Will save.
-  failure: null
+  failure: As success, but the duration is 1 minute.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Godslayer
   range: null
   raw_description: '**Godslayer** [Free Action]  (__divine **Trigger** The titan damages
     a creature capable of using __divine__ spells or abilities__) **Effect** The creature
-    must attempt a DC 45 Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - divine Trigger The titan damages a creature capable of using divine spells or
-    abilities
-  trigger: The titan damages a creature capable of using divine spells or abilities)
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature can't use divine spells or abilities for 1 round and is
-    __frightened 2__. Only powerful non-divine magic, such as __wish__, can undo this
-    effect.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature can''t use divine spells or abilities
-    for 1 round and is __frightened 2__. Only powerful non-divine magic, such as __wish__,
-    can undo this effect.'
+    must attempt a DC 45 Will save.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature can''t use divine spells or abilities for 1 round and
+    is __frightened 2__. Only powerful non-divine magic, such as __wish__, can undo
+    this effect.
+
+
+    **Failure** As success, but the duration is 1 minute.
+
+
+    **Critical Failure** As success, but the duration is unlimited.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature can't use divine spells or abilities for 1 round and is __frightened
     2__. Only powerful non-divine magic, such as __wish__, can undo this effect.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: As success, but the duration is 1 minute.
-  effect: null
-  failure: As success, but the duration is 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** As success, but the duration is 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As success, but the duration is unlimited.
-  critical_success: null
-  description: As success, but the duration is unlimited.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As success, but the duration is unlimited.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
+  traits:
+  - divine Trigger The titan damages a creature capable of using divine spells or
+    abilities
+  trigger: The titan damages a creature capable of using __divine__ spells or abilities__)
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -121,8 +53,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -146,8 +76,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Titanic Charge
   range: null
@@ -167,8 +95,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -187,8 +113,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wide Cleave
   range: null
@@ -214,8 +138,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Impossible Stature
   range: 100 feet
@@ -249,8 +171,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -294,10 +214,9 @@ level: 22
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+25
+  - formula: 4d10+25
     type: piercing
   name: halberd
-  plus_damage: null
   to_hit: 42
   traits:
   - magical
@@ -305,10 +224,9 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 4d8+20
+  - formula: 4d8+20
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 39
   traits:
   - agile
@@ -318,10 +236,9 @@ perception: 36
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+20
+  - formula: 3d12+20
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 39
   traits:
   - brutal

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Blue-Ringed Octopus Venom
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Camouflage
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jet
   range: null
@@ -85,8 +79,6 @@ active_abilities:
     trait.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Toxic Bite
   range: null
@@ -94,7 +86,7 @@ active_abilities:
     octopus has a creature __grabbed__; **Effect** The blue-ringed octopus makes a
     beak Strike against the grabbed creature. If it hits, it injects additional poison,
     causing its venom to gain the __virulent__ trait.'
-  requirements: The blue-ringed octopus has a creature grabbed
+  requirements: The blue-ringed octopus has a creature __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -115,21 +107,19 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
-  name: beak
-  plus_damage:
+  - formula: 1d6
+    type: piercing
   - formula: null
     type: blue-ringed octopus venom
+  name: beak
   to_hit: 7
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: Grab
   name: arms
-  plus_damage: null
   to_hit: 6
   traits: null
 name: Blue-Ringed Octopus

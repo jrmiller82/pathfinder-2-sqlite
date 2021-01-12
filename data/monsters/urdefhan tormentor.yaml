@@ -20,8 +20,6 @@ active_abilities:
     2d4 rounds.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stoke the Fervent
   range: null
@@ -60,8 +58,6 @@ active_abilities:
     \ enfeebled 2 for 1 hour on a critical failure)."
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wicked Bite
   range: null
@@ -95,8 +91,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Necrotic Decay
   range: null
@@ -140,21 +134,19 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+5
+  - formula: 1d8+5
     type: bludgeoning
   name: warhammer
-  plus_damage: null
   to_hit: 12
   traits:
   - shove
 - action_cost: One Action
   damage:
-    formula: 2d6+5
+  - formula: 2d6+5
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Wicked Bite
+  name: jaws
   to_hit: 14
   traits: null
 name: Urdefhan Tormentor

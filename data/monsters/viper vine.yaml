@@ -9,18 +9,21 @@ ac: 33
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, plus the creature is __stupefied 2__ for 24 hours.
+  critical_success: The creature is unaffected and is temporarily immune to Captivating
+    Pollen for 24 hours.
   description: The viper vine releases a 60-foot emanation of invisible pollen that
     stays in the air for 5 rounds unless dispersed by a moderate or stronger wind.
     Each creature that enters or starts its turn in the area must attempt a DC 33
     Will save or be captivated. The viper vine can't use Captivating Pollen for 1d4
     rounds.
   effect: null
-  failure: null
+  failure: The creature is __fascinated__, and it must spend each of its actions to
+    move closer to the viper vine as expediently as possible while avoiding obvious
+    dangers. If a captivated creature is adjacent to the viper vine, it stays still
+    and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura
+    at the end of its turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Captivating Pollen
   range: null
@@ -29,108 +32,33 @@ active_abilities:
     pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger
     wind. Each creature that enters or starts its turn in the area must attempt a
     DC 33 Will save or be captivated. The viper vine can''t use Captivating Pollen
-    for 1d4 rounds.'
+    for 1d4 rounds.
+
+
+    **Critical Success** The creature is unaffected and is temporarily immune to Captivating
+    Pollen for 24 hours.
+
+
+    **Success** The creature is __sickened 1__.
+
+
+    **Failure** The creature is __fascinated__, and it must spend each of its actions
+    to move closer to the viper vine as expediently as possible while avoiding obvious
+    dangers. If a captivated creature is adjacent to the viper vine, it stays still
+    and doesn''t act. It ceases to be fascinated if it''s no longer in the pollen
+    aura at the end of its turn.
+
+
+    **Critical Failure** As failure, plus the creature is __stupefied 2__ for 24 hours.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __sickened 1__.
   traits:
   - enchantment
   - incapacitation
   - mental
   - poison
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is temporarily immune to Captivating
-    Pollen for 24 hours.
-  description: The creature is unaffected and is temporarily immune to Captivating
-    Pollen for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is temporarily
-    immune to Captivating Pollen for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __sickened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __fascinated__, and it must spend each of its actions
-    to move closer to the viper vine as expediently as possible while avoiding obvious
-    dangers. If a captivated creature is adjacent to the viper vine, it stays still
-    and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura
-    at the end of its turn.
-  effect: null
-  failure: The creature is __fascinated__, and it must spend each of its actions to
-    move closer to the viper vine as expediently as possible while avoiding obvious
-    dangers. If a captivated creature is adjacent to the viper vine, it stays still
-    and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura
-    at the end of its turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __fascinated__, and it must spend
-    each of its actions to move closer to the viper vine as expediently as possible
-    while avoiding obvious dangers. If a captivated creature is adjacent to the viper
-    vine, it stays still and doesn''t act. It ceases to be fascinated if it''s no
-    longer in the pollen aura at the end of its turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, plus the creature is __stupefied 2__ for 24 hours.
-  critical_success: null
-  description: As failure, plus the creature is __stupefied 2__ for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, plus the creature is __stupefied
-    2__ for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -139,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -161,8 +87,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cold Vulnerability
   range: null
@@ -211,23 +135,21 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+11
+  - formula: 3d6+11
     type: piercing
+  - formula: 3d6
+    type: poison
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 poison
   to_hit: 27
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+11
+  - formula: 3d10+11
     type: bludgeoning
-  name: vine
-  plus_damage:
   - formula: null
     type: Grab
+  name: vine
   to_hit: 27
   traits:
   - agile

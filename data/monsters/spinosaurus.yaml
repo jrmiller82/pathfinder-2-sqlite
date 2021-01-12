@@ -17,8 +17,6 @@ active_abilities:
     bleed damage__.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rip and Tear
   range: null
@@ -26,24 +24,23 @@ active_abilities:
     has a creature __grabbed__ in its jaws; **Effect **The spinosaurus reaches up
     and slashes with its claws at the creature it has grabbed, dealing 4d8 slashing
     damage (DC 30 basic Reflex save) and 1d6 __persistent bleed damage__.'
-  requirements: The spinosaurus has a creature grabbed in its jaws
+  requirements: The spinosaurus has a creature __grabbed__ in its jaws
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature takes double damage and is __stunned 3__.
+  critical_success: The creature is unaffected.
   description: null
   effect: With a powerful lunge to the side, the spinosaurus uses its sail to slap
     the surface of the water, creating a crushing wave of water that deals 6d6 bludgeoning
     damage in a 30-foot cone. Each creature in the water in the area must attempt
     a DC 30 Reflex save.
-  failure: null
+  failure: The creature takes full damage and is __slowed 1__ until the end of its
+    next turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Staggering Sail
   range: null
@@ -51,93 +48,26 @@ active_abilities:
     **The spinosaurus is swimming on the surface of water; **Effect **With a powerful
     lunge to the side, the spinosaurus uses its sail to slap the surface of the water,
     creating a crushing wave of water that deals 6d6 bludgeoning damage in a 30-foot
-    cone. Each creature in the water in the area must attempt a DC 30 Reflex save.'
+    cone. Each creature in the water in the area must attempt a DC 30 Reflex save.
+
+
+    **Critical Success **The creature is unaffected.
+
+
+    **Success **The creature takes half damage.
+
+
+    **Failure **The creature takes full damage and is __slowed 1__ until the end of
+    its next turn.
+
+
+    **Critical Failure **The creature takes double damage and is __stunned 3__.'
   requirements: The spinosaurus is swimming on the surface of water
   saving_throw: null
   stages: null
-  success: null
+  success: The creature takes half damage.
   traits:
   - incapacitation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes half damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature takes half damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature takes half damage.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes full damage and is __slowed 1__ until the end of
-    its next turn.
-  effect: null
-  failure: The creature takes full damage and is __slowed 1__ until the end of its
-    next turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature takes full damage and is __slowed 1__
-    until the end of its next turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature takes double damage and is __stunned 3__.
-  critical_success: null
-  description: The creature takes double damage and is __stunned 3__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The creature takes double damage and is __stunned
-    3__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -146,8 +76,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -206,22 +134,20 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+14
+  - formula: 2d12+14
     type: piercing
-  name: bite
-  plus_damage:
   - formula: null
     type: Grab
+  name: bite
   to_hit: 23
   traits:
   - deadly d12
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+14
+  - formula: 2d8+14
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
@@ -245,8 +171,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null

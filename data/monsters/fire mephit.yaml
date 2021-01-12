@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -61,10 +59,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing and 1d4 fire
+  - formula: 1d6
+    type: piercing and 1d4 fire
   name: jaws
-  plus_damage: null
   to_hit: 9
   traits:
   - finesse
@@ -87,8 +84,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

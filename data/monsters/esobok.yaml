@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pounce
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spirit Touch
   range: null
@@ -53,18 +49,22 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
-  description: '**Requirement** A creature is __grabbed__ by the esobok''s jaws;'
+  critical_failure: As failure, but as long as a creature is stunned or paralyzed,
+    it is also __stupefied 2__.
+  critical_success: The creature is unaffected.
+  description: '**Requirement** A creature is __grabbed__ by the esobok''s jaws'
   effect: The esobok releases the target from the Grab but wrenches its spirit free
     as it does so. The creature must attempt a DC 20 Will save. Creatures without
     souls (such as most __constructs__) and creatures whose bodies and souls are one
     (such as most __celestials__, __fiends__, and __monitors__) that roll a failure
     or critical failure on the save get a success instead.
-  failure: null
+  failure: The esobok wrenches the target's soul from its body into its jaws. __Mindless__
+    __undead__ creatures of level 2 or lower are destroyed, other undead creatures
+    are stunned for 1 round, and all other creatures are __paralyzed__. At the end
+    of each of its turns, a creature paralyzed by this effect can attempt a new save
+    to end the effect. The paralysis ends automatically if the esobok attempts a jaws
+    Strike or speaks.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wrench Spirit
   range: null
@@ -74,110 +74,34 @@ active_abilities:
     free as it does so. The creature must attempt a DC 20 Will save. Creatures without
     souls (such as most __constructs__) and creatures whose bodies and souls are one
     (such as most __celestials__, __fiends__, and __monitors__) that roll a failure
-    or critical failure on the save get a success instead.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - attack
-  - divine
-  - incapacitation
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is __stunned 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The target is __stunned 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The target is __stunned 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The esobok wrenches the target's soul from its body into its jaws.
+    or critical failure on the save get a success instead.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The target is __stunned 1__.
+
+
+    **Failure** The esobok wrenches the target''s soul from its body into its jaws.
     __Mindless__ __undead__ creatures of level 2 or lower are destroyed, other undead
     creatures are stunned for 1 round, and all other creatures are __paralyzed__.
     At the end of each of its turns, a creature paralyzed by this effect can attempt
     a new save to end the effect. The paralysis ends automatically if the esobok attempts
     a jaws Strike or speaks.
-  effect: null
-  failure: The esobok wrenches the target's soul from its body into its jaws. __Mindless__
-    __undead__ creatures of level 2 or lower are destroyed, other undead creatures
-    are stunned for 1 round, and all other creatures are __paralyzed__. At the end
-    of each of its turns, a creature paralyzed by this effect can attempt a new save
-    to end the effect. The paralysis ends automatically if the esobok attempts a jaws
-    Strike or speaks.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The esobok wrenches the target''s soul from its body
-    into its jaws. __Mindless__ __undead__ creatures of level 2 or lower are destroyed,
-    other undead creatures are stunned for 1 round, and all other creatures are __paralyzed__.
-    At the end of each of its turns, a creature paralyzed by this effect can attempt
-    a new save to end the effect. The paralysis ends automatically if the esobok attempts
-    a jaws Strike or speaks.'
+
+
+    **Critical Failure** As failure, but as long as a creature is stunned or paralyzed,
+    it is also __stupefied 2__.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but as long as a creature is stunned or paralyzed,
-    it is also __stupefied 2__.
-  critical_success: null
-  description: As failure, but as long as a creature is stunned or paralyzed, it is
-    also __stupefied 2__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but as long as a creature is
-    stunned or paralyzed, it is also __stupefied 2__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  success: The target is __stunned 1__.
+  traits:
+  - attack
+  - divine
+  - incapacitation
+  - necromancy
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -208,25 +132,23 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+3
+  - formula: 1d10+3
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
   - formula: null
     type: spirit touch
+  name: jaws
   to_hit: 12
   traits:
   - magical
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: spirit touch
+  name: claw
   to_hit: 12
   traits:
   - agile

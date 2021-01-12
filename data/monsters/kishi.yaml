@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Head Spin
   range: null
@@ -61,8 +57,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sudden Charge
   range: null
@@ -84,8 +78,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vice-Like Jaws
   range: null
@@ -145,20 +137,18 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 20
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 20
   traits:
   - agile

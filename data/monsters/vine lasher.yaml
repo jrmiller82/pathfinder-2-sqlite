@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Hold
   range: null
@@ -57,12 +55,11 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: ''
-  name: vine
-  plus_damage:
   - formula: null
     type: Grab
+  name: vine
   to_hit: 7
   traits:
   - agile

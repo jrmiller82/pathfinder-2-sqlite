@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Envelop
   range: null
@@ -62,8 +60,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infrasonic Moan
   range: null
@@ -130,18 +126,16 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+7
+  - formula: 1d10+7
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 14
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: slashing
   name: tail
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
@@ -166,8 +160,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Shift
   range: null

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rush of Water
   range: null
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Skewer
   range: null
@@ -97,8 +91,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vortex
   range: 40 feet
@@ -140,20 +132,18 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+11
+  - formula: 2d8+11
     type: piercing
   name: trident
-  plus_damage: null
   to_hit: 21
   traits:
   - magical
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d4+11
+  - formula: 1d4+11
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 20
   traits:
   - agile
@@ -165,10 +155,9 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+11
+  - formula: 2d8+11
     type: piercing
   name: trident
-  plus_damage: null
   to_hit: 21
   traits:
   - magical

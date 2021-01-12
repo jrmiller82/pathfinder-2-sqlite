@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Expel Infestation
   range: null
@@ -39,17 +37,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: Isqulugia's __sickened__, __slowed__, and __paralyzed__ conditions
-    can't be removed until this affliction is removed; **Saving Throw** DC 30 Fortitude;
-    **Stage 1** sickened 1 (1 hour); **Stage 2** __fatigued__ and sickened 2 (1 day);
-    **Stage 3** fatigued and slowed 1 (1 day); **Stage 4** paralyzed (1 day); **Stage
-    5**the creature dies, and its body violently transforms into a new isqulug. __Wish__,
-    similar magic, or a 9th-level __resurrect__ ritual can return the victim to life.
-    The new isqulug remains even if the victim is brought back to life.
+    can't be removed until this affliction is removed
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Isqulugia
   range: null
@@ -62,8 +53,16 @@ active_abilities:
     similar magic, or a 9th-level __resurrect__ ritual can return the victim to life.
     The new isqulug remains even if the victim is brought back to life.'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 30 Fortitude
+  stages:
+  - effect: sickened 1 (1 hour)
+  - effect: __fatigued__ and sickened 2 (1 day)
+  - effect: fatigued and slowed 1 (1 day)
+  - effect: paralyzed (1 day)
+  - effect: the creature dies, and its body violently transforms into a new isqulug.
+      __Wish__, similar magic, or a 9th-level __resurrect__ ritual can return the
+      victim to life. The new isqulug remains even if the victim is brought back to
+      life.
   success: null
   traits:
   - disease
@@ -82,8 +81,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Malleability
   range: null
@@ -105,8 +102,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swamp Stride
   range: null
@@ -142,12 +137,11 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+11
+  - formula: 2d12+11
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: isqulugia
+  name: tentacle
   to_hit: 22
   traits:
   - agile
@@ -177,8 +171,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Host Scent
   range: null

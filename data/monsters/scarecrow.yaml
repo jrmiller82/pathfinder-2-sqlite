@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Baleful Glow
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Clawing Fear
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mundane Appearance
   range: null
@@ -87,8 +81,9 @@ active_abilities:
 alignment: N
 automatic_abilities:
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but frightened 3.
+  critical_success: The creature is unaffected and is then temporarily immune for
+    24 hours.
   description: 'The scarecrow''s eyes flicker with an unnerving glow. A creature can''t
     reduce its __frightened__ condition below 1 as long as it is in the aura''s emanation.
 
@@ -97,10 +92,9 @@ automatic_abilities:
     Will save. Birds and other avian creatures take a –2 circumstance penalty to this
     save.'
   effect: null
-  failure: null
+  failure: The creature is frightened 2 and is __fascinated__ by the scarecrow until
+    the end of its next turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Scarecrow's Leer
   range: 40 feet
@@ -112,11 +106,25 @@ automatic_abilities:
 
     When a creature enters or starts its turn in the aura, it must attempt a DC 18
     Will save. Birds and other avian creatures take a –2 circumstance penalty to this
-    save.'
+    save.
+
+
+    **Critical Success** The creature is unaffected and is then temporarily immune
+    for 24 hours.
+
+
+    **Success** The creature is frightened 1.
+
+
+    **Failure** The creature is frightened 2 and is __fascinated__ by the scarecrow
+    until the end of its next turn.
+
+
+    **Critical Failure** As failure, but frightened 3.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is frightened 1.
   traits:
   - aura
   - emotion
@@ -124,87 +132,6 @@ automatic_abilities:
   - mental
   - occult
   - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is then temporarily immune for
-    24 hours.
-  description: The creature is unaffected and is then temporarily immune for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is then temporarily
-    immune for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is frightened 1.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is frightened 1.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is frightened 1.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is frightened 2 and is __fascinated__ by the scarecrow
-    until the end of its next turn.
-  effect: null
-  failure: The creature is frightened 2 and is __fascinated__ by the scarecrow until
-    the end of its next turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is frightened 2 and is __fascinated__
-    by the scarecrow until the end of its next turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but frightened 3.
-  critical_success: null
-  description: As failure, but frightened 3.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but frightened 3.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 description: 'A ramshackle collection of materials in a human shape, the scarecrow
   construct is indistinguishable from a normal scarecrow until it slowly creaks to
@@ -253,12 +180,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
-  name: claw
-  plus_damage:
   - formula: null
     type: clawing fear
+  name: claw
   to_hit: 13
   traits:
   - versatile S

@@ -9,18 +9,19 @@ ac: 46
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
-  description: ; The volcano on the lerritan's back erupts and sends lava bombs raining
+  critical_failure: The creature takes double damage and is encased in a rocky crust
+    with lava on the inside. The creature is __restrained__ (Escape DC 46), can't
+    breathe, takes 3d12 __persistent fire damage__, and can't recover from this persistent
+    fire damage until freed.
+  critical_success: The creature is unaffected.
+  description: The volcano on the lerritan's back erupts and sends lava bombs raining
     down in a 30-foot emanation, dealing 12d12 fire damage. Each creature in the area
     must attempt a DC 46 Reflex saving throw. The lava globules quickly cool into
     heavy stones, transforming the area into greater difficult terrain for non-lerritans.
     The lerritan can't use Volcanic Eruption for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature takes full damage and is __immobilized__ (Escape DC 46).
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -31,103 +32,31 @@ active_abilities:
     raining down in a 30-foot emanation, dealing 12d12 fire damage. Each creature
     in the area must attempt a DC 46 Reflex saving throw. The lava globules quickly
     cool into heavy stones, transforming the area into greater difficult terrain for
-    non-lerritans. The lerritan can''t use Volcanic Eruption for 1d4 rounds.'
+    non-lerritans. The lerritan can''t use Volcanic Eruption for 1d4 rounds.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature takes half damage and is __encumbered__ for 1 round.
+
+
+    **Failure** The creature takes full damage and is __immobilized__ (Escape DC 46).
+
+
+    **Critical Failure** The creature takes double damage and is encased in a rocky
+    crust with lava on the inside. The creature is __restrained__ (Escape DC 46),
+    can''t breathe, takes 3d12 __persistent fire damage__, and can''t recover from
+    this persistent fire damage until freed.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature takes half damage and is __encumbered__ for 1 round.
   traits:
   - earth
   - evocation
   - fire
   - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes half damage and is __encumbered__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature takes half damage and is __encumbered__
-    for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature takes half damage and is __encumbered__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes full damage and is __immobilized__ (Escape DC 46).
-  effect: null
-  failure: The creature takes full damage and is __immobilized__ (Escape DC 46).
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature takes full damage and is __immobilized__
-    (Escape DC 46).'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature takes double damage and is encased in a rocky crust
-    with lava on the inside. The creature is __restrained__ (Escape DC 46), can't
-    breathe, takes 3d12 __persistent fire damage__, and can't recover from this persistent
-    fire damage until freed.
-  critical_success: null
-  description: The creature takes double damage and is encased in a rocky crust with
-    lava on the inside. The creature is __restrained__ (Escape DC 46), can't breathe,
-    takes 3d12 __persistent fire damage__, and can't recover from this persistent
-    fire damage until freed.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature takes double damage and is encased
-    in a rocky crust with lava on the inside. The creature is __restrained__ (Escape
-    DC 46), can''t breathe, takes 3d12 __persistent fire damage__, and can''t recover
-    from this persistent fire damage until freed.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: NE
 automatic_abilities:
@@ -141,8 +70,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tenacious Flames
   range: 100 feet
@@ -172,8 +99,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -220,12 +145,11 @@ level: 21
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+18
+  - formula: 4d12+18
     type: bludgeoning
+  - formula: 2d6
+    type: persistent fire damage
   name: warhammer
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent fire damage
   to_hit: 40
   traits:
   - magical
@@ -233,12 +157,11 @@ melee_attacks:
   - shove
 - action_cost: One Action
   damage:
-    formula: 4d10+18
+  - formula: 4d10+18
     type: piercing
+  - formula: 2d6
+    type: persistent fire damage
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent fire damage
   to_hit: 39
   traits:
   - agile
@@ -248,12 +171,11 @@ perception: 35
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d6+18
+  - formula: 4d6+18
     type: bludgeoning
+  - formula: 2d6
+    type: persistent fire
   name: rock
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent fire
   to_hit: 39
   traits:
   - brutal

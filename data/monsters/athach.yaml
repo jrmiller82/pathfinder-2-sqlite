@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Athach Venom
   range: null
@@ -43,8 +41,6 @@ active_abilities:
     athach's multiple attack penalty.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swift Claw
   range: null
@@ -57,7 +53,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The athach hits a creature with two fist Strikes;
+  trigger: The athach hits a creature with two fist Strikes
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -92,8 +86,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -118,8 +110,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -166,29 +156,26 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+13
+  - formula: 3d12+13
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 25
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: athach venom
+  name: jaws
   to_hit: 25
   traits: null
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 25
   traits:
   - agile
@@ -197,10 +184,9 @@ perception: 22
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 25
   traits:
   - brutal

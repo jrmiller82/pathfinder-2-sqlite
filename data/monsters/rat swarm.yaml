@@ -12,15 +12,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: The __sickened__ and __unconscious__ conditions from filth fever don't
-    improve on their own until the disease is cured. **Saving Throw** DC 14 Fortitude;
-    **Stage 1** carrier with no ill effect (1d4 hours), **Stage 2** __sickened 1__
-    (1 day), **Stage 3** __sickened 1__ and __slowed 1__ (1 day), **Stage 4** __unconscious__
-    (1 day), **Stage 5** dead
+    improve on their own until the disease is cured.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Filth Fever
   range: null
@@ -30,8 +25,13 @@ active_abilities:
     hours), **Stage 2** __sickened 1__ (1 day), **Stage 3** __sickened 1__ and __slowed
     1__ (1 day), **Stage 4** __unconscious__ (1 day), **Stage 5** dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 14 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1d4 hours),
+  - effect: __sickened 1__ (1 day),
+  - effect: __sickened 1__ and __slowed 1__ (1 day),
+  - effect: __unconscious__ (1 day),
+  - effect: dead
   success: null
   traits:
   - disease
@@ -45,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Bites
   range: null

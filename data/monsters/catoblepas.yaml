@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -67,8 +63,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -107,30 +101,27 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+13
+  - formula: 3d10+13
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 25
   traits:
   - magical
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+13
+  - formula: 3d12+13
     type: piercing
   name: antler
-  plus_damage: null
   to_hit: 25
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+11
+  - formula: 3d10+11
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 23
   traits:
   - magical
@@ -158,8 +149,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet

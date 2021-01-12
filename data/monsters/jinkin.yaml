@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tinker
   range: null
@@ -86,10 +82,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6-2
+  - formula: 1d6-2
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 9
   traits:
   - agile

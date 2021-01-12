@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Camouflage
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ink Cloud
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jet
   range: null
@@ -83,8 +77,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Reef Octopus Venom
   range: null
@@ -112,8 +104,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Writhing Arms
   range: null
@@ -141,23 +131,21 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+1
+  - formula: 1d10+1
     type: piercing
-  name: beak
-  plus_damage:
   - formula: null
     type: reef octopus venom
+  name: beak
   to_hit: 9
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: bludgeoning
-  name: arm
-  plus_damage:
   - formula: null
     type: Grab
+  name: arm
   to_hit: 9
   traits:
   - agile

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Bites
   range: null
@@ -33,13 +31,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 27 Fortitude; **Onset** 1 day; **Stage 1** __enfeebled__
-    (1 day); **Stage 2** enfeebled 2 (1 day).'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tick Fever
   range: null
@@ -47,8 +42,10 @@ active_abilities:
     **Onset** 1 day; **Stage 1** __enfeebled__ (1 day); **Stage 2** enfeebled 2 (1
     day).'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 27 Fortitude; **Onset** 1 day
+  stages:
+  - effect: __enfeebled__ (1 day)
+  - effect: enfeebled 2 (1 day).
   success: null
   traits:
   - disease
@@ -65,8 +62,6 @@ automatic_abilities:
     to the creature destroys these clinging ticks.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cling
   range: null
@@ -80,7 +75,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature leaves the swarm's space;
+  trigger: A creature leaves the swarm's space
 description: 'This swarm of thousands of fist-sized ticks forms a moving carpet of
   bloated insects—a nauseating and intimidating sight.
 

@@ -15,33 +15,51 @@ automatic_abilities:
   critical_failure: null
   critical_success: null
   description: null
-  effect: 'The scion gains a +2 circumstance bonus to the saving throw.
-
-
-    **Glimpse of Redemption** [Reaction]'
+  effect: The scion gains a +2 circumstance bonus to the saving throw.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Divine Grace
   range: null
-  raw_description: "**Divine Grace** [Reaction] **Trigger** The angelkin is targeted\
-    \ by a spell that allows a saving throw. **Effect** The scion gains a +2 circumstance\
-    \ bonus to the saving throw.\n\n**Glimpse of Redemption**  **Trigger** An enemy\
-    \ damages one of the angelkin's allies. Both the enemy and ally must be within\
-    \ 15 feet of the angelkin. **Effect** The angelkin causes its foe to hesitate\
-    \ under the weight of its sins as visions of possible redemption play out in its\
-    \ mind's eye. The foe chooses one of two options:\n\n  * The ally is completely\
-    \ unharmed by the triggering damage.\n\n  * The ally gains resistance 7 to all\
-    \ damage against the triggering damage. After the damaging effect resolves, the\
-    \ enemy becomes enfeebled 2 until the end of its next turn. **Shield Block**"
+  raw_description: '**Divine Grace** [Reaction] **Trigger** The angelkin is targeted
+    by a spell that allows a saving throw. **Effect** The scion gains a +2 circumstance
+    bonus to the saving throw.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: The angelkin is targeted by a spell that allows a saving throw.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: "The angelkin causes its foe to hesitate under the weight of its sins as\
+    \ visions of possible redemption play out in its mind's eye. The foe chooses one\
+    \ of two options:\n\n  * The ally is completely unharmed by the triggering damage.\n\
+    \n  * The ally gains resistance 7 to all damage against the triggering damage.\
+    \ After the damaging effect resolves, the enemy becomes enfeebled 2 until the\
+    \ end of its next turn. **Shield Block** [Reaction]"
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Glimpse of Redemption
+  range: null
+  raw_description: "**Glimpse of Redemption** [Reaction] **Trigger** An enemy damages\
+    \ one of the angelkin's allies. Both the enemy and ally must be within 15 feet\
+    \ of the angelkin. **Effect** The angelkin causes its foe to hesitate under the\
+    \ weight of its sins as visions of possible redemption play out in its mind's\
+    \ eye. The foe chooses one of two options:\n\n  * The ally is completely unharmed\
+    \ by the triggering damage.\n\n  * The ally gains resistance 7 to all damage against\
+    \ the triggering damage. After the damaging effect resolves, the enemy becomes\
+    \ enfeebled 2 until the end of its next turn. **Shield Block**"
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: An enemy damages one of the angelkin's allies. Both the enemy and ally
+    must be within 15 feet of the angelkin.
 description: 'Mortals whose ancestry has been influenced by celestials are known as
   aasimars, and angelkin, who have blood of angels coursing through their veins, are
   among the most common type of them. Many angelkin seek adventure as a means of doing
@@ -65,10 +83,9 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 15
   traits:
   - versatile P
@@ -77,12 +94,11 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: piercing
-  name: crossbow
-  plus_damage:
   - formula: null
     type: Knockdown
+  name: crossbow
   to_hit: 12
   traits:
   - range increment 120 feet

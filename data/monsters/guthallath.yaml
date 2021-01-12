@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Annihilation Beams
   range: null
@@ -45,8 +43,6 @@ active_abilities:
     attempt a DC 41 basic Reflex save.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deadly Throw
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Powerful Blows
   range: null
@@ -90,8 +84,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -107,19 +99,13 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The guthallath erodes away the physical integrity of all around it.
+  description: The guthallath erodes away the physical integrity of all around it.
     Creatures and objects in the emanation other than the guthallath have their hardness
     and resistances reduced by 10. At the start of its turn, a creature in the erosion
-    aura''s area takes 6d6 bludgeoning damage (basic Fortitude DC 39).
-
-
-    **Immunity to Magic** The guthallath is immune to spells of lower than 7th level
-    and the activated effects of magic items of lower than 14th level.'
+    aura's area takes 6d6 bludgeoning damage (basic Fortitude DC 39).
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Erosion Aura
   range: 120 feet
@@ -127,11 +113,7 @@ automatic_abilities:
     erodes away the physical integrity of all around it. Creatures and objects in
     the emanation other than the guthallath have their hardness and resistances reduced
     by 10. At the start of its turn, a creature in the erosion aura''s area takes
-    6d6 bludgeoning damage (basic Fortitude DC 39).
-
-
-    **Immunity to Magic** The guthallath is immune to spells of lower than 7th level
-    and the activated effects of magic items of lower than 14th level.'
+    6d6 bludgeoning damage (basic Fortitude DC 39).'
   requirements: null
   saving_throw: null
   stages: null
@@ -139,6 +121,25 @@ automatic_abilities:
   traits:
   - aura
   - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The guthallath is immune to spells of lower than 7th level and the
+    activated effects of magic items of lower than 14th level.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Immunity to Magic
+  range: null
+  raw_description: '**Immunity to Magic** The guthallath is immune to spells of lower
+    than 7th level and the activated effects of magic items of lower than 14th level.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: null
 description: 'A guthallath is an enormous construct created long ago by some unknown
   empire, probably as a war machine. Nearly 100 feet tall, this massive stone statue
@@ -182,12 +183,11 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+18
+  - formula: 4d12+18
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Improved Grab or Improved Push 20 feet
+  name: fist
   to_hit: 38
   traits:
   - deadly 3d12
@@ -195,12 +195,11 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+18
+  - formula: 4d8+18
     type: bludgeoning
-  name: foot
-  plus_damage:
   - formula: null
     type: Improved Knockdown
+  name: foot
   to_hit: 38
   traits:
   - deadly 3d12

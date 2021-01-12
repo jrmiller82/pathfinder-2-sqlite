@@ -9,17 +9,16 @@ ac: 16
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The target is confused for 1 minute. It can attempt a new save
+    at the end of each of its turns to end the confused condition.
+  critical_success: The target is unaffected.
   description: The brownie's antics can confuse and disorient a creature. When the
     brownie uses Baffling Bluff, it targets a single creature within 30 feet; that
     creature must attempt a DC 17 Will save. The target is temporarily immune to Baffling
     Bluff for 1 minute.
   effect: null
-  failure: null
+  failure: The target is __confused__ for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Baffling Bluff
   range: null
@@ -27,101 +26,33 @@ active_abilities:
     __mental__, __primal__) The brownie''s antics can confuse and disorient a creature.
     When the brownie uses Baffling Bluff, it targets a single creature within 30 feet;
     that creature must attempt a DC 17 Will save. The target is temporarily immune
-    to Baffling Bluff for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - emotion
-  - enchantment
-  - mental
-  - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The target is unaffected.
-  description: The target is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is fooled momentarily and is __flat-footed__ against the
-    next melee Strike the brownie makes against it before the end of the brownie's
+    to Baffling Bluff for 1 minute.
+
+
+    **Critical Success **The target is unaffected.
+
+
+    **Success **The target is fooled momentarily and is __flat-footed__ against the
+    next melee Strike the brownie makes against it before the end of the brownie''s
     next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The target is fooled momentarily and is __flat-footed__
-    against the next melee Strike the brownie makes against it before the end of the
-    brownie''s next turn.'
+
+
+    **Failure **The target is __confused__ for 1 round.
+
+
+    **Critical Failure **The target is confused for 1 minute. It can attempt a new
+    save at the end of each of its turns to end the confused condition.'
   requirements: null
   saving_throw: null
   stages: null
   success: The target is fooled momentarily and is __flat-footed__ against the next
     melee Strike the brownie makes against it before the end of the brownie's next
     turn.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is __confused__ for 1 round.
-  effect: null
-  failure: The target is __confused__ for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The target is __confused__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The target is confused for 1 minute. It can attempt a new save
-    at the end of each of its turns to end the confused condition.
-  critical_success: null
-  description: The target is confused for 1 minute. It can attempt a new save at the
-    end of each of its turns to end the confused condition.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The target is confused for 1 minute. It can
-    attempt a new save at the end of each of its turns to end the confused condition.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - emotion
+  - enchantment
+  - mental
+  - primal
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -180,10 +111,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6
+  - formula: 1d6
+    type: ''
   name: shortsword
-  plus_damage: null
   to_hit: 7
   traits:
   - agile

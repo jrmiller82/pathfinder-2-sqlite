@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Viper Venom
   range: null
@@ -41,8 +39,6 @@ automatic_abilities:
     that isn't within 5 feet of a foe. This movement doesn't trigger reactions.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slink
   range: null
@@ -73,12 +69,11 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d8–3 piercing
-  name: fangs
-  plus_damage:
+  - formula: 1d8
+    type: –3 piercing
   - formula: null
     type: viper venom
+  name: fangs
   to_hit: 8
   traits:
   - agile

@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slowing Frost
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tactician of Cocytus
   range: null
@@ -80,11 +76,9 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 10 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -101,7 +95,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 31
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -110,6 +104,34 @@ automatic_abilities:
   - fear
   - mental
   trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Insectile ice devils are strategists and masterminds in Hell''s armies,
   using their superior intellect to strike against their enemies and spread Hell''s
   influence throughout the planes. An ice devil rarely breaks their solitary contemplation
@@ -142,16 +164,15 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+12
+  - formula: 2d8+12
     type: piercing
-  name: frost longspear
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: cold
+  - formula: 1d6
+    type: evil
   - formula: null
     type: slowing frost
+  name: frost longspear
   to_hit: 28
   traits:
   - cold
@@ -160,16 +181,15 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+12
+  - formula: 2d6+12
     type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 2d6 cold
-  - formula: null
-    type: 1d6 evil
+  - formula: 2d6
+    type: cold
+  - formula: 1d6
+    type: evil
   - formula: null
     type: slowing frost
+  name: tail
   to_hit: 25
   traits:
   - agile
@@ -182,12 +202,11 @@ perception: 26
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+12
+  - formula: 2d8+12
     type: piercing
+  - formula: 1d6
+    type: cold
   name: frost longspear
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 27
   traits:
   - cold

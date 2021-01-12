@@ -13,15 +13,10 @@ active_abilities:
   critical_success: null
   description: An akata implants its parasitic larval young into any creature it bites,
     but only Medium or Small humanoids make suitable hosts; all other creatures are
-    immune to this disease; **Saving Throw** DC 17 Fortitude; **Stage 1** carrier
-    with no ill effect 1 (1 day); **Stage 2** __drained 1__ (1 day); **Stage 3** as
-    stage 2 (1 day); **Stage 4** drained 2 and __fatigued__ (1 day); **Stage 5** as
-    stage 4 (1 day); **Stage 6** dead and corpse rises as a void zombie in 2d4 hours
+    immune to this disease
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Void Death
   range: null
@@ -33,8 +28,14 @@ active_abilities:
     (1 day); **Stage 5** as stage 4 (1 day); **Stage 6** dead and corpse rises as
     a void zombie in 2d4 hours'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 17 Fortitude
+  stages:
+  - effect: carrier with no ill effect 1 (1 day)
+  - effect: __drained 1__ (1 day)
+  - effect: as stage 2 (1 day)
+  - effect: drained 2 and __fatigued__ (1 day)
+  - effect: as stage 4 (1 day)
+  - effect: dead and corpse rises as a void zombie in 2d4 hours
   success: null
   traits:
   - disease
@@ -49,8 +50,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: No Breath
   range: null
@@ -70,8 +69,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Salt Water Vulnerability
   range: null
@@ -113,12 +110,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: void death
+  name: jaws
   to_hit: 9
   traits:
   - agile
@@ -156,8 +152,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hibernation
   range: null
@@ -185,8 +179,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: No Hearing
   range: null

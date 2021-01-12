@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rider's Bond
   range: null
@@ -70,8 +66,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tangling Chains
   range: null
@@ -98,8 +92,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whirling Frenzy
   range: null
@@ -135,34 +127,31 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: bludgeoning
-  name: chain
-  plus_damage:
   - formula: null
     type: Improved Knockdown
+  name: chain
   to_hit: 34
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d6+15
+  - formula: 3d6+15
     type: piercing
+  - formula: 3d6
+    type: fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 fire
   to_hit: 32
   traits:
   - magical
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+15
+  - formula: 3d8+15
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 32
   traits:
   - agile
@@ -170,10 +159,9 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+15
+  - formula: 3d12+15
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 32
   traits:
   - fatal d12
@@ -203,8 +191,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Planar Acclimation
   range: null

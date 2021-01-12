@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Harrowing Misfortune
   range: null
@@ -60,8 +58,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fortune's Favor
   range: null
@@ -114,12 +110,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+6
+  - formula: 2d12+6
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Grab
+  name: fist
   to_hit: 17
   traits:
   - agile
@@ -129,12 +124,11 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: slashing
-  name: harrow card
-  plus_damage:
   - formula: null
     type: harrowing misfortune
+  name: harrow card
   to_hit: 18
   traits:
   - magical
@@ -167,8 +161,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Uncanny Divination
   range: null

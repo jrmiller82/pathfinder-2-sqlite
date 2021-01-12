@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -35,81 +33,11 @@ active_abilities:
   - primal
   trigger: null
 - action_cost: Free Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the target is initially slowed 2.
+  critical_success: The target is unaffected.
   description: null
   effect: The dragon embeds transformative crystals in the creature's flesh. The creature
     must attempt a DC 30 Fortitude save.
-  failure: null
-  frequency: once per day
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Crystallize Flesh
-  range: null
-  raw_description: '**Crystallize Flesh** [Free Action]  (__primal__, __transmutation__)
-    **Trigger **The crystal dragon damages a creature made of flesh with a jaws Strike;
-    **Frequency **once per day; **Effect **The dragon embeds transformative crystals
-    in the creature''s flesh. The creature must attempt a DC 30 Fortitude save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - primal
-  - transmutation
-  trigger: The crystal dragon damages a creature made of flesh with a jaws Strike;
-- action_cost: None
-  critical_failure: null
-  critical_success: The target is unaffected.
-  description: The target is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is __slowed 1__ for 1 round as portions of its flesh turn
-    crystalline.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The target is __slowed 1__ for 1 round as portions
-    of its flesh turn crystalline.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The target is __slowed 1__ for 1 round as portions of its flesh turn crystalline.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is slowed 1 and must attempt a Fortitude save at the end
-    of each of its turns; this ongoing save has the __incapacitation__ trait. On a
-    failed save, the slowed condition value increases by 1 (or by 2 on a critical
-    failure). A successful save reduces the slowed condition value by 1. A creature
-    unable to act due to the slowed condition from Crystallize Flesh is __petrified__
-    permanently, transforming into a crystalline statue. The effect ends if the creature
-    is petrified or the slowed condition is removed.
-  effect: null
   failure: The target is slowed 1 and must attempt a Fortitude save at the end of
     each of its turns; this ongoing save has the __incapacitation__ trait. On a failed
     save, the slowed condition value increases by 1 (or by 2 on a critical failure).
@@ -117,45 +45,41 @@ active_abilities:
     act due to the slowed condition from Crystallize Flesh is __petrified__ permanently,
     transforming into a crystalline statue. The effect ends if the creature is petrified
     or the slowed condition is removed.
-  frequency: null
-  full_description: null
-  generic_description: null
+  frequency: once per day
   maximum_duration: null
-  name: Failure
+  name: Crystallize Flesh
   range: null
-  raw_description: '**Failure **The target is slowed 1 and must attempt a Fortitude
-    save at the end of each of its turns; this ongoing save has the __incapacitation__
-    trait. On a failed save, the slowed condition value increases by 1 (or by 2 on
-    a critical failure). A successful save reduces the slowed condition value by 1.
-    A creature unable to act due to the slowed condition from Crystallize Flesh is
-    __petrified__ permanently, transforming into a crystalline statue. The effect
-    ends if the creature is petrified or the slowed condition is removed.'
+  raw_description: '**Crystallize Flesh** [Free Action]  (__primal__, __transmutation__)
+    **Trigger **The crystal dragon damages a creature made of flesh with a jaws Strike;
+    **Frequency **once per day; **Effect **The dragon embeds transformative crystals
+    in the creature''s flesh. The creature must attempt a DC 30 Fortitude save.
+
+
+    **Critical Success **The target is unaffected.
+
+
+    **Success **The target is __slowed 1__ for 1 round as portions of its flesh turn
+    crystalline.
+
+
+    **Failure **The target is slowed 1 and must attempt a Fortitude save at the end
+    of each of its turns; this ongoing save has the __incapacitation__ trait. On a
+    failed save, the slowed condition value increases by 1 (or by 2 on a critical
+    failure). A successful save reduces the slowed condition value by 1. A creature
+    unable to act due to the slowed condition from Crystallize Flesh is __petrified__
+    permanently, transforming into a crystalline statue. The effect ends if the creature
+    is petrified or the slowed condition is removed.
+
+
+    **Critical Failure **As failure, but the target is initially slowed 2.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the target is initially slowed 2.
-  critical_success: null
-  description: As failure, but the target is initially slowed 2.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, but the target is initially slowed
-    2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
+  success: The target is __slowed 1__ for 1 round as portions of its flesh turn crystalline.
+  traits:
+  - primal
+  - transmutation
+  trigger: The crystal dragon damages a creature made of flesh with a jaws Strike
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -163,8 +87,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -184,8 +106,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -208,8 +128,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -246,8 +164,6 @@ automatic_abilities:
     hits, the dragon disrupts the creature's action.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Twisting Tail
   range: null
@@ -260,8 +176,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature within reach of the dragon's tail uses a move action or leaves
-    a square during a move action it's using;
+  trigger: A creature within reach of the dragon's tail uses a __move__ action or
+    leaves a square during a move action it's using
 description: 'Good-natured but vain, crystal dragons are beautiful creatures with
   brilliant hides made of multicolored crystal and gemstone. Their beauty is a source
   of great pride but is also something of a weakness, as crystal dragons are easily
@@ -314,22 +230,20 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
+  - formula: 3d6
+    type: piercing
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 piercing
   to_hit: 24
   traits:
   - sonic
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 24
   traits:
   - agile
@@ -337,10 +251,9 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+13
+  - formula: 1d10+13
     type: slashing
   name: tail
-  plus_damage: null
   to_hit: 22
   traits:
   - magical

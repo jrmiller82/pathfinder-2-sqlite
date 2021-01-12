@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: The creature takes 3d6 piercing damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mandibles
   range: null
@@ -57,8 +53,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Paralytic Venom
   range: null
@@ -84,8 +78,6 @@ active_abilities:
     grabbed by the tentacles.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tentacle Transfer
   range: null
@@ -113,8 +105,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -184,12 +174,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: bludgeoning
-  name: claws
-  plus_damage:
   - formula: null
     type: Grab
+  name: claws
   to_hit: 19
   traits:
   - reach 10 feet

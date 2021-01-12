@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breach
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: The creature the shark hit takes 2d12 slashing damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Savage
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -96,23 +90,21 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 22
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: piercing
-  name: tail
-  plus_damage:
   - formula: null
     type: Push 15 feet
+  name: tail
   to_hit: 22
   traits:
   - agile
@@ -137,8 +129,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Scent
   range: null

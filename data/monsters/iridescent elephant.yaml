@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Color Splash
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grabbing Trunk
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -78,104 +72,38 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is blinded permanently.
+  critical_success: The creature is unaffected.
   description: null
   effect: The iridescent elephant blasts a beam of light from its trunk in a 30-foot
     line. Each creature in the area must attempt a DC 22 Fortitude save.
-  failure: null
+  failure: The creature is __blinded__ for 1 minute.
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trunk Beam
   range: null
   raw_description: '**Trunk Beam** (__visual__, __light__) **Frequency** once per
     day; **Effect** The iridescent elephant blasts a beam of light from its trunk
-    in a 30-foot line. Each creature in the area must attempt a DC 22 Fortitude save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - visual
-  - light
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __dazzled__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __dazzled__ for 1 round.'
+    in a 30-foot line. Each creature in the area must attempt a DC 22 Fortitude save.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __dazzled__ for 1 round.
+
+
+    **Failure** The creature is __blinded__ for 1 minute.
+
+
+    **Critical Failure** The creature is blinded permanently.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is __dazzled__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __blinded__ for 1 minute.
-  effect: null
-  failure: The creature is __blinded__ for 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __blinded__ for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is blinded permanently.
-  critical_success: null
-  description: The creature is blinded permanently.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is blinded permanently.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - visual
+  - light
   trigger: null
 alignment: N
 automatic_abilities:
@@ -189,8 +117,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Glowing Bones
   range: null
@@ -228,30 +154,27 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+7
+  - formula: 3d8+7
     type: piercing
   name: tusk
-  plus_damage: null
   to_hit: 14
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: grabbing trunk
   name: trunk
-  plus_damage: null
   to_hit: 16
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: bludgeoning
-  name: foot
-  plus_damage:
   - formula: null
     type: color splash
+  name: foot
   to_hit: 14
   traits:
   - reach 10 feet

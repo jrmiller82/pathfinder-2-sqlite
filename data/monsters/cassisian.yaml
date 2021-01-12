@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -53,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eye Beams
   range: null
@@ -83,8 +79,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Repository of Lore
   range: null
@@ -112,8 +106,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Transfer Protection
   range: null
@@ -149,12 +141,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6-1
+  - formula: 1d6-1
     type: bludgeoning
+  - formula: 1d4
+    type: good
   name: headbutt
-  plus_damage:
-  - formula: null
-    type: 1d4 good
   to_hit: 6
   traits:
   - agile

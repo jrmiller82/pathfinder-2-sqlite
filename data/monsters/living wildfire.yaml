@@ -18,8 +18,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Explosion
   range: null
@@ -53,12 +51,11 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: fire
+  - formula: 2d4
+    type: persistent fire
   name: tendril
-  plus_damage:
-  - formula: null
-    type: 2d4 persistent fire
   to_hit: 15
   traits:
   - agile
@@ -69,10 +66,9 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+3
+  - formula: 2d6+3
     type: fire
   name: fire mote
-  plus_damage: null
   to_hit: 15
   traits:
   - range increment 60 feet
@@ -92,8 +88,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

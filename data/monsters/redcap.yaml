@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Soak
   range: null
@@ -42,8 +40,6 @@ active_abilities:
     This counts toward its multiple attack penalty.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deadly Cleave
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stomp
   range: null
@@ -93,8 +87,6 @@ automatic_abilities:
   effect: null
   failure: The redcap gains the fleeing condition for 1 round and is frightened 4.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Divine Revulsion
   range: null
@@ -151,20 +143,18 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+10
+  - formula: 1d10+10
     type: slashing
   name: scythe
-  plus_damage: null
   to_hit: 15
   traits:
   - deadly 1d10
   - trip
 - action_cost: One Action
   damage:
-    formula: 1d6+8
+  - formula: 1d6+8
     type: piercing
   name: boot
-  plus_damage: null
   to_hit: 13
   traits:
   - agile
@@ -192,8 +182,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Red Cap
   range: null

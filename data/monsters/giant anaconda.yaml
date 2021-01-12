@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greater Constrict
   range: null
@@ -35,8 +33,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slither
   range: null
@@ -55,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -79,8 +73,6 @@ active_abilities:
     coils can hold as many creatures as will fit in its space.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wrap in Coils
   range: null
@@ -105,8 +97,6 @@ automatic_abilities:
   effect: The DC of the Escape check is increased by 2.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tighten Coils
   range: null
@@ -135,23 +125,21 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 21
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Push 10 feet
+  name: tail
   to_hit: 21
   traits:
   - agile

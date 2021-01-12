@@ -12,33 +12,50 @@ active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: null
+  description: The counteflora releases a cloud of black seedpods in a 15-foot-radius
+    emanation. Non-counteflora creatures in the area must succeed at a Fortitude save
+    or breathe in the toxic seeds. (Against plants and fungi, the seeds burrow into
+    the creatures' flesh rather than infiltrate their lungs.)
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: 6 rounds
+  maximum_duration: null
   name: Black Seed Cloud
   range: null
   raw_description: '**Black Seed Cloud** [Two Actions]  The counteflora releases a
     cloud of black seedpods in a 15-foot-radius emanation. Non-counteflora creatures
     in the area must succeed at a Fortitude save or breathe in the toxic seeds. (Against
     plants and fungi, the seeds burrow into the creatures'' flesh rather than infiltrate
-    their lungs.)
-
-
-    **Counteflora Toxin** (__contact__ [for plants and fungi] or __inhaled__, __poison__)
-    **Saving Throw** DC 30 Fortitude (DC 32 for plants and fungi); **Maximum Duration**
-    6 rounds; **Stage 1** 4d6 poison damage and __enfeebled__ 1 (1 round); **Stage
-    2** 6d6 poison damage, enfeebled 1, and __fascinated__ (1 round)'
+    their lungs.)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: 6 rounds
+  name: Counteflora Toxin
+  range: null
+  raw_description: '**Counteflora Toxin** (__contact__ [for plants and fungi] or __inhaled__,
+    __poison__) **Saving Throw** DC 30 Fortitude (DC 32 for plants and fungi); **Maximum
+    Duration** 6 rounds; **Stage 1** 4d6 poison damage and __enfeebled__ 1 (1 round);
+    **Stage 2** 6d6 poison damage, enfeebled 1, and __fascinated__ (1 round)'
   requirements: null
   saving_throw: DC 30 Fortitude (DC 32 for plants and fungi)
   stages:
   - effect: 4d6 poison damage and __enfeebled__ 1 (1 round)
   - effect: 6d6 poison damage, enfeebled 1, and __fascinated__ (1 round)
   success: null
-  traits: null
+  traits:
+  - contact [for plants and fungi] or inhaled
+  - poison
   trigger: null
 - action_cost: Three Actions
   critical_failure: null
@@ -48,8 +65,6 @@ active_abilities:
     each against a different creature within reach.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Furious Swing
   range: null
@@ -66,6 +81,25 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Whenever the counteflora takes cold damage, it takes a –10-foot circumstance
+    penalty to Speed for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Frost Susceptibility
+  range: null
+  raw_description: '**Frost Susceptibility** Whenever the counteflora takes cold damage,
+    it takes a –10-foot circumstance penalty to Speed for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -80,23 +114,18 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Frost Susceptibility
+  name: Tighten Bracts
   range: null
-  raw_description: '**Frost Susceptibility** Whenever the counteflora takes cold damage,
-    it takes a –10-foot circumstance penalty to Speed for 1 round.
-
-
-    **Tighten Bracts** [Two Actions] The counteflora stiffens the specialized leaves
-    around its flower head, protecting its sensitive seedpods. While its bracts are
-    tightened, a counteflora gains a +2 circumstance bonus to AC and can use its head
-    Strike and Furious Swing abilities, but it cannot use its Black Seed Cloud ability
-    and it loses its sense of sight (so it must rely on its imprecise tremorsense
-    when targeting other creatures). The counteflora can''t use its head Strike of
-    Furious Swing ability unless its bracts are tightened. The counteflora can loosen
-    its bracts as a free action (this action has the __concentrate__ trait).'
+  raw_description: '**Tighten Bracts** [Two Actions] The counteflora stiffens the
+    specialized leaves around its flower head, protecting its sensitive seedpods.
+    While its bracts are tightened, a counteflora gains a +2 circumstance bonus to
+    AC and can use its head Strike and Furious Swing abilities, but it cannot use
+    its Black Seed Cloud ability and it loses its sense of sight (so it must rely
+    on its imprecise tremorsense when targeting other creatures). The counteflora
+    can''t use its head Strike of Furious Swing ability unless its bracts are tightened.
+    The counteflora can loosen its bracts as a free action (this action has the __concentrate__
+    trait).'
   requirements: null
   saving_throw: null
   stages: null
@@ -132,19 +161,17 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: slashing
   name: vines
-  plus_damage: null
   to_hit: 21
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 3d10+9
+  - formula: 3d10+9
     type: bludgeoning
   name: head
-  plus_damage: null
   to_hit: 23
   traits:
   - reach 10 feet

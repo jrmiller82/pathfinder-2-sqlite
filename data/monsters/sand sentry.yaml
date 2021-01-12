@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blinding Sand
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -65,8 +61,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Glass Armor
   range: null
@@ -104,12 +98,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: blinding sand
+  name: fist
   to_hit: 17
   traits: null
 name: Sand Sentry

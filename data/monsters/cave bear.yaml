@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mauler
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rush
   range: null
@@ -74,20 +70,18 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 16
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 16
   traits:
   - agile

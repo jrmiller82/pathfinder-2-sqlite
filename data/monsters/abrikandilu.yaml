@@ -11,12 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: ; **1st** __abyssal pact__
+  description: '**1st** __abyssal pact__'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Divine Rituals
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mutilating Bite
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wreck
   range: null
@@ -99,8 +93,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hatred of Mirrors
   range: null
@@ -146,21 +138,19 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 3d6+4
+  - formula: 3d6+4
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: mutilating bite
+  name: jaws
   to_hit: 14
   traits: null
 name: Abrikandilu
@@ -168,10 +158,9 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: bludgeoning
   name: hurled debris
-  plus_damage: null
   to_hit: 11
   traits:
   - range increment 20 feet

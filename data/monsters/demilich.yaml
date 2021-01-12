@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Demilich Eye Gems
   range: null
@@ -51,8 +49,6 @@ active_abilities:
     regains HP equal to double the creature's level.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devour Soul
   range: null
@@ -80,8 +76,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mental Magic
   range: null
@@ -106,8 +100,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Staff Gems
   range: null
@@ -140,8 +132,6 @@ active_abilities:
     The demilich can Devour a Soul it has trapped.'
   failure: null
   frequency: once per day per gem
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trap Soul
   range: null
@@ -166,42 +156,55 @@ active_abilities:
   trigger: null
 alignment: NE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
-  effect: 'The demilich ends torpor, rolls initiative, and gains the effect of its
-    __contingency''s__ companion spell. The __contingency__ resets after 24 hours.
-
-
-    **Countermeasures** [Free Action]'
+  description: Telekinetic whirlwind activates when the demilich ends torpor. Loose
+    debris in the area whip up into a whirling storm. This obscures vision, making
+    any creature in the area concealed, and causes creatures in its area (except the
+    demilich) to treat all creatures as concealed. Any creature other than the demilich
+    that enters or begins its turn in the aura takes 2d12 bludgeoning damage.
+  effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Telekinetic Whirlwind
-  range: null
+  range: 20 feet
   raw_description: '**Telekinetic Whirlwind** (__arcane__, __aura__, __evocation__)
     20 feet. Telekinetic whirlwind activates when the demilich ends torpor. Loose
     debris in the area whip up into a whirling storm. This obscures vision, making
     any creature in the area concealed, and causes creatures in its area (except the
     demilich) to treat all creatures as concealed. Any creature other than the demilich
-    that enters or begins its turn in the aura takes 2d12 bludgeoning damage.
-
-
-    **Contingency** [Reaction] A demilich has one permanent 8th-level __contingency__
-    spell in effect with one of its arcane innate spells of 5th level or lower as
-    the companion spell— typically __dimension door__. **Trigger** While the lich
-    is in torpor, a creature disturbs the demilich''s remains, touches its treasure,
-    or casts a spell that would affect the demilich. **Effect** The demilich ends
-    torpor, rolls initiative, and gains the effect of its __contingency''s__ companion
-    spell. The __contingency__ resets after 24 hours.
-
-
-    **Countermeasures**  **Trigger** The demilich''s turn begins. **Effect** The demilich
-    casts __blink__, __fly__, __spell turning__, or __true seeing__ on itself. It
-    usually chooses spell turning unless it already has that spell in effect.'
+    that enters or begins its turn in the aura takes 2d12 bludgeoning damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - aura
+  - evocation
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: A demilich has one permanent 8th-level __contingency__ spell in effect
+    with one of its arcane innate spells of 5th level or lower as the companion spell—
+    typically __dimension door__.
+  effect: The demilich ends torpor, rolls initiative, and gains the effect of its
+    __contingency's__ companion spell. The __contingency__ resets after 24 hours.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Contingency
+  range: null
+  raw_description: '**Contingency** [Reaction] A demilich has one permanent 8th-level
+    __contingency__ spell in effect with one of its arcane innate spells of 5th level
+    or lower as the companion spell— typically __dimension door__. **Trigger** While
+    the lich is in torpor, a creature disturbs the demilich''s remains, touches its
+    treasure, or casts a spell that would affect the demilich. **Effect** The demilich
+    ends torpor, rolls initiative, and gains the effect of its __contingency''s__
+    companion spell. The __contingency__ resets after 24 hours.'
   requirements: null
   saving_throw: null
   stages: null
@@ -209,6 +212,28 @@ automatic_abilities:
   traits: null
   trigger: While the lich is in torpor, a creature disturbs the demilich's remains,
     touches its treasure, or casts a spell that would affect the demilich.
+- action_cost: Free Action
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The demilich casts __blink__, __fly__, __spell turning__, or __true seeing__
+    on itself. It usually chooses spell turning unless it already has that spell in
+    effect.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Countermeasures
+  range: null
+  raw_description: '**Countermeasures** [Free Action] **Trigger** The demilich''s
+    turn begins. **Effect** The demilich casts __blink__, __fly__, __spell turning__,
+    or __true seeing__ on itself. It usually chooses spell turning unless it already
+    has that spell in effect.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The demilich's turn begins.
 description: 'Demiliches are formed when a lich, through carelessness or by accident,
   loses its phylactery. As years pass, the lich''s body crumbles to dust, leaving
   only the skull as the seat of its necromantic power. The lich enters a sort of torpor,
@@ -260,12 +285,11 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4-3
+  - formula: 1d4-3
     type: piercing
+  - formula: 6d6
+    type: negative
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 6d6 negative
   to_hit: 27
   traits:
   - reach 0 feet
@@ -305,8 +329,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Torpor
   range: null

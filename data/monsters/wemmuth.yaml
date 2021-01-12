@@ -16,8 +16,6 @@ active_abilities:
     dealt by Constrict.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Leech
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -56,8 +52,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -78,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thorny Mass
   range: null
@@ -140,12 +132,11 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+10
+  - formula: 4d12+10
     type: bludgeoning
-  name: pummel
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: pummel
   to_hit: 29
   traits:
   - fatal d12
@@ -156,10 +147,9 @@ perception: 25
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+10
+  - formula: 4d10+10
     type: bludgeoning
   name: boulder
-  plus_damage: null
   to_hit: 27
   traits:
   - fatal d12

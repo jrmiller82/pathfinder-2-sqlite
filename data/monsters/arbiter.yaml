@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Electrical Burst
   range: null
@@ -65,12 +63,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
+  - formula: 1d4
+    type: lawful
   name: shortsword
-  plus_damage:
-  - formula: null
-    type: 1d4 lawful
   to_hit: 9
   traits:
   - agile
@@ -102,8 +99,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Locate Inevitable
   range: null

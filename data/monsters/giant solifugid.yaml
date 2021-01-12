@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pounce
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -65,18 +61,16 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+1
+  - formula: 1d10+1
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 8
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d8+1
+  - formula: 1d8+1
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 8
   traits:
   - agile

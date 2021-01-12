@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flay
   range: null
@@ -40,8 +38,6 @@ active_abilities:
     skinstitch regains 8 Hit Points.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stitch Skin
   range: null
@@ -70,8 +66,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pest Haven
   range: null
@@ -136,20 +130,18 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+8
+  - formula: 2d4+8
     type: slashing
   name: blade
-  plus_damage: null
   to_hit: 15
   traits:
   - agile
   - sweep
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: bludgeoning
   name: cudgel
-  plus_damage: null
   to_hit: 15
   traits:
   - forceful

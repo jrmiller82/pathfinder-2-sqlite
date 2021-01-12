@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hooked
   range: null
@@ -45,8 +43,6 @@ active_abilities:
     it (see culdewen's curse above).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Land the Fish
   range: null
@@ -75,8 +71,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reel In
   range: null
@@ -102,8 +96,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swear
   range: null
@@ -158,21 +150,19 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: piercing
-  name: fish hook
-  plus_damage:
   - formula: null
     type: hooked
+  name: fish hook
   to_hit: 17
   traits:
   - trip
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
   name: oar
-  plus_damage: null
   to_hit: 17
   traits:
   - shove
@@ -181,12 +171,11 @@ perception: 15
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: piercing
-  name: fish hook
-  plus_damage:
   - formula: null
     type: hooked
+  name: fish hook
   to_hit: 18
   traits:
   - thrown 30 feet
@@ -210,8 +199,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Culdewen's Curse
   range: null

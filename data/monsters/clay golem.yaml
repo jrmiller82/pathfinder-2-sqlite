@@ -16,8 +16,6 @@ active_abilities:
     hits, it deals an additional 1d8 damage and knocks the target __prone__.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Berserk Slam
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cursed Wound
   range: null
@@ -63,6 +59,68 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A severely damaged clay golem has a chance of going berserk. If it
+    has 50 or fewer Hit Points at the start of its turn, the golem must succeed at
+    a DC 5 flat check or go berserk. A berserk golem wildly attacks the nearest living
+    creature, or the nearest object if no creatures are nearby.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Berserk
+  range: null
+  raw_description: '**Berserk** A severely damaged clay golem has a chance of going
+    berserk. If it has 50 or fewer Hit Points at the start of its turn, the golem
+    must succeed at a DC 5 flat check or go berserk. A berserk golem wildly attacks
+    the nearest living creature, or the nearest object if no creatures are nearby.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: harmed by cold and water (5d10, 2d6 from areas or persistent damage);
+    healed by acid (area 2d6 HP); slowed by earth
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Golem Antimagic
+  range: null
+  raw_description: '**Golem Antimagic** harmed by cold and water (5d10, 2d6 from areas
+    or persistent damage); healed by acid (area 2d6 HP); slowed by earth'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A __disintegrate__ spell affects the golem but deals half the normal
+    amount of damage and causes the golem to become slowed 2 for 1 round.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vulnerable to Disintegrate
+  range: null
+  raw_description: '**Vulnerable to Disintegrate** A __disintegrate__ spell affects
+    the golem but deals half the normal amount of damage and causes the golem to become
+    slowed 2 for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Free Action
   critical_failure: null
   critical_success: null
@@ -70,30 +128,13 @@ automatic_abilities:
   effect: The clay golem becomes quickened for 1 minute.
   failure: null
   frequency: Once per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Berserk
+  name: Quicken
   range: null
-  raw_description: '**Berserk** A severely damaged clay golem has a chance of going
-    berserk. If it has 50 or fewer Hit Points at the start of its turn, the golem
-    must succeed at a DC 5 flat check or go berserk. A berserk golem wildly attacks
-    the nearest living creature, or the nearest object if no creatures are nearby.
-
-
-    **Golem Antimagic** harmed by cold and water (5d10, 2d6 from areas or persistent
-    damage); healed by acid (area 2d6 HP); slowed by earth
-
-
-    **Vulnerable to Disintegrate** A __disintegrate__ spell affects the golem but
-    deals half the normal amount of damage and causes the golem to become slowed 2
-    for 1 round.
-
-
-    **Quicken** [Free Action] (__divine__, __transmutation__) **Frequency** Once per
-    day. **Trigger** The clay golem''s turn begins. It can''t trigger this free action
-    on the first turn of combat. **Effect** The clay golem becomes quickened for 1
-    minute.'
+  raw_description: '**Quicken** [Free Action] (__divine__, __transmutation__) **Frequency**
+    Once per day. **Trigger** The clay golem''s turn begins. It can''t trigger this
+    free action on the first turn of combat. **Effect** The clay golem becomes quickened
+    for 1 minute.'
   requirements: null
   saving_throw: null
   stages: null
@@ -146,12 +187,11 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: cursed wound
+  name: fist
   to_hit: 24
   traits:
   - magical

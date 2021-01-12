@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Descend on a Web
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Goliath Spider Venom
   range: null
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Tether
   range: null
@@ -94,13 +88,11 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: ; **Requirement** Initiative has not yet been rolled.
+  description: '**Requirement** Initiative has not yet been rolled.'
   effect: The hunting spider automatically notices the creature and Strides, Climbs,
     or Descends on a Web before it rolls initiative.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spring Upon Prey
   range: null
@@ -129,12 +121,11 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: goliath spider venom
+  name: fangs
   to_hit: 24
   traits:
   - reach 10 feet
@@ -143,10 +134,9 @@ perception: 22
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: web tether
   name: web
-  plus_damage: null
   to_hit: 22
   traits:
   - range increment 60 feet
@@ -167,8 +157,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Sense
   range: null

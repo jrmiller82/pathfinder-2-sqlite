@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Archon's Door
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Touch of Charity
   range: null
@@ -80,8 +76,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Menacing Guardian
   range: 30 feet
@@ -111,8 +105,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retributive Strike
   range: null
@@ -151,14 +143,13 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+3
+  - formula: 2d8+3
     type: piercing
-  name: horn
-  plus_damage:
-  - formula: null
-    type: 1d6 good
+  - formula: 1d6
+    type: good
   - formula: null
     type: Push
+  name: horn
   to_hit: 11
   traits:
   - magical
@@ -167,12 +158,11 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
+  - formula: 1d6
+    type: good
   name: composite longbow
-  plus_damage:
-  - formula: null
-    type: 1d6 good
   to_hit: 14
   traits:
   - deadly 1d10

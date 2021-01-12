@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -40,8 +38,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -73,19 +69,17 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+5
+  - formula: 2d10+5
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 14
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 14
   traits:
   - agile

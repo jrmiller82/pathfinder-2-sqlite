@@ -22,8 +22,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet
@@ -65,26 +63,23 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 9
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 9
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -93,19 +88,17 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 7
   traits:
   - thrown 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 7
   traits:
   - thrown 30 feet

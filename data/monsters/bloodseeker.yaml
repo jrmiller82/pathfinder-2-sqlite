@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attach
   range: null
@@ -49,8 +47,6 @@ active_abilities:
     is __drained 1__ until it receives healing (of any kind or amount).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Drain
   range: null
@@ -124,10 +120,9 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: attach
   name: barbed leg
-  plus_damage: null
   to_hit: 8
   traits:
   - finesse

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Undulate
   range: null
@@ -33,15 +31,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 19 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1** 1d10 poison damage and __clumsy 1__ (1 round); **Stage 2** 2d10 poison damage
-    and clumsy 1 (1 round); **Stage 3** 2d10 poison damage and clumsy 2 (1 round)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Whiptail Centipede Venom
   range: null
   raw_description: '**Whiptail Centipede Venom** (__poison__) **Saving Throw **DC
@@ -49,8 +43,11 @@ active_abilities:
     __clumsy 1__ (1 round); **Stage 2** 2d10 poison damage and clumsy 1 (1 round);
     **Stage 3** 2d10 poison damage and clumsy 2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 19 Fortitude
+  stages:
+  - effect: 1d10 poison damage and __clumsy 1__ (1 round)
+  - effect: 2d10 poison damage and clumsy 1 (1 round)
+  - effect: 2d10 poison damage and clumsy 2 (1 round)
   success: null
   traits:
   - poison
@@ -68,8 +65,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -99,23 +94,21 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: piercing
-  name: mandibles
-  plus_damage:
   - formula: null
     type: whiptail centipede venom
+  name: mandibles
   to_hit: 11
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Knockdown
+  name: tail
   to_hit: 11
   traits:
   - agile

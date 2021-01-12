@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -86,8 +80,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -124,8 +116,6 @@ automatic_abilities:
     hits, the dragon disrupts the creature's action.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Twisting Tail
   range: null
@@ -138,8 +128,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature within reach of the dragon's tail uses a move action or leaves
-    a square during a move action it's using;
+  trigger: A creature within reach of the dragon's tail uses a __move__ action or
+    leaves a square during a move action it's using
 description: 'Good-natured but vain, crystal dragons are beautiful creatures with
   brilliant hides made of multicolored crystal and gemstone. Their beauty is a source
   of great pride but is also something of a weakness, as crystal dragons are easily
@@ -191,31 +181,28 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: slashing
+  - formula: 2d6
+    type: piercing
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 piercing
   to_hit: 18
   traits:
   - sonic
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 18
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d10+8
+  - formula: 1d10+8
     type: slashing
   name: tail
-  plus_damage: null
   to_hit: 16
   traits:
   - reach 15 feet

@@ -21,8 +21,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -92,10 +90,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: bludgeoning
   name: flail
-  plus_damage: null
   to_hit: 16
   traits:
   - disarm
@@ -104,10 +101,9 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 1d6+10
+  - formula: 1d6+10
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 16
   traits:
   - agile
@@ -137,8 +133,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Independent Brains
   range: null

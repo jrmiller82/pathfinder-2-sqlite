@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Coil
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Giant Viper Venom
   range: null
@@ -65,8 +61,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Coiled Opportunity
   range: null
@@ -92,12 +86,11 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: giant viper venom
+  name: fangs
   to_hit: 11
   traits:
   - finesse

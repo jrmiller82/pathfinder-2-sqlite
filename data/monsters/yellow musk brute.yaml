@@ -16,8 +16,6 @@ active_abilities:
     tear loose. The brute's melee reach increases by 5 feet.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Limb Extension
   range: null
@@ -30,104 +28,48 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The yellow musk brute is reduced to 15 HP or fewer;
+  trigger: The yellow musk brute is reduced to 15 HP or fewer
 - action_cost: None
-  critical_failure: null
+  critical_failure: As failure, but the condition doesn't end automatically. The creature
+    can attempt a new save at the end of each of its turns. On a success, the fascinated
+    condition and other effects end.
   critical_success: null
   description: When the brute strikes a creature, that creature is exposed to yellow
     musk creeper pollen.  The affected creature must attempt a DC 15 Will save. Once
     a creature succeeds at any save against Spray Pollen, it becomes temporarily immune
     for 24 hours.
   effect: null
-  failure: null
+  failure: The creature is __fascinated__. For as long as it is fascinated, it must
+    spend each of its actions to move closer to the yellow musk creeper that spawned
+    the brute as expediently as possible, while avoiding obvious dangers. If the creature
+    is adjacent to the yellow musk creeper, it stays still and doesn't act.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pollen Touch
   range: null
   raw_description: '**Pollen Touch** When the brute strikes a creature, that creature
     is exposed to yellow musk creeper pollen.  The affected creature must attempt
     a DC 15 Will save. Once a creature succeeds at any save against Spray Pollen,
-    it becomes temporarily immune for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
+    it becomes temporarily immune for 24 hours.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __fascinated__. For as long as it is fascinated, it
+    must spend each of its actions to move closer to the yellow musk creeper that
+    spawned the brute as expediently as possible, while avoiding obvious dangers.
+    If the creature is adjacent to the yellow musk creeper, it stays still and doesn''t
+    act.
+
+
+    **Critical Failure** As failure, but the condition doesn''t end automatically.
+    The creature can attempt a new save at the end of each of its turns. On a success,
+    the fascinated condition and other effects end.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __fascinated__. For as long as it is fascinated, it
-    must spend each of its actions to move closer to the yellow musk creeper that
-    spawned the brute as expediently as possible, while avoiding obvious dangers.
-    If the creature is adjacent to the yellow musk creeper, it stays still and doesn't
-    act.
-  effect: null
-  failure: The creature is __fascinated__. For as long as it is fascinated, it must
-    spend each of its actions to move closer to the yellow musk creeper that spawned
-    the brute as expediently as possible, while avoiding obvious dangers. If the creature
-    is adjacent to the yellow musk creeper, it stays still and doesn't act.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __fascinated__. For as long as it
-    is fascinated, it must spend each of its actions to move closer to the yellow
-    musk creeper that spawned the brute as expediently as possible, while avoiding
-    obvious dangers. If the creature is adjacent to the yellow musk creeper, it stays
-    still and doesn''t act.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the condition doesn't end automatically. The creature
-    can attempt a new save at the end of each of its turns. On a success, the fascinated
-    condition and other effects end.
-  critical_success: null
-  description: As failure, but the condition doesn't end automatically. The creature
-    can attempt a new save at the end of each of its turns. On a success, the fascinated
-    condition and other effects end.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but the condition doesn''t end
-    automatically. The creature can attempt a new save at the end of each of its turns.
-    On a success, the fascinated condition and other effects end.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 alignment: N
@@ -141,8 +83,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Entangling Tendrils
   range: 5 feet
@@ -178,12 +118,11 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+5
+  - formula: 1d12+5
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Improved Push 5 feet
+  name: fist
   to_hit: 11
   traits:
   - reach 10 feet
@@ -206,8 +145,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slow
   range: null

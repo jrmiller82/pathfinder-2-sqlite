@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Destructive Smash
   range: null
@@ -38,8 +36,6 @@ active_abilities:
     a time—if they create a new snare, the previously created one vanishes.
   failure: null
   frequency: once per hour
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gremlin Snare
   range: null
@@ -68,8 +64,6 @@ active_abilities:
     __broken__, but no other item is rusted on that attack.
   failure: null
   frequency: once per hour
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rusting Grasp
   range: null
@@ -97,8 +91,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Speedy Sabotage
   range: null
@@ -145,21 +137,19 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+1
+  - formula: 1d12+1
     type: bludgeoning
-  name: maul
-  plus_damage:
   - formula: null
     type: Destructive Smash
+  name: maul
   to_hit: 8
   traits:
   - shove
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
   name: bite
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
@@ -184,8 +174,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Clacking Exoskeleton
   range: null

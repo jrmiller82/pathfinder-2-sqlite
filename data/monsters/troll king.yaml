@@ -15,8 +15,6 @@ active_abilities:
   effect: The troll king regains 15 HP.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Forced Regeneration
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: The creature is frightened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Primordial Roar
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -88,8 +82,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unstoppable Charge
   range: null
@@ -116,8 +108,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -135,6 +125,31 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The troll king shakes itself to remove persistent acid or fire effects.
+    The troll king immediately attempts a DC 15 flat check to end the persistent damage
+    that triggered this reaction. If the troll king succeeds at this check, it can
+    immediately use Primordial Roar as part of this reaction.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vigorous Shake
+  range: null
+  raw_description: '**Vigorous Shake** [Reaction] **Trigger** The troll king takes
+    persistent acid or fire damage. **Effect** The troll king shakes itself to remove
+    persistent acid or fire effects. The troll king immediately attempts a DC 15 flat
+    check to end the persistent damage that triggered this reaction. If the troll
+    king succeeds at this check, it can immediately use Primordial Roar as part of
+    this reaction.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: The troll king takes persistent acid or fire damage.
 description: Some trolls have learned the skills necessary to survive well beyond
   the typical life expectancy for their kind and rally others to follow their lead.
   These champions develop a number of talents that make them worthy leaders and potent
@@ -152,19 +167,17 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 23
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile

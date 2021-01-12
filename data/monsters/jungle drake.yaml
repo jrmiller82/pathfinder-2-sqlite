@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Jungle Drake Venom
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Predatory Grab
   range: null
@@ -85,8 +79,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Speed Surge
   range: null
@@ -109,8 +101,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spit Venom
   range: null
@@ -133,8 +123,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Woodland Stride
   range: null
@@ -156,8 +144,6 @@ automatic_abilities:
     drake disrupts the creature's action.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Twisting Tail
   range: null
@@ -197,22 +183,20 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: piercing
-  name: Fangs
-  plus_damage:
   - formula: null
     type: predatory grab
+  name: Fangs
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: piercing
-  name: Stinger
-  plus_damage:
   - formula: null
     type: Jungle Drake Venom
+  name: Stinger
   to_hit: 17
   traits:
   - reach 10 feet

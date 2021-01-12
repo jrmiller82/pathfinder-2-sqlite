@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Serpentfolk Venom
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slithering Attack
   range: null
@@ -70,8 +66,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -115,32 +109,29 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: slashing
   name: scimitar
-  plus_damage: null
   to_hit: 11
   traits:
   - forceful
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: serpentfolk venom
+  name: fangs
   to_hit: 11
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Knockdown
+  name: tail
   to_hit: 11
   traits:
   - agile

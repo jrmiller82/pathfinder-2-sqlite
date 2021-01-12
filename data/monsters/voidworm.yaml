@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Confounding Lash
   range: null
@@ -82,8 +78,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Protean Anatomy
   range: null
@@ -138,12 +132,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d8–1 piercing
+  - formula: 1d8
+    type: –1 piercing
+  - formula: 1d4
+    type: chaotic
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d4 chaotic
   to_hit: 9
   traits:
   - chaotic
@@ -151,14 +144,13 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4–1 slashing
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 1d4 chaotic
+  - formula: 1d4
+    type: –1 slashing
+  - formula: 1d4
+    type: chaotic
   - formula: null
     type: confounding lash
+  name: tail
   to_hit: 9
   traits:
   - chaotic
@@ -194,8 +186,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Entropy Sense
   range: null

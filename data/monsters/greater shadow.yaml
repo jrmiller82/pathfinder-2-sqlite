@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Spawn
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slink in Shadows
   range: null
@@ -71,8 +67,6 @@ active_abilities:
     1 every hour.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Steal Shadow
   range: null
@@ -102,8 +96,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Vulnerability
   range: null
@@ -137,10 +129,9 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: negative
   name: shadow hand
-  plus_damage: null
   to_hit: 18
   traits:
   - finesse

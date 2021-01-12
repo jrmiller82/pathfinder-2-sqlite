@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -85,8 +79,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ground Slam
   range: null
@@ -109,8 +101,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ice Climb
   range: null
@@ -133,8 +123,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shape Ice
   range: null
@@ -160,15 +148,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: The dragon's blood sprays on the creature, dealing 1d6 cold damage. A creature
-    that takes cold damage in this way is slowed 1 for 1 round.
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 90 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -185,7 +170,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 20
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -193,6 +178,29 @@ automatic_abilities:
   - emotion
   - fear
   - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon's blood sprays on the creature, dealing 1d6 cold damage. A creature
+    that takes cold damage in this way is slowed 1 for 1 round.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Freezing Blood
+  range: null
+  raw_description: '**Freezing Blood** [Reaction] (__arcane__, __cold__); **Trigger**
+    An adjacent creature deals piercing or slashing damage to the dragon. **Effect**
+    The dragon''s blood sprays on the creature, dealing 1d6 cold damage. A creature
+    that takes cold damage in this way is slowed 1 for 1 round.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - cold
   trigger: An adjacent creature deals piercing or slashing damage to the dragon.
 description: 'The most feral and least intelligent of all the chromatic dragons, white
   dragons are brutish, predatory, and chiefly motivated by self-preservation. Nearly
@@ -233,31 +241,28 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: piercing
+  - formula: 1d6
+    type: cold
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 17
   traits:
   - cold
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d8+8
+  - formula: 1d8+8
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 15
   traits:
   - reach 15 feet
@@ -281,8 +286,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snow Vision
   range: null

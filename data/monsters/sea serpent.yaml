@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Capsize
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -55,12 +51,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: The water in the ballast organs around the sea serpent's neck is full
+    of psychotropic algae.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Sea Serpent Algae
   range: null
@@ -91,8 +86,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spine Rake
   range: null
@@ -115,8 +108,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -155,23 +146,21 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+14
+  - formula: 3d10+14
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 27
   traits:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+14
+  - formula: 2d10+14
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Grab
+  name: tail
   to_hit: 27
   traits:
   - agile
@@ -181,12 +170,11 @@ perception: 22
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+12
+  - formula: 2d6+12
     type: bludgeoning
-  name: water spout
-  plus_damage:
   - formula: null
     type: sea serpent algae
+  name: water spout
   to_hit: 25
   traits:
   - brutal
@@ -211,8 +199,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Undetectable
   range: null

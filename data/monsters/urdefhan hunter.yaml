@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deadly Aim
   range: null
@@ -35,14 +33,12 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Requirement** The urdefhan hunter is wielding a ranged weapon with
-    __reload 0__;'
+    __reload 0__'
   effect: The urdefhan hunter makes two Strikes with the required weapon at a single
     target. These Strikes both count toward the urdefhan's multiple attack penalty,
     but the penalty doesn't increase until both attacks are resolved.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Double Shot
   range: null
@@ -64,8 +60,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mounted Bow Expert
   range: null
@@ -93,8 +87,6 @@ active_abilities:
     \ enfeebled 2 for 1 hour on a critical failure)."
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wicked Bite
   range: null
@@ -128,8 +120,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Necrotic Decay
   range: null
@@ -173,10 +163,9 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: slashing
   name: rhoka sword
-  plus_damage: null
   to_hit: 24
   traits:
   - fatal d10
@@ -184,12 +173,11 @@ melee_attacks:
   - two-hand d12
 - action_cost: One Action
   damage:
-    formula: 3d6+10
+  - formula: 3d6+10
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: wicked bite
+  name: jaws
   to_hit: 22
   traits:
   - agile
@@ -198,10 +186,9 @@ perception: 26
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: piercing
   name: composite longbow
-  plus_damage: null
   to_hit: 26
   traits:
   - deadly d10

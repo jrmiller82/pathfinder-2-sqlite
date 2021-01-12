@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -87,8 +81,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Manipulate Flames
   range: null
@@ -110,6 +102,93 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: 10 feet, 4d6 fire damage (DC 39 basic Reflex)
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Dragon Heat
+  range: null
+  raw_description: '**Dragon Heat** (__arcane__, __aura__, __evocation__, __fire__);
+    10 feet, 4d6 fire damage (DC 39 basic Reflex)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - aura
+  - evocation
+  - fire
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: null
+  failure: The creature is __frightened 2__.
+  frequency: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
+
+
+    **Critical Success** The creature is unaffected by the presence.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: DC 40
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: Jaws only.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -118,27 +197,14 @@ automatic_abilities:
     or other effects of the spell, as though it were the caster.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Dragon Heat
+  name: Redirect Fire
   range: null
-  raw_description: '**Dragon Heat** (__arcane__, __aura__, __evocation__, __fire__);
-    10 feet, 4d6 fire damage (DC 39 basic Reflex)
-
-
-    **Frightful Presence** (__aura__, __emotion__, __fear__, __mental__) 90 feet,
-    DC 40
-
-
-    **Attack of Opportunity** [Reaction] Jaws only.
-
-
-    **Redirect Fire**  (__abjuration__, __arcane__); **Trigger** A creature within
-    100 feet casts a fire spell, or a fire spell otherwise comes into effect from
-    a source within 100 feet. **Effect** The dragon makes all the choices to determine
-    the targets, destination, or other effects of the spell, as though it were the
-    caster.'
+  raw_description: '**Redirect Fire** [Reaction] (__abjuration__, __arcane__); **Trigger**
+    A creature within 100 feet casts a fire spell, or a fire spell otherwise comes
+    into effect from a source within 100 feet. **Effect** The dragon makes all the
+    choices to determine the targets, destination, or other effects of the spell,
+    as though it were the caster.'
   requirements: null
   saving_throw: null
   stages: null
@@ -205,12 +271,11 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+17
+  - formula: 4d10+17
     type: piercing
+  - formula: 3d6
+    type: fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 fire
   to_hit: 37
   traits:
   - fire
@@ -218,10 +283,9 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+17
+  - formula: 4d8+17
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 37
   traits:
   - agile
@@ -229,20 +293,18 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+15
+  - formula: 4d10+15
     type: slashing
   name: tail
-  plus_damage: null
   to_hit: 35
   traits:
   - magical
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+15
+  - formula: 3d8+15
     type: slashing
   name: wing
-  plus_damage: null
   to_hit: 35
   traits:
   - agile
@@ -269,8 +331,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

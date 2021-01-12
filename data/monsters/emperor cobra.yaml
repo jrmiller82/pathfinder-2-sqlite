@@ -11,13 +11,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 22 Fortitude'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Emperor Cobra Venom
   range: null
   raw_description: '**Emperor Cobra Venom** (__poison__) **Saving Throw** DC 22 Fortitude
@@ -26,115 +24,52 @@ active_abilities:
     2** 1d8 poison damage and __drained 1__ (1 round); **Stage 3** 2d6 poison damage
     and drained 2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 22 Fortitude
+  stages:
+  - effect: 1d8 poison damage (1 round)
+  - effect: 1d8 poison damage and __drained 1__ (1 round)
+  - effect: 2d6 poison damage and drained 2 (1 round)
   success: null
   traits:
   - poison
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is frightened 3.
+  critical_success: The creature is unaffected.
   description: The emperor cobra flares its hood. Each non–emperor cobra creature
     within a 20-foot emanation must attempt a DC 22 Will save. The creature is then
     temporarily immune for 1 minute.
   effect: null
-  failure: null
+  failure: The creature is frightened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flare Hood
   range: null
   raw_description: '**Flare Hood** [One Action]  (__emotion__, __fear__, __mental__,
     __visual__) The emperor cobra flares its hood. Each non–emperor cobra creature
     within a 20-foot emanation must attempt a DC 22 Will save. The creature is then
-    temporarily immune for 1 minute.'
+    temporarily immune for 1 minute.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is frightened 2.
+
+
+    **Critical Failure** The creature is frightened 3.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __frightened 1__.
   traits:
   - emotion
   - fear
   - mental
   - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __frightened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __frightened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __frightened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is frightened 2.
-  effect: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is frightened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is frightened 3.
-  critical_success: null
-  description: The creature is frightened 3.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is frightened 3.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -152,12 +87,11 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: emperor cobra venom
+  name: fangs
   to_hit: 15
   traits:
   - reach 10 feet

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Jellyfish Venom
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Squeeze
   range: null
@@ -75,12 +71,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: jellyfish venom
+  name: tentacle
   to_hit: 18
   traits:
   - agile

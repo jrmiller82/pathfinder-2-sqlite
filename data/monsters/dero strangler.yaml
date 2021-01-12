@@ -18,8 +18,6 @@ active_abilities:
     on a critical success.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Strangle
   range: null
@@ -45,8 +43,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Sunlight
   range: null
@@ -81,10 +77,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: bludgeoning
   name: aklys
-  plus_damage: null
   to_hit: 11
   traits:
   - trip
@@ -93,10 +88,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: bludgeoning
   name: aklys
-  plus_damage: null
   to_hit: 10
   traits:
   - ranged trip
@@ -104,12 +98,11 @@ ranged_attacks:
   - thrown 20 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
-  name: hand crossbow
-  plus_damage:
   - formula: null
     type: lethargy poison
+  name: hand crossbow
   to_hit: 10
   traits:
   - range increment 60 feet

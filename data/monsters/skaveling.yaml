@@ -9,17 +9,16 @@ ac: 22
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is frightened 2 and __stunned 1__ by fear.
+  critical_success: The creature is unaffected and is temporarily immune to Bone-
+    Chilling Screech for 24 hours.
   description: The skaveling unleashes a horrifying screech that chills the very bones
     of those close enough to feel it. The screech can be heard for miles, but each
     creature in a 20-foot emanation must also attempt a DC 22 Will save. The skaveling
     can't use Bone-Chilling Screech again for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature is frightened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bone-Chilling Screech
   range: null
@@ -28,11 +27,24 @@ active_abilities:
     screech that chills the very bones of those close enough to feel it. The screech
     can be heard for miles, but each creature in a 20-foot emanation must also attempt
     a DC 22 Will save. The skaveling can''t use Bone-Chilling Screech again for 1d4
-    rounds.'
+    rounds.
+
+
+    **Critical Success** The creature is unaffected and is temporarily immune to Bone-
+    Chilling Screech for 24 hours.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is frightened 2.
+
+
+    **Critical Failure** The creature is frightened 2 and __stunned 1__ by fear.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __frightened 1__.
   traits:
   - auditory
   - emotion
@@ -43,97 +55,11 @@ active_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: The creature is unaffected and is temporarily immune to Bone-
-    Chilling Screech for 24 hours.
-  description: The creature is unaffected and is temporarily immune to Bone- Chilling
-    Screech for 24 hours.
+  critical_success: null
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is temporarily
-    immune to Bone- Chilling Screech for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __frightened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __frightened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __frightened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is frightened 2.
-  effect: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is frightened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is frightened 2 and __stunned 1__ by fear.
-  critical_success: null
-  description: The creature is frightened 2 and __stunned 1__ by fear.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is frightened 2 and __stunned
-    1__ by fear.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw** DC 22 Fortitude; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** 2d6 negative damage and regains half as many Hit Points
-    from all healing (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** 2d6 negative
-    damage and gains no benefit from healing (1 day); **Stage 5** as stage 4 (1 day);
-    **Stage 6** dead, and rises as a __ghoul__ the next midnight'
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ghoul Fever
   range: null
@@ -144,96 +70,51 @@ active_abilities:
     day); **Stage 5** as stage 4 (1 day); **Stage 6** dead, and rises as a __ghoul__
     the next midnight'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 22 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1 day)
+  - effect: 2d6 negative damage and regains half as many Hit Points from all healing
+      (1 day)
+  - effect: as stage 2 (1 day)
+  - effect: 2d6 negative damage and gains no benefit from healing (1 day)
+  - effect: as stage 4 (1 day)
+  - effect: dead, and rises as a __ghoul__ the next midnight
   success: null
   traits:
   - disease
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: null
+  critical_success: The creature is unaffected.
   description: Any creature hit by the skaveling's Strikes must attempt a DC 22 Fortitude
     save.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Paralysis
-  range: null
-  raw_description: '**Paralysis** (__incapacitation__, __occult__, __necromancy__)
-    Any creature hit by the skaveling''s Strikes must attempt a DC 22 Fortitude save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - incapacitation
-  - occult
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __slowed 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __slowed 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __slowed 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __paralyzed__. It can attempt a new save at the end
-    of each of its turns, and the DC cumulatively decreases by 1 on each save.
   effect: null
   failure: The creature is __paralyzed__. It can attempt a new save at the end of
     each of its turns, and the DC cumulatively decreases by 1 on each save.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Failure
+  name: Paralysis
   range: null
-  raw_description: '**Failure** The creature is __paralyzed__. It can attempt a new
-    save at the end of each of its turns, and the DC cumulatively decreases by 1 on
-    each save.'
+  raw_description: '**Paralysis** (__incapacitation__, __occult__, __necromancy__)
+    Any creature hit by the skaveling''s Strikes must attempt a DC 22 Fortitude save.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __slowed 1__.
+
+
+    **Failure** The creature is __paralyzed__. It can attempt a new save at the end
+    of each of its turns, and the DC cumulatively decreases by 1 on each save.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
-  traits: null
+  success: The creature is __slowed 1__.
+  traits:
+  - incapacitation
+  - occult
+  - necromancy
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -268,24 +149,22 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: ''
-  name: fangs
-  plus_damage:
   - formula: null
     type: ghoul fever
   - formula: null
     type: paralysis
+  name: fangs
   to_hit: 15
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d4+8
+  - formula: 2d4+8
     type: ''
-  name: wing
-  plus_damage:
   - formula: null
     type: paralysis
+  name: wing
   to_hit: 15
   traits:
   - agile
@@ -308,8 +187,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Echolocation
   range: null

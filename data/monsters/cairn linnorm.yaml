@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Cairn Linnorm Venom
   range: null
@@ -78,8 +74,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Curse of the Crooked Cane
   range: null
@@ -106,8 +100,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -161,22 +153,20 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+17
+  - formula: 3d12+17
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: cairn linnorm venom
+  name: jaws
   to_hit: 35
   traits:
   - magical
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+17
+  - formula: 3d8+17
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 35
   traits:
   - agile
@@ -184,12 +174,11 @@ melee_attacks:
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tail
   to_hit: 35
   traits:
   - agile

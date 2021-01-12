@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bully's Bludgeon
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -60,8 +56,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Warlord's Training
   range: null
@@ -89,8 +83,6 @@ automatic_abilities:
     When Enraged Growth ends, the spriggan warlord is fatigued for 1 hour.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Enraged Growth
   range: null
@@ -111,7 +103,7 @@ automatic_abilities:
   - polymorph
   - primal
   - transmutation
-  trigger: The spriggan warlord takes damage;
+  trigger: The spriggan warlord takes damage
 description: 'While the leaders of larger spriggan enclaves tend to be uniquely trained
   warriors with highly specialized skills, spriggan warlords are fond of the traditional
   spriggan weaponry of morningstar and crossbow, valuing this traditional fighting
@@ -137,10 +129,9 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: bludgeoning
   name: morningstar
-  plus_damage: null
   to_hit: 18
   traits:
   - magical
@@ -150,10 +141,9 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d8 piercing
+  - formula: 2d8
+    type: piercing
   name: crossbow
-  plus_damage: null
   to_hit: 18
   traits:
   - magical

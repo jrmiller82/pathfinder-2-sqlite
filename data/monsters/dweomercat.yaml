@@ -12,7 +12,7 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Prerequisites **The dweomercat has at least one __dimension door__
-    spell remaining;'
+    spell remaining'
   effect: The dweomercat casts dimension door, then can make a melee Strike against
     one creature adjacent to it at the end of its teleport. If the dweomercat ends
     its teleport adjacent to a creature under an ongoing spell effect or who cast
@@ -20,8 +20,6 @@ active_abilities:
     door.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dweomer Leap
   range: null
@@ -50,8 +48,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pounce
   range: null
@@ -76,8 +72,6 @@ automatic_abilities:
     until the dweomercat Dismisses the effect, whichever comes first.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Alter Dweomer
   range: null
@@ -95,7 +89,7 @@ automatic_abilities:
   - abjuration
   - arcane
   trigger: The dweomercat is targeted by a spell or is within the area of a spell
-    as it is cast;
+    as it is cast
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -103,8 +97,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Abjuration
   range: null
@@ -123,8 +115,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Conjuration
   range: null
@@ -143,8 +133,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Divination
   range: null
@@ -163,8 +151,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Enchantment
   range: null
@@ -184,8 +170,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Evocation
   range: null
@@ -205,8 +189,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Illusion
   range: null
@@ -225,8 +207,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Necromancy
   range: null
@@ -244,8 +224,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Transmutation
   range: null
@@ -278,21 +256,19 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 17
   traits:
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile

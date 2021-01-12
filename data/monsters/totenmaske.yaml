@@ -12,14 +12,12 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Requirement** The totenmaske hit the same enemy with two claw Strikes
-    this turn and is still adjacent to it;'
+    this turn and is still adjacent to it'
   effect: The totenmaske drains flesh from the creature's body. The creature becomes
     __sickened 2__ and __drained 1__ unless it succeeds at a DC 25 Fortitude save
     (sickened 2 and drained 2 on a critical failure).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drink Flesh
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Living Form
   range: null
@@ -84,8 +80,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shape Flesh
   range: null
@@ -144,21 +138,19 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: piercing
+  - formula: 2d6
+    type: negative
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 18
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 18
   traits:
   - agile

@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Splinter Volley
   range: null
@@ -46,8 +44,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Golem Antimagic
   range: null
@@ -68,8 +64,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Shape Wood
   range: null
@@ -92,8 +86,6 @@ automatic_abilities:
     reactions.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Splinter
   range: null
@@ -108,7 +100,7 @@ automatic_abilities:
   traits:
   - arcane
   - transmutation
-  trigger: The wood golem takes physical damage;
+  trigger: The wood golem takes physical damage
 description: 'Wood golems are often given vaguely humanoid shapes, almost as if cobbled
   together from scraps of firewood and discarded burls. It''s less common for wood
   golems to have artistic embellishments such as engraved patterns, or to be carved
@@ -148,10 +140,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 17
   traits:
   - magical
@@ -160,10 +151,9 @@ perception: 12
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+8
+  - formula: 2d4+8
     type: piercing
   name: splinter
-  plus_damage: null
   to_hit: 16
   traits:
   - magical

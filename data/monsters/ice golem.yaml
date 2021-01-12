@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Creeping Cold
   range: null
@@ -70,8 +66,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Golem Antimagic
   range: null
@@ -92,8 +86,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Icy Demise
   range: null
@@ -119,8 +111,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Endure Elements
   range: null
@@ -181,12 +171,11 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
+  - formula: 1d6
+    type: cold
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 15
   traits:
   - magical

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hail of Arrows
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jungle Stride
   range: null
@@ -72,10 +68,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
@@ -86,10 +81,9 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 11
   traits:
   - deadly 1d10

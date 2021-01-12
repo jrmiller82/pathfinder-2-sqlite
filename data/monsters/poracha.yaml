@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jaunt
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Object Meld
   range: null
@@ -121,20 +117,18 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 13
   traits:
   - finesse
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d4+7
+  - formula: 2d4+7
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 13
   traits:
   - agile

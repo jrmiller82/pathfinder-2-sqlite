@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shell Game
   range: null
@@ -69,8 +65,6 @@ automatic_abilities:
     itself after a week.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shell Block
   range: null
@@ -119,27 +113,24 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 8
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: piercing
   name: shell spikes
-  plus_damage: null
   to_hit: 8
   traits: null
 name: Graveshell
@@ -165,8 +156,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Corpse Disguise
   range: null

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pack Attack
   range: null
@@ -61,21 +57,33 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
+  description: DC 21
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Buck
+  range: null
+  raw_description: '**Buck** [Reaction] DC 21'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
   description: null
   effect: The winter wolf makes a jaws Strike against the triggering creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Buck
+  name: Avenging Bite
   range: null
-  raw_description: '**Buck** [Reaction] DC 21
-
-
-    **Avenging Bite**  **Trigger** A creature within reach of the winter wolf''s jaws
-    attacks one of the winter wolf''s allies. **Effect** The winter wolf makes a jaws
-    Strike against the triggering creature.'
+  raw_description: '**Avenging Bite** [Reaction] **Trigger** A creature within reach
+    of the winter wolf''s jaws attacks one of the winter wolf''s allies. **Effect**
+    The winter wolf makes a jaws Strike against the triggering creature.'
   requirements: null
   saving_throw: null
   stages: null
@@ -106,14 +114,13 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
+  - formula: 1d6
+    type: cold
   - formula: null
     type: Knockdown
+  name: jaws
   to_hit: 15
   traits:
   - cold

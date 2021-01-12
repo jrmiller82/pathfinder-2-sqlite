@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dimensional Tether
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Demiplane Lair
   range: null
@@ -79,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Redirect Portal
   range: null
@@ -110,8 +104,6 @@ automatic_abilities:
   failure: The target and the vazgorlu instantly swap places, and the triggering Strike
     is resolved against the target instead.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hostile Juxtaposition
   range: null
@@ -142,7 +134,7 @@ automatic_abilities:
   traits:
   - arcane
   - teleportation
-  trigger: A creature targets the vazgorlu with a Strike;
+  trigger: A creature targets the vazgorlu with a Strike
 description: 'The arthropod monstrosity known as a vazgorlu makes its home on the
   Astral Plane or inside of a stable portal, ambushing creatures that travel there
   using dimensional magic.
@@ -173,12 +165,11 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+8
+  - formula: 4d10+8
     type: piercing
+  - formula: 3d10
+    type: acid
   name: fangs
-  plus_damage:
-  - formula: null
-    type: 3d10 acid
   to_hit: 38
   traits:
   - reach 10 feet
@@ -187,12 +178,11 @@ perception: 33
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 6d6+8
+  - formula: 6d6+8
     type: acid
-  name: web
-  plus_damage:
   - formula: null
     type: dimensional tether
+  name: web
   to_hit: 38
   traits:
   - range increment 60 feet

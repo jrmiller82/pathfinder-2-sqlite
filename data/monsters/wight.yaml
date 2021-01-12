@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wight Spawn
   range: null
@@ -78,8 +74,6 @@ automatic_abilities:
     HP from drain life on this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Final Spite
   range: null
@@ -146,12 +140,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: drain life
+  name: claw
   to_hit: 12
   traits: null
 name: Wight

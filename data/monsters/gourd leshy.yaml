@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ensnare
   range: null
@@ -73,8 +69,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Verdant Burst
   range: null
@@ -108,12 +102,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+2
+  - formula: 1d4+2
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: ensnare
+  name: fist
   to_hit: 7
   traits:
   - agile
@@ -123,12 +116,11 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: bludgeoning
-  name: seed
-  plus_damage:
   - formula: null
     type: ensnare
+  name: seed
   to_hit: 9
   traits:
   - range increment 30 feet
@@ -149,8 +141,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Keepsake
   range: null

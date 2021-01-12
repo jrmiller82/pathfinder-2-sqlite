@@ -9,114 +9,44 @@ ac: 23
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is not dragged and the ahuizotl no longer has the
+    creature grabbed.
+  critical_success: If the creature is 10 feet away from the ahuizotl, it is dragged
+    into a square adjacent to the ahuizotl. The ahuizotl can make a jaws Strike against
+    the creature.
   description: null
   effect: The ahuizotl attempts an __Athletics__ check against the creature's Fortitude
     DC.
-  failure: null
+  failure: The creature is not dragged.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tail Drag
   range: null
   raw_description: '**Tail Drag** [One Action]  **Requirements **The ahuizotl has
     a Medium or smaller creature grabbed with its tail claw; **Effect **The ahuizotl
-    attempts an __Athletics__ check against the creature''s Fortitude DC.'
+    attempts an __Athletics__ check against the creature''s Fortitude DC.
+
+
+    **Critical Success **If the creature is 10 feet away from the ahuizotl, it is
+    dragged into a square adjacent to the ahuizotl. The ahuizotl can make a jaws Strike
+    against the creature.
+
+
+    **Success **If the creature is 10 feet away from the ahuizotl, it is dragged into
+    a square adjacent to the ahuizotl.
+
+
+    **Failure **The creature is not dragged.
+
+
+    **Critical Failure** The creature is not dragged and the ahuizotl no longer has
+    the creature grabbed.'
   requirements: The ahuizotl has a Medium or smaller creature grabbed with its tail
     claw
   saving_throw: null
   stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: If the creature is 10 feet away from the ahuizotl, it is dragged
-    into a square adjacent to the ahuizotl. The ahuizotl can make a jaws Strike against
-    the creature.
-  description: If the creature is 10 feet away from the ahuizotl, it is dragged into
-    a square adjacent to the ahuizotl. The ahuizotl can make a jaws Strike against
-    the creature.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **If the creature is 10 feet away from the
-    ahuizotl, it is dragged into a square adjacent to the ahuizotl. The ahuizotl can
-    make a jaws Strike against the creature.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the creature is 10 feet away from the ahuizotl, it is dragged into
-    a square adjacent to the ahuizotl.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **If the creature is 10 feet away from the ahuizotl,
-    it is dragged into a square adjacent to the ahuizotl.'
-  requirements: null
-  saving_throw: null
-  stages: null
   success: If the creature is 10 feet away from the ahuizotl, it is dragged into a
     square adjacent to the ahuizotl.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is not dragged.
-  effect: null
-  failure: The creature is not dragged.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature is not dragged.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is not dragged and the ahuizotl no longer has the
-    creature grabbed.
-  critical_success: null
-  description: The creature is not dragged and the ahuizotl no longer has the creature
-    grabbed.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is not dragged and the ahuizotl
-    no longer has the creature grabbed.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 alignment: NE
@@ -161,29 +91,26 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d4+8
+  - formula: 2d4+8
     type: slashing
-  name: tail claw
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tail claw
   to_hit: 17
   traits:
   - agile
@@ -210,8 +137,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Voice Imitation
   range: null

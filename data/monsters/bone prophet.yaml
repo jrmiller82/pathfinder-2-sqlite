@@ -23,8 +23,6 @@ active_abilities:
     crumble to dust.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Raise Serpent
   range: null
@@ -53,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Serpentfolk Venom
   range: null
@@ -98,22 +94,20 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+9
+  - formula: 2d4+9
     type: bludgeoning
   name: staff
-  plus_damage: null
   to_hit: 18
   traits:
   - magical
   - two-hand d8
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: serpentfolk venom
+  name: fangs
   to_hit: 17
   traits:
   - finesse

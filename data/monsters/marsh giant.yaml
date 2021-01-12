@@ -9,111 +9,42 @@ ac: 27
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the giant drops its gaff as well.
+  critical_success: The target takes 6d6+14 piercing damage and loses 5 rounds' worth
+    of air if they were __holding their breath__.
   description: null
   effect: The marsh giant uses its gaff to shake the creature back and forth and hold
     it underwater. The giant attempts an __Athletics__ check against the target's
     Fortitude DC.
-  failure: null
+  failure: The target is unaffected.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hook Shake
   range: null
   raw_description: '**Hook Shake** [One Action]  **Requirements** A creature adjacent
     to the marsh giant is __prone__ in water at least 1 foot deep; **Effect** The
     marsh giant uses its gaff to shake the creature back and forth and hold it underwater.
-    The giant attempts an __Athletics__ check against the target''s Fortitude DC.'
-  requirements: A creature adjacent to the marsh giant is prone in water at least
+    The giant attempts an __Athletics__ check against the target''s Fortitude DC.
+
+
+    **Critical Success** The target takes 6d6+14 piercing damage and loses 5 rounds''
+    worth of air if they were __holding their breath__.
+
+
+    **Success** The target takes 3d6+14 piercing damage and loses 3 rounds'' worth
+    of air if they were holding their breath.
+
+
+    **Failure** The target is unaffected.
+
+
+    **Critical Failure** As failure, but the giant drops its gaff as well.'
+  requirements: A creature adjacent to the marsh giant is __prone__ in water at least
     1 foot deep
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The target takes 6d6+14 piercing damage and loses 5 rounds' worth
-    of air if they were __holding their breath__.
-  description: The target takes 6d6+14 piercing damage and loses 5 rounds' worth of
-    air if they were __holding their breath__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The target takes 6d6+14 piercing damage and
-    loses 5 rounds'' worth of air if they were __holding their breath__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target takes 3d6+14 piercing damage and loses 3 rounds' worth of
-    air if they were holding their breath.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The target takes 3d6+14 piercing damage and loses
-    3 rounds'' worth of air if they were holding their breath.'
-  requirements: null
   saving_throw: null
   stages: null
   success: The target takes 3d6+14 piercing damage and loses 3 rounds' worth of air
     if they were holding their breath.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is unaffected.
-  effect: null
-  failure: The target is unaffected.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the giant drops its gaff as well.
-  critical_success: null
-  description: As failure, but the giant drops its gaff as well.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but the giant drops its gaff
-    as well.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 - action_cost: One Action
@@ -123,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -144,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Twist the Hook
   range: null
@@ -167,8 +94,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -230,10 +155,9 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+14
+  - formula: 2d6+14
     type: bludgeoning
   name: gaff
-  plus_damage: null
   to_hit: 20
   traits:
   - magical
@@ -242,10 +166,9 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 2d6+14
+  - formula: 2d6+14
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 20
   traits:
   - agile
@@ -255,10 +178,9 @@ perception: 16
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+14
+  - formula: 2d6+14
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 20
   traits:
   - brutal

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Twin Feint
   range: null
@@ -81,20 +77,18 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: piercing
   name: Dagger
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: slashing
   name: Sickle
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
@@ -105,10 +99,9 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: piercing
   name: Dagger
-  plus_damage: null
   to_hit: 10
   traits:
   - agile

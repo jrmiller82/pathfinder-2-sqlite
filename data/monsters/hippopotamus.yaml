@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aquatic Ambush
   range: 30 feet
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Capsize
   range: null
@@ -61,8 +57,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -88,19 +82,17 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 15
   traits:
   - deadly d10
 - action_cost: One Action
   damage:
-    formula: 1d10+8
+  - formula: 1d10+8
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 13
   traits: null
 name: Hippopotamus
@@ -122,8 +114,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null

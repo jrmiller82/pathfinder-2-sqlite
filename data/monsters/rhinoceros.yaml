@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rhinoceros Charge
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -72,18 +68,16 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 14
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 12
   traits: null
 name: Rhinoceros

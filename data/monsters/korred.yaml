@@ -9,16 +9,18 @@ ac: 21
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
+  critical_failure: The creature is __immobilized__ until it Escapes (DC 21) or the
+    korred uses Hair Snare again.
   critical_success: null
   description: The korred causes a long, tangled length of their hair to detach from
     their body and snake out to coil around an adjacent creature. The creature must
     attempt a DC 21 Reflex save. The korred cannot use Hair Snare again for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The hair wraps around the creature. The creature takes a –10-foot circumstance
+    penalty to all of its Speeds until it Escapes (DC 21) or until the korred uses
+    Hair Snare again (at which point the previous snare drops to the ground, no longer
+    animated).
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hair Snare
   range: null
@@ -26,84 +28,28 @@ active_abilities:
     __transmutation__) The korred causes a long, tangled length of their hair to detach
     from their body and snake out to coil around an adjacent creature. The creature
     must attempt a DC 21 Reflex save. The korred cannot use Hair Snare again for 1d4
-    rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - incapacitation
-  - primal
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
+    rounds.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The hair wraps around the creature. The creature takes a –10-foot
+    circumstance penalty to all of its Speeds until it Escapes (DC 21) or until the
+    korred uses Hair Snare again (at which point the previous snare drops to the ground,
+    no longer animated).
+
+
+    **Critical Failure** The creature is __immobilized__ until it Escapes (DC 21)
+    or the korred uses Hair Snare again.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The hair wraps around the creature. The creature takes a –10-foot circumstance
-    penalty to all of its Speeds until it Escapes (DC 21) or until the korred uses
-    Hair Snare again (at which point the previous snare drops to the ground, no longer
-    animated).
-  effect: null
-  failure: The hair wraps around the creature. The creature takes a –10-foot circumstance
-    penalty to all of its Speeds until it Escapes (DC 21) or until the korred uses
-    Hair Snare again (at which point the previous snare drops to the ground, no longer
-    animated).
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The hair wraps around the creature. The creature takes
-    a –10-foot circumstance penalty to all of its Speeds until it Escapes (DC 21)
-    or until the korred uses Hair Snare again (at which point the previous snare drops
-    to the ground, no longer animated).'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is __immobilized__ until it Escapes (DC 21) or the
-    korred uses Hair Snare again.
-  critical_success: null
-  description: The creature is __immobilized__ until it Escapes (DC 21) or the korred
-    uses Hair Snare again.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is __immobilized__ until it
-    Escapes (DC 21) or the korred uses Hair Snare again.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - incapacitation
+  - primal
+  - transmutation
   trigger: null
 - action_cost: Two Actions
   critical_failure: null
@@ -114,8 +60,6 @@ active_abilities:
     is __slowed 1__ for 1 round (or __stunned 1__ on a critical failure).
   failure: null
   frequency: three times per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Otherworldly Laugh
   range: null
@@ -147,8 +91,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stone Stride
   range: null
@@ -177,8 +119,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -202,8 +142,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Animated Hair
   range: 5 feet
@@ -248,10 +186,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 14
   traits: null
 name: Korred
@@ -259,20 +196,18 @@ perception: 12
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+7
+  - formula: 1d6+7
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 14
   traits:
   - brutal
   - range increment 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 14
   traits:
   - thrown 10 feet

@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Amalgam
   range: null
@@ -55,8 +53,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -80,8 +76,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Flytrap Toxin
   range: null
@@ -114,8 +108,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -163,27 +155,25 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: piercing
-  name: flytrap mouth
-  plus_damage:
-  - formula: null
-    type: 1d6 acid
+  - formula: 1d6
+    type: acid
   - formula: null
     type: flytrap toxin
+  name: flytrap mouth
   to_hit: 13
   traits:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: piercing
-  name: flytrap hand
-  plus_damage:
-  - formula: null
-    type: 1d6 acid
+  - formula: 1d6
+    type: acid
   - formula: null
     type: flytrap toxin
+  name: flytrap hand
   to_hit: 13
   traits:
   - agile
@@ -193,12 +183,11 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: acid
-  name: spittle
-  plus_damage:
   - formula: null
     type: flytrap toxin
+  name: spittle
   to_hit: 11
   traits:
   - acid

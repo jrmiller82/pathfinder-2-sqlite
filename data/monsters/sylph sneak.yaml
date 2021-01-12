@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Surprise Attacker
   range: null
@@ -58,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wind's Guidance
   range: null
@@ -83,8 +77,6 @@ automatic_abilities:
     large or heavy ranged projectiles (such as boulders or ballista bolts).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deflecting Gale
   range: null
@@ -103,8 +95,7 @@ automatic_abilities:
   - air
   - evocation
   - primal
-  trigger: The sylph sneak is the target of a physical ranged attack; Requirements
-    The sylph sneak is aware of the attack;
+  trigger: The sylph sneak is the target of a physical ranged attack
 description: 'Born with elemental gales coursing through their breath, sylphs are
   wispy planar scions whose bodies seem caught in a perpetual, gentle breeze. Born
   of unions between mortals and __djinn__, sylphs are quick-witted and creative, but
@@ -139,10 +130,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: ''
   name: starknife
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -154,10 +144,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: ''
   name: starknife
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
