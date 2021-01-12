@@ -162,10 +162,10 @@ hp: 425
 hp_misc: fast healing 20
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __mental__
+- __sleep__
+- __unconscious__
+- __visual__
 level: 18
 melee_attacks:
 - action_cost: One Action

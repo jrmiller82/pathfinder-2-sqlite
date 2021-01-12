@@ -135,9 +135,9 @@ hp: 315
 hp_misc: regeneration 10 (deactivated by cold iron)
 immunities:
 - cold
-- <a style="text-decoration:underline" href="Traits.aspx?ID=38">curse</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __curse__
+- __paralyzed__
+- __sleep__
 languages:
 - Aklo
 - Draconic

@@ -103,11 +103,11 @@ hp: 80
 hp_misc: null
 immunities:
 - critical hits
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __disease__
+- __paralyzed__
+- __poison__
 - precision
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __sleep__
 languages:
 - Daemonic
 level: 7

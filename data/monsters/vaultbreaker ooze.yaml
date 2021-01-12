@@ -114,12 +114,12 @@ description: 'Though many oozes hunt among the dreary confines of underground ca
 hp: 150
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=3">acid</a>
+- __acid__
 - critical hits
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 - precision
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __unconscious__
+- __visual__
 level: 6
 melee_attacks:
 - action_cost: One Action

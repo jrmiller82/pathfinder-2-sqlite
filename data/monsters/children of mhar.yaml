@@ -119,7 +119,7 @@ hp: 420
 hp_misc: null
 immunities:
 - fire
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __poison__
 languages:
 - Aklo
 - telepathy 100 feet

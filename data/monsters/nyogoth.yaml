@@ -124,8 +124,8 @@ hp: 175
 hp_misc: null
 immunities:
 - acid
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __controlled__
+- __fear__
 languages:
 - Abyssal
 - telepathy 100 ft.

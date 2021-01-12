@@ -130,7 +130,7 @@ description: 'The isqulug''s appearance, though unsettling, might be its least a
 hp: 230
 hp_misc: regeneration 10 (deactivated by cold)
 immunities:
-- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+- __swarm mind__
 languages:
 - Aklo
 level: 11

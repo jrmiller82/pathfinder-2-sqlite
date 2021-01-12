@@ -184,8 +184,8 @@ description: 'Protecting the __Boneyard__ are the stern and resolute guardians o
 hp: 105
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __death__ effects
+- __disease__
 items:
 - +1 scythe
 languages:

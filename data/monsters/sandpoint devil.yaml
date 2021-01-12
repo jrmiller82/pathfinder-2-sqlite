@@ -172,7 +172,7 @@ hp: 165
 hp_misc: null
 immunities:
 - fire
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __fear__
 languages:
 - Abyssal
 - Varisian

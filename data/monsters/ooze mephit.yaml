@@ -49,9 +49,9 @@ hp: 24
 hp_misc: fast healing 2 (when touching mud or slime)
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Aquan
 - Terran

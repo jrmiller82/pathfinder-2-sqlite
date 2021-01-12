@@ -108,7 +108,7 @@ description: 'In transforming __xulgaths__, __drow__ fleshwarpers sought not to 
 hp: 175
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __disease__
 languages:
 - Undercommon
 level: 10

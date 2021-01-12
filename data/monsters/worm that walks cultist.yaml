@@ -118,12 +118,12 @@ description: 'This worm that walks was a cultist of the Great Old One __Hastur__
 hp: 200
 hp_misc: fast healing 10
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __disease__
+- __paralyzed__
+- __poison__
 - precision
-- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __swarm mind__
+- __unconscious__
 languages:
 - Aklo
 - Common

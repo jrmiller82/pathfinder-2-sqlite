@@ -115,8 +115,8 @@ description: 'For most demons, possessing a creature requires a ritual, magic it
 hp: 90
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __disease__
+- __poison__
 - precision
 languages:
 - Abyssal

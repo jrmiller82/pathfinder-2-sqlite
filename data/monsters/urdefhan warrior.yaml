@@ -134,9 +134,9 @@ description: 'From the moment they are born, urdefhans are prepared for war. Urd
 hp: 55
 hp_misc: negative healing negative healing negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __death__ effects
+- __disease__
+- __fear__
 items:
 - composite longbow (20 arrows)
 - rhoka sword

@@ -190,8 +190,8 @@ description: 'The greatest judges among the psychopomps are the massive yamaraje
 hp: 375
 hp_misc: fast healing 20, lightning drinker
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __death__ effects
+- __disease__
 - electricity (see lightning drinker)
 languages:
 - Abyssal

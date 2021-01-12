@@ -112,18 +112,18 @@ hp: 37
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=188">nonlethal</a> attacks
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __death__ effects
+- __disease__
+- __doomed__
+- __drained__
+- __fatigued__
+- __healing__
+- __necromancy__
+- __nonlethal__ attacks
+- __paralyzed__
+- __poison__
+- __sickened__
+- __unconscious__
 level: 3
 melee_attacks:
 - action_cost: One Action

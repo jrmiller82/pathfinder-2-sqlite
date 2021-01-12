@@ -127,11 +127,11 @@ description: 'Risen corpses of sailors who died at sea, draugr reek of the rot a
 hp: 35
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
+- __poison__
+- __unconscious__
 items:
 - greataxe
 - leather armor

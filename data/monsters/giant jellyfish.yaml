@@ -65,7 +65,7 @@ description: 'Unlike its smaller cousins, the giant jellyfish is an active preda
 hp: 165
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 - precision
 level: 7
 melee_attacks:

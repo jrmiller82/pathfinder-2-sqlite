@@ -117,10 +117,9 @@ description: 'An urdefhan cult''s best tormentors can advance to become truly fo
 hp: 195
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-  (except necrotic decay)
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __death__ effects (except necrotic decay)
+- __disease__
+- __fear__
 items:
 - +1 striking warhammer
 languages:

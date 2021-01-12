@@ -126,7 +126,7 @@ description: 'Cat siths can easily pass for common black house cats, noteworthy 
 hp: 110
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=110">misfortune</a> effects
+- __misfortune__ effects
 languages:
 - Sylvan
 - speak with animals

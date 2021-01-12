@@ -111,7 +111,7 @@ description: 'Gosregs are agents of the Dominion of the Black that insinuate the
 hp: 195
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=5">confused</a>
+- __confused__
 languages:
 - Aklo
 - Common

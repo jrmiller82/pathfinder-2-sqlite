@@ -299,8 +299,8 @@ description: 'Good-natured but vain, crystal dragons are beautiful creatures wit
 hp: 275
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Celestial
 - Common

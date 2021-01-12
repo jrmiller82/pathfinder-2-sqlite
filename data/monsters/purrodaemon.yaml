@@ -142,7 +142,7 @@ hp: 335
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- __death__ effects
 items:
 - +2 greater striking glaive
 - soul gem (2)

@@ -127,7 +127,7 @@ description: 'Though they may resemble constructs to the untrained eye due to th
 hp: 135
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=30">petrification</a>
+- __petrification__
 level: 8
 melee_attacks:
 - action_cost: One Action

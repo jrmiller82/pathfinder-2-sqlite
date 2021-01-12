@@ -190,7 +190,7 @@ description: 'This gangly fey humanoid wanders the overgrown paths of dark, mist
 hp: 200
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=60">emotion</a>
+- __emotion__
 languages:
 - Common
 - Sylvan

@@ -209,7 +209,7 @@ description: 'Unlike other demons, the dread vrolikai doesn''t form from a sinfu
 hp: 375
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- __death__ effects
 languages:
 - Abyssal
 - Celestial

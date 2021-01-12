@@ -161,17 +161,17 @@ description: 'The slithering horror known as Iffdahsil is an undead __shoggoth__
 hp: 380
 hp_misc: fast healing 30, negative healing
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- __blinded__
+- __controlled__
 - critical hits
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=8">deafened</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyze</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __deafened__
+- __death__ effects
+- __disease__
+- __paralyze__
+- __poison__
 - precision
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __sleep__
+- __unconscious__
 languages:
 - Aklo
 - Necril

@@ -222,8 +222,8 @@ description: 'Few beasts have inspired as many legends, poems, songs, and myths 
 hp: 500
 hp_misc: regeneration 25 (deactivated by vorpal weapons)
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Aklo
 - Common

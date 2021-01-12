@@ -150,10 +150,10 @@ description: 'Taiga linnorms are covered in hundreds of quill-like black spines 
 hp: 385
 hp_misc: regeneration 15 (deactivated by cold iron)
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=38">curse</a>
+- __curse__
 - electricity
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Aklo
 - Draconic

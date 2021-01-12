@@ -138,8 +138,8 @@ description: 'The brutish and gluttonous augnagar live to feast— preferably on
 hp: 225
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __controlled__
+- __fear__
 languages:
 - Abyssal
 - telepathy 100 feet

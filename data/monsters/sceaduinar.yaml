@@ -139,8 +139,8 @@ description: 'Strange creatures born from jagged crystals in the heart of the __
 hp: 100
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- __death__ effects
+- __drained__
 languages:
 - Aklo
 level: 7

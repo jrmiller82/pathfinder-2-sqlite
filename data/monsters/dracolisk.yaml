@@ -256,8 +256,8 @@ description: 'Dracolisks are rare magical crossbreeds of chromatic dragons and _
 hp: 155
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=30">petrified</a>
+- __paralyzed__
+- __petrified__
 - sleep
 level: 9
 melee_attacks:

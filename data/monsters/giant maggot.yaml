@@ -67,7 +67,7 @@ description: 'Giant flies lay their eggs on the bodies of larger monsters or liv
 hp: 18
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __visual__
 level: 0
 melee_attacks:
 - action_cost: One Action

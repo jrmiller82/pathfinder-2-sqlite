@@ -62,11 +62,11 @@ hp: 60
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __fatigued__
+- __mental__
+- __poison__
+- __sleep__
+- __unconscious__
 level: 3
 melee_attacks:
 - action_cost: One Action

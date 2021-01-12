@@ -132,7 +132,7 @@ description: 'Even daemons fear the most massive and terrifying of their kind, o
 hp: 450
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- __death__ effects
 items:
 - soul gem (4)
 languages:

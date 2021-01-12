@@ -139,10 +139,10 @@ description: 'Intellect devourers serve as advance scouts and infiltrators for t
 hp: 130
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=60">emotion</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=129">possession</a>
+- __blinded__
+- __controlled__
+- __emotion__
+- __possession__
 languages:
 - Aklo
 - Common

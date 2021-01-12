@@ -164,7 +164,7 @@ description: 'Taiga giants prefer a nomadic lifestyle, both to keep from depleti
 hp: 230
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- __controlled__
 items:
 - +1 striking longspear
 - sack with 5 rocks

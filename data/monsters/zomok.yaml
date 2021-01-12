@@ -140,10 +140,10 @@ description: 'Mighty plant-dragons, zomoks prowl the woodlands, defending their 
 hp: 310
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=36">stunned</a>
+- __paralyzed__
+- __poison__
+- __sleep__
+- __stunned__
 languages:
 - Arboreal
 - Common

@@ -157,9 +157,9 @@ description: 'Derghodaemons represent death through unfathomable violence and be
 hp: 240
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=5">confusion</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=239">swarm</a> attacks
+- __confusion__
+- __death__ effects
+- __swarm__ attacks
 languages:
 - Common
 - Daemonic

@@ -132,8 +132,8 @@ description: 'This underground reptilian horror walks on two powerful hind legs.
 hp: 135
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __blinded__
+- __visual__
 languages:
 - Destrachan
 - Undercommon

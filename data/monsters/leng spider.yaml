@@ -144,7 +144,7 @@ hp: 235
 hp_misc: fast healing 10
 immunities:
 - cold
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=5">confused</a>
+- __confused__
 languages:
 - Aklo
 - tongues

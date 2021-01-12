@@ -93,8 +93,8 @@ description: 'Inhabitants of damp, subterranean caves, blindheims resemble stubb
 hp: 27
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=100">light</a>
+- __blinded__
+- __light__
 level: 2
 melee_attacks:
 - action_cost: One Action

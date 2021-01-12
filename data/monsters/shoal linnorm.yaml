@@ -140,10 +140,10 @@ description: 'Shoal linnorms occupy rocky shoreline shallows and slither along l
 hp: 295
 hp_misc: regeneration 10 (deactivated by cold iron)
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=38">curse</a>
+- __curse__
 - fire
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Aklo
 - Draconic

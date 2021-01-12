@@ -148,8 +148,8 @@ description: 'Scions of death by poisoning, piscodaemons are cruel even by daemo
 hp: 200
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __death__ effects
+- __poison__
 languages:
 - Common
 - Daemonic

@@ -127,13 +127,13 @@ description: 'Manifesting as a sinuous form wreathed in sickly green flames, thi
 hp: 125
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __death__ effects
+- __disease__
 - fire
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __paralyzed__
+- __poison__
 - precision
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __unconscious__
 languages:
 - Aklo
 - Common

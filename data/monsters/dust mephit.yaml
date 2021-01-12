@@ -49,9 +49,9 @@ hp: 16
 hp_misc: fast healing 2 (in dust or sand)
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Auran
 - Terran

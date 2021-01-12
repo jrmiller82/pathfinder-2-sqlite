@@ -92,9 +92,9 @@ description: 'The catoblepas is an aggressive beast at the best of times. Though
 hp: 215
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=246">olfactory</a>
+- __disease__
+- __poison__
+- __olfactory__
 languages:
 - Aklo
 level: 12

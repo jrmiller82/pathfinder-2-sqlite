@@ -179,8 +179,8 @@ description: 'Not all spirits who enter the __Boneyard__ realize they have died.
 hp: 75
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __death__ effects
+- __disease__
 languages:
 - Abyssal
 - Celestial

@@ -327,12 +327,12 @@ description: 'The ravener presented here was once an __ancient red dragon__.
 hp: 500
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __death__ effects
+- __disease__
 - fire
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Abyssal
 - Common

@@ -134,7 +134,7 @@ description: 'Also known as the deacons of death, thanadaemons represent death v
 hp: 270
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- __death__ effects
 items:
 - +1 striking bo staff
 - soul gem (2)

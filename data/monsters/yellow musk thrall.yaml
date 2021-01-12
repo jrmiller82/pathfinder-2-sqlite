@@ -113,7 +113,7 @@ description: 'A creature transformed by a yellow musk creeper''s tendrils boring
 hp: 12
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 level: -1
 melee_attacks:
 - action_cost: One Action

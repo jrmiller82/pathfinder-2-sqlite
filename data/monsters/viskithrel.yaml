@@ -101,7 +101,7 @@ description: 'One of the many horrid life-forms native to __Zevgavizeb''s__ Abys
 hp: 275
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- __sickened__
 languages:
 - Abyssal
 - (can't speak any languages)

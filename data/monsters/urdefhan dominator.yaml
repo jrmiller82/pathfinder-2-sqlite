@@ -108,10 +108,9 @@ description: 'Urdefhan dominators control the minds of others to glean useful se
 hp: 250
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-  (except necrotic decay)
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __death__ effects (except necrotic decay)
+- __disease__
+- __fear__
 items:
 - +2 striking rhoka sword
 languages:

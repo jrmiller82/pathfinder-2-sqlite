@@ -177,8 +177,8 @@ hp: 175
 hp_misc: null
 immunities:
 - fire
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Common
 - Draconic

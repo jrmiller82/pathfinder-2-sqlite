@@ -228,8 +228,8 @@ hp: 375
 hp_misc: null
 immunities:
 - negative
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Common
 - Daemonic

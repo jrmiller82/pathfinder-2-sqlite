@@ -114,10 +114,10 @@ description: 'The weight of murder wears heavy on the soul. With souls marked by
 hp: 120
 hp_misc: "negative healing\r\n"
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
+- __poison__
 languages:
 - Common
 - Necril

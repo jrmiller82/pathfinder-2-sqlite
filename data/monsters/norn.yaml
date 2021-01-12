@@ -173,7 +173,7 @@ description: 'Ancient beyond imagining, norns are powerful fey women who hold in
 hp: 375
 hp_misc: regeneration 20 (deactivated by cold iron)
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=16">flat-footed</a>
+- __flat-footed__
 - negative
 languages:
 - Common

@@ -321,11 +321,11 @@ description: 'Vrykolakas ancients are the sinister overlords of their kind, stea
 hp: 250
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyze</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __death__ effects
+- __disease__
+- __paralyze__
+- __poison__
+- __sleep__
 languages:
 - Common
 level: 13

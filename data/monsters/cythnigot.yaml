@@ -106,8 +106,8 @@ description: 'The cythnigot is a foul fungal parasite that grows and thrives in 
 hp: 14
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __controlled__
+- __fear__
 languages:
 - Abyssal
 - telepathy (touch only)

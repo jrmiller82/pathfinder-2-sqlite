@@ -198,7 +198,7 @@ hp: 375
 hp_misc: regeneration 25 (deactivated by good or silver)
 immunities:
 - cold
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __fear__
 - nonlethal
 languages:
 - Common

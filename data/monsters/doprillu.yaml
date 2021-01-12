@@ -146,10 +146,8 @@ description: 'The aberrations known as doprillus are hulks with banded muscles w
 hp: 260
 hp_misc: regeneration 20 (deactivated by cold)
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=13">enfeebled</a>
-  (while wearing its mask)
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=35">slowed</a> (while
-  wearing its mask)
+- __enfeebled__ (while wearing its mask)
+- __slowed__ (while wearing its mask)
 languages:
 - Aklo
 - Common

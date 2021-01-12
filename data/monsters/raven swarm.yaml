@@ -74,7 +74,7 @@ hp: 30
 hp_misc: null
 immunities:
 - precision
-- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+- __swarm mind__
 level: 3
 melee_attacks: null
 name: Raven Swarm

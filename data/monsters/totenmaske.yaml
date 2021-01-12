@@ -126,9 +126,9 @@ description: 'Spawned by the same unnatural and self-destructive obsessions that
 hp: 128
 hp_misc: negative healing negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
 - poison
 - unconscious
 languages:

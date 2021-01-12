@@ -89,9 +89,9 @@ hp: 94
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Terran
 level: 6

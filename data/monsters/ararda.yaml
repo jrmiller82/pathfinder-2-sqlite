@@ -128,7 +128,7 @@ description: '__Shaitans__ corrupted by the Black Desert''s blightburn become sc
 hp: 280
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __disease__
 items:
 - +2 greater striking maul
 languages:

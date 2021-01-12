@@ -184,11 +184,11 @@ description: 'Beware the haunting sobs of the attic whisperer, for they carry th
 hp: 60
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
+- __poison__
+- __unconscious__
 languages:
 - Common
 - Necril

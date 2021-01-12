@@ -85,9 +85,9 @@ description: 'While individually one of these fist-sized jellyfish is merely a n
 hp: 155
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 - precision
-- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+- __swarm mind__
 level: 6
 melee_attacks: null
 name: Fire Jellyfish Swarm
