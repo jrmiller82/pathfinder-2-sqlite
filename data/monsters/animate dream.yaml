@@ -11,15 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: An animate dream's touch fills the victim's mind with terrifying visions;
-    **Saving Throw **DC 26 Fortitude; **Stage 1 **__fatigued__ (1 day); **Stage 2
-    **fatigued and __stupefied 1__ (1 day); **Stage 3** The victim falls __asleep__
-    and can't be awakened as long as they remain at this stage (1 day).
+  description: An animate dream's touch fills the victim's mind with terrifying visions
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Endless Nightmare
   range: null
@@ -30,8 +25,12 @@ active_abilities:
     falls __asleep__ and can''t be awakened as long as they remain at this stage (1
     day).'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 26 Fortitude
+  stages:
+  - effect: __fatigued__ (1 day)
+  - effect: fatigued and __stupefied 1__ (1 day)
+  - effect: The victim falls __asleep__ and can't be awakened as long as they remain
+      at this stage (1 day).
   success: null
   traits:
   - curse
@@ -102,12 +101,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 4d8 negative
-  name: nightmare tendril
-  plus_damage:
+  - formula: 4d8
+    type: negative
   - formula: null
     type: endless nightmare
+  name: nightmare tendril
   to_hit: 20
   traits:
   - agile

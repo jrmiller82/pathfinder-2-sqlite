@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -98,22 +94,20 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: piercing
+  - formula: 1d6
+    type: persistent bleed
   name: fangs
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent bleed
   to_hit: 15
   traits:
   - finesse
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d4+4
+  - formula: 2d4+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 15
   traits:
   - agile

@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Barbed Maw
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -75,8 +71,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infestation Aura
   range: 120 feet
@@ -120,12 +114,11 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+14
+  - formula: 3d12+14
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: barbed maw
+  name: jaws
   to_hit: 29
   traits:
   - magical
@@ -148,23 +141,16 @@ sense_abilities:
 - action_cost: Three Actions
   critical_failure: null
   critical_success: null
-  description: 'The grikkitog implants its core into an adjacent section of earth
-    or stone, melding seamlessly and changing its visual appearance to match the surrounding
-    rock. It''s immobilized but automatically succeeds at its Deception check to Impersonate
+  description: The grikkitog implants its core into an adjacent section of earth or
+    stone, melding seamlessly and changing its visual appearance to match the surrounding
+    rock. It's immobilized but automatically succeeds at its Deception check to Impersonate
     the stone around it; creatures actively searching for it can still attempt Perception
     checks against its Deception DC as normal. A grikkitog can release its implantation
-    as a free action, which has the manipulate trait. A grikkitog''s infestation aura
+    as a free action, which has the manipulate trait. A grikkitog's infestation aura
     and manifold vision are only active while implanted.
-
-
-    **Manifold Vision** While its core is implanted, the grikkitog can see through
-    the eyes it creates throughout the area of its infestation aura, gaining the benefits
-    of all-around vision.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Implant Core
   range: null
@@ -175,18 +161,34 @@ sense_abilities:
     it; creatures actively searching for it can still attempt Perception checks against
     its Deception DC as normal. A grikkitog can release its implantation as a free
     action, which has the manipulate trait. A grikkitog''s infestation aura and manifold
-    vision are only active while implanted.
-
-
-    **Manifold Vision** While its core is implanted, the grikkitog can see through
-    the eyes it creates throughout the area of its infestation aura, gaining the benefits
-    of all-around vision.'
+    vision are only active while implanted.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits:
   - manipulate
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: While its core is implanted, the grikkitog can see through the eyes
+    it creates throughout the area of its infestation aura, gaining the benefits of
+    all-around vision.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Manifold Vision
+  range: null
+  raw_description: '**Manifold Vision** While its core is implanted, the grikkitog
+    can see through the eyes it creates throughout the area of its infestation aura,
+    gaining the benefits of all-around vision.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: null
 senses:
 - darkvision

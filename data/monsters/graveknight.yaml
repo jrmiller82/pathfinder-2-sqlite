@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devastating Blast
   range: null
@@ -39,15 +37,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: This curse affects anyone who wears a graveknight's armor for at least
-    1 hour. **Saving Throw** DC 33 Will save; **Onset** 1 hour; **Stage 1** doomed
-    1 and cannot remove the armor (1 day); **Stage 2** doomed 2, hampered 10, and
-    cannot remove the armor (1 day); **Stage 3** dies and transforms into the armor's
-    graveknight.
+    1 hour.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Graveknight's Curse
   range: null
@@ -57,8 +50,11 @@ active_abilities:
     doomed 2, hampered 10, and cannot remove the armor (1 day); **Stage 3** dies and
     transforms into the armor''s graveknight.'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 33 Will save; **Onset** 1 hour
+  stages:
+  - effect: doomed 1 and cannot remove the armor (1 day)
+  - effect: doomed 2, hampered 10, and cannot remove the armor (1 day)
+  - effect: dies and transforms into the armor's graveknight.
   success: null
   traits: null
   trigger: null
@@ -74,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Phantom Mount
   range: null
@@ -105,8 +99,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Weapon Master
   range: null
@@ -120,31 +112,60 @@ active_abilities:
   trigger: null
 alignment: LE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a creature in the aura uses a __positive__ spell or ability, the
+    graveknight automatically attempts to __counteract__ it, with a +17 counteract
+    modifier.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Sacrilegious Aura
+  range: 30 feet
+  raw_description: '**Sacrilegious Aura** (__abjuration__, __aura__, __divine__, __evil__)
+    30 feet. When a creature in the aura uses a __positive__ spell or ability, the
+    graveknight automatically attempts to __counteract__ it, with a +17 counteract
+    modifier.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - abjuration
+  - aura
+  - divine
+  - evil
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
   description: null
-  effect: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Sacrilegious Aura
+  name: Attack of Opportunity
   range: null
-  raw_description: '**Sacrilegious Aura** (__abjuration__, __aura__, __divine__, __evil__)
-    30 feet. When a creature in the aura uses a __positive__ spell or ability, the
-    graveknight automatically attempts to __counteract__ it, with a +17 counteract
-    modifier.
-
-
-    **Attack of Opportunity** [Reaction]'
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Graveknights are undead warriors granted unlife by a cursed suit of
   armor.
 
@@ -172,12 +193,11 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: slashing
+  - formula: 1d6
+    type: cold
   name: frost greatsword
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 24
   traits:
   - cold
@@ -185,12 +205,11 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: bludgeoning
+  - formula: 1d6
+    type: cold
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 23
   traits:
   - agile
@@ -200,12 +219,11 @@ perception: 19
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: piercing
+  - formula: 1d6
+    type: cold
   name: frost composite longbow
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 21
   traits:
   - cold

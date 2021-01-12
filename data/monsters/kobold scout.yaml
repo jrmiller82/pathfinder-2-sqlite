@@ -17,8 +17,6 @@ active_abilities:
     in a space that's not adjacent to any enemy.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hurried Retreat
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -77,10 +73,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -91,10 +86,9 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d8 piercing
+  - formula: 1d8
+    type: piercing
   name: crossbow
-  plus_damage: null
   to_hit: 9
   traits:
   - range increment 120 feet

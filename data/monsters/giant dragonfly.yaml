@@ -19,8 +19,6 @@ active_abilities:
     clutched at a time.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Clutch
   range: null
@@ -31,8 +29,8 @@ active_abilities:
     DC. On a success, it transfers the creature (which remains grabbed) to its legs,
     freeing its mandibles to attack. The dragonfly can have only one creature clutched
     at a time.'
-  requirements: The giant dragonfly has a Medium or smaller creature grabbed in its
-    mandibles
+  requirements: The giant dragonfly has a Medium or smaller creature __grabbed__ in
+    its mandibles
   saving_throw: null
   stages: null
   success: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snatch
   range: null
@@ -68,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swoop
   range: null
@@ -97,12 +91,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+7
+  - formula: 1d12+7
     type: piercing
-  name: mandibles
-  plus_damage:
   - formula: null
     type: Grab
+  name: mandibles
   to_hit: 14
   traits: null
 name: Giant Dragonfly

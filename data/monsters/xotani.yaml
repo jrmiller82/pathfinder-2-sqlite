@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bomb Barrage
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -87,8 +81,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -108,15 +100,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: Xotani's wound erupts with magma in a 30-foot cone, dealing 6d8 fire damage
-    and 6d8 persistent fire damage (DC 42 basic Reflex save).
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 300 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -133,7 +122,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 39
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -141,7 +130,93 @@ automatic_abilities:
   - emotion
   - fear
   - mental
-  trigger: Xotani is damaged;
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Xotani's light blindness is caused by only sunlight.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Light Blindness
+  range: null
+  raw_description: '**Light Blindness** Xotani''s light blindness is caused by only
+    sunlight.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Xotani gains 3 reactions each round. It can still use only one reaction
+    per trigger.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Reactive
+  range: null
+  raw_description: '**Reactive** Xotani gains 3 reactions each round. It can still
+    use only one reaction per trigger.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: Xotani's wound erupts with magma in a 30-foot cone, dealing 6d8 fire damage
+    and 6d8 persistent fire damage (DC 42 basic Reflex save).
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Firebleed
+  range: null
+  raw_description: '**Firebleed** [Reaction] (__fire__) **Trigger** Xotani is damaged;
+    **Effect** Xotani''s wound erupts with magma in a 30-foot cone, dealing 6d8 fire
+    damage and 6d8 persistent fire damage (DC 42 basic Reflex save).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fire
+  trigger: Xotani is damaged
 description: 'A monstrosity of living flame and magma, Xotani may be the weakest of
   Rovagug''s spawn, but it remains a formidable threat. Xotani was slain in 2104 ar
   by an alliance of spellcasters, but recently its deathlike slumber was interrupted.
@@ -172,23 +247,21 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d10+8
+  - formula: 5d10+8
     type: piercing
+  - formula: 2d10
+    type: persistent fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d10 persistent fire
   to_hit: 38
   traits:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 5d8+8
+  - formula: 5d8+8
     type: slashing
+  - formula: 2d8
+    type: persistent fire
   name: claw
-  plus_damage:
-  - formula: null
-    type: 2d8 persistent fire
   to_hit: 38
   traits:
   - agile
@@ -198,12 +271,11 @@ perception: 39
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: bludgeoning
+  - formula: 2d10
+    type: persistent fire
   name: lava bomb
-  plus_damage:
-  - formula: null
-    type: 2d10 persistent fire
   to_hit: 38
   traits:
   - range increment 80 feet

@@ -26,8 +26,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -57,16 +55,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: This curse affects only __humanoids__; **Saving Throw** DC 21 Fortitude.
-    On each full moon, the cursed creature must succeed at another Fortitude save
-    or turn into the same kind of werecreature until dawn. The creature is under the
-    GM's control and goes on a rampage for half the night before falling unconscious
-    until dawn.
+  description: This curse affects only __humanoids__
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Curse of the Weretiger
   range: null
@@ -77,7 +69,10 @@ active_abilities:
     control and goes on a rampage for half the night before falling unconscious until
     dawn.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 21 Fortitude. On each full moon, the cursed creature must succeed
+    at another Fortitude save or turn into the same kind of werecreature until dawn.
+    The creature is under the GM's control and goes on a rampage for half the night
+    before falling unconscious until dawn.
   stages: null
   success: null
   traits:
@@ -96,8 +91,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Moon Frenzy
   range: null
@@ -125,8 +118,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pounce
   range: null
@@ -146,8 +137,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -171,8 +160,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -215,22 +202,20 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: curse of the weretiger
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 14
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d4+7
+  - formula: 2d4+7
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
@@ -253,8 +238,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tiger Empathy
   range: null

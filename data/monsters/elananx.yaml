@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pack Attack
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pounce
   range: null
@@ -67,8 +63,6 @@ automatic_abilities:
     damage.
   failure: null
   frequency: once per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cinder Dispersal
   range: null
@@ -147,19 +141,17 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: piercing and 1d6 fire
   name: jaws
-  plus_damage: null
   to_hit: 16
   traits:
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 16
   traits:
   - agile

@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Goblin Song
   range: null
@@ -48,8 +46,6 @@ automatic_abilities:
   effect: The goblin war chanter Steps.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Goblin Scuttle
   range: null
@@ -82,10 +78,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: slashing
   name: dogslicer
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -96,10 +91,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 8
   traits:
   - deadly 1d10

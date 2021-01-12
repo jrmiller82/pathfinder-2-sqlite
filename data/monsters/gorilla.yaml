@@ -9,108 +9,42 @@ ac: 19
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is __frightened 2__.
+  critical_success: No effect and temporarily immune for 1 minute.
   description: The gorilla beats its chest in a terrifying display. Creatures within
     30 feet must attempt a DC 20 Will save. While a creature is __frightened__ by
     this ability, it is __flat-footed__ to the gorilla.
   effect: null
-  failure: null
+  failure: The creature is __frightened 1__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightening Display
   range: null
   raw_description: '**Frightening Display** [Two Actions]  (__auditory__, __emotion__,
     __fear__, __mental__) The gorilla beats its chest in a terrifying display. Creatures
     within 30 feet must attempt a DC 20 Will save. While a creature is __frightened__
-    by this ability, it is __flat-footed__ to the gorilla.'
+    by this ability, it is __flat-footed__ to the gorilla.
+
+
+    **Critical Success** No effect and temporarily immune for 1 minute.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __frightened 1__.
+
+
+    **Critical Failure** The creature is __frightened 2__.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is unaffected.
   traits:
   - auditory
   - emotion
   - fear
   - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: No effect and temporarily immune for 1 minute.
-  description: No effect and temporarily immune for 1 minute.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** No effect and temporarily immune for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __frightened 1__.
-  effect: null
-  failure: The creature is __frightened 1__.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __frightened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is __frightened 2__.
-  critical_success: null
-  description: The creature is __frightened 2__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is __frightened 2__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -128,20 +62,18 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 11
   traits:
   - reach 5 feet

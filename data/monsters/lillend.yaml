@@ -20,8 +20,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Free Expression
   range: null
@@ -74,14 +72,13 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+10
+  - formula: 1d8+10
     type: slashing
+  - formula: 1d6
+    type: chaotic
+  - formula: 1d6
+    type: good
   name: longsword
-  plus_damage:
-  - formula: null
-    type: 1d6 chaotic
-  - formula: null
-    type: 1d6 good
   to_hit: 18
   traits:
   - chaotic
@@ -89,16 +86,15 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 1d6 chaotic
-  - formula: null
-    type: 1d6 good
+  - formula: 1d6
+    type: chaotic
+  - formula: 1d6
+    type: good
   - formula: null
     type: Grab
+  name: tail
   to_hit: 18
   traits:
   - agile

@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Archon's Door
   range: null
@@ -50,8 +48,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flame of Justice
   range: null
@@ -87,8 +83,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Menacing Guardian
   range: 30 feet
@@ -118,8 +112,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retributive Strike
   range: null
@@ -154,14 +146,13 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+5
+  - formula: 2d10+5
     type: slashing
+  - formula: 1d6
+    type: fire
+  - formula: 1d6
+    type: good
   name: flame of justice
-  plus_damage:
-  - formula: null
-    type: 1d6 fire
-  - formula: null
-    type: 1d6 good
   to_hit: 18
   traits:
   - magical
@@ -171,14 +162,13 @@ perception: 15
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+5
+  - formula: 2d10+5
     type: slashing
+  - formula: 1d6
+    type: fire
+  - formula: 1d6
+    type: good
   name: flame of justice
-  plus_damage:
-  - formula: null
-    type: 1d6 fire
-  - formula: null
-    type: 1d6 good
   to_hit: 15
   traits:
   - magical

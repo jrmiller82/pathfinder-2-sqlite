@@ -16,8 +16,6 @@ active_abilities:
     save or be pulled 10 feet toward the doblagub.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Etheric Tug
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Magical Tongue
   range: null
@@ -59,8 +55,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -84,8 +78,6 @@ automatic_abilities:
     at a DC 30 Will save or the movement fails and the action is wasted.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Etheric Fibers
   range: 40 feet
@@ -121,21 +113,19 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+14
+  - formula: 4d8+14
     type: bludgeoning
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 27
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: Grab and Pull 10 feet
   name: tongue
-  plus_damage: null
   to_hit: 27
   traits:
   - reach 15 feet

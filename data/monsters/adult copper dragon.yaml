@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Climb Stone
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -87,8 +81,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -108,15 +100,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
-    hits, the dragon disrupts the triggering action.
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 90 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -133,7 +122,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 29
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -141,6 +130,27 @@ automatic_abilities:
   - emotion
   - fear
   - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
+    hits, the dragon disrupts the triggering action.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Twisting Tail
+  range: null
+  raw_description: '**Twisting Tail** [Reaction] **Trigger** A creature within reach
+    of the copper dragon''s tail uses a move action or leaves a square during a move
+    action it''s using. **Effect** The dragon makes a tail Strike at the creature
+    with a –2 penalty. If it hits, the dragon disrupts the triggering action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: A creature within reach of the copper dragon's tail uses a move action
     or leaves a square during a move action it's using.
 description: 'Capricious and always eager to share a good laugh, copper dragons are
@@ -191,12 +201,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: piercing
+  - formula: 2d8
+    type: acid
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d8 acid
   to_hit: 26
   traits:
   - acid
@@ -204,20 +213,18 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 26
   traits:
   - agile
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 24
   traits:
   - magical

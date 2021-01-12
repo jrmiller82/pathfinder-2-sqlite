@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cat Sith's Mark
   range: null
@@ -50,8 +48,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Steal Soul
   range: null
@@ -86,8 +82,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ill Omen
   range: 60 feet
@@ -132,7 +126,7 @@ description: 'Cat siths can easily pass for common black house cats, noteworthy 
 hp: 110
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=110">misfortune</a> effects
+- __misfortune__ effects
 languages:
 - Sylvan
 - speak with animals
@@ -140,20 +134,18 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+3
+  - formula: 2d12+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 12
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+5
+  - formula: 2d6+5
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: cat sith's mark
+  name: claw
   to_hit: 15
   traits:
   - agile

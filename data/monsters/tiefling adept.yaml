@@ -17,9 +17,7 @@ active_abilities:
     a different spell level each time), without spending a spell slot. The adept must
     still Cast the Spell and meet the spell's other requirements.
   failure: null
-  frequency: Once per day; Requirements The adept hasn't acted yet on this turn.
-  full_description: null
-  generic_description: null
+  frequency: Once per day
   maximum_duration: null
   name: Drain Bonded Item
   range: null
@@ -60,19 +58,17 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 bludgeoning
+  - formula: 1d6
+    type: bludgeoning
   name: staff
-  plus_damage: null
   to_hit: 6
   traits:
   - two-handed 1d8
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
+  - formula: 1d4
+    type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
@@ -83,10 +79,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 7
   traits:
   - agile

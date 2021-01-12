@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Amnesia Venom
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Root
   range: null
@@ -92,8 +86,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet
@@ -150,14 +142,13 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+8
+  - formula: 3d6+8
     type: bludgeoning
-  name: vine
-  plus_damage:
-  - formula: null
-    type: 3d6 acid
+  - formula: 3d6
+    type: acid
   - formula: null
     type: Grab
+  name: vine
   to_hit: 21
   traits:
   - acid
@@ -167,12 +158,11 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 4d8 acid
-  name: acid glob
-  plus_damage:
+  - formula: 4d8
+    type: acid
   - formula: null
     type: amnesia venom
+  name: acid glob
   to_hit: 23
   traits:
   - acid

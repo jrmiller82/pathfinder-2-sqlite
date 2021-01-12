@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -51,9 +49,9 @@ hp: 16
 hp_misc: fast healing 2 (in dust or sand)
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Auran
 - Terran
@@ -61,10 +59,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 9
   traits:
   - agile

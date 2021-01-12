@@ -11,12 +11,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: A homunculus has one dose of poison in a reservoir in its head. It
+    can refill this poison from its reserves with an Interact action.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Homunculus Poison
   range: null
@@ -100,12 +99,11 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
-  name: jaws
-  plus_damage:
+  - formula: 1d4
+    type: piercing
   - formula: null
     type: homunculus poison
+  name: jaws
   to_hit: 7
   traits:
   - finesse
@@ -135,8 +133,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Master Link
   range: null

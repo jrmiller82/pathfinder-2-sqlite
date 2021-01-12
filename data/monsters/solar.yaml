@@ -17,8 +17,6 @@ active_abilities:
     1 minute.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Animate Weapon
   range: null
@@ -33,7 +31,7 @@ active_abilities:
   success: null
   traits: null
   trigger: The solar hits with a melee weapon Strike while Animate Weapon is not already
-    in effect;
+    in effect
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Arrow of Mortality
   range: null
@@ -71,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -97,8 +91,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Holy Armaments
   range: null
@@ -126,8 +118,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aura of Protection
   range: 20 feet
@@ -178,12 +168,11 @@ level: 23
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+22
+  - formula: 4d12+22
     type: slashing
+  - formula: 2d6
+    type: good
   name: holy greatsword
-  plus_damage:
-  - formula: null
-    type: 2d6 good
   to_hit: 44
   traits:
   - good
@@ -194,14 +183,13 @@ perception: 40
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+17
+  - formula: 4d8+17
     type: piercing
-  name: holy longbow
-  plus_damage:
-  - formula: null
-    type: 2d6 good
+  - formula: 2d6
+    type: good
   - formula: null
     type: arrow of mortality
+  name: holy longbow
   to_hit: 40
   traits:
   - deadly d10

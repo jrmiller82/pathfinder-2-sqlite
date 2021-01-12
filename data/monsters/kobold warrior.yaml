@@ -17,8 +17,6 @@ active_abilities:
     in a space that's not adjacent to any enemy.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hurried Retreat
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -78,10 +74,9 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 3
   traits: null
 name: Kobold Warrior
@@ -89,10 +84,9 @@ perception: 3
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 bludgeoning
+  - formula: 1d4
+    type: bludgeoning
   name: sling
-  plus_damage: null
   to_hit: 5
   traits:
   - propulsive
@@ -100,10 +94,9 @@ ranged_attacks:
   - reload 1
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 5
   traits:
   - thrown 20 feet

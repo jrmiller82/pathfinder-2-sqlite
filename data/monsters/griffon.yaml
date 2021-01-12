@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flying Strafe
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pounce
   range: null
@@ -105,28 +101,25 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: piercing
   name: beak
-  plus_damage: null
   to_hit: 14
   traits:
   - deadly 1d10
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: piercing
   name: talon
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: bludgeoning
   name: wing
-  plus_damage: null
   to_hit: 14
   traits:
   - reach 10 feet

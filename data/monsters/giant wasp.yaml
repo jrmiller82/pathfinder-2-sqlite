@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Giant Wasp Venom
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Implant Eggs
   range: null
@@ -59,14 +55,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** Fortitude DC 21; **Stage 1** carrier with no ill
-    effect (1d6 days); **Stage 2** drained 1 (1d3 days); **Stage 3** 5d6 damage, larva
-    emerges (disease ends)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wasp Larva
   range: null
@@ -74,8 +66,11 @@ active_abilities:
     **Stage 1** carrier with no ill effect (1d6 days); **Stage 2** drained 1 (1d3
     days); **Stage 3** 5d6 damage, larva emerges (disease ends)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: Fortitude DC 21
+  stages:
+  - effect: carrier with no ill effect (1d6 days)
+  - effect: drained 1 (1d3 days)
+  - effect: 5d6 damage, larva emerges (disease ends)
   success: null
   traits:
   - disease
@@ -95,12 +90,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+4
+  - formula: 1d12+4
     type: piercing
-  name: stinger
-  plus_damage:
   - formula: null
     type: giant wasp venom
+  name: stinger
   to_hit: 12
   traits:
   - poison

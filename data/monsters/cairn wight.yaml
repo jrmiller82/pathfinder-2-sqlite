@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cairn Wight Spawn
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -71,27 +67,39 @@ active_abilities:
   - necromancy
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is frightened 2 and takes a –2 status penalty to
+    saving throws against drain life.
+  critical_success: The creature is unaffected.
   description: The cairn wight chants a low, haunting melody. Living creatures within
     50 feet must attempt a DC 21 Will save. The cairn wight can't chant a new Funereal
     Dirge for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature is frightened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Funereal Dirge
   range: null
   raw_description: '**Funereal Dirge** [Two Actions]  (__auditory__, __divine__, __emotion__,
     __fear__, __mental__, __necromancy__) The cairn wight chants a low, haunting melody.
     Living creatures within 50 feet must attempt a DC 21 Will save. The cairn wight
-    can''t chant a new Funereal Dirge for 1d4 rounds.'
+    can''t chant a new Funereal Dirge for 1d4 rounds.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is frightened 2.
+
+
+    **Critical Failure** The creature is frightened 2 and takes a –2 status penalty
+    to saving throws against drain life.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __frightened 1__.
   traits:
   - auditory
   - divine
@@ -99,85 +107,6 @@ active_abilities:
   - fear
   - mental
   - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __frightened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __frightened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __frightened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is frightened 2.
-  effect: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is frightened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is frightened 2 and takes a –2 status penalty to
-    saving throws against drain life.
-  critical_success: null
-  description: The creature is frightened 2 and takes a –2 status penalty to saving
-    throws against drain life.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is frightened 2 and takes a
-    –2 status penalty to saving throws against drain life.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: LE
 automatic_abilities:
@@ -189,8 +118,6 @@ automatic_abilities:
     temporary HP from drain life on this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Final Spite
   range: null
@@ -202,7 +129,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The cairn wight is reduced to 0 Hit Points;
+  trigger: The cairn wight is reduced to 0 Hit Points
 description: 'Jealous guardians of tombs, barrows, and sepulchers, cairn wights usually
   spawn from necromantic rituals. For those mortals who cannot abide the thought of
   separation from their earthly possessions, the undead existence offered by transformation
@@ -229,11 +156,11 @@ description: 'Jealous guardians of tombs, barrows, and sepulchers, cairn wights 
 hp: 67
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
+- __poison__
+- __unconscious__
 items:
 - longsword
 - studded leather armor
@@ -244,23 +171,21 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: slashing
-  name: longsword
-  plus_damage:
   - formula: null
     type: drain life
+  name: longsword
   to_hit: 14
   traits:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 1d6+7
+  - formula: 1d6+7
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: drain life
+  name: claw
   to_hit: 14
   traits:
   - agile

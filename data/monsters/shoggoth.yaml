@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -35,8 +33,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eat Away
   range: null
@@ -55,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -81,8 +75,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Maddening Cacophony
   range: 60 feet
@@ -157,12 +149,11 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+18
+  - formula: 4d10+18
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 35
   traits:
   - magical

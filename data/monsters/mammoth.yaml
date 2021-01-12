@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dual Tusks
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grabbing Trunk
   range: null
@@ -60,8 +56,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -82,8 +76,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cold Adaptation
   range: null
@@ -110,28 +102,25 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: piercing
   name: tusk
-  plus_damage: null
   to_hit: 22
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: grabbing trunk
   name: trunk
-  plus_damage: null
   to_hit: 22
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 22
   traits:
   - reach 10 feet

@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Regurgitate Gastrolith
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stone Step
   range: null
@@ -107,20 +103,18 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: piercing
+  - formula: 2d6
+    type: acid
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
   to_hit: 26
   traits: null
 - action_cost: One Action
   damage:
-    formula: 3d10+13
+  - formula: 3d10+13
     type: bludgeoning
   name: legs
-  plus_damage: null
   to_hit: 26
   traits:
   - agile

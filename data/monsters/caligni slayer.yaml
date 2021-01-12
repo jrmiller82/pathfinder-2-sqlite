@@ -11,16 +11,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 16 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1 **1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **As stage 1; **Stage
-    3 **1d6 poison damage and enfeebled 2 (1 round). See __here__ for full details
-    on this alchemical poison.'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Black Smear Poison
   range: null
   raw_description: '**Black Smear Poison** (__poison__) **Saving Throw **DC 16 Fortitude;
@@ -28,8 +23,12 @@ active_abilities:
     (1 round); **Stage 2 **As stage 1; **Stage 3 **1d6 poison damage and enfeebled
     2 (1 round). See __here__ for full details on this alchemical poison.'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 16 Fortitude
+  stages:
+  - effect: 1d6 poison damage and __enfeebled 1__ (1 round)
+  - effect: As stage 1
+  - effect: 1d6 poison damage and enfeebled 2 (1 round). See __here__ for full details
+      on this alchemical poison.
   success: null
   traits:
   - poison
@@ -42,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Call to Blood
   range: null
@@ -67,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Harvest
   range: null
@@ -84,17 +79,15 @@ active_abilities:
 alignment: CE
 automatic_abilities:
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature takes double damage and is deafened for 24 hours.
+  critical_success: The creature is unaffected.
   description: When the caligni slayer dies, their body implodes violently into nothingness,
     dealing 3d10 sonic damage to creatures in a 10-foot burst. Each creature in the
     area must attempt a DC 20 Fortitude save. The slayer's gear and treasure are unaffected
     by the implosion and are left in a pile where they died.
   effect: null
-  failure: null
+  failure: The creature takes full damage and is __deafened__ for 1 minute.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death Implosion
   range: null
@@ -102,91 +95,25 @@ automatic_abilities:
     their body implodes violently into nothingness, dealing 3d10 sonic damage to creatures
     in a 10-foot burst. Each creature in the area must attempt a DC 20 Fortitude save.
     The slayer''s gear and treasure are unaffected by the implosion and are left in
-    a pile where they died.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - sonic
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes half damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature takes half damage.'
+    a pile where they died.
+
+
+    **Critical Success **The creature is unaffected.
+
+
+    **Success **The creature takes half damage.
+
+
+    **Failure **The creature takes full damage and is __deafened__ for 1 minute.
+
+
+    **Critical Failure **The creature takes double damage and is deafened for 24 hours.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature takes half damage.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes full damage and is __deafened__ for 1 minute.
-  effect: null
-  failure: The creature takes full damage and is __deafened__ for 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature takes full damage and is __deafened__
-    for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature takes double damage and is deafened for 24 hours.
-  critical_success: null
-  description: The creature takes double damage and is deafened for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The creature takes double damage and is deafened
-    for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - sonic
   trigger: null
 description: 'Caligni slayers possess greater occult talents than others of their
   kind. In most other calignis, the power bartered from the long-lost demigods known
@@ -233,12 +160,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: slashing
-  name: kukri
-  plus_damage:
   - formula: null
     type: black smear poison
+  name: kukri
   to_hit: 11
   traits:
   - agile
@@ -264,8 +190,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Blindness
   range: null

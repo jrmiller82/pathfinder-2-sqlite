@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -78,33 +72,93 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: Jaws only.
+  description: 5 feet, 3d6 fire damage (DC 30 basic Reflex)
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dragon Heat
   range: null
   raw_description: '**Dragon Heat** (__arcane__, __aura__, __evocation__, __fire__);
-    5 feet, 3d6 fire damage (DC 30 basic Reflex)
+    5 feet, 3d6 fire damage (DC 30 basic Reflex)'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - aura
+  - evocation
+  - fire
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: null
+  failure: The creature is __frightened 2__.
+  frequency: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
 
 
-    **Frightful Presence** (__aura__, __emotion__, __fear__, __mental__) 90 feet,
-    DC 33
+    **Critical Success** The creature is unaffected by the presence.
 
 
-    **Attack of Opportunity** [Reaction] Jaws only.'
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: DC 33
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: Jaws only.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'The largest and most powerful of the chromatic dragons, red dragons
   are a menace to civilizations everywhere, and their strength is rivaled only by
   their arrogance. Red dragons see themselves as regents and overlords of all dragonkind.
@@ -160,12 +214,11 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+15
+  - formula: 3d12+15
     type: piercing
+  - formula: 2d6
+    type: fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
   to_hit: 29
   traits:
   - fire
@@ -173,10 +226,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+15
+  - formula: 3d10+15
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 29
   traits:
   - agile
@@ -184,20 +236,18 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+13
+  - formula: 3d12+13
     type: slashing
   name: tail
-  plus_damage: null
   to_hit: 27
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: slashing
   name: wing
-  plus_damage: null
   to_hit: 27
   traits:
   - agile
@@ -223,8 +273,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

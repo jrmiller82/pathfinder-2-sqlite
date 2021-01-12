@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Taiga Linnorm Venom
   range: null
@@ -75,8 +71,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Curse of Endless Storms
   range: null
@@ -101,8 +95,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spines
   range: null
@@ -126,8 +118,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -160,10 +150,10 @@ description: 'Taiga linnorms are covered in hundreds of quill-like black spines 
 hp: 385
 hp_misc: regeneration 15 (deactivated by cold iron)
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=38">curse</a>
+- __curse__
 - electricity
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Aklo
 - Draconic
@@ -172,22 +162,20 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+18
+  - formula: 4d12+18
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: taiga linnorm venom
+  name: jaws
   to_hit: 37
   traits:
   - magical
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+18
+  - formula: 4d8+18
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 37
   traits:
   - agile
@@ -195,12 +183,11 @@ melee_attacks:
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 5d6+18
+  - formula: 5d6+18
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tail
   to_hit: 37
   traits:
   - agile

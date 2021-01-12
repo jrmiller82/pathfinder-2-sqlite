@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deceptive Reposition
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Maintain Disguise
   range: null
@@ -64,8 +60,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Serpentfolk Venom
   range: null
@@ -89,8 +83,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -139,12 +131,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+5
+  - formula: 1d6+5
     type: piercing
-  name: shortsword
-  plus_damage:
   - formula: null
     type: serpentfolk venom
+  name: shortsword
   to_hit: 14
   traits:
   - agile
@@ -152,12 +143,11 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6+5
+  - formula: 1d6+5
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: serpentfolk venom
+  name: fangs
   to_hit: 14
   traits:
   - finesse
@@ -166,12 +156,11 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
-  name: hand crossbow
-  plus_damage:
   - formula: null
     type: serpentfolk venom or hunting spider venom
+  name: hand crossbow
   to_hit: 10
   traits:
   - range increment 60 feet

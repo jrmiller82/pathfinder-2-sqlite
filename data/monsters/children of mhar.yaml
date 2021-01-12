@@ -15,15 +15,13 @@ active_abilities:
   effect: The creature takes 4d8+17 piercing damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Beak Crunch
   range: null
   raw_description: '**Beak Crunch** [One Action]  **Requirements** The deghuun has
     a creature __grabbed__ with its tentacles; **Effect** The creature takes 4d8+17
     piercing damage.'
-  requirements: The deghuun has a creature grabbed with its tentacles
+  requirements: The deghuun has a creature __grabbed__ with its tentacles
   saving_throw: null
   stages: null
   success: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sulfurous Plume
   range: null
@@ -72,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tentacle Assault
   range: null
@@ -97,8 +91,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unfathomable Aspect
   range: null
@@ -127,7 +119,7 @@ hp: 420
 hp_misc: null
 immunities:
 - fire
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __poison__
 languages:
 - Aklo
 - telepathy 100 feet
@@ -135,12 +127,11 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: Grab
+  name: tentacle
   to_hit: 35
   traits:
   - agile
@@ -150,12 +141,11 @@ perception: 30
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d6+17
+  - formula: 4d6+17
     type: bludgeoning
+  - formula: 3d6
+    type: fire
   name: lava ball
-  plus_damage:
-  - formula: null
-    type: 3d6 fire
   to_hit: 34
   traits:
   - brutal
@@ -182,8 +172,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

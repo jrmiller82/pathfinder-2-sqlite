@@ -12,13 +12,9 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: A creature can't recover from drained until abyssal plague is cured.
-    **Saving Throw** DC 28 Fortitude; **Stage 1** __Drained 1__ (1 day); **Stage 2**
-    __Drained__ increases by 2 (1 day)
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Abyssal Plague
   range: null
@@ -26,8 +22,10 @@ active_abilities:
     drained until abyssal plague is cured. **Saving Throw** DC 28 Fortitude; **Stage
     1** __Drained 1__ (1 day); **Stage 2** __Drained__ increases by 2 (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 28 Fortitude
+  stages:
+  - effect: __Drained 1__ (1 day)
+  - effect: __Drained__ increases by 2 (1 day)
   success: null
   traits:
   - disease
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -71,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dream Haunting
   range: null
@@ -99,8 +93,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spell Ambush
   range: null
@@ -158,25 +150,23 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Abyssal plague
+  name: jaws
   to_hit: 20
   traits:
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 20
   traits:
   - agile
@@ -206,8 +196,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Coven
   range: null
@@ -228,8 +216,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nightmare Rider
   range: null

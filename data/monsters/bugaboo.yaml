@@ -19,8 +19,6 @@ active_abilities:
     into a bogeyman.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devour Soul
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mobility
   range: null
@@ -68,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -82,106 +76,39 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: The target is frightened 3 and __fleeing__ for 1 round.
+  critical_success: The target is unaffected.
   description: If a bugaboo scores a critical hit with a claw Strike, the target must
     attempt a DC 24 Will save.
   effect: null
-  failure: null
+  failure: The target is frightened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Striking Fear
   range: null
   raw_description: '**Striking Fear** (__emotion__, __fear__, __mental__) If a bugaboo
     scores a critical hit with a claw Strike, the target must attempt a DC 24 Will
-    save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - emotion
-  - fear
-  - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The target is unaffected.
-  description: The target is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is __frightened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The target is __frightened 1__.'
+    save.
+
+
+    **Critical Success** The target is unaffected.
+
+
+    **Success** The target is __frightened 1__.
+
+
+    **Failure** The target is frightened 2.
+
+
+    **Critical Failure** The target is frightened 3 and __fleeing__ for 1 round.'
   requirements: null
   saving_throw: null
   stages: null
   success: The target is __frightened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is frightened 2.
-  effect: null
-  failure: The target is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The target is frightened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The target is frightened 3 and __fleeing__ for 1 round.
-  critical_success: null
-  description: The target is frightened 3 and __fleeing__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The target is frightened 3 and __fleeing__
-    for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - emotion
+  - fear
+  - mental
   trigger: null
 - action_cost: None
   critical_failure: null
@@ -191,8 +118,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Surprise Attack
   range: null
@@ -225,12 +150,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: striking fear
+  name: claw
   to_hit: 15
   traits:
   - agile

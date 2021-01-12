@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Slither
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Weak Acid
   range: null
@@ -67,10 +63,10 @@ hp_misc: null
 immunities:
 - acid
 - critical hits
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 - precision
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __unconscious__
+- __visual__
 level: 1
 melee_attacks: null
 name: Amoeba Swarm
@@ -100,8 +96,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

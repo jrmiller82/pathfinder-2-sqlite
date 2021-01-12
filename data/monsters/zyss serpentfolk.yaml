@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Serpentfolk Venom
   range: null
@@ -57,23 +55,21 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: serpentfolk venom
+  name: fangs
   to_hit: 10
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: piercing
-  name: dagger
-  plus_damage:
   - formula: null
     type: serpentfolk venom
+  name: dagger
   to_hit: 10
   traits:
   - agile
@@ -84,12 +80,11 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: piercing
-  name: shortbow
-  plus_damage:
   - formula: null
     type: serpentfolk venom
+  name: shortbow
   to_hit: 10
   traits:
   - deadly 1d10

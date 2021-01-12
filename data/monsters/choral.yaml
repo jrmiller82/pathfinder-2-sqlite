@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deafening Aria
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Harmonize
   range: null
@@ -70,8 +66,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Harmonizing Aura
   range: 20 feet
@@ -108,12 +102,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+1
+  - formula: 3d6+1
     type: bludgeoning
+  - formula: 1d6
+    type: good
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 good
   to_hit: 14
   traits:
   - agile
@@ -125,14 +118,13 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 4d6 sonic damage
-  name: piercing hymn
-  plus_damage:
-  - formula: null
-    type: 1d6 good
+  - formula: 4d6
+    type: sonic damage
+  - formula: 1d6
+    type: good
   - formula: null
     type: deafening aria
+  name: piercing hymn
   to_hit: 17
   traits:
   - good

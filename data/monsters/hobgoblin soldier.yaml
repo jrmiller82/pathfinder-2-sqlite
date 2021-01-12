@@ -14,9 +14,7 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: '**Formation** When it''s adjacent to at least two other allies, the
-    hobgoblin soldier gains a +1 circumstance bonus to AC and saving throws. This
-    bonus increases to +2 to Reflex saves against area effects.'
+  description: null
   effect: You lash out at a foe that leaves an opening. Make a melee Strike against
     the triggering creature. If your attack is a critical hit and the trigger was
     a manipulate action, you disrupt that action. This Strike doesn't count toward
@@ -24,8 +22,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -43,6 +39,51 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You snap your shield in place to ward off a blow. Your shield prevents you
+    from taking an amount of damage up to the shield's Hardness. You and the shield
+    each take any remaining damage, possibly breaking or destroying the shield.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Shield Block
+  range: null
+  raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
+    raised, you would take damage from a physical attack. **Effect** You snap your
+    shield in place to ward off a blow. Your shield prevents you from taking an amount
+    of damage up to the shield''s Hardness. You and the shield each take any remaining
+    damage, possibly breaking or destroying the shield.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: While you have your shield raised, you would take damage from a physical
+    attack.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When it's adjacent to at least two other allies, the hobgoblin soldier
+    gains a +1 circumstance bonus to AC and saving throws. This bonus increases to
+    +2 to Reflex saves against area effects.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Formation
+  range: null
+  raw_description: '**Formation** When it''s adjacent to at least two other allies,
+    the hobgoblin soldier gains a +1 circumstance bonus to AC and saving throws. This
+    bonus increases to +2 to Reflex saves against area effects.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 description: 'Soldiers make up the bulk of hobgoblin society, whether that society
   is a village or a military unit.
 
@@ -64,10 +105,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 8
   traits:
   - versatile P
@@ -76,10 +116,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 8
   traits:
   - deadly 1d10

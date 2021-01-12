@@ -25,8 +25,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devour Soul
   range: null
@@ -61,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -90,8 +86,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Spells
   range: null
@@ -120,8 +114,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spell Deflection
   range: null
@@ -156,12 +148,12 @@ description: 'When fiends and powerful evil spellcasters are lost beyond the far
 hp: 175
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
+- __poison__
 - spell deflection
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __unconscious__
 languages:
 - Abyssal
 - Celestial
@@ -172,12 +164,11 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: drain life
+  name: claw
   to_hit: 24
   traits:
   - agile

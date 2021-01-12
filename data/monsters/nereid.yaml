@@ -9,100 +9,45 @@ ac: 30
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
+  critical_failure: The creature chokes on the water and runs out of air. It falls
+    unconscious and starts __drowning__. If the creature is above water, it recovers
+    from drowning as soon as it succeeds at a saving throw against suffocation.
   critical_success: null
   description: The nereid touches a creature and causes water from its own body to
     flow into the creature's lungs. If the creature cannot breathe water, it must
     attempt a DC 29 Fortitude save.
   effect: null
-  failure: null
+  failure: The creature becomes __sickened 3__ as it chokes on the water.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drowning Touch
   range: null
   raw_description: '**Drowning Touch** [Two Actions]  (__conjuration__, __incapacitation__,
     __primal__, __water__) The nereid touches a creature and causes water from its
     own body to flow into the creature''s lungs. If the creature cannot breathe water,
-    it must attempt a DC 29 Fortitude save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - conjuration
-  - incapacitation
-  - primal
-  - water
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected and is temporarily immune to Drowning Touch
+    it must attempt a DC 29 Fortitude save.
+
+
+    **Success** The creature is unaffected and is temporarily immune to Drowning Touch
     for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected and is temporarily immune
-    to Drowning Touch for 24 hours.'
+
+
+    **Failure** The creature becomes __sickened 3__ as it chokes on the water.
+
+
+    **Critical Failure** The creature chokes on the water and runs out of air. It
+    falls unconscious and starts __drowning__. If the creature is above water, it
+    recovers from drowning as soon as it succeeds at a saving throw against suffocation.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected and is temporarily immune to Drowning Touch
     for 24 hours.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature becomes __sickened 3__ as it chokes on the water.
-  effect: null
-  failure: The creature becomes __sickened 3__ as it chokes on the water.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature becomes __sickened 3__ as it chokes on
-    the water.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature chokes on the water and runs out of air. It falls
-    unconscious and starts __drowning__. If the creature is above water, it recovers
-    from drowning as soon as it succeeds at a saving throw against suffocation.
-  critical_success: null
-  description: The creature chokes on the water and runs out of air. It falls unconscious
-    and starts __drowning__. If the creature is above water, it recovers from drowning
-    as soon as it succeeds at a saving throw against suffocation.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature chokes on the water and runs
-    out of air. It falls unconscious and starts __drowning__. If the creature is above
-    water, it recovers from drowning as soon as it succeeds at a saving throw against
-    suffocation.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - conjuration
+  - incapacitation
+  - primal
+  - water
   trigger: null
 - action_cost: Three Actions
   critical_failure: null
@@ -116,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Manifest Shawl
   range: null
@@ -147,8 +90,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Watery Transparency
   range: null
@@ -216,10 +157,9 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 6d6 poison
+  - formula: 6d6
+    type: poison
   name: poisonous touch
-  plus_damage: null
   to_hit: 23
   traits:
   - agile

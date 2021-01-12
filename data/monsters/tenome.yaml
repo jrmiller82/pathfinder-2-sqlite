@@ -11,7 +11,7 @@ active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: '**Requirement** The tenome has a creature __grabbed__ or __restrained__;'
+  description: '**Requirement** The tenome has a creature __grabbed__ or __restrained__'
   effect: The tenome makes a jaws Strike against the grabbed or restrained creature.
     If the Strike hits, the creature must succeed at a DC 18 Fortitude save or become
     __drained 1__ (or the value of the creature's drained condition increases by 1
@@ -19,8 +19,6 @@ active_abilities:
     1d8 Hit Points each time it uses Bone Drink.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bone Drink
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Burst of Speed
   range: null
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Gaze
   range: null
@@ -108,8 +102,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Obscuring Grab
   range: null
@@ -162,20 +154,18 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 14
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 14
   traits:
   - agile

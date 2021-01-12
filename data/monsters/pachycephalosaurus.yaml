@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Clobbering Charge
   range: null
@@ -34,112 +32,43 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: Reaction
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the failed attempt leaves the pachycephalosaurus
+    __flat-footed__ for 1 round.
+  critical_success: The pachycephalosaurus pushes the opponent up to 10 feet away
+    from itself and knocks the target __prone__.
   description: null
   effect: The pachycephalosaurus digs in and flings its head up, shoving its foe away.
     It attempts an __Athletics__ check against the target's Fortitude DC.
-  failure: null
+  failure: The pachycephalosaurus fails to push the opponent.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sudden Shove
   range: null
   raw_description: '**Sudden Shove** [Reaction]  (__attack__) **Trigger **The pachycephalosaurus
     damages a Medium or smaller foe with its skull Strike; **Effect **The pachycephalosaurus
     digs in and flings its head up, shoving its foe away. It attempts an __Athletics__
-    check against the target''s Fortitude DC.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - attack
-  trigger: The pachycephalosaurus damages a Medium or smaller foe with its skull Strike;
-- action_cost: None
-  critical_failure: null
-  critical_success: The pachycephalosaurus pushes the opponent up to 10 feet away
-    from itself and knocks the target __prone__.
-  description: The pachycephalosaurus pushes the opponent up to 10 feet away from
-    itself and knocks the target __prone__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The pachycephalosaurus pushes the opponent
-    up to 10 feet away from itself and knocks the target __prone__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The pachycephalosaurus pushes the opponent back 5 feet.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The pachycephalosaurus pushes the opponent back 5
-    feet.'
+    check against the target''s Fortitude DC.
+
+
+    **Critical Success **The pachycephalosaurus pushes the opponent up to 10 feet
+    away from itself and knocks the target __prone__.
+
+
+    **Success **The pachycephalosaurus pushes the opponent back 5 feet.
+
+
+    **Failure **The pachycephalosaurus fails to push the opponent.
+
+
+    **Critical Failure **As failure, but the failed attempt leaves the pachycephalosaurus
+    __flat-footed__ for 1 round.'
   requirements: null
   saving_throw: null
   stages: null
   success: The pachycephalosaurus pushes the opponent back 5 feet.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The pachycephalosaurus fails to push the opponent.
-  effect: null
-  failure: The pachycephalosaurus fails to push the opponent.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The pachycephalosaurus fails to push the opponent.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the failed attempt leaves the pachycephalosaurus
-    __flat-footed__ for 1 round.
-  critical_success: null
-  description: As failure, but the failed attempt leaves the pachycephalosaurus __flat-footed__
-    for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, but the failed attempt leaves
-    the pachycephalosaurus __flat-footed__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
+  traits:
+  - attack
+  trigger: The pachycephalosaurus damages a Medium or smaller foe with its skull Strike
 alignment: N
 automatic_abilities: null
 description: 'Pachycephalosauruses are normally peaceful herbivorous dinosaurs, but
@@ -171,10 +100,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: bludgeoning
   name: skull
-  plus_damage: null
   to_hit: 11
   traits:
   - forceful

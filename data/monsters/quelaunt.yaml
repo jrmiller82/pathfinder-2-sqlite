@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Emotional Focus
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Emotional Frenzy
   range: null
@@ -64,8 +60,6 @@ active_abilities:
     action this turn.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Feed on Emotion
   range: null
@@ -95,8 +89,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rapid Strikes
   range: null
@@ -121,8 +113,6 @@ active_abilities:
     creature is benefiting.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spiral of Despair
   range: null
@@ -181,10 +171,9 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 30
   traits:
   - agile

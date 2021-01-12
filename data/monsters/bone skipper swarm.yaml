@@ -11,15 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Marrow rot affects only creatures with a skeletal system; **Saving
-    Throw** DC 24 Fortitude; **Onset** 1 day; **Stage 1** __enfeebled 1__ (1 day);
-    **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled 2 and __drained 1__ (1
-    day)
+  description: Marrow rot affects only creatures with a skeletal system
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Marrow Rot
   range: null
@@ -28,8 +23,11 @@ active_abilities:
     1** __enfeebled 1__ (1 day); **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled
     2 and __drained 1__ (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 24 Fortitude; **Onset** 1 day
+  stages:
+  - effect: __enfeebled 1__ (1 day)
+  - effect: enfeebled 2 (1 day)
+  - effect: enfeebled 2 and __drained 1__ (1 day)
   success: null
   traits:
   - disease
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Bites
   range: null
@@ -68,7 +64,7 @@ hp: 120
 hp_misc: null
 immunities:
 - precision
-- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+- __swarm mind__
 level: 6
 melee_attacks: null
 name: Bone Skipper Swarm
@@ -102,8 +98,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bonesense
   range: null

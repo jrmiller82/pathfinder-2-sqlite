@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Anadi Venom
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -72,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spin Silk
   range: null
@@ -109,10 +103,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 12
   traits:
   - agile
@@ -120,12 +113,11 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 2d6+3
+  - formula: 2d6+3
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: anadi venom
+  name: fangs
   to_hit: 12
   traits:
   - finesse

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gallop
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Undead Steed
   range: null
@@ -70,10 +66,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+5
+  - formula: 1d8+5
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 9
   traits: null
 name: Skeletal Horse

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ochre Acid
   range: null
@@ -64,8 +60,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Split
   range: null
@@ -108,14 +102,13 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
-  - formula: null
-    type: 2d4 acid
+  - formula: 2d4
+    type: acid
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 15
   traits: null
 name: Ochre Jelly
@@ -137,8 +130,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

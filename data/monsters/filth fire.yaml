@@ -24,8 +24,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Noxious Burst
   range: null
@@ -61,9 +59,9 @@ hp_misc: null
 immunities:
 - bleed
 - fire
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Ignan
 - can't speak any language
@@ -71,12 +69,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+3
+  - formula: 2d6+3
     type: bludgeoning
+  - formula: 1d6
+    type: persistent fire
   name: burning lash
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent fire
   to_hit: 13
   traits:
   - finesse
@@ -85,12 +82,11 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: bludgeoning
+  - formula: 1d6
+    type: persistent fire
   name: ember ball
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent fire
   to_hit: 13
   traits:
   - fire
@@ -111,8 +107,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Destructive Frenzy
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: Tarrasque uses Swallow Whole.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fast Swallow
   range: null
@@ -48,7 +44,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: Tarrasque Grabs a creature with its jaws;
+  trigger: Tarrasque Grabs a creature with its jaws
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -58,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spine Volley
   range: null
@@ -79,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -101,8 +93,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -116,6 +106,130 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Tarrasque is immune to cones, lines, rays, and __magic missile__ spells.
+    These effects bounce harmlessly off its scales.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Carapace
+  range: null
+  raw_description: '**Carapace** Tarrasque is immune to cones, lines, rays, and __magic
+    missile__ spells. These effects bounce harmlessly off its scales.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: null
+  failure: The creature is __frightened 2__.
+  frequency: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: 300 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
+
+
+    **Critical Success** The creature is unaffected by the presence.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: DC 39
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Tarrasque recovers from the __slowed__ and __stunned__ conditions at
+    the end of its turn. It's also immune to penalties to its Speeds, and it ignores
+    difficult terrain and greater difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Inexorable
+  range: null
+  raw_description: '**Inexorable** Tarrasque recovers from the __slowed__ and __stunned__
+    conditions at the end of its turn. It''s also immune to penalties to its Speeds,
+    and it ignores difficult terrain and greater difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Tarrasque gains 3 reactions each round. It can still use only one reaction
+    per trigger.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Reactive
+  range: null
+  raw_description: '**Reactive** Tarrasque gains 3 reactions each round. It can still
+    use only one reaction per trigger.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -123,33 +237,11 @@ automatic_abilities:
   effect: The effect is redirected back at its source.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Carapace
+  name: Reflect
   range: null
-  raw_description: '**Carapace** Tarrasque is immune to cones, lines, rays, and __magic
-    missile__ spells. These effects bounce harmlessly off its scales.
-
-
-    **Frightful Presence** (__aura__, __emotion__, __fear__, __mental__) 300 feet,
-    DC 39
-
-
-    **Inexorable** Tarrasque recovers from the __slowed__ and __stunned__ conditions
-    at the end of its turn. It''s also immune to penalties to its Speeds, and it ignores
-    difficult terrain and greater difficult terrain.
-
-
-    **Reactive** Tarrasque gains 3 reactions each round. It can still use only one
-    reaction per trigger.
-
-
-    **Attack of Opportunity** [Reaction]
-
-
-    **Reflect**  **Trigger** Tarrasque''s carapace deflects an effect. **Effect**
-    The effect is redirected back at its source.'
+  raw_description: '**Reflect** [Reaction] **Trigger** Tarrasque''s carapace deflects
+    an effect. **Effect** The effect is redirected back at its source.'
   requirements: null
   saving_throw: null
   stages: null
@@ -187,12 +279,11 @@ level: 25
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d12+20
+  - formula: 5d12+20
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 45
   traits:
   - chaotic
@@ -201,10 +292,9 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 5d10+20
+  - formula: 5d10+20
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 45
   traits:
   - agile
@@ -214,10 +304,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d12+20
+  - formula: 4d12+20
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 45
   traits:
   - chaotic
@@ -226,10 +315,9 @@ melee_attacks:
   - reach 30 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+20
+  - formula: 4d10+20
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 45
   traits:
   - chaotic
@@ -241,10 +329,9 @@ perception: 48
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+20
+  - formula: 3d10+20
     type: piercing
   name: spine
-  plus_damage: null
   to_hit: 45
   traits:
   - brutal

@@ -11,16 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 18 Fortitude; **Onset** 1d4 days; **Stage 1**
-    __enfeebled 1__ and __sickened 1__ (1 day); **Stage 2** as stage 1 (1 day); **Stage
-    3** __drained 1__, enfeebled 2, and sickened 2 (1 day); **Stage 4** as stage 3
-    (1 day); **Stage 5** drained 2 plus __unconscious__ (no Perception check to wake
-    up) (1 day); **Stage 6** dead, and the body erupts to release a new slime mold'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slime Rot
   range: null
@@ -31,8 +25,14 @@ active_abilities:
     (no Perception check to wake up) (1 day); **Stage 6** dead, and the body erupts
     to release a new slime mold'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 18 Fortitude; **Onset** 1d4 days
+  stages:
+  - effect: __enfeebled 1__ and __sickened 1__ (1 day)
+  - effect: as stage 1 (1 day)
+  - effect: __drained 1__, enfeebled 2, and sickened 2 (1 day)
+  - effect: as stage 3 (1 day)
+  - effect: drained 2 plus __unconscious__ (no Perception check to wake up) (1 day)
+  - effect: dead, and the body erupts to release a new slime mold
   success: null
   traits:
   - disease
@@ -62,20 +62,19 @@ hp: 60
 hp_misc: null
 immunities:
 - critical hits
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 - precision
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __unconscious__
+- __visual__
 level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
   - formula: null
     type: slime rot
+  name: pseudopod
   to_hit: 8
   traits: null
 name: Slime Mold
@@ -98,8 +97,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

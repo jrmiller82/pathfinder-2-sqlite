@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Forge Breath
   range: null
@@ -51,8 +49,6 @@ active_abilities:
     it to use Forge Breath again.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inflate Bellows
   range: null
@@ -76,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Chain
   range: null
@@ -101,30 +95,18 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'As long as its soul chain remains intact, a forge-spurned can''t be
+  description: As long as its soul chain remains intact, a forge-spurned can't be
     truly destroyed. It rises again fully healed at the next sundown, even if its
     physical body was destroyed.
-
-
-    **Searing Heat** (__fire__) A creature that touches a forge-spurned (including
-    by Grappling it or hitting it with an unarmed attack) takes 2d6 fire damage with
-    a DC 21 basic Reflex save.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eternal Damnation
   range: null
   raw_description: '**Eternal Damnation** (__divine__, __necromancy__) As long as
     its soul chain remains intact, a forge-spurned can''t be truly destroyed. It rises
-    again fully healed at the next sundown, even if its physical body was destroyed.
-
-
-    **Searing Heat** (__fire__) A creature that touches a forge-spurned (including
-    by Grappling it or hitting it with an unarmed attack) takes 2d6 fire damage with
-    a DC 21 basic Reflex save.'
+    again fully healed at the next sundown, even if its physical body was destroyed.'
   requirements: null
   saving_throw: null
   stages: null
@@ -132,6 +114,28 @@ automatic_abilities:
   traits:
   - divine
   - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that touches a forge-spurned (including by Grappling it
+    or hitting it with an unarmed attack) takes 2d6 fire damage with a DC 21 basic
+    Reflex save.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Searing Heat
+  range: null
+  raw_description: '**Searing Heat** (__fire__) A creature that touches a forge-spurned
+    (including by Grappling it or hitting it with an unarmed attack) takes 2d6 fire
+    damage with a DC 21 basic Reflex save.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fire
   trigger: null
 description: 'Evil dwarves who die having failed to live up to the exacting standards
   of the duergar god Droskar are sometimes forced to return to the material world
@@ -161,22 +165,20 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: slashing
+  - formula: 1d6
+    type: fire
   name: soul chain
-  plus_damage:
-  - formula: null
-    type: 1d6 fire
   to_hit: 15
   traits:
   - disarm
   - trip
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: bludgeoning
   name: warhammer
-  plus_damage: null
   to_hit: 14
   traits:
   - shove

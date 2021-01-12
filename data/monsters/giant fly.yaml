@@ -12,15 +12,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: A giant fly could carry any disease, but most transmit a virulent but
-    not fatal infection called Fly Pox with their bite; **Saving Throw** DC 16 Fortitude;
-    **Onset** 1 day; **Stage 1** __enfeebled 1__ (1 day); **Stage 2** as stage 1 (1
-    day); **Stage 3** enfeebled 2 (1 day); **Stage 4** as stage 3; **Stage 5** enfeebled
-    2 and __fatigued__ (1 day)
+    not fatal infection called Fly Pox with their bite
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fly Pox
   range: null
@@ -31,8 +26,13 @@ active_abilities:
     2 (1 day); **Stage 4** as stage 3; **Stage 5** enfeebled 2 and __fatigued__ (1
     day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 16 Fortitude; **Onset** 1 day
+  stages:
+  - effect: __enfeebled 1__ (1 day)
+  - effect: as stage 1 (1 day)
+  - effect: enfeebled 2 (1 day)
+  - effect: as stage 3
+  - effect: enfeebled 2 and __fatigued__ (1 day)
   success: null
   traits:
   - disease
@@ -48,8 +48,6 @@ automatic_abilities:
     If the attack misses, the giant insect can Fly up to its fly Speed.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Avoid the Swat
   range: null
@@ -63,7 +61,7 @@ automatic_abilities:
   success: null
   traits: null
   trigger: The giant fly is targeted with a melee or ranged attack by an attacker
-    it can see;
+    it can see
 description: 'This pony-sized fly''s twitching limbs seem to never stop moving as
   it constantly cleans itself and scoops anything edible into its mouthparts. While
   primarily carrion eaters, giant flies sometimes prey on livestock or other animals
@@ -79,12 +77,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
-  name: mandibles
-  plus_damage:
   - formula: null
     type: fly pox
+  name: mandibles
   to_hit: 8
   traits: null
 name: Giant Fly

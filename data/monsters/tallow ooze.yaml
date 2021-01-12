@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Residual Grease
   range: null
@@ -76,8 +72,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Congealed
   range: null
@@ -101,8 +95,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greasy Seepage
   range: 10 feet
@@ -149,12 +141,11 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
   - formula: null
     type: residual grease
+  name: pseudopod
   to_hit: 23
   traits: null
 name: Tallow Ooze
@@ -180,8 +171,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

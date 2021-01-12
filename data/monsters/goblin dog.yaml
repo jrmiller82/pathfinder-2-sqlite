@@ -11,15 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Goblins and goblin dogs are immune to goblin pox. **Saving Throw**
-    DC 17 Fortitude; **Stage 1** __sickened__ 1 (1 round); **Stage 2** sickened 1
-    and __slowed__ 1 (1 round); **Stage 3** sickened 2 and can't reduce its sickened
-    value below 1 (1 day).
+  description: Goblins and goblin dogs are immune to goblin pox.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Goblin Pox
   range: null
@@ -28,8 +23,11 @@ active_abilities:
     round); **Stage 2** sickened 1 and __slowed__ 1 (1 round); **Stage 3** sickened
     2 and can''t reduce its sickened value below 1 (1 day).'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 17 Fortitude
+  stages:
+  - effect: __sickened__ 1 (1 round)
+  - effect: sickened 1 and __slowed__ 1 (1 round)
+  - effect: sickened 2 and can't reduce its sickened value below 1 (1 day).
   success: null
   traits:
   - disease
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Scratch
   range: null
@@ -61,25 +57,53 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
+  description: DC 17
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Buck
+  range: null
+  raw_description: '**Buck** [Reaction] DC 17'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A creature that hits the goblin dog with an unarmed attack, tries to
+    Grapple it, or otherwise touches it is exposed to goblin pox.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Irritating Dander
+  range: null
+  raw_description: '**Irritating Dander** A creature that hits the goblin dog with
+    an unarmed attack, tries to Grapple it, or otherwise touches it is exposed to
+    goblin pox.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
   description: '**Requirement** A creature must be mounted on the goblin dog.'
   effect: The goblin dog Steps before following the command.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Buck
+  name: Juke
   range: null
-  raw_description: '**Buck** [Reaction] DC 17
-
-
-    **Irritating Dander** A creature that hits the goblin dog with an unarmed attack,
-    tries to Grapple it, or otherwise touches it is exposed to goblin pox.
-
-
-    **Juke**  **Requirement** A creature must be mounted on the goblin dog. **Trigger**
-    The rider issues a command to the goblin dog. **Effect** The goblin dog Steps
-    before following the command.'
+  raw_description: '**Juke** [Reaction] **Requirement** A creature must be mounted
+    on the goblin dog. **Trigger** The rider issues a command to the goblin dog. **Effect**
+    The goblin dog Steps before following the command.'
   requirements: null
   saving_throw: null
   stages: null
@@ -136,12 +160,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: goblin pox
+  name: jaws
   to_hit: 9
   traits: null
 name: Goblin Dog

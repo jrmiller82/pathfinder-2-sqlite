@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Corpse Throwing
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wide Swing
   range: null
@@ -79,10 +75,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: bludgeoning
   name: hunk of meat
-  plus_damage: null
   to_hit: 17
   traits:
   - reach 15 feet
@@ -91,19 +86,17 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: bludgeoning
   name: hunk of meat
-  plus_damage: null
   to_hit: 9
   traits:
   - thrown 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: bludgeoning
   name: corpse
-  plus_damage: null
   to_hit: 17
   traits:
   - brutal
@@ -124,8 +117,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slow
   range: null

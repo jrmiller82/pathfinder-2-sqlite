@@ -18,8 +18,6 @@ active_abilities:
     again benefit from that particular nixie's Grant Desire ability.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grant Desire
   range: null
@@ -91,10 +89,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 slashing
+  - formula: 1d6
+    type: slashing
   name: claw
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
@@ -119,8 +116,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wild Empathy
   range: null

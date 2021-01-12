@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grievous Strike
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -68,8 +64,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mercy Vulnerability
   range: null
@@ -85,109 +79,41 @@ automatic_abilities:
   traits: null
   trigger: null
 - action_cost: Reaction
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, except the weapon used to Strike the babau becomes
+    __broken__, unless the weapon is made of a material that is immune to acid.
+  critical_success: The attacker is unaffected.
   description: null
   effect: The babau excretes a gout of acidic, bloodlike slime against the attacker
     and its weapon. The attacker must attempt a DC 24 Reflex save.
-  failure: null
+  failure: The attacker takes 2d6 acid damage.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reactive Slime
   range: null
   raw_description: '**Reactive Slime [Reaction]** **Trigger **A creature within the
     babau''s reach successfully hits the babau with a Strike; **Effect **The babau
     excretes a gout of acidic, bloodlike slime against the attacker and its weapon.
-    The attacker must attempt a DC 24 Reflex save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: A creature within the babau's reach successfully hits the babau with a
-    Strike;
-- action_cost: None
-  critical_failure: null
-  critical_success: The attacker is unaffected.
-  description: The attacker is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The attacker is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The attacker takes 1d6 acid damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The attacker takes 1d6 acid damage.'
+    The attacker must attempt a DC 24 Reflex save.
+
+
+    **Critical Success **The attacker is unaffected.
+
+
+    **Success **The attacker takes 1d6 acid damage.
+
+
+    **Failure **The attacker takes 2d6 acid damage.
+
+
+    **Critical Failure **As failure, except the weapon used to Strike the babau becomes
+    __broken__, unless the weapon is made of a material that is immune to acid.'
   requirements: null
   saving_throw: null
   stages: null
   success: The attacker takes 1d6 acid damage.
   traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The attacker takes 2d6 acid damage.
-  effect: null
-  failure: The attacker takes 2d6 acid damage.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The attacker takes 2d6 acid damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, except the weapon used to Strike the babau becomes
-    __broken__, unless the weapon is made of a material that is immune to acid.
-  critical_success: null
-  description: As failure, except the weapon used to Strike the babau becomes __broken__,
-    unless the weapon is made of a material that is immune to acid.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, except the weapon used to Strike
-    the babau becomes __broken__, unless the weapon is made of a material that is
-    immune to acid.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
+  trigger: A creature within the babau's reach successfully hits the babau with a
+    Strike
 description: 'The babau is an assassin, a murderer, and a sadist—certainly not unusual
   traits, yet their penchant for stealth and surprise sets them apart from their kin.
   Babaus form from mortal souls of lone killers—those who took pleasure in more personal
@@ -210,12 +136,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: piercing
+  - formula: 1d6
+    type: evil
   name: longspear
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 17
   traits:
   - evil
@@ -223,24 +148,22 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+7
+  - formula: 1d10+7
     type: piercing
+  - formula: 1d6
+    type: evil
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 16
   traits:
   - evil
   - magical
 - action_cost: One Action
   damage:
-    formula: 1d4+7
+  - formula: 1d4+7
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 16
   traits:
   - agile

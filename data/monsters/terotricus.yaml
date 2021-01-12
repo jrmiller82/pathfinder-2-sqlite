@@ -18,9 +18,8 @@ active_abilities:
     and slimy mushrooms, removing any cover and concealment provided by trees and
     undergrowth. The terotricus is healed 200 Hit Points.
   failure: null
-  frequency: once per day. Requirement The terotricus is in a swamp or forested area.
-  full_description: null
-  generic_description: null
+  frequency: once per day. **Requirement** The terotricus is in a swamp or forested
+    area.
   maximum_duration: null
   name: Infest Environs
   range: null
@@ -43,14 +42,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Plants and fungi are immune. **Saving Throw** Fortitude DC 40; **Stage
-    1** enfeebled 2 (1 day); **Stage 2** enfeebled 4 and slowed 1 (1 day); **Stage
-    3** controlled by the terotricus (as dominate; 5d8 days); **Stage 4** dead.
+  description: Plants and fungi are immune.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spore Blight
   range: null
@@ -59,8 +54,12 @@ active_abilities:
     4 and slowed 1 (1 day); **Stage 3** controlled by the terotricus (as dominate;
     5d8 days); **Stage 4** dead.'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: Fortitude DC 40
+  stages:
+  - effect: enfeebled 2 (1 day)
+  - effect: enfeebled 4 and slowed 1 (1 day)
+  - effect: controlled by the terotricus (as dominate; 5d8 days)
+  - effect: dead.
   success: null
   traits:
   - disease
@@ -74,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sticky Spores
   range: null
@@ -94,13 +91,11 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: ; 30 feet. A creature entering the aura or starting its turn there
-    is exposed to spore blight.
+  description: 30 feet. A creature entering the aura or starting its turn there is
+    exposed to spore blight.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spore Cloud
   range: null
@@ -159,16 +154,15 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+16
+  - formula: 4d10+16
     type: bludgeoning
-  name: tentacle
-  plus_damage:
-  - formula: null
-    type: 2d6 chaotic
-  - formula: null
-    type: 2d6 evil
+  - formula: 2d6
+    type: chaotic
+  - formula: 2d6
+    type: evil
   - formula: null
     type: Improved Grab or Improved Push 20 feet (40 feet on a critical hit)
+  name: tentacle
   to_hit: 37
   traits:
   - chaotic
@@ -180,18 +174,17 @@ perception: 31
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+6
+  - formula: 4d8+6
     type: poison
-  name: spores
-  plus_damage:
-  - formula: null
-    type: 2d6 chaotic
-  - formula: null
-    type: 2d6 evil
+  - formula: 2d6
+    type: chaotic
+  - formula: 2d6
+    type: evil
   - formula: null
     type: spore blight
   - formula: null
     type: sticky spores
+  name: spores
   to_hit: 37
   traits:
   - chaotic

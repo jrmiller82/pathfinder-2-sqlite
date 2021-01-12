@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Boneshaking Roar
   range: null
@@ -46,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stunning Blow
   range: null
@@ -74,8 +70,6 @@ automatic_abilities:
     takes 6d6 bludgeoning damage.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Raptor Jaw Disarm
   range: null
@@ -91,7 +85,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature makes a melee Strike against the worldwatcher but misses;
+  trigger: A creature makes a melee Strike against the worldwatcher but misses
 description: 'The longest-lived saurians favor introspection and take the long view
   of things—though this thoughtfulness should not be mistaken for weakness. Other
   saurians defer to worldwatchers'' experience.
@@ -114,12 +108,11 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+19
+  - formula: 3d8+19
     type: slashing
-  name: naginata
-  plus_damage:
   - formula: null
     type: stunning blow
+  name: naginata
   to_hit: 35
   traits:
   - deadly d8
@@ -128,10 +121,9 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 33
   traits:
   - deadly d12
@@ -139,12 +131,11 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+19
+  - formula: 4d10+19
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: stunning blow
+  name: fist
   to_hit: 35
   traits:
   - agile
@@ -153,10 +144,9 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d6+19
+  - formula: 3d6+19
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 35
   traits:
   - agile
@@ -169,10 +159,9 @@ perception: 34
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+19
+  - formula: 1d6+19
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 35
   traits:
   - thrown 30 feet

@@ -9,80 +9,12 @@ ac: 27
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the creature increases the amount of drain by
+    2.
+  critical_success: The creature is unaffected and the nabasu suffers starvation vulnerability.
   description: The nabasu focuses their death-stealing gaze upon a single target they
     can see within 30 feet. The target must immediately attempt a Fortitude save against
     death-stealing gaze.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Consume Death
-  range: null
-  raw_description: '**Consume Death** [One Action]  (__concentrate__, __divine__,
-    __necromancy__, __visual__) The nabasu focuses their death-stealing gaze upon
-    a single target they can see within 30 feet. The target must immediately attempt
-    a Fortitude save against death-stealing gaze.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - concentrate
-  - divine
-  - necromancy
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and the nabasu suffers starvation vulnerability.
-  description: The creature is unaffected and the nabasu suffers starvation vulnerability.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected and the nabasu
-    suffers starvation vulnerability.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is affected by death-stealing gaze and becomes __drained
-    1__. If the creature was already drained 1 by the death-stealing gaze before attempting
-    the save, a failed save increases the value of the drained condition by 1, to
-    a maximum of drained 4. The nabasu gains 10 temporary Hit Points, and the drained
-    creature is temporarily immune until the start of the nabasu's next turn.
   effect: null
   failure: The creature is affected by death-stealing gaze and becomes __drained 1__.
     If the creature was already drained 1 by the death-stealing gaze before attempting
@@ -90,43 +22,40 @@ active_abilities:
     a maximum of drained 4. The nabasu gains 10 temporary Hit Points, and the drained
     creature is temporarily immune until the start of the nabasu's next turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Failure
+  name: Consume Death
   range: null
-  raw_description: '**Failure **The creature is affected by death-stealing gaze and
-    becomes __drained 1__. If the creature was already drained 1 by the death-stealing
-    gaze before attempting the save, a failed save increases the value of the drained
-    condition by 1, to a maximum of drained 4. The nabasu gains 10 temporary Hit Points,
-    and the drained creature is temporarily immune until the start of the nabasu''s
-    next turn.'
+  raw_description: '**Consume Death** [One Action]  (__concentrate__, __divine__,
+    __necromancy__, __visual__) The nabasu focuses their death-stealing gaze upon
+    a single target they can see within 30 feet. The target must immediately attempt
+    a Fortitude save against death-stealing gaze.
+
+
+    **Critical Success **The creature is unaffected and the nabasu suffers starvation
+    vulnerability.
+
+
+    **Success **The creature is unaffected.
+
+
+    **Failure **The creature is affected by death-stealing gaze and becomes __drained
+    1__. If the creature was already drained 1 by the death-stealing gaze before attempting
+    the save, a failed save increases the value of the drained condition by 1, to
+    a maximum of drained 4. The nabasu gains 10 temporary Hit Points, and the drained
+    creature is temporarily immune until the start of the nabasu''s next turn.
+
+
+    **Critical Failure **As failure, but the creature increases the amount of drain
+    by 2.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the creature increases the amount of drain by
-    2.
-  critical_success: null
-  description: As failure, but the creature increases the amount of drain by 2.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, but the creature increases the
-    amount of drain by 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  success: The creature is unaffected.
+  traits:
+  - concentrate
+  - divine
+  - necromancy
+  - visual
   trigger: null
 - action_cost: None
   critical_failure: null
@@ -136,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stolen Death
   range: null
@@ -159,8 +86,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death-Stealing Gaze
   range: 30 feet
@@ -187,8 +112,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Starvation Vulnerability
   range: null
@@ -232,24 +155,22 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+9
+  - formula: 2d12+9
     type: piercing
+  - formula: 1d6
+    type: evil
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 20
   traits:
   - evil
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 20
   traits:
   - agile

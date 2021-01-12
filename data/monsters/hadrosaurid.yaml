@@ -16,8 +16,6 @@ active_abilities:
     Speed during these Strides.
   failure: null
   frequency: once per minute
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sprint
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -86,19 +82,17 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 14
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d4+8
+  - formula: 2d4+8
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 12
   traits:
   - reach 15 feet

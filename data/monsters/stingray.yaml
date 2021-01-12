@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Stingray Venom
   range: null
@@ -50,12 +48,11 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
-  name: sting
-  plus_damage:
   - formula: null
     type: stingray venom
+  name: sting
   to_hit: 7
   traits:
   - agile
@@ -81,8 +78,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Electrolocation
   range: null

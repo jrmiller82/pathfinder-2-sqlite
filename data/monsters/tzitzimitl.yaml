@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -44,8 +42,6 @@ active_abilities:
     each creature within the spell's area must attempt a DC 41 Fortitude save.
   failure: The creature takes 16d8 cold damage and is __slowed 1__ for 1 minute.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eclipse
   range: null
@@ -66,7 +62,7 @@ active_abilities:
 
     **Critical Failure** The creature takes 16d8 cold damage, is __slowed 2__ for
     1 minute, and is __doomed 1__.'
-  requirements: The tzitzimitl is within 120 feet of an active darkness spell
+  requirements: The tzitzimitl is within 120 feet of an active __darkness__ spell
   saving_throw: null
   stages: null
   success: The creature takes 8d8 cold damage and is __slowed 1__ for 1 round.
@@ -86,8 +82,6 @@ automatic_abilities:
     energy.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light to Dark
   range: null
@@ -105,7 +99,7 @@ automatic_abilities:
   - divine
   - negative
   trigger: A creature uses an ability or spell with the positive trait within 120
-    feet of the tzitzimitl;
+    feet of the tzitzimitl
 description: 'Due to their affinity for darkness and apocalyptic terror, tzitzimitls
   are widely feared as harbingers of death and destruction. Some sages consider them
   to be instruments of the gods, called down to destroy worlds whose times have come,
@@ -137,14 +131,13 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 6d8+10
+  - formula: 6d8+10
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 3d8 electricity
+  - formula: 3d8
+    type: electricity
   - formula: null
     type: drain life
+  name: claw
   to_hit: 34
   traits:
   - agile
@@ -155,12 +148,11 @@ perception: 32
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 10d6 electricity
+  - formula: 10d6
+    type: electricity
+  - formula: 10d6
+    type: force
   name: eye beam
-  plus_damage:
-  - formula: null
-    type: 10d6 force
   to_hit: 34
   traits:
   - range 100 feet

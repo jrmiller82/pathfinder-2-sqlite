@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Staccato Strike
   range: null
@@ -50,8 +48,6 @@ active_abilities:
   effect: null
   failure: The target is __confused__ for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Warbling Song
   range: null
@@ -86,8 +82,6 @@ automatic_abilities:
     does not trigger reactions.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hop-Dodge
   range: null
@@ -147,10 +141,9 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: piercing
   name: beak
-  plus_damage: null
   to_hit: 26
   traits:
   - agile
@@ -179,8 +172,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thoughtsense
   range: null

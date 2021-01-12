@@ -18,8 +18,6 @@ active_abilities:
     die of weapon damage.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Power Attack
   range: null
@@ -46,8 +44,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -74,8 +70,6 @@ automatic_abilities:
     each take any remaining damage, possibly breaking or destroying the shield.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shield Block
   range: null
@@ -135,10 +129,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: slashing
   name: bastard sword
-  plus_damage: null
   to_hit: 9
   traits:
   - two-hand d12
@@ -147,10 +140,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: light hammer
-  plus_damage: null
   to_hit: 6
   traits:
   - agile

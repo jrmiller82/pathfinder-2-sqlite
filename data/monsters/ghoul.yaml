@@ -16,8 +16,6 @@ active_abilities:
     regain Hit Points from any given corpse only once.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Consume Flesh
   range: null
@@ -36,16 +34,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** Fortitude DC 15; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** 2d6 negative damage and regains half as many Hit Points
-    from all healing (1 day); **Stage 3** as stage 2 (1 day); **Stage 4** 2d6 negative
-    damage and gains no benefit from healing (1 day); **Stage 5** as stage 4 (1 day);
-    **Stage 6** dead, and rises as a ghoul the next midnight.'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ghoul Fever
   range: null
@@ -56,8 +48,15 @@ active_abilities:
     day); **Stage 5** as stage 4 (1 day); **Stage 6** dead, and rises as a ghoul the
     next midnight.'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: Fortitude DC 15
+  stages:
+  - effect: carrier with no ill effect (1 day)
+  - effect: 2d6 negative damage and regains half as many Hit Points from all healing
+      (1 day)
+  - effect: as stage 2 (1 day)
+  - effect: 2d6 negative damage and gains no benefit from healing (1 day)
+  - effect: as stage 4 (1 day)
+  - effect: dead, and rises as a ghoul the next midnight.
   success: null
   traits:
   - disease
@@ -72,8 +71,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Paralysis
   range: null
@@ -98,8 +95,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swift Leap
   range: null
@@ -135,25 +130,23 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: ghoul fever
   - formula: null
     type: paralysis
+  name: jaws
   to_hit: 9
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: paralysis
+  name: claw
   to_hit: 9
   traits:
   - agile

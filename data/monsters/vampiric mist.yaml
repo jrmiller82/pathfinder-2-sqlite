@@ -9,7 +9,10 @@ ac: 18
 ac_special: null
 active_abilities:
 - action_cost: None
-  critical_failure: null
+  critical_failure: The creature is drained 2. The vampiric mist gains 10 temporary
+    Hit Points and takes on an intense red until the end of its next turn. During
+    this time, it gains a +2 status bonus to AC and saves and is __quickened__. It
+    can use its extra action only to Strike.
   critical_success: null
   description: When a vampiric mist damages a creature with a misty tendril Strike,
     the creature must attempt a DC 20 Fortitude save. If the Strike was a critical
@@ -17,10 +20,9 @@ active_abilities:
     the saving throw. Any temporary Hit Points the vampiric mist gains from Blood
     Siphon fade after 1 hour.
   effect: null
-  failure: null
+  failure: The creature is __drained 1__, and the vampiric mist gains 5 temporary
+    Hit Points.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Siphon
   range: null
@@ -28,80 +30,24 @@ active_abilities:
     a misty tendril Strike, the creature must attempt a DC 20 Fortitude save. If the
     Strike was a critical hit, the outcome of the creature''s save is one degree worse
     than the result of the saving throw. Any temporary Hit Points the vampiric mist
-    gains from Blood Siphon fade after 1 hour.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
+    gains from Blood Siphon fade after 1 hour.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __drained 1__, and the vampiric mist gains 5 temporary
+    Hit Points.
+
+
+    **Critical Failure** The creature is drained 2. The vampiric mist gains 10 temporary
+    Hit Points and takes on an intense red until the end of its next turn. During
+    this time, it gains a +2 status bonus to AC and saves and is __quickened__. It
+    can use its extra action only to Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __drained 1__, and the vampiric mist gains 5 temporary
-    Hit Points.
-  effect: null
-  failure: The creature is __drained 1__, and the vampiric mist gains 5 temporary
-    Hit Points.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __drained 1__, and the vampiric mist
-    gains 5 temporary Hit Points.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is drained 2. The vampiric mist gains 10 temporary
-    Hit Points and takes on an intense red until the end of its next turn. During
-    this time, it gains a +2 status bonus to AC and saves and is __quickened__. It
-    can use its extra action only to Strike.
-  critical_success: null
-  description: The creature is drained 2. The vampiric mist gains 10 temporary Hit
-    Points and takes on an intense red until the end of its next turn. During this
-    time, it gains a +2 status bonus to AC and saves and is __quickened__. It can
-    use its extra action only to Strike.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is drained 2. The vampiric mist
-    gains 10 temporary Hit Points and takes on an intense red until the end of its
-    next turn. During this time, it gains a +2 status bonus to AC and saves and is
-    __quickened__. It can use its extra action only to Strike.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 alignment: NE
@@ -144,14 +90,13 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d6 slashing damage
-  name: misty tendril
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent bleed damage
+  - formula: 2d6
+    type: slashing damage
+  - formula: 1d6
+    type: persistent bleed damage
   - formula: null
     type: blood siphon
+  name: misty tendril
   to_hit: 10
   traits:
   - agile
@@ -183,8 +128,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Misty Form
   range: null
@@ -208,8 +151,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sense Blood
   range: null

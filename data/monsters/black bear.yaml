@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mauler
   range: null
@@ -49,20 +47,18 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+5
+  - formula: 1d8+5
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 9
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+5
+  - formula: 1d6+5
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 9
   traits:
   - agile

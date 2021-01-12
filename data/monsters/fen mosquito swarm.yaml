@@ -12,14 +12,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: The victim can't reduce its __sickened__ condition while it's affected
-    by pyrexic malaria; **Saving Throw** DC 20 Fortitude; **Onset** 4 days; **Stage
-    1** sickened 1 (1 day); **Stage 2** __enfeebled 1__ and sickened 1 (1 day); **Stage
-    3** as stage 2 (1 day); Stage 4 __unconscious__ (1 day); Stage 5 dead
+    by pyrexic malaria
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pyrexic Malaria
   range: null
@@ -29,8 +25,11 @@ active_abilities:
     __enfeebled 1__ and sickened 1 (1 day); **Stage 3** as stage 2 (1 day); Stage
     4 __unconscious__ (1 day); Stage 5 dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 20 Fortitude; **Onset** 4 days
+  stages:
+  - effect: sickened 1 (1 day)
+  - effect: __enfeebled 1__ and sickened 1 (1 day)
+  - effect: as stage 2 (1 day); Stage 4 __unconscious__ (1 day); Stage 5 dead
   success: null
   traits:
   - disease
@@ -44,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Bites
   range: null
@@ -75,7 +72,7 @@ hp: 25
 hp_misc: null
 immunities:
 - precision
-- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+- __swarm mind__
 level: 3
 melee_attacks: null
 name: Fen Mosquito Swarm

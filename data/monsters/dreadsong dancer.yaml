@@ -9,124 +9,53 @@ ac: 27
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the creature can't reduce its frightened condition
+    below 2 for 1 minute. In addition, the dreadsong dancer is affected by its performance
+    anxiety.
+  critical_success: No effect, and the creature is temporarily immune for 24 hours.
+    The dreadsong dancer is affected by their performance anxiety.
   description: The dreadsong dancer whirls their howling songblades and cloaks themself
     in illusion magic. Each non-fiend creature in a 30-foot emanation from the dreadsong
     dancer must attempt a DC 29 Will save.
   effect: null
-  failure: null
+  failure: The creature is frightened 2, and the dreadsong dancer is __undetected__
+    by the creature for 1 minute. The creature can't use __Seek__ to find the dreadsong
+    dancer.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dreadsong
   range: null
   raw_description: '**Dreadsong** [Two Actions]  (__auditory__, __concentrate__, __fear__,
     __illusion__, __mental__) The dreadsong dancer whirls their howling songblades
     and cloaks themself in illusion magic. Each non-fiend creature in a 30-foot emanation
-    from the dreadsong dancer must attempt a DC 29 Will save.'
+    from the dreadsong dancer must attempt a DC 29 Will save.
+
+
+    **Critical Success** No effect, and the creature is temporarily immune for 24
+    hours. The dreadsong dancer is affected by their performance anxiety.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is frightened 2, and the dreadsong dancer is __undetected__
+    by the creature for 1 minute. The creature can''t use __Seek__ to find the dreadsong
+    dancer.
+
+
+    **Critical Failure** As failure, but the creature can''t reduce its frightened
+    condition below 2 for 1 minute. In addition, the dreadsong dancer is affected
+    by its performance anxiety.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __frightened 1__.
   traits:
   - auditory
   - concentrate
   - fear
   - illusion
   - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: No effect, and the creature is temporarily immune for 24 hours.
-    The dreadsong dancer is affected by their performance anxiety.
-  description: No effect, and the creature is temporarily immune for 24 hours. The
-    dreadsong dancer is affected by their performance anxiety.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** No effect, and the creature is temporarily
-    immune for 24 hours. The dreadsong dancer is affected by their performance anxiety.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __frightened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __frightened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __frightened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is frightened 2, and the dreadsong dancer is __undetected__
-    by the creature for 1 minute. The creature can't use __Seek__ to find the dreadsong
-    dancer.
-  effect: null
-  failure: The creature is frightened 2, and the dreadsong dancer is __undetected__
-    by the creature for 1 minute. The creature can't use __Seek__ to find the dreadsong
-    dancer.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is frightened 2, and the dreadsong dancer
-    is __undetected__ by the creature for 1 minute. The creature can''t use __Seek__
-    to find the dreadsong dancer.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the creature can't reduce its frightened condition
-    below 2 for 1 minute. In addition, the dreadsong dancer is affected by its performance
-    anxiety.
-  critical_success: null
-  description: As failure, but the creature can't reduce its frightened condition
-    below 2 for 1 minute. In addition, the dreadsong dancer is affected by its performance
-    anxiety.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but the creature can''t reduce
-    its frightened condition below 2 for 1 minute. In addition, the dreadsong dancer
-    is affected by its performance anxiety.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -135,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -160,8 +87,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Performance Anxiety
   range: null
@@ -185,8 +110,6 @@ automatic_abilities:
     against the triggering creature. If the Strike hits, the spell is disrupted.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jealous Musician
   range: null
@@ -200,8 +123,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature plays an instrument while Casting a Spell or casts a composition
-    spell within 20 feet of the dreadsong dancer;
+  trigger: A creature plays an instrument while Casting a Spell or casts a __composition__
+    spell within 20 feet of the dreadsong dancer
 description: 'Dreadsong dancers are shaped from the souls of bards, dancers, and musicians
   who pledged themselves to __Hell__ in exchange for enhanced artistic ability. Fiendish
   flesh-sculptors twist these forfeited souls so they cannot perform the art that
@@ -218,8 +141,8 @@ description: 'Dreadsong dancers are shaped from the souls of bards, dancers, and
 hp: 160
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __disease__
+- __poison__
 languages:
 - Common
 - Infernal
@@ -228,20 +151,18 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 18
   traits:
   - agile
   - finesse
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: slashing
   name: songblade
-  plus_damage: null
   to_hit: 20
   traits:
   - agile

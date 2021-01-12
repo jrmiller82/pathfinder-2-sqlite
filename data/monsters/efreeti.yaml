@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Burning Grasp
   range: null
@@ -41,8 +39,6 @@ active_abilities:
     negates).
   failure: null
   frequency: Once per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Size
   range: null
@@ -68,8 +64,6 @@ active_abilities:
     hits, the target is grabbed in the efreeti's free hand.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Combat Grab
   range: null
@@ -115,12 +109,11 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+11
+  - formula: 2d6+11
     type: slashing
+  - formula: 2d6
+    type: fire
   name: scimitar
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
   to_hit: 21
   traits:
   - fire
@@ -130,12 +123,11 @@ melee_attacks:
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+11
+  - formula: 1d4+11
     type: bludgeoning
+  - formula: 2d6
+    type: fire
   name: fist
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
   to_hit: 20
   traits:
   - agile

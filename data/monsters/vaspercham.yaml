@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hallucinatory Brine
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mindwarping Tide
   range: null
@@ -70,8 +66,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whipping Tentacles
   range: null
@@ -88,126 +82,53 @@ active_abilities:
 alignment: CE
 automatic_abilities:
 - action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: A vaspercham's shell distorts nearby magic. Any creature in the aura
-    who Casts a Spell must attempt a DC 37 Will save.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Magic-Warping Aura
-  range: 30 feet
-  raw_description: '**Magic-Warping Aura** (__arcane__, __aura__, __transmutation__)
-    30 feet. A vaspercham''s shell distorts nearby magic. Any creature in the aura
-    who Casts a Spell must attempt a DC 37 Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - arcane
-  - aura
-  - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
+  critical_failure: The caster instead Casts another Spell, choosing randomly from
+    their spell repertoire, prepared spells, or available focus spells (as appropriate)
+    and selecting any targets at random.
   critical_success: The spell is unaffected and the caster is temporarily immune to
     the magic-warping aura for 1 minute.
-  description: The spell is unaffected and the caster is temporarily immune to the
-    magic-warping aura for 1 minute.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The spell is unaffected and the caster is
-    temporarily immune to the magic-warping aura for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The spell is unaffected, but if the spell allows a saving throw, the
-    vaspercham gains a +1 circumstance bonus to save against it.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The spell is unaffected, but if the spell allows a
-    saving throw, the vaspercham gains a +1 circumstance bonus to save against it.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The spell is unaffected, but if the spell allows a saving throw, the vaspercham
-    gains a +1 circumstance bonus to save against it.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: If the spell has a target and there are one or more viable targets
-    within its range, the spell's target changes, determined randomly by the GM. If
-    there is no other possible target within range or the spell has no target, the
-    spell is disrupted.
+  description: A vaspercham's shell distorts nearby magic. Any creature in the aura
+    who Casts a Spell must attempt a DC 37 Will save.
   effect: null
   failure: If the spell has a target and there are one or more viable targets within
     its range, the spell's target changes, determined randomly by the GM. If there
     is no other possible target within range or the spell has no target, the spell
     is disrupted.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** If the spell has a target and there are one or more
-    viable targets within its range, the spell''s target changes, determined randomly
-    by the GM. If there is no other possible target within range or the spell has
-    no target, the spell is disrupted.'
+  name: Magic-Warping Aura
+  range: 30 feet
+  raw_description: '**Magic-Warping Aura** (__arcane__, __aura__, __transmutation__)
+    30 feet. A vaspercham''s shell distorts nearby magic. Any creature in the aura
+    who Casts a Spell must attempt a DC 37 Will save.
+
+
+    **Critical Success** The spell is unaffected and the caster is temporarily immune
+    to the magic-warping aura for 1 minute.
+
+
+    **Success** The spell is unaffected, but if the spell allows a saving throw, the
+    vaspercham gains a +1 circumstance bonus to save against it.
+
+
+    **Failure** If the spell has a target and there are one or more viable targets
+    within its range, the spell''s target changes, determined randomly by the GM.
+    If there is no other possible target within range or the spell has no target,
+    the spell is disrupted.
+
+
+    **Critical Failure** The caster instead Casts another Spell, choosing randomly
+    from their spell repertoire, prepared spells, or available focus spells (as appropriate)
+    and selecting any targets at random.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The caster instead Casts another Spell, choosing randomly from
-    their spell repertoire, prepared spells, or available focus spells (as appropriate)
-    and selecting any targets at random.
-  critical_success: null
-  description: The caster instead Casts another Spell, choosing randomly from their
-    spell repertoire, prepared spells, or available focus spells (as appropriate)
-    and selecting any targets at random.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The caster instead Casts another Spell, choosing
-    randomly from their spell repertoire, prepared spells, or available focus spells
-    (as appropriate) and selecting any targets at random.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  success: The spell is unaffected, but if the spell allows a saving throw, the vaspercham
+    gains a +1 circumstance bonus to save against it.
+  traits:
+  - arcane
+  - aura
+  - transmutation
   trigger: null
 description: 'The darkly intelligent vaspercham, an aquatic horror who delights in
   violence and destruction, lurks in the shallows near shorelines. Once a vaspercham
@@ -231,12 +152,11 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: hallucinatory brine
+  name: tentacle
   to_hit: 33
   traits:
   - agile
@@ -247,12 +167,11 @@ perception: 30
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+16
+  - formula: 2d8+16
     type: bludgeoning
-  name: water blast
-  plus_damage:
   - formula: null
     type: hallucinatory brine
+  name: water blast
   to_hit: 33
   traits:
   - brutal

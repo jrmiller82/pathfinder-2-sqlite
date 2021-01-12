@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pall of Shadow
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadowcloak
   range: null
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -98,8 +92,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -124,8 +116,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -180,12 +170,11 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+18
+  - formula: 3d8+18
     type: slashing
-  name: spiked chain
-  plus_damage:
   - formula: null
     type: pall of shadow
+  name: spiked chain
   to_hit: 27
   traits:
   - disarm
@@ -193,12 +182,11 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 3d8+18
+  - formula: 3d8+18
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: pall of shadow
+  name: fist
   to_hit: 26
   traits:
   - agile
@@ -208,10 +196,9 @@ perception: 20
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+18
+  - formula: 2d8+18
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 26
   traits:
   - brutal

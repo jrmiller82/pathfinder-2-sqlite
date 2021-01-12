@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dead Tree
   range: null
@@ -40,8 +38,6 @@ active_abilities:
     it. The creature is __flat-footed__ against this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Woodland Ambush
   range: null
@@ -67,8 +63,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Axe Vulnerability
   range: null
@@ -87,8 +81,6 @@ automatic_abilities:
   effect: The scythe tree attempts to __Disarm__ the creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ripping Disarm
   range: null
@@ -101,7 +93,7 @@ automatic_abilities:
   success: null
   traits: null
   trigger: A creature rolls a critical failure on a melee weapon Strike against the
-    scythe tree;
+    scythe tree
 description: 'Malevolent, vicious, and cruel, scythe trees pose as normal trees near
   deep forest paths, where they wait to slaughter passersby. Instead of drawing sustenance
   from light and soil, scythe trees gorge themselves on the flesh, blood, and bone
@@ -147,10 +139,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: slashing
   name: scythe branch
-  plus_damage: null
   to_hit: 18
   traits:
   - backswing

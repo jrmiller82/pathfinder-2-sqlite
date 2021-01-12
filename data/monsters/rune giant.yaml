@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Command Giants
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Demand
   range: null
@@ -62,8 +58,6 @@ active_abilities:
     creature within a 10-foot emanation must attempt a DC 35 Fortitude save.
   failure: The creature is __blinded__ for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flashing Runes
   range: null
@@ -109,8 +103,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Invoke Rune
   range: null
@@ -145,8 +137,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -166,8 +156,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wide Swing
   range: null
@@ -185,7 +173,8 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: null
+  description: The rune giant gains an additional reaction at the beginning of each
+    of its turns that it can only use for an Attack of Opportunity.
   effect: You lash out at a foe that leaves an opening. Make a melee Strike against
     the triggering creature. If your attack is a critical hit and the trigger was
     a manipulate action, you disrupt that action. This Strike doesn't count toward
@@ -193,8 +182,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -212,6 +199,23 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Catch Rock
+  range: null
+  raw_description: '**Catch Rock** [Reaction]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 description: 'Magically crafted and bred by ancient wizards, rune giants are anathema
   to and tyrants among their own kind, who were given power to command and magically
   control other giants. The rune giants themselves served even more powerful masters—potent
@@ -252,10 +256,9 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+17
+  - formula: 3d12+17
     type: slashing
   name: greatsword
-  plus_damage: null
   to_hit: 33
   traits:
   - magical
@@ -263,20 +266,18 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 2d8+17
+  - formula: 2d8+17
     type: piercing
   name: longspear
-  plus_damage: null
   to_hit: 32
   traits:
   - magical
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+17
+  - formula: 3d8+17
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 31
   traits:
   - agile
@@ -286,10 +287,9 @@ perception: 28
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+17
+  - formula: 2d12+17
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 31
   traits:
   - brutal

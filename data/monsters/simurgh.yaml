@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Banishing Swipe
   range: null
@@ -41,8 +39,6 @@ active_abilities:
     is identical to __prismatic spray__ (DC 42).
   failure: null
   frequency: Once per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Radiant Feathers
   range: null
@@ -59,32 +55,62 @@ active_abilities:
   trigger: null
 alignment: NG
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: A creature that starts its turn in the aura must attempt a DC 37 Will
+    save or be affected by calm emotions. Creatures that successfully save are unaffected,
+    but must attempt another save each turn they start in the aura.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aura of Peace
-  range: null
+  range: 50 feet
   raw_description: '**Aura of Peace** (__divine__, __emotion__, __enchantment__, __incapacitation__,
     __mental__) 50 feet. A creature that starts its turn in the aura must attempt
     a DC 37 Will save or be affected by calm emotions. Creatures that successfully
     save are unaffected, but must attempt another save each turn they start in the
-    aura.
-
-
-    **Attack of Opportunity** [Reaction]'
+    aura.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - emotion
+  - enchantment
+  - incapacitation
+  - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Desert-dwelling people consider the sight of a simurgh a herald to a
   lifetime''s worth of luck, and those who are unfamiliar with the majestic beast
   might mistake it for the avatar of a deity. Beautiful, graceful, and truly gargantuan,
@@ -124,20 +150,18 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+12
+  - formula: 4d12+12
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 34
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+12
+  - formula: 4d8+12
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 34
   traits:
   - agile
@@ -145,12 +169,11 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+10
+  - formula: 4d8+10
     type: slashing
-  name: tail
-  plus_damage:
   - formula: null
     type: banishing swipe
+  name: tail
   to_hit: 34
   traits:
   - magical
@@ -160,10 +183,9 @@ perception: 32
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 10d6 fire
+  - formula: 10d6
+    type: fire
   name: glaring ray
-  plus_damage: null
   to_hit: 34
   traits:
   - magical

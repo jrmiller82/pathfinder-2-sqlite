@@ -13,14 +13,10 @@ active_abilities:
   critical_success: null
   description: This disease and any damage from it can't be healed until this curse
     is removed. A creature killed by mummy rot turns to dust and can't be resurrected
-    except by a 7th-level __resurrect__ ritual or similar magic. **Saving Throw**
-    DC 22 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
-    4d6 negative damage and __stupefied 1__ (1 day)
+    except by a 7th-level __resurrect__ ritual or similar magic.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mummy Rot
   range: null
@@ -31,8 +27,10 @@ active_abilities:
     DC 22 Fortitude; **Stage 1** carrier with no ill effect (1 minute); **Stage 2**
     4d6 negative damage and __stupefied 1__ (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 22 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1 minute)
+  - effect: 4d6 negative damage and __stupefied 1__ (1 day)
   success: null
   traits:
   - curse
@@ -54,8 +52,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Despair
   range: 30 feet
@@ -123,12 +119,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: mummy rot
+  name: fist
   to_hit: 16
   traits: null
 name: Mummy Guardian

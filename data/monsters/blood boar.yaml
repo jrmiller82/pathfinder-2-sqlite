@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Chase Down
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Squeal
   range: null
@@ -69,8 +65,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -121,10 +115,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 17
   traits: null
 name: Blood Boar
@@ -142,27 +135,36 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The blood boar can precisely sense bleeding creatures within 60 feet.
-
-
-    **Blood Quarry** On smelling a creature''s blood, the blood boar can designate
-    that creature as its quarry. The blood boar can smell its quarry from up to a
-    mile away. A blood boar can have only one quarry at a time.'
+  description: The blood boar can precisely sense bleeding creatures within 60 feet.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bloodsense
   range: null
   raw_description: '**Bloodsense** The blood boar can precisely sense bleeding creatures
-    within 60 feet.
-
-
-    **Blood Quarry** On smelling a creature''s blood, the blood boar can designate
-    that creature as its quarry. The blood boar can smell its quarry from up to a
-    mile away. A blood boar can have only one quarry at a time.'
+    within 60 feet.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: On smelling a creature's blood, the blood boar can designate that creature
+    as its quarry. The blood boar can smell its quarry from up to a mile away. A blood
+    boar can have only one quarry at a time.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Blood Quarry
+  range: null
+  raw_description: '**Blood Quarry** On smelling a creature''s blood, the blood boar
+    can designate that creature as its quarry. The blood boar can smell its quarry
+    from up to a mile away. A blood boar can have only one quarry at a time.'
   requirements: null
   saving_throw: null
   stages: null

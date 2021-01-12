@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -36,8 +34,6 @@ active_abilities:
     a result of being dehydrated.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gory Hydration
   range: null
@@ -51,7 +47,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The mudwretch deals Constrict damage to a living creature that has blood;
+  trigger: The mudwretch deals Constrict damage to a living creature that has blood
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mud Puddle
   range: null
@@ -88,8 +82,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spew Mud
   range: null
@@ -121,8 +113,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Susceptible to Desiccation
   range: null
@@ -164,21 +154,20 @@ hp_misc: null
 immunities:
 - bleed
 - critical hits
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Terran
 level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Grab
+  name: fist
   to_hit: 10
   traits:
   - agile
@@ -208,8 +197,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Muddy Field
   range: 10 feet

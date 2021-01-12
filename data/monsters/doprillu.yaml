@@ -18,8 +18,6 @@ active_abilities:
     dealt to the target.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Body Strike
   range: null
@@ -28,7 +26,7 @@ active_abilities:
     a weapon. This Strike has a +30 attack modifier and deals 3d8+16 bludgeoning damage.
     The Strike is magical and has a reach of 10 feet. On a hit, the grabbed creature
     takes half the damage dealt to the target.'
-  requirements: The doprillu has a creature grabbed
+  requirements: The doprillu has a creature __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -44,8 +42,6 @@ active_abilities:
     damage as Body Strike, but has the __thrown 20 feet__ weapon trait.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whirlwind Throw
   range: null
@@ -55,7 +51,7 @@ active_abilities:
     the doprillu can hurl the grabbed creature up to 50 feet as a ranged Strike. This
     Strike has the same attack modifier and damage as Body Strike, but has the __thrown
     20 feet__ weapon trait.'
-  requirements: The doprillu has a creature grabbed
+  requirements: The doprillu has a creature __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -76,8 +72,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mask of Power
   range: null
@@ -102,8 +96,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Volcanic Veins
   range: null
@@ -125,8 +117,6 @@ automatic_abilities:
     attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deflect Arrow
   range: null
@@ -134,15 +124,13 @@ automatic_abilities:
     of a physical ranged attack; **Requirements **The doprillu is aware of the attack,
     isn''t __flat-footed__ against it, and has a hand free; **Effect **The doprillu
     gains a +4 circumstance bonus to its AC against the triggering attack.'
-  requirements: The doprillu is aware of the attack, isn't flat-footed against it,
-    and has a hand free
+  requirements: The doprillu is aware of the attack, isn't __flat-footed__ against
+    it, and has a hand free
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: The doprillu is the target of a physical ranged attack; Requirements The
-    doprillu is aware of the attack, isn't flat-footed against it, and has a hand
-    free;
+  trigger: The doprillu is the target of a physical ranged attack
 description: 'The aberrations known as doprillus are hulks with banded muscles who
   wear ornate masks at all times that fill their wearers with magical strength and
   fighting spirit. Doprillus love to battle, especially by grappling, and are eager
@@ -158,10 +146,8 @@ description: 'The aberrations known as doprillus are hulks with banded muscles w
 hp: 260
 hp_misc: regeneration 20 (deactivated by cold)
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=13">enfeebled</a>
-  (while wearing its mask)
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=35">slowed</a> (while
-  wearing its mask)
+- __enfeebled__ (while wearing its mask)
+- __slowed__ (while wearing its mask)
 languages:
 - Aklo
 - Common
@@ -170,14 +156,13 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+16
+  - formula: 3d8+16
     type: ''
-  name: fist
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
+  - formula: 2d6
+    type: fire
   - formula: null
     type: Improved Grab
+  name: fist
   to_hit: 30
   traits:
   - agile

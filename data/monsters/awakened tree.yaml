@@ -17,8 +17,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Axe Vulnerability
   range: null
@@ -50,19 +48,17 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: bludgeoning
   name: branch
-  plus_damage: null
   to_hit: 16
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: bludgeoning
   name: root
-  plus_damage: null
   to_hit: 16
   traits:
   - trip

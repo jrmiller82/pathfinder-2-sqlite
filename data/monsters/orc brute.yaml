@@ -17,8 +17,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -49,20 +47,18 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: orc knuckle dagger
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
   - disarm
 - action_cost: One Action
   damage:
-    formula: 1d4+3
+  - formula: 1d4+3
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
@@ -72,10 +68,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 4
   traits:
   - thrown 30 feet

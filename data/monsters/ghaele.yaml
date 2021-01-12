@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Choose Weakness
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ghaele's Gaze
   range: null
@@ -78,8 +74,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Holy Blade
   range: null
@@ -109,8 +103,6 @@ automatic_abilities:
     It can move through solid objects but can't end its action within a solid object.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Free Blade
   range: null
@@ -159,14 +151,13 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: slashing
+  - formula: 1d6
+    type: good
+  - formula: 1d6
+    type: other (see Choose Weakness)
   name: holy greatsword
-  plus_damage:
-  - formula: null
-    type: 1d6 good
-  - formula: null
-    type: 1d6 other (see Choose Weakness)
   to_hit: 28
   traits:
   - good
@@ -177,12 +168,11 @@ perception: 25
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d12 chaotic
+  - formula: 1d12
+    type: chaotic
+  - formula: 1d12
+    type: good
   name: light ray
-  plus_damage:
-  - formula: null
-    type: 1d12 good
   to_hit: 25
   traits:
   - chaotic

@@ -19,8 +19,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fetid Fumes
   range: 5 feet
@@ -55,12 +53,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: fire
+  - formula: 1d4
+    type: persistent fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d4 persistent fire
   to_hit: 10
   traits:
   - finesse
@@ -83,8 +80,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

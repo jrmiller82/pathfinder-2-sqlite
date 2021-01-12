@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -41,8 +39,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Selective Scent
   range: null
@@ -66,8 +62,6 @@ automatic_abilities:
     creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Predator's Leap
   range: null
@@ -82,7 +76,7 @@ automatic_abilities:
   success: null
   traits: null
   trigger: A creature within 10 feet of the viskithrel makes a melee Strike against
-    it;
+    it
 description: 'One of the many horrid life-forms native to __Zevgavizeb''s__ Abyssal
   realm of Gluttondark, viskithrels—or “gluttonraptors”—are tireless hunters resembling
   tentacled theropods. They are social creatures by nature and prefer to hunt in large
@@ -107,7 +101,7 @@ description: 'One of the many horrid life-forms native to __Zevgavizeb''s__ Abys
 hp: 275
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- __sickened__
 languages:
 - Abyssal
 - (can't speak any languages)
@@ -115,35 +109,32 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+14
+  - formula: 3d10+14
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d10 acid
+  - formula: 1d10
+    type: acid
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 30
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+14
+  - formula: 3d10+14
     type: slashing
   name: talon
-  plus_damage: null
   to_hit: 30
   traits:
   - agile
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+14
+  - formula: 1d10+14
     type: slashing
+  - formula: 2d10
+    type: persistent bleed
   name: tentacle
-  plus_damage:
-  - formula: null
-    type: 2d10 persistent bleed
   to_hit: 30
   traits:
   - reach 20 feet
@@ -169,8 +160,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ravenous Tracker
   range: null

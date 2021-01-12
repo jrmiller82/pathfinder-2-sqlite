@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dust
   range: null
@@ -48,8 +46,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Construct Armor
   range: null
@@ -93,12 +89,11 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 bludgeoning
-  name: bristles
-  plus_damage:
+  - formula: 1d4
+    type: bludgeoning
   - formula: null
     type: dust
+  name: bristles
   to_hit: 6
   traits:
   - agile

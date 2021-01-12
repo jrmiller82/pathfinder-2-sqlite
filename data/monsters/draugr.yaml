@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grotesque Gift
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swipe
   range: null
@@ -70,8 +66,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: The Sea's Revenge
   range: null
@@ -133,11 +127,11 @@ description: 'Risen corpses of sailors who died at sea, draugr reek of the rot a
 hp: 35
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
+- __poison__
+- __unconscious__
 items:
 - greataxe
 - leather armor
@@ -148,23 +142,21 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+4
+  - formula: 1d12+4
     type: slashing
-  name: greataxe
-  plus_damage:
   - formula: null
     type: grotesque gift
+  name: greataxe
   to_hit: 10
   traits:
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: slashing
-  name: fist
-  plus_damage:
   - formula: null
     type: grotesque gift
+  name: fist
   to_hit: 10
   traits:
   - agile

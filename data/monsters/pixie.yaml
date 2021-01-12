@@ -27,8 +27,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sprinkle Pixie Dust
   range: null
@@ -76,10 +74,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 13
   traits:
   - agile
@@ -91,10 +88,9 @@ perception: 12
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
   name: longbow
-  plus_damage: null
   to_hit: 13
   traits:
   - deadly 1d10

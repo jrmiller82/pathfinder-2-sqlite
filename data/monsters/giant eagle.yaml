@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eagle Dive
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snatch
   range: null
@@ -62,8 +58,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Evasion
   range: null
@@ -106,20 +100,18 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: piercing
   name: beak
-  plus_damage: null
   to_hit: 12
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d10+5
+  - formula: 1d10+5
     type: slashing
-  name: talon
-  plus_damage:
   - formula: null
     type: Grab
+  name: talon
   to_hit: 12
   traits:
   - agile

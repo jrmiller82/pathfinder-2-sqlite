@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -29,117 +27,48 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature falls unconscious. If it's still unconscious after
+    1 hour, it wakes up automatically.
+  critical_success: The creature is unaffected and becomes temporarily immune to Sleep
+    Gas for 24 hours.
   description: The verdurous ooze adjusts its aura of supernatural vapors to affect
     living creatures within a 20-foot emanation, forcing them to attempt a DC 24 Will
     save.
   effect: null
-  failure: null
+  failure: The creature falls __unconscious__. If it's still unconscious after 1 minute,
+    it wakes up automatically.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sleep Gas
   range: null
   raw_description: '**Sleep Gas** [Two Actions]  (__incapacitation__, __mental__,
     __poison__, __sleep__) The verdurous ooze adjusts its aura of supernatural vapors
     to affect living creatures within a 20-foot emanation, forcing them to attempt
-    a DC 24 Will save.'
+    a DC 24 Will save.
+
+
+    **Critical Success** The creature is unaffected and becomes temporarily immune
+    to Sleep Gas for 24 hours.
+
+
+    **Success** The creature is __stupefied 1__ for 1 round.
+
+
+    **Failure** The creature falls __unconscious__. If it''s still unconscious after
+    1 minute, it wakes up automatically.
+
+
+    **Critical Failure** The creature falls unconscious. If it''s still unconscious
+    after 1 hour, it wakes up automatically.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __stupefied 1__ for 1 round.
   traits:
   - incapacitation
   - mental
   - poison
   - sleep
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and becomes temporarily immune to Sleep
-    Gas for 24 hours.
-  description: The creature is unaffected and becomes temporarily immune to Sleep
-    Gas for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and becomes temporarily
-    immune to Sleep Gas for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __stupefied 1__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __stupefied 1__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __stupefied 1__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature falls __unconscious__. If it's still unconscious after
-    1 minute, it wakes up automatically.
-  effect: null
-  failure: The creature falls __unconscious__. If it's still unconscious after 1 minute,
-    it wakes up automatically.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature falls __unconscious__. If it''s still
-    unconscious after 1 minute, it wakes up automatically.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature falls unconscious. If it's still unconscious after
-    1 hour, it wakes up automatically.
-  critical_success: null
-  description: The creature falls unconscious. If it's still unconscious after 1 hour,
-    it wakes up automatically.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature falls unconscious. If it''s
-    still unconscious after 1 hour, it wakes up automatically.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: None
   critical_failure: null
@@ -149,8 +78,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Verdurous Ooze Acid
   range: null
@@ -174,8 +101,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Corrosive Surface
   range: null
@@ -201,8 +126,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Enliven Foliage
   range: 20 feet
@@ -234,8 +157,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Split
   range: null
@@ -266,24 +187,23 @@ hp_misc: null
 immunities:
 - acid
 - critical hits
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 - piercing
 - precision
 - slashing
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __unconscious__
+- __visual__
 level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
-  - formula: null
-    type: 1d6 acid
+  - formula: 1d6
+    type: acid
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 15
   traits: null
 name: Verdurous Ooze

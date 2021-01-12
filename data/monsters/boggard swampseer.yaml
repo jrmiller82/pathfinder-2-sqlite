@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Destructive Croak
   range: null
@@ -46,8 +44,6 @@ active_abilities:
     or __sonic__ effect.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drowning Drone
   range: null
@@ -66,7 +62,7 @@ active_abilities:
   - auditory
   - mental
   trigger: The boggard swampseer or one of its allies within 60 feet attempts a saving
-    throw against an auditory or sonic effect.
+    throw against an __auditory__ or __sonic__ effect.
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -75,8 +71,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swamp Stride
   range: null
@@ -97,8 +91,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Croak
   range: null
@@ -128,8 +120,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tongue Grab
   range: null
@@ -168,19 +158,17 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: bludgeoning
   name: staff
-  plus_damage: null
   to_hit: 10
   traits:
   - two-hand d8
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: Tongue Grab
   name: Tongue
-  plus_damage: null
   to_hit: 10
   traits:
   - reach 10 feet

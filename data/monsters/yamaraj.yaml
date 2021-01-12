@@ -9,107 +9,40 @@ ac: 45
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature takes double damage and is sickened 3.
+  critical_success: The creature takes no damage.
   description: The yamaraj breathes a blast of beetles in a 50-foot cone that deals
     14d8 slashing damage and 4d8 __persistent slashing damage__ to creatures in the
     area (DC 42 Reflex save). It can't use Breath Weapon again for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature takes full damage and is sickened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
   raw_description: '**Breath Weapon** [Two Actions]  (__divine__, __evocation__) The
     yamaraj breathes a blast of beetles in a 50-foot cone that deals 14d8 slashing
     damage and 4d8 __persistent slashing damage__ to creatures in the area (DC 42
-    Reflex save). It can''t use Breath Weapon again for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - divine
-  - evocation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature takes no damage.
-  description: The creature takes no damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature takes no damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes half damage and is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature takes half damage and is __sickened 1__.'
+    Reflex save). It can''t use Breath Weapon again for 1d4 rounds.
+
+
+    **Critical Success** The creature takes no damage.
+
+
+    **Success** The creature takes half damage and is __sickened 1__.
+
+
+    **Failure** The creature takes full damage and is sickened 2.
+
+
+    **Critical Failure** The creature takes double damage and is sickened 3.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature takes half damage and is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes full damage and is sickened 2.
-  effect: null
-  failure: The creature takes full damage and is sickened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature takes full damage and is sickened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature takes double damage and is sickened 3.
-  critical_success: null
-  description: The creature takes double damage and is sickened 3.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature takes double damage and is sickened
-    3.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - divine
+  - evocation
   trigger: null
 - action_cost: None
   critical_failure: null
@@ -120,8 +53,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Final Judgment
   range: null
@@ -143,8 +74,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spirit Touch
   range: null
@@ -160,12 +89,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: While a creature is __clumsy__ from this poison, it is __doomed__ with
+    the same value
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Yamaraj Venom
   range: null
@@ -195,8 +123,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 60 feet
@@ -235,8 +161,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lightning Drinker
   range: null
@@ -266,8 +190,8 @@ description: 'The greatest judges among the psychopomps are the massive yamaraje
 hp: 375
 hp_misc: fast healing 20, lightning drinker
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __death__ effects
+- __disease__
 - electricity (see lightning drinker)
 languages:
 - Abyssal
@@ -280,26 +204,24 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+18
+  - formula: 4d8+18
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
   - formula: null
     type: yamaraj venom and spirit touch
+  name: jaws
   to_hit: 38
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d4+18
+  - formula: 4d4+18
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: spirit touch
+  name: claw
   to_hit: 38
   traits:
   - agile
@@ -307,12 +229,11 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+18
+  - formula: 4d10+18
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: spirit touch
+  name: tail
   to_hit: 38
   traits:
   - magical

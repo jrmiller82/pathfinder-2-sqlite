@@ -9,106 +9,38 @@ ac: 21
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The target is pushed 10 feet and knocked prone.
+  critical_success: The creature is unaffected and the spinesnapper is flat-footed
+    until the start of its next turn.
   description: The spinesnapper makes a claw or weapon Strike. If it hits, in addition
     to dealing damage, the creature must attempt a DC 22 Fortitude saving throw, with
     the following effects.
   effect: null
-  failure: null
+  failure: The creature is pushed 10 feet.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Brutal Blow
   range: null
   raw_description: '**Brutal Blow** [Two Actions]  The spinesnapper makes a claw or
     weapon Strike. If it hits, in addition to dealing damage, the creature must attempt
-    a DC 22 Fortitude saving throw, with the following effects.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and the spinesnapper is flat-footed
+    a DC 22 Fortitude saving throw, with the following effects.
+
+
+    **Critical Success** The creature is unaffected and the spinesnapper is flat-footed
     until the start of its next turn.
-  description: The creature is unaffected and the spinesnapper is flat-footed until
-    the start of its next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and the spinesnapper
-    is flat-footed until the start of its next turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is pushed 10 feet.
+
+
+    **Critical Failure** The target is pushed 10 feet and knocked prone.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is pushed 10 feet.
-  effect: null
-  failure: The creature is pushed 10 feet.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is pushed 10 feet.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The target is pushed 10 feet and knocked prone.
-  critical_success: null
-  description: The target is pushed 10 feet and knocked prone.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The target is pushed 10 feet and knocked
-    prone.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 - action_cost: One Action
@@ -120,10 +52,7 @@ active_abilities:
     at a DC 22 Fortitude save or become slowed 1 for 1 round, or stunned for 1 round
     on a critical failure.
   failure: null
-  frequency: once per round; Requirements The spinesnapper has a creature grabbed
-    or restrained
-  full_description: null
-  generic_description: null
+  frequency: once per round
   maximum_duration: null
   name: Choke Slam
   range: null
@@ -152,8 +81,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet
@@ -203,29 +130,26 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+10
+  - formula: 1d12+10
     type: bludgeoning
   name: maul
-  plus_damage: null
   to_hit: 15
   traits:
   - shove
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 15
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d4+8
+  - formula: 2d4+8
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 15
   traits:
   - agile

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Freezing Mist Breath
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ice Climb
   range: null
@@ -91,8 +85,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Speed Surge
   range: null
@@ -115,8 +107,6 @@ automatic_abilities:
     deals an additional 1d6 damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retaliatory Strike
   range: null
@@ -172,20 +162,18 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+8
+  - formula: 2d12+8
     type: piercing
+  - formula: 1d6
+    type: cold
   name: Fangs
-  plus_damage:
-  - formula: null
-    type: 1d6 cold
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: bludgeoning
   name: Tail
-  plus_damage: null
   to_hit: 17
   traits:
   - reach 10 feet
@@ -209,8 +197,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snow Vision
   range: null

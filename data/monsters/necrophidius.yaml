@@ -9,117 +9,48 @@ ac: 19
 ac_special: null
 active_abilities:
 - action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but stunned 3.
+  critical_success: The creature is unaffected and is temporarily immune for 24 hours.
   description: The necrophidius sways, its serpentine form undulating and clattering
     in a hypnotic rhythm. Each creature that witnesses the dance must attempt a DC
     18 Will save.
   effect: null
-  failure: null
+  failure: The creature is distracted by the swaying, becoming __stunned 1__. After
+    it recovers, it is flat-footed until the end of the necrophidius's next turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dance of Death
   range: null
   raw_description: '**Dance of Death** [Three Actions]  (__enchantment__, __mental__,
     __occult__, __visual__) The necrophidius sways, its serpentine form undulating
     and clattering in a hypnotic rhythm. Each creature that witnesses the dance must
-    attempt a DC 18 Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - enchantment
-  - mental
-  - occult
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is temporarily immune for 24 hours.
-  description: The creature is unaffected and is temporarily immune for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is temporarily
-    immune for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unnerved by the swaying and becomes __flat-footed__
-    until the end of the necrophidius's next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unnerved by the swaying and becomes
-    __flat-footed__ until the end of the necrophidius''s next turn.'
+    attempt a DC 18 Will save.
+
+
+    **Critical Success** The creature is unaffected and is temporarily immune for
+    24 hours.
+
+
+    **Success** The creature is unnerved by the swaying and becomes __flat-footed__
+    until the end of the necrophidius''s next turn.
+
+
+    **Failure** The creature is distracted by the swaying, becoming __stunned 1__.
+    After it recovers, it is flat-footed until the end of the necrophidius''s next
+    turn.
+
+
+    **Critical Failure** As failure, but stunned 3.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unnerved by the swaying and becomes __flat-footed__ until
     the end of the necrophidius's next turn.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is distracted by the swaying, becoming __stunned 1__.
-    After it recovers, it is flat-footed until the end of the necrophidius's next
-    turn.
-  effect: null
-  failure: The creature is distracted by the swaying, becoming __stunned 1__. After
-    it recovers, it is flat-footed until the end of the necrophidius's next turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is distracted by the swaying, becoming
-    __stunned 1__. After it recovers, it is flat-footed until the end of the necrophidius''s
-    next turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but stunned 3.
-  critical_success: null
-  description: As failure, but stunned 3.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but stunned 3.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - enchantment
+  - mental
+  - occult
+  - visual
   trigger: null
 - action_cost: None
   critical_failure: null
@@ -132,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Necrophidic Paralysis
   range: null
@@ -189,29 +118,28 @@ hp: 50
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
+- __death__ effects
+- __disease__
+- __doomed__
+- __drained__
+- __fatigued__
+- __healing__
+- __mental__
+- __necromancy__
 - nonlethal attacks
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __paralyzed__
+- __poison__
+- __sickened__
+- __unconscious__
 level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+3
+  - formula: 1d10+3
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: necrophidic paralysis
+  name: jaws
   to_hit: 8
   traits:
   - agile

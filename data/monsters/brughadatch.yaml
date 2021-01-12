@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Primal Innate Spels
   range: null
@@ -33,121 +31,50 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: None
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, plus for 1 hour, the creature's attitude becomes __helpful__
+    to the brughadatch, and the creature can't use hostile actions against them.
+  critical_success: The creature sees through the illusion and becomes immune to the
+    effects of Deceitful Feast for 24 hours.
   description: The brughadatch conjures a decadent, enticing feast void of nutritional
     substance. This conjuration takes 1 minute and lasts for 24 hours. For each item
     of illusory food a creature eats, it must attempt a DC 29 Will save.
   effect: null
-  failure: null
+  failure: The creature takes a –1 circumstance penalty to Will saves against any
+    of the brughadatch's spells or abilities. The penalty increases with each failed
+    save, to a maximum of –5.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deceitful Feast
   range: null
   raw_description: '**Deceitful Feast** (__illusion__) The brughadatch conjures a
     decadent, enticing feast void of nutritional substance. This conjuration takes
     1 minute and lasts for 24 hours. For each item of illusory food a creature eats,
-    it must attempt a DC 29 Will save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - illusion
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature sees through the illusion and becomes immune to the
-    effects of Deceitful Feast for 24 hours.
-  description: The creature sees through the illusion and becomes immune to the effects
-    of Deceitful Feast for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature sees through the illusion and
-    becomes immune to the effects of Deceitful Feast for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature doesn't see through the illusion but is unaffected by
+    it must attempt a DC 29 Will save.
+
+
+    **Critical Success** The creature sees through the illusion and becomes immune
+    to the effects of Deceitful Feast for 24 hours.
+
+
+    **Success** The creature doesn''t see through the illusion but is unaffected by
     the food.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature doesn''t see through the illusion but
-    is unaffected by the food.'
+
+
+    **Failure** The creature takes a –1 circumstance penalty to Will saves against
+    any of the brughadatch''s spells or abilities. The penalty increases with each
+    failed save, to a maximum of –5.
+
+
+    **Critical Failure** As failure, plus for 1 hour, the creature''s attitude becomes
+    __helpful__ to the brughadatch, and the creature can''t use hostile actions against
+    them.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature doesn't see through the illusion but is unaffected by the
     food.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes a –1 circumstance penalty to Will saves against
-    any of the brughadatch's spells or abilities. The penalty increases with each
-    failed save, to a maximum of –5.
-  effect: null
-  failure: The creature takes a –1 circumstance penalty to Will saves against any
-    of the brughadatch's spells or abilities. The penalty increases with each failed
-    save, to a maximum of –5.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature takes a –1 circumstance penalty to Will
-    saves against any of the brughadatch''s spells or abilities. The penalty increases
-    with each failed save, to a maximum of –5.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, plus for 1 hour, the creature's attitude becomes __helpful__
-    to the brughadatch, and the creature can't use hostile actions against them.
-  critical_success: null
-  description: As failure, plus for 1 hour, the creature's attitude becomes __helpful__
-    to the brughadatch, and the creature can't use hostile actions against them.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, plus for 1 hour, the creature''s
-    attitude becomes __helpful__ to the brughadatch, and the creature can''t use hostile
-    actions against them.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - illusion
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -160,8 +87,6 @@ active_abilities:
     the effect of Deceitful Feast as a hostile action normally would.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Psychic Sip
   range: null
@@ -174,7 +99,7 @@ active_abilities:
     save, this damage does not end the charm effect or the effect of Deceitful Feast
     as a hostile action normally would.'
   requirements: Targets must have critically failed a save against a brughadatch's
-    Deceitful Feast or charm innate spell
+    Deceitful Feast or __charm__ innate spell
   saving_throw: null
   stages: null
   success: null
@@ -198,20 +123,18 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 21
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 19
   traits:
   - agile

@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Axe Swipe
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hunted Fear
   range: null
@@ -76,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Powerful Charge
   range: null
@@ -122,20 +116,18 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+8
+  - formula: 1d12+8
     type: slashing
   name: greataxe
-  plus_damage: null
   to_hit: 14
   traits:
   - reach 10 feet
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d8+8
+  - formula: 1d8+8
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 14
   traits: null
 name: Minotaur
@@ -158,8 +150,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Natural Cunning
   range: null

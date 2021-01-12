@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Icicle
   range: null
@@ -47,19 +45,18 @@ hp_misc: null
 immunities:
 - bleed
 - cold
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: piercing
+  - formula: 1d6
+    type: persistent cold
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent cold
   to_hit: 9
   traits:
   - finesse

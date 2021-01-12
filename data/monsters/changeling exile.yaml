@@ -28,19 +28,17 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: slashing
   name: claws
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: bludgeoning
   name: staff
-  plus_damage: null
   to_hit: 11
   traits:
   - two-hand d8

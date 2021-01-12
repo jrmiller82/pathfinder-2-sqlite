@@ -16,8 +16,6 @@ active_abilities:
     conditions. It reduces any __enfeebled__ value it has by 2.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rampant Growth
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Tendriculos Venom
   range: null
@@ -95,8 +89,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -169,23 +161,21 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+11
+  - formula: 2d10+11
     type: piercing
-  name: bite
-  plus_damage:
   - formula: null
     type: Grab
+  name: bite
   to_hit: 18
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+11
+  - formula: 2d6+11
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: Grab
+  name: tentacle
   to_hit: 18
   traits:
   - agile

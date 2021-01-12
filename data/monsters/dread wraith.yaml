@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Absorb Wraith
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -81,8 +77,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wraith Spawn
   range: null
@@ -113,8 +107,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draining Presence
   range: 10 feet
@@ -139,8 +131,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sunlight Powerlessness
   range: null
@@ -163,8 +153,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -200,12 +188,12 @@ description: 'These menacing spiritual remnants of wicked warlords or bloodthirs
 hp: 130
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __death__ effects
+- __disease__
+- __paralyzed__
+- __poison__
 - precision
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __unconscious__
 languages:
 - Common
 - Necril
@@ -213,12 +201,11 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: negative
-  name: spectral hand
-  plus_damage:
   - formula: null
     type: drain life
+  name: spectral hand
   to_hit: 21
   traits:
   - finesse

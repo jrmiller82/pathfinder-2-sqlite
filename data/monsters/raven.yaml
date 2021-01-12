@@ -28,10 +28,9 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: beak
-  plus_damage: null
   to_hit: 7
   traits:
   - finesse
@@ -58,8 +57,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cunning
   range: null

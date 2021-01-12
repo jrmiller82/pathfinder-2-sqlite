@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -76,8 +72,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blightburn Radiation
   range: 60 feet
@@ -108,8 +102,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Charged Earth
   range: null
@@ -136,7 +128,7 @@ description: '__Shaitans__ corrupted by the Black Desert''s blightburn become sc
 hp: 280
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __disease__
 items:
 - +2 greater striking maul
 languages:
@@ -146,10 +138,9 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+17
+  - formula: 3d12+17
     type: bludgeoning
   name: maul
-  plus_damage: null
   to_hit: 35
   traits:
   - magical
@@ -157,14 +148,13 @@ melee_attacks:
   - shove
 - action_cost: One Action
   damage:
-    formula: 2d8+17
+  - formula: 2d8+17
     type: bludgeoning
-  name: sand fist
-  plus_damage:
-  - formula: null
-    type: 2d8 electricity
+  - formula: 2d8
+    type: electricity
   - formula: null
     type: blightburn sickness
+  name: sand fist
   to_hit: 35
   traits:
   - agile
@@ -178,14 +168,13 @@ perception: 31
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 4d8 piercing
-  name: sand spear
-  plus_damage:
-  - formula: null
-    type: 2d8 electricity
+  - formula: 4d8
+    type: piercing
+  - formula: 2d8
+    type: electricity
   - formula: null
     type: blightburn sickness
+  name: sand spear
   to_hit: 32
   traits:
   - earth

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Crossbow Precision
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Perfect Aim
   range: null
@@ -59,8 +55,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Running Reload
   range: null
@@ -83,8 +77,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Formation
   range: null
@@ -118,10 +110,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: shortsword
-  plus_damage: null
   to_hit: 12
   traits:
   - agile
@@ -131,12 +122,11 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+2
+  - formula: 1d8+2
     type: piercing
-  name: crossbow
-  plus_damage:
   - formula: null
     type: crossbow precision
+  name: crossbow
   to_hit: 14
   traits:
   - range increment 120 feet

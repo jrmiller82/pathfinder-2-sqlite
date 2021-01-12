@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Flash
   range: null
@@ -46,8 +44,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Luminescent Aura
   range: 10 feet
@@ -79,10 +75,9 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+1
+  - formula: 1d4+1
     type: piercing
   name: mandibles
-  plus_damage: null
   to_hit: 8
   traits:
   - agile

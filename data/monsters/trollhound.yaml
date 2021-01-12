@@ -11,15 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 18 Fortitude; **Stage 1** carrier with no ill
-    effect (1 day); **Stage 2** __enfeebled 1__ (1 day); **Stage 3** enfeebled 1 and
-    __clumsy 1__ (1 day); **Stage 4** enfeebled 2 and clumsy 2 (1 day); **Stage 5**
-    enfeebled 2, clumsy 2, and __fatigued__ (1 day)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bloodfire Fever
   range: null
@@ -29,8 +24,13 @@ active_abilities:
     2 and clumsy 2 (1 day); **Stage 5** enfeebled 2, clumsy 2, and __fatigued__ (1
     day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 18 Fortitude
+  stages:
+  - effect: carrier with no ill effect (1 day)
+  - effect: __enfeebled 1__ (1 day)
+  - effect: enfeebled 1 and __clumsy 1__ (1 day)
+  - effect: enfeebled 2 and clumsy 2 (1 day)
+  - effect: enfeebled 2, clumsy 2, and __fatigued__ (1 day)
   success: null
   traits:
   - disease
@@ -43,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pack Attack
   range: null
@@ -109,14 +107,13 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+4
+  - formula: 1d12+4
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Knockdown
   - formula: null
     type: bloodfire fever
+  name: jaws
   to_hit: 11
   traits: null
 name: Trollhound

@@ -9,89 +9,39 @@ ac: 24
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
+  critical_failure: The creature is __blinded__ for 1d4 rounds.
   critical_success: null
   description: The moonflower releases a pulse of bright light. Each non-moonflower
     creature in the emanation must attempt a DC 23 Fortitude save. The moonflower
     can't use Light Pulse again for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature is __dazzled__ for 1d4 rounds.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Pulse
   range: 50 feet
   raw_description: '**Light Pulse** [Two Actions]  (__evocation__, __light__, __primal__,
     __visual__) 50 feet. The moonflower releases a pulse of bright light. Each non-moonflower
     creature in the emanation must attempt a DC 23 Fortitude save. The moonflower
-    can''t use Light Pulse again for 1d4 rounds.'
+    can''t use Light Pulse again for 1d4 rounds.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __dazzled__ for 1d4 rounds.
+
+
+    **Critical Failure** The creature is __blinded__ for 1d4 rounds.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is unaffected.
   traits:
   - evocation
   - light
   - primal
   - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __dazzled__ for 1d4 rounds.
-  effect: null
-  failure: The creature is __dazzled__ for 1d4 rounds.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __dazzled__ for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is __blinded__ for 1d4 rounds.
-  critical_success: null
-  description: The creature is __blinded__ for 1d4 rounds.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is __blinded__ for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: Reaction
   critical_failure: null
@@ -104,8 +54,6 @@ active_abilities:
     dealt to the cocoon. Once the cocoon is Ruptured, it deflates and decays.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pod Prison
   range: null
@@ -121,7 +69,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The moonflower has swallowed a creature;
+  trigger: The moonflower has swallowed a creature
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -134,8 +82,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pod Spawn
   range: null
@@ -158,8 +104,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -212,21 +156,19 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: piercing
-  name: bite
-  plus_damage:
   - formula: null
     type: Grab
+  name: bite
   to_hit: 20
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: bludgeoning
   name: root
-  plus_damage: null
   to_hit: 20
   traits:
   - agile

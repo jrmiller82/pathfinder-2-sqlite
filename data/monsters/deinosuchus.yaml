@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aquatic Ambush
   range: 50 feet
@@ -34,8 +32,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null
@@ -54,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -83,21 +77,19 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 22
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+11
+  - formula: 1d10+11
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 20
   traits:
   - agile

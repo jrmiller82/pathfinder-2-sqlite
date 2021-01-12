@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Corrupt Ally
   range: null
@@ -54,8 +52,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dead Spells
   range: null
@@ -76,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mental Erosion
   range: null
@@ -100,8 +94,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Resanguinate
   range: null
@@ -129,8 +121,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Immortality
   range: null
@@ -170,12 +160,11 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
   - formula: null
     type: mental erosion
+  name: pseudopod
   to_hit: 27
   traits: null
 name: Immortal Ichor

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Giant Ant Venom
   range: null
@@ -42,8 +40,6 @@ active_abilities:
     with it. It is __encumbered__ if the grabbed creature is Medium or larger.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Haul Away
   range: null
@@ -72,22 +68,20 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: slashing
-  name: mandibles
-  plus_damage:
   - formula: null
     type: Grab
+  name: mandibles
   to_hit: 11
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
-  name: stinger
-  plus_damage:
   - formula: null
     type: giant ant venom
+  name: stinger
   to_hit: 11
   traits:
   - agile

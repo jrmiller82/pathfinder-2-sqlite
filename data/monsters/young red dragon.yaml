@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -86,11 +80,9 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 90 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -107,7 +99,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 27
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -116,6 +108,34 @@ automatic_abilities:
   - fear
   - mental
   trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: Jaws only.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'The largest and most powerful of the chromatic dragons, red dragons
   are a menace to civilizations everywhere, and their strength is rivaled only by
   their arrogance. Red dragons see themselves as regents and overlords of all dragonkind.
@@ -169,40 +189,36 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: piercing
+  - formula: 2d6
+    type: fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
   to_hit: 23
   traits:
   - fire
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: slashing
   name: tail
-  plus_damage: null
   to_hit: 21
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+10
+  - formula: 1d10+10
     type: slashing
   name: wing
-  plus_damage: null
   to_hit: 21
   traits:
   - agile
@@ -227,8 +243,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

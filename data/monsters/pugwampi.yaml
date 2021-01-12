@@ -21,8 +21,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unluck Aura
   range: 20 feet
@@ -68,10 +66,9 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6-3
+  - formula: 1d6-3
     type: slashing
   name: shortsword
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -83,10 +80,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 8
   traits:
   - deadly 1d10

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bushwhack
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mauler
   range: null
@@ -74,19 +70,17 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
   name: Bastard Sword
-  plus_damage: null
   to_hit: 10
   traits:
   - two-hand d12
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: bludgeoning
   name: Fist
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -96,10 +90,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: Javelin
-  plus_damage: null
   to_hit: 8
   traits:
   - thrown 30 feet

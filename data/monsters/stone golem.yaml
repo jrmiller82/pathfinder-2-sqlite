@@ -16,8 +16,6 @@ active_abilities:
     for 1 round.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Impose Paralysis
   range: null
@@ -30,7 +28,7 @@ active_abilities:
   success: null
   traits:
   - incapacitation
-  trigger: The stone golem hits a slowed creature.
+  trigger: The stone golem hits a __slowed__ creature.
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inexorable March
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slowing Pulse
   range: null
@@ -90,28 +84,37 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'harmed by cold and water (5d10, 2d8 from areas and persistent damage);
+  description: harmed by cold and water (5d10, 2d8 from areas and persistent damage);
     healed by acid (area 2d8 HP); slowed by earth
-
-
-    **Vulnerable to Stone to Flesh** A __stone to flesh__ spell negates the golem''s
-    golem antimagic and its resistance to physical damage for 1 round. A __flesh to
-    stone__ spell reverses this effect immediately.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Golem Antimagic
   range: null
   raw_description: '**Golem Antimagic** harmed by cold and water (5d10, 2d8 from areas
-    and persistent damage); healed by acid (area 2d8 HP); slowed by earth
-
-
-    **Vulnerable to Stone to Flesh** A __stone to flesh__ spell negates the golem''s
-    golem antimagic and its resistance to physical damage for 1 round. A __flesh to
-    stone__ spell reverses this effect immediately.'
+    and persistent damage); healed by acid (area 2d8 HP); slowed by earth'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A __stone to flesh__ spell negates the golem's golem antimagic and
+    its resistance to physical damage for 1 round. A __flesh to stone__ spell reverses
+    this effect immediately.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vulnerable to Stone to Flesh
+  range: null
+  raw_description: '**Vulnerable to Stone to Flesh** A __stone to flesh__ spell negates
+    the golem''s golem antimagic and its resistance to physical damage for 1 round.
+    A __flesh to stone__ spell reverses this effect immediately.'
   requirements: null
   saving_throw: null
   stages: null
@@ -165,10 +168,9 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 24
   traits:
   - magical

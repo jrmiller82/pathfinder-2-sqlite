@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dimensional Dervish
   range: null
@@ -37,8 +35,6 @@ active_abilities:
     Strike.
   failure: null
   frequency: once per round.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dispelling Strike
   range: null
@@ -64,8 +60,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infuse Weapons
   range: null
@@ -91,8 +85,6 @@ active_abilities:
     Hit Points.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lifedrinker
   range: null
@@ -119,8 +111,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whip Reposition
   range: null
@@ -137,57 +127,98 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The balor can use Attack of Opportunity when a creature within their
-    reach uses a concentrate action, in addition to its normal trigger. They can disrupt
-    triggering concentrate actions, and they disrupt actions on any hit, not just
-    a critical hit.
-
-
-    **Death Throes** (__death__, __divine__, __evocation__, __fire__) When a balor
-    dies, their body explodes in a 100-foot aura of intense demonic flame. All creatures
-    and objects in range take 16d10 fire damage (DC 45 basic Reflex save). Because
-    the flame is infused with Abyssal energy, creatures in the area apply only half
-    their usual fire resistance. Creatures with immunity to fire use an outcome one
-    degree of success better than what they rolled, instead of gaining the usual benefit
-    of immunity. The bodies of creatures reduced to 0 Hit Points by a balor''s death
-    throes are completely incinerated into fine ash.'
+  description: A foe that starts its turn in the aura takes 3d6+10 fire damage, or
+    6d6+20 fire damage if the balor has grabbed or restrained it. A creature that
+    hits a balor with an unarmed Strike takes 3d6+10 fire damage, and weapons that
+    hit a balor take 3d6+10 fire damage.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aura of Flame
-  range: null
+  range: 20 feet
   raw_description: '**Aura of Flame** (__aura__, __divine__, __evocation__, __fire__)
     20 feet. A foe that starts its turn in the aura takes 3d6+10 fire damage, or 6d6+20
     fire damage if the balor has grabbed or restrained it. A creature that hits a
     balor with an unarmed Strike takes 3d6+10 fire damage, and weapons that hit a
-    balor take 3d6+10 fire damage.
-
-
-    **Attack of Opportunity** [Reaction] The balor can use Attack of Opportunity when
-    a creature within their reach uses a concentrate action, in addition to its normal
-    trigger. They can disrupt triggering concentrate actions, and they disrupt actions
-    on any hit, not just a critical hit.
-
-
-    **Death Throes** (__death__, __divine__, __evocation__, __fire__) When a balor
-    dies, their body explodes in a 100-foot aura of intense demonic flame. All creatures
-    and objects in range take 16d10 fire damage (DC 45 basic Reflex save). Because
-    the flame is infused with Abyssal energy, creatures in the area apply only half
-    their usual fire resistance. Creatures with immunity to fire use an outcome one
-    degree of success better than what they rolled, instead of gaining the usual benefit
-    of immunity. The bodies of creatures reduced to 0 Hit Points by a balor''s death
-    throes are completely incinerated into fine ash.'
+    balor take 3d6+10 fire damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divine
+  - evocation
+  - fire
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: The balor can use Attack of Opportunity when a creature within their
+    reach uses a concentrate action, in addition to its normal trigger. They can disrupt
+    triggering concentrate actions, and they disrupt actions on any hit, not just
+    a critical hit.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: When a balor dies, their body explodes in a 100-foot aura of intense
+    demonic flame. All creatures and objects in range take 16d10 fire damage (DC 45
+    basic Reflex save). Because the flame is infused with Abyssal energy, creatures
+    in the area apply only half their usual fire resistance. Creatures with immunity
+    to fire use an outcome one degree of success better than what they rolled, instead
+    of gaining the usual benefit of immunity. The bodies of creatures reduced to 0
+    Hit Points by a balor's death throes are completely incinerated into fine ash.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Death Throes
+  range: null
+  raw_description: '**Death Throes** (__death__, __divine__, __evocation__, __fire__)
+    When a balor dies, their body explodes in a 100-foot aura of intense demonic flame.
+    All creatures and objects in range take 16d10 fire damage (DC 45 basic Reflex
+    save). Because the flame is infused with Abyssal energy, creatures in the area
+    apply only half their usual fire resistance. Creatures with immunity to fire use
+    an outcome one degree of success better than what they rolled, instead of gaining
+    the usual benefit of immunity. The bodies of creatures reduced to 0 Hit Points
+    by a balor''s death throes are completely incinerated into fine ash.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - death
+  - divine
+  - evocation
+  - fire
   trigger: null
 description: When folk whisper frightened tales of the demonic, what most envision
   is the balor—a towering figure of fire and flesh, a horned nightmare armed with
@@ -212,12 +243,11 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+17
+  - formula: 4d8+17
     type: slashing
+  - formula: 1d6
+    type: evil
   name: vorpal cold iron silver longsword
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 40
   traits:
   - evil
@@ -226,16 +256,15 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 4d6+17
+  - formula: 4d6+17
     type: fire
-  name: cold iron silver flame whip
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Improved Grab
   - formula: null
     type: whip reposition
+  name: cold iron silver flame whip
   to_hit: 40
   traits:
   - disarm

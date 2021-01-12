@@ -11,14 +11,12 @@ active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: '**Requirement **The hezrou is grappling a creature;'
+  description: '**Requirement **The hezrou is grappling a creature'
   effect: Toxic fluids spurt from burst boils and weeping wens on the hezrou's body.
     A creature __grabbed__ or __restrained__ by the hezrou takes 2d12+6 poison damage
     (DC 30 basic Fortitude save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Poisonous Pustules
   range: null
@@ -46,8 +44,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Purity Vulnerability
   range: null
@@ -74,8 +70,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet
@@ -122,14 +116,13 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 24
   traits:
   - evil
@@ -137,12 +130,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 24
   traits:
   - agile

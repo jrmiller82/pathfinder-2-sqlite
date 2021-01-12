@@ -18,8 +18,6 @@ active_abilities:
     except by wish or a similarly powerful effect.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Absorb
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Animated Weapons
   range: null
@@ -74,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Energy Drain
   range: null
@@ -103,8 +97,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Plummet
   range: null
@@ -126,8 +118,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -144,8 +134,7 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: '**Frightful Presence** (__aura__, __emotion__, __fear__, __mental__)
-    100 feet, DC 35'
+  description: null
   effect: You lash out at a foe that leaves an opening. Make a melee Strike against
     the triggering creature. If your attack is a critical hit and the trigger was
     a manipulate action, you disrupt that action. This Strike doesn't count toward
@@ -153,8 +142,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -172,6 +159,43 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: null
+  failure: The creature is __frightened 2__.
+  frequency: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: 100 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
+
+
+    **Critical Success** The creature is unaffected by the presence.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: DC 35
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: null
 description: 'A warsworn is an animate mass of corpses composed of dozens, sometimes
   even hundreds, of victims of battle. They are formed by deities of undeath or war
   or, rarely, spontaneously manifest from the devastation of an especially horrendous
@@ -196,21 +220,19 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+9
+  - formula: 4d12+9
     type: bludgeoning
-  name: corpse wave
-  plus_damage:
   - formula: null
     type: energy drain
+  name: corpse wave
   to_hit: 32
   traits:
   - magical
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: four of the weapon's damage dice +9 of the weapon's damage type
   name: animated weapon
-  plus_damage: null
   to_hit: 30
   traits:
   - agile
@@ -223,12 +245,11 @@ perception: 27
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+9
+  - formula: 4d12+9
     type: bludgeoning
-  name: scrap ball
-  plus_damage:
   - formula: null
     type: plummet
+  name: scrap ball
   to_hit: 28
   traits:
   - magical

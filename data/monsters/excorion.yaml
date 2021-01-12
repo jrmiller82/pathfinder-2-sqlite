@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bloody Handprint
   range: null
@@ -53,8 +51,6 @@ active_abilities:
     the purpose of seeing other excorions' Bloody Handprint marks.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vital Transfusion
   range: null
@@ -82,8 +78,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vomit Blood
   range: null
@@ -109,8 +103,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vein Walker
   range: null
@@ -147,22 +139,21 @@ description: 'These hideous undead creatures result from an exquisitely painful 
 hp: 160
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __death__ effects
+- __disease__
+- __mental__
+- __paralyzed__
+- __poison__
+- __unconscious__
 level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Grab
+  name: fist
   to_hit: 18
   traits:
   - agile
@@ -172,10 +163,9 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+4
+  - formula: 3d6+4
     type: bludgeoning and dazzled for 1 round
   name: bloody spew
-  plus_damage: null
   to_hit: 18
   traits:
   - range 20 feet

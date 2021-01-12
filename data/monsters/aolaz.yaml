@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Roll
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -55,18 +51,16 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature takes double damage and is stunned 3.
+  critical_success: The creature is unaffected.
   description: The aolaz releases a tremendous blast of sonic energy from its trunk
     in a 150-foot line, dealing 12d10 sonic damage. The frequency of this sound is
     such that it is completely imperceptible to __humanoids__, but the damage it wreaks
     is all too evident. Each creature in the area must attempt a DC 40 Fortitude save.
     The aolaz can't use Ultrasonic Blast again for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature takes full damage and is stunned 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ultrasonic Blast
   range: null
@@ -75,92 +69,27 @@ active_abilities:
     in a 150-foot line, dealing 12d10 sonic damage. The frequency of this sound is
     such that it is completely imperceptible to __humanoids__, but the damage it wreaks
     is all too evident. Each creature in the area must attempt a DC 40 Fortitude save.
-    The aolaz can''t use Ultrasonic Blast again for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - arcane
-  - evocation
-  - sonic
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes half damage and is __stunned 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature takes half damage and is __stunned 1__.'
+    The aolaz can''t use Ultrasonic Blast again for 1d4 rounds.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature takes half damage and is __stunned 1__.
+
+
+    **Failure** The creature takes full damage and is stunned 2.
+
+
+    **Critical Failure** The creature takes double damage and is stunned 3.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature takes half damage and is __stunned 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature takes full damage and is stunned 2.
-  effect: null
-  failure: The creature takes full damage and is stunned 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature takes full damage and is stunned 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature takes double damage and is stunned 3.
-  critical_success: null
-  description: The creature takes double damage and is stunned 3.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature takes double damage and is stunned
-    3.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - arcane
+  - evocation
+  - sonic
   trigger: null
 alignment: N
 automatic_abilities: null
@@ -188,29 +117,28 @@ hp: 255
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=9">doomed</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=89">healing</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=117">necromancy</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=188">nonlethal</a> attacks
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=34">sickened</a>
+- __death__ effects
+- __disease__
+- __doomed__
+- __drained__
+- __fatigued__
+- __healing__
+- __necromancy__
+- __nonlethal__ attacks
+- __paralyzed__
+- __poison__
+- __sickened__
 - sonic
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __unconscious__
 level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d10+17
+  - formula: 5d10+17
     type: bludgeoning
-  name: trunk
-  plus_damage:
   - formula: null
     type: Grab
+  name: trunk
   to_hit: 35
   traits:
   - magical
@@ -219,10 +147,9 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 5d8+15
+  - formula: 5d8+15
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 33
   traits:
   - magical
@@ -254,8 +181,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flawless Hearing
   range: null

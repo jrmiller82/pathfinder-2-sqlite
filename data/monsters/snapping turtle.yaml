@@ -16,8 +16,6 @@ active_abilities:
     1d4 bludgeoning damage to the creature it just bit.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Clench Jaws
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shell Defense
   range: null
@@ -72,10 +68,9 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+2
+  - formula: 1d4+2
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 6
   traits: null
 name: Snapping Turtle
@@ -97,8 +92,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Broad Swipe
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Charge
   range: null
@@ -77,10 +73,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: slashing
   name: glaive
-  plus_damage: null
   to_hit: 12
   traits:
   - deadly d8
@@ -88,10 +83,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+5
+  - formula: 1d10+5
     type: piercing
   name: horns
-  plus_damage: null
   to_hit: 12
   traits:
   - agile

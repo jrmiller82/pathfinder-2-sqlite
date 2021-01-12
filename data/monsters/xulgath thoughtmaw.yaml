@@ -9,17 +9,18 @@ ac: 36
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, and the thoughtmaw is __quickened 1__ for 1 minute.
+    It can use this extra action to Stride, Strike, or Cast a Spell if the target
+    had prepared spells or a spell repertoire.
+  critical_success: The creature is unaffected.
   description: The thoughtmaw invades the mind of a creature within 100 feet and attempts
     to swallow its capacity for higher thought. The creature must attempt a DC 36
     Will save. Using Consume Knowledge immediately ends any of the ability's previous
     effects on a different creature.
   effect: null
-  failure: null
+  failure: The creature is slowed 1 and can take no actions other than basic actions
+    for 1 minute.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Consume Knowledge
   range: null
@@ -27,100 +28,30 @@ active_abilities:
     __occult__) The thoughtmaw invades the mind of a creature within 100 feet and
     attempts to swallow its capacity for higher thought. The creature must attempt
     a DC 36 Will save. Using Consume Knowledge immediately ends any of the ability''s
-    previous effects on a different creature.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - divination
-  - mental
-  - occult
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __slowed 1__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __slowed 1__ for 1 round.'
+    previous effects on a different creature.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __slowed 1__ for 1 round.
+
+
+    **Failure** The creature is slowed 1 and can take no actions other than basic
+    actions for 1 minute.
+
+
+    **Critical Failure** As failure, and the thoughtmaw is __quickened 1__ for 1 minute.
+    It can use this extra action to Stride, Strike, or Cast a Spell if the target
+    had prepared spells or a spell repertoire.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is __slowed 1__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is slowed 1 and can take no actions other than basic actions
-    for 1 minute.
-  effect: null
-  failure: The creature is slowed 1 and can take no actions other than basic actions
-    for 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is slowed 1 and can take no actions other
-    than basic actions for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, and the thoughtmaw is __quickened 1__ for 1 minute.
-    It can use this extra action to Stride, Strike, or Cast a Spell if the target
-    had prepared spells or a spell repertoire.
-  critical_success: null
-  description: As failure, and the thoughtmaw is __quickened 1__ for 1 minute. It
-    can use this extra action to Stride, Strike, or Cast a Spell if the target had
-    prepared spells or a spell repertoire.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, and the thoughtmaw is __quickened
-    1__ for 1 minute. It can use this extra action to Stride, Strike, or Cast a Spell
-    if the target had prepared spells or a spell repertoire.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - divination
+  - mental
+  - occult
   trigger: null
 alignment: CE
 automatic_abilities:
@@ -134,8 +65,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Psychogenic Secretions
   range: 30 feet
@@ -173,27 +102,24 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 30
   traits:
   - magical
 - action_cost: One Action
   damage:
-    formula: 3d8+10
+  - formula: 3d8+10
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 28
   traits: null
 - action_cost: One Action
   damage:
-    formula: 3d4+10
+  - formula: 3d4+10
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 28
   traits:
   - agile
@@ -203,10 +129,9 @@ perception: 30
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 30
   traits:
   - magical
@@ -232,8 +157,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thoughtsense
   range: null

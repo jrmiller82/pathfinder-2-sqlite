@@ -9,16 +9,16 @@ ac: 16
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is sickened 2 and is flat-footed for as long as it's
+    sickened.
+  critical_success: The creature is unaffected.
   description: The cythnigot presents its awful appearance fully, and creatures in
     a 10-foot emanation must attempt a DC 17 Will save. Once a creature attempts this
     save, it's temporarily immune to further Sickening Displays for 1 minute.
   effect: null
-  failure: null
+  failure: The creature is __sickened 1__, and is flat-footed for as long as it's
+    sickened.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sickening Display
   range: null
@@ -26,11 +26,25 @@ active_abilities:
     __enchantment__, __fear__, __mental__, __occult__, __visual__) The cythnigot presents
     its awful appearance fully, and creatures in a 10-foot emanation must attempt
     a DC 17 Will save. Once a creature attempts this save, it''s temporarily immune
-    to further Sickening Displays for 1 minute.'
+    to further Sickening Displays for 1 minute.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __flat-footed__ until its next turn.
+
+
+    **Failure** The creature is __sickened 1__, and is flat-footed for as long as
+    it''s sickened.
+
+
+    **Critical Failure** The creature is sickened 2 and is flat-footed for as long
+    as it''s sickened.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __flat-footed__ until its next turn.
   traits:
   - concentrate
   - emotion
@@ -42,94 +56,15 @@ active_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
+  critical_success: null
+  description: A creature bitten by a cythnigot becomes afflicted by fast-growing
+    spores that swiftly grow into twitching spikes and hideous pallid growths of hairlike
+    fibers. These growths erupt from the bite wound and writhe and wrap around the
+    creature's limbs. __Plant__ creatures take a –2 circumstance penalty to save against
+    tangle spores
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __flat-footed__ until its next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __flat-footed__ until its next turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __flat-footed__ until its next turn.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __sickened 1__, and is flat-footed for as long as it's
-    sickened.
-  effect: null
-  failure: The creature is __sickened 1__, and is flat-footed for as long as it's
-    sickened.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __sickened 1__, and is flat-footed
-    for as long as it''s sickened.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is sickened 2 and is flat-footed for as long as it's
-    sickened.
-  critical_success: null
-  description: The creature is sickened 2 and is flat-footed for as long as it's sickened.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is sickened 2 and is flat-footed
-    for as long as it''s sickened.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: null
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Tangle Spores
   range: null
@@ -149,7 +84,8 @@ active_abilities:
   - effect: __clumsy 1__ (1 round)
   - effect: clumsy 1 and __flat-footed__ (1 round)
   - effect: clumsy 2, flat-footed, and if you attempt a __manipulate__ action, you
-      must succeed at a DC 5 flat check or it's lost
+      must succeed at a DC 5 flat check or it's lost; roll the check after spending
+      the action, but before any effects are applied (1 round).
   success: null
   traits:
   - disease
@@ -170,8 +106,8 @@ description: 'The cythnigot is a foul fungal parasite that grows and thrives in 
 hp: 14
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __controlled__
+- __fear__
 languages:
 - Abyssal
 - telepathy (touch only)
@@ -179,14 +115,13 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+1
+  - formula: 1d10+1
     type: piercing
-  name: bite
-  plus_damage:
-  - formula: null
-    type: 1d4 chaotic
+  - formula: 1d4
+    type: chaotic
   - formula: null
     type: tangle spores
+  name: bite
   to_hit: 8
   traits:
   - agile

@@ -9,26 +9,43 @@ ac: 27
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The target falls __unconscious__ and begins suffocating. If the
+    target succeeds at its Fortitude save while suffocating, it coughs up the water
+    and can breathe again.
+  critical_success: The target is unaffected.
   description: The sarglagon conjures murky water to fill the lungs of a creature
     that can't breathe water within 30 feet. The target must attempt a DC 26 Fortitude
     save.
   effect: null
-  failure: null
+  failure: The target is __holding its breath__. The only action it can take is to
+    attempt a Fortitude save against Drown to expel the water, which is a single action.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drown
   range: null
   raw_description: '**Drown** [Two Actions]  (__conjuration__, __divine__, __incapacitation__)
     The sarglagon conjures murky water to fill the lungs of a creature that can''t
-    breathe water within 30 feet. The target must attempt a DC 26 Fortitude save.'
+    breathe water within 30 feet. The target must attempt a DC 26 Fortitude save.
+
+
+    **Critical Success **The target is unaffected.
+
+
+    **Success **The target coughs up water and is __sickened 1__.
+
+
+    **Failure **The target is __holding its breath__. The only action it can take
+    is to attempt a Fortitude save against Drown to expel the water, which is a single
+    action.
+
+
+    **Critical Failure **The target falls __unconscious__ and begins suffocating.
+    If the target succeeds at its Fortitude save while suffocating, it coughs up the
+    water and can breathe again.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The target coughs up water and is __sickened 1__.
   traits:
   - conjuration
   - divine
@@ -36,111 +53,22 @@ active_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: The target is unaffected.
-  description: The target is unaffected.
+  critical_success: null
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target coughs up water and is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The target coughs up water and is __sickened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The target coughs up water and is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is __holding its breath__. The only action it can take is
-    to attempt a Fortitude save against Drown to expel the water, which is a single
-    action.
-  effect: null
-  failure: The target is __holding its breath__. The only action it can take is to
-    attempt a Fortitude save against Drown to expel the water, which is a single action.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The target is __holding its breath__. The only action
-    it can take is to attempt a Fortitude save against Drown to expel the water, which
-    is a single action.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The target falls __unconscious__ and begins suffocating. If the
-    target succeeds at its Fortitude save while suffocating, it coughs up the water
-    and can breathe again.
-  critical_success: null
-  description: The target falls __unconscious__ and begins suffocating. If the target
-    succeeds at its Fortitude save while suffocating, it coughs up the water and can
-    breathe again.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The target falls __unconscious__ and begins
-    suffocating. If the target succeeds at its Fortitude save while suffocating, it
-    coughs up the water and can breathe again.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: '**Saving Throw **DC 26 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1 **2d6 poison damage and __clumsy 1__ (1 round); **Stage 2 **3d6 poison damage
-    and clumsy 2 (1 round)'
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Sarglagon Venom
   range: null
   raw_description: '**Sarglagon Venom** (__poison__) **Saving Throw **DC 26 Fortitude;
     **Maximum Duration **6 rounds; **Stage 1 **2d6 poison damage and __clumsy 1__
     (1 round); **Stage 2 **3d6 poison damage and clumsy 2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 26 Fortitude
+  stages:
+  - effect: 2d6 poison damage and __clumsy 1__ (1 round)
+  - effect: 3d6 poison damage and clumsy 2 (1 round)
   success: null
   traits:
   - poison
@@ -148,95 +76,42 @@ active_abilities:
 alignment: LE
 automatic_abilities:
 - action_cost: None
-  critical_failure: null
+  critical_failure: As failure, but the effect persists for 3 rounds after leaving
+    the aura.
   critical_success: null
   description: A creature that enters the heavy aura must attempt a DC 23 Will save.
     It is then temporarily immune for 10 minutes.
   effect: null
-  failure: null
+  failure: The creature is __encumbered__ while it remains in the area. If the creature
+    is already encumbered, it is __immobilized__ while it remains within the aura.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Heavy Aura
   range: 10 feet
   raw_description: '**Heavy Aura** (__aura__, __divine__, __incapacitation__, __transmutation__)
     10 feet. A creature that enters the heavy aura must attempt a DC 23 Will save.
-    It is then temporarily immune for 10 minutes.'
+    It is then temporarily immune for 10 minutes.
+
+
+    **Success **The creature is unaffected.
+
+
+    **Failure **The creature is __encumbered__ while it remains in the area. If the
+    creature is already encumbered, it is __immobilized__ while it remains within
+    the aura.
+
+
+    **Critical Failure **As failure, but the effect persists for 3 rounds after leaving
+    the aura.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is unaffected.
   traits:
   - aura
   - divine
   - incapacitation
   - transmutation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __encumbered__ while it remains in the area. If the
-    creature is already encumbered, it is __immobilized__ while it remains within
-    the aura.
-  effect: null
-  failure: The creature is __encumbered__ while it remains in the area. If the creature
-    is already encumbered, it is __immobilized__ while it remains within the aura.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature is __encumbered__ while it remains in
-    the area. If the creature is already encumbered, it is __immobilized__ while it
-    remains within the aura.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the effect persists for 3 rounds after leaving
-    the aura.
-  critical_success: null
-  description: As failure, but the effect persists for 3 rounds after leaving the
-    aura.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, but the effect persists for 3
-    rounds after leaving the aura.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: Reaction
   critical_failure: null
@@ -247,8 +122,6 @@ automatic_abilities:
     bonus to AC) if the sarglagon was already granting it lesser cover.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stygian Guardian
   range: null
@@ -262,7 +135,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature or object within the sarglagon's reach is targeted by an attack;
+  trigger: A creature or object within the sarglagon's reach is targeted by an attack
 description: 'Sarglagons dwell in __Hell''s__ myriad waterways, lakes, and oceans.
   They serve as guardians of the Academy of Lies—the repository of secrets in Stygia,
   the fifth layer of Hell. Sarglagons breathe water and air with equal ease, and can
@@ -293,26 +166,24 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+9
+  - formula: 2d12+9
     type: piercing
+  - formula: 1d6
+    type: evil
   name: fangs
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 20
   traits:
   - evil
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: bludgeoning
-  name: tentacle arm
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: sarglagon venom
+  name: tentacle arm
   to_hit: 20
   traits:
   - agile

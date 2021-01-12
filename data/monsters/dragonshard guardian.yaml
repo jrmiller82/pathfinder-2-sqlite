@@ -21,8 +21,6 @@ active_abilities:
   effect: null
   failure: The creature is __enfeebled 5__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -50,20 +48,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: The dragonshard guardian's body absorbs the energy entirely, preventing
-    the damage from harming the construct. Its body reverberates and transforms the
-    absorbed energy before projecting it outward in a 60-foot burst. Each creature
-    within the burst takes an amount of fire damage equal to the amount of energy
-    damage absorbed by the triggering attack, including any damage resisted by the
-    guardian's resistances and additional damage from its weakness (DC 45 basic Reflex
-    save). This fire damage doesn't harm objects or constructs.
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 90 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -80,7 +70,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 42
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -88,8 +78,42 @@ automatic_abilities:
   - emotion
   - fear
   - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragonshard guardian's body absorbs the energy entirely, preventing
+    the damage from harming the construct. Its body reverberates and transforms the
+    absorbed energy before projecting it outward in a 60-foot burst. Each creature
+    within the burst takes an amount of fire damage equal to the amount of energy
+    damage absorbed by the triggering attack, including any damage resisted by the
+    guardian's resistances and additional damage from its weakness (DC 45 basic Reflex
+    save). This fire damage doesn't harm objects or constructs.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Reverberating Revenge
+  range: null
+  raw_description: '**Reverberating Revenge** [Reaction] (__arcane__, __fire__) **Trigger**
+    The dragonshard guardian takes cold, fire, electricity, or sonic damage from a
+    non-dragonshard guardian source; **Effect** The dragonshard guardian''s body absorbs
+    the energy entirely, preventing the damage from harming the construct. Its body
+    reverberates and transforms the absorbed energy before projecting it outward in
+    a 60-foot burst. Each creature within the burst takes an amount of fire damage
+    equal to the amount of energy damage absorbed by the triggering attack, including
+    any damage resisted by the guardian''s resistances and additional damage from
+    its weakness (DC 45 basic Reflex save). This fire damage doesn''t harm objects
+    or constructs.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - arcane
+  - fire
   trigger: The dragonshard guardian takes cold, fire, electricity, or sonic damage
-    from a non-dragonshard guardian source;
+    from a non-dragonshard guardian source
 description: 'Created by Mengkare and powered by a shard of the Orb of Gold Dragonkind,
   this construct is made of sculpted crystal draped in a beautiful gold filigree frame.
 
@@ -118,22 +142,20 @@ level: 22
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 6d10+8
+  - formula: 6d10+8
     type: piercing
+  - formula: 2d10
+    type: persistent bleed
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d10 persistent bleed
   to_hit: 41
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 9d6+8
+  - formula: 9d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 41
   traits:
   - agile

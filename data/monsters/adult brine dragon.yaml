@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -84,8 +78,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Desiccating Bite
   range: null
@@ -109,8 +101,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -148,8 +138,6 @@ automatic_abilities:
     action is disrupted.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Brine Spit
   range: null
@@ -162,8 +150,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature the brine dragon observes within 30 feet uses a concentrate
-    action;
+  trigger: A creature the brine dragon observes within 30 feet uses a __concentrate__
+    action
 description: 'Brine dragons are usually blue-green in color, with shiny scales, crests
   that help them glide through the water, and sweeping neck frills. They care little
   for either good or evil. As they are both opinionated and willing to impose their
@@ -205,8 +193,8 @@ hp: 222
 hp_misc: null
 immunities:
 - acid
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Aquan
 - Common
@@ -216,12 +204,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+12
+  - formula: 3d10+12
     type: piercing
+  - formula: 3d4
+    type: acid
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d4 acid
   to_hit: 26
   traits:
   - acid
@@ -229,10 +216,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 26
   traits:
   - agile
@@ -240,20 +226,18 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+12
+  - formula: 3d12+12
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 24
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 1d12+12
+  - formula: 1d12+12
     type: piercing
   name: wing
-  plus_damage: null
   to_hit: 24
   traits:
   - magical

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -34,8 +32,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Reefclaw Venom
   range: null
@@ -60,8 +56,6 @@ automatic_abilities:
   effect: The reefclaw makes a claw Strike before dying.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death Frenzy
   range: null
@@ -130,14 +124,13 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: reefclaw venom
   - formula: null
     type: Grab
+  name: claw
   to_hit: 9
   traits:
   - finesse

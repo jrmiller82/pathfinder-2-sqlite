@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Beauty
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inspiration
   range: null
@@ -107,8 +101,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tree Meld
   range: null
@@ -147,8 +139,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nymph's Beauty
   range: null
@@ -192,10 +182,9 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+8
+  - formula: 3d12+8
     type: bludgeoning
   name: branch
-  plus_damage: null
   to_hit: 27
   traits:
   - finesse
@@ -205,10 +194,9 @@ perception: 25
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+6
+  - formula: 3d8+6
     type: slashing
   name: leaves
-  plus_damage: null
   to_hit: 27
   traits:
   - conjuration
@@ -228,24 +216,33 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The dryad can use Diplomacy to Make an Impression on and make very
+  description: The dryad can use Diplomacy to Make an Impression on and make very
     simple Requests of animals and plants.
-
-
-    **Tied to the Land**'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nature Empathy
   range: null
   raw_description: '**Nature Empathy** The dryad can use Diplomacy to Make an Impression
-    on and make very simple Requests of animals and plants.
-
-
-    **Tied to the Land**'
+    on and make very simple Requests of animals and plants.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Tied to the Land
+  range: null
+  raw_description: '**Tied to the Land**'
   requirements: null
   saving_throw: null
   stages: null

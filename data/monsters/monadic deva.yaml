@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Holy Armaments
   range: null
@@ -32,18 +30,16 @@ active_abilities:
   - evocation
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The target takes double damage and is stunned 4.
+  critical_success: The target is unaffected.
   description: The monadic deva speaks a word to cause a creature's soul to recoil
     at its sins or an undead creature to recoil at its lack of a soul. One non-good
     living or undead target within 40 feet takes 5d10 good damage and must attempt
     a DC 32 Fortitude save. Regardless of the outcome, the target is then temporarily
     immune for 10 minutes.
   effect: null
-  failure: null
+  failure: The target takes full damage and is stunned 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rebuke Soul
   range: null
@@ -52,94 +48,29 @@ active_abilities:
     soul to recoil at its sins or an undead creature to recoil at its lack of a soul.
     One non-good living or undead target within 40 feet takes 5d10 good damage and
     must attempt a DC 32 Fortitude save. Regardless of the outcome, the target is
-    then temporarily immune for 10 minutes.'
+    then temporarily immune for 10 minutes.
+
+
+    **Critical Success **The target is unaffected.
+
+
+    **Success **The target takes half damage and is __stunned 1__.
+
+
+    **Failure **The target takes full damage and is stunned 2.
+
+
+    **Critical Failure **The target takes double damage and is stunned 4.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The target takes half damage and is __stunned 1__.
   traits:
   - auditory
   - divine
   - enchantment
   - good
   - incapacitation
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The target is unaffected.
-  description: The target is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target takes half damage and is __stunned 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The target takes half damage and is __stunned 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The target takes half damage and is __stunned 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target takes full damage and is stunned 2.
-  effect: null
-  failure: The target takes full damage and is stunned 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The target takes full damage and is stunned 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The target takes double damage and is stunned 4.
-  critical_success: null
-  description: The target takes double damage and is stunned 4.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The target takes double damage and is stunned
-    4.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: None
   critical_failure: null
@@ -150,8 +81,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Solid Blow
   range: null
@@ -177,8 +106,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spiritual Warden
   range: 20 feet
@@ -223,14 +150,13 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+15
+  - formula: 2d6+15
     type: bludgeoning
+  - formula: 1d6
+    type: force
+  - formula: 1d6
+    type: good
   name: holy mace
-  plus_damage:
-  - formula: null
-    type: 1d6 force
-  - formula: null
-    type: 1d6 good
   to_hit: 28
   traits:
   - good

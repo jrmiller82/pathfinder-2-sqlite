@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Heat Surge
   range: null
@@ -60,16 +56,17 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
-  effect: The triggering creature takes 5d8 __persistent__ fire damage (DC 37 Reflex
-    save to negate).
+  description: 'When a Xotanispawn dies, it explodes, dealing 15d8 fire damage to
+    creatures in a 30-foot emanation (DC 39 basic Reflex save).
+
+
+    __**Light Blindness**__'
+  effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Explosion
   range: null
@@ -78,12 +75,29 @@ automatic_abilities:
     save).
 
 
-    __**Light Blindness**__
-
-
-    **Internal Furnace** [Reaction] (__fire__) **Trigger** A creature adjacent to
-    the Xotanispawn touches it or hits it with a physical attack; **Effect** The triggering
-    creature takes 5d8 __persistent__ fire damage (DC 37 Reflex save to negate).'
+    __**Light Blindness**__'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - fire
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The triggering creature takes 5d8 __persistent__ fire damage (DC 37 Reflex
+    save to negate).
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Internal Furnace
+  range: null
+  raw_description: '**Internal Furnace** [Reaction] (__fire__) **Trigger** A creature
+    adjacent to the Xotanispawn touches it or hits it with a physical attack; **Effect**
+    The triggering creature takes 5d8 __persistent__ fire damage (DC 37 Reflex save
+    to negate).'
   requirements: null
   saving_throw: null
   stages: null
@@ -91,7 +105,7 @@ automatic_abilities:
   traits:
   - fire
   trigger: A creature adjacent to the Xotanispawn touches it or hits it with a physical
-    attack;
+    attack
 description: 'Xotanispawn are monstrous versions of scavenging beetle larvae that
   have been corrupted and mutated by feeding on the remains of Xotani the Firebleeder,
   a slain Spawn of Rovagug buried beneath Pale Mountain in Katapesh. These creatures
@@ -126,25 +140,23 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+9
+  - formula: 4d8+9
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d8 persistent fire
+  - formula: 2d8
+    type: persistent fire
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 30
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 4d6+9
+  - formula: 4d6+9
     type: slashing
+  - formula: 2d8
+    type: persistent fire
   name: claw
-  plus_damage:
-  - formula: null
-    type: 2d8 persistent fire
   to_hit: 30
   traits:
   - agile
@@ -171,8 +183,6 @@ sense_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: null

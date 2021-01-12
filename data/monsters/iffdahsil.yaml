@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -35,8 +33,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eat Away
   range: null
@@ -56,8 +52,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -79,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tentacular Burst
   range: null
@@ -107,8 +99,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aura of Annihilation
   range: 60 feet
@@ -139,8 +129,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unkillable
   range: null
@@ -173,17 +161,17 @@ description: 'The slithering horror known as Iffdahsil is an undead __shoggoth__
 hp: 380
 hp_misc: fast healing 30, negative healing
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=1">blinded</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
+- __blinded__
+- __controlled__
 - critical hits
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=8">deafened</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyze</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __deafened__
+- __death__ effects
+- __disease__
+- __paralyze__
+- __poison__
 - precision
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __sleep__
+- __unconscious__
 languages:
 - Aklo
 - Necril
@@ -191,12 +179,11 @@ level: 21
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d10+21
+  - formula: 5d10+21
     type: piercing
-  name: pseudopod
-  plus_damage:
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 38
   traits:
   - magical

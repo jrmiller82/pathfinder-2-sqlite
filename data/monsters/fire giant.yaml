@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flaming Stroke
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -74,8 +70,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -93,6 +87,23 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Catch Rock
+  range: null
+  raw_description: '**Catch Rock** [Reaction]'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 description: 'The most militaristic of all giants, fire giants focus obsessively on
   learning combat techniques, mastering the arts of forging weapons and armor, and
   finding new ways to dominate their enemies. As a result, their social and political
@@ -136,10 +147,9 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: slashing
   name: greatsword
-  plus_damage: null
   to_hit: 24
   traits:
   - magical
@@ -147,10 +157,9 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
@@ -160,12 +169,11 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: bludgeoning
+  - formula: 1d6
+    type: fire
   name: rock
-  plus_damage:
-  - formula: null
-    type: 1d6 fire
   to_hit: 23
   traits:
   - brutal

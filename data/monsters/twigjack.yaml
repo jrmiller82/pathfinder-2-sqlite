@@ -16,8 +16,6 @@ active_abilities:
     square of undergrowth within 60 feet. This movement doesn't trigger reactions.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bramble Jump
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Splinter Spray
   range: null
@@ -120,10 +116,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
@@ -133,10 +128,9 @@ perception: 9
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: splinter
-  plus_damage: null
   to_hit: 11
   traits:
   - deadly 1d6

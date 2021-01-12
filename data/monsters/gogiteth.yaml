@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Carry Off Prey
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -59,8 +55,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Skittering Assault
   range: null
@@ -85,8 +79,6 @@ automatic_abilities:
   effect: The gogiteth moves 10 feet. This does not trigger reactions.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Skittering Reposition
   range: null
@@ -153,20 +145,18 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+12
+  - formula: 3d10+12
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 26
   traits: null
 - action_cost: One Action
   damage:
-    formula: 3d6+12
+  - formula: 3d6+12
     type: piercing
   name: leg
-  plus_damage: null
   to_hit: 26
   traits:
   - agile

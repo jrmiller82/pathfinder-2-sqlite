@@ -22,8 +22,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -41,6 +39,30 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You snap your shield in place to ward off a blow. Your shield prevents you
+    from taking an amount of damage up to the shield's Hardness. You and the shield
+    each take any remaining damage, possibly breaking or destroying the shield.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Shield Block
+  range: null
+  raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
+    raised, you would take damage from a physical attack. **Effect** You snap your
+    shield in place to ward off a blow. Your shield prevents you from taking an amount
+    of damage up to the shield''s Hardness. You and the shield each take any remaining
+    damage, possibly breaking or destroying the shield.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: While you have your shield raised, you would take damage from a physical
+    attack.
 description: 'These skeletons retain the cunning they possessed in life.
 
 
@@ -67,28 +89,25 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 10
   traits:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
   name: lance
-  plus_damage: null
   to_hit: 10
   traits:
   - deadly d8

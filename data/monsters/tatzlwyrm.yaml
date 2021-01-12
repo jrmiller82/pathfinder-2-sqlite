@@ -9,17 +9,15 @@ ac: 18
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The target takes 4d6 poison damage and is enfeebled 1 for 1 minute.
+  critical_success: The target is unaffected.
   description: The tatzlwyrm belches a puff of poisonous vapor into the face of an
     adjacent creature, which must attempt a DC 15 Fortitude save; the creature takes
     a –2 circumstance penalty to this save if it's __grabbed__ or __flat-footed__.
     The tatzlwyrm can't use Poison Gasp again for 2 rounds.
   effect: null
-  failure: null
+  failure: The target takes 2d6 poison damage and is __enfeebled 1__ for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Poison Gasp
   range: null
@@ -27,89 +25,24 @@ active_abilities:
     poisonous vapor into the face of an adjacent creature, which must attempt a DC
     15 Fortitude save; the creature takes a –2 circumstance penalty to this save if
     it''s __grabbed__ or __flat-footed__. The tatzlwyrm can''t use Poison Gasp again
-    for 2 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The target is unaffected.
-  description: The target is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The target is __sickened 1__.'
+    for 2 rounds.
+
+
+    **Critical Success** The target is unaffected.
+
+
+    **Success** The target is __sickened 1__.
+
+
+    **Failure** The target takes 2d6 poison damage and is __enfeebled 1__ for 1 round.
+
+
+    **Critical Failure** The target takes 4d6 poison damage and is enfeebled 1 for
+    1 minute.'
   requirements: null
   saving_throw: null
   stages: null
   success: The target is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target takes 2d6 poison damage and is __enfeebled 1__ for 1 round.
-  effect: null
-  failure: The target takes 2d6 poison damage and is __enfeebled 1__ for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The target takes 2d6 poison damage and is __enfeebled
-    1__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The target takes 4d6 poison damage and is enfeebled 1 for 1 minute.
-  critical_success: null
-  description: The target takes 4d6 poison damage and is enfeebled 1 for 1 minute.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The target takes 4d6 poison damage and is
-    enfeebled 1 for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 alignment: N
@@ -163,27 +96,25 @@ description: 'Tatzlwyrms resemble human-sized snakes with two arms and a dragon'
 hp: 30
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Draconic
 level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 10
   traits:
   - magical
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -209,8 +140,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Natural Camouflage
   range: null

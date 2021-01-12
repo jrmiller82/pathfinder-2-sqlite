@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lurching Charge
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Monitor Lizard Venom
   range: null
@@ -64,8 +60,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Gnashing Grip
   range: null
@@ -79,8 +73,8 @@ automatic_abilities:
   success: null
   traits: null
   trigger: A creature grabbed by the giant monitor lizard's jaws fails a check to
-    Escape. Eflect The giant monitor lizard's jaws deal 1d6 piercing damage and the
-    triggering creature is exposed to monitor lizard venom.
+    Escape. **Eflect** The giant monitor lizard's jaws deal 1d6 piercing damage and
+    the triggering creature is exposed to monitor lizard venom.
 description: 'Large and seemingly ponderous, a monitor lizard is a deceptively swift
   and ruthless predator. It ambushes its prey by rushing out from cover and biting
   the target with its powerful jaws. A giant monitor lizard''s saliva is venomous,
@@ -103,14 +97,13 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+3
+  - formula: 1d10+3
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
   - formula: null
     type: monitor lizard venom
+  name: jaws
   to_hit: 11
   traits: null
 name: Giant Monitor Lizard

@@ -21,8 +21,6 @@ active_abilities:
     it remains unconscious for 1 day. At the end of the day, it must attempt a Fortitude
     save against the same DC; if it fails, it dies.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dread Gaze
   range: null
@@ -88,10 +86,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 12
   traits:
   - agile
@@ -111,39 +108,50 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A sea hag adds __acid arrow__, __mariner''s curse__, and __water walk__
-    to her __Coven__''s spells.
-
-
-    **Sea Hag''s Bargain** (__necromancy__, __occult__) The sea hag can make a bargain
-    with a willing creature, who must be of sound mind. The creature gives away a
-    special or cherished quality—such as its courage, its beauty, or its voice—in
-    exchange for a boon or a promise from the sea hag. As long as the sea hag keeps
-    her end of the bargain, the only way to restore the lost quality is to defeat
-    the sea hag or make another bargain for its return.'
+  description: A sea hag adds __acid arrow__, __mariner's curse__, and __water walk__
+    to her __Coven__'s spells.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Coven
   range: null
   raw_description: '**__Coven__** A sea hag adds __acid arrow__, __mariner''s curse__,
-    and __water walk__ to her __Coven__''s spells.
-
-
-    **Sea Hag''s Bargain** (__necromancy__, __occult__) The sea hag can make a bargain
-    with a willing creature, who must be of sound mind. The creature gives away a
-    special or cherished quality—such as its courage, its beauty, or its voice—in
-    exchange for a boon or a promise from the sea hag. As long as the sea hag keeps
-    her end of the bargain, the only way to restore the lost quality is to defeat
-    the sea hag or make another bargain for its return.'
+    and __water walk__ to her __Coven__''s spells.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The sea hag can make a bargain with a willing creature, who must be
+    of sound mind. The creature gives away a special or cherished quality—such as
+    its courage, its beauty, or its voice—in exchange for a boon or a promise from
+    the sea hag. As long as the sea hag keeps her end of the bargain, the only way
+    to restore the lost quality is to defeat the sea hag or make another bargain for
+    its return.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Sea Hag's Bargain
+  range: null
+  raw_description: '**Sea Hag''s Bargain** (__necromancy__, __occult__) The sea hag
+    can make a bargain with a willing creature, who must be of sound mind. The creature
+    gives away a special or cherished quality—such as its courage, its beauty, or
+    its voice—in exchange for a boon or a promise from the sea hag. As long as the
+    sea hag keeps her end of the bargain, the only way to restore the lost quality
+    is to defeat the sea hag or make another bargain for its return.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - necromancy
+  - occult
   trigger: null
 senses:
 - darkvision

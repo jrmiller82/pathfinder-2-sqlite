@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spider Minions
   range: null
@@ -81,8 +77,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spirit Touch
   range: null
@@ -105,8 +99,6 @@ automatic_abilities:
     If the strike is a critical hit, the triggering action is disrupted.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wrappings Lash
   range: null
@@ -149,12 +141,11 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+14
+  - formula: 2d8+14
     type: bludgeoning
-  name: bo staff
-  plus_damage:
   - formula: null
     type: spirit touch
+  name: bo staff
   to_hit: 31
   traits:
   - magical
@@ -163,14 +154,13 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 3d12+14
+  - formula: 3d12+14
     type: bludgeoning
-  name: web wrappings
-  plus_damage:
   - formula: null
     type: Grab
   - formula: null
     type: spirit touch
+  name: web wrappings
   to_hit: 29
   traits:
   - magical
@@ -202,8 +192,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lifesense
   range: null

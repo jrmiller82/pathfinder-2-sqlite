@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grabbing Trunk
   range: null
@@ -33,14 +31,12 @@ active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: '**Requirement** The teraphant has a creature grabbed;'
+  description: '**Requirement** The teraphant has a creature grabbed'
   effect: The teraphant slams the creature onto one of its horns. The target must
     attempt a DC 27 Reflex save or suffer 3d6+9 piercing damage and 1d6 __persistent
     bleed damage__ (6d6+18 piercing damage on a critical failure).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Impale
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Psychokinetic Trumpet
   range: null
@@ -89,8 +83,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -111,8 +103,6 @@ automatic_abilities:
     an additional target for 1 minute or until the triggering spell or ability ends.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Empathetic Response
   range: null
@@ -127,7 +117,7 @@ automatic_abilities:
   success: null
   traits: null
   trigger: A creature within 60 feet of the teraphant is targeted by a spell or ability
-    with the emotion trait;
+    with the __emotion__ trait
 description: 'Though teraphants may resemble an elephant from afar, teraphants lack
   the long incisors that mark other pachyderms. Instead, tusk-like horns grow from
   their forehead. Native to Vudra, teraphants are occasionally found in Jalmeray and
@@ -154,28 +144,25 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+9
+  - formula: 3d6+9
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 20
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: grabbing trunk
   name: trunk
-  plus_damage: null
   to_hit: 20
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+9
+  - formula: 3d10+9
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 20
   traits:
   - reach 10 feet
@@ -207,8 +194,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Emotion Sense
   range: null

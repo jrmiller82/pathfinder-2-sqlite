@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flaming Gallop
   range: null
@@ -55,26 +53,24 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: piercing
+  - formula: 1d6
+    type: evil
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 16
   traits:
   - evil
   - magical
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: bludgeoning
+  - formula: 1d6
+    type: evil
+  - formula: 1d8
+    type: fire
   name: hoof
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
-  - formula: null
-    type: 1d8 fire
   to_hit: 16
   traits:
   - agile
@@ -110,8 +106,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke
   range: 15 feet

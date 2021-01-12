@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Burble
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Jaws That Bite
   range: null
@@ -79,8 +75,6 @@ active_abilities:
     DC 43 __Athletics__ check to approach the jabberwock.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whiffling
   range: null
@@ -98,7 +92,7 @@ active_abilities:
   success: null
   traits:
   - aura
-  trigger: The jabberwock Flies or makes a wing Strike;
+  trigger: The jabberwock Flies or makes a wing Strike
 alignment: CE
 automatic_abilities:
 - action_cost: None
@@ -110,8 +104,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 100 feet
@@ -148,8 +140,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vorpal Fear
   range: null
@@ -169,8 +159,6 @@ automatic_abilities:
     Strike hits, the jabberwock disrupts the triggering action.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Claws That Catch
   range: null
@@ -184,9 +172,9 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature within the jabberwock's reach uses a manipulate action or a
-    move action, leaves a square during a move action, makes a ranged attack, or uses
-    a concentrate action;
+  trigger: A creature within the jabberwock's reach uses a __manipulate__ action or
+    a __move__ action, leaves a square during a move action, makes a ranged attack,
+    or uses a __concentrate__ action
 description: 'Few beasts have inspired as many legends, poems, songs, and myths in
   as many cultures, as this bizarre draconic creature. The jabberwock hails from the
   fey realm of the First World and is part of a group of powerful __First World__
@@ -234,8 +222,8 @@ description: 'Few beasts have inspired as many legends, poems, songs, and myths 
 hp: 500
 hp_misc: regeneration 25 (deactivated by vorpal weapons)
 immunities:
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Aklo
 - Common
@@ -246,10 +234,9 @@ level: 23
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+19
+  - formula: 4d12+19
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 42
   traits:
   - deadly 2d12
@@ -257,12 +244,11 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+19
+  - formula: 4d8+19
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: claw
   to_hit: 42
   traits:
   - agile
@@ -270,22 +256,20 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+19
+  - formula: 4d10+19
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Improved Knockdown
+  name: tail
   to_hit: 42
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+19
+  - formula: 4d8+19
     type: bludgeoning
   name: wing
-  plus_damage: null
   to_hit: 40
   traits:
   - magical
@@ -296,12 +280,11 @@ perception: 40
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 10d6 fire
+  - formula: 10d6
+    type: fire
+  - formula: 4d6
+    type: persistent fire
   name: eyes of flame
-  plus_damage:
-  - formula: null
-    type: 4d6 persistent fire
   to_hit: 42
   traits:
   - fire
@@ -329,8 +312,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Planar Acclimation
   range: null

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ravenous Attack
   range: null
@@ -47,8 +45,6 @@ active_abilities:
     \ enfeebled 2 for 1 hour on a critical failure)."
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wicked Bite
   range: null
@@ -82,8 +78,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Necrotic Decay
   range: null
@@ -112,8 +106,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -142,9 +134,9 @@ description: 'From the moment they are born, urdefhans are prepared for war. Urd
 hp: 55
 hp_misc: negative healing negative healing negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __death__ effects
+- __disease__
+- __fear__
 items:
 - composite longbow (20 arrows)
 - rhoka sword
@@ -157,22 +149,20 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: slashing
   name: rhoka sword
-  plus_damage: null
   to_hit: 12
   traits:
   - deadly 1d8
   - two-hand 1d10
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Wicked Bite
+  name: jaws
   to_hit: 12
   traits: null
 name: Urdefhan Warrior
@@ -180,10 +170,9 @@ perception: 9
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
   name: composite longbow
-  plus_damage: null
   to_hit: 10
   traits:
   - deadly 1d10

@@ -36,27 +36,24 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
   name: trident
-  plus_damage: null
   to_hit: 10
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d4+4
+  - formula: 2d4+4
     type: piercing
   name: fangs
-  plus_damage: null
   to_hit: 10
   traits: null
 name: Skum
@@ -64,10 +61,9 @@ perception: 6
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: piercing
   name: trident
-  plus_damage: null
   to_hit: 7
   traits:
   - thrown 20 feet

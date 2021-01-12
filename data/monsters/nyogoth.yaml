@@ -11,13 +11,11 @@ active_abilities:
 - action_cost: One Action
   critical_failure: null
   critical_success: null
-  description: '**Requirement** The nyogoth has __grabbed__ a creature;'
+  description: '**Requirement** The nyogoth has __grabbed__ a creature'
   effect: The nyogoth slavers and chews at the grabbed creature, dealing 2d6+7 slashing
     and 1d6 acid damage (DC 29 basic Fortitude save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Feeding Frenzy
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nauseating Display
   range: null
@@ -66,79 +62,29 @@ active_abilities:
   - visual
   trigger: null
 - action_cost: None
-  critical_failure: null
+  critical_failure: The creature is stunned 5 and sickened 2.
   critical_success: null
   description: Success The creature is unaffected.
   effect: null
-  failure: null
+  failure: The creature is __stunned 3__ and sickened 1.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Critical
   range: null
-  raw_description: '**Critical** Success The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __sickened 1__.'
+  raw_description: '**Critical** Success The creature is unaffected.
+
+
+    **Success** The creature is __sickened 1__.
+
+
+    **Failure** The creature is __stunned 3__ and sickened 1.
+
+
+    **Critical Failure** The creature is stunned 5 and sickened 2.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __stunned 3__ and sickened 1.
-  effect: null
-  failure: The creature is __stunned 3__ and sickened 1.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __stunned 3__ and sickened 1.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is stunned 5 and sickened 2.
-  critical_success: null
-  description: The creature is stunned 5 and sickened 2.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is stunned 5 and sickened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 alignment: CE
@@ -151,8 +97,6 @@ automatic_abilities:
     damage (DC 29 basic Reflex save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Caustic Blood
   range: null
@@ -164,7 +108,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The nyogoth takes piercing or slashing damage;
+  trigger: The nyogoth takes piercing or slashing damage
 description: 'Little more than a coiled mass of intestines encircling a massive gaping
   maw, this qlippoth is an __Abyssal__ scavenger, subsisting on the filth and leftovers
   of __demons__ and qlippoth alike, although it relishes any opportunity to consume
@@ -180,8 +124,8 @@ hp: 175
 hp_misc: null
 immunities:
 - acid
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=6">controlled</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __controlled__
+- __fear__
 languages:
 - Abyssal
 - telepathy 100 ft.
@@ -189,32 +133,30 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+13
+  - formula: 2d6+13
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
-  - formula: null
-    type: 1d6 chaotic
+  - formula: 2d6
+    type: acid
+  - formula: 1d6
+    type: chaotic
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 23
   traits:
   - chaotic
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d6+13
+  - formula: 2d6+13
     type: piercing
-  name: tentacle mouth
-  plus_damage:
-  - formula: null
-    type: 1d6 acid
-  - formula: null
-    type: 1d6 chaotic
+  - formula: 1d6
+    type: acid
+  - formula: 1d6
+    type: chaotic
   - formula: null
     type: Grab
+  name: tentacle mouth
   to_hit: 23
   traits:
   - agile

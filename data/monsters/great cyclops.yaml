@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Powerful Charge
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -59,8 +55,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -78,8 +72,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ferocity
   range: null
@@ -97,8 +89,6 @@ automatic_abilities:
   effect: The attack becomes a critical success.
   failure: null
   frequency: once per day, and recharges when the great cyclops uses Ferocity
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flash of Brutality
   range: null
@@ -156,10 +146,9 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+13
+  - formula: 3d10+13
     type: bludgeoning
   name: greatclub
-  plus_damage: null
   to_hit: 25
   traits:
   - backswing
@@ -167,19 +156,17 @@ melee_attacks:
   - shove
 - action_cost: One Action
   damage:
-    formula: 2d10+13
+  - formula: 2d10+13
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 25
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d4+13
+  - formula: 3d4+13
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 25
   traits:
   - agile
@@ -189,10 +176,9 @@ perception: 22
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d6+7
+  - formula: 4d6+7
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 23
   traits:
   - brutal

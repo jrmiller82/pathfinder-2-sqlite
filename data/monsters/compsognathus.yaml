@@ -11,23 +11,21 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 16 Fortitude; **Maximum Duration **4 rounds; **Stage
-    1 **1d6 poison damage and __enfeebled 1__ (1 round); **Stage 2 **1d8 poison damage
-    and enfeebled 1 (1 round)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 4 rounds
   name: Compsognathus Venom
   range: null
   raw_description: '**Compsognathus Venom** (__poison__) **Saving Throw** DC 16 Fortitude;
     **Maximum Duration **4 rounds; **Stage 1 **1d6 poison damage and __enfeebled 1__
     (1 round); **Stage 2 **1d8 poison damage and enfeebled 1 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 16 Fortitude
+  stages:
+  - effect: 1d6 poison damage and __enfeebled 1__ (1 round)
+  - effect: 1d8 poison damage and enfeebled 1 (1 round)
   success: null
   traits:
   - poison
@@ -63,12 +61,11 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
-  name: jaws
-  plus_damage:
+  - formula: 1d6
+    type: piercing
   - formula: null
     type: compsognathus venom
+  name: jaws
   to_hit: 7
   traits:
   - agile

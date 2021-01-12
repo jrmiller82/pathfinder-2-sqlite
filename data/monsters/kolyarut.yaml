@@ -41,12 +41,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: slashing
+  - formula: 1d6
+    type: lawful
   name: bastard sword
-  plus_damage:
-  - formula: null
-    type: 1d6 lawful
   to_hit: 26
   traits:
   - lawful
@@ -54,12 +53,11 @@ melee_attacks:
   - two-hand d12
 - action_cost: One Action
   damage:
-    formula: 1d10+11
+  - formula: 1d10+11
     type: bludgeoning
+  - formula: 1d6
+    type: lawful
   name: fist
-  plus_damage:
-  - formula: null
-    type: 1d6 lawful
   to_hit: 23
   traits:
   - agile
@@ -84,8 +82,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Truespeech
   range: null

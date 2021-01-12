@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ice Burrow
   range: null
@@ -68,8 +64,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Explosion
   range: null
@@ -97,30 +91,28 @@ hp_misc: null
 immunities:
 - bleed
 - cold
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Aquan
 level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 23
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+13
+  - formula: 2d6+13
     type: slashing
+  - formula: 1d6
+    type: persistent cold
   name: tail
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent cold
   to_hit: 23
   traits:
   - agile
@@ -130,12 +122,11 @@ perception: 19
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+13
+  - formula: 1d6+13
     type: piercing
+  - formula: 1d6
+    type: persistent cold
   name: ice shard
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent cold
   to_hit: 23
   traits:
   - range increment 60 feet

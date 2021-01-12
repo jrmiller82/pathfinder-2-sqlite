@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -40,8 +38,6 @@ automatic_abilities:
     DC. On a success, the target falls and lands prone.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Kneecapper
   range: null
@@ -56,7 +52,7 @@ automatic_abilities:
   success: null
   traits: null
   trigger: A Medium creature within the nuglub's reach leaves a square during its
-    move action;
+    __move__ action
 description: 'The "towering" hunchbacked nuglubs are among the largest gremlins, though
   they''re not quite three feet tall. Nuglubs have three glowing blue eyes and black,
   oily hair on their head and back that covers them like a cloak. Nuglubs enjoy killing
@@ -95,21 +91,19 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+1
+  - formula: 1d8+1
     type: piercing
-  name: bite
-  plus_damage:
   - formula: null
     type: Grab
+  name: bite
   to_hit: 11
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 11
   traits:
   - agile

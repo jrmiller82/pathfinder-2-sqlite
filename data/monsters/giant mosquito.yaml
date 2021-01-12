@@ -18,8 +18,6 @@ active_abilities:
     is __drained 1__ until it receives healing of any kind or amount.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Drain
   range: null
@@ -39,14 +37,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: The victim can't reduce its __sickened__ condition while it's affected
-    by septic malaria; **Saving Throw** DC 24 Fortitude; **Onset** 1 day; **Stage
-    1** sickened 1 (1 day); **Stage 2** __drained 1__ and sickened 1 (1 day); **Stage
-    3** as stage 2 (1 day); **Stage 4** __unconscious__ (1 day); **Stage 5** dead
+    by septic malaria
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Septic Malaria
   range: null
@@ -57,8 +51,13 @@ active_abilities:
     __drained 1__ and sickened 1 (1 day); **Stage 3** as stage 2 (1 day); **Stage
     4** __unconscious__ (1 day); **Stage 5** dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 24 Fortitude; **Onset** 1 day
+  stages:
+  - effect: sickened 1 (1 day)
+  - effect: __drained 1__ and sickened 1 (1 day)
+  - effect: as stage 2 (1 day)
+  - effect: __unconscious__ (1 day)
+  - effect: dead
   success: null
   traits:
   - disease The victim can't reduce its sickened condition while it's affected by
@@ -80,14 +79,13 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+7
+  - formula: 2d10+7
     type: piercing
-  name: proboscis
-  plus_damage:
   - formula: null
     type: Grab
   - formula: null
     type: septic malaria
+  name: proboscis
   to_hit: 17
   traits:
   - finesse

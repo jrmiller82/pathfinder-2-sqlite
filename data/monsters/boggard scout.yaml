@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swamp Stride
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Croak
   range: null
@@ -68,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tongue Grab
   range: null
@@ -109,19 +103,17 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: bludgeoning
   name: Morningstar
-  plus_damage: null
   to_hit: 8
   traits:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: Tongue Grab
   name: Tongue
-  plus_damage: null
   to_hit: 8
   traits:
   - reach 10 feet
@@ -130,10 +122,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+1
+  - formula: 1d6+1
     type: bludgeoning
   name: Sling
-  plus_damage: null
   to_hit: 7
   traits:
   - propulsive

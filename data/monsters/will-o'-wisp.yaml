@@ -18,8 +18,6 @@ active_abilities:
     only once per round.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Feed on Fear
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Go Dark
   range: null
@@ -67,27 +63,17 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A will-o''-wisp is itself naturally invisible, but glows with a colored
+  description: A will-o'-wisp is itself naturally invisible, but glows with a colored
     light, casting bright light in the aura and making it visible.
-
-
-    **Magic Immunity** A will-o''-wisp is immune to all spells except __faerie fire__,
-    __glitterdust__, __magic missile__, and __maze__.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Glow
   range: 20 feet
   raw_description: '**Glow** (__aura__, __light__) 20 feet. A will-o''-wisp is itself
     naturally invisible, but glows with a colored light, casting bright light in the
-    aura and making it visible.
-
-
-    **Magic Immunity** A will-o''-wisp is immune to all spells except __faerie fire__,
-    __glitterdust__, __magic missile__, and __maze__.'
+    aura and making it visible.'
   requirements: null
   saving_throw: null
   stages: null
@@ -95,6 +81,25 @@ automatic_abilities:
   traits:
   - aura
   - light
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A will-o'-wisp is immune to all spells except __faerie fire__, __glitterdust__,
+    __magic missile__, and __maze__.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Magic Immunity
+  range: null
+  raw_description: '**Magic Immunity** A will-o''-wisp is immune to all spells except
+    __faerie fire__, __glitterdust__, __magic missile__, and __maze__.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: null
 description: 'Malevolent balls of colored light, will-o''-wisps haunt lonely marshes
   and forests where they lure unsuspecting travelers into danger. Will-o''-wisps can
@@ -151,10 +156,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: electricity
   name: shock
-  plus_damage: null
   to_hit: 17
   traits:
   - electricity

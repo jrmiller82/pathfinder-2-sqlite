@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -62,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -83,8 +77,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Woodland Stride
   range: null
@@ -104,15 +96,12 @@ automatic_abilities:
   description: A creature that first enters the area must attempt a Will save. Regardless
     of the result of the saving throw, the creature is temporarily immune to this
     monster's Frightful Presence for 1 minute.
-  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
-    hits, the dragon disrupts the creature's action.
+  effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
-  range: null
+  range: 90 feet
   raw_description: '**Frightful Presence** A creature that first enters the area must
     attempt a Will save. Regardless of the result of the saving throw, the creature
     is temporarily immune to this monster''s Frightful Presence for 1 minute.
@@ -129,7 +118,7 @@ automatic_abilities:
 
     **Critical Failure** The creature is __frightened 4__.'
   requirements: null
-  saving_throw: null
+  saving_throw: DC 24
   stages: null
   success: The creature is __frightened 1__.
   traits:
@@ -137,6 +126,27 @@ automatic_abilities:
   - emotion
   - fear
   - mental
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The dragon makes a tail Strike at the creature with a –2 penalty. If it
+    hits, the dragon disrupts the creature's action.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Twisting Tail
+  range: null
+  raw_description: '**Twisting Tail** [Reaction] **Trigger** A creature within reach
+    of the dragon''s tail uses a move action or leaves a square during a move action
+    it''s using. **Effect** The dragon makes a tail Strike at the creature with a
+    –2 penalty. If it hits, the dragon disrupts the creature''s action.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: A creature within reach of the dragon's tail uses a move action or leaves
     a square during a move action it's using.
 description: 'Green dragons are the most contemplative of the chromatic dragons as
@@ -194,40 +204,36 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: piercing
+  - formula: 2d4
+    type: poison
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d4 poison
   to_hit: 20
   traits:
   - poison
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 20
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 18
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 1d12+7
+  - formula: 1d12+7
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 18
   traits:
   - reach 10 feet

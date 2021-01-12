@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -90,8 +84,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Water Mastery
   range: null
@@ -106,6 +98,118 @@ active_abilities:
   trigger: null
 alignment: LG
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: ', 2d12 electricity damage. The bronze dragon can turn this aura on
+    or off using a single action, which has the concentrate trait, and it can choose
+    to not affect allies with the aura.'
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Electricity Aura
+  range: 15 feet
+  raw_description: '**Electricity Aura** (__aura__, __electricity__) 15 feet, 2d12
+    electricity damage. The bronze dragon can turn this aura on or off using a single
+    action, which has the concentrate trait, and it can choose to not affect allies
+    with the aura.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - electricity
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: null
+  failure: The creature is __frightened 2__.
+  frequency: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: 90 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
+
+
+    **Critical Success** The creature is unaffected by the presence.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: DC 38
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: 40 feet. Water in the aura that is also in the same body of water as
+    the dragon is difficult terrain for Swimming creatures that don't have the water
+    trait.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vortex
+  range: null
+  raw_description: '**Vortex** (__aura__, __water__); 40 feet. Water in the aura that
+    is also in the same body of water as the dragon is difficult terrain for Swimming
+    creatures that don''t have the water trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - water
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: Jaws only.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -116,35 +220,15 @@ automatic_abilities:
     Swim normally (using the result of that roll if it doesn't have a Swim speed).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Electricity Aura
+  name: Vortex Pull
   range: null
-  raw_description: '**Electricity Aura** (__aura__, __electricity__) 15 feet, 2d12
-    electricity damage. The bronze dragon can turn this aura on or off using a single
-    action, which has the concentrate trait, and it can choose to not affect allies
-    with the aura.
-
-
-    **Frightful Presence** (__aura__, __emotion__, __fear__, __mental__) 90 feet,
-    DC 38
-
-
-    **Vortex** (__aura__, __water__); 40 feet. Water in the aura that is also in the
-    same body of water as the dragon is difficult terrain for Swimming creatures that
-    don''t have the water trait.
-
-
-    **Attack of Opportunity** [Reaction] Jaws only.
-
-
-    **Vortex Pull**  (__water__); **Trigger** A creature in the dragon''s vortex uses
-    a Swim action. **Effect** The dragon creates a current of water, forcing the triggering
-    creature to attempt a DC 40 Athletics check to Swim. If the creature fails, it''s
-    pulled 30 feet toward the dragon and the triggering action is lost. If it succeeds,
-    it can Swim normally (using the result of that roll if it doesn''t have a Swim
-    speed).'
+  raw_description: '**Vortex Pull** [Reaction] (__water__); **Trigger** A creature
+    in the dragon''s vortex uses a Swim action. **Effect** The dragon creates a current
+    of water, forcing the triggering creature to attempt a DC 40 Athletics check to
+    Swim. If the creature fails, it''s pulled 30 feet toward the dragon and the triggering
+    action is lost. If it succeeds, it can Swim normally (using the result of that
+    roll if it doesn''t have a Swim speed).'
   requirements: null
   saving_throw: null
   stages: null
@@ -200,12 +284,11 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+16
+  - formula: 3d12+16
     type: piercing
+  - formula: 2d12
+    type: electricity
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d12 electricity
   to_hit: 35
   traits:
   - electricity
@@ -213,10 +296,9 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 35
   traits:
   - agile
@@ -224,10 +306,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+14
+  - formula: 2d10+14
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 33
   traits:
   - magical

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -43,8 +41,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death Flash
   range: null
@@ -78,12 +74,11 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
-  name: Dagger
-  plus_damage:
+  - formula: 1d4
+    type: piercing
   - formula: null
     type: black smear poison
+  name: Dagger
   to_hit: 10
   traits:
   - agile
@@ -94,12 +89,11 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
-  name: Dagger
-  plus_damage:
+  - formula: 1d4
+    type: piercing
   - formula: null
     type: black smear poison
+  name: Dagger
   to_hit: 10
   traits:
   - agile

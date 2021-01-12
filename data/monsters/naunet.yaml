@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Adaptive Strike
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -72,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Confounding Slam
   range: null
@@ -99,8 +93,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -129,8 +121,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Protean Anatomy
   range: null
@@ -181,12 +171,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: piercing
+  - formula: 1d6
+    type: chaotic
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 chaotic
   to_hit: 18
   traits:
   - chaotic
@@ -194,14 +183,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 1d6 chaotic
+  - formula: 1d6
+    type: chaotic
   - formula: null
     type: Grab
+  name: tail
   to_hit: 18
   traits:
   - chaotic
@@ -209,14 +197,13 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: piercing
-  name: tentacle
-  plus_damage:
-  - formula: null
-    type: 1d6 chaotic
+  - formula: 1d6
+    type: chaotic
   - formula: null
     type: confounding slam
+  name: tentacle
   to_hit: 18
   traits:
   - agile
@@ -253,8 +240,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Entropy Sense
   range: null

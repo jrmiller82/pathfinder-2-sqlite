@@ -17,8 +17,6 @@ active_abilities:
     the result to the Fortitude DC of each target.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Body Slam
   range: null
@@ -40,8 +38,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Noxious Breath
   range: null
@@ -89,8 +83,6 @@ automatic_abilities:
     the area.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reactive Breath
   range: null
@@ -145,18 +137,16 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+4
+  - formula: 1d12+4
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 10
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 10
   traits:
   - agile

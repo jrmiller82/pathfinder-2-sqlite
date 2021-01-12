@@ -19,8 +19,6 @@ active_abilities:
     organs fill with water (double damage and sickened 2 on a critical failure).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flooding Thrust
   range: null
@@ -46,8 +44,6 @@ active_abilities:
     with them. Its multiple attack penalty doesn't increase until after both attacks.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tentacle Stab
   range: null
@@ -71,8 +67,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Water Glide
   range: null
@@ -98,8 +92,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -144,33 +136,30 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: piercing
   name: beak
-  plus_damage: null
   to_hit: 24
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+13
+  - formula: 2d8+13
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: Grab
+  name: tentacle
   to_hit: 24
   traits:
   - agile
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+13
+  - formula: 2d6+13
     type: slashing
+  - formula: 1d6
+    type: persistent bleed
   name: ventral tube
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent bleed
   to_hit: 24
   traits:
   - reach 10 feet
@@ -179,12 +168,11 @@ perception: 22
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+13
+  - formula: 2d6+13
     type: bludgeoning
-  name: water jet
-  plus_damage:
   - formula: null
     type: Push 5 feet
+  name: water jet
   to_hit: 23
   traits:
   - range 100 feet

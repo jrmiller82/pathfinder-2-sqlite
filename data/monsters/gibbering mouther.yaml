@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Burn Eyes
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -61,8 +57,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ground Manipulation
   range: null
@@ -81,6 +75,53 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Each creature that begins its turn within 60 feet of a gibbering mouther
+    must attempt a DC 19 Will save. On a failure, they are confused for 1 round. On
+    a success, they are temporarily immune for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Gibbering
+  range: null
+  raw_description: '**Gibbering** (__auditory__, __aura__, __emotion__, __enchantment__,
+    __incapacitation__, __mental__, __occult__) Each creature that begins its turn
+    within 60 feet of a gibbering mouther must attempt a DC 19 Will save. On a failure,
+    they are confused for 1 round. On a success, they are temporarily immune for 1
+    minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - auditory
+  - aura
+  - emotion
+  - enchantment
+  - incapacitation
+  - mental
+  - occult
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: All-Around Vision
+  range: null
+  raw_description: '**All-Around Vision**'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -89,24 +130,12 @@ automatic_abilities:
     against the triggering creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Gibbering
+  name: Reactive Gnaw
   range: null
-  raw_description: '**Gibbering** (__auditory__, __aura__, __emotion__, __enchantment__,
-    __incapacitation__, __mental__, __occult__) Each creature that begins its turn
-    within 60 feet of a gibbering mouther must attempt a DC 19 Will save. On a failure,
-    they are confused for 1 round. On a success, they are temporarily immune for 1
-    minute.
-
-
-    **All-Around Vision**
-
-
-    **Reactive Gnaw** [Reaction] **Trigger** An adjacent creature deals the gibbering
-    mouther slashing damage. **Effect** The gibbering mouther''s wound opens into
-    another maw. It makes a jaws Strike against the triggering creature.'
+  raw_description: '**Reactive Gnaw** [Reaction] **Trigger** An adjacent creature
+    deals the gibbering mouther slashing damage. **Effect** The gibbering mouther''s
+    wound opens into another maw. It makes a jaws Strike against the triggering creature.'
   requirements: null
   saving_throw: null
   stages: null
@@ -157,14 +186,13 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d4 persistent bleed damage
+  - formula: 1d4
+    type: persistent bleed damage
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 14
   traits:
   - finesse
@@ -173,10 +201,9 @@ perception: 15
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 4d6 acid and burn eyes
+  - formula: 4d6
+    type: acid and burn eyes
   name: spittle
-  plus_damage: null
   to_hit: 14
   traits:
   - range 30 feet

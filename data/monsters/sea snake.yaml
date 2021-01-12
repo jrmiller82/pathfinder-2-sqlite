@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Sea Snake Venom
   range: null
@@ -41,8 +39,6 @@ automatic_abilities:
   effect: The sea snake makes a bite Strike against the attacker.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lash Out
   range: null
@@ -54,7 +50,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature within the sea snake's reach uses a move action;
+  trigger: A creature within the sea snake's reach uses a __move__ action
 description: 'These lithe snakes like to frequent the shallow waters of tropical seas.
   Their 4-foot-long, blue-green bodies easily blend into the water where they lurk
   to ambush prey. Tales speak of massive sea snakes that swim in deeper waters and
@@ -71,12 +67,11 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d8 piercing
-  name: fangs
-  plus_damage:
+  - formula: 1d8
+    type: piercing
   - formula: null
     type: sea snake venom
+  name: fangs
   to_hit: 7
   traits:
   - agile
@@ -100,8 +95,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Breath
   range: null

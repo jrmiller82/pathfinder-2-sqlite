@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Black Scorpion Venom
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greater Constrict
   range: null
@@ -63,8 +59,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rapid Stinging
   range: null
@@ -94,24 +88,22 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+15
+  - formula: 3d12+15
     type: slashing
-  name: pincer
-  plus_damage:
   - formula: null
     type: Grab
+  name: pincer
   to_hit: 30
   traits:
   - agile
   - reach 30 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+15
+  - formula: 3d8+15
     type: piercing
-  name: stinger
-  plus_damage:
   - formula: null
     type: black scorpion venom
+  name: stinger
   to_hit: 30
   traits:
   - reach 30 feet

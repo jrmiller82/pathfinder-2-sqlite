@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drench
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Surge
   range: null
@@ -72,8 +68,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vortex
   range: 50 feet
@@ -107,12 +101,11 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: bludgeoning
-  name: wave
-  plus_damage:
   - formula: null
     type: Push or Pull 10 feet
+  name: wave
   to_hit: 24
   traits:
   - reach 20 feet
@@ -140,8 +133,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Water-Bound
   range: null

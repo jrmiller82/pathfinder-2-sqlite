@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Impaling Critical
   range: null
@@ -35,16 +33,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 28 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1** 2d6 poison damage and __clumsy 2__ (1 round); **Stage 2** 2d8 poison damage,
-    clumsy 2, and __slowed 1__ (1 round); **Stage 3** 2d10 poison damage, clumsy 2,
-    and slowed 2 (1 round)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Titan Centipede Venom
   range: null
   raw_description: '**Titan Centipede Venom** (__poison__) **Saving Throw **DC 28
@@ -52,8 +45,11 @@ active_abilities:
     2__ (1 round); **Stage 2** 2d8 poison damage, clumsy 2, and __slowed 1__ (1 round);
     **Stage 3** 2d10 poison damage, clumsy 2, and slowed 2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 28 Fortitude
+  stages:
+  - effect: 2d6 poison damage and __clumsy 2__ (1 round)
+  - effect: 2d8 poison damage, clumsy 2, and __slowed 1__ (1 round)
+  - effect: 2d10 poison damage, clumsy 2, and slowed 2 (1 round)
   success: null
   traits:
   - poison
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -85,8 +79,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Undulate
   range: null
@@ -113,21 +105,19 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: piercing
-  name: mandibles
-  plus_damage:
   - formula: null
     type: titan centipede venom
+  name: mandibles
   to_hit: 21
   traits:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 19
   traits: null
 name: Titan Centipede

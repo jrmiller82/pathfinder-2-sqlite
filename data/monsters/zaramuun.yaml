@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dune
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -65,8 +61,6 @@ active_abilities:
     target creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Raking Sand
   range: null
@@ -91,8 +85,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sand Glide
   range: null
@@ -107,104 +99,38 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: Full damage and blinded for 1 round.
+  critical_success: No effect.
   description: The zaramuun sprays a blast of sand that deals 11d10 slashing damage
     to all creatures in a 60-foot line (Reflex DC 38). It can't Sandblast again for
     1d4 rounds.
   effect: null
-  failure: null
+  failure: Full damage.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sandblast
   range: null
   raw_description: '**Sandblast** [Two Actions]  (__earth__) The zaramuun sprays a
     blast of sand that deals 11d10 slashing damage to all creatures in a 60-foot line
-    (Reflex DC 38). It can''t Sandblast again for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - earth
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: No effect.
-  description: No effect.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** No effect.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Half damage.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** Half damage.'
+    (Reflex DC 38). It can''t Sandblast again for 1d4 rounds.
+
+
+    **Critical Success** No effect.
+
+
+    **Success** Half damage.
+
+
+    **Failure** Full damage.
+
+
+    **Critical Failure** Full damage and blinded for 1 round.'
   requirements: null
   saving_throw: null
   stages: null
   success: Half damage.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: Full damage.
-  effect: null
-  failure: Full damage.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** Full damage.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: Full damage and blinded for 1 round.
-  critical_success: null
-  description: Full damage and blinded for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** Full damage and blinded for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - earth
   trigger: null
 alignment: CE
 automatic_abilities:
@@ -219,8 +145,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -266,10 +190,9 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+13
+  - formula: 4d12+13
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 33
   traits: null
 name: Zaramuun
@@ -277,10 +200,9 @@ perception: 30
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+13
+  - formula: 4d8+13
     type: bludgeoning
   name: rock or metal debris
-  plus_damage: null
   to_hit: 29
   traits:
   - range increment 120 feet

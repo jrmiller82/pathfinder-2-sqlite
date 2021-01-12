@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aquatic Ambush
   range: null
@@ -38,8 +36,6 @@ active_abilities:
     removes the drained condition, but it doesn't automatically end the bleed damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Poison Tooth
   range: null
@@ -63,12 +59,7 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: 'Tail only.
-
-
-    **Pain Frenzy** Whenever the krooth is damaged by a critical hit, it gains a +2
-    status bonus to attack and damage rolls until the end of its next turn. It can''t
-    use reactions while this frenzy lasts.'
+  description: Tail only.
   effect: You lash out at a foe that leaves an opening. Make a melee Strike against
     the triggering creature. If your attack is a critical hit and the trigger was
     a manipulate action, you disrupt that action. This Strike doesn't count toward
@@ -76,8 +67,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -95,6 +84,27 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Whenever the krooth is damaged by a critical hit, it gains a +2 status
+    bonus to attack and damage rolls until the end of its next turn. It can't use
+    reactions while this frenzy lasts.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Pain Frenzy
+  range: null
+  raw_description: '**Pain Frenzy** Whenever the krooth is damaged by a critical hit,
+    it gains a +2 status bonus to attack and damage rolls until the end of its next
+    turn. It can''t use reactions while this frenzy lasts.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 description: 'Krooths, sometimes called crocodile eaters, are fast and vicious hunters
   of bogs and wetlands. While they are known to hunt and eat crocodiles, alligators,
   and virtually any creature with flesh, their favorite prey are lizardfolk, boggards,
@@ -137,12 +147,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+9
+  - formula: 2d12+9
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Poison Tooth
+  name: jaws
   to_hit: 20
   traits:
   - deadly 1d10
@@ -150,19 +159,17 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 20
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: piercing
   name: tail
-  plus_damage: null
   to_hit: 20
   traits:
   - reach 15 feet

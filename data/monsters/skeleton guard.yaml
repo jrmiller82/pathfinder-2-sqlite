@@ -32,20 +32,18 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: slashing
   name: scimitar
-  plus_damage: null
   to_hit: 6
   traits:
   - forceful
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+2
+  - formula: 1d4+2
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 6
   traits:
   - agile
@@ -55,10 +53,9 @@ perception: 2
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6  piercing
+  - formula: 1d6
+    type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 6
   traits:
   - deadly 1d10

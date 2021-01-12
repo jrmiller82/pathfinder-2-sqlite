@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Negate Levitation
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Skrik Nettle Venom
   range: null
@@ -87,8 +83,6 @@ automatic_abilities:
     is exposed to skrik nettle venom.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spill Venom
   range: null
@@ -100,7 +94,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The skrik nettle takes piercing or slashing damage;
+  trigger: The skrik nettle takes piercing or slashing damage
 description: 'The expansive skies of the __First World__ are home to skrik nettles—delicate,
   bizarre-looking creatures that resemble large jellyfishes. A fringe of brightly
   colored feathers circles their bodies, and long tendrils trail from their center,
@@ -139,12 +133,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: piercing
-  name: beak
-  plus_damage:
   - formula: null
     type: skrik nettle venom
+  name: beak
   to_hit: 17
   traits:
   - agile
@@ -172,8 +165,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motionsense
   range: null

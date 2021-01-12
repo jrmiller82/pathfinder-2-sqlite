@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -37,8 +35,6 @@ active_abilities:
     hold one creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wrap in Coils
   range: null
@@ -61,8 +57,6 @@ automatic_abilities:
   effect: The DC of the Escape check is increased by 2.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tighten Coils
   range: null
@@ -90,12 +84,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 8
   traits: null
 name: Ball Python

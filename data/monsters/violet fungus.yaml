@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Violet Rot
   range: null
@@ -64,21 +62,20 @@ hp: 60
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=15">fatigued</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
+- __fatigued__
+- __mental__
+- __poison__
+- __sleep__
+- __unconscious__
 level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: violet rot
+  name: tentacle
   to_hit: 11
   traits:
   - agile

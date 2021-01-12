@@ -17,8 +17,6 @@ active_abilities:
     or increases the DC of its Discharge to 20.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Amplify Voltage
   range: null
@@ -32,7 +30,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A shocker lizard within 20 feet makes a shock Strike or uses Discharge;
+  trigger: A shocker lizard within 20 feet makes a shock Strike or uses Discharge
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Discharge
   range: null
@@ -77,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shocking Burst
   range: null
@@ -134,10 +128,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -147,10 +140,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 2d6 electricity
+  - formula: 2d6
+    type: electricity
   name: shock
-  plus_damage: null
   to_hit: 10
   traits:
   - nonlethal
@@ -174,8 +166,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greater Electrolocation
   range: null

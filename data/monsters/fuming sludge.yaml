@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cooling Glob
   range: null
@@ -65,8 +61,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -115,20 +109,19 @@ immunities:
 - piercing
 - precision
 - slashing
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __unconscious__
+- __visual__
 level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
-  - formula: null
-    type: 1d8 persistent fire
+  - formula: 1d8
+    type: persistent fire
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 17
   traits: null
 name: Fuming Sludge
@@ -136,14 +129,13 @@ perception: 11
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+6
+  - formula: 3d6+6
     type: bludgeoning
-  name: ejected glob
-  plus_damage:
-  - formula: null
-    type: 1d8 persistent fire
+  - formula: 1d8
+    type: persistent fire
   - formula: null
     type: cooling glob
+  name: ejected glob
   to_hit: 17
   traits:
   - brutal
@@ -167,8 +159,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Chemical Sense
   range: null
@@ -195,8 +185,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoldering Haze
   range: 15 feet

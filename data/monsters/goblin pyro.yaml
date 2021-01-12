@@ -17,8 +17,6 @@ automatic_abilities:
   effect: The goblin pyro Steps.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Goblin Scuttle
   range: null
@@ -52,12 +50,11 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 bludgeoning
-  name: torch
-  plus_damage:
+  - formula: 1d4
+    type: bludgeoning
   - formula: null
     type: 1 fire
+  name: torch
   to_hit: 7
   traits:
   - fire

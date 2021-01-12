@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bladestorm
   range: null
@@ -43,8 +41,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Defensive Assault
   range: null
@@ -75,8 +71,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focused Assault
   range: null
@@ -102,8 +96,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greater Constrict
   range: null
@@ -123,8 +115,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infuse Weapons
   range: null
@@ -141,21 +131,25 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: A marilith gains 5 extra reactions per round that they can use only
-    to make Attacks of Opportunity. The demon can't use more than one on the same
-    triggering action, even if a creature leaves several squares in the marilith's
-    reach, and the marilith must use a different weapon for each Attack of Opportunity.
+  description: 'Commanded or allied evil creatures in the aura of lower level than
+    the marilith gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves,
+    and skill checks.
+
+
+    **Failure Vulnerability** A marilith''s pride feeds their strength, so the sting
+    of failure wounds them. If the marilith uses a damaging spell or makes a Strike
+    on their turn but doesn''t deal any damage that turn, they take 3d6+10 mental
+    damage at the end of their turn and their commander''s aura deactivates until
+    the end of their next turn.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Commander's Aura
-  range: null
+  range: 100 feet
   raw_description: '**Commander''s Aura** (__aura__, __divine__, __enchantment__)
     100 feet. Commanded or allied evil creatures in the aura of lower level than the
     marilith gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves,
@@ -166,20 +160,47 @@ automatic_abilities:
     of failure wounds them. If the marilith uses a damaging spell or makes a Strike
     on their turn but doesn''t deal any damage that turn, they take 3d6+10 mental
     damage at the end of their turn and their commander''s aura deactivates until
-    the end of their next turn.
-
-
-    **Attack of Opportunity** [Reaction] A marilith gains 5 extra reactions per round
-    that they can use only to make Attacks of Opportunity. The demon can''t use more
-    than one on the same triggering action, even if a creature leaves several squares
-    in the marilith''s reach, and the marilith must use a different weapon for each
-    Attack of Opportunity.'
+    the end of their next turn.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divine
+  - enchantment
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: A marilith gains 5 extra reactions per round that they can use only
+    to make Attacks of Opportunity. The demon can't use more than one on the same
+    triggering action, even if a creature leaves several squares in the marilith's
+    reach, and the marilith must use a different weapon for each Attack of Opportunity.
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Mariliths are the generals of the Abyss, formed from the souls of proud
   evil mortals, often warlords and despots. They appear as tall and powerfully built
   humans from the waist up with snake tails and six arms. Because of Lamashtu''s prominence
@@ -213,12 +234,11 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+16
+  - formula: 3d8+16
     type: slashing
+  - formula: 1d6
+    type: evil
   name: cold iron silver longsword
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 35
   traits:
   - evil
@@ -227,14 +247,13 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 3d12+16
+  - formula: 3d12+16
     type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Grab
+  name: tail
   to_hit: 33
   traits:
   - evil

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -36,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wide Swing
   range: null
@@ -59,8 +55,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -96,10 +90,9 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+14
+  - formula: 1d10+14
     type: bludgeoning
   name: greatclub
-  plus_damage: null
   to_hit: 19
   traits:
   - backswing
@@ -107,10 +100,9 @@ melee_attacks:
   - shove
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 19
   traits:
   - agile
@@ -120,10 +112,9 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+14
+  - formula: 1d8+14
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 19
   traits:
   - brutal

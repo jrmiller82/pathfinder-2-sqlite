@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Elemental Assault
   range: null
@@ -43,8 +41,6 @@ automatic_abilities:
   effect: The dune dancer gain resistance 2 against the triggering damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Elemental Bulwark
   range: null
@@ -58,7 +54,8 @@ automatic_abilities:
   success: null
   traits: null
   trigger: An enemy is about to damage the dune dancer with cold, electricity, or
-    fire, or with a spell that has the air, earth, fire, or water trait;
+    fire, or with a spell that has the __air__, __earth__, __fire__, or __water__
+    trait
 description: 'Because their genie forebears are native to the __Material Plane__,
   sulis (scions of mortals and __jann__) are by and large the most common geniekin
   on the Material Plane. They are often artisans and peace brokers, compelled to try
@@ -105,10 +102,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: slashing
   name: scimitar
-  plus_damage: null
   to_hit: 7
   traits:
   - forceful

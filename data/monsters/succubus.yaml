@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Embrace
   range: null
@@ -74,8 +70,6 @@ active_abilities:
     to submit to more actions of passion rather than trying to Escape.
   failure: null
   frequency: Once per round.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Passionate Kiss
   range: null
@@ -120,8 +114,6 @@ active_abilities:
     A summoned succubus can''t grant a profane gift.'
   failure: null
   frequency: once per day.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Profane Gift
   range: null
@@ -157,23 +149,15 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'As succubi are beings of pure lust, creatures that reject their lust
+  description: As succubi are beings of pure lust, creatures that reject their lust
     can metaphysically harm them. When a succubus fails a Diplomacy check to Embrace
-    or Request, or when a creature succeeds at its save against a succubus''s mental
+    or Request, or when a creature succeeds at its save against a succubus's mental
     spell or ability, the succubus takes 2d6 mental damage. For one hour after causing
     mental damage to a succubus in this way, a creature can deal 2d6 mental damage
     to the succubus with a successful Demoralize incorporating its rejection.
-
-
-    **Seductive Presence** (__aura__, __charm__, __emotion__, __mental__) 10 feet.
-    Any creature in the aura that could be sexually attracted to a succubus takes
-    a –2 circumstance penalty to checks and DCs to oppose the succubus''s mental spells,
-    Deception, and Diplomacy.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rejection Vulnerability
   range: null
@@ -183,18 +167,38 @@ automatic_abilities:
     its save against a succubus''s mental spell or ability, the succubus takes 2d6
     mental damage. For one hour after causing mental damage to a succubus in this
     way, a creature can deal 2d6 mental damage to the succubus with a successful Demoralize
-    incorporating its rejection.
-
-
-    **Seductive Presence** (__aura__, __charm__, __emotion__, __mental__) 10 feet.
-    Any creature in the aura that could be sexually attracted to a succubus takes
-    a –2 circumstance penalty to checks and DCs to oppose the succubus''s mental spells,
-    Deception, and Diplomacy.'
+    incorporating its rejection.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Any creature in the aura that could be sexually attracted to a succubus
+    takes a –2 circumstance penalty to checks and DCs to oppose the succubus's mental
+    spells, Deception, and Diplomacy.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Seductive Presence
+  range: 10 feet
+  raw_description: '**Seductive Presence** (__aura__, __charm__, __emotion__, __mental__)
+    10 feet. Any creature in the aura that could be sexually attracted to a succubus
+    takes a –2 circumstance penalty to checks and DCs to oppose the succubus''s mental
+    spells, Deception, and Diplomacy.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - charm
+  - emotion
+  - mental
   trigger: null
 description: 'Succubi are manifestations of the sin of destructive lust, and they
   are the most attractive of all demons—as befits their role in seducing mortals to
@@ -234,12 +238,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 16
   traits:
   - agile

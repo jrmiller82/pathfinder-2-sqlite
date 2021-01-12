@@ -19,8 +19,6 @@ active_abilities:
     is also knocked __prone__.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earthen Blow
   range: null
@@ -46,10 +44,7 @@ active_abilities:
     cone take 7d8 bludgeoning damage (DC 26 basic Reflex save; on a critical failure,
     creatures are also knocked __prone__).
   failure: null
-  frequency: once per minute; Requirements The stoneliege is standing on or next to
-    at least 10 cubic feet of dirt, stone, or other earthen material
-  full_description: null
-  generic_description: null
+  frequency: once per minute
   maximum_duration: null
   name: Earthen Torrent
   range: null
@@ -78,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stone Throes
   range: null
@@ -110,8 +103,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stench
   range: 30 feet
@@ -152,10 +143,9 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: piercing
   name: digging bar
-  plus_damage: null
   to_hit: 18
   traits:
   - fatal d12
@@ -163,20 +153,18 @@ melee_attacks:
   - versatile B
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 21
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 19
   traits:
   - agile

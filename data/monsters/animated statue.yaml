@@ -23,8 +23,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Construct Armor
   range: null
@@ -71,12 +69,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Grab
+  name: fist
   to_hit: 11
   traits:
   - magical

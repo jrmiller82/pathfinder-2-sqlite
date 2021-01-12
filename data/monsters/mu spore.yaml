@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cough Spores
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Enormous Inhalation
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: The spore uses Swallow Whole.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fast Swallow
   range: null
@@ -87,8 +81,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greater Constrict
   range: null
@@ -107,8 +99,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Overpowering Jaws
   range: null
@@ -127,8 +117,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -143,6 +131,48 @@ active_abilities:
   trigger: null
 alignment: CN
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A mu spore is a massive creature and takes up a space of 10 squares
+    by 10 squares (50 feet by 50 feet).
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Enormous
+  range: null
+  raw_description: '**Enormous** A mu spore is a massive creature and takes up a space
+    of 10 squares by 10 squares (50 feet by 50 feet).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A living creature that enters the area or ends its turn within it is
+    corrupted by spores. It must succeed at a DC 42 Fortitude save or be clumsy 1,
+    enfeebled 1, and slowed 1 for 1 round. Fungi and plants are immune.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Spores
+  range: 60 feet
+  raw_description: '**Spores** (__aura__) 60 feet. A living creature that enters the
+    area or ends its turn within it is corrupted by spores. It must succeed at a DC
+    42 Fortitude save or be clumsy 1, enfeebled 1, and slowed 1 for 1 round. Fungi
+    and plants are immune.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  trigger: null
 - action_cost: Free Action
   critical_failure: null
   critical_success: null
@@ -151,25 +181,13 @@ automatic_abilities:
     many creatures it can grab with the sticky tendrils that cover its body.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Enormous
+  name: Grasping Tendrils
   range: null
-  raw_description: '**Enormous** A mu spore is a massive creature and takes up a space
-    of 10 squares by 10 squares (50 feet by 50 feet).
-
-
-    **Spores** (__aura__) 60 feet. A living creature that enters the area or ends
-    its turn within it is corrupted by spores. It must succeed at a DC 42 Fortitude
-    save or be clumsy 1, enfeebled 1, and slowed 1 for 1 round. Fungi and plants are
-    immune.
-
-
-    **Grasping Tendrils** [Free Action] **Trigger** A creature within 10 feet of the
-    mu spore moves or attacks the mu spore. **Effect** The spore uses Grab on the
-    triggering creature. There is no limit to how many creatures it can grab with
-    the sticky tendrils that cover its body.'
+  raw_description: '**Grasping Tendrils** [Free Action] **Trigger** A creature within
+    10 feet of the mu spore moves or attacks the mu spore. **Effect** The spore uses
+    Grab on the triggering creature. There is no limit to how many creatures it can
+    grab with the sticky tendrils that cover its body.'
   requirements: null
   saving_throw: null
   stages: null
@@ -208,12 +226,11 @@ level: 21
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+18
+  - formula: 4d12+18
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 40
   traits:
   - deadly 3d12
@@ -244,8 +261,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Windsense
   range: null

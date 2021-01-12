@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: The creature is stunned for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lightning Crash
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swiftness
   range: null
@@ -80,8 +76,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whirlwind Form
   range: null
@@ -118,8 +112,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: High Winds
   range: 40 feet
@@ -155,10 +147,9 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+11
+  - formula: 3d12+11
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 29
   traits:
   - agile
@@ -167,10 +158,9 @@ perception: 20
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 5d8+15
+  - formula: 5d8+15
     type: bludgeoning
   name: debris
-  plus_damage: null
   to_hit: 29
   traits:
   - range increment 60 feet

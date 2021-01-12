@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Berries
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Consume Berries
   range: null
@@ -80,8 +76,6 @@ active_abilities:
     the bush's branches.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Blood
   range: null
@@ -92,7 +86,7 @@ active_abilities:
     1__ (double damage and drained 2 on a critical failure). For every creature damaged
     this way, a cluster of blood berries (see above) immediately grows along the bush''s
     branches.'
-  requirements: The drainberry bush has at least one living creature grabbed with
+  requirements: The drainberry bush has at least one living creature __grabbed__ with
     one of its vines
   saving_throw: null
   stages: null
@@ -109,8 +103,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Storm of Vines
   range: null
@@ -160,12 +152,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: bludgeoning
-  name: vine
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: vine
   to_hit: 17
   traits:
   - reach 20 feet
@@ -193,8 +184,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nature Empathy
   range: null

@@ -9,91 +9,39 @@ ac: 17
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The morlock injures itself, taking 2d6 damage (typically bludgeoning,
+    piercing, or slashing, but potentially a different type at the GM's discretion).
+  critical_success: The target gains 4d6 HP and a +1 circumstance bonus to attack
+    rolls for 1 minute.
   description: The morlock tinkers with an adjacent construct or mechanical hazard.
     They attempt a __Crafting__ check against the construct's or hazard's Fortitude
     DC. The morlock can't succeed if the target's level is more than double the morlock's.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Instinctual Tinker
   range: null
   raw_description: '**Instinctual Tinker** [Two Actions]  The morlock tinkers with
     an adjacent construct or mechanical hazard. They attempt a __Crafting__ check
     against the construct''s or hazard''s Fortitude DC. The morlock can''t succeed
-    if the target''s level is more than double the morlock''s.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The target gains 4d6 HP and a +1 circumstance bonus to attack
+    if the target''s level is more than double the morlock''s.
+
+
+    **Critical Success** The target gains 4d6 HP and a +1 circumstance bonus to attack
     rolls for 1 minute.
-  description: The target gains 4d6 HP and a +1 circumstance bonus to attack rolls
-    for 1 minute.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The target gains 4d6 HP and a +1 circumstance
-    bonus to attack rolls for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target gains 2d6 HP.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The target gains 2d6 HP.'
+
+
+    **Success** The target gains 2d6 HP.
+
+
+    **Critical Failure** The morlock injures itself, taking 2d6 damage (typically
+    bludgeoning, piercing, or slashing, but potentially a different type at the GM''s
+    discretion).'
   requirements: null
   saving_throw: null
   stages: null
   success: The target gains 2d6 HP.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The morlock injures itself, taking 2d6 damage (typically bludgeoning,
-    piercing, or slashing, but potentially a different type at the GM's discretion).
-  critical_success: null
-  description: The morlock injures itself, taking 2d6 damage (typically bludgeoning,
-    piercing, or slashing, but potentially a different type at the GM's discretion).
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The morlock injures itself, taking 2d6 damage
-    (typically bludgeoning, piercing, or slashing, but potentially a different type
-    at the GM''s discretion).'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 - action_cost: Two Actions
@@ -106,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Leap Attack
   range: null
@@ -129,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -151,8 +95,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Stance
   range: null
@@ -202,18 +144,16 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 9
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+4
+  - formula: 1d4+4
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 9
   traits:
   - agile
@@ -222,10 +162,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: bludgeoning
   name: club
-  plus_damage: null
   to_hit: 8
   traits:
   - range increment 10 feet
@@ -246,8 +185,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Blindness
   range: null

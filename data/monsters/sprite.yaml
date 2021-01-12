@@ -33,12 +33,11 @@ level: -1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6–3 piercing
-  name: rapier
-  plus_damage:
+  - formula: 1d6
+    type: –3 piercing
   - formula: null
     type: 1 fire
+  name: rapier
   to_hit: 8
   traits:
   - deadly 1d8
@@ -51,10 +50,9 @@ perception: 4
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 fire
+  - formula: 1d4
+    type: fire
   name: luminous spark
-  plus_damage: null
   to_hit: 8
   traits:
   - fire
@@ -79,8 +77,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Luminous Fire
   range: null

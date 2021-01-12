@@ -9,8 +9,9 @@ ac: 37
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is enfeebled 2 for 1 minute and __blinded__ for 1
+    round.
+  critical_success: The creature is unaffected.
   description: "The umbral dragon breathes in one of two ways. They can't use Breath\
     \ Weapon again for 1d4 rounds.\n\n  * **Negative **(__necromancy__, __negative__,\
     \ __primal__) The dragon breathes a blast of darkness in a 40-foot cone that deals\
@@ -19,10 +20,8 @@ active_abilities:
     \ __shadow__) The dragon breathes a blast of shadows in a 40-foot cone. Each creature\
     \ within the cone must attempt a DC 36 Fortitude save."
   effect: null
-  failure: null
+  failure: The creature is enfeebled 2 for 1 minute.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -33,89 +32,14 @@ active_abilities:
     \ save). Undead creatures take 19d6 force damage instead of the negative damage.\n\
     \n  * **Shadows **(__necromancy__, __primal__, __shadow__) The dragon breathes\
     \ a blast of shadows in a 40-foot cone. Each creature within the cone must attempt\
-    \ a DC 36 Fortitude save."
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __enfeebled 2__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is __enfeebled 2__ for 1 round.'
+    \ a DC 36 Fortitude save.\n\n**Critical Success **The creature is unaffected.\n\
+    \n**Success **The creature is __enfeebled 2__ for 1 round.\n\n**Failure **The\
+    \ creature is enfeebled 2 for 1 minute.\n\n**Critical Failure **The creature is\
+    \ enfeebled 2 for 1 minute and __blinded__ for 1 round."
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is __enfeebled 2__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is enfeebled 2 for 1 minute.
-  effect: null
-  failure: The creature is enfeebled 2 for 1 minute.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature is enfeebled 2 for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is enfeebled 2 for 1 minute and __blinded__ for 1
-    round.
-  critical_success: null
-  description: The creature is enfeebled 2 for 1 minute and __blinded__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **The creature is enfeebled 2 for 1 minute
-    and __blinded__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
   traits: null
   trigger: null
 - action_cost: Two Actions
@@ -125,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -146,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -168,8 +88,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ghost Bane
   range: null
@@ -193,8 +111,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -234,8 +150,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -286,8 +200,8 @@ hp: 275
 hp_misc: null
 immunities:
 - negative
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Common
 - Draconic
@@ -297,22 +211,20 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+14
+  - formula: 3d10+14
     type: piercing
+  - formula: 3d6
+    type: negative
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 negative
   to_hit: 30
   traits:
   - negative
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+14
+  - formula: 3d10+14
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 30
   traits:
   - agile
@@ -320,20 +232,18 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+14
+  - formula: 3d12+14
     type: slashing
   name: tail
-  plus_damage: null
   to_hit: 28
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+14
+  - formula: 2d10+14
     type: slashing
   name: wing
-  plus_damage: null
   to_hit: 28
   traits:
   - agile

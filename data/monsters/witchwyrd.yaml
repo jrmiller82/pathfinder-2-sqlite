@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Force Bolt
   range: null
@@ -49,8 +47,6 @@ automatic_abilities:
     or until it is released.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Absorb Force
   range: null
@@ -69,8 +65,8 @@ automatic_abilities:
   - arcane
   - evocation
   - force
-  trigger: A magic missile is fired at the witchwyrd, and the witchwyrd is aware of
-    it and has a free hand;
+  trigger: A __magic missile__ is fired at the witchwyrd, and the witchwyrd is aware
+    of it and has a free hand
 description: 'Witchwyrds conceal most of their faces, leaving only their eyes unmasked.
   Their inscrutability is a boon to one of their most significant interests—mercantilism—
   and many haughty witchwyrds openly revel in the befuddlement inspired by their mysterious
@@ -112,10 +108,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: piercing
   name: ranseur
-  plus_damage: null
   to_hit: 16
   traits:
   - disarm
@@ -123,12 +118,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Grab
+  name: fist
   to_hit: 15
   traits:
   - agile

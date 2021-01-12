@@ -19,8 +19,6 @@ active_abilities:
     can't voluntarily stop its frenzy. After its frenzy, the sea devil is __fatigued__.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Frenzy
   range: null
@@ -32,7 +30,7 @@ active_abilities:
     with its claws and jaws, gains 7 temporary HP until the end of the frenzy, and
     takes a –2 status penalty to AC. The sea devil can''t voluntarily stop its frenzy.
     After its frenzy, the sea devil is __fatigued__.'
-  requirements: The sea devil is not fatigued or already in a frenzy.
+  requirements: The sea devil is not __fatigued__ or already in a frenzy.
   saving_throw: null
   stages: null
   success: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bloodletting
   range: null
@@ -85,28 +81,25 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: piercing
   name: longspear
-  plus_damage: null
   to_hit: 11
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 11
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 11
   traits: null
 name: Sea Devil Scout
@@ -114,10 +107,9 @@ perception: 9
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 12
   traits:
   - thrown 20 feet
@@ -138,8 +130,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shark Commune
   range: null

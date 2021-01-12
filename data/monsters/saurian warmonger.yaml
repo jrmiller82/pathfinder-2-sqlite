@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Boneshaking Roar
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Primordial Balance
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Restrain
   range: null
@@ -93,8 +87,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Three-Limbed Lunge
   range: null
@@ -133,42 +125,38 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+16
+  - formula: 3d6+16
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 32
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+16
+  - formula: 2d6+16
     type: slashing
-  name: mancatcher
-  plus_damage:
   - formula: null
     type: restrain
+  name: mancatcher
   to_hit: 31
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 30
   traits:
   - deadly d12
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d6+16
+  - formula: 3d6+16
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 30
   traits:
   - agile
@@ -180,10 +168,9 @@ perception: 31
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d6+16
+  - formula: 3d6+16
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 32
   traits:
   - magical

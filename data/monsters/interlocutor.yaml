@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Gaze
   range: null
@@ -54,8 +52,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Surgical Rend
   range: null
@@ -85,8 +81,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Glimpse of Stolen Flesh
   range: 30 feet
@@ -121,8 +115,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -165,12 +157,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+13
+  - formula: 3d10+13
     type: slashing
+  - formula: 2d6
+    type: persistent bleed
   name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent bleed
   to_hit: 25
   traits:
   - deadly 2d10
@@ -198,8 +189,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Painsight
   range: null

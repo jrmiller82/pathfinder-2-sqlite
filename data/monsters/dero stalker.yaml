@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -31,6 +29,24 @@ active_abilities:
   trigger: null
 alignment: CE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: A dero stalker takes 4 damage for every hour they're exposed to sunlight.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vulnerable to Sunlight
+  range: null
+  raw_description: '**Vulnerable to Sunlight** A dero stalker takes 4 damage for every
+    hour they''re exposed to sunlight.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -39,19 +55,13 @@ automatic_abilities:
     the triggering attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Vulnerable to Sunlight
+  name: Nimble Dodge
   range: null
-  raw_description: '**Vulnerable to Sunlight** A dero stalker takes 4 damage for every
-    hour they''re exposed to sunlight.
-
-
-    **Nimble Dodge** [Reaction] **Requirements** The dero stalker is not encumbered.
-    **Trigger** A creature targets the dero with an attack and the dero can see the
-    attacker. **Effect** The dero dodges out of the way, gaining a +2 circumstance
-    bonus to AC against the triggering attack.'
+  raw_description: '**Nimble Dodge** [Reaction] **Requirements** The dero stalker
+    is not encumbered. **Trigger** A creature targets the dero with an attack and
+    the dero can see the attacker. **Effect** The dero dodges out of the way, gaining
+    a +2 circumstance bonus to AC against the triggering attack.'
   requirements: The dero stalker is not encumbered.
   saving_throw: null
   stages: null
@@ -78,10 +88,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: bludgeoning
   name: aklys
-  plus_damage: null
   to_hit: 8
   traits:
   - trip
@@ -90,10 +99,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+2
+  - formula: 1d6+2
     type: bludgeoning
   name: aklys
-  plus_damage: null
   to_hit: 10
   traits:
   - ranged trip
@@ -101,12 +109,11 @@ ranged_attacks:
   - thrown 20 feet
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
-  name: hand crossbow
-  plus_damage:
+  - formula: 1d6
+    type: piercing
   - formula: null
     type: giant centipede venom
+  name: hand crossbow
   to_hit: 10
   traits:
   - range increment 60 feet

@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -49,8 +47,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wraith Spawn
   range: null
@@ -71,29 +67,52 @@ active_abilities:
   trigger: null
 alignment: LE
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: A wraith caught in sunlight is stunned 2 and clumsy 2.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sunlight Powerlessness
   range: null
   raw_description: '**Sunlight Powerlessness** A wraith caught in sunlight is stunned
-    2 and clumsy 2.
-
-
-    **Attack of Opportunity** [Reaction]'
+    2 and clumsy 2.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Attack of Opportunity
+  range: null
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'Wraiths are malevolent undead who drain life and shun light. Their shadowy,
   incorporeal forms are dotted with burning eyes that reffect their hatred for the
   living, and shadowy claws are weapon enough to steal the vitality from their enemies.
@@ -154,12 +173,11 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: negative
-  name: spectral hand
-  plus_damage:
   - formula: null
     type: drain life
+  name: spectral hand
   to_hit: 17
   traits:
   - finesse
@@ -187,8 +205,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lifesense
   range: null

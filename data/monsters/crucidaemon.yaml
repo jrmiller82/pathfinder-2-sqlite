@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Daemonic Trap Making
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flurry of Daggers
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Manifest Dagger
   range: null
@@ -91,8 +85,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trap Dodger
   range: null
@@ -141,12 +133,11 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d4+14
+  - formula: 4d4+14
     type: piercing
+  - formula: 2d6
+    type: persistent bleed
   name: chained dagger
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent bleed
   to_hit: 30
   traits:
   - agile

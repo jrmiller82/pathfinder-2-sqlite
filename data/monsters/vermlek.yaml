@@ -12,14 +12,12 @@ active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: '**Requirement** The worm demon is Inhabiting a Body;'
+  description: '**Requirement** The worm demon is Inhabiting a Body'
   effect: The worm demon crawls out of the body it is inhabiting, devouring much of
     the body's remaining flesh and regaining 10 Hit Points in the process. The corpse
     it leaves behind is little more than a husk.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Abandon Body
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inhabit Body
   range: null
@@ -78,8 +74,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unsettling Movement
   range: null
@@ -110,8 +104,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Recoil from Wasted Opportunities
   range: null
@@ -160,27 +152,24 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+3
+  - formula: 2d8+3
     type: piercing
   name: bite
-  plus_damage: null
   to_hit: 12
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+3
+  - formula: 2d6+3
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 12
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 12
   traits:
   - versatile P

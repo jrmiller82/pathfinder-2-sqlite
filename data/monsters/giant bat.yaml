@@ -18,8 +18,6 @@ automatic_abilities:
     and one against another adjacent creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wing Thrash
   range: null
@@ -52,18 +50,16 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: slashing
   name: fangs
-  plus_damage: null
   to_hit: 10
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: wing
-  plus_damage: null
   to_hit: 10
   traits:
   - agile
@@ -86,8 +82,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Echolocation
   range: null

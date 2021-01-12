@@ -9,17 +9,16 @@ ac: 35
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is confused for 1d4 rounds.
+  critical_success: The creature is unaffected and is temporarily immune to Cacophonous
+    Roar for 24 hours.
   description: The jotund troll emits a cacophonous roar from all their heads with
     a mystical power that distorts the listener's mind. Each non-troll creature within
     100 feet must attempt a DC 34 Will save. The jotund troll can't use Cacophonous
     Roar for 1d4 rounds.
   effect: null
-  failure: null
+  failure: The creature is __confused__ for 1 round.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cacophonous Roar
   range: null
@@ -27,11 +26,24 @@ active_abilities:
     __enchantment__, __incapacitation__, __mental__, __primal__) The jotund troll
     emits a cacophonous roar from all their heads with a mystical power that distorts
     the listener''s mind. Each non-troll creature within 100 feet must attempt a DC
-    34 Will save. The jotund troll can''t use Cacophonous Roar for 1d4 rounds.'
+    34 Will save. The jotund troll can''t use Cacophonous Roar for 1d4 rounds.
+
+
+    **Critical Success** The creature is unaffected and is temporarily immune to Cacophonous
+    Roar for 24 hours.
+
+
+    **Success** The creature is __stupefied 1__ for 1 round.
+
+
+    **Failure** The creature is __confused__ for 1 round.
+
+
+    **Critical Failure** The creature is confused for 1d4 rounds.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __stupefied 1__ for 1 round.
   traits:
   - auditory
   - emotion
@@ -40,85 +52,6 @@ active_abilities:
   - mental
   - primal
   trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is temporarily immune to Cacophonous
-    Roar for 24 hours.
-  description: The creature is unaffected and is temporarily immune to Cacophonous
-    Roar for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is temporarily
-    immune to Cacophonous Roar for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __stupefied 1__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __stupefied 1__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __stupefied 1__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __confused__ for 1 round.
-  effect: null
-  failure: The creature is __confused__ for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __confused__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is confused for 1d4 rounds.
-  critical_success: null
-  description: The creature is confused for 1d4 rounds.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is confused for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -126,8 +59,6 @@ active_abilities:
   effect: The troll uses Swallow Whole.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fast Swallow
   range: null
@@ -138,7 +69,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The jotund troll Grabs a creature with their jaws;
+  trigger: The jotund troll __Grabs__ a creature with their jaws
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
@@ -149,8 +80,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ravenous Jaws
   range: null
@@ -171,8 +100,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -190,8 +117,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -211,8 +136,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -237,8 +160,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Head Regrowth
   range: null
@@ -267,8 +188,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Multiple Opportunities
   range: null
@@ -296,8 +215,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -322,8 +239,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -360,19 +275,17 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+14
+  - formula: 3d12+14
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 29
   traits:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+14
+  - formula: 3d10+14
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 29
   traits:
   - agile
@@ -382,10 +295,9 @@ perception: 29
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+14
+  - formula: 2d12+14
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 30
   traits:
   - brutal

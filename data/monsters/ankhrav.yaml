@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Armor-Rending Bite
   range: null
@@ -38,8 +36,6 @@ active_abilities:
     persistent acid damage (DC 20 basic Reflex save).
   failure: null
   frequency: once per hour
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spray Acid
   range: null
@@ -72,12 +68,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
+  - formula: 1d6
+    type: acid
   name: mandibles
-  plus_damage:
-  - formula: null
-    type: 1d6 acid
   to_hit: 13
   traits:
   - acid
@@ -86,10 +81,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 3d6 acid
+  - formula: 3d6
+    type: acid
   name: acid spit
-  plus_damage: null
   to_hit: 10
   traits:
   - acid

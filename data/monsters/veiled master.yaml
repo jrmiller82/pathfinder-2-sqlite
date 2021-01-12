@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -59,8 +57,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Consume Memories
   range: null
@@ -89,8 +85,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Delayed Suggestion
   range: null
@@ -110,17 +104,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** Fortitude DC 36; **Stage 1** no ill effect (1 round);
-    **Stage 2** the victim''s skin softens, inflicting drained 1 (1 round); **Stage
-    3** the victim''s skin transforms into a clear, slimy membrane, inflicting drained
-    2 until the curse ends; every hour this membrane remains dry, the creature''s
-    drained condition increases by 1 (permanent). A __remove disease__ spell can counteract
-    this curse, but immunity to disease offers no protection against it.'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slime
   range: null
@@ -132,8 +119,15 @@ active_abilities:
     1 (permanent). A __remove disease__ spell can counteract this curse, but immunity
     to disease offers no protection against it.'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: Fortitude DC 36
+  stages:
+  - effect: no ill effect (1 round)
+  - effect: the victim's skin softens, inflicting drained 1 (1 round)
+  - effect: the victim's skin transforms into a clear, slimy membrane, inflicting
+      drained 2 until the curse ends; every hour this membrane remains dry, the creature's
+      drained condition increases by 1 (permanent). A __remove disease__ spell can
+      counteract this curse, but immunity to disease offers no protection against
+      it.
   success: null
   traits:
   - curse
@@ -149,8 +143,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tentacle Flurry
   range: null
@@ -173,8 +165,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thoughtlance
   range: null
@@ -228,12 +218,11 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+12
+  - formula: 3d10+12
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: slime
+  name: claw
   to_hit: 30
   traits:
   - agile
@@ -241,14 +230,13 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: slime
   - formula: null
     type: consume memories
+  name: fangs
   to_hit: 28
   traits:
   - agile
@@ -257,12 +245,11 @@ melee_attacks:
   - versatile S
 - action_cost: One Action
   damage:
-    formula: null
-    type: 7d6 electricity
-  name: tentacle
-  plus_damage:
+  - formula: 7d6
+    type: electricity
   - formula: null
     type: thoughtlance
+  name: tentacle
   to_hit: 28
   traits:
   - agile
@@ -296,8 +283,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mucus Cloud
   range: 30 feet

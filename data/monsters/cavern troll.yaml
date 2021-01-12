@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -35,8 +33,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rock Tunneler
   range: null
@@ -55,8 +51,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Throw Rock
   range: null
@@ -82,8 +76,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sunlight Petrification
   range: null
@@ -111,8 +103,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -137,8 +127,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Catch Rock
   range: null
@@ -175,19 +163,17 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+8
+  - formula: 2d10+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 16
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+8
+  - formula: 2d6+8
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 16
   traits:
   - agile
@@ -197,10 +183,9 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+8
+  - formula: 1d12+8
     type: bludgeoning
   name: rock
-  plus_damage: null
   to_hit: 16
   traits:
   - brutal

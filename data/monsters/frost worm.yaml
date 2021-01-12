@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -36,17 +34,16 @@ active_abilities:
   - primal
   trigger: null
 - action_cost: One Action
-  critical_failure: null
+  critical_failure: As failure, but the fascinated condition doesn't end if the frost
+    worm uses hostile actions against the creature.
   critical_success: null
   description: The frost worm emits a hypnotic trill. Each non–frost worm creature
     within 100 feet must attempt a DC 32 Will save. The effects of Worm Trill last
     for 1 round, but if the frost worm uses this ability again on subsequent rounds,
     it extends this duration by 1 round for any creature already affected.
   effect: null
-  failure: null
+  failure: The creature is __fascinated__ by the frost worm.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Worm Trill
   range: null
@@ -54,78 +51,27 @@ active_abilities:
     __mental__, __primal__) The frost worm emits a hypnotic trill. Each non–frost
     worm creature within 100 feet must attempt a DC 32 Will save. The effects of Worm
     Trill last for 1 round, but if the frost worm uses this ability again on subsequent
-    rounds, it extends this duration by 1 round for any creature already affected.'
+    rounds, it extends this duration by 1 round for any creature already affected.
+
+
+    **Success** The creature is unaffected and is immune to Worm Trill for 24 hours.
+
+
+    **Failure** The creature is __fascinated__ by the frost worm.
+
+
+    **Critical Failure **As failure, but the fascinated condition doesn''t end if
+    the frost worm uses hostile actions against the creature.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is unaffected and is immune to Worm Trill for 24 hours.
   traits:
   - auditory
   - concentrate
   - enchantment
   - mental
   - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected and is immune to Worm Trill for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected and is immune to Worm Trill
-    for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected and is immune to Worm Trill for 24 hours.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __fascinated__ by the frost worm.
-  effect: null
-  failure: The creature is __fascinated__ by the frost worm.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __fascinated__ by the frost worm.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the fascinated condition doesn't end if the frost
-    worm uses hostile actions against the creature.
-  critical_success: null
-  description: As failure, but the fascinated condition doesn't end if the frost worm
-    uses hostile actions against the creature.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure **As failure, but the fascinated condition
-    doesn''t end if the frost worm uses hostile actions against the creature.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: N
 automatic_abilities:
@@ -138,8 +84,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Death Throes
   range: null
@@ -163,8 +107,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Worm Chill
   range: 5 feet
@@ -190,8 +132,6 @@ automatic_abilities:
     save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Freezing Blood
   range: null
@@ -205,7 +145,7 @@ automatic_abilities:
   success: null
   traits:
   - cold
-  trigger: The frost worm takes piercing or slashing damage;
+  trigger: The frost worm takes piercing or slashing damage
 description: 'The frost worm''s single round, red eye gleams prominently at the head
   of its monstrous mass, white as a winter snowfall. What appears to be a bifurcated
   lower jaw is actually two spiky parapodia that the worm uses to shovel food into
@@ -242,12 +182,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+10
+  - formula: 3d8+10
     type: piercing
+  - formula: 2d6
+    type: persistent cold
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent cold
   to_hit: 25
   traits: null
 name: Frost Worm

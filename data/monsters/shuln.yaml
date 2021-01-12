@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Armor-Rending
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Shuln Saliva
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unstoppable Burrow
   range: null
@@ -131,22 +125,20 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+10
+  - formula: 3d8+10
     type: slashing
   name: adamantine claw
-  plus_damage: null
   to_hit: 25
   traits:
   - agile
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+10
+  - formula: 3d10+10
     type: piercing
-  name: adamantine fangs
-  plus_damage:
   - formula: null
     type: shuln saliva
+  name: adamantine fangs
   to_hit: 25
   traits:
   - reach 15 feet

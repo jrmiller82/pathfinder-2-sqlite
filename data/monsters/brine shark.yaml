@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deep Plunge
   range: null
@@ -51,12 +49,11 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+7
+  - formula: 1d12+7
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 11
   traits: null
 name: Brine Shark

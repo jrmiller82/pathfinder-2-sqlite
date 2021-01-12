@@ -9,69 +9,45 @@ ac: 47
 ac_special: null
 active_abilities:
 - action_cost: Free Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: As failure, but the ravener devours the entire soul. The victim
+    can't be restored to life as long as the ravener exists except via a 10th-level
+    effect such as __miracle__ or __wish__, and the ravener adds a number of Hit Points
+    to their soul ward equal to twice the creature's level.
+  critical_success: The creature is unaffected.
   description: null
   effect: The ravener tears the creature's soul from its body with their maw and gulps
     it down. The dying creature must attempt a DC 44 Fortitude save.
-  failure: null
+  failure: As success, but the creature's soul is ravaged. The creature is drained
+    3 and the ravener adds a number of Hit Points to their soul ward equal to the
+    creature's level.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Consume Soul
   range: null
   raw_description: '**Consume Soul** [Free Action]  (__death__, __divine__, __necromancy__)
     **Trigger** A living creature within 30 feet of the ravener dies; **Effect** The
     ravener tears the creature''s soul from its body with their maw and gulps it down.
-    The dying creature must attempt a DC 44 Fortitude save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - death
-  - divine
-  - necromancy
-  trigger: A living creature within 30 feet of the ravener dies;
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The ravener tears off a small chunk of the creature's soul. If the
+    The dying creature must attempt a DC 44 Fortitude save.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The ravener tears off a small chunk of the creature''s soul. If the
     victim is restored to life, they are __drained 1__ in addition to any other side
     effects of returning to life. The ravener adds a number of Hit Points to their
-    soul ward equal to half the creature's level.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The ravener tears off a small chunk of the creature''s
-    soul. If the victim is restored to life, they are __drained 1__ in addition to
-    any other side effects of returning to life. The ravener adds a number of Hit
-    Points to their soul ward equal to half the creature''s level.'
+    soul ward equal to half the creature''s level.
+
+
+    **Failure** As success, but the creature''s soul is ravaged. The creature is drained
+    3 and the ravener adds a number of Hit Points to their soul ward equal to the
+    creature''s level.
+
+
+    **Critical Failure** As failure, but the ravener devours the entire soul. The
+    victim can''t be restored to life as long as the ravener exists except via a 10th-level
+    effect such as __miracle__ or __wish__, and the ravener adds a number of Hit Points
+    to their soul ward equal to twice the creature''s level.'
   requirements: null
   saving_throw: null
   stages: null
@@ -79,61 +55,11 @@ active_abilities:
     is restored to life, they are __drained 1__ in addition to any other side effects
     of returning to life. The ravener adds a number of Hit Points to their soul ward
     equal to half the creature's level.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: As success, but the creature's soul is ravaged. The creature is drained
-    3 and the ravener adds a number of Hit Points to their soul ward equal to the
-    creature's level.
-  effect: null
-  failure: As success, but the creature's soul is ravaged. The creature is drained
-    3 and the ravener adds a number of Hit Points to their soul ward equal to the
-    creature's level.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** As success, but the creature''s soul is ravaged. The
-    creature is drained 3 and the ravener adds a number of Hit Points to their soul
-    ward equal to the creature''s level.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the ravener devours the entire soul. The victim
-    can't be restored to life as long as the ravener exists except via a 10th-level
-    effect such as __miracle__ or __wish__, and the ravener adds a number of Hit Points
-    to their soul ward equal to twice the creature's level.
-  critical_success: null
-  description: As failure, but the ravener devours the entire soul. The victim can't
-    be restored to life as long as the ravener exists except via a 10th-level effect
-    such as __miracle__ or __wish__, and the ravener adds a number of Hit Points to
-    their soul ward equal to twice the creature's level.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but the ravener devours the entire
-    soul. The victim can''t be restored to life as long as the ravener exists except
-    via a 10th-level effect such as __miracle__ or __wish__, and the ravener adds
-    a number of Hit Points to their soul ward equal to twice the creature''s level.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
+  traits:
+  - death
+  - divine
+  - necromancy
+  trigger: A living creature within 30 feet of the ravener dies
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -146,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Manipulate Flames
   range: null
@@ -178,8 +102,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ravenous Breath Weapon
   range: null
@@ -211,8 +133,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vicious Criticals
   range: null
@@ -238,8 +158,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cowering Fear
   range: 90 feet
@@ -262,8 +180,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dragon Heat
   range: 10 feet
@@ -296,8 +212,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Ward
   range: null
@@ -330,8 +244,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -359,8 +271,6 @@ automatic_abilities:
     within 1 mile from the location where they used Discorporate.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Discorporate
   range: null
@@ -379,7 +289,7 @@ automatic_abilities:
   - divine
   - necromancy
   trigger: The ravener takes excess damage to their soul ward but still has at least
-    51 Hit Points in their soul ward;
+    51 Hit Points in their soul ward
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -388,8 +298,6 @@ automatic_abilities:
     and other effects of the spell, as though they were the caster.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Redirect Fire
   range: null
@@ -405,8 +313,8 @@ automatic_abilities:
   traits:
   - abjuration
   - arcane
-  trigger: A creature within 100 feet casts a fire spell, or a fire spell otherwise
-    comes into effect from a source within 100 feet;
+  trigger: A creature within 100 feet casts a __fire__ spell, or a fire spell otherwise
+    comes into effect from a source within 100 feet
 description: 'The ravener presented here was once an __ancient red dragon__.
 
 
@@ -419,12 +327,12 @@ description: 'The ravener presented here was once an __ancient red dragon__.
 hp: 500
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
+- __death__ effects
+- __disease__
 - fire
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Abyssal
 - Common
@@ -437,14 +345,13 @@ level: 21
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+17
+  - formula: 4d10+17
     type: piercing
+  - formula: 3d6
+    type: fire
+  - formula: 2d6
+    type: negative
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 3d6 fire
-  - formula: null
-    type: 2d6 negative
   to_hit: 39
   traits:
   - fire
@@ -452,12 +359,11 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+17
+  - formula: 4d8+17
     type: slashing
+  - formula: 2d6
+    type: negative
   name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 39
   traits:
   - agile
@@ -465,24 +371,22 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+15
+  - formula: 4d10+15
     type: slashing
+  - formula: 2d6
+    type: negative
   name: tail
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 37
   traits:
   - magical
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+15
+  - formula: 3d8+15
     type: slashing
+  - formula: 2d6
+    type: negative
   name: wing
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 37
   traits:
   - agile
@@ -509,8 +413,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

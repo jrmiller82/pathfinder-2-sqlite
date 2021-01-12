@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Heart Ripper
   range: null
@@ -55,8 +53,6 @@ active_abilities:
     Mimics a Shadow again, whichever comes first.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mimic Shadow
   range: null
@@ -126,19 +122,17 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+7
+  - formula: 1d12+7
     type: piercing
   name: antler
-  plus_damage: null
   to_hit: 14
   traits:
   - deadly d8
 - action_cost: One Action
   damage:
-    formula: 1d8+7
+  - formula: 1d8+7
     type: slashing
   name: fangs
-  plus_damage: null
   to_hit: 14
   traits:
   - agile

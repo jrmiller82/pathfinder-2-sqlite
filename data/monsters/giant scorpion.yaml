@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -34,8 +32,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Giant Scorpion Venom
   range: null
@@ -66,8 +62,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -102,24 +96,22 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: slashing
-  name: pincer
-  plus_damage:
   - formula: null
     type: Grab
+  name: pincer
   to_hit: 11
   traits:
   - agile
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: piercing
-  name: stinger
-  plus_damage:
   - formula: null
     type: giant scorpion venom
+  name: stinger
   to_hit: 11
   traits:
   - reach 10 feet

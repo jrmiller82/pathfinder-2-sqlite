@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Punishing Tail
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -88,22 +84,20 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: punishing tail
+  name: tail
   to_hit: 17
   traits:
   - backswing
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
   name: foot
-  plus_damage: null
   to_hit: 17
   traits:
   - reach 10 feet

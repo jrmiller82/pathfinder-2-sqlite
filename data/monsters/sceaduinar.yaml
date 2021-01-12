@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Life
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Entropic Touch
   range: null
@@ -74,8 +70,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Void Child
   range: null
@@ -98,8 +92,6 @@ automatic_abilities:
     save).
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wing Flash
   range: null
@@ -113,8 +105,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature attempts a melee attack against a sceaduinar or an Acrobatics
-    check to Tumble Through the sceaduinar's space;
+  trigger: A creature attempts a melee attack against a sceaduinar or an __Acrobatics__
+    check to __Tumble Through__ the sceaduinar's space
 description: 'Strange creatures born from jagged crystals in the heart of the __Negative
   Energy Plane__, sceaduinar are fueled by its negative energy and driven to extinguish
   all life. Resembling crystalline gargoyles with serrated limbs and sharp, bat-like
@@ -147,22 +139,21 @@ description: 'Strange creatures born from jagged crystals in the heart of the __
 hp: 100
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=10">drained</a>
+- __death__ effects
+- __drained__
 languages:
 - Aklo
 level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
+  - formula: 2d6
+    type: negative
   - formula: null
     type: drain life
+  name: jaws
   to_hit: 18
   traits:
   - agile
@@ -170,12 +161,11 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: slashing
+  - formula: 2d6
+    type: negative
   name: wing
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
   to_hit: 18
   traits:
   - agile

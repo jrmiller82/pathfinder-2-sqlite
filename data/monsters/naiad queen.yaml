@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Beauty
   range: null
@@ -72,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inspiration
   range: null
@@ -97,8 +91,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Water Healing
   range: null
@@ -126,8 +118,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nymph's Beauty
   range: 30 feet
@@ -173,10 +163,9 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: bludgeoning
   name: aqueous fist
-  plus_damage: null
   to_hit: 17
   traits:
   - agile
@@ -203,21 +192,33 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Wild Empathy** The naiad can use Diplomacy to Make an Impression
-    on and make very simple Requests of animals.'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tied to the Land
   range: null
-  raw_description: '**Tied to the Land**
-
-
-    **Wild Empathy** The naiad can use Diplomacy to Make an Impression on and make
-    very simple Requests of animals.'
+  raw_description: '**Tied to the Land**'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The naiad can use Diplomacy to Make an Impression on and make very
+    simple Requests of animals.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Wild Empathy
+  range: null
+  raw_description: '**Wild Empathy** The naiad can use Diplomacy to Make an Impression
+    on and make very simple Requests of animals.'
   requirements: null
   saving_throw: null
   stages: null

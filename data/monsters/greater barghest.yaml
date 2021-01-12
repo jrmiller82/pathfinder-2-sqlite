@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -52,8 +50,6 @@ active_abilities:
     \ malformed wings extending from its back. It gains a fly Speed of 25 feet."
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mutations
   range: null
@@ -90,8 +86,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -146,18 +140,16 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 17
   traits:
   - agile

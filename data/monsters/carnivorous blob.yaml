@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Carnivorous Blob Acid
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -64,8 +60,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Engulf
   range: null
@@ -91,8 +85,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Split
   range: null
@@ -117,8 +109,6 @@ automatic_abilities:
     Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reactive Strikes
   range: null
@@ -131,7 +121,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The carnivorous blob takes damage from any source;
+  trigger: The carnivorous blob takes damage from any source
 description: 'Carnivorous blobs are the ravenous spawn of shattered worlds far beyond
   the stars, born across the galaxy in inert form until they fall like meteorites
   onto unsuspecting worlds. These massive beings can lie dormant for years in desolate
@@ -152,25 +142,24 @@ hp_misc: null
 immunities:
 - acid
 - critical hits
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 - piercing
 - precision
 - slashing
 - sonic
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=38">unconscious</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=163">visual</a>
+- __unconscious__
+- __visual__
 level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: bludgeoning
-  name: pseudopod
-  plus_damage:
-  - formula: null
-    type: 2d6 acid
+  - formula: 2d6
+    type: acid
   - formula: null
     type: Grab
+  name: pseudopod
   to_hit: 26
   traits:
   - reach 30 feet
@@ -194,8 +183,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

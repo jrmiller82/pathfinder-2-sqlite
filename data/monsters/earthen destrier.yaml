@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lancing Charge
   range: null
@@ -60,8 +56,6 @@ active_abilities:
     trampling at a –5 penalty.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tilting Strike
   range: null
@@ -73,7 +67,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The earthen destrier tramples a creature;
+  trigger: The earthen destrier tramples a creature
 - action_cost: Three Actions
   critical_failure: null
   critical_success: null
@@ -81,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -106,29 +98,27 @@ hp: 72
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Terran
 level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: piercing and lancing charge
   name: lance arm
-  plus_damage: null
   to_hit: 14
   traits:
   - deadly d8
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 14
   traits: null
 name: Earthen Destrier

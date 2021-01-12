@@ -51,10 +51,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
+  - formula: 1d4
+    type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 7
   traits:
   - agile
@@ -65,10 +64,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d4 piercing
+  - formula: 1d4
+    type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 7
   traits:
   - agile

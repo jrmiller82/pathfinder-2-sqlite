@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Imitate Door
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Slam Doors
   range: null
@@ -63,8 +59,7 @@ automatic_abilities:
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
-  description: When the doorwarden uses Shield Block against a melee attack from a
-    creature within 5 feet, it can also push the creature 5 feet.
+  description: null
   effect: You lash out at a foe that leaves an opening. Make a melee Strike against
     the triggering creature. If your attack is a critical hit and the trigger was
     a manipulate action, you disrupt that action. This Strike doesn't count toward
@@ -72,8 +67,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -91,6 +84,50 @@ automatic_abilities:
   traits: null
   trigger: A creature within your reach uses a manipulate action or a move action,
     makes a ranged attack, or leaves a square during a move action it's using.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The doorwarden can Raise its Shield and gain its shield's benefit to AC
+    against the triggering attack.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Reactive Shield
+  range: null
+  raw_description: '**Reactive Shield** [Reaction] **Trigger** An enemy hits the doorwarden
+    with a melee Strike. **Effect** The doorwarden can Raise its Shield and gain its
+    shield''s benefit to AC against the triggering attack.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: An enemy hits the doorwarden with a melee Strike.
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: You snap your shield in place to ward off a blow. Your shield prevents you
+    from taking an amount of damage up to the shield's Hardness. You and the shield
+    each take any remaining damage, possibly breaking or destroying the shield.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Shield Block
+  range: null
+  raw_description: '**Shield Block** [Reaction] **Trigger** While you have your shield
+    raised, you would take damage from a physical attack. **Effect** You snap your
+    shield in place to ward off a blow. Your shield prevents you from taking an amount
+    of damage up to the shield''s Hardness. You and the shield each take any remaining
+    damage, possibly breaking or destroying the shield.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: While you have your shield raised, you would take damage from a physical
+    attack.
 description: 'Doorwardens are constructs originally invented by elves. Upon first
   glance, these guardians resemble ornate doors made entirely of steel or even mithral,
   but when trespassers try to force their way past, the doorwarden transforms into
@@ -144,28 +181,25 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+9
+  - formula: 1d8+9
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 15
   traits:
   - reach 10 feet
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 1d6+9
+  - formula: 1d6+9
     type: bludgeoning
   name: shield boss
-  plus_damage: null
   to_hit: 15
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+8
+  - formula: 1d4+8
     type: bludgeoning
   name: door
-  plus_damage: null
   to_hit: 13
   traits: null
 name: Doorwarden

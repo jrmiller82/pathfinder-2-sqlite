@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Lamia's Caress
   range: null
@@ -97,20 +95,18 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+8
+  - formula: 1d6+8
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d6+8
+  - formula: 1d6+8
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 17
   traits:
   - agile
@@ -119,20 +115,18 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+8
+  - formula: 1d4+8
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 14
   traits:
   - thrown 20 feet
   - versatile S
 - action_cost: One Action
   damage:
-    formula: 1d6+8
+  - formula: 1d6+8
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 15
   traits:
   - thrown 30 feet

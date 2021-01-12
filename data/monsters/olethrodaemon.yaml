@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Apocalypse Breath
   range: null
@@ -41,13 +39,11 @@ active_abilities:
 - action_cost: Two Actions
   critical_failure: null
   critical_success: null
-  description: '**Requirement **The olethrodaemon has a soul gem;'
+  description: '**Requirement **The olethrodaemon has a soul gem'
   effect: The olethrodaemon crushes the soul gem in one hand and regains the use of
     Apocalypse Breath or any one of its innate spells.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Crush
   range: null
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -101,8 +95,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aura of Doom
   range: 60 feet
@@ -140,7 +132,7 @@ description: 'Even daemons fear the most massive and terrifying of their kind, o
 hp: 450
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
+- __death__ effects
 items:
 - soul gem (4)
 languages:
@@ -151,14 +143,13 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d12+17
+  - formula: 4d12+17
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 38
   traits:
   - evil
@@ -166,14 +157,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 4d8+17
+  - formula: 4d8+17
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Grab
+  name: claw
   to_hit: 38
   traits:
   - agile

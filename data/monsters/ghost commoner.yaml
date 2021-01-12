@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Moan
   range: null
@@ -58,8 +56,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rejuvenation
   range: null
@@ -106,10 +102,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+2
+  - formula: 2d6+2
     type: negative
   name: ghostly hand
-  plus_damage: null
   to_hit: 13
   traits:
   - agile
@@ -140,8 +135,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Site Bound
   range: null

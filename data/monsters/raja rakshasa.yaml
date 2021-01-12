@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -54,8 +52,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Disturbing Vision
   range: null
@@ -89,8 +85,6 @@ automatic_abilities:
     can't Scoff at the Divine for 1d4 rounds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Scoff at the Divine
   range: null
@@ -101,14 +95,12 @@ automatic_abilities:
     magic and attempts to counteract the triggering spell or ability. The raja rakshasa
     can''t Scoff at the Divine for 1d4 rounds.'
   requirements: The raja rakshasa has an unexpended spell slot that can be used to
-    cast dispel magic.
+    cast __dispel magic__.
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: A creature within 30 feet casts a divine spell or uses a divine ability.
-    Requirements The raja rakshasa has an unexpended spell slot that can be used to
-    cast dispel magic.
 description: 'When not disguised as a humanoid, the raja rakshasa has the head of
   an animal. The hands of a raja rakshasa are more subtly unsettling, for the fingers
   of these fiends bend outward, away from the palms.
@@ -142,10 +134,9 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+10
+  - formula: 2d6+10
     type: slashing
   name: kukri
-  plus_damage: null
   to_hit: 23
   traits:
   - agile
@@ -154,20 +145,18 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 2d12+10
+  - formula: 2d12+10
     type: piercing
   name: fangs
-  plus_damage: null
   to_hit: 20
   traits:
   - agile
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 22
   traits:
   - agile

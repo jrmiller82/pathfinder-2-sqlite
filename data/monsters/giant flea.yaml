@@ -12,15 +12,10 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: Drain from flea fever can't be reduced or recovered from naturally
-    until the disease is cured. **Saving Throw** DC 18 Fortitude; **Stage 1** __drained
-    1__ (1d4 hours), **Stage 2** drained 1 and __sickened 1__ (1 day), **Stage 3**
-    drained 2 and sickened 1 (1 day), **Stage 4** drained 3 and sickened 1 (1 day),
-    **Stage 5** dead
+    until the disease is cured.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flea Fever
   range: null
@@ -30,8 +25,13 @@ active_abilities:
     1__ (1 day), **Stage 3** drained 2 and sickened 1 (1 day), **Stage 4** drained
     3 and sickened 1 (1 day), **Stage 5** dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 18 Fortitude
+  stages:
+  - effect: __drained 1__ (1d4 hours),
+  - effect: drained 1 and __sickened 1__ (1 day),
+  - effect: drained 2 and sickened 1 (1 day),
+  - effect: drained 3 and sickened 1 (1 day),
+  - effect: dead
   success: null
   traits:
   - disease
@@ -44,8 +44,6 @@ active_abilities:
     and the flea regains 5 HP.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Suck Blood
   range: null
@@ -76,14 +74,13 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+4
+  - formula: 1d8+4
     type: piercing
-  name: proboscis
-  plus_damage:
   - formula: null
     type: Suck Blood
   - formula: null
     type: flea fever
+  name: proboscis
   to_hit: 12
   traits: null
 name: Giant Flea

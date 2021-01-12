@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swamp Stride
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Croak
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tongue Grab
   range: null
@@ -109,18 +103,16 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: bludgeoning
   name: Club
-  plus_damage: null
   to_hit: 10
   traits: null
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: Tongue Grab
   name: Tongue
-  plus_damage: null
   to_hit: 10
   traits:
   - reach 10 feet
@@ -129,19 +121,17 @@ perception: 8
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: Javelin
-  plus_damage: null
   to_hit: 6
   traits:
   - thrown 30 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: bludgeoning
   name: Club
-  plus_damage: null
   to_hit: 6
   traits:
   - thrown 10 feet

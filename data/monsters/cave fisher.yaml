@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pull Filament
   range: null
@@ -49,8 +47,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sticky Filament
   range: null
@@ -102,10 +98,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+6
+  - formula: 1d10+6
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 10
   traits: null
 name: Cave Fisher
@@ -113,10 +108,9 @@ perception: 7
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: sticky filament
   name: filament
-  plus_damage: null
   to_hit: 11
   traits:
   - range 60 feet

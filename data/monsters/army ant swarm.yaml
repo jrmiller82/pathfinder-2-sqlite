@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swarming Bites
   range: null
@@ -48,8 +46,6 @@ automatic_abilities:
     to the creature destroys these clinging ants.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cling
   range: null
@@ -63,7 +59,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature leaves the swarm's space;
+  trigger: A creature leaves the swarm's space
 description: 'An army ant swarm is a terrifying carpet of stinging insects that devours
   all in its path.
 
@@ -75,7 +71,7 @@ hp: 55
 hp_misc: null
 immunities:
 - precision
-- <a style="text-decoration:underline" href="MonsterAbilities.aspx?ID=36">swarm mind</a>
+- __swarm mind__
 level: 5
 melee_attacks: null
 name: Army Ant Swarm

@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spectral Ripple
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Touch
   range: null
@@ -79,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wail
   range: null
@@ -117,8 +111,6 @@ automatic_abilities:
     the results of the same Will save.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vengeful Spite
   range: null
@@ -183,12 +175,11 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+14
+  - formula: 4d10+14
     type: negative
-  name: hand
-  plus_damage:
   - formula: null
     type: terrifying touch
+  name: hand
   to_hit: 32
   traits:
   - finesse
@@ -213,25 +204,34 @@ sense_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'The banshee can hear heartbeats within 60 feet (imprecise).
-
-
-    **Sunlight Powerlessness** If in direct sunlight, the banshee is slowed 1 and
-    can''t use actions that have the attack trait.'
+  description: The banshee can hear heartbeats within 60 feet (imprecise).
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hears Heartbeats
   range: null
   raw_description: '**Hears Heartbeats** The banshee can hear heartbeats within 60
-    feet (imprecise).
-
-
-    **Sunlight Powerlessness** If in direct sunlight, the banshee is slowed 1 and
-    can''t use actions that have the attack trait.'
+    feet (imprecise).'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: If in direct sunlight, the banshee is slowed 1 and can't use actions
+    that have the attack trait.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Sunlight Powerlessness
+  range: null
+  raw_description: '**Sunlight Powerlessness** If in direct sunlight, the banshee
+    is slowed 1 and can''t use actions that have the attack trait.'
   requirements: null
   saving_throw: null
   stages: null

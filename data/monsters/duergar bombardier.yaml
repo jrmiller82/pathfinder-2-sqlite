@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Alchemical Formulas
   range: null
@@ -37,8 +35,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Far Lobber
   range: null
@@ -59,8 +55,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Quick Alchemy
   range: null
@@ -81,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Quick Bomber
   range: null
@@ -103,8 +95,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Blindness
   range: null
@@ -144,10 +134,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+1
+  - formula: 1d8+1
     type: bludgeoning
   name: Warhammer
-  plus_damage: null
   to_hit: 4
   traits:
   - shove
@@ -156,10 +145,9 @@ perception: 4
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: varies by bomb
   name: Bomb
-  plus_damage: null
   to_hit: 8
   traits:
   - range increment 30 feet
@@ -181,8 +169,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infused Items
   range: null

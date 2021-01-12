@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swiftness
   range: null
@@ -42,8 +40,6 @@ automatic_abilities:
     it was dispersed.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Disperse
   range: null
@@ -79,12 +75,11 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+7
+  - formula: 2d6+7
     type: bludgeoning
-  name: gust
-  plus_damage:
   - formula: null
     type: Push 5 feet
+  name: gust
   to_hit: 14
   traits:
   - finesse

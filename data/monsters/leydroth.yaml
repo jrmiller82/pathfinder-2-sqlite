@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dispelling Roar
   range: null
@@ -53,8 +51,6 @@ active_abilities:
     the creature struck.
   failure: null
   frequency: once per round
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dispelling Strike
   range: null
@@ -69,7 +65,7 @@ active_abilities:
   traits:
   - abjuration
   - primal
-  trigger: The leydroth hits a creature, object, or spell effect with a Strike;
+  trigger: The leydroth hits a creature, object, or spell effect with a Strike
 - action_cost: None
   critical_failure: null
   critical_success: null
@@ -78,8 +74,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Spell Feedback
   range: null
@@ -103,8 +97,6 @@ automatic_abilities:
     spell.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Menace to Magic
   range: null
@@ -118,7 +110,7 @@ automatic_abilities:
   traits:
   - abjuration
   - primal
-  trigger: A creature within 60 feet Casts a Spell;
+  trigger: A creature within 60 feet Casts a Spell
 description: 'In ancient times, a cabal of primalists imbued an amalgam of beasts
   with both supernatural might and a hatred of magic itself, hoping to achieve a potent
   weapon for use against arcane spellcasters. Effective beyond expectation, the first
@@ -143,22 +135,20 @@ level: 17
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: piercing
+  - formula: 1d10
+    type: persistent bleed
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d10 persistent bleed
   to_hit: 33
   traits:
   - magical
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+16
+  - formula: 3d10+16
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 33
   traits:
   - agile
@@ -166,10 +156,9 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+16
+  - formula: 3d12+16
     type: bludgeoning
   name: horn sweep
-  plus_damage: null
   to_hit: 33
   traits:
   - magical
@@ -201,8 +190,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Magic Sense
   range: null

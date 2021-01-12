@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Acidic Effluence
   range: null
@@ -49,8 +47,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Roll Up
   range: null
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -104,8 +98,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flippable
   range: null
@@ -138,21 +130,19 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+13
+  - formula: 3d12+13
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 29
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 27
   traits:
   - deadly d8

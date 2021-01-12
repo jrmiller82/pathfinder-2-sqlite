@@ -20,8 +20,6 @@ active_abilities:
     A creature that survives is temporarily immune for 1 minute.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devour Soul
   range: null
@@ -56,8 +54,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Essence Drain
   range: null
@@ -82,26 +78,16 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'An astradaemon draws power from the souls of the recently slain. If
+  description: An astradaemon draws power from the souls of the recently slain. If
     a Small or larger living creature dies within its aura, the astradaemon gains
     5 temporary Hit Points and a +1 status bonus to attack and damage rolls for 1
-    round, unless the creature was slain by an astradaemon''s Devour Soul ability.
+    round, unless the creature was slain by an astradaemon's Devour Soul ability.
     Incorporeal undead and living spirits traveling outside the body take 1d8 force
-    damage each round within the daemon''s aura from the spiritual pressure as the
+    damage each round within the daemon's aura from the spiritual pressure as the
     astradaemon pulls in fragments of their soul.
-
-
-    **Displacement** (__divine__, __illusion__, __visual__) An astradaemon bends light,
-    appearing shifted from its true position, though still in the same space. Creatures
-    targeting the astradaemon must attempt a DC 11 flat check, as if the astradaemon
-    were hidden, even though it remains observed. Effects such as the Blind-Fight
-    feat and halfling''s keen eyes that apply on the flat check against hidden creatures
-    also apply against a displaced astradaemon.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Siphon
   range: 30 feet
@@ -112,15 +98,7 @@ automatic_abilities:
     unless the creature was slain by an astradaemon''s Devour Soul ability. Incorporeal
     undead and living spirits traveling outside the body take 1d8 force damage each
     round within the daemon''s aura from the spiritual pressure as the astradaemon
-    pulls in fragments of their soul.
-
-
-    **Displacement** (__divine__, __illusion__, __visual__) An astradaemon bends light,
-    appearing shifted from its true position, though still in the same space. Creatures
-    targeting the astradaemon must attempt a DC 11 flat check, as if the astradaemon
-    were hidden, even though it remains observed. Effects such as the Blind-Fight
-    feat and halfling''s keen eyes that apply on the flat check against hidden creatures
-    also apply against a displaced astradaemon.'
+    pulls in fragments of their soul.'
   requirements: null
   saving_throw: null
   stages: null
@@ -130,6 +108,35 @@ automatic_abilities:
   - divine
   - force
   - necromancy
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: An astradaemon bends light, appearing shifted from its true position,
+    though still in the same space. Creatures targeting the astradaemon must attempt
+    a DC 11 flat check, as if the astradaemon were hidden, even though it remains
+    observed. Effects such as the Blind-Fight feat and halfling's keen eyes that apply
+    on the flat check against hidden creatures also apply against a displaced astradaemon.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Displacement
+  range: null
+  raw_description: '**Displacement** (__divine__, __illusion__, __visual__) An astradaemon
+    bends light, appearing shifted from its true position, though still in the same
+    space. Creatures targeting the astradaemon must attempt a DC 11 flat check, as
+    if the astradaemon were hidden, even though it remains observed. Effects such
+    as the Blind-Fight feat and halfling''s keen eyes that apply on the flat check
+    against hidden creatures also apply against a displaced astradaemon.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - divine
+  - illusion
+  - visual
   trigger: null
 description: 'These unnerving, almost reptilian daemons represent death by direct
   assault against a soul or life-force—the same numbing death they bring with their
@@ -165,16 +172,15 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+9
+  - formula: 3d8+9
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: essence drain
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 32
   traits:
   - evil
@@ -182,14 +188,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d6+9
+  - formula: 3d6+9
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Essence Drain
+  name: claw
   to_hit: 32
   traits:
   - agile
@@ -198,14 +203,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+9
+  - formula: 3d10+9
     type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Essence Drain
+  name: tail
   to_hit: 32
   traits:
   - evil

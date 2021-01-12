@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aluum Antimagic
   range: null
@@ -46,8 +44,6 @@ active_abilities:
     again for 1d4 rounds.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Obliteration Beam
   range: null
@@ -58,7 +54,7 @@ active_abilities:
     deals 20d6 force damage in a 30-foot line (DC 38 basic Reflex save). The remaining
     fragments of the captured soul are released to the Great Beyond. The spiritbound
     aluum can''t use Obliteration Beam again for 1d4 rounds.'
-  requirements: The spiritbound aluum has bound a soul using its bind soul innate
+  requirements: The spiritbound aluum has bound a soul using its __bind soul__ innate
     spell
   saving_throw: null
   stages: null
@@ -77,8 +73,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Paralyzing Force
   range: null
@@ -105,8 +99,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Binder
   range: null
@@ -130,8 +122,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Soul Shriek
   range: null
@@ -164,8 +154,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -228,12 +216,11 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: paralyzing force
+  name: fist
   to_hit: 33
   traits:
   - magical

@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Drider Venom
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Web Trap
   range: null
@@ -104,10 +100,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+10
+  - formula: 1d8+10
     type: slashing
   name: glaive
-  plus_damage: null
   to_hit: 16
   traits:
   - deadly 1d8
@@ -115,12 +110,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+10
+  - formula: 1d6+10
     type: piercing
-  name: fangs
-  plus_damage:
   - formula: null
     type: drider venom
+  name: fangs
   to_hit: 16
   traits: null
 name: Drider
@@ -128,10 +122,9 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+8
+  - formula: 1d8+8
     type: piercing
   name: composite longbow
-  plus_damage: null
   to_hit: 16
   traits:
   - deadly d10
@@ -142,10 +135,9 @@ ranged_attacks:
   - volley 50 feet
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: web trap
   name: web
-  plus_damage: null
   to_hit: 15
   traits:
   - range increment 30 feet

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Extend Strands
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flurry of Strands
   range: null
@@ -69,8 +65,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Pull the Strands
   range: null
@@ -100,8 +94,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sticky Strand
   range: null
@@ -129,8 +121,6 @@ automatic_abilities:
   effect: The roper makes a strand Strike against the triggering creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reactive Lash
   range: null
@@ -178,18 +168,16 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+12
+  - formula: 2d12+12
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 21
   traits: null
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: sticky strand
   name: strand
-  plus_damage: null
   to_hit: 23
   traits:
   - reach 50 feet

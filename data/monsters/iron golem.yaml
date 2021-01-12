@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inexorable March
   range: null
@@ -67,12 +63,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
+  description: Any __drained__ value from this poison is reduced by 1 every hour.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 4 rounds
   name: Iron Golem Poison
   range: null
@@ -96,34 +90,54 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'harmed by acid (6d10, 2d8 from areas and persistent damage); healed
+  description: harmed by acid (6d10, 2d8 from areas and persistent damage); healed
     by fire (area 2d8 HP); slowed by electricity
-
-
-    **Vulnerable to Neutralize Poison** Casting __neutralize poison__ on the golem
-    deactivates its Breath Weapon for 1 minute.
-
-
-    **Vulnerable to Rust** Magical rusting effects, like a rust monster''s antennae,
-    affect the iron golem normally.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Golem Antimagic
   range: null
   raw_description: '**Golem Antimagic** harmed by acid (6d10, 2d8 from areas and persistent
-    damage); healed by fire (area 2d8 HP); slowed by electricity
-
-
-    **Vulnerable to Neutralize Poison** Casting __neutralize poison__ on the golem
-    deactivates its Breath Weapon for 1 minute.
-
-
-    **Vulnerable to Rust** Magical rusting effects, like a rust monster''s antennae,
-    affect the iron golem normally.'
+    damage); healed by fire (area 2d8 HP); slowed by electricity'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Casting __neutralize poison__ on the golem deactivates its Breath Weapon
+    for 1 minute.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vulnerable to Neutralize Poison
+  range: null
+  raw_description: '**Vulnerable to Neutralize Poison** Casting __neutralize poison__
+    on the golem deactivates its Breath Weapon for 1 minute.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Magical rusting effects, like a rust monster's antennae, affect the
+    iron golem normally.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Vulnerable to Rust
+  range: null
+  raw_description: '**Vulnerable to Rust** Magical rusting effects, like a rust monster''s
+    antennae, affect the iron golem normally.'
   requirements: null
   saving_throw: null
   stages: null
@@ -166,10 +180,9 @@ level: 13
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+12
+  - formula: 3d10+12
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 28
   traits:
   - magical

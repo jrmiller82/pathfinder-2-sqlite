@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Archon's Door
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Prudent Asterism
   range: null
@@ -85,8 +81,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blinding Soul
   range: null
@@ -117,8 +111,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Explosive Rebirth
   range: null
@@ -147,8 +139,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retributive Strike
   range: null
@@ -189,14 +179,13 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d4+16
+  - formula: 3d4+16
     type: piercing
+  - formula: 2d6
+    type: good
+  - formula: 3d6
+    type: fire
   name: returning starknife
-  plus_damage:
-  - formula: null
-    type: 2d6 good
-  - formula: null
-    type: 3d6 fire
   to_hit: 38
   traits:
   - agile
@@ -211,14 +200,13 @@ perception: 35
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d4+16
+  - formula: 3d4+16
     type: piercing
+  - formula: 2d6
+    type: good
+  - formula: 3d6
+    type: fire
   name: starknife
-  plus_damage:
-  - formula: null
-    type: 2d6 good
-  - formula: null
-    type: 3d6 fire
   to_hit: 38
   traits:
   - agile

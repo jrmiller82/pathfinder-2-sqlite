@@ -34,8 +34,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Accursed Breath
   range: null
@@ -81,8 +79,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devil's Howl
   range: null
@@ -111,8 +107,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -136,8 +130,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -180,7 +172,7 @@ hp: 165
 hp_misc: null
 immunities:
 - fire
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __fear__
 languages:
 - Abyssal
 - Varisian
@@ -188,18 +180,16 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+12
+  - formula: 2d10+12
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 20
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+12
+  - formula: 2d6+12
     type: bludgeoning
   name: hoof
-  plus_damage: null
   to_hit: 20
   traits:
   - agile

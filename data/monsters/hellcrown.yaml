@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bleeding Nail
   range: null
@@ -52,8 +50,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Terrifying Stare
   range: null
@@ -120,12 +116,11 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+2
+  - formula: 1d4+2
     type: piercing
-  name: nail
-  plus_damage:
   - formula: null
     type: bleeding nail
+  name: nail
   to_hit: 9
   traits:
   - range increment 20 feet

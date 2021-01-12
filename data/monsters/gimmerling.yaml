@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -49,8 +47,6 @@ active_abilities:
     space.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Disarm
   range: null
@@ -72,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -93,8 +87,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trickster's Step
   range: null
@@ -108,6 +100,29 @@ active_abilities:
   trigger: null
 alignment: LE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Tangled roots, jagged divots, sharp rocks and other hazards appear
+    on surfaces in the aura, creating difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Treacherous Aura
+  range: 15 feet
+  raw_description: '**Treacherous Aura** (__aura__, __primal__, __transmutation__)
+    15 feet. Tangled roots, jagged divots, sharp rocks and other hazards appear on
+    surfaces in the aura, creating difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - primal
+  - transmutation
+  trigger: null
 - action_cost: Reaction
   critical_failure: As failure, and the target is knocked prone.
   critical_success: The target is unaffected.
@@ -116,19 +131,13 @@ automatic_abilities:
   failure: The target takes 2d10 bludgeoning damage and is flat-footed until the start
     of its next turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Treacherous Aura
+  name: Trip Up
   range: null
-  raw_description: '**Treacherous Aura** (__aura__, __primal__, __transmutation__)
-    15 feet. Tangled roots, jagged divots, sharp rocks and other hazards appear on
-    surfaces in the aura, creating difficult terrain.
-
-
-    **Trip Up** [Reaction] **Trigger** A creature critically fails a melee attack
-    to hit the gimmerling or moves into a space within the gimmerling''s treacherous
-    aura. **Effect** The triggering creature must attempt a DC 32 Reflex save.
+  raw_description: '**Trip Up** [Reaction] **Trigger** A creature critically fails
+    a melee attack to hit the gimmerling or moves into a space within the gimmerling''s
+    treacherous aura. **Effect** The triggering creature must attempt a DC 32 Reflex
+    save.
 
 
     **Critical Success** The target is unaffected.
@@ -190,24 +199,22 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Disarm
+  name: claw
   to_hit: 26
   traits:
   - agile
   - finesse
 - action_cost: One Action
   damage:
-    formula: 3d8+7
+  - formula: 3d8+7
     type: piercing
+  - formula: 2d6
+    type: poison
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 poison
   to_hit: 26
   traits:
   - finesse
@@ -216,12 +223,11 @@ perception: 21
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+3
+  - formula: 2d6+3
     type: piercing
+  - formula: 2d6
+    type: poison
   name: hand crossbow
-  plus_damage:
-  - formula: null
-    type: 2d6 poison
   to_hit: 28
   traits:
   - range increment 60 feet
@@ -244,8 +250,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hungersense
   range: null

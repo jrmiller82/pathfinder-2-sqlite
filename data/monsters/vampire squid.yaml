@@ -18,9 +18,7 @@ active_abilities:
     that ends its turn in the area must succeed at a DC 13 Fortitude save or become
     sickened 1.
   failure: null
-  frequency: once per day; Requirements The vampire squid is in water
-  full_description: null
-  generic_description: null
+  frequency: once per day
   maximum_duration: null
   name: Glowing Mucus
   range: null
@@ -53,19 +51,17 @@ level: 0
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d8 piercing
+  - formula: 1d8
+    type: piercing
   name: beak
-  plus_damage: null
   to_hit: 7
   traits:
   - finesse
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 bludgeoning
+  - formula: 1d6
+    type: bludgeoning
   name: tentacles
-  plus_damage: null
   to_hit: 7
   traits:
   - agile

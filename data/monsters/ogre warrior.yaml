@@ -34,10 +34,9 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+7
+  - formula: 1d10+7
     type: piercing
   name: ogre hook
-  plus_damage: null
   to_hit: 12
   traits:
   - deadly 1d10
@@ -48,10 +47,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+7
+  - formula: 1d6+7
     type: piercing
   name: javelin
-  plus_damage: null
   to_hit: 6
   traits:
   - thrown 30 feet

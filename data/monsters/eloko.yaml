@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Inspired Feast
   range: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Size Alteration
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -103,18 +97,16 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+8
+  - formula: 2d8+8
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 17
   traits: null
 - action_cost: One Action
   damage:
-    formula: 1d4+8
+  - formula: 1d4+8
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 18
   traits:
   - agile
@@ -125,12 +117,11 @@ perception: 15
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1 piercing
-  name: blowgun
-  plus_damage:
   - formula: null
-    type: 2d4 persistent poison
+    type: 1 piercing
+  - formula: 2d4
+    type: persistent poison
+  name: blowgun
   to_hit: 17
   traits:
   - agile
@@ -139,10 +130,9 @@ ranged_attacks:
   - reload 1
 - action_cost: One Action
   damage:
-    formula: 1d4+8
+  - formula: 1d4+8
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 18
   traits:
   - agile

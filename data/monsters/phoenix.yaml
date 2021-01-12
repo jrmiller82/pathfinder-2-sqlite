@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flaming Strafe
   range: null
@@ -40,25 +38,16 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'When a phoenix dies, it collapses into a pile of smoldering ashes
-    before returning to life fully healed 1d4 rounds later, as if subject to a 7th-level
+  description: When a phoenix dies, it collapses into a pile of smoldering ashes before
+    returning to life fully healed 1d4 rounds later, as if subject to a 7th-level
     __resurrect__ ritual. Self-resurrection happens only if there are some remains
-    to resurrect; for instance, a phoenix killed by a __disintegrate__ spell can''t
+    to resurrect; for instance, a phoenix killed by a __disintegrate__ spell can't
     use this ability. A phoenix whose remains rest within an area devoted to an evil
-    deity by __consecrate__ can''t self-resurrect until its remains are no longer
-    in that area. A phoenix can self-resurrect only once per year.
-
-
-    **Shroud of Flame** (__aura__, __evocation__, __fire__, __primal__) 20 feet. 4d6
-    fire, DC 37 basic Reflex save. While this aura is active, any adjacent creature
-    that hits the phoenix with a melee attack or otherwise touches it takes 2d6 fire
-    damage. The phoenix can activate or deactivate the aura with a single action,
-    which has the concentrate trait.'
+    deity by __consecrate__ can't self-resurrect until its remains are no longer in
+    that area. A phoenix can self-resurrect only once per year.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Self-Resurrection
   range: null
@@ -69,14 +58,7 @@ automatic_abilities:
     for instance, a phoenix killed by a __disintegrate__ spell can''t use this ability.
     A phoenix whose remains rest within an area devoted to an evil deity by __consecrate__
     can''t self-resurrect until its remains are no longer in that area. A phoenix
-    can self-resurrect only once per year.
-
-
-    **Shroud of Flame** (__aura__, __evocation__, __fire__, __primal__) 20 feet. 4d6
-    fire, DC 37 basic Reflex save. While this aura is active, any adjacent creature
-    that hits the phoenix with a melee attack or otherwise touches it takes 2d6 fire
-    damage. The phoenix can activate or deactivate the aura with a single action,
-    which has the concentrate trait.'
+    can self-resurrect only once per year.'
   requirements: null
   saving_throw: null
   stages: null
@@ -84,6 +66,34 @@ automatic_abilities:
   traits:
   - healing
   - necromancy
+  - primal
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: 4d6 fire, DC 37 basic Reflex save. While this aura is active, any adjacent
+    creature that hits the phoenix with a melee attack or otherwise touches it takes
+    2d6 fire damage. The phoenix can activate or deactivate the aura with a single
+    action, which has the concentrate trait.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Shroud of Flame
+  range: 20 feet
+  raw_description: '**Shroud of Flame** (__aura__, __evocation__, __fire__, __primal__)
+    20 feet. 4d6 fire, DC 37 basic Reflex save. While this aura is active, any adjacent
+    creature that hits the phoenix with a melee attack or otherwise touches it takes
+    2d6 fire damage. The phoenix can activate or deactivate the aura with a single
+    action, which has the concentrate trait.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - evocation
+  - fire
   - primal
   trigger: null
 description: 'The phoenix is a primordial bird made of heat and flame that dwells
@@ -126,14 +136,13 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d12+9
+  - formula: 1d12+9
     type: piercing
+  - formula: 3d8
+    type: fire
+  - formula: 2d10
+    type: persistent fire
   name: beak
-  plus_damage:
-  - formula: null
-    type: 3d8 fire
-  - formula: null
-    type: 2d10 persistent fire
   to_hit: 30
   traits:
   - finesse
@@ -142,14 +151,13 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 1d6+6
+  - formula: 1d6+6
     type: piercing
+  - formula: 3d8
+    type: fire
+  - formula: 2d10
+    type: persistent fire
   name: talon
-  plus_damage:
-  - formula: null
-    type: 3d8 fire
-  - formula: null
-    type: 2d10 persistent fire
   to_hit: 30
   traits:
   - agile
@@ -162,12 +170,11 @@ perception: 27
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 6d6 fire
+  - formula: 6d6
+    type: fire
+  - formula: 2d10
+    type: persistent fire
   name: flame jet
-  plus_damage:
-  - formula: null
-    type: 2d10 persistent fire
   to_hit: 30
   traits:
   - fire

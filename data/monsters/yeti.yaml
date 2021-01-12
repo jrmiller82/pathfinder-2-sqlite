@@ -17,8 +17,6 @@ active_abilities:
     2__; on a critical failure, it's __frightened 4__.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Grizzly Arrival
   range: null
@@ -37,7 +35,7 @@ active_abilities:
   - fear
   - mental
   trigger: The yeti hits a creature in the first round of combat and the yeti was
-    hidden from that creature at the start of combat.
+    __hidden__ from that creature at the start of combat.
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rend
   range: null
@@ -59,6 +55,30 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Yetis gain a +4 status bonus to saves against fear and against spells
+    and abilities that affect dreams. A yeti that falls prey to a supernatural nightmare
+    loses this ability and becomes permanently enraged, gaining a +1 status bonus
+    to attack and damage rolls and a –1 status penalty to AC.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Nightmare Guardian
+  range: null
+  raw_description: '**Nightmare Guardian** Yetis gain a +4 status bonus to saves against
+    fear and against spells and abilities that affect dreams. A yeti that falls prey
+    to a supernatural nightmare loses this ability and becomes permanently enraged,
+    gaining a +1 status bonus to attack and damage rolls and a –1 status penalty to
+    AC.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -68,23 +88,14 @@ automatic_abilities:
     creature's Perception DC, the yeti remains hidden.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Nightmare Guardian
+  name: Vanish
   range: null
-  raw_description: '**Nightmare Guardian** Yetis gain a +4 status bonus to saves against
-    fear and against spells and abilities that affect dreams. A yeti that falls prey
-    to a supernatural nightmare loses this ability and becomes permanently enraged,
-    gaining a +1 status bonus to attack and damage rolls and a –1 status penalty to
-    AC.
-
-
-    **Vanish** [Reaction] **Trigger** The yeti is hidden or undetected while not in
-    combat, and a creature would observe it. **Effect** The yeti Strides or Climbs
-    up to half its Speed to a location where it can Hide, then Hides. If its new Stealth
-    check result meets or exceeds the triggering creature''s Perception DC, the yeti
-    remains hidden.'
+  raw_description: '**Vanish** [Reaction] **Trigger** The yeti is hidden or undetected
+    while not in combat, and a creature would observe it. **Effect** The yeti Strides
+    or Climbs up to half its Speed to a location where it can Hide, then Hides. If
+    its new Stealth check result meets or exceeds the triggering creature''s Perception
+    DC, the yeti remains hidden.'
   requirements: null
   saving_throw: null
   stages: null
@@ -132,10 +143,9 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+5
+  - formula: 2d10+5
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 15
   traits: null
 name: Yeti
@@ -159,8 +169,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Snowblind
   range: null

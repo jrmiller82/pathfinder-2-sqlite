@@ -9,7 +9,9 @@ ac: 33
 ac_special: null
 active_abilities:
 - action_cost: One Action
-  critical_failure: null
+  critical_failure: As failure, but if attacked by the rusalka, the creature can attempt
+    a new save only at the start of its next turn, rather than being freed at the
+    end of the rusalka's turn.
   critical_success: null
   description: The rusalka cries out a compelling invitation. Each non-fey creature
     within a 300-foot emanation must attempt a DC 27 Will save. The effect lasts for
@@ -18,10 +20,11 @@ active_abilities:
     at any save against Beckoning Call, that creature is temporarily immune for 24
     hours.
   effect: null
-  failure: null
+  failure: The creature is __fascinated__ and must spend each of its actions to move
+    closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent
+    to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the
+    creature is freed from captivation at the end of the rusalka's turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Beckoning Call
   range: null
@@ -31,11 +34,25 @@ active_abilities:
     must attempt a DC 27 Will save. The effect lasts for 1 round, but if the rusalka
     uses Beckoning Call again on subsequent rounds, the duration extends by 1 round
     for all affected creatures. Once a creature succeeds at any save against Beckoning
-    Call, that creature is temporarily immune for 24 hours.'
+    Call, that creature is temporarily immune for 24 hours.
+
+
+    **Success** The creature is unaffected.
+
+
+    **Failure** The creature is __fascinated__ and must spend each of its actions
+    to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature
+    is adjacent to the rusalka, it stays still and doesn''t act. If attacked by the
+    rusalka, the creature is freed from captivation at the end of the rusalka''s turn.
+
+
+    **Critical Failure** As failure, but if attacked by the rusalka, the creature
+    can attempt a new save only at the start of its next turn, rather than being freed
+    at the end of the rusalka''s turn.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is unaffected.
   traits:
   - auditory
   - concentrate
@@ -44,79 +61,6 @@ active_abilities:
   - mental
   - primal
   trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __fascinated__ and must spend each of its actions to
-    move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is
-    adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka,
-    the creature is freed from captivation at the end of the rusalka's turn.
-  effect: null
-  failure: The creature is __fascinated__ and must spend each of its actions to move
-    closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent
-    to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the
-    creature is freed from captivation at the end of the rusalka's turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __fascinated__ and must spend each
-    of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned
-    creature is adjacent to the rusalka, it stays still and doesn''t act. If attacked
-    by the rusalka, the creature is freed from captivation at the end of the rusalka''s
-    turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but if attacked by the rusalka, the creature can attempt
-    a new save only at the start of its next turn, rather than being freed at the
-    end of the rusalka's turn.
-  critical_success: null
-  description: As failure, but if attacked by the rusalka, the creature can attempt
-    a new save only at the start of its next turn, rather than being freed at the
-    end of the rusalka's turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but if attacked by the rusalka,
-    the creature can attempt a new save only at the start of its next turn, rather
-    than being freed at the end of the rusalka''s turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -124,8 +68,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -144,8 +86,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Entangling Tresses
   range: null
@@ -167,8 +107,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Flowing Hair
   range: null
@@ -183,111 +121,43 @@ active_abilities:
   traits: null
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is sickened 1 and stunned 1, and it must use its
+    first action on its next turn to Strike itself, automatically hitting.
+  critical_success: The target is unaffected.
   description: The rusalka touches a creature within 5 feet using their hand, stirring
     up memories of regret and shame. The target must attempt a DC 35 Will save.
   effect: null
-  failure: null
+  failure: The creature is sickened 1 and __stunned 1__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shameful Touch
   range: null
   raw_description: '**Shameful Touch** [One Action]  (__emotion__, __enchantment__,
     __mental__, __primal__) The rusalka touches a creature within 5 feet using their
     hand, stirring up memories of regret and shame. The target must attempt a DC 35
-    Will save.'
+    Will save.
+
+
+    **Critical Success** The target is unaffected.
+
+
+    **Success** The target is __sickened 1__.
+
+
+    **Failure** The creature is sickened 1 and __stunned 1__.
+
+
+    **Critical Failure** The creature is sickened 1 and stunned 1, and it must use
+    its first action on its next turn to Strike itself, automatically hitting.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The target is __sickened 1__.
   traits:
   - emotion
   - enchantment
   - mental
   - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The target is unaffected.
-  description: The target is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The target is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The target is __sickened 1__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The target is __sickened 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The target is __sickened 1__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is sickened 1 and __stunned 1__.
-  effect: null
-  failure: The creature is sickened 1 and __stunned 1__.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is sickened 1 and __stunned 1__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is sickened 1 and stunned 1, and it must use its
-    first action on its next turn to Strike itself, automatically hitting.
-  critical_success: null
-  description: The creature is sickened 1 and stunned 1, and it must use its first
-    action on its next turn to Strike itself, automatically hitting.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is sickened 1 and stunned 1,
-    and it must use its first action on its next turn to Strike itself, automatically
-    hitting.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: NE
 automatic_abilities:
@@ -298,8 +168,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blurred Form
   range: null
@@ -329,12 +197,11 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+10
+  - formula: 3d8+10
     type: bludgeoning
-  name: tresses
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tresses
   to_hit: 24
   traits:
   - agile

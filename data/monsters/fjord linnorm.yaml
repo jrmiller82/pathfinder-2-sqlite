@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Fjord Linnorm Venom
   range: null
@@ -79,8 +75,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Curse of Stolen Breath
   range: null
@@ -110,8 +104,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -143,9 +135,9 @@ hp: 315
 hp_misc: regeneration 10 (deactivated by cold iron)
 immunities:
 - cold
-- <a style="text-decoration:underline" href="Traits.aspx?ID=38">curse</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __curse__
+- __paralyzed__
+- __sleep__
 languages:
 - Aklo
 - Draconic
@@ -154,22 +146,20 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+17
+  - formula: 3d12+17
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: fjord linnorm venom
+  name: jaws
   to_hit: 33
   traits:
   - magical
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 33
   traits:
   - agile
@@ -177,12 +167,11 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 3d6+15
+  - formula: 3d6+15
     type: bludgeoning
-  name: tail
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: tail
   to_hit: 33
   traits:
   - agile

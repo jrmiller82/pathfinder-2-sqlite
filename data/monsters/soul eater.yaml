@@ -9,8 +9,8 @@ ac: 26
 ac_special: null
 active_abilities:
 - action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: As success, but doomed 3.
+  critical_success: The creature is unaffected.
   description: null
   effect: The soul eater attempts to devour the dying creature's soul. The creature
     must attempt a DC 25 Will save. A creature that dies as a result of Drain Soul
@@ -19,10 +19,8 @@ active_abilities:
     of that creature's corpse and the creature has been dead no longer than 1 minute,
     the creature's soul returns to its body and is restored to life, leaving the creature
     __unconscious__ and dying 1 but no longer __doomed__.
-  failure: null
+  failure: As success, but doomed 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Soul
   range: null
@@ -34,95 +32,30 @@ active_abilities:
     If the soul eater that used Drain Soul on a creature is slain within 100 feet
     of that creature''s corpse and the creature has been dead no longer than 1 minute,
     the creature''s soul returns to its body and is restored to life, leaving the
-    creature __unconscious__ and dying 1 but no longer __doomed__.'
-  requirements: The soul eater is adjacent to a dying creature
+    creature __unconscious__ and dying 1 but no longer __doomed__.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature becomes doomed 1, or increases its doomed value by 1
+    if it was already doomed.
+
+
+    **Failure** As success, but doomed 2.
+
+
+    **Critical Failure** As success, but doomed 3.'
+  requirements: The soul eater is adjacent to a __dying__ creature
   saving_throw: null
   stages: null
-  success: null
+  success: The creature becomes doomed 1, or increases its doomed value by 1 if it
+    was already doomed.
   traits:
   - death
   - divine
   - manipulate
   - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature becomes doomed 1, or increases its doomed value by 1 if
-    it was already doomed.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature becomes doomed 1, or increases its doomed
-    value by 1 if it was already doomed.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature becomes doomed 1, or increases its doomed value by 1 if it
-    was already doomed.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: As success, but doomed 2.
-  effect: null
-  failure: As success, but doomed 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** As success, but doomed 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As success, but doomed 3.
-  critical_success: null
-  description: As success, but doomed 3.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As success, but doomed 3.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: None
   critical_failure: null
@@ -137,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mind-Numbing Touch
   range: null
@@ -172,25 +103,24 @@ hp: 80
 hp_misc: null
 immunities:
 - critical hits
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __disease__
+- __paralyzed__
+- __poison__
 - precision
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __sleep__
 languages:
 - Daemonic
 level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+3
+  - formula: 2d6+3
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 negative
+  - formula: 2d6
+    type: negative
   - formula: null
     type: mind-numbing touch
+  name: claw
   to_hit: 19
   traits:
   - agile
@@ -223,8 +153,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Caster Link
   range: null
@@ -253,8 +181,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Find Target
   range: null

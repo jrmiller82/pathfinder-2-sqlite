@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Claim Wealth
   range: null
@@ -55,8 +53,6 @@ active_abilities:
     Light of Avarice.
   failure: null
   frequency: once per hour
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light of Avarice
   range: null
@@ -91,8 +87,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Forfeiture Aversion
   range: null
@@ -113,8 +107,6 @@ automatic_abilities:
     Strike at a –2 circumstance penalty. On a success, the nalfeshnee steals the weapon.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Greedy Grab
   range: null
@@ -127,7 +119,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature critically fails a weapon Strike against the nalfeshnee;
+  trigger: A creature critically fails a weapon Strike against the nalfeshnee
 description: 'Nalfeshnees are huge, corpulent, boar-headed demons that hoard treasures
   and knowledge alike and form from the souls of avaricious mortals. Few demons understand
   the inner workings of the __Abyss__ itself like nalfeshnees, and it''s not unusual
@@ -153,20 +145,18 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+14
+  - formula: 3d12+14
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 29
   traits:
   - magical
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 3d8+14
+  - formula: 3d8+14
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 29
   traits:
   - agile

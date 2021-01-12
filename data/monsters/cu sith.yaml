@@ -9,25 +9,50 @@ ac: 24
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: 'The creature is frightened 3 and __fleeing__.
+
+
+    If a creature is already frightened when it fails a save against Dooming Bark,
+    its frightened value increases by 1 and it becomes __doomed__ 1. A creature in
+    an area that the cu sith can''t easily reach—such as a hidden burrow or enclosed
+    building—increases the degree of success of its saving throw against Dooming Bark
+    by one step.'
+  critical_success: The creature is unaffected and immune to Dooming Bark for 24 hours.
   description: Any creature within 200 feet of the cu sith that hears its Dooming
     Bark must attempt a DC 24 Will save.
   effect: null
-  failure: null
+  failure: The creature is frightened 2.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Dooming Bark
   range: null
   raw_description: '**Dooming Bark** [Two Actions]  (__auditory__, __concentrate__,
     __fear__, __mental__, __necromancy__, __primal__) Any creature within 200 feet
-    of the cu sith that hears its Dooming Bark must attempt a DC 24 Will save.'
+    of the cu sith that hears its Dooming Bark must attempt a DC 24 Will save.
+
+
+    **Critical Success** The creature is unaffected and immune to Dooming Bark for
+    24 hours.
+
+
+    **Success** The creature is __frightened__ 1.
+
+
+    **Failure** The creature is frightened 2.
+
+
+    **Critical Failure** The creature is frightened 3 and __fleeing__.
+
+
+    If a creature is already frightened when it fails a save against Dooming Bark,
+    its frightened value increases by 1 and it becomes __doomed__ 1. A creature in
+    an area that the cu sith can''t easily reach—such as a hidden burrow or enclosed
+    building—increases the degree of success of its saving throw against Dooming Bark
+    by one step.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __frightened__ 1.
   traits:
   - auditory
   - concentrate
@@ -35,97 +60,6 @@ active_abilities:
   - mental
   - necromancy
   - primal
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and immune to Dooming Bark for 24 hours.
-  description: The creature is unaffected and immune to Dooming Bark for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and immune to
-    Dooming Bark for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __frightened__ 1.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __frightened__ 1.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __frightened__ 1.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is frightened 2.
-  effect: null
-  failure: The creature is frightened 2.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is frightened 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is frightened 3 and __fleeing__.
-  critical_success: null
-  description: 'The creature is frightened 3 and __fleeing__.
-
-
-    If a creature is already frightened when it fails a save against Dooming Bark,
-    its frightened value increases by 1 and it becomes __doomed__ 1. A creature in
-    an area that the cu sith can''t easily reach—such as a hidden burrow or enclosed
-    building—increases the degree of success of its saving throw against Dooming Bark
-    by one step.'
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is frightened 3 and __fleeing__.
-
-
-    If a creature is already frightened when it fails a save against Dooming Bark,
-    its frightened value increases by 1 and it becomes __doomed__ 1. A creature in
-    an area that the cu sith can''t easily reach—such as a hidden burrow or enclosed
-    building—increases the degree of success of its saving throw against Dooming Bark
-    by one step.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -138,8 +72,6 @@ active_abilities:
     releases the creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Worry Prey
   range: null
@@ -184,7 +116,7 @@ description: 'Cu siths are hound-like doorkeepers of remote portals to other pla
 hp: 140
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __fear__
 languages:
 - Sylvan
 - can't speak any language
@@ -192,12 +124,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+9
+  - formula: 2d10+9
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: Grab
+  name: jaws
   to_hit: 17
   traits: null
 name: Cu Sith

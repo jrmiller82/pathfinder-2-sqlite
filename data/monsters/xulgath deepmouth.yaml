@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devourer's Dictum
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Scalescribe
   range: null
@@ -83,8 +79,6 @@ automatic_abilities:
     round (or __blinded__ for 1 round on a critical failure).'
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Blood Eruption
   range: null
@@ -126,10 +120,9 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+6
+  - formula: 2d4+6
     type: piercing
   name: spiked gauntlet
-  plus_damage: null
   to_hit: 21
   traits:
   - agile
@@ -137,18 +130,16 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: piercing
   name: jaws
-  plus_damage: null
   to_hit: 20
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d4+6
+  - formula: 2d4+6
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 20
   traits:
   - agile

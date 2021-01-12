@@ -39,8 +39,6 @@ active_abilities:
     the sanctuary entrance is in darkness once again.'
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Create Shadow Sanctuary
   range: null
@@ -90,8 +88,6 @@ active_abilities:
     damage.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Strike
   range: null
@@ -113,8 +109,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Walk in Shadow
   range: null
@@ -152,18 +146,16 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+11
+  - formula: 3d12+11
     type: piercing
   name: fangs
-  plus_damage: null
   to_hit: 24
   traits: null
 - action_cost: One Action
   damage:
-    formula: 3d8+11
+  - formula: 3d8+11
     type: bludgeoning
   name: wing
-  plus_damage: null
   to_hit: 26
   traits:
   - agile
@@ -187,8 +179,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infrared Vision
   range: null

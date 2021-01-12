@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Divine Armament
   range: null
@@ -40,8 +38,6 @@ active_abilities:
     failure, the foe is __stunned 2__ instead.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Stunning Strike
   range: null
@@ -67,8 +63,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Traveler's Aura
   range: 20 feet
@@ -94,8 +88,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Messenger's Amnesty
   range: null
@@ -146,12 +138,11 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+22
+  - formula: 2d8+22
     type: bludgeoning
+  - formula: 1d6
+    type: good
   name: holy warhammer
-  plus_damage:
-  - formula: null
-    type: 1d6 good
   to_hit: 30
   traits:
   - good

@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cloud Form
   range: null
@@ -73,8 +69,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cloud Walk
   range: null
@@ -93,8 +87,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Frenzy
   range: null
@@ -114,8 +106,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Draconic Momentum
   range: null
@@ -137,8 +127,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thundering Bite
   range: null
@@ -163,8 +151,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 90 feet
@@ -204,8 +190,6 @@ automatic_abilities:
     triggering attack.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Deflecting Cloud
   range: null
@@ -221,8 +205,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The dragon is the target of a ranged attack; Requirements The dragon is
-    aware of the attack and has a free wing;
+  trigger: The dragon is the target of a ranged attack
 description: 'At heart, cloud dragons are wanderers, explorers, and travelers who
   enjoy nothing more than seeing new lands and meeting unusual creatures. Cloud dragons
   range in color from light blue to a pale, milky white and have thick, curling horns
@@ -268,8 +251,8 @@ hp: 355
 hp_misc: null
 immunities:
 - electricity
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __sleep__
 languages:
 - Auran
 - Common
@@ -280,16 +263,15 @@ level: 19
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+17
+  - formula: 3d10+17
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d12 electricity
-  - formula: null
-    type: 4d6 sonic
+  - formula: 2d12
+    type: electricity
+  - formula: 4d6
+    type: sonic
   - formula: null
     type: thundering bite
+  name: jaws
   to_hit: 36
   traits:
   - electricity
@@ -298,10 +280,9 @@ melee_attacks:
   - sonic
 - action_cost: One Action
   damage:
-    formula: 4d10+17
+  - formula: 4d10+17
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 36
   traits:
   - agile
@@ -309,20 +290,18 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d12+17
+  - formula: 4d12+17
     type: bludgeoning
   name: tail
-  plus_damage: null
   to_hit: 34
   traits:
   - magical
   - reach 25 feet
 - action_cost: One Action
   damage:
-    formula: 3d12+17
+  - formula: 3d12+17
     type: piercing
   name: horn
-  plus_damage: null
   to_hit: 34
   traits:
   - deadly d12
@@ -349,8 +328,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mist Vision
   range: null

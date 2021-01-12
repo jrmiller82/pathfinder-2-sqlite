@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -40,8 +38,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Vulnerable to Prone
   range: null
@@ -66,8 +62,6 @@ automatic_abilities:
     up to its speed in a straight line as part of the reaction.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Scuttle
   range: null
@@ -81,7 +75,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature that the giant crab can see targets the crab with an attack;
+  trigger: A creature that the giant crab can see targets the crab with an attack
 description: 'Crabs are scavenging crustaceans known for their hard shells and iconic
   sideways gait. They use their claws to defend themselves, hunt, and fight other
   crabs for territory. When confronted with threats from outside their species, most
@@ -113,12 +107,11 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+4
+  - formula: 1d10+4
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 10
   traits: null
 name: Giant Crab

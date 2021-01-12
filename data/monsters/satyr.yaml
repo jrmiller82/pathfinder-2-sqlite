@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fleet Performer
   range: null
@@ -42,8 +40,6 @@ active_abilities:
     to this music.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Play the Pipes
   range: null
@@ -117,10 +113,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
@@ -131,10 +126,9 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+3
+  - formula: 1d6+3
     type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 14
   traits:
   - deadly 1d10
@@ -142,10 +136,9 @@ ranged_attacks:
   - reload 0
 - action_cost: One Action
   damage:
-    formula: 1d4+6
+  - formula: 1d4+6
     type: piercing
   name: dagger
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
@@ -171,8 +164,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sylvan Wine
   range: null

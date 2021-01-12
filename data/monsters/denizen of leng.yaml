@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Debilitating Bite
   range: null
@@ -48,8 +46,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Leng Ruby
   range: null
@@ -77,8 +73,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: No Breath
   range: null
@@ -101,8 +95,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Planar Fast Healing
   range: null
@@ -153,12 +145,11 @@ level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+6
+  - formula: 2d6+6
     type: slashing
+  - formula: 1d6
+    type: persistent bleed
   name: kukri
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent bleed
   to_hit: 18
   traits:
   - agile
@@ -167,12 +158,11 @@ melee_attacks:
   - trip
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: debilitating bite
+  name: jaws
   to_hit: 17
   traits:
   - agile

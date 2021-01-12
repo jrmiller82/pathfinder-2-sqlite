@@ -12,14 +12,12 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Requirement** The urdefhan dominator has a creature dominated with
-    its __dominate__ innate spell;'
+    its __dominate__ innate spell'
   effect: The urdefhan taps into the dominated creature's sight, hearing, and any
     other senses it has. The urdefhan can change back and forth from its own senses
     to the target's senses as a single action, which has the __concentrate__ trait.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Eyes of the Enthralled
   range: null
@@ -50,8 +48,6 @@ active_abilities:
     \ enfeebled 2 for 1 hour on a critical failure)."
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wicked Bite
   range: null
@@ -85,8 +81,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Necrotic Decay
   range: null
@@ -114,10 +108,9 @@ description: 'Urdefhan dominators control the minds of others to glean useful se
 hp: 250
 hp_misc: negative healing
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=40">death</a> effects
-  (except necrotic decay)
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __death__ effects (except necrotic decay)
+- __disease__
+- __fear__
 items:
 - +2 striking rhoka sword
 languages:
@@ -128,10 +121,9 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: slashing
   name: rhoka sword
-  plus_damage: null
   to_hit: 26
   traits:
   - fatal d10
@@ -139,12 +131,11 @@ melee_attacks:
   - two-hand d12
 - action_cost: One Action
   damage:
-    formula: 4d6+10
+  - formula: 4d6+10
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: wicked bite
+  name: jaws
   to_hit: 26
   traits:
   - agile

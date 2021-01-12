@@ -11,15 +11,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 37 Fortitude, **Maximum Duration** 6 rounds; **Stage
-    1** 3d6 poison damage and clumsy 2 (1 round); **Stage 2** 4d6 poison damage and
-    clumsy 2 (1 round); **Stage 3** 6d6 poison damage and clumsy 2 (1 round)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Azure Worm Venom
   range: null
   raw_description: '**Azure Worm Venom** (__poison__) **Saving Throw** DC 37 Fortitude,
@@ -27,8 +23,11 @@ active_abilities:
     **Stage 2** 4d6 poison damage and clumsy 2 (1 round); **Stage 3** 6d6 poison damage
     and clumsy 2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 37 Fortitude,
+  stages:
+  - effect: 3d6 poison damage and clumsy 2 (1 round)
+  - effect: 4d6 poison damage and clumsy 2 (1 round)
+  - effect: 6d6 poison damage and clumsy 2 (1 round)
   success: null
   traits:
   - poison
@@ -44,8 +43,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breach
   range: null
@@ -67,8 +64,6 @@ active_abilities:
   effect: The worm uses Swallow Whole.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fast Swallow
   range: null
@@ -87,8 +82,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -111,8 +104,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thrash
   range: null
@@ -129,6 +120,28 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The azure worm recovers from the paralyzed, slowed, and stunned conditions
+    at the end of its turn. It's also immune to penalties to its Speeds and the immobilized
+    condition, and it ignores difficult terrain and greater difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Inexorable
+  range: null
+  raw_description: '**Inexorable** The azure worm recovers from the paralyzed, slowed,
+    and stunned conditions at the end of its turn. It''s also immune to penalties
+    to its Speeds and the immobilized condition, and it ignores difficult terrain
+    and greater difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -137,29 +150,21 @@ automatic_abilities:
     artifacts, deities, or a similarly powerful source can't be avoided in this way.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Inexorable
+  name: Shake It Off
   range: null
-  raw_description: '**Inexorable** The azure worm recovers from the paralyzed, slowed,
-    and stunned conditions at the end of its turn. It''s also immune to penalties
-    to its Speeds and the immobilized condition, and it ignores difficult terrain
-    and greater difficult terrain.
-
-
-    **Shake It Off** [Reaction] **Frequency** once per day; **Trigger** The azure
-    worm would be affected by a condition or adverse effect (such as __baleful polymorph__).
-    **Effect** The azure worm negates the triggering condition or effect. Effects
-    from artifacts, deities, or a similarly powerful source can''t be avoided in this
-    way.'
+  raw_description: '**Shake It Off** [Reaction] **Frequency** once per day; **Trigger**
+    The azure worm would be affected by a condition or adverse effect (such as __baleful
+    polymorph__). **Effect** The azure worm negates the triggering condition or effect.
+    Effects from artifacts, deities, or a similarly powerful source can''t be avoided
+    in this way.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: The azure worm would be affected by a condition or adverse effect (such
-    as baleful polymorph).
+    as __baleful polymorph__).
 description: 'The azure worm is a deep-blue creature that is more at home in flooded
   tunnels than dry caves. While an azure worm is a strong swimmer, it prefers to lie
   in wait within the walls, door, or even ceiling of flooded caverns, ready to spring
@@ -180,24 +185,22 @@ level: 15
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d12+16
+  - formula: 3d12+16
     type: piercing
-  name: jaw
-  plus_damage:
   - formula: null
     type: Improved Grab
+  name: jaw
   to_hit: 31
   traits:
   - deadly 2d10
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 4d6+16
+  - formula: 4d6+16
     type: piercing
-  name: stinger
-  plus_damage:
   - formula: null
     type: azure worm venom
+  name: stinger
   to_hit: 31
   traits:
   - agile
@@ -205,10 +208,9 @@ melee_attacks:
   - reach 15 feet
 - action_cost: One Action
   damage:
-    formula: 2d8+14
+  - formula: 2d8+14
     type: bludgeoning
   name: body
-  plus_damage: null
   to_hit: 29
   traits:
   - reach 15 feet

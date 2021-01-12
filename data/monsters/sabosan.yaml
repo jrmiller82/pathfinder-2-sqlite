@@ -17,8 +17,6 @@ active_abilities:
     temporary Hit Points equal to the number of Hit Points lost by the creature.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Drain Blood
   range: null
@@ -42,8 +40,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fell Shriek
   range: null
@@ -66,8 +62,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Powerful Charge
   range: null
@@ -113,32 +107,29 @@ level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: piercing
-  name: jaws
-  plus_damage:
   - formula: null
     type: 1 persistent bleed
+  name: jaws
   to_hit: 14
   traits: null
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: slashing
-  name: claw
-  plus_damage:
   - formula: null
     type: Grab
+  name: claw
   to_hit: 15
   traits:
   - agile
   - finesse
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 13
   traits: null
 name: Sabosan
@@ -146,10 +137,9 @@ perception: 10
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+4
+  - formula: 1d6+4
     type: piercing
   name: spear
-  plus_damage: null
   to_hit: 14
   traits:
   - thrown 20 feet

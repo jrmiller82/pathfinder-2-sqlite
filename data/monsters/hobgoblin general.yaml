@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Polearm Critical Specialization
   range: null
@@ -41,8 +39,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Formation
   range: null
@@ -78,10 +74,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+10
+  - formula: 1d8+10
     type: slashing
   name: glaive
-  plus_damage: null
   to_hit: 17
   traits:
   - deadly 1d8
@@ -92,10 +87,9 @@ perception: 13
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+8
+  - formula: 1d6+8
     type: piercing
   name: composite shortbow
-  plus_damage: null
   to_hit: 15
   traits:
   - brutal
@@ -123,8 +117,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: General's Cry
   range: null

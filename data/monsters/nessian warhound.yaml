@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -47,8 +45,6 @@ automatic_abilities:
     as part of this reaction.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hellish Revenge
   range: null
@@ -84,14 +80,13 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: piercing
+  - formula: 1d6
+    type: evil
+  - formula: 2d6
+    type: fire
   name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
-  - formula: null
-    type: 2d6 fire
   to_hit: 21
   traits:
   - magical

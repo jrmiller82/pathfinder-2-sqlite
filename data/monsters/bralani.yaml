@@ -23,8 +23,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fair Competition
   range: null
@@ -55,8 +53,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Whirlwind Blast
   range: null
@@ -79,8 +75,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wind Form
   range: null
@@ -121,14 +115,13 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+8
+  - formula: 1d6+8
     type: slashing
+  - formula: 2d6
+    type: electricity
+  - formula: 1d6
+    type: good
   name: scimitar
-  plus_damage:
-  - formula: null
-    type: 2d6 electricity
-  - formula: null
-    type: 1d6 good
   to_hit: 16
   traits:
   - forceful
@@ -138,14 +131,13 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+6
+  - formula: 1d8+6
     type: ''
+  - formula: 1d6
+    type: electricity
+  - formula: 1d6
+    type: good
   name: composite longbow
-  plus_damage:
-  - formula: null
-    type: 1d6 electricity
-  - formula: null
-    type: 1d6 good
   to_hit: 18
   traits:
   - deadly 1d10

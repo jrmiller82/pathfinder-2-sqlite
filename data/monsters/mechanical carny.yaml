@@ -23,8 +23,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Haywire
   range: null
@@ -71,20 +69,18 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d4+4
+  - formula: 2d4+4
     type: bludgeoning
   name: spring-loaded fist
-  plus_damage: null
   to_hit: 11
   traits:
   - nonlethal
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d4+4
+  - formula: 2d4+4
     type: bludgeoning
   name: headbutt
-  plus_damage: null
   to_hit: 11
   traits: null
 name: Mechanical Carny

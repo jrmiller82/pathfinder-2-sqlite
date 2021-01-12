@@ -19,8 +19,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fling
   range: null
@@ -44,8 +42,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Leaping Grab
   range: null
@@ -68,8 +64,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rending Mandibles
   range: null
@@ -91,8 +85,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sudden Strike
   range: null
@@ -119,21 +111,19 @@ level: 11
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+14
+  - formula: 2d12+14
     type: piercing
   name: mandibles
-  plus_damage: null
   to_hit: 25
   traits:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+14
+  - formula: 2d10+14
     type: piercing
-  name: leg
-  plus_damage:
   - formula: null
     type: Grab
+  name: leg
   to_hit: 24
   traits:
   - agile

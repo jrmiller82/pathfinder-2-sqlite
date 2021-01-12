@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mimic Object
   range: null
@@ -38,18 +36,20 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
-- action_cost: Reaction
+- action_cost: None
   critical_failure: null
   critical_success: null
-  description: null
-  effect: The triggering creature is automatically stuck by the mimic's adhesive (it
-    receives no save). The mimic then makes a pseudopod Strike against any creature
-    adjacent to the mimic. Object Lesson can't be used again until the mimic escapes
-    and takes on a new disguise.
+  description: The mimic is coated in an adhesive slime. Any creature that hits the
+    mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a DC
+    23 Reflex save or become grabbed (Escape DC 23). A weapon that hits the mimic
+    is stuck to the mimic and can be removed with a successful DC 23 Athletics check
+    (made as a single action). A mimic can have any number of objects or creatures
+    stuck to it at a time. The mimic can release a stuck creature or object by using
+    a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing
+    all stuck objects and creatures.
+  effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Adhesive
   range: null
@@ -60,15 +60,32 @@ automatic_abilities:
     Athletics check (made as a single action). A mimic can have any number of objects
     or creatures stuck to it at a time. The mimic can release a stuck creature or
     object by using a single action, and the adhesive dissolves 1 minute after the
-    mimic dies, releasing all stuck objects and creatures.
-
-
-    **Object Lesson** [Reaction] **Trigger** A creature touches or physically interacts
-    with the mimic while the mimic is transformed using Mimic Object. **Effect** The
-    triggering creature is automatically stuck by the mimic''s adhesive (it receives
-    no save). The mimic then makes a pseudopod Strike against any creature adjacent
-    to the mimic. Object Lesson can''t be used again until the mimic escapes and takes
-    on a new disguise.'
+    mimic dies, releasing all stuck objects and creatures.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: Reaction
+  critical_failure: null
+  critical_success: null
+  description: null
+  effect: The triggering creature is automatically stuck by the mimic's adhesive (it
+    receives no save). The mimic then makes a pseudopod Strike against any creature
+    adjacent to the mimic. Object Lesson can't be used again until the mimic escapes
+    and takes on a new disguise.
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Object Lesson
+  range: null
+  raw_description: '**Object Lesson** [Reaction] **Trigger** A creature touches or
+    physically interacts with the mimic while the mimic is transformed using Mimic
+    Object. **Effect** The triggering creature is automatically stuck by the mimic''s
+    adhesive (it receives no save). The mimic then makes a pseudopod Strike against
+    any creature adjacent to the mimic. Object Lesson can''t be used again until the
+    mimic escapes and takes on a new disguise.'
   requirements: null
   saving_throw: null
   stages: null
@@ -106,12 +123,11 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+4
+  - formula: 2d8+4
     type: bludgeoning
-  name: pseudopod + 14 [
-  plus_damage:
   - formula: null
     type: adhesive
+  name: pseudopod + 14 [
   to_hit: 9
   traits: null
 name: Mimic

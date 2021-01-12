@@ -9,17 +9,18 @@ ac: 39
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
+  critical_failure: As failure, but the creature becomes clumsy 2, drained 2, and
+    enfeebled 2, or increases these conditions by 2.
   critical_success: null
   description: The bythos make two fist Strikes against a single target. If both Strikes
     hit, the target attempts a DC 37 Fortitude save. Creatures that don't get weaker
     with age or don't age are immune (GM's discretion). If a creature becomes __clumsy
     4__, __drained 4__, and __enfeebled 4__ due to Aging Strikes, it dies of old age.
   effect: null
-  failure: null
+  failure: The creature becomes clumsy 1, drained 1, and enfeebled 1, or increases
+    each of these conditions by 1. This effect is cumulative with other aging strikes
+    from bythoses, to a maximum of clumsy 4, drained 4, and enfeebled 4.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Aging Strikes
   range: null
@@ -27,81 +28,26 @@ active_abilities:
     The bythos make two fist Strikes against a single target. If both Strikes hit,
     the target attempts a DC 37 Fortitude save. Creatures that don''t get weaker with
     age or don''t age are immune (GM''s discretion). If a creature becomes __clumsy
-    4__, __drained 4__, and __enfeebled 4__ due to Aging Strikes, it dies of old age.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - divine
-  - necromancy
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is unaffected.'
+    4__, __drained 4__, and __enfeebled 4__ due to Aging Strikes, it dies of old age.
+
+
+    **Success **The creature is unaffected.
+
+
+    **Failure **The creature becomes clumsy 1, drained 1, and enfeebled 1, or increases
+    each of these conditions by 1. This effect is cumulative with other aging strikes
+    from bythoses, to a maximum of clumsy 4, drained 4, and enfeebled 4.
+
+
+    **Critical Failure** As failure, but the creature becomes clumsy 2, drained 2,
+    and enfeebled 2, or increases these conditions by 2.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is unaffected.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature becomes clumsy 1, drained 1, and enfeebled 1, or increases
-    each of these conditions by 1. This effect is cumulative with other aging strikes
-    from bythoses, to a maximum of clumsy 4, drained 4, and enfeebled 4.
-  effect: null
-  failure: The creature becomes clumsy 1, drained 1, and enfeebled 1, or increases
-    each of these conditions by 1. This effect is cumulative with other aging strikes
-    from bythoses, to a maximum of clumsy 4, drained 4, and enfeebled 4.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature becomes clumsy 1, drained 1, and enfeebled
-    1, or increases each of these conditions by 1. This effect is cumulative with
-    other aging strikes from bythoses, to a maximum of clumsy 4, drained 4, and enfeebled
-    4.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: As failure, but the creature becomes clumsy 2, drained 2, and
-    enfeebled 2, or increases these conditions by 2.
-  critical_success: null
-  description: As failure, but the creature becomes clumsy 2, drained 2, and enfeebled
-    2, or increases these conditions by 2.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** As failure, but the creature becomes clumsy
-    2, drained 2, and enfeebled 2, or increases these conditions by 2.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - divine
+  - necromancy
   trigger: null
 - action_cost: One Action
   critical_failure: null
@@ -112,8 +58,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focused Gaze
   range: null
@@ -136,8 +80,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Temporal Flurry
   range: null
@@ -161,8 +103,6 @@ active_abilities:
     occupies that space when the target returns, the target appears in the closest
     available space to its original location.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Temporal Strike
   range: null
@@ -206,8 +146,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Confusing Gaze
   range: 30 feet
@@ -235,8 +173,6 @@ automatic_abilities:
   effect: The bythos rerolls the triggering check and takes the better result.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Temporal Reversion
   range: null
@@ -249,7 +185,7 @@ automatic_abilities:
   success: null
   traits:
   - fortune
-  trigger: The bythos fails or critically fails a check;
+  trigger: The bythos fails or critically fails a check
 description: 'The bythos is a guardian of space and time, and at all times seeks out
   those who misuse planar and temporal magic. A bythos is a roughly humanoid creature
   with four arms and a body made of swirling clouds and mist. Despite its appearance,
@@ -273,14 +209,13 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+16
+  - formula: 2d8+16
     type: bludgeoning
+  - formula: 2d8
+    type: cold
+  - formula: 2d8
+    type: lawful
   name: fist
-  plus_damage:
-  - formula: null
-    type: 2d8 cold
-  - formula: null
-    type: 2d8 lawful
   to_hit: 32
   traits:
   - lawful
@@ -310,8 +245,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Envisioning
   range: null

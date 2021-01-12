@@ -16,15 +16,13 @@ active_abilities:
     takes 6d10 __persistent bleed damage__.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Evisceration
   range: null
   raw_description: '**Evisceration** [One Action]  (__attack__) **Requirements** The
     eremite has a creature __grabbed__; **Effect** The eremite excises flesh or bone
     from a creature it has grabbed. The target takes 6d10 __persistent bleed damage__.'
-  requirements: The eremite has a creature grabbed
+  requirements: The eremite has a creature __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -41,8 +39,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Exquisite Pain
   range: null
@@ -67,8 +63,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Gaze
   range: null
@@ -95,15 +89,13 @@ active_abilities:
   critical_failure: null
   critical_success: null
   description: '**Requirement** The eremite holds a piece of flesh they collected
-    via Evisceration;'
+    via Evisceration'
   effect: The eremite attaches the stolen flesh to themself. They either regain 100
     Hit Points; reduce the value of their __clumsy__, __drained__, __enfeebled__,
     or __stupefied__ condition by 3; or reduce the stage of any affliction affecting
     them by 3.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Graft Flesh
   range: null
@@ -126,8 +118,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Traveler
   range: null
@@ -152,8 +142,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Ignore Pain
   range: null
@@ -174,8 +162,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Paralytic Perfection
   range: 30 feet
@@ -212,7 +198,7 @@ hp: 375
 hp_misc: regeneration 25 (deactivated by good or silver)
 immunities:
 - cold
-- <a style="text-decoration:underline" href="Traits.aspx?ID=68">fear</a>
+- __fear__
 - nonlethal
 languages:
 - Common
@@ -223,30 +209,28 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d8+19
+  - formula: 4d8+19
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent bleed
+  - formula: 2d6
+    type: persistent bleed
   - formula: null
     type: exquisite pain
+  name: jaws
   to_hit: 39
   traits:
   - evil
   - magical
 - action_cost: One Action
   damage:
-    formula: 3d6+19
+  - formula: 3d6+19
     type: slashing
-  name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 persistent bleed
+  - formula: 2d6
+    type: persistent bleed
   - formula: null
     type: exquisite pain
   - formula: null
     type: Improved Grab
+  name: claw
   to_hit: 39
   traits:
   - agile
@@ -273,8 +257,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Painsight
   range: null

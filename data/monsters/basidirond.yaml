@@ -11,15 +11,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 22 Fortitude; **Maximum Duration **6 rounds; **Stage
-    1** 1d8 poison damage and __enfeebled 1__ (1 round); **Stage 2** 1d10 poison damage
-    and enfeebled 1 (1 round); **Stage 3** 1d12 poison damage and enfeebled 2 (1 round)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Basidirond Spores
   range: null
   raw_description: '**Basidirond Spores** (__disease__) **Saving Throw **DC 22 Fortitude;
@@ -27,8 +23,11 @@ active_abilities:
     (1 round); **Stage 2** 1d10 poison damage and enfeebled 1 (1 round); **Stage 3**
     1d12 poison damage and enfeebled 2 (1 round)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 22 Fortitude
+  stages:
+  - effect: 1d8 poison damage and __enfeebled 1__ (1 round)
+  - effect: 1d10 poison damage and enfeebled 1 (1 round)
+  - effect: 1d12 poison damage and enfeebled 2 (1 round)
   success: null
   traits:
   - disease
@@ -46,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hallucinogenic Cloud
   range: null
@@ -73,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: '1'
   range: null
@@ -95,8 +90,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: '2'
   range: null
@@ -117,8 +110,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: '3'
   range: null
@@ -137,8 +128,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: '4'
   range: null
@@ -158,8 +147,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: '5'
   range: null
@@ -180,8 +167,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: '6'
   range: null
@@ -204,8 +189,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cold Lethargy
   range: null
@@ -234,17 +217,16 @@ hp: 80
 hp_misc: null
 immunities:
 - cold
-- <a style="text-decoration:underline" href="Traits.aspx?ID=106">mental</a>
+- __mental__
 level: 5
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+6
+  - formula: 2d8+6
     type: bludgeoning
-  name: frond
-  plus_damage:
   - formula: null
     type: basidirond spores
+  name: frond
   to_hit: 15
   traits: null
 name: Basidirond

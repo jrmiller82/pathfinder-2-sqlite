@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Magma Scorpion Venom
   range: null
@@ -50,35 +48,33 @@ hp_misc: null
 immunities:
 - bleed
 - fire
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 level: 8
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+9
+  - formula: 2d6+9
     type: bludgeoning
-  name: pincer
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent fire
+  - formula: 1d6
+    type: persistent fire
   - formula: null
     type: Grab
+  name: pincer
   to_hit: 20
   traits:
   - agile
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 1d10+9
+  - formula: 1d10+9
     type: piercing
-  name: tail sting
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent fire
+  - formula: 1d6
+    type: persistent fire
   - formula: null
     type: magma scorpion venom
+  name: tail sting
   to_hit: 20
   traits:
   - reach 10 feet
@@ -87,12 +83,11 @@ perception: 18
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d6+9
+  - formula: 1d6+9
     type: fire
+  - formula: 1d6
+    type: persistent fire
   name: magma spit
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent fire
   to_hit: 17
   traits:
   - fire
@@ -113,8 +108,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Smoke Vision
   range: null

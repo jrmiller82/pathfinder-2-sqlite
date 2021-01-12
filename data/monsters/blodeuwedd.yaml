@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Living Footsteps
   range: null
@@ -72,8 +68,6 @@ active_abilities:
     The blodeuwedd gains 15 temporary Hit Points that last for 1 hour.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Nature's Infusion
   range: null
@@ -126,10 +120,9 @@ level: 6
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+7
+  - formula: 2d8+7
     type: slashing
   name: claw
-  plus_damage: null
   to_hit: 14
   traits:
   - agile
@@ -138,10 +131,9 @@ perception: 14
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d6+4
+  - formula: 2d6+4
     type: bludgeoning
   name: sling
-  plus_damage: null
   to_hit: 17
   traits:
   - propulsive
@@ -167,8 +159,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Allergen Aura
   range: null
@@ -194,8 +184,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wild Empathy
   range: null

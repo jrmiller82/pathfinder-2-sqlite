@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Archon's Door
   range: null
@@ -47,8 +45,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Kind Word
   range: null
@@ -70,17 +66,15 @@ active_abilities:
   - mental
   trigger: null
 - action_cost: One Action
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is __paralyzed__ for 1 round.
+  critical_success: The creature is unaffected.
   description: The trumpet archon blows mightily on their horn, creating a tone of
     such beauty and grandeur those who hear it are paralyzed in awe. Non-archons within
     100 feet must attempt a DC 34 Fortitude save. They are temporarily immune for
     10 minutes.
   effect: null
-  failure: null
+  failure: The creature is __stunned 1__ and flat-footed as long as it's stunned.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trumpet Blast
   range: null
@@ -88,94 +82,29 @@ active_abilities:
     __enchantment__, __mental__) The trumpet archon blows mightily on their horn,
     creating a tone of such beauty and grandeur those who hear it are paralyzed in
     awe. Non-archons within 100 feet must attempt a DC 34 Fortitude save. They are
-    temporarily immune for 10 minutes.'
+    temporarily immune for 10 minutes.
+
+
+    **Critical Success** The creature is unaffected.
+
+
+    **Success** The creature is __flat-footed__.
+
+
+    **Failure** The creature is __stunned 1__ and flat-footed as long as it''s stunned.
+
+
+    **Critical Failure** The creature is __paralyzed__ for 1 round.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __flat-footed__.
   traits:
   - auditory
   - divine
   - emotion
   - enchantment
   - mental
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __flat-footed__.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __flat-footed__.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __flat-footed__.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __stunned 1__ and flat-footed as long as it's stunned.
-  effect: null
-  failure: The creature is __stunned 1__ and flat-footed as long as it's stunned.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __stunned 1__ and flat-footed as long
-    as it''s stunned.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is __paralyzed__ for 1 round.
-  critical_success: null
-  description: The creature is __paralyzed__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is __paralyzed__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: LG
 automatic_abilities:
@@ -186,8 +115,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retributive Strike
   range: null
@@ -224,14 +151,13 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d12+13
+  - formula: 2d12+13
     type: slashing
+  - formula: 2d6
+    type: sonic
+  - formula: 1d6
+    type: good
   name: bastard sword
-  plus_damage:
-  - formula: null
-    type: 2d6 sonic
-  - formula: null
-    type: 1d6 good
   to_hit: 29
   traits:
   - good

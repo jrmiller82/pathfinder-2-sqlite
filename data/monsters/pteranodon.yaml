@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swoop
   range: null
@@ -45,10 +43,9 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+3
+  - formula: 1d10+3
     type: piercing
   name: beak
-  plus_damage: null
   to_hit: 10
   traits: null
 name: Pteranodon

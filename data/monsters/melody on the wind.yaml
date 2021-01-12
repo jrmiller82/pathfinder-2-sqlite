@@ -10,16 +10,14 @@ ac_special: null
 active_abilities:
 - action_cost: One Action
   critical_failure: null
-  critical_success: null
+  critical_success: The creature is unaffected.
   description: The melody on the wind sings in a sonorous chorus. Any creature in
     a 30-foot emanation must attempt a DC 30 Will save to resist becoming fascinated
     by the melody on the wind. A creature that succeeds at its save is temporarily
     immune for 24 hours.
   effect: null
-  failure: null
+  failure: The creature is fascinated for 1d4 rounds.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mesmerizing Melody
   range: null
@@ -27,11 +25,20 @@ active_abilities:
     __enchantment__, __mental__, __primal__) The melody on the wind sings in a sonorous
     chorus. Any creature in a 30-foot emanation must attempt a DC 30 Will save to
     resist becoming fascinated by the melody on the wind. A creature that succeeds
-    at its save is temporarily immune for 24 hours.'
+    at its save is temporarily immune for 24 hours.
+
+
+    **Critical Success **The creature is unaffected.
+
+
+    **Success **The creature is __fascinated__ for 1 round.
+
+
+    **Failure **The creature is fascinated for 1d4 rounds.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __fascinated__ for 1 round.
   traits:
   - auditory
   - concentrate
@@ -41,70 +48,11 @@ active_abilities:
   trigger: null
 - action_cost: None
   critical_failure: null
-  critical_success: The creature is unaffected.
-  description: The creature is unaffected.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success **The creature is unaffected.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __fascinated__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success **The creature is __fascinated__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __fascinated__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is fascinated for 1d4 rounds.
-  effect: null
-  failure: The creature is fascinated for 1d4 rounds.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure **The creature is fascinated for 1d4 rounds.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
   critical_success: null
   description: The melody on the wind's movement doesn't trigger reactions.
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swiftness
   range: null
@@ -126,8 +74,6 @@ automatic_abilities:
     for itself and its allies as long as the original effect persists.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Hostile Duet
   range: null
@@ -141,8 +87,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A hostile creature within 30 feet creates an effect with the auditory trait
-    that provides bonuses to itself or its allies;
+  trigger: A hostile creature within 30 feet creates an effect with the __auditory__
+    trait that provides bonuses to itself or its allies
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -153,8 +99,6 @@ automatic_abilities:
     the wind are still affected normally.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Retune
   range: null
@@ -168,7 +112,7 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The melody on the wind is targeted by a spell with the auditory trait;
+  trigger: The melody on the wind is targeted by a spell with the __auditory__ trait
 description: 'This cloud of song and sound has been caught by the wind and carried
   across the air. While the melody on the wind (known by some as a song elemental,
   despite the fact that no such place as a plane of song exists in the known multiverse)
@@ -182,21 +126,20 @@ hp: 170
 hp_misc: null
 immunities:
 - bleed
-- <a style="text-decoration:underline" href="Conditions.aspx?ID=28">paralyzed</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=145">sleep</a>
+- __paralyzed__
+- __poison__
+- __sleep__
 languages:
 - Auran
 level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+10
+  - formula: 2d10+10
     type: bludgeoning
-  name: wind gust
-  plus_damage:
   - formula: null
     type: Push
+  name: wind gust
   to_hit: 23
   traits:
   - agile
@@ -206,10 +149,9 @@ perception: 21
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+10
+  - formula: 2d8+10
     type: sonic
   name: solid refrain
-  plus_damage: null
   to_hit: 23
   traits:
   - range increment 70 feet

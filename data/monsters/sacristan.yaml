@@ -20,8 +20,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Gaze
   range: null
@@ -45,8 +43,10 @@ active_abilities:
   - visual
   trigger: null
 - action_cost: Three Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature takes 20 mental damage, and is confused and deafened
+    for 1 round.
+  critical_success: The creature is unaffected and is then temporarily immune for
+    24 hours.
   description: null
   effect: The sacristan opens their mouth to unloose the wailing howls and mind-twisting
     darkness of the __Shadow Plane__. This creates a 30-foot emanation of darkness
@@ -54,10 +54,8 @@ active_abilities:
     through this darkness. The sacristan can Sustain Shadow Scream for up to 1 minute.
     Non-velstrac creatures in the area when the ability is used, as well as those
     who enter or start their turn in the area, must attempt a DC 28 Will save.
-  failure: null
+  failure: The creature is __confused__ and deafened for 1 round.
   frequency: once per hour
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shadow Scream
   range: null
@@ -69,11 +67,25 @@ active_abilities:
     __darkvision__ can''t see through this darkness. The sacristan can Sustain Shadow
     Scream for up to 1 minute. Non-velstrac creatures in the area when the ability
     is used, as well as those who enter or start their turn in the area, must attempt
-    a DC 28 Will save.'
+    a DC 28 Will save.
+
+
+    **Critical Success** The creature is unaffected and is then temporarily immune
+    for 24 hours.
+
+
+    **Success** The creature is __deafened__ for 1 round.
+
+
+    **Failure** The creature is __confused__ and deafened for 1 round.
+
+
+    **Critical Failure** The creature takes 20 mental damage, and is confused and
+    deafened for 1 round.'
   requirements: null
   saving_throw: null
   stages: null
-  success: null
+  success: The creature is __deafened__ for 1 round.
   traits:
   - aura
   - concentrate
@@ -82,87 +94,6 @@ active_abilities:
   - evocation
   - mental
   - sonic
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected and is then temporarily immune for
-    24 hours.
-  description: The creature is unaffected and is then temporarily immune for 24 hours.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected and is then temporarily
-    immune for 24 hours.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __deafened__ for 1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __deafened__ for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: The creature is __deafened__ for 1 round.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __confused__ and deafened for 1 round.
-  effect: null
-  failure: The creature is __confused__ and deafened for 1 round.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __confused__ and deafened for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature takes 20 mental damage, and is confused and deafened
-    for 1 round.
-  critical_success: null
-  description: The creature takes 20 mental damage, and is confused and deafened for
-    1 round.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature takes 20 mental damage, and
-    is confused and deafened for 1 round.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
   trigger: null
 alignment: LE
 automatic_abilities:
@@ -181,8 +112,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Staggering Servitude
   range: 30 feet
@@ -219,8 +148,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -263,14 +190,13 @@ level: 10
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+9
+  - formula: 2d8+9
     type: piercing
+  - formula: 1d6
+    type: evil
+  - formula: 2d6
+    type: persistent bleed
   name: barbed chain
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
-  - formula: null
-    type: 2d6 persistent bleed
   to_hit: 22
   traits:
   - evil
@@ -299,8 +225,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Painsight
   range: null

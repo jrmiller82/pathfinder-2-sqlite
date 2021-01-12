@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Constrict
   range: null
@@ -45,8 +43,6 @@ active_abilities:
   effect: null
   failure: The devil shaped from the lemures is 2 levels lower than the intended devil.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Devil Shaping
   range: null
@@ -92,8 +88,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fast Swoop
   range: null
@@ -113,8 +107,6 @@ active_abilities:
     reduce the number of actions to cast it by 1 (minimum 1 action).
   failure: null
   frequency: once per round.
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Masterful Quickened Casting
   range: null
@@ -136,8 +128,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 10 rounds
   name: Pit Fiend Venom
   range: null
@@ -157,6 +147,68 @@ active_abilities:
   trigger: null
 alignment: LE
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Commanded or allied evil creatures in the aura of lower level than
+    the pit fiend gain a +1 circumstance bonus to attack rolls, damage rolls, AC,
+    saves, and skill checks.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Commander's Aura
+  range: 100 feet
+  raw_description: '**Commander''s Aura** (__aura__, __divine__, __enchantment__)
+    100 feet. Commanded or allied evil creatures in the aura of lower level than the
+    pit fiend gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves,
+    and skill checks.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - aura
+  - divine
+  - enchantment
+  trigger: null
+- action_cost: None
+  critical_failure: The creature is __frightened 4__.
+  critical_success: The creature is unaffected by the presence.
+  description: A creature that first enters the area must attempt a Will save. Regardless
+    of the result of the saving throw, the creature is temporarily immune to this
+    monster's Frightful Presence for 1 minute.
+  effect: null
+  failure: The creature is __frightened 2__.
+  frequency: null
+  maximum_duration: null
+  name: Frightful Presence
+  range: 20 feet
+  raw_description: '**Frightful Presence** A creature that first enters the area must
+    attempt a Will save. Regardless of the result of the saving throw, the creature
+    is temporarily immune to this monster''s Frightful Presence for 1 minute.
+
+
+    **Critical Success** The creature is unaffected by the presence.
+
+
+    **Success** The creature is __frightened 1__.
+
+
+    **Failure** The creature is __frightened 2__.
+
+
+    **Critical Failure** The creature is __frightened 4__.'
+  requirements: null
+  saving_throw: DC 42
+  stages: null
+  success: The creature is __frightened 1__.
+  traits:
+  - aura
+  - emotion
+  - fear
+  - mental
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -164,34 +216,30 @@ automatic_abilities:
     reach uses a concentrate action, in addition to the usual trigger. The devil can
     disrupt triggering concentrate actions, and they disrupt actions on any hit, not
     only a critical hit.
-  effect: null
+  effect: You lash out at a foe that leaves an opening. Make a melee Strike against
+    the triggering creature. If your attack is a critical hit and the trigger was
+    a manipulate action, you disrupt that action. This Strike doesn't count toward
+    your multiple attack penalty, and your multiple attack penalty doesn't apply to
+    this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Commander's Aura
+  name: Attack of Opportunity
   range: null
-  raw_description: '**Commander''s Aura** (__aura__, __divine__, __enchantment__)
-    100 feet. Commanded or allied evil creatures in the aura of lower level than the
-    pit fiend gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves,
-    and skill checks.
-
-
-    **Frightful Presence** (__aura__, __divine__, __emotion__, __enchantment__, __fear__,
-    __mental__) 20 feet, DC 42
-
-
-    **Attack of Opportunity** [Reaction] The pit fiend can make an Attack of Opportunity
-    when a creature within reach uses a concentrate action, in addition to the usual
-    trigger. The devil can disrupt triggering concentrate actions, and they disrupt
-    actions on any hit, not only a critical hit.'
+  raw_description: '**Attack of Opportunity** [Reaction] **Trigger** A creature within
+    your reach uses a manipulate action or a move action, makes a ranged attack, or
+    leaves a square during a move action it''s using. **Effect** You lash out at a
+    foe that leaves an opening. Make a melee Strike against the triggering creature.
+    If your attack is a critical hit and the trigger was a manipulate action, you
+    disrupt that action. This Strike doesn''t count toward your multiple attack penalty,
+    and your multiple attack penalty doesn''t apply to this Strike.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
-  trigger: null
+  trigger: A creature within your reach uses a manipulate action or a move action,
+    makes a ranged attack, or leaves a square during a move action it's using.
 description: 'When an army of devils invades to bathe a region in bloodshed and hellfire,
   it is likely that one of Hell''s most powerful and diabolical generals, the pit
   fiend, masterminded the incursion. Cunning, powerful, and ruthless, pit fiends often
@@ -236,14 +284,13 @@ level: 20
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+17
+  - formula: 4d10+17
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 evil
+  - formula: 2d6
+    type: evil
   - formula: null
     type: pit fiend venom
+  name: jaws
   to_hit: 40
   traits:
   - evil
@@ -252,12 +299,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 4d6+17
+  - formula: 4d6+17
     type: slashing
+  - formula: 2d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 2d6 evil
   to_hit: 38
   traits:
   - agile
@@ -266,14 +312,13 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 4d10+17
+  - formula: 4d10+17
     type: bludgeoning
-  name: tail
-  plus_damage:
-  - formula: null
-    type: 2d6 evil
+  - formula: 2d6
+    type: evil
   - formula: null
     type: Improved Grab
+  name: tail
   to_hit: 36
   traits:
   - evil
@@ -281,12 +326,11 @@ melee_attacks:
   - reach 10 feet
 - action_cost: One Action
   damage:
-    formula: 4d6+17
+  - formula: 4d6+17
     type: slashing
+  - formula: 2d6
+    type: evil
   name: wing
-  plus_damage:
-  - formula: null
-    type: 2d6 evil
   to_hit: 36
   traits:
   - evil

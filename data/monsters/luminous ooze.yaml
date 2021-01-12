@@ -9,127 +9,51 @@ ac: 11
 ac_special: null
 active_abilities:
 - action_cost: Two Actions
-  critical_failure: null
-  critical_success: null
+  critical_failure: The creature is blinded for 1 minute.
+  critical_success: The creature is unaffected
   description: The ooze glows with blinding brightness. All creatures within a 30-foot
     emanation must attempt a DC 21 Fortitude save.
   effect: null
-  failure: null
+  failure: The creature is __blinded__ until the end of its next turn.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Light Up
   range: null
   raw_description: '**Light Up** [Two Actions]  (__light__, __visual__) The ooze glows
     with blinding brightness. All creatures within a 30-foot emanation must attempt
-    a DC 21 Fortitude save.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits:
-  - light
-  - visual
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: The creature is unaffected
-  description: The creature is unaffected
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Success
-  range: null
-  raw_description: '**Critical Success** The creature is unaffected'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __dazzled__ until the end of its next turn.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Success
-  range: null
-  raw_description: '**Success** The creature is __dazzled__ until the end of its next
-    turn.'
+    a DC 21 Fortitude save.
+
+
+    **Critical Success** The creature is unaffected
+
+
+    **Success** The creature is __dazzled__ until the end of its next turn.
+
+
+    **Failure** The creature is __blinded__ until the end of its next turn.
+
+
+    **Critical Failure** The creature is blinded for 1 minute.'
   requirements: null
   saving_throw: null
   stages: null
   success: The creature is __dazzled__ until the end of its next turn.
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: null
-  critical_success: null
-  description: The creature is __blinded__ until the end of its next turn.
-  effect: null
-  failure: The creature is __blinded__ until the end of its next turn.
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Failure
-  range: null
-  raw_description: '**Failure** The creature is __blinded__ until the end of its next
-    turn.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
-  trigger: null
-- action_cost: None
-  critical_failure: The creature is blinded for 1 minute.
-  critical_success: null
-  description: The creature is blinded for 1 minute.
-  effect: null
-  failure: null
-  frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
-  name: Critical Failure
-  range: null
-  raw_description: '**Critical Failure** The creature is blinded for 1 minute.'
-  requirements: null
-  saving_throw: null
-  stages: null
-  success: null
-  traits: null
+  traits:
+  - light
+  - visual
   trigger: null
 alignment: N
 automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A luminous ooze constantly sheds distracting multicolored light. A
+  description: A luminous ooze constantly sheds distracting multicolored light. A
     creature that ends its turn within the aura must attempt a DC 21 Fortitude save
     or become __dazzled__ until the end of its next turn. On a critical failure, it
     instead becomes __blinded__ until the end of its next turn.
-
-
-    **Lightning Catcher** Whenever the luminous ooze''s electricity immunity prevents
-    it from taking damage, it gains 8 temporary HP. Until the end of its next turn,
-    the luminous ooze''s pseudopod Strike deals an additional 1d6 points of electricity
-    damage.'
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bedazzling
   range: 5 feet
@@ -137,13 +61,7 @@ automatic_abilities:
     ooze constantly sheds distracting multicolored light. A creature that ends its
     turn within the aura must attempt a DC 21 Fortitude save or become __dazzled__
     until the end of its next turn. On a critical failure, it instead becomes __blinded__
-    until the end of its next turn.
-
-
-    **Lightning Catcher** Whenever the luminous ooze''s electricity immunity prevents
-    it from taking damage, it gains 8 temporary HP. Until the end of its next turn,
-    the luminous ooze''s pseudopod Strike deals an additional 1d6 points of electricity
-    damage.'
+    until the end of its next turn.'
   requirements: null
   saving_throw: null
   stages: null
@@ -152,6 +70,28 @@ automatic_abilities:
   - aura
   - light
   - visual
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Whenever the luminous ooze's electricity immunity prevents it from
+    taking damage, it gains 8 temporary HP. Until the end of its next turn, the luminous
+    ooze's pseudopod Strike deals an additional 1d6 points of electricity damage.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Lightning Catcher
+  range: null
+  raw_description: '**Lightning Catcher** Whenever the luminous ooze''s electricity
+    immunity prevents it from taking damage, it gains 8 temporary HP. Until the end
+    of its next turn, the luminous ooze''s pseudopod Strike deals an additional 1d6
+    points of electricity damage.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
   trigger: null
 description: 'Luminous oozes are strange globular creatures that glow with brilliant
   multicolored light. Unlike many oozes, which rely on camouflage and stealth to attack
@@ -195,10 +135,9 @@ level: 4
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+5
+  - formula: 2d8+5
     type: bludgeoning
   name: pseudopod
-  plus_damage: null
   to_hit: 13
   traits: null
 name: Luminous Ooze
@@ -220,8 +159,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Motion Sense
   range: null

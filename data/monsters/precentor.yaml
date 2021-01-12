@@ -22,8 +22,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Assemble Choir
   range: null
@@ -54,8 +52,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Focus Gaze
   range: null
@@ -78,30 +74,20 @@ active_abilities:
   - visual
   trigger: null
 - action_cost: One Action
-  critical_failure: The target is __stupefied 4__.
-  critical_success: The target is unaffected.
-  description: 'The precentor touches a creature within 10 feet, causing it to constantly
-    scream in agony. The target must attempt a DC 38 Will save. While the target is
-    __stupefied__ by this effect, its continual screams cause it to automatically
-    fail Stealth checks.
-
-
-
-
-
-
-
-
+  critical_failure: 'The target is __stupefied 4__.
 
 
     The target can attempt a new Will save at the start of each of its turns, reducing
     the __stupefied__ condition by 1 on each successful save. If the target reduces
     its __stupefied__ condition to 0 in this way, the target is no longer affected.'
+  critical_success: The target is unaffected.
+  description: The precentor touches a creature within 10 feet, causing it to constantly
+    scream in agony. The target must attempt a DC 38 Will save. While the target is
+    __stupefied__ by this effect, its continual screams cause it to automatically
+    fail Stealth checks.
   effect: null
   failure: The target is __stupefied 3__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tormenting Touch
   range: null
@@ -147,8 +133,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Unnerving Gaze
   range: 30 feet
@@ -185,12 +169,11 @@ level: 16
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 4d10+6
+  - formula: 4d10+6
     type: slashing
+  - formula: 1d6
+    type: persistent bleed
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 persistent bleed
   to_hit: 31
   traits:
   - agile
@@ -218,8 +201,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Painsight
   range: null

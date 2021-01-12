@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Water Healing
   range: null
@@ -48,8 +46,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Water Dependent
   range: null
@@ -90,10 +86,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 bludgeoning
+  - formula: 1d6
+    type: bludgeoning
   name: aqueous fist
-  plus_damage: null
   to_hit: 8
   traits:
   - agile
@@ -124,8 +119,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Wild Empathy
   range: null

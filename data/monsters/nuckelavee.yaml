@@ -18,8 +18,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -43,14 +41,10 @@ active_abilities:
   critical_success: null
   description: The target can't recover from the __fatigued__ condition caused by
     mortasheen until the disease is cured. Mortasheen gains the __virulent__ trait
-    against __animals__ and __plants__; **Saving Throw** DC 28 Fortitude; **Stage
-    1** Carrier with no ill effect (1 day); **Stage 2** __drained 1__ and fatigued
-    (1 day); **Stage 3** drained 2 and fatigued (1 day); **Stage 4** dead
+    against __animals__ and __plants__
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Mortasheen
   range: null
@@ -61,8 +55,12 @@ active_abilities:
     1__ and fatigued (1 day); **Stage 3** drained 2 and fatigued (1 day); **Stage
     4** dead'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 28 Fortitude
+  stages:
+  - effect: Carrier with no ill effect (1 day)
+  - effect: __drained 1__ and fatigued (1 day)
+  - effect: drained 2 and fatigued (1 day)
+  - effect: dead
   success: null
   traits:
   - disease
@@ -74,8 +72,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Trample
   range: null
@@ -97,8 +93,6 @@ automatic_abilities:
   effect: null
   failure: The creature is __frightened 2__.
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Frightful Presence
   range: 30 feet
@@ -136,8 +130,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Purity Vulnerability
   range: null
@@ -162,8 +154,6 @@ automatic_abilities:
     this Strike.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Attack of Opportunity
   range: null
@@ -204,8 +194,8 @@ description: 'When pollution despoils a natural waterway, it draws the dreaded n
 hp: 190
 hp_misc: null
 immunities:
-- <a style="text-decoration:underline" href="Traits.aspx?ID=46">disease</a>
-- <a style="text-decoration:underline" href="Traits.aspx?ID=126">poison</a>
+- __disease__
+- __poison__
 items:
 - +1 striking bastard sword
 languages:
@@ -216,14 +206,13 @@ level: 9
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+12
+  - formula: 2d8+12
     type: slashing
-  name: bastard sword
-  plus_damage:
-  - formula: null
-    type: 1d6 poison
+  - formula: 1d6
+    type: poison
   - formula: null
     type: mortasheen
+  name: bastard sword
   to_hit: 21
   traits:
   - magical
@@ -231,25 +220,23 @@ melee_attacks:
   - two-hand d12
 - action_cost: One Action
   damage:
-    formula: 2d8+12
+  - formula: 2d8+12
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 1d6 poison
+  - formula: 1d6
+    type: poison
   - formula: null
     type: mortasheen
+  name: jaws
   to_hit: 20
   traits:
   - agile
 - action_cost: One Action
   damage:
-    formula: 2d6+12
+  - formula: 2d6+12
     type: bludgeoning
-  name: hoof
-  plus_damage:
   - formula: null
     type: mortasheen
+  name: hoof
   to_hit: 20
   traits: null
 name: Nuckelavee

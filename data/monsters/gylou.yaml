@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Change Shape
   range: null
@@ -46,8 +44,6 @@ active_abilities:
     or until 24 hours have passed, whichever happens first.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Indispensable Savvy
   range: null
@@ -62,7 +58,7 @@ active_abilities:
   stages: null
   success: null
   traits: null
-  trigger: The gylou attempts a skill check but hasn't rolled yet;
+  trigger: The gylou attempts a skill check but hasn't rolled yet
 - action_cost: One Action
   critical_failure: null
   critical_success: null
@@ -75,8 +71,6 @@ active_abilities:
     have only one creature encaged at a time.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tentacle Encage
   range: null
@@ -88,7 +82,7 @@ active_abilities:
     creature is not at risk of suffocation, and the gylou can bring the encaged creature
     with them when they cast __dimension door__. A gylou can have only one creature
     encaged at a time.'
-  requirements: The gylou has a Medium or smaller creature grabbed
+  requirements: The gylou has a Medium or smaller creature __grabbed__
   saving_throw: null
   stages: null
   success: null
@@ -107,8 +101,6 @@ automatic_abilities:
     check.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Reflexive Grab
   range: null
@@ -123,8 +115,8 @@ automatic_abilities:
   stages: null
   success: null
   traits: null
-  trigger: A creature leaves a square within the gylou's reach using a move action
-    or attempts a melee Strike against the gylou;
+  trigger: A creature leaves a square within the gylou's reach using a __move__ action
+    or attempts a melee Strike against the gylou
 description: 'Though gylous are deeply entrenched in the expansive and complex machinations
   of __Hell__, they are highly skilled agents capable of nuanced diplomacy, masterful
   deception, physical finesse, and nearly any other tasks they set their minds to.
@@ -158,12 +150,11 @@ level: 14
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d8+12
+  - formula: 3d8+12
     type: slashing
+  - formula: 1d6
+    type: evil
   name: claw
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
   to_hit: 30
   traits:
   - agile
@@ -172,12 +163,11 @@ melee_attacks:
   - magical
 - action_cost: One Action
   damage:
-    formula: 3d12+12
+  - formula: 3d12+12
     type: bludgeoning
-  name: tentacle
-  plus_damage:
   - formula: null
     type: Grab
+  name: tentacle
   to_hit: 30
   traits:
   - evil

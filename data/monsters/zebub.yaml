@@ -11,13 +11,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw **DC 18 Fortitude; **Onset **1d4 days; **Stage 1 **__enfeebled
-    1__ (1 day); **Stage 2 **enfeebled 2 (1 day); **Stage 3 **enfeebled 3 (1 day)'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Cocytan Filth
   range: null
@@ -25,8 +22,11 @@ active_abilities:
     18 Fortitude; **Onset **1d4 days; **Stage 1 **__enfeebled 1__ (1 day); **Stage
     2 **enfeebled 2 (1 day); **Stage 3 **enfeebled 3 (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 18 Fortitude; **Onset **1d4 days
+  stages:
+  - effect: __enfeebled 1__ (1 day)
+  - effect: enfeebled 2 (1 day)
+  - effect: enfeebled 3 (1 day)
   success: null
   traits:
   - disease
@@ -44,8 +44,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Infernal Eye
   range: null
@@ -72,8 +70,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sneak Attack
   range: null
@@ -115,14 +111,13 @@ level: 3
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+3
+  - formula: 1d10+3
     type: piercing
-  name: mandibles
-  plus_damage:
-  - formula: null
-    type: 1d6 evil
+  - formula: 1d6
+    type: evil
   - formula: null
     type: Cocytan filth
+  name: mandibles
   to_hit: 12
   traits:
   - evil

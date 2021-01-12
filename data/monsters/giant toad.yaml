@@ -15,8 +15,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: 6 rounds
   name: Giant Toad Poison
   range: null
@@ -39,8 +37,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -65,8 +61,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Tongue Grab
   range: null
@@ -92,8 +86,6 @@ automatic_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Poisonous Warts
   range: null
@@ -124,20 +116,18 @@ level: 2
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+5
+  - formula: 1d8+5
     type: piercing
-  name: bite
-  plus_damage:
   - formula: null
     type: Grab
+  name: bite
   to_hit: 11
   traits: null
 - action_cost: One Action
   damage:
-    formula: null
+  - formula: null
     type: tongue grab
   name: tongue
-  plus_damage: null
   to_hit: 11
   traits:
   - reach 10 feet

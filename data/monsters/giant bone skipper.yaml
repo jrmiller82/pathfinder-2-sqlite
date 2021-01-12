@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Leaping Charge
   range: null
@@ -33,15 +31,10 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: Marrow rot affects only creatures with a skeletal system; **Saving
-    Throw** DC 25 Fortitude; **Onset** 1 day; **Stage 1** __enfeebled 1__ (1 day);
-    **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled 2 and __drained 1__ (1
-    day)
+  description: Marrow rot affects only creatures with a skeletal system
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Marrow Rot
   range: null
@@ -50,8 +43,11 @@ active_abilities:
     1** __enfeebled 1__ (1 day); **Stage 2** enfeebled 2 (1 day); **Stage 3** enfeebled
     2 and __drained 1__ (1 day)'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 25 Fortitude; **Onset** 1 day
+  stages:
+  - effect: __enfeebled 1__ (1 day)
+  - effect: enfeebled 2 (1 day)
+  - effect: enfeebled 2 and __drained 1__ (1 day)
   success: null
   traits:
   - disease
@@ -71,12 +67,11 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d10+6
+  - formula: 2d10+6
     type: piercing
-  name: mandibles
-  plus_damage:
   - formula: null
     type: marrow rot
+  name: mandibles
   to_hit: 18
   traits: null
 name: Giant Bone Skipper
@@ -100,8 +95,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Bonesense
   range: null

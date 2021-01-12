@@ -18,8 +18,6 @@ active_abilities:
     die size to d8 if the calikang chooses electricity.'
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -51,8 +49,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Sixfold Flurry
   range: null
@@ -71,39 +67,49 @@ automatic_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: 'A calikang gains a circumstance bonus to its AC equal to the number
-    of its hands that aren''t wielding weapons, to a maximum of +4 (this bonus is
-    already factored into this calikang''s stats).
-
-
-    **Energy Conversion** (__abjuration__, __arcane__) Whenever the calikang is hit
-    by an electricity spell or rolls a successful save against a spell that deals
-    energy damage, it absorbs the energy. This heals the calikang for an amount of
-    HP equal to quadruple the spell''s level, and recharges its Breath Weapon. A calikang
-    can''t absorb its own spells this way.'
+  description: A calikang gains a circumstance bonus to its AC equal to the number
+    of its hands that aren't wielding weapons, to a maximum of +4 (this bonus is already
+    factored into this calikang's stats).
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Defensive Stance
   range: null
   raw_description: '**Defensive Stance** A calikang gains a circumstance bonus to
     its AC equal to the number of its hands that aren''t wielding weapons, to a maximum
-    of +4 (this bonus is already factored into this calikang''s stats).
-
-
-    **Energy Conversion** (__abjuration__, __arcane__) Whenever the calikang is hit
-    by an electricity spell or rolls a successful save against a spell that deals
-    energy damage, it absorbs the energy. This heals the calikang for an amount of
-    HP equal to quadruple the spell''s level, and recharges its Breath Weapon. A calikang
-    can''t absorb its own spells this way.'
+    of +4 (this bonus is already factored into this calikang''s stats).'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: Whenever the calikang is hit by an electricity spell or rolls a successful
+    save against a spell that deals energy damage, it absorbs the energy. This heals
+    the calikang for an amount of HP equal to quadruple the spell's level, and recharges
+    its Breath Weapon. A calikang can't absorb its own spells this way.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Energy Conversion
+  range: null
+  raw_description: '**Energy Conversion** (__abjuration__, __arcane__) Whenever the
+    calikang is hit by an electricity spell or rolls a successful save against a spell
+    that deals energy damage, it absorbs the energy. This heals the calikang for an
+    amount of HP equal to quadruple the spell''s level, and recharges its Breath Weapon.
+    A calikang can''t absorb its own spells this way.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits:
+  - abjuration
+  - arcane
   trigger: null
 description: 'The calikangs are giant blue-skinned, six-armed guardians of ancient
   tombs and treasuries. Their unique physiologies enable them to absorb and manipulate
@@ -127,10 +133,9 @@ level: 12
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 2d8+15
+  - formula: 2d8+15
     type: slashing
   name: longsword
-  plus_damage: null
   to_hit: 28
   traits:
   - magical
@@ -138,10 +143,9 @@ melee_attacks:
   - versatile P
 - action_cost: One Action
   damage:
-    formula: 3d8+13
+  - formula: 3d8+13
     type: bludgeoning
   name: fist
-  plus_damage: null
   to_hit: 25
   traits:
   - agile
@@ -173,8 +177,6 @@ sense_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Suspended Animation
   range: null

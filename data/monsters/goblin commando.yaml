@@ -17,8 +17,6 @@ automatic_abilities:
   effect: The goblin commando Steps.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Goblin Scuttle
   range: null
@@ -52,10 +50,9 @@ level: 1
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d8+3
+  - formula: 1d8+3
     type: slashing
   name: horsechopper
-  plus_damage: null
   to_hit: 8
   traits:
   - reach 10 feet
@@ -66,10 +63,9 @@ perception: 5
 ranged_attacks:
 - action_cost: One Action
   damage:
-    formula: null
-    type: 1d6 piercing
+  - formula: 1d6
+    type: piercing
   name: shortbow
-  plus_damage: null
   to_hit: 8
   traits:
   - deadly 1d10

@@ -17,8 +17,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Breath Weapon
   range: null
@@ -38,15 +36,11 @@ active_abilities:
 - action_cost: None
   critical_failure: null
   critical_success: null
-  description: '**Saving Throw** DC 41 Fortitude, **Maximum Duration** 6 rounds; **Stage
-    1** 1d6 poison damage and drained 1 (1 round), **Stage 2** 2d6 poison damage and
-    drained 1 (1 round); **Stage 3** 2d6 poison damage and drained 2 (1 round).'
+  description: null
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
-  maximum_duration: null
+  maximum_duration: 6 rounds
   name: Crimson Worm Venom
   range: null
   raw_description: '**Crimson Worm Venom** (__poison__) **Saving Throw** DC 41 Fortitude,
@@ -54,8 +48,11 @@ active_abilities:
     round), **Stage 2** 2d6 poison damage and drained 1 (1 round); **Stage 3** 2d6
     poison damage and drained 2 (1 round).'
   requirements: null
-  saving_throw: null
-  stages: null
+  saving_throw: DC 41 Fortitude,
+  stages:
+  - effect: 1d6 poison damage and drained 1 (1 round),
+  - effect: 2d6 poison damage and drained 1 (1 round)
+  - effect: 2d6 poison damage and drained 2 (1 round).
   success: null
   traits:
   - poison
@@ -67,8 +64,6 @@ active_abilities:
   effect: The worm uses Swallow Whole.
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Fast Swallow
   range: null
@@ -88,8 +83,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Rock Tunneler
   range: null
@@ -108,8 +101,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Swallow Whole
   range: null
@@ -132,8 +123,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Thrash
   range: null
@@ -150,6 +139,52 @@ active_abilities:
   trigger: null
 alignment: N
 automatic_abilities:
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: As long as a crimson worm is in contact with a fire or body of magma
+    at least as large as itself, it gains fast healing 20. When struck by a magical
+    fire effect from anything other than itself, a crimson worm regains Hit Points
+    equal to half the fire damage the effect would otherwise deal.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Fire Healing
+  range: null
+  raw_description: '**Fire Healing** As long as a crimson worm is in contact with
+    a fire or body of magma at least as large as itself, it gains fast healing 20.
+    When struck by a magical fire effect from anything other than itself, a crimson
+    worm regains Hit Points equal to half the fire damage the effect would otherwise
+    deal.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
+- action_cost: None
+  critical_failure: null
+  critical_success: null
+  description: The crimson worm recovers from the paralyzed, slowed, and stunned conditions
+    at the end of its turn. It's also immune to penalties to its Speeds and the immobilized
+    condition, and it ignores difficult terrain and greater difficult terrain.
+  effect: null
+  failure: null
+  frequency: null
+  maximum_duration: null
+  name: Inexorable
+  range: null
+  raw_description: '**Inexorable** The crimson worm recovers from the paralyzed, slowed,
+    and stunned conditions at the end of its turn. It''s also immune to penalties
+    to its Speeds and the immobilized condition, and it ignores difficult terrain
+    and greater difficult terrain.'
+  requirements: null
+  saving_throw: null
+  stages: null
+  success: null
+  traits: null
+  trigger: null
 - action_cost: Reaction
   critical_failure: null
   critical_success: null
@@ -158,36 +193,21 @@ automatic_abilities:
     artifacts, deities, or a similarly powerful source can't be avoided in this way.
   failure: null
   frequency: once per day
-  full_description: null
-  generic_description: null
   maximum_duration: null
-  name: Fire Healing
+  name: Shake It Off
   range: null
-  raw_description: '**Fire Healing** As long as a crimson worm is in contact with
-    a fire or body of magma at least as large as itself, it gains fast healing 20.
-    When struck by a magical fire effect from anything other than itself, a crimson
-    worm regains Hit Points equal to half the fire damage the effect would otherwise
-    deal.
-
-
-    **Inexorable** The crimson worm recovers from the paralyzed, slowed, and stunned
-    conditions at the end of its turn. It''s also immune to penalties to its Speeds
-    and the immobilized condition, and it ignores difficult terrain and greater difficult
-    terrain.
-
-
-    **Shake It Off** [Reaction] **Frequency** once per day; **Trigger** The crimson
-    worm would be affected by a condition or adverse effect (such as __baleful polymorph__).
-    **Effect** The crimson worm negates the triggering condition or effect. Effects
-    from artifacts, deities, or a similarly powerful source can''t be avoided in this
-    way.'
+  raw_description: '**Shake It Off** [Reaction] **Frequency** once per day; **Trigger**
+    The crimson worm would be affected by a condition or adverse effect (such as __baleful
+    polymorph__). **Effect** The crimson worm negates the triggering condition or
+    effect. Effects from artifacts, deities, or a similarly powerful source can''t
+    be avoided in this way.'
   requirements: null
   saving_throw: null
   stages: null
   success: null
   traits: null
   trigger: The crimson worm would be affected by a condition or adverse effect (such
-    as baleful polymorph).
+    as __baleful polymorph__).
 description: 'Among the most dangerous cave worms are the fiery crimson worms. In
   addition to being even larger than azure or purple worms, the crimson worm has a
   penchant for burrowing through volcanic regions that, over the generations, have
@@ -221,14 +241,13 @@ level: 18
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 3d10+18
+  - formula: 3d10+18
     type: piercing
-  name: jaws
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
+  - formula: 2d6
+    type: fire
   - formula: null
     type: Improved Grab
+  name: jaws
   to_hit: 36
   traits:
   - deadly 3d10
@@ -236,14 +255,13 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d12+18
+  - formula: 2d12+18
     type: piercing
-  name: stinger
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
+  - formula: 2d6
+    type: fire
   - formula: null
     type: crimson worm venom
+  name: stinger
   to_hit: 36
   traits:
   - agile
@@ -252,12 +270,11 @@ melee_attacks:
   - reach 20 feet
 - action_cost: One Action
   damage:
-    formula: 2d10+16
+  - formula: 2d10+16
     type: bludgeoning
+  - formula: 2d6
+    type: fire
   name: body
-  plus_damage:
-  - formula: null
-    type: 2d6 fire
   to_hit: 34
   traits:
   - fire

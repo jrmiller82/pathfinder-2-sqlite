@@ -16,8 +16,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Earth Glide
   range: null
@@ -38,8 +36,6 @@ active_abilities:
   effect: null
   failure: null
   frequency: null
-  full_description: null
-  generic_description: null
   maximum_duration: null
   name: Shove into Stone
   range: null
@@ -79,10 +75,9 @@ level: 7
 melee_attacks:
 - action_cost: One Action
   damage:
-    formula: 1d10+12
+  - formula: 1d10+12
     type: slashing
   name: falchion
-  plus_damage: null
   to_hit: 20
   traits:
   - forceful +1
@@ -91,14 +86,13 @@ melee_attacks:
   - sweep
 - action_cost: One Action
   damage:
-    formula: 1d4+12
+  - formula: 1d4+12
     type: bludgeoning
-  name: fist
-  plus_damage:
   - formula: null
     type: Push 10 feet
   - formula: null
     type: shove into stone
+  name: fist
   to_hit: 19
   traits:
   - agile
