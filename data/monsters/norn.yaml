@@ -281,7 +281,7 @@ skills:
 - bonus: 37
   misc: null
   name: Intimidation
-- bonus: .nan
+- bonus: 28
   misc: all
   name: Lore
 - bonus: 38
